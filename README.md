@@ -20,4 +20,4 @@ The showcase is deploy int `war` folder.
 [unusable-by-js] Type of parameter 'element' in 'boolean ArrayEnumList.add(E element)' is not usable by but exposed to JavaScript.
 ```
 
-About above warrning, you can see there is an open issue [#83](https://github.com/google/j2cl/issues/83 )to [google/j2cl](https://github.com/google/j2cl) project. 
+About above warning, you can see there is an open issue [#83](https://github.com/google/j2cl/issues/83) into [google/j2cl](https://github.com/google/j2cl) project. 
