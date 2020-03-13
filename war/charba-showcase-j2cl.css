@@ -1,0 +1,98 @@
+/** 
+ *
+ * Internal CSS 
+ *
+ */
+.myTitle {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-bottom: 24px;
+}
+.myTitle::before {
+    content: 'Charba ';
+    color: #f27173;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+.myItem {
+    padding-left: 12px;
+      height: 64px;
+}
+.myImgItem {
+    cursor: pointer;
+}
+.myLabelItem {
+    padding-left: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+.myCategory {
+    color: #aaa;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-bottom: 16px;
+    padding-right: 48px;
+}
+.myCategoryItem {
+    cursor: pointer;
+    color: #f27173;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    margin: 0.1rem;
+}
+.myChartsTitleItem {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    white-space: nowrap;
+    padding-bottom: 12px;
+}
+.myChartsTitleItem::before {
+    content: 'Charts ';
+    color: #f27173;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+.myElementsTitleItem {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    white-space: nowrap;
+    padding-bottom: 12px;
+}
+.myElementsTitleItem::before {
+    content: 'Elements ';
+    color: #f27173;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+.myLogTitle {
+    cursor: pointer;
+    color: #aaa;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-top: 12px;
+}
+.hero-title {
+    color: rgb(70, 68, 60);
+    font-family: 'Lato', Calibri;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+.hero-name {
+    color: rgb(70, 68, 60);
+    font-family: 'Lato', Calibri;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}    

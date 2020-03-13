@@ -333,8 +333,9 @@ public class ChartsView extends AbstractView {
 		content.appendChild(panel);
 
 		HTMLTableElement menuPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
-		menuPanel.width = "80%";
+		menuPanel.width = "90%";
 		menuPanel.align = "center";
+		menuPanel.cellPadding = "10";
 		panel.appendChild(menuPanel);
 
 		HTMLTableRowElement singleRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");

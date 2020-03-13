@@ -99,7 +99,7 @@ public class MainView extends AbstractComposite {
 			return null;
 		};
 		menu.appendChild(title);
-		
+
 		HTMLDivElement parent = (HTMLDivElement) DomGlobal.document.createElement("div");
 		parent.style.width = WidthUnionType.of("250px");
 		parent.style.lineHeight = LineHeightUnionType.of("64px");
@@ -114,7 +114,7 @@ public class MainView extends AbstractComposite {
 			row.style.verticalAlign = "middle";
 			row.className = "myItem";
 			parent.appendChild(row);
-			
+
 			HTMLImageElement img = (HTMLImageElement) DomGlobal.document.createElement("img");
 			img.src = item.getImgSrc();
 			img.className = "myImgItem";
@@ -213,6 +213,7 @@ public class MainView extends AbstractComposite {
 	protected void handleElements(Event event) {
 		if (changeSelection(event)) {
 			clearPreviousChart();
+			new ElementsView(content);
 			// content.add(new ElementsView(content));
 		}
 	}

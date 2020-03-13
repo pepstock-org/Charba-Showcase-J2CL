@@ -129,7 +129,7 @@ public class HomeView extends BaseComposite {
 		
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
-//		chart.getOptions().setAspectRatio(2/3);
+		chart.getOptions().setAspectRatio(2.5D);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Charba artifacts");
