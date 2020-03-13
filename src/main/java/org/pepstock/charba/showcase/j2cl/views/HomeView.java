@@ -62,29 +62,29 @@ public class HomeView extends BaseComposite {
 		singleRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(singleRow);
 
-		HTMLTableCellElement gwtCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		singleRow.appendChild(gwtCol);
-		gwtCol.width = "30%";
-		gwtCol.style.textAlign = "center";
-		HTMLImageElement gwtImg = (HTMLImageElement) DomGlobal.document.createElement("img");
-		gwtImg.src = "icons/gwt.png";
-		gwtCol.appendChild(gwtImg);
-		gwtCol.appendChild(DomGlobal.document.createElement("br"));
-		HTMLElement gwtSpan = (HTMLElement) DomGlobal.document.createElement("span");
-		gwtSpan.style.textAlign = "center";
-		gwtSpan.innerHTML = "J2CL and GWT";
-		gwtSpan.className = "hero-name";
-		gwtCol.appendChild(gwtSpan);
+		HTMLTableCellElement closureCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		singleRow.appendChild(closureCol);
+		closureCol.width = "30%";
+		closureCol.style.textAlign = "center";
+		HTMLImageElement closureImg = (HTMLImageElement) DomGlobal.document.createElement("img");
+		closureImg.src = "icons/closurecompiler.png";
+		closureCol.appendChild(closureImg);
+		closureCol.appendChild(DomGlobal.document.createElement("br"));
+		HTMLElement closureSpan = (HTMLElement) DomGlobal.document.createElement("span");
+		closureSpan.style.textAlign = "center";
+		closureSpan.innerHTML = "J2CL";
+		closureSpan.className = "hero-name";
+		closureCol.appendChild(closureSpan);
 		
 		HTMLTableCellElement midCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
 		singleRow.appendChild(midCol);
 		midCol.width = "40%";
 		midCol.style.textAlign = "center";
 		HTMLElement midSpan = (HTMLElement) DomGlobal.document.createElement("span");
-		midSpan.innerHTML = "<h1>J2CL and GWT meet Chart.JS</h1>" + 
+		midSpan.innerHTML = "<h1>J2CL meet Chart.JS</h1>" + 
 				"<h1>by CHARBA</h1>" + 
 				"<br/>" + 
-				"<p>CHARBA is a J2CL and GWT module which wraps Chart.JS to enable charts on your J2CL and GWT web application.</p>";
+				"<p>CHARBA is a J2CL library which wraps Chart.JS to enable charts on your J2CL web application.</p>";
 		midSpan.className = "hero-title";
 		midCol.appendChild(midSpan);
 		

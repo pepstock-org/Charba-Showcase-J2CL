@@ -3,6 +3,7 @@ package org.pepstock.charba.showcase.j2cl.views;
 import org.pepstock.charba.showcase.j2cl.cases.commons.AbstractComposite;
 
 import elemental2.dom.CSSProperties.BorderWidthUnionType;
+import elemental2.dom.CSSProperties.LineHeightUnionType;
 import elemental2.dom.CSSProperties.MinWidthUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
@@ -98,44 +99,43 @@ public class MainView extends AbstractComposite {
 			return null;
 		};
 		menu.appendChild(title);
-
-		HTMLTableElement menuPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
-		menuPanel.width = "100%";
-		menuPanel.style.borderCollapse = "collapse";
-		menu.appendChild(menuPanel);
+		
+		HTMLDivElement parent = (HTMLDivElement) DomGlobal.document.createElement("div");
+		parent.style.width = WidthUnionType.of("250px");
+		parent.style.lineHeight = LineHeightUnionType.of("64px");
+		menu.appendChild(parent);
 
 		for (MenuItem item : MenuItem.values()) {
-			HTMLTableRowElement singleRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-			singleRow.style.width = WidthUnionType.of("100%");
-			singleRow.style.borderWidth = BorderWidthUnionType.of("0px");
-			singleRow.className = "myItem";
-			menuPanel.appendChild(singleRow);
-
-			HTMLTableCellElement imgCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-			imgCol.style.width = WidthUnionType.of("36px");
-			singleRow.appendChild(imgCol);
+			HTMLDivElement row = (HTMLDivElement) DomGlobal.document.createElement("div");
+			row.style.width = WidthUnionType.of("250px");
+			row.style.borderWidth = BorderWidthUnionType.of("3px");
+			row.style.borderColor = "rgba(0,0,0,0)";
+			row.style.borderStyle = "dashed";
+			row.style.verticalAlign = "middle";
+			row.className = "myItem";
+			parent.appendChild(row);
+			
 			HTMLImageElement img = (HTMLImageElement) DomGlobal.document.createElement("img");
 			img.src = item.getImgSrc();
 			img.className = "myImgItem";
-			imgCol.appendChild(img);
+			img.style.display = "inline-block";
+			img.style.verticalAlign = "middle";
+			img.style.width = WidthUnionType.of("36px");
+			row.appendChild(img);
 			img.onclick = (p0) -> {
 				handleEvent(p0, item);
 				return null;
 			};
-
-			HTMLTableCellElement labelCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-			labelCol.style.width = WidthUnionType.of("100%");
-			singleRow.appendChild(labelCol);
-
 			HTMLDivElement label = (HTMLDivElement) DomGlobal.document.createElement("div");
 			label.innerHTML = item.getLabel();
 			label.className = "myLabelItem";
 			label.style.verticalAlign = "middle";
+			label.style.display = "inline-block";
 			label.onclick = (p0) -> {
 				handleEvent(p0, item);
 				return null;
 			};
-			labelCol.appendChild(label);
+			row.appendChild(label);
 		}
 
 	}
@@ -170,12 +170,10 @@ public class MainView extends AbstractComposite {
 			HTMLElement w = (HTMLElement) event.target;
 			if ("myImgItem".equalsIgnoreCase(w.className) || "myLabelItem".equalsIgnoreCase(w.className)) {
 				if (currentPanel != null) {
-					currentPanel.style.borderWidth = BorderWidthUnionType.of("0px");
+					currentPanel.style.borderColor = "rgba(0,0,0,0)";
 				}
-				currentPanel = (HTMLElement) (w.parentElement.parentElement);
+				currentPanel = (HTMLElement) (w.parentElement);
 				currentPanel.style.borderColor = "#d0d0d0";
-				 currentPanel.style.borderWidth = BorderWidthUnionType.of("3px");
-				 currentPanel.style.borderStyle = "dashed";
 				return true;
 			}
 		}
@@ -190,8 +188,7 @@ public class MainView extends AbstractComposite {
 
 	protected void handleHome(Event event) {
 		if (currentPanel != null) {
-			 currentPanel.style.borderWidth = BorderWidthUnionType.of("0px");
-//			currentPanel.style.borderColor = "rgba(0,0,0,0)";
+			currentPanel.style.borderColor = "rgba(0,0,0,0)";
 			currentPanel = null;
 		}
 		clearPreviousChart();

@@ -2,12 +2,22 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
+import org.pepstock.charba.showcase.j2cl.cases.charts.AxesClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.BubbleCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.ChartClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.ChartHoverEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ComboBarLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionPieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DoughnutCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LineCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.PieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.PolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.RadarCase;
@@ -20,6 +30,7 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -36,8 +47,8 @@ public class ChartsView extends AbstractView {
 	{
 		CHARTS("Charts", ChartsCase.values()),
 		OTHER_CHARTS("Other charts", OtherChartsCase.values()),
-		EXTENDED_CHARTS("Extended Charts", new CaseItem[0]),
-		EVENTS("Events", new CaseItem[0]);
+		EXTENDED_CHARTS("Extended charts", ExtendedChartsCase.values()),
+		EVENTS("Events", EventsCase.values());
 
 		private final String label;
 
@@ -199,7 +210,113 @@ public class ChartsView extends AbstractView {
 		}
 
 	}
+	
+	// ----------------------------------------------
+	// EXTENDED CHARTS
+	// ----------------------------------------------
+	private enum ExtendedChartsCase implements CaseItem
+	{
+		METER("Meter", new CaseFactory() {
+			public BaseComposite create() {
+				return new MeterCase();
+			}
+		}),
+		GAUGE("Gauge", new CaseFactory() {
+			public BaseComposite create() {
+				return new GaugeCase();
+			}
+		});
 
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private ExtendedChartsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+
+	// ----------------------------------------------
+	// Events
+	// ----------------------------------------------
+
+	private enum EventsCase implements CaseItem
+	{
+		CHART_CLICK("Chart click events", new CaseFactory() {
+			public BaseComposite create() {
+				return new ChartClickEventCase();
+			}
+		}),
+		CHART_HOVER("Chart hover events", new CaseFactory() {
+			public BaseComposite create() {
+				return new ChartHoverEventCase();
+			}
+		}),
+		CHART_RESIZE("Chart resize events", new CaseFactory() {
+			public BaseComposite create() {
+				return new ChartResizeEventCase();
+			}
+		}),
+		DATASET_SELECTION_BAR("Selecting dataset on bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetSelectionBarCase();
+			}
+		}),
+		DATASET_SELECTION_PIE("Selecting dataset on pie chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetSelectionPieCase();
+			}
+		}),
+		LEGEND_CLICK("Legend click events", new CaseFactory() {
+			public BaseComposite create() {
+				return new LegendClickEventCase();
+			}
+		}),
+		LEGEND_HOVER("Legend hover and leave events", new CaseFactory() {
+			public BaseComposite create() {
+				return new LegendHoverAndLeaveEventsCase();
+			}
+		}),
+		TITLE_CLICK("Title click events", new CaseFactory() {
+			public BaseComposite create() {
+				return new TitleClickEventCase();
+			}
+		}),
+		AXES_CLICK("Axes click events", new CaseFactory() {
+			public BaseComposite create() {
+				return new AxesClickEventCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private EventsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+	
 	public ChartsView(HTMLElement content) {
 		super(content);
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
@@ -254,14 +371,5 @@ public class ChartsView extends AbstractView {
 			}
 		}
 	}
-	//
-	// // ----------------------------------------------
-	// // EXTENDED CHARTS
-	// // ----------------------------------------------
-	//
-	// // ----------------------------------------------
-	// // Events
-	// // ----------------------------------------------
-	//
 
 }
