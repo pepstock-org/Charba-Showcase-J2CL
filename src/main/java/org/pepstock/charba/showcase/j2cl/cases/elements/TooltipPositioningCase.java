@@ -6,7 +6,9 @@ import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.enums.TooltipPosition;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -22,17 +24,19 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class LegendPositioningCase extends BaseComposite {
+public class TooltipPositioningCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
 
-    private final HTMLSelectElement position = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private final HTMLSelectElement position = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
-	private LineDataset dataset;
+	private LineDataset dataset1 = null;
 
-	public LegendPositioningCase() {
+	private LineDataset dataset2 = null;
+
+	public TooltipPositioningCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -53,7 +57,7 @@ public class LegendPositioningCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		for (Position pos : Position.values()) {
+		for (TooltipPosition pos : TooltipPosition.values()) {
 			HTMLOptionElement posN = (HTMLOptionElement) DomGlobal.document.createElement("option");
 			posN.text = pos.name();
 			posN.value = pos.name();
@@ -63,17 +67,29 @@ public class LegendPositioningCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Legend positioning");
+		chart.getOptions().getTitle().setText("Tooltip positioning");
+		chart.getOptions().getTooltips().setPosition(TooltipPosition.AVERAGE);
+		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setIntersect(false);
 
-		dataset = chart.newDataset();
-		dataset.setLabel("dataset 1");
+		dataset1 = chart.newDataset();
+		dataset1.setLabel("dataset 1");
 		IsColor color1 = GoogleChartColor.values()[0];
-		dataset.setBackgroundColor(color1.alpha(0.2));
-		dataset.setBorderColor(color1.toHex());
-		dataset.setData(getRandomDigits(months));
-		dataset.setFill(Fill.ORIGIN);
+		dataset1.setBackgroundColor(color1.toHex());
+		dataset1.setBorderColor(color1.toHex());
+		dataset1.setData(getRandomDigits(months));
+		dataset1.setFill(Fill.FALSE);
+
+		dataset2 = chart.newDataset();
+		dataset2.setLabel("dataset 1");
+		IsColor color2 = GoogleChartColor.values()[1];
+		dataset2.setBackgroundColor(color2.toHex());
+		dataset2.setBorderColor(color2.toHex());
+		dataset2.setData(getRandomDigits(months));
+		dataset2.setFill(Fill.FALSE);
+
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset);
+		chart.getData().setDatasets(dataset1, dataset2);
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -134,23 +150,20 @@ public class LegendPositioningCase extends BaseComposite {
 	}
 	
 	protected void handleRandomize() {
-		dataset.setData(getRandomDigits(months));
+		dataset1.setData(getRandomDigits(months));
+		dataset2.setData(getRandomDigits(months));
 		chart.update();
 	}
 
 	protected void handlePosition() {
 		String selected = position.options.getAt(position.selectedIndex).value;
-		int i = 0;
-		for (Position cPos : Position.values()) {
+		for (TooltipPosition cPos : TooltipPosition.values()) {
 			if (cPos.name().equalsIgnoreCase(selected)) {
-				IsColor color = GoogleChartColor.values()[i];
-				dataset.setBackgroundColor(color.alpha(0.2));
-				dataset.setBorderColor(color.toHex());
-				chart.getOptions().getLegend().setPosition(cPos);
+				chart.getOptions().getTooltips().setPosition(cPos);
 				chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(1000).build());
 				return;
 			}
-			i++;
 		}
 	}
+
 }

@@ -1,12 +1,17 @@
 package org.pepstock.charba.showcase.j2cl.cases.elements;
 
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.UpdateConfigurationBuilder;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
+import org.pepstock.charba.client.configuration.CartesianLinearAxis;
+import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.enums.TooltipPosition;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -15,24 +20,17 @@ import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
-import elemental2.dom.HTMLLabelElement;
-import elemental2.dom.HTMLOptionElement;
-import elemental2.dom.HTMLSelectElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class LegendPositioningCase extends BaseComposite {
+public class TooltipBorderCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
 
-    private final HTMLSelectElement position = (HTMLSelectElement) DomGlobal.document.createElement("select");
-
-	private LineDataset dataset;
-
-	public LegendPositioningCase() {
+	public TooltipBorderCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -53,27 +51,57 @@ public class LegendPositioningCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		for (Position pos : Position.values()) {
-			HTMLOptionElement posN = (HTMLOptionElement) DomGlobal.document.createElement("option");
-			posN.text = pos.name();
-			posN.value = pos.name();
-			position.add(posN);
-		}
-
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Legend positioning");
+		chart.getOptions().getTitle().setText("Configured tooltip to change borders and style");
+		chart.getOptions().getTooltips().setPosition(TooltipPosition.NEAREST);
+		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setIntersect(false);
+		chart.getOptions().getTooltips().setYPadding(10);
+		chart.getOptions().getTooltips().setXPadding(10);
+		chart.getOptions().getTooltips().setCaretSize(8);
+		chart.getOptions().getTooltips().setBackgroundColor("rgba(72, 241, 12, 1)");
+		chart.getOptions().getTooltips().setTitleFontColor(HtmlColor.BLACK);
+		chart.getOptions().getTooltips().setBodyFontColor(HtmlColor.BLACK);
+		chart.getOptions().getTooltips().setBorderColor("rgba(0,0,0,1)");
+		chart.getOptions().getTooltips().setBorderWidth(4);
 
-		dataset = chart.newDataset();
-		dataset.setLabel("dataset 1");
+		LineDataset dataset1 = chart.newDataset();
+		dataset1.setLabel("dataset 1");
+
 		IsColor color1 = GoogleChartColor.values()[0];
-		dataset.setBackgroundColor(color1.alpha(0.2));
-		dataset.setBorderColor(color1.toHex());
-		dataset.setData(getRandomDigits(months));
-		dataset.setFill(Fill.ORIGIN);
+
+		dataset1.setBackgroundColor(color1.toHex());
+		dataset1.setBorderColor(color1.toHex());
+		dataset1.setData(getRandomDigits(months));
+		dataset1.setFill(Fill.FALSE);
+
+		LineDataset dataset2 = chart.newDataset();
+		dataset2.setLabel("dataset 2");
+
+		IsColor color2 = GoogleChartColor.values()[1];
+
+		dataset2.setBackgroundColor(color2.toHex());
+		dataset2.setBorderColor(color2.toHex());
+		dataset2.setData(getRandomDigits(months));
+		dataset2.setFill(Fill.FALSE);
+
+		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
+		axis1.setDisplay(true);
+		axis1.getScaleLabel().setDisplay(true);
+		axis1.getScaleLabel().setLabelString("Month");
+
+		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
+		axis2.setDisplay(true);
+		axis2.getScaleLabel().setDisplay(true);
+		axis2.getScaleLabel().setLabelString("Value");
+
+		chart.getOptions().getScales().setXAxes(axis1);
+		chart.getOptions().getScales().setYAxes(axis2);
+
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset);
+		chart.getData().setDatasets(dataset1, dataset2);
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -99,22 +127,6 @@ public class LegendPositioningCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-
-		String positionId = "position" + (int)(Math.random() * 1000D);
-
-		HTMLLabelElement labelForPosition = (HTMLLabelElement) DomGlobal.document.createElement("label");
-		labelForPosition.htmlFor = positionId;
-		labelForPosition.appendChild(DomGlobal.document.createTextNode("Position "));
-		actionsCol.appendChild(labelForPosition);
-		
-		position.id = positionId;
-		position.oninput = (p0) -> {
-			handlePosition();
-			return null;
-		};
-		position.className = "gwt-ListBox";
-		position.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(position);
 		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
@@ -134,23 +146,10 @@ public class LegendPositioningCase extends BaseComposite {
 	}
 	
 	protected void handleRandomize() {
-		dataset.setData(getRandomDigits(months));
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			dataset.setData(getRandomDigits(months));
+		}
 		chart.update();
 	}
 
-	protected void handlePosition() {
-		String selected = position.options.getAt(position.selectedIndex).value;
-		int i = 0;
-		for (Position cPos : Position.values()) {
-			if (cPos.name().equalsIgnoreCase(selected)) {
-				IsColor color = GoogleChartColor.values()[i];
-				dataset.setBackgroundColor(color.alpha(0.2));
-				dataset.setBorderColor(color.toHex());
-				chart.getOptions().getLegend().setPosition(cPos);
-				chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(1000).build());
-				return;
-			}
-			i++;
-		}
-	}
 }

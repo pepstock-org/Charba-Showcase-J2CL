@@ -13,6 +13,13 @@ import org.pepstock.charba.showcase.j2cl.cases.elements.LegendPositioningCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.LegendStyleCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TitleChangeCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TitleStyleCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipBorderCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipHTMLPieCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipHTMLlineCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipInteractionsCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipPositionerCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipPositioningCase;
 
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
@@ -104,37 +111,37 @@ public class ElementsView extends AbstractView {
 	{
 		POSITIONING("Positioning", new CaseFactory() {
 			public BaseComposite create() {
-				return new BarCase();
+				return new TooltipPositioningCase();
 			}
 		}),
 		INTERACTIONS("Interactions among datasets", new CaseFactory() {
 			public BaseComposite create() {
-				return new HorizontalBarCase();
+				return new TooltipInteractionsCase();
 			}
 		}),
 		CALLBACK("Callback to add elements", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new TooltipCallbacksCase();
 			}
 		}),
 		STYLING("Styling", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new TooltipBorderCase();
 			}
 		}),
 		POSITIONER("Positioner for custom positioning", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new TooltipPositionerCase();
 			}
 		}),
 		HTML_LINE("HTML tooltip by callback on line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new TooltipHTMLlineCase();
 			}
 		}),
 		HTML_PIE("HTML tooltip bu callback on pie chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new TooltipHTMLPieCase();
 			}
 		});
 

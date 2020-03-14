@@ -4,8 +4,10 @@ import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.UpdateConfigurationBuilder;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -15,6 +17,7 @@ import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
+import elemental2.dom.HTMLInputElement;
 import elemental2.dom.HTMLLabelElement;
 import elemental2.dom.HTMLOptionElement;
 import elemental2.dom.HTMLSelectElement;
@@ -22,17 +25,21 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class LegendPositioningCase extends BaseComposite {
+public class TooltipInteractionsCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
+	
+	private final HTMLSelectElement mode = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	
+	private final HTMLInputElement intersect = (HTMLInputElement) DomGlobal.document.createElement("input");
 
-    private final HTMLSelectElement position = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private LineDataset dataset1 = null;
 
-	private LineDataset dataset;
+	private LineDataset dataset2 = null;
 
-	public LegendPositioningCase() {
+	public TooltipInteractionsCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -53,27 +60,40 @@ public class LegendPositioningCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		for (Position pos : Position.values()) {
-			HTMLOptionElement posN = (HTMLOptionElement) DomGlobal.document.createElement("option");
-			posN.text = pos.name();
-			posN.value = pos.name();
-			position.add(posN);
+		for (InteractionMode cMode : InteractionMode.values()) {
+			HTMLOptionElement cModeN = (HTMLOptionElement) DomGlobal.document.createElement("option");
+			cModeN.text = cMode.name();
+			cModeN.value = cMode.name();
+			mode.add(cModeN);
 		}
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Legend positioning");
+		chart.getOptions().getTitle().setText("Tooltip mode and intesect options");
+		chart.getOptions().getTooltips().setMode(InteractionMode.POINT);
+		chart.getOptions().getTooltips().setIntersect(false);
+		chart.getOptions().getHover().setMode(InteractionMode.POINT);
+		chart.getOptions().getHover().setIntersect(false);
 
-		dataset = chart.newDataset();
-		dataset.setLabel("dataset 1");
+		dataset1 = new LineDataset();
+		dataset1.setLabel("dataset 1");
 		IsColor color1 = GoogleChartColor.values()[0];
-		dataset.setBackgroundColor(color1.alpha(0.2));
-		dataset.setBorderColor(color1.toHex());
-		dataset.setData(getRandomDigits(months));
-		dataset.setFill(Fill.ORIGIN);
+		dataset1.setBackgroundColor(color1.toHex());
+		dataset1.setBorderColor(color1.toHex());
+		dataset1.setData(getRandomDigits(months));
+		dataset1.setFill(Fill.FALSE);
+
+		dataset2 = new LineDataset();
+		dataset2.setLabel("dataset 2");
+		IsColor color2 = GoogleChartColor.values()[1];
+		dataset2.setBackgroundColor(color2.toHex());
+		dataset2.setBorderColor(color2.toHex());
+		dataset2.setData(getRandomDigits(months));
+		dataset2.setFill(Fill.FALSE);
+
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset);
+		chart.getData().setDatasets(dataset1, dataset2);
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -99,22 +119,39 @@ public class LegendPositioningCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-
-		String positionId = "position" + (int)(Math.random() * 1000D);
-
-		HTMLLabelElement labelForPosition = (HTMLLabelElement) DomGlobal.document.createElement("label");
-		labelForPosition.htmlFor = positionId;
-		labelForPosition.appendChild(DomGlobal.document.createTextNode("Position "));
-		actionsCol.appendChild(labelForPosition);
 		
-		position.id = positionId;
-		position.oninput = (p0) -> {
-			handlePosition();
+		String modeId = "mode" + (int)(Math.random() * 1000D);
+
+		HTMLLabelElement labelForMode = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForMode.htmlFor = modeId;
+		labelForMode.appendChild(DomGlobal.document.createTextNode("Mode "));
+		actionsCol.appendChild(labelForMode);
+		
+		mode.id = modeId;
+		mode.oninput = (p0) -> {
+			handleMode();
 			return null;
 		};
-		position.className = "gwt-ListBox";
-		position.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(position);
+		mode.className = "gwt-ListBox";
+		mode.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(mode);
+		
+		String intersectId = "intersect" + (int)(Math.random() * 1000D);
+
+		HTMLLabelElement labelForIntersect = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForIntersect.htmlFor = intersectId;
+		labelForIntersect.appendChild(DomGlobal.document.createTextNode("Use intersect "));
+		actionsCol.appendChild(labelForIntersect);
+		
+		intersect.id = intersectId;
+		intersect.onclick = (p0) -> {
+			handleIntersect();
+			return null;
+		};
+		intersect.type = "checkbox";
+		intersect.className = "gwt-CheckBox";
+		intersect.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(intersect);
 		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
@@ -134,23 +171,28 @@ public class LegendPositioningCase extends BaseComposite {
 	}
 	
 	protected void handleRandomize() {
-		dataset.setData(getRandomDigits(months));
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			dataset.setData(getRandomDigits(months));
+		}
 		chart.update();
 	}
 
-	protected void handlePosition() {
-		String selected = position.options.getAt(position.selectedIndex).value;
-		int i = 0;
-		for (Position cPos : Position.values()) {
-			if (cPos.name().equalsIgnoreCase(selected)) {
-				IsColor color = GoogleChartColor.values()[i];
-				dataset.setBackgroundColor(color.alpha(0.2));
-				dataset.setBorderColor(color.toHex());
-				chart.getOptions().getLegend().setPosition(cPos);
+	protected void handleMode() {
+		String selected = mode.options.getAt(mode.selectedIndex).value;
+		for (InteractionMode cMode : InteractionMode.values()) {
+			if (cMode.name().equalsIgnoreCase(selected)) {
+				chart.getOptions().getTooltips().setMode(cMode);
+				chart.getOptions().getHover().setMode(cMode);
 				chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(1000).build());
 				return;
 			}
-			i++;
 		}
 	}
+
+	protected void handleIntersect() {
+		chart.getOptions().getTooltips().setIntersect(intersect.checked);
+		chart.getOptions().getHover().setIntersect(intersect.checked);
+		chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(1000).build());
+	}
+
 }
