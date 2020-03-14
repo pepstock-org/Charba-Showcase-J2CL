@@ -2,15 +2,23 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
-import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.BubbleCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.LineCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.elements.ChangingLegendLabelsCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.FilteringAxisLabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.GridLinesDisplayCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.GridLinesStyleCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.LegendPositioningCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.LegendStyleCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.MultiAxisBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.MultiAxisLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.MultiAxisScatterCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.MultiLineAxisLabelsCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.NoNumericYAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TicksMinMaxCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.TicksStepSizeCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TitleChangeCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TitleStyleCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipBorderCase;
@@ -172,62 +180,62 @@ public class ElementsView extends AbstractView {
 	{
 		MULTI_BAR("Multiple axes on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BarCase();
+				return new MultiAxisBarCase();
 			}
 		}),
 		MULTI_LINE("Multiple axes on line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new HorizontalBarCase();
+				return new MultiAxisLineCase();
 			}
 		}),
 		MULTI_SCATTER("Multiple axes on scatter chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new MultiAxisScatterCase();
 			}
 		}),
 		GRID_LINES("Displaying grid lines", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new GridLinesDisplayCase();
 			}
 		}),
 		STYLING_GRID_LINES("Styling grid lines", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new GridLinesStyleCase();
 			}
 		}),
 		MULTI_LABELS("Multiple lines labels on axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new MultiLineAxisLabelsCase();
 			}
 		}),
 		FILTERING("Filtering labels on axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new FilteringAxisLabelsCase();
 			}
 		}),
 		NON_NUMERIC("Non numeric Y axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new NoNumericYAxisCase();
 			}
 		}),
 		STEP_SIZE("Changing step size on ticks", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new TicksStepSizeCase();
 			}
 		}),
 		MIN_MAX("Setting min/max on ticks", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new TicksMinMaxCase();
 			}
 		}),
 		LOG_LINE("Logarithmic axis on line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new LogarithmicAxisOnLineCase();
 			}
 		}),
 		LOG_SCATTER("Logarithmic axis on scatter chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new LogarithmicAxisOnScatterCase();
 			}
 		});
 
