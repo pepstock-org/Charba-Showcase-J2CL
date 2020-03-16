@@ -22,7 +22,9 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrill
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase;
 
+import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLDivElement;
@@ -346,6 +348,30 @@ public class PluginsView extends AbstractView {
 						return null;
 					};
 				}
+			}
+			
+			if (Category.CHART_BACKGROUND.equals(cat)) {
+				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPointer.innerHTML = "Chart pointer";
+				labelPointer.style.textAlign = "left";
+				labelPointer.className = "myCategory";
+				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPointer);
+				
+				HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+				item.style.textAlign = "left";
+				item.className = "myCategoryItem";
+				catCol.appendChild(item);
+				item.innerHTML = "Setting cursors on line chart";
+				item.onclick = (p0) -> {
+					BaseComposite composite = new PointerLineCase();
+					if (composite != null) {
+						clearPreviousChart();
+						content.appendChild(composite.getElement());
+					}
+					return null;
+				};
+
 			}
 		}
 	}

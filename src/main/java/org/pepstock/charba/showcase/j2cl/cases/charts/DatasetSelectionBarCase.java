@@ -73,11 +73,11 @@ public class DatasetSelectionBarCase extends BaseComposite {
 				List<Dataset> datasets = chart.getData().getDatasets();
 				if (datasets != null && !datasets.isEmpty()) {
 					StringBuilder sb = new StringBuilder();
-					sb.append("Dataset index: ").append(event.getItem().getDatasetIndex()).append("\n");
-					sb.append("Dataset label: ").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append("\n");
-					sb.append("Dataset data: ").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append("\n");
-					sb.append("Index: ").append(event.getItem().getIndex()).append("\n");
-					sb.append("Value: ").append(labels.getStrings(event.getItem().getIndex()).get(0)).append("\n");
+					sb.append("Dataset index: ").append(event.getItem().getDatasetIndex()).append(" ");
+					sb.append("Dataset label: ").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append(" ");
+					sb.append("Dataset data: ").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append(" ");
+					sb.append("Index: ").append(event.getItem().getIndex()).append(" ");
+					sb.append("Value: ").append(labels.getStrings(event.getItem().getIndex()).get(0));
 					mylog.addLogEvent(sb.toString());
 				}
 			}
