@@ -25,12 +25,12 @@ public class MainView extends AbstractComposite {
 
 	private enum MenuItem
 	{
-		CHARTS("Charts", "icons/showcaseCharts.png"),
-		ELEMENTS("Elements", "icons/showcaseElements.png"),
-		PLUGINS("Plugins", "icons/showcasePlugins.png"),
-		COLORING("Coloring", "icons/showcaseColoring.png"),
-		EXTENSIONS("Extensions", "icons/showcaseExtensions.png"),
-		MISC("Miscellaneous", "icons/showcaseMiscellaneous.png");
+		CHARTS("Charts", "images/showcaseCharts.png"),
+		ELEMENTS("Elements", "images/showcaseElements.png"),
+		PLUGINS("Plugins", "images/showcasePlugins.png"),
+		COLORING("Coloring", "images/showcaseColoring.png"),
+		EXTENSIONS("Extensions", "images/showcaseExtensions.png"),
+		MISC("Miscellaneous", "images/showcaseMiscellaneous.png");
 
 		private final String label;
 
@@ -228,7 +228,7 @@ public class MainView extends AbstractComposite {
 	protected void handlePlugins(Event event) {
 		if (changeSelection(event)) {
 			clearPreviousChart();
-			// content.add(new PluginsView(content));
+			new PluginsView(content);
 		}
 	}
 

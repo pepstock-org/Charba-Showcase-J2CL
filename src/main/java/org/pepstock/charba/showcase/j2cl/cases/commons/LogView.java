@@ -12,12 +12,19 @@ public class LogView extends BaseComposite {
 	private static final int MAX = 8;
 
 	private int counter = 1;
+	
+	private int max;
 
 	private final HTMLDivElement log = (HTMLDivElement) DomGlobal.document.createElement("div");
 
 	private final HTMLPreElement element = (HTMLPreElement) DomGlobal.document.createElement("pre");
 
 	public LogView() {
+		this(MAX);
+	}
+	
+	public LogView(int max) {
+		this.max = Math.max(1, max);
 		HTMLDivElement title = (HTMLDivElement) DomGlobal.document.createElement("div");
 		title.className = "myLogTitle";
 		title.textContent = "Event logs";
@@ -44,7 +51,7 @@ public class LogView extends BaseComposite {
 		newDiv.innerHTML = counter + ". " + innerHtml;
 		newDiv.style.whiteSpace = "nowrap";
 		element.insertBefore(newDiv, element.firstChild);
-		if (element.childElementCount > MAX) {
+		if (element.childElementCount > max) {
 			element.removeChild(element.lastChild);
 		}
 		counter++;

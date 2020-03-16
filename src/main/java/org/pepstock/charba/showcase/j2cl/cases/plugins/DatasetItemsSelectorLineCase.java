@@ -1,19 +1,23 @@
-package org.pepstock.charba.showcase.j2cl.cases.elements;
+package org.pepstock.charba.showcase.j2cl.cases.plugins;
 
 import java.util.List;
 
-import org.pepstock.charba.client.IsChart;
+import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.LegendLabelsCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.InteractionMode;
-import org.pepstock.charba.client.items.LegendLabelItem;
+import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
+import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
+import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -21,25 +25,23 @@ import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
-import elemental2.dom.HTMLInputElement;
-import elemental2.dom.HTMLLabelElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ChangingLegendLabelsCase extends BaseComposite {
+public class DatasetItemsSelectorLineCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
+	
+	private final LogView mylog  =new LogView(4);
 
-	private final HTMLInputElement useDefault = (HTMLInputElement) DomGlobal.document.createElement("input");
-
-	public ChangingLegendLabelsCase() {
+	public DatasetItemsSelectorLineCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -55,33 +57,16 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
+		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Changing text and color for legend items on line chart");
+		chart.getOptions().getTitle().setText("Dataset items selector plugin on line chart");
 		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
 		chart.getOptions().getTooltips().setIntersect(false);
 		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
 		chart.getOptions().getHover().setIntersect(true);
-
-		chart.getOptions().getLegend().getLabels().setLabelsCallback(new LegendLabelsCallback() {
-
-			@Override
-			public List<LegendLabelItem> generateLegendLabels(IsChart chart, List<LegendLabelItem> defaultLabels) {
-				if (!useDefault.checked) {
-					int size = GoogleChartColor.values().length - 1;
-					for (LegendLabelItem item : defaultLabels) {
-						IsColor color = GoogleChartColor.values()[size - item.getDatasetIndex()];
-						item.setFillStyle(color);
-						String text = "Changed label for " + item.getText();
-						item.setText(text);
-					}
-				}
-				return defaultLabels;
-			}
-		});
 
 		List<Dataset> datasets = chart.getData().getDatasets(true);
 
@@ -125,6 +110,31 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		chart.getOptions().getScales().setYAxes(axis2);
 
 		chart.getData().setLabels(getLabels());
+
+		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
+		pOptions.setBorderWidth(2);
+		pOptions.setBorderDash(6, 3, 6);
+		pOptions.setBorderColor(HtmlColor.GREY);
+		pOptions.getClearSelection().setDisplay(true);
+		pOptions.getClearSelection().setLabel("Reset selection");
+		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFontSize());
+		pOptions.setColor(HtmlColor.LIGHT_GOLDEN_ROD_YELLOW.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
+		pOptions.setFireEventOnClearSelection(true);
+
+		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
+		chart.getPlugins().add(DatasetsItemsSelector.get());
+
+		chart.addHandler(new DatasetRangeSelectionEventHandler() {
+
+			@Override
+			public void onSelect(DatasetRangeSelectionEvent event) {
+				StringBuilder sb = new StringBuilder();
+				sb.append("Dataset from: ").append(event.getFrom()).append(" ");
+				sb.append("Dataset to: ").append(event.getTo());
+				mylog.addLogEvent(sb.toString());
+			}
+		}, DatasetRangeSelectionEvent.TYPE);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -190,23 +200,6 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		removeData.textContent = "Remove data";
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
-
-		String useDefaultsId = "useDefault" + (int)(Math.random() * 1000D);
-
-		HTMLLabelElement labelForUseDefaults = (HTMLLabelElement) DomGlobal.document.createElement("label");
-		labelForUseDefaults.htmlFor = useDefaultsId;
-		labelForUseDefaults.appendChild(DomGlobal.document.createTextNode("Use default "));
-		actionsCol.appendChild(labelForUseDefaults);
-		
-		useDefault.id = useDefaultsId;
-		useDefault.onclick = (p0) -> {
-			handleFilter();
-			return null;
-		};
-		useDefault.type = "checkbox";
-		useDefault.className = "gwt-CheckBox";
-		useDefault.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(useDefault);
 		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
@@ -218,6 +211,21 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
+		
+		// ----------------------------------------------
+		// Log element
+		// ----------------------------------------------
+		
+		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		logRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(logRow);
+
+		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		logCol.style.width = WidthUnionType.of("100%");
+		logCol.style.textAlign = "center";
+		logCol.vAlign = "top";
+		logRow.appendChild(logCol);
+		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override
@@ -255,9 +263,5 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 
 	protected void handleRemoveData() {
 		removeData(chart);
-	}
-
-	protected void handleFilter() {
-		chart.update();
 	}
 }

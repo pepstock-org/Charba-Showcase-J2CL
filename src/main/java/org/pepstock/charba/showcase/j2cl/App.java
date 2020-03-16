@@ -10,6 +10,7 @@ import org.pepstock.charba.client.resources.ResourcesType;
 import org.pepstock.charba.client.utils.JsWindowHelper;
 import org.pepstock.charba.client.utils.Window;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
 import org.pepstock.charba.showcase.j2cl.views.MainView;
 
 import com.google.gwt.core.client.EntryPoint;
@@ -26,6 +27,7 @@ public class App implements EntryPoint {
 	public static boolean isDeferred = false;
 
 	public void onModuleLoad() {
+		Images.get();
 		
 		Window.getConsole().log(DomGlobal.window.location);
 		

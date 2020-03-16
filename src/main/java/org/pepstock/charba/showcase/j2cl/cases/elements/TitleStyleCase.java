@@ -187,7 +187,7 @@ public class TitleStyleCase extends BaseComposite {
 		};
 		github.className = "gwt-Button";
 		HTMLImageElement img = (HTMLImageElement) DomGlobal.document.createElement("img");
-		img.src = "icons/GitHub-Mark-32px.png";
+		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}

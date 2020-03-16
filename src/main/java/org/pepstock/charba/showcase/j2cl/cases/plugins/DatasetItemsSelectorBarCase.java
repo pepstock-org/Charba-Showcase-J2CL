@@ -1,14 +1,21 @@
-package org.pepstock.charba.showcase.j2cl.cases.charts;
+package org.pepstock.charba.showcase.j2cl.cases.plugins;
 
 import java.util.List;
 
-import org.pepstock.charba.client.HorizontalBarChart;
+import org.pepstock.charba.client.BarChart;
+import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.data.HorizontalBarDataset;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
+import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
+import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -20,18 +27,19 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class HorizontalBarCase extends BaseComposite {
+public class DatasetItemsSelectorBarCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final HorizontalBarChart chart = new HorizontalBarChart();
+	private final BarChart chart = new BarChart();
+	
+	private final LogView mylog  =new LogView(4);
 
-	public HorizontalBarCase() {
-
+	public DatasetItemsSelectorBarCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -47,13 +55,15 @@ public class HorizontalBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-		
-		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.RIGHT);
-		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Horizontal bar chart");
 
-		HorizontalBarDataset dataset1 = chart.newDataset();
+		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(3);
+		chart.getOptions().setMaintainAspectRatio(true);
+		chart.getOptions().getLegend().setPosition(Position.TOP);
+		chart.getOptions().getTitle().setDisplay(true);
+		chart.getOptions().getTitle().setText("Dataset items selector plugin on bar chart");
+
+		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
 		IsColor color1 = GoogleChartColor.values()[0];
@@ -64,7 +74,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		dataset1.setData(getRandomDigits(months));
 
-		HorizontalBarDataset dataset2 = new HorizontalBarDataset();
+		BarDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
 
 		IsColor color2 = GoogleChartColor.values()[1];
@@ -76,8 +86,33 @@ public class HorizontalBarCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
+
+		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
+		pOptions.setBorderWidth(2);
+		pOptions.setBorderDash(6, 2);
+		pOptions.setBorderColor(HtmlColor.GREY);
+		pOptions.getClearSelection().setDisplay(true);
+		pOptions.getClearSelection().setLabel("Reset selection");
+		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFontSize());
+		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
+		pOptions.setFireEventOnClearSelection(true);
+
+		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
+		chart.getPlugins().add(DatasetsItemsSelector.get());
+
+		chart.addHandler(new DatasetRangeSelectionEventHandler() {
+
+			@Override
+			public void onSelect(DatasetRangeSelectionEvent event) {
+				StringBuilder sb = new StringBuilder();
+				sb.append("Dataset from: ").append(event.getFrom()).append(" ");
+				sb.append("Dataset to: ").append(event.getTo());
+				mylog.addLogEvent(sb.toString());
+			}
+		}, DatasetRangeSelectionEvent.TYPE);
+
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
@@ -94,10 +129,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
-			for (Dataset dataset : chart.getData().getDatasets()) {
-				dataset.setData(getRandomDigits(months));
-			}
-			chart.update();
+			handleRandomize();
 			return null;
 		};
 		randomize.className = "gwt-Button";
@@ -107,20 +139,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addDataset.onclick = (p0) -> {
-			List<Dataset> datasets = chart.getData().getDatasets();
-
-			HorizontalBarDataset dataset = chart.newDataset();
-			dataset.setLabel("dataset " + (datasets.size() + 1));
-
-			IsColor color = GoogleChartColor.values()[datasets.size()];
-			dataset.setBackgroundColor(color.alpha(0.2));
-			dataset.setBorderColor(color.toHex());
-			dataset.setBorderWidth(1);
-			dataset.setData(getRandomDigits(months));
-
-			datasets.add(dataset);
-
-			chart.update();
+			handleAddDataset();
 			return null;
 		};
 		addDataset.className = "gwt-Button";
@@ -130,7 +149,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		HTMLButtonElement removeDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		removeDataset.onclick = (p0) -> {
-			removeDataset(chart);
+			handleRemoveDataset();
 			return null;
 		};
 		removeDataset.className = "gwt-Button";
@@ -140,7 +159,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addData.onclick = (p0) -> {
-			addData(chart);
+			handleAddData();
 			return null;
 		};
 		addData.className = "gwt-Button";
@@ -150,14 +169,14 @@ public class HorizontalBarCase extends BaseComposite {
 
 		HTMLButtonElement removeData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		removeData.onclick = (p0) -> {
-			removeData(chart);
+			handleRemoveData();
 			return null;
 		};
 		removeData.className = "gwt-Button";
 		removeData.textContent = "Remove data";
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
-
+		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -168,11 +187,62 @@ public class HorizontalBarCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
+		
+		// ----------------------------------------------
+		// Log element
+		// ----------------------------------------------
+		
+		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		logRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(logRow);
+
+		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		logCol.style.width = WidthUnionType.of("100%");
+		logCol.style.textAlign = "center";
+		logCol.vAlign = "top";
+		logRow.appendChild(logCol);
+		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
+	}
+	
+	protected void handleRandomize() {
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			dataset.setData(getRandomDigits(months));
+		}
+		chart.update();
+	}
+
+	protected void handleAddDataset() {
+		List<Dataset> datasets = chart.getData().getDatasets();
+
+		BarDataset dataset = chart.newDataset();
+		dataset.setLabel("dataset " + (datasets.size() + 1));
+
+		IsColor color = GoogleChartColor.values()[datasets.size()];
+		dataset.setBackgroundColor(color.alpha(0.2));
+		dataset.setBorderColor(color.toHex());
+		dataset.setBorderWidth(1);
+		dataset.setData(getRandomDigits(months));
+
+		datasets.add(dataset);
+
+		chart.update();
+	}
+
+	protected void handleRemoveDataset() {
+		removeDataset(chart);
+	}
+
+	protected void handleAddData() {
+		addData(chart);
+	}
+
+	protected void handleRemoveData() {
+		removeData(chart);
 	}
 
 }

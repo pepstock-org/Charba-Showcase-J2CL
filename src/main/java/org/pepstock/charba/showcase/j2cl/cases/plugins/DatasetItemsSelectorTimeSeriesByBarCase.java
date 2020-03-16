@@ -1,7 +1,9 @@
-package org.pepstock.charba.showcase.j2cl.cases.charts;
+package org.pepstock.charba.showcase.j2cl.cases.plugins;
+
+import java.util.Date;
 
 import org.pepstock.charba.client.BarChart;
-import org.pepstock.charba.client.adapters.DateAdapter;
+import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.configuration.CartesianTimeAxis;
 import org.pepstock.charba.client.data.BarDataset;
@@ -10,7 +12,12 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.ScaleBounds;
 import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TimeUnit;
+import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
+import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
+import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -22,21 +29,25 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class TimeSeriesByBarCase extends BaseComposite {
+public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
+	
+	private static final long DAY = 1000 * 60 * 60 * 24;
+
+	private static final int AMOUNT_OF_POINTS = 15;
 
 	private final HTMLTableElement mainPanel;
 
 	private final BarChart chart = new BarChart();
+	
+	private final LogView mylog  =new LogView(4);
 
-	private static final int AMOUNT_OF_POINTS = 15;
+	private long starting = System.currentTimeMillis();
 
-	private final long startingPoint = System.currentTimeMillis();
-
-	public TimeSeriesByBarCase() {
+	public DatasetItemsSelectorTimeSeriesByBarCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -54,30 +65,32 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(3);
+		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Timeseries by bar chart");
+		long time = starting;
 
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 		dataset1.setBackgroundColor(HtmlColor.GREEN);
-
-		DateAdapter adapter = new DateAdapter();
 
 		DataPoint[] points = new DataPoint[AMOUNT_OF_POINTS];
 		DataPoint[] rainPoints = new DataPoint[AMOUNT_OF_POINTS];
 		int idx = 0;
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
 			DataPoint dataPoint = new DataPoint();
-			dataPoint.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			dataPoint.setT(new Date(time));
 			dataPoint.setX(100 * Math.random());
 			points[idx] = dataPoint;
 
 			DataPoint rainPoint = new DataPoint();
-			rainPoint.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			rainPoint.setT(new Date(time));
 			rainPoint.setY(100 * Math.random());
 			rainPoints[idx] = rainPoint;
 
 			idx++;
+			time = time + DAY;
 		}
 		dataset1.setDataPoints(rainPoints);
 
@@ -86,19 +99,21 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		dataset2.setLabel("dataset 2");
 
 		DataPoint[] rainPoints2 = new DataPoint[AMOUNT_OF_POINTS];
+		time = starting;
 		idx = 0;
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
 			DataPoint dataPoint = new DataPoint();
-			dataPoint.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			dataPoint.setT(new Date(time));
 			dataPoint.setX(100 * Math.random());
 			points[idx] = dataPoint;
 
 			DataPoint rainPoint2 = new DataPoint();
-			rainPoint2.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			rainPoint2.setT(new Date(time));
 			rainPoint2.setY(100 * Math.random());
 			rainPoints2[idx] = rainPoint2;
 
 			idx++;
+			time = time + DAY;
 		}
 		dataset2.setDataPoints(rainPoints2);
 
@@ -110,8 +125,33 @@ public class TimeSeriesByBarCase extends BaseComposite {
 
 		chart.getData().setDatasets(dataset1, dataset2);
 		chart.getOptions().getScales().setXAxes(axis);
+
+		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
+		pOptions.setBorderWidth(2);
+		pOptions.setBorderDash(6, 2);
+		pOptions.setBorderColor(HtmlColor.GREY);
+		pOptions.getClearSelection().setDisplay(true);
+		pOptions.getClearSelection().setLabel("Reset selection");
+		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFontSize());
+		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
+		pOptions.setFireEventOnClearSelection(true);
+
+		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
+		chart.getPlugins().add(DatasetsItemsSelector.get());
+
+		chart.addHandler(new DatasetRangeSelectionEventHandler() {
+
+			@Override
+			public void onSelect(DatasetRangeSelectionEvent event) {
+				StringBuilder sb = new StringBuilder();
+				sb.append("Dataset from: ").append(event.getFrom()).append(" ");
+				sb.append("Dataset to: ").append(event.getTo());
+				mylog.addLogEvent(sb.toString());
+			}
+		}, DatasetRangeSelectionEvent.TYPE);
+
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
@@ -146,13 +186,28 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
+		
+		// ----------------------------------------------
+		// Log element
+		// ----------------------------------------------
+		
+		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		logRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(logRow);
+
+		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		logCol.style.width = WidthUnionType.of("100%");
+		logCol.style.textAlign = "center";
+		logCol.vAlign = "top";
+		logRow.appendChild(logCol);
+		logCol.appendChild(mylog.getElement());
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-
+	
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			BarDataset scDataset = (BarDataset) dataset;

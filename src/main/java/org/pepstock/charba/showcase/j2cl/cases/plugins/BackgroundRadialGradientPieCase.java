@@ -1,17 +1,16 @@
-package org.pepstock.charba.showcase.j2cl.cases.elements;
+package org.pepstock.charba.showcase.j2cl.cases.plugins;
 
-import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.PieChart;
+import org.pepstock.charba.client.colors.Gradient;
+import org.pepstock.charba.client.colors.GradientOrientation;
+import org.pepstock.charba.client.colors.GradientScope;
+import org.pepstock.charba.client.colors.GradientType;
 import org.pepstock.charba.client.colors.HtmlColor;
-import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
-import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.data.PieDataset;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.enums.TooltipPosition;
+import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
+import org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -24,17 +23,18 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class TooltipBorderCase extends BaseComposite {
+public class BackgroundRadialGradientPieCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final LineChart chart = new LineChart();
-
-	public TooltipBorderCase() {
+	private final PieChart chart = new PieChart();
+	
+	
+	public BackgroundRadialGradientPieCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -54,56 +54,27 @@ public class TooltipBorderCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Configured tooltip to change borders and style");
-		chart.getOptions().getTooltips().setPosition(TooltipPosition.NEAREST);
-		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
-		chart.getOptions().getTooltips().setIntersect(false);
-		chart.getOptions().getTooltips().setYPadding(10);
-		chart.getOptions().getTooltips().setXPadding(10);
-		chart.getOptions().getTooltips().setCaretSize(8);
-		chart.getOptions().getTooltips().setBackgroundColor("rgba(72, 241, 12, 1)");
-		chart.getOptions().getTooltips().setTitleFontColor(HtmlColor.BLACK);
-		chart.getOptions().getTooltips().setBodyFontColor(HtmlColor.BLACK);
-		chart.getOptions().getTooltips().setBorderColor("rgba(0,0,0,1)");
-		chart.getOptions().getTooltips().setBorderWidth(4);
+		chart.getOptions().getTitle().setText("Chart background plugin on pie chart");
 
-		LineDataset dataset1 = chart.newDataset();
-		dataset1.setLabel("dataset 1");
-
-		IsColor color1 = GoogleChartColor.values()[0];
-
-		dataset1.setBackgroundColor(color1.toHex());
-		dataset1.setBorderColor(color1.toHex());
-		dataset1.setData(getRandomDigits(months));
-		dataset1.setFill(Fill.FALSE);
-
-		LineDataset dataset2 = chart.newDataset();
-		dataset2.setLabel("dataset 2");
-
-		IsColor color2 = GoogleChartColor.values()[1];
-
-		dataset2.setBackgroundColor(color2.toHex());
-		dataset2.setBorderColor(color2.toHex());
-		dataset2.setData(getRandomDigits(months));
-		dataset2.setFill(Fill.FALSE);
-
-		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
-		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
-
-		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
-		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
-
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		PieDataset dataset = chart.newDataset();
+		dataset.setLabel("dataset 1");
+		dataset.setBackgroundColor(getSequenceColors(months, 1));
+		dataset.setData(getRandomDigits(months, false));
 
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset1, dataset2);
-		chartCol.appendChild(chart.getChartElement().as());
+		chart.getData().setDatasets(dataset);
 
+		Gradient gradient = new Gradient(GradientType.RADIAL, GradientOrientation.IN_OUT, GradientScope.CANVAS);
+
+		gradient.addColorStop(0, HtmlColor.WHITE);
+		gradient.addColorStop(1, HtmlColor.GRAY);
+
+		ChartBackgroundColorOptions option = new ChartBackgroundColorOptions();
+		option.setBackgroundColor(gradient);
+
+		chart.getOptions().getPlugins().setOptions(ChartBackgroundColor.ID, option);
+		chartCol.appendChild(chart.getChartElement().as());
+		
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
@@ -116,6 +87,7 @@ public class TooltipBorderCase extends BaseComposite {
 		actionsCol.style.width = WidthUnionType.of("100%");
 		actionsCol.style.textAlign = "center";
 		actionsCol.vAlign = "middle";
+		actionsCol.setAttribute("colspan", "2");
 		actionsRow.appendChild(actionsCol);
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
@@ -127,7 +99,7 @@ public class TooltipBorderCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -139,12 +111,12 @@ public class TooltipBorderCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-
+	
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

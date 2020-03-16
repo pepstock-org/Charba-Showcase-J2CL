@@ -67,7 +67,7 @@ public class HomeView extends BaseComposite {
 		closureCol.width = "30%";
 		closureCol.style.textAlign = "center";
 		HTMLImageElement closureImg = (HTMLImageElement) DomGlobal.document.createElement("img");
-		closureImg.src = "icons/closurecompiler.png";
+		closureImg.src = "images/closurecompiler.png";
 		closureCol.appendChild(closureImg);
 		closureCol.appendChild(DomGlobal.document.createElement("br"));
 		HTMLElement closureSpan = (HTMLElement) DomGlobal.document.createElement("span");
@@ -93,7 +93,7 @@ public class HomeView extends BaseComposite {
 		cjsCol.width = "30%";
 		cjsCol.style.textAlign = "center";
 		HTMLImageElement cjsImg = (HTMLImageElement) DomGlobal.document.createElement("img");
-		cjsImg.src = "icons/chartjs.png";
+		cjsImg.src = "images/chartjs.png";
 		//img.className = "myImgItem";
 		cjsCol.appendChild(cjsImg);
 		cjsCol.appendChild(DomGlobal.document.createElement("br"));
