@@ -11,6 +11,12 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundColorBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundLinearGradientBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundPatternLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundRadialGradientPieCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeBubbleCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePieCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePolarAreaCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase;
@@ -156,32 +162,32 @@ public class PluginsView extends AbstractView {
 	{
 		COLORING_BAR("Coloring bar chart by schemes", new CaseFactory() {
 			public BaseComposite create() {
-				return new BarCase();
+				return new ColorSchemeBarCase();
 			}
 		}),
 		COLORING_LINE("Coloring line chart by schemes", new CaseFactory() {
 			public BaseComposite create() {
-				return new HorizontalBarCase();
+				return new ColorSchemeLineCase();
 			}
 		}),
 		COLORING_RADAR("Coloring radar chart by schemes", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new ColorSchemeRadarCase();
 			}
 		}),
 		COLORING_PIE("Coloring pie chart by schemes", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new ColorSchemePieCase();
 			}
 		}),
 		COLORING_POLAR("Coloring polar area chart by scheme", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new ColorSchemePolarAreaCase();
 			}
 		}),
 		COLORING_BUBBLE("Coloring bubble chart by scheme", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new ColorSchemeBubbleCase();
 			}
 		});
 		
