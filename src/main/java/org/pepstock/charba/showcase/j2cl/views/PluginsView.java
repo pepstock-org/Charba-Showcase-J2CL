@@ -2,10 +2,6 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
-import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.LineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundColorBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundLinearGradientBarCase;
@@ -22,6 +18,18 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrill
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendHorizontalBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendLinearGradientCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendMaxItemsCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPatternCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPieCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPointStylesAsImageCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendRadialGradientCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendSplittingTextCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendStyleCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase;
 
 import elemental2.dom.CSSProperties.PaddingTopUnionType;
@@ -219,62 +227,62 @@ public class PluginsView extends AbstractView {
 	{
 		BAR("Using a bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BarCase();
+				return new HtmlLegendBarCase();
 			}
 		}),
 		HBAR("Using a horizontal bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new HorizontalBarCase();
+				return new HtmlLegendHorizontalBarCase();
 			}
 		}),
 		LINE("Using a line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new HtmlLegendLineCase();
 			}
 		}),
 		PIR("Using a pie chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendPieCase();
 			}
 		}),
 		MAX_LEGEND_ITEMS("Setting max legend items per row", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendMaxItemsCase();
 			}
 		}),
 		SPLITTING("Splitting text by line separator", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendSplittingTextCase();
 			}
 		}),
 		LINEAR_GRADIENT("Managing linear gradients", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendLinearGradientCase();
 			}
 		}),
 		RADIAL_GRADIENT("Managing radial gradients", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendRadialGradientCase();
 			}
 		}),
 		PATTERN("Managing patterns", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendPatternCase();
 			}
 		}),
 		POINT_STYLES("Managing point styles", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendStyleCase();
 			}
 		}),
 		IMAGES_AS_POINT_STYLE("Managing image as point styles", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendPointStylesAsImageCase();
 			}
 		}),
 		CALLBACK("Custom legend item text by callback", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new HtmlLegendCustomCallbackCase();
 			}
 		});
 		
