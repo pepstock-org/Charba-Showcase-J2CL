@@ -199,7 +199,6 @@ public class MainView extends AbstractComposite {
 		if (changeSelection(event)) {
 			clearPreviousChart();
 			new ChartsView(content);
-			// content.add(view);
 		}
 	}
 
@@ -214,14 +213,13 @@ public class MainView extends AbstractComposite {
 		if (changeSelection(event)) {
 			clearPreviousChart();
 			new ElementsView(content);
-			// content.add(new ElementsView(content));
 		}
 	}
 
 	protected void handleColoring(Event event) {
 		if (changeSelection(event)) {
 			clearPreviousChart();
-			// content.add(new ColoringView(content));
+			new ColoringView(content);
 		}
 	}
 

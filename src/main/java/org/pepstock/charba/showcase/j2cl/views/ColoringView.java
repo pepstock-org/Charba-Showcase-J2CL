@@ -2,35 +2,21 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
-import org.pepstock.charba.showcase.j2cl.cases.charts.AxesClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.BubbleCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartHoverEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ComboBarLineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionPieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DoughnutCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.PieCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.PolarAreaCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.RadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ScatterCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.StackedAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.StackedGroupBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.StackedLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -41,14 +27,14 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ChartsView extends AbstractView {
+public class ColoringView extends AbstractView {
 
 	private enum Category
 	{
-		CHARTS("Charts", ChartsCase.values()),
-		OTHER_CHARTS("Other charts", OtherChartsCase.values()),
-		EXTENDED_CHARTS("Extended charts", ExtendedChartsCase.values()),
-		EVENTS("Events", EventsCase.values());
+		PATTERNS("Patterns", PatternsCase.values()),
+		GRADIENTS("Gradients", GradientsCase.values()),
+		TILES("Tiles", TilesCase.values()),
+		FILLING("Filling", FillingCase.values());
 
 		private final String label;
 
@@ -70,54 +56,34 @@ public class ChartsView extends AbstractView {
 	}
 
 	// ----------------------------------------------
-	// CHARTS
+	// PATTERNS
 	// ----------------------------------------------
 
-	private enum ChartsCase implements CaseItem
+	private enum PatternsCase implements CaseItem
 	{
-		BAR("Bar", new CaseFactory() {
+		BAR("Pattern on bar dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new BarCase();
 			}
 		}),
-		HBAR("Horizontal bar", new CaseFactory() {
+		LINE("Pattern on line dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new HorizontalBarCase();
 			}
 		}),
-		LINE("Line", new CaseFactory() {
+		RADAR("Pattern on radar dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new LineCase();
 			}
 		}),
-		SCATTER("Scatter", new CaseFactory() {
+		POLAR("Pattern on polar area dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new ScatterCase();
 			}
 		}),
-		DOUGHNUT("Doughnut", new CaseFactory() {
+		BUBBLE("Pattern on bubble dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new DoughnutCase();
-			}
-		}),
-		PIE("Pie", new CaseFactory() {
-			public BaseComposite create() {
-				return new PieCase();
-			}
-		}),
-		POLAR("Polar area", new CaseFactory() {
-			public BaseComposite create() {
-				return new PolarAreaCase();
-			}
-		}),
-		RADAR("Radar", new CaseFactory() {
-			public BaseComposite create() {
-				return new RadarCase();
-			}
-		}),
-		BUBBLE("Bubble", new CaseFactory() {
-			public BaseComposite create() {
-				return new BubbleCase();
 			}
 		});
 
@@ -125,7 +91,7 @@ public class ChartsView extends AbstractView {
 
 		private final CaseFactory factory;
 
-		private ChartsCase(String label, CaseFactory factory) {
+		private PatternsCase(String label, CaseFactory factory) {
 			this.label = label;
 			this.factory = factory;
 		}
@@ -139,56 +105,36 @@ public class ChartsView extends AbstractView {
 		}
 
 	}
-	
+
 	// ----------------------------------------------
-	// Others CHARTS
+	// GRADIENTS
 	// ----------------------------------------------
-	
-	private enum OtherChartsCase implements CaseItem
+
+	private enum GradientsCase implements CaseItem
 	{
-		TIMESERIES_LINE("Timeseries line", new CaseFactory() {
+		LINEAR_ON_BAR("Linear gradient on bar dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new TimeSeriesLineCase();
 			}
 		}),
-		TIMESERIES_BAR("Timeseries bar", new CaseFactory() {
+		LINEAR_ON_LINE("Linear gradient on line dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new TimeSeriesBarCase();
 			}
 		}),
-		TIMESERIES_BY_LINE("Timeseries by line chart", new CaseFactory() {
+		RADIAL_ON_RADAR("Radial gradient on radar dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new TimeSeriesByLineCase();
 			}
 		}),
-		TIMESERIES_BY_BAR("Timeseries by bar chart", new CaseFactory() {
+		RADIAL_ON_PLOAR("Radial gradient on polar area dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new TimeSeriesByBarCase();
 			}
 		}),
-		STACKED_BAR("Stacked bar", new CaseFactory() {
+		RADIAL_ON_PIE("Radial gradient on pie dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new StackedBarCase();
-			}
-		}),
-		STACKED_GROUP_BAR("Stacked group bar", new CaseFactory() {
-			public BaseComposite create() {
-				return new StackedGroupBarCase();
-			}
-		}),
-		STACKED_LINE("Stacked line", new CaseFactory() {
-			public BaseComposite create() {
-				return new StackedLineCase();
-			}
-		}),
-		STACKED_AREA("Stacked area", new CaseFactory() {
-			public BaseComposite create() {
-				return new StackedAreaCase();
-			}
-		}),
-		COMBINED("Combined bar and line datasets", new CaseFactory() {
-			public BaseComposite create() {
-				return new ComboBarLineCase();
 			}
 		});
 
@@ -196,7 +142,7 @@ public class ChartsView extends AbstractView {
 
 		private final CaseFactory factory;
 
-		private OtherChartsCase(String label, CaseFactory factory) {
+		private GradientsCase(String label, CaseFactory factory) {
 			this.label = label;
 			this.factory = factory;
 		}
@@ -210,18 +156,48 @@ public class ChartsView extends AbstractView {
 		}
 
 	}
-	
+
 	// ----------------------------------------------
-	// EXTENDED CHARTS
+	// TILES
 	// ----------------------------------------------
-	private enum ExtendedChartsCase implements CaseItem
+	private enum TilesCase implements CaseItem
 	{
-		METER("Meter", new CaseFactory() {
+		BAR("Applying on bar dataset", new CaseFactory() {
 			public BaseComposite create() {
 				return new MeterCase();
 			}
 		}),
-		GAUGE("Gauge", new CaseFactory() {
+		LINE("Applying on line dataset", new CaseFactory() {
+			public BaseComposite create() {
+				return new MeterCase();
+			}
+		}),
+		RADAR("Applying on radar dataset", new CaseFactory() {
+			public BaseComposite create() {
+				return new MeterCase();
+			}
+		}),
+		PLOAR("Applying on polar area dataset", new CaseFactory() {
+			public BaseComposite create() {
+				return new MeterCase();
+			}
+		}),
+		DOUGHNUT("Applying on doughnut dataset", new CaseFactory() {
+			public BaseComposite create() {
+				return new MeterCase();
+			}
+		}),
+		IMAGES_SHAPES("Using image shapes", new CaseFactory() {
+			public BaseComposite create() {
+				return new MeterCase();
+			}
+		}),
+		CHARS_SHAPES("Using character shapes", new CaseFactory() {
+			public BaseComposite create() {
+				return new MeterCase();
+			}
+		}),
+		POINT_STYLES_SHAPES("Using point styles shapes", new CaseFactory() {
 			public BaseComposite create() {
 				return new GaugeCase();
 			}
@@ -231,7 +207,7 @@ public class ChartsView extends AbstractView {
 
 		private final CaseFactory factory;
 
-		private ExtendedChartsCase(String label, CaseFactory factory) {
+		private TilesCase(String label, CaseFactory factory) {
 			this.label = label;
 			this.factory = factory;
 		}
@@ -247,54 +223,24 @@ public class ChartsView extends AbstractView {
 	}
 
 	// ----------------------------------------------
-	// Events
+	// FILLING
 	// ----------------------------------------------
 
-	private enum EventsCase implements CaseItem
+	private enum FillingCase implements CaseItem
 	{
-		CHART_CLICK("Chart click events", new CaseFactory() {
+		BOUNDARIES("Setting filling boundaries", new CaseFactory() {
 			public BaseComposite create() {
 				return new ChartClickEventCase();
 			}
 		}),
-		CHART_HOVER("Chart hover events", new CaseFactory() {
+		LINE("Setting filling on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new ChartHoverEventCase();
 			}
 		}),
-		CHART_RESIZE("Chart resize events", new CaseFactory() {
+		RADAR("Setting filling on radar chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new ChartResizeEventCase();
-			}
-		}),
-		DATASET_SELECTION_BAR("Selecting dataset on bar chart", new CaseFactory() {
-			public BaseComposite create() {
-				return new DatasetSelectionBarCase();
-			}
-		}),
-		DATASET_SELECTION_PIE("Selecting dataset on pie chart", new CaseFactory() {
-			public BaseComposite create() {
-				return new DatasetSelectionPieCase();
-			}
-		}),
-		LEGEND_CLICK("Legend click events", new CaseFactory() {
-			public BaseComposite create() {
-				return new LegendClickEventCase();
-			}
-		}),
-		LEGEND_HOVER("Legend hover and leave events", new CaseFactory() {
-			public BaseComposite create() {
-				return new LegendHoverAndLeaveEventsCase();
-			}
-		}),
-		TITLE_CLICK("Title click events", new CaseFactory() {
-			public BaseComposite create() {
-				return new TitleClickEventCase();
-			}
-		}),
-		AXES_CLICK("Axes click events", new CaseFactory() {
-			public BaseComposite create() {
-				return new AxesClickEventCase();
 			}
 		});
 
@@ -302,7 +248,7 @@ public class ChartsView extends AbstractView {
 
 		private final CaseFactory factory;
 
-		private EventsCase(String label, CaseFactory factory) {
+		private FillingCase(String label, CaseFactory factory) {
 			this.label = label;
 			this.factory = factory;
 		}
@@ -316,14 +262,14 @@ public class ChartsView extends AbstractView {
 		}
 
 	}
-	
-	public ChartsView(HTMLElement content) {
+
+	public ColoringView(HTMLElement content) {
 		super(content);
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
 		title.style.textAlign = "center";
 		title.style.width = WidthUnionType.of("100%");
-		title.innerHTML = " available out of the box by CHART.JS or by CHARBA";
-		title.className = "myChartsTitleItem";
+		title.innerHTML = " section to have a look how the chart can use patterns, gradient and colors";
+		title.className = "myColoringTitleItem";
 		content.appendChild(title);
 		content.appendChild(DomGlobal.document.createElement("br"));
 
