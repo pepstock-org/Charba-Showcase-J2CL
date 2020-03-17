@@ -3,24 +3,15 @@ package org.pepstock.charba.showcase.j2cl.views;
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.charts.AxesClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.BubbleCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartHoverEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ComboBarLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionPieCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.DoughnutCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.LineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.PieCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.PolarAreaCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.RadarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedGroupBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedLineCase;
@@ -29,6 +20,23 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsCustomLabelsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDataCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDatasetCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsHighlightCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsIndicesCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsInteractionsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsLinearGradientLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsListenersCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMirrorCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsPolarAreaCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsRadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase;
 
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
@@ -74,87 +82,87 @@ public class ExtensionsView extends AbstractView {
 	{
 		BAR("Using on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BarCase();
+				return new DataLabelsBarCase();
 			}
 		}),
 		BUBBLE("Using on bubble chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new HorizontalBarCase();
+				return new DataLabelsBubbleCase();
 			}
 		}),
 		DOUGHNUT("Using on doughnut chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new DataLabelsDoughnutCase();
 			}
 		}),
 		LINE("Using on line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new DataLabelsLineCase();
 			}
 		}),
 		POLAR("Using on polar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new DoughnutCase();
+				return new DataLabelsPolarAreaCase();
 			}
 		}),
 		RADAR("Using on radar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new PieCase();
+				return new DataLabelsRadarCase();
 			}
 		}),
 		ON_GRADIENT("Applying labels on dataset with gradient", new CaseFactory() {
 			public BaseComposite create() {
-				return new PolarAreaCase();
+				return new DataLabelsLinearGradientLineCase();
 			}
 		}),
 		INTERACTIONS("Interactions among labels on line datasets", new CaseFactory() {
 			public BaseComposite create() {
-				return new RadarCase();
+				return new DataLabelsInteractionsCase();
 			}
 		}),
 		DATA_AMONG_LABELS("Managing data among on labels on line dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsDataCase();
 			}
 		}),
 		JOINING_DATASETS("Joining line datasets", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsDatasetCase();
 			}
 		}),
 		INDEXES("Indexes and values on line datasets", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsIndicesCase();
 			}
 		}),
 		MIRRORING("Mirroring labels on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsMirrorCase();
 			}
 		}),
 		EVENTS("Listening events", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsListenersCase();
 			}
 		}),
 		HOVERING("Highlighting hovered labels", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsHighlightCase();
 			}
 		}),
 		SELECTING("Selecting data by labels", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsSelectionCase();
 			}
 		}),
 		CALLBACKS("Customizing dataset labels on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsCustomLabelsCase();
 			}
 		}),
 		MULTIPLE_OPTIONS("Multiple options on pie chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new BubbleCase();
+				return new DataLabelsMultiLabelsCase();
 			}
 		});
 
