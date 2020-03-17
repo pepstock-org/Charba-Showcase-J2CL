@@ -205,7 +205,7 @@ public class MainView extends AbstractComposite {
 	protected void handleExtensions(Event event) {
 		if (changeSelection(event)) {
 			clearPreviousChart();
-			// content.add(new ExtensionsView(content));
+			new ExtensionsView(content);
 		}
 	}
 
