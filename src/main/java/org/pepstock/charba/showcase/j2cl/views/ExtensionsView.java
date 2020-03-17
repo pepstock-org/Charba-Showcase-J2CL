@@ -2,16 +2,16 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
-import org.pepstock.charba.showcase.j2cl.cases.charts.AxesClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ChartClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ChartHoverEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionPieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationBoxesOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnHorizontalBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnLogarithmicAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnTimeSeriesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsOnCombinedCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsCustomLabelsCase;
@@ -329,37 +329,37 @@ public class ExtensionsView extends AbstractView {
 	{
 		COMBINED("Applying line and box on combined chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ChartClickEventCase();
+				return new AnnotationsOnCombinedCase();
 			}
 		}),
 		LINE("Box annotations on line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ChartHoverEventCase();
+				return new AnnotationBoxesOnLineCase();
 			}
 		}),
 		TIME_SERIES("Line annotation on timeseries chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ChartResizeEventCase();
+				return new AnnotationLineOnTimeSeriesLineCase();
 			}
 		}),
 		HORIZONTAL_BAR("Line annotation on horizontal bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new DatasetSelectionBarCase();
+				return new AnnotationLineOnHorizontalBarCase();
 			}
 		}),
 		LOG_SCALE("Line annotation on logarithmic scale", new CaseFactory() {
 			public BaseComposite create() {
-				return new DatasetSelectionPieCase();
+				return new AnnotationLineOnLogarithmicAxisCase();
 			}
 		}),
 		OBLIQUE_LINE("Oblique line annotation on timeseries chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new LegendClickEventCase();
+				return new AnnotationObliqueLineOnTimeSeriesLineCase();
 			}
 		}),
 		EVENTS("Catching annotations events", new CaseFactory() {
 			public BaseComposite create() {
-				return new AxesClickEventCase();
+				return new AnnotationsEventsOnTimeSeriesCase();
 			}
 		});
 
