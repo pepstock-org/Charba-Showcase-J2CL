@@ -1,13 +1,12 @@
-package org.pepstock.charba.showcase.j2cl.cases.elements;
+package org.pepstock.charba.showcase.j2cl.cases.coloring;
 
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.UpdateConfigurationBuilder;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.PointStyle;
-import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -24,19 +23,19 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class LegendStyleCase extends BaseComposite {
+public class FillingBoundariesCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-
-    private final HTMLSelectElement pointStyle = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	
+    private final HTMLSelectElement fill = (HTMLSelectElement) DomGlobal.document.createElement("select");
     
-    private final HTMLInputElement usePointStyle = (HTMLInputElement) DomGlobal.document.createElement("input");
+    private final HTMLInputElement smooth = (HTMLInputElement) DomGlobal.document.createElement("input");
 
-	LineDataset dataset = null;
+	private LineDataset dataset = null;
 
-	public LegendStyleCase() {
+	public FillingBoundariesCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -57,31 +56,34 @@ public class LegendStyleCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		for (PointStyle style : PointStyle.values()) {
-			HTMLOptionElement styleN = (HTMLOptionElement) DomGlobal.document.createElement("option");
-			styleN.text = style.name();
-			styleN.value = style.name();
-			pointStyle.add(styleN);
+		for (Fill cFill : Fill.values()) {
+			HTMLOptionElement fillN = (HTMLOptionElement) DomGlobal.document.createElement("option");
+			fillN.text = cFill.name();
+			fillN.value = cFill.name();
+			fill.add(fillN);
 		}
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Legend labels styling");
+		chart.getOptions().getTitle().setText("Setting filling modes on line chart");
+		chart.getOptions().setSpanGaps(false);
+		chart.getOptions().getElements().getLine().setTension(0.000001D);
 
 		dataset = chart.newDataset();
 		dataset.setLabel("dataset 1");
-		IsColor color1 = GoogleChartColor.values()[0];
-		dataset.setBackgroundColor(color1.alpha(0.2));
-		dataset.setBorderColor(color1.toHex());
-		dataset.setBorderWidth(1);
-		dataset.setPointBackgroundColor(color1.toHex());
-		dataset.setPointStyle(PointStyle.CIRCLE);
-		dataset.setPointRadius(10);
+		IsColor color = GoogleChartColor.values()[0];
+		dataset.setBackgroundColor(color.alpha(0.2));
+		dataset.setBorderColor(color.toHex());
 		dataset.setData(getRandomDigits(months));
-		dataset.setFill(Fill.ORIGIN);
+		dataset.setFill(Fill.START);
+
+		CartesianLinearAxis axis = new CartesianLinearAxis(chart);
+		axis.getTicks().setAutoSkip(false);
+		axis.getTicks().setMaxRotation(0);
+
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
+		chart.getOptions().getScales().setYAxes(axis);
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -107,40 +109,40 @@ public class LegendStyleCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-
-		String pointStyleId = "pointStyle" + (int)(Math.random() * 1000D);
-
-		HTMLLabelElement labelForPointStyle = (HTMLLabelElement) DomGlobal.document.createElement("label");
-		labelForPointStyle.htmlFor = pointStyleId;
-		labelForPointStyle.appendChild(DomGlobal.document.createTextNode("Point style "));
-		actionsCol.appendChild(labelForPointStyle);
 		
-		pointStyle.id = pointStyleId;
-		pointStyle.oninput = (p0) -> {
-			handlePointStyle();
+		String fillId = "fill" + (int)(Math.random() * 1000D);
+
+		HTMLLabelElement labelForFill = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForFill.htmlFor = fillId;
+		labelForFill.appendChild(DomGlobal.document.createTextNode("Filling mode "));
+		actionsCol.appendChild(labelForFill);
+		
+		fill.id = fillId;
+		fill.oninput = (p0) -> {
+			handleFill();
 			return null;
 		};
-		pointStyle.className = "gwt-ListBox";
-		pointStyle.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(pointStyle);
+		fill.className = "gwt-ListBox";
+		fill.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(fill);
 
-		String usePointStyleId = "usePointStyle" + (int)(Math.random() * 1000D);
+		String smoothId = "smooth" + (int)(Math.random() * 1000D);
 
-		HTMLLabelElement labelForUsePointStyle = (HTMLLabelElement) DomGlobal.document.createElement("label");
-		labelForUsePointStyle.htmlFor = usePointStyleId;
-		labelForUsePointStyle.appendChild(DomGlobal.document.createTextNode("Use point style on legend "));
-		actionsCol.appendChild(labelForUsePointStyle);
+		HTMLLabelElement labelForSmooth = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForSmooth.htmlFor = smoothId;
+		labelForSmooth.appendChild(DomGlobal.document.createTextNode("Smooth"));
+		actionsCol.appendChild(labelForSmooth);
 		
-		usePointStyle.id = usePointStyleId;
-		usePointStyle.onclick = (p0) -> {
-			handleUsePointStyle();
+		smooth.id = smoothId;
+		smooth.onclick = (p0) -> {
+			handleSmooth();
 			return null;
 		};
-		usePointStyle.type = "checkbox";
-		usePointStyle.className = "gwt-CheckBox";
-		usePointStyle.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(usePointStyle);
-		
+		smooth.type = "checkbox";
+		smooth.className = "gwt-CheckBox";
+		smooth.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(smooth);
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -163,27 +165,25 @@ public class LegendStyleCase extends BaseComposite {
 		chart.update();
 	}
 
-	protected void handlePointStyle() {
-		String selected = pointStyle.options.getAt(pointStyle.selectedIndex).value; 
+	protected void handleSmooth() {
+		double value = smooth.checked ? 0.4D : 0.000001D;
+		chart.getOptions().getElements().getLine().setTension(value);
+		chart.reconfigure();
+	}
+
+	protected void handleFill() {
+		String selected = fill.options.getAt(fill.selectedIndex).value;
 		int i = 0;
-		for (PointStyle cPos : PointStyle.values()) {
-			if (cPos.name().equalsIgnoreCase(selected)) {
+		for (Fill cFill : Fill.values()) {
+			if (cFill.name().equalsIgnoreCase(selected)) {
 				IsColor color = GoogleChartColor.values()[i];
 				dataset.setBackgroundColor(color.alpha(0.2));
 				dataset.setBorderColor(color.toHex());
-				dataset.setPointBackgroundColor(color.toHex());
-				dataset.setPointStyle(cPos);
-				usePointStyle.checked = false;
-				handleUsePointStyle();
+				dataset.setFill(cFill);
+				chart.update(UpdateConfigurationBuilder.create().setDuration(1000).build());
 				return;
 			}
 			i++;
 		}
 	}
-
-	protected void handleUsePointStyle() {
-		chart.getOptions().getLegend().getLabels().setUsePointStyle(usePointStyle.checked);
-		chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(1000).build());
-	}
-
 }

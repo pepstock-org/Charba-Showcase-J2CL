@@ -2,23 +2,32 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
-import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ChartClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ChartHoverEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.DoughnutCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.LineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ScatterCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.StackedBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingBoundariesCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingDatasetsOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingDatasetsOnRadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.GwtMaterialColorsCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.LinearGradientBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.LinearGradientLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.PatternBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.PatternBubbleCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.PatternLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.PatternPolarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.PatternRadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.RadialGradientPieCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.RadialGradientPolarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.RadialGradientRadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesCharactersCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesDoughnutCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesImagesCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesPointStylesCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesPolarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.TilesRadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.UiGradientsCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
+import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLDivElement;
@@ -63,27 +72,27 @@ public class ColoringView extends AbstractView {
 	{
 		BAR("Pattern on bar dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new BarCase();
+				return new PatternBarCase();
 			}
 		}),
 		LINE("Pattern on line dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new HorizontalBarCase();
+				return new PatternLineCase();
 			}
 		}),
 		RADAR("Pattern on radar dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new LineCase();
+				return new PatternRadarCase();
 			}
 		}),
 		POLAR("Pattern on polar area dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new ScatterCase();
+				return new PatternPolarCase();
 			}
 		}),
 		BUBBLE("Pattern on bubble dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new DoughnutCase();
+				return new PatternBubbleCase();
 			}
 		});
 
@@ -114,27 +123,27 @@ public class ColoringView extends AbstractView {
 	{
 		LINEAR_ON_BAR("Linear gradient on bar dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesLineCase();
+				return new LinearGradientBarCase();
 			}
 		}),
 		LINEAR_ON_LINE("Linear gradient on line dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesBarCase();
+				return new LinearGradientLineCase();
 			}
 		}),
 		RADIAL_ON_RADAR("Radial gradient on radar dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesByLineCase();
+				return new RadialGradientRadarCase();
 			}
 		}),
 		RADIAL_ON_PLOAR("Radial gradient on polar area dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesByBarCase();
+				return new RadialGradientPolarCase();
 			}
 		}),
 		RADIAL_ON_PIE("Radial gradient on pie dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new StackedBarCase();
+				return new RadialGradientPieCase();
 			}
 		});
 
@@ -164,42 +173,42 @@ public class ColoringView extends AbstractView {
 	{
 		BAR("Applying on bar dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new TilesBarCase();
 			}
 		}),
 		LINE("Applying on line dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new TilesLineCase();
 			}
 		}),
 		RADAR("Applying on radar dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new TilesRadarCase();
 			}
 		}),
 		PLOAR("Applying on polar area dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new TilesPolarCase();
 			}
 		}),
 		DOUGHNUT("Applying on doughnut dataset", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new TilesDoughnutCase();
 			}
 		}),
 		IMAGES_SHAPES("Using image shapes", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new TilesImagesCase();
 			}
 		}),
 		CHARS_SHAPES("Using character shapes", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new TilesCharactersCase();
 			}
 		}),
 		POINT_STYLES_SHAPES("Using point styles shapes", new CaseFactory() {
 			public BaseComposite create() {
-				return new GaugeCase();
+				return new TilesPointStylesCase();
 			}
 		});
 
@@ -230,17 +239,17 @@ public class ColoringView extends AbstractView {
 	{
 		BOUNDARIES("Setting filling boundaries", new CaseFactory() {
 			public BaseComposite create() {
-				return new ChartClickEventCase();
+				return new FillingBoundariesCase();
 			}
 		}),
 		LINE("Setting filling on line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ChartHoverEventCase();
+				return new FillingDatasetsOnLineCase();
 			}
 		}),
 		RADAR("Setting filling on radar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ChartResizeEventCase();
+				return new FillingDatasetsOnRadarCase();
 			}
 		});
 
@@ -316,6 +325,45 @@ public class ColoringView extends AbstractView {
 					};
 				}
 			}
+			
+			if (Category.FILLING.equals(cat)) {
+				HTMLElement labelPalette = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPalette.innerHTML = "Palette";
+				labelPalette.style.textAlign = "left";
+				labelPalette.className = "myCategory";
+				labelPalette.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPalette);
+				
+				HTMLDivElement item1 = (HTMLDivElement) DomGlobal.document.createElement("div");
+				item1.style.textAlign = "left";
+				item1.className = "myCategoryItem";
+				catCol.appendChild(item1);
+				item1.innerHTML = "GWT Material";
+				item1.onclick = (p0) -> {
+					BaseComposite composite = new GwtMaterialColorsCase();
+					if (composite != null) {
+						clearPreviousChart();
+						content.appendChild(composite.getElement());
+					}
+					return null;
+				};
+
+				HTMLDivElement item2 = (HTMLDivElement) DomGlobal.document.createElement("div");
+				item2.style.textAlign = "left";
+				item2.className = "myCategoryItem";
+				catCol.appendChild(item2);
+				item2.innerHTML = "UI Gradients";
+				item2.onclick = (p0) -> {
+					BaseComposite composite = new UiGradientsCase();
+					if (composite != null) {
+						clearPreviousChart();
+						content.appendChild(composite.getElement());
+					}
+					return null;
+				};
+
+			}
+
 		}
 	}
 
