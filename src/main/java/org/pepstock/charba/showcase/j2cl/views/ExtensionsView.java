@@ -6,19 +6,11 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.AxesClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartHoverEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.ComboBarLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionPieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.StackedBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.StackedGroupBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.StackedLineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase;
@@ -37,6 +29,14 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsC
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsPolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsMultiOptionsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsPolarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsPositioningCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingImageRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingLabelRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingPercentageRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase;
 
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
@@ -193,42 +193,42 @@ public class ExtensionsView extends AbstractView {
 	{
 		BAR("Using on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesLineCase();
+				return new LabelsBarCase();
 			}
 		}),
 		POLAR("Using on polar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesBarCase();
+				return new LabelsPolarCase();
 			}
 		}),
 		LABELS("Using dataset label", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesByLineCase();
+				return new LabelsUsingLabelRenderCase();
 			}
 		}),
 		PERCENTAGE("Using percentage values", new CaseFactory() {
 			public BaseComposite create() {
-				return new TimeSeriesByBarCase();
+				return new LabelsUsingPercentageRenderCase();
 			}
 		}),
 		DATA("Using data values", new CaseFactory() {
 			public BaseComposite create() {
-				return new StackedBarCase();
+				return new LabelsUsingValueRenderCase();
 			}
 		}),
 		IMAGES("Using images", new CaseFactory() {
 			public BaseComposite create() {
-				return new StackedGroupBarCase();
+				return new LabelsUsingImageRenderCase();
 			}
 		}),
 		POSITIONING("Positioning", new CaseFactory() {
 			public BaseComposite create() {
-				return new StackedLineCase();
+				return new LabelsPositioningCase();
 			}
 		}),
 		MULTIPLE_OPTIONS("Multiple labels rendering options", new CaseFactory() {
 			public BaseComposite create() {
-				return new ComboBarLineCase();
+				return new LabelsMultiOptionsCase();
 			}
 		});
 
