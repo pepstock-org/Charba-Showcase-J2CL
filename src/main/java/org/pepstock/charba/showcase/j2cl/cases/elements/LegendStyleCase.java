@@ -34,7 +34,7 @@ public class LegendStyleCase extends BaseComposite {
     
     private final HTMLInputElement usePointStyle = (HTMLInputElement) DomGlobal.document.createElement("input");
 
-	LineDataset dataset = null;
+	private LineDataset dataset = null;
 
 	public LegendStyleCase() {
 		// ----------------------------------------------

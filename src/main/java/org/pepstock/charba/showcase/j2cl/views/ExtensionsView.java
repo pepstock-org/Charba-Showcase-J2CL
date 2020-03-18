@@ -2,8 +2,6 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
-import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationBoxesOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnHorizontalBarCase;
@@ -37,6 +35,15 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingImageRender
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingLabelRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingPercentageRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCallbacksOnTimeSeriesCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomModeOnBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnHorizontalBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnScatterCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnTimeSeriesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanOnBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomStyledZoomOnBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomXOnBarCase;
 
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
@@ -258,47 +265,47 @@ public class ExtensionsView extends AbstractView {
 	{
 		PANNING("Panning on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomPanOnBarCase();
 			}
 		}),
 		ZOOM_BAR("Zooming on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomOnBarCase();
 			}
 		}),
 		ZOOM_BY_X("Zooming by X direction on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomXOnBarCase();
 			}
 		}),
 		ZOOM_HORIZONTAL("Zooming on horizontal bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomOnHorizontalBarCase();
 			}
 		}),
 		ZOOM_TIME_SERIES("Zooming on timeseries line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomOnTimeSeriesLineCase();
 			}
 		}),
 		ZOOM_SCATTER("Zooming on scatter chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomOnScatterCase();
 			}
 		}),
 		STYLING("Styling zooming on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomStyledZoomOnBarCase();
 			}
 		}),
 		CALLBACKS("Zoom callbacks on timeseries line chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new MeterCase();
+				return new ZoomCallbacksOnTimeSeriesCase();
 			}
 		}),
 		MODE_CALLBACK("Mode direction callback on bar chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new GaugeCase();
+				return new ZoomModeOnBarCase();
 			}
 		});
 
