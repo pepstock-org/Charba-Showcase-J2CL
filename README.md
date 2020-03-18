@@ -1,6 +1,6 @@
 # Charba Showcase J2CL (still under construction)
 
-This repository contains the source code of the **Charba** showcase, based on J2CL, located [here](http://www.pepstock.org/Charba-Showcase-J2CL/Charba_Showcase_J2CL.html) but not available yet.
+This repository contains the source code of the **Charba** showcase site, based on J2CL, located [here](http://www.pepstock.org/Charba-Showcase-J2CL/Charba_Showcase_J2CL.html) but not available yet.
 
 There are more than 160 samples about all **Charba** capabilities.
 

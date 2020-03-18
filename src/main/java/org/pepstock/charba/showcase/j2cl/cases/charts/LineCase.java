@@ -29,7 +29,6 @@ public class LineCase extends BaseComposite {
 	private final LineChart chart = new LineChart();
 
 	public LineCase() {
-		
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------

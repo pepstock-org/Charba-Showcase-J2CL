@@ -233,7 +233,7 @@ public class MainView extends AbstractComposite {
 	protected void handleMiscellaneous(Event event) {
 		if (changeSelection(event)) {
 			clearPreviousChart();
-			// content.add(new MiscellaneousView(content));
+			new MiscellaneousView(content);
 		}
 	}
 

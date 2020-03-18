@@ -1,12 +1,15 @@
-package org.pepstock.charba.showcase.j2cl.cases.charts;
+package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
 
-import java.util.List;
-
-import org.pepstock.charba.client.HorizontalBarChart;
+import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
+import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.data.HorizontalBarDataset;
+import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.enums.CubicInterpolationMode;
+import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -20,13 +23,17 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class HorizontalBarCase extends BaseComposite {
+public class InterpolationOnLineCase extends BaseComposite {
+
+	private static final int AMOUNT = 12;
 
 	private final HTMLTableElement mainPanel;
 
-	private final HorizontalBarChart chart = new HorizontalBarChart();
+	private final LineChart chart = new LineChart();
 
-	public HorizontalBarCase() {
+	private double[] data = null;
+
+	public InterpolationOnLineCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -46,35 +53,65 @@ public class HorizontalBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-		
-		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.RIGHT);
-		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Horizontal bar chart");
 
-		HorizontalBarDataset dataset1 = chart.newDataset();
-		dataset1.setLabel("dataset 1");
+		super.months = AMOUNT;
+		createData();
+
+		chart.getOptions().setResponsive(true);
+		chart.getOptions().getLegend().setPosition(Position.TOP);
+		chart.getOptions().getTitle().setDisplay(true);
+		chart.getOptions().getTitle().setText("Interpolation options on line chart");
+		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+
+		LineDataset dataset1 = chart.newDataset();
+		dataset1.setLabel("Cubic interpolation (monotone)");
 
 		IsColor color1 = GoogleChartColor.values()[0];
 
-		dataset1.setBackgroundColor(color1.alpha(0.2));
+		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
-		dataset1.setBorderWidth(1);
+		dataset1.setData(data);
+		dataset1.setFill(Fill.FALSE);
+		dataset1.setCubicInterpolationMode(CubicInterpolationMode.MONOTONE);
 
-		dataset1.setData(getRandomDigits(months));
-
-		HorizontalBarDataset dataset2 = new HorizontalBarDataset();
-		dataset2.setLabel("dataset 2");
+		LineDataset dataset2 = chart.newDataset();
+		dataset2.setLabel("Cubic interpolation (default)");
 
 		IsColor color2 = GoogleChartColor.values()[1];
 
-		dataset2.setBackgroundColor(color2.alpha(0.2));
+		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
-		dataset2.setBorderWidth(1);
-		dataset2.setData(getRandomDigits(months));
+		dataset2.setData(data);
+		dataset2.setFill(Fill.FALSE);
+
+		LineDataset dataset3 = chart.newDataset();
+		dataset3.setLabel("Linear interpolation");
+
+		IsColor color3 = GoogleChartColor.values()[2];
+
+		dataset3.setBackgroundColor(color3.toHex());
+		dataset3.setBorderColor(color3.toHex());
+		dataset3.setData(data);
+		dataset3.setFill(Fill.FALSE);
+		dataset3.setLineTension(0);
+
+		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
+		axis1.setDisplay(true);
+		axis1.getScaleLabel().setDisplay(true);
+		axis1.getScaleLabel().setLabelString("Month");
+
+		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
+		axis2.setDisplay(true);
+		axis2.getScaleLabel().setDisplay(true);
+		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTicks().setSuggestedMax(200);
+		axis2.getTicks().setSuggestedMin(-10);
+
+		chart.getOptions().getScales().setXAxes(axis1);
+		chart.getOptions().getScales().setYAxes(axis2);
 
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset1, dataset2);
+		chart.getData().setDatasets(dataset1, dataset2, dataset3);
 		chartCol.appendChild(chart.getChartElement().as());
 		
 		// ----------------------------------------------
@@ -89,73 +126,18 @@ public class HorizontalBarCase extends BaseComposite {
 		actionsCol.style.width = WidthUnionType.of("100%");
 		actionsCol.style.textAlign = "center";
 		actionsCol.vAlign = "middle";
+		actionsCol.setAttribute("colspan", "2");
 		actionsRow.appendChild(actionsCol);
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
-			for (Dataset dataset : chart.getData().getDatasets()) {
-				dataset.setData(getRandomDigits(months));
-			}
-			chart.update();
+			handleRandomize();
 			return null;
 		};
 		randomize.className = "gwt-Button";
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-
-		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		addDataset.onclick = (p0) -> {
-			List<Dataset> datasets = chart.getData().getDatasets();
-
-			HorizontalBarDataset dataset = chart.newDataset();
-			dataset.setLabel("dataset " + (datasets.size() + 1));
-
-			IsColor color = GoogleChartColor.values()[datasets.size()];
-			dataset.setBackgroundColor(color.alpha(0.2));
-			dataset.setBorderColor(color.toHex());
-			dataset.setBorderWidth(1);
-			dataset.setData(getRandomDigits(months));
-
-			datasets.add(dataset);
-
-			chart.update();
-			return null;
-		};
-		addDataset.className = "gwt-Button";
-		addDataset.textContent = "Add dataset";
-		addDataset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(addDataset);
-
-		HTMLButtonElement removeDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		removeDataset.onclick = (p0) -> {
-			removeDataset(chart);
-			return null;
-		};
-		removeDataset.className = "gwt-Button";
-		removeDataset.textContent = "Remove dataset";
-		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(removeDataset);
-
-		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		addData.onclick = (p0) -> {
-			addData(chart);
-			return null;
-		};
-		addData.className = "gwt-Button";
-		addData.textContent = "Add data";
-		addData.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(addData);
-
-		HTMLButtonElement removeData = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		removeData.onclick = (p0) -> {
-			removeData(chart);
-			return null;
-		};
-		removeData.className = "gwt-Button";
-		removeData.textContent = "Remove data";
-		removeData.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(removeData);
 
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
@@ -168,10 +150,27 @@ public class HorizontalBarCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-
+	
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
+	}
+
+	protected void handleRandomize() {
+		createData();
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			dataset.setData(data);
+		}
+		chart.update();
+	}
+
+	private void createData() {
+		data = getRandomDigits(AMOUNT);
+		for (int i = 0; i < AMOUNT; i++) {
+			if (i == 5) {
+				data[i] = Double.NaN;
+			}
+		}
 	}
 
 }

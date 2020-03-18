@@ -27,6 +27,7 @@ public class ProgressBar extends AbstractComposite {
 
 	public ProgressBar() {
 		progress = (HTMLElement) DomGlobal.document.createElement(PROGRESS_TAG);
+		progress.style.width = WidthUnionType.of("90%");
 		percentageLabel = (HTMLElement) DomGlobal.document.createElement("span");
 		percentage = value / max;
 		percentageLabel.innerHTML = Utilities.applyPrecision(percentage, 3);

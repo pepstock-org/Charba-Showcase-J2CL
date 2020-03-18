@@ -1,12 +1,16 @@
-package org.pepstock.charba.showcase.j2cl.cases.charts;
+package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
 
 import java.util.List;
 
-import org.pepstock.charba.client.HorizontalBarChart;
+import org.pepstock.charba.client.IsChart;
+import org.pepstock.charba.client.RadarChart;
+import org.pepstock.charba.client.callbacks.RadiusCallback;
+import org.pepstock.charba.client.callbacks.ScriptableContext;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.data.HorizontalBarDataset;
+import org.pepstock.charba.client.data.RadarDataset;
+import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -20,13 +24,27 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class HorizontalBarCase extends BaseComposite {
+public class CallbacksRadarCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final HorizontalBarChart chart = new HorizontalBarChart();
+	private final RadarChart chart = new RadarChart();
 
-	public HorizontalBarCase() {
+	private final RadiusCallback radiusCallback = new RadiusCallback() {
+
+		@Override
+		public Double invoke(IsChart chart, ScriptableContext context) {
+			int module = context.getIndex() % 2;
+			return context.getDatasetIndex() % 2 == 0 ? module == 0 ? 50D : 25D : module == 0 ? 25D : 50D;
+		}
+
+	};
+
+	private static final double MAX = 20D;
+
+	private static final double MIN = 5D;
+
+	public CallbacksRadarCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -48,35 +66,43 @@ public class HorizontalBarCase extends BaseComposite {
 		// ----------------------------------------------
 		
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.RIGHT);
+		chart.getOptions().setMaintainAspectRatio(true);
+		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Horizontal bar chart");
+		chart.getOptions().getTitle().setText("Callbacks on radar chart dataset");
 
-		HorizontalBarDataset dataset1 = chart.newDataset();
+		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setIntersect(false);
+		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
+		chart.getOptions().getHover().setIntersect(true);
+
+		List<Dataset> datasets = chart.getData().getDatasets(true);
+
+		RadarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
-		IsColor color1 = GoogleChartColor.values()[0];
+		IsColor color = GoogleChartColor.values()[0];
 
-		dataset1.setBackgroundColor(color1.alpha(0.2));
-		dataset1.setBorderColor(color1.toHex());
-		dataset1.setBorderWidth(1);
+		dataset1.setBackgroundColor(color.alpha(0.2D));
+		dataset1.setBorderColor(color);
+		dataset1.setPointBackgroundColor(color);
+		dataset1.setPointRadius(new RadiusCallback() {
 
-		dataset1.setData(getRandomDigits(months));
+			@Override
+			public Double invoke(IsChart chart, ScriptableContext context) {
+				return (double) ((int) (Math.random() * (MAX - MIN))) + MIN;
+			}
+		});
+		double[] values = getRandomDigits(months);
+		dataset1.setPointHoverBackgroundColor(color);
+		dataset1.setPointHoverRadius(radiusCallback);
 
-		HorizontalBarDataset dataset2 = new HorizontalBarDataset();
-		dataset2.setLabel("dataset 2");
-
-		IsColor color2 = GoogleChartColor.values()[1];
-
-		dataset2.setBackgroundColor(color2.alpha(0.2));
-		dataset2.setBorderColor(color2.toHex());
-		dataset2.setBorderWidth(1);
-		dataset2.setData(getRandomDigits(months));
+		dataset1.setData(values);
+		datasets.add(dataset1);
 
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset1, dataset2);
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
@@ -93,10 +119,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
-			for (Dataset dataset : chart.getData().getDatasets()) {
-				dataset.setData(getRandomDigits(months));
-			}
-			chart.update();
+			handleRandomize();
 			return null;
 		};
 		randomize.className = "gwt-Button";
@@ -104,42 +127,9 @@ public class HorizontalBarCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
-		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		addDataset.onclick = (p0) -> {
-			List<Dataset> datasets = chart.getData().getDatasets();
-
-			HorizontalBarDataset dataset = chart.newDataset();
-			dataset.setLabel("dataset " + (datasets.size() + 1));
-
-			IsColor color = GoogleChartColor.values()[datasets.size()];
-			dataset.setBackgroundColor(color.alpha(0.2));
-			dataset.setBorderColor(color.toHex());
-			dataset.setBorderWidth(1);
-			dataset.setData(getRandomDigits(months));
-
-			datasets.add(dataset);
-
-			chart.update();
-			return null;
-		};
-		addDataset.className = "gwt-Button";
-		addDataset.textContent = "Add dataset";
-		addDataset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(addDataset);
-
-		HTMLButtonElement removeDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		removeDataset.onclick = (p0) -> {
-			removeDataset(chart);
-			return null;
-		};
-		removeDataset.className = "gwt-Button";
-		removeDataset.textContent = "Remove dataset";
-		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(removeDataset);
-
 		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addData.onclick = (p0) -> {
-			addData(chart);
+			handleAddData();
 			return null;
 		};
 		addData.className = "gwt-Button";
@@ -149,7 +139,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		HTMLButtonElement removeData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		removeData.onclick = (p0) -> {
-			removeData(chart);
+			handleRemoveData();
 			return null;
 		};
 		removeData.className = "gwt-Button";
@@ -172,6 +162,21 @@ public class HorizontalBarCase extends BaseComposite {
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
+	}
+
+	protected void handleRandomize() {
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			dataset.setData(getRandomDigits(months));
+		}
+		chart.update();
+	}
+
+	protected void handleAddData() {
+		addData(chart);
+	}
+
+	protected void handleRemoveData() {
+		removeData(chart);
 	}
 
 }
