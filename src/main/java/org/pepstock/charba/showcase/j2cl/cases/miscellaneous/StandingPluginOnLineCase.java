@@ -57,7 +57,7 @@ public class StandingPluginOnLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -151,11 +151,11 @@ public class StandingPluginOnLineCase extends BaseComposite {
 		};
 		chart.getPlugins().add(p);
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -178,7 +178,7 @@ public class StandingPluginOnLineCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

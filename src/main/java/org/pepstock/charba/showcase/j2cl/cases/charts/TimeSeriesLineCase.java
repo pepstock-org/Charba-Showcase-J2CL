@@ -46,11 +46,11 @@ public class TimeSeriesLineCase extends BaseComposite {
 	private final long startingPoint = System.currentTimeMillis();
 
 	public TimeSeriesLineCase() {
-		
+
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -68,7 +68,7 @@ public class TimeSeriesLineCase extends BaseComposite {
 		// ----------------------------------------------
 
 		DateAdapter adapter = new DateAdapter();
-		
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Timeseries line chart");
@@ -105,7 +105,6 @@ public class TimeSeriesLineCase extends BaseComposite {
 		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
 
-
 		double[] xs1 = getRandomDigits(AMOUNT_OF_POINTS, false);
 		double[] xs2 = getRandomDigits(AMOUNT_OF_POINTS, false);
 		List<TimeSeriesItem> data = new LinkedList<>();
@@ -135,7 +134,7 @@ public class TimeSeriesLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -167,7 +166,7 @@ public class TimeSeriesLineCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

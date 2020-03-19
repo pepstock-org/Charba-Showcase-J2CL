@@ -45,7 +45,7 @@ public class AnimationCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -61,7 +61,7 @@ public class AnimationCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-		
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
@@ -131,7 +131,7 @@ public class AnimationCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -208,7 +208,7 @@ public class AnimationCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

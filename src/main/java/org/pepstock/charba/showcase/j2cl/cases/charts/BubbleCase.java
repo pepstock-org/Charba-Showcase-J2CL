@@ -24,17 +24,17 @@ public class BubbleCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final BubbleChart chart = new BubbleChart();
-	
+
 	private static final int AMOUNT_OF_POINTS = 16;
 	private static final int MIN_XY = -150;
 	private static final int MAX_XY = 100;
 
 	public BubbleCase() {
-		
+
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -50,7 +50,7 @@ public class BubbleCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-		
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setDisplay(false);
 		chart.getOptions().getTitle().setDisplay(true);
@@ -85,13 +85,13 @@ public class BubbleCase extends BaseComposite {
 		dataset1.setDataPoints(dp1);
 
 		chart.getData().setDatasets(dataset1);
-		
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);

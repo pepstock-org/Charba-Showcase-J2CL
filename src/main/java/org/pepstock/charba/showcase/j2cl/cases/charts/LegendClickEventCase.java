@@ -34,15 +34,15 @@ public class LegendClickEventCase extends BaseComposite {
 
 	private final LineChart chart = new LineChart();
 
-	private final LogView mylog  =new LogView();
-	
+	private final LogView mylog = new LogView();
+
 	private final HTMLInputElement forward = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	public LegendClickEventCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -124,11 +124,11 @@ public class LegendClickEventCase extends BaseComposite {
 
 		chart.getPlugins().add(ChartPointer.get());
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -149,14 +149,14 @@ public class LegendClickEventCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String id = "forward " + (int)(Math.random() * 1000D);
+
+		String id = "forward " + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForForward = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForForward.htmlFor = id;
 		labelForForward.appendChild(DomGlobal.document.createTextNode("Forward event to default CHART.JS handler"));
 		actionsCol.appendChild(labelForForward);
-		
+
 		forward.id = id;
 		forward.type = "checkbox";
 		forward.className = "gwt-CheckBox";
@@ -173,11 +173,11 @@ public class LegendClickEventCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);
@@ -189,7 +189,7 @@ public class LegendClickEventCase extends BaseComposite {
 		logRow.appendChild(logCol);
 		logCol.appendChild(mylog.getElement());
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

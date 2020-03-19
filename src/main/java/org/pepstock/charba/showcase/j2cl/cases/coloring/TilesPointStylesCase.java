@@ -33,12 +33,12 @@ public class TilesPointStylesCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
-    private final HTMLSelectElement pointStyles = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
-    private final HTMLSelectElement background = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private final HTMLSelectElement pointStyles = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
-    private final HTMLSelectElement color = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private final HTMLSelectElement background = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLSelectElement color = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
 	private LineDataset dataset1 = null;
 
@@ -46,7 +46,7 @@ public class TilesPointStylesCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -131,7 +131,7 @@ public class TilesPointStylesCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
+
 		configListBox(actionsCol, pointStyles, "Point style ", "pointStyles");
 
 		configListBox(actionsCol, color, "Color ", "color");
@@ -173,16 +173,15 @@ public class TilesPointStylesCase extends BaseComposite {
 		dataset1.setBackgroundColor(p);
 		chart.update();
 	}
-	
-	
+
 	private void configListBox(HTMLTableCellElement actionsCol, HTMLSelectElement listBox, String label, String prefixId) {
-		String listId = prefixId + (int)(Math.random() * 1000D);
+		String listId = prefixId + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForListBox = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForListBox.htmlFor = listId;
 		labelForListBox.appendChild(DomGlobal.document.createTextNode(label));
 		actionsCol.appendChild(labelForListBox);
-		
+
 		listBox.id = listId;
 		listBox.oninput = (p0) -> {
 			handleShapes();

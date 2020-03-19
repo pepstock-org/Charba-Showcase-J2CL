@@ -28,8 +28,7 @@ public class BackgroundRadialGradientPieCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final PieChart chart = new PieChart();
-	
-	
+
 	public BackgroundRadialGradientPieCase() {
 		// ----------------------------------------------
 		// Main element
@@ -74,11 +73,11 @@ public class BackgroundRadialGradientPieCase extends BaseComposite {
 
 		chart.getOptions().getPlugins().setOptions(ChartBackgroundColor.ID, option);
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -111,7 +110,7 @@ public class BackgroundRadialGradientPieCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

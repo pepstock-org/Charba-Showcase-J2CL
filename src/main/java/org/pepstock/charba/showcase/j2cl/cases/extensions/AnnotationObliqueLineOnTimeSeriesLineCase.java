@@ -48,7 +48,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 	private static final long DAY = 1000 * 60 * 60 * 24;
 
 	private static final int AMOUNT_OF_POINTS = 60;
-	
+
 	private static final int PRE_AMOUNT_OF_POINTS = AMOUNT_OF_POINTS / 2;
 
 	private final HTMLTableElement mainPanel;
@@ -170,7 +170,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -190,7 +190,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-	
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -207,7 +207,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;

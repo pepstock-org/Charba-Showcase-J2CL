@@ -25,7 +25,7 @@ import elemental2.dom.HTMLTableRowElement;
 public class TilesImagesCase extends BaseComposite {
 
 	private static final int ITEMS = 5;
-	
+
 	private final HTMLTableElement mainPanel;
 
 	private final DoughnutChart chart = new DoughnutChart();
@@ -51,12 +51,8 @@ public class TilesImagesCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		ImageShape[] imgShapes = { new ImageShape(CastHelper.toImg(Images.get().githubWhite)), 
-				new ImageShape(CastHelper.toImg(Images.get().extensionWhite)), 
-				new ImageShape(CastHelper.toImg(Images.get().fingerprintWhite)), 
-				new ImageShape(CastHelper.toImg(Images.get().headlineWhite)),
-				new ImageShape(CastHelper.toImg(Images.get().visibilityWhite))
-		};
+		ImageShape[] imgShapes = { new ImageShape(CastHelper.toImg(Images.get().githubWhite)), new ImageShape(CastHelper.toImg(Images.get().extensionWhite)), new ImageShape(CastHelper.toImg(Images.get().fingerprintWhite)),
+				new ImageShape(CastHelper.toImg(Images.get().headlineWhite)), new ImageShape(CastHelper.toImg(Images.get().visibilityWhite)) };
 
 		Pattern[] tiles = new Pattern[ITEMS];
 		for (int i = 0; i < ITEMS; i++) {

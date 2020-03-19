@@ -46,17 +46,17 @@ public class PointerLineCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
-    private final HTMLSelectElement cursor = (HTMLSelectElement) DomGlobal.document.createElement("select");
-    
-    private final HTMLInputElement dataset = (HTMLInputElement) DomGlobal.document.createElement("input");
-   
-    private final HTMLInputElement legend = (HTMLInputElement) DomGlobal.document.createElement("input");
-    
-    private final HTMLInputElement title = (HTMLInputElement) DomGlobal.document.createElement("input");
-    
-    private final HTMLInputElement axes = (HTMLInputElement) DomGlobal.document.createElement("input");
-    
+
+	private final HTMLSelectElement cursor = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLInputElement dataset = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLInputElement legend = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLInputElement title = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLInputElement axes = (HTMLInputElement) DomGlobal.document.createElement("input");
+
 	private final LogView mylog = new LogView(4);
 
 	private final ChartPointerOptions options = new ChartPointerOptions();
@@ -212,7 +212,7 @@ public class PointerLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -232,14 +232,14 @@ public class PointerLineCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String cursorId = "cursor" + (int)(Math.random() * 1000D);
+
+		String cursorId = "cursor" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForCursor = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForCursor.htmlFor = cursorId;
 		labelForCursor.appendChild(DomGlobal.document.createTextNode("Cursor  type "));
 		actionsCol.appendChild(labelForCursor);
-		
+
 		cursor.id = cursorId;
 		cursor.oninput = (p0) -> {
 			handleCursor();
@@ -248,7 +248,7 @@ public class PointerLineCase extends BaseComposite {
 		cursor.className = "gwt-ListBox";
 		cursor.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(cursor);
-		
+
 		configCheckBox(actionsCol, dataset, "Dataset ", "dataset");
 		dataset.onclick = (p0) -> {
 			handleElement();
@@ -283,11 +283,11 @@ public class PointerLineCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);
@@ -304,7 +304,7 @@ public class PointerLineCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));
@@ -337,15 +337,15 @@ public class PointerLineCase extends BaseComposite {
 			elements.remove(element);
 		}
 	}
-	
+
 	private void configCheckBox(HTMLTableCellElement actionsCol, HTMLInputElement checkBox, String label, String prefixId) {
-		String checkBoxId = prefixId + (int)(Math.random() * 1000D);
+		String checkBoxId = prefixId + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForCheckBox = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForCheckBox.htmlFor = checkBoxId;
 		labelForCheckBox.appendChild(DomGlobal.document.createTextNode(label));
 		actionsCol.appendChild(labelForCheckBox);
-		
+
 		checkBox.id = checkBoxId;
 		checkBox.type = "checkbox";
 		checkBox.className = "gwt-CheckBox";

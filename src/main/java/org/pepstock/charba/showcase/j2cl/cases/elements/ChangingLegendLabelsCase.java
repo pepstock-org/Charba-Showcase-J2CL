@@ -39,7 +39,7 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -130,7 +130,7 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -191,13 +191,13 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
 
-		String useDefaultsId = "useDefault" + (int)(Math.random() * 1000D);
+		String useDefaultsId = "useDefault" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForUseDefaults = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForUseDefaults.htmlFor = useDefaultsId;
 		labelForUseDefaults.appendChild(DomGlobal.document.createTextNode("Use default "));
 		actionsCol.appendChild(labelForUseDefaults);
-		
+
 		useDefault.id = useDefaultsId;
 		useDefault.onclick = (p0) -> {
 			handleFilter();
@@ -207,7 +207,7 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 		useDefault.className = "gwt-CheckBox";
 		useDefault.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(useDefault);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -224,7 +224,7 @@ public class ChangingLegendLabelsCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

@@ -33,7 +33,7 @@ public class LabelsUsingValueRenderCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final PieChart chart = new PieChart();
-	
+
 	private final HTMLInputElement format = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final MyRenderer renderer = new MyRenderer();
@@ -88,7 +88,7 @@ public class LabelsUsingValueRenderCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -148,14 +148,14 @@ public class LabelsUsingValueRenderCase extends BaseComposite {
 		removeData.textContent = "Remove data";
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
-		
-		String formatId = "format" + (int)(Math.random() * 1000D);
+
+		String formatId = "format" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForFormat = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForFormat.htmlFor = formatId;
 		labelForFormat.appendChild(DomGlobal.document.createTextNode("Format value "));
 		actionsCol.appendChild(labelForFormat);
-		
+
 		format.id = formatId;
 		format.onclick = (p0) -> {
 			handleFormat();

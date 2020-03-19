@@ -40,7 +40,7 @@ public class DataLabelsSelectionCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
+
 	private final LogView mylog = new LogView();
 
 	private final Map<Integer, SelectionItem> items = new HashMap<>();
@@ -178,7 +178,7 @@ public class DataLabelsSelectionCase extends BaseComposite {
 					items.put(key, new SelectionItem(context.getDatasetIndex(), context.getIndex(), ds.getData().get(context.getIndex())));
 				}
 				if (!items.isEmpty()) {
-					mylog.addLogEvent(items.values().size()+" selected labels");
+					mylog.addLogEvent(items.values().size() + " selected labels");
 				}
 				return true;
 			}
@@ -190,7 +190,7 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -230,7 +230,7 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		removeData.textContent = "Remove data";
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
-	
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -241,11 +241,11 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);
@@ -262,7 +262,7 @@ public class DataLabelsSelectionCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months, false));

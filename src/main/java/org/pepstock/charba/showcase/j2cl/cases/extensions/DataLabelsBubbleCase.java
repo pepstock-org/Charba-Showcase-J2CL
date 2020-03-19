@@ -38,7 +38,7 @@ public class DataLabelsBubbleCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final BubbleChart chart = new BubbleChart();
-	
+
 	public DataLabelsBubbleCase() {
 		// ----------------------------------------------
 		// Main element
@@ -140,7 +140,7 @@ public class DataLabelsBubbleCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -160,7 +160,7 @@ public class DataLabelsBubbleCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-	
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");

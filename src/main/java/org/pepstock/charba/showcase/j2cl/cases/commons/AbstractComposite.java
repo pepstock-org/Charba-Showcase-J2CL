@@ -16,7 +16,7 @@ public abstract class AbstractComposite {
 	protected static final double[] FIXED = new double[] { 20, 10, 40, 35, 50, 70, 80, 30, 55, 15, 100, 90 };
 
 	protected int months = 7;
-	
+
 	public abstract HTMLElement getElement();
 
 	protected String[] getLabels() {

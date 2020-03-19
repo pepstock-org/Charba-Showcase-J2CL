@@ -37,7 +37,7 @@ public class FillingDatasetsOnRadarCase extends BaseComposite {
 	private final RadarChart chart = new RadarChart();
 
 	private final HTMLInputElement smooth = (HTMLInputElement) DomGlobal.document.createElement("input");
-	
+
 	private final HTMLInputElement propagate = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final FillerOptions options = new FillerOptions();
@@ -46,7 +46,7 @@ public class FillingDatasetsOnRadarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -105,7 +105,7 @@ public class FillingDatasetsOnRadarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -126,13 +126,13 @@ public class FillingDatasetsOnRadarCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
-		String smoothId = "smooth" + (int)(Math.random() * 1000D);
+		String smoothId = "smooth" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForSmooth = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForSmooth.htmlFor = smoothId;
 		labelForSmooth.appendChild(DomGlobal.document.createTextNode("Smooth "));
 		actionsCol.appendChild(labelForSmooth);
-		
+
 		smooth.id = smoothId;
 		smooth.onclick = (p0) -> {
 			handleSmooth();
@@ -143,13 +143,13 @@ public class FillingDatasetsOnRadarCase extends BaseComposite {
 		smooth.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(smooth);
 
-		String propagateId = "propagate" + (int)(Math.random() * 1000D);
+		String propagateId = "propagate" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForPropagate = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForPropagate.htmlFor = propagateId;
 		labelForPropagate.appendChild(DomGlobal.document.createTextNode("Propagate "));
 		actionsCol.appendChild(labelForPropagate);
-		
+
 		propagate.id = propagateId;
 		propagate.onclick = (p0) -> {
 			handlePropagate();
@@ -160,7 +160,6 @@ public class FillingDatasetsOnRadarCase extends BaseComposite {
 		propagate.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(propagate);
 
-		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -177,7 +176,7 @@ public class FillingDatasetsOnRadarCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		// radar chart doesn't support stacked values, let's do it manually
 		double increment = 10;

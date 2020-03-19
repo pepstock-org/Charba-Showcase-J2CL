@@ -25,15 +25,15 @@ public class ScatterCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final ScatterChart chart = new ScatterChart();
-	
+
 	private static final int AMOUNT_OF_POINTS = 16;
 
 	public ScatterCase() {
-		
+
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -90,13 +90,13 @@ public class ScatterCase extends BaseComposite {
 		dataset2.setDataPoints(dp2);
 
 		chart.getData().setDatasets(dataset1, dataset2);
-		
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -136,7 +136,7 @@ public class ScatterCase extends BaseComposite {
 		removeDataset.textContent = "Remove dataset";
 		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeDataset);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");

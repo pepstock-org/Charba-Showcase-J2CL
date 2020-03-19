@@ -51,7 +51,7 @@ public class FlagsPluginOnBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -67,7 +67,7 @@ public class FlagsPluginOnBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-		
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.RIGHT);
 		chart.getOptions().getTitle().setDisplay(true);
@@ -95,19 +95,19 @@ public class FlagsPluginOnBarCase extends BaseComposite {
 		chart.addHandler(new ChartResizeEventHandler() {
 
 			// FIXME
-//			private final Timer t = new Timer() {
-//				@Override
-//				public void run() {
-//					chart.reset();
-//					chart.draw();
-//				}
-//			};
+			// private final Timer t = new Timer() {
+			// @Override
+			// public void run() {
+			// chart.reset();
+			// chart.draw();
+			// }
+			// };
 
 			@Override
 			public void onResize(final ChartResizeEvent event) {
 				int width = event.getSize().getWidth();
 				calculateAndSetScaleLabelPadding(width);
-//				t.schedule(500);
+				// t.schedule(500);
 			}
 		}, ChartResizeEvent.TYPE);
 
@@ -160,11 +160,11 @@ public class FlagsPluginOnBarCase extends BaseComposite {
 		};
 		chart.getPlugins().add(p);
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);

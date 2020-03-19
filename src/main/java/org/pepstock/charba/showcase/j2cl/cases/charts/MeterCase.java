@@ -22,15 +22,14 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-
 public class MeterCase extends BaseComposite {
-	
+
 	private final HTMLTableElement mainPanel;
-	
+
 	private final MeterChart chartPercent = new MeterChart();
-	
+
 	private final MeterChart chartValue = new MeterChart();
-	
+
 	private final MeterChart chartValueColor = new MeterChart();
 
 	private final List<MeterDataset> datasets = new ArrayList<MeterDataset>();
@@ -39,7 +38,7 @@ public class MeterCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -76,49 +75,49 @@ public class MeterCase extends BaseComposite {
 		chartPercent.getOptions().getTitle().setText("METER chart to represent percentage value");
 		chartPercent.getOptions().setDisplay(MeterDisplay.PERCENTAGE);
 		chartPercent.getOptions().setValueCallback(new ValueCallback() {
-			
+
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
-				return Utilities.applyPrecision(value*100, 2)+"%";
+				return Utilities.applyPrecision(value * 100, 2) + "%";
 			}
 		});
 		chartPercent.getData().setDatasets(getDataset(chartPercent, "Percent", 100D));
-		
+
 		chartCol11.appendChild(chartPercent.getChartElement().as());
 
 		chartValue.getOptions().getTitle().setDisplay(true);
 		chartValue.getOptions().getTitle().setText("METER chart to represent value and dataset label");
 		chartValue.getOptions().setDisplay(MeterDisplay.VALUE_AND_LABEL);
 		chartValue.getOptions().setValueCallback(new ValueCallback() {
-			
+
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
-				return Utilities.applyPrecision(value, 0)+" MB";
+				return Utilities.applyPrecision(value, 0) + " MB";
 			}
 		});
 		chartValue.getData().setDatasets(getDataset(chartPercent, "memory", 2048D));
-		
+
 		chartCol12.appendChild(chartValue.getChartElement().as());
 
 		chartValueColor.getOptions().getTitle().setDisplay(true);
 		chartValueColor.getOptions().getTitle().setText("METER chart to represent value and dataset label", "changing the color of label");
 		chartValueColor.getOptions().setDisplay(MeterDisplay.VALUE_AND_LABEL);
 		chartValueColor.getOptions().setValueCallback(new ValueCallback() {
-			
+
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
-				return Utilities.applyPrecision(value, 0)+" GB";
+				return Utilities.applyPrecision(value, 0) + " GB";
 			}
 		});
 		chartValueColor.getOptions().setDisplayFontColor(ColorBuilder.build(90, 173, 255));
 		chartValueColor.getData().setDatasets(getDataset(chartValueColor, "Storage", 200D));
-		
+
 		chartCol21.appendChild(chartValueColor.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -151,7 +150,7 @@ public class MeterCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

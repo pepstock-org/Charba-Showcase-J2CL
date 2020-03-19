@@ -27,6 +27,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsC
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsPolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsMultiOptionsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsPolarCase;
@@ -45,6 +46,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanOnBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomStyledZoomOnBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomXOnBarCase;
 
+import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLDivElement;
@@ -441,6 +443,29 @@ public class ExtensionsView extends AbstractView {
 						return null;
 					};
 				}
+			}
+			
+			if (Category.ANNOTATION.equals(cat)) {
+				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPointer.innerHTML = "Importing Chart.JS plugin";
+				labelPointer.style.textAlign = "left";
+				labelPointer.className = "myCategory";
+				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPointer);
+				
+				HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+				item.style.textAlign = "left";
+				item.className = "myCategoryItem";
+				catCol.appendChild(item);
+				item.innerHTML = "Using Stacked100 plugin";
+				item.onclick = (p0) -> {
+					BaseComposite composite = new ImportingPluginCase();
+					if (composite != null) {
+						clearPreviousChart();
+						content.appendChild(composite.getElement());
+					}
+					return null;
+				};
 			}
 		}
 	}

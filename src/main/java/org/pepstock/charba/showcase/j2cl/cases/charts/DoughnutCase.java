@@ -21,19 +21,18 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-
 public class DoughnutCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
-	
+
 	private final DoughnutChart chart = new DoughnutChart();
 
 	public DoughnutCase() {
-		
+
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -63,13 +62,13 @@ public class DoughnutCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels(months));
 		chart.getData().setDatasets(dataset);
-		
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -109,7 +108,7 @@ public class DoughnutCase extends BaseComposite {
 		removeDataset.textContent = "Remove dataset";
 		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeDataset);
-		
+
 		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addData.onclick = (p0) -> {
 			handleAddData();
@@ -130,13 +129,13 @@ public class DoughnutCase extends BaseComposite {
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
 
-		String id = "semiCircle " + (int)(Math.random() * 1000D);
+		String id = "semiCircle " + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForCircle = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForCircle.htmlFor = id;
 		labelForCircle.appendChild(DomGlobal.document.createTextNode("Semi circle"));
 		actionsCol.appendChild(labelForCircle);
-		
+
 		HTMLInputElement semiCircle = (HTMLInputElement) DomGlobal.document.createElement("input");
 		semiCircle.id = id;
 		semiCircle.onclick = (p0) -> {
@@ -147,7 +146,7 @@ public class DoughnutCase extends BaseComposite {
 		semiCircle.className = "gwt-CheckBox";
 		semiCircle.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(semiCircle);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");

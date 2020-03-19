@@ -132,7 +132,7 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -192,14 +192,14 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 		removeData.textContent = "Remove data";
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
-		
-		String maxItemsId = "maxItems" + (int)(Math.random() * 1000D);
+
+		String maxItemsId = "maxItems" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForMaxItems = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForMaxItems.htmlFor = maxItemsId;
 		labelForMaxItems.appendChild(DomGlobal.document.createTextNode("Max legend items per row "));
 		actionsCol.appendChild(labelForMaxItems);
-		
+
 		maxItems.id = maxItemsId;
 		maxItems.oninput = (p0) -> {
 			handleMaxItems();
@@ -208,7 +208,7 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 		maxItems.className = "gwt-ListBox";
 		maxItems.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(maxItems);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -225,7 +225,7 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));
@@ -234,7 +234,7 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 	}
 
 	protected void handleMaxItems() {
-		String selected = maxItems.options.getAt(maxItems.selectedIndex).value; 
+		String selected = maxItems.options.getAt(maxItems.selectedIndex).value;
 		HtmlLegendOptions options = chart.getOptions().getPlugins().getOptions(HtmlLegend.ID, HtmlLegend.FACTORY);
 		options.setMaximumLegendColumns(Integer.parseInt(selected));
 		chart.getOptions().getPlugins().setOptions(HtmlLegend.ID, options);

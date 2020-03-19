@@ -36,12 +36,11 @@ public class SimpleLabelPluginOnBarCase extends BaseComposite {
 
 	private final BarChart chart = new BarChart();
 
-
 	public SimpleLabelPluginOnBarCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -122,11 +121,11 @@ public class SimpleLabelPluginOnBarCase extends BaseComposite {
 		};
 		chart.getPlugins().add(p);
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -159,7 +158,7 @@ public class SimpleLabelPluginOnBarCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

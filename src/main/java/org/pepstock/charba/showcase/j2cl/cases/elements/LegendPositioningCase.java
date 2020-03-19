@@ -28,7 +28,7 @@ public class LegendPositioningCase extends BaseComposite {
 
 	private final LineChart chart = new LineChart();
 
-    private final HTMLSelectElement position = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private final HTMLSelectElement position = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
 	private LineDataset dataset;
 
@@ -36,7 +36,7 @@ public class LegendPositioningCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -79,7 +79,7 @@ public class LegendPositioningCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -100,13 +100,13 @@ public class LegendPositioningCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
-		String positionId = "position" + (int)(Math.random() * 1000D);
+		String positionId = "position" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForPosition = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForPosition.htmlFor = positionId;
 		labelForPosition.appendChild(DomGlobal.document.createTextNode("Position "));
 		actionsCol.appendChild(labelForPosition);
-		
+
 		position.id = positionId;
 		position.oninput = (p0) -> {
 			handlePosition();
@@ -115,7 +115,7 @@ public class LegendPositioningCase extends BaseComposite {
 		position.className = "gwt-ListBox";
 		position.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(position);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -132,7 +132,7 @@ public class LegendPositioningCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		dataset.setData(getRandomDigits(months));
 		chart.update();

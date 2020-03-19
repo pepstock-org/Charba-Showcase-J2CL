@@ -42,7 +42,7 @@ public class TooltipHTMLPieCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -78,9 +78,9 @@ public class TooltipHTMLPieCase extends BaseComposite {
 					element = (HTMLDivElement) DomGlobal.document.createElement("div");
 					chart.getChartElement().appendChild(CastHelper.toDiv(element));
 				}
-//				element.reremoveClassName("above");
-//				element.removeClassName("below");
-//				element.removeClassName("no-transform");
+				// element.reremoveClassName("above");
+				// element.removeClassName("below");
+				// element.removeClassName("no-transform");
 				if (model.getYAlign() != null) {
 					element.className = model.getYAlign();
 				} else {
@@ -104,7 +104,7 @@ public class TooltipHTMLPieCase extends BaseComposite {
 						for (int i = 0; i < lines.size(); i++) {
 							TooltipLabelColor color = colors.get(index);
 							HTMLDivElement wrapper = (HTMLDivElement) DomGlobal.document.createElement("div");
-							HTMLElement span =(HTMLElement) DomGlobal.document.createElement("span");
+							HTMLElement span = (HTMLElement) DomGlobal.document.createElement("span");
 							span.style.display = "inline-block";
 							span.style.width = WidthUnionType.of("10px");
 							span.style.height = HeightUnionType.of("10px");
@@ -124,9 +124,9 @@ public class TooltipHTMLPieCase extends BaseComposite {
 				element.innerHTML = innerHTML.toString();
 				element.style.left = Unit.PX.format(model.getCaretX());
 				element.style.top = Unit.PX.format(model.getCaretY());
-				element.style.fontSize = FontSizeUnionType.of(model.getBodyFontSize()+"px");
-				element.style.paddingLeft = PaddingLeftUnionType.of(model.getXPadding()+"px");
-				element.style.paddingTop = PaddingTopUnionType.of(model.getYPadding()+"px");
+				element.style.fontSize = FontSizeUnionType.of(model.getBodyFontSize() + "px");
+				element.style.paddingLeft = PaddingLeftUnionType.of(model.getXPadding() + "px");
+				element.style.paddingTop = PaddingTopUnionType.of(model.getYPadding() + "px");
 
 				element.style.opacity = OpacityUnionType.of(1D);
 				element.style.backgroundColor = "rgba(0, 0, 0, .7)";
@@ -153,7 +153,7 @@ public class TooltipHTMLPieCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -173,7 +173,7 @@ public class TooltipHTMLPieCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
+
 		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addDataset.onclick = (p0) -> {
 			handleAddDataset();
@@ -193,7 +193,7 @@ public class TooltipHTMLPieCase extends BaseComposite {
 		removeDataset.textContent = "Remove dataset";
 		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeDataset);
-		
+
 		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addData.onclick = (p0) -> {
 			handleAddData();
@@ -214,7 +214,6 @@ public class TooltipHTMLPieCase extends BaseComposite {
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
 
-		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -231,7 +230,7 @@ public class TooltipHTMLPieCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months, false));

@@ -91,7 +91,7 @@ public class ZoomPanOnBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -121,7 +121,7 @@ public class ZoomPanOnBarCase extends BaseComposite {
 		reset.textContent = "Reset zoom";
 		reset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reset);
-	
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -138,7 +138,7 @@ public class ZoomPanOnBarCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

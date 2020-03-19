@@ -47,7 +47,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final TimeSeriesLineChart chart = new TimeSeriesLineChart();
-	
+
 	private final HTMLButtonElement reset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 
 	private TimeSeriesLineDataset dataset;
@@ -57,7 +57,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 	private final DatasetsItemsSelector plugin = DatasetsItemsSelector.get();
 
 	private DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
-	
+
 	private final DateAdapter adapter = new DateAdapter();
 
 	public DatasetItemsSelectorDrillingDownCase() {
@@ -82,7 +82,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		// ----------------------------------------------
 
 		reset.disabled = true;
-		
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Drilling down into dataset data on timeseries line chart");
@@ -179,7 +179,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -199,7 +199,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
+
 		reset.onclick = (p0) -> {
 			handleReset();
 			return null;
@@ -208,7 +208,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		reset.textContent = "Reset";
 		reset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reset);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -226,7 +226,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (TimeSeriesItem dp : dataset.getTimeSeriesData()) {
 			dp.setValue(getRandomDigit(false));

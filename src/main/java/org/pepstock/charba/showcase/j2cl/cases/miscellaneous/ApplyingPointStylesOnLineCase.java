@@ -32,7 +32,7 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 
 	private final LineChart chart = new LineChart();
 
-    private final HTMLSelectElement pointStyles = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private final HTMLSelectElement pointStyles = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
 	private LineDataset dataset = null;
 
@@ -42,7 +42,7 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -106,7 +106,7 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -127,13 +127,13 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
-		String pointStyleId = "pointStyle" + (int)(Math.random() * 1000D);
+		String pointStyleId = "pointStyle" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForPointStyle = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForPointStyle.htmlFor = pointStyleId;
 		labelForPointStyle.appendChild(DomGlobal.document.createTextNode("Point style "));
 		actionsCol.appendChild(labelForPointStyle);
-		
+
 		pointStyles.id = pointStyleId;
 		pointStyles.oninput = (p0) -> {
 			handlePointStyle();
@@ -143,7 +143,6 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 		pointStyles.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(pointStyles);
 
-		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -160,7 +159,7 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		dataset.setData(getRandomDigits(months));
 		chart.update();

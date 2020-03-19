@@ -39,7 +39,7 @@ public class FilteringLegendCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -124,7 +124,7 @@ public class FilteringLegendCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -185,13 +185,13 @@ public class FilteringLegendCase extends BaseComposite {
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
 
-		String filterId = "filter" + (int)(Math.random() * 1000D);
+		String filterId = "filter" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForFilter = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForFilter.htmlFor = filterId;
 		labelForFilter.appendChild(DomGlobal.document.createTextNode("Filter legend of hidden datasets "));
 		actionsCol.appendChild(labelForFilter);
-		
+
 		filter.id = filterId;
 		filter.onclick = (p0) -> {
 			handleFilter();
@@ -201,7 +201,7 @@ public class FilteringLegendCase extends BaseComposite {
 		filter.className = "gwt-CheckBox";
 		filter.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(filter);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -218,7 +218,7 @@ public class FilteringLegendCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

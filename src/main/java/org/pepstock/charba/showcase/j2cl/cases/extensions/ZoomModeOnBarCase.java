@@ -110,7 +110,7 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -140,7 +140,7 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		reset.textContent = "Reset zoom";
 		reset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reset);
-	
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -151,11 +151,11 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);
@@ -172,7 +172,7 @@ public class ZoomModeOnBarCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

@@ -26,20 +26,19 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-
 public class DatasetSelectionPieCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final PieChart chart = new PieChart();
-	
-	private final LogView mylog  =new LogView();
+
+	private final LogView mylog = new LogView();
 
 	public DatasetSelectionPieCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -101,7 +100,7 @@ public class DatasetSelectionPieCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -172,11 +171,11 @@ public class DatasetSelectionPieCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);

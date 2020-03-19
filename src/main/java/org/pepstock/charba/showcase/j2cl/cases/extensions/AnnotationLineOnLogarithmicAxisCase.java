@@ -31,7 +31,7 @@ import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
 public class AnnotationLineOnLogarithmicAxisCase extends BaseComposite {
-	
+
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
@@ -105,8 +105,8 @@ public class AnnotationLineOnLogarithmicAxisCase extends BaseComposite {
 		line.setBorderColor(HtmlColor.ORANGE);
 		line.setBorderDash(4, 4);
 		line.setBorderWidth(2);
-		
-		line.setValue(dataset1.getData().get(3)*100);
+
+		line.setValue(dataset1.getData().get(3) * 100);
 
 		line.getLabel().setEnabled(true);
 		line.getLabel().setContent("My threshold");
@@ -127,7 +127,7 @@ public class AnnotationLineOnLogarithmicAxisCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -147,7 +147,7 @@ public class AnnotationLineOnLogarithmicAxisCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-	
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -164,7 +164,7 @@ public class AnnotationLineOnLogarithmicAxisCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigitsLog(months));

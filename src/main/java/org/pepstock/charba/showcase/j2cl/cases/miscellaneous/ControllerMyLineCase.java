@@ -26,7 +26,7 @@ import elemental2.dom.HTMLTableRowElement;
 public class ControllerMyLineCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
-	
+
 	private final MyLineChart chart = new MyLineChart();
 
 	public ControllerMyLineCase() {
@@ -102,7 +102,7 @@ public class ControllerMyLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -179,7 +179,7 @@ public class ControllerMyLineCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

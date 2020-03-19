@@ -33,7 +33,7 @@ public class PatternBubbleCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final BubbleChart chart = new BubbleChart();
-	
+
 	public PatternBubbleCase() {
 		// ----------------------------------------------
 		// Main element
@@ -54,7 +54,6 @@ public class PatternBubbleCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
@@ -113,7 +112,7 @@ public class PatternBubbleCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -177,6 +176,5 @@ public class PatternBubbleCase extends BaseComposite {
 		}
 		chart.update();
 	}
-
 
 }

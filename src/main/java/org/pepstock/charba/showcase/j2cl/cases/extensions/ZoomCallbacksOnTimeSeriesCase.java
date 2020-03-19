@@ -81,9 +81,9 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-		
+
 		DateAdapter adapter = new DateAdapter();
-		
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().setAspectRatio(3);
@@ -179,7 +179,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -199,14 +199,14 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String draggingId = "dragging" + (int)(Math.random() * 1000D);
+
+		String draggingId = "dragging" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForDragging = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForDragging.htmlFor = draggingId;
 		labelForDragging.appendChild(DomGlobal.document.createTextNode("Dragging "));
 		actionsCol.appendChild(labelForDragging);
-		
+
 		dragging.id = draggingId;
 		dragging.checked = true;
 		dragging.onclick = (p0) -> {
@@ -227,7 +227,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		reset.textContent = "Reset zoom";
 		reset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reset);
-	
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -245,7 +245,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;

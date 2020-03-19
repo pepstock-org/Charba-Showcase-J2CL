@@ -24,17 +24,16 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-
 public class GaugeCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final GaugeChart chartPercent = new GaugeChart();
-	
+
 	private final GaugeChart chartValue = new GaugeChart();
-	
+
 	private final GaugeChart chartValueColor = new GaugeChart();
-	
+
 	private final GaugeChart chartValueReverse = new GaugeChart();
 
 	private final List<GaugeDataset> datasets = new ArrayList<GaugeDataset>();
@@ -43,7 +42,7 @@ public class GaugeCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -80,25 +79,25 @@ public class GaugeCase extends BaseComposite {
 		chartPercent.getOptions().getTitle().setText("GAUGE chart to represent percentage value");
 		chartPercent.getOptions().setDisplay(MeterDisplay.PERCENTAGE);
 		chartPercent.getOptions().setValueCallback(new ValueCallback() {
-			
+
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
-				return Utilities.applyPrecision(value*100, 2)+ "%";
+				return Utilities.applyPrecision(value * 100, 2) + "%";
 			}
 		});
 		chartPercent.getOptions().setAnimatedDisplay(true);
 		chartPercent.getData().setDatasets(getDataset(chartPercent, "Percent", 100D));
-		
+
 		chartCol11.appendChild(chartPercent.getChartElement().as());
 
 		chartValue.getOptions().getTitle().setDisplay(true);
 		chartValue.getOptions().getTitle().setText("GAUGE chart to represent value and dataset label");
 		chartValue.getOptions().setDisplay(MeterDisplay.VALUE_AND_LABEL);
 		chartValue.getOptions().setValueCallback(new ValueCallback() {
-			
+
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
-				return Utilities.applyPrecision(value, 0)+ " MB";
+				return Utilities.applyPrecision(value, 0) + " MB";
 			}
 		});
 		chartValue.getOptions().setFontStyle(FontStyle.ITALIC);
@@ -110,17 +109,17 @@ public class GaugeCase extends BaseComposite {
 		chartValueColor.getOptions().getTitle().setText("GAUGE chart to represent value and dataset label", "changing the color of label");
 		chartValueColor.getOptions().setDisplay(MeterDisplay.VALUE_AND_LABEL);
 		chartValueColor.getOptions().setValueCallback(new ValueCallback() {
-			
+
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
-				return Utilities.applyPrecision(value, 0)+ " GB";
+				return Utilities.applyPrecision(value, 0) + " GB";
 			}
 		});
 		chartValueColor.getOptions().setDisplayFontColor(ColorBuilder.build(90, 173, 255));
 		chartValueColor.getData().setDatasets(getDataset(chartValueColor, "Storage", 200D));
 
 		chartCol21.appendChild(chartValueColor.getChartElement().as());
-		
+
 		chartValueReverse.getOptions().getTitle().setDisplay(true);
 		chartValueReverse.getOptions().getTitle().setText("GAUGE chart with thresholds on reverse mode");
 		chartValueReverse.getOptions().setDisplay(MeterDisplay.VALUE);
@@ -131,13 +130,13 @@ public class GaugeCase extends BaseComposite {
 		ds.setThresholds(GaugeThreshold.NORMAL.getThreshold().setValue(Double.MAX_VALUE), GaugeThreshold.WARNING.getThreshold().setValue(100), GaugeThreshold.CRITICAL.getThreshold().setValue(40));
 		ds.setPercentageThreshold(false);
 		chartValueReverse.getData().setDatasets(ds);
-		
+
 		chartCol22.appendChild(chartValueReverse.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -170,7 +169,7 @@ public class GaugeCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

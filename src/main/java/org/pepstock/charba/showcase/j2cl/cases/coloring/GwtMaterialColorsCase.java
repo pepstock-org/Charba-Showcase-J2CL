@@ -27,16 +27,16 @@ public class GwtMaterialColorsCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
-    private final HTMLSelectElement color = (HTMLSelectElement) DomGlobal.document.createElement("select");
-    
-    private LineDataset dataset1 = null;
+
+	private final HTMLSelectElement color = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private LineDataset dataset1 = null;
 
 	public GwtMaterialColorsCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -85,7 +85,7 @@ public class GwtMaterialColorsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -105,14 +105,14 @@ public class GwtMaterialColorsCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String colorId = "color" + (int)(Math.random() * 1000D);
+
+		String colorId = "color" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForColor = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForColor.htmlFor = colorId;
 		labelForColor.appendChild(DomGlobal.document.createTextNode("GWT Material color "));
 		actionsCol.appendChild(labelForColor);
-		
+
 		color.id = colorId;
 		color.oninput = (p0) -> {
 			handleColors();
@@ -138,7 +138,7 @@ public class GwtMaterialColorsCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		dataset1.setData(getRandomDigits(months));
 		chart.update();

@@ -30,9 +30,9 @@ public class TooltipInteractionsCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
+
 	private final HTMLSelectElement mode = (HTMLSelectElement) DomGlobal.document.createElement("select");
-	
+
 	private final HTMLInputElement intersect = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private LineDataset dataset1 = null;
@@ -43,7 +43,7 @@ public class TooltipInteractionsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -99,7 +99,7 @@ public class TooltipInteractionsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -119,14 +119,14 @@ public class TooltipInteractionsCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String modeId = "mode" + (int)(Math.random() * 1000D);
+
+		String modeId = "mode" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForMode = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForMode.htmlFor = modeId;
 		labelForMode.appendChild(DomGlobal.document.createTextNode("Mode "));
 		actionsCol.appendChild(labelForMode);
-		
+
 		mode.id = modeId;
 		mode.oninput = (p0) -> {
 			handleMode();
@@ -135,14 +135,14 @@ public class TooltipInteractionsCase extends BaseComposite {
 		mode.className = "gwt-ListBox";
 		mode.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(mode);
-		
-		String intersectId = "intersect" + (int)(Math.random() * 1000D);
+
+		String intersectId = "intersect" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForIntersect = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForIntersect.htmlFor = intersectId;
 		labelForIntersect.appendChild(DomGlobal.document.createTextNode("Use intersect "));
 		actionsCol.appendChild(labelForIntersect);
-		
+
 		intersect.id = intersectId;
 		intersect.onclick = (p0) -> {
 			handleIntersect();
@@ -152,7 +152,7 @@ public class TooltipInteractionsCase extends BaseComposite {
 		intersect.className = "gwt-CheckBox";
 		intersect.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(intersect);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -169,7 +169,7 @@ public class TooltipInteractionsCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

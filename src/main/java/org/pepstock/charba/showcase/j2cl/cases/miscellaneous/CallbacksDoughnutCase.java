@@ -34,7 +34,7 @@ public class CallbacksDoughnutCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -78,7 +78,7 @@ public class CallbacksDoughnutCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -98,14 +98,14 @@ public class CallbacksDoughnutCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String id = "semiCircle " + (int)(Math.random() * 1000D);
+
+		String id = "semiCircle " + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForCircle = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForCircle.htmlFor = id;
 		labelForCircle.appendChild(DomGlobal.document.createTextNode("Semi circle "));
 		actionsCol.appendChild(labelForCircle);
-		
+
 		HTMLInputElement semiCircle = (HTMLInputElement) DomGlobal.document.createElement("input");
 		semiCircle.id = id;
 		semiCircle.onclick = (p0) -> {

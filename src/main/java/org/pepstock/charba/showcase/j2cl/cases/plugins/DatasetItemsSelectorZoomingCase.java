@@ -47,13 +47,13 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
+
 	private final LineChart small = new LineChart();
-	
+
 	private final LogView mylog = new LogView(4);
 
 	private final DatasetsItemsSelector selector = DatasetsItemsSelector.get();
-	
+
 	private final DateAdapter adapter = new DateAdapter();
 
 	public DatasetItemsSelectorZoomingCase() {
@@ -184,15 +184,15 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 				}
 			}
 		}, DatasetRangeSelectionEvent.TYPE);
-		
+
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		chartCol.appendChild(small.getChartElement().as());
 
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -222,7 +222,7 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		reset.textContent = "Reset";
 		reset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reset);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -233,11 +233,11 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);
@@ -254,7 +254,7 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : small.getData().getDatasets()) {
 			LineDataset scDataset = (LineDataset) dataset;

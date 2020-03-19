@@ -31,13 +31,13 @@ public class ChartHoverEventCase extends BaseComposite {
 
 	private final LineChart chart = new LineChart();
 
-	private final LogView mylog  =new LogView();
+	private final LogView mylog = new LogView();
 
 	public ChartHoverEventCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -115,11 +115,11 @@ public class ChartHoverEventCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -151,11 +151,11 @@ public class ChartHoverEventCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);
@@ -167,7 +167,7 @@ public class ChartHoverEventCase extends BaseComposite {
 		logRow.appendChild(logCol);
 		logCol.appendChild(mylog.getElement());
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

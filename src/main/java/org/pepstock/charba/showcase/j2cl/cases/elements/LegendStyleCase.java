@@ -30,9 +30,9 @@ public class LegendStyleCase extends BaseComposite {
 
 	private final LineChart chart = new LineChart();
 
-    private final HTMLSelectElement pointStyle = (HTMLSelectElement) DomGlobal.document.createElement("select");
-    
-    private final HTMLInputElement usePointStyle = (HTMLInputElement) DomGlobal.document.createElement("input");
+	private final HTMLSelectElement pointStyle = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLInputElement usePointStyle = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private LineDataset dataset = null;
 
@@ -40,7 +40,7 @@ public class LegendStyleCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -87,7 +87,7 @@ public class LegendStyleCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -108,13 +108,13 @@ public class LegendStyleCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
-		String pointStyleId = "pointStyle" + (int)(Math.random() * 1000D);
+		String pointStyleId = "pointStyle" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForPointStyle = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForPointStyle.htmlFor = pointStyleId;
 		labelForPointStyle.appendChild(DomGlobal.document.createTextNode("Point style "));
 		actionsCol.appendChild(labelForPointStyle);
-		
+
 		pointStyle.id = pointStyleId;
 		pointStyle.oninput = (p0) -> {
 			handlePointStyle();
@@ -124,13 +124,13 @@ public class LegendStyleCase extends BaseComposite {
 		pointStyle.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(pointStyle);
 
-		String usePointStyleId = "usePointStyle" + (int)(Math.random() * 1000D);
+		String usePointStyleId = "usePointStyle" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForUsePointStyle = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForUsePointStyle.htmlFor = usePointStyleId;
 		labelForUsePointStyle.appendChild(DomGlobal.document.createTextNode("Use point style on legend "));
 		actionsCol.appendChild(labelForUsePointStyle);
-		
+
 		usePointStyle.id = usePointStyleId;
 		usePointStyle.onclick = (p0) -> {
 			handleUsePointStyle();
@@ -140,7 +140,7 @@ public class LegendStyleCase extends BaseComposite {
 		usePointStyle.className = "gwt-CheckBox";
 		usePointStyle.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(usePointStyle);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -157,14 +157,14 @@ public class LegendStyleCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		dataset.setData(getRandomDigits(months));
 		chart.update();
 	}
 
 	protected void handlePointStyle() {
-		String selected = pointStyle.options.getAt(pointStyle.selectedIndex).value; 
+		String selected = pointStyle.options.getAt(pointStyle.selectedIndex).value;
 		int i = 0;
 		for (PointStyle cPos : PointStyle.values()) {
 			if (cPos.name().equalsIgnoreCase(selected)) {

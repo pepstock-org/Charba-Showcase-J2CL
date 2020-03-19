@@ -22,14 +22,14 @@ import elemental2.dom.HTMLTableRowElement;
 public class StackedGroupBarCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
-	
+
 	private final StackedBarChart chart = new StackedBarChart();
 
 	public StackedGroupBarCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -93,7 +93,7 @@ public class StackedGroupBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -125,7 +125,7 @@ public class StackedGroupBarCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

@@ -27,7 +27,6 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-
 public class TitleStyleCase extends BaseComposite {
 
 	private static final HtmlColor[] COLORS = { HtmlColor.BLACK, HtmlColor.RED, HtmlColor.BLUE, HtmlColor.GREEN, HtmlColor.ORANGE };
@@ -38,15 +37,15 @@ public class TitleStyleCase extends BaseComposite {
 
 	private final LineChart chart = new LineChart();
 
-    private final HTMLSelectElement color = (HTMLSelectElement) DomGlobal.document.createElement("select");
-    
-    private final HTMLSelectElement fontSize = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private final HTMLSelectElement color = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLSelectElement fontSize = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
 	public TitleStyleCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -137,7 +136,7 @@ public class TitleStyleCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -148,7 +147,7 @@ public class TitleStyleCase extends BaseComposite {
 		actionsCol.vAlign = "middle";
 		actionsRow.appendChild(actionsCol);
 
-		String colorId = "color" + (int)(Math.random() * 1000D);
+		String colorId = "color" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForColor = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForColor.htmlFor = colorId;
@@ -163,14 +162,14 @@ public class TitleStyleCase extends BaseComposite {
 		color.className = "gwt-ListBox";
 		color.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(color);
-		
-		String fontSizeId = "fontSize" + (int)(Math.random() * 1000D);
+
+		String fontSizeId = "fontSize" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForFontSize = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForFontSize.htmlFor = fontSizeId;
 		labelForFontSize.appendChild(DomGlobal.document.createTextNode("Font size "));
 		actionsCol.appendChild(labelForFontSize);
-		
+
 		fontSize.id = fontSizeId;
 		fontSize.oninput = (p0) -> {
 			handleFontSize();
@@ -179,7 +178,7 @@ public class TitleStyleCase extends BaseComposite {
 		fontSize.className = "gwt-ListBox";
 		fontSize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(fontSize);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");

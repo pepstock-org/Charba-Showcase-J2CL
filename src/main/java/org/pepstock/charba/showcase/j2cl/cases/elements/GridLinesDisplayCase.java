@@ -30,13 +30,13 @@ public class GridLinesDisplayCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
+
 	private final HTMLInputElement display = (HTMLInputElement) DomGlobal.document.createElement("input");
-	
+
 	private final HTMLInputElement drawBorder = (HTMLInputElement) DomGlobal.document.createElement("input");
-	
+
 	private final HTMLInputElement drawOnChartArea = (HTMLInputElement) DomGlobal.document.createElement("input");
-	
+
 	private final HTMLInputElement drawTicks = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	CartesianCategoryAxis axis1 = null;
@@ -47,7 +47,7 @@ public class GridLinesDisplayCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -113,7 +113,7 @@ public class GridLinesDisplayCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -133,7 +133,7 @@ public class GridLinesDisplayCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
+
 		configCheckBox(actionsCol, display, "Display", "display");
 		display.onclick = (p0) -> {
 			configChart();
@@ -181,15 +181,15 @@ public class GridLinesDisplayCase extends BaseComposite {
 		}
 		chart.update();
 	}
-	
+
 	private void configCheckBox(HTMLTableCellElement actionsCol, HTMLInputElement checkBox, String label, String prefixId) {
-		String checkBoxId = prefixId + (int)(Math.random() * 1000D);
+		String checkBoxId = prefixId + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForCheckBox = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForCheckBox.htmlFor = checkBoxId;
 		labelForCheckBox.appendChild(DomGlobal.document.createTextNode(label));
 		actionsCol.appendChild(labelForCheckBox);
-		
+
 		checkBox.id = checkBoxId;
 		checkBox.type = "checkbox";
 		checkBox.className = "gwt-CheckBox";

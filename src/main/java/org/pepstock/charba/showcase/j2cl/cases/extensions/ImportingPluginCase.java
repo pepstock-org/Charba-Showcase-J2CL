@@ -1,24 +1,17 @@
-package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
+package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
 import java.util.List;
 
-import org.pepstock.charba.client.IsChart;
-import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.BackgroundColorCallback;
-import org.pepstock.charba.client.callbacks.BorderColorCallback;
-import org.pepstock.charba.client.callbacks.FillCallback;
-import org.pepstock.charba.client.callbacks.RadiusCallback;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.BarChart;
+import org.pepstock.charba.client.Injector;
 import org.pepstock.charba.client.colors.GoogleChartColor;
-import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
-import org.pepstock.charba.client.configuration.CartesianLinearAxis;
+import org.pepstock.charba.client.commons.Key;
+import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.plugins.AbstractPluginOptions;
+import org.pepstock.charba.client.utils.Window;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -31,32 +24,15 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class CallbacksLineCase extends BaseComposite {
+public class ImportingPluginCase extends BaseComposite {
+
+	private static final Stacked100Plugin PLUGIN = new Stacked100Plugin();
 
 	private final HTMLTableElement mainPanel;
 
-	private final LineChart chart = new LineChart();
+	private final BarChart chart = new BarChart();
 
-	BackgroundColorCallback backgroundColorCallback = new BackgroundColorCallback() {
-
-		@Override
-		public IsColor invoke(IsChart chart, ScriptableContext context) {
-			return HtmlColor.PINK;
-		}
-
-	};
-
-	RadiusCallback radiusCallback = new RadiusCallback() {
-
-		@Override
-		public Double invoke(IsChart chart, ScriptableContext context) {
-			int module = context.getIndex() % 2;
-			return context.getDatasetIndex() % 2 == 0 ? module == 0 ? 50D : 25D : module == 0 ? 25D : 50D;
-		}
-
-	};
-
-	public CallbacksLineCase() {
+	public ImportingPluginCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -77,73 +53,39 @@ public class CallbacksLineCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
+		Injector.ensureInjected(PLUGIN);
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Callbacks on line chart dataset");
+		chart.getOptions().getTitle().setText("Importing Stacked100 plugin on bar chart");
 
-		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
-		chart.getOptions().getTooltips().setIntersect(false);
-		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
-		chart.getOptions().getHover().setIntersect(true);
-
-		List<Dataset> datasets = chart.getData().getDatasets(true);
-
-		LineDataset dataset1 = chart.newDataset();
+		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
-		dataset1.setBorderColor(new BorderColorCallback() {
+		IsColor color1 = GoogleChartColor.values()[0];
+		dataset1.setBackgroundColor(color1.alpha(0.2D));
+		dataset1.setData(getRandomDigits(months, false));
 
-			@Override
-			public Object invoke(IsChart chart, ScriptableContext context) {
-				return HtmlColor.PINK;
-			}
-		});
-
-		dataset1.setFill(new FillCallback() {
-
-			@Override
-			public Object invoke(IsChart chart, ScriptableContext context) {
-				return Fill.FALSE;
-			}
-		});
-
-		double[] values = getRandomDigits(months);
-		dataset1.setPointHoverBackgroundColor(backgroundColorCallback);
-		dataset1.setPointHoverRadius(radiusCallback);
-
-		dataset1.setData(values);
-		datasets.add(dataset1);
-
-		LineDataset dataset2 = chart.newDataset();
+		BarDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
-
 		IsColor color2 = GoogleChartColor.values()[1];
+		dataset2.setBackgroundColor(color2.alpha(0.2D));
+		dataset2.setData(getRandomDigits(months, false));
 
-		dataset2.setBackgroundColor(color2.toHex());
-		dataset2.setBorderColor(color2.toHex());
-
-		dataset2.setPointHoverBackgroundColor(backgroundColorCallback);
-		dataset2.setPointHoverRadius(radiusCallback);
-
-		dataset2.setData(getRandomDigits(months));
-		dataset2.setFill(true);
-		datasets.add(dataset2);
-
-		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
-		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
-
-		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
-		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
-
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		BarDataset dataset3 = chart.newDataset();
+		dataset3.setLabel("dataset 3");
+		IsColor color3 = GoogleChartColor.values()[2];
+		dataset3.setBackgroundColor(color3.alpha(0.2D));
+		dataset3.setData(getRandomDigits(months, false));
 
 		chart.getData().setLabels(getLabels());
+		chart.getData().setDatasets(dataset1, dataset2, dataset3);
+
+		Stacked100Options options = new Stacked100Options();
+		options.setEnable(true);
+		options.store(chart);
+
+		Window.getConsole().log(chart.getOptions().toJSON());
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -229,22 +171,20 @@ public class CallbacksLineCase extends BaseComposite {
 
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(months));
+			dataset.setData(getRandomDigits(months, false));
 		}
 		chart.update();
 	}
 
 	protected void handleAddDataset() {
 		List<Dataset> datasets = chart.getData().getDatasets();
-		LineDataset dataset = chart.newDataset();
+
+		BarDataset dataset = chart.newDataset();
 		dataset.setLabel("dataset " + (datasets.size() + 1));
+
 		IsColor color = GoogleChartColor.values()[datasets.size()];
-		dataset.setBackgroundColor(color.toHex());
-		dataset.setBorderColor(color.toHex());
-		dataset.setFill(Fill.FALSE);
-		dataset.setData(getRandomDigits(months));
-		dataset.setPointHoverBackgroundColor(backgroundColorCallback);
-		dataset.setPointHoverRadius(radiusCallback);
+		dataset.setBackgroundColor(color.alpha(0.2));
+		dataset.setData(getRandomDigits(months, false));
 		datasets.add(dataset);
 		chart.update();
 	}
@@ -260,4 +200,19 @@ public class CallbacksLineCase extends BaseComposite {
 	protected void handleRemoveData() {
 		removeData(chart);
 	}
+
+	private static class Stacked100Options extends AbstractPluginOptions {
+
+		private Key enableKey = Key.create("enable");
+
+		Stacked100Options() {
+			super(Stacked100Plugin.ID);
+		}
+
+		void setEnable(boolean enable) {
+			setValue(enableKey, enable);
+		}
+
+	}
+
 }

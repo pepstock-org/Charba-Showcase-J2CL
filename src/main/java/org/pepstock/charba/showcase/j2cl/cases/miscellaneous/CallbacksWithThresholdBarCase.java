@@ -35,7 +35,7 @@ public class CallbacksWithThresholdBarCase extends BaseComposite {
 	private static final double ERROR = 85D;
 
 	private static final IsColor ERROR_COLOR = HtmlColor.RED;
-	
+
 	private final HTMLTableElement mainPanel;
 
 	private final BarChart chart = new BarChart();
@@ -44,7 +44,7 @@ public class CallbacksWithThresholdBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -119,7 +119,7 @@ public class CallbacksWithThresholdBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -156,7 +156,7 @@ public class CallbacksWithThresholdBarCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months, 0, 100));

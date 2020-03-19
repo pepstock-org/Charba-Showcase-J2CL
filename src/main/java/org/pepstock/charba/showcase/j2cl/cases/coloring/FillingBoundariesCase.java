@@ -28,10 +28,10 @@ public class FillingBoundariesCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
-    private final HTMLSelectElement fill = (HTMLSelectElement) DomGlobal.document.createElement("select");
-    
-    private final HTMLInputElement smooth = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLSelectElement fill = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLInputElement smooth = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private LineDataset dataset = null;
 
@@ -39,7 +39,7 @@ public class FillingBoundariesCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -89,7 +89,7 @@ public class FillingBoundariesCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -109,14 +109,14 @@ public class FillingBoundariesCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String fillId = "fill" + (int)(Math.random() * 1000D);
+
+		String fillId = "fill" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForFill = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForFill.htmlFor = fillId;
 		labelForFill.appendChild(DomGlobal.document.createTextNode("Filling mode "));
 		actionsCol.appendChild(labelForFill);
-		
+
 		fill.id = fillId;
 		fill.oninput = (p0) -> {
 			handleFill();
@@ -126,13 +126,13 @@ public class FillingBoundariesCase extends BaseComposite {
 		fill.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(fill);
 
-		String smoothId = "smooth" + (int)(Math.random() * 1000D);
+		String smoothId = "smooth" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForSmooth = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForSmooth.htmlFor = smoothId;
 		labelForSmooth.appendChild(DomGlobal.document.createTextNode("Smooth"));
 		actionsCol.appendChild(labelForSmooth);
-		
+
 		smooth.id = smoothId;
 		smooth.onclick = (p0) -> {
 			handleSmooth();
@@ -159,7 +159,7 @@ public class FillingBoundariesCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		dataset.setData(getRandomDigits(months));
 		chart.update();

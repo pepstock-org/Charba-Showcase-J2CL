@@ -12,7 +12,7 @@ public class LogView extends BaseComposite {
 	private static final int MAX = 8;
 
 	private int counter = 1;
-	
+
 	private int max;
 
 	private final HTMLDivElement log = (HTMLDivElement) DomGlobal.document.createElement("div");
@@ -22,14 +22,14 @@ public class LogView extends BaseComposite {
 	public LogView() {
 		this(MAX);
 	}
-	
+
 	public LogView(int max) {
 		this.max = Math.max(1, max);
 		HTMLDivElement title = (HTMLDivElement) DomGlobal.document.createElement("div");
 		title.className = "myLogTitle";
 		title.textContent = "Event logs";
 		title.onclick = (p0) -> {
-			while(element.firstChild != null) {
+			while (element.firstChild != null) {
 				element.removeChild(element.firstChild);
 			}
 			counter = 1;
@@ -38,7 +38,7 @@ public class LogView extends BaseComposite {
 		log.appendChild(title);
 		log.appendChild(element);
 		log.style.width = WidthUnionType.of("80%");
-		log.style.height = HeightUnionType.of("100%");	
+		log.style.height = HeightUnionType.of("100%");
 	}
 
 	@Override

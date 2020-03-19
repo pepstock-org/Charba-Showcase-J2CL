@@ -27,10 +27,10 @@ public class UiGradientsCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
-    private final HTMLSelectElement gradient = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
-    private final HTMLSelectElement orientation = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	private final HTMLSelectElement gradient = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLSelectElement orientation = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
 	private LineDataset dataset1 = null;
 
@@ -38,7 +38,7 @@ public class UiGradientsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -96,7 +96,7 @@ public class UiGradientsCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -116,14 +116,14 @@ public class UiGradientsCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-		
-		String orientationId = "orientation" + (int)(Math.random() * 1000D);
+
+		String orientationId = "orientation" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForOrientation = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForOrientation.htmlFor = orientationId;
 		labelForOrientation.appendChild(DomGlobal.document.createTextNode("Orientation "));
 		actionsCol.appendChild(labelForOrientation);
-		
+
 		orientation.id = orientationId;
 		orientation.oninput = (p0) -> {
 			handleOrientation();
@@ -132,14 +132,14 @@ public class UiGradientsCase extends BaseComposite {
 		orientation.className = "gwt-ListBox";
 		orientation.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(orientation);
-		
-		String gradientId = "gradient" + (int)(Math.random() * 1000D);
+
+		String gradientId = "gradient" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForGradient = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForGradient.htmlFor = gradientId;
 		labelForGradient.appendChild(DomGlobal.document.createTextNode("UI Gradients "));
 		actionsCol.appendChild(labelForGradient);
-		
+
 		gradient.id = gradientId;
 		gradient.oninput = (p0) -> {
 			handleGradient();
@@ -165,7 +165,7 @@ public class UiGradientsCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		dataset1.setData(getRandomDigits(months, false));
 		chart.update();

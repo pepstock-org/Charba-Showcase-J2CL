@@ -37,12 +37,12 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final PolarAreaChart chart = new PolarAreaChart();
-	
-    private final HTMLSelectElement category = (HTMLSelectElement) DomGlobal.document.createElement("select");
-    
-    private final HTMLSelectElement name = (HTMLSelectElement) DomGlobal.document.createElement("select");
-    
-    private final HTMLInputElement reverse = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLSelectElement category = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLSelectElement name = (HTMLSelectElement) DomGlobal.document.createElement("select");
+
+	private final HTMLInputElement reverse = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	public ColorSchemePolarAreaCase() {
 		// ----------------------------------------------
@@ -124,7 +124,7 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -164,14 +164,14 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 		removeData.textContent = "Remove data";
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
-		
-		String dataColorsID = "dataColors" + (int)(Math.random() * 1000D);
+
+		String dataColorsID = "dataColors" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForDataColors = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForDataColors.htmlFor = dataColorsID;
 		labelForDataColors.appendChild(DomGlobal.document.createTextNode("Data colors "));
 		actionsCol.appendChild(labelForDataColors);
-		
+
 		category.oninput = (p0) -> {
 			handleCategory();
 			return null;
@@ -179,7 +179,7 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 		category.className = "gwt-ListBox";
 		category.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(category);
-		
+
 		name.oninput = (p0) -> {
 			handleName();
 			return null;
@@ -187,14 +187,14 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 		name.className = "gwt-ListBox";
 		name.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(name);
-		
-		String reverseID = "reverse" + (int)(Math.random() * 1000D);
+
+		String reverseID = "reverse" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForReverse = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForReverse.htmlFor = reverseID;
 		labelForReverse.appendChild(DomGlobal.document.createTextNode("Reverse "));
 		actionsCol.appendChild(labelForReverse);
-		
+
 		reverse.id = reverseID;
 		reverse.onclick = (p0) -> {
 			handleReverse();
@@ -204,7 +204,7 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 		reverse.className = "gwt-CheckBox";
 		reverse.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reverse);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -221,7 +221,7 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));
@@ -246,7 +246,7 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 	}
 
 	protected void handleCategory() {
-		String selected = category.options.getAt(category.selectedIndex).value; 
+		String selected = category.options.getAt(category.selectedIndex).value;
 		if ("brewer".equalsIgnoreCase(selected)) {
 			clearNames();
 			int index = 0;
@@ -302,14 +302,14 @@ public class ColorSchemePolarAreaCase extends BaseComposite {
 	}
 
 	private void clearNames() {
-		while(name.firstChild != null) {
+		while (name.firstChild != null) {
 			name.removeChild(name.firstChild);
 		}
 	}
-	
+
 	protected void handleName() {
 		ColorSchemesOptions options = chart.getOptions().getPlugins().getOptions(ColorSchemes.ID, ColorSchemes.FACTORY);
-		String selected = category.options.getAt(category.selectedIndex).value; 
+		String selected = category.options.getAt(category.selectedIndex).value;
 		if ("brewer".equalsIgnoreCase(selected)) {
 			options.setScheme(Key.getKeyByValue(BrewerScheme.values(), name.options.getAt(name.selectedIndex).value));
 			options.setBackgroundColorAlpha(0.5D);

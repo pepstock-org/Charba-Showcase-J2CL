@@ -27,16 +27,16 @@ public class SteppedLineOnLineCase extends BaseComposite {
 	private final LineChart chartNoStepped = new LineChart();
 
 	private final LineChart chartStepped = new LineChart();
-	
+
 	private final LineChart chartBeforeStepped = new LineChart();
-	
+
 	private final LineChart chartAfterStepped = new LineChart();
 
 	public SteppedLineOnLineCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -68,7 +68,6 @@ public class SteppedLineOnLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
-
 
 		chartNoStepped.getOptions().setResponsive(true);
 		chartNoStepped.getOptions().getLegend().setPosition(Position.TOP);
@@ -133,11 +132,11 @@ public class SteppedLineOnLineCase extends BaseComposite {
 		chartCol12.appendChild(chartNoStepped.getChartElement().as());
 		chartCol21.appendChild(chartBeforeStepped.getChartElement().as());
 		chartCol22.appendChild(chartAfterStepped.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -170,7 +169,7 @@ public class SteppedLineOnLineCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

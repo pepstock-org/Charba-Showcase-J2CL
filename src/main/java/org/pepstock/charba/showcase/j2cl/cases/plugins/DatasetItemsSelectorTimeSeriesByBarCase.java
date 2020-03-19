@@ -30,7 +30,7 @@ import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
 public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
-	
+
 	private static final long DAY = 1000 * 60 * 60 * 24;
 
 	private static final int AMOUNT_OF_POINTS = 15;
@@ -38,8 +38,8 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final BarChart chart = new BarChart();
-	
-	private final LogView mylog  =new LogView(4);
+
+	private final LogView mylog = new LogView(4);
 
 	private long starting = System.currentTimeMillis();
 
@@ -155,7 +155,7 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -186,11 +186,11 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
+
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		logRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(logRow);
@@ -207,7 +207,7 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			BarDataset scDataset = (BarDataset) dataset;

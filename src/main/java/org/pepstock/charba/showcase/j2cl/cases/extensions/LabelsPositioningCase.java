@@ -30,8 +30,8 @@ public class LabelsPositioningCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final DoughnutChart chart = new DoughnutChart();
-	
-    private final HTMLInputElement outside = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLInputElement outside = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final LabelsOptions option = new LabelsOptions();
 
@@ -82,7 +82,7 @@ public class LabelsPositioningCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -122,14 +122,14 @@ public class LabelsPositioningCase extends BaseComposite {
 		removeData.textContent = "Remove data";
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
-		
-		String outsideId = "outside" + (int)(Math.random() * 1000D);
+
+		String outsideId = "outside" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForOutside = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForOutside.htmlFor = outsideId;
 		labelForOutside.appendChild(DomGlobal.document.createTextNode("Outside labels "));
 		actionsCol.appendChild(labelForOutside);
-		
+
 		outside.id = outsideId;
 		outside.onclick = (p0) -> {
 			handleOutside();

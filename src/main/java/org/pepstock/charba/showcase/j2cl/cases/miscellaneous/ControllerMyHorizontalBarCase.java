@@ -23,7 +23,7 @@ public class ControllerMyHorizontalBarCase extends BaseComposite {
 	private static final String[] COUNTRIES = { "br", "de", "fr", "gb", "it", "us" };
 
 	private final HTMLTableElement mainPanel;
-	
+
 	private final MyHorizontalBarChart chart = new MyHorizontalBarChart();
 
 	private final CartesianCategoryAxis axis;
@@ -79,7 +79,7 @@ public class ControllerMyHorizontalBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -116,7 +116,7 @@ public class ControllerMyHorizontalBarCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));

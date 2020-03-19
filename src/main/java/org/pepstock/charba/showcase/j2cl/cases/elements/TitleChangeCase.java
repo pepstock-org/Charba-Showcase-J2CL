@@ -25,23 +25,23 @@ import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
 public class TitleChangeCase extends BaseComposite {
-	
+
 	private static final String ORIGINAL_TITLE = "Changing title text on line chart";
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-	
+
 	private final HTMLInputElement split = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final HTMLInputElement text = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	public TitleChangeCase() {
-		
+
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -110,7 +110,7 @@ public class TitleChangeCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -121,7 +121,7 @@ public class TitleChangeCase extends BaseComposite {
 		actionsCol.vAlign = "middle";
 		actionsRow.appendChild(actionsCol);
 
-		String textId = "text" + (int)(Math.random() * 1000D);
+		String textId = "text" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForText = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForText.htmlFor = textId;
@@ -137,14 +137,14 @@ public class TitleChangeCase extends BaseComposite {
 		text.className = "gwt-TextBox";
 		text.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(text);
-		
-		String splitId = "split" + (int)(Math.random() * 1000D);
+
+		String splitId = "split" + (int) (Math.random() * 1000D);
 
 		HTMLLabelElement labelForSplit = (HTMLLabelElement) DomGlobal.document.createElement("label");
 		labelForSplit.htmlFor = splitId;
 		labelForSplit.appendChild(DomGlobal.document.createTextNode("Split by blanks "));
 		actionsCol.appendChild(labelForSplit);
-		
+
 		split.id = splitId;
 		split.onclick = (p0) -> {
 			handleSplit();
@@ -154,7 +154,7 @@ public class TitleChangeCase extends BaseComposite {
 		split.className = "gwt-CheckBox";
 		split.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(split);
-		
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -171,7 +171,7 @@ public class TitleChangeCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
+
 	protected void handleTextChange() {
 		String value = text.value.length() > 0 ? text.value : ORIGINAL_TITLE;
 		chart.getOptions().getTitle().setText(value);

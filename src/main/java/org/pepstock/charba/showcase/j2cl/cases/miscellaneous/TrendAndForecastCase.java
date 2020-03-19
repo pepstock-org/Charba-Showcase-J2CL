@@ -70,7 +70,7 @@ public class TrendAndForecastCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -88,7 +88,7 @@ public class TrendAndForecastCase extends BaseComposite {
 		// ----------------------------------------------
 
 		DateAdapter adapter = new DateAdapter();
-		
+
 		chart.getOptions().setResponsive(true);
 
 		chart.addHandler(new LegendClickEventHandler() {
@@ -215,11 +215,11 @@ public class TrendAndForecastCase extends BaseComposite {
 
 		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -252,7 +252,7 @@ public class TrendAndForecastCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

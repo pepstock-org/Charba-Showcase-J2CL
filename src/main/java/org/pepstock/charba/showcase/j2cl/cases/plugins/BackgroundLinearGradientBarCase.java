@@ -85,11 +85,11 @@ public class BackgroundLinearGradientBarCase extends BaseComposite {
 
 		chart.getOptions().getPlugins().setOptions(ChartBackgroundColor.ID, option);
 		chartCol.appendChild(chart.getChartElement().as());
-		
+
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -122,7 +122,7 @@ public class BackgroundLinearGradientBarCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

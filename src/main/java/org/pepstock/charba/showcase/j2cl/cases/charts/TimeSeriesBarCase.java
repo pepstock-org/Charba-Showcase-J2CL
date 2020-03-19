@@ -28,7 +28,7 @@ import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
 public class TimeSeriesBarCase extends BaseComposite {
-	
+
 	private final HTMLTableElement mainPanel;
 
 	private static final int AMOUNT_OF_POINTS = 15;
@@ -41,7 +41,7 @@ public class TimeSeriesBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
-		
+
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
 		mainPanel.cellPadding = "12";
@@ -108,7 +108,7 @@ public class TimeSeriesBarCase extends BaseComposite {
 		// ----------------------------------------------
 		// Actions element
 		// ----------------------------------------------
-		
+
 		HTMLTableRowElement actionsRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
 		actionsRow.style.width = WidthUnionType.of("100%");
 		mainPanel.appendChild(actionsRow);
@@ -140,7 +140,7 @@ public class TimeSeriesBarCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 	}
-	
+
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;

@@ -379,7 +379,6 @@ public class PluginsView extends AbstractView {
 					}
 					return null;
 				};
-
 			}
 		}
 	}
