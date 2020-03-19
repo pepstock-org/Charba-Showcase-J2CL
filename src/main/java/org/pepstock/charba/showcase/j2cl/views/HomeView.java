@@ -13,36 +13,31 @@ import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Labels;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.dom.enums.Unit;
+import org.pepstock.charba.client.enums.DefaultDateAdapter;
 import org.pepstock.charba.client.events.DatasetSelectionEvent;
 import org.pepstock.charba.client.events.DatasetSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.client.impl.plugins.ChartPointerOptions;
 import org.pepstock.charba.client.impl.plugins.enums.PointerElement;
+import org.pepstock.charba.client.resources.ResourcesType;
 import org.pepstock.charba.client.utils.Utilities;
+import org.pepstock.charba.showcase.j2cl.App;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
+import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.Element;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
+import elemental2.dom.HTMLLabelElement;
+import elemental2.dom.HTMLOptionElement;
+import elemental2.dom.HTMLSelectElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
 public class HomeView extends BaseComposite {
-
-	private final HTMLTableElement mainPanel;
-
-	private final LineChart chart = new LineChart();
-	
-//	HTMLSelectElement dateAdpater;
-
-//	@UiField
-//	ListBox dateAdapter;
-//
-//	@UiField
-//	CheckBox loading;
 
 	private static final String LINK_GITHUB_VERSION = "https://github.com/pepstock-org/Charba/releases/tag/";
 
@@ -52,6 +47,12 @@ public class HomeView extends BaseComposite {
 	
 	private static final double[] VALUES_J2CL = { Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, 2536, 2881, Double.NaN };
 
+	private final HTMLTableElement mainPanel;
+
+	private final LineChart chart = new LineChart();
+	
+	private final HTMLSelectElement dateAdapter = (HTMLSelectElement) DomGlobal.document.createElement("select");
+	
 	public HomeView() {
 		mainPanel = (HTMLTableElement) DomGlobal.document.createElement("table");
 		mainPanel.width = "100%";
@@ -94,7 +95,6 @@ public class HomeView extends BaseComposite {
 		cjsCol.style.textAlign = "center";
 		HTMLImageElement cjsImg = (HTMLImageElement) DomGlobal.document.createElement("img");
 		cjsImg.src = "images/chartjs.png";
-		//img.className = "myImgItem";
 		cjsCol.appendChild(cjsImg);
 		cjsCol.appendChild(DomGlobal.document.createElement("br"));
 		HTMLElement cjsSpan = (HTMLElement) DomGlobal.document.createElement("span");
@@ -110,23 +110,21 @@ public class HomeView extends BaseComposite {
 		chartCol.align = "middle";
 		chartCol.colSpan = 3;
 		chartRow.appendChild(chartCol);
+		
+		int index = 0;
+		for (DefaultDateAdapter name : DefaultDateAdapter.values()) {
+			if (!DefaultDateAdapter.UNKNOWN.equals(name)) {
+				HTMLOptionElement adapterN = (HTMLOptionElement) DomGlobal.document.createElement("option");
+				adapterN.text = name.value();
+				adapterN.value = name.value();
+				dateAdapter.add(adapterN);
+				if (name.value().equalsIgnoreCase(ResourcesType.getClientBundle().getModule().getId())) {
+					dateAdapter.selectedIndex = index;
+				}
+				index++;
+			}
+		}
 
-		
-		//		dateAdpater = (HTMLSelectElement) DomGlobal.document.createElement("select");
-		
-//		int index = 0;
-//		for (DefaultDateAdapter name : DefaultDateAdapter.values()) {
-//			if (!DefaultDateAdapter.UNKNOWN.equals(name)) {
-//				dateAdapter. .addItem(name.value(), name.value());
-//				if (name.value().equalsIgnoreCase(ResourcesType.getClientBundle().getModule().getId())) {
-//					dateAdapter.setSelectedIndex(index);
-//				}
-//				index++;
-//			}
-//		}
-		//loading.setValue(App.isDeferred);
-
-		
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().setAspectRatio(2.5D);
@@ -221,35 +219,48 @@ public class HomeView extends BaseComposite {
 
 		Element chartElement = chart.getChartElement().as();
 		chartCol.appendChild(chartElement);
+		
+		HTMLTableRowElement adapterRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		adapterRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(adapterRow);
+		HTMLTableCellElement adapterCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		adapterCol.style.width = WidthUnionType.of("100%");
+		adapterCol.align = "middle";
+		adapterCol.colSpan = 3;
+		adapterRow.appendChild(adapterCol);
+		
+		String dateAdapterId = "dateAdapter" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelForDateAdapter = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForDateAdapter.htmlFor = dateAdapterId;
+		labelForDateAdapter.appendChild(DomGlobal.document.createTextNode("Date adapter "));
+		adapterCol.appendChild(labelForDateAdapter);
+
+		dateAdapter.id = dateAdapterId;
+		dateAdapter.oninput = (p0) -> {
+			handleAdapater();
+			return null;
+		};
+		dateAdapter.className = "gwt-ListBox";
+		dateAdapter.style.marginRight = MarginRightUnionType.of("5px");
+		adapterCol.appendChild(dateAdapter);
 	}
 
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-	
 
-//	@UiHandler("loading")
-//	protected void handleLoading(ClickEvent event) {
-//		reload();
-//	}
-//
-//	@UiHandler("dateAdapter")
-//	protected void handleDateAdapter(ChangeEvent event) {
-//		reload();
-//	}
-//
-//	private void reload() {
-//		String href = Window.Location.getHref();
-//		StringBuilder cleanHref = null;
-//		if (href.contains("?")) {
-//			cleanHref = new StringBuilder(href.substring(0, href.indexOf("?")));
-//		} else {
-//			cleanHref = new StringBuilder(href);
-//		}
-//		cleanHref.append("?").append(Charba_Showcase.LOADING_PARAM).append("=").append(loading.getValue() ? Charba_Showcase.LOADING_DEFERRED : Charba_Showcase.LOADING_EMBEDDED);
-//		cleanHref.append("&").append(Charba_Showcase.DATE_ADAPTER_PARAM).append("=").append(dateAdapter.getSelectedValue());
-//		Window.Location.replace(cleanHref.toString());
-//	}
+	private void handleAdapater() {
+		String href = DomGlobal.window.location.href;
+		StringBuilder cleanHref = null;
+		if (href.contains("?")) {
+			cleanHref = new StringBuilder(href.substring(0, href.indexOf("?")));
+		} else {
+			cleanHref = new StringBuilder(href);
+		}
+		cleanHref.append("?").append(App.DATE_ADAPTER_PARAM).append("=").append(dateAdapter.options.getAt(dateAdapter.selectedIndex).value);
+		DomGlobal.window.location.replace(cleanHref.toString());
+	}
 
 }

@@ -78,9 +78,6 @@ public class TooltipHTMLPieCase extends BaseComposite {
 					element = (HTMLDivElement) DomGlobal.document.createElement("div");
 					chart.getChartElement().appendChild(CastHelper.toDiv(element));
 				}
-				// element.reremoveClassName("above");
-				// element.removeClassName("below");
-				// element.removeClassName("no-transform");
 				if (model.getYAlign() != null) {
 					element.className = model.getYAlign();
 				} else {

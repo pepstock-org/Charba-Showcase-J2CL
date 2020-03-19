@@ -11,7 +11,6 @@ import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.plugins.AbstractPluginOptions;
-import org.pepstock.charba.client.utils.Window;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -83,8 +82,6 @@ public class ImportingPluginCase extends BaseComposite {
 		Stacked100Options options = new Stacked100Options();
 		options.setEnable(true);
 		options.store(chart);
-
-		Window.getConsole().log(chart.getOptions().toJSON());
 
 		chartCol.appendChild(chart.getChartElement().as());
 

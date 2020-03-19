@@ -18,7 +18,6 @@ import org.pepstock.charba.client.items.ScaleItem;
 import org.pepstock.charba.client.options.Scales;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
 import org.pepstock.charba.client.utils.AnnotationBuilder;
-import org.pepstock.charba.client.utils.Window;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -139,7 +138,6 @@ public class HTMLAnnnotationCase extends BaseComposite {
 					result = result.replaceAll("\\{0\\}", SUN_BASE64);
 					result = result.replaceAll("\\{1\\}", String.valueOf(temperature));
 					result = result.replaceAll("\\{2\\}", String.valueOf(humidity));
-					Window.getConsole().log(result);
 
 					Img img = AnnotationBuilder.build(result, scaleTickLength - 4, heightRaster);
 					ctx.drawImage(img, scaleTickX + 2, topRaster);

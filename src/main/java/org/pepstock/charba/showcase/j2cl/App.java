@@ -1,24 +1,29 @@
 package org.pepstock.charba.showcase.j2cl;
 
 import java.util.List;
+import java.util.Locale;
 
 import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
+import org.pepstock.charba.client.commons.Key;
 import org.pepstock.charba.client.controllers.AbstractController;
 import org.pepstock.charba.client.controllers.ControllerContext;
 import org.pepstock.charba.client.controllers.ControllerType;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.dom.elements.Context2dItem;
+import org.pepstock.charba.client.enums.DefaultDateAdapter;
 import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
 import org.pepstock.charba.client.items.DatasetItem;
 import org.pepstock.charba.client.items.DatasetMetaItem;
 import org.pepstock.charba.client.items.DatasetViewItem;
 import org.pepstock.charba.client.labels.LabelsPlugin;
+import org.pepstock.charba.client.resources.AbstractEmbeddedResources;
+import org.pepstock.charba.client.resources.DatefnsEmbeddedResources;
 import org.pepstock.charba.client.resources.EmbeddedResources;
+import org.pepstock.charba.client.resources.LuxonEmbeddedResources;
 import org.pepstock.charba.client.resources.ResourcesType;
 import org.pepstock.charba.client.utils.JsWindowHelper;
-import org.pepstock.charba.client.utils.Window;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarController;
@@ -41,21 +46,17 @@ public class App implements EntryPoint {
 	public void onModuleLoad() {
 		Images.get();
 
-		Window.getConsole().log(DomGlobal.window.location);
-
-		// DefaultDateAdapter adapter = Key.getKeyByValue(DefaultDateAdapter.values(),
-		// Window.Location.getParameter(DATE_ADAPTER_PARAM), DefaultDateAdapter.MOMENT);
-		// AbstractEmbeddedResources resources = null;
-		// if (DefaultDateAdapter.MOMENT.equals(adapter)) {
-		// resources = EmbeddedResources.INSTANCE;
-		// } else if (DefaultDateAdapter.LUXON.equals(adapter)) {
-		// resources = LuxonEmbeddedResources.INSTANCE;
-		// } else if (DefaultDateAdapter.DATE_FNS.equals(adapter)) {
-		// resources = DatefnsEmbeddedResources.INSTANCE;
-		// }
-		// ResourcesType.setClientBundle(resources);
-
-		ResourcesType.setClientBundle(EmbeddedResources.INSTANCE);
+		String param = loadParameters(DomGlobal.window.location.search);
+		DefaultDateAdapter adapter = Key.getKeyByValue(DefaultDateAdapter.values(), param, DefaultDateAdapter.MOMENT);
+		AbstractEmbeddedResources resources = null;
+		if (DefaultDateAdapter.MOMENT.equals(adapter)) {
+			resources = EmbeddedResources.INSTANCE;
+		} else if (DefaultDateAdapter.LUXON.equals(adapter)) {
+			resources = LuxonEmbeddedResources.INSTANCE;
+		} else if (DefaultDateAdapter.DATE_FNS.equals(adapter)) {
+			resources = DatefnsEmbeddedResources.INSTANCE;
+		}
+		ResourcesType.setClientBundle(resources);
 		start();
 	}
 
@@ -110,6 +111,20 @@ public class App implements EntryPoint {
 
 		MainView main = new MainView();
 		div.appendChild(main.getElement());
+	}
+
+	private String loadParameters(String search) {
+		if (search != null && search.length() > 1) {
+			String qs = search.substring(1);
+			for (String kvPair : qs.split("&")) {
+				String[] kv = kvPair.split("=", 2);
+				String key = kv[0];
+				if (DATE_ADAPTER_PARAM.equalsIgnoreCase(key)) {
+					return kv.length > 1 ? kv[1].toLowerCase(Locale.getDefault()) : null;
+				}
+			}
+		}
+		return null;
 	}
 
 }
