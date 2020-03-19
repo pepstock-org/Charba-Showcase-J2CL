@@ -120,7 +120,7 @@ public class HtmlLegendStyleCase extends BaseComposite {
 		actionsCol.appendChild(labelForPointStyle);
 
 		pointStyle.id = pointStyleId;
-		pointStyle.oninput = (p0) -> {
+		pointStyle.onchange = (p0) -> {
 			handlePointStyle();
 			return null;
 		};

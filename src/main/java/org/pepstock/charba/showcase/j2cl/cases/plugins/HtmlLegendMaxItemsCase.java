@@ -201,7 +201,7 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 		actionsCol.appendChild(labelForMaxItems);
 
 		maxItems.id = maxItemsId;
-		maxItems.oninput = (p0) -> {
+		maxItems.onchange = (p0) -> {
 			handleMaxItems();
 			return null;
 		};

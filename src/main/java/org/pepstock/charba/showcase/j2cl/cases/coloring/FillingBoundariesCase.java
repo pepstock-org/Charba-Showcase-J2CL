@@ -118,7 +118,7 @@ public class FillingBoundariesCase extends BaseComposite {
 		actionsCol.appendChild(labelForFill);
 
 		fill.id = fillId;
-		fill.oninput = (p0) -> {
+		fill.onchange = (p0) -> {
 			handleFill();
 			return null;
 		};

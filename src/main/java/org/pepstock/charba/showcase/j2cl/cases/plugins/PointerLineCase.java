@@ -241,7 +241,7 @@ public class PointerLineCase extends BaseComposite {
 		actionsCol.appendChild(labelForCursor);
 
 		cursor.id = cursorId;
-		cursor.oninput = (p0) -> {
+		cursor.onchange = (p0) -> {
 			handleCursor();
 			return null;
 		};

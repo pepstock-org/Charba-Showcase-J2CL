@@ -128,7 +128,7 @@ public class TooltipInteractionsCase extends BaseComposite {
 		actionsCol.appendChild(labelForMode);
 
 		mode.id = modeId;
-		mode.oninput = (p0) -> {
+		mode.onchange = (p0) -> {
 			handleMode();
 			return null;
 		};

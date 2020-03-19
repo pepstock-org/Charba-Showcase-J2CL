@@ -155,7 +155,7 @@ public class TitleStyleCase extends BaseComposite {
 		actionsCol.appendChild(labelForColor);
 
 		color.id = colorId;
-		color.oninput = (p0) -> {
+		color.onchange = (p0) -> {
 			handleColor();
 			return null;
 		};
@@ -171,7 +171,7 @@ public class TitleStyleCase extends BaseComposite {
 		actionsCol.appendChild(labelForFontSize);
 
 		fontSize.id = fontSizeId;
-		fontSize.oninput = (p0) -> {
+		fontSize.onchange = (p0) -> {
 			handleFontSize();
 			return null;
 		};

@@ -114,7 +114,7 @@ public class GwtMaterialColorsCase extends BaseComposite {
 		actionsCol.appendChild(labelForColor);
 
 		color.id = colorId;
-		color.oninput = (p0) -> {
+		color.onchange = (p0) -> {
 			handleColors();
 			return null;
 		};

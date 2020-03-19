@@ -125,7 +125,7 @@ public class UiGradientsCase extends BaseComposite {
 		actionsCol.appendChild(labelForOrientation);
 
 		orientation.id = orientationId;
-		orientation.oninput = (p0) -> {
+		orientation.onchange = (p0) -> {
 			handleOrientation();
 			return null;
 		};
@@ -141,7 +141,7 @@ public class UiGradientsCase extends BaseComposite {
 		actionsCol.appendChild(labelForGradient);
 
 		gradient.id = gradientId;
-		gradient.oninput = (p0) -> {
+		gradient.onchange = (p0) -> {
 			handleGradient();
 			return null;
 		};

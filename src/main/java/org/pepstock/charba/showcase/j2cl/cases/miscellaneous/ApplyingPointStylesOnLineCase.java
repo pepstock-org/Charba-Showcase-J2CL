@@ -135,7 +135,7 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 		actionsCol.appendChild(labelForPointStyle);
 
 		pointStyles.id = pointStyleId;
-		pointStyles.oninput = (p0) -> {
+		pointStyles.onchange = (p0) -> {
 			handlePointStyle();
 			return null;
 		};

@@ -187,7 +187,7 @@ public class TilesLineCase extends BaseComposite {
 		actionsCol.appendChild(labelForListBox);
 
 		listBox.id = listId;
-		listBox.oninput = (p0) -> {
+		listBox.onchange = (p0) -> {
 			handleShapes();
 			return null;
 		};

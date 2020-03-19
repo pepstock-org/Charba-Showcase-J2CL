@@ -1,8 +1,10 @@
-# Charba Showcase J2CL (still under construction)
+# Charba Showcase J2CL
 
-This repository contains the source code of the **Charba** showcase site, based on J2CL, located [here](http://www.pepstock.org/Charba-Showcase-J2CL/Charba_Showcase_J2CL.html) but not available yet.
+This repository contains the source code of the **Charba** showcase site, based on J2CL, located [here](http://www.pepstock.org/Charba-Showcase-J2CL/Charba_Showcase_J2CL.html).
 
 There are more than 160 samples about all **Charba** capabilities.
+
+## Build (points of attention)
 
 To build the project, waiting for **Charba** 3.1 (fully J2CL compliant), not published yet into MVN repository, the **Charba** jar is provided into `lib` folder and you must add it to Maven local repository, as following:
 

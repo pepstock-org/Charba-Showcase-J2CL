@@ -237,7 +237,7 @@ public class HomeView extends BaseComposite {
 		adapterCol.appendChild(labelForDateAdapter);
 
 		dateAdapter.id = dateAdapterId;
-		dateAdapter.oninput = (p0) -> {
+		dateAdapter.onchange = (p0) -> {
 			handleAdapater();
 			return null;
 		};

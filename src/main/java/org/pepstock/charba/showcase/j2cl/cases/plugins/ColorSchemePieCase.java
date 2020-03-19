@@ -182,7 +182,7 @@ public class ColorSchemePieCase extends BaseComposite {
 		labelForDataColors.appendChild(DomGlobal.document.createTextNode("Data colors "));
 		actionsCol.appendChild(labelForDataColors);
 
-		category.oninput = (p0) -> {
+		category.onchange = (p0) -> {
 			handleCategory();
 			return null;
 		};
@@ -190,7 +190,7 @@ public class ColorSchemePieCase extends BaseComposite {
 		category.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(category);
 
-		name.oninput = (p0) -> {
+		name.onchange = (p0) -> {
 			handleName();
 			return null;
 		};

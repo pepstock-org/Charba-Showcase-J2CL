@@ -108,7 +108,7 @@ public class LegendPositioningCase extends BaseComposite {
 		actionsCol.appendChild(labelForPosition);
 
 		position.id = positionId;
-		position.oninput = (p0) -> {
+		position.onchange = (p0) -> {
 			handlePosition();
 			return null;
 		};

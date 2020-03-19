@@ -204,7 +204,7 @@ public class ColorSchemeBubbleCase extends BaseComposite {
 		data.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(data);
 
-		category.oninput = (p0) -> {
+		category.onchange = (p0) -> {
 			handleCategory();
 			return null;
 		};
@@ -212,7 +212,7 @@ public class ColorSchemeBubbleCase extends BaseComposite {
 		category.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(category);
 
-		name.oninput = (p0) -> {
+		name.onchange = (p0) -> {
 			handleName();
 			return null;
 		};
