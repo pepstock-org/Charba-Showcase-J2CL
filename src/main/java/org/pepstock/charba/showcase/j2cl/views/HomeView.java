@@ -82,7 +82,7 @@ public class HomeView extends BaseComposite {
 		midCol.width = "40%";
 		midCol.style.textAlign = "center";
 		HTMLElement midSpan = (HTMLElement) DomGlobal.document.createElement("span");
-		midSpan.innerHTML = "<h1>J2CL meet Chart.JS</h1>" + 
+		midSpan.innerHTML = "<h1>J2CL meets Chart.JS</h1>" + 
 				"<h1>by CHARBA</h1>" + 
 				"<br/>" + 
 				"<p>CHARBA is a J2CL library which wraps Chart.JS to enable charts on your J2CL web application.</p>";
