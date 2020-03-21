@@ -36,10 +36,10 @@
 			<version>1.0.0</version>
 		</dependency>
 
-		<dependency>
+		<dependency> 
 			<groupId>org.pepstock</groupId>
 			<artifactId>charba</artifactId>
-			<version>3.1.beta</version>
+			<version>3.1</version>
 		</dependency>
 
 	</dependencies>
