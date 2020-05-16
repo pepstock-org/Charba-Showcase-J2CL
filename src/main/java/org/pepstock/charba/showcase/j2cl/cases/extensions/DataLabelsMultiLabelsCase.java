@@ -17,6 +17,7 @@ import org.pepstock.charba.client.datalabels.enums.Align;
 import org.pepstock.charba.client.datalabels.enums.Anchor;
 import org.pepstock.charba.client.datalabels.enums.Weight;
 import org.pepstock.charba.client.enums.DefaultPlugin;
+import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -92,7 +93,7 @@ public class DataLabelsMultiLabelsCase extends BaseComposite {
 		index.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, double value, ScriptableContext context) {
+			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
 				return context.isActive() ? "index" : "#" + (context.getIndex() + 1);
 			}
 		});
@@ -113,7 +114,7 @@ public class DataLabelsMultiLabelsCase extends BaseComposite {
 		name.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, double value, ScriptableContext context) {
+			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
 				return context.isActive() ? "name" : chart.getData().getLabels().getString(context.getIndex());
 			}
 		});
@@ -146,8 +147,8 @@ public class DataLabelsMultiLabelsCase extends BaseComposite {
 		value.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, double value, ScriptableContext context) {
-				return context.isActive() ? "value" : String.valueOf(value);
+			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
+				return context.isActive() ? "value" : String.valueOf(dataItem.getValue());
 			}
 		});
 		value.getPadding().set(4);

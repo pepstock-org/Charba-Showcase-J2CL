@@ -75,14 +75,14 @@ public class LabelsBarCase extends BaseComposite {
 
 			@Override
 			public String invoke(IsChart chart, RenderItem item) {
-				return "$$ " + (int) (item.getValue() * item.getPercentage() / 100);
+				return "$$ " + (int) (item.getDataItem().getValue() * item.getPercentage() / 100);
 			}
 		});
 		option.setFontColor(new FontColorCallback() {
 
 			@Override
 			public IsColor invoke(IsChart chart, FontColorItem item) {
-				return item.getValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
+				return item.getDataItem().getValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
 			}
 		});
 

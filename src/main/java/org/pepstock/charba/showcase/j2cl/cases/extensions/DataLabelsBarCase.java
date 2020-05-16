@@ -20,6 +20,7 @@ import org.pepstock.charba.client.datalabels.enums.Weight;
 import org.pepstock.charba.client.enums.DefaultPlugin;
 import org.pepstock.charba.client.enums.Display;
 import org.pepstock.charba.client.impl.callbacks.Percentage;
+import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -151,8 +152,8 @@ public class DataLabelsBarCase extends BaseComposite {
 		option.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, double value, ScriptableContext context) {
-				double percentage = Percentage.compute(chart, value, context, true);
+			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
+				double percentage = Percentage.compute(chart, dataItem.getValue(), context, true);
 				return Math.round(percentage * 100) + "%";
 			}
 		});

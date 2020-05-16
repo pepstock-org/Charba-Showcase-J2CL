@@ -24,6 +24,7 @@ import org.pepstock.charba.client.datalabels.enums.Weight;
 import org.pepstock.charba.client.dom.elements.CanvasGradientItem;
 import org.pepstock.charba.client.enums.DefaultPlugin;
 import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -152,7 +153,8 @@ public class DataLabelsLinearGradientLineCase extends BaseComposite {
 		option.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, double value, ScriptableContext context) {
+			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
+				double value = dataItem.getValue();
 				return value < 20 ? "Poor\n" + value : value < 50 ? "Good\n" + value : "Great\n" + value;
 			}
 		});

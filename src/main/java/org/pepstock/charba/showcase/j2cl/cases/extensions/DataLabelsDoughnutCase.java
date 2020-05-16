@@ -18,6 +18,7 @@ import org.pepstock.charba.client.datalabels.enums.Weight;
 import org.pepstock.charba.client.enums.DefaultPlugin;
 import org.pepstock.charba.client.enums.Display;
 import org.pepstock.charba.client.impl.callbacks.Percentage;
+import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.client.items.UndefinedValues;
 import org.pepstock.charba.client.utils.Utilities;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -130,8 +131,8 @@ public class DataLabelsDoughnutCase extends BaseComposite {
 		option.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, double value, ScriptableContext context) {
-				double percentage = Percentage.compute(chart, value, context, false);
+			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
+				double percentage = Percentage.compute(chart, dataItem.getValue(), context, false);
 				return Utilities.applyPrecision(percentage * 100, 1) + "%";
 			}
 
