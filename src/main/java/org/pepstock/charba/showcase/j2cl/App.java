@@ -42,12 +42,15 @@ public class App implements EntryPoint {
 	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/3.1/src/main/java/";
 
 	public static boolean isDeferred = false;
+	
+	public static DefaultDateAdapter dateAdapterTyoe = DefaultDateAdapter.UNKNOWN;
 
 	public void onModuleLoad() {
 		Images.get();
 
 		String param = loadParameters(DomGlobal.window.location.search);
 		DefaultDateAdapter adapter = Key.getKeyByValue(DefaultDateAdapter.values(), param, DefaultDateAdapter.MOMENT);
+		App.dateAdapterTyoe = adapter;
 		AbstractEmbeddedResources resources = null;
 		if (DefaultDateAdapter.MOMENT.equals(adapter)) {
 			resources = EmbeddedResources.INSTANCE;
