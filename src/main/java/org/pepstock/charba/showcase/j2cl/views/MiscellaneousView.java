@@ -19,6 +19,11 @@ import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresh
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ControllerMyHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ControllerMyLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataOnBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataOnHorizontalBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataOnStackedBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataTimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByElementCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HoverStyleOnStackedAreaCase;
@@ -28,6 +33,7 @@ import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLin
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SteppedLineOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase;
 
+import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLDivElement;
@@ -42,8 +48,8 @@ public class MiscellaneousView extends AbstractView {
 	{
 		OPTIONS("Options", OptionsCase.values()),
 		SCRIPTABLE_OPTIONS("Scriptable options", ScriptableOptionsCase.values()),
-		PLUGINS("Implementing plugins", PluginsCase.values()),
-		CONTROLLERS("Implementing controllers", ControllersCase.values());
+		DATASETS("Datasets", DatasetsCase.values()),
+		PLUGINS("Implementing plugins", PluginsCase.values());
 
 		private final String label;
 
@@ -202,6 +208,57 @@ public class MiscellaneousView extends AbstractView {
 	}
 	
 	// ----------------------------------------------
+	// DATASETS
+	// ----------------------------------------------
+	private enum DatasetsCase implements CaseItem
+	{
+		BAR("Floating data on bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new FloatingDataOnBarCase();
+			}
+		}),
+		HBAR("Floating data on horizontal bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new FloatingDataOnHorizontalBarCase();
+			}
+		}),
+		STACKED("Floating data on stacked bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new FloatingDataOnStackedBarCase();
+			}
+		}),
+		TIMESERIES("Floating data on timeseries by bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new FloatingDataTimeSeriesByBarCase();
+			}
+		}),
+		DATALABELS("Floating data on bar chart and datalabels extension", new CaseFactory() {
+			public BaseComposite create() {
+				return new FloatingDataDataLabelsCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private DatasetsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+
+	
+	// ----------------------------------------------
 	// PLUGINS
 	// ----------------------------------------------
 	private enum PluginsCase implements CaseItem
@@ -340,6 +397,45 @@ public class MiscellaneousView extends AbstractView {
 					};
 				}
 			}
+
+			if (Category.PLUGINS.equals(cat)) {
+				HTMLElement labelPalette = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPalette.innerHTML = "Implementing controllers";
+				labelPalette.style.textAlign = "left";
+				labelPalette.className = "myCategory";
+				labelPalette.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPalette);
+				
+				HTMLDivElement item1 = (HTMLDivElement) DomGlobal.document.createElement("div");
+				item1.style.textAlign = "left";
+				item1.className = "myCategoryItem";
+				catCol.appendChild(item1);
+				item1.innerHTML = ControllersCase.SIMPLE.getLabel();
+				item1.onclick = (p0) -> {
+					BaseComposite composite = ControllersCase.SIMPLE.getFactory().create();
+					if (composite != null) {
+						clearPreviousChart();
+						content.appendChild(composite.getElement());
+					}
+					return null;
+				};
+
+				HTMLDivElement item2 = (HTMLDivElement) DomGlobal.document.createElement("div");
+				item2.style.textAlign = "left";
+				item2.className = "myCategoryItem";
+				catCol.appendChild(item2);
+				item2.innerHTML = ControllersCase.FLAGS.getLabel();
+				item2.onclick = (p0) -> {
+					BaseComposite composite = ControllersCase.FLAGS.getFactory().create();
+					if (composite != null) {
+						clearPreviousChart();
+						content.appendChild(composite.getElement());
+					}
+					return null;
+				};
+
+			}
+
 		}
 	}
 

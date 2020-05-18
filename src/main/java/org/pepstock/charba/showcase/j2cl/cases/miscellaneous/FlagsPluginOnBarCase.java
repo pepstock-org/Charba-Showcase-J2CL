@@ -168,26 +168,13 @@ public class FlagsPluginOnBarCase extends BaseComposite {
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
-			for (Dataset dataset : chart.getData().getDatasets()) {
-				dataset.setData(getRandomDigits(months));
-			}
-			chart.update();
+			handleRandomize();
 			return null;
 		};
 		randomize.className = "gwt-Button";
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-
-		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		addDataset.onclick = (p0) -> {
-			handleRandomize();
-			return null;
-		};
-		addDataset.className = "gwt-Button";
-		addDataset.textContent = "Add dataset";
-		addDataset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(addDataset);
 
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
