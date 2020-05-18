@@ -68,12 +68,12 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		int idx = 0;
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
 			DataPoint dataPoint = new DataPoint();
-			dataPoint.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			dataPoint.setX(adapter.add(startingPoint, i, TimeUnit.DAY));
 			dataPoint.setX(100 * Math.random());
 			points[idx] = dataPoint;
 
 			DataPoint rainPoint = new DataPoint();
-			rainPoint.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			rainPoint.setX(adapter.add(startingPoint, i, TimeUnit.DAY));
 			rainPoint.setY(100 * Math.random());
 			rainPoints[idx] = rainPoint;
 
@@ -89,12 +89,12 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		idx = 0;
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
 			DataPoint dataPoint = new DataPoint();
-			dataPoint.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			dataPoint.setX(adapter.add(startingPoint, i, TimeUnit.DAY));
 			dataPoint.setX(100 * Math.random());
 			points[idx] = dataPoint;
 
 			DataPoint rainPoint2 = new DataPoint();
-			rainPoint2.setT(adapter.add(startingPoint, i, TimeUnit.DAY));
+			rainPoint2.setX(adapter.add(startingPoint, i, TimeUnit.DAY));
 			rainPoint2.setY(100 * Math.random());
 			rainPoints2[idx] = rainPoint2;
 

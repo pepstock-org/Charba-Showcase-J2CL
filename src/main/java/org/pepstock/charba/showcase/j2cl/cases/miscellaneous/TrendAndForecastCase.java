@@ -121,7 +121,7 @@ public class TrendAndForecastCase extends BaseComposite {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
 				DataPoint dp = ds.getDataPoints().get(item.getIndex());
-				return Arrays.asList(adapter.format(dp.getT(), TimeUnit.DAY));
+				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
 		});
@@ -175,9 +175,9 @@ public class TrendAndForecastCase extends BaseComposite {
 				trendDp[i].setY(Double.NaN);
 				forecastDp[i].setY(xs1[i]);
 			}
-			dataDp[i].setT(newDate);
-			trendDp[i].setT(newDate);
-			forecastDp[i].setT(newDate);
+			dataDp[i].setX(newDate);
+			trendDp[i].setX(newDate);
+			forecastDp[i].setX(newDate);
 			time = time + DAY;
 
 		}
@@ -283,9 +283,9 @@ public class TrendAndForecastCase extends BaseComposite {
 				trendDp[i].setY(Double.NaN);
 				forecastDp[i].setY(xs1[i]);
 			}
-			dataDp[i].setT(newDate);
-			trendDp[i].setT(newDate);
-			forecastDp[i].setT(newDate);
+			dataDp[i].setX(newDate);
+			trendDp[i].setX(newDate);
+			forecastDp[i].setX(newDate);
 			time = time + DAY;
 
 		}

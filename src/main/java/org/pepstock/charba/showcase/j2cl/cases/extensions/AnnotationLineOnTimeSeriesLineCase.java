@@ -91,7 +91,7 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
 				DataPoint dp = ds.getDataPoints().get(item.getIndex());
-				return Arrays.asList(adapter.format(dp.getT(), TimeUnit.DAY));
+				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
 		});
