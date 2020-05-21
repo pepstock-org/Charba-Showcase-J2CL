@@ -39,7 +39,7 @@ public class App implements EntryPoint {
 
 	public static final String DATE_ADAPTER_PARAM = "dateAdapter";
 
-	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/3.1/src/main/java/";
+	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/3.2/src/main/java/";
 
 	public static boolean isDeferred = false;
 	

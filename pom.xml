@@ -6,7 +6,7 @@
 
 	<groupId>org.pepstock</groupId>
 	<artifactId>charba-showcase-j2cl</artifactId>
-	<version>3.1</version>
+	<version>3.2</version>
 	<name>Charba-Showcase-J2CL</name>
 	<description>Showcase of Charba on J2CL</description>
 
@@ -39,7 +39,7 @@
 		<dependency> 
 			<groupId>org.pepstock</groupId>
 			<artifactId>charba</artifactId>
-			<version>3.1</version>
+			<version>3.2</version>
 		</dependency>
 
 	</dependencies>
