@@ -104,14 +104,14 @@ public class InterpolationOnLineCase extends BaseComposite {
 		axis2.setDisplay(true);
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
-		axis2.getTicks().setSuggestedMax(200);
-		axis2.getTicks().setSuggestedMin(-10);
+		axis2.setSuggestedMax(200);
+		axis2.setSuggestedMin(-10);
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2, dataset3);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

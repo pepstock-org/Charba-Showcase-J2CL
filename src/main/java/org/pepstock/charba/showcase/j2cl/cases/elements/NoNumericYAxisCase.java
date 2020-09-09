@@ -7,7 +7,7 @@ import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.enums.CartesianAxisType;
+import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -82,19 +82,19 @@ public class NoNumericYAxisCase extends BaseComposite {
 		axis1.getScaleLabel().setDisplay(true);
 		axis1.getScaleLabel().setLabelString("Month");
 
-		CartesianCategoryAxis axis2 = new CartesianCategoryAxis(chart, CartesianAxisType.Y);
+		CartesianCategoryAxis axis2 = new CartesianCategoryAxis(chart, AxisKind.Y);
 		axis2.setDisplay(true);
+		axis2.setReverse(true);
 		axis2.setPosition(Position.LEFT);
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Request State");
-		axis2.getTicks().setReverse(true);
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setXLabels(getLabels());
 		chart.getData().setYLabels(VALUES);
 		chart.getData().setDatasets(dataset1, dataset2);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

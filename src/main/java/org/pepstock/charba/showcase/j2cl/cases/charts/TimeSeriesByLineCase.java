@@ -10,12 +10,11 @@ import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
-import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.items.TooltipItem;
@@ -75,7 +74,7 @@ public class TimeSeriesByLineCase extends BaseComposite {
 			public List<String> onTitle(IsChart chart, List<TooltipItem> items) {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
-				DataPoint dp = ds.getDataPoints().get(item.getIndex());
+				DataPoint dp = ds.getDataPoints().get(item.getDataIndex());
 				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
@@ -100,18 +99,17 @@ public class TimeSeriesByLineCase extends BaseComposite {
 		}
 		dataset1.setDataPoints(dp1);
 
-		final CartesianTimeAxis axis = new CartesianTimeAxis(chart);
-		axis.setDistribution(ScaleDistribution.SERIES);
+		final CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 
-		chart.getOptions().getScales().setXAxes(axis);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis, axis2);
 		chart.getData().setDatasets(dataset1);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

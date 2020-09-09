@@ -59,7 +59,6 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		// ----------------------------------------------
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
-		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Dataset items selector plugin on line chart");
@@ -106,8 +105,7 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 
@@ -117,7 +115,7 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		pOptions.setBorderColor(HtmlColor.GREY);
 		pOptions.getClearSelection().setDisplay(true);
 		pOptions.getClearSelection().setLabel("Reset selection");
-		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFontSize());
+		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		pOptions.setColor(HtmlColor.LIGHT_GOLDEN_ROD_YELLOW.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 		pOptions.setFireEventOnClearSelection(true);
 
@@ -129,8 +127,8 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.getFrom()).append(" ");
-				sb.append("Dataset to: ").append(event.getTo());
+				sb.append("Dataset from: ").append(event.isClearSelection() ? "Clear selection event" : event.getFrom().getLabel()).append(" ");
+				sb.append("Dataset to: ").append(event.isClearSelection() ? "Clear selection event" : event.getTo().getLabel());
 				mylog.addLogEvent(sb.toString());
 			}
 		}, DatasetRangeSelectionEvent.TYPE);

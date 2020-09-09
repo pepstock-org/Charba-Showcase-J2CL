@@ -16,14 +16,13 @@ import org.pepstock.charba.client.configuration.CartesianTimeAxis;
 import org.pepstock.charba.client.data.TimeSeriesItem;
 import org.pepstock.charba.client.data.TimeSeriesLineDataset;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
-import org.pepstock.charba.client.items.TimeTickItem;
+import org.pepstock.charba.client.items.ScaleTickItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -112,15 +111,14 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		dataset.setTimeSeriesData(data);
 
 		axis = chart.getOptions().getScales().getTimeAxis();
-		axis.setDistribution(ScaleDistribution.SERIES);
 		axis.getTime().setUnit(TimeUnit.DAY);
-		axis.getTime().setStepSize(2);
+		axis.getTime().setStepSize(1);
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTicks().setCallback(new TimeTickCallback() {
 
 			@SuppressWarnings("deprecation")
 			@Override
-			public String onCallback(Axis axis, Date value, String label, int index, List<TimeTickItem> values) {
+			public String onCallback(Axis axis, Date value, String label, int index, List<ScaleTickItem> values) {
 				boolean toPrintDate = index == 0 || index == (values.size() - 1);
 				if (!reset.disabled) {
 					if (toPrintDate) {
@@ -141,7 +139,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 
 		CartesianLinearAxis axis2 = chart.getOptions().getScales().getLinearAxis();
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 
 		chart.getData().setDatasets(dataset);
 
@@ -162,11 +160,8 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 					reset.disabled = false;
 					dataset.setBackgroundColor(HtmlColor.DARK_MAGENTA);
 					dataset.setBorderColor(HtmlColor.DARK_MAGENTA);
-					List<TimeSeriesItem> items = dataset.getTimeSeriesData();
-					TimeSeriesItem from = items.get(event.getFrom());
-					TimeSeriesItem to = items.get(event.getTo());
-					axis.getTicks().setMin(from.getTime());
-					axis.getTicks().setMax(to.getTime());
+					axis.setMin(event.getFrom().getValueAsDate());
+					axis.setMax(event.getTo().getValueAsDate());
 					axis.getTime().setUnit(TimeUnit.HOUR);
 					chart.getOptions().getPlugins().setEnabled(DatasetsItemsSelector.ID, false);
 					plugin.onDestroy(chart);
@@ -174,6 +169,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 				}
 			}
 		}, DatasetRangeSelectionEvent.TYPE);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -239,8 +235,8 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		IsColor color1 = GoogleChartColor.values()[0];
 		dataset.setBackgroundColor(color1.toHex());
 		dataset.setBorderColor(color1.toHex());
-		axis.getTicks().setMin(null);
-		axis.getTicks().setMax(null);
+		axis.setMin(null);
+		axis.setMax(null);
 		axis.getTime().setUnit(TimeUnit.DAY);
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.reconfigure();

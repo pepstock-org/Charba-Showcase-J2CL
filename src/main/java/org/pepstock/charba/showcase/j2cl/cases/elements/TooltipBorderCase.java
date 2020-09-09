@@ -62,8 +62,8 @@ public class TooltipBorderCase extends BaseComposite {
 		chart.getOptions().getTooltips().setXPadding(10);
 		chart.getOptions().getTooltips().setCaretSize(8);
 		chart.getOptions().getTooltips().setBackgroundColor("rgba(72, 241, 12, 1)");
-		chart.getOptions().getTooltips().setTitleFontColor(HtmlColor.BLACK);
-		chart.getOptions().getTooltips().setBodyFontColor(HtmlColor.BLACK);
+		chart.getOptions().getTooltips().getTitleFont().setColor(HtmlColor.BLACK);
+		chart.getOptions().getTooltips().getBodyFont().setColor(HtmlColor.BLACK);
 		chart.getOptions().getTooltips().setBorderColor("rgba(0,0,0,1)");
 		chart.getOptions().getTooltips().setBorderWidth(4);
 
@@ -97,11 +97,11 @@ public class TooltipBorderCase extends BaseComposite {
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

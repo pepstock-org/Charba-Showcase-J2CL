@@ -19,18 +19,17 @@ import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
-import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.data.TimeSeriesItem;
 import org.pepstock.charba.client.data.TimeSeriesLineDataset;
+import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.items.TooltipItem;
-import org.pepstock.charba.client.options.Scales;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -88,7 +87,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 			public List<String> onTitle(IsChart chart, List<TooltipItem> items) {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
-				DataPoint dp = ds.getDataPoints().get(item.getIndex());
+				DataPoint dp = ds.getDataPoints().get(item.getDataIndex());
 				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
@@ -133,14 +132,13 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 		dataset1.setTimeSeriesData(data);
 		dataset2.setTimeSeriesData(data1);
 
-		CartesianTimeAxis axis = chart.getOptions().getScales().getTimeAxis();
-		axis.setDistribution(ScaleDistribution.SERIES);
+		CartesianTimeSeriesAxis axis = chart.getOptions().getScales().getTimeAxis();
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 
 		CartesianLinearAxis axis2 = chart.getOptions().getScales().getLinearAxis();
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 		axis2.setStacked(true);
 
 		chart.getData().setDatasets(dataset1, dataset2);
@@ -150,7 +148,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 		LineAnnotation line1 = new LineAnnotation();
 		line1.setDrawTime(DrawTime.AFTER_DRAW);
 		line1.setMode(LineMode.HORIZONTAL);
-		line1.setScaleID(Scales.DEFAULT_Y_AXIS_ID);
+		line1.setScaleID(DefaultScaleId.Y.value());
 		line1.setBorderColor(HtmlColor.VIOLET);
 		line1.setBorderWidth(4);
 		line1.setBorderDash(4, 4);
@@ -166,6 +164,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 		options.setAnnotations(line1);
 
 		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

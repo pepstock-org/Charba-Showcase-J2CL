@@ -14,10 +14,10 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.options.Scales;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -100,7 +100,7 @@ public class AnnotationsOnCombinedCase extends BaseComposite {
 		LineAnnotation line = new LineAnnotation();
 		line.setDrawTime(DrawTime.AFTER_DATASETS_DRAW);
 		line.setMode(LineMode.HORIZONTAL);
-		line.setScaleID(Scales.DEFAULT_Y_AXIS_ID);
+		line.setScaleID(DefaultScaleId.Y.value());
 		line.setBorderColor(HtmlColor.BLACK);
 		line.setBorderWidth(5);
 		line.setValue(getRandomDigits(1, min, max)[0]);
@@ -111,8 +111,8 @@ public class AnnotationsOnCombinedCase extends BaseComposite {
 
 		BoxAnnotation box = new BoxAnnotation();
 		box.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
-		box.setXScaleID(Scales.DEFAULT_X_AXIS_ID);
-		box.setYScaleID(Scales.DEFAULT_Y_AXIS_ID);
+		box.setXScaleID(DefaultScaleId.X.value());
+		box.setYScaleID(DefaultScaleId.Y.value());
 		box.setXMin("February");
 		box.setXMax("April");
 
@@ -126,6 +126,7 @@ public class AnnotationsOnCombinedCase extends BaseComposite {
 		options.setAnnotations(line, box);
 
 		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

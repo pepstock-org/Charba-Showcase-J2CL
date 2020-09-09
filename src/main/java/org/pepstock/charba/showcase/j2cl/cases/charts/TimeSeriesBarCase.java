@@ -8,11 +8,10 @@ import org.pepstock.charba.client.adapters.DateAdapter;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
-import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.TimeSeriesBarDataset;
 import org.pepstock.charba.client.data.TimeSeriesItem;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -91,15 +90,14 @@ public class TimeSeriesBarCase extends BaseComposite {
 		dataset1.setTimeSeriesData(data1);
 		dataset2.setTimeSeriesData(data2);
 
-		CartesianTimeAxis axis = chart.getOptions().getScales().getTimeAxis();
-		axis.setDistribution(ScaleDistribution.SERIES);
+		CartesianTimeSeriesAxis axis = chart.getOptions().getScales().getTimeAxis();
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 		axis.setOffset(true);
 
 		CartesianLinearAxis axis2 = chart.getOptions().getScales().getLinearAxis();
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 
 		chart.getData().setDatasets(dataset1, dataset2);
 

@@ -20,7 +20,7 @@ import org.pepstock.charba.client.datalabels.callbacks.AlignCallback;
 import org.pepstock.charba.client.datalabels.callbacks.ColorCallback;
 import org.pepstock.charba.client.datalabels.callbacks.FormatterCallback;
 import org.pepstock.charba.client.datalabels.enums.Align;
-import org.pepstock.charba.client.enums.DefaultPlugin;
+import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -70,8 +70,8 @@ public class DataLabelsIndicesCase extends BaseComposite {
 		chart.getOptions().getLayout().getPadding().setLeft(16);
 		chart.getOptions().getElements().getLine().setFill(false);
 
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.LEGEND, false);
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.TITLE, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.LEGEND, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.TITLE, false);
 
 		LineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
@@ -94,8 +94,7 @@ public class DataLabelsIndicesCase extends BaseComposite {
 		axis2.getScaleLabel().setLabelString("Value");
 		axis2.setStacked(true);
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1);

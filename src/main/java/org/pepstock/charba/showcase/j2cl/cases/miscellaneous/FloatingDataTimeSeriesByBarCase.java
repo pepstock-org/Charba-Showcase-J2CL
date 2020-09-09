@@ -7,16 +7,14 @@ import java.util.List;
 import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.adapters.DateAdapter;
 import org.pepstock.charba.client.colors.HtmlColor;
-import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.BarDataset;
+import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.FloatingData;
-import org.pepstock.charba.client.enums.DefaultDateAdapter;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.enums.ScaleBounds;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TimeUnit;
-import org.pepstock.charba.showcase.j2cl.App;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -71,38 +69,43 @@ public class FloatingDataTimeSeriesByBarCase extends BaseComposite {
 
 		DateAdapter adapter = new DateAdapter();
 		
-		List<String> labels = new LinkedList<>();
-		List<FloatingData> data1 = new LinkedList<>();
-		
+		List<DataPoint> dataPoints1 = new LinkedList<>();
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
 			Date date = adapter.add(startingPoint, i, TimeUnit.DAY);
-			labels.add(adapter.format(date, getDateFormat()));
 			double value = 100 * Math.random();
-			data1.add(new FloatingData(value, Math.min(value + 50 * Math.random(), 100)));
+
+			DataPoint dp = new DataPoint();
+			dp.setX(date);
+			dp.setY(new FloatingData(value, Math.min(value + 50 * Math.random(), 100)));
+			dataPoints1.add(dp);
 		}
-		dataset1.setFloatingData(data1);
+		dataset1.setDataPoints(dataPoints1);
 		
 		BarDataset dataset2 = chart.newDataset();
 		dataset2.setBackgroundColor(HtmlColor.ORANGE);
 		dataset2.setLabel("dataset 2");
 
-		List<FloatingData> data2 = new LinkedList<>();
+		List<DataPoint> dataPoints2 = new LinkedList<>();
 		
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			Date date = adapter.add(startingPoint, i, TimeUnit.DAY);
 			double value = 100 * Math.random();
-			data2.add(new FloatingData(value, Math.min(value + 50 * Math.random(), 100)));
+
+			DataPoint dp = new DataPoint();
+			dp.setX(date);
+			dp.setY(new FloatingData(value, Math.min(value + 50 * Math.random(), 100)));
+			dataPoints2.add(dp);
 		}
-		dataset2.setFloatingData(data2);
+		dataset2.setDataPoints(dataPoints2);
 		
-		CartesianTimeAxis axis = new CartesianTimeAxis(chart);
-		axis.setDistribution(ScaleDistribution.SERIES);
+		CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
 		axis.setBounds(ScaleBounds.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 		axis.setOffset(true);
 		
-		chart.getData().setLabels(labels.toArray(new String[0]));
 		chart.getData().setDatasets(dataset1, dataset2);
-		chart.getOptions().getScales().setXAxes(axis);
+		chart.getOptions().getScales().setAxes(axis);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -156,17 +159,6 @@ public class FloatingDataTimeSeriesByBarCase extends BaseComposite {
 			}
 		}
 		chart.update();
-	}
-	
-	private String getDateFormat() {
-		if (DefaultDateAdapter.MOMENT.equals(App.dateAdapterTyoe)) {
-			return "YYYY-MM-DD";
-		} else if (DefaultDateAdapter.LUXON.equals(App.dateAdapterTyoe)) {
-			return "yyyy-MM-dd";
-		} else if (DefaultDateAdapter.DATE_FNS.equals(App.dateAdapterTyoe)) {
-			return "yyyy-MM-dd";
-		}
-		return null;
 	}
 
 }

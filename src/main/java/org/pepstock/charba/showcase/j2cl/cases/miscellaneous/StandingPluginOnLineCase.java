@@ -16,9 +16,9 @@ import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.dom.enums.TextAlign;
 import org.pepstock.charba.client.dom.enums.TextBaseline;
+import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.items.ScaleItem;
-import org.pepstock.charba.client.options.Scales;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -99,7 +99,7 @@ public class StandingPluginOnLineCase extends BaseComposite {
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getTicks().setReverse(true);
+		axis2.setReverse(true);
 
 		axis2.getTicks().setCallback(new TickCallback() {
 
@@ -111,11 +111,11 @@ public class StandingPluginOnLineCase extends BaseComposite {
 			}
 		});
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(YEARS);
 		chart.getData().setDatasets(datasets.toArray(new Dataset[0]));
+
 
 		AbstractPlugin p = new AbstractPlugin() {
 
@@ -125,18 +125,18 @@ public class StandingPluginOnLineCase extends BaseComposite {
 			}
 
 			@Override
-			public void onAfterDatasetsDraw(IsChart chart, double easing) {
+			public void onAfterDatasetsDraw(IsChart chart) {
 				final int padding = 30;
 				final int datasetsCount = chart.getData().getDatasets().size();
 				Context2dItem ctx = chart.getCanvas().getContext2d();
 
-				ScaleItem scaleX = chart.getNode().getScales().getItems().get(Scales.DEFAULT_X_AXIS_ID);
-				ScaleItem scaleY = chart.getNode().getScales().getItems().get(Scales.DEFAULT_Y_AXIS_ID);
+				ScaleItem scaleX = chart.getNode().getScales().getItems().get(DefaultScaleId.X.value());
+				ScaleItem scaleY = chart.getNode().getScales().getItems().get(DefaultScaleId.Y.value());
 
-				int heightAmongLabels = (scaleY.getBottom() - scaleY.getTop()) / (datasetsCount - 1);
+				double heightAmongLabels = (scaleY.getBottom() - scaleY.getTop()) / (datasetsCount - 1);
 
-				int x = scaleX.getRight() + padding;
-				int y = scaleY.getTop();
+				double x = scaleX.getRight() + padding;
+				double y = scaleY.getTop();
 
 				for (int i = 0; i < datasetsCount; i++) {
 					int index = i + 1;

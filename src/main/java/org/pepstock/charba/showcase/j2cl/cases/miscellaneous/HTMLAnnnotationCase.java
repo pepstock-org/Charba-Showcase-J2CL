@@ -10,12 +10,12 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.dom.elements.Img;
+import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.items.ChartAreaNode;
 import org.pepstock.charba.client.items.ScaleItem;
-import org.pepstock.charba.client.options.Scales;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
 import org.pepstock.charba.client.utils.AnnotationBuilder;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -67,24 +67,22 @@ public class HTMLAnnnotationCase extends BaseComposite {
 		chart.getOptions().getTooltips().setIntersect(true);
 		chart.getOptions().getLayout().getPadding().setBottom(200);
 
-		CartesianLinearAxis axis1 = new CartesianLinearAxis(chart);
-		axis1.setId("y-axis-1");
+		CartesianLinearAxis axis1 = new CartesianLinearAxis(chart,"y-axis-1");
 		axis1.setPosition(Position.LEFT);
 		axis1.setDisplay(true);
-		axis1.getTicks().setBeginAtZero(true);
+		axis1.setBeginAtZero(true);
 		axis1.getScaleLabel().setDisplay(true);
 		axis1.getScaleLabel().setLabelString("Percentage");
 
-		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
-		axis2.setId("y-axis-2");
+		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart, "y-axis-2");
 		axis2.setPosition(Position.RIGHT);
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 		axis2.getGrideLines().setDrawOnChartArea(false);
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Degrees");
 
-		chart.getOptions().getScales().setYAxes(axis1, axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		final BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("Humidity");
@@ -103,7 +101,7 @@ public class HTMLAnnnotationCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
-
+		
 		chart.getPlugins().add(new AbstractPlugin() {
 
 			private final static String ANNOTATION_TEMPLATE = "<center>" + "<table width=\"100%\" height=\"100%\" style=\"background-color: lightGray;\">" + "<tr><th><img src=\"{0}\"></img></th></tr>"
@@ -115,13 +113,13 @@ public class HTMLAnnnotationCase extends BaseComposite {
 			}
 
 			@Override
-			public void onAfterDraw(IsChart chart, double easing) {
+			public void onAfterDraw(IsChart chart) {
 				final Context2dItem ctx = chart.getCanvas().getContext2d();
 
 				ChartNode node = chart.getNode();
 				ChartAreaNode chartArea = node.getChartArea();
 
-				ScaleItem scaleItem = node.getScales().getItems().get(Scales.DEFAULT_X_AXIS_ID);
+				ScaleItem scaleItem = node.getScales().getItems().get(DefaultScaleId.X.value());
 
 				double topRaster = chartArea.getBottom() + scaleItem.getHeight();
 				double heightRaster = chart.getCanvas().getOffsetHeight() - topRaster - 5;
@@ -144,6 +142,7 @@ public class HTMLAnnnotationCase extends BaseComposite {
 
 					scaleTickX = scaleTickX + scaleTickLength;
 				}
+
 			}
 
 		});

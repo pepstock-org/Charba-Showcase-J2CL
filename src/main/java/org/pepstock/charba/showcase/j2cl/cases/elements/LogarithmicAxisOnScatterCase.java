@@ -11,7 +11,7 @@ import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.configuration.CartesianLogarithmicAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.ScatterDataset;
-import org.pepstock.charba.client.enums.CartesianAxisType;
+import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -75,7 +75,7 @@ public class LogarithmicAxisOnScatterCase extends BaseComposite {
 		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
 
-		CartesianLogarithmicAxis axis1 = new CartesianLogarithmicAxis(chart, CartesianAxisType.X);
+		CartesianLogarithmicAxis axis1 = new CartesianLogarithmicAxis(chart, AxisKind.X);
 		axis1.setDisplay(true);
 		axis1.getScaleLabel().setDisplay(true);
 		axis1.setPosition(Position.BOTTOM);
@@ -106,10 +106,10 @@ public class LogarithmicAxisOnScatterCase extends BaseComposite {
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("voltage");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setDatasets(dataset1);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

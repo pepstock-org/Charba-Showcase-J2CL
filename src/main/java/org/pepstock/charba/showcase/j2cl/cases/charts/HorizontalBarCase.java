@@ -75,6 +75,7 @@ public class HorizontalBarCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

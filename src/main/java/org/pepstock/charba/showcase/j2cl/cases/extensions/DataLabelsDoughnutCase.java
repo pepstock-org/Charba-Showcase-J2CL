@@ -14,9 +14,9 @@ import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.callbacks.DisplayCallback;
 import org.pepstock.charba.client.datalabels.callbacks.FormatterCallback;
 import org.pepstock.charba.client.datalabels.enums.Anchor;
-import org.pepstock.charba.client.datalabels.enums.Weight;
-import org.pepstock.charba.client.enums.DefaultPlugin;
+import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.Display;
+import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.client.impl.callbacks.Percentage;
 import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.client.items.UndefinedValues;
@@ -68,8 +68,8 @@ public class DataLabelsDoughnutCase extends BaseComposite {
 		chart.getOptions().getLayout().getPadding().setBottom(32);
 		chart.getOptions().getLayout().getPadding().setLeft(8);
 
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.LEGEND, false);
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.TITLE, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.LEGEND, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.TITLE, false);
 
 		DoughnutDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");

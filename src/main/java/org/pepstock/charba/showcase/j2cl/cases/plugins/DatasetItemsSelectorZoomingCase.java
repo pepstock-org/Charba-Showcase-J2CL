@@ -2,6 +2,7 @@ package org.pepstock.charba.showcase.j2cl.cases.plugins;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.pepstock.charba.client.IsChart;
@@ -12,11 +13,11 @@ import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
@@ -94,7 +95,7 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 			public List<String> onTitle(IsChart chart, List<TooltipItem> items) {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
-				DataPoint dp = ds.getDataPoints().get(item.getIndex());
+				DataPoint dp = ds.getDataPoints().get(item.getDataIndex());
 				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
@@ -129,17 +130,15 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		dataset2.setDataPoints(dp1);
 		small.getData().setDatasets(dataset2);
 
-		final CartesianTimeAxis axis = new CartesianTimeAxis(chart);
-		axis.setDistribution(ScaleDistribution.SERIES);
+		final CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 
-		chart.getOptions().getScales().setXAxes(axis);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis, axis2);
 
 		small.getOptions().getPlugins().setEnabled(ChartBackgroundColor.ID, false);
 
@@ -153,7 +152,7 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		CartesianTimeAxis axis1Small = new CartesianTimeAxis(small);
 		axis1Small.setDisplay(false);
 
-		small.getOptions().getScales().setXAxes(axis1Small);
+		small.getOptions().getScales().setAxes(axis1Small);
 
 		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
 		pOptions.setBorderWidth(5);
@@ -168,17 +167,21 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.getFrom()).append(" ");
-				sb.append("Dataset to: ").append(event.getTo());
+				sb.append("Dataset from: ").append(event.isClearSelection() ? "Clear selection event" : event.getFrom().getLabel()).append(" ");
+				sb.append("Dataset to: ").append(event.isClearSelection() ? "Clear selection event" : event.getTo().getLabel());
 				mylog.addLogEvent(sb.toString());
-				if (event.getFrom() != DatasetRangeSelectionEvent.CLEAR_SELECTION) {
-					int tot = event.getTo() - event.getFrom() + 1;
-					DataPoint[] dp1 = new DataPoint[tot];
-					for (int i = 0; i < tot; i++) {
-						dp1[i] = dataset2.getDataPoints().get(i + event.getFrom());
-
+				if (!event.isClearSelection()) {
+					List<DataPoint> newDataPoints = new LinkedList<>();
+					for (DataPoint dp : dataset2.getDataPoints()) {
+						newDataPoints.add(dp);
 					}
-					dataset1.setDataPoints(dp1);
+					dataset1.setDataPoints(newDataPoints);
+					chart.getData().setDatasets(dataset1);
+					axis.setMin(event.getFrom().getValueAsDate());
+					axis.setMax(event.getTo().getValueAsDate());
+					chart.reconfigure();
+				} else {
+					dataset1.setDataPoints(new LinkedList<>());
 					chart.getData().setDatasets(dataset1);
 					chart.update();
 				}
@@ -186,7 +189,6 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		}, DatasetRangeSelectionEvent.TYPE);
 
 		chartCol.appendChild(chart.getChartElement().as());
-
 		chartCol.appendChild(small.getChartElement().as());
 
 		// ----------------------------------------------

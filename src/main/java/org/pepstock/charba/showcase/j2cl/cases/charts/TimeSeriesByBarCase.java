@@ -1,14 +1,15 @@
 package org.pepstock.charba.showcase.j2cl.cases.charts;
 
+import java.util.Date;
+
 import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.adapters.DateAdapter;
 import org.pepstock.charba.client.colors.HtmlColor;
-import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.ScaleBounds;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -69,7 +70,7 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
 			DataPoint dataPoint = new DataPoint();
 			dataPoint.setX(adapter.add(startingPoint, i, TimeUnit.DAY));
-			dataPoint.setX(100 * Math.random());
+			dataPoint.setY(100 * Math.random());
 			points[idx] = dataPoint;
 
 			DataPoint rainPoint = new DataPoint();
@@ -88,13 +89,15 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		DataPoint[] rainPoints2 = new DataPoint[AMOUNT_OF_POINTS];
 		idx = 0;
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			Date newDate = adapter.add(startingPoint, i, TimeUnit.DAY);
+
 			DataPoint dataPoint = new DataPoint();
-			dataPoint.setX(adapter.add(startingPoint, i, TimeUnit.DAY));
-			dataPoint.setX(100 * Math.random());
+			dataPoint.setX(newDate);
+			dataPoint.setY(100 * Math.random());
 			points[idx] = dataPoint;
 
 			DataPoint rainPoint2 = new DataPoint();
-			rainPoint2.setX(adapter.add(startingPoint, i, TimeUnit.DAY));
+			rainPoint2.setX(newDate);
 			rainPoint2.setY(100 * Math.random());
 			rainPoints2[idx] = rainPoint2;
 
@@ -102,14 +105,14 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		}
 		dataset2.setDataPoints(rainPoints2);
 
-		CartesianTimeAxis axis = new CartesianTimeAxis(chart);
-		axis.setDistribution(ScaleDistribution.SERIES);
+		CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
 		axis.setBounds(ScaleBounds.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 		axis.setOffset(true);
 
 		chart.getData().setDatasets(dataset1, dataset2);
-		chart.getOptions().getScales().setXAxes(axis);
+		chart.getOptions().getScales().setAxes(axis);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

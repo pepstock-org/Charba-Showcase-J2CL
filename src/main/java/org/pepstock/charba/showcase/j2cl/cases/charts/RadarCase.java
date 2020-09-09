@@ -8,6 +8,7 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.RadialAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.RadarDataset;
+import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -54,8 +55,9 @@ public class RadarCase extends BaseComposite {
 		chart.getOptions().getTitle().setText("Radar chart");
 
 		RadialAxis axis = new RadialAxis(chart);
-		axis.getTicks().setBeginAtZero(true);
-		chart.getOptions().setAxis(axis);
+		axis.setDisplay(true);
+		axis.setBeginAtZero(true);
+		chart.getOptions().getScales().setAxes(axis);
 
 		RadarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
@@ -68,6 +70,7 @@ public class RadarCase extends BaseComposite {
 		dataset1.setPointBorderColor(color1.toHex());
 		dataset1.setBorderWidth(2);
 		dataset1.setData(getRandomDigits(months));
+		dataset1.setFill(Fill.START);
 
 		RadarDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
@@ -79,9 +82,11 @@ public class RadarCase extends BaseComposite {
 		dataset2.setPointBackgroundColor(color2.toHex());
 		dataset2.setBorderWidth(2);
 		dataset2.setData(getRandomDigits(months));
+		dataset2.setFill(Fill.START);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

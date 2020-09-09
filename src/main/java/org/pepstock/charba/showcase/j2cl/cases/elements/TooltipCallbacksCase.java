@@ -61,7 +61,7 @@ public class TooltipCallbacksCase extends BaseComposite {
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Tooltip footer callback");
 		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
-		chart.getOptions().getTooltips().setFooterFontStyle(FontStyle.NORMAL);
+		chart.getOptions().getTooltips().getFooterFont().setStyle(FontStyle.NORMAL);
 		chart.getOptions().getTooltips().getCallbacks().setFooterCallback(new TooltipFooterCallback() {
 
 			@Override
@@ -69,7 +69,7 @@ public class TooltipCallbacksCase extends BaseComposite {
 				double sum = 0D;
 				for (TooltipItem item : items) {
 					Dataset dataset = chart.getData().getDatasets().get(item.getDatasetIndex());
-					sum += dataset.getData().get(item.getIndex());
+					sum += dataset.getData().get(item.getDataIndex());
 				}
 				return Arrays.asList("Sum: " + sum);
 			}
@@ -117,11 +117,11 @@ public class TooltipCallbacksCase extends BaseComposite {
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

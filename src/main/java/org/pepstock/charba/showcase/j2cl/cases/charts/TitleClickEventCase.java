@@ -74,7 +74,7 @@ public class TitleClickEventCase extends BaseComposite {
 						title.append(value).append(" ");
 					}
 				}
-				mylog.addLogEvent("> CLICK: title: " + title.toString());
+				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
 			}
 
 		}, TitleClickEvent.TYPE);
@@ -109,13 +109,13 @@ public class TitleClickEventCase extends BaseComposite {
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		chart.getPlugins().add(ChartPointer.get());
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

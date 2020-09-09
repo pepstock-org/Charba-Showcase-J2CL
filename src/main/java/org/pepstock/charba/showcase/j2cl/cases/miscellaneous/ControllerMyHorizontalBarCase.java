@@ -4,6 +4,7 @@ import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.impl.plugins.ColorSchemes;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -64,16 +65,17 @@ public class ControllerMyHorizontalBarCase extends BaseComposite {
 		dataset1.setBorderWidth(1);
 		dataset1.setData(getRandomDigits(COUNTRIES.length, false));
 
-		axis = new CartesianCategoryAxis(chart);
+		axis = new CartesianCategoryAxis(chart, AxisKind.Y);
 		axis.setDisplay(true);
 		axis.getScaleLabel().setDisplay(true);
 
 		chart.getData().setLabels(COUNTRIES);
 		chart.getData().setDatasets(dataset1);
 
-		chart.getOptions().getScales().setYAxes(axis);
+		chart.getOptions().getScales().setAxes(axis);
 
 		chart.getPlugins().add(ColorSchemes.get());
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

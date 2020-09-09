@@ -18,9 +18,9 @@ import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.callbacks.FormatterCallback;
 import org.pepstock.charba.client.datalabels.enums.Align;
 import org.pepstock.charba.client.datalabels.enums.Anchor;
-import org.pepstock.charba.client.datalabels.enums.Weight;
-import org.pepstock.charba.client.enums.DefaultPlugin;
+import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.Display;
+import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.client.utils.Utilities;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -68,8 +68,8 @@ public class FloatingDataDataLabelsCase extends BaseComposite {
 		chart.getOptions().getLayout().getPadding().setTop(32);
 		chart.getOptions().getElements().getLine().setFill(false);
 
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.LEGEND, false);
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.TITLE, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.LEGEND, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.TITLE, false);
 
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
@@ -94,12 +94,11 @@ public class FloatingDataDataLabelsCase extends BaseComposite {
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1);
@@ -146,6 +145,7 @@ public class FloatingDataDataLabelsCase extends BaseComposite {
 		option.getLabels().setLabel("down", down);
 
 		chart.getOptions().getPlugins().setOptions(DataLabelsPlugin.ID, option);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

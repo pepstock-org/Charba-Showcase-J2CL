@@ -69,7 +69,7 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getLegend().getLabels().setUsePointStyle(true);
-		chart.getOptions().getLegend().getLabels().setFontSize(15);
+		chart.getOptions().getLegend().getLabels().getFont().setSize(15);
 		chart.getOptions().getLegend().getLabels().setLabelsCallback(new LegendLabelsCallback() {
 
 			@Override
@@ -101,6 +101,7 @@ public class ApplyingPointStylesOnLineCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

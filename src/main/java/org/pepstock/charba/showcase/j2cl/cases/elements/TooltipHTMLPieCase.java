@@ -5,6 +5,7 @@ import java.util.List;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.PieChart;
 import org.pepstock.charba.client.callbacks.TooltipCustomCallback;
+import org.pepstock.charba.client.configuration.Tooltips;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.PieDataset;
 import org.pepstock.charba.client.dom.elements.CastHelper;
@@ -70,13 +71,13 @@ public class TooltipHTMLPieCase extends BaseComposite {
 
 			@Override
 			public void onCustom(IsChart chart, TooltipModel model) {
-				if (model.getOpacity() == 0) {
-					element.style.opacity = OpacityUnionType.of(0D);
-					return;
-				}
 				if (element == null) {
 					element = (HTMLDivElement) DomGlobal.document.createElement("div");
 					chart.getChartElement().appendChild(CastHelper.toDiv(element));
+				}
+				if (model.getOpacity() == 0) {
+					element.style.opacity = OpacityUnionType.of(0D);
+					return;
 				}
 				if (model.getYAlign() != null) {
 					element.className = model.getYAlign();
@@ -121,9 +122,12 @@ public class TooltipHTMLPieCase extends BaseComposite {
 				element.innerHTML = innerHTML.toString();
 				element.style.left = Unit.PX.format(model.getCaretX());
 				element.style.top = Unit.PX.format(model.getCaretY());
-				element.style.fontSize = FontSizeUnionType.of(model.getBodyFontSize() + "px");
-				element.style.paddingLeft = PaddingLeftUnionType.of(model.getXPadding() + "px");
-				element.style.paddingTop = PaddingTopUnionType.of(model.getYPadding() + "px");
+				
+				Tooltips tooltips = chart.getOptions().getTooltips();
+
+				element.style.fontSize = FontSizeUnionType.of(tooltips.getBodyFont().getSize() + "px");
+				element.style.paddingLeft = PaddingLeftUnionType.of(tooltips.getXPadding() + "px");
+				element.style.paddingTop = PaddingTopUnionType.of(tooltips.getYPadding() + "px");
 
 				element.style.opacity = OpacityUnionType.of(1D);
 				element.style.backgroundColor = "rgba(0, 0, 0, .7)";
@@ -145,6 +149,7 @@ public class TooltipHTMLPieCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

@@ -41,11 +41,11 @@ public class HomeView extends BaseComposite {
 
 	private static final String LINK_GITHUB_VERSION = "https://github.com/pepstock-org/Charba/releases/tag/";
 
-	private static final String[] LABELS = { "", "1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "2.0", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "3.0", "3.1",  "3.2", "" };
+	private static final String[] LABELS = { "", "1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "2.0", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "3.0", "3.1",  "3.2", "4.0", "" };
 
-	private static final double[] VALUES_GWT = { Double.NaN, Double.NaN, Double.NaN, 746, 760, 763, 832, 861, 863, 1200, 1550, 1710, 1720, 1910, 1950, 2040, 2334, 2536, 3064, 3091, 3125, Double.NaN };
+	private static final double[] VALUES_GWT = { Double.NaN, Double.NaN, Double.NaN, 746, 760, 763, 832, 861, 863, 1200, 1550, 1710, 1720, 1910, 1950, 2040, 2334, 2536, 3064, 3091, 3125, 3401, Double.NaN };
 	
-	private static final double[] VALUES_J2CL = { Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, 2536, 2881, 2910, 2941, Double.NaN };
+	private static final double[] VALUES_J2CL = { Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, Double.NaN, 2536, 2881, 2910, 2941, 3212, Double.NaN };
 
 	private final HTMLTableElement mainPanel;
 
@@ -127,7 +127,6 @@ public class HomeView extends BaseComposite {
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
-		chart.getOptions().setAspectRatio(2.5D);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Charba artifacts");
@@ -164,7 +163,6 @@ public class HomeView extends BaseComposite {
 		datasetJ2CL.setPointHitRadius(4);
 		datasetJ2CL.setFill(false);
 		datasetJ2CL.setData(VALUES_J2CL);
-
 		chart.addHandler(new DatasetSelectionEventHandler() {
 
 			@Override
@@ -183,7 +181,7 @@ public class HomeView extends BaseComposite {
 		axis1.setDisplay(true);
 		axis1.getScaleLabel().setDisplay(true);
 		axis1.getScaleLabel().setLabelString("Charba version");
-		axis1.getScaleLabel().setFontColor(HtmlColor.BLACK);
+		axis1.getScaleLabel().getFont().setColor(HtmlColor.BLACK);
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
@@ -201,16 +199,15 @@ public class HomeView extends BaseComposite {
 
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("JAR size");
-		axis2.getScaleLabel().setFontColor(HtmlColor.BLACK);
+		axis2.getScaleLabel().getFont().setColor(HtmlColor.BLACK);
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(LABELS);
 		chart.getData().setDatasets(datasetGwt, datasetJ2CL);
-
+		
 		ChartPointerOptions options = new ChartPointerOptions();
-		options.setElements(PointerElement.DATASET);
+		options.setElements(PointerElement.DATASET, PointerElement.LEGEND);
 		chart.getOptions().getPlugins().setOptions(ChartPointer.ID, options);
 
 		chart.getPlugins().add(ChartPointer.get());

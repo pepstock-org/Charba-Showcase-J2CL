@@ -12,8 +12,8 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.PolarAreaDataset;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
-import org.pepstock.charba.client.datalabels.enums.Weight;
-import org.pepstock.charba.client.enums.DefaultPlugin;
+import org.pepstock.charba.client.enums.DefaultPluginId;
+import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -61,8 +61,8 @@ public class DataLabelsPolarAreaCase extends BaseComposite {
 		chart.getOptions().getElements().getPoint().setHoverRadius(7);
 		chart.getOptions().getElements().getPoint().setRadius(7);
 
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.LEGEND, false);
-		chart.getOptions().getPlugins().setEnabled(DefaultPlugin.TITLE, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.LEGEND, false);
+		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.TITLE, false);
 
 		PolarAreaDataset dataset = chart.newDataset();
 		dataset.setLabel("dataset 1");
@@ -70,9 +70,9 @@ public class DataLabelsPolarAreaCase extends BaseComposite {
 		dataset.setData(getRandomDigits(months, false));
 
 		RadialAxis axis = new RadialAxis(chart);
-		axis.getTicks().setBeginAtZero(true);
-		axis.getTicks().setReverse(false);
-		chart.getOptions().setAxis(axis);
+		axis.setBeginAtZero(true);
+		axis.setReverse(false);
+		chart.getOptions().getScales().setAxes(axis);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);

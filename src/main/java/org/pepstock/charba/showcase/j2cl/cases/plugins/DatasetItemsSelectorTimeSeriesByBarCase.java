@@ -4,13 +4,13 @@ import java.util.Date;
 
 import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.Defaults;
+import org.pepstock.charba.client.adapters.DateAdapter;
 import org.pepstock.charba.client.colors.HtmlColor;
-import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.ScaleBounds;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
@@ -41,8 +41,6 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 
 	private final LogView mylog = new LogView(4);
 
-	private long starting = System.currentTimeMillis();
-
 	public DatasetItemsSelectorTimeSeriesByBarCase() {
 		// ----------------------------------------------
 		// Main element
@@ -65,11 +63,11 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(3);
-		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Timeseries by bar chart");
-		long time = starting;
+		
+		DateAdapter adapter = new DateAdapter();
+		long time = adapter.startOf(new Date(), TimeUnit.DAY).getTime();
 
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
@@ -99,7 +97,7 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		dataset2.setLabel("dataset 2");
 
 		DataPoint[] rainPoints2 = new DataPoint[AMOUNT_OF_POINTS];
-		time = starting;
+		time = adapter.startOf(new Date(), TimeUnit.DAY).getTime();;
 		idx = 0;
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
 			DataPoint dataPoint = new DataPoint();
@@ -117,14 +115,13 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		}
 		dataset2.setDataPoints(rainPoints2);
 
-		CartesianTimeAxis axis = new CartesianTimeAxis(chart);
-		axis.setDistribution(ScaleDistribution.SERIES);
+		CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
 		axis.setBounds(ScaleBounds.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 		axis.setOffset(true);
 
 		chart.getData().setDatasets(dataset1, dataset2);
-		chart.getOptions().getScales().setXAxes(axis);
+		chart.getOptions().getScales().setAxes(axis);
 
 		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
 		pOptions.setBorderWidth(2);
@@ -132,7 +129,7 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		pOptions.setBorderColor(HtmlColor.GREY);
 		pOptions.getClearSelection().setDisplay(true);
 		pOptions.getClearSelection().setLabel("Reset selection");
-		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFontSize());
+		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 		pOptions.setFireEventOnClearSelection(true);
 
@@ -144,8 +141,8 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.getFrom()).append(" ");
-				sb.append("Dataset to: ").append(event.getTo());
+				sb.append("Dataset from: ").append(event.isClearSelection() ? "Clear selection event" : event.getFrom().getLabel()).append(" ");
+				sb.append("Dataset to: ").append(event.isClearSelection() ? "Clear selection event" : event.getTo().getLabel());
 				mylog.addLogEvent(sb.toString());
 			}
 		}, DatasetRangeSelectionEvent.TYPE);

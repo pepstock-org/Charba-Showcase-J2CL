@@ -64,7 +64,7 @@ public class TitleStyleCase extends BaseComposite {
 
 		HTMLOptionElement colorDefault = (HTMLOptionElement) DomGlobal.document.createElement("option");
 		colorDefault.text = "Default";
-		colorDefault.value = Defaults.get().getGlobal().getTitle().getFontColorAsString();
+		colorDefault.value = Defaults.get().getGlobal().getTitle().getFont().getColorAsString();
 		color.add(colorDefault);
 		for (HtmlColor myColor : COLORS) {
 			HTMLOptionElement colorN = (HTMLOptionElement) DomGlobal.document.createElement("option");
@@ -75,7 +75,7 @@ public class TitleStyleCase extends BaseComposite {
 
 		HTMLOptionElement fontSizeDefault = (HTMLOptionElement) DomGlobal.document.createElement("option");
 		fontSizeDefault.text = "Default";
-		fontSizeDefault.value = String.valueOf(Defaults.get().getGlobal().getTitle().getFontSize());
+		fontSizeDefault.value = String.valueOf(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		fontSize.add(fontSizeDefault);
 		for (int myFontSize : FONT_SIZES) {
 			HTMLOptionElement fontSizeN = (HTMLOptionElement) DomGlobal.document.createElement("option");
@@ -127,10 +127,10 @@ public class TitleStyleCase extends BaseComposite {
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -198,13 +198,13 @@ public class TitleStyleCase extends BaseComposite {
 
 	protected void handleColor() {
 		String selected = color.options.getAt(color.selectedIndex).value;
-		chart.getOptions().getTitle().setFontColor(selected);
+		chart.getOptions().getTitle().getFont().setColor(selected);
 		chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(0).build());
 	}
 
 	protected void handleFontSize() {
 		String selected = fontSize.options.getAt(fontSize.selectedIndex).value;
-		chart.getOptions().getTitle().setFontSize(Integer.parseInt(selected));
+		chart.getOptions().getTitle().getFont().setSize(Integer.parseInt(selected));
 		chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(0).build());
 	}
 

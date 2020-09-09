@@ -10,8 +10,6 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
-import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -57,8 +55,6 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(3);
-		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Dataset items selector plugin on bar chart");
@@ -93,23 +89,24 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		pOptions.setBorderColor(HtmlColor.GREY);
 		pOptions.getClearSelection().setDisplay(true);
 		pOptions.getClearSelection().setLabel("Reset selection");
-		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFontSize());
+		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 		pOptions.setFireEventOnClearSelection(true);
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(DatasetsItemsSelector.get());
 
-		chart.addHandler(new DatasetRangeSelectionEventHandler() {
-
-			@Override
-			public void onSelect(DatasetRangeSelectionEvent event) {
-				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.getFrom()).append(" ");
-				sb.append("Dataset to: ").append(event.getTo());
-				mylog.addLogEvent(sb.toString());
-			}
-		}, DatasetRangeSelectionEvent.TYPE);
+		//FIXME
+//		chart.addHandler(new DatasetRangeSelectionEventHandler() {
+//
+//			@Override
+//			public void onSelect(DatasetRangeSelectionEvent event) {
+//				StringBuilder sb = new StringBuilder();
+//				sb.append("Dataset from: ").append(event.isClearSelection() ? "Clear selection event" : event.getFrom().getLabel()).append(" ");
+//				sb.append("Dataset to: ").append(event.isClearSelection() ? "Clear selection event" : event.getTo().getLabel());
+//				mylog.addLogEvent(sb.toString());
+//			}
+//		}, DatasetRangeSelectionEvent.TYPE);
 
 		chartCol.appendChild(chart.getChartElement().as());
 

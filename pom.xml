@@ -82,6 +82,7 @@
 				</executions>
 				<configuration>
 					<webappDirectory>./war</webappDirectory>
+					<dependencyMode>PRUNE</dependencyMode>
 					<entrypoint>org.pepstock.charba.showcase.j2cl.App</entrypoint>
 					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename>
 				</configuration>
@@ -100,7 +101,7 @@
 				<plugin>
 					<groupId>com.vertispan.j2cl</groupId>
 					<artifactId>j2cl-maven-plugin</artifactId>
-					<version>0.13-SNAPSHOT</version>
+					<version>0.16-SNAPSHOT</version>
 					<executions>
 						<execution>
 							<id>build-js</id>

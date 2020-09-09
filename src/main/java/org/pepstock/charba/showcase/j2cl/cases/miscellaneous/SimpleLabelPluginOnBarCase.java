@@ -14,6 +14,7 @@ import org.pepstock.charba.client.dom.enums.TextAlign;
 import org.pepstock.charba.client.dom.enums.TextBaseline;
 import org.pepstock.charba.client.enums.FontStyle;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.client.items.DatasetItem;
 import org.pepstock.charba.client.items.DatasetMetaItem;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
@@ -94,8 +95,8 @@ public class SimpleLabelPluginOnBarCase extends BaseComposite {
 			}
 
 			@Override
-			public void onAfterDatasetsDraw(IsChart chart, double easing) {
-				final int fontSize = Defaults.get().getGlobal().getDefaultFontSize();
+			public void onAfterDatasetsDraw(IsChart chart) {
+				final int fontSize = Defaults.get().getGlobal().getFont().getSize();
 				final int padding = 5;
 				final Context2dItem ctx = chart.getCanvas().getContext2d();
 
@@ -109,17 +110,18 @@ public class SimpleLabelPluginOnBarCase extends BaseComposite {
 							DatasetItem item = items.get(k);
 							String dataString = ds.getData().get(k).toString();
 							ctx.setFillColor("rgb(0, 0, 0)");
-							String fontString = Utilities.toCSSFontProperty(FontStyle.NORMAL, fontSize, Defaults.get().getGlobal().getDefaultFontFamily());
+							String fontString = Utilities.toCSSFontProperty(FontStyle.NORMAL, Weight.NORMAL, fontSize, Defaults.get().getGlobal().getFont().getFamily());
 							ctx.setFont(fontString);
 							ctx.setTextAlign(TextAlign.CENTER);
 							ctx.setTextBaseline(TextBaseline.MIDDLE);
-							ctx.fillText(dataString, item.getView().getX(), item.getView().getY() - (fontSize / 2) - padding);
+							ctx.fillText(dataString, item.getX(), item.getY() - (fontSize / 2) - padding);
 						}
 					}
 				}
 			}
 		};
 		chart.getPlugins().add(p);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

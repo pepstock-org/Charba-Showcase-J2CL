@@ -20,18 +20,18 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.configuration.CartesianTimeAxis;
+import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.enums.AxisKind;
+import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
-import org.pepstock.charba.client.enums.ScaleDistribution;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.events.LegendClickEvent;
 import org.pepstock.charba.client.events.LegendClickEventHandler;
-import org.pepstock.charba.client.items.DatasetMetaItem;
 import org.pepstock.charba.client.items.TooltipItem;
-import org.pepstock.charba.client.options.Scales;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -51,7 +51,9 @@ public class TrendAndForecastCase extends BaseComposite {
 	private static final int AMOUNT_OF_POINTS = 60;
 
 	private static final int PREVIOUS_PERIOD = 30;
-
+	
+	private static final String MY_SCALE_ID = "my";
+	
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
@@ -95,17 +97,16 @@ public class TrendAndForecastCase extends BaseComposite {
 
 			@Override
 			public void onClick(LegendClickEvent event) {
-				Defaults.get().invokeLegendOnClick(event);
 				if (event.getItem().getDatasetIndex() == 2) {
-					DatasetMetaItem metadata = chart.getDatasetMeta(event.getItem().getDatasetIndex());
-					if (metadata.isHidden()) {
-						axis.getTicks().setMax(new Date((long) nowDate.getTime()));
-						chart.reconfigure();
+					if (chart.isDatasetVisible(2)) {
+						chart.getNode().getOptions().getScales().getAxis(MY_SCALE_ID).setMax(new Date((long) nowDate.getTime()));
+						axis.setMax(new Date((long) nowDate.getTime()));
 					} else {
-						axis.getTicks().setMax((Date) null);
-						chart.reconfigure();
+						chart.getNode().getOptions().getScales().getAxis(MY_SCALE_ID).setMax((Date) null);
+						axis.setMax((Date) null);
 					}
 				}
+				Defaults.get().invokeLegendOnClick(event);
 			}
 
 		}, LegendClickEvent.TYPE);
@@ -120,7 +121,7 @@ public class TrendAndForecastCase extends BaseComposite {
 			public List<String> onTitle(IsChart chart, List<TooltipItem> items) {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
-				DataPoint dp = ds.getDataPoints().get(item.getIndex());
+				DataPoint dp = ds.getDataPoints().get(item.getDataIndex());
 				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
@@ -185,17 +186,15 @@ public class TrendAndForecastCase extends BaseComposite {
 		trend.setDataPoints(trendDp);
 		forecast.setDataPoints(forecastDp);
 
-		axis = new CartesianTimeAxis(chart);
-		axis.setDistribution(ScaleDistribution.SERIES);
+		axis = new CartesianTimeSeriesAxis(chart, MY_SCALE_ID, AxisKind.X);
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getTicks().setBeginAtZero(true);
+		axis2.setBeginAtZero(true);
 
-		chart.getOptions().getScales().setXAxes(axis);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis, axis2);
 		chart.getData().setDatasets(dataset, trend, forecast);
 
 		AnnotationOptions options = new AnnotationOptions();
@@ -203,7 +202,7 @@ public class TrendAndForecastCase extends BaseComposite {
 		LineAnnotation line = new LineAnnotation();
 		line.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
 		line.setMode(LineMode.VERTICAL);
-		line.setScaleID(Scales.DEFAULT_X_AXIS_ID);
+		line.setScaleID(DefaultScaleId.X.value());
 		line.setBorderColor(HtmlColor.DARK_GRAY);
 		line.setBorderWidth(2);
 		line.setValue(new Date((long) nowDate.getTime()));
@@ -214,6 +213,7 @@ public class TrendAndForecastCase extends BaseComposite {
 		options.setAnnotations(line);
 
 		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

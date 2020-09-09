@@ -9,6 +9,7 @@ import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
+import org.pepstock.charba.client.configuration.Tooltips;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.dom.elements.CastHelper;
@@ -79,17 +80,14 @@ public class TooltipHTMLlineCase extends BaseComposite {
 
 			@Override
 			public void onCustom(IsChart chart, TooltipModel model) {
-				if (model.getOpacity() == 0) {
-					element.style.opacity = OpacityUnionType.of(0D);
-					return;
-				}
 				if (element == null) {
 					element = (HTMLDivElement) DomGlobal.document.createElement("div");
 					chart.getChartElement().appendChild(CastHelper.toDiv(element));
 				}
-				// element.reremoveClassName("above");
-				// element.removeClassName("below");
-				// element.removeClassName("no-transform");
+				if (model.getOpacity() == 0) {
+					element.style.opacity = OpacityUnionType.of(0D);
+					return;
+				}
 				if (model.getYAlign() != null) {
 					element.className = model.getYAlign();
 				} else {
@@ -132,9 +130,11 @@ public class TooltipHTMLlineCase extends BaseComposite {
 				element.innerHTML = innerHTML.toString();
 				element.style.left = Unit.PX.format(model.getCaretX());
 				element.style.top = Unit.PX.format(model.getCaretY());
-				element.style.fontSize = FontSizeUnionType.of(model.getBodyFontSize() + "px");
-				element.style.paddingLeft = PaddingLeftUnionType.of(model.getXPadding() + "px");
-				element.style.paddingTop = PaddingTopUnionType.of(model.getYPadding() + "px");
+				
+				Tooltips tooltips = chart.getOptions().getTooltips();
+				element.style.fontSize = FontSizeUnionType.of(tooltips.getBodyFont().getSize() + "px");
+				element.style.paddingLeft = PaddingLeftUnionType.of(tooltips.getXPadding() + "px");
+				element.style.paddingTop = PaddingTopUnionType.of(tooltips.getYPadding() + "px");
 
 				element.style.opacity = OpacityUnionType.of(1D);
 				element.style.backgroundColor = "rgba(0, 0, 0, .7)";
@@ -179,11 +179,11 @@ public class TooltipHTMLlineCase extends BaseComposite {
 		axis2.getScaleLabel().setDisplay(true);
 		axis2.getScaleLabel().setLabelString("Value");
 
-		chart.getOptions().getScales().setXAxes(axis1);
-		chart.getOptions().getScales().setYAxes(axis2);
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

@@ -66,11 +66,11 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 		CartesianLinearAxis axis1 = new CartesianLinearAxis(chart);
 		axis1.setPosition(Position.LEFT);
 		axis1.setDisplay(true);
-		axis1.getTicks().setBeginAtZero(true);
+		axis1.setBeginAtZero(true);
 		axis1.getScaleLabel().setDisplay(true);
 		axis1.getScaleLabel().setLabelString("Percentage");
 
-		chart.getOptions().getScales().setYAxes(axis1);
+		chart.getOptions().getScales().setAxes(axis1);
 
 		dataset = chart.newDataset();
 		dataset.setLabel("Humidity");
@@ -105,7 +105,7 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 			}
 
 			@Override
-			public void onAfterDraw(IsChart chart, double easing) {
+			public void onAfterDraw(IsChart chart) {
 				final Context2dItem ctx = chart.getCanvas().getContext2d();
 
 				DatasetMetaItem meta = chart.getDatasetMeta(0);
@@ -113,8 +113,8 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 
 				Img img = AnnotationBuilder.build(ANNOTATION, 300, 64);
 
-				double x = item.getView().getX() - (item.getView().getWidth() / 2);
-				double y = item.getView().getY() - img.getHeight() - 10;
+				double x = item.getX() - (item.getWidth() / 2);
+				double y = item.getY() - img.getHeight() - 10;
 
 				ctx.drawImage(img, x, y);
 			}
