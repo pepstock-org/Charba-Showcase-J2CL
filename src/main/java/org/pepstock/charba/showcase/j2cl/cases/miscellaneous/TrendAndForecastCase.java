@@ -8,12 +8,13 @@ import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.adapters.DateAdapter;
+import org.pepstock.charba.client.annotation.AbstractAnnotation;
 import org.pepstock.charba.client.annotation.AnnotationOptions;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.LineAnnotation;
+import org.pepstock.charba.client.annotation.callbacks.DisplayCallback;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
 import org.pepstock.charba.client.annotation.enums.LineLabelPosition;
-import org.pepstock.charba.client.annotation.enums.LineMode;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -24,7 +25,6 @@ import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.AxisKind;
-import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.TickSource;
@@ -200,15 +200,21 @@ public class TrendAndForecastCase extends BaseComposite {
 		AnnotationOptions options = new AnnotationOptions();
 
 		LineAnnotation line = new LineAnnotation();
+		line.setDisplayCallback(new DisplayCallback() {
+			
+			@Override
+			public boolean invoke(IsChart chart, AbstractAnnotation annotation) {
+				return chart.isDatasetVisible(2);
+			}
+		});
 		line.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
-		line.setMode(LineMode.VERTICAL);
-		line.setScaleID(DefaultScaleId.X.value());
+		line.setScaleID(MY_SCALE_ID);
 		line.setBorderColor(HtmlColor.DARK_GRAY);
 		line.setBorderWidth(2);
 		line.setValue(new Date((long) nowDate.getTime()));
 		line.getLabel().setEnabled(true);
 		line.getLabel().setContent("Now");
-		line.getLabel().setPosition(LineLabelPosition.TOP);
+		line.getLabel().setPosition(LineLabelPosition.START);
 
 		options.setAnnotations(line);
 

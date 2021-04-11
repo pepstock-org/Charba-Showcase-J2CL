@@ -1,9 +1,7 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.BackgroundColorCallback;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -11,6 +9,7 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.callbacks.AlignCallback;
@@ -34,6 +33,10 @@ public class DataLabelsDatasetCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
+	
+	private final LineDataset dataset1;
+	
+	private final LineDataset dataset2;
 
 	public DataLabelsDatasetCase() {
 		// ----------------------------------------------
@@ -70,7 +73,8 @@ public class DataLabelsDatasetCase extends BaseComposite {
 		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.LEGEND, false);
 		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.TITLE, false);
 
-		LineDataset dataset1 = chart.newDataset();
+
+		dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
 		IsColor color1 = GoogleChartColor.values()[0];
@@ -82,7 +86,7 @@ public class DataLabelsDatasetCase extends BaseComposite {
 		dataset1.setData(values);
 		dataset1.setFill("+1");
 
-		LineDataset dataset2 = chart.newDataset();
+		dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
 
 		IsColor color2 = GoogleChartColor.values()[1];
@@ -94,13 +98,13 @@ public class DataLabelsDatasetCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 		axis2.setStacked(true);
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
@@ -109,10 +113,10 @@ public class DataLabelsDatasetCase extends BaseComposite {
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		DataLabelsOptions option = new DataLabelsOptions();
-		option.setBackgroundColor(new BackgroundColorCallback() {
+		option.setBackgroundColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public String invoke(IsChart chart, ScriptableContext context) {
+			public String invoke(DataLabelsContext context) {
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 				return ds.getBorderColorAsString();
 			}
@@ -126,16 +130,13 @@ public class DataLabelsDatasetCase extends BaseComposite {
 		option.setAlign(new AlignCallback() {
 
 			@Override
-			public Align invoke(IsChart chart, ScriptableContext context) {
-				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				double v0 = ds.getData().get(0);
-				double v1 = ds.getData().get(1);
-				boolean invert = v0 - v1 > 0;
-				return context.getDatasetIndex() == 0 ? invert ? Align.END : Align.START : invert ? Align.START : Align.CENTER;
+			public Align invoke(DataLabelsContext context) {
+				return context.getDatasetIndex() == 0 ? Align.BOTTOM : Align.TOP;
 			}
 		});
 
 		chart.getOptions().getPlugins().setOptions(DataLabelsPlugin.ID, option);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

@@ -8,10 +8,10 @@ import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.dom.elements.Img;
+import org.pepstock.charba.client.enums.AxisPosition;
 import org.pepstock.charba.client.enums.InteractionMode;
-import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.items.DatasetElement;
 import org.pepstock.charba.client.items.DatasetItem;
-import org.pepstock.charba.client.items.DatasetMetaItem;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
 import org.pepstock.charba.client.utils.AnnotationBuilder;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -64,11 +64,11 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 		chart.getOptions().getLayout().getPadding().setTop(100);
 
 		CartesianLinearAxis axis1 = new CartesianLinearAxis(chart);
-		axis1.setPosition(Position.LEFT);
+		axis1.setPosition(AxisPosition.LEFT);
 		axis1.setDisplay(true);
 		axis1.setBeginAtZero(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Percentage");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Percentage");
 
 		chart.getOptions().getScales().setAxes(axis1);
 
@@ -91,7 +91,7 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
 
-		chart.getPlugins().add(new AbstractPlugin() {
+		chart.getPlugins().add(new AbstractPlugin("raster") {
 
 			private static final String ANNOTATION = "<div style=\"border: 1px solid; border-color: rgba(255, 29, 29); padding: 6px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background: rgba(255, 137, 137); color: black; -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2); box-shadow: 0 2px 4px rgba(0,0,0,0.2);\">"
 					+ "			  <div class=\"popupContent\">" + "			    <table cellspacing=\"2\" cellpadding=\"0\">" + "				  <tbody>" + "				    <tr>"
@@ -100,21 +100,16 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 					+ "			      </tbody>" + "				</table>" + "			  </div>" + "			</div>";
 
 			@Override
-			public String getId() {
-				return "raster";
-			}
-
-			@Override
 			public void onAfterDraw(IsChart chart) {
 				final Context2dItem ctx = chart.getCanvas().getContext2d();
 
-				DatasetMetaItem meta = chart.getDatasetMeta(0);
-				DatasetItem item = meta.getDatasets().get(3);
+				DatasetItem item = chart.getDatasetItem(0);
+				DatasetElement elem = item.getElements().get(3);
 
 				Img img = AnnotationBuilder.build(ANNOTATION, 300, 64);
 
-				double x = item.getX() - (item.getWidth() / 2);
-				double y = item.getY() - img.getHeight() - 10;
+				double x = elem.getX() - (elem.getWidth() / 2);
+				double y = elem.getY() - img.getHeight() - 10;
 
 				ctx.drawImage(img, x, y);
 			}

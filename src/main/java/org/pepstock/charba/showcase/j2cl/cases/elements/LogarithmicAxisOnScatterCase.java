@@ -12,6 +12,7 @@ import org.pepstock.charba.client.configuration.CartesianLogarithmicAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.ScatterDataset;
 import org.pepstock.charba.client.enums.AxisKind;
+import org.pepstock.charba.client.enums.AxisPosition;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -77,8 +78,8 @@ public class LogarithmicAxisOnScatterCase extends BaseComposite {
 
 		CartesianLogarithmicAxis axis1 = new CartesianLogarithmicAxis(chart, AxisKind.X);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.setPosition(Position.BOTTOM);
+		axis1.getTitle().setDisplay(true);
+		axis1.setPosition(AxisPosition.BOTTOM);
 		axis1.getTicks().setCallback(new TickCallback() {
 
 			@Override
@@ -90,8 +91,8 @@ public class LogarithmicAxisOnScatterCase extends BaseComposite {
 				return "";
 			}
 		});
-		axis1.getScaleLabel().setLabelString("Frequency");
-		axis1.getScaleLabel().setDisplay(true);
+		axis1.getTitle().setText("Frequency");
+		axis1.getTitle().setDisplay(true);
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
@@ -103,8 +104,8 @@ public class LogarithmicAxisOnScatterCase extends BaseComposite {
 			}
 		});
 
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("voltage");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("voltage");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 

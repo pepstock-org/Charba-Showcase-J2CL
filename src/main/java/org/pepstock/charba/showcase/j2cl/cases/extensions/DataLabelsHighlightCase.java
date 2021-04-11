@@ -1,10 +1,7 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.BackgroundColorCallback;
-import org.pepstock.charba.client.callbacks.BorderColorCallback;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -16,9 +13,9 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
-import org.pepstock.charba.client.datalabels.callbacks.ColorCallback;
 import org.pepstock.charba.client.datalabels.enums.Align;
 import org.pepstock.charba.client.datalabels.events.EnterEventHandler;
 import org.pepstock.charba.client.datalabels.events.LeaveEventHandler;
@@ -73,7 +70,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 		chart.getOptions().getLayout().getPadding().setBottom(32);
 		chart.getOptions().getLayout().getPadding().setLeft(8);
 		chart.getOptions().getElements().getLine().setFill(false);
-
+		
 		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.LEGEND, false);
 		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.TITLE, false);
 
@@ -115,13 +112,13 @@ public class DataLabelsHighlightCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 		axis2.setStacked(true);
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
@@ -130,28 +127,28 @@ public class DataLabelsHighlightCase extends BaseComposite {
 		chart.getData().setDatasets(dataset1, dataset2, dataset3);
 
 		DataLabelsOptions option = new DataLabelsOptions();
-		option.setBackgroundColor(new BackgroundColorCallback() {
+		option.setBackgroundColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public IsColor invoke(IsChart chart, ScriptableContext context) {
+			public IsColor invoke(DataLabelsContext context) {
 				Hovered hovered = context.getOptions(factory);
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 				return hovered.isHovered() ? ds.getBackgroundColor() : HtmlColor.WHITE;
 			}
 		});
-		option.setBorderColor(new BorderColorCallback() {
+		option.setBorderColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public IsColor invoke(IsChart chart, ScriptableContext context) {
+			public IsColor invoke(DataLabelsContext context) {
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 				return ds.getBorderColor();
 			}
 
 		});
-		option.setColor(new ColorCallback() {
+		option.setColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public IsColor invoke(IsChart chart, ScriptableContext context) {
+			public IsColor invoke(DataLabelsContext context) {
 				Hovered hovered = context.getOptions(factory);
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 				return hovered.isHovered() ? HtmlColor.WHITE : ds.getBackgroundColor();
@@ -166,7 +163,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 		option.getListeners().setEnterEventHandler(new EnterEventHandler() {
 
 			@Override
-			public boolean onEnter(IsChart chart, ScriptableContext context) {
+			public boolean onEnter(DataLabelsContext context) {
 				Hovered hovered = context.getOptions(factory);
 				hovered.setHovered(true);
 				context.setOptions(hovered);
@@ -177,7 +174,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 		option.getListeners().setLeaveEventHandler(new LeaveEventHandler() {
 
 			@Override
-			public boolean onLeave(IsChart chart, ScriptableContext context) {
+			public boolean onLeave(DataLabelsContext context) {
 				Hovered hovered = context.getOptions(factory);
 				hovered.setHovered(false);
 				context.setOptions(hovered);
@@ -187,6 +184,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 		});
 
 		chart.getOptions().getPlugins().setOptions(DataLabelsPlugin.ID, option);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

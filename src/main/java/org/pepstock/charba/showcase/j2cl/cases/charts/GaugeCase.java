@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.pepstock.charba.client.IsChart;
-import org.pepstock.charba.client.callbacks.ValueCallback;
+import org.pepstock.charba.client.callbacks.MeterFormatCallback;
 import org.pepstock.charba.client.colors.ColorBuilder;
 import org.pepstock.charba.client.enums.FontStyle;
 import org.pepstock.charba.client.impl.charts.GaugeChart;
@@ -78,7 +78,7 @@ public class GaugeCase extends BaseComposite {
 		chartPercent.getOptions().getTitle().setDisplay(true);
 		chartPercent.getOptions().getTitle().setText("GAUGE chart to represent percentage value");
 		chartPercent.getOptions().setDisplay(MeterDisplay.PERCENTAGE);
-		chartPercent.getOptions().setValueCallback(new ValueCallback() {
+		chartPercent.getOptions().setFormatCallback(new MeterFormatCallback() {
 
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
@@ -93,7 +93,7 @@ public class GaugeCase extends BaseComposite {
 		chartValue.getOptions().getTitle().setDisplay(true);
 		chartValue.getOptions().getTitle().setText("GAUGE chart to represent value and dataset label");
 		chartValue.getOptions().setDisplay(MeterDisplay.VALUE_AND_LABEL);
-		chartValue.getOptions().setValueCallback(new ValueCallback() {
+		chartValue.getOptions().setFormatCallback(new MeterFormatCallback() {
 
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {
@@ -108,7 +108,7 @@ public class GaugeCase extends BaseComposite {
 		chartValueColor.getOptions().getTitle().setDisplay(true);
 		chartValueColor.getOptions().getTitle().setText("GAUGE chart to represent value and dataset label", "changing the color of label");
 		chartValueColor.getOptions().setDisplay(MeterDisplay.VALUE_AND_LABEL);
-		chartValueColor.getOptions().setValueCallback(new ValueCallback() {
+		chartValueColor.getOptions().setFormatCallback(new MeterFormatCallback() {
 
 			@Override
 			public String onFormat(IsChart chart, double value, double easing) {

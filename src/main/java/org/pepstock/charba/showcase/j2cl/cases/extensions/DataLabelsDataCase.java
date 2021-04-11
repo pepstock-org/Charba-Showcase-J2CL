@@ -1,8 +1,7 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.colors.Color;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -11,10 +10,10 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.callbacks.AlignCallback;
-import org.pepstock.charba.client.datalabels.callbacks.ColorCallback;
 import org.pepstock.charba.client.datalabels.callbacks.FormatterCallback;
 import org.pepstock.charba.client.datalabels.enums.Align;
 import org.pepstock.charba.client.enums.DefaultPluginId;
@@ -71,6 +70,7 @@ public class DataLabelsDataCase extends BaseComposite {
 		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.LEGEND, false);
 		chart.getOptions().getPlugins().setEnabled(DefaultPluginId.TITLE, false);
 
+
 		LineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
@@ -83,13 +83,13 @@ public class DataLabelsDataCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 		axis2.setStacked(true);
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
@@ -108,22 +108,22 @@ public class DataLabelsDataCase extends BaseComposite {
 		option.setAlign(new AlignCallback() {
 
 			@Override
-			public Align invoke(IsChart chart, ScriptableContext context) {
+			public Align invoke(DataLabelsContext context) {
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				double curr = ds.getData().get(context.getIndex());
-				double prev = context.getIndex() > 0 ? ds.getData().get(context.getIndex() - 1) : 0;
-				double next = context.getIndex() < ds.getData().size() ? ds.getData().get(context.getIndex() + 1) : 0;
+				double curr = ds.getData().get(context.getDataIndex());
+				double prev = context.getDataIndex() > 0 ? ds.getData().get(context.getDataIndex() - 1) : 0;
+				double next = context.getDataIndex() < ds.getData().size() ? ds.getData().get(context.getDataIndex() + 1) : 0;
 				return prev < curr && next < curr ? Align.END : prev > curr && next > curr ? Align.START : Align.CENTER;
 			}
 
 		});
-		option.setColor(new ColorCallback() {
+		option.setColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public IsColor invoke(IsChart chart, ScriptableContext context) {
+			public IsColor invoke(DataLabelsContext context) {
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				double value = ds.getData().get(context.getIndex());
-				double diff = context.getIndex() > 0 ? value - ds.getData().get(context.getIndex() - 1) : 0;
+				double value = ds.getData().get(context.getDataIndex());
+				double diff = context.getDataIndex() > 0 ? value - ds.getData().get(context.getDataIndex() - 1) : 0;
 				return diff < 0 ? HtmlColor.RED : diff > 0 ? HtmlColor.GREEN : HtmlColor.GRAY;
 			}
 
@@ -131,9 +131,9 @@ public class DataLabelsDataCase extends BaseComposite {
 		option.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
+			public String invoke(DataLabelsContext context, DataItem dataItem) {
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				double diff = context.getIndex() > 0 ? dataItem.getValue() - ds.getData().get(context.getIndex() - 1) : 0;
+				double diff = context.getDataIndex() > 0 ? dataItem.getValue() - ds.getData().get(context.getDataIndex() - 1) : 0;
 				StringBuffer sb = new StringBuffer();
 				sb.append(diff > 0 ? '\u25B2' : diff < 0 ? '\u25BC' : '\u25C6');
 				return sb.append(" ").append(Math.round(dataItem.getValue())).toString();
@@ -142,6 +142,7 @@ public class DataLabelsDataCase extends BaseComposite {
 		});
 
 		chart.getOptions().getPlugins().setOptions(DataLabelsPlugin.ID, option);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

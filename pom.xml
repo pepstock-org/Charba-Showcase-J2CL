@@ -6,7 +6,7 @@
 
 	<groupId>org.pepstock</groupId>
 	<artifactId>charba-showcase-j2cl</artifactId>
-	<version>3.2</version>
+	<version>4.0</version>
 	<name>Charba-Showcase-J2CL</name>
 	<description>Showcase of Charba on J2CL</description>
 
@@ -25,12 +25,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.google.jsinterop</groupId>
-			<artifactId>base</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
-		<dependency>
 			<groupId>com.google.elemental2</groupId>
 			<artifactId>elemental2-dom</artifactId>
 			<version>1.1.0</version>
@@ -39,7 +33,7 @@
 		<dependency> 
 			<groupId>org.pepstock</groupId>
 			<artifactId>charba</artifactId>
-			<version>3.2</version>
+			<version>4.0</version>
 		</dependency>
 
 	</dependencies>
@@ -85,6 +79,7 @@
 					<dependencyMode>PRUNE</dependencyMode>
 					<entrypoint>org.pepstock.charba.showcase.j2cl.App</entrypoint>
 					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename>
+					<enableSourcemaps>true</enableSourcemaps>
 				</configuration>
 			</plugin>
 		</plugins>

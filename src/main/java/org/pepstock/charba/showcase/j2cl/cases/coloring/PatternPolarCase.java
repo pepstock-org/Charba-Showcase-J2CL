@@ -3,6 +3,7 @@ package org.pepstock.charba.showcase.j2cl.cases.coloring;
 import org.pepstock.charba.client.PolarAreaChart;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.Pattern;
+import org.pepstock.charba.client.colors.PatternBuilder;
 import org.pepstock.charba.client.configuration.RadialAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.PolarAreaDataset;
@@ -63,10 +64,10 @@ public class PatternPolarCase extends BaseComposite {
 
 		PolarAreaDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
-
-		Pattern pattern = new Pattern(CastHelper.toImg(Images.get().pattern));
-		Pattern pattern1 = new Pattern(CastHelper.toImg(Images.get().background));
-		Pattern pattern2 = new Pattern(CastHelper.toImg(Images.get().patternHover));
+		
+		Pattern pattern = PatternBuilder.create(CastHelper.toImg(Images.get().pattern)).build(); 
+		Pattern pattern1 = PatternBuilder.create(CastHelper.toImg(Images.get().background)).build(); ;
+		Pattern pattern2 = PatternBuilder.create(CastHelper.toImg(Images.get().patternHover)).build(); 
 
 		dataset1.setBackgroundColor(pattern, pattern1, pattern2);
 
@@ -76,7 +77,7 @@ public class PatternPolarCase extends BaseComposite {
 
 		RadialAxis axis = new RadialAxis(chart);
 		axis.setBeginAtZero(true);
-		axis.getGrideLines().setCircular(true);
+		axis.getGrid().setCircular(true);
 		chart.getOptions().getScales().setAxes(axis);
 
 		chart.getData().setLabels(getLabels(ITEMS));

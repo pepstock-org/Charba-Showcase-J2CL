@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.TooltipCustomCallback;
+import org.pepstock.charba.client.callbacks.TooltipExternalCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
@@ -69,17 +69,21 @@ public class TooltipHTMLlineCase extends BaseComposite {
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
+		chart.getOptions().getLegend().getLabels().setUsePointStyle(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("HTML custom tooltip on line chart");
 		chart.getOptions().getTooltips().setEnabled(false);
 		chart.getOptions().getTooltips().setPosition(TooltipPosition.NEAREST);
 		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
-		chart.getOptions().getTooltips().setCustomCallback(new TooltipCustomCallback() {
+		
+		chart.getOptions().getTooltips().setUsePointStyle(true);
+		
+		chart.getOptions().getTooltips().setExternalCallback(new TooltipExternalCallback() {
 
 			private HTMLDivElement element = null;
 
 			@Override
-			public void onCustom(IsChart chart, TooltipModel model) {
+			public void onExternal(IsChart chart, TooltipModel model) {
 				if (element == null) {
 					element = (HTMLDivElement) DomGlobal.document.createElement("div");
 					chart.getChartElement().appendChild(CastHelper.toDiv(element));
@@ -133,8 +137,8 @@ public class TooltipHTMLlineCase extends BaseComposite {
 				
 				Tooltips tooltips = chart.getOptions().getTooltips();
 				element.style.fontSize = FontSizeUnionType.of(tooltips.getBodyFont().getSize() + "px");
-				element.style.paddingLeft = PaddingLeftUnionType.of(tooltips.getXPadding() + "px");
-				element.style.paddingTop = PaddingTopUnionType.of(tooltips.getYPadding() + "px");
+				element.style.paddingLeft = PaddingLeftUnionType.of(tooltips.getPadding().getLeft() + "px");
+				element.style.paddingTop = PaddingTopUnionType.of(tooltips.getPadding().getTop() + "px");
 
 				element.style.opacity = OpacityUnionType.of(1D);
 				element.style.backgroundColor = "rgba(0, 0, 0, .7)";
@@ -171,13 +175,13 @@ public class TooltipHTMLlineCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 

@@ -49,16 +49,16 @@ public class PieCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getLegend().setFullWidth(true);
 		chart.getOptions().getTitle().setText("Pie chart");
 
 		PieDataset dataset = chart.newDataset();
 		dataset.setLabel("dataset 1");
 		dataset.setBackgroundColor(getSequenceColors(months, 1));
 		dataset.setData(getRandomDigits(months, false));
-
+		
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -143,7 +143,6 @@ public class PieCase extends BaseComposite {
 	}
 
 	protected void handleRandomize() {
-		chart.getDatasetMeta(0);
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months, false));
 		}

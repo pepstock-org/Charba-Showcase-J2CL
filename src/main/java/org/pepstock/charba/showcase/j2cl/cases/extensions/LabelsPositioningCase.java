@@ -7,6 +7,7 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.DoughnutDataset;
 import org.pepstock.charba.client.data.PieDataset;
+import org.pepstock.charba.client.labels.Label;
 import org.pepstock.charba.client.labels.LabelsOptions;
 import org.pepstock.charba.client.labels.LabelsPlugin;
 import org.pepstock.charba.client.labels.enums.Position;
@@ -33,7 +34,9 @@ public class LabelsPositioningCase extends BaseComposite {
 
 	private final HTMLInputElement outside = (HTMLInputElement) DomGlobal.document.createElement("input");
 
-	private final LabelsOptions option = new LabelsOptions();
+	private final LabelsOptions options = new LabelsOptions();
+
+	private final Label label = options.createLabel("label");
 
 	public LabelsPositioningCase() {
 		// ----------------------------------------------
@@ -57,8 +60,11 @@ public class LabelsPositioningCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().getTitle().setDisplay(false);
+		chart.getOptions().getLayout().getPadding().setBottom(25);
+		chart.getOptions().getLegend().setPosition(org.pepstock.charba.client.enums.Position.RIGHT);
+		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Positioning labels");
+		chart.getOptions().getTitle().setPadding(25);
 
 		DoughnutDataset dataset = chart.newDataset();
 		dataset.setLabel("dataset 1");
@@ -68,15 +74,16 @@ public class LabelsPositioningCase extends BaseComposite {
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
 
-		option.setRender(Render.LABEL);
-		option.setFontColor(HtmlColor.WHITE);
-		option.setFontSize(16);
-		option.setFontFamily("'Lucida Console', Monaco, monospace");
-		option.setArc(true);
-		option.setPosition(Position.BORDER);
-		option.setOverlap(false);
+		label.setRender(Render.LABEL);
+		label.setColor(HtmlColor.WHITE);
+		label.getFont().setSize(16);
+		label.getFont().setFamily("'Lucida Console', Monaco, monospace");
+		label.setArc(true);
+		label.setPosition(Position.BORDER);
+		label.setOverlap(false);
 
-		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, option);
+		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, options);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -183,9 +190,9 @@ public class LabelsPositioningCase extends BaseComposite {
 	}
 
 	protected void handleOutside() {
-		option.setPosition(outside.checked ? Position.OUTSIDE : Position.BORDER);
-		option.setFontColor(outside.checked ? HtmlColor.BLACK : HtmlColor.WHITE);
-		chart.getNode().getOptions().getPlugins().setOptions(LabelsPlugin.ID, option);
+		label.setPosition(outside.checked ? Position.OUTSIDE : Position.BORDER);
+		label.setColor(outside.checked ? HtmlColor.BLACK : HtmlColor.WHITE);
+		chart.getNode().getOptions().getPlugins().setOptions(LabelsPlugin.ID, options);
 		chart.update();
 	}
 

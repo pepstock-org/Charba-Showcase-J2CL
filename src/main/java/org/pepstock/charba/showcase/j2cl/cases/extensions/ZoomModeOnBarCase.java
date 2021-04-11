@@ -8,6 +8,7 @@ import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.zoom.AbstractConfigurationItem;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.client.zoom.callbacks.ModeCallback;
@@ -89,7 +90,7 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		options.getPan().setMode(new ModeCallback() {
 
 			@Override
-			public InteractionAxis mode(IsChart chart) {
+			public InteractionAxis mode(IsChart chart, AbstractConfigurationItem<?> item) {
 				mylog.addLogEvent("> Panning MODE: " + InteractionAxis.Y.value());
 				return InteractionAxis.Y;
 			}
@@ -98,13 +99,14 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		options.getZoom().setMode(new ModeCallback() {
 
 			@Override
-			public InteractionAxis mode(IsChart chart) {
+			public InteractionAxis mode(IsChart chart, AbstractConfigurationItem<?> item) {
 				mylog.addLogEvent("> Zooming MODE: " + InteractionAxis.Y.value());
 				return InteractionAxis.Y;
 			}
 		});
 
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

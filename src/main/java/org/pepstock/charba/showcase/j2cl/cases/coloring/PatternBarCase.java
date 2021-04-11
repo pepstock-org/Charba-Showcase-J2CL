@@ -3,6 +3,7 @@ package org.pepstock.charba.showcase.j2cl.cases.coloring;
 import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.Pattern;
+import org.pepstock.charba.client.colors.PatternBuilder;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.dom.elements.CastHelper;
@@ -26,7 +27,7 @@ public class PatternBarCase extends BaseComposite {
 
 	private final BarChart chart = new BarChart();
 
-	private final Pattern pattern = new Pattern(CastHelper.toImg(Images.get().background));
+	private final Pattern pattern = PatternBuilder.create(CastHelper.toImg(Images.get().background)).build();
 
 	public PatternBarCase() {
 		// ----------------------------------------------
@@ -63,6 +64,7 @@ public class PatternBarCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

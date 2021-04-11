@@ -10,7 +10,7 @@ import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.enums.ScaleBounds;
+import org.pepstock.charba.client.enums.Bounds;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
@@ -116,7 +116,7 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		dataset2.setDataPoints(rainPoints2);
 
 		CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
-		axis.setBounds(ScaleBounds.DATA);
+		axis.setBounds(Bounds.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 		axis.setOffset(true);
 
@@ -131,7 +131,6 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		pOptions.getClearSelection().setLabel("Reset selection");
 		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
-		pOptions.setFireEventOnClearSelection(true);
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(DatasetsItemsSelector.get());
@@ -141,8 +140,7 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.isClearSelection() ? "Clear selection event" : event.getFrom().getLabel()).append(" ");
-				sb.append("Dataset to: ").append(event.isClearSelection() ? "Clear selection event" : event.getTo().getLabel());
+				sb.append("Dataset from: ").append(event.getFrom().getLabel()).append(" to: ").append(event.getTo().getLabel());
 				mylog.addLogEvent(sb.toString());
 			}
 		}, DatasetRangeSelectionEvent.TYPE);

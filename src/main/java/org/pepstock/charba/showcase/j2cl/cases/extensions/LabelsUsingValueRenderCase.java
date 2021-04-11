@@ -2,16 +2,16 @@ package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
 import java.util.List;
 
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.PieChart;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.PieDataset;
 import org.pepstock.charba.client.enums.FontStyle;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.labels.Label;
+import org.pepstock.charba.client.labels.LabelsContext;
 import org.pepstock.charba.client.labels.LabelsOptions;
 import org.pepstock.charba.client.labels.LabelsPlugin;
-import org.pepstock.charba.client.labels.RenderItem;
 import org.pepstock.charba.client.labels.callbacks.RenderCallback;
 import org.pepstock.charba.client.labels.enums.Render;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -39,6 +39,7 @@ public class LabelsUsingValueRenderCase extends BaseComposite {
 	private final MyRenderer renderer = new MyRenderer();
 
 	private final LabelsOptions option = new LabelsOptions();
+	private final Label label = option.createLabel("myLabel");
 
 	public LabelsUsingValueRenderCase() {
 		// ----------------------------------------------
@@ -74,15 +75,16 @@ public class LabelsUsingValueRenderCase extends BaseComposite {
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
 
-		option.setRender(Render.VALUE);
-		option.setFontColor(HtmlColor.WHITE);
-		option.setPrecision(2);
-		option.setFontSize(14);
-		option.setFontStyle(FontStyle.BOLD);
-		option.setFontFamily("'Lucida Console', Monaco, monospace");
-		option.setOverlap(false);
+		label.setRender(Render.VALUE);
+		label.setPrecision(2);
+		label.setColor(HtmlColor.WHITE);
+		label.getFont().setSize(14);
+		label.getFont().setStyle(FontStyle.BOLD);
+		label.getFont().setFamily("'Lucida Console', Monaco, monospace");
+		label.setOverlap(false);
 
 		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, option);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -224,11 +226,10 @@ public class LabelsUsingValueRenderCase extends BaseComposite {
 
 	protected void handleFormat() {
 		if (format.checked) {
-			option.setRender(renderer);
+			label.setRender(renderer);
 		} else {
-			option.setRender(Render.VALUE);
+			label.setRender(Render.VALUE);
 		}
-
 		chart.getNode().getOptions().getPlugins().setOptions(LabelsPlugin.ID, option);
 		chart.update();
 	}
@@ -236,7 +237,7 @@ public class LabelsUsingValueRenderCase extends BaseComposite {
 	static class MyRenderer implements RenderCallback {
 
 		@Override
-		public String invoke(IsChart chart, RenderItem item) {
+		public String invoke(LabelsContext item) {
 			return "$$ " + item.getDataItem().getValue();
 		}
 

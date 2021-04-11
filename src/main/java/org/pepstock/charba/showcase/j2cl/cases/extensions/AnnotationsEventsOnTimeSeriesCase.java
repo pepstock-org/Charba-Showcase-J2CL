@@ -13,13 +13,11 @@ import org.pepstock.charba.client.annotation.AnnotationOptions;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.BoxAnnotation;
 import org.pepstock.charba.client.annotation.LineAnnotation;
-import org.pepstock.charba.client.annotation.callbacks.ClickCallback;
-import org.pepstock.charba.client.annotation.callbacks.DoubleClickCallback;
-import org.pepstock.charba.client.annotation.callbacks.MouseOutCallback;
-import org.pepstock.charba.client.annotation.callbacks.MouseOverCallback;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
-import org.pepstock.charba.client.annotation.enums.Event;
-import org.pepstock.charba.client.annotation.enums.LineMode;
+import org.pepstock.charba.client.annotation.listeners.ClickCallback;
+import org.pepstock.charba.client.annotation.listeners.DoubleClickCallback;
+import org.pepstock.charba.client.annotation.listeners.EnterCallback;
+import org.pepstock.charba.client.annotation.listeners.LeaveCallback;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -31,7 +29,6 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.data.TimeSeriesItem;
 import org.pepstock.charba.client.data.TimeSeriesLineDataset;
-import org.pepstock.charba.client.dom.BaseNativeEvent;
 import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.TickSource;
@@ -62,7 +59,7 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 
 	private final LogView mylog = new LogView();
 
-	final MyEventsCallback callback = new MyEventsCallback();
+	final MyEventsHandler eventHandler = new MyEventsHandler();
 
 	public AnnotationsEventsOnTimeSeriesCase() {
 		// ----------------------------------------------
@@ -154,12 +151,9 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		AnnotationOptions options = new AnnotationOptions();
-		options.setEvents(Event.CLICK, Event.DOUBLE_CLICK, Event.MOUSE_OUT, Event.MOUSE_OVER);
 
 		LineAnnotation line = new LineAnnotation();
-		line.setName("LineAnnotation");
 		line.setDrawTime(DrawTime.AFTER_DATASETS_DRAW);
-		line.setMode(LineMode.HORIZONTAL);
 		line.setScaleID(DefaultScaleId.Y.value());
 		line.setBorderColor(HtmlColor.BLACK);
 		line.setBorderWidth(5);
@@ -167,32 +161,31 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		line.getLabel().setEnabled(true);
 		line.getLabel().setContent("My threshold");
 		line.getLabel().setBackgroundColor(HtmlColor.RED);
-		line.setClickCallback(callback);
-		line.setMouseOverCallback(callback);
-		line.setMouseOutCallback(callback);
-		line.setDoubleClickCallback(callback);
+		line.setEnterCallback(eventHandler);
+		line.setLeaveCallback(eventHandler);
+		line.setClickCallback(eventHandler);
+		line.setDoubleClickCallback(eventHandler);
 
 		BoxAnnotation box = new BoxAnnotation();
-		box.setName("BoxAnnotation");
 		box.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
 		box.setXScaleID(DefaultScaleId.X.value());
 		box.setYScaleID(DefaultScaleId.Y.value());
 		time = (long) myDate.getTime() + DAY * (int) (AMOUNT_OF_POINTS / 4);
 		box.setXMin(new Date(time));
-		time = (long) myDate.getTime() + DAY * (int) (AMOUNT_OF_POINTS / 4 * 3);
+		time = (long) myDate.getTime() + DAY * (int) (AMOUNT_OF_POINTS / 4 * 2);
 		box.setXMax(new Date(time));
 		box.setYMax(100);
 		box.setYMin(60);
 		box.setBackgroundColor("rgba(101, 33, 171, 0.5)");
 		box.setBorderColor("rgb(101, 33, 171)");
 		box.setBorderWidth(1);
-		box.setClickCallback(callback);
-		box.setMouseOverCallback(callback);
-		box.setMouseOutCallback(callback);
-		box.setDoubleClickCallback(callback);
-
+		box.setEnterCallback(eventHandler);
+		box.setLeaveCallback(eventHandler);
+		box.setClickCallback(eventHandler);
+		box.setDoubleClickCallback(eventHandler);
+		
 		options.setAnnotations(line, box);
-
+		
 		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
 		
 		chartCol.appendChild(chart.getChartElement().as());
@@ -262,28 +255,28 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		}
 		chart.update();
 	}
-
-	class MyEventsCallback implements ClickCallback, MouseOverCallback, MouseOutCallback, DoubleClickCallback {
+	
+	class MyEventsHandler implements ClickCallback,  DoubleClickCallback,  LeaveCallback, EnterCallback {
 
 		@Override
-		public void onMouseOut(IsChart chart, BaseNativeEvent event, AbstractAnnotation annotation) {
-			mylog.addLogEvent("> MOUSEOUT on annotation " + annotation.getName() + " type " + annotation.getType());
+		public void onEnter(IsChart chart, AbstractAnnotation annotation) {
+			mylog.addLogEvent("> Enter on annotation '"+annotation.getId()+"' type " + annotation.getType());
 		}
 
 		@Override
-		public void onMouseOver(IsChart chart, BaseNativeEvent event, AbstractAnnotation annotation) {
-			mylog.addLogEvent("> MOUSEOVER on annotation " + annotation.getName() + " type " + annotation.getType());
+		public void onLeave(IsChart chart, AbstractAnnotation annotation) {
+			mylog.addLogEvent("> Leave on annotation '"+annotation.getId()+"' type " + annotation.getType());
 		}
 
 		@Override
-		public void onClick(IsChart chart, BaseNativeEvent event, AbstractAnnotation annotation) {
-			mylog.addLogEvent("> CLICK on annotation " + annotation.getName() + " type " + annotation.getType());
+		public void onDoubleClick(IsChart chart, AbstractAnnotation annotation) {
+			mylog.addLogEvent("> Double click on annotation '"+annotation.getId()+"' type " + annotation.getType());
 		}
 
 		@Override
-		public void onDoubleClick(IsChart chart, BaseNativeEvent event, AbstractAnnotation annotation) {
-			mylog.addLogEvent("> DOUBLE CLICK on annotation " + annotation.getName() + " type " + annotation.getType());
+		public void onClick(IsChart chart, AbstractAnnotation annotation) {
+			mylog.addLogEvent("> Click on annotation '"+annotation.getId()+"' type " + annotation.getType());
 		}
-
 	}
+
 }

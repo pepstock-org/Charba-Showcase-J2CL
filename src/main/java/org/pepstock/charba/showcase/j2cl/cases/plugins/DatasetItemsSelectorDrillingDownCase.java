@@ -147,25 +147,24 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		pOptions.setBorderDash(6, 3, 6);
 		pOptions.setBorderColor(HtmlColor.GREY);
 		pOptions.setColor(HtmlColor.LIGHT_GOLDEN_ROD_YELLOW.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
-		pOptions.setFireEventOnClearSelection(false);
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(plugin);
 
 		chart.addHandler(new DatasetRangeSelectionEventHandler() {
-
+			
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				if (reset.disabled) {
-					reset.disabled = false;
 					dataset.setBackgroundColor(HtmlColor.DARK_MAGENTA);
 					dataset.setBorderColor(HtmlColor.DARK_MAGENTA);
 					axis.setMin(event.getFrom().getValueAsDate());
 					axis.setMax(event.getTo().getValueAsDate());
 					axis.getTime().setUnit(TimeUnit.HOUR);
-					chart.getOptions().getPlugins().setEnabled(DatasetsItemsSelector.ID, false);
-					plugin.onDestroy(chart);
-					chart.reconfigure();
+					pOptions.setEnabled(false);
+					chart.getOptions().getPlugins().setOptions(pOptions);
+				    chart.reconfigure();
+					reset.disabled = false;
 				}
 			}
 		}, DatasetRangeSelectionEvent.TYPE);
@@ -227,7 +226,7 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		for (TimeSeriesItem dp : dataset.getTimeSeriesData()) {
 			dp.setValue(getRandomDigit(false));
 		}
-		chart.update();
+		handleReset();
 	}
 
 	protected void handleReset() {
@@ -238,7 +237,8 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		axis.setMin(null);
 		axis.setMax(null);
 		axis.getTime().setUnit(TimeUnit.DAY);
-		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
+		pOptions.setEnabled(true);
+		chart.getOptions().getPlugins().setOptions(pOptions);
 		chart.reconfigure();
 	}
 

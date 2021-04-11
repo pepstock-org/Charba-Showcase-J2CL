@@ -1,16 +1,15 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.PieChart;
-import org.pepstock.charba.client.callbacks.BackgroundColorCallback;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.PieDataset;
+import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
-import org.pepstock.charba.client.datalabels.callbacks.ColorCallback;
+import org.pepstock.charba.client.datalabels.LabelItem;
 import org.pepstock.charba.client.datalabels.callbacks.FormatterCallback;
 import org.pepstock.charba.client.datalabels.callbacks.OpacityCallback;
 import org.pepstock.charba.client.datalabels.enums.Align;
@@ -59,6 +58,7 @@ public class DataLabelsMultiLabelsCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setDisplay(false);
 		chart.getOptions().getTooltips().setEnabled(false);
@@ -77,84 +77,82 @@ public class DataLabelsMultiLabelsCase extends BaseComposite {
 
 		DataLabelsOptions option1 = new DataLabelsOptions();
 
-		DataLabelsOptions index = new DataLabelsOptions();
+		LabelItem index = option1.getLabels().createLabel("index");
 		index.setAlign(Align.END);
 		index.setAnchor(Anchor.END);
 		index.setDisplay(true);
-		index.setColor(new ColorCallback() {
+		index.getFont().setSize(18);
+		index.setColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public Object invoke(IsChart chart, ScriptableContext context) {
+			public Object invoke(DataLabelsContext context) {
 				PieDataset ds = (PieDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				return ds.getBackgroundColorAsString().get(context.getIndex());
+				return ds.getBackgroundColorAsString().get(context.getDataIndex());
 			}
 		});
 		index.setOffset(8);
 		index.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
-				return context.isActive() ? "index" : "#" + (context.getIndex() + 1);
+			public String invoke(DataLabelsContext context, DataItem dataItem) {
+				return context.isActive() ? "index" : "#" + (context.getDataIndex() + 1);
 			}
 		});
 
 		index.setOpacity(new OpacityCallback() {
 
 			@Override
-			public Double invoke(IsChart chart, ScriptableContext context) {
+			public Double invoke(DataLabelsContext context) {
 				return context.isActive() ? 1D : 0.5D;
 			}
 		});
-		option1.getLabels().setLabel("index", index);
 
-		DataLabelsOptions name = new DataLabelsOptions();
+		LabelItem name = option1.getLabels().createLabel("name");
 		name.setAlign(Align.TOP);
 		name.getFont().setSize(18);
 		name.setDisplay(true);
 		name.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
-				return context.isActive() ? "name" : chart.getData().getLabels().getString(context.getIndex());
+			public String invoke(DataLabelsContext context, DataItem dataItem) {
+				return context.isActive() ? "name" : chart.getData().getLabels().getString(context.getDataIndex());
 			}
 		});
-		option1.getLabels().setLabel("name", name);
 
-		DataLabelsOptions value = new DataLabelsOptions();
+		LabelItem value = option1.getLabels().createLabel("value");
 		value.setAlign(Align.BOTTOM);
-		value.setBackgroundColor(new BackgroundColorCallback() {
+		value.setBackgroundColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public Object invoke(IsChart chart, ScriptableContext context) {
+			public Object invoke(DataLabelsContext context) {
 				PieDataset ds = (PieDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				double value = ds.getData().get(context.getIndex());
-				IsColor color = ds.getBackgroundColor().get(context.getIndex());
+				double value = ds.getData().get(context.getDataIndex());
+				IsColor color = ds.getBackgroundColor().get(context.getDataIndex());
 				return value > 50 ? HtmlColor.WHITE : color;
 			}
 		});
 		value.setBorderColor(HtmlColor.WHITE);
 		value.setBorderWidth(2);
 		value.setBorderRadius(4);
-		value.setColor(new ColorCallback() {
+		value.setColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public Object invoke(IsChart chart, ScriptableContext context) {
+			public Object invoke(DataLabelsContext context) {
 				PieDataset ds = (PieDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				double value = ds.getData().get(context.getIndex());
+				double value = ds.getData().get(context.getDataIndex());
 				return value > 50 ? HtmlColor.BLACK : HtmlColor.WHITE;
 			}
 		});
 		value.setFormatter(new FormatterCallback() {
 
 			@Override
-			public String invoke(IsChart chart, DataItem dataItem, ScriptableContext context) {
+			public String invoke(DataLabelsContext context, DataItem dataItem) {
 				return context.isActive() ? "value" : String.valueOf(dataItem.getValue());
 			}
 		});
-		value.getPadding().set(4);
+		value.getPadding().set(6);
 		value.setDisplay(true);
-		option1.getLabels().setLabel("value", value);
-
+		
 		dataset1.setOptions(DataLabelsPlugin.ID, option1);
 
 		chart.getData().setLabels(getLabels());
@@ -168,10 +166,7 @@ public class DataLabelsMultiLabelsCase extends BaseComposite {
 		option.getPadding().set(0);
 
 		chart.getOptions().getPlugins().setOptions(DataLabelsPlugin.ID, option);
-
-		DataLabelsOptions myOptions = dataset1.getOptions(DataLabelsPlugin.ID, DataLabelsPlugin.FACTORY);
-		DataLabelsOptions index1 = myOptions.getLabels().getLabel("index");
-		index1.getFont().setSize(18);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

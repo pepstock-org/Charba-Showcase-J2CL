@@ -9,7 +9,7 @@ public final class Images {
 
 	public final HTMLImageElement github = (HTMLImageElement) DomGlobal.document.createElement("img");
 
-	public final HTMLImageElement githubWhite = (HTMLImageElement) DomGlobal.document.createElement("img");
+	public final HTMLImageElement cache = (HTMLImageElement) DomGlobal.document.createElement("img");
 
 	public final HTMLImageElement extensionWhite = (HTMLImageElement) DomGlobal.document.createElement("img");
 
@@ -47,7 +47,7 @@ public final class Images {
 
 	private Images() {
 		github.src = "images/GitHub-Mark-32px.png";
-		githubWhite.src = "images/GitHub-Mark-Light-32px.png";
+		cache.src = "images/baseline_cached_white_18dp.png";
 		extensionWhite.src = "images/baseline_extension_white_18dp.png";
 		fingerprintWhite.src = "images/baseline_fingerprint_white_18dp.png";
 		headlineWhite.src = "images/baseline_view_headline_white_18dp.png";

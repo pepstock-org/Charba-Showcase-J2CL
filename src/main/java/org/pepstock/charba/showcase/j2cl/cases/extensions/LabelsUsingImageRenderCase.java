@@ -4,6 +4,7 @@ import org.pepstock.charba.client.PieChart;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.PieDataset;
 import org.pepstock.charba.client.dom.elements.CastHelper;
+import org.pepstock.charba.client.labels.Label;
 import org.pepstock.charba.client.labels.LabelsOptions;
 import org.pepstock.charba.client.labels.LabelsPlugin;
 import org.pepstock.charba.client.labels.enums.Render;
@@ -62,12 +63,14 @@ public class LabelsUsingImageRenderCase extends BaseComposite {
 		chart.getData().setLabels(getLabels(myMonths));
 		chart.getData().setDatasets(dataset);
 
-		final LabelsOptions option = new LabelsOptions();
-		option.setRender(Render.IMAGE);
-		option.setImages(CastHelper.toImg(Images.get().flagIT), CastHelper.toImg(Images.get().flagFR), CastHelper.toImg(Images.get().flagDE));
-		option.setOverlap(false);
+		LabelsOptions options = new LabelsOptions();
+		Label label = options.createLabel("myLabel");
+		label.setRender(Render.IMAGE);
+		label.setImages(CastHelper.toImg(Images.get().flagIT), CastHelper.toImg(Images.get().flagFR), CastHelper.toImg(Images.get().flagDE));
+		label.setOverlap(false);
 
-		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, option);
+		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, options);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

@@ -9,7 +9,7 @@ import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.enums.ScaleBounds;
+import org.pepstock.charba.client.enums.Bounds;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -106,13 +106,13 @@ public class TimeSeriesByBarCase extends BaseComposite {
 		dataset2.setDataPoints(rainPoints2);
 
 		CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
-		axis.setBounds(ScaleBounds.DATA);
+		axis.setBounds(Bounds.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 		axis.setOffset(true);
 
 		chart.getData().setDatasets(dataset1, dataset2);
 		chart.getOptions().getScales().setAxes(axis);
-
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

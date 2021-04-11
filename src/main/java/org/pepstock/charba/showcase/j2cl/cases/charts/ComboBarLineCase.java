@@ -87,6 +87,7 @@ public class ComboBarLineCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2, dataset3);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

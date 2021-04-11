@@ -1,9 +1,7 @@
 package org.pepstock.charba.showcase.j2cl.cases.elements;
 
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.UpdateConfigurationBuilder;
 import org.pepstock.charba.client.colors.GoogleChartColor;
-import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
@@ -65,6 +63,7 @@ public class GridLinesDisplayCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
+		
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Gridlines display options");
@@ -91,17 +90,13 @@ public class GridLinesDisplayCase extends BaseComposite {
 
 		axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
-		axis1.getGrideLines().setDisplay(true);
-		axis1.getGrideLines().setColor(HtmlColor.DARK_GRAY);
-
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
+		
 		axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
-		axis2.getGrideLines().setDisplay(true);
-		axis2.getGrideLines().setColor(HtmlColor.DARK_GRAY);
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
@@ -199,14 +194,16 @@ public class GridLinesDisplayCase extends BaseComposite {
 	}
 
 	private void configChart() {
-		axis1.getGrideLines().setDisplay(display.checked);
-		axis1.getGrideLines().setDrawBorder(drawBorder.checked);
-		axis1.getGrideLines().setDrawOnChartArea(drawOnChartArea.checked);
-		axis1.getGrideLines().setDrawTicks(drawTicks.checked);
-		axis2.getGrideLines().setDisplay(display.checked);
-		axis2.getGrideLines().setDrawBorder(drawBorder.checked);
-		axis2.getGrideLines().setDrawOnChartArea(drawOnChartArea.checked);
-		axis2.getGrideLines().setDrawTicks(drawTicks.checked);
-		chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(1000).build());
+		axis1.getGrid().setDisplay(display.checked);
+		axis1.getGrid().setDrawBorder(drawBorder.checked);
+		axis1.getGrid().setDrawOnChartArea(drawOnChartArea.checked);
+		axis1.getGrid().setDrawTicks(drawTicks.checked);
+		
+		axis2.getGrid().setDisplay(display.checked);
+		axis2.getGrid().setDrawBorder(drawBorder.checked);
+		axis2.getGrid().setDrawOnChartArea(drawOnChartArea.checked);
+		axis2.getGrid().setDrawTicks(drawTicks.checked);
+		
+		chart.reconfigure();
 	}
 }

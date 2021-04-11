@@ -125,7 +125,6 @@ public class HtmlLegendRadialGradientCase extends BaseComposite {
 	}
 
 	protected void handleRandomize() {
-		chart.getDatasetMeta(0);
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months, false));
 		}

@@ -2,6 +2,7 @@ package org.pepstock.charba.showcase.j2cl.cases.coloring;
 
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.Pattern;
+import org.pepstock.charba.client.colors.PatternBuilder;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
@@ -63,7 +64,7 @@ public class PatternLineCase extends BaseComposite {
 		LineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
-		Pattern pattern = new Pattern(CastHelper.toImg(Images.get().pattern));
+		Pattern pattern = PatternBuilder.create(CastHelper.toImg(Images.get().pattern)).build();
 
 		dataset1.setBackgroundColor(pattern);
 
@@ -73,13 +74,13 @@ public class PatternLineCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 

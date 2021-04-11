@@ -6,6 +6,7 @@ import org.pepstock.charba.client.StackedAreaChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.colors.Pattern;
+import org.pepstock.charba.client.colors.PatternBuilder;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
@@ -90,25 +91,26 @@ public class HoverStyleOnStackedAreaCase extends BaseComposite {
 
 		dataset2.setBorderWidth(5);
 
-		Pattern pattern = new Pattern(CastHelper.toImg(Images.get().pattern));
+		Pattern pattern = PatternBuilder.create(CastHelper.toImg(Images.get().pattern)).build();
 		dataset2.setHoverBackgroundColor(pattern);
 		dataset2.setHoverBorderColor(color2.darker());
 		dataset2.setPointHoverBackgroundColor("#fff");
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

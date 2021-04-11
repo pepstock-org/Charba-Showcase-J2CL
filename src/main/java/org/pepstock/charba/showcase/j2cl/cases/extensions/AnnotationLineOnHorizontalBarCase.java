@@ -2,12 +2,10 @@ package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
 import org.pepstock.charba.client.HorizontalBarChart;
 import org.pepstock.charba.client.annotation.AnnotationOptions;
-import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.BoxAnnotation;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
 import org.pepstock.charba.client.annotation.enums.LineLabelPosition;
-import org.pepstock.charba.client.annotation.enums.LineMode;
 import org.pepstock.charba.client.colors.Color;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.Dataset;
@@ -68,12 +66,11 @@ public class AnnotationLineOnHorizontalBarCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
-
+		
 		AnnotationOptions options = new AnnotationOptions();
 
 		LineAnnotation line = new LineAnnotation();
 		line.setDrawTime(DrawTime.AFTER_DATASETS_DRAW);
-		line.setMode(LineMode.HORIZONTAL);
 		line.setScaleID(DefaultScaleId.Y.value());
 		line.setBorderColor(HtmlColor.ORANGE);
 		line.setBorderDash(4, 4);
@@ -83,7 +80,7 @@ public class AnnotationLineOnHorizontalBarCase extends BaseComposite {
 		line.getLabel().setEnabled(true);
 		line.getLabel().setContent("Crtitical month");
 		line.getLabel().setBackgroundColor(HtmlColor.LIGHT_SALMON);
-		line.getLabel().setPosition(LineLabelPosition.RIGHT);
+		line.getLabel().setPosition(LineLabelPosition.END);
 
 		BoxAnnotation box = new BoxAnnotation();
 		box.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
@@ -93,8 +90,6 @@ public class AnnotationLineOnHorizontalBarCase extends BaseComposite {
 		box.setBorderWidth(0);
 
 		options.setAnnotations(line, box);
-
-		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
 		
 		chartCol.appendChild(chart.getChartElement().as());
 

@@ -51,7 +51,7 @@ public class BarCase extends BaseComposite {
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Bar chart");
-
+		
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
@@ -60,7 +60,6 @@ public class BarCase extends BaseComposite {
 		dataset1.setBackgroundColor(color1.alpha(0.2));
 		dataset1.setBorderColor(color1.toHex());
 		dataset1.setBorderWidth(1);
-
 		dataset1.setData(getRandomDigits(months));
 
 		BarDataset dataset2 = chart.newDataset();
@@ -72,7 +71,7 @@ public class BarCase extends BaseComposite {
 		dataset2.setBorderColor(color2.toHex());
 		dataset2.setBorderWidth(1);
 		dataset2.setData(getRandomDigits(months));
-
+		
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
 

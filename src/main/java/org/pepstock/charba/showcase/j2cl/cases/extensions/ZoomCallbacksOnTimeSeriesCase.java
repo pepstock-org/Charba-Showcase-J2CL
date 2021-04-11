@@ -27,8 +27,9 @@ import org.pepstock.charba.client.zoom.AbstractConfigurationItem;
 import org.pepstock.charba.client.zoom.Drag;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
-import org.pepstock.charba.client.zoom.callbacks.CompleteCallback;
+import org.pepstock.charba.client.zoom.callbacks.CompletedCallback;
 import org.pepstock.charba.client.zoom.callbacks.ProgressCallback;
+import org.pepstock.charba.client.zoom.callbacks.RejectedCallback;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
@@ -49,7 +50,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 	private static final long DAY = 1000 * 60 * 60 * 24;
 
 	private static final int AMOUNT_OF_POINTS = 60;
-
+	
 	private final HTMLTableElement mainPanel;
 
 	private final TimeSeriesLineChart chart = new TimeSeriesLineChart();
@@ -59,6 +60,8 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 	private final HTMLInputElement dragging = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final Drag drag;
+	
+	private final CartesianTimeSeriesAxis axis;
 
 	public ZoomCallbacksOnTimeSeriesCase() {
 		// ----------------------------------------------
@@ -81,8 +84,6 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		DateAdapter adapter = new DateAdapter();
-
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().setAspectRatio(3);
@@ -96,11 +97,11 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
 				DataPoint dp = ds.getDataPoints().get(item.getDataIndex());
+				DateAdapter adapter = axis.getAdapters().getDate().create();
 				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
 		});
-
 
 		final TimeSeriesLineDataset dataset1 = chart.newDataset();
 
@@ -138,7 +139,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		dataset1.setTimeSeriesData(data);
 		dataset2.setTimeSeriesData(data1);
 
-		CartesianTimeSeriesAxis axis = chart.getOptions().getScales().getTimeAxis();
+		axis = chart.getOptions().getScales().getTimeAxis();
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
 
@@ -156,10 +157,10 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		drag = ZoomPlugin.createDrag();
 		drag.setAnimationDuration(1000);
 		options.getZoom().setDrag(drag);
-		options.getZoom().setCompleteCallback(new CompleteCallback() {
+		options.getZoom().setCompletedCallback(new CompletedCallback() {
 
 			@Override
-			public void onComplete(IsChart chart, AbstractConfigurationItem item) {
+			public void onCompleted(IsChart chart, AbstractConfigurationItem<?> item) {
 				mylog.addLogEvent("> ZOOM COMPLETE on chart");
 			}
 		});
@@ -167,8 +168,16 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		options.getZoom().setProgressCallback(new ProgressCallback() {
 
 			@Override
-			public void onProgress(IsChart chart, AbstractConfigurationItem item) {
+			public void onProgress(IsChart chart, AbstractConfigurationItem<?> item) {
 				mylog.addLogEvent("> ZOOM in PROGRESS on chart");
+			}
+		});
+
+		options.getZoom().setRejectedCallback(new RejectedCallback() {
+
+			@Override
+			public void onRejected(IsChart chart, AbstractConfigurationItem<?> item) {
+				mylog.addLogEvent("> ZOOM REJECTED; press CTRL to zoom");
 			}
 		});
 

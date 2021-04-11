@@ -93,17 +93,17 @@ public class InterpolationOnLineCase extends BaseComposite {
 		dataset3.setBorderColor(color3.toHex());
 		dataset3.setData(data);
 		dataset3.setFill(Fill.FALSE);
-		dataset3.setLineTension(0);
+		dataset3.setTension(0);
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 		axis2.setSuggestedMax(200);
 		axis2.setSuggestedMin(-10);
 

@@ -58,8 +58,6 @@ public class DatasetSelectionBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(3);
-		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Selecting dataset on bar chart");
@@ -110,6 +108,7 @@ public class DatasetSelectionBarCase extends BaseComposite {
 		op.setElements(PointerElement.DATASET);
 		chart.getOptions().getPlugins().setOptions(ChartPointer.ID, op);
 		chart.getPlugins().add(ChartPointer.get());
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -213,7 +212,6 @@ public class DatasetSelectionBarCase extends BaseComposite {
 			dataset.setData(getRandomDigits(months));
 		}
 		chart.update();
-
 	}
 
 	protected void handleAddDataset() {

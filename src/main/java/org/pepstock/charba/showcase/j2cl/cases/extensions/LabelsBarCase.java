@@ -3,18 +3,19 @@ package org.pepstock.charba.showcase.j2cl.cases.extensions;
 import java.util.List;
 
 import org.pepstock.charba.client.BarChart;
-import org.pepstock.charba.client.IsChart;
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.data.FloatingData;
+import org.pepstock.charba.client.enums.DataType;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.labels.FontColorItem;
+import org.pepstock.charba.client.labels.Label;
+import org.pepstock.charba.client.labels.LabelsContext;
 import org.pepstock.charba.client.labels.LabelsOptions;
 import org.pepstock.charba.client.labels.LabelsPlugin;
-import org.pepstock.charba.client.labels.RenderItem;
-import org.pepstock.charba.client.labels.callbacks.FontColorCallback;
 import org.pepstock.charba.client.labels.callbacks.RenderCallback;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -68,25 +69,42 @@ public class LabelsBarCase extends BaseComposite {
 		dataset1.setBackgroundColor(color1.alpha(0.2));
 		dataset1.setBorderColor(color1);
 
-		dataset1.setData(getFixedDigits(months));
+		double[] values = getRandomDigits(months);
+		double[] gaps = getRandomDigits(months, false);
 
-		LabelsOptions option = new LabelsOptions();
-		option.setRender(new RenderCallback() {
+		List<FloatingData> data = dataset1.getFloatingData(true);
+		for (int i=0; i<months; i++) {
+			data.add(new FloatingData(values[i], values[i] + gaps[i]));
+		}
+		
+		LabelsOptions options = new LabelsOptions();
+		Label label = options.createLabel("bar");
+		label.setRender(new RenderCallback() {
 
 			@Override
-			public String invoke(IsChart chart, RenderItem item) {
-				return "$$ " + (int) (item.getDataItem().getValue() * item.getPercentage() / 100);
+			public String invoke(LabelsContext context) {
+				double value = 0;
+				if (DataType.ARRAYS.equals(context.getDataItem().getDataType())) {
+					value = context.getDataItem().getValueAsFloatingData().getAbsValue();
+				} else {
+					value = context.getDataItem().getValue();
+				}
+				return "$$ " + value;
 			}
 		});
-		option.setFontColor(new FontColorCallback() {
+		label.setColor(new ColorCallback<LabelsContext>() {
 
 			@Override
-			public IsColor invoke(IsChart chart, FontColorItem item) {
-				return item.getDataItem().getValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
+			public IsColor invoke(LabelsContext item) {
+				if (DataType.ARRAYS.equals(item.getDataItem().getDataType())) {
+					return item.getDataItem().getValueAsFloatingData().getAbsValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
+				} else {
+					return item.getDataItem().getValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
+				}
 			}
 		});
 
-		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, option);
+		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, options);
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1);

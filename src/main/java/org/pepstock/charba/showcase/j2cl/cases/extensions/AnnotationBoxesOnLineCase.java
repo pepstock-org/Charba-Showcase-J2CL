@@ -7,7 +7,6 @@ import org.pepstock.charba.client.annotation.AnnotationOptions;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.BoxAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
-import org.pepstock.charba.client.annotation.enums.Event;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.GwtMaterialColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -80,15 +79,14 @@ public class AnnotationBoxesOnLineCase extends BaseComposite {
 		chart.getData().setDatasets(dataset1);
 
 		AnnotationOptions options = new AnnotationOptions();
-		options.setEvents(Event.CLICK, Event.DOUBLE_CLICK, Event.MOUSE_OUT, Event.MOUSE_OVER);
 
 		BoxAnnotation box1 = new BoxAnnotation();
 		box1.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
-		box1.setXScaleID(DefaultScaleId.X.value());
-		box1.setYScaleID(DefaultScaleId.Y.value());
+		box1.setXScaleID(DefaultScaleId.X);
+		box1.setYScaleID(DefaultScaleId.Y);
 		box1.setXMin("January");
 		box1.setXMax("April");
-		box1.setBackgroundColor(GwtMaterialColor.BLUE_GREY_LIGHTEN_3.alpha(0.3D));
+		box1.setBackgroundColor(GwtMaterialColor.YELLOW_LIGHTEN_3.alpha(0.3D));
 		box1.setBorderWidth(0);
 		box1.setBorderColor(HtmlColor.TRANSPARENT);
 
@@ -98,7 +96,7 @@ public class AnnotationBoxesOnLineCase extends BaseComposite {
 		box2.setYScaleID(DefaultScaleId.Y.value());
 		box2.setXMin("April");
 		box2.setXMax("July");
-		box2.setBackgroundColor(GwtMaterialColor.AMBER_LIGHTEN_3.alpha(0.3D));
+		box2.setBackgroundColor(GwtMaterialColor.BROWN_LIGHTEN_3.alpha(0.3D));
 		box2.setBorderWidth(0);
 		box2.setBorderColor(HtmlColor.TRANSPARENT);
 

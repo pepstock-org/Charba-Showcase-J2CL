@@ -51,7 +51,7 @@ public class TilesImagesCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		ImageShape[] imgShapes = { new ImageShape(CastHelper.toImg(Images.get().githubWhite)), new ImageShape(CastHelper.toImg(Images.get().extensionWhite)), new ImageShape(CastHelper.toImg(Images.get().fingerprintWhite)),
+		ImageShape[] imgShapes = { new ImageShape(CastHelper.toImg(Images.get().cache)), new ImageShape(CastHelper.toImg(Images.get().extensionWhite)), new ImageShape(CastHelper.toImg(Images.get().fingerprintWhite)),
 				new ImageShape(CastHelper.toImg(Images.get().headlineWhite)), new ImageShape(CastHelper.toImg(Images.get().visibilityWhite)) };
 
 		Pattern[] tiles = new Pattern[ITEMS];

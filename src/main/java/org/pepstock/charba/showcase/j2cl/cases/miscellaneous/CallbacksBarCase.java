@@ -1,14 +1,11 @@
 package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
 
 import org.pepstock.charba.client.BarChart;
-import org.pepstock.charba.client.IsChart;
-import org.pepstock.charba.client.callbacks.BackgroundColorCallback;
-import org.pepstock.charba.client.callbacks.BorderColorCallback;
 import org.pepstock.charba.client.callbacks.BorderSkippedCallback;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.callbacks.ColorCallback;
+import org.pepstock.charba.client.callbacks.DatasetContext;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.data.BarBorderWidth;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.BorderSkipped;
@@ -59,42 +56,37 @@ public class CallbacksBarCase extends BaseComposite {
 
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
+		dataset1.setBorderWidth(5);
 
-		BarBorderWidth border = new BarBorderWidth();
-		border.setTop(2);
-		border.setLeft(2);
-		border.setRight(2);
-		dataset1.setBorderWidth(border);
-
-		dataset1.setBackgroundColor(new BackgroundColorCallback() {
+		dataset1.setBackgroundColor(new ColorCallback<DatasetContext>() {
 
 			@Override
-			public IsColor invoke(IsChart chart, ScriptableContext context) {
-				return GoogleChartColor.values()[context.getIndex() + 1];
+			public IsColor invoke(DatasetContext context) {
+				return GoogleChartColor.values()[context.getDataIndex() + 1];
 			}
 
 		});
-		dataset1.setBorderColor(new BorderColorCallback() {
+		dataset1.setBorderColor(new ColorCallback<DatasetContext>() {
 
 			@Override
-			public IsColor invoke(IsChart chart, ScriptableContext context) {
-				return GoogleChartColor.values()[context.getIndex() + 5];
+			public IsColor invoke(DatasetContext context) {
+				return GoogleChartColor.values()[context.getDataIndex() + 5];
 			}
 
 		});
 		dataset1.setBorderSkipped(new BorderSkippedCallback() {
 
 			@Override
-			public BorderSkipped invoke(IsChart chart, ScriptableContext context) {
+			public BorderSkipped invoke(DatasetContext context) {
 				return BorderSkipped.BOTTOM;
 			}
 
 		});
 
 		dataset1.setData(getFixedDigits(months));
-
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

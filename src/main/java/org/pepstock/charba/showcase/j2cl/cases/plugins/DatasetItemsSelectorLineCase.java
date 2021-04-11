@@ -12,6 +12,8 @@ import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.events.DatasetRangeClearSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeClearSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
@@ -97,13 +99,13 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
@@ -117,18 +119,24 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		pOptions.getClearSelection().setLabel("Reset selection");
 		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		pOptions.setColor(HtmlColor.LIGHT_GOLDEN_ROD_YELLOW.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
-		pOptions.setFireEventOnClearSelection(true);
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(DatasetsItemsSelector.get());
+
+		chart.addHandler(new DatasetRangeClearSelectionEventHandler() {
+
+			@Override
+			public void onClear(DatasetRangeClearSelectionEvent event) {
+				mylog.addLogEvent("Clear selection event");
+			}
+		}, DatasetRangeClearSelectionEvent.TYPE);
 
 		chart.addHandler(new DatasetRangeSelectionEventHandler() {
 
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.isClearSelection() ? "Clear selection event" : event.getFrom().getLabel()).append(" ");
-				sb.append("Dataset to: ").append(event.isClearSelection() ? "Clear selection event" : event.getTo().getLabel());
+				sb.append("Dataset from: ").append(event.getFrom().getLabel()).append(" to: ").append(event.getTo().getLabel());
 				mylog.addLogEvent(sb.toString());
 			}
 		}, DatasetRangeSelectionEvent.TYPE);

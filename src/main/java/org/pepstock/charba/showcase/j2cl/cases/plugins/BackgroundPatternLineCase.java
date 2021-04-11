@@ -4,6 +4,7 @@ import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.colors.Pattern;
+import org.pepstock.charba.client.colors.PatternBuilder;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.dom.elements.CastHelper;
@@ -78,13 +79,14 @@ public class BackgroundPatternLineCase extends BaseComposite {
 		dataset2.setData(getRandomDigits(months));
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
-
-		Pattern pattern = new Pattern(CastHelper.toImg(Images.get().background));
+	
+		Pattern pattern = PatternBuilder.create(CastHelper.toImg(Images.get().background)).build(); 
 
 		ChartBackgroundColorOptions option = new ChartBackgroundColorOptions();
 		option.setBackgroundColor(pattern);
 
 		chart.getOptions().getPlugins().setOptions(ChartBackgroundColor.ID, option);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

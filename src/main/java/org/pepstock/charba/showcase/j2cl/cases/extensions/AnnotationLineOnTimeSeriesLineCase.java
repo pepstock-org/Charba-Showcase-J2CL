@@ -13,7 +13,6 @@ import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
 import org.pepstock.charba.client.annotation.enums.LineLabelPosition;
-import org.pepstock.charba.client.annotation.enums.LineMode;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -30,6 +29,8 @@ import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.items.TooltipItem;
+import org.pepstock.charba.client.utils.AnnotationBuilder;
+import org.pepstock.charba.client.utils.Utilities;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -53,6 +54,8 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 	private final LineAnnotation line1 = new LineAnnotation();
 
 	private final TimeSeriesLineDataset dataset1;
+	
+	private final TimeSeriesLineDataset dataset2;
 
 	private final long startingPoint = System.currentTimeMillis();
 
@@ -104,7 +107,7 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
 
-		final TimeSeriesLineDataset dataset2 = chart.newDataset();
+		dataset2 = chart.newDataset();
 
 		dataset2.setLabel("dataset 2");
 		dataset2.setFill(Fill.FALSE);
@@ -120,7 +123,7 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 		double[] xs2 = getRandomDigits(AMOUNT_OF_POINTS, false);
 		List<TimeSeriesItem> data = new LinkedList<>();
 		List<TimeSeriesItem> data1 = new LinkedList<>();
-
+		
 		for (int i = AMOUNT_OF_POINTS - 1; i >= 0; i--) {
 			data.add(new TimeSeriesItem(adapter.add(startingPoint, i - gap, TimeUnit.DAY), xs1[i]));
 			data1.add(new TimeSeriesItem(adapter.add(startingPoint, i - gap, TimeUnit.DAY), xs2[i]));
@@ -143,34 +146,28 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 
 		LineAnnotation line = new LineAnnotation();
 		line.setDrawTime(DrawTime.AFTER_DRAW);
-		line.setMode(LineMode.VERTICAL);
 		line.setScaleID(DefaultScaleId.X.value());
 		line.setBorderColor(HtmlColor.DARK_GRAY);
 		line.setBorderWidth(2);
 		line.setValue(new Date(startingPoint));
 		line.getLabel().setEnabled(true);
 		line.getLabel().setContent("Now");
-		line.getLabel().setPosition(LineLabelPosition.TOP);
+		line.getLabel().setPosition(LineLabelPosition.START);
 
+		double average = getAverage();
 		line1.setDrawTime(DrawTime.AFTER_DRAW);
-		line1.setMode(LineMode.HORIZONTAL);
 		line1.setScaleID(DefaultScaleId.Y.value());
 		line1.setBorderColor(HtmlColor.ORANGE);
 		line1.setBorderWidth(4);
 		line1.setBorderDash(4, 4);
-		List<DataPoint> dataPoints = dataset1.getDataPoints();
-		int size = dataPoints.size();
-		double sum = 0D;
-		for (DataPoint dp : dataPoints) {
-			sum += dp.getY();
-		}
-		line1.setValue(sum / size);
+		line1.setValue(average);
 		line1.getLabel().setEnabled(true);
-		line1.getLabel().setContent("Average " + dataset1.getLabel());
-		line1.getLabel().setPosition(LineLabelPosition.RIGHT);
+		line1.getLabel().setContent(AnnotationBuilder.build(getLabelContent(average), 180, 18));
+		//line1.getLabel().setContent("Average of datasets is "+Utilities.applyPrecision(average, 2));
+		line1.getLabel().setPosition(LineLabelPosition.END);
 		line1.getLabel().setBackgroundColor(HtmlColor.ORANGE);
-		line1.getLabel().setFontColor(HtmlColor.BLACK);
-		line1.getLabel().setFontSize(18);
+		line1.getLabel().setColor(HtmlColor.BLACK);
+		line1.getLabel().getFont().setSize(18);
 
 		options.setAnnotations(line, line1);
 
@@ -234,5 +231,42 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 		}
 		line1.setValue((sum / size));
 		chart.reconfigure();
+	}
+	
+	private double getAverage() {
+		double sum = 0;
+		double count = 0;
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;
+			for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
+				sum += dp.getValue();
+				count++;
+			}
+		}
+		return sum/count;
+	}
+
+	private double getStdDeviation() {
+		double sum = 0;
+		double count = 0;
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;
+			for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
+				sum += dp.getValue();
+				count++;
+			}
+		}
+		double average = sum/count;
+		for (Dataset dataset : chart.getData().getDatasets()) {
+			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;
+			for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
+				sum += Math.pow(dp.getValue() - average, 2);
+			}
+		}
+		return Math.sqrt(average / count);
+	}
+	
+	private String getLabelContent(double average) {
+		return "<div style=\"color: '"+GoogleChartColor.values()[0].toRGB()+"'\">Average of datasets is <strong style=\"color: black\">"+Utilities.applyPrecision(average, 2)+"</strong></div>";
 	}
 }

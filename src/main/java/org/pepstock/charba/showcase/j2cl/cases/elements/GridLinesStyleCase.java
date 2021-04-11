@@ -1,15 +1,17 @@
 package org.pepstock.charba.showcase.j2cl.cases.elements;
 
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.ScaleBorderDashOffsetCallback;
-import org.pepstock.charba.client.callbacks.ScaleColorCallback;
-import org.pepstock.charba.client.callbacks.ScaleLineWidthCallback;
-import org.pepstock.charba.client.callbacks.ScaleScriptableContext;
+import org.pepstock.charba.client.callbacks.BorderDashOffsetCallback;
+import org.pepstock.charba.client.callbacks.ColorCallback;
+import org.pepstock.charba.client.callbacks.ScaleContext;
+import org.pepstock.charba.client.callbacks.WidthCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.configuration.Axis;
+import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.data.Labels;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.Position;
@@ -79,43 +81,53 @@ public class GridLinesStyleCase extends BaseComposite {
 		dataset2.setData(getRandomDigits(months, false));
 		dataset2.setFill(Fill.FALSE);
 
+		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
+		Labels lbl = getMultiLabels();
+		axis1.setLabels(lbl);
+
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
-		axis2.getGrideLines().setDrawBorder(false);
-				
-		axis2.getGrideLines().setColor(new ScaleColorCallback() {
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
+		axis2.getGrid().setDrawBorder(false);
+
+		axis2.getGrid().setColor(new ColorCallback<ScaleContext>() {
 			
 			@Override
-			public Object invoke(Axis axis, ScaleScriptableContext context) {
+			public Object invoke(ScaleContext context) {
 				int mod = context.getIndex() % COLORS.length;
 				return COLORS[mod];
 			}
 		});
 
-		axis2.getGrideLines().setLineWidth(new ScaleLineWidthCallback() {
-			
+		axis2.getGrid().setLineWidth(new WidthCallback<ScaleContext>() {
+
 			@Override
-			public Integer invoke(Axis axis, ScaleScriptableContext context) {
+			public Integer invoke(ScaleContext context) {
 				return context.getIndex() % 5;
 			}
 		});
 
-		axis2.getGrideLines().setBorderDashOffset(new ScaleBorderDashOffsetCallback() {
-			
+		axis2.getGrid().setBorderDashOffset(new BorderDashOffsetCallback<ScaleContext>() {
+
 			@Override
-			public Integer invoke(Axis axis, ScaleScriptableContext context) {
-				return context.getIndex() % 10;
+			public Double invoke(ScaleContext context) {
+				return (double)(context.getIndex() % 10);
 			}
 		});
 		
+		axis2.getGrid().setTickColor(new ColorCallback<ScaleContext>() {
+			
+			@Override
+			public Object invoke(ScaleContext context) {
+				return HtmlColor.BLACK;
+			}
+		});
+
 		axis2.setMin(0D);
 		axis2.setMax(100D);
 		axis2.getTicks().setStepSize(10D);
-		chart.getOptions().getScales().setAxes(axis2);
-
-		chart.getData().setLabels(getLabels());
+		chart.getOptions().getScales().setAxes(axis1, axis2);
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		chartCol.appendChild(chart.getChartElement().as());
@@ -166,6 +178,19 @@ public class GridLinesStyleCase extends BaseComposite {
 			dataset.setData(getRandomDigits(months, false));
 		}
 		chart.update();
+	}
+	
+	private Labels getMultiLabels() {
+		String[] labels = getLabels();
+		Labels l = Labels.build();
+		for (int i = 0; i < labels.length; i++) {
+			if (i % 2 == 0) {
+				l.add(new String[] { labels[i], "2020" });
+			} else {
+				l.add(labels[i]);
+			}
+		}
+		return l;
 	}
 
 }

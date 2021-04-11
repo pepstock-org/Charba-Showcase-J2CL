@@ -3,6 +3,7 @@ package org.pepstock.charba.showcase.j2cl.cases.coloring;
 import org.pepstock.charba.client.RadarChart;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.Pattern;
+import org.pepstock.charba.client.colors.PatternBuilder;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.RadarDataset;
 import org.pepstock.charba.client.dom.elements.CastHelper;
@@ -62,7 +63,7 @@ public class PatternRadarCase extends BaseComposite {
 		RadarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
-		Pattern pattern = new Pattern(CastHelper.toImg(Images.get().patternHover));
+		Pattern pattern = PatternBuilder.create(CastHelper.toImg(Images.get().patternHover)).build(); 
 
 		dataset1.setBackgroundColor(pattern);
 
@@ -73,6 +74,7 @@ public class PatternRadarCase extends BaseComposite {
 
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

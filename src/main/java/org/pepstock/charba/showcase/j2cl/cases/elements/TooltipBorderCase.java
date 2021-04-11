@@ -58,12 +58,11 @@ public class TooltipBorderCase extends BaseComposite {
 		chart.getOptions().getTooltips().setPosition(TooltipPosition.NEAREST);
 		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
 		chart.getOptions().getTooltips().setIntersect(false);
-		chart.getOptions().getTooltips().setYPadding(10);
-		chart.getOptions().getTooltips().setXPadding(10);
+		chart.getOptions().getTooltips().getPadding().set(10);
 		chart.getOptions().getTooltips().setCaretSize(8);
 		chart.getOptions().getTooltips().setBackgroundColor("rgba(72, 241, 12, 1)");
-		chart.getOptions().getTooltips().getTitleFont().setColor(HtmlColor.BLACK);
-		chart.getOptions().getTooltips().getBodyFont().setColor(HtmlColor.BLACK);
+		chart.getOptions().getTooltips().setTitleColor(HtmlColor.BLACK);
+		chart.getOptions().getTooltips().setBodyColor(HtmlColor.BLACK);
 		chart.getOptions().getTooltips().setBorderColor("rgba(0,0,0,1)");
 		chart.getOptions().getTooltips().setBorderWidth(4);
 
@@ -89,13 +88,13 @@ public class TooltipBorderCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 

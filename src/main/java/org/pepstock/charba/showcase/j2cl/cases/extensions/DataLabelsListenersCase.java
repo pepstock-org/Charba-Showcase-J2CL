@@ -1,9 +1,7 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.BackgroundColorCallback;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -11,6 +9,7 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.enums.Align;
@@ -21,9 +20,9 @@ import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.client.events.DatasetSelectionEvent;
 import org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler;
+import org.pepstock.charba.client.items.DatasetElement;
 import org.pepstock.charba.client.items.DatasetItem;
-import org.pepstock.charba.client.items.DatasetMetaItem;
-import org.pepstock.charba.client.items.DatasetReferenceItem;
+import org.pepstock.charba.client.items.DatasetReference;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
@@ -122,13 +121,13 @@ public class DataLabelsListenersCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 		axis2.setStacked(true);
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
@@ -137,10 +136,10 @@ public class DataLabelsListenersCase extends BaseComposite {
 		chart.getData().setDatasets(dataset1, dataset2, dataset3);
 
 		DataLabelsOptions option = new DataLabelsOptions();
-		option.setBackgroundColor(new BackgroundColorCallback() {
+		option.setBackgroundColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public String invoke(IsChart chart, ScriptableContext context) {
+			public String invoke(DataLabelsContext context) {
 				if (context.isActive()) {
 					return null;
 				}
@@ -156,6 +155,7 @@ public class DataLabelsListenersCase extends BaseComposite {
 		option.setListenersHandler(listener);
 
 		chart.getOptions().getPlugins().setOptions(DataLabelsPlugin.ID, option);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -256,29 +256,29 @@ public class DataLabelsListenersCase extends BaseComposite {
 		}
 
 		@Override
-		public boolean onLeave(IsChart chart, ScriptableContext context) {
-			super.onLeave(chart, context);
+		public boolean onLeave(DataLabelsContext context) {
+			super.onLeave(context);
 			LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-			mylog.addLogEvent("> LEAVE: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getIndex() + ", value(" + ds.getData().get(context.getIndex()) + ")");
+			mylog.addLogEvent("> LEAVE: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getDataIndex() + ", value(" + ds.getData().get(context.getDataIndex()) + ")");
 			return true;
 		}
 
 		@Override
-		public boolean onEnter(IsChart chart, ScriptableContext context) {
-			super.onEnter(chart, context);
+		public boolean onEnter(DataLabelsContext context) {
+			super.onEnter(context);
 			LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-			mylog.addLogEvent("> ENTER: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getIndex() + ", value(" + ds.getData().get(context.getIndex()) + ")");
+			mylog.addLogEvent("> ENTER: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getDataIndex() + ", value(" + ds.getData().get(context.getDataIndex()) + ")");
 			return true;
 		}
 
 		@Override
-		public boolean onClick(IsChart chart, ScriptableContext context) {
-			super.onClick(chart, context);
+		public boolean onClick(DataLabelsContext context) {
+			super.onClick(context);
 			LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-			DatasetMetaItem meta = chart.getDatasetMeta(context.getDatasetIndex());
-			DatasetItem item = meta.getDatasets().get(context.getIndex());
-			mylog.addLogEvent("> CLICK: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getIndex() + ", value(" + ds.getData().get(context.getIndex()) + ")");
-			DatasetReferenceItem referenceItem = new DatasetReferenceItem(context, item);
+			DatasetItem item = chart.getDatasetItem(context.getDatasetIndex());
+			DatasetElement element = item.getElements().get(context.getDataIndex());
+			mylog.addLogEvent("> CLICK: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getDataIndex() + ", value(" + ds.getData().get(context.getDataIndex()) + ")");
+			DatasetReference referenceItem = new DatasetReference(context, element);
 			chart.fireEvent(new DatasetSelectionEvent(DOMBuilder.get().createChangeEvent(), chart, referenceItem));
 			return true;
 		}

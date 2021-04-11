@@ -64,7 +64,7 @@ public class TitleStyleCase extends BaseComposite {
 
 		HTMLOptionElement colorDefault = (HTMLOptionElement) DomGlobal.document.createElement("option");
 		colorDefault.text = "Default";
-		colorDefault.value = Defaults.get().getGlobal().getTitle().getFont().getColorAsString();
+		colorDefault.value = Defaults.get().getGlobal().getTitle().getColorAsString();
 		color.add(colorDefault);
 		for (HtmlColor myColor : COLORS) {
 			HTMLOptionElement colorN = (HTMLOptionElement) DomGlobal.document.createElement("option");
@@ -119,13 +119,13 @@ public class TitleStyleCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
@@ -198,7 +198,7 @@ public class TitleStyleCase extends BaseComposite {
 
 	protected void handleColor() {
 		String selected = color.options.getAt(color.selectedIndex).value;
-		chart.getOptions().getTitle().getFont().setColor(selected);
+		chart.getOptions().getTitle().setColor(selected);
 		chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(0).build());
 	}
 

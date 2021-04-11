@@ -3,20 +3,21 @@ package org.pepstock.charba.showcase.j2cl.cases.extensions;
 import java.util.Random;
 
 import org.pepstock.charba.client.BubbleChart;
-import org.pepstock.charba.client.IsChart;
-import org.pepstock.charba.client.callbacks.ScriptableContext;
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.data.BubbleDataset;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.callbacks.AlignCallback;
 import org.pepstock.charba.client.datalabels.callbacks.AnchorCallback;
-import org.pepstock.charba.client.datalabels.callbacks.ColorCallback;
+import org.pepstock.charba.client.datalabels.callbacks.FormatterCallback;
 import org.pepstock.charba.client.datalabels.enums.Align;
 import org.pepstock.charba.client.datalabels.enums.Anchor;
 import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.Weight;
+import org.pepstock.charba.client.items.DataItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -105,9 +106,9 @@ public class DataLabelsBubbleCase extends BaseComposite {
 		option.setAnchor(new AnchorCallback() {
 
 			@Override
-			public Anchor invoke(IsChart chart, ScriptableContext context) {
+			public Anchor invoke(DataLabelsContext context) {
 				BubbleDataset ds = (BubbleDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				DataPoint point = ds.getDataPoints().get(context.getIndex());
+				DataPoint point = ds.getDataPoints().get(context.getDataIndex());
 				return point.getR() < 20D ? Anchor.END : Anchor.CENTER;
 			}
 
@@ -115,26 +116,36 @@ public class DataLabelsBubbleCase extends BaseComposite {
 		option.setAlign(new AlignCallback() {
 
 			@Override
-			public Align invoke(IsChart chart, ScriptableContext context) {
+			public Align invoke(DataLabelsContext context) {
 				BubbleDataset ds = (BubbleDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				DataPoint point = ds.getDataPoints().get(context.getIndex());
+				DataPoint point = ds.getDataPoints().get(context.getDataIndex());
 				return point.getR() < 20D ? Align.END : Align.CENTER;
 			}
 		});
-		option.setColor(new ColorCallback() {
+		option.setColor(new ColorCallback<DataLabelsContext>() {
 
 			@Override
-			public String invoke(IsChart chart, ScriptableContext context) {
+			public String invoke(DataLabelsContext context) {
 				BubbleDataset ds = (BubbleDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
-				return ds.getBorderColorAsString().get(context.getIndex());
+				return ds.getBorderColorAsString().get(context.getDataIndex());
 			}
 
 		});
+		option.setFormatter(new FormatterCallback() {
+			
+			@Override
+			public String invoke(DataLabelsContext context, DataItem dataItem) {
+				return dataItem.getValueAsDataPoint().getX()+","+dataItem.getValueAsDataPoint().getY();
+			}
+		});
+		
+		
 		option.setOffset(2);
 		option.getFont().setWeight(Weight.BOLD);
 		option.getPadding().set(0);
 
 		chart.getOptions().getPlugins().setOptions(DataLabelsPlugin.ID, option);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

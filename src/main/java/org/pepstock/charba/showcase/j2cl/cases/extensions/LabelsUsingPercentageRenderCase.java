@@ -7,6 +7,7 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.PieDataset;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.labels.Label;
 import org.pepstock.charba.client.labels.LabelsOptions;
 import org.pepstock.charba.client.labels.LabelsPlugin;
 import org.pepstock.charba.client.labels.enums.Render;
@@ -62,14 +63,16 @@ public class LabelsUsingPercentageRenderCase extends BaseComposite {
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset);
 
-		LabelsOptions option = new LabelsOptions();
-		option.setRender(Render.PERCENTAGE);
-		option.setFontColor(HtmlColor.WHITE);
-		option.setPrecision(2);
-		option.setFontSize(16);
-		option.setOverlap(false);
+		LabelsOptions options = new LabelsOptions();
+		Label label = options.createLabel("my");
+		label.setRender(Render.PERCENTAGE);
+		label.setColor(HtmlColor.WHITE);
+		label.getFont().setSize(16);
+		label.setPrecision(2);
+		label.setOverlap(false);
 
-		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, option);
+		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, options);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

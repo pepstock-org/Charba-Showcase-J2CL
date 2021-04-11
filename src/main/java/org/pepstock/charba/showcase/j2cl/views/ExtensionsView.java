@@ -341,6 +341,7 @@ public class ExtensionsView extends AbstractView {
 				return new AnnotationsOnCombinedCase();
 			}
 		}),
+		// FIXME ellipse e POINT missing
 		LINE("Box annotations on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationBoxesOnLineCase();

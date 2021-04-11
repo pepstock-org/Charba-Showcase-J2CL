@@ -2,6 +2,7 @@ package org.pepstock.charba.showcase.j2cl.cases.coloring;
 
 import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.colors.Gradient;
+import org.pepstock.charba.client.colors.GradientBuilder;
 import org.pepstock.charba.client.colors.GradientOrientation;
 import org.pepstock.charba.client.colors.GradientScope;
 import org.pepstock.charba.client.colors.GradientType;
@@ -62,12 +63,8 @@ public class LinearGradientBarCase extends BaseComposite {
 
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
-
-		Gradient gradient1 = new Gradient(GradientType.LINEAR, GradientOrientation.BOTTOM_UP, GradientScope.CHART);
-
-		gradient1.addColorStop(0, "#3a1c71");
-		gradient1.addColorStop(0.5, "#d76d77");
-		gradient1.addColorStop(1, "#ffaf7b");
+		
+		Gradient gradient1 = GradientBuilder.create(GradientType.LINEAR, GradientOrientation.BOTTOM_UP, GradientScope.CHART).addColorStop(0, "#3a1c71").addColorStop(0.5, "#d76d77").addColorStop(1, "#ffaf7b").build();
 
 		dataset1.setBackgroundColor(gradient1);
 		dataset1.setBorderColor(gradient1);
@@ -76,13 +73,13 @@ public class LinearGradientBarCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 

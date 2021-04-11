@@ -203,7 +203,7 @@ public class ImportingPluginCase extends BaseComposite {
 		private Key enableKey = Key.create("enable");
 
 		Stacked100Options() {
-			super(Stacked100Plugin.ID);
+			super(Stacked100Plugin.ID, null);
 		}
 
 		void setEnable(boolean enable) {

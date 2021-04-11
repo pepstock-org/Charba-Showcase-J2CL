@@ -90,6 +90,7 @@ public class ChartsView extends AbstractView {
 				return new LineCase();
 			}
 		}),
+		// FIXME MANCA VERTICAL LINE
 		SCATTER("Scatter", new CaseFactory() {
 			public BaseComposite create() {
 				return new ScatterCase();

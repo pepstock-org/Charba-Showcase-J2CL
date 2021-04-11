@@ -5,15 +5,12 @@ import java.util.List;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.commons.Key;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.IsFill;
-import org.pepstock.charba.client.plugins.AbstractPluginOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -41,8 +38,6 @@ public class FillingDatasetsOnLineCase extends BaseComposite {
 	private final HTMLInputElement smooth = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final HTMLInputElement propagate = (HTMLInputElement) DomGlobal.document.createElement("input");
-
-	private final FillerOptions options = new FillerOptions();
 
 	public FillingDatasetsOnLineCase() {
 		// ----------------------------------------------
@@ -72,6 +67,7 @@ public class FillingDatasetsOnLineCase extends BaseComposite {
 		chart.getOptions().getTitle().setText("Filling datasets mode on line chart");
 		chart.getOptions().getElements().getLine().setTension(0.000001D);
 		chart.getOptions().setSpanGaps(false);
+		chart.getOptions().getFiller().setPropagate(false);
 
 		List<Dataset> datasets = chart.getData().getDatasets(true);
 
@@ -101,9 +97,6 @@ public class FillingDatasetsOnLineCase extends BaseComposite {
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
-
-		options.setPropagate(false);
-		chart.getOptions().getPlugins().setOptions(DefaultPluginId.FILLER.value(), options);
 
 		chartCol.appendChild(chart.getChartElement().as());
 
@@ -196,22 +189,8 @@ public class FillingDatasetsOnLineCase extends BaseComposite {
 	}
 
 	protected void handlePropagate() {
-		options.setPropagate(propagate.checked);
-		chart.getOptions().getPlugins().setOptions(DefaultPluginId.FILLER.value(), options);
+		chart.getOptions().getFiller().setPropagate(propagate.checked);
 		chart.reconfigure();
 	}
 
-	private static class FillerOptions extends AbstractPluginOptions {
-
-		private Key propagate = Key.create("propagate");
-
-		FillerOptions() {
-			super(DefaultPluginId.FILLER.value());
-		}
-
-		void setPropagate(boolean prop) {
-			setValue(propagate, prop);
-		}
-
-	}
 }

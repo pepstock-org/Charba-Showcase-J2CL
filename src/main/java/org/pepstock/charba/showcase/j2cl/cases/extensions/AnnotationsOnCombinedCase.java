@@ -8,7 +8,6 @@ import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.BoxAnnotation;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
-import org.pepstock.charba.client.annotation.enums.LineMode;
 import org.pepstock.charba.client.colors.Color;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.BarDataset;
@@ -99,7 +98,6 @@ public class AnnotationsOnCombinedCase extends BaseComposite {
 
 		LineAnnotation line = new LineAnnotation();
 		line.setDrawTime(DrawTime.AFTER_DATASETS_DRAW);
-		line.setMode(LineMode.HORIZONTAL);
 		line.setScaleID(DefaultScaleId.Y.value());
 		line.setBorderColor(HtmlColor.BLACK);
 		line.setBorderWidth(5);
@@ -109,13 +107,13 @@ public class AnnotationsOnCombinedCase extends BaseComposite {
 		line.getLabel().setContent("My threshold");
 		line.getLabel().setBackgroundColor(HtmlColor.RED);
 
-		BoxAnnotation box = new BoxAnnotation();
+		BoxAnnotation box = new BoxAnnotation("stock123");
+		box.setDisplay(true);
 		box.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
 		box.setXScaleID(DefaultScaleId.X.value());
 		box.setYScaleID(DefaultScaleId.Y.value());
 		box.setXMin("February");
 		box.setXMax("April");
-
 		double value = getRandomDigits(1, min, max)[0];
 		box.setYMax(value);
 		box.setYMin(value - 40);

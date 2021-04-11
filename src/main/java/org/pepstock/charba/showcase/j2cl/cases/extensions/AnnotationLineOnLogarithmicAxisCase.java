@@ -6,7 +6,6 @@ import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
 import org.pepstock.charba.client.annotation.enums.LineLabelPosition;
-import org.pepstock.charba.client.annotation.enums.LineMode;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -88,35 +87,34 @@ public class AnnotationLineOnLogarithmicAxisCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLogarithmicAxis axis2 = new CartesianLogarithmicAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		AnnotationOptions options = new AnnotationOptions();
 
 		LineAnnotation line = new LineAnnotation();
 		line.setDrawTime(DrawTime.AFTER_DATASETS_DRAW);
-		line.setMode(LineMode.HORIZONTAL);
 		line.setScaleID(DefaultScaleId.Y.value());
 		line.setBorderColor(HtmlColor.ORANGE);
 		line.setBorderDash(4, 4);
 		line.setBorderWidth(2);
-
-		line.setValue(dataset1.getData().get(3) * 100);
+		
+		line.setValue(dataset1.getData().get(3)*100);
 
 		line.getLabel().setEnabled(true);
 		line.getLabel().setContent("My threshold");
 		line.getLabel().setBackgroundColor(HtmlColor.LIGHT_SALMON);
-		line.getLabel().setPosition(LineLabelPosition.RIGHT);
+		line.getLabel().setPosition(LineLabelPosition.END);
 
 		options.setAnnotations(line);
 
 		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
-
+		
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());

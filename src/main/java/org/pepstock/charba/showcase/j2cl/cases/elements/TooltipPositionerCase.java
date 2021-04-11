@@ -14,7 +14,7 @@ import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.items.ChartAreaNode;
-import org.pepstock.charba.client.items.DatasetReferenceItem;
+import org.pepstock.charba.client.items.DatasetReference;
 import org.pepstock.charba.client.positioner.CustomTooltipPosition;
 import org.pepstock.charba.client.positioner.Point;
 import org.pepstock.charba.client.positioner.Positioner;
@@ -69,7 +69,7 @@ public class TooltipPositionerCase extends BaseComposite {
 				}
 
 				@Override
-				public Point computePosition(IsChart chart, List<DatasetReferenceItem> items, Point eventPoint) {
+				public Point computePosition(IsChart chart, List<DatasetReference> items, Point eventPoint) {
 					ChartAreaNode area = chart.getNode().getChartArea();
 					Point p = new Point();
 					p.setX(area.getLeft());
@@ -108,13 +108,13 @@ public class TooltipPositionerCase extends BaseComposite {
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
-		axis1.getScaleLabel().setDisplay(true);
-		axis1.getScaleLabel().setLabelString("Month");
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Month");
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
-		axis2.getScaleLabel().setDisplay(true);
-		axis2.getScaleLabel().setLabelString("Value");
+		axis2.getTitle().setDisplay(true);
+		axis2.getTitle().setText("Value");
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 

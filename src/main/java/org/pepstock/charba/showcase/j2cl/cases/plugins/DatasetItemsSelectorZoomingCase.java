@@ -20,6 +20,8 @@ import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
+import org.pepstock.charba.client.events.DatasetRangeClearSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeClearSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
@@ -54,6 +56,8 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 	private final LogView mylog = new LogView(4);
 
 	private final DatasetsItemsSelector selector = DatasetsItemsSelector.get();
+	
+	private final LineDataset dataset1;
 
 	private final DateAdapter adapter = new DateAdapter();
 
@@ -87,11 +91,6 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		chart.getOptions().getTooltips().getCallbacks().setTitleCallback(new TooltipTitleCallback() {
 
 			@Override
-			public List<String> onBeforeTitle(IsChart chart, List<TooltipItem> items) {
-				return null;
-			}
-
-			@Override
 			public List<String> onTitle(IsChart chart, List<TooltipItem> items) {
 				TooltipItem item = items.iterator().next();
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
@@ -99,13 +98,9 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
 			}
 
-			@Override
-			public List<String> onAfterTitle(IsChart chart, List<TooltipItem> items) {
-				return null;
-			}
 		});
 
-		final LineDataset dataset1 = chart.newDataset();
+		dataset1 = chart.newDataset();
 
 		dataset1.setLabel("dataset 1");
 		dataset1.setFill(Fill.ORIGIN);
@@ -157,34 +152,35 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
 		pOptions.setBorderWidth(5);
 		pOptions.setBorderDash(6);
-		pOptions.setFireEventOnClearSelection(true);
 
 		small.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		small.getPlugins().add(selector);
+
+		small.addHandler(new DatasetRangeClearSelectionEventHandler() {
+
+			@Override
+			public void onClear(DatasetRangeClearSelectionEvent event) {
+				axis.setMin(null);
+				axis.setMax(null);
+				dataset1.setDataPoints(new LinkedList<>());
+				chart.getData().setDatasets(dataset1);
+				chart.reconfigure();
+			}
+		}, DatasetRangeClearSelectionEvent.TYPE);
 
 		small.addHandler(new DatasetRangeSelectionEventHandler() {
 
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
-				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.isClearSelection() ? "Clear selection event" : event.getFrom().getLabel()).append(" ");
-				sb.append("Dataset to: ").append(event.isClearSelection() ? "Clear selection event" : event.getTo().getLabel());
-				mylog.addLogEvent(sb.toString());
-				if (!event.isClearSelection()) {
-					List<DataPoint> newDataPoints = new LinkedList<>();
-					for (DataPoint dp : dataset2.getDataPoints()) {
-						newDataPoints.add(dp);
-					}
-					dataset1.setDataPoints(newDataPoints);
-					chart.getData().setDatasets(dataset1);
-					axis.setMin(event.getFrom().getValueAsDate());
-					axis.setMax(event.getTo().getValueAsDate());
-					chart.reconfigure();
-				} else {
-					dataset1.setDataPoints(new LinkedList<>());
-					chart.getData().setDatasets(dataset1);
-					chart.update();
+				List<DataPoint> newDataPoints = new LinkedList<>();
+				for (DataPoint dp : dataset2.getDataPoints()) {
+					newDataPoints.add(dp);
 				}
+				dataset1.setDataPoints(newDataPoints);
+				chart.getData().setDatasets(dataset1);
+				axis.setMin(event.getFrom().getValueAsDate());
+				axis.setMax(event.getTo().getValueAsDate());
+				chart.reconfigure();
 			}
 		}, DatasetRangeSelectionEvent.TYPE);
 
@@ -258,13 +254,20 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 	}
 
 	protected void handleRandomize() {
+		List<DataPoint> newDataPoints = new LinkedList<>();
 		for (Dataset dataset : small.getData().getDatasets()) {
 			LineDataset scDataset = (LineDataset) dataset;
 			for (DataPoint dp : scDataset.getDataPoints()) {
 				dp.setY(getRandomDigit(false));
+				newDataPoints.add(dp);
 			}
 		}
 		small.update();
+		if (!dataset1.getDataPoints().isEmpty()) {
+			dataset1.setDataPoints(newDataPoints);
+			chart.getData().setDatasets(dataset1);
+			chart.update();
+		}
 	}
 
 	protected void handleReset() {
