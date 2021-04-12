@@ -31,6 +31,7 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.VerticalLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -90,7 +91,11 @@ public class ChartsView extends AbstractView {
 				return new LineCase();
 			}
 		}),
-		// FIXME MANCA VERTICAL LINE
+		VERTICAL_LINE("Vertical line", new CaseFactory() {
+			public BaseComposite create() {
+				return new VerticalLineCase();
+			}
+		}),
 		SCATTER("Scatter", new CaseFactory() {
 			public BaseComposite create() {
 				return new ScatterCase();

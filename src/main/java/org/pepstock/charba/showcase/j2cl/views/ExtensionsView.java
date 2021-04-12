@@ -4,10 +4,12 @@ import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationBoxesOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationEllipseOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnLogarithmicAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnTimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationPointsOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsOnCombinedCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase;
@@ -341,7 +343,6 @@ public class ExtensionsView extends AbstractView {
 				return new AnnotationsOnCombinedCase();
 			}
 		}),
-		// FIXME ellipse e POINT missing
 		LINE("Box annotations on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationBoxesOnLineCase();
@@ -360,6 +361,16 @@ public class ExtensionsView extends AbstractView {
 		LOG_SCALE("Line annotation on logarithmic scale", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationLineOnLogarithmicAxisCase();
+			}
+		}),
+		ELLIPSE("Ellipse annotation on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationEllipseOnLineCase();
+			}
+		}),
+		POINTS("Points annotations on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationPointsOnLineCase();
 			}
 		}),
 		OBLIQUE_LINE("Oblique line annotation on timeseries chart", new CaseFactory() {
