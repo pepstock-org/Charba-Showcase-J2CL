@@ -103,6 +103,7 @@ public class HomeView extends BaseComposite {
 		chartRow.appendChild(chartCol);
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(2.5D);
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);

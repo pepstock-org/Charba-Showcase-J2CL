@@ -96,7 +96,7 @@
 				<plugin>
 					<groupId>com.vertispan.j2cl</groupId>
 					<artifactId>j2cl-maven-plugin</artifactId>
-					<version>0.16-SNAPSHOT</version>
+					<version>0.14-SNAPSHOT</version>
 					<executions>
 						<execution>
 							<id>build-js</id>
