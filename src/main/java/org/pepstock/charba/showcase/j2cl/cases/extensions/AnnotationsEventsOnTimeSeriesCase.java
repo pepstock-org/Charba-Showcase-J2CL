@@ -158,7 +158,7 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		line.setBorderColor(HtmlColor.BLACK);
 		line.setBorderWidth(5);
 		line.setValue(40);
-		line.getLabel().setEnabled(true);
+		line.getLabel().setDisplay(true);
 		line.getLabel().setContent("My threshold");
 		line.getLabel().setBackgroundColor(HtmlColor.RED);
 		line.setEnterCallback(eventHandler);

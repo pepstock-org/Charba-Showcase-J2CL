@@ -8,6 +8,7 @@ import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback;
+import org.pepstock.charba.client.callbacks.LegendLabelsCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -20,6 +21,7 @@ import org.pepstock.charba.client.enums.FontStyle;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.impl.plugins.HtmlLegend;
 import org.pepstock.charba.client.impl.plugins.HtmlLegendOptions;
+import org.pepstock.charba.client.items.LegendLabelItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -60,16 +62,24 @@ public class HtmlLegendBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().getTitle().setDisplay(false);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getLegend().getTitle().setDisplay(true);
-		chart.getOptions().getLegend().getTitle().setText("Questa e una \n prova di title");
-		chart.getOptions().getLegend().getTitle().setPadding(10);
+		chart.getOptions().getLegend().getLabels().setLabelsCallback(new LegendLabelsCallback() {
+			
+			@Override
+			public List<LegendLabelItem> generateLegendLabels(IsChart chart, List<LegendLabelItem> defaultLabels) {
+				for (LegendLabelItem item : defaultLabels) {
+					item.setFontColor(item.getStrokeStyle());
+				}
+				return defaultLabels;
+			}
+		});
+		chart.getOptions().getLegend().getTitle().setText("HTML legend on bar chart");
+		chart.getOptions().getLegend().getTitle().getPadding().set(10);
 		chart.getOptions().getLegend().getTitle().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		chart.getOptions().getLegend().getTitle().getFont().setStyle(FontStyle.BOLD);
-
-		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("HTML legend on bar chart");
 
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
@@ -105,7 +115,7 @@ public class HtmlLegendBarCase extends BaseComposite {
 				if (!values.containsKey(currentText)) {
 					SafeHtmlBuilder builder = SafeHtmlBuilder.create();
 					String newText = currentText.replaceAll("dataset", "<b>dataset</b>");
-					newText = newText.replaceAll("prova di title", "<font style='color: " + HtmlColor.RED.toRGBA() + "'>prova di title</font>");
+					newText = newText.replaceAll("the title", "<font style='color: " + HtmlColor.RED.toRGBA() + "'>the title</font>");
 					builder.appendHtmlConstant(newText);
 					values.put(currentText, builder.toSafeHtml());
 				}

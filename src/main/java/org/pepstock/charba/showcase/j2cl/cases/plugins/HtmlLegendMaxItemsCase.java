@@ -79,13 +79,11 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getLegend().getTitle().setDisplay(true);
-		chart.getOptions().getLegend().getTitle().setText("Questa e una prova di title");
-		chart.getOptions().getLegend().getTitle().setPadding(10);
+		chart.getOptions().getLegend().getTitle().setText("HTML legend setting max items on line chart");
+		chart.getOptions().getLegend().getTitle().getPadding().set(10);
 		chart.getOptions().getLegend().getTitle().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		chart.getOptions().getLegend().getTitle().getFont().setStyle(FontStyle.BOLD);
-
-		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("HTML legend setting max items on line chart");
+		chart.getOptions().getTitle().setDisplay(false);
 		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
 		chart.getOptions().getTooltips().setIntersect(false);
 		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
@@ -135,7 +133,6 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 
 		chart.getPlugins().add(HtmlLegend.get());
 
-		chart.getPlugins().add(HtmlLegend.get());
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

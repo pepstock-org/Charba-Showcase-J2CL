@@ -8,13 +8,13 @@ import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.adapters.DateAdapter;
-import org.pepstock.charba.client.annotation.AbstractAnnotation;
+import org.pepstock.charba.client.annotation.AnnotationContext;
 import org.pepstock.charba.client.annotation.AnnotationOptions;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.callbacks.DisplayCallback;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
-import org.pepstock.charba.client.annotation.enums.LineLabelPosition;
+import org.pepstock.charba.client.annotation.enums.LabelPosition;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -200,21 +200,21 @@ public class TrendAndForecastCase extends BaseComposite {
 		AnnotationOptions options = new AnnotationOptions();
 
 		LineAnnotation line = new LineAnnotation();
-		line.setDisplayCallback(new DisplayCallback() {
+		line.setDisplay(new DisplayCallback() {
 			
 			@Override
-			public boolean invoke(IsChart chart, AbstractAnnotation annotation) {
-				return chart.isDatasetVisible(2);
+			public Boolean invoke(AnnotationContext context) {
+				return context.getChart().isDatasetVisible(2);
 			}
 		});
-		line.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
+		line.setDrawTime(DrawTime.AFTER_DRAW);
 		line.setScaleID(MY_SCALE_ID);
 		line.setBorderColor(HtmlColor.DARK_GRAY);
 		line.setBorderWidth(2);
 		line.setValue(new Date((long) nowDate.getTime()));
-		line.getLabel().setEnabled(true);
+		line.getLabel().setDisplay(true);
 		line.getLabel().setContent("Now");
-		line.getLabel().setPosition(LineLabelPosition.START);
+		line.getLabel().setPosition(LabelPosition.START);
 
 		options.setAnnotations(line);
 

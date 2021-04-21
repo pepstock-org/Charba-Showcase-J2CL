@@ -128,13 +128,14 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		pOptions.setBorderDash(6, 2);
 		pOptions.setBorderColor(HtmlColor.GREY);
 		pOptions.getClearSelection().setDisplay(true);
+		pOptions.getClearSelection().setColor(HtmlColor.DARK_RED);
 		pOptions.getClearSelection().setLabel("Reset selection");
-		pOptions.getClearSelection().setFontSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
+		pOptions.getClearSelection().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(DatasetsItemsSelector.get());
-
+		
 		chart.addHandler(new DatasetRangeSelectionEventHandler() {
 
 			@Override

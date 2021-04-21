@@ -8,11 +8,13 @@ import java.util.List;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.TimeSeriesLineChart;
 import org.pepstock.charba.client.adapters.DateAdapter;
+import org.pepstock.charba.client.annotation.AnnotationContext;
 import org.pepstock.charba.client.annotation.AnnotationOptions;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.LineAnnotation;
+import org.pepstock.charba.client.annotation.callbacks.ContentCallback;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
-import org.pepstock.charba.client.annotation.enums.LineLabelPosition;
+import org.pepstock.charba.client.annotation.enums.LabelPosition;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -29,7 +31,6 @@ import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.items.TooltipItem;
-import org.pepstock.charba.client.utils.AnnotationBuilder;
 import org.pepstock.charba.client.utils.Utilities;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -149,22 +150,28 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 		line.setScaleID(DefaultScaleId.X.value());
 		line.setBorderColor(HtmlColor.DARK_GRAY);
 		line.setBorderWidth(2);
-		line.setValue(new Date(startingPoint));
-		line.getLabel().setEnabled(true);
+		line.setValue((context) -> new Date());
+		line.getLabel().setDisplay(true);
 		line.getLabel().setContent("Now");
-		line.getLabel().setPosition(LineLabelPosition.START);
+		line.getLabel().setPosition(LabelPosition.START);
 
-		double average = getAverage();
 		line1.setDrawTime(DrawTime.AFTER_DRAW);
 		line1.setScaleID(DefaultScaleId.Y.value());
 		line1.setBorderColor(HtmlColor.ORANGE);
 		line1.setBorderWidth(4);
 		line1.setBorderDash(4, 4);
-		line1.setValue(average);
-		line1.getLabel().setEnabled(true);
-		line1.getLabel().setContent(AnnotationBuilder.build(getLabelContent(average), 180, 18));
-		//line1.getLabel().setContent("Average of datasets is "+Utilities.applyPrecision(average, 2));
-		line1.getLabel().setPosition(LineLabelPosition.END);
+		line1.setValue((context) -> getAverage());
+		line1.getLabel().setDisplay(true);
+		
+		line1.getLabel().setContent(new ContentCallback() {
+			
+			@Override
+			public String invoke(AnnotationContext context) {
+				return "Average of datasets is "+Utilities.applyPrecision(getAverage(), 2);
+			}
+		});
+		
+		line1.getLabel().setPosition(LabelPosition.END);
 		line1.getLabel().setBackgroundColor(HtmlColor.ORANGE);
 		line1.getLabel().setColor(HtmlColor.BLACK);
 		line1.getLabel().getFont().setSize(18);
@@ -223,50 +230,25 @@ public class AnnotationLineOnTimeSeriesLineCase extends BaseComposite {
 				dp.setValue(getRandomDigit(false));
 			}
 		}
-		List<DataPoint> dataPoints = dataset1.getDataPoints();
-		int size = dataPoints.size();
-		double sum = 0D;
-		for (DataPoint dp : dataPoints) {
-			sum += dp.getY();
-		}
-		line1.setValue((sum / size));
-		chart.reconfigure();
+		chart.update();
 	}
 	
 	private double getAverage() {
 		double sum = 0;
 		double count = 0;
-		for (Dataset dataset : chart.getData().getDatasets()) {
-			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;
-			for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
-				sum += dp.getValue();
-				count++;
+		double dsvisible = 0;
+		List<Dataset> datasets = chart.getData().getDatasets();
+		for (int i=0; i<datasets.size(); i++) {
+			if (chart.isDatasetVisible(i)) {
+				dsvisible++;
+				TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) datasets.get(i);
+				for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
+					sum += dp.getValue();
+					count++;
+				}
 			}
 		}
-		return sum/count;
+		return sum / Math.max(1, count / Math.max(1, dsvisible));
 	}
 
-	private double getStdDeviation() {
-		double sum = 0;
-		double count = 0;
-		for (Dataset dataset : chart.getData().getDatasets()) {
-			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;
-			for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
-				sum += dp.getValue();
-				count++;
-			}
-		}
-		double average = sum/count;
-		for (Dataset dataset : chart.getData().getDatasets()) {
-			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;
-			for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
-				sum += Math.pow(dp.getValue() - average, 2);
-			}
-		}
-		return Math.sqrt(average / count);
-	}
-	
-	private String getLabelContent(double average) {
-		return "<div style=\"color: '"+GoogleChartColor.values()[0].toRGB()+"'\">Average of datasets is <strong style=\"color: black\">"+Utilities.applyPrecision(average, 2)+"</strong></div>";
-	}
 }

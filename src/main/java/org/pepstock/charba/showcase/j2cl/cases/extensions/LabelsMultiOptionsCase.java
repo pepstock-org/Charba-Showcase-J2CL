@@ -53,9 +53,9 @@ public class LabelsMultiOptionsCase extends BaseComposite {
 		chart.getOptions().getLayout().getPadding().setTop(25);
 		chart.getOptions().getLayout().getPadding().setBottom(25);
 		chart.getOptions().getLegend().setPosition(org.pepstock.charba.client.enums.Position.RIGHT);
-		chart.getOptions().getTitle().setDisplay(false);
+		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Using multiple labels");
-		chart.getOptions().getTitle().setPadding(25);
+		chart.getOptions().getTitle().getPadding().set(25);
 
 		DoughnutDataset dataset = chart.newDataset();
 		dataset.setLabel("dataset 1");
@@ -80,7 +80,7 @@ public class LabelsMultiOptionsCase extends BaseComposite {
 		label2.getFont().setSize(18);
 
 		chart.getOptions().getPlugins().setOptions(LabelsPlugin.ID, options);
-
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

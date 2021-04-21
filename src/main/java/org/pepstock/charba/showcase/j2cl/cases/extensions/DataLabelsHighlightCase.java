@@ -131,7 +131,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 
 			@Override
 			public IsColor invoke(DataLabelsContext context) {
-				Hovered hovered = context.getOptions(factory);
+				Hovered hovered = context.getAttributes(factory);
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 				return hovered.isHovered() ? ds.getBackgroundColor() : HtmlColor.WHITE;
 			}
@@ -149,7 +149,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 
 			@Override
 			public IsColor invoke(DataLabelsContext context) {
-				Hovered hovered = context.getOptions(factory);
+				Hovered hovered = context.getAttributes(factory);
 				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 				return hovered.isHovered() ? HtmlColor.WHITE : ds.getBackgroundColor();
 			}
@@ -164,9 +164,9 @@ public class DataLabelsHighlightCase extends BaseComposite {
 
 			@Override
 			public boolean onEnter(DataLabelsContext context) {
-				Hovered hovered = context.getOptions(factory);
+				Hovered hovered = context.getAttributes(factory);
 				hovered.setHovered(true);
-				context.setOptions(hovered);
+				context.setAttributes(hovered);
 				return true;
 			}
 
@@ -175,9 +175,9 @@ public class DataLabelsHighlightCase extends BaseComposite {
 
 			@Override
 			public boolean onLeave(DataLabelsContext context) {
-				Hovered hovered = context.getOptions(factory);
+				Hovered hovered = context.getAttributes(factory);
 				hovered.setHovered(false);
-				context.setOptions(hovered);
+				context.setAttributes(hovered);
 				return true;
 			}
 

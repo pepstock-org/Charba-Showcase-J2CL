@@ -65,6 +65,7 @@ public class VerticalLineCase extends BaseComposite {
 		dataset1.setLabel("dataset 1");
 		dataset1.setPointBackgroundColor(HtmlColor.RED);
 		dataset1.setPointBorderColor(HtmlColor.RED);
+		dataset1.setFill(true);
 
 		double[] values = getRandomDigits(months);
 		List<Double> data = dataset1.getData(true);
