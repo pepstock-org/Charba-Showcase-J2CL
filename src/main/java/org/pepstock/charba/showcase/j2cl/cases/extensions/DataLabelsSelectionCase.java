@@ -64,6 +64,7 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getLegend().setDisplay(false);
 		chart.getOptions().getTooltips().setEnabled(false);
 		chart.getOptions().getLayout().getPadding().setTop(42);

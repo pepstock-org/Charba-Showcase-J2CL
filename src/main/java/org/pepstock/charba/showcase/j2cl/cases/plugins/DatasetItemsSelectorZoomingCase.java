@@ -20,8 +20,8 @@ import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
-import org.pepstock.charba.client.events.DatasetRangeClearSelectionEvent;
-import org.pepstock.charba.client.events.DatasetRangeClearSelectionEventHandler;
+import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
@@ -156,17 +156,17 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		small.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		small.getPlugins().add(selector);
 
-		small.addHandler(new DatasetRangeClearSelectionEventHandler() {
+		small.addHandler(new DatasetRangeCleanSelectionEventHandler() {
 
 			@Override
-			public void onClear(DatasetRangeClearSelectionEvent event) {
+			public void onClean(DatasetRangeCleanSelectionEvent event) {
 				axis.setMin(null);
 				axis.setMax(null);
 				dataset1.setDataPoints(new LinkedList<>());
 				chart.getData().setDatasets(dataset1);
 				chart.reconfigure();
 			}
-		}, DatasetRangeClearSelectionEvent.TYPE);
+		}, DatasetRangeCleanSelectionEvent.TYPE);
 
 		small.addHandler(new DatasetRangeSelectionEventHandler() {
 
@@ -271,6 +271,6 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 	}
 
 	protected void handleReset() {
-		selector.clearSelection(small);
+		selector.cleanSelection(small);
 	}
 }

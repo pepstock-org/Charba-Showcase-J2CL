@@ -248,6 +248,20 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 
+		// ----------------------------------------------
+		// Log element
+		// ----------------------------------------------
+
+		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		logRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(logRow);
+
+		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		logCol.style.width = WidthUnionType.of("100%");
+		logCol.style.textAlign = "center";
+		logCol.vAlign = "top";
+		logRow.appendChild(logCol);
+		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override

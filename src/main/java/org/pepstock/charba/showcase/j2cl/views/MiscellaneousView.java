@@ -8,6 +8,7 @@ import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointSizesO
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsImageOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingStylesOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.AutoUpdateLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBubbleCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksDoughnutCase;
@@ -119,6 +120,11 @@ public class MiscellaneousView extends AbstractView {
 		TRENDS("Drawing trend and forecast on timeseries chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new TrendAndForecastCase();
+			}
+		}),
+		AUTO_UPDATE("Auto updating on timeseries chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AutoUpdateLineCase();
 			}
 		});
 

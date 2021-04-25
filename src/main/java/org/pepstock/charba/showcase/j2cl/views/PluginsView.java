@@ -14,8 +14,10 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePieCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBubbleCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase;
@@ -128,6 +130,16 @@ public class PluginsView extends AbstractView {
 		SELECTIONG_ON_LINE("Selecting on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new DatasetItemsSelectorLineCase();
+			}
+		}),
+		SELECTIONG_ON_SCATTER("Selecting on scatter chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetItemsSelectorScatterCase();
+			}
+		}),
+		SELECTIONG_ON_BUBBLE("Selecting on bubble chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetItemsSelectorBubbleCase();
 			}
 		}),
 		SELECTIONG_ON_BAR_TIME_SERIES("Selecting on timeseries bar chart", new CaseFactory() {

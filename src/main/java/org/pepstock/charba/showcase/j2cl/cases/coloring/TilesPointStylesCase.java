@@ -102,10 +102,12 @@ public class TilesPointStylesCase extends BaseComposite {
 		dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 		dataset1.setBackgroundColor(p);
+		dataset1.setFill(true);
 		dataset1.setData(getFixedDigits(ITEMS));
 
 		chart.getData().setLabels(getLabels(ITEMS));
 		chart.getData().setDatasets(dataset1);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

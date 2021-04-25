@@ -18,7 +18,7 @@ import org.pepstock.charba.client.enums.Display;
 import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.client.impl.callbacks.Percentage;
 import org.pepstock.charba.client.items.DataItem;
-import org.pepstock.charba.client.items.UndefinedValues;
+import org.pepstock.charba.client.items.Undefined;
 import org.pepstock.charba.client.utils.Utilities;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -86,7 +86,7 @@ public class DataLabelsDoughnutCase extends BaseComposite {
 
 		DataLabelsOptions option2 = new DataLabelsOptions();
 		option2.setAnchor(Anchor.CENTER);
-		option2.setBackgroundColor(UndefinedValues.STRING);
+		option2.setBackgroundColor(Undefined.STRING);
 		option2.setBorderWidth(0);
 		dataset2.setOptions(DataLabelsPlugin.ID, option2);
 

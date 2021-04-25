@@ -12,8 +12,8 @@ import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.InteractionMode;
-import org.pepstock.charba.client.events.DatasetRangeClearSelectionEvent;
-import org.pepstock.charba.client.events.DatasetRangeClearSelectionEventHandler;
+import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
@@ -115,21 +115,21 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		pOptions.setBorderWidth(2);
 		pOptions.setBorderDash(6, 3, 6);
 		pOptions.setBorderColor(HtmlColor.GREY);
-		pOptions.getClearSelection().setDisplay(true);
-		pOptions.getClearSelection().setLabel("Reset selection");
-		pOptions.getClearSelection().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
+		pOptions.getSelectionCleaner().setDisplay(true);
+		pOptions.getSelectionCleaner().setLabel("Reset selection");
+		pOptions.getSelectionCleaner().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
 		pOptions.setColor(HtmlColor.LIGHT_GOLDEN_ROD_YELLOW.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(DatasetsItemsSelector.get());
 
-		chart.addHandler(new DatasetRangeClearSelectionEventHandler() {
+		chart.addHandler(new DatasetRangeCleanSelectionEventHandler() {
 
 			@Override
-			public void onClear(DatasetRangeClearSelectionEvent event) {
-				mylog.addLogEvent("Clear selection event");
+			public void onClean(DatasetRangeCleanSelectionEvent event) {
+				mylog.addLogEvent("Clean selection event");
 			}
-		}, DatasetRangeClearSelectionEvent.TYPE);
+		}, DatasetRangeCleanSelectionEvent.TYPE);
 
 		chart.addHandler(new DatasetRangeSelectionEventHandler() {
 

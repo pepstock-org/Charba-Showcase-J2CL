@@ -3,8 +3,10 @@ package org.pepstock.charba.showcase.j2cl.cases.charts;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.callbacks.MeterFormatCallback;
 import org.pepstock.charba.client.colors.ColorBuilder;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.enums.Render;
 import org.pepstock.charba.client.impl.charts.MeterChart;
 import org.pepstock.charba.client.impl.charts.MeterContext;
@@ -75,10 +77,10 @@ public class MeterCase extends BaseComposite {
 		chartPercent.getOptions().getTitle().setText("METER chart to represent percentage value");
 		chartPercent.getOptions().setRender(Render.PERCENTAGE);
 		chartPercent.getOptions().setFormatCallback(new MeterFormatCallback() {
-
+			
 			@Override
 			public String invoke(MeterContext context) {
-				return Utilities.applyPrecision(context.getValue() * 100, 2) + "%";
+				return Utilities.applyPrecision(context.getValue()*100, 2)+"%";
 			}
 		});
 		chartPercent.getData().setDatasets(getDataset(chartPercent, "Percent", 100D));
@@ -88,11 +90,21 @@ public class MeterCase extends BaseComposite {
 		chartValue.getOptions().getTitle().setDisplay(true);
 		chartValue.getOptions().getTitle().setText("METER chart to represent value and dataset label");
 		chartValue.getOptions().setRender(Render.VALUE_AND_LABEL);
-		chartValue.getOptions().setFormatCallback(new MeterFormatCallback() {
+		
+		chartValue.getOptions().setFontColor(new ColorCallback<MeterContext>() {
 
 			@Override
+			public Object invoke(MeterContext context) {
+				return context.getValue() > (2048D*0.75) ? HtmlColor.RED : HtmlColor.LIGHT_GREEN;
+			}
+			
+		});
+		
+		chartValue.getOptions().setFormatCallback(new MeterFormatCallback() {
+			
+			@Override
 			public String invoke(MeterContext context) {
-				return Utilities.applyPrecision(context.getValue(), 0) + " MB";
+				return Utilities.applyPrecision(context.getValue(), 0)+" MB";
 			}
 		});
 		chartValue.getData().setDatasets(getDataset(chartPercent, "memory", 2048D));
@@ -103,10 +115,10 @@ public class MeterCase extends BaseComposite {
 		chartValueColor.getOptions().getTitle().setText("METER chart to represent value and dataset label", "changing the color of label");
 		chartValueColor.getOptions().setRender(Render.VALUE_AND_LABEL);
 		chartValueColor.getOptions().setFormatCallback(new MeterFormatCallback() {
-
+			
 			@Override
 			public String invoke(MeterContext context) {
-				return Utilities.applyPrecision(context.getValue(), 0) + " GB";
+				return Utilities.applyPrecision(context.getValue(), 0)+" GB";
 			}
 		});
 		chartValueColor.getOptions().setFontColor(ColorBuilder.build(90, 173, 255));

@@ -1,15 +1,14 @@
 package org.pepstock.charba.showcase.j2cl.cases.plugins;
 
 import java.util.List;
+import java.util.Random;
 
-import org.pepstock.charba.client.BarChart;
+import org.pepstock.charba.client.BubbleChart;
 import org.pepstock.charba.client.Defaults;
-import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
-import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.data.BarDataset;
+import org.pepstock.charba.client.data.BubbleDataset;
+import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
@@ -29,15 +28,20 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class DatasetItemsSelectorBarCase extends BaseComposite {
+public class DatasetItemsSelectorBubbleCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final BarChart chart = new BarChart();
+	private final BubbleChart chart = new BubbleChart();
 
+	private static final int AMOUNT_OF_POINTS = 16;
+	private static final int MIN_XY = -150;
+	private static final int MAX_XY = 100;
+	
 	private final LogView mylog = new LogView(4);
 
-	public DatasetItemsSelectorBarCase() {
+	public DatasetItemsSelectorBubbleCase() {
+
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -59,42 +63,48 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Dataset items selector plugin on bar chart");
+		chart.getOptions().getTitle().setText("Bubble chart");
 
-		BarDataset dataset1 = chart.newDataset();
+		BubbleDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
-		IsColor color1 = GoogleChartColor.values()[0];
+		String[] colors = new String[AMOUNT_OF_POINTS];
+		String[] hcolors = new String[AMOUNT_OF_POINTS];
+		String[] bcolors = new String[AMOUNT_OF_POINTS];
+		int[] bwidth = new int[AMOUNT_OF_POINTS];
+		int[] hbwidth = new int[AMOUNT_OF_POINTS];
 
-		dataset1.setBackgroundColor(color1.alpha(0.2));
-		dataset1.setBorderColor(color1.toHex());
-		dataset1.setBorderWidth(1);
+		DataPoint[] dp1 = new DataPoint[AMOUNT_OF_POINTS];
+		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			dp1[i] = new DataPoint();
+			dp1[i].setX(getData());
+			dp1[i].setY(getData());
+			dp1[i].setR(getData(0, 50));
+			colors[i] = colorize(false, dp1[i]);
+			bcolors[i] = colorize(true, dp1[i]);
+			bwidth[i] = Math.min(Math.max(1, i + 1), 5);
+			hcolors[i] = "transparent";
+			hbwidth[i] = (int) Math.round(8 * dp1[i].getR() / 1000);
+		}
+		dataset1.setBackgroundColor(colors);
+		dataset1.setBorderColor(bcolors);
+		dataset1.setBorderWidth(bwidth);
+		dataset1.setHoverBackgroundColor(hcolors);
+		dataset1.setHoverBorderWidth(hbwidth);
+		dataset1.setDataPoints(dp1);
 
-		dataset1.setData(getRandomDigits(months));
-
-		BarDataset dataset2 = chart.newDataset();
-		dataset2.setLabel("dataset 2");
-
-		IsColor color2 = GoogleChartColor.values()[1];
-
-		dataset2.setBackgroundColor(color2.alpha(0.2));
-		dataset2.setBorderColor(color2.toHex());
-		dataset2.setBorderWidth(1);
-		dataset2.setData(getRandomDigits(months));
-
-		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset1, dataset2);
-
+		chart.getData().setDatasets(dataset1);
+		
 		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
 		pOptions.setBorderWidth(2);
-		pOptions.setBorderDash(6, 2);
+		pOptions.setBorderDash(6, 3, 6);
 		pOptions.setBorderColor(HtmlColor.GREY);
 		pOptions.getSelectionCleaner().setDisplay(true);
-		pOptions.getSelectionCleaner().setLabel("Reset selected area");
+		pOptions.getSelectionCleaner().setLabel("Reset selection");
+		pOptions.getSelectionCleaner().setPadding(6);
 		pOptions.getSelectionCleaner().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
-		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
+		pOptions.setColor(HtmlColor.LIGHT_PINK.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(DatasetsItemsSelector.get());
@@ -107,6 +117,7 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 			}
 		}, DatasetRangeCleanSelectionEvent.TYPE);
 
+		
 		chart.addHandler(new DatasetRangeSelectionEventHandler() {
 
 			@Override
@@ -163,26 +174,6 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeDataset);
 
-		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		addData.onclick = (p0) -> {
-			handleAddData();
-			return null;
-		};
-		addData.className = "gwt-Button";
-		addData.textContent = "Add data";
-		addData.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(addData);
-
-		HTMLButtonElement removeData = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		removeData.onclick = (p0) -> {
-			handleRemoveData();
-			return null;
-		};
-		removeData.className = "gwt-Button";
-		removeData.textContent = "Remove data";
-		removeData.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(removeData);
-
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -193,7 +184,7 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
+		
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
@@ -215,24 +206,82 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		return mainPanel;
 	}
 
+	private int getData() {
+		return getData(MIN_XY, MAX_XY);
+	}
+
+	private int getData(int min, int max) {
+		Random random = new Random();
+		return random.nextInt(max + 1 - min) + min;
+	}
+
+	private String colorize(boolean opaque, DataPoint value) {
+		double x = value.getX() / 100;
+		double y = value.getY() / 100;
+		int r = x < 0 && y < 0 ? 250 : x < 0 ? 150 : y < 0 ? 50 : 0;
+		int g = x < 0 && y < 0 ? 0 : x < 0 ? 50 : y < 0 ? 150 : 250;
+		int b = x < 0 && y < 0 ? 0 : x > 0 && y > 0 ? 250 : 150;
+		double a = opaque ? 1 : 0.2 * value.getR() / 50;
+
+		return "rgba(" + r + "," + g + "," + b + "," + a + ")";
+	}
+
 	protected void handleRandomize() {
+		String[] colors = new String[AMOUNT_OF_POINTS];
+		String[] bcolors = new String[AMOUNT_OF_POINTS];
+		int[] bwidth = new int[AMOUNT_OF_POINTS];
+		int[] hbwidth = new int[AMOUNT_OF_POINTS];
+
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(months));
+			BubbleDataset bDataset = (BubbleDataset) dataset;
+			int i = 0;
+			for (DataPoint dp : bDataset.getDataPoints()) {
+				dp.setX(getData());
+				dp.setY(getData());
+				dp.setR(getData(0, 50));
+				colors[i] = colorize(false, dp);
+				bcolors[i] = colorize(true, dp);
+				bwidth[i] = Math.min(Math.max(1, i + 1), 5);
+				hbwidth[i] = (int) Math.round(8 * dp.getR() / 1000);
+				i++;
+			}
+			bDataset.setBackgroundColor(colors);
+			bDataset.setBorderColor(bcolors);
+			bDataset.setBorderWidth(bwidth);
 		}
+
 		chart.update();
 	}
 
 	protected void handleAddDataset() {
 		List<Dataset> datasets = chart.getData().getDatasets();
-
-		BarDataset dataset = chart.newDataset();
+		BubbleDataset dataset = chart.newDataset();
 		dataset.setLabel("dataset " + (datasets.size() + 1));
 
-		IsColor color = GoogleChartColor.values()[datasets.size()];
-		dataset.setBackgroundColor(color.alpha(0.2));
-		dataset.setBorderColor(color.toHex());
-		dataset.setBorderWidth(1);
-		dataset.setData(getRandomDigits(months));
+		String[] colors = new String[AMOUNT_OF_POINTS];
+		String[] hcolors = new String[AMOUNT_OF_POINTS];
+		String[] bcolors = new String[AMOUNT_OF_POINTS];
+		int[] bwidth = new int[AMOUNT_OF_POINTS];
+		int[] hbwidth = new int[AMOUNT_OF_POINTS];
+
+		DataPoint[] dp1 = new DataPoint[AMOUNT_OF_POINTS];
+		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			dp1[i] = new DataPoint();
+			dp1[i].setX(getData());
+			dp1[i].setY(getData());
+			dp1[i].setR(getData(0, 50));
+			colors[i] = colorize(false, dp1[i]);
+			bcolors[i] = colorize(true, dp1[i]);
+			bwidth[i] = Math.min(Math.max(1, i + 1), 5);
+			hcolors[i] = "transparent";
+			hbwidth[i] = (int) Math.round(8 * dp1[i].getR() / 1000);
+		}
+		dataset.setBackgroundColor(colors);
+		dataset.setBorderColor(bcolors);
+		dataset.setBorderWidth(bwidth);
+		dataset.setHoverBackgroundColor(hcolors);
+		dataset.setHoverBorderWidth(hbwidth);
+		dataset.setDataPoints(dp1);
 
 		datasets.add(dataset);
 
@@ -241,14 +290,6 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 
 	protected void handleRemoveDataset() {
 		removeDataset(chart);
-	}
-
-	protected void handleAddData() {
-		addData(chart);
-	}
-
-	protected void handleRemoveData() {
-		removeData(chart);
 	}
 
 }

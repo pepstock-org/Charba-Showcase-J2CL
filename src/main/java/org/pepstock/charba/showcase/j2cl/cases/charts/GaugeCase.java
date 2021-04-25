@@ -3,6 +3,7 @@ package org.pepstock.charba.showcase.j2cl.cases.charts;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.callbacks.MeterFormatCallback;
 import org.pepstock.charba.client.colors.ColorBuilder;
 import org.pepstock.charba.client.enums.FontStyle;
@@ -79,10 +80,10 @@ public class GaugeCase extends BaseComposite {
 		chartPercent.getOptions().getTitle().setText("GAUGE chart to represent percentage value");
 		chartPercent.getOptions().setRender(Render.PERCENTAGE);
 		chartPercent.getOptions().setFormatCallback(new MeterFormatCallback() {
-
+			
 			@Override
 			public String invoke(MeterContext context) {
-				return Utilities.applyPrecision(context.getValue() * 100, 2) + "%";
+				return Utilities.applyPrecision(context.getValue()*100, 2)+ "%";
 			}
 		});
 		chartPercent.getOptions().setAnimated(true);
@@ -93,13 +94,22 @@ public class GaugeCase extends BaseComposite {
 		chartValue.getOptions().getTitle().setDisplay(true);
 		chartValue.getOptions().getTitle().setText("GAUGE chart to represent value and dataset label");
 		chartValue.getOptions().setRender(Render.VALUE_AND_LABEL);
-		chartValue.getOptions().setFormatCallback(new MeterFormatCallback() {
+		chartValue.getOptions().setAnimated(true);
+		chartValue.getOptions().setFontColor(new ColorCallback<MeterContext>() {
 
 			@Override
-			public String invoke(MeterContext context) {
-				return Utilities.applyPrecision(context.getValue(), 0) + " MB";
+			public Object invoke(MeterContext context) {
+				GaugeDataset dataset = (GaugeDataset)chartValue.getData().getDatasets().get(0);
+				return dataset.getCurrent().getColor();
 			}
-
+			
+		});
+		chartValue.getOptions().setFormatCallback(new MeterFormatCallback() {
+			
+			@Override
+			public String invoke(MeterContext context) {
+				return Utilities.applyPrecision(context.getValue() * context.getEasing(), 0)+ " MB";
+			}
 		});
 		chartValue.getOptions().getFont().setStyle(FontStyle.ITALIC);
 		chartValue.getData().setDatasets(getDataset(chartValue, "Memory", 2048D));
@@ -110,10 +120,10 @@ public class GaugeCase extends BaseComposite {
 		chartValueColor.getOptions().getTitle().setText("GAUGE chart to represent value and dataset label", "changing the color of label");
 		chartValueColor.getOptions().setRender(Render.VALUE_AND_LABEL);
 		chartValueColor.getOptions().setFormatCallback(new MeterFormatCallback() {
-
+			
 			@Override
 			public String invoke(MeterContext context) {
-				return Utilities.applyPrecision(context.getValue(), 0) + " GB";
+				return Utilities.applyPrecision(context.getValue(), 0)+ " GB";
 			}
 		});
 		chartValueColor.getOptions().setFontColor(ColorBuilder.build(90, 173, 255));

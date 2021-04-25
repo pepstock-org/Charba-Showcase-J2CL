@@ -1,17 +1,16 @@
 package org.pepstock.charba.showcase.j2cl.cases.plugins;
 
-import java.util.Date;
+import java.util.List;
 
-import org.pepstock.charba.client.BarChart;
-import org.pepstock.charba.client.Defaults;
-import org.pepstock.charba.client.adapters.DateAdapter;
+import org.pepstock.charba.client.ScatterChart;
+import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
-import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
-import org.pepstock.charba.client.data.BarDataset;
+import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.enums.Bounds;
-import org.pepstock.charba.client.enums.TimeUnit;
+import org.pepstock.charba.client.data.ScatterDataset;
+import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent;
+import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
@@ -29,19 +28,18 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
-
-	private static final long DAY = 1000 * 60 * 60 * 24;
-
-	private static final int AMOUNT_OF_POINTS = 15;
+public class DatasetItemsSelectorScatterCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final BarChart chart = new BarChart();
+	private final ScatterChart chart = new ScatterChart();
 
+	private static final int AMOUNT_OF_POINTS = 16;
+	
 	private final LogView mylog = new LogView(4);
 
-	public DatasetItemsSelectorTimeSeriesByBarCase() {
+	public DatasetItemsSelectorScatterCase() {
+
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -64,84 +62,73 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Timeseries by bar chart");
-		
-		DateAdapter adapter = new DateAdapter();
-		long time = adapter.startOf(new Date(), TimeUnit.DAY).getTime();
+		chart.getOptions().getTitle().setText("Scatter chart");
 
-		BarDataset dataset1 = chart.newDataset();
+		ScatterDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
-		dataset1.setBackgroundColor(HtmlColor.GREEN);
 
-		DataPoint[] points = new DataPoint[AMOUNT_OF_POINTS];
-		DataPoint[] rainPoints = new DataPoint[AMOUNT_OF_POINTS];
-		int idx = 0;
+		IsColor color1 = GoogleChartColor.values()[0];
+
+		dataset1.setBackgroundColor(color1.toHex());
+		dataset1.setBorderColor(color1.toHex());
+
+		double[] xs1 = getRandomDigits(AMOUNT_OF_POINTS);
+		double[] ys1 = getRandomDigits(AMOUNT_OF_POINTS);
+		DataPoint[] dp1 = new DataPoint[AMOUNT_OF_POINTS];
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
-			DataPoint dataPoint = new DataPoint();
-			dataPoint.setX(new Date(time));
-			dataPoint.setX(100 * Math.random());
-			points[idx] = dataPoint;
-
-			DataPoint rainPoint = new DataPoint();
-			rainPoint.setX(new Date(time));
-			rainPoint.setY(100 * Math.random());
-			rainPoints[idx] = rainPoint;
-
-			idx++;
-			time = time + DAY;
+			dp1[i] = new DataPoint();
+			dp1[i].setX(xs1[i]);
+			dp1[i].setY(ys1[i]);
 		}
-		dataset1.setDataPoints(rainPoints);
+		dataset1.setDataPoints(dp1);
 
-		BarDataset dataset2 = chart.newDataset();
-		dataset2.setBackgroundColor(HtmlColor.ORANGE);
+		ScatterDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
 
-		DataPoint[] rainPoints2 = new DataPoint[AMOUNT_OF_POINTS];
-		time = adapter.startOf(new Date(), TimeUnit.DAY).getTime();;
-		idx = 0;
+		IsColor color2 = GoogleChartColor.values()[1];
+
+		dataset2.setBackgroundColor(color2.toHex());
+		dataset2.setBorderColor(color2.toHex());
+		double[] xs2 = getRandomDigits(AMOUNT_OF_POINTS);
+		double[] ys2 = getRandomDigits(AMOUNT_OF_POINTS);
+		DataPoint[] dp2 = new DataPoint[AMOUNT_OF_POINTS];
 		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
-			DataPoint dataPoint = new DataPoint();
-			dataPoint.setX(new Date(time));
-			dataPoint.setX(100 * Math.random());
-			points[idx] = dataPoint;
-
-			DataPoint rainPoint2 = new DataPoint();
-			rainPoint2.setX(new Date(time));
-			rainPoint2.setY(100 * Math.random());
-			rainPoints2[idx] = rainPoint2;
-
-			idx++;
-			time = time + DAY;
+			dp2[i] = new DataPoint();
+			dp2[i].setX(xs2[i]);
+			dp2[i].setY(ys2[i]);
 		}
-		dataset2.setDataPoints(rainPoints2);
-
-		CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
-		axis.setBounds(Bounds.DATA);
-		axis.getTime().setUnit(TimeUnit.DAY);
-		axis.setOffset(true);
+		dataset2.setDataPoints(dp2);
 
 		chart.getData().setDatasets(dataset1, dataset2);
-		chart.getOptions().getScales().setAxes(axis);
-
+		
 		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
 		pOptions.setBorderWidth(2);
-		pOptions.setBorderDash(6, 2);
+		pOptions.setBorderDash(6, 3, 6);
 		pOptions.setBorderColor(HtmlColor.GREY);
 		pOptions.getSelectionCleaner().setDisplay(true);
-		pOptions.getSelectionCleaner().setColor(HtmlColor.DARK_RED);
 		pOptions.getSelectionCleaner().setLabel("Reset selection");
-		pOptions.getSelectionCleaner().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
-		pOptions.setColor(HtmlColor.LIGHT_GREEN.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
+		pOptions.getSelectionCleaner().setPadding(6);
+		pOptions.getSelectionCleaner().getFont().setSize(16);
+		pOptions.setColor(HtmlColor.AZURE.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
 		chart.getPlugins().add(DatasetsItemsSelector.get());
+
+		chart.addHandler(new DatasetRangeCleanSelectionEventHandler() {
+
+			@Override
+			public void onClean(DatasetRangeCleanSelectionEvent event) {
+				mylog.addLogEvent("Clean selection event");
+			}
+		}, DatasetRangeCleanSelectionEvent.TYPE);
+
 		
 		chart.addHandler(new DatasetRangeSelectionEventHandler() {
 
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.getFrom().getLabel()).append(" to: ").append(event.getTo().getLabel());
+				sb.append("Dataset from: ").append(event.getFrom().getLabel()).append(" to:").append(event.getTo().getLabel());
 				mylog.addLogEvent(sb.toString());
 			}
 		}, DatasetRangeSelectionEvent.TYPE);
@@ -172,6 +159,26 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
+		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
+		addDataset.onclick = (p0) -> {
+			handleAddDataset();
+			return null;
+		};
+		addDataset.className = "gwt-Button";
+		addDataset.textContent = "Add dataset";
+		addDataset.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(addDataset);
+
+		HTMLButtonElement removeDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
+		removeDataset.onclick = (p0) -> {
+			handleRemoveDataset();
+			return null;
+		};
+		removeDataset.className = "gwt-Button";
+		removeDataset.textContent = "Remove dataset";
+		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(removeDataset);
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -182,7 +189,7 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
+		
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
@@ -206,12 +213,39 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			BarDataset scDataset = (BarDataset) dataset;
+			ScatterDataset scDataset = (ScatterDataset) dataset;
 			for (DataPoint dp : scDataset.getDataPoints()) {
-				dp.setY(getRandomDigit(false));
+				dp.setX(getRandomDigit());
+				dp.setY(getRandomDigit());
 			}
 		}
 		chart.update();
+	}
+
+	protected void handleAddDataset() {
+		List<Dataset> datasets = chart.getData().getDatasets();
+		ScatterDataset dataset = chart.newDataset();
+		dataset.setLabel("dataset " + (datasets.size() + 1));
+
+		IsColor color = GoogleChartColor.values()[datasets.size()];
+		dataset.setBackgroundColor(color.toHex());
+		dataset.setBorderColor(color.toHex());
+
+		double[] xs2 = getRandomDigits(AMOUNT_OF_POINTS);
+		double[] ys2 = getRandomDigits(AMOUNT_OF_POINTS);
+		DataPoint[] dp2 = new DataPoint[AMOUNT_OF_POINTS];
+		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			dp2[i] = new DataPoint();
+			dp2[i].setX(xs2[i]);
+			dp2[i].setY(ys2[i]);
+		}
+		dataset.setDataPoints(dp2);
+		datasets.add(dataset);
+		chart.update();
+	}
+
+	protected void handleRemoveDataset() {
+		removeDataset(chart);
 	}
 
 }
