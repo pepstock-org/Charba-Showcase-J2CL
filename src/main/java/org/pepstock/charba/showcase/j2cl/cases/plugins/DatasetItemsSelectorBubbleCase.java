@@ -63,8 +63,9 @@ public class DatasetItemsSelectorBubbleCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(2.5);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Bubble chart");
+		chart.getOptions().getTitle().setText("Dataset items selector plugin on bubble chart");
 
 		BubbleDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");

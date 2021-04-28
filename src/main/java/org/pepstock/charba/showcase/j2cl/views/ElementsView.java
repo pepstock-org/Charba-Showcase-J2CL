@@ -17,6 +17,9 @@ import org.pepstock.charba.showcase.j2cl.cases.elements.MultiAxisLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.MultiAxisScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.MultiLineAxisLabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.NoNumericYAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnTimeSeriesLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TicksMinMaxCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TicksStepSizeCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TitleChangeCase;
@@ -29,6 +32,7 @@ import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipInteractionsCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipPositionerCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TooltipPositioningCase;
 
+import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLDivElement;
@@ -97,6 +101,47 @@ public class ElementsView extends AbstractView {
 		private final CaseFactory factory;
 
 		private LegendCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+	
+	// ----------------------------------------------
+	// Segment
+	// ----------------------------------------------
+
+	private enum SegmentCase implements CaseItem
+	{
+		LINE("Using segment on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new SegmentOnLineCase();
+			}
+		}),
+		VERTICAL_LINE("Using segment on vertical line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new SegmentOnVerticalLineCase();
+			}
+		}),
+		TIME_SERIES_LINE("Using segment on timeseries line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new SegmentOnTimeSeriesLineCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private SegmentCase(String label, CaseFactory factory) {
 			this.label = label;
 			this.factory = factory;
 		}
@@ -347,6 +392,32 @@ public class ElementsView extends AbstractView {
 					};
 				}
 			}
+			
+			if (Category.LEGEND.equals(cat)) {
+				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPointer.innerHTML = "Line segment";
+				labelPointer.style.textAlign = "left";
+				labelPointer.className = "myCategory";
+				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPointer);
+				
+				for (CaseItem caseItem : SegmentCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = caseItem.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+			}
+
 		}
 	}
 

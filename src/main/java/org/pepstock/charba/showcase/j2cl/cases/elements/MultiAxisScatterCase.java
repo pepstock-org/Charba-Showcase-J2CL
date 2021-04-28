@@ -28,7 +28,7 @@ public class MultiAxisScatterCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final ScatterChart chart = new ScatterChart();;
+	private final ScatterChart chart = new ScatterChart();
 
 	public MultiAxisScatterCase() {
 		// ----------------------------------------------

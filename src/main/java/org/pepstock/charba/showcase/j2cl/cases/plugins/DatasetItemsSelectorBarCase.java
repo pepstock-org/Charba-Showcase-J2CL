@@ -59,6 +59,7 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(2.5);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Dataset items selector plugin on bar chart");

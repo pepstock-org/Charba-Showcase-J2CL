@@ -76,6 +76,7 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 		maxItems.add(maxItems4);
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(2);
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getLegend().getTitle().setDisplay(true);

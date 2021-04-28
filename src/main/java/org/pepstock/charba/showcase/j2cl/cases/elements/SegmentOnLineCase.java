@@ -1,20 +1,21 @@
-package org.pepstock.charba.showcase.j2cl.cases.charts;
+package org.pepstock.charba.showcase.j2cl.cases.elements;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.colors.GoogleChartColor;
-import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.callbacks.BorderDashCallback;
+import org.pepstock.charba.client.callbacks.ColorCallback;
+import org.pepstock.charba.client.callbacks.SegmentContext;
+import org.pepstock.charba.client.callbacks.WidthCallback;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.events.TitleClickEvent;
-import org.pepstock.charba.client.events.TitleClickEventHandler;
-import org.pepstock.charba.client.impl.plugins.ChartPointer;
+import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -26,15 +27,13 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class TitleClickEventCase extends BaseComposite {
+public class SegmentOnLineCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
 
-	private final LogView mylog = new LogView();
-
-	public TitleClickEventCase() {
+	public SegmentOnLineCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -56,48 +55,56 @@ public class TitleClickEventCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(3);
+		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Click title event on line chart");
-		chart.getOptions().getTooltips().setEnabled(false);
+		chart.getOptions().getTitle().setText("Line chart with custom segments rendering");
+		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setIntersect(false);
 
-		chart.addHandler(new TitleClickEventHandler() {
-
+		chart.getOptions().getSegment().setBorderColor(new ColorCallback<SegmentContext>() {
+			
 			@Override
-			public void onClick(TitleClickEvent event) {
-				IsChart chart = (IsChart) event.getSource();
-				List<String> values = chart.getOptions().getTitle().getText();
-				StringBuilder title = new StringBuilder();
-				if (!values.isEmpty()) {
-					for (String value : values) {
-						title.append(value).append(" ");
-					}
-				}
-				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+			public Object invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getY() <  context.getStartPoint().getParsed().getY() ? HtmlColor.GRAY : HtmlColor.GREEN;
 			}
+		});
 
-		}, TitleClickEvent.TYPE);
+		chart.getOptions().getSegment().setBackgroundColor(new ColorCallback<SegmentContext>() {
+			
+			@Override
+			public Object invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getY() <  context.getStartPoint().getParsed().getY() ? HtmlColor.LIGHT_GRAY.alpha(0.8) : HtmlColor.LIGHT_GREEN.alpha(0.8);
+			}
+		});
+		
+		chart.getOptions().getSegment().setBorderWidth(new WidthCallback<SegmentContext>() {
+			
+			@Override
+			public Integer invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getY() <  context.getStartPoint().getParsed().getY() ? 5 : null;
+			}
+		});
+
+		chart.getOptions().getSegment().setBorderDash(new BorderDashCallback<SegmentContext>() {
+			
+			@Override
+			public List<Integer> invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getY() <  context.getStartPoint().getParsed().getY() ? Arrays.asList(6,6) : Collections.emptyList();
+			}
+		});
+		List<Dataset> datasets = chart.getData().getDatasets(true);
 
 		LineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
+		dataset1.setFill(true);
 
-		IsColor color1 = GoogleChartColor.values()[0];
-
-		dataset1.setBackgroundColor(color1.toHex());
-		dataset1.setBorderColor(color1.toHex());
-		dataset1.setFill(false);
-		dataset1.setData(getRandomDigits(months));
-
-		LineDataset dataset2 = chart.newDataset();
-		dataset2.setLabel("dataset 2");
-
-		IsColor color2 = GoogleChartColor.values()[1];
-
-		dataset2.setBackgroundColor(color2.toHex());
-		dataset2.setBorderColor(color2.toHex());
-		dataset2.setData(getRandomDigits(months));
-		dataset2.setFill(false);
+		double[] values = getRandomDigits(months);
+		List<Double> data = dataset1.getData(true);
+		for (int i = 0; i < values.length; i++) {
+			data.add(values[i]);
+		}
+		datasets.add(dataset1);
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
@@ -112,10 +119,6 @@ public class TitleClickEventCase extends BaseComposite {
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset1, dataset2);
-
-		chart.getPlugins().add(ChartPointer.get());
-
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -130,12 +133,14 @@ public class TitleClickEventCase extends BaseComposite {
 		actionsCol.style.width = WidthUnionType.of("100%");
 		actionsCol.style.textAlign = "center";
 		actionsCol.vAlign = "middle";
-		actionsCol.setAttribute("colspan", "2");
 		actionsRow.appendChild(actionsCol);
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
-			handleRandomize();
+			for (Dataset dataset : chart.getData().getDatasets()) {
+				dataset.setData(getRandomDigits(months));
+			}
+			chart.update();
 			return null;
 		};
 		randomize.className = "gwt-Button";
@@ -153,32 +158,10 @@ public class TitleClickEventCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
-	}
-
-	protected void handleRandomize() {
-		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(months));
-		}
-		chart.update();
 	}
 }

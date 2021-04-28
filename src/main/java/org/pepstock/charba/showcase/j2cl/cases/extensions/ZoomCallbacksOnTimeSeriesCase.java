@@ -20,6 +20,7 @@ import org.pepstock.charba.client.data.TimeSeriesItem;
 import org.pepstock.charba.client.data.TimeSeriesLineDataset;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionAxis;
+import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.items.TooltipItem;
@@ -37,6 +38,7 @@ import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
+import elemental2.dom.HTMLDivElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
 import elemental2.dom.HTMLInputElement;
@@ -51,6 +53,9 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 
 	private static final int AMOUNT_OF_POINTS = 60;
 	
+	private static final String CSS = "background: linear-gradient(180deg,#eee,#fff); background-color: rgba(0, 0, 0, 0); background-color: #eee; border: 1px solid #cdd5d7; border-radius: 6px; box-shadow: 0 1px 2px 1px #cdd5d7; " +
+	"font-family: consolas,courier,monospace; font-size: .9rem; font-weight: 700; line-height: 1; margin: 3px; padding: 4px 6px; white-space: nowrap;";
+	
 	private final HTMLTableElement mainPanel;
 
 	private final TimeSeriesLineChart chart = new TimeSeriesLineChart();
@@ -58,6 +63,10 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 	private final LogView mylog = new LogView();
 
 	private final HTMLInputElement dragging = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLInputElement modifier = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLDivElement help = (HTMLDivElement) DomGlobal.document.createElement("div");
 
 	private final Drag drag;
 	
@@ -227,6 +236,25 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		dragging.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(dragging);
 
+		String modifierId = "modifier" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelForModifier = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForModifier.htmlFor = modifierId;
+		labelForModifier.appendChild(DomGlobal.document.createTextNode("CTRL modifier "));
+		actionsCol.appendChild(labelForModifier);
+
+		modifier.id = draggingId;
+		modifier.checked = false;
+		modifier.disabled = true;
+		modifier.onclick = (p0) -> {
+			handleModifier();
+			return null;
+		};
+		modifier.type = "checkbox";
+		modifier.className = "gwt-CheckBox";
+		modifier.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(modifier);
+
 		HTMLButtonElement reset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		reset.onclick = (p0) -> {
 			handleResetZoom();
@@ -248,6 +276,21 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 
+		// ----------------------------------------------
+		// help element
+		// ----------------------------------------------
+
+		HTMLTableRowElement helpRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		helpRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(helpRow);
+
+		HTMLTableCellElement helpCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		helpCol.style.width = WidthUnionType.of("100%");
+		helpCol.style.textAlign = "center";
+		helpCol.vAlign = "top";
+		helpRow.appendChild(helpCol);
+		helpCol.appendChild(help);
+		
 		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
@@ -283,10 +326,27 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.ID, ZoomPlugin.FACTORY);
 		if (dragging.checked) {
 			options.getZoom().setDrag(drag);
+			options.getZoom().setWheelModifierKey(null);
+			modifier.checked = false;
+			modifier.disabled = true;
+			help.innerHTML = "";
 		} else {
 			options.getZoom().setDrag(false);
+			modifier.disabled = false;
 		}
-		chart.reconfigure();
+		chart.update();
+	}
+	
+	protected void handleModifier() {
+		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.ID, ZoomPlugin.FACTORY);
+		if (modifier.checked) {
+			options.getZoom().setWheelModifierKey(ModifierKey.CTRL);
+			help.innerHTML = "<kbd style=\""+CSS+"\">Ctrl</kbd> + wheeling to zoom";
+		} else {
+			options.getZoom().setWheelModifierKey(null);
+			help.innerHTML = "";
+		}
+		chart.update();
 	}
 
 	protected void handleResetZoom() {

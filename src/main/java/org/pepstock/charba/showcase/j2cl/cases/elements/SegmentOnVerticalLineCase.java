@@ -1,9 +1,14 @@
-package org.pepstock.charba.showcase.j2cl.cases.plugins;
+package org.pepstock.charba.showcase.j2cl.cases.elements;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-import org.pepstock.charba.client.Defaults;
-import org.pepstock.charba.client.LineChart;
+import org.pepstock.charba.client.VerticalLineChart;
+import org.pepstock.charba.client.callbacks.BorderDashCallback;
+import org.pepstock.charba.client.callbacks.ColorCallback;
+import org.pepstock.charba.client.callbacks.SegmentContext;
+import org.pepstock.charba.client.callbacks.WidthCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -11,15 +16,10 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.data.VerticalLineDataset;
+import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.InteractionMode;
-import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent;
-import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler;
-import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
-import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
-import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
-import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -31,15 +31,13 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class DatasetItemsSelectorLineCase extends BaseComposite {
+public class SegmentOnVerticalLineCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final LineChart chart = new LineChart();
+	private final VerticalLineChart chart = new VerticalLineChart();
 
-	private final LogView mylog = new LogView(4);
-
-	public DatasetItemsSelectorLineCase() {
+	public SegmentOnVerticalLineCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -59,27 +57,53 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
+
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(2.5);
 		chart.getOptions().setMaintainAspectRatio(true);
-		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Dataset items selector plugin on line chart");
+		chart.getOptions().getTitle().setText("Vertical line chart with custom segments rendering");
 		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
 		chart.getOptions().getTooltips().setIntersect(false);
-		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
-		chart.getOptions().getHover().setIntersect(true);
 
+		chart.getOptions().getSegment().setBorderColor(new ColorCallback<SegmentContext>() {
+			
+			@Override
+			public Object invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getX() <  context.getStartPoint().getParsed().getX() ? HtmlColor.GRAY : HtmlColor.GREEN;
+			}
+		});
+
+		chart.getOptions().getSegment().setBackgroundColor(new ColorCallback<SegmentContext>() {
+			
+			@Override
+			public Object invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getX() <  context.getStartPoint().getParsed().getX() ? HtmlColor.LIGHT_GRAY.alpha(0.8) : HtmlColor.LIGHT_GREEN.alpha(0.8);
+			}
+		});
+		
+		chart.getOptions().getSegment().setBorderWidth(new WidthCallback<SegmentContext>() {
+			
+			@Override
+			public Integer invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getX() <  context.getStartPoint().getParsed().getX() ? 5 : null;
+			}
+		});
+
+		chart.getOptions().getSegment().setBorderDash(new BorderDashCallback<SegmentContext>() {
+			
+			@Override
+			public List<Integer> invoke(SegmentContext context) {
+				return context.getEndPoint().getParsed().getX() <  context.getStartPoint().getParsed().getX() ? Arrays.asList(6,6) : Collections.emptyList();
+			}
+		});
+		
 		List<Dataset> datasets = chart.getData().getDatasets(true);
 
-		LineDataset dataset1 = chart.newDataset();
+		VerticalLineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
-		IsColor color1 = GoogleChartColor.values()[0];
+		dataset1.setFill(true);
 
-		dataset1.setBackgroundColor(color1.toHex());
-		dataset1.setBorderColor(color1.toHex());
-		dataset1.setFill(false);
 		double[] values = getRandomDigits(months);
 		List<Double> data = dataset1.getData(true);
 		for (int i = 0; i < values.length; i++) {
@@ -87,23 +111,12 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		}
 		datasets.add(dataset1);
 
-		LineDataset dataset2 = chart.newDataset();
-		dataset2.setLabel("dataset 2");
-
-		IsColor color2 = GoogleChartColor.values()[1];
-
-		dataset2.setBackgroundColor(color2.toHex());
-		dataset2.setBorderColor(color2.toHex());
-		dataset2.setData(getRandomDigits(months));
-		dataset2.setFill(false);
-		datasets.add(dataset2);
-
-		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
+		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart, AxisKind.Y);
 		axis1.setDisplay(true);
 		axis1.getTitle().setDisplay(true);
 		axis1.getTitle().setText("Month");
 
-		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
+		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart, AxisKind.X);
 		axis2.setDisplay(true);
 		axis2.getTitle().setDisplay(true);
 		axis2.getTitle().setText("Value");
@@ -111,37 +124,7 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
-
-		DatasetsItemsSelectorOptions pOptions = new DatasetsItemsSelectorOptions();
-		pOptions.setBorderWidth(2);
-		pOptions.setBorderDash(6, 3, 6);
-		pOptions.setBorderColor(HtmlColor.GREY);
-		pOptions.getSelectionCleaner().setDisplay(true);
-		pOptions.getSelectionCleaner().setLabel("Reset selection");
-		pOptions.getSelectionCleaner().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
-		pOptions.setColor(HtmlColor.LIGHT_GOLDEN_ROD_YELLOW.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
-
-		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
-		chart.getPlugins().add(DatasetsItemsSelector.get());
-
-		chart.addHandler(new DatasetRangeCleanSelectionEventHandler() {
-
-			@Override
-			public void onClean(DatasetRangeCleanSelectionEvent event) {
-				mylog.addLogEvent("Clean selection event");
-			}
-		}, DatasetRangeCleanSelectionEvent.TYPE);
-
-		chart.addHandler(new DatasetRangeSelectionEventHandler() {
-
-			@Override
-			public void onSelect(DatasetRangeSelectionEvent event) {
-				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.getFrom().getLabel()).append(" to: ").append(event.getTo().getLabel());
-				mylog.addLogEvent(sb.toString());
-			}
-		}, DatasetRangeSelectionEvent.TYPE);
-
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -160,7 +143,10 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
-			handleRandomize();
+			for (Dataset dataset : chart.getData().getDatasets()) {
+				dataset.setData(getRandomDigits(months));
+			}
+			chart.update();
 			return null;
 		};
 		randomize.className = "gwt-Button";
@@ -170,7 +156,16 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 
 		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addDataset.onclick = (p0) -> {
-			handleAddDataset();
+			List<Dataset> datasetsList = chart.getData().getDatasets();
+			LineDataset dataset = chart.newDataset();
+			dataset.setLabel("dataset " + (datasetsList.size() + 1));
+			IsColor color = GoogleChartColor.values()[datasetsList.size()];
+			dataset.setBackgroundColor(color.toHex());
+			dataset.setBorderColor(color.toHex());
+			dataset.setData(getRandomDigits(months));
+			dataset.setFill(false);
+			datasetsList.add(dataset);
+			chart.update();
 			return null;
 		};
 		addDataset.className = "gwt-Button";
@@ -180,7 +175,7 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 
 		HTMLButtonElement removeDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		removeDataset.onclick = (p0) -> {
-			handleRemoveDataset();
+			removeDataset(chart);
 			return null;
 		};
 		removeDataset.className = "gwt-Button";
@@ -190,7 +185,7 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 
 		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addData.onclick = (p0) -> {
-			handleAddData();
+			addData(chart);
 			return null;
 		};
 		addData.className = "gwt-Button";
@@ -200,7 +195,7 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 
 		HTMLButtonElement removeData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		removeData.onclick = (p0) -> {
-			handleRemoveData();
+			removeData(chart);
 			return null;
 		};
 		removeData.className = "gwt-Button";
@@ -218,57 +213,10 @@ public class DatasetItemsSelectorLineCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override
 	public HTMLElement getElement() {
 		return mainPanel;
-	}
-
-	protected void handleRandomize() {
-		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(months));
-		}
-		chart.update();
-	}
-
-	protected void handleAddDataset() {
-		List<Dataset> datasets = chart.getData().getDatasets();
-		LineDataset dataset = chart.newDataset();
-		dataset.setLabel("dataset " + (datasets.size() + 1));
-		IsColor color = GoogleChartColor.values()[datasets.size()];
-		dataset.setBackgroundColor(color.toHex());
-		dataset.setBorderColor(color.toHex());
-		dataset.setData(getRandomDigits(months));
-		dataset.setFill(false);
-		datasets.add(dataset);
-		chart.update();
-	}
-
-	protected void handleRemoveDataset() {
-		removeDataset(chart);
-	}
-
-	protected void handleAddData() {
-		addData(chart);
-	}
-
-	protected void handleRemoveData() {
-		removeData(chart);
 	}
 }
