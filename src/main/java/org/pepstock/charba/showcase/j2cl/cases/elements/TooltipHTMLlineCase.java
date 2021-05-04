@@ -17,6 +17,7 @@ import org.pepstock.charba.client.dom.enums.Unit;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.enums.TooltipAlign;
 import org.pepstock.charba.client.enums.TooltipPosition;
 import org.pepstock.charba.client.items.TooltipBodyItem;
 import org.pepstock.charba.client.items.TooltipLabelColor;
@@ -92,8 +93,8 @@ public class TooltipHTMLlineCase extends BaseComposite {
 					element.style.opacity = OpacityUnionType.of(0D);
 					return;
 				}
-				if (model.getYAlign() != null) {
-					element.className = model.getYAlign();
+				if (TooltipAlign.AUTO.equals(model.getYAlign())) {
+					element.className = model.getYAlign().value();
 				} else {
 					element.className = "no-transform";
 				}
