@@ -1,14 +1,21 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
-import org.pepstock.charba.client.BarChart;
+import org.pepstock.charba.client.IsChart;
+import org.pepstock.charba.client.Plugin;
+import org.pepstock.charba.client.ScatterChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.data.BarDataset;
+import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.data.ScatterDataset;
+import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.enums.InteractionAxis;
-import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.items.ChartAreaNode;
+import org.pepstock.charba.client.plugins.AbstractPlugin;
+import org.pepstock.charba.client.zoom.ZoomContext;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
+import org.pepstock.charba.client.zoom.callbacks.StartCallback;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -21,13 +28,15 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ZoomXOnBarCase extends BaseComposite {
+public class ZoomPanRegionCase extends BaseComposite {
+
+	private static final int AMOUNT_OF_POINTS = 120;
 
 	private final HTMLTableElement mainPanel;
-
-	private final BarChart chart = new BarChart();
-
-	public ZoomXOnBarCase() {
+	
+	private final ScatterChart chart = new ScatterChart();
+	
+	public ZoomPanRegionCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -49,42 +58,91 @@ public class ZoomXOnBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Zooming on X scale on bar chart");
+		chart.getOptions().getTitle().setText("Pan region on scatter chart");
 
-		BarDataset dataset1 = chart.newDataset();
+		ScatterDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
 		IsColor color1 = GoogleChartColor.values()[0];
 
-		dataset1.setBackgroundColor(color1.alpha(0.2));
+		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
-		dataset1.setBorderWidth(1);
 
-		dataset1.setData(getRandomDigits(months));
+		double[] xs1 = getRandomDigits(AMOUNT_OF_POINTS);
+		double[] ys1 = getRandomDigits(AMOUNT_OF_POINTS);
+		DataPoint[] dp1 = new DataPoint[AMOUNT_OF_POINTS];
+		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			dp1[i] = new DataPoint();
+			dp1[i].setX(xs1[i]);
+			dp1[i].setY(ys1[i]);
+		}
+		dataset1.setDataPoints(dp1);
 
-		BarDataset dataset2 = chart.newDataset();
+		ScatterDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
 
 		IsColor color2 = GoogleChartColor.values()[1];
 
-		dataset2.setBackgroundColor(color2.alpha(0.2));
+		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
-		dataset2.setBorderWidth(1);
-		dataset2.setData(getRandomDigits(months));
+		double[] xs2 = getRandomDigits(AMOUNT_OF_POINTS);
+		double[] ys2 = getRandomDigits(AMOUNT_OF_POINTS);
+		DataPoint[] dp2 = new DataPoint[AMOUNT_OF_POINTS];
+		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			dp2[i] = new DataPoint();
+			dp2[i].setX(xs2[i]);
+			dp2[i].setY(ys2[i]);
+		}
+		dataset2.setDataPoints(dp2);
 
-		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(true);
+		options.getPan().setStartCallback(new StartCallback() {
+			
+			@Override
+			public boolean onStart(ZoomContext context) {
+				ChartAreaNode area = context.getChart().getNode().getChartArea();
+				double w25 = area.getWidth() * 0.25;
+				double h25 = area.getHeight() * 0.25;
+				if (context.getPoint().getX() < area.getLeft() + w25 || context.getPoint().getX() > area.getRight() - w25
+						|| context.getPoint().getY() < area.getTop() + h25 || context.getPoint().getY() > area.getBottom() - h25) {
+					return false; // abort
+				}
+				return true;
+			}
+		});
 		options.getPan().setMode(InteractionAxis.XY);
-		options.getZoom().setEnabled(true);
-		options.getZoom().setMode(InteractionAxis.X);
-		options.getZoom().setThreshold(10D);
-
+		options.getZoom().setEnabled(false);
+		options.getLimits().getX().setMin(-200);
+		options.getLimits().getX().setMax(200);
+		options.getLimits().getX().setMinRange(50);
+		options.getLimits().getY().setMin(-200);
+		options.getLimits().getY().setMax(200);
+		options.getLimits().getY().setMinRange(50);
+		
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
+		
+		Plugin borderPlugin = new AbstractPlugin("panAreaBorder") {
+
+			@Override
+			public boolean onBeforeDraw(IsChart chart) {
+				ChartAreaNode area = chart.getNode().getChartArea();
+			    Context2dItem ctx = chart.getCanvas().getContext2d();
+			    ctx.save();
+			    ctx.setStrokeColor("rgba(255, 0, 0, 0.3)");
+			    ctx.setLineWidth(1);
+			    ctx.strokeRect(area.getLeft() + area.getWidth() * 0.25, area.getTop() + area.getHeight() * 0.25, area.getWidth() / 2, area.getHeight() / 2);
+			    ctx.restore();
+			    return true;
+			}
+			
+		};
+		
+		chart.getPlugins().add(borderPlugin);
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -131,7 +189,6 @@ public class ZoomXOnBarCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
 	}
 
 	@Override
@@ -141,12 +198,17 @@ public class ZoomXOnBarCase extends BaseComposite {
 
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(months));
+			ScatterDataset scDataset = (ScatterDataset) dataset;
+			for (DataPoint dp : scDataset.getDataPoints()) {
+				dp.setX(getRandomDigit());
+				dp.setY(getRandomDigit());
+			}
 		}
 		chart.update();
 	}
 
 	protected void handleResetZoom() {
-		ZoomPlugin.resetZoom(chart);
+		ZoomPlugin.reset(chart);
 	}
+	
 }

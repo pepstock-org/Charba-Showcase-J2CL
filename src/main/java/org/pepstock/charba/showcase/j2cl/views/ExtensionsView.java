@@ -38,15 +38,18 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingImageRender
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingLabelRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingPercentageRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiPanCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiZoomCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiZoomScaleCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomBasicCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCallbacksOnTimeSeriesCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomModeOnBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnHorizontalBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnScatterCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOnTimeSeriesLineCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanOnBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomStyledZoomOnBarCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomXOnBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCategoryAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragCategoryAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragLineareAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragTimeAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOverScaleCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanRegionCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomTimeAxisCase;
 
 import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -267,49 +270,64 @@ public class ExtensionsView extends AbstractView {
 	// ----------------------------------------------
 	private enum ZoomCase implements CaseItem
 	{
-		PANNING("Panning on bar chart", new CaseFactory() {
+		BASIC("Pan and zoom on scatter chart", new CaseFactory() {
 			public BaseComposite create() {
-				return new ZoomPanOnBarCase();
+				return new ZoomBasicCase();
 			}
 		}),
-		ZOOM_BAR("Zooming on bar chart", new CaseFactory() {
+		ZOOM_CATEGORY("Zooming on category axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new ZoomOnBarCase();
+				return new ZoomCategoryAxisCase();
 			}
 		}),
-		ZOOM_BY_X("Zooming by X direction on bar chart", new CaseFactory() {
+		ZOOM_TIME("Zooming on time axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new ZoomXOnBarCase();
+				return new ZoomTimeAxisCase();
 			}
 		}),
-		ZOOM_HORIZONTAL("Zooming on horizontal bar chart", new CaseFactory() {
+		ZOOM_OVER_AXES("Zooming over axes", new CaseFactory() {
 			public BaseComposite create() {
-				return new ZoomOnHorizontalBarCase();
+				return new ZoomOverScaleCase();
 			}
 		}),
-		ZOOM_TIME_SERIES("Zooming on timeseries line chart", new CaseFactory() {
+		ZOOM_DRAG_CATEGORY("Drag to zoom on category axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new ZoomOnTimeSeriesLineCase();
+				return new ZoomDragCategoryAxisCase();
 			}
 		}),
-		ZOOM_SCATTER("Zooming on scatter chart", new CaseFactory() {
+		ZOOM_DRAG_LINEAR("Drag to zoom on linear axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new ZoomOnScatterCase();
+				return new ZoomDragLineareAxisCase();
 			}
 		}),
-		STYLING("Styling zooming on bar chart", new CaseFactory() {
+		ZOOM_DRAG_TIME("Drag to zoom on time axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new ZoomStyledZoomOnBarCase();
+				return new ZoomDragTimeAxisCase();
 			}
 		}),
-		CALLBACKS("Zoom callbacks on timeseries line chart", new CaseFactory() {
+		PAN_REGION("Pan region on scatter chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new ZoomPanRegionCase();
+			}
+		}),
+		ZOOM_API_SCATTER("Programmatically zoom on scatter chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new ZoomApiZoomCase();
+			}
+		}),
+		ZOOM_API_LINEAR("Programmatically zoom on linear scale", new CaseFactory() {
+			public BaseComposite create() {
+				return new ZoomApiZoomScaleCase();
+			}
+		}),
+		PAN_API_SCATTER("Programmatically pan on scatter char", new CaseFactory() {
+			public BaseComposite create() {
+				return new ZoomApiPanCase();
+			}
+		}),
+		ZOOM_CALLBACK("Zoom callbacks on timeseries line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new ZoomCallbacksOnTimeSeriesCase();
-			}
-		}),
-		MODE_CALLBACK("Mode direction callback on bar chart", new CaseFactory() {
-			public BaseComposite create() {
-				return new ZoomModeOnBarCase();
 			}
 		});
 

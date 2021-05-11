@@ -1,39 +1,43 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
 import org.pepstock.charba.client.BarChart;
-import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.InteractionAxis;
+import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.zoom.AbstractConfigurationItem;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
-import org.pepstock.charba.client.zoom.callbacks.ModeCallback;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
+import elemental2.dom.HTMLDivElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ZoomModeOnBarCase extends BaseComposite {
+public class ZoomDragCategoryAxisCase extends BaseComposite {
 
+	private static final int AMOUNT = 40;
+	
+	private static final String CSS = "background: linear-gradient(180deg,#eee,#fff); background-color: rgba(0, 0, 0, 0); background-color: #eee; border: 1px solid #cdd5d7; border-radius: 6px; box-shadow: 0 1px 2px 1px #cdd5d7; " +
+	"font-family: consolas,courier,monospace; font-size: .9rem; font-weight: 700; line-height: 1; margin: 3px; padding: 4px 6px; white-space: nowrap;";
+	
 	private final HTMLTableElement mainPanel;
 
+	private final HTMLDivElement help = (HTMLDivElement) DomGlobal.document.createElement("div");
+	
 	private final BarChart chart = new BarChart();
 
-	private final LogView mylog = new LogView();
-
-	public ZoomModeOnBarCase() {
+	public ZoomDragCategoryAxisCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -55,55 +59,49 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setMaintainAspectRatio(true);
-		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Zoom mode callback on bar chart");
+		chart.getOptions().getTitle().setText("Drag to zoom on cartesian category axis");
 
 		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
-		IsColor color1 = GoogleChartColor.values()[0];
+		IsColor color1 = GoogleChartColor.values()[6];
 
 		dataset1.setBackgroundColor(color1.alpha(0.2));
 		dataset1.setBorderColor(color1.toHex());
 		dataset1.setBorderWidth(1);
 
-		dataset1.setData(getRandomDigits(months));
+		dataset1.setData(getRandomDigits(AMOUNT, -100, 100));
 
 		BarDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
 
-		IsColor color2 = GoogleChartColor.values()[1];
+		IsColor color2 = GoogleChartColor.values()[4];
 
 		dataset2.setBackgroundColor(color2.alpha(0.2));
 		dataset2.setBorderColor(color2.toHex());
 		dataset2.setBorderWidth(1);
-		dataset2.setData(getRandomDigits(months));
+		dataset2.setData(getRandomDigits(AMOUNT, -100, 100));
 
-		chart.getData().setLabels(getLabels());
+		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
+		axis1.setDisplay(true);
+		axis1.getTitle().setDisplay(true);
+		axis1.getTitle().setText("Color");
+		axis1.setMinIndex(10);
+		axis1.setMaxIndex(30);
+
+		chart.getData().setLabels(getLabelColors(AMOUNT).toArray(new String[0]));
 		chart.getData().setDatasets(dataset1, dataset2);
+		chart.getOptions().getScales().setAxes(axis1);
 
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(true);
-		options.getPan().setMode(new ModeCallback() {
-
-			@Override
-			public InteractionAxis mode(IsChart chart, AbstractConfigurationItem<?> item) {
-				mylog.addLogEvent("> Panning MODE: " + InteractionAxis.Y.value());
-				return InteractionAxis.Y;
-			}
-		});
+		options.getPan().setMode(InteractionAxis.X);
+		options.getPan().setModifierKey(ModifierKey.ALT);
 		options.getZoom().setEnabled(true);
-		options.getZoom().setMode(new ModeCallback() {
-
-			@Override
-			public InteractionAxis mode(IsChart chart, AbstractConfigurationItem<?> item) {
-				mylog.addLogEvent("> Zooming MODE: " + InteractionAxis.Y.value());
-				return InteractionAxis.Y;
-			}
-		});
+		options.getZoom().setDrag(true);
+		options.getZoom().setMode(InteractionAxis.X);
 
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
 		
@@ -155,6 +153,22 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		actionsCol.appendChild(github);
 
 		// ----------------------------------------------
+		// help element
+		// ----------------------------------------------
+
+		HTMLTableRowElement helpRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		helpRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(helpRow);
+
+		HTMLTableCellElement helpCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		helpCol.style.width = WidthUnionType.of("100%");
+		helpCol.style.textAlign = "center";
+		helpCol.vAlign = "top";
+		helpRow.appendChild(helpCol);
+		help.innerHTML = "<kbd style=\""+CSS+"\">Alt</kbd> to pan";
+		helpCol.appendChild(help);
+		
+		// ----------------------------------------------
 		// Log element
 		// ----------------------------------------------
 
@@ -167,7 +181,6 @@ public class ZoomModeOnBarCase extends BaseComposite {
 		logCol.style.textAlign = "center";
 		logCol.vAlign = "top";
 		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override
@@ -177,12 +190,13 @@ public class ZoomModeOnBarCase extends BaseComposite {
 
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(months));
+			dataset.setData(getRandomDigits(AMOUNT, -100, 100));
 		}
 		chart.update();
 	}
 
 	protected void handleResetZoom() {
-		ZoomPlugin.resetZoom(chart);
+		ZoomPlugin.reset(chart);
 	}
+
 }

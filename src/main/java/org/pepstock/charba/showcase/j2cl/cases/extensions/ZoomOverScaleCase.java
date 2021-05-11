@@ -2,11 +2,20 @@ package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
 import org.pepstock.charba.client.ScatterChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
+import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
+import org.pepstock.charba.client.dom.enums.CursorType;
+import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.InteractionAxis;
+import org.pepstock.charba.client.events.AxisClickEvent;
+import org.pepstock.charba.client.events.AxisClickEventHandler;
+import org.pepstock.charba.client.impl.plugins.ChartPointer;
+import org.pepstock.charba.client.impl.plugins.ChartPointerOptions;
+import org.pepstock.charba.client.impl.plugins.enums.PointerElement;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -17,19 +26,25 @@ import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
+import elemental2.dom.HTMLInputElement;
+import elemental2.dom.HTMLLabelElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ZoomOnScatterCase extends BaseComposite {
+public class ZoomOverScaleCase extends BaseComposite {
 
-	private static final int AMOUNT_OF_POINTS = 16;
+	private static final int AMOUNT_OF_POINTS = 60;
 
 	private final HTMLTableElement mainPanel;
+	
+	private final HTMLInputElement enableZoom = (HTMLInputElement) DomGlobal.document.createElement("input");
+
+	private final HTMLInputElement enablePan = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final ScatterChart chart = new ScatterChart();
-
-	public ZoomOnScatterCase() {
+	
+	public ZoomOverScaleCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -75,7 +90,7 @@ public class ZoomOnScatterCase extends BaseComposite {
 		ScatterDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
 
-		IsColor color2 = GoogleChartColor.values()[1];
+		IsColor color2 = GoogleChartColor.values()[3];
 
 		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
@@ -90,14 +105,48 @@ public class ZoomOnScatterCase extends BaseComposite {
 		dataset2.setDataPoints(dp2);
 
 		chart.getData().setDatasets(dataset1, dataset2);
+		
+		CartesianLinearAxis axis1 = new CartesianLinearAxis(chart, AxisKind.X);
+		axis1.setDisplay(true);
+		axis1.getGrid().setDisplay(true);
+		axis1.getGrid().setBorderColor(HtmlColor.RED);
 
+		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
+		axis2.setDisplay(true);
+		axis2.getGrid().setDisplay(true);
+		axis2.getGrid().setBorderColor(HtmlColor.RED);
+
+		chart.getOptions().getScales().setAxes(axis1, axis2);
+		
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(true);
-		options.getPan().setMode(InteractionAxis.XY);
+		options.getPan().setOverScaleMode(InteractionAxis.XY);
 		options.getZoom().setEnabled(true);
-		options.getZoom().setMode(InteractionAxis.XY);
-
+		options.getZoom().setOverScaleMode(InteractionAxis.XY);
+		options.getLimits().getX().setMin(-200);
+		options.getLimits().getX().setMax(200);
+		options.getLimits().getX().setMinRange(20);
+		options.getLimits().getY().setMin(-200);
+		options.getLimits().getY().setMax(200);
+		options.getLimits().getY().setMinRange(50);
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
+		
+		
+		chart.addHandler(new AxisClickEventHandler() {
+
+			@Override
+			public void onClick(AxisClickEvent event) {
+				// nothing
+			}
+		}, AxisClickEvent.TYPE);
+		
+		ChartPointerOptions pointer = new ChartPointerOptions();
+		pointer.setElements(PointerElement.AXES);
+		pointer.setCursorPointer(CursorType.GRAB);
+		chart.getOptions().getPlugins().setOptions(ChartPointer.ID, pointer);
+
+		chart.getPlugins().add(ChartPointer.get());
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -134,6 +183,42 @@ public class ZoomOnScatterCase extends BaseComposite {
 		reset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reset);
 
+		String zoomId = "zoom" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelForZoom = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForZoom.htmlFor = zoomId;
+		labelForZoom.appendChild(DomGlobal.document.createTextNode("Zoom enable"));
+		actionsCol.appendChild(labelForZoom);
+
+		enableZoom.id = zoomId;
+		enableZoom.checked = true;
+		enableZoom.onclick = (p0) -> {
+			handleZoom();
+			return null;
+		};
+		enableZoom.type = "checkbox";
+		enableZoom.className = "gwt-CheckBox";
+		enableZoom.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(enableZoom);
+
+		String panId = "pan" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelForPan = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForPan.htmlFor = panId;
+		labelForPan.appendChild(DomGlobal.document.createTextNode("Pan enable"));
+		actionsCol.appendChild(labelForPan);
+
+		enablePan.id = panId;
+		enablePan.checked = true;
+		enablePan.onclick = (p0) -> {
+			handlePan();
+			return null;
+		};
+		enablePan.type = "checkbox";
+		enablePan.className = "gwt-CheckBox";
+		enablePan.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(enablePan);
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -144,7 +229,6 @@ public class ZoomOnScatterCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
 	}
 
 	@Override
@@ -164,7 +248,30 @@ public class ZoomOnScatterCase extends BaseComposite {
 	}
 
 	protected void handleResetZoom() {
-		ZoomPlugin.resetZoom(chart);
+		ZoomPlugin.reset(chart);
+	}
+	
+	protected void handleZoom() {
+		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.FACTORY);
+		options.getZoom().setEnabled(enableZoom.checked);
+		updatePointer();
+		chart.update();
+	}
+	
+	protected void handlePan() {
+		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.FACTORY);
+		options.getPan().setEnabled(enablePan.checked);
+		updatePointer();
+		chart.update();
+	}
+	
+	private void updatePointer() {
+		ChartPointerOptions pointer = chart.getOptions().getPlugins().getOptions(ChartPointer.FACTORY);
+		if (enablePan.checked || enableZoom.checked) {
+			pointer.setCursorPointer(CursorType.GRAB);
+		} else {
+			pointer.setCursorPointer(CursorType.DEFAULT);
+		}
 	}
 
 }

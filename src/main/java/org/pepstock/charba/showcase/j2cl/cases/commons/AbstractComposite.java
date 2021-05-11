@@ -52,6 +52,10 @@ public abstract class AbstractComposite {
 		}
 		return values;
 	}
+	
+	protected double getRandomDigit(double min, double max) {
+		return (double) ((int) (Math.random() * (max - min))) + min;
+	}
 
 	protected double getRandomDigit() {
 		return getRandomDigit(true);

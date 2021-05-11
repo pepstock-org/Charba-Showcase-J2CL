@@ -1,29 +1,12 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
-import java.util.Arrays;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
-
-import org.pepstock.charba.client.IsChart;
-import org.pepstock.charba.client.TimeSeriesLineChart;
-import org.pepstock.charba.client.adapters.DateAdapter;
-import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
+import org.pepstock.charba.client.ScatterChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.configuration.CartesianLinearAxis;
-import org.pepstock.charba.client.configuration.CartesianTimeSeriesAxis;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.data.TimeSeriesItem;
-import org.pepstock.charba.client.data.TimeSeriesLineDataset;
-import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.data.ScatterDataset;
 import org.pepstock.charba.client.enums.InteractionAxis;
-import org.pepstock.charba.client.enums.TickSource;
-import org.pepstock.charba.client.enums.TimeUnit;
-import org.pepstock.charba.client.items.TooltipItem;
-import org.pepstock.charba.client.zoom.Drag;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -34,21 +17,25 @@ import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
+import elemental2.dom.HTMLInputElement;
+import elemental2.dom.HTMLLabelElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ZoomOnTimeSeriesLineCase extends BaseComposite {
-
-	private static final long DAY = 1000 * 60 * 60 * 24;
+public class ZoomBasicCase extends BaseComposite {
 
 	private static final int AMOUNT_OF_POINTS = 60;
 
 	private final HTMLTableElement mainPanel;
+	
+	private final HTMLInputElement enableZoom = (HTMLInputElement) DomGlobal.document.createElement("input");
 
-	private final TimeSeriesLineChart chart = new TimeSeriesLineChart();
+	private final HTMLInputElement enablePan = (HTMLInputElement) DomGlobal.document.createElement("input");
 
-	public ZoomOnTimeSeriesLineCase() {
+	private final ScatterChart chart = new ScatterChart();
+	
+	public ZoomBasicCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -69,87 +56,61 @@ public class ZoomOnTimeSeriesLineCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		DateAdapter adapter = new DateAdapter();
-
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setMaintainAspectRatio(true);
-		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Zooming on timeseries line chart");
-		chart.getOptions().getTooltips().setTitleMarginBottom(10);
-		chart.getOptions().getTooltips().getCallbacks().setTitleCallback(new AbstractTooltipTitleCallback() {
+		chart.getOptions().getTitle().setText("Zooming on scatter chart");
 
-			@Override
-			public List<String> onTitle(IsChart chart, List<TooltipItem> items) {
-				TooltipItem item = items.iterator().next();
-				LineDataset ds = (LineDataset) chart.getData().getDatasets().get(0);
-				DataPoint dp = ds.getDataPoints().get(item.getDataIndex());
-				return Arrays.asList(adapter.format(dp.getXAsDate(), TimeUnit.DAY));
-			}
-
-		});
-		final TimeSeriesLineDataset dataset1 = chart.newDataset();
-
+		ScatterDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
-		dataset1.setFill(Fill.FALSE);
 
 		IsColor color1 = GoogleChartColor.values()[0];
 
 		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
 
-		final TimeSeriesLineDataset dataset2 = chart.newDataset();
+		double[] xs1 = getRandomDigits(AMOUNT_OF_POINTS);
+		double[] ys1 = getRandomDigits(AMOUNT_OF_POINTS);
+		DataPoint[] dp1 = new DataPoint[AMOUNT_OF_POINTS];
+		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			dp1[i] = new DataPoint();
+			dp1[i].setX(xs1[i]);
+			dp1[i].setY(ys1[i]);
+		}
+		dataset1.setDataPoints(dp1);
 
+		ScatterDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
-		dataset2.setFill(Fill.FALSE);
 
 		IsColor color2 = GoogleChartColor.values()[1];
 
 		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
-
-		long time = new Date().getTime();
-
-		double[] xs1 = getRandomDigits(AMOUNT_OF_POINTS, false);
-		double[] xs2 = getRandomDigits(AMOUNT_OF_POINTS, false);
-		List<TimeSeriesItem> data = new LinkedList<>();
-		List<TimeSeriesItem> data1 = new LinkedList<>();
-
-		time = time + DAY * AMOUNT_OF_POINTS;
-		for (int i = AMOUNT_OF_POINTS - 1; i >= 0; i--) {
-			data.add(new TimeSeriesItem(new Date(time), xs1[i]));
-			data1.add(new TimeSeriesItem(new Date(time), xs2[i]));
-			time = time - DAY;
+		double[] xs2 = getRandomDigits(AMOUNT_OF_POINTS);
+		double[] ys2 = getRandomDigits(AMOUNT_OF_POINTS);
+		DataPoint[] dp2 = new DataPoint[AMOUNT_OF_POINTS];
+		for (int i = 0; i < AMOUNT_OF_POINTS; i++) {
+			dp2[i] = new DataPoint();
+			dp2[i].setX(xs2[i]);
+			dp2[i].setY(ys2[i]);
 		}
-		dataset1.setTimeSeriesData(data);
-		dataset2.setTimeSeriesData(data1);
-
-		CartesianTimeSeriesAxis axis = chart.getOptions().getScales().getTimeAxis();
-		axis.getTicks().setSource(TickSource.DATA);
-		axis.getTime().setUnit(TimeUnit.DAY);
-
-		CartesianLinearAxis axis2 = chart.getOptions().getScales().getLinearAxis();
-		axis2.setDisplay(true);
-		axis2.setBeginAtZero(true);
-		axis2.setStacked(true);
+		dataset2.setDataPoints(dp2);
 
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		ZoomOptions options = new ZoomOptions();
+		options.getPan().setEnabled(true);
+		options.getPan().setMode(InteractionAxis.XY);
 		options.getZoom().setEnabled(true);
-		options.getZoom().setMode(InteractionAxis.X);
-
-		time = new Date().getTime() + (DAY * AMOUNT_OF_POINTS / 2);
-
-		options.getZoom().getRangeMax().setX(new Date(time));
-		options.getZoom().setSpeed(0.05D);
-		;
-		Drag drag = ZoomPlugin.createDrag();
-		drag.setAnimationDuration(1000);
-		options.getZoom().setDrag(drag);
-
-		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
+		options.getZoom().setMode(InteractionAxis.XY);
+		options.getLimits().getX().setMin(-200);
+		options.getLimits().getX().setMax(200);
+		options.getLimits().getX().setMinRange(20);
+		options.getLimits().getY().setMin(-200);
+		options.getLimits().getY().setMax(200);
+		options.getLimits().getY().setMinRange(50);
 		
+		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
+
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -186,6 +147,42 @@ public class ZoomOnTimeSeriesLineCase extends BaseComposite {
 		reset.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(reset);
 
+		String zoomId = "zoom" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelForZoom = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForZoom.htmlFor = zoomId;
+		labelForZoom.appendChild(DomGlobal.document.createTextNode("Zoom enable"));
+		actionsCol.appendChild(labelForZoom);
+
+		enableZoom.id = zoomId;
+		enableZoom.checked = true;
+		enableZoom.onclick = (p0) -> {
+			handleZoom();
+			return null;
+		};
+		enableZoom.type = "checkbox";
+		enableZoom.className = "gwt-CheckBox";
+		enableZoom.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(enableZoom);
+
+		String panId = "pan" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelForPan = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForPan.htmlFor = panId;
+		labelForPan.appendChild(DomGlobal.document.createTextNode("Pan enable"));
+		actionsCol.appendChild(labelForPan);
+
+		enablePan.id = panId;
+		enablePan.checked = true;
+		enablePan.onclick = (p0) -> {
+			handlePan();
+			return null;
+		};
+		enablePan.type = "checkbox";
+		enablePan.className = "gwt-CheckBox";
+		enablePan.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(enablePan);
+
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -196,7 +193,6 @@ public class ZoomOnTimeSeriesLineCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
 	}
 
 	@Override
@@ -206,15 +202,29 @@ public class ZoomOnTimeSeriesLineCase extends BaseComposite {
 
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			TimeSeriesLineDataset scDataset = (TimeSeriesLineDataset) dataset;
-			for (TimeSeriesItem dp : scDataset.getTimeSeriesData()) {
-				dp.setValue(getRandomDigit(false));
+			ScatterDataset scDataset = (ScatterDataset) dataset;
+			for (DataPoint dp : scDataset.getDataPoints()) {
+				dp.setX(getRandomDigit());
+				dp.setY(getRandomDigit());
 			}
 		}
 		chart.update();
 	}
 
 	protected void handleResetZoom() {
-		ZoomPlugin.resetZoom(chart);
+		ZoomPlugin.reset(chart);
 	}
+	
+	protected void handleZoom() {
+		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.FACTORY);
+		options.getZoom().setEnabled(enableZoom.checked);
+		chart.update();
+	}
+	
+	protected void handlePan() {
+		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.FACTORY);
+		options.getPan().setEnabled(enablePan.checked);
+		chart.update();
+	}
+
 }
