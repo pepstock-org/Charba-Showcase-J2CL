@@ -48,6 +48,11 @@ jobs:
          - name: Build
            run: mvn --file pom.xml install
          # 
+         # Removes sources from WAR
+         # 
+         - name: Removes sources
+           run: ant -buildfile removeJavaFilesFromWar.xml
+         # 
          # Deploy showcase to GitHub Pages
          # 
          - name: Deploy to GitHub Pages
