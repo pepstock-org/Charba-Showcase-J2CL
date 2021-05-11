@@ -50,8 +50,13 @@ jobs:
          # 
          # Removes sources from WAR
          # 
-         - name: Removes sources
+         - name: Remove JAVA sources
            run: ant -buildfile removeJavaFilesFromWar.xml
+         # 
+         # Removes .gitignore
+         # 
+         - name: Remove .gitignore 
+           run: rm -f ./war/.gitignore
          # 
          # Deploy showcase to GitHub Pages
          # 
