@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultLabels.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;;;MAsBU,e;;CAQS,+D,sBAAuBA,G;;CAUzB,+D,sBAAuBA,G;;QAVrB,gI,wDAAuBA,G;EAAvBC,0B;EACjBA,Y;;;QASe,gI,wDAAuBD,G;EAAvBE,0B;EACfA,a;;;QAnBQ,O;EAAAC,kC;EAAAA;",
+"sources":["IsDefaultLabels.java"],
+"names":["key","org.pepstock.charba.client.datalabels.IsDefaultLabels.getLabel__$default","org.pepstock.charba.client.datalabels.IsDefaultLabels.hasLabel__$default","org.pepstock.charba.client.datalabels.IsDefaultLabels.<clinit>"]
+}
+

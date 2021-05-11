@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsFill.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;;MAkCiB,M;;QAQD,kD,eAAeA,I;EAAfC,iB;EACdA,iH;;;CAQW,W;;CAOR,iB;;CAOG,Y;;QA/BS,O;EAAAC,yB;EAAAA;",
+"sources":["IsFill.java"],
+"names":["fill","org.pepstock.charba.client.enums.IsFill.isValid","org.pepstock.charba.client.enums.IsFill.<clinit>"]
+}
+

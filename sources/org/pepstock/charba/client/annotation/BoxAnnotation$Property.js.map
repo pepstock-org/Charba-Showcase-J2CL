@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BoxAnnotation$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAoDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,sEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,+I;EAAAA,iB;;;CAAA,4G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,oF;;;CASa,S;EACbC,mF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,+IAAAA;G;EAAAA,uI;;;QAAA,U;EAAAC,mB;EAAAA,+J;;;QAEZ,iF;EAAAC,0H;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,8S;EAFYA,kG;;;;;;;;;;;;;AAAA;6F;AAAA;2F;AAEZ;;",
+"sources":["BoxAnnotation.java"],
+"names":["org.pepstock.charba.client.annotation.BoxAnnotation$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.BoxAnnotation$Property.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.BoxAnnotation$Property.<init>","org.pepstock.charba.client.annotation.BoxAnnotation$Property.value","org.pepstock.charba.client.annotation.BoxAnnotation$Property.valueOf","org.pepstock.charba.client.annotation.BoxAnnotation$Property.values","org.pepstock.charba.client.annotation.BoxAnnotation$Property.<synthetic: getter>","org.pepstock.charba.client.annotation.BoxAnnotation$Property.<clinit>"]
+}
+

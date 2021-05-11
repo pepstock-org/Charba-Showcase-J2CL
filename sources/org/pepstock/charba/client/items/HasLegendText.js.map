@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasLegendText.impl.java.js",
+"lineCount":82,
+"mappings":"A;;;;;;;;;;;;;MA2BiB,a;;CAOE,wB;;CAOH,W;;CAeF,2B,gBAAeA,I;;CAaf,2D,iBAAiBA,I;;CAab,iB;;CAgBD,c;;CAgBH,sB,gBAAoBC,Q;;QAvFjB,M;EAAAC,wB;EAAAA,8B;;;QAcD,mE;EAAAC,wB;EAEdA;GACCA,8FADDA;G;EAKAA,sE;;;QAQY,qF,gDAAeH,I;EAAfI,wB;EAEZA;GACCA,2GADDA;G;;;QAWY,qH,iDAAiBJ,I;EAAjBI,wB;EAEZA;GACCA,2IADDA;G;;;QAWgB,yE;EAAAC,wB;EAEhBA;GACCA,oGADDA;G;EAKAA,Y;;;QASe,sE;EAAAC,wB;EAEfA;GACCA,iGADDA;G;EAKAA,iG;;;QASY,gF,gDAAoBL,Q;EAApBM,wB;EAEZA;GACCA,0GADDA;G;;;QAzFe,O;EAAAC,gC;EAAAA;",
+"sources":["HasLegendText.java"],
+"names":["text","htmlText","org.pepstock.charba.client.items.HasLegendText.<synthetic: adapt_lambda>","org.pepstock.charba.client.items.HasLegendText.getText__$default","org.pepstock.charba.client.items.HasLegendText.setText__$default","org.pepstock.charba.client.items.HasLegendText.getTextAsHtml__$default","org.pepstock.charba.client.items.HasLegendText.isHtmlText__$default","org.pepstock.charba.client.items.HasLegendText.setHtmlText__$default","org.pepstock.charba.client.items.HasLegendText.<clinit>"]
+}
+

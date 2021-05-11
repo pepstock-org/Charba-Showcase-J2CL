@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultDecimation.impl.java.js",
+"lineCount":20,
+"mappings":"A;;;;;;;;;MAyBiB,mB;;CAOR,a;;CAOY,gB;;CAQb,c;;QAtBS,O;EAAAA,sC;EAAAA;",
+"sources":["IsDefaultDecimation.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultDecimation.<clinit>"]
+}
+

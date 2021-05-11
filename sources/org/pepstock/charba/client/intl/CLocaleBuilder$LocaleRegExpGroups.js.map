@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CLocaleBuilder$LocaleRegExpGroups.impl.java.js",
+"lineCount":62,
+"mappings":"A;;;;;;;;;;;;;;;MAkRsB,kB;;CAAA,W;EAAAA,Q;;;QAwCZ,wD,UAAgCC,Y;EAAhCC,6B;EAAAA,yC;EAAAA,kJ;EAAAA,iB;;;CAAA,yH,UAAgCD,Y;EACvCE,oI;;;CAQgB,oF;EAChBC,0R;;;CAQc,kF;EACdC,2T;;;CAQc,kF;EACdC,2T;;;CAQc,+F;EACdC,+P;;;CAQe,qF;EAEfC;GACCA,aADDA;G;EAIAA;GACCA,aADDA;G;EAKAA,2mB;;;QAhGmB,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["CLocaleBuilder.java"],
+"names":["org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.<synthetic: ctor_create>","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.<init>","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.getLanguage","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.getScript","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.getRegion","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.getVariantAndExtension","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.isConsistent","org.pepstock.charba.client.intl.CLocaleBuilder$LocaleRegExpGroups.<clinit>"]
+}
+

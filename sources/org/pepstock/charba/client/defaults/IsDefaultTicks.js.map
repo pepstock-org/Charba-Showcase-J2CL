@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultTicks.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;;;;;;;;MA0BiB,c;;CAOD,Y;;CAOc,mB;;CAOrB,a;;CAOA,c;;CAOJ,sB;;CAQA,kB;;CASA,Y;;CAOA,kB;;CAOA,kB;;CAOI,Y;;CASJ,c;;CAOA,oB;;CAOG,e;;CAOA,4B;;CAOU,sB;;CAOT,uB;;CAOG,a;;CAOP,gB;;CASA,Q;;CAQA,iB;;CAOS,Y;;CAOF,iB;;CAOJ,8B;;CAOH,sB;;QAhLY,O;EAAAA,iC;EAAAA;",
+"sources":["IsDefaultTicks.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultTicks.<clinit>"]
+}
+

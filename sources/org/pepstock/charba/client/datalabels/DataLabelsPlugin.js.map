@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsPlugin.impl.java.js",
+"lineCount":108,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA+BmB,gB;;CAAA,W;EAAAA,Q;;;QAqBV,S;EAAAC,uC;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EAAAC,2E;;;QASgB,O;EAAAC,2B;EACvBA,4F;;;CAQI,kH,0BAAgCC,O;EACpCC,4F;;;QAMkB,U;EAAAC,2B;EAClBA,0C;;;QAQkB,iB,gBAAeC,iB;EAAfD,2B;EAElBA,8C;EAEAA,iL;EAEAA,IAAQE,YAARF,iD;EAEAA,8M;EAEAA;GAGCA,sFAHDA;G;EAMAA,6L;;;QArED,gE;EAAAG,yH;;;QAKA,qE;EAAAA,8H;;;QAKA,8E;EAAAA,uI;;;QAZkB,O;EAAAC,mC;EAAAA,gC;EAAAA,kC;EAElBA,sL;EAKAA,gI;EAKAA,iJ;EAEAA,4H;EAEAA,oH;;;;;;;;;;;;;;;;;;AAhBkB;oF;AAAA;yF;AAAA;kG;AAAA;iBAc4B,mEAd5B,C;AAAA;iBAgBoB,mEAhBpB;",
+"sources":["DataLabelsPlugin.java"],
+"names":["org.pepstock.charba.client.datalabels.DataLabelsPlugin.<synthetic: ctor_js>","org.pepstock.charba.client.datalabels.DataLabelsPlugin.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.DataLabelsPlugin.<init>","org.pepstock.charba.client.datalabels.DataLabelsPlugin.get","options","org.pepstock.charba.client.datalabels.DataLabelsPlugin.mergeDefaults","org.pepstock.charba.client.datalabels.DataLabelsPlugin.enable","enableToAllCharts","isRegistered","org.pepstock.charba.client.datalabels.DataLabelsPlugin.<synthetic: getter>","org.pepstock.charba.client.datalabels.DataLabelsPlugin.<clinit>"]
+}
+

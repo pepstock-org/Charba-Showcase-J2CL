@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CTimer.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;MA0BmB,M;;CAAA,W;EAAAA,Q;EAAAA;OAyBK,gDAzBLA,C;EAAAA;OA2BN,oDA3BMA,K;EAAAA;OA6BH,kDA7BGA,C;EAAAA;OA+BN,sDA/BMA,K;;;QAyCX,gC,iBAAgBC,I,gBAAUC,Q;EAA1BC,iB;EAAAA,6B;EAAAA,kG;EAAAA,iB;;;CAAA,uE,iBAAgBF,I,gBAAUC,Q;EAA1BE,iC;EAAAA,0D;EAENA,8L;EAEAA,oJ;;;CAQU,e;EACVC,iE;;;CAQa,a;EACbC,+D;;;CAWW,Y,eAAUJ,Q;EAErBK,oJ;EAEAA,iB;;;CAMW,S;EAEXA;GAAwEA,wBAAxEA;GAECA;IAAgCC,cAAhCD;kEAFDA;GAICA,2HAJDA;G;;;CAWW,Q;EAEXE;GAECA,kFAFDA;GAICA,2HAJDA;GAMCA,8HANDA;G;;;CAnGiB,kD;EA6BlBL,+H;EAEAA,8H;;;QA/BkB,O;EAAAM,yB;EAAAA,sB;EAAAA;",
+"sources":["CTimer.java"],
+"names":["org.pepstock.charba.client.utils.CTimer.<synthetic: ctor_js>","task","interval","org.pepstock.charba.client.utils.CTimer.<synthetic: ctor_create>","org.pepstock.charba.client.utils.CTimer.<init>","org.pepstock.charba.client.utils.CTimer.getInterval","org.pepstock.charba.client.utils.CTimer.getStatus","org.pepstock.charba.client.utils.CTimer.start","org.pepstock.charba.client.utils.CTimer.<lambda in start>","org.pepstock.charba.client.utils.CTimer.stop","org.pepstock.charba.client.utils.CTimer.<clinit>"]
+}
+

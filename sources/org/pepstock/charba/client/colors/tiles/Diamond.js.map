@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Diamond.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;MAuCY,O;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kB;EAAAA,8B;EAAAA,qE;EAAAA,iB;;;CAAA,wD;EAAAC,oE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,yH;EAEAA,gK;EAEAA,8K;EAEAA,e;;;CAWI,qI,iCAA0BJ,O,gBAAaG,I,gBAAaG,O,gBAAgBC,O;EAExEC,IAAaH,QAAbG,Y;EAEAA,IAAaC,WAAbD,Y;EAGAA,+C;EACAA,0D;EACAA,0D;EACAA,+C;;;QAvCU,O;EAAAE,0B;EAAAA,uB;EAAAA;",
+"sources":["Diamond.java"],
+"names":["org.pepstock.charba.client.colors.tiles.Diamond.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Diamond.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Diamond.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Diamond.drawTile","halfSize","offsetX","offsetY","org.pepstock.charba.client.colors.tiles.Diamond.drawDiamond","quarterSize","org.pepstock.charba.client.colors.tiles.Diamond.<clinit>"]
+}
+

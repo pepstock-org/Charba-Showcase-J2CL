@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ErrorEventInit$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEO,U;EAAAA,mB;EACpBA,2G;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["ErrorEventInit.java"],
+"names":["elemental2.dom.ErrorEventInit$$Overlay.create","elemental2.dom.ErrorEventInit$$Overlay.<clinit>"]
+}
+

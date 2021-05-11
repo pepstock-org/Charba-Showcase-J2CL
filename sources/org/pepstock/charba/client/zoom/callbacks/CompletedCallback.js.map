@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CompletedCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MA0BiB,iB;;CAOX,0D,oBAAwBA,O;;QAPb,M;EAAAC,4B;EAAAA,8B;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["CompletedCallback.java"],
+"names":["context","org.pepstock.charba.client.zoom.callbacks.CompletedCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.zoom.callbacks.CompletedCallback.<clinit>"]
+}
+

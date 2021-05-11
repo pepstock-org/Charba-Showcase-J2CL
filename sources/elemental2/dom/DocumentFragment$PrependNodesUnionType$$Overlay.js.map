@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DocumentFragment$PrependNodesUnionType$$Overlay.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MAqDmB,Q;;QAE+B,sB,UAAUA,C;EAAVC,mB;EAC5CA,uD;;;QAIW,wE;EAAAC,mB;EACXA,4F;;;QAIa,0E;EAAAC,mB;EACbA,iD;;;QAIc,wE;EAAAC,mB;EACdA,4D;;;QAIc,0E;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"sources":["DocumentFragment.java"],
+"names":["o","elemental2.dom.DocumentFragment$PrependNodesUnionType$$Overlay.of","elemental2.dom.DocumentFragment$PrependNodesUnionType$$Overlay.asNode__$devirt","elemental2.dom.DocumentFragment$PrependNodesUnionType$$Overlay.asString__$devirt","elemental2.dom.DocumentFragment$PrependNodesUnionType$$Overlay.isNode__$devirt","elemental2.dom.DocumentFragment$PrependNodesUnionType$$Overlay.isString__$devirt","elemental2.dom.DocumentFragment$PrependNodesUnionType$$Overlay.<clinit>"]
+}
+

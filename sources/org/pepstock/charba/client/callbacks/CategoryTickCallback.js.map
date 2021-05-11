@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CategoryTickCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MA4BiB,oB;;CAWT,kG,aAAgBA,I,iBAAaC,K,gBAAWC,K,uBAAoBC,M;;QAXnD,M;EAAAC,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["CategoryTickCallback.java"],
+"names":["axis","value","index","values","org.pepstock.charba.client.callbacks.CategoryTickCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.CategoryTickCallback.<clinit>"]
+}
+

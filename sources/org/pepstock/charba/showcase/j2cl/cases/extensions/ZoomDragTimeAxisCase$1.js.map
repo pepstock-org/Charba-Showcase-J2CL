@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ZoomDragTimeAxisCase$1.impl.java.js",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAgGsG,E;;CAAA,W;EAAAA,Q;EAAAA;8F;EAAAA;OAPxFC,4FAOwFD,C;;;QAAA,iI;EAAAE,a;EAAAA,yB;EAAAA,qP;EAAAA,iB;;;CAAA,0M;EAAAC,0G;EAAAA,sH;EAAAA,kF;;;CAG/E,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,iY;;;QAPkG,O;EAAAI,qB;EAAAA,kB;EAAAA;",
+"sources":["ZoomDragTimeAxisCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragTimeAxisCase$1.<synthetic: ctor_js>","adapter","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragTimeAxisCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragTimeAxisCase$1.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragTimeAxisCase$1.onTitle","item","ds","dp","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragTimeAxisCase$1.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractDynamicConfiguration$IsProvider$$LambdaAdaptor.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;MAyDW,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6G;EAAAA,8M;;;CAAA,oM;EAAAC,iC;EAAAA,gH;;;CAAA,c;EAAAC,mC;EAAAA,6I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AbstractDynamicConfiguration.java"],
+"names":["org.pepstock.charba.client.configuration.AbstractDynamicConfiguration$IsProvider$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.configuration.AbstractDynamicConfiguration$IsProvider$$LambdaAdaptor.<init>","org.pepstock.charba.client.configuration.AbstractDynamicConfiguration$IsProvider$$LambdaAdaptor.getElement","org.pepstock.charba.client.configuration.AbstractDynamicConfiguration$IsProvider$$LambdaAdaptor.<clinit>"]
+}
+

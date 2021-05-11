@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetRangeCleanSelectionEvent.impl.java.js",
+"lineCount":59,
+"mappings":"A;;;;;;;;;;;MA0BmB,+B;;CAAA,W;EAAAA,Q;;;QAYX,uD,eAAgDC,W;EAAhDC,0C;EAAAA,sD;EAAAA,gJ;EAAAA,iB;;;CAAA,wH,eAAgDD,W;EACtDE,uR;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAuCC,SAAvCD,qHAFDA;GAICA,6FAJDA;G;;;QAtBD,6E;EAAAE,oK;;;QAFkB,O;EAAAC,kD;EAAAA,+C;EAAAA,wB;EAElBA,mM;;;;;;;;;;;;;;AAFkB;;",
+"sources":["DatasetRangeCleanSelectionEvent.java"],
+"names":["org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent.<synthetic: ctor_js>","nativeEvent","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent.<init>","handler","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent.dispatch","myHandler","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent.<synthetic: getter>","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AdjustSizeCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;MA8BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+F;EAAAA,kL;;;CAAA,wK;EAAAC,iC;EAAAA,kG;;;CAAA,iE;EAAAC,0D;EAAAA,mI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AdjustSizeCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.AdjustSizeCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.callbacks.AdjustSizeCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.callbacks.AdjustSizeCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.annotation.callbacks.AdjustSizeCallback$$LambdaAdaptor.<clinit>"]
+}
+

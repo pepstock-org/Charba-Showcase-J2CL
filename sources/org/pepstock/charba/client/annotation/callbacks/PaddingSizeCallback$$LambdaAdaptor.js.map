@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PaddingSizeCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MA8BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gG;EAAAA,oL;;;CAAA,0K;EAAAC,iC;EAAAA,mG;;;CAAA,iE;EAAAC,0D;EAAAA,oI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["PaddingSizeCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.PaddingSizeCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.callbacks.PaddingSizeCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.callbacks.PaddingSizeCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.annotation.callbacks.PaddingSizeCallback$$LambdaAdaptor.<clinit>"]
+}
+

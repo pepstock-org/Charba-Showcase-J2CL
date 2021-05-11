@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultFont.impl.java.js",
+"lineCount":91,
+"mappings":"A;;;;;;;;;;;;;;MA0BY,W;;CAAA,W;EAAAA,Q;;;QAaX,S;EAAAC,sB;EAAAA,kC;EAAAA,6E;EAAAA,iB;;;CAAA,gE;EAAAC,iC;;;CAUW,W;EACVC,iG;;;CASgB,Y;EAChBC,sE;;;CASa,a;EACbC,mG;;;CASa,a;EACbC,gE;;;CASa,iB;EACbC,mG;;;CASa,yB;EACbC,0G;;;;CA1EU,U;EAAAC,iG;;;;CAAA,2D;EAAAA,0J;;;QAAA,O;EAAAC,8B;EAAAA,2B;EAAAA,qB;EAAAA,wB;EAQXA,+N;;;;;;;;;;;;;AANA;YAAyB,6EAAzB,M;AAEA;YAA4B,+EAA5B,wD;AAEA;YAA4B,+EAA5B,O;AANW;YAQiB,sFARjB;",
+"sources":["DefaultFont.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultFont.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultFont.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultFont.<init>","org.pepstock.charba.client.defaults.globals.DefaultFont.getSize","org.pepstock.charba.client.defaults.globals.DefaultFont.getStyle","org.pepstock.charba.client.defaults.globals.DefaultFont.getFamily","org.pepstock.charba.client.defaults.globals.DefaultFont.getWeight","org.pepstock.charba.client.defaults.globals.DefaultFont.getLineHeight","org.pepstock.charba.client.defaults.globals.DefaultFont.getLineHeightAsString","org.pepstock.charba.client.defaults.globals.DefaultFont.create","org.pepstock.charba.client.defaults.globals.DefaultFont.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Font$Property.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;MAwCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OASS,0DATTA,C;;;QAgBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,mI;EAAAA,iB;;;CAAA,gG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,wE;;;CASa,S;EACbC,uE;;;QA3BW,2B;EAAAC,mB;EAAAA;GAAAA,mIAAAA;G;EAAAA,2H;;;QAAA,U;EAAAC,mB;EAAAA,0b;;;QAEZ,8D;EAAAC,uG;;;QACA,4D;EAAAA,qG;;;QACA,6D;EAAAA,sG;;;QACA,8D;EAAAA,uG;;;QACA,mE;EAAAA,4G;;;QANY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2P;EACAA,mP;EACAA,uP;EACAA,2P;EACAA,8Q;EANYA,sF;;;;;;;;;;;;;AAAA;0E;AAAA;wE;AAAA;yE;AAAA;0E;AAAA;+E;AAAA;+E;AAEZ;+E;AACA;6E;AACA;8E;AACA;+E;AACA;;",
+"sources":["Font.java"],
+"names":["org.pepstock.charba.client.options.Font$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.Font$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.Font$Property.<init>","org.pepstock.charba.client.options.Font$Property.value","org.pepstock.charba.client.options.Font$Property.valueOf","org.pepstock.charba.client.options.Font$Property.values","org.pepstock.charba.client.options.Font$Property.<synthetic: getter>","org.pepstock.charba.client.options.Font$Property.<clinit>"]
+}
+

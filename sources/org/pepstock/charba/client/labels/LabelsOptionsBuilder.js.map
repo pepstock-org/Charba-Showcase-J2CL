@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelsOptionsBuilder.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;;;;MA4BmB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAIsB,wEAJtBA,C;EAAAA;OAMI,kEANJA,C;;;QAaV,2C,gBAA6BC,K;EAA7BC,2C;EAAAA,mH;EAAAA,iB;;;CAAA,iG,gBAA6BD,K;EAA7BE,iC;EAAAA,yE;EACPA,2I;;;QAQkC,U;EAAAC,+B;EAClCA,+E;;;QASkC,4C,gBAAeH,K;EAAfG,+B;EAClCA,+E;;;CAQoB,S;EAEpBC,+E;;;CASmB,+B,gBAAmBC,E;EACtCC,iH;;;CASmB,0D,kBAAsBD,E;EAEzCC,0E;EAEAA,IAAaC,OAAbD,uQ;EAEAA,gI;EAEAA,2G;EAEAA,e;;;CASmB,4B,gBAAgBD,E;EACnCG,8G;;;CASmB,uD,kBAAmBH,E;EAEtCG,0E;EAEAA;GAECA,2EAFDA;G;EAKAA,+J;;;CApGiB,iE;EAIlBN,mJ;;;QAJkB,O;EAAAO,uC;EAAAA,oC;EAAAA;",
+"sources":["LabelsOptionsBuilder.java"],
+"names":["org.pepstock.charba.client.labels.LabelsOptionsBuilder.<synthetic: ctor_js>","chart","org.pepstock.charba.client.labels.LabelsOptionsBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsOptionsBuilder.<init>","org.pepstock.charba.client.labels.LabelsOptionsBuilder.create","org.pepstock.charba.client.labels.LabelsOptionsBuilder.build","id","org.pepstock.charba.client.labels.LabelsOptionsBuilder.createLabel","builder","org.pepstock.charba.client.labels.LabelsOptionsBuilder.getLabel","org.pepstock.charba.client.labels.LabelsOptionsBuilder.<clinit>"]
+}
+

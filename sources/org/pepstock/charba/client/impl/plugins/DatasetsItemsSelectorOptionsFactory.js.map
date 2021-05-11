@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetsItemsSelectorOptionsFactory.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;;;MA0BmB,mC;;CAAA,W;EAAAA,Q;;;QAKlB,S;EAAAC,8C;EAAAA,0D;EAAAA,iG;EAAAA,iB;;;CAAA,oF;EACCC,yL;;;CAUmC,+G,UAAoBC,Y,0BAA+BC,a;EAEtFC;GAECA,IAA6BC,cAA7BD,yWAFDA;GAICA,0MAJDA;G;EAOAA,uT;;;QAzBiB,O;EAAAE,sD;EAAAA,mD;EAAAA;",
+"sources":["DatasetsItemsSelectorOptionsFactory.java"],
+"names":["org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptionsFactory.<init>","nativeObject","defaultValues","org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptionsFactory.create","defaultOptions","org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptionsFactory.<clinit>"]
+}
+

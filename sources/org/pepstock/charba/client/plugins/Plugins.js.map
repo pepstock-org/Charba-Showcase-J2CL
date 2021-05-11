@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Plugins.impl.java.js",
+"lineCount":119,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MAoCmB,O;;CAAA,W;EAAAA,Q;EAAAA;OAGgB,+DAHhBA,C;;;QAAA,S;EAAAC,kB;EAAAA,8B;EAAAA,gE;EAAAA,iB;;;CAAA,mD;EAAAC,iC;EAAAA,6D;;;CAYN,wC,eAAWC,M;EAGtBC;GAECA,8DAFDA;GAICA;IAGCA,oDAHDA;IAJDA;GAUCA,IAAcC,OAAdD,oEAVDA;GAYCA,kFAZDA;G;;;CAsBc,uB,gBAAWE,E;EAEzBC,IAAwBC,IAAxBD,uF;EACAA;GAECA,IAAcJ,MAAdI,2EAFDA;GAICA;IAECA,YAFDA;IAJDA;G;EASAA,a;;;CASW,0B,gBAAcE,Q;EAGzBC;GAECA,IAAwBF,IAAxBE,uFAFDA;GAGCA;IAECA,IAAcP,MAAdO,2EAFDA;IAICA;KAECA,kBAFDA;KAJDA;IAHDA;G;;;CAqBW,gG,sBAA+BC,M,iBAAgBC,K;EAE1DC;GAECA,OAFDA;G;EAKAA;GAAAA,IAAmBC,KAAnBD,gFAAAA;;IAECA,sGAFDA;;G;;;CAYW,oF,gBAAaD,K,uBAAqBG,a;EAE7CC;GAECA,OAFDA;G;EAKAA;GAGCA,IAAYC,eAAZD,oDAHDA;GAKCA,IAAoBE,gBAApBF,oEALDA;GAQCA,IAAwBR,IAAxBQ,uFARDA;GASCA;IAECA,IAAcb,MAAda,2EAFDA;IAICA;KAECA,6BAFDA;;KAKCA,kBALDA;KAJDA;IATDA;GAsBCA;IAECA,qIAFDA;IAtBDA;G;;;CA5GiB,qD;EAGlBd,wI;;;QAHkB,O;EAAAiB,0B;EAAAA,uB;EAAAA;",
+"sources":["Plugins.java"],
+"names":["org.pepstock.charba.client.plugins.Plugins.<synthetic: ctor_js>","org.pepstock.charba.client.plugins.Plugins.<synthetic: ctor_create>","org.pepstock.charba.client.plugins.Plugins.<init>","plugin","org.pepstock.charba.client.plugins.Plugins.add","wPlugin","id","org.pepstock.charba.client.plugins.Plugins.has","iter","pluginId","org.pepstock.charba.client.plugins.Plugins.remove","config","chart","org.pepstock.charba.client.plugins.Plugins.onChartConfigure","entry","configuration","org.pepstock.charba.client.plugins.Plugins.load","globalPluginIds","pluginsListToSet","org.pepstock.charba.client.plugins.Plugins.<clinit>"]
+}
+

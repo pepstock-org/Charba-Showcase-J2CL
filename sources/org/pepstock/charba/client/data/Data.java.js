@@ -1,0 +1,37 @@
+goog.module('org.pepstock.charba.client.data.Data');
+
+goog.require('java.lang.StringBuilder');
+goog.require('java.util.List');
+goog.require('nativebootstrap.Equality');
+goog.require('nativebootstrap.Util');
+goog.require('org.pepstock.charba.client.Configuration');
+goog.require('org.pepstock.charba.client.ConfigurationElement');
+goog.require('org.pepstock.charba.client.IsChart');
+goog.require('org.pepstock.charba.client.callbacks.DatasetContext');
+goog.require('org.pepstock.charba.client.colors.CanvasObject');
+goog.require('org.pepstock.charba.client.colors.Gradient');
+goog.require('org.pepstock.charba.client.colors.Pattern');
+goog.require('org.pepstock.charba.client.commons.Array.$Overlay');
+goog.require('org.pepstock.charba.client.commons.ArrayMixedObject.$Overlay');
+goog.require('org.pepstock.charba.client.commons.ArrayObjectContainerList');
+goog.require('org.pepstock.charba.client.commons.ConfigurationLoader');
+goog.require('org.pepstock.charba.client.commons.Constants');
+goog.require('org.pepstock.charba.client.commons.Key');
+goog.require('org.pepstock.charba.client.commons.NativeObjectContainer');
+goog.require('org.pepstock.charba.client.data.AbstractContainer');
+goog.require('org.pepstock.charba.client.data.CanvasObjectHandler');
+goog.require('org.pepstock.charba.client.data.Data.Property');
+goog.require('org.pepstock.charba.client.data.Dataset');
+goog.require('org.pepstock.charba.client.data.Dataset.CanvasObjectProperty');
+goog.require('org.pepstock.charba.client.data.HasLabels');
+goog.require('org.pepstock.charba.client.data.HasPointFillStrokeStyles');
+goog.require('org.pepstock.charba.client.data.Labels');
+goog.require('org.pepstock.charba.client.data.LabelsHandler');
+goog.require('org.pepstock.charba.client.items.LegendItem');
+goog.require('org.pepstock.charba.client.items.TooltipItem');
+goog.require('org.pepstock.charba.client.items.Undefined');
+goog.require('vmbootstrap.Casts');
+
+const Data = goog.require('org.pepstock.charba.client.data.Data$impl');
+exports = Data;
+

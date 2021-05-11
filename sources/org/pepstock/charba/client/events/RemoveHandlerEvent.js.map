@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"RemoveHandlerEvent.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;MAuBmB,kB;;CAAA,W;EAAAA,Q;;;QAYX,oD,kBAA6BC,W;EAA7BC,6B;EAAAA,yC;EAAAA,gI;EAAAA,iB;;;CAAA,wG,kBAA6BD,W;EACnCE,6H;;;CASgB,W;EAChBC,6F;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAA0BC,SAA1BD,2FAFDA;GAICA,iFAJDA;G;;;QAhCD,gE;EAAAE,6H;;;QAFkB,O;EAAAC,qC;EAAAA,kC;EAAAA,+B;EAElBA,4J;;;;;;;;;;;;;;AAFkB;;",
+"sources":["RemoveHandlerEvent.java"],
+"names":["org.pepstock.charba.client.events.RemoveHandlerEvent.<synthetic: ctor_js>","handlerType","org.pepstock.charba.client.events.RemoveHandlerEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.RemoveHandlerEvent.<init>","org.pepstock.charba.client.events.RemoveHandlerEvent.getType","handler","org.pepstock.charba.client.events.RemoveHandlerEvent.dispatch","myHandler","org.pepstock.charba.client.events.RemoveHandlerEvent.<synthetic: getter>","org.pepstock.charba.client.events.RemoveHandlerEvent.<clinit>"]
+}
+

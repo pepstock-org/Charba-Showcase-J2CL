@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"RemoveHandlerEventHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,oK;;;CAAA,0J;EAAAC,iC;EAAAA,2F;;;CAAA,gE;;GAAAC,sG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["RemoveHandlerEventHandler.java"],
+"names":["org.pepstock.charba.client.events.RemoveHandlerEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.RemoveHandlerEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.RemoveHandlerEventHandler$$LambdaAdaptor.onRemove","org.pepstock.charba.client.events.RemoveHandlerEventHandler$$LambdaAdaptor.<clinit>"]
+}
+

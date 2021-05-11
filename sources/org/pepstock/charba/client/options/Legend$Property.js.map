@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Legend$Property.impl.java.js",
+"lineCount":152,
+"mappings":"A;;;;;;;;;;;;;;MA4Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAcS,4DAdTA,C;;;QAqBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,qI;EAAAA,iB;;;CAAA,kG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,0E;;;CASa,S;EACbC,yE;;;QAhCW,2B;EAAAC,mB;EAAAA;GAAAA,qIAAAA;G;EAAAA,6H;;;QAAA,U;EAAAC,mB;EAAAA,qwB;;;QAEZ,gE;EAAAC,yG;;;QACA,+D;EAAAA,wG;;;QAEA,gE;EAAAA,yG;;;QACA,mE;EAAAA,4G;;;QACA,oE;EAAAA,6G;;;QACA,mE;EAAAA,4G;;;QACA,iE;EAAAA,0G;;;QACA,6D;EAAAA,sG;;;QACA,wE;EAAAA,iH;;;QAXY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+P;EACAA,2P;EAEAA,+P;EACAA,0Q;EACAA,6Q;EACAA,0Q;EACAA,mQ;EACAA,mP;EACAA,8R;EAXYA,wF;;;;;;;;;;;;;AAAA;4E;AAAA;2E;AAAA;4E;AAAA;+E;AAAA;gF;AAAA;+E;AAAA;6E;AAAA;yE;AAAA;oF;AAAA;iF;AAEZ;iF;AACA;gF;AAEA;iF;AACA;oF;AACA;qF;AACA;oF;AACA;kF;AACA;8E;AACA;;",
+"sources":["Legend.java"],
+"names":["org.pepstock.charba.client.options.Legend$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.Legend$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.Legend$Property.<init>","org.pepstock.charba.client.options.Legend$Property.value","org.pepstock.charba.client.options.Legend$Property.valueOf","org.pepstock.charba.client.options.Legend$Property.values","org.pepstock.charba.client.options.Legend$Property.<synthetic: getter>","org.pepstock.charba.client.options.Legend$Property.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultScaleTitle.impl.java.js",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;;;;;MA4BmB,iB;;CAAA,W;EAAAA,Q;EAAAA;OAMW,yEANXA,C;EAAAA;OAQc,sEARdA,C;;;QAalB,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;EAAAA,gF;;;CAUqB,W;EACpBC,mF;;;CASuB,c;EACvBC,sF;;;CASa,oB;EACbC,iE;;;CASc,a;EACdC,2G;;;CASsB,Y;EACtBC,kF;;;CAhEiB,wE;EAMlBL,kN;EAEAA,4G;;;QARkB,O;EAAAM,oC;EAAAA,iC;EAAAA,qB;;;;;;;;;;;;;;AAElB;kBAA6B,iFAA7B,S;AAEA;kBAAyB,iFAAzB;",
+"sources":["DefaultScaleTitle.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.<init>","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.getFont","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.getPadding","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.getColorAsString","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.isDisplay","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.getAlign","org.pepstock.charba.client.defaults.globals.DefaultScaleTitle.<clinit>"]
+}
+

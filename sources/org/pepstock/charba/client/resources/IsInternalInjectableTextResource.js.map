@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsInternalInjectableTextResource.impl.java.js",
+"lineCount":12,
+"mappings":"A;;;;;;;MAuBU,gC;;QAAA,O;EAAAA,mD;EAAAA;",
+"sources":["IsInternalInjectableTextResource.java"],
+"names":["org.pepstock.charba.client.resources.IsInternalInjectableTextResource.<clinit>"]
+}
+

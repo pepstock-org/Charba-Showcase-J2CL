@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MeterFormatCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA0BiB,mB;;QAAA,M;EAAAA,8B;EAAAA,8B;;;QAAA,O;EAAAC,sC;EAAAA;",
+"sources":["MeterFormatCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.MeterFormatCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.MeterFormatCallback.<clinit>"]
+}
+

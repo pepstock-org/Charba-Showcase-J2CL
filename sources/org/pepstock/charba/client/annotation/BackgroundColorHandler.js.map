@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BackgroundColorHandler.impl.java.js",
+"lineCount":108,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAkCY,sB;;CAAA,W;EAAAA,Q;EAAAA;OAqCsC,6FArCtCA,C;EAAAA;OA0CU,uFA1CVA,C;;;;QAmDX,0L,2BAA0CC,M,0CAAyCC,a,WAA4BC,Y;EAA/GC,iC;EAAAA,6C;EAAAA,sS;EAAAA,iB;;;;CAAA,sP,2BAA0CH,M,0CAAyCC,a,WAA4BC,Y;EAC9GE,8W;;;;QAWD,4M,2BAA0CJ,M,0CAAyCC,a,WAA4BC,Y,iBAAqBG,sB;EAApIF,iC;EAAAA,6C;EAAAA,gV;EAAAA,iB;;;;CAAA,wQ,2BAA0CH,M,0CAAyCC,a,WAA4BC,Y,iBAAqBG,sB;EACnID,wN;EADDA,+E;EAGCA,sH;EAEAA,6HAA+CE,eAA/CF,WAAgEG,OAAhEH;GAA4EI,qaAA5EJ;I;;;CAQI,gF,gBAA0BK,e;EAE9BC,8K;EAEAA,+L;;;CAQM,wE;EACNC,mR;;;CAQgC,wE;EAChCC,wc;;;CAQI,kH,yCAAoDC,uB;EACxDH,sf;;;CA3GU,uE;EAqCXN,0M;;;QArCW,O;EAAAU,yC;EAAAA,sC;EAAAA,0B;EAwCXA,kX;;;;;;;;;;;;;;;;;;;;AAxCW;uBAwCoE,kGAxCpE;",
+"sources":["BackgroundColorHandler.java"],
+"names":["org.pepstock.charba.client.annotation.BackgroundColorHandler.<synthetic: ctor_js>","parent","defaultValues","nativeObject","org.pepstock.charba.client.annotation.BackgroundColorHandler.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.BackgroundColorHandler.<init>","defaultBackgroundColor","contextFunction","context","org.pepstock.charba.client.annotation.BackgroundColorHandler.<lambda in <init>>","backgroundColor","org.pepstock.charba.client.annotation.BackgroundColorHandler.setBackgroundColor","org.pepstock.charba.client.annotation.BackgroundColorHandler.getBackgroundColorAsString","org.pepstock.charba.client.annotation.BackgroundColorHandler.getBackgroundColorCallback","backgroundColorCallback","org.pepstock.charba.client.annotation.BackgroundColorHandler.<clinit>"]
+}
+

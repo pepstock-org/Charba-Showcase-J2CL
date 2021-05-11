@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ArcBorderRadius$ArcBorderRadiusFactory.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;MA2MqB,sB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,iC;EAAAA,6C;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EAAAC,iC;;;CAUe,yD,UAAoBC,Y;EAC1CC,8F;;;;CAhBkB,U;EAAAA,0L;;;QAAA,O;EAAAC,yC;EAAAA,sC;EAAAA,qB;EAAAA;",
+"sources":["ArcBorderRadius.java"],
+"names":["org.pepstock.charba.client.data.ArcBorderRadius$ArcBorderRadiusFactory.<synthetic: ctor_js>","org.pepstock.charba.client.data.ArcBorderRadius$ArcBorderRadiusFactory.<synthetic: ctor_create>","org.pepstock.charba.client.data.ArcBorderRadius$ArcBorderRadiusFactory.<init>","nativeObject","org.pepstock.charba.client.data.ArcBorderRadius$ArcBorderRadiusFactory.create","org.pepstock.charba.client.data.ArcBorderRadius$ArcBorderRadiusFactory.<clinit>"]
+}
+

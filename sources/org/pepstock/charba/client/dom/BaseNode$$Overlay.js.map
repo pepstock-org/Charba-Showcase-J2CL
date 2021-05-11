@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseNode$$Overlay.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;MAiCsB,Q;;QAgEC,+D;EAAAA,mB;EACrBA,oD;;;QA8HiB,qE;EAAAC,mB;EAGjBA;GAGCA,yCAHDA;G;;;QAlMoB,O;EAAAC,2B;EAAAA;",
+"sources":["BaseNode.java"],
+"names":["org.pepstock.charba.client.dom.BaseNode$$Overlay.getNodeType__$devirt","org.pepstock.charba.client.dom.BaseNode$$Overlay.removeAllChildren__$devirt","org.pepstock.charba.client.dom.BaseNode$$Overlay.<clinit>"]
+}
+

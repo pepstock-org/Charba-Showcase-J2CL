@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CallbacksWithThresholdBarCase$1.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;;MAqEkE,E;;CAAA,W;EAAAA,Q;EAAAA;0G;;;QAAA,4F;EAAAC,a;EAAAA,yB;EAAAA,yM;EAAAA,iB;;;CAAA,iL;EAAAC,sH;EAAAA,iC;;;CAGhD,6D,uBAAsBC,O;EACpCC,IAAQC,OAARD,+T;EACAA,IAAOE,KAAPF,2G;EACAA;GACCA,8JADDA;SAEOA;GACNA,gKADMA;G;EAGPA,6J;;;;CAX8D,2D;EAAAA,0I;;;QAAA,O;EAAAG,qB;EAAAA,kB;EAAAA;",
+"sources":["CallbacksWithThresholdBarCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresholdBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresholdBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresholdBarCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresholdBarCase$1.invoke","dataset","value","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresholdBarCase$1.<clinit>"]
+}
+

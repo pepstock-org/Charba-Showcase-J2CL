@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDatasetCreator$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wE;EAAAA,oI;;;CAAA,0H;EAAAC,iC;EAAAA,2E;;;CAAA,qB;EAAAC,0C;EAAAA,4G;;;;CAAA,c;EAAAA,kG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["IsDatasetCreator.java"],
+"names":["org.pepstock.charba.client.IsDatasetCreator$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.IsDatasetCreator$$LambdaAdaptor.<init>","org.pepstock.charba.client.IsDatasetCreator$$LambdaAdaptor.newDataset","org.pepstock.charba.client.IsDatasetCreator$$LambdaAdaptor.<clinit>"]
+}
+

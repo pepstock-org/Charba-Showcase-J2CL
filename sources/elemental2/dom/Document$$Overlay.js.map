@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Document$$Overlay.impl.java.js",
+"lineCount":77,
+"mappings":"A;;;;;;;MA4Ba,Q;;QA0PO,uE,+CAAeA,K;EAAfC,mB;EAChBA,gJ;;;QAIgB,oE,kDAAiBD,K;EAAjBC,mB;EAChBA,gJ;;;QAkBmB,2H,2CACVC,O,WAAiDC,a;EADvCC,mB;EAEnBA,6G;;;QAQmB,qF,2CAAqBF,O,iBAAgBC,a;EAArCC,mB;EACnBA,6G;;;QAyBgB,oE,2CAAsBC,I;EAAtBC,mB;EAChBA,4F;;;QAIgB,0D,0CAAsBD,I;EAAtBC,mB;EAChBA,4F;;;QAeqB,iF,gDAAwBC,O;EAAxBC,mB;EACrBA,2G;;;QAyCgB,wE,+CAAgBR,K;EAAhBS,mB;EAChBA,iJ;;;QAMgB,qE,kDAAkBT,K;EAAlBS,mB;EAChBA,iJ;;;QAoBgB,2D,2CAAaC,I;EAAbC,mB;EAChBA,4E;;;QAIgB,qE,+CAAkBD,I;EAAlBC,mB;EAChBA,4E;;;QAMgB,6D,2CAAeD,I;EAAfE,mB;EAChBA,8E;;;QAIgB,uE,+CAAoBF,I;EAApBE,mB;EAChBA,8E;;;QAnaS,O;EAAAC,2B;EAAAA;",
+"sources":["Document.java"],
+"names":["nodes","elemental2.dom.Document$$Overlay.append__$devirt","tagName","typeExtension","elemental2.dom.Document$$Overlay.createElement__$devirt","data","elemental2.dom.Document$$Overlay.createTextNode__$devirt","touches","elemental2.dom.Document$$Overlay.createTouchList__$devirt","elemental2.dom.Document$$Overlay.prepend__$devirt","text","elemental2.dom.Document$$Overlay.write__$devirt","elemental2.dom.Document$$Overlay.writeln__$devirt","elemental2.dom.Document$$Overlay.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractPoint$Property.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MA6Bc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,mEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,4I;EAAAA,iB;;;CAAA,yG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,iF;;;CASa,S;EACbC,gF;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,4IAAAA;G;EAAAA,oI;;;QAAA,U;EAAAC,mB;EAAAA,+N;;;QAEZ,kE;EAAAC,2G;;;QACA,kE;EAAAA,2G;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,yP;EACAA,yP;EAHYA,+F;;;;;;;;;;;;;AAAA;8E;AAAA;8E;AAAA;wF;AAEZ;mF;AACA;;",
+"sources":["AbstractPoint.java"],
+"names":["org.pepstock.charba.client.commons.AbstractPoint$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.commons.AbstractPoint$Property.<synthetic: ctor_create>","org.pepstock.charba.client.commons.AbstractPoint$Property.<init>","org.pepstock.charba.client.commons.AbstractPoint$Property.value","org.pepstock.charba.client.commons.AbstractPoint$Property.valueOf","org.pepstock.charba.client.commons.AbstractPoint$Property.values","org.pepstock.charba.client.commons.AbstractPoint$Property.<synthetic: getter>","org.pepstock.charba.client.commons.AbstractPoint$Property.<clinit>"]
+}
+

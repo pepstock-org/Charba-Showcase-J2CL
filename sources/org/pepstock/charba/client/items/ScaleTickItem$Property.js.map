@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScaleTickItem$Property.impl.java.js",
+"lineCount":98,
+"mappings":"A;;;;;;;;;;;;;;MAwCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,iEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,oT;;;QAEZ,oE;EAAAC,6G;;;QACA,oE;EAAAA,6G;;;QACA,oE;EAAAA,6G;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qQ;EACAA,qQ;EACAA,qQ;EAJYA,6F;;;;;;;;;;;;;AAAA;gF;AAAA;gF;AAAA;gF;AAAA;sF;AAEZ;qF;AACA;qF;AACA;;",
+"sources":["ScaleTickItem.java"],
+"names":["org.pepstock.charba.client.items.ScaleTickItem$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.ScaleTickItem$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.ScaleTickItem$Property.<init>","org.pepstock.charba.client.items.ScaleTickItem$Property.value","org.pepstock.charba.client.items.ScaleTickItem$Property.valueOf","org.pepstock.charba.client.items.ScaleTickItem$Property.values","org.pepstock.charba.client.items.ScaleTickItem$Property.<synthetic: getter>","org.pepstock.charba.client.items.ScaleTickItem$Property.<clinit>"]
+}
+

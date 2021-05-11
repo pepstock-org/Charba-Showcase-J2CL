@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasDataPoints$$LambdaAdaptor.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0E;EAAAA,wI;;;CAAA,8H;EAAAC,iC;EAAAA,6E;;;CAAA,c;EAAAC,yC;EAAAA,0G;;;;CAAA,iB;EAAAC,oG;;;;CAAA,wB;EAAAA,mH;;;;CAAA,kE;EAAAC,sJ;;;;CAAA,+B;EAAAA,mH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["HasDataPoints.java"],
+"names":["org.pepstock.charba.client.data.HasDataPoints$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.data.HasDataPoints$$LambdaAdaptor.<init>","org.pepstock.charba.client.data.HasDataPoints$$LambdaAdaptor.getDataset","org.pepstock.charba.client.data.HasDataPoints$$LambdaAdaptor.getDataPoints","org.pepstock.charba.client.data.HasDataPoints$$LambdaAdaptor.setDataPoints","org.pepstock.charba.client.data.HasDataPoints$$LambdaAdaptor.<clinit>"]
+}
+

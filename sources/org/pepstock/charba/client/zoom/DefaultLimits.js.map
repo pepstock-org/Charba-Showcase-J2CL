@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultLimits.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;MAuBY,a;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,wB;EAAAA,oC;EAAAA,mE;EAAAA,iB;;;CAAA,sD;EAAAC,iC;;;;CALW,Q;EAAAC,+F;;;;CAAA,Q;EAAAC,+F;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA,qB;EAAAA;",
+"sources":["DefaultLimits.java"],
+"names":["org.pepstock.charba.client.zoom.DefaultLimits.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.DefaultLimits.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.DefaultLimits.<init>","org.pepstock.charba.client.zoom.DefaultLimits.getX","org.pepstock.charba.client.zoom.DefaultLimits.getY","org.pepstock.charba.client.zoom.DefaultLimits.<clinit>"]
+}
+

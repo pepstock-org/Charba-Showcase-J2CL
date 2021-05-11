@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"OpacityCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA2BiB,e;;QAAA,M;EAAAA,0B;EAAAA,8B;;;QAAA,O;EAAAC,kC;EAAAA;",
+"sources":["OpacityCallback.java"],
+"names":["org.pepstock.charba.client.datalabels.callbacks.OpacityCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.datalabels.callbacks.OpacityCallback.<clinit>"]
+}
+

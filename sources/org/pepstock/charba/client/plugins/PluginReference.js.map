@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginReference.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;MA4BY,e;;CAAA,W;EAAAA,Q;;;QAsCX,wD,UAA6BC,Y;EAA7BC,0B;EAAAA,sC;EAAAA,mI;EAAAA,iB;;;CAAA,0G,UAA6BD,Y;EAC5BE,oI;;;CAQM,gD;EACNC,6N;;;CAQY,uD;EACZC,mC;;;QAzDU,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["PluginReference.java"],
+"names":["org.pepstock.charba.client.plugins.PluginReference.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.plugins.PluginReference.<synthetic: ctor_create>","org.pepstock.charba.client.plugins.PluginReference.<init>","org.pepstock.charba.client.plugins.PluginReference.getId","org.pepstock.charba.client.plugins.PluginReference.nativeObject","org.pepstock.charba.client.plugins.PluginReference.<clinit>"]
+}
+

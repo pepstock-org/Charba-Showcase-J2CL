@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BorderDashCallback.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;;;;;MA0BiB,kB;;QAAA,M;EAAAA,6B;EAAAA,gE;;;QAAA,O;EAAAC,qC;EAAAA;",
+"sources":["BorderDashCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.BorderDashCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.BorderDashCallback.<clinit>"]
+}
+

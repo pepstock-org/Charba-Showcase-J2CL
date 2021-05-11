@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ContentCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA4BiB,e;;QAAA,M;EAAAA,0B;EAAAA,8B;;;QAAA,O;EAAAC,kC;EAAAA;",
+"sources":["ContentCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.ContentCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.callbacks.ContentCallback.<clinit>"]
+}
+

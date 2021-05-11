@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TitleClickEvent.impl.java.js",
+"lineCount":70,
+"mappings":"A;;;;;;;;;;;;;MA0BmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAOE,0DAPFA,C;;;QAeX,iG,eAAgCC,W,eAAmBC,I;EAAnDC,0B;EAAAA,sC;EAAAA,gL;EAAAA,iB;;;CAAA,kJ,eAAgCF,W,eAAmBC,I;EACzDE,uP;EAEAA,wM;;;CAQY,W;EACZC,uE;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAuBC,SAAvBD,qFAFDA;GAICA,6EAJDA;G;;;QApCD,6D;EAAAE,oH;;;QAFkB,O;EAAAC,kC;EAAAA,+B;EAAAA,wB;EAElBA,mJ;;;;;;;;;;;;;;;;AAFkB;;",
+"sources":["TitleClickEvent.java"],
+"names":["org.pepstock.charba.client.events.TitleClickEvent.<synthetic: ctor_js>","nativeEvent","item","org.pepstock.charba.client.events.TitleClickEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.TitleClickEvent.<init>","org.pepstock.charba.client.events.TitleClickEvent.getItem","handler","org.pepstock.charba.client.events.TitleClickEvent.dispatch","myHandler","org.pepstock.charba.client.events.TitleClickEvent.<synthetic: getter>","org.pepstock.charba.client.events.TitleClickEvent.<clinit>"]
+}
+

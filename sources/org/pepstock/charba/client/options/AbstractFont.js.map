@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractFont.impl.java.js",
+"lineCount":103,
+"mappings":"A;;;;;;;;;;;;;;;;;MA6BsB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAkCF,wDAlCEA,C;;;;CAyCX,yG,sBAA2BC,a;EACpCC,qL;;;;CASS,0J,sBAA2BD,a,WAA4BE,Y;EAChED,oI;EAEAA,sY;;;CASU,W;EACVE,mF;;;CASgB,Y;EAChBC,oF;;;CASa,a;EACbC,qF;;;CASa,a;EACbC,qF;;;CASa,iB;EACbC,yF;;;CASW,c,eAAYC,I;EACvBC,mF;;;CASW,sD,kBAAmBC,K;EAC9BC,4H;;;CASW,6B,gBAAiBC,M;EAC5BC,oG;;;CASW,oD,eAAiBC,M;EAC5BC,2H;;;CASW,uB,eAAqBC,U;EAChCC,kG;;;CASW,iC,gBAAqBD,U;EAChCC,4G;;;CASa,yB;EACbC,iG;;;CAQ4B,a;EAC5BC,+H;;;;CAvLoB,U;EAAAC,iG;;;;CAAA,2D;EAAAA,0J;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,gC;EAAAA;",
+"sources":["AbstractFont.java"],
+"names":["org.pepstock.charba.client.options.AbstractFont.<synthetic: ctor_js>","defaultValues","org.pepstock.charba.client.options.AbstractFont.<init>","nativeObject","org.pepstock.charba.client.options.AbstractFont.getSize","org.pepstock.charba.client.options.AbstractFont.getStyle","org.pepstock.charba.client.options.AbstractFont.getFamily","org.pepstock.charba.client.options.AbstractFont.getWeight","org.pepstock.charba.client.options.AbstractFont.getLineHeight","size","org.pepstock.charba.client.options.AbstractFont.setSize","style","org.pepstock.charba.client.options.AbstractFont.setStyle","family","org.pepstock.charba.client.options.AbstractFont.setFamily","weight","org.pepstock.charba.client.options.AbstractFont.setWeight","lineHeight","org.pepstock.charba.client.options.AbstractFont.setLineHeight","org.pepstock.charba.client.options.AbstractFont.getLineHeightAsString","org.pepstock.charba.client.options.AbstractFont.getObject","org.pepstock.charba.client.options.AbstractFont.create","org.pepstock.charba.client.options.AbstractFont.<clinit>"]
+}
+

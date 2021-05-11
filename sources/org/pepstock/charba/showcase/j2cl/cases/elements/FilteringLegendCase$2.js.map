@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FilteringLegendCase$2.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;;MAgF8F,E;;CAAA,W;EAAAA,Q;EAAAA;2F;;;QAAA,6E;EAAAC,a;EAAAA,yB;EAAAA,2K;EAAAA,iB;;;CAAA,mJ;EAAAC,uG;EAAAA,iC;;;CAGhF,0I,gBAAmBC,K,oBAAkBC,K,oBAAkBC,K;EACjEC,qE;;;;CAJ0F,oF;EAAAA,6Q;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["FilteringLegendCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase$2.<init>","chart","item1","item2","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase$2.onItemSort","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase$2.<clinit>"]
+}
+

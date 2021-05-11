@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CSchedulerRegistration.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;MAuBmB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAGA,qEAHAA,K;;;QAUlB,Y,eAA2BC,S;EAA3BC,iC;EAAAA,6C;EAAAA,yF;EAAAA,iB;;;CAAA,mE,eAA2BD,S;EAA3BE,iC;EACCA,uF;;;CAMW,U;EACXC,gG;;;QAlBiB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"sources":["CSchedulerRegistration.java"],
+"names":["org.pepstock.charba.client.utils.CSchedulerRegistration.<synthetic: ctor_js>","timeoutID","org.pepstock.charba.client.utils.CSchedulerRegistration.<synthetic: ctor_create>","org.pepstock.charba.client.utils.CSchedulerRegistration.<init>","org.pepstock.charba.client.utils.CSchedulerRegistration.cancel","org.pepstock.charba.client.utils.CSchedulerRegistration.<clinit>"]
+}
+

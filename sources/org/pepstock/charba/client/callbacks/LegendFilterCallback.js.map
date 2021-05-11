@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendFilterCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,oB;;QAAA,M;EAAAA,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["LegendFilterCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.LegendFilterCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.LegendFilterCallback.<clinit>"]
+}
+

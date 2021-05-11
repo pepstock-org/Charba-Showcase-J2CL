@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"EmptyResource.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;MA0BmB,a;;CAAA,W;EAAAA,Q;;;;QAUX,yB,gBAAqBC,I;EAArBC,wB;EAAAA,oC;EAAAA,4F;EAAAA,iB;;;;CAAA,2E,gBAAqBD,I;EAC3BE,wQ;;;;QAQM,+C,YAAkBC,G;EAAlBF,wB;EAAAA,oC;EAAAA,iH;EAAAA,iB;;;;CAAA,iG,YAAkBE,G;EACxBD,6R;;;QApBiB,O;EAAAE,gC;EAAAA,6B;EAAAA,qC;;;;;;;;;;;;AAGlB;cAA4B,8DAA5B;",
+"sources":["EmptyResource.java"],
+"names":["org.pepstock.charba.client.resources.EmptyResource.<synthetic: ctor_js>","name","org.pepstock.charba.client.resources.EmptyResource.<synthetic: ctor_create>","org.pepstock.charba.client.resources.EmptyResource.<init>","key","org.pepstock.charba.client.resources.EmptyResource.<clinit>"]
+}
+

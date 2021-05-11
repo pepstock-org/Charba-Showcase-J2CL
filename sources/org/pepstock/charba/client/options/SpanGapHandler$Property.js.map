@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SpanGapHandler$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAsCgB,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKO,oEALPA,C;;;QAYN,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QAvBa,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,yJ;;;QAEd,2E;EAAAC,oH;;;QAFc,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEdA,0R;EAFcA,gG;;;;;;;;;;;;;AAAA;uF;AAAA;yF;AAEd;;",
+"sources":["SpanGapHandler.java"],
+"names":["org.pepstock.charba.client.options.SpanGapHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.SpanGapHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.SpanGapHandler$Property.<init>","org.pepstock.charba.client.options.SpanGapHandler$Property.value","org.pepstock.charba.client.options.SpanGapHandler$Property.valueOf","org.pepstock.charba.client.options.SpanGapHandler$Property.values","org.pepstock.charba.client.options.SpanGapHandler$Property.<synthetic: getter>","org.pepstock.charba.client.options.SpanGapHandler$Property.<clinit>"]
+}
+

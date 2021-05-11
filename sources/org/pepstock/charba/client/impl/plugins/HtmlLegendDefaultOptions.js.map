@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HtmlLegendDefaultOptions.impl.java.js",
+"lineCount":77,
+"mappings":"A;;;;;;;;;;;;;;MAsBY,wB;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,+C;EAAAA,sF;EAAAA,iB;;;CAAA,yE;EAAAC,iC;;;;CARG,oB;EAAAC,+I;;;;CAAA,yB;EAAAC,8I;;;;CAAA,0B;EAAAC,+I;;;;CAAA,2B;EAAAC,gJ;;;;CAAA,a;EAAAC,kI;;;QAGX,gF;EAAAC,yJ;;;QAHW,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;EAAAA,qC;EAGXA,mJ;;;;;;;;;;;AAHW;;",
+"sources":["HtmlLegendDefaultOptions.java"],
+"names":["org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.<init>","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.getCursorPointer","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.getLegendTextCallback","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.getLegendTitleCallback","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.getMaximumLegendColumns","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.isDisplay","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.HtmlLegendDefaultOptions.<clinit>"]
+}
+

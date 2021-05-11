@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeAbstractDescriptor$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MAmCe,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["NativeAbstractDescriptor.java"],
+"names":["org.pepstock.charba.client.commons.NativeAbstractDescriptor$$Overlay.<clinit>"]
+}
+

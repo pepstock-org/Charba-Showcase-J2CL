@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultLayout.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;MAyBmB,a;;CAAA,W;EAAAA,Q;EAAAA;OAIW,qEAJXA,C;;;QASlB,S;EAAAC,wB;EAAAA,oC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAAAA,4E;;;CAUwB,c;EACvBC,kF;;;CApBiB,oE;EAIlBD,sM;;;QAJkB,O;EAAAE,gC;EAAAA,6B;EAAAA,qB;;;;;;;;;;;AAElB;cAAyB,6EAAzB;",
+"sources":["DefaultLayout.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultLayout.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultLayout.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultLayout.<init>","org.pepstock.charba.client.defaults.globals.DefaultLayout.getPadding","org.pepstock.charba.client.defaults.globals.DefaultLayout.<clinit>"]
+}
+

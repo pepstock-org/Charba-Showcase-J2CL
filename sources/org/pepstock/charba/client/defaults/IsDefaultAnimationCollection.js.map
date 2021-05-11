@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultAnimationCollection.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;MA2BiB,4B;;CAOF,W;;CAOP,W;;CAOC,oB;;CAOD,mB;;CAOA,S;;CAOC,kB;;CAOD,iB;;CAOsB,iB;;QAxDb,O;EAAAA,+C;EAAAA;",
+"sources":["IsDefaultAnimationCollection.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultAnimationCollection.<clinit>"]
+}
+

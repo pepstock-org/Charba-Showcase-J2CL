@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"GradientColor$Property.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MAgDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,kEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,2IAAAA;G;EAAAA,mI;;;QAAA,U;EAAAC,mB;EAAAA,4Q;;;QAEZ,4F;EAAAC,qI;;;QACA,qF;EAAAA,8H;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,gW;EACAA,qU;EAHYA,8F;;;;;;;;;;;;;AAAA;wG;AAAA;iG;AAAA;uF;AAEZ;6G;AACA;;",
+"sources":["GradientColor.java"],
+"names":["org.pepstock.charba.client.colors.GradientColor$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.colors.GradientColor$Property.<synthetic: ctor_create>","org.pepstock.charba.client.colors.GradientColor$Property.<init>","org.pepstock.charba.client.colors.GradientColor$Property.value","org.pepstock.charba.client.colors.GradientColor$Property.valueOf","org.pepstock.charba.client.colors.GradientColor$Property.values","org.pepstock.charba.client.colors.GradientColor$Property.<synthetic: getter>","org.pepstock.charba.client.colors.GradientColor$Property.<clinit>"]
+}
+

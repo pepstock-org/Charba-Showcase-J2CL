@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractShape.impl.java.js",
+"lineCount":54,
+"mappings":"A;;;;;;;;;;;;;;MAyBe,a;;CAAA,W;EAAAA,Q;EAAAA;OAGO,mEAHPA,C;EAAAA;OAKC,mEALDA,C;;;CAYJ,8E,gBAAqBC,S;EAArBC,oE;EAAAA,wE;EAETA,+N;;;CASmB,S;EACnBC,gF;;;CASwB,a;EACxBC,Y;;;CASmB,gB;EACnBC,gF;;;CAQc,gC,gBAAoBC,S;EAClCC,qF;;;CArDa,gE;EAKdL,gF;;;QALc,O;EAAAM,gC;EAAAA,6B;EAAAA;",
+"sources":["AbstractShape.java"],
+"names":["org.pepstock.charba.client.colors.tiles.AbstractShape.<synthetic: ctor_js>","shapeName","org.pepstock.charba.client.colors.tiles.AbstractShape.<init>","org.pepstock.charba.client.colors.tiles.AbstractShape.value","org.pepstock.charba.client.colors.tiles.AbstractShape.getDrawer","org.pepstock.charba.client.colors.tiles.AbstractShape.getKeyPrefix","keyPrefix","org.pepstock.charba.client.colors.tiles.AbstractShape.setKeyPrefix","org.pepstock.charba.client.colors.tiles.AbstractShape.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractDefaultChartAnimation.impl.java.js",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;;;;;;MA2Be,6B;;CAAA,W;EAAAA,Q;EAAAA;OAEE,qFAFFA,C;;;CASd,0I,UAAgCC,S;EAAhCC,iC;EAGCA,0P;;;CAQO,6D;EACPC,kG;;;CASa,a;EACbC,wJ;;;CASU,e;EACVC,0J;;;CASU,Y;EACVC,uJ;;;CASc,U;EACdC,qJ;;;QA7Da,O;EAAAC,gD;EAAAA,6C;EAAAA;",
+"sources":["AbstractDefaultChartAnimation.java"],
+"names":["org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.<synthetic: ctor_js>","animation","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.<init>","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.getDefaults","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.getEasing","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.getDuration","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.getDelay","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.isLoop","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation.<clinit>"]
+}
+

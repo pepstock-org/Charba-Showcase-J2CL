@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ColorScheme.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;;;MAoCiB,W;;QAQD,8D,oBAAoBA,M;EAApBC,sB;EACdA,sT;;;CAQc,Y;;CASD,a;;QATC,yE;EAAAC,sB;EACdA,kH;;;QAlBe,O;EAAAC,8B;EAAAA;",
+"sources":["ColorScheme.java"],
+"names":["scheme","org.pepstock.charba.client.impl.plugins.ColorScheme.isValid","org.pepstock.charba.client.impl.plugins.ColorScheme.category__$default","org.pepstock.charba.client.impl.plugins.ColorScheme.<clinit>"]
+}
+

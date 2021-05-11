@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Ring.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;MAuCY,I;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,4D;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,IAAaE,QAAbF,Y;EAEAA,sI;EAEAA,8K;EAEAA,4L;EAEAA,iB;;;QApBU,O;EAAAG,uB;EAAAA,oB;EAAAA;",
+"sources":["Ring.java"],
+"names":["org.pepstock.charba.client.colors.tiles.Ring.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Ring.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Ring.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Ring.drawTile","halfSize","diameter","org.pepstock.charba.client.colors.tiles.Ring.<clinit>"]
+}
+

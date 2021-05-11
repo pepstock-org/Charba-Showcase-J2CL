@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ControllerTypeChecker.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;MA2BY,qB;;CAAA,W;EAAAA,Q;;;QAKH,S;EAAAC,4C;EAAAA,kF;EAAAA,iB;;;CAAA,qE;EAAAC,iC;;;QAcW,wC,aAAWC,I;EAAXC,gC;EAElBA,2D;EAEAA,kf;EAEAA,8S;;;QAUqB,kD,gBAAoBD,I,iBAAaE,O;EACtDC,IAAcC,EAAdD,oD;EACAA,yP;EACAA,qB;;;QAtCU,O;EAAAE,wC;EAAAA,qC;EAAAA;",
+"sources":["ControllerTypeChecker.java"],
+"names":["org.pepstock.charba.client.controllers.ControllerTypeChecker.<synthetic: ctor_js>","org.pepstock.charba.client.controllers.ControllerTypeChecker.<synthetic: ctor_create>","org.pepstock.charba.client.controllers.ControllerTypeChecker.<init>","type","org.pepstock.charba.client.controllers.ControllerTypeChecker.check","message","org.pepstock.charba.client.controllers.ControllerTypeChecker.buildMessage","sb","org.pepstock.charba.client.controllers.ControllerTypeChecker.<clinit>"]
+}
+

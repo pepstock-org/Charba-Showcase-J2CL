@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultPointStyleHandler.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;MA2BiB,0B;;CAOG,iB;;CASH,uB;;CAWJ,wB;;QApBO,yF;EAAAA,qC;EAClBA,wE;;;QAQe,+F;EAAAC,qC;EACfA,a;;;QAUW,gG;EAAAC,qC;EACXA,6E;;;QA5Be,O;EAAAC,6C;EAAAA;",
+"sources":["IsDefaultPointStyleHandler.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler.getPointStyle__$default","org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler.isPointStyleAsImage__$default","org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler.getPointStyleAsImage__$default","org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler.<clinit>"]
+}
+

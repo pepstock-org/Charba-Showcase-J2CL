@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsNumberFormat.impl.java.js",
+"lineCount":64,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAsCiB,c;;CAOX,uE,sBAA+BA,a;;CAO/B,2E,wBAAmCC,e;;CAUnC,yE,uBAAiCC,O;;CAOjC,6D,iBAAqBC,Q;;CAOrB,2E,wBAAmCC,e;;CAWnC,qE,qBAA6BC,Y;;CAU7B,6D,iBAAqBC,Q;;CAUrB,mE,oBAA2BC,W;;CAO3B,uD,cAAeC,K;;CAWf,8E,2BAAiCC,K;;CAWjC,mC,0BAAoCA,K;;CAUpC,mF,2BAA2CC,W;;CAO3C,yB,gBAAuBC,W;;CAQvB,8B,eAA4BC,oB;;CAQ5B,+B,eAA6BC,qB;;CAQ7B,+B,eAA6BC,qB;;CAQ7B,kC,eAAgCF,oB;;CAQhC,kC,eAAgCA,oB;;QA3JrB,O;EAAAG,iC;EAAAA,8B;EAAAA;",
+"sources":["IsNumberFormat.java"],
+"names":["localeMatcher","numberingSystem","display","currency","currencyDisplay","currencySign","notation","signDisplay","style","units","unitDisplay","useGrouping","minimumIntegerDigits","minimumFractionDigits","maximumFractionDigits","org.pepstock.charba.client.options.IsNumberFormat.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"VerticalLineDataset.impl.java.js",
+"lineCount":104,
+"mappings":"A;;;;;;;;;;;MA8Ba,mB;;CAAA,W;EAAAA,Q;;;;QAML,S;EAAAC,8B;EAAAA,0C;EAAAA,yE;EAAAA,iB;;;;CAAA,4D;EACNC,4I;;;;QASM,gB,gBAA4BC,M;EAA5BF,8B;EAAAA,0C;EAAAA,sF;EAAAA,iB;;;;CAAA,mE,gBAA4BE,M;EAClCD,0K;;;;QAQM,6D,yBAAqCE,a;EAArCH,8B;EAAAA,0C;EAAAA,0I;EAAAA,iB;;;;CAAA,gH,yBAAqCG,a;EAC3CF,iN;;;;QASM,sE,yBAAqCE,a,iBAAuBD,M;EAA5DF,8B;EAAAA,0C;EAAAA,2J;EAAAA,iB;;;;CAAA,yH,yBAAqCG,a,iBAAuBD,M;EAClED,+O;;;;QASS,iD,aAAyBG,I,iBAAcF,M;EAAvCF,8B;EAAAA,0C;EAAAA,6H;EAAAA,iB;;;;CAAA,oG,aAAyBI,I,iBAAcF,M;EAChDD,oL;;;;QAUS,uG,aAAyBG,I,0BAAuBD,a,iBAAuBD,M;EAAvEF,8B;EAAAA,0C;EAAAA,kM;EAAAA,iB;;;;CAAA,0J,aAAyBI,I,0BAAuBD,a,iBAAuBD,M;EAChFD,qL;EAEAA,4H;;;CASW,0D,kBAAuBI,S;EAElCC,4H;;;QAtEW,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["VerticalLineDataset.java"],
+"names":["org.pepstock.charba.client.data.VerticalLineDataset.<synthetic: ctor_js>","org.pepstock.charba.client.data.VerticalLineDataset.<synthetic: ctor_create>","org.pepstock.charba.client.data.VerticalLineDataset.<init>","hidden","defaultValues","type","indexAxis","org.pepstock.charba.client.data.VerticalLineDataset.setIndexAxis","org.pepstock.charba.client.data.VerticalLineDataset.<clinit>"]
+}
+

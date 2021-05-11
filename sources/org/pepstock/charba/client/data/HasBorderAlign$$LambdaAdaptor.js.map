@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasBorderAlign$$LambdaAdaptor.impl.java.js",
+"lineCount":64,
+"mappings":"A;;;;;;;;;;;;;;MA6BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,0I;;;CAAA,gI;EAAAC,iC;EAAAA,8E;;;CAAA,yB;EAAAC,oD;EAAAA,2G;;;;CAAA,kB;EAAAC,uG;;;;CAAA,0B;EAAAC,+G;;;;CAAA,sE;EAAAC,4J;;;;CAAA,gC;EAAAA,sH;;;;CAAA,0E;EAAAA,gK;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["HasBorderAlign.java"],
+"names":["org.pepstock.charba.client.data.HasBorderAlign$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.data.HasBorderAlign$$LambdaAdaptor.<init>","org.pepstock.charba.client.data.HasBorderAlign$$LambdaAdaptor.getBorderAlignHandler","org.pepstock.charba.client.data.HasBorderAlign$$LambdaAdaptor.getBorderAlign","org.pepstock.charba.client.data.HasBorderAlign$$LambdaAdaptor.getBorderAlignCallback","org.pepstock.charba.client.data.HasBorderAlign$$LambdaAdaptor.setBorderAlign","org.pepstock.charba.client.data.HasBorderAlign$$LambdaAdaptor.<clinit>"]
+}
+

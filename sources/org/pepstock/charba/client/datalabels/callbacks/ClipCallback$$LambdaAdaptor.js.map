@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ClipCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yF;EAAAA,sK;;;CAAA,4J;EAAAC,iC;EAAAA,4F;;;CAAA,iE;EAAAC,2D;EAAAA,6H;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ClipCallback.java"],
+"names":["org.pepstock.charba.client.datalabels.callbacks.ClipCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.datalabels.callbacks.ClipCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.datalabels.callbacks.ClipCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.datalabels.callbacks.ClipCallback$$LambdaAdaptor.<clinit>"]
+}
+

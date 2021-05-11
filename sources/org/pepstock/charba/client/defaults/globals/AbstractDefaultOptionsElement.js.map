@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractDefaultOptionsElement.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;MA0Be,6B;;CAAA,W;EAAAA,Q;EAAAA;OAEO,yFAFPA,C;EAAAA;OAII,yFAJJA,K;;;;CAYd,qF,eAAkCC,W;EACjCC,gI;;;;CAUD,uG,gBAAqCC,W,gBAAiBF,W;EAAtDC,iC;EACCA,6G;EACAA,6G;;;CASmB,8B;EACnBE,2E;;;CASgB,kB;EAChBC,sG;;;CASmB,0B;EACnBC,iS;;;CASa,mC;EACbC,6C;;;CASU,uB;EACVC,iC;;;CASa,+B;EACbC,yC;;;QArFa,O;EAAAC,gD;EAAAA,6C;EAAAA;",
+"sources":["AbstractDefaultOptionsElement.java"],
+"names":["org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.<synthetic: ctor_js>","borderWidth","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.<init>","borderColor","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.getBackgroundColorAsString","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.getBorderWidth","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.getBorderColorAsString","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.getHoverBackgroundColorAsString","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.getHoverBorderWidth","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.getHoverBorderColorAsString","org.pepstock.charba.client.defaults.globals.AbstractDefaultOptionsElement.<clinit>"]
+}
+

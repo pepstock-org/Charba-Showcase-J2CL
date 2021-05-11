@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"StackedBarChart.impl.java.js",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;;;;;MA4Ba,e;;CAAA,W;EAAAA,Q;EAAAA;OAEiB,sDAFjBA,C;;;;QAOL,S;EAAAC,0B;EAAAA,sC;EAAAA,gE;EAAAA,iB;;;;CAAA,mD;EACNC,+I;;;;QASS,wC,aAAqBC,Y;EAArBF,0B;EAAAA,sC;EAAAA,2G;EAAAA,iB;;;;CAAA,kF,aAAqBE,Y;EAC9BD,oG;EAEAA,8N;;;CASqB,c;EACrBE,mE;;;CASwB,qB,gBAAmBC,M;EAC3CC,2I;;;;CAxCW,c;EAAAA,kK;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,wB;EAAAA;",
+"sources":["StackedBarChart.java"],
+"names":["org.pepstock.charba.client.StackedBarChart.<synthetic: ctor_js>","org.pepstock.charba.client.StackedBarChart.<synthetic: ctor_create>","org.pepstock.charba.client.StackedBarChart.<init>","extendedType","org.pepstock.charba.client.StackedBarChart.getOptions","hidden","org.pepstock.charba.client.StackedBarChart.newDataset","org.pepstock.charba.client.StackedBarChart.<clinit>"]
+}
+

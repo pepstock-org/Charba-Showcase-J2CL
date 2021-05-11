@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAyBiB,Y;;QAAA,M;EAAAA,uB;EAAAA,8B;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["BaseCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.BaseCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.BaseCallback.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PaddingCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;iF;EAAAA,sJ;;;CAAA,4I;EAAAC,iC;EAAAA,oF;;;CAAA,2D;EAAAC,8C;EAAAA,qH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["PaddingCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.PaddingCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.PaddingCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.PaddingCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.PaddingCallback$$LambdaAdaptor.<clinit>"]
+}
+

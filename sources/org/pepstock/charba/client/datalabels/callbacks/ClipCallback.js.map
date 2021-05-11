@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ClipCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA2BiB,Y;;QAAA,M;EAAAA,uB;EAAAA,8B;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["ClipCallback.java"],
+"names":["org.pepstock.charba.client.datalabels.callbacks.ClipCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.datalabels.callbacks.ClipCallback.<clinit>"]
+}
+

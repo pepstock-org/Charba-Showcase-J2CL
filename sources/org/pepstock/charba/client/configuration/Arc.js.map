@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Arc.impl.java.js",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;;MA0Ba,G;;CAAA,W;EAAAA,Q;;;QAOZ,sE,6BAAyBC,O;EAAzBC,c;EAAAA,0B;EAAAA,sI;EAAAA,iB;;;CAAA,kH,6BAAyBD,O;EACxBE,0J;;;CASuC,c;EACvCC,kE;;;CAQW,8D,oBAA2BC,K;EACtCC,iI;;;CAQkB,kB;EAClBC,uF;;;CASW,mB,eAAiBC,M;EAC5BC,uF;;;CASa,a;EACbC,kF;;;CAQW,kB,eAAgBC,K;EAC3BC,qF;;;CAQa,Y;EACbC,iF;;;CAQW,gB,eAAcC,M;EACzBC,oF;;;CAQU,a;EACVC,kF;;;CAQW,sB,eAAoBC,Y;EAC/BC,gG;;;CAQU,mB;EACVC,wF;;;CAQW,qB,eAAmBL,M;EAC9BM,yF;;;CAQU,kB;EACVC,uF;;;QAhIW,O;EAAAC,sB;EAAAA,mB;EAAAA;",
+"sources":["Arc.java"],
+"names":["org.pepstock.charba.client.configuration.Arc.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Arc.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Arc.<init>","org.pepstock.charba.client.configuration.Arc.getElement","align","org.pepstock.charba.client.configuration.Arc.setBorderAlign","org.pepstock.charba.client.configuration.Arc.getBorderAlign","weight","org.pepstock.charba.client.configuration.Arc.setWeight","org.pepstock.charba.client.configuration.Arc.getWeight","angle","org.pepstock.charba.client.configuration.Arc.setAngle","org.pepstock.charba.client.configuration.Arc.getAngle","offset","org.pepstock.charba.client.configuration.Arc.setOffset","org.pepstock.charba.client.configuration.Arc.getOffset","borderRadius","org.pepstock.charba.client.configuration.Arc.setBorderRadius","org.pepstock.charba.client.configuration.Arc.getBorderRadius","org.pepstock.charba.client.configuration.Arc.setHoverOffset","org.pepstock.charba.client.configuration.Arc.getHoverOffset","org.pepstock.charba.client.configuration.Arc.<clinit>"]
+}
+

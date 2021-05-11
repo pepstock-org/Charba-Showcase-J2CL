@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ReadableStream$GetReaderUnionType$$Overlay.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;MA8EmB,Q;;QAE0B,sB,UAAUA,C;EAAVC,mB;EACvCA,uD;;;QAI+B,uF;EAAAC,mB;EAC/BA,qF;;;QAIyC,0F;EAAAC,mB;EACzCA,+F;;;QAba,O;EAAAC,2B;EAAAA;",
+"sources":["ReadableStream.java"],
+"names":["o","elemental2.dom.ReadableStream$GetReaderUnionType$$Overlay.of","elemental2.dom.ReadableStream$GetReaderUnionType$$Overlay.asReadableStreamBYOBReader__$devirt","elemental2.dom.ReadableStream$GetReaderUnionType$$Overlay.asReadableStreamDefaultReader__$devirt","elemental2.dom.ReadableStream$GetReaderUnionType$$Overlay.<clinit>"]
+}
+

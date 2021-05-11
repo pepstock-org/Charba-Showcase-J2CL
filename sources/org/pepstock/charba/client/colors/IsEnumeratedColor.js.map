@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsEnumeratedColor.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;MAuBU,iB;;CAOD,Y;;CAQI,U;;CAYA,Y;;CAYA,W;;CAYG,Y;;QAnDN,M;EAAAA,4B;EAAAA,8B;;;QAeG,uE;EAAAC,4B;EAEXA,2F;EACAA,4C;;;QASW,yE;EAAAC,4B;EAEXA,2F;EACAA,8C;;;QASW,wE;EAAAC,4B;EAEXA,2F;EACAA,6C;;;QASc,yE;EAAAC,4B;EAEdA,2F;EACAA,8C;;;QAtDQ,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["IsEnumeratedColor.java"],
+"names":["org.pepstock.charba.client.colors.IsEnumeratedColor.<synthetic: adapt_lambda>","org.pepstock.charba.client.colors.IsEnumeratedColor.getRed__$default","org.pepstock.charba.client.colors.IsEnumeratedColor.getGreen__$default","org.pepstock.charba.client.colors.IsEnumeratedColor.getBlue__$default","org.pepstock.charba.client.colors.IsEnumeratedColor.getAlpha__$default","org.pepstock.charba.client.colors.IsEnumeratedColor.<clinit>"]
+}
+

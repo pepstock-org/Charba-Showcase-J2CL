@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnimationCompleteEvent.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;MAyBmB,sB;;CAAA,W;EAAAA,Q;;;QAaX,uG,eAAuCC,W,uBAA2BC,I;EAAlEC,iC;EAAAA,6C;EAAAA,6L;EAAAA,iB;;;CAAA,+J,eAAuCF,W,uBAA2BC,I;EACxEE,oU;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAA8BC,SAA9BD,mGAFDA;GAICA,uFAJDA;G;;;QAvBD,oE;EAAAE,yI;;;QAFkB,O;EAAAC,yC;EAAAA,sC;EAAAA,iC;EAElBA,wK;;;;;;;;;;;;;;AAFkB;;",
+"sources":["AnimationCompleteEvent.java"],
+"names":["org.pepstock.charba.client.events.AnimationCompleteEvent.<synthetic: ctor_js>","nativeEvent","item","org.pepstock.charba.client.events.AnimationCompleteEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.AnimationCompleteEvent.<init>","handler","org.pepstock.charba.client.events.AnimationCompleteEvent.dispatch","myHandler","org.pepstock.charba.client.events.AnimationCompleteEvent.<synthetic: getter>","org.pepstock.charba.client.events.AnimationCompleteEvent.<clinit>"]
+}
+

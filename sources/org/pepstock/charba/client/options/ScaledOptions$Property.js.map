@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScaledOptions$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MA+BM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKiB,mEALjBA,C;;;QAYI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,4I;EAAAA,iB;;;CAAA,yG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,iF;;;CASa,S;EACbC,gF;;;QAvBG,2B;EAAAC,mB;EAAAA;GAAAA,4IAAAA;G;EAAAA,oI;;;QAAA,U;EAAAC,mB;EAAAA,qJ;;;QAEJ,uE;EAAAC,gH;;;QAFI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,6Q;EAFIA,+F;;;;;;;;;;;;;AAAA;mF;AAAA;wF;AAEJ;;",
+"sources":["ScaledOptions.java"],
+"names":["org.pepstock.charba.client.options.ScaledOptions$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.ScaledOptions$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.ScaledOptions$Property.<init>","org.pepstock.charba.client.options.ScaledOptions$Property.value","org.pepstock.charba.client.options.ScaledOptions$Property.valueOf","org.pepstock.charba.client.options.ScaledOptions$Property.values","org.pepstock.charba.client.options.ScaledOptions$Property.<synthetic: getter>","org.pepstock.charba.client.options.ScaledOptions$Property.<clinit>"]
+}
+

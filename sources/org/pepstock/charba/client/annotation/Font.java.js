@@ -1,0 +1,12 @@
+goog.module('org.pepstock.charba.client.annotation.Font');
+
+goog.require('nativebootstrap.Util');
+goog.require('org.pepstock.charba.client.annotation.AnnotationContext');
+goog.require('org.pepstock.charba.client.annotation.LineLabel');
+goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
+goog.require('org.pepstock.charba.client.defaults.IsDefaultFont');
+goog.require('org.pepstock.charba.client.options.AbstractScriptableFont');
+
+const Font = goog.require('org.pepstock.charba.client.annotation.Font$impl');
+exports = Font;
+

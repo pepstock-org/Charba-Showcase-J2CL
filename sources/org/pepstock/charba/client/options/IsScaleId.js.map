@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsScaleId.impl.java.js",
+"lineCount":73,
+"mappings":"A;;;;;;;;;;;;;;MAyBiB,S;;QAQC,0B,gBAAcA,E;EAAdC,oB;EAEhBA;GAAAA,IAAoBC,UAApBD,kBAAAA;;IAECA;KAECA,kBAFDA;KAFDA;;G;EASAA,qD;;;QASc,2B,gBAAeD,E;EAAfG,oB;EACdA,mD;;;QASc,uD,kBAAkBH,E;EAAlBG,oB;EACdA,iF;;;QASW,4D,kBAAuBH,E;EAAvBI,oB;EACXA,+E;;;QASW,gC,gBAAoBJ,E;EAApBI,oB;EACXA,iD;;;QAUgB,oF,gBAA0BJ,E,mBAAcK,Y;EAAxCC,oB;EAEhBA;GAICA;IAAAA,IAAoBC,OAApBD,kBAAAA;;KAECA;MACCA,eADDA;MAFDA;;IAJDA;GAWCA,gDAXDA;G;EAeAA,oB;;;QAtFe,M;EAAAE,oB;EAAAA,8B;;;QAAA,O;EAAAC,4B;EAAAA;",
+"sources":["IsScaleId.java"],
+"names":["id","org.pepstock.charba.client.options.IsScaleId.create","defScaleId","org.pepstock.charba.client.options.IsScaleId.isValid","org.pepstock.charba.client.options.IsScaleId.checkIfValid","defaultValue","org.pepstock.charba.client.options.IsScaleId.checkAndGetScaleID","scaleId","org.pepstock.charba.client.options.IsScaleId.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.IsScaleId.<clinit>"]
+}
+

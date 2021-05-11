@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SelectionArea.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;MAsBY,a;;CAAA,W;EAAAA,Q;EAAAA;OAEI,6DAFJA,K;EAAAA;OAII,8DAJJA,K;EAAAA;OAMI,+DANJA,K;EAAAA;OAQI,gEARJA,K;;;QAAA,S;EAAAC,wB;EAAAA,oC;EAAAA,2E;EAAAA,iB;;;CAAA,8D;EAAAC,iC;EAAAA,wE;;;CAeJ,sD;EACNC,0E;;;CAQI,4D,eAAcC,G;EAClBC,yE;;;CAQM,uD;EACNC,2E;;;CAQI,6D,eAAeC,I;EACnBC,2E;;;CAQM,wD;EACNC,4E;;;CAQI,8D,eAAgBC,K;EACpBC,6E;;;CAQM,yD;EACNC,6E;;;CAQI,+D,eAAiBC,M;EACrBC,+E;;;CASa,Q;EACbC,oW;;;CAzFU,gE;EAEXb,uE;EAEAA,wE;EAEAA,yE;EAEAA,0E;;;QARW,O;EAAAc,gC;EAAAA,6B;EAAAA;",
+"sources":["SelectionArea.java"],
+"names":["org.pepstock.charba.client.impl.plugins.SelectionArea.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.SelectionArea.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.SelectionArea.<init>","org.pepstock.charba.client.impl.plugins.SelectionArea.getTop","top","org.pepstock.charba.client.impl.plugins.SelectionArea.setTop","org.pepstock.charba.client.impl.plugins.SelectionArea.getLeft","left","org.pepstock.charba.client.impl.plugins.SelectionArea.setLeft","org.pepstock.charba.client.impl.plugins.SelectionArea.getRight","right","org.pepstock.charba.client.impl.plugins.SelectionArea.setRight","org.pepstock.charba.client.impl.plugins.SelectionArea.getBottom","bottom","org.pepstock.charba.client.impl.plugins.SelectionArea.setBottom","org.pepstock.charba.client.impl.plugins.SelectionArea.toString","org.pepstock.charba.client.impl.plugins.SelectionArea.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LiningDataset$InternalCanvasObjectProperty.impl.java.js",
+"lineCount":114,
+"mappings":"A;;;;;;;;;;;;;;MAkKc,4B;;CAAA,W;EAAAA,Q;EAAAA;OAQS,oFARTA,C;EAAAA;OAUU,yFAVVA,S;;;QAkBJ,yD,8DAAoCC,K,iBAAeC,U;EAAnDC,mD;EAAAA,kL;EAAAA,iB;;;CAAA,mI,8DAAoCF,K,iBAAeC,U;EAAnDE,qC;EAAAA,2C;EAAAA,mE;EACPA,kG;EACAA,4G;;;CASa,S;EACbC,iG;;;CASc,c;EACdC,sG;;;QAxCW,2B;EAAAC,uC;EAAAA;GAAAA,qMAAAA;G;EAAAA,yK;;;QAAA,U;EAAAC,uC;EAAAA,ipB;;;QAEZ,wG;EAAAC,yL;;;QACA,oG;EAAAA,qL;;;QACA,8G;EAAAA,+L;;;QACA,0G;EAAAA,2L;;;QALY,O;EAAAC,+C;EAAAA,4C;EAAAA,e;EAEZA,wb;EACAA,ya;EACAA,+c;EACAA,gc;EALYA,oI;;;;;;;;;;;;;AAAA;wI;AAAA;oI;AAAA;8I;AAAA;0I;AAAA;6H;AAEZ;6I;AACA;yI;AACA;mJ;AACA;;",
+"sources":["LiningDataset.java"],
+"names":["org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.<synthetic: ctor_js>","value","hasPattern","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.<synthetic: ctor_create>","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.<init>","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.value","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.hasPattern","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.valueOf","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.values","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.<synthetic: getter>","org.pepstock.charba.client.data.LiningDataset$InternalCanvasObjectProperty.<clinit>"]
+}
+

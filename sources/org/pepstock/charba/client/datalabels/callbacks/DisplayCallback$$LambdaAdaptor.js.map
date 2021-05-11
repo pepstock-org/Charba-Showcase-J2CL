@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DisplayCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,4K;;;CAAA,kK;EAAAC,iC;EAAAA,+F;;;CAAA,iE;EAAAC,0D;EAAAA,gI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DisplayCallback.java"],
+"names":["org.pepstock.charba.client.datalabels.callbacks.DisplayCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.datalabels.callbacks.DisplayCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.datalabels.callbacks.DisplayCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.datalabels.callbacks.DisplayCallback$$LambdaAdaptor.<clinit>"]
+}
+

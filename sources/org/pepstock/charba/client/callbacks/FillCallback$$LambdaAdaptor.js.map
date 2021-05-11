@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FillCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;MAuCiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,iF;;;CAAA,6D;EAAAC,iD;EAAAA,kH;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["FillCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.FillCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.FillCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.FillCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.FillCallback$$LambdaAdaptor.<clinit>"]
+}
+

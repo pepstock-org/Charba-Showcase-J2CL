@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultFontContainer.impl.java.js",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAuBiB,sB;;CAOF,W;;CAOP,oB;;QAdS,O;EAAAA,yC;EAAAA;",
+"sources":["IsDefaultFontContainer.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultFontContainer.<clinit>"]
+}
+

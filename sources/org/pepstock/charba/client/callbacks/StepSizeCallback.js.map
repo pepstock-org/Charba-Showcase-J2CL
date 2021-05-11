@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"StepSizeCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAwBiB,gB;;QAAA,M;EAAAA,2B;EAAAA,8B;;;QAAA,O;EAAAC,mC;EAAAA;",
+"sources":["StepSizeCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.StepSizeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.StepSizeCallback.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendLabelsCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,0E;EAAAC,qF;EAAAA,gI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["LegendLabelsCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.LegendLabelsCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.LegendLabelsCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.LegendLabelsCallback$$LambdaAdaptor.generateLegendLabels","org.pepstock.charba.client.callbacks.LegendLabelsCallback$$LambdaAdaptor.<clinit>"]
+}
+

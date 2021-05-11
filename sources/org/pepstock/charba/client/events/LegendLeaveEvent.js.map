@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendLeaveEvent.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;;MAyBmB,gB;;CAAA,W;EAAAA,Q;;;QAaX,yG,0BAAmCC,Y,oBAAyBC,I;EAA5DC,2B;EAAAA,uC;EAAAA,0L;EAAAA,iB;;;CAAA,2J,0BAAmCF,Y,oBAAyBC,I;EAClEE,sb;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAwBC,SAAxBD,uFAFDA;GAICA,8EAJDA;G;;;QAvBD,8D;EAAAE,uH;;;QAFkB,O;EAAAC,mC;EAAAA,gC;EAAAA,8B;EAElBA,sJ;;;;;;;;;;;;;;;AAFkB;;",
+"sources":["LegendLeaveEvent.java"],
+"names":["org.pepstock.charba.client.events.LegendLeaveEvent.<synthetic: ctor_js>","eventContext","item","org.pepstock.charba.client.events.LegendLeaveEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.LegendLeaveEvent.<init>","handler","org.pepstock.charba.client.events.LegendLeaveEvent.dispatch","myHandler","org.pepstock.charba.client.events.LegendLeaveEvent.<synthetic: getter>","org.pepstock.charba.client.events.LegendLeaveEvent.<clinit>"]
+}
+

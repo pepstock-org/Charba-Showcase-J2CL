@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FlagsPluginOnBarCase$1.impl.java.js",
+"lineCount":83,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA8FuD,E;;CAAA,W;EAAAA,Q;EAAAA;iG;;;QAAA,qG;EAAAC,a;EAAAA,yB;EAAAA,8M;EAAAA,iB;;;CAAA,iL;EAAAC,6G;EAAAA,qF;;;CAGxC,yD,gBAA4BC,K;EACvCC,IAAUC,OAAVD,K;EACAA,IAAcE,GAAdF,2G;EACAA,IAAUG,KAAVH,2L;EACAA,IAAoBI,KAApBJ,wB;EACAA,IAAOK,iBAAPL,+D;EACAA,IAAaM,MAAbN,gK;EACAA,IAAaO,KAAbP,6Q;EACAA,IAAOQ,CAAPR,ie;EACAA,IAAOS,CAAPT,sB;EACAA;GAAAA,IAAmBU,IAAnBV,gFAAAA;;IACCA,IAAIW,KAAJX,QADDA;IAECA;KACCA,2TADDA;WAEOA;KACNA,2TADMA;WAEAA;KACNA,2TADMA;WAEAA;KACNA,2TADMA;WAEAA;KACNA,2TADMA;WAEAA;KACNA,2TADMA;KAZRA;IAgBCA;KACCA,IAAOY,OAAPZ,wCADDA;KAECA,uNAFDA;KAhBDA;IAoBCA,0BApBDA;;G;;;CAyBW,qG,gBAAiBD,K,8BAA4Bc,Q;EACxDC,IAAOP,KAAPO,6C;EACAA,+N;;;QAxCmD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["FlagsPluginOnBarCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase$1.<init>","chart","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase$1.onAfterDatasetsDraw","padding","ctx","scale","ticks","heightAmongLabels","height","width","x","y","tick","image","yToDraw","argument","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase$1.onResize","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase$1.<clinit>"]
+}
+

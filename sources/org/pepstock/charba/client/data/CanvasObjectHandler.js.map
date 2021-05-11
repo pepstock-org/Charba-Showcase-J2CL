@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CanvasObjectHandler.impl.java.js",
+"lineCount":95,
+"mappings":"A;;;;;;;;;;;MA+BY,mB;;CAAA,W;EAAAA,Q;;;QAUH,S;EAAAC,0C;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EACPC,+J;;;QAQ0B,O;EAAAC,8B;EAC1BA,4F;;;CASW,iD,gBAAoBC,K;EAE/BC;GAECA,IAAKC,IAALD,uBAFDA;GAICA,IAAcE,QAAdF,0BAJDA;GAMCA;IAAAA,IAAaG,OAAbH,oEAAAA;;KACCA,oFADDA;KAGCA,yIAHDA;KAKCA,wIALDA;;IANDA;G;;;CAsBW,qG,gBAAiBD,K,8BAA4BK,Q;EAExDC;GAOCA;IAAAA,IAAaF,OAAbE,oEAAAA;;KAECA,yEAFDA;;IAPDA;GAaCA,iGAbDA;G;;;CAuBW,+C,gBAAkBN,K;EAE7BO;GAGCA,wFAHDA;GAKCA,IAAKL,IAALK,uBALDA;GAOCA,IAAcJ,QAAdI,0BAPDA;GASCA;IAAAA,IAAaH,OAAbG,oEAAAA;;KACCA,oFADDA;;IATDA;G;;;QAhFU,O;EAAAC,sC;EAAAA,mC;EAAAA,yB;EAGXA,uH;;;;;;;;;;;;;;AAHW;oBAG8B,gEAH9B,C;AAKX;oBAAoB,yDAApB;",
+"sources":["CanvasObjectHandler.java"],
+"names":["org.pepstock.charba.client.data.CanvasObjectHandler.<synthetic: ctor_js>","org.pepstock.charba.client.data.CanvasObjectHandler.<synthetic: ctor_create>","org.pepstock.charba.client.data.CanvasObjectHandler.<init>","org.pepstock.charba.client.data.CanvasObjectHandler.get","chart","org.pepstock.charba.client.data.CanvasObjectHandler.onConfigure","data","datasets","dataset","argument","org.pepstock.charba.client.data.CanvasObjectHandler.onResize","org.pepstock.charba.client.data.CanvasObjectHandler.onDestroy","org.pepstock.charba.client.data.CanvasObjectHandler.<clinit>"]
+}
+

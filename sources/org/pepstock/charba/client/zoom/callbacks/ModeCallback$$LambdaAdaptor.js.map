@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ModeCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,sF;;;CAAA,qD;EAAAC,4D;EAAAA,uH;;;;CAAA,2D;EAAAA,4H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ModeCallback.java"],
+"names":["org.pepstock.charba.client.zoom.callbacks.ModeCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.zoom.callbacks.ModeCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.zoom.callbacks.ModeCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.zoom.callbacks.ModeCallback$$LambdaAdaptor.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TimeSeriesScales.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;;;;;;;MA2BmB,gB;;CAAA,W;EAAAA,Q;EAAAA;OAGoB,sEAHpBA,C;EAAAA;OAKgB,wEALhBA,C;;;QAYlB,+D,sBAA+BC,O;EAA/BC,2B;EAAAA,uC;EAAAA,4I;EAAAA,iB;;;CAAA,wH,sBAA+BD,O;EAC9BE,6H;EAGAA,uK;EACAA,qK;EAEAA,sR;;;CAQ8B,e;EAC9BC,mF;;;CAQ0B,iB;EAC1BC,qF;;;CASW,gE,oBAAgBC,I;EAE3BC;GAECA,IAAOC,OAAPD,4EAFDA;GAICA,sGAJDA;GAMCA,IAAIE,KAAJF,KANDA;GAQCA;IAAAA,IAAUG,IAAVH,kBAAAA;;KAECA,qRAFDA;KAGCA,kPAHDA;KAKCA,mCALDA;KAOCA,sBAPDA;;IARDA;GAkBCA,gFAlBDA;G;;;QAhDiB,O;EAAAI,mC;EAAAA,gC;EAAAA;",
+"sources":["TimeSeriesScales.java"],
+"names":["org.pepstock.charba.client.configuration.TimeSeriesScales.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.TimeSeriesScales.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.TimeSeriesScales.<init>","org.pepstock.charba.client.configuration.TimeSeriesScales.getTimeAxis","org.pepstock.charba.client.configuration.TimeSeriesScales.getLinearAxis","axes","org.pepstock.charba.client.configuration.TimeSeriesScales.setAxes","toStore","index","axis","org.pepstock.charba.client.configuration.TimeSeriesScales.<clinit>"]
+}
+

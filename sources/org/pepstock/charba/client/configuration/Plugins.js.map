@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Plugins.impl.java.js",
+"lineCount":85,
+"mappings":"A;;;;;;;;;;;;;MAiCa,O;;CAAA,W;EAAAA,Q;;;QAOZ,sE,6BAA6BC,O;EAA7BC,kB;EAAAA,8B;EAAAA,0I;EAAAA,iB;;;CAAA,sH,6BAA6BD,O;EAC5BE,2J;;;CAQsB,a;EACtBC,oE;;;CASW,uC,gBAAkBC,Q,iBAAkBC,O;EAC/CC,wG;;;CASW,uE,wBAA2BC,M,iBAAgBF,O;EAEtDC;GAECA,IAAsCE,OAAtCF,gHAFDA;GAGCA,oJAHDA;G;;;CAac,6B,gBAAiBF,Q;EAC/BK,4F;;;CASc,6D,wBAA0BL,Q;EACxCK,4H;;;CASc,8B,gBAAkBL,Q;EAChCM,6F;;;CAQW,iC,gBAAqBN,Q;EAChCO,yF;;;CAS6C,sE,UAAaX,O;EAC1DY,6H;;;CAY6C,wF,gBAAkBR,Q,WAAYJ,O;EAC3EY,yJ;;;CASc,8B,gBAAkBR,Q;EAChCS,6F;;;CAa0C,6E,wCAA2CC,O;EACrFC,2I;;;CAY0C,+F,gBAAkBX,Q,yCAA0CU,O;EAEtGC,uK;;;QA9IW,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"sources":["Plugins.java"],
+"names":["org.pepstock.charba.client.configuration.Plugins.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Plugins.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Plugins.<init>","org.pepstock.charba.client.configuration.Plugins.getAllIds","pluginId","enabled","org.pepstock.charba.client.configuration.Plugins.setEnabled","plugin","envelop","org.pepstock.charba.client.configuration.Plugins.isEnabled","org.pepstock.charba.client.configuration.Plugins.hasEnabled","org.pepstock.charba.client.configuration.Plugins.removeOptions","org.pepstock.charba.client.configuration.Plugins.setOptions","org.pepstock.charba.client.configuration.Plugins.hasOptions","factory","org.pepstock.charba.client.configuration.Plugins.getOptions","org.pepstock.charba.client.configuration.Plugins.<clinit>"]
+}
+

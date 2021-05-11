@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BorderAlignHandler.impl.java.js",
+"lineCount":101,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;MAwCY,kB;;CAAA,W;EAAAA,Q;EAAAA;OAMsC,+EANtCA,C;EAAAA;OASiB,0EATjBA,C;EAAAA;OAWoB,oEAXpBA,C;;;QAkDX,8G,UAAgCC,Y,0BAA+BC,a;EAA/DC,6B;EAAAA,yC;EAAAA,wM;EAAAA,iB;;;CAAA,gK,UAAgCF,Y,0BAA+BC,a;EAC9DE,oI;EADDA,qE;EAECA,0F;EAKAA,+GAA2CC,eAA3CD,WAA4DE,OAA5DF;GAAwEG,0hBAAxEH;I;;;CAQI,0G,2BAA8BI,K;EAElCC,6J;EAEAA,4M;;;CAQI,oE,0BAAiCD,K;EAErCC;GAECA,oSAFDA;;GAKCA,6JALDA;GAOCA,4IAPDA;G;;;CAgBiB,sD;EAEjBC,IAAYC,YAAZD,iI;EAEAA,IAAWE,IAAXF,6I;EAEAA;GAECA,mfAFDA;SAGOA;GAENA,IAAYG,KAAZH,6MAFMA;GAINA,yMAJMA;G;EAQPA,iK;;;CAQmB,8D;EACnBI,uF;;;CAQI,8G,4BAAmCC,mB;EAEvCN,sG;EAEAA;GAECA,kSAFDA;;GAKCA,4IALDA;G;;;CArIU,6D;EAMXL,kM;EAGAA,uF;;;QATW,O;EAAAY,qC;EAAAA,kC;EAAAA;",
+"sources":["BorderAlignHandler.java"],
+"names":["org.pepstock.charba.client.data.BorderAlignHandler.<synthetic: ctor_js>","nativeObject","defaultValues","org.pepstock.charba.client.data.BorderAlignHandler.<synthetic: ctor_create>","org.pepstock.charba.client.data.BorderAlignHandler.<init>","contextFunction","context","org.pepstock.charba.client.data.BorderAlignHandler.<lambda in <init>>","align","org.pepstock.charba.client.data.BorderAlignHandler.setBorderAlign","org.pepstock.charba.client.data.BorderAlignHandler.getBorderAlign","defaultAlign","type","array","org.pepstock.charba.client.data.BorderAlignHandler.getBorderAlignCallback","borderAlignCallback","org.pepstock.charba.client.data.BorderAlignHandler.<clinit>"]
+}
+

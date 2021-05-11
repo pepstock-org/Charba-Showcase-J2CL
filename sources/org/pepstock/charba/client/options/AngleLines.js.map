@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AngleLines.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAgCmB,U;;CAAA,W;EAAAA,Q;;;QA2ClB,2M,sBAAyBC,K,aAAWC,Q,6BAA8BC,a,WAA4BC,Y;EAA9FC,qB;EAAAA,iC;EAAAA,iT;EAAAA,iB;;;CAAA,wP,sBAAyBJ,K,aAAWC,Q,6BAA8BC,a,WAA4BC,Y;EAC7FE,6Q;;;CAQW,qB,gBAAmBC,O;EAC9BC,oK;;;CASc,a;EACdC,qQ;;;CAQW,qD,gBAAiBC,K;EAC5BC,gH;;;CAQW,4B,gBAAgBD,K;EAC3BC,yK;;;CASa,oB;EACbC,mR;;;CAQc,Y;EACdC,2E;;;CAQW,mB,eAAiBC,S;EAC5BC,oM;;;CASU,gB;EACVC,uQ;;;CASM,qE;EACNC,iI;;;CASa,+D;EACbC,2H;;;QA3IiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["AngleLines.java"],
+"names":["org.pepstock.charba.client.options.AngleLines.<synthetic: ctor_js>","scale","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.AngleLines.<synthetic: ctor_create>","org.pepstock.charba.client.options.AngleLines.<init>","display","org.pepstock.charba.client.options.AngleLines.setDisplay","org.pepstock.charba.client.options.AngleLines.isDisplay","color","org.pepstock.charba.client.options.AngleLines.setColor","org.pepstock.charba.client.options.AngleLines.getColorAsString","org.pepstock.charba.client.options.AngleLines.getColor","lineWidth","org.pepstock.charba.client.options.AngleLines.setLineWidth","org.pepstock.charba.client.options.AngleLines.getLineWidth","org.pepstock.charba.client.options.AngleLines.getDefaultBorderDashOffset","org.pepstock.charba.client.options.AngleLines.getDefaultBorderDash","org.pepstock.charba.client.options.AngleLines.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultScale.impl.java.js",
+"lineCount":75,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA0BiB,c;;CAOI,Y;;CAOL,Y;;CAOD,W;;CAOM,iB;;CAOC,kB;;CAOP,W;;CAOI,e;;CAOV,iB;;CAQJ,Y;;CAQG,wB;;CAOA,U;;CAOA,U;;CAOA,mB;;CAOA,mB;;CAOC,mB;;CAOA,a;;CAOA,a;;CAOA,mB;;CAOD,a;;CAOC,c;;CAOA,Y;;CASK,e;;CAON,a;;CAOC,a;;CAOD,iB;;CAOA,8B;;QA1LS,O;EAAAA,iC;EAAAA;",
+"sources":["IsDefaultScale.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultScale.<clinit>"]
+}
+

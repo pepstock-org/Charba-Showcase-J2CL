@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractScaleLines.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAiCe,kB;;CAAA,W;EAAAA,Q;;;CA0Cd,yN,sBAAiCC,K,aAAWC,Q,WAAYC,a,WAA4BC,Y;EACnFC,wQ;;;CAQiB,4B,sBAAqBC,U;EACtCC,0Q;;;CAS0B,iB;EAE1BC,IAAaC,KAAbD,gN;EAEAA;GAECA,sFAFDA;G;EAMAA,8E;;;CAQiB,6B,eAA2BE,gB;EAC5CC,+L;;;CASmB,uB;EACnBC,oP;;;CAQe,qE;;CAOO,+D;;QAzGT,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["AbstractScaleLines.java"],
+"names":["org.pepstock.charba.client.options.AbstractScaleLines.<synthetic: ctor_js>","scale","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.AbstractScaleLines.<init>","borderDash","org.pepstock.charba.client.options.AbstractScaleLines.setBorderDash","org.pepstock.charba.client.options.AbstractScaleLines.getBorderDash","array","borderDashOffset","org.pepstock.charba.client.options.AbstractScaleLines.setBorderDashOffset","org.pepstock.charba.client.options.AbstractScaleLines.getBorderDashOffset","org.pepstock.charba.client.options.AbstractScaleLines.<clinit>"]
+}
+

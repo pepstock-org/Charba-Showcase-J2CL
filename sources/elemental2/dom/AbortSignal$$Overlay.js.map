@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbortSignal$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MA0BiB,Q;;QAOI,U;EAAAA,mB;EACjBA,wG;;;QARa,O;EAAAC,2B;EAAAA;",
+"sources":["AbortSignal.java"],
+"names":["elemental2.dom.AbortSignal$$Overlay.create","elemental2.dom.AbortSignal$$Overlay.<clinit>"]
+}
+

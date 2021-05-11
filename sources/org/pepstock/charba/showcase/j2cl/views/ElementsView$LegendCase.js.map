@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ElementsView$LegendCase.impl.java.js",
+"lineCount":123,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MA2Ec,U;;CAAA,W;EAAAA,Q;EAAAA;OAuBS,yEAvBTA,C;EAAAA;OAyBc,2EAzBdA,C;;;QA2BJ,qG,8DAAkBC,K,qBAAmBC,O;EAArCC,iC;EAAAA,gN;EAAAA,iB;;;CAAA,oK,8DAAkBF,K,qBAAmBC,O;EAArCE,qC;EAAAA,2C;EAAAA,mE;EACPA,uF;EACAA,2F;;;CAGa,Y;EACbC,sF;;;CAGkB,c;EAClBC,wF;;;QArCW,2B;EAAAC,qB;EAAAA;GAAAA,sJAAAA;G;EAAAA,4I;;;QAAA,U;EAAAC,qB;EAAAA,qc;;;QAEZ,kF;EAAAC,+H;;;QAKA,mF;EAAAA,gI;;;QAKA,gF;EAAAA,6H;;;QAKA,+E;EAAAA,4H;;;QAjBY,O;EAAAC,6B;EAAAA,0B;EAAAA,e;EAEZA,wX;EAKAA,8Y;EAKAA,6Y;EAKAA,0Y;EAjBYA,uG;;;;;;;;;;;;;;;;;AAAA;gG;AAAA;iG;AAAA;8F;AAAA;6F;AAAA;gG;AAEZ;qG;AAKA;sG;AAKA;mG;AAKA;;",
+"sources":["ElementsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.getLabel","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.getFactory","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.valueOf","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.values","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase.<clinit>"]
+}
+

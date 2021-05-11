@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsAnimation.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;MAyBiB,W;;CAOX,2B,gBAAyBA,a;;CAOzB,0B,gBAAwBC,Y;;CAOxB,oD,eAAiBC,M;;CAOjB,kB,eAAgBC,Y;;CAOhB,e,eAAaC,K;;CAOb,kB,gBAAgBC,I;;QA1CL,O;EAAAC,8B;EAAAA;",
+"sources":["IsAnimation.java"],
+"names":["animateRotate","animateScale","easing","milliseconds","delay","loop","org.pepstock.charba.client.options.IsAnimation.<clinit>"]
+}
+

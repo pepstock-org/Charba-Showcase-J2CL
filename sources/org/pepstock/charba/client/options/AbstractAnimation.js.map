@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractAnimation.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;;;;;MAgCe,iB;;CAAA,W;EAAAA,Q;EAAAA;OAqCE,sEArCFA,C;;;CA+Cd,iQ,qBAA+BC,M,WAAUC,Q,WAAYC,a,WAA4BC,Y;EAChFC,sO;EAGAA,sM;;;CAQiB,oB;EACjBC,mF;;;CAQiB,oD,eAAiBC,M;EAClCC,wM;;;CASmB,a;EACnBC,2a;;;CAQiB,kB,eAAgBC,Y;EACjCC,4M;;;CASgB,e;EAChBC,6R;;;CAQiB,e,eAAaC,K;EAC9BC,kM;;;CASgB,Y;EAChBC,uR;;;CAQiB,kB,gBAAgBC,I;EACjCC,qK;;;CASoB,U;EACpBC,wR;;;CAQkB,uD;EAClBC,mC;;;QAjJa,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["AbstractAnimation.java"],
+"names":["org.pepstock.charba.client.options.AbstractAnimation.<synthetic: ctor_js>","parent","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.AbstractAnimation.<init>","org.pepstock.charba.client.options.AbstractAnimation.getDefaultValues","easing","org.pepstock.charba.client.options.AbstractAnimation.setEasing","org.pepstock.charba.client.options.AbstractAnimation.getEasing","milliseconds","org.pepstock.charba.client.options.AbstractAnimation.setDuration","org.pepstock.charba.client.options.AbstractAnimation.getDuration","delay","org.pepstock.charba.client.options.AbstractAnimation.setDelay","org.pepstock.charba.client.options.AbstractAnimation.getDelay","loop","org.pepstock.charba.client.options.AbstractAnimation.setLoop","org.pepstock.charba.client.options.AbstractAnimation.isLoop","org.pepstock.charba.client.options.AbstractAnimation.nativeObject","org.pepstock.charba.client.options.AbstractAnimation.<clinit>"]
+}
+

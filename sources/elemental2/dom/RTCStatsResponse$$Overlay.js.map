@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"RTCStatsResponse$$Overlay.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;MAuBiB,Q;;QAAA,mD;EAAAA,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["RTCStatsResponse.java"],
+"names":["elemental2.dom.RTCStatsResponse$$Overlay.<synthetic: adapt_lambda>","elemental2.dom.RTCStatsResponse$$Overlay.<clinit>"]
+}
+

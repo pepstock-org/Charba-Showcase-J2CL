@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"EventSourceInit$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEQ,U;EAAAA,mB;EACrBA,4G;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["EventSourceInit.java"],
+"names":["elemental2.dom.EventSourceInit$$Overlay.create","elemental2.dom.EventSourceInit$$Overlay.<clinit>"]
+}
+

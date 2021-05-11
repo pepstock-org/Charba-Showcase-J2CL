@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ColoringView$PatternsCase$3.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;MAkFsD,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EAAAC,iC;;;CAC9B,U;EACpBC,oC;;;QAFkD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ColoringView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ColoringView$PatternsCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ColoringView$PatternsCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ColoringView$PatternsCase$3.<init>","org.pepstock.charba.showcase.j2cl.views.ColoringView$PatternsCase$3.create","org.pepstock.charba.showcase.j2cl.views.ColoringView$PatternsCase$3.<clinit>"]
+}
+

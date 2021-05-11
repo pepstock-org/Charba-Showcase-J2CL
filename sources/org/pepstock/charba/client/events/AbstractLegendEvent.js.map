@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractLegendEvent.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;;;;;;MA0Be,mB;;CAAA,W;EAAAA,Q;EAAAA;OAGW,8DAHXA,C;;;CAad,mP,0BAAsCC,Y,mBAAwBC,I,aAAUC,G,oBAAgBC,I;EACvFC,oO;EAGAA,uN;;;CASuB,W;EACvBC,2E;;;QA3Ba,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["AbstractLegendEvent.java"],
+"names":["org.pepstock.charba.client.events.AbstractLegendEvent.<synthetic: ctor_js>","eventContext","type","key","item","org.pepstock.charba.client.events.AbstractLegendEvent.<init>","org.pepstock.charba.client.events.AbstractLegendEvent.getItem","org.pepstock.charba.client.events.AbstractLegendEvent.<clinit>"]
+}
+

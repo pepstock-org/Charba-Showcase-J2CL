@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Point.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;MAyBmB,K;;CAAA,W;EAAAA,Q;;;;QAKX,S;EAAAC,gB;EAAAA,4B;EAAAA,iE;EAAAA,iB;;;;CAAA,oD;EACNC,iE;;;;QAQM,e,eAAaC,C;EAAbF,gB;EAAAA,4B;EAAAA,wE;EAAAA,iB;;;;CAAA,0D,eAAaE,C;EACnBD,wE;;;;QASM,uB,eAAaC,C,gBAAUC,C;EAAvBH,gB;EAAAA,4B;EAAAA,mF;EAAAA,iB;;;;CAAA,kE,eAAaE,C,gBAAUC,C;EAC7BF,mF;;;;QAQD,wD,UAAmBG,Y;EAAnBJ,gB;EAAAA,4B;EAAAA,4H;EAAAA,iB;;;;CAAA,mG,UAAmBI,Y;EAClBH,4H;;;CAQY,0D;EACZI,kC;;;QA3CiB,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"sources":["Point.java"],
+"names":["org.pepstock.charba.client.positioner.Point.<synthetic: ctor_js>","org.pepstock.charba.client.positioner.Point.<synthetic: ctor_create>","org.pepstock.charba.client.positioner.Point.<init>","x","y","nativeObject","org.pepstock.charba.client.positioner.Point.nativeObject","org.pepstock.charba.client.positioner.Point.<clinit>"]
+}
+

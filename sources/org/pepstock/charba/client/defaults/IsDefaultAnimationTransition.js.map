@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultAnimationTransition.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAsBiB,4B;;CAOG,gB;;CAOC,iB;;QAdJ,O;EAAAA,+C;EAAAA;",
+"sources":["IsDefaultAnimationTransition.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultAnimationTransition.<clinit>"]
+}
+

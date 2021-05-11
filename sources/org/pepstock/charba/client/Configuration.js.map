@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Configuration.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;;;;MA+BmB,a;;CAAA,W;EAAAA,Q;;;QAsClB,S;EAAAC,wB;EAAAA,oC;EAAAA,8D;EAAAA,iB;;;CAAA,iD;EAAAC,yE;;;CASY,6D,UAAwBC,O;EACnCC,yL;;;CAQY,6C;EACZC,sI;;;CAQW,0D,UAAqBC,I;EAChCC,mL;;;CAQW,4D,cAAuBC,O;EAClCC,uL;;;CAQI,yE,aAAaC,I;EACjBC,0K;;;CAUqC,8I,gBAAmBC,K,WAAST,O;EACjEC,8I;;;CASI,kH,gBAAgBQ,K,cAAYN,I;EAChCC,uG;;;CASI,2H,gBAAmBK,K,iBAAeJ,O;EACtCC,0G;;;CAQY,+C;EACZI,kC;;;QA5HiB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["Configuration.java"],
+"names":["org.pepstock.charba.client.Configuration.<synthetic: ctor_js>","org.pepstock.charba.client.Configuration.<synthetic: ctor_create>","org.pepstock.charba.client.Configuration.<init>","options","org.pepstock.charba.client.Configuration.setOptions","org.pepstock.charba.client.Configuration.getOptions","data","org.pepstock.charba.client.Configuration.setData","plugins","org.pepstock.charba.client.Configuration.setPlugins","type","org.pepstock.charba.client.Configuration.setType","chart","org.pepstock.charba.client.Configuration.nativeObject","org.pepstock.charba.client.Configuration.<clinit>"]
+}
+

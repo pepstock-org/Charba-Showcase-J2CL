@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultLegendTitle.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;;;;;MA2BmB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAMc,uEANdA,C;EAAAA;OAQW,0EARXA,C;;;QAalB,S;EAAAC,6B;EAAAA,yC;EAAAA,oF;EAAAA,iB;;;CAAA,uE;EAAAC,iC;EAAAA,iF;;;CAUqB,W;EACpBC,oF;;;CASa,oB;EACbC,iE;;;CASuB,c;EACvBC,uF;;;CASc,a;EACdC,6G;;;CAtDiB,yE;EAMlBJ,6G;EAEAA,qN;;;QARkB,O;EAAAK,qC;EAAAA,kC;EAAAA,qB;;;;;;;;;;;;;AAElB;mBAAyB,kFAAzB,K;AAEA;mBAA6B,kFAA7B;",
+"sources":["DefaultLegendTitle.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.<init>","org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.getFont","org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.getColorAsString","org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.getPadding","org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.isDisplay","org.pepstock.charba.client.defaults.globals.DefaultLegendTitle.<clinit>"]
+}
+

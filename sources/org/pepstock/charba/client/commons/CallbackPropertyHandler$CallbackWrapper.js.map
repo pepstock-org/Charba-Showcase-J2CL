@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CallbackPropertyHandler$CallbackWrapper.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;MA0O4B,e;;CAAA,W;EAAAA,Q;EAAAA;OAGV,uFAHUA,C;EAAAA;OAKA,qFALAA,C;;;QAYlB,yB,UAAkBC,Q;EAAlBC,0B;EAAAA,sC;EAAAA,wH;EAAAA,iB;;;CAAA,mG,UAAkBD,Q;EAAlBE,iC;EAAAA,6F;EACPA,wG;;;CAQS,6F;EACTC,oG;;;CAQmB,2F;EACnBC,kG;;;CASa,Q;EACbC,mU;;;CAzCyB,qF;EAK1BH,kJ;;;QAL0B,O;EAAAI,kC;EAAAA,+B;EAAAA;",
+"sources":["CallbackPropertyHandler.java"],
+"names":["org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<synthetic: ctor_js>","instance","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<synthetic: ctor_create>","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<init>","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.getInstance","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.getScopes","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.toString","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<clinit>"]
+}
+

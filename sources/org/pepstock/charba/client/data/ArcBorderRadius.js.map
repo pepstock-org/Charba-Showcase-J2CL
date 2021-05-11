@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ArcBorderRadius.impl.java.js",
+"lineCount":133,
+"mappings":"A;;;;;;;;;;;;;;;MAkCmB,e;;CAAA,W;EAAAA,Q;;;;QA+CX,S;EAAAC,0B;EAAAA,sC;EAAAA,qE;EAAAA,iB;;;;CAAA,wD;EACNC,kK;;;;QAQM,Y,eAAoBC,Y;EAApBF,0B;EAAAA,sC;EAAAA,oF;EAAAA,iB;;;;CAAA,2D,eAAoBE,Y;EAC1BD,qF;;;;QAQD,wD,UAA6BE,Y;EAA7BH,0B;EAAAA,sC;EAAAA,gI;EAAAA,iB;;;;CAAA,uG,UAA6BG,Y;EAC5BF,iI;;;CASS,+C;EACTG,gF;;;CASW,U,eAAQF,Y;EACnBG,wC;EACAA,sC;EACAA,wC;EACAA,sC;;;CAQW,oB,eAAkBH,Y;EAC7BI,4L;;;CAQU,iB;EACVC,+O;;;CAQW,kB,eAAgBL,Y;EAC3BM,0L;;;CAQU,e;EACVC,6O;;;CAQW,oB,eAAkBP,Y;EAC7BQ,4L;;;CAQU,iB;EACVC,+O;;;CAQW,kB,eAAgBT,Y;EAC3BU,0L;;;CAQU,e;EACVC,6O;;;QA/JD,8D;EAAAC,qH;;;QAFkB,O;EAAAC,kC;EAAAA,+B;EAAAA,gC;EAElBA,sH;EAMAA,mP;;;;;;;;;;;;;;;;;AARkB;iF;AAAA;gBAQa,wDARb;",
+"sources":["ArcBorderRadius.java"],
+"names":["org.pepstock.charba.client.data.ArcBorderRadius.<synthetic: ctor_js>","org.pepstock.charba.client.data.ArcBorderRadius.<synthetic: ctor_create>","org.pepstock.charba.client.data.ArcBorderRadius.<init>","borderRadius","nativeObject","org.pepstock.charba.client.data.ArcBorderRadius.getKeys","org.pepstock.charba.client.data.ArcBorderRadius.set","org.pepstock.charba.client.data.ArcBorderRadius.setOuterStart","org.pepstock.charba.client.data.ArcBorderRadius.getOuterStart","org.pepstock.charba.client.data.ArcBorderRadius.setOuterEnd","org.pepstock.charba.client.data.ArcBorderRadius.getOuterEnd","org.pepstock.charba.client.data.ArcBorderRadius.setInnerStart","org.pepstock.charba.client.data.ArcBorderRadius.getInnerStart","org.pepstock.charba.client.data.ArcBorderRadius.setInnerEnd","org.pepstock.charba.client.data.ArcBorderRadius.getInnerEnd","org.pepstock.charba.client.data.ArcBorderRadius.<synthetic: getter>","org.pepstock.charba.client.data.ArcBorderRadius.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DrawTimeCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6F;EAAAA,8K;;;CAAA,oK;EAAAC,iC;EAAAA,gG;;;CAAA,iE;EAAAC,2D;EAAAA,iI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DrawTimeCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.DrawTimeCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.callbacks.DrawTimeCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.callbacks.DrawTimeCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.annotation.callbacks.DrawTimeCallback$$LambdaAdaptor.<clinit>"]
+}
+

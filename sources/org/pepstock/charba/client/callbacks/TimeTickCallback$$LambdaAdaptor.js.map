@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TimeTickCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;;;MAiCiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kF;EAAAA,wJ;;;CAAA,8I;EAAAC,iC;EAAAA,qF;;;CAAA,kH;EAAAC,yF;EAAAA,8I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["TimeTickCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.TimeTickCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.TimeTickCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.TimeTickCallback$$LambdaAdaptor.onCallback","org.pepstock.charba.client.callbacks.TimeTickCallback$$LambdaAdaptor.<clinit>"]
+}
+

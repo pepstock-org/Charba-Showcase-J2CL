@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractPluginOptions.impl.java.js",
+"lineCount":143,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA4CsB,qB;;CAAA,W;EAAAA,Q;EAAAA;OAKA,qEALAA,C;;;CA6CX,kI,gBAA6BC,Q,WAAuBC,Y;EAC7DC,oI;EAEAA,oD;EAEAA,sF;EAEAA;GAECA,IAAcC,EAAdD,qDAFDA;GAICA,sZAJDA;G;;;CAamB,S;EACnBE,kP;;;CAQmB,e;EACnBC,kF;;;CAQiB,2D,qBAAmBC,M;EAEpCC,wR;;;CAQwB,a;EAExBC,IAAYC,KAAZD,6M;EAEAA,6V;;;CAUmD,2F,wCAAyDE,O;EAE5GC;GAECA;IAECA,gPAFDA;;IAMCA,2IANDA;IAFDA;G;EAaAA,Y;;;CASiB,2D,8BAAsCC,O;EAEvDC;GAECA,4BAFDA;G;;;CASc,oB;;CAOH,S;EAEXC,iI;;;CAQiB,2C,gBAAcC,K;EAE/BD;GAECA,qHAFDA;G;;;CAWiB,wC,aAAWE,I;EAE5BF;GAECA,IAAaG,YAAbH,0EAFDA;GAICA,2GAJDA;G;;;CAaiB,gD,gBAAcI,O;EAE/BJ;GAECA,qFAFDA;G;;;CAWY,uD;EACZK,mC;;;QAzMoB,O;EAAAC,wC;EAAAA,qC;EAAAA,gC;EAGrBA,2H;;;;;;;;;;;;;;;;;;;;;;;;;;AAHqB;sBAGc,oEAHd;",
+"sources":["AbstractPluginOptions.java"],
+"names":["org.pepstock.charba.client.plugins.AbstractPluginOptions.<synthetic: ctor_js>","pluginId","nativeObject","org.pepstock.charba.client.plugins.AbstractPluginOptions.<init>","sb","org.pepstock.charba.client.plugins.AbstractPluginOptions.getId","org.pepstock.charba.client.plugins.AbstractPluginOptions.getPluginId","events","org.pepstock.charba.client.plugins.AbstractPluginOptions.setEvents","org.pepstock.charba.client.plugins.AbstractPluginOptions.getEvents","array","factory","org.pepstock.charba.client.plugins.AbstractPluginOptions.loadGlobalsPluginOptions","envelop","org.pepstock.charba.client.plugins.AbstractPluginOptions.applyingDefaults","org.pepstock.charba.client.plugins.AbstractPluginOptions.store","chart","type","chartOptions","dataset","org.pepstock.charba.client.plugins.AbstractPluginOptions.nativeObject","org.pepstock.charba.client.plugins.AbstractPluginOptions.<clinit>"]
+}
+

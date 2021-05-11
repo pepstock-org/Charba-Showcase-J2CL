@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnimationContainer.impl.java.js",
+"lineCount":84,
+"mappings":"A;;;;;;;;;;;;;;;;MA+BmB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAkCQ,qEAlCRA,C;;;;QA0CX,qH,oCAA+CC,a,wBAAyCC,O;EAAxFC,6B;EAAAA,yC;EAAAA,6M;EAAAA,iB;;;;CAAA,0K,oCAA+CF,a,wBAAyCC,O;EAC9FE,wd;;;;QAUD,0K,qBAAgCC,M,qCAAoCJ,a,WAA4BK,Y;EAAhGH,6B;EAAAA,yC;EAAAA,+Q;EAAAA,iB;;;;CAAA,+N,qBAAgCE,M,qCAAoCJ,a,WAA4BK,Y;EAC/FF,wT;;;;QAWD,kN,qBAAgCC,M,aAAYE,Q,qCAAsCN,a,WAA4BK,Y;EAA9GH,6B;EAAAA,yC;EAAAA,iU;EAAAA,iB;;;;CAAA,uQ,qBAAgCE,M,aAAYE,Q,qCAAsCN,a,WAA4BK,Y;EAC7GF,8T;EAEAA,wjB;;;CAQW,yD;EACXI,kF;;;CAQI,qE,gBAA4BC,O;EAEhCC;GACCA,iMADDA;;GAICA,qTAJDA;G;;;CAaO,6D;EACPC,6R;;;QArGiB,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["AnimationContainer.java"],
+"names":["org.pepstock.charba.client.options.AnimationContainer.<synthetic: ctor_js>","defaultValues","envelop","org.pepstock.charba.client.options.AnimationContainer.<synthetic: ctor_create>","org.pepstock.charba.client.options.AnimationContainer.<init>","parent","nativeObject","childKey","org.pepstock.charba.client.options.AnimationContainer.getTransitions","enabled","org.pepstock.charba.client.options.AnimationContainer.setAnimationEnabled","org.pepstock.charba.client.options.AnimationContainer.isAnimationEnabled","org.pepstock.charba.client.options.AnimationContainer.<clinit>"]
+}
+

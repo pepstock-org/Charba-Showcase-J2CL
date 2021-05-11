@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ValueCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA2CiB,a;;QAAA,M;EAAAA,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["ValueCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.ValueCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.callbacks.ValueCallback.<clinit>"]
+}
+

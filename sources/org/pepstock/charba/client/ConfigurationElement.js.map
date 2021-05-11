@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ConfigurationElement.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAyBiB,oB;;CAQX,oF,gBAAaA,K,uBAAqBC,a;;QARvB,M;EAAAC,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["ConfigurationElement.java"],
+"names":["chart","configuration","org.pepstock.charba.client.ConfigurationElement.<synthetic: adapt_lambda>","org.pepstock.charba.client.ConfigurationElement.<clinit>"]
+}
+

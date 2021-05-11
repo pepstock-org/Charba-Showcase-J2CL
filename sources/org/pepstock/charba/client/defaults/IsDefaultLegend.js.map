@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultLegend.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;;;;;;MA0BiB,e;;CAOM,a;;CAOD,Y;;CAOT,a;;CAOJ,c;;CAOA,a;;CAOJ,e;;CAOA,gB;;QAjDY,O;EAAAA,kC;EAAAA;",
+"sources":["IsDefaultLegend.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultLegend.<clinit>"]
+}
+

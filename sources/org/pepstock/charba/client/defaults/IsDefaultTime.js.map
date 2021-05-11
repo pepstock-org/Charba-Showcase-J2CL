@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultTime.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;;;MAyBiB,a;;CAOL,iB;;CAOF,Y;;CAOF,oB;;CAOE,W;;CAOF,e;;CAOE,c;;CAOF,a;;QAjDS,O;EAAAA,gC;EAAAA;",
+"sources":["IsDefaultTime.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultTime.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LineBreak$$Overlay.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;MA+BmB,Q;;QAAA,O;EAAAA,2B;EAAAA,wB;;;;;;;;;AAElB;SAI2B,iEAJ3B;",
+"sources":["LineBreak.java"],
+"names":["org.pepstock.charba.client.dom.elements.LineBreak$$Overlay.<clinit>"]
+}
+

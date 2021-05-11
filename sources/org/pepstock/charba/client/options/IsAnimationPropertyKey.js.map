@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsAnimationPropertyKey.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MA0BiB,sB;;QASc,0E,gBAAcA,Q,uBAAwBC,I;EAAtCC,iC;EAE7BA;GAECA,qOAFDA;G;EAMAA,2H;;;QAUc,oE,+BAA+BF,Q;EAA/BG,iC;EACdA,qJ;;;QASW,yE,+BAAoCH,Q;EAApCI,iC;EACXA;GAGCA,IAAOC,gBAAPD,qNAHDA;GAKCA,6FALDA;G;;;QAgB6B,+E,+BAA0CJ,Q;EAA1CM,iC;EAE7BA,2G;EAGAA,gB;;;QA3De,O;EAAAC,yC;EAAAA;",
+"sources":["IsAnimationPropertyKey.java"],
+"names":["property","type","org.pepstock.charba.client.options.IsAnimationPropertyKey.create","org.pepstock.charba.client.options.IsAnimationPropertyKey.isValid","org.pepstock.charba.client.options.IsAnimationPropertyKey.checkIfValid","exceptionMessage","org.pepstock.charba.client.options.IsAnimationPropertyKey.checkAndGetIfValid","org.pepstock.charba.client.options.IsAnimationPropertyKey.<clinit>"]
+}
+

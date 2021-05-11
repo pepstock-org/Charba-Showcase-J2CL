@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeJsObjectCallbackProxy$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MA0BY,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["NativeJsObjectCallbackProxy.java"],
+"names":["org.pepstock.charba.client.commons.NativeJsObjectCallbackProxy$$Overlay.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetRangeSelectionEventHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gG;EAAAA,oL;;;CAAA,0K;EAAAC,iC;EAAAA,mG;;;CAAA,wE;;GAAAC,8G;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DatasetRangeSelectionEventHandler.java"],
+"names":["org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler$$LambdaAdaptor.onSelect","org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler$$LambdaAdaptor.<clinit>"]
+}
+

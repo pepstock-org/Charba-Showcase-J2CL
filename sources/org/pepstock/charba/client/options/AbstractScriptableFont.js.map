@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractScriptableFont.impl.java.js",
+"lineCount":77,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAgCsB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAEqB,oFAFrBA,C;;;;CAUX,gL,oCAAmDC,sB,uBAAsCC,a;EAClGC,oR;;;;CAUS,iO,oCAAmDF,sB,uBAAsCC,a,WAA4BE,Y;EAC9HD,6L;EAGAA,2S;;;CASW,c,eAAYE,I;EAEvBC,yB;EAEAA,2B;;;CASW,sD,kBAAmBC,K;EAE9BC,yB;EAEAA,oE;;;CASW,6B,gBAAiBC,M;EAE5BC,yB;EAEAA,4C;;;CASW,oD,eAAiBC,M;EAE5BC,yB;EAEAA,mE;;;CASW,uB,eAAqBC,U;EAEhCC,yB;EAEAA,0C;;;CASW,iC,gBAAqBD,U;EAEhCC,yB;EAEAA,oD;;;CAMc,iB;EAEdC;GAECA,6JAFDA;G;;;QA/GoB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"sources":["AbstractScriptableFont.java"],
+"names":["org.pepstock.charba.client.options.AbstractScriptableFont.<synthetic: ctor_js>","scriptableFontProvider","defaultValues","org.pepstock.charba.client.options.AbstractScriptableFont.<init>","nativeObject","size","org.pepstock.charba.client.options.AbstractScriptableFont.setSize","style","org.pepstock.charba.client.options.AbstractScriptableFont.setStyle","family","org.pepstock.charba.client.options.AbstractScriptableFont.setFamily","weight","org.pepstock.charba.client.options.AbstractScriptableFont.setWeight","lineHeight","org.pepstock.charba.client.options.AbstractScriptableFont.setLineHeight","org.pepstock.charba.client.options.AbstractScriptableFont.resetCallback","org.pepstock.charba.client.options.AbstractScriptableFont.<clinit>"]
+}
+

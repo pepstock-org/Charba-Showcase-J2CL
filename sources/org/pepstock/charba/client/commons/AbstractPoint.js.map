@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractPoint.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;MAwBsB,a;;CAAA,W;EAAAA,Q;;;;CAoCX,yD;EACTC,qI;;;;CAQS,+D,eAAqBC,C;EAC9BD,gJ;;;;CASS,uE,eAAqBC,C,gBAAUC,C;EACxCF,oH;EAEAA;GAECA,uBAFDA;G;EAIAA;GAECA,uBAFDA;G;;;;CAWS,wG,UAA2BG,Y;EACpCH,oI;;;CAQiB,c,eAAYC,C;EAC7BG,4I;;;CAQmB,Q;EACnBC,gN;;;CAQiB,c,eAAYH,C;EAC7BI,4I;;;CAQmB,Q;EACnBC,gN;;;CAQoB,gB;EACpBC,gG;;;QAvHoB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["AbstractPoint.java"],
+"names":["org.pepstock.charba.client.commons.AbstractPoint.<synthetic: ctor_js>","org.pepstock.charba.client.commons.AbstractPoint.<init>","x","y","nativeObject","org.pepstock.charba.client.commons.AbstractPoint.setX","org.pepstock.charba.client.commons.AbstractPoint.getX","org.pepstock.charba.client.commons.AbstractPoint.setY","org.pepstock.charba.client.commons.AbstractPoint.getY","org.pepstock.charba.client.commons.AbstractPoint.isConsistent","org.pepstock.charba.client.commons.AbstractPoint.<clinit>"]
+}
+

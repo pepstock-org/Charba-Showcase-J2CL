@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TooltipCallbacksCase$1.impl.java.js",
+"lineCount":65,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAgEgG,E;;CAAA,W;EAAAA,Q;EAAAA;4F;;;QAAA,8E;EAAAC,a;EAAAA,yB;EAAAA,6K;EAAAA,iB;;;CAAA,qJ;EAAAC,wG;EAAAA,iC;;;CAGzE,8D,gBAAiBC,K,2BAAyBC,K;EAC7DC,IAAOC,GAAPD,K;EACAA;GAAAA,IAAiBE,IAAjBF,4EAAAA;;IACCA,IAAQG,OAARH,4HADDA;IAECA,oJAFDA;;G;EAIAA,yJ;;;CAImB,oE,gBAAuBF,K,2BAAyBC,K;EACnEK,Y;;;CAImB,mE,gBAAsBN,K,2BAAyBC,K;EAClEM,Y;;;QAnB4F,O;EAAAC,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
+"sources":["TooltipCallbacksCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase$1.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase$1.onFooter","sum","item","dataset","org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase$1.onBeforeFooter","org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase$1.onAfterFooter","org.pepstock.charba.showcase.j2cl.cases.elements.TooltipCallbacksCase$1.<clinit>"]
+}
+

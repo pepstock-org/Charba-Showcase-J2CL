@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SQLTransaction$$Overlay.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;MAyBa,Q;;QAkBO,8L,iDACPA,Y,kBACEC,S,sDACYC,Q,qDACoBC,a;EAJ3BC,mB;EAKhBA,oI;;;QAIgB,qI,iDACPJ,Y,kBAAuBC,S,sDAAgCC,Q;EADhDE,mB;EAEhBA,qH;;;QAIgB,gG,iDAAkBJ,Y,kBAAuBC,S;EAAzCG,mB;EAChBA,2G;;;QAlCS,O;EAAAC,2B;EAAAA;",
+"sources":["SQLTransaction.java"],
+"names":["sqlStatement","queryArgs","callback","errorCallback","elemental2.dom.SQLTransaction$$Overlay.executeSql__$devirt","elemental2.dom.SQLTransaction$$Overlay.<clinit>"]
+}
+

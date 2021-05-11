@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Scriptable.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAyBiB,U;;CAQd,2D,UAASA,O;;QARK,M;EAAAC,qB;EAAAA,mE;;;QAAA,O;EAAAC,6B;EAAAA;",
+"sources":["Scriptable.java"],
+"names":["context","org.pepstock.charba.client.callbacks.Scriptable.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.Scriptable.<clinit>"]
+}
+

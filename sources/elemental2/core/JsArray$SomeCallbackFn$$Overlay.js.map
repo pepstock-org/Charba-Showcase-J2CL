@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"JsArray$SomeCallbackFn$$Overlay.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;MAgNmB,Q;;QAIA,4G,2DAAWA,E,gBAAQC,E,kBAAQC,E;EAA3BC,mB;EACbA,0F;;;QALa,O;EAAAC,2B;EAAAA;",
+"sources":["JsArray.java"],
+"names":["p0","p1","p2","elemental2.core.JsArray$SomeCallbackFn$$Overlay.onInvoke__$devirt","elemental2.core.JsArray$SomeCallbackFn$$Overlay.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ExtensionsView$DataLabelsCase$2.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;MAqGoD,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,6F;EAAAA,iB;;;CAAA,gF;EAAAC,iC;;;CAC5B,U;EACpBC,wC;;;QAFgD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ExtensionsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ExtensionsView$DataLabelsCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$DataLabelsCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$DataLabelsCase$2.<init>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$DataLabelsCase$2.create","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$DataLabelsCase$2.<clinit>"]
+}
+

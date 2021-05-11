@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CallbacksBarCase$1.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;;MA4DkE,E;;CAAA,W;EAAAA,Q;EAAAA;6F;;;QAAA,+E;EAAAC,a;EAAAA,yB;EAAAA,+K;EAAAA,iB;;;CAAA,uJ;EAAAC,yG;EAAAA,iC;;;CAGhD,6D,uBAAsBC,O;EACpCC,yE;;;;CAJ8D,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["CallbacksBarCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBarCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBarCase$1.invoke","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBarCase$1.<clinit>"]
+}
+

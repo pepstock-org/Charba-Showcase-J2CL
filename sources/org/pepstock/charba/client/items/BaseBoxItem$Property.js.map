@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseBoxItem$Property.impl.java.js",
+"lineCount":125,
+"mappings":"A;;;;;;;;;;;;;;MAkCM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAUiB,+DAVjBA,C;;;QAiBI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,wI;EAAAA,iB;;;CAAA,qG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,6E;;;CASa,S;EACbC,4E;;;QA5BG,2B;EAAAC,mB;EAAAA;GAAAA,wIAAAA;G;EAAAA,gI;;;QAAA,U;EAAAC,mB;EAAAA,0hB;;;QAEJ,gE;EAAAC,yG;;;QACA,kE;EAAAA,2G;;;QACA,mE;EAAAA,4G;;;QACA,iE;EAAAA,0G;;;QACA,kE;EAAAA,2G;;;QACA,mE;EAAAA,4G;;;QAPI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,yP;EACAA,iQ;EACAA,qQ;EACAA,6P;EACAA,iQ;EACAA,qQ;EAPIA,2F;;;;;;;;;;;;;AAAA;4E;AAAA;8E;AAAA;+E;AAAA;6E;AAAA;8E;AAAA;+E;AAAA;oF;AAEJ;iF;AACA;mF;AACA;oF;AACA;kF;AACA;mF;AACA;;",
+"sources":["BaseBoxItem.java"],
+"names":["org.pepstock.charba.client.items.BaseBoxItem$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.BaseBoxItem$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.BaseBoxItem$Property.<init>","org.pepstock.charba.client.items.BaseBoxItem$Property.value","org.pepstock.charba.client.items.BaseBoxItem$Property.valueOf","org.pepstock.charba.client.items.BaseBoxItem$Property.values","org.pepstock.charba.client.items.BaseBoxItem$Property.<synthetic: getter>","org.pepstock.charba.client.items.BaseBoxItem$Property.<clinit>"]
+}
+

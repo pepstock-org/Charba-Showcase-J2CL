@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TrendAndForecastCase$2.impl.java.js",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAqHsG,E;;CAAA,W;EAAAA,Q;EAAAA;iG;EAAAA;OA1BxFC,+FA0BwFD,C;;;QAAA,oI;EAAAE,a;EAAAA,yB;EAAAA,2P;EAAAA,iB;;;CAAA,gN;EAAAC,6G;EAAAA,yH;EAAAA,kF;;;CAG/E,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,oY;;;QAPkG,O;EAAAI,qB;EAAAA,kB;EAAAA;",
+"sources":["TrendAndForecastCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase$2.<synthetic: ctor_js>","adapter","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase$2.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase$2.onTitle","item","ds","dp","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase$2.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HorizontalBarDataset.impl.java.js",
+"lineCount":104,
+"mappings":"A;;;;;;;;;;;MA8Ba,oB;;CAAA,W;EAAAA,Q;;;;QAML,S;EAAAC,+B;EAAAA,2C;EAAAA,0E;EAAAA,iB;;;;CAAA,6D;EACNC,6I;;;;QASM,gB,gBAA6BC,M;EAA7BF,+B;EAAAA,2C;EAAAA,uF;EAAAA,iB;;;;CAAA,oE,gBAA6BE,M;EACnCD,0K;;;;QAQM,6D,yBAAsCE,a;EAAtCH,+B;EAAAA,2C;EAAAA,2I;EAAAA,iB;;;;CAAA,iH,yBAAsCG,a;EAC5CF,kN;;;;QASM,sE,yBAAsCE,a,iBAAuBD,M;EAA7DF,+B;EAAAA,2C;EAAAA,4J;EAAAA,iB;;;;CAAA,0H,yBAAsCG,a,iBAAuBD,M;EACnED,+O;;;;QASS,iD,aAA0BG,I,iBAAcF,M;EAAxCF,+B;EAAAA,2C;EAAAA,8H;EAAAA,iB;;;;CAAA,qG,aAA0BI,I,iBAAcF,M;EACjDD,qL;;;;QAUS,uG,aAA0BG,I,0BAAuBD,a,iBAAuBD,M;EAAxEF,+B;EAAAA,2C;EAAAA,mM;EAAAA,iB;;;;CAAA,2J,aAA0BI,I,0BAAuBD,a,iBAAuBD,M;EACjFD,oL;EAEAA,4H;;;CASW,0D,kBAAuBI,S;EAElCC,4H;;;QAtEW,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["HorizontalBarDataset.java"],
+"names":["org.pepstock.charba.client.data.HorizontalBarDataset.<synthetic: ctor_js>","org.pepstock.charba.client.data.HorizontalBarDataset.<synthetic: ctor_create>","org.pepstock.charba.client.data.HorizontalBarDataset.<init>","hidden","defaultValues","type","indexAxis","org.pepstock.charba.client.data.HorizontalBarDataset.setIndexAxis","org.pepstock.charba.client.data.HorizontalBarDataset.<clinit>"]
+}
+

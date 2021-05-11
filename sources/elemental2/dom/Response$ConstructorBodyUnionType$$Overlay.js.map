@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Response$ConstructorBodyUnionType$$Overlay.impl.java.js",
+"lineCount":94,
+"mappings":"A;;;;;;;;;;;;;;MA8BmB,Q;;QAE0B,sB,UAAUA,C;EAAVC,mB;EACvCA,uD;;;QAIkB,0E;EAAAC,mB;EAClBA,0G;;;QAIsB,8E;EAAAC,mB;EACtBA,kH;;;QAIW,mE;EAAAC,mB;EACXA,4F;;;QAIe,uE;EAAAC,mB;EACfA,oG;;;QAIqB,6E;EAAAC,mB;EACrBA,gH;;;QAIa,qE;EAAAC,mB;EACbA,iD;;;QAIsB,8E;EAAAC,mB;EACtBA,kH;;;QAIc,0E;EAAAC,mB;EACdA,mE;;;QAIc,8E;EAAAC,mB;EACdA,uE;;;QAIc,mE;EAAAC,mB;EACdA,4D;;;QAIc,uE;EAAAC,mB;EACdA,gE;;;QAIc,6E;EAAAC,mB;EACdA,sE;;;QAIc,qE;EAAAC,mB;EACdA,yD;;;QAIc,8E;EAAAC,mB;EACdA,uE;;;QAzEa,O;EAAAC,2B;EAAAA;",
+"sources":["Response.java"],
+"names":["o","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.of","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.asArrayBuffer__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.asArrayBufferView__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.asBlob__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.asFormData__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.asReadableStream__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.asString__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.asURLSearchParams__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.isArrayBuffer__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.isArrayBufferView__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.isBlob__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.isFormData__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.isReadableStream__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.isString__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.isURLSearchParams__$devirt","elemental2.dom.Response$ConstructorBodyUnionType$$Overlay.<clinit>"]
+}
+

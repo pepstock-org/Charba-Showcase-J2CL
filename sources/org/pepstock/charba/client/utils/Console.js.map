@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Console.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;MAuBmB,O;;CAAA,W;EAAAA,Q;;;QAKV,S;EAAAC,8B;EAAAA,8D;EAAAA,iB;;;CAAA,iD;EAAAC,iC;;;QAUW,+B,iBAAcC,O;EAAdC,kB;EAClBA,uF;;;QAUkB,uB,UAAWC,M;EAAXC,kB;EAClBA,2B;;;QAUkB,0B,UAAcD,M;EAAdE,kB;EAClBA,8B;;;QAtCiB,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"sources":["Console.java"],
+"names":["org.pepstock.charba.client.utils.Console.<synthetic: ctor_js>","org.pepstock.charba.client.utils.Console.<synthetic: ctor_create>","org.pepstock.charba.client.utils.Console.<init>","objects","org.pepstock.charba.client.utils.Console.log","object","org.pepstock.charba.client.utils.Console.dir","org.pepstock.charba.client.utils.Console.dirxml","org.pepstock.charba.client.utils.Console.<clinit>"]
+}
+

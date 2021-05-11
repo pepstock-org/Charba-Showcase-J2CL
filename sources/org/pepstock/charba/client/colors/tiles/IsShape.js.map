@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsShape.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;;;;MA0BiB,O;;QAQD,0D,gBAAgBA,K;EAAhBC,kB;EACdA,yK;;;QASW,+D,gBAAqBD,K;EAArBE,kB;EACXA,+J;;;CAQW,a;;CAOL,gB;;QAlCS,O;EAAAC,0B;EAAAA;",
+"sources":["IsShape.java"],
+"names":["shape","org.pepstock.charba.client.colors.tiles.IsShape.isValid","org.pepstock.charba.client.colors.tiles.IsShape.checkIfValid","org.pepstock.charba.client.colors.tiles.IsShape.<clinit>"]
+}
+

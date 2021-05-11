@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"GradientScope.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MA0BY,a;;CAAA,W;EAAAA,Q;EAAAA;OAYU,yDAZVA,C;;;QAmBH,gD,8DAAqBC,K;EAArBC,oC;EAAAA,kI;EAAAA,iB;;;CAAA,+F,8DAAqBD,K;EAArBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uE;;;CASa,S;EACbC,sE;;;QA9BU,2B;EAAAC,wB;EAAAA;GAAAA,4IAAAA;G;EAAAA,+H;;;QAAA,U;EAAAC,wB;EAAAA,wO;;;QAEX,4D;EAAAC,+G;;;QAIA,6D;EAAAA,gH;;;QANW,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EAEXA,oQ;EAIAA,wQ;EANWA,0F;;;;;;;;;;;;;AAAA;6E;AAAA;8E;AAAA;mF;AAEX;kF;AAIA;;",
+"sources":["GradientScope.java"],
+"names":["org.pepstock.charba.client.colors.GradientScope.<synthetic: ctor_js>","value","org.pepstock.charba.client.colors.GradientScope.<synthetic: ctor_create>","org.pepstock.charba.client.colors.GradientScope.<init>","org.pepstock.charba.client.colors.GradientScope.value","org.pepstock.charba.client.colors.GradientScope.valueOf","org.pepstock.charba.client.colors.GradientScope.values","org.pepstock.charba.client.colors.GradientScope.<synthetic: getter>","org.pepstock.charba.client.colors.GradientScope.<clinit>"]
+}
+

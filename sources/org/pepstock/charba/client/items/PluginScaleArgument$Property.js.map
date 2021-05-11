@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginScaleArgument$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,uEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gJ;EAAAA,iB;;;CAAA,6G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;;;CASa,S;EACbC,oF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,wJ;;;QAEZ,0E;EAAAC,mH;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iR;EAFYA,mG;;;;;;;;;;;;;AAAA;sF;AAAA;4F;AAEZ;;",
+"sources":["PluginScaleArgument.java"],
+"names":["org.pepstock.charba.client.items.PluginScaleArgument$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.PluginScaleArgument$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginScaleArgument$Property.<init>","org.pepstock.charba.client.items.PluginScaleArgument$Property.value","org.pepstock.charba.client.items.PluginScaleArgument$Property.valueOf","org.pepstock.charba.client.items.PluginScaleArgument$Property.values","org.pepstock.charba.client.items.PluginScaleArgument$Property.<synthetic: getter>","org.pepstock.charba.client.items.PluginScaleArgument$Property.<clinit>"]
+}
+

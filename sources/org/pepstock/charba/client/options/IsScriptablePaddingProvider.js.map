@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsScriptablePaddingProvider.impl.java.js",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MA0BiB,2B;;CAOG,sB;;CAOd,kE,2BAA8BA,e;;QAdnB,O;EAAAC,8C;EAAAA;",
+"sources":["IsScriptablePaddingProvider.java"],
+"names":["paddingCallback","org.pepstock.charba.client.options.IsScriptablePaddingProvider.<clinit>"]
+}
+

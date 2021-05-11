@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AxisUpdateCallback.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAyBiB,kB;;CAQX,0G,aAAoBA,I,kBAAeC,I;;CAQnC,yG,aAAmBD,I,kBAAeC,I;;QAhBvB,O;EAAAC,qC;EAAAA;",
+"sources":["AxisUpdateCallback.java"],
+"names":["axis","item","org.pepstock.charba.client.callbacks.AxisUpdateCallback.<clinit>"]
+}
+

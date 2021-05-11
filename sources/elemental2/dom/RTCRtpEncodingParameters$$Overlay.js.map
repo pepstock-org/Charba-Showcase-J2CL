@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"RTCRtpEncodingParameters$$Overlay.impl.java.js",
+"lineCount":27,
+"mappings":"A;;;;;;;MAyBiB,Q;;QA8BiB,U;EAAAA,mB;EAC9BA,qH;;;QA6DW,4E,2DAAcC,G;EAAdC,mB;EACXA,0E;;;QAIW,kE,0DAAcD,G;EAAdC,mB;EACXA,0E;;;QAlGa,O;EAAAC,2B;EAAAA;",
+"sources":["RTCRtpEncodingParameters.java"],
+"names":["elemental2.dom.RTCRtpEncodingParameters$$Overlay.create","rid","elemental2.dom.RTCRtpEncodingParameters$$Overlay.setRid__$devirt","elemental2.dom.RTCRtpEncodingParameters$$Overlay.<clinit>"]
+}
+

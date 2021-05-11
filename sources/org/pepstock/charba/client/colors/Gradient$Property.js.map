@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Gradient$Property.impl.java.js",
+"lineCount":116,
+"mappings":"A;;;;;;;;;;;;;;;MAmDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,6DARTA,C;EAAAA;OAUa,4DAVbA,C;;;QAkBJ,+F,8DAAgBC,K,oBAAkBC,I;EAAlCC,+B;EAAAA,2L;EAAAA,iB;;;CAAA,kJ,8DAAgBF,K,oBAAkBC,I;EAAlCE,qC;EAAAA,2C;EAAAA,mE;EACPA,2E;EACAA,yE;;;CASa,S;EACbC,0E;;;CAQU,8C;EACVC,yE;;;QAvCW,2B;EAAAC,mB;EAAAA;GAAAA,sIAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,mB;EAAAA,2b;;;QAEZ,iF;EAAAC,0H;;;QACA,+E;EAAAA,wH;;;QACA,sF;EAAAA,+H;;;QACA,gF;EAAAA,yH;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,ib;EACAA,0a;EACAA,sc;EACAA,8a;EALYA,yF;;;;;;;;;;;;;;AAAA;6F;AAAA;2F;AAAA;kG;AAAA;4F;AAAA;kF;AAEZ;kG;AACA;gG;AACA;uG;AACA;;",
+"sources":["Gradient.java"],
+"names":["org.pepstock.charba.client.colors.Gradient$Property.<synthetic: ctor_js>","value","type","org.pepstock.charba.client.colors.Gradient$Property.<synthetic: ctor_create>","org.pepstock.charba.client.colors.Gradient$Property.<init>","org.pepstock.charba.client.colors.Gradient$Property.value","org.pepstock.charba.client.colors.Gradient$Property.type","org.pepstock.charba.client.colors.Gradient$Property.valueOf","org.pepstock.charba.client.colors.Gradient$Property.values","org.pepstock.charba.client.colors.Gradient$Property.<synthetic: getter>","org.pepstock.charba.client.colors.Gradient$Property.<clinit>"]
+}
+

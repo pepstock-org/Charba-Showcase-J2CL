@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Envelop.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;MAwBsB,O;;CAAA,W;EAAAA,Q;;;;CAKX,mD;EACTC,+E;;;;CAQS,0D,gBAAgBC,Q;EACzBD,kG;;;;CAQS,mE,UAAUE,O;EACnBF,kG;;;;CASS,4E,UAAUE,O,iBAAiBD,Q;EACpCD,8G;;;CAQiB,8B,UAAaE,O;EAC9BC,+F;;;QA3CoB,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"sources":["Envelop.java"],
+"names":["org.pepstock.charba.client.commons.Envelop.<synthetic: ctor_js>","org.pepstock.charba.client.commons.Envelop.<init>","nullable","content","org.pepstock.charba.client.commons.Envelop.setContent","org.pepstock.charba.client.commons.Envelop.<clinit>"]
+}
+

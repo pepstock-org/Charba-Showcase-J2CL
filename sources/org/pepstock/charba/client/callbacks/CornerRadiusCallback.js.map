@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CornerRadiusCallback.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;;;MAyBiB,oB;;QAAA,M;EAAAA,+B;EAAAA,gE;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["CornerRadiusCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.CornerRadiusCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.CornerRadiusCallback.<clinit>"]
+}
+

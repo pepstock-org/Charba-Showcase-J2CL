@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsMirrorCase$2.impl.java.js",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;;;;;;;MA6GwC,E;;CAAA,W;EAAAA,Q;EAAAA;8F;;;QAAA,gF;EAAAC,a;EAAAA,yB;EAAAA,iL;EAAAA,iB;;;CAAA,yJ;EAAAC,0G;EAAAA,iC;;;CAGvB,iE,0BAAyBC,O;EACtCC,IAAWC,EAAXD,6S;EACAA,8R;;;;CALoC,2D;EAAAA,oJ;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["DataLabelsMirrorCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMirrorCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMirrorCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMirrorCase$2.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMirrorCase$2.invoke","ds","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMirrorCase$2.<clinit>"]
+}
+

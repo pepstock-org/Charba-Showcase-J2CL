@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LogarithmicAxisOnScatterCase$1.impl.java.js",
+"lineCount":47,
+"mappings":"A;;;;;;;;;;;;;;;MAkFkD,E;;CAAA,W;EAAAA,Q;EAAAA;oG;;;QAAA,sF;EAAAC,a;EAAAA,yB;EAAAA,6L;EAAAA,iB;;;CAAA,qK;EAAAC,gH;EAAAA,iC;;;CAGjC,wF,aAAgBC,I,gBAAaC,K,gBAAWC,K,uBAAoBC,M;EACzEC,IAAIC,MAAJD,qG;EACAA;GACCA,oBADDA;G;EAGAA,U;;;QAR8C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["LogarithmicAxisOnScatterCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase$1.<init>","axis","value","index","values","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase$1.onCallback","remain","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase$1.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultsBoxAnnotation.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;;;;;MAyBU,uB;;CAQc,W;;CAUX,kB;;CASA,mB;;CASoC,2B;;QA5BzB,kF;EAAAA,kC;EACtBA,Y;;;QASW,yF;EAAAC,kC;EACXA,iG;;;QAQW,0F;EAAAC,kC;EACXA,kG;;;QAQ+C,kG;EAAAC,kC;EAC/CA,Y;;;QArCQ,O;EAAAC,0C;EAAAA,uC;EAAAA,iC;EAAAA;",
+"sources":["IsDefaultsBoxAnnotation.java"],
+"names":["org.pepstock.charba.client.annotation.IsDefaultsBoxAnnotation.getType__$default","org.pepstock.charba.client.annotation.IsDefaultsBoxAnnotation.getBorderWidth__$default","org.pepstock.charba.client.annotation.IsDefaultsBoxAnnotation.getCornerRadius__$default","org.pepstock.charba.client.annotation.IsDefaultsBoxAnnotation.getCornerRadiusCallback__$default","org.pepstock.charba.client.annotation.IsDefaultsBoxAnnotation.<clinit>"]
+}
+

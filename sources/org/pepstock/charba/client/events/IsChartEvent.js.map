@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsChartEvent.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;;;MA2BiB,Y;;CAOO,Y;;QAPP,O;EAAAA,+B;EAAAA;",
+"sources":["IsChartEvent.java"],
+"names":["org.pepstock.charba.client.events.IsChartEvent.<clinit>"]
+}
+

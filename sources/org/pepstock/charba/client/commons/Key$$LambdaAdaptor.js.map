@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Key$$LambdaAdaptor.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mE;EAAAA,0H;;;CAAA,gH;EAAAC,iC;EAAAA,sE;;;CAAA,S;EAAAC,yC;EAAAA,mG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["Key.java"],
+"names":["org.pepstock.charba.client.commons.Key$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.commons.Key$$LambdaAdaptor.<init>","org.pepstock.charba.client.commons.Key$$LambdaAdaptor.value","org.pepstock.charba.client.commons.Key$$LambdaAdaptor.<clinit>"]
+}
+

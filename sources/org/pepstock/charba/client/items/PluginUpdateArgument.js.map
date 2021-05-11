@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginUpdateArgument.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;;;MA8Ba,oB;;CAAA,W;EAAAA,Q;;;QAsCL,0D,0BAAkDC,O;EAAlDC,+B;EAAAA,2C;EAAAA,mI;EAAAA,iB;;;CAAA,+G,0BAAkDD,O;EACxDE,4S;;;CAQ4B,W;EAE5BC,IAAOC,IAAPD,8N;EAEAA,8F;;;QAnDW,O;EAAAE,uC;EAAAA,oC;EAAAA;",
+"sources":["PluginUpdateArgument.java"],
+"names":["org.pepstock.charba.client.items.PluginUpdateArgument.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.PluginUpdateArgument.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginUpdateArgument.<init>","org.pepstock.charba.client.items.PluginUpdateArgument.getMode","mode","org.pepstock.charba.client.items.PluginUpdateArgument.<clinit>"]
+}
+

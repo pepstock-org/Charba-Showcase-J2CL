@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"StandingPluginOnLineCase$2.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;;;;MAsHqD,E;;CAAA,W;EAAAA,Q;EAAAA;qG;;;QAAA,yG;EAAAC,a;EAAAA,yB;EAAAA,sN;EAAAA,iB;;;CAAA,yL;EAAAC,iH;EAAAA,qF;;;CAGtC,yD,gBAA4BC,K;EACvCC,IAAUC,OAAVD,M;EACAA,IAAUE,aAAVF,gD;EACAA,IAAcG,GAAdH,2G;EAEAA,IAAUI,MAAVJ,2L;EACAA,IAAUK,MAAVL,2L;EAEAA,IAAOM,iBAAPN,4E;EAEAA,IAAOO,CAAPP,mC;EACAA,IAAOQ,CAAPR,uB;EAEAA,SAASS,CAATT;GACCA,IAAIU,KAAJV,aADDA;GAECA,6IAFDA;GAGCA,sCAHDA;GAICA,uNAJDA;GAKCA,2OALDA;GAMCA,qDANDA;GAOCA,0BAPDA;G;;;QAhBiD,O;EAAAW,qB;EAAAA,kB;EAAAA;",
+"sources":["StandingPluginOnLineCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$2.<init>","chart","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$2.onAfterDatasetsDraw","padding","datasetsCount","ctx","scaleX","scaleY","heightAmongLabels","x","y","i","index","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$2.<clinit>"]
+}
+

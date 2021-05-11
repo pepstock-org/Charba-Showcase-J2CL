@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScaleLimit.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;MA0BmB,U;;CAAA,W;EAAAA,Q;EAAAA;OAkCU,6DAlCVA,C;;;QA0ClB,6G,4BAA+BC,c,WAA6BC,Y;EAA5DC,qB;EAAAA,iC;EAAAA,gM;EAAAA,iB;;;CAAA,uJ,4BAA+BF,c,WAA6BC,Y;EAC3DE,2L;EAGAA,6M;;;CAUW,qB,eAAmBC,G;EAC9BC,gJ;;;CAWa,e;EACbC,wO;;;QArEiB,O;EAAAC,6B;EAAAA,0B;EAAAA,qB;EAAAA;",
+"sources":["ScaleLimit.java"],
+"names":["org.pepstock.charba.client.zoom.ScaleLimit.<synthetic: ctor_js>","defaultOptions","nativeObject","org.pepstock.charba.client.zoom.ScaleLimit.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.ScaleLimit.<init>","min","org.pepstock.charba.client.zoom.ScaleLimit.setMinRange","org.pepstock.charba.client.zoom.ScaleLimit.getMinRange","org.pepstock.charba.client.zoom.ScaleLimit.<clinit>"]
+}
+

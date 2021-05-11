@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ChangingLegendLabelsCase$1.impl.java.js",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;;;;;;MAoE0F,E;;CAAA,W;EAAAA,Q;EAAAA;gG;;;QAAA,kF;EAAAC,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;CAAA,6J;EAAAC,4G;EAAAA,iC;;;CAG1D,0E,gBAA6BC,K,+BAA6BC,a;EACtFC;GACCA,IAAIC,IAAJD,gDADDA;GAECA;IAAAA,IAAqBE,IAArBF,oFAAAA;;KACCA,IAAQG,KAARH,wEADDA;KAECA,sEAFDA;KAGCA,IAAOI,IAAPJ,qFAHDA;KAICA,uCAJDA;;IAFDA;G;EASAA,qB;;;QAbsF,O;EAAAK,qB;EAAAA,kB;EAAAA;",
+"sources":["ChangingLegendLabelsCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.elements.ChangingLegendLabelsCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.ChangingLegendLabelsCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.ChangingLegendLabelsCase$1.<init>","chart","defaultLabels","org.pepstock.charba.showcase.j2cl.cases.elements.ChangingLegendLabelsCase$1.generateLegendLabels","size","item","color","text","org.pepstock.charba.showcase.j2cl.cases.elements.ChangingLegendLabelsCase$1.<clinit>"]
+}
+

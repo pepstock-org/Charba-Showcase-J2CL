@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultChartElements.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;;;;;MAyBmB,oB;;CAAA,W;EAAAA,Q;;;QAOX,8D,0BAAuCC,Q;EAAvCC,+B;EAAAA,2C;EAAAA,iJ;EAAAA,iB;;;CAAA,4H,0BAAuCD,Q;EAC7CE,oqB;;;QARiB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["DefaultChartElements.java"],
+"names":["org.pepstock.charba.client.defaults.chart.DefaultChartElements.<synthetic: ctor_js>","elements","org.pepstock.charba.client.defaults.chart.DefaultChartElements.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartElements.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartElements.<clinit>"]
+}
+

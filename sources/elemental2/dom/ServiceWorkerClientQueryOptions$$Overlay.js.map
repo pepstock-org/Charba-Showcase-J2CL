@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ServiceWorkerClientQueryOptions$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEwB,U;EAAAA,mB;EACrCA,4H;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["ServiceWorkerClientQueryOptions.java"],
+"names":["elemental2.dom.ServiceWorkerClientQueryOptions$$Overlay.create","elemental2.dom.ServiceWorkerClientQueryOptions$$Overlay.<clinit>"]
+}
+

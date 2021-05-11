@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelsHandler$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,gEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,yIAAAA;G;EAAAA,iI;;;QAAA,U;EAAAC,mB;EAAAA,kJ;;;QAEZ,oE;EAAAC,6G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,uQ;EAFYA,4F;;;;;;;;;;;;;AAAA;gF;AAAA;qF;AAEZ;;",
+"sources":["LabelsHandler.java"],
+"names":["org.pepstock.charba.client.data.LabelsHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.LabelsHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.data.LabelsHandler$Property.<init>","org.pepstock.charba.client.data.LabelsHandler$Property.value","org.pepstock.charba.client.data.LabelsHandler$Property.valueOf","org.pepstock.charba.client.data.LabelsHandler$Property.values","org.pepstock.charba.client.data.LabelsHandler$Property.<synthetic: getter>","org.pepstock.charba.client.data.LabelsHandler$Property.<clinit>"]
+}
+

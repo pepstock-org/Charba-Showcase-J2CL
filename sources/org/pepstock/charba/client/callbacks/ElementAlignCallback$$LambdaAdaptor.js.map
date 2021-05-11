@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ElementAlignCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,2D;EAAAC,+C;EAAAA,0H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ElementAlignCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.ElementAlignCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.ElementAlignCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.ElementAlignCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.ElementAlignCallback$$LambdaAdaptor.<clinit>"]
+}
+

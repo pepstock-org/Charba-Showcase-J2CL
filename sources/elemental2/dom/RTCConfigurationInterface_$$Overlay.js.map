@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"RTCConfigurationInterface_$$Overlay.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;MAyBiB,Q;;QA+BF,kJ,8DAAuEA,U;EAAvEC,mB;EACXA,+F;;;QAhCa,O;EAAAC,2B;EAAAA;",
+"sources":["RTCConfigurationInterface_.java"],
+"names":["iceServers","elemental2.dom.RTCConfigurationInterface_$$Overlay.setIceServers__$devirt","elemental2.dom.RTCConfigurationInterface_$$Overlay.<clinit>"]
+}
+

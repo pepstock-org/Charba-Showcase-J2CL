@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NavigationPreloadState$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEe,U;EAAAA,mB;EAC5BA,mH;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["NavigationPreloadState.java"],
+"names":["elemental2.dom.NavigationPreloadState$$Overlay.create","elemental2.dom.NavigationPreloadState$$Overlay.<clinit>"]
+}
+

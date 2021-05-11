@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Major$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAgCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,2DALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,oI;EAAAA,iB;;;CAAA,iG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,yE;;;CASa,S;EACbC,wE;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,oIAAAA;G;EAAAA,4H;;;QAAA,U;EAAAC,mB;EAAAA,8I;;;QAEZ,gE;EAAAC,yG;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iQ;EAFYA,uF;;;;;;;;;;;;;AAAA;4E;AAAA;gF;AAEZ;;",
+"sources":["Major.java"],
+"names":["org.pepstock.charba.client.options.Major$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.Major$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.Major$Property.<init>","org.pepstock.charba.client.options.Major$Property.value","org.pepstock.charba.client.options.Major$Property.valueOf","org.pepstock.charba.client.options.Major$Property.values","org.pepstock.charba.client.options.Major$Property.<synthetic: getter>","org.pepstock.charba.client.options.Major$Property.<clinit>"]
+}
+

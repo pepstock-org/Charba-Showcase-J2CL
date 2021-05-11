@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultAnimations.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAwBiB,mB;;CAQR,kE,iCAA6BA,U;;CAQR,kE,iCAA6BA,U;;QAhB1C,O;EAAAC,sC;EAAAA;",
+"sources":["IsDefaultAnimations.java"],
+"names":["collection","org.pepstock.charba.client.defaults.IsDefaultAnimations.<clinit>"]
+}
+

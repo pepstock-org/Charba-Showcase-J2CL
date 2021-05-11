@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Console$$Overlay.impl.java.js",
+"lineCount":21,
+"mappings":"A;;;;;;MAyBa,Q;;QAqCO,4E,oCAAaA,W,WAAoBC,U;EAAjCC,mB;EAChBA,oG;;;QAIgB,0D,oCAAaF,W;EAAbE,mB;EAChBA,wF;;;QA3CS,O;EAAAC,2B;EAAAA;",
+"sources":["Console.java"],
+"names":["tabularData","properties","elemental2.dom.Console$$Overlay.table__$devirt","elemental2.dom.Console$$Overlay.<clinit>"]
+}
+

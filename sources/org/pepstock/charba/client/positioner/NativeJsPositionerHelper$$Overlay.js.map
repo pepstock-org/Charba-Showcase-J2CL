@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeJsPositionerHelper$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MAgCY,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["NativeJsPositionerHelper.java"],
+"names":["org.pepstock.charba.client.positioner.NativeJsPositionerHelper$$Overlay.<clinit>"]
+}
+

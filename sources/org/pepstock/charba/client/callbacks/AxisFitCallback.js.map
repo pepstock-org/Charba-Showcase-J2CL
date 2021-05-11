@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AxisFitCallback.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAyBiB,e;;CAQX,uG,aAAiBA,I,kBAAeC,I;;CAQhC,sG,aAAgBD,I,kBAAeC,I;;QAhBpB,O;EAAAC,kC;EAAAA;",
+"sources":["AxisFitCallback.java"],
+"names":["axis","item","org.pepstock.charba.client.callbacks.AxisFitCallback.<clinit>"]
+}
+

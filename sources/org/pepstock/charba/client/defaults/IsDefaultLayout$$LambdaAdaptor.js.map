@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultLayout$$LambdaAdaptor.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,c;EAAAC,kD;EAAAA,gH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["IsDefaultLayout.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultLayout$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.defaults.IsDefaultLayout$$LambdaAdaptor.<init>","org.pepstock.charba.client.defaults.IsDefaultLayout$$LambdaAdaptor.getPadding","org.pepstock.charba.client.defaults.IsDefaultLayout$$LambdaAdaptor.<clinit>"]
+}
+

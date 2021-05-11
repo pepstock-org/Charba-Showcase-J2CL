@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasLegendText$$LambdaAdaptor.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,0I;;;CAAA,gI;EAAAC,iC;EAAAA,8E;;;CAAA,wB;EAAAC,mD;EAAAA,2G;;;;CAAA,W;EAAAC,+F;;;;CAAA,iB;EAAAC,qG;;;;CAAA,c;EAAAC,kG;;;;CAAA,sB;EAAAC,2G;;;;CAAA,2B;EAAAC,gH;;;;CAAA,2D;EAAAA,gJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["HasLegendText.java"],
+"names":["org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.<init>","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.getLegendTextHandler","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.getText","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.getTextAsHtml","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.isHtmlText","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.setHtmlText","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.setText","org.pepstock.charba.client.items.HasLegendText$$LambdaAdaptor.<clinit>"]
+}
+

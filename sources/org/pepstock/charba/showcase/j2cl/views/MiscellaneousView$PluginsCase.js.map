@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MiscellaneousView$PluginsCase.impl.java.js",
+"lineCount":134,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MA6Qc,W;;CAAA,W;EAAAA,Q;EAAAA;OA4BS,+EA5BTA,C;EAAAA;OA8Bc,iFA9BdA,C;;;QAgCJ,qG,8DAAmBC,K,qBAAmBC,O;EAAtCC,kC;EAAAA,sN;EAAAA,iB;;;CAAA,0K,8DAAmBF,K,qBAAmBC,O;EAAtCE,qC;EAAAA,2C;EAAAA,mE;EACPA,6F;EACAA,iG;;;CAGa,Y;EACbC,4F;;;CAGkB,c;EAClBC,8F;;;QA1CW,2B;EAAAC,sB;EAAAA;GAAAA,8JAAAA;G;EAAAA,mJ;;;QAAA,U;EAAAC,sB;EAAAA,klB;;;QAEZ,mF;EAAAC,kI;;;QAKA,kF;EAAAA,iI;;;QAKA,sF;EAAAA,qI;;;QAKA,4F;EAAAA,2I;;;QAKA,oG;EAAAA,mJ;;;QAtBY,O;EAAAC,8B;EAAAA,2B;EAAAA,e;EAEZA,kY;EAKAA,wX;EAKAA,qY;EAKAA,ga;EAKAA,0b;EAtBYA,8G;;;;;;;;;;;;;;;;;;AAAA;kG;AAAA;iG;AAAA;qG;AAAA;2G;AAAA;mH;AAAA;uG;AAEZ;uG;AAKA;sG;AAKA;0G;AAKA;gH;AAKA;;",
+"sources":["MiscellaneousView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.<init>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.getLabel","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.getFactory","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.valueOf","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.values","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase.<clinit>"]
+}
+

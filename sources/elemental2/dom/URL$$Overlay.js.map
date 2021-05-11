@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"URL$$Overlay.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;MAuBa,Q;;QAoEgB,sC,aAAqBA,G;EAArBC,mB;EACzBA,uF;;;QAMyB,6C,oBAA4BD,G;EAA5BC,mB;EACzBA,uF;;;QAIyB,6C,oBAA4BD,G;EAA5BC,mB;EACzBA,uF;;;QAjFS,O;EAAAC,2B;EAAAA;",
+"sources":["URL.java"],
+"names":["obj","elemental2.dom.URL$$Overlay.createObjectURL","elemental2.dom.URL$$Overlay.<clinit>"]
+}
+

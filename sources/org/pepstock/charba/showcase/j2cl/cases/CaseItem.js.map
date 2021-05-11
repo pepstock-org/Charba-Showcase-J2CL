@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CaseItem.impl.java.js",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAEiB,Q;;CAET,Y;;CAEK,c;;QAJI,O;EAAAA,2B;EAAAA;",
+"sources":["CaseItem.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.CaseItem.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultTransitions.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAwBiB,oB;;CAQR,yD,wBAAoBA,U;;CAQC,yD,wBAAoBA,U;;QAhBjC,O;EAAAC,uC;EAAAA;",
+"sources":["IsDefaultTransitions.java"],
+"names":["transition","org.pepstock.charba.client.defaults.IsDefaultTransitions.<clinit>"]
+}
+

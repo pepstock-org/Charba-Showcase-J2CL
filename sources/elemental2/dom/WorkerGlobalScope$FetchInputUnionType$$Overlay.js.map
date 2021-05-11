@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"WorkerGlobalScope$FetchInputUnionType$$Overlay.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA+BmB,Q;;QAE8B,sB,UAAUA,C;EAAVC,mB;EAC3CA,uD;;;QAIc,0E;EAAAC,mB;EACdA,kG;;;QAIa,yE;EAAAC,mB;EACbA,iD;;;QAIc,0E;EAAAC,mB;EACdA,+D;;;QAIc,yE;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"sources":["WorkerGlobalScope.java"],
+"names":["o","elemental2.dom.WorkerGlobalScope$FetchInputUnionType$$Overlay.of","elemental2.dom.WorkerGlobalScope$FetchInputUnionType$$Overlay.asRequest__$devirt","elemental2.dom.WorkerGlobalScope$FetchInputUnionType$$Overlay.asString__$devirt","elemental2.dom.WorkerGlobalScope$FetchInputUnionType$$Overlay.isRequest__$devirt","elemental2.dom.WorkerGlobalScope$FetchInputUnionType$$Overlay.isString__$devirt","elemental2.dom.WorkerGlobalScope$FetchInputUnionType$$Overlay.<clinit>"]
+}
+

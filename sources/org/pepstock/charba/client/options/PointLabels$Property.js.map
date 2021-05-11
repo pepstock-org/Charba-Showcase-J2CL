@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PointLabels$Property.impl.java.js",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;MAoCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,iEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,6Z;;;QAEZ,sE;EAAAC,+G;;;QACA,6E;EAAAA,sH;;;QACA,+E;EAAAA,wH;;;QACA,sE;EAAAA,+G;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,6Q;EACAA,wS;EACAA,gT;EACAA,6Q;EALYA,6F;;;;;;;;;;;;;AAAA;kF;AAAA;yF;AAAA;2F;AAAA;kF;AAAA;sF;AAEZ;uF;AACA;8F;AACA;gG;AACA;;",
+"sources":["PointLabels.java"],
+"names":["org.pepstock.charba.client.options.PointLabels$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.PointLabels$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.PointLabels$Property.<init>","org.pepstock.charba.client.options.PointLabels$Property.value","org.pepstock.charba.client.options.PointLabels$Property.valueOf","org.pepstock.charba.client.options.PointLabels$Property.values","org.pepstock.charba.client.options.PointLabels$Property.<synthetic: getter>","org.pepstock.charba.client.options.PointLabels$Property.<clinit>"]
+}
+

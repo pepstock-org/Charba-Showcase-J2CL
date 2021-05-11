@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PointStyleRect.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;MAwCY,c;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EAAAC,0E;;;CAcI,oH,iCAA6BC,O,gBAAaC,I,gBAAaC,C,gBAAUC,C,gBAAUC,M,gBAAeC,Q,gBAAiBC,G;EACzHC;GACCA,IAAOC,WAAPD,6BADDA;GAECA,iFAFDA;GAGCA,OAHDA;G;EAKAA,IAAOE,UAAPF,2H;EACAA,8K;;;QArBU,O;EAAAG,iC;EAAAA,8B;EAAAA;",
+"sources":["PointStyleRect.java"],
+"names":["org.pepstock.charba.client.colors.tiles.PointStyleRect.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.PointStyleRect.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.PointStyleRect.<init>","context","size","x","y","radius","rotation","rad","org.pepstock.charba.client.colors.tiles.PointStyleRect.drawPointStyle","changedSize","changedRad","org.pepstock.charba.client.colors.tiles.PointStyleRect.<clinit>"]
+}
+

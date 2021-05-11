@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelPositionCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MA6BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kG;EAAAA,wL;;;CAAA,8K;EAAAC,iC;EAAAA,qG;;;CAAA,iE;EAAAC,gE;EAAAA,sI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["LabelPositionCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.LabelPositionCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.callbacks.LabelPositionCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.callbacks.LabelPositionCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.annotation.callbacks.LabelPositionCallback$$LambdaAdaptor.<clinit>"]
+}
+

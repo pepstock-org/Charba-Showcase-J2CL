@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultPoint.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAOT,a;;CAOA,gB;;CAOA,kB;;CAOA,e;;QA5BS,O;EAAAA,iC;EAAAA,8B;EAAAA;",
+"sources":["IsDefaultPoint.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultPoint.<clinit>"]
+}
+

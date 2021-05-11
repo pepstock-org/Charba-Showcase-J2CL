@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultsEllipseAnnotation.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;;;MAuBU,2B;;CAQG,kB;;QARH,M;EAAAA,sC;EAAAA,8B;;;QAQG,6F;EAAAC,sC;EACXA,yG;;;QATQ,O;EAAAC,8C;EAAAA,2C;EAAAA,iC;EAAAA;",
+"sources":["IsDefaultsEllipseAnnotation.java"],
+"names":["org.pepstock.charba.client.annotation.IsDefaultsEllipseAnnotation.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.IsDefaultsEllipseAnnotation.getBorderWidth__$default","org.pepstock.charba.client.annotation.IsDefaultsEllipseAnnotation.<clinit>"]
+}
+

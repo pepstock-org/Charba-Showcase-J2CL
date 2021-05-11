@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HtmlLegendTitleCallback.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;;;MA0BiB,uB;;QAAA,M;EAAAA,kC;EAAAA,8B;;;QAAA,O;EAAAC,0C;EAAAA;",
+"sources":["HtmlLegendTitleCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback.<clinit>"]
+}
+

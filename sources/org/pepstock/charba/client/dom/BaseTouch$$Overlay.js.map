@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseTouch$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MA+BmB,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["BaseTouch.java"],
+"names":["org.pepstock.charba.client.dom.BaseTouch$$Overlay.<clinit>"]
+}
+

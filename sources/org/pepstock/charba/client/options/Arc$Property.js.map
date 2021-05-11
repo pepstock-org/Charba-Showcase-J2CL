@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Arc$Property.impl.java.js",
+"lineCount":125,
+"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAUS,yDAVTA,C;;;QAiBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,kI;EAAAA,iB;;;CAAA,+F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uE;;;CASa,S;EACbC,sE;;;QA5BW,2B;EAAAC,mB;EAAAA;GAAAA,kIAAAA;G;EAAAA,0H;;;QAAA,U;EAAAC,mB;EAAAA,+gB;;;QAEZ,mE;EAAAC,4G;;;QACA,6D;EAAAA,sG;;;QACA,4D;EAAAA,qG;;;QACA,6D;EAAAA,sG;;;QACA,mE;EAAAA,4G;;;QACA,oE;EAAAA,6G;;;QAPY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,gR;EACAA,yP;EACAA,qP;EACAA,yP;EACAA,gR;EACAA,oR;EAPYA,qF;;;;;;;;;;;;;AAAA;+E;AAAA;yE;AAAA;wE;AAAA;yE;AAAA;+E;AAAA;gF;AAAA;8E;AAEZ;oF;AACA;8E;AACA;6E;AACA;8E;AACA;oF;AACA;;",
+"sources":["Arc.java"],
+"names":["org.pepstock.charba.client.options.Arc$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.Arc$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.Arc$Property.<init>","org.pepstock.charba.client.options.Arc$Property.value","org.pepstock.charba.client.options.Arc$Property.valueOf","org.pepstock.charba.client.options.Arc$Property.values","org.pepstock.charba.client.options.Arc$Property.<synthetic: getter>","org.pepstock.charba.client.options.Arc$Property.<clinit>"]
+}
+

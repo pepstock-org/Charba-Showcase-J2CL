@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ReadableStreamIteratorOptions$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEsB,U;EAAAA,mB;EACnCA,0H;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["ReadableStreamIteratorOptions.java"],
+"names":["elemental2.dom.ReadableStreamIteratorOptions$$Overlay.create","elemental2.dom.ReadableStreamIteratorOptions$$Overlay.<clinit>"]
+}
+

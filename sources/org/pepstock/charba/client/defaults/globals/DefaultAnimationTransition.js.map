@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultAnimationTransition.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;;;;;;MA0Ba,0B;;CAAA,W;EAAAA,Q;;;QASZ,S;EAAAC,qC;EAAAA,iD;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EAAAC,iC;;;CAS0B,gB;EACzBC,+H;;;CAS0B,iB;EAC1BC,gI;;;QA7BW,O;EAAAC,6C;EAAAA,0C;EAAAA,qB;EAEZA,uJ;EAEAA,yJ;;;;;;;;;;;;AAJY;2BAE0B,4FAF1B,C;AAAA;2BAI2B,6FAJ3B;",
+"sources":["DefaultAnimationTransition.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultAnimationTransition.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultAnimationTransition.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultAnimationTransition.<init>","org.pepstock.charba.client.defaults.globals.DefaultAnimationTransition.getAnimation","org.pepstock.charba.client.defaults.globals.DefaultAnimationTransition.getAnimations","org.pepstock.charba.client.defaults.globals.DefaultAnimationTransition.<clinit>"]
+}
+

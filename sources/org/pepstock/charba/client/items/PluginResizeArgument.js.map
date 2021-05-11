@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginResizeArgument.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;MA6BmB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAkCK,kEAlCLA,C;;;QAyCX,0D,0BAAkDC,O;EAAlDC,+B;EAAAA,2C;EAAAA,mI;EAAAA,iB;;;CAAA,+G,0BAAkDD,O;EACxDE,4S;EAEAA,sR;;;CAQe,e;EACfC,+E;;;QArDiB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["PluginResizeArgument.java"],
+"names":["org.pepstock.charba.client.items.PluginResizeArgument.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.PluginResizeArgument.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginResizeArgument.<init>","org.pepstock.charba.client.items.PluginResizeArgument.getSizeItem","org.pepstock.charba.client.items.PluginResizeArgument.<clinit>"]
+}
+

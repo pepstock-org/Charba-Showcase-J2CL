@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasAnimationOptions.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;;;;;;;MA0BiB,mB;;CAOG,yB;;CAQD,gB;;CAeC,iB;;CAeC,kB;;CAcP,8B,gBAA4BA,O;;CAYzB,sB;;QAvEA,M;EAAAC,8B;EAAAA,8B;;;QAeE,gF;EAAAC,8B;EAEjBA;GACCA,+DADDA;G;EAIAA,6D;;;QASkB,iF;EAAAC,8B;EAElBA;GACCA,gEADDA;G;EAIAA,8D;;;QASmB,kF;EAAAC,8B;EAEnBA;GACCA,wGADDA;G;EAIAA,+D;;;QAQY,gG,sDAA4BJ,O;EAA5BK,8B;EAEZA;GACCA,oHADDA;G;;;QAUe,sF;EAAAC,8B;EAEfA;GACCA,4GADDA;G;EAKAA,Y;;;QA9Ee,O;EAAAC,sC;EAAAA;",
+"sources":["HasAnimationOptions.java"],
+"names":["enabled","org.pepstock.charba.client.options.HasAnimationOptions.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.HasAnimationOptions.getAnimation__$default","org.pepstock.charba.client.options.HasAnimationOptions.getAnimations__$default","org.pepstock.charba.client.options.HasAnimationOptions.getTransitions__$default","org.pepstock.charba.client.options.HasAnimationOptions.setAnimationEnabled__$default","org.pepstock.charba.client.options.HasAnimationOptions.isAnimationEnabled__$default","org.pepstock.charba.client.options.HasAnimationOptions.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ImageSizeCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA6BiB,iB;;QAAA,M;EAAAA,4B;EAAAA,8B;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["ImageSizeCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.ImageSizeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.callbacks.ImageSizeCallback.<clinit>"]
+}
+

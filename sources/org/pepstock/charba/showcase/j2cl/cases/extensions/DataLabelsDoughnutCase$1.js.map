@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsDoughnutCase$1.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;;;;MAyGmE,E;;CAAA,W;EAAAA,Q;EAAAA;gG;;;QAAA,kF;EAAAC,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;CAAA,6J;EAAAC,4G;EAAAA,iC;;;CAGlD,iE,0BAAyBC,O;EACtCC,IAAgBC,EAAhBD,2T;EACAA,iI;;;;CAL+D,2D;EAAAA,oJ;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["DataLabelsDoughnutCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$1.invoke","ds","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$1.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Box.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;MAuCY,G;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,c;EAAAA,0B;EAAAA,iE;EAAAA,iB;;;CAAA,oD;EAAAC,oE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,sI;EAEAA,4J;EAEAA,0K;EAEAA,iB;;;CAWI,iI,iCAAsBJ,O,gBAAaG,I,gBAAaG,O,gBAAgBC,O;EAEpEC,IAAaH,QAAbG,Y;EAEAA,IAAaC,MAAbD,a;EAEAA,IAAaE,WAAbF,c;EAEAA,uG;;;QArCU,O;EAAAG,sB;EAAAA,mB;EAAAA;",
+"sources":["Box.java"],
+"names":["org.pepstock.charba.client.colors.tiles.Box.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Box.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Box.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Box.drawTile","halfSize","offsetX","offsetY","org.pepstock.charba.client.colors.tiles.Box.drawBox","margin","wholeMargin","org.pepstock.charba.client.colors.tiles.Box.<clinit>"]
+}
+

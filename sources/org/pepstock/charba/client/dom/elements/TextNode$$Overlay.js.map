@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TextNode$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MAiCmB,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["TextNode.java"],
+"names":["org.pepstock.charba.client.dom.elements.TextNode$$Overlay.<clinit>"]
+}
+

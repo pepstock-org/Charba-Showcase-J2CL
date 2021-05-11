@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultOptions.impl.java.js",
+"lineCount":78,
+"mappings":"A;;;;;;;;;;;;;;MAwBY,c;;CAAA,W;EAAAA,Q;EAAAA;OAKc,sDALdA,C;EAAAA;OAOe,uDAPfA,C;EAAAA;OASiB,yDATjBA,C;;;QAcH,S;EAAAC,qC;EAAAA,oE;EAAAA,iB;;;CAAA,uD;EAAAC,iC;EAAAA,iE;;;CAUU,U;EACjBC,mE;;;CASkB,W;EAClBC,oE;;;CASsB,a;EACtBC,sE;;;CA7CU,yD;EAKXH,qF;EAEAA,uF;EAEAA,2F;;;QANA,8D;EAAAI,mH;;;QAHW,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAGXA,6G;;;;;;;;;;;;;AAHW;;",
+"sources":["DefaultOptions.java"],
+"names":["org.pepstock.charba.client.zoom.DefaultOptions.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.DefaultOptions.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.DefaultOptions.<init>","org.pepstock.charba.client.zoom.DefaultOptions.getPan","org.pepstock.charba.client.zoom.DefaultOptions.getZoom","org.pepstock.charba.client.zoom.DefaultOptions.getLimits","org.pepstock.charba.client.zoom.DefaultOptions.<synthetic: getter>","org.pepstock.charba.client.zoom.DefaultOptions.<clinit>"]
+}
+

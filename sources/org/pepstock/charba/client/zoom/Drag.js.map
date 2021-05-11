@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Drag.impl.java.js",
+"lineCount":113,
+"mappings":"A;;;;;;;;;;;;;;MA8BmB,I;;CAAA,W;EAAAA,Q;EAAAA;OAmDI,uDAnDJA,C;;;;QA0DlB,sD,sBAAmBC,c;EAAnBC,e;EAAAA,2B;EAAAA,qH;EAAAA,iB;;;;CAAA,0F,sBAAmBD,c;EAClBE,uK;;;;QASD,uG,UAAkBC,Y,uBAA4BH,c;EAA9CC,e;EAAAA,2B;EAAAA,oL;EAAAA,iB;;;;CAAA,2I,UAAkBE,Y,uBAA4BH,c;EAC7CE,oI;EACAA,8E;;;CAQW,+D,gBAA2BE,e;EACtCC,oI;;;CAQW,sC,gBAA0BD,e;EAErCC,uK;;;CASa,8B;EAEbC,4P;;;CAQc,sB;EACdC,qF;;;CAQW,2D,gBAAuBC,W;EAClCC,4H;;;CAQW,kC,gBAAsBD,W;EAEjCC,+J;;;CASa,0B;EAEbC,oP;;;CAQc,kB;EACdC,iF;;;CAQW,qB,eAAmBC,W;EAE9BC,iL;;;CASU,kB;EACVC,+N;;;QAxKiB,O;EAAAC,uB;EAAAA,oB;EAAAA,gC;EAAAA,wB;;;;;;;;;;;;;;AAElB;KAG2B,gEAH3B,2B;AAKA;KAG2B,4DAH3B,sB;AAKA;KAGwB,4DAHxB;",
+"sources":["Drag.java"],
+"names":["org.pepstock.charba.client.zoom.Drag.<synthetic: ctor_js>","defaultOptions","org.pepstock.charba.client.zoom.Drag.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Drag.<init>","nativeObject","backgroundColor","org.pepstock.charba.client.zoom.Drag.setBackgroundColor","org.pepstock.charba.client.zoom.Drag.getBackgroundColorAsString","org.pepstock.charba.client.zoom.Drag.getBackgroundColor","borderColor","org.pepstock.charba.client.zoom.Drag.setBorderColor","org.pepstock.charba.client.zoom.Drag.getBorderColorAsString","org.pepstock.charba.client.zoom.Drag.getBorderColor","borderWidth","org.pepstock.charba.client.zoom.Drag.setBorderWidth","org.pepstock.charba.client.zoom.Drag.getBorderWidth","org.pepstock.charba.client.zoom.Drag.<clinit>"]
+}
+

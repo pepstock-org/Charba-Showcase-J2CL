@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ChartClickEventHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,8J;;;CAAA,oJ;EAAAC,iC;EAAAA,wF;;;CAAA,4D;;GAAAC,mG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ChartClickEventHandler.java"],
+"names":["org.pepstock.charba.client.events.ChartClickEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.ChartClickEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.ChartClickEventHandler$$LambdaAdaptor.onClick","org.pepstock.charba.client.events.ChartClickEventHandler$$LambdaAdaptor.<clinit>"]
+}
+

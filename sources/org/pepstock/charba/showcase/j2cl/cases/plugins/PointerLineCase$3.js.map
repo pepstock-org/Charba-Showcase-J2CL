@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PointerLineCase$3.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;;;MA4L+C,E;;CAAA,W;EAAAA,Q;EAAAA;sF;;;QAAA,wE;EAAAC,a;EAAAA,yB;EAAAA,iK;EAAAA,iB;;;CAAA,yI;EAAAC,kG;EAAAA,iC;;;CAGhC,2D,uBAAuBC,K;EAClCC,IAAKC,IAALD,uB;EACAA,IAAOE,UAAPF,Q;EACAA;GACCA,IAAsBG,QAAtBH,gFADDA;GAECA,0FAFDA;;GAICA,IAAoBI,MAApBJ,4EAJDA;GAKCA,wFALDA;G;EAOAA,IAAcK,EAAdL,6B;EACAA,+E;EACAA,6M;;;QAf2C,O;EAAAM,qB;EAAAA,kB;EAAAA;",
+"sources":["PointerLineCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.onClick","axis","scaleLabel","category","linear","sb","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<clinit>"]
+}
+

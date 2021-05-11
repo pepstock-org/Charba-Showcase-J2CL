@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"GradientColor.impl.java.js",
+"lineCount":117,
+"mappings":"A;;;;;;;;;;;;;;MA8BmB,a;;CAAA,W;EAAAA,Q;;;;QAoDX,0D,eAAqBC,M,iBAAgBC,K;EAArCC,wB;EAAAA,oC;EAAAA,mI;EAAAA,iB;;;;CAAA,yG,eAAqBF,M,iBAAgBC,K;EAC3CE,oM;;;;QASM,iC,eAAqBH,M,iBAAeC,K;EAApCC,wB;EAAAA,oC;EAAAA,0G;EAAAA,iB;;;;CAAA,gF,eAAqBF,M,iBAAeC,K;EAApCE,yE;EACNA,wD;EACAA,2K;EAGAA,kT;;;;QAQD,wD,UAA2BC,Y;EAA3BF,wB;EAAAA,oC;EAAAA,gI;EAAAA,iB;;;;CAAA,uG,UAA2BE,Y;EAC1BD,oI;;;CAQa,a;EACbE,4P;;;CAQa,oB;EACbC,kR;;;CAQc,Y;EACdC,2E;;;QAQkB,iC,eAA+BP,M;EAA/BQ,wB;EAClBA,2Q;;;CASa,Q;EACbC,gJ;;;QA/GD,8D;EAAAC,iH;;;QAXkB,O;EAAAC,gC;EAAAA,6B;EAAAA,gC;EAWlBA,kH;;;;;;;;;;;;;;;;;;AATA;cAG2B,uEAH3B,K;AAIA;cAG2B,sEAH3B,K;AANkB;+E;AAalB;cAA4B,kEAA5B;",
+"sources":["GradientColor.java"],
+"names":["org.pepstock.charba.client.colors.GradientColor.<synthetic: ctor_js>","offset","color","org.pepstock.charba.client.colors.GradientColor.<synthetic: ctor_create>","org.pepstock.charba.client.colors.GradientColor.<init>","nativeObject","org.pepstock.charba.client.colors.GradientColor.getOffset","org.pepstock.charba.client.colors.GradientColor.getColorAsString","org.pepstock.charba.client.colors.GradientColor.getColor","org.pepstock.charba.client.colors.GradientColor.checkOffsetWithinBounds","org.pepstock.charba.client.colors.GradientColor.toString","org.pepstock.charba.client.colors.GradientColor.<synthetic: getter>","org.pepstock.charba.client.colors.GradientColor.<clinit>"]
+}
+

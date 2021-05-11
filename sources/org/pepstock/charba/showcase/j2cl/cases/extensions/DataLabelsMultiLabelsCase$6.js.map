@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsMultiLabelsCase$6.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;;;;;MAwIwD,E;;CAAA,W;EAAAA,Q;EAAAA;mG;;;QAAA,qF;EAAAC,a;EAAAA,yB;EAAAA,2L;EAAAA,iB;;;CAAA,mK;EAAAC,+G;EAAAA,iC;;;CAGvC,iE,0BAAyBC,O;EACtCC,IAAWC,EAAXD,uT;EACAA,IAAOE,KAAPF,8I;EACAA,oJ;;;;CANoD,2D;EAAAA,oJ;;;QAAA,O;EAAAG,qB;EAAAA,kB;EAAAA;",
+"sources":["DataLabelsMultiLabelsCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsCase$6.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsCase$6.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsCase$6.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsCase$6.invoke","ds","value","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsCase$6.<clinit>"]
+}
+

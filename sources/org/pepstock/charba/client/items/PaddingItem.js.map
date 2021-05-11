@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PaddingItem.impl.java.js",
+"lineCount":92,
+"mappings":"A;;;;;;;;;;MA6BmB,W;;CAAA,W;EAAAA,Q;;;;QAQX,S;EAAAC,sB;EAAAA,kC;EAAAA,kE;EAAAA,iB;;;;CAAA,qD;EACNC,qH;;;;QAQM,Y,eAAgBC,O;EAAhBF,sB;EAAAA,kC;EAAAA,4E;EAAAA,iB;;;;CAAA,wD,eAAgBE,O;EACtBD,mI;;;;QAQM,6D,yBAA6BE,a;EAA7BH,sB;EAAAA,kC;EAAAA,mI;EAAAA,iB;;;;CAAA,yG,yBAA6BG,a;EACnCF,0P;;;;QASM,kE,yBAA6BE,a,gBAAmBD,O;EAAhDF,sB;EAAAA,kC;EAAAA,iJ;EAAAA,iB;;;;CAAA,8G,yBAA6BG,a,gBAAmBD,O;EACtDD,8H;EAEAA,wD;;;CAQmB,gB;EACnBG,4B;;;QAhDiB,O;EAAAC,8B;EAAAA,2B;EAAAA,0B;EAGlBA,8G;;;;;;;;;;;;;AAHkB;YAGoB,gEAHpB;",
+"sources":["PaddingItem.java"],
+"names":["org.pepstock.charba.client.items.PaddingItem.<synthetic: ctor_js>","org.pepstock.charba.client.items.PaddingItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.PaddingItem.<init>","padding","defaultValues","org.pepstock.charba.client.items.PaddingItem.nativeObject","org.pepstock.charba.client.items.PaddingItem.<clinit>"]
+}
+

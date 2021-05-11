@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Percentage.impl.java.js",
+"lineCount":115,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAkCmB,U;;CAAA,W;EAAAA,Q;;;QAKV,S;EAAAC,iC;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EAAAC,iC;;;QAaa,kH,gBAAgBC,K,gBAAcC,K,gCAA8BC,O;EAA5DC,qB;EACpBA,4K;;;QAcoB,2H,gBAAgBH,K,gBAAcC,K,gCAA8BC,O,iBAAiBE,O;EAA7ED,qB;EAEpBA;GAECA,sCAFDA;G;EAKAA,kBAAOE,KAAPF,C;EAEAA;GAECA,yJAFDA;;GAKCA,+IALDA;G;EASAA;GAECA,sCAFDA;G;EAKAA,+B;;;QAUqB,qH,gBAA2BH,K,gCAA8BE,O;EAE9EI,IAAOD,KAAPC,K;EAEAA;GAAAA,IAAaC,EAAbD,oEAAAA;;IAECA;KAGCA,IAAcE,aAAdF,8DAHDA;KAKCA,IAAUG,KAAVH,4HALDA;KAOCA,2CAPDA;WAQOA;KAGNA,IAAWI,UAAXJ,wDAHMA;KAKNA,IAAaK,IAAbL,iIALMA;KAONA,uCAPMA;WAQAA;KAGNA,IAAOK,MAAPL,8IAHMA;KAKNA,iCALMA;KAlBRA;;G;EA0BAA,a;;;QAUqB,2G,gBAAiBN,K,gCAA8BE,O;EAEpEU,IAAOP,KAAPO,K;EAGAA,IAAQL,EAARK,+H;EAEAA;GAGCA,IAAcJ,aAAdI,8DAHDA;GAKCA,IAAgBC,MAAhBD,qCALDA;GAOCA;IAAAA,IAAeE,SAAfF,wEAAAA;;KAECA,+CAFDA;;IAPDA;SAWOA;GAGNA,IAAWF,UAAXE,wDAHMA;GAKNA,IAAmBD,IAAnBC,oCALMA;GAONA;IAAAA,IAAkBG,SAAlBH,gFAAAA;;KAECA,4CAFDA;;IAPMA;SAWAA;GAGNA,IAAaD,MAAbC,oBAHMA;GAKNA;IAAAA,IAAYI,SAAZJ,qEAAAA;;KAECA,4EAFDA;;IALMA;G;EAUPA,a;;;QAjJiB,O;EAAAK,6B;EAAAA,0B;EAAAA;",
+"sources":["Percentage.java"],
+"names":["org.pepstock.charba.client.impl.callbacks.Percentage.<synthetic: ctor_js>","org.pepstock.charba.client.impl.callbacks.Percentage.<synthetic: ctor_create>","org.pepstock.charba.client.impl.callbacks.Percentage.<init>","chart","value","context","org.pepstock.charba.client.impl.callbacks.Percentage.compute","stacked","total","org.pepstock.charba.client.impl.callbacks.Percentage.getTotalForStacked","ds","hasDataPoints","point","barDataset","data","org.pepstock.charba.client.impl.callbacks.Percentage.getTotal","points","dataPoint","dataFloat","dataValue","org.pepstock.charba.client.impl.callbacks.Percentage.<clinit>"]
+}
+

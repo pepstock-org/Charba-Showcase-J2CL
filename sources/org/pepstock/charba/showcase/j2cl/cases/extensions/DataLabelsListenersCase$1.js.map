@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsListenersCase$1.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;;;MA0ImE,E;;CAAA,W;EAAAA,Q;EAAAA;iG;;;QAAA,mF;EAAAC,a;EAAAA,yB;EAAAA,uL;EAAAA,iB;;;CAAA,+J;EAAAC,6G;EAAAA,iC;;;CAGlD,iE,0BAAyBC,O;EACtCC;GACCA,YADDA;G;EAGAA,IAAYC,EAAZD,qT;EACAA,2C;;;;CAR+D,2D;EAAAA,oJ;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["DataLabelsListenersCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsListenersCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsListenersCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsListenersCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsListenersCase$1.invoke","ds","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsListenersCase$1.<clinit>"]
+}
+

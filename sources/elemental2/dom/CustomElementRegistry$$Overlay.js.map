@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CustomElementRegistry$$Overlay.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;MA2Ba,Q;;QAgBO,kJ,wDACPA,O,kBACsBC,K,WACWC,O;EAH1BC,mB;EAIhBA,oH;;;QAIgB,0F,wDAAcH,O,kBAAsCC,K;EAApDE,mB;EAChBA,2G;;;QAzBS,O;EAAAC,2B;EAAAA;",
+"sources":["CustomElementRegistry.java"],
+"names":["tagName","klass","options","elemental2.dom.CustomElementRegistry$$Overlay.define__$devirt","elemental2.dom.CustomElementRegistry$$Overlay.<clinit>"]
+}
+

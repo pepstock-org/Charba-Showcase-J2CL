@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultDatasets.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAwBiB,iB;;CAQM,sC,aAASA,I;;QARf,M;EAAAC,4B;EAAAA,8B;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["IsDefaultDatasets.java"],
+"names":["type","org.pepstock.charba.client.defaults.IsDefaultDatasets.<synthetic: adapt_lambda>","org.pepstock.charba.client.defaults.IsDefaultDatasets.<clinit>"]
+}
+

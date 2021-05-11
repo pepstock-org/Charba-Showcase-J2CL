@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TitleNode.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MA2BmB,S;;CAAA,W;EAAAA,Q;;;QAOX,gD,wBAAqCC,O;EAArCC,oB;EAAAA,gC;EAAAA,8G;EAAAA,iB;;;CAAA,0F,wBAAqCD,O;EAC3CE,gS;;;QARiB,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"sources":["TitleNode.java"],
+"names":["org.pepstock.charba.client.items.TitleNode.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.TitleNode.<synthetic: ctor_create>","org.pepstock.charba.client.items.TitleNode.<init>","org.pepstock.charba.client.items.TitleNode.<clinit>"]
+}
+

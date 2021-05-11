@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultInteraction.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;;MA0Ba,kB;;CAAA,W;EAAAA,Q;;;QAOZ,S;EAAAC,6B;EAAAA,yC;EAAAA,oF;EAAAA,iB;;;CAAA,uE;EAAAC,iC;;;CAUuB,W;EACtBC,mF;;;CASc,e;EACdC,+G;;;CASsB,W;EACtBC,6E;;;QAtCW,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;;;;;;;;;;;;AAEZ;mBAA6B,oFAA7B;",
+"sources":["DefaultInteraction.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultInteraction.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultInteraction.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultInteraction.<init>","org.pepstock.charba.client.defaults.globals.DefaultInteraction.getMode","org.pepstock.charba.client.defaults.globals.DefaultInteraction.isIntersect","org.pepstock.charba.client.defaults.globals.DefaultInteraction.getAxis","org.pepstock.charba.client.defaults.globals.DefaultInteraction.<clinit>"]
+}
+

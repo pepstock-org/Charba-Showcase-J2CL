@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SegmentContext$Property.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,sEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,+I;EAAAA,iB;;;CAAA,4G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,oF;;;CASa,S;EACbC,mF;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,+IAAAA;G;EAAAA,uI;;;QAAA,U;EAAAC,mB;EAAAA,uO;;;QAEZ,sE;EAAAC,+G;;;QACA,sE;EAAAA,+G;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,mQ;EACAA,mQ;EAHYA,kG;;;;;;;;;;;;;AAAA;kF;AAAA;kF;AAAA;2F;AAEZ;uF;AACA;;",
+"sources":["SegmentContext.java"],
+"names":["org.pepstock.charba.client.callbacks.SegmentContext$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.callbacks.SegmentContext$Property.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.SegmentContext$Property.<init>","org.pepstock.charba.client.callbacks.SegmentContext$Property.value","org.pepstock.charba.client.callbacks.SegmentContext$Property.valueOf","org.pepstock.charba.client.callbacks.SegmentContext$Property.values","org.pepstock.charba.client.callbacks.SegmentContext$Property.<synthetic: getter>","org.pepstock.charba.client.callbacks.SegmentContext$Property.<clinit>"]
+}
+

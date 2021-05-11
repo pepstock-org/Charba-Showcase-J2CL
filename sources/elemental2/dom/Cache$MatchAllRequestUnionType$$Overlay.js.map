@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Cache$MatchAllRequestUnionType$$Overlay.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA2ImB,Q;;QAEuB,sB,UAAUA,C;EAAVC,mB;EACpCA,uD;;;QAIc,mE;EAAAC,mB;EACdA,kG;;;QAIa,kE;EAAAC,mB;EACbA,iD;;;QAIc,mE;EAAAC,mB;EACdA,+D;;;QAIc,kE;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"sources":["Cache.java"],
+"names":["o","elemental2.dom.Cache$MatchAllRequestUnionType$$Overlay.of","elemental2.dom.Cache$MatchAllRequestUnionType$$Overlay.asRequest__$devirt","elemental2.dom.Cache$MatchAllRequestUnionType$$Overlay.asString__$devirt","elemental2.dom.Cache$MatchAllRequestUnionType$$Overlay.isRequest__$devirt","elemental2.dom.Cache$MatchAllRequestUnionType$$Overlay.isString__$devirt","elemental2.dom.Cache$MatchAllRequestUnionType$$Overlay.<clinit>"]
+}
+

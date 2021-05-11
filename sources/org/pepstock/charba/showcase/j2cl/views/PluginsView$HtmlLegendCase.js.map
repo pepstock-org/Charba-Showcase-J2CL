@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginsView$HtmlLegendCase.impl.java.js",
+"lineCount":211,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;MA6Oc,c;;CAAA,W;EAAAA,Q;EAAAA;OA+DS,4EA/DTA,C;EAAAA;OAiEc,8EAjEdA,C;;;QAmEJ,qG,8DAAsBC,K,qBAAmBC,O;EAAzCC,qC;EAAAA,mN;EAAAA,iB;;;CAAA,uK,8DAAsBF,K,qBAAmBC,O;EAAzCE,qC;EAAAA,2C;EAAAA,mE;EACPA,0F;EACAA,8F;;;CAGa,Y;EACbC,yF;;;CAGkB,c;EAClBC,2F;;;QA7EW,2B;EAAAC,yB;EAAAA;GAAAA,iKAAAA;G;EAAAA,mJ;;;QAAA,U;EAAAC,yB;EAAAA,8xC;;;QAEZ,6E;EAAAC,kI;;;QAKA,8E;EAAAA,mI;;;QAKA,8E;EAAAA,mI;;;QAKA,6E;EAAAA,kI;;;QAKA,0F;EAAAA,+I;;;QAKA,mF;EAAAA,wI;;;QAKA,yF;EAAAA,8I;;;QAKA,yF;EAAAA,8I;;;QAKA,iF;EAAAA,sI;;;QAKA,sF;EAAAA,2I;;;QAKA,+F;EAAAA,oJ;;;QAKA,kF;EAAAA,uI;;;QAzDY,O;EAAAC,iC;EAAAA,8B;EAAAA,e;EAEZA,wX;EAKAA,sY;EAKAA,4X;EAKAA,wX;EAKAA,8a;EAKAA,yZ;EAKAA,oa;EAKAA,oa;EAKAA,oY;EAKAA,wZ;EAKAA,4b;EAKAA,0Z;EAzDYA,8G;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;+F;AAAA;gG;AAAA;gG;AAAA;+F;AAAA;4G;AAAA;qG;AAAA;2G;AAAA;2G;AAAA;mG;AAAA;wG;AAAA;iH;AAAA;oG;AAAA;uG;AAEZ;oG;AAKA;qG;AAKA;qG;AAKA;oG;AAKA;iH;AAKA;0G;AAKA;gH;AAKA;gH;AAKA;wG;AAKA;6G;AAKA;uH;AAKA;;",
+"sources":["PluginsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.getLabel","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.getFactory","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.valueOf","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.values","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase.<clinit>"]
+}
+

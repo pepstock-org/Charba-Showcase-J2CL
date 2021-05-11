@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsScriptableFontProvider.impl.java.js",
+"lineCount":20,
+"mappings":"A;;;;;;;;;;;MA0BiB,wB;;CAOA,mB;;CAOX,4D,wBAAwBA,Y;;QAdb,O;EAAAC,2C;EAAAA;",
+"sources":["IsScriptableFontProvider.java"],
+"names":["fontCallback","org.pepstock.charba.client.options.IsScriptableFontProvider.<clinit>"]
+}
+

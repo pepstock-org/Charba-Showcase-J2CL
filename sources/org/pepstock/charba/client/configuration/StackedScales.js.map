@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"StackedScales.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;;;;;;MAyBa,a;;CAAA,W;EAAAA,Q;EAAAA;OAEI,sEAFJA,S;;;QASZ,+D,sBAA4BC,O;EAA5BC,wB;EAAAA,oC;EAAAA,yI;EAAAA,iB;;;CAAA,qH,sBAA4BD,O;EAC3BE,6H;EADDA,yE;;;CASe,e;EACdC,mF;;;CAQW,uB,gBAAqBC,W;EAChCC,0F;;;CASW,gE,oBAAgBC,I;EAE3BC;GAECA;IAGCA,iJAHDA;;IAOCA;KAAAA,IAAUC,IAAVD,kBAAAA;;MAGCA;OACCA,oMADDA;OAHDA;;KAPDA;IAFDA;GAkBCA,6EAlBDA;G;;;CA2BY,qI,oBAA2BD,I;EAEvCG;GAAAA,IAAUC,EAAVD,kBAAAA;;IAECA;KAECA,IAAiBE,GAAjBF,6EAFDA;KAGCA,gCAHDA;KAFDA;;G;;;CApEW,iE;EAEZP,oF;;;QAFY,O;EAAAU,gC;EAAAA,6B;EAAAA;",
+"sources":["StackedScales.java"],
+"names":["org.pepstock.charba.client.configuration.StackedScales.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.StackedScales.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.StackedScales.<init>","org.pepstock.charba.client.configuration.StackedScales.isOnlyYAxis","isOnlyYAxis","org.pepstock.charba.client.configuration.StackedScales.setOnlyYAxis","axes","org.pepstock.charba.client.configuration.StackedScales.setAxes","axis","org.pepstock.charba.client.configuration.StackedScales.setStackedProperty","ax","cax","org.pepstock.charba.client.configuration.StackedScales.<clinit>"]
+}
+

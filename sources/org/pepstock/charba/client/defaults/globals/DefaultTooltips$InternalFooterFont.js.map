@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultTooltips$InternalFooterFont.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;MA2hBsB,kB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,oG;EAAAA,iB;;;CAAA,uF;EAAAC,8E;;;CAQN,a;EACbC,8D;;;QATmB,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["DefaultTooltips.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalFooterFont.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalFooterFont.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalFooterFont.<init>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalFooterFont.getWeight","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalFooterFont.<clinit>"]
+}
+

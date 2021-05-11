@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ColorSchemesOptionsFactory$ColorSchemesDefaultsOptionsFactory.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;;MA2Dc,kC;;CAAA,W;EAAAA,Q;;;QAKZ,S;EAAAC,6C;EAAAA,yD;EAAAA,2H;EAAAA,iB;;;CAAA,8G;EACCC,uK;;;CAU0B,+G,UAAoBC,Y,0BAA+BC,a;EAC7EC,mR;;;QAjBW,O;EAAAC,qD;EAAAA,kD;EAAAA;",
+"sources":["ColorSchemesOptionsFactory.java"],
+"names":["org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsFactory$ColorSchemesDefaultsOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsFactory$ColorSchemesDefaultsOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsFactory$ColorSchemesDefaultsOptionsFactory.<init>","nativeObject","defaultValues","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsFactory$ColorSchemesDefaultsOptionsFactory.create","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsFactory$ColorSchemesDefaultsOptionsFactory.<clinit>"]
+}
+

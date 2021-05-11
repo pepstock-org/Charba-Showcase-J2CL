@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultBoxHandler.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;;MAuBiB,mB;;CAOZ,e;;CAOA,gB;;QAdY,O;EAAAA,sC;EAAAA;",
+"sources":["IsDefaultBoxHandler.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultBoxHandler.<clinit>"]
+}
+

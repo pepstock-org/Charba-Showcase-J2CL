@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScaleTickItem$ScaleTickItemFactory.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;MAiIqB,oB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,+B;EAAAA,2C;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EAAAC,iC;;;CAUa,yD,UAAoBC,Y;EACxCC,4F;;;;CAhBkB,U;EAAAA,sL;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA,qB;EAAAA;",
+"sources":["ScaleTickItem.java"],
+"names":["org.pepstock.charba.client.items.ScaleTickItem$ScaleTickItemFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.ScaleTickItem$ScaleTickItemFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.ScaleTickItem$ScaleTickItemFactory.<init>","nativeObject","org.pepstock.charba.client.items.ScaleTickItem$ScaleTickItemFactory.create","org.pepstock.charba.client.items.ScaleTickItem$ScaleTickItemFactory.<clinit>"]
+}
+

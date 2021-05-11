@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Threshold.impl.java.js",
+"lineCount":135,
+"mappings":"A;;;;;;;;;;;;MAwBmB,S;;CAAA,W;EAAAA,Q;EAAAA;OAYG,yDAZHA,C;EAAAA;OAcH,0DAdGA,K;EAAAA;OAgBF,0DAhBEA,C;;;;QAuBX,yB,gBAAiBC,I;EAAjBC,oB;EAAAA,gC;EAAAA,0F;EAAAA,iB;;;;CAAA,yE,gBAAiBD,I;EACvBE,+S;;;;QASM,oE,gBAAiBF,I,iBAAcG,K;EAA/BF,oB;EAAAA,gC;EAAAA,4I;EAAAA,iB;;;;CAAA,oH,gBAAiBD,I,iBAAcG,K;EACrCD,6N;;;;QASM,iC,gBAAiBF,I,gBAAaI,K;EAA9BH,oB;EAAAA,gC;EAAAA,yG;EAAAA,iB;;;;CAAA,iF,gBAAiBD,I,gBAAaI,K;EACpCF,wO;;;;QAUM,4E,gBAAiBF,I,gBAAaI,K,iBAAeD,K;EAA7CF,oB;EAAAA,gC;EAAAA,2J;EAAAA,iB;;;;CAAA,4H,gBAAiBD,I,gBAAaI,K,iBAAeD,K;EAA7CD,iC;EAAAA,mE;EACNA,sE;EACAA,wE;EACAA,wE;EAEAA,qF;;;CASa,W;EACbG,sE;;;CASa,Y;EACbC,uE;;;CASc,Y;EACdC,uE;;;CASgB,kB,eAAgBH,K;EAChCI,wE;EACAA,Y;;;CASgB,qD,gBAAiBL,K;EACjCM,wE;EACAA,Y;;;CAUc,2B,eAAiBC,Y,gBAAqBC,Q;EACpDC,sE;;;CA1HiB,2D;EAclBV,+I;EAEAA,0J;;;QAdA,2E;EAAAW,sH;;;QAFkB,O;EAAAC,4B;EAAAA,yB;EAAAA,qB;EAElBA,4L;;;;;;;;;;;AAFkB;wF;AAOlB;UAG4B,kEAH5B;",
+"sources":["Threshold.java"],
+"names":["org.pepstock.charba.client.impl.charts.Threshold.<synthetic: ctor_js>","name","org.pepstock.charba.client.impl.charts.Threshold.<synthetic: ctor_create>","org.pepstock.charba.client.impl.charts.Threshold.<init>","color","value","org.pepstock.charba.client.impl.charts.Threshold.getName","org.pepstock.charba.client.impl.charts.Threshold.getValue","org.pepstock.charba.client.impl.charts.Threshold.getColor","org.pepstock.charba.client.impl.charts.Threshold.setValue","org.pepstock.charba.client.impl.charts.Threshold.setColor","valueToCheck","lowLimit","org.pepstock.charba.client.impl.charts.Threshold.isInRange","org.pepstock.charba.client.impl.charts.Threshold.<synthetic: getter>","org.pepstock.charba.client.impl.charts.Threshold.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelsHandler.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;;;MA6BmB,a;;CAAA,W;EAAAA,Q;;;;QAuCX,0D,0BAA2CC,O;EAA3CC,wB;EAAAA,oC;EAAAA,2H;EAAAA,iB;;;;CAAA,uG,0BAA2CD,O;EACjDE,iS;;;;QAQD,wD,UAA2BC,Y;EAA3BF,wB;EAAAA,oC;EAAAA,8H;EAAAA,iB;;;;CAAA,qG,UAA2BE,Y;EAC1BD,oI;;;CAQI,uF,eAAiBE,M;EAErBC;GACCA,6OADDA;G;;;CAWM,wD,gBAAkBC,O;EAExBC;GAECA,IAAiBC,KAAjBD,uMAFDA;GAICA,iFAJDA;G;EAQAA,IAAOE,MAAPF,sB;EAEAA;GAECA,qGAFDA;G;EAKAA,c;;;QAvFiB,O;EAAAG,gC;EAAAA,6B;EAAAA;",
+"sources":["LabelsHandler.java"],
+"names":["org.pepstock.charba.client.data.LabelsHandler.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.data.LabelsHandler.<synthetic: ctor_create>","org.pepstock.charba.client.data.LabelsHandler.<init>","nativeObject","labels","org.pepstock.charba.client.data.LabelsHandler.setLabels","binding","org.pepstock.charba.client.data.LabelsHandler.getLabels","array","result","org.pepstock.charba.client.data.LabelsHandler.<clinit>"]
+}
+

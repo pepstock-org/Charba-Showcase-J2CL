@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TextCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,iF;;;CAAA,2D;EAAAC,oC;EAAAA,kH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["TextCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.TextCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.TextCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.TextCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.TextCallback$$LambdaAdaptor.<clinit>"]
+}
+

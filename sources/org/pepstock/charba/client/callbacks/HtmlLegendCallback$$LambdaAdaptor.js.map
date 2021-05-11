@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HtmlLegendCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;;;MA6BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,uF;;;CAAA,oH;EAAAC,6D;EAAAA,oI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["HtmlLegendCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.HtmlLegendCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.HtmlLegendCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.HtmlLegendCallback$$LambdaAdaptor.generateText","org.pepstock.charba.client.callbacks.HtmlLegendCallback$$LambdaAdaptor.<clinit>"]
+}
+

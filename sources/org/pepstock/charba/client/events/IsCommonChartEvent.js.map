@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsCommonChartEvent.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;MA2BiB,kB;;CAOE,c;;CAOd,U;;CAOI,Y;;CAOQ,kB;;QA5BA,O;EAAAA,qC;EAAAA;",
+"sources":["IsCommonChartEvent.java"],
+"names":["org.pepstock.charba.client.events.IsCommonChartEvent.<clinit>"]
+}
+

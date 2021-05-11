@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Point$Property.impl.java.js",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;MAgCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,2DARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,oI;EAAAA,iB;;;CAAA,iG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,yE;;;CASa,S;EACbC,wE;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,oIAAAA;G;EAAAA,4H;;;QAAA,U;EAAAC,mB;EAAAA,6X;;;QAEZ,+D;EAAAC,wG;;;QACA,mE;EAAAA,4G;;;QACA,qE;EAAAA,8G;;;QACA,iE;EAAAA,0G;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,6P;EACAA,4Q;EACAA,oR;EACAA,qQ;EALYA,uF;;;;;;;;;;;;;AAAA;2E;AAAA;+E;AAAA;iF;AAAA;6E;AAAA;gF;AAEZ;gF;AACA;oF;AACA;sF;AACA;;",
+"sources":["Point.java"],
+"names":["org.pepstock.charba.client.options.Point$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.Point$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.Point$Property.<init>","org.pepstock.charba.client.options.Point$Property.value","org.pepstock.charba.client.options.Point$Property.valueOf","org.pepstock.charba.client.options.Point$Property.values","org.pepstock.charba.client.options.Point$Property.<synthetic: getter>","org.pepstock.charba.client.options.Point$Property.<clinit>"]
+}
+

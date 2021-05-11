@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnnotationPluginResource.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MA0BmB,wB;;CAAA,W;EAAAA,Q;;;QA6BlB,S;EAAAC,mC;EAAAA,+C;EAAAA,oF;EAAAA,iB;;;CAAA,uE;EACCC,wU;;;QA9BiB,O;EAAAC,2C;EAAAA,wC;EAAAA,qC;EAGlBA,0gc;;;;;;;;;;;;;AAHkB;yBAGY,0EAHZ;",
+"sources":["AnnotationPluginResource.java"],
+"names":["org.pepstock.charba.client.annotation.AnnotationPluginResource.<synthetic: ctor_js>","org.pepstock.charba.client.annotation.AnnotationPluginResource.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.AnnotationPluginResource.<init>","org.pepstock.charba.client.annotation.AnnotationPluginResource.<clinit>"]
+}
+

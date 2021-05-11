@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Title.impl.java.js",
+"lineCount":102,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;MAgCmB,K;;CAAA,W;EAAAA,Q;EAAAA;OAoCU,0DApCVA,C;EAAAA;OAsCI,oDAtCJA,C;;;QAgDlB,gM,gBAAcC,O,aAAaC,Q,wBAAyBC,a,WAA4BC,Y;EAAhFC,gB;EAAAA,4B;EAAAA,mS;EAAAA,iB;;;CAAA,wO,gBAAcJ,O,aAAaC,Q,wBAAyBC,a,WAA4BC,Y;EAC/EE,6T;EAEAA,+W;EACAA,4V;;;CASoB,oB;EACpBC,uE;;;CASc,c;EACdC,iE;;;CAQW,sB,gBAAoBC,Q;EAC/BC,kK;;;CASc,c;EACdC,yP;;;CAUW,mC,uBAAkBC,I;EAC7BC,iL;;;CAQmB,W;EAGnBC,IAAYC,KAAZD,wN;EACAA,qF;;;;CAlHiB,oB;EAAAE,8F;;;;CAAA,W;EAAAC,qF;;;;CAAA,Y;EAAAC,sF;;;;CAAA,qD;EAAAC,gI;;;;CAAA,4B;EAAAA,uG;;;QAAA,O;EAAAC,wB;EAAAA,qB;EAAAA,uC;EAAAA;",
+"sources":["Title.java"],
+"names":["org.pepstock.charba.client.options.Title.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Title.<synthetic: ctor_create>","org.pepstock.charba.client.options.Title.<init>","org.pepstock.charba.client.options.Title.getFontContainer","org.pepstock.charba.client.options.Title.getPadding","fullSize","org.pepstock.charba.client.options.Title.setFullSize","org.pepstock.charba.client.options.Title.isFullSize","text","org.pepstock.charba.client.options.Title.setText","org.pepstock.charba.client.options.Title.getText","array","org.pepstock.charba.client.options.Title.getColorAsString","org.pepstock.charba.client.options.Title.getFont","org.pepstock.charba.client.options.Title.getColor","org.pepstock.charba.client.options.Title.setColor","org.pepstock.charba.client.options.Title.<clinit>"]
+}
+

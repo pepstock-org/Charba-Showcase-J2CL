@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsAnnotationId.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;MAwBiB,c;;QAQM,0B,gBAAcA,E;EAAdC,yB;EAErBA,iD;EAEAA,0D;;;QASc,2B,gBAAeD,E;EAAfE,yB;EACdA,mD;;;QAWc,+D,uBAAuBF,E;EAAvBE,yB;EACdA,iF;;;QASW,oE,uBAA4BF,E;EAA5BG,yB;EACXA,+E;;;QASW,gC,gBAAoBH,E;EAApBG,yB;EACXA,iD;;;QAUqB,iG,gBAA+BH,E,wBAAmBI,Y;EAAlDC,yB;EAErBA;GAECA,qDAFDA;G;EAMAA,oB;;;QAxEe,M;EAAAC,yB;EAAAA,8B;;;QAAA,O;EAAAC,iC;EAAAA;",
+"sources":["IsAnnotationId.java"],
+"names":["id","org.pepstock.charba.client.annotation.IsAnnotationId.create","org.pepstock.charba.client.annotation.IsAnnotationId.isValid","org.pepstock.charba.client.annotation.IsAnnotationId.checkIfValid","defaultValue","org.pepstock.charba.client.annotation.IsAnnotationId.checkAndGetAnnotationID","org.pepstock.charba.client.annotation.IsAnnotationId.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.IsAnnotationId.<clinit>"]
+}
+

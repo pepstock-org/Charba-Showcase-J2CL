@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BorderSkippedCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,qB;;QAAA,M;EAAAA,gC;EAAAA,8B;;;QAAA,O;EAAAC,wC;EAAAA;",
+"sources":["BorderSkippedCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.BorderSkippedCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.BorderSkippedCallback.<clinit>"]
+}
+

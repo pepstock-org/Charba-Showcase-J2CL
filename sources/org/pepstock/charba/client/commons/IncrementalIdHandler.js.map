@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IncrementalIdHandler.impl.java.js",
+"lineCount":99,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA6BY,oB;;CAAA,W;EAAAA,Q;EAAAA;OA0C8B,oEA1C9BA,C;;;QA+CH,S;EAAAC,2C;EAAAA,6E;EAAAA,iB;;;CAAA,gE;EAAAC,iC;EAAAA,0E;;;QAQoB,O;EAAAC,+B;EAC3BA,iG;;;CAQI,gH,8BAAoCC,S;EACxCC,gQ;;;CASI,kI,8BAAoCD,S,iBAAkBE,M;EAE1DD,4F;EAEAA;GAECA,iZAFDA;G;;;CAaM,wG,8BAA4BD,S;EAElCG,4F;EAEAA,6S;EAEAA,gQ;;;CASY,iJ,8BAA+BH,S,iBAAkBE,M;EAG7DE,IAAcC,OAAdD,mRAAiFE,MAAjFF;GAAiFG,IAAAD,QAAAC,yDAAjFH;GAA2FG,qCAA3FH;uB;EAEAA,yQ;;;CA/GU,kE;EA0CXN,gJ;;;QA1CW,O;EAAAU,uC;EAAAA,oC;EAAAA,qB;EAGXA,6H;;;;;;;;;;;;;;;;;;;;AAHW;qBAG+B,oEAH/B,C;AAuCX;qBAA4B,sFAA5B;",
+"sources":["IncrementalIdHandler.java"],
+"names":["org.pepstock.charba.client.commons.IncrementalIdHandler.<synthetic: ctor_js>","org.pepstock.charba.client.commons.IncrementalIdHandler.<synthetic: ctor_create>","org.pepstock.charba.client.commons.IncrementalIdHandler.<init>","org.pepstock.charba.client.commons.IncrementalIdHandler.get","container","org.pepstock.charba.client.commons.IncrementalIdHandler.checkAndSetId","prefix","org.pepstock.charba.client.commons.IncrementalIdHandler.getId","org.pepstock.charba.client.commons.IncrementalIdHandler.setNewId","counter","mapKey","org.pepstock.charba.client.commons.IncrementalIdHandler.<lambda in setNewId>","org.pepstock.charba.client.commons.IncrementalIdHandler.<clinit>"]
+}
+

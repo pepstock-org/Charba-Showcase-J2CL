@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseNavigator$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MA+BmB,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["BaseNavigator.java"],
+"names":["org.pepstock.charba.client.dom.BaseNavigator$$Overlay.<clinit>"]
+}
+

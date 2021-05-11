@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultScaleLimit.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;MA0BU,mB;;CASM,e;;QAAA,4E;EAAAA,8B;EACdA,sE;;;QAVQ,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["IsDefaultScaleLimit.java"],
+"names":["org.pepstock.charba.client.zoom.IsDefaultScaleLimit.getMinRange__$default","org.pepstock.charba.client.zoom.IsDefaultScaleLimit.<clinit>"]
+}
+

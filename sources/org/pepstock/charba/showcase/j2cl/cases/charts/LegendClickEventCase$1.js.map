@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendClickEventCase$1.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;;;MAqEiD,E;;CAAA,W;EAAAA,Q;EAAAA;0F;;;QAAA,4E;EAAAC,a;EAAAA,yB;EAAAA,yK;EAAAA,iB;;;CAAA,iJ;EAAAC,sG;EAAAA,iC;;;CAGlC,6D,yBAAyBC,K;EACpCC,uW;EACAA;GACCA,oGADDA;G;;;QAL6C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["LegendClickEventCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase$1.onClick","org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase$1.<clinit>"]
+}
+

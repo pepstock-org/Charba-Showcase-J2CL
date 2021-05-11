@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendItemSortCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,oK;;;CAAA,0J;EAAAC,iC;EAAAA,2F;;;CAAA,0I;EAAAC,uE;EAAAA,wI;;;;CAAA,oF;EAAAA,6Q;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["LegendItemSortCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.LegendItemSortCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.LegendItemSortCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.LegendItemSortCallback$$LambdaAdaptor.onItemSort","org.pepstock.charba.client.callbacks.LegendItemSortCallback$$LambdaAdaptor.<clinit>"]
+}
+

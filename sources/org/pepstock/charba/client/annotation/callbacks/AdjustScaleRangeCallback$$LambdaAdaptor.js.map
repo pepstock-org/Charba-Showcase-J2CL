@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AdjustScaleRangeCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qG;EAAAA,8L;;;CAAA,oL;EAAAC,iC;EAAAA,wG;;;CAAA,iE;EAAAC,2D;EAAAA,yI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AdjustScaleRangeCallback.java"],
+"names":["org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback$$LambdaAdaptor.<clinit>"]
+}
+

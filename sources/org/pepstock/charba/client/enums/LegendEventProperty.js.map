@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendEventProperty.impl.java.js",
+"lineCount":98,
+"mappings":"A;;;;;;;;;;;;;;MAyBY,mB;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,8DAhBVA,C;;;QAuBH,gD,8DAA2BC,K;EAA3BC,0C;EAAAA,uI;EAAAA,iB;;;CAAA,oG,8DAA2BD,K;EAA3BE,qC;EAAAA,2C;EAAAA,mE;EACPA,4E;;;CASa,S;EACbC,2E;;;QAlCU,2B;EAAAC,8B;EAAAA;GAAAA,6JAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,8B;EAAAA,2W;;;QAEX,oE;EAAAC,mI;;;QAIA,oE;EAAAA,mI;;;QAIA,oE;EAAAA,mI;;;QAVW,O;EAAAC,sC;EAAAA,mC;EAAAA,e;EAEXA,2S;EAIAA,2S;EAIAA,2S;EAVWA,qG;;;;;;;;;;;;;AAAA;2F;AAAA;2F;AAAA;2F;AAAA;8F;AAEX;gG;AAIA;gG;AAIA;;",
+"sources":["LegendEventProperty.java"],
+"names":["org.pepstock.charba.client.enums.LegendEventProperty.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.LegendEventProperty.<synthetic: ctor_create>","org.pepstock.charba.client.enums.LegendEventProperty.<init>","org.pepstock.charba.client.enums.LegendEventProperty.value","org.pepstock.charba.client.enums.LegendEventProperty.valueOf","org.pepstock.charba.client.enums.LegendEventProperty.values","org.pepstock.charba.client.enums.LegendEventProperty.<synthetic: getter>","org.pepstock.charba.client.enums.LegendEventProperty.<clinit>"]
+}
+

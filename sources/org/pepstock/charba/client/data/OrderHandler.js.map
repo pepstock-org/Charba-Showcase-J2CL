@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"OrderHandler.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;MA2BY,Y;;CAAA,W;EAAAA,Q;;;QAyCX,wD,UAA0BC,Y;EAA1BC,uB;EAAAA,mC;EAAAA,6H;EAAAA,iB;;;CAAA,oG,UAA0BD,Y;EACzBE,oI;;;CASI,mD,eAAaC,K;EAEjBC,6I;;;CASG,gD;EACHC,yN;;;QA/DU,O;EAAAC,+B;EAAAA,4B;EAAAA,gC;;;;;;;;;;;AAGX;aAAiB,6DAAjB;",
+"sources":["OrderHandler.java"],
+"names":["org.pepstock.charba.client.data.OrderHandler.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.data.OrderHandler.<synthetic: ctor_create>","org.pepstock.charba.client.data.OrderHandler.<init>","order","org.pepstock.charba.client.data.OrderHandler.setOrder","org.pepstock.charba.client.data.OrderHandler.getOrder","org.pepstock.charba.client.data.OrderHandler.<clinit>"]
+}
+

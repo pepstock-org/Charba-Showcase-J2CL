@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DiamondBox.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;MAuCY,U;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qB;EAAAA,iC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EAAAC,oE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAG7FC,IAAaC,QAAbD,Y;EAEAA,sI;EAEAA,gK;EAEAA,8K;EAEAA,iB;;;CAWI,qI,iCAA0BJ,O,gBAAaG,I,gBAAaG,O,gBAAgBC,O;EAExEC,IAAaH,QAAbG,gB;EAEAA,IAAaC,WAAbD,Y;EAGAA,mD;EACAA,0D;EACAA,0D;EACAA,mD;EACAA,mD;;;QAzCU,O;EAAAE,6B;EAAAA,0B;EAAAA;",
+"sources":["DiamondBox.java"],
+"names":["org.pepstock.charba.client.colors.tiles.DiamondBox.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.DiamondBox.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.DiamondBox.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.DiamondBox.drawTile","halfSize","offsetX","offsetY","org.pepstock.charba.client.colors.tiles.DiamondBox.drawDiamond","quarterSize","org.pepstock.charba.client.colors.tiles.DiamondBox.<clinit>"]
+}
+

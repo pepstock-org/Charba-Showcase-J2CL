@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MyLineDataset.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;MAKmB,a;;CAAA,W;EAAAA,Q;;;QAEX,S;EAAAC,wB;EAAAA,oC;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EACNC,4P;;;QAHiB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["MyLineDataset.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineDataset.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineDataset.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineDataset.<init>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineDataset.<clinit>"]
+}
+

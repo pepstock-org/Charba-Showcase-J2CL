@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TooltipFilterCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uF;EAAAA,kK;;;CAAA,wJ;EAAAC,iC;EAAAA,0F;;;CAAA,4F;EAAAC,6D;EAAAA,iI;;;;CAAA,gE;EAAAA,yK;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["TooltipFilterCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.TooltipFilterCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.TooltipFilterCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.TooltipFilterCallback$$LambdaAdaptor.onFilter","org.pepstock.charba.client.callbacks.TooltipFilterCallback$$LambdaAdaptor.<clinit>"]
+}
+

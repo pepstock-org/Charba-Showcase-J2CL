@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ItemSortCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MAyBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kF;EAAAA,wJ;;;CAAA,8I;EAAAC,iC;EAAAA,qF;;;CAAA,oF;EAAAC,qD;EAAAA,kI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ItemSortCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.ItemSortCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.ItemSortCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.ItemSortCallback$$LambdaAdaptor.onItemSort","org.pepstock.charba.client.callbacks.ItemSortCallback$$LambdaAdaptor.<clinit>"]
+}
+

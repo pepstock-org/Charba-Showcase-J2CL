@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TooltipModel$Property.impl.java.js",
+"lineCount":233,
+"mappings":"A;;;;;;;;;;;;;;MAyCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAsBS,gEAtBTA,C;;;QA6BJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAxCW,2B;EAAAC,mB;EAAAA;GAAAA,yIAAAA;G;EAAAA,iI;;;QAAA,U;EAAAC,mB;EAAAA,qhD;;;QAEZ,yE;EAAAC,kH;;;QACA,qE;EAAAA,8G;;;QACA,qE;EAAAA,8G;;;QACA,+D;EAAAA,wG;;;QACA,+D;EAAAA,wG;;;QACA,mE;EAAAA,4G;;;QACA,oE;EAAAA,6G;;;QACA,qE;EAAAA,8G;;;QACA,qE;EAAAA,8G;;;QACA,kE;EAAAA,2G;;;QACA,yE;EAAAA,kH;;;QACA,wE;EAAAA,iH;;;QACA,mE;EAAAA,4G;;;QACA,oE;EAAAA,6G;;;QACA,0E;EAAAA,mH;;;QACA,gF;EAAAA,yH;;;QACA,+E;EAAAA,wH;;;QACA,qE;EAAAA,8G;;;QAnBY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,0R;EACAA,0Q;EACAA,0Q;EACAA,mP;EACAA,mP;EACAA,mQ;EACAA,uQ;EACAA,0Q;EACAA,0Q;EACAA,+P;EACAA,0R;EACAA,sR;EACAA,mQ;EACAA,uQ;EACAA,8R;EACAA,qT;EACAA,iT;EACAA,2Q;EAnBYA,4F;;;;;;;;;;;;;AAAA;qF;AAAA;iF;AAAA;iF;AAAA;2E;AAAA;2E;AAAA;+E;AAAA;gF;AAAA;iF;AAAA;iF;AAAA;8E;AAAA;qF;AAAA;oF;AAAA;+E;AAAA;gF;AAAA;sF;AAAA;4F;AAAA;2F;AAAA;iF;AAAA;qF;AAEZ;0F;AACA;sF;AACA;sF;AACA;gF;AACA;gF;AACA;oF;AACA;qF;AACA;sF;AACA;sF;AACA;mF;AACA;2F;AACA;0F;AACA;qF;AACA;sF;AACA;4F;AACA;kG;AACA;iG;AACA;;",
+"sources":["TooltipModel.java"],
+"names":["org.pepstock.charba.client.items.TooltipModel$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.TooltipModel$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.TooltipModel$Property.<init>","org.pepstock.charba.client.items.TooltipModel$Property.value","org.pepstock.charba.client.items.TooltipModel$Property.valueOf","org.pepstock.charba.client.items.TooltipModel$Property.values","org.pepstock.charba.client.items.TooltipModel$Property.<synthetic: getter>","org.pepstock.charba.client.items.TooltipModel$Property.<clinit>"]
+}
+

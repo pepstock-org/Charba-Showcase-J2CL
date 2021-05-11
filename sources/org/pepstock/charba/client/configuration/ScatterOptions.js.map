@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScatterOptions.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;;MAyBa,c;;CAAA,W;EAAAA,Q;;;QAQL,uG,gBAAuBC,K,gCAA8BC,a;EAArDC,yB;EAAAA,qC;EAAAA,+L;EAAAA,iB;;;CAAA,8J,gBAAuBF,K,gCAA8BC,a;EAC3DE,yL;;;CAS0B,c;EAC1BC,Y;;;;CAnBW,c;EAAAC,4G;;;;CAAA,c;EAAAC,4G;;;;CAAA,sB;EAAAC,qH;;;;CAAA,sB;EAAAC,qH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,wB;EAAAA;",
+"sources":["ScatterOptions.java"],
+"names":["org.pepstock.charba.client.configuration.ScatterOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.ScatterOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.ScatterOptions.<init>","org.pepstock.charba.client.configuration.ScatterOptions.getOptions","org.pepstock.charba.client.configuration.ScatterOptions.isShowLine","org.pepstock.charba.client.configuration.ScatterOptions.isSpanGaps","org.pepstock.charba.client.configuration.ScatterOptions.setShowLine","org.pepstock.charba.client.configuration.ScatterOptions.setSpanGaps","org.pepstock.charba.client.configuration.ScatterOptions.<clinit>"]
+}
+

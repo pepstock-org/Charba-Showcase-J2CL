@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetSelectionEvent.impl.java.js",
+"lineCount":96,
+"mappings":"A;;;;;;;;;;;;;MA2BmB,qB;;CAAA,W;EAAAA,Q;EAAAA;OAOa,gEAPbA,C;EAAAA;OASI,iEATJA,C;;;;QAiBX,0G,eAAsCC,W,0BAA8BC,I;EAApEC,gC;EAAAA,4C;EAAAA,+L;EAAAA,iB;;;;CAAA,iK,eAAsCF,W,0BAA8BC,I;EAC1EE,mQ;EACAA,6E;EAEAA,8E;;;;QAUM,8I,eAAsCH,W,iBAAqBI,K,0BAAwBH,I;EAAnFC,gC;EAAAA,4C;EAAAA,0O;EAAAA,iB;;;;CAAA,qM,eAAsCF,W,iBAAqBI,K,0BAAwBH,I;EACzFE,mQ;EACAA,6E;EACAA,+E;;;CAQuB,W;EACvBE,6E;;;CASc,Y;EAGdC;GACCA,8EADDA;G;EAMAA,4B;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAA6BC,SAA7BD,iGAFDA;GAICA,oFAJDA;G;;;QAtED,mE;EAAAE,sI;;;QAFkB,O;EAAAC,wC;EAAAA,qC;EAAAA,wB;EAElBA,qK;;;;;;;;;;;;;;;AAFkB;;",
+"sources":["DatasetSelectionEvent.java"],
+"names":["org.pepstock.charba.client.events.DatasetSelectionEvent.<synthetic: ctor_js>","nativeEvent","item","org.pepstock.charba.client.events.DatasetSelectionEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.DatasetSelectionEvent.<init>","chart","org.pepstock.charba.client.events.DatasetSelectionEvent.getItem","org.pepstock.charba.client.events.DatasetSelectionEvent.getChart","handler","org.pepstock.charba.client.events.DatasetSelectionEvent.dispatch","myHandler","org.pepstock.charba.client.events.DatasetSelectionEvent.<synthetic: getter>","org.pepstock.charba.client.events.DatasetSelectionEvent.<clinit>"]
+}
+

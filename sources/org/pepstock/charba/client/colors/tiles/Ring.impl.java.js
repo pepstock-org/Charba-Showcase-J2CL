@@ -1,0 +1,48 @@
+goog.module('org.pepstock.charba.client.colors.tiles.Ring$impl');
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+const Dot = goog.require('org.pepstock.charba.client.colors.tiles.Dot$impl');
+
+class Ring extends Dot {
+ /** @protected */
+ constructor() {
+  super();
+ }
+ /** @return {!Ring} */
+ static $create__() {
+  Ring.$clinit();
+  let $instance = new Ring();
+  $instance.$ctor__org_pepstock_charba_client_colors_tiles_Ring__();
+  return $instance;
+ }
+ 
+ $ctor__org_pepstock_charba_client_colors_tiles_Ring__() {
+  this.$ctor__org_pepstock_charba_client_colors_tiles_Dot__();
+ }
+ /** @override */
+ m_drawTile__org_pepstock_charba_client_dom_elements_Context2dItem__java_lang_String__java_lang_String__int(/** CanvasRenderingContext2D */ context, /** ?string */ backgroundColor, /** ?string */ shapeColor, /** number */ size) {
+  let halfSize = size / 2;
+  let diameter = size / 5;
+  this.m_applyStrokeProperties__org_pepstock_charba_client_dom_elements_Context2dItem__java_lang_String__int(context, shapeColor, size);
+  this.m_drawDot__org_pepstock_charba_client_dom_elements_Context2dItem__int__double__double__double_$pp_org_pepstock_charba_client_colors_tiles(context, size, 0, 0, diameter);
+  this.m_drawDot__org_pepstock_charba_client_dom_elements_Context2dItem__int__double__double__double_$pp_org_pepstock_charba_client_colors_tiles(context, size, halfSize, halfSize, diameter);
+  context.stroke();
+ }
+ 
+ static $clinit() {
+  Ring.$clinit = () =>{};
+  Ring.$loadModules();
+  Dot.$clinit();
+ }
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
+  return instance instanceof Ring;
+ }
+ 
+ static $loadModules() {}
+}
+$Util.$setClassMetadata(Ring, "org.pepstock.charba.client.colors.tiles.Ring");
+
+exports = Ring;
+
+//# sourceMappingURL=Ring.js.map

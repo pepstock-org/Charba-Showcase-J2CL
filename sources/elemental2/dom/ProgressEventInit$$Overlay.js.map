@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ProgressEventInit$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEU,U;EAAAA,mB;EACvBA,8G;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["ProgressEventInit.java"],
+"names":["elemental2.dom.ProgressEventInit$$Overlay.create","elemental2.dom.ProgressEventInit$$Overlay.<clinit>"]
+}
+

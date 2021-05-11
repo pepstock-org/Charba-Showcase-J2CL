@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsTransitions.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;;MAwBiB,a;;CASI,yD,wBAAoBA,U;;CAQnC,iH,wBAAoBA,U,6BAAgCC,mB;;CAQrC,4D,wBAAuBD,U;;CAOtC,4D,wBAAuBA,U;;QAhCZ,O;EAAAE,gC;EAAAA;",
+"sources":["IsTransitions.java"],
+"names":["transition","animationTransition","org.pepstock.charba.client.options.IsTransitions.<clinit>"]
+}
+

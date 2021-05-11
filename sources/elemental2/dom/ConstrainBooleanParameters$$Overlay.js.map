@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ConstrainBooleanParameters$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEmB,U;EAAAA,mB;EAChCA,uH;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["ConstrainBooleanParameters.java"],
+"names":["elemental2.dom.ConstrainBooleanParameters$$Overlay.create","elemental2.dom.ConstrainBooleanParameters$$Overlay.<clinit>"]
+}
+

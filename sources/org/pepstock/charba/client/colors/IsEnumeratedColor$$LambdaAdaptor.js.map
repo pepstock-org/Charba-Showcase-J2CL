@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsEnumeratedColor$$LambdaAdaptor.impl.java.js",
+"lineCount":111,
+"mappings":"A;;;;;;;;;;;MAuBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,Y;EAAAC,yC;EAAAA,gH;;;;CAAA,e;EAAAC,gG;;;;CAAA,Y;EAAAC,qF;;;;CAAA,kB;EAAAA,mG;;;;CAAA,U;EAAAC,mF;;;;CAAA,gB;EAAAA,iG;;;;CAAA,Y;EAAAC,yG;;;;CAAA,W;EAAAC,wG;;;;CAAA,Y;EAAAC,yG;;;;CAAA,U;EAAAC,uG;;;;CAAA,S;EAAAC,kF;;;;CAAA,U;EAAAC,mF;;;;CAAA,S;EAAAC,kF;;;;CAAA,S;EAAAC,kF;;;;CAAA,U;EAAAC,mF;;;;CAAA,U;EAAAC,mF;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["IsEnumeratedColor.java"],
+"names":["org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.<init>","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.getColor","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.alpha","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.brighter","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.darker","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.getAlpha","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.getBlue","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.getGreen","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.getRed","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.toHSL","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.toHSLA","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.toHex","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.toRGB","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.toRGBA","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.toRGBs","org.pepstock.charba.client.colors.IsEnumeratedColor$$LambdaAdaptor.<clinit>"]
+}
+

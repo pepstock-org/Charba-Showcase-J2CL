@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Amount.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;MAyBmB,M;;CAAA,W;EAAAA,Q;;;;QAKX,S;EAAAC,iB;EAAAA,6B;EAAAA,4D;EAAAA,iB;;;;CAAA,+C;EACNC,iE;;;;QAQM,e,eAAcC,C;EAAdF,iB;EAAAA,6B;EAAAA,mE;EAAAA,iB;;;;CAAA,qD,eAAcE,C;EACpBD,wE;;;;QASM,uB,eAAcC,C,gBAAUC,C;EAAxBH,iB;EAAAA,6B;EAAAA,8E;EAAAA,iB;;;;CAAA,6D,eAAcE,C,gBAAUC,C;EAC9BF,mF;;;;QAQD,wD,UAAoBG,Y;EAApBJ,iB;EAAAA,6B;EAAAA,uH;EAAAA,iB;;;;CAAA,8F,UAAoBI,Y;EACnBH,4H;;;CAQY,oD;EACZI,kC;;;QA3CiB,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"sources":["Amount.java"],
+"names":["org.pepstock.charba.client.zoom.Amount.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.Amount.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Amount.<init>","x","y","nativeObject","org.pepstock.charba.client.zoom.Amount.nativeObject","org.pepstock.charba.client.zoom.Amount.<clinit>"]
+}
+

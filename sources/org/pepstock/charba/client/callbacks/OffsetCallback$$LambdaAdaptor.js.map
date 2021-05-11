@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"OffsetCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,2D;EAAAC,0C;EAAAA,oH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["OffsetCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.OffsetCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.OffsetCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.OffsetCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.OffsetCallback$$LambdaAdaptor.<clinit>"]
+}
+

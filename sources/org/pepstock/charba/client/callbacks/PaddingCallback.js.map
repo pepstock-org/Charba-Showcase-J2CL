@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PaddingCallback.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;;;MA0BiB,e;;QAAA,M;EAAAA,0B;EAAAA,gE;;;QAAA,O;EAAAC,kC;EAAAA;",
+"sources":["PaddingCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.PaddingCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.PaddingCallback.<clinit>"]
+}
+

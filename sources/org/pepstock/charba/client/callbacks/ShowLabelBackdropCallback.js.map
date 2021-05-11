@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ShowLabelBackdropCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAyBiB,yB;;QAAA,M;EAAAA,oC;EAAAA,8B;;;QAAA,O;EAAAC,4C;EAAAA;",
+"sources":["ShowLabelBackdropCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.ShowLabelBackdropCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.ShowLabelBackdropCallback.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CompletedCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,oK;;;CAAA,0J;EAAAC,iC;EAAAA,2F;;;CAAA,0D;;GAAAC,sG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["CompletedCallback.java"],
+"names":["org.pepstock.charba.client.zoom.callbacks.CompletedCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.zoom.callbacks.CompletedCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.zoom.callbacks.CompletedCallback$$LambdaAdaptor.onCompleted","org.pepstock.charba.client.zoom.callbacks.CompletedCallback$$LambdaAdaptor.<clinit>"]
+}
+

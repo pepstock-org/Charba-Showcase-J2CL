@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Animations.impl.java.js",
+"lineCount":87,
+"mappings":"A;;;;;;;;;;;;;;;MA+BmB,U;;CAAA,W;EAAAA,Q;EAAAA;OAGgB,+DAHhBA,C;;;QAalB,0M,qBAAwBC,M,aAAYC,Q,6BAA8BC,a,WAA4BC,Y;EAA9FC,qB;EAAAA,iC;EAAAA,iT;EAAAA,iB;;;CAAA,uP,qBAAwBJ,M,aAAYC,Q,6BAA8BC,a,WAA4BC,Y;EAC7FE,sO;EAEAA,qF;;;CAUW,kF,iCAAoCC,U,iBAAoBC,O;EAEnEC;GAECA;IAECA;KAICA,uFAJDA;KAFDA;;IAUCA,kGAVDA;IAFDA;G;;;CAwBc,wE,iCAAmCF,U;EAEjDG,6S;;;CAUc,kE,iCAA6BH,U;EAE3CI;GAECA,4LAFDA;G;EAMAA,a;;;CAU0B,kE,iCAA6BJ,U;EAEvDK;GAECA,gfAFDA;G;EAMAA,Y;;;CAUW,0H,iCAA6BL,U,6BAAgCM,mB;EAExEC;GAECA,mJAFDA;G;;;CAa0B,qE,iCAAgCP,U;EAC1DQ,IAAoBC,OAApBD,6a;EAEAA,uI;EAEAA,e;;;CASW,qE,iCAAgCR,U;EAE3CU;GAECA,uFAFDA;G;;;QAnIiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["Animations.java"],
+"names":["org.pepstock.charba.client.options.Animations.<synthetic: ctor_js>","parent","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Animations.<synthetic: ctor_create>","org.pepstock.charba.client.options.Animations.<init>","collection","enabled","org.pepstock.charba.client.options.Animations.setEnabled","org.pepstock.charba.client.options.Animations.isEnabled","org.pepstock.charba.client.options.Animations.has","org.pepstock.charba.client.options.Animations.get","animationCollection","org.pepstock.charba.client.options.Animations.set","org.pepstock.charba.client.options.Animations.create","options","org.pepstock.charba.client.options.Animations.remove","org.pepstock.charba.client.options.Animations.<clinit>"]
+}
+

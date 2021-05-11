@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseComposite.impl.java.js",
+"lineCount":109,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAYsB,a;;CAAA,W;EAAAA,Q;;;CAAA,sE;EAAAC,kF;;;CAIN,mD,gBAAsBC,K;EACpCC,IAAcC,QAAdD,yC;EACAA;GACCA,gDADDA;GAECA,mBAFDA;G;;;CAMc,6C,gBAAgBD,K;EAC9BG,yE;;;CAGc,sD,gBAAgBH,K,iBAAeI,Q;EAC7CD;GACCA,iFADDA;GAECA,4KAFDA;GAGCA,IAAcD,QAAdC,yCAHDA;GAICA;IAAAA,IAAaE,EAAbF,oEAAAA;;KACCA,+DADDA;;IAJDA;GAOCA,mBAPDA;G;;;CAWc,gD,gBAAmBH,K;EACjCM;GACCA,4KADDA;GAECA,gFAFDA;GAGCA,IAAcJ,QAAdI,yCAHDA;GAICA;IAAAA,IAAaC,OAAbD,oEAAAA;;KACCA,0EADDA;;IAJDA;GAOCA,mBAPDA;G;;;CAWgB,U;EAChBE,IAAcC,EAAdD,kG;EACAA,yN;;;CAGwB,qB,eAAmBE,K;EAC3CC;GACCA,SAASC,CAATD;IACCA,4VADDA;IADDA;G;EAKAA,8F;;;QAnDoB,O;EAAAE,gC;EAAAA,6B;EAAAA,4B;EAErBA,8I;;;;;;;;;;;;;;;;;;AAFqB;cAEY,wEAFZ;",
+"sources":["BaseComposite.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.<init>","chart","org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.removeDataset","datasets","org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.addData","negative","ds","org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.removeData","dataset","org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.getUrl","sb","count","org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.getLabelColors","i","org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite.<clinit>"]
+}
+

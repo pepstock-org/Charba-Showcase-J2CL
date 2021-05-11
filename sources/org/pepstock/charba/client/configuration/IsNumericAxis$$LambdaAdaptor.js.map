@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsNumericAxis$$LambdaAdaptor.impl.java.js",
+"lineCount":76,
+"mappings":"A;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,sF;;;CAAA,kB;EAAAC,sC;EAAAA,mH;;;;CAAA,U;EAAAC,sG;;;;CAAA,U;EAAAC,sG;;;;CAAA,mB;EAAAC,+G;;;;CAAA,mB;EAAAC,+G;;;;CAAA,gB;EAAAC,6G;;;;CAAA,gB;EAAAC,6G;;;;CAAA,yB;EAAAC,sH;;;;CAAA,yB;EAAAC,sH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["IsNumericAxis.java"],
+"names":["org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.<init>","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.getAxisElement","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.getMax","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.getMin","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.getSuggestedMax","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.getSuggestedMin","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.setMax","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.setMin","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.setSuggestedMax","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.setSuggestedMin","org.pepstock.charba.client.configuration.IsNumericAxis$$LambdaAdaptor.<clinit>"]
+}
+

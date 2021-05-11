@@ -1,0 +1,9 @@
+goog.module('org.pepstock.charba.client.annotation.StandardAnnotationId');
+
+goog.require('java.lang.Object');
+goog.require('nativebootstrap.Util');
+goog.require('org.pepstock.charba.client.annotation.IsAnnotationId');
+
+const StandardAnnotationId = goog.require('org.pepstock.charba.client.annotation.StandardAnnotationId$impl');
+exports = StandardAnnotationId;
+

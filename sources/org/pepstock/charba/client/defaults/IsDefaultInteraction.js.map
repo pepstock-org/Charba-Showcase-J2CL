@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultInteraction.impl.java.js",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;MAyBiB,oB;;CAOA,W;;CAOR,e;;CAOQ,W;;QArBA,O;EAAAA,uC;EAAAA;",
+"sources":["IsDefaultInteraction.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultInteraction.<clinit>"]
+}
+

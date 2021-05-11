@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeJsObjectInteger$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MA0BY,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["NativeJsObjectInteger.java"],
+"names":["org.pepstock.charba.client.commons.NativeJsObjectInteger$$Overlay.<clinit>"]
+}
+

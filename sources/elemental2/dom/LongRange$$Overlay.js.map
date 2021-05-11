@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LongRange$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEE,U;EAAAA,mB;EACfA,sG;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["LongRange.java"],
+"names":["elemental2.dom.LongRange$$Overlay.create","elemental2.dom.LongRange$$Overlay.<clinit>"]
+}
+

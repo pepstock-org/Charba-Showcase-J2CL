@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ZoomContext.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;MA4BmB,W;;CAAA,W;EAAAA,Q;EAAAA;OAkCsB,2DAlCtBA,C;EAAAA;OAoCO,qDApCPA,C;;;QA4ClB,mH,kCAAsCC,W,WAA0BC,Y;EAAhEC,sB;EAAAA,kC;EAAAA,oM;EAAAA,iB;;;CAAA,8J,kCAAsCF,W,WAA0BC,Y;EAC/DE,6H;EAGAA,0P;EAEAA,kQ;EAIAA;GAECA,yOAFDA;G;;;CAWgC,c;EAChCC,wE;;;CAQiB,Y;EACjBC,kE;;;CASiB,gB;EAEjBC,mS;;;QAtFiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"sources":["ZoomContext.java"],
+"names":["org.pepstock.charba.client.zoom.ZoomContext.<synthetic: ctor_js>","zoomElement","nativeObject","org.pepstock.charba.client.zoom.ZoomContext.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.ZoomContext.<init>","org.pepstock.charba.client.zoom.ZoomContext.getElement","org.pepstock.charba.client.zoom.ZoomContext.getPoint","org.pepstock.charba.client.zoom.ZoomContext.isConsistent","org.pepstock.charba.client.zoom.ZoomContext.<clinit>"]
+}
+

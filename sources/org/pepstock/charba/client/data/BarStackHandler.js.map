@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BarStackHandler.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;MA4BY,e;;CAAA,W;EAAAA,Q;;;QAsCX,wD,UAA6BC,Y;EAA7BC,0B;EAAAA,sC;EAAAA,gI;EAAAA,iB;;;CAAA,uG,UAA6BD,Y;EAC5BE,oI;;;CAQI,qE,gBAAqBC,U;EACzBC,kK;;;CAQM,qD;EACNC,gO;;;QAzDU,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["BarStackHandler.java"],
+"names":["org.pepstock.charba.client.data.BarStackHandler.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.data.BarStackHandler.<synthetic: ctor_create>","org.pepstock.charba.client.data.BarStackHandler.<init>","stackGroup","org.pepstock.charba.client.data.BarStackHandler.setStackGroup","org.pepstock.charba.client.data.BarStackHandler.getStackGroup","org.pepstock.charba.client.data.BarStackHandler.<clinit>"]
+}
+

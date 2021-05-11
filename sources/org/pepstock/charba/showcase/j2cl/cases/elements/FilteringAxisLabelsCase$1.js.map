@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FilteringAxisLabelsCase$1.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;;MAwF0D,E;;CAAA,W;EAAAA,Q;EAAAA;+F;;;QAAA,iF;EAAAC,a;EAAAA,yB;EAAAA,mL;EAAAA,iB;;;CAAA,2J;EAAAC,2G;EAAAA,iC;;;CAGzC,kG,aAAgBC,I,iBAAaC,K,gBAAWC,K,uBAAoBC,M;EACzEC,gE;;;QAJsD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["FilteringAxisLabelsCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.elements.FilteringAxisLabelsCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringAxisLabelsCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringAxisLabelsCase$1.<init>","axis","value","index","values","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringAxisLabelsCase$1.onCallback","org.pepstock.charba.showcase.j2cl.cases.elements.FilteringAxisLabelsCase$1.<clinit>"]
+}
+

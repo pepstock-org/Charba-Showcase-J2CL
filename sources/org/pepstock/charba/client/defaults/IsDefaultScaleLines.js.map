@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultScaleLines.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;MAyBiB,mB;;CAOT,oB;;CAOH,gB;;CAOG,uB;;CAOO,iB;;QA5BE,O;EAAAA,sC;EAAAA;",
+"sources":["IsDefaultScaleLines.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultScaleLines.<clinit>"]
+}
+

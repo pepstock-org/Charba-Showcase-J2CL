@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetItemsSelectorScatterCase$2.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;MA8H2D,E;;CAAA,W;EAAAA,Q;EAAAA;sG;;;QAAA,wF;EAAAC,a;EAAAA,yB;EAAAA,iM;EAAAA,iB;;;CAAA,yK;EAAAC,kH;EAAAA,iC;;;CAG5C,wE,mCAAoCC,K;EAC/CC,IAAcC,EAAdD,6B;EACAA,+M;EACAA,6O;;;QANuD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["DatasetItemsSelectorScatterCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorScatterCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorScatterCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorScatterCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorScatterCase$2.onSelect","sb","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorScatterCase$2.<clinit>"]
+}
+

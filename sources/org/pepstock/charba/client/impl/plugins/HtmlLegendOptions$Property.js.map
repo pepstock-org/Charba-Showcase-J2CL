@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HtmlLegendOptions$Property.impl.java.js",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;MAgDM,Q;;CAAA,W;EAAAA,Q;EAAAA;OASiB,4EATjBA,C;;;QAgBI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,qJ;EAAAA,iB;;;CAAA,kH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,0F;;;CASa,S;EACbC,yF;;;QA3BG,2B;EAAAC,mB;EAAAA;GAAAA,qJAAAA;G;EAAAA,6I;;;QAAA,U;EAAAC,mB;EAAAA,me;;;QAEJ,gG;EAAAC,yI;;;QACA,iF;EAAAA,0H;;;QAEA,8F;EAAAA,uI;;;QACA,+F;EAAAA,wI;;;QANI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,yV;EACAA,mS;EAEAA,6U;EACAA,iV;EANIA,wG;;;;;;;;;;;;;AAAA;4G;AAAA;6F;AAAA;0G;AAAA;2G;AAAA;iG;AAEJ;iH;AACA;kG;AAEA;+G;AACA;;",
+"sources":["HtmlLegendOptions.java"],
+"names":["org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.<init>","org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.value","org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.valueOf","org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.values","org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.HtmlLegendOptions$Property.<clinit>"]
+}
+

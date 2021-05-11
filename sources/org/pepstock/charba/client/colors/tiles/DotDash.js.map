@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DotDash.impl.java.js",
+"lineCount":50,
+"mappings":"A;;;;;;;;MAuCY,O;;CAAA,W;EAAAA,Q;EAAAA;OAEO,uDAFPA,C;EAAAA;OAIQ,wDAJRA,C;;;QAAA,S;EAAAC,kB;EAAAA,8B;EAAAA,qE;EAAAA,iB;;;CAAA,wD;EAAAC,oE;EAAAA,kE;;;CAYI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,IAAaE,QAAbF,a;EAEAA,sI;EAEAA,oO;EAEAA,iB;EAEAA,yH;EAEAA,sO;EAEAA,e;;;CA5BU,0D;EAEXL,+E;EAEAA,iF;;;QAJW,O;EAAAQ,0B;EAAAA,uB;EAAAA;",
+"sources":["DotDash.java"],
+"names":["org.pepstock.charba.client.colors.tiles.DotDash.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.DotDash.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.DotDash.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.DotDash.drawTile","halfSize","diameter","org.pepstock.charba.client.colors.tiles.DotDash.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ControllerTemplate.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;MAwBY,kB;;CAAA,W;EAAAA,Q;EAAAA;OAgBiB,qEAhBjBA,C;;;QAqBH,S;EAAAC,yC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAAAA,4E;EACPA;GAAAA,IAAYC,IAAZD,kBAAAA;;IACCA,4GADDA;;G;;;QAUyB,O;EAAAE,6B;EACzBA,iG;;;CAQM,0D;EACNC,6F;;;CA1CU,oE;EAgBXH,uG;;;QAhBW,O;EAAAI,qC;EAAAA,kC;EAAAA,qB;EAEXA,ytF;EAYAA,2H;;;;;;;;;;;;;AAdW;mBAEmB,qEAFnB,C;AAAA;mBAc6B,sEAd7B;",
+"sources":["ControllerTemplate.java"],
+"names":["org.pepstock.charba.client.controllers.ControllerTemplate.<synthetic: ctor_js>","org.pepstock.charba.client.controllers.ControllerTemplate.<synthetic: ctor_create>","org.pepstock.charba.client.controllers.ControllerTemplate.<init>","line","org.pepstock.charba.client.controllers.ControllerTemplate.get","org.pepstock.charba.client.controllers.ControllerTemplate.getTemplate","org.pepstock.charba.client.controllers.ControllerTemplate.<clinit>"]
+}
+

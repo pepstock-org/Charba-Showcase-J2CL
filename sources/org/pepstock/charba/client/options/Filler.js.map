@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Filler.impl.java.js",
+"lineCount":53,
+"mappings":"A;;;;;;;;;;;;;;;;MA4BmB,M;;CAAA,W;EAAAA,Q;;;QA0ClB,iM,gBAAeC,O,aAAaC,Q,yBAA0BC,a,WAA4BC,Y;EAAlFC,iB;EAAAA,6B;EAAAA,qS;EAAAA,iB;;;CAAA,0O,gBAAeJ,O,aAAaC,Q,yBAA0BC,a,WAA4BC,Y;EACjFE,0Q;;;CAQW,uB,gBAAqBC,S;EAChCC,oK;;;CASc,e;EACdC,6P;;;CAQW,wD,iBAAqBC,Q;EAEhCC,oL;;;CASe,e;EACfC,iZ;;;QAlFiB,O;EAAAC,yB;EAAAA,sB;EAAAA;",
+"sources":["Filler.java"],
+"names":["org.pepstock.charba.client.options.Filler.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Filler.<synthetic: ctor_create>","org.pepstock.charba.client.options.Filler.<init>","propagate","org.pepstock.charba.client.options.Filler.setPropagate","org.pepstock.charba.client.options.Filler.isPropagate","drawTime","org.pepstock.charba.client.options.Filler.setDrawTime","org.pepstock.charba.client.options.Filler.getDrawTime","org.pepstock.charba.client.options.Filler.<clinit>"]
+}
+

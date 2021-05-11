@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasOrder.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;MAsBU,Q;;CAOI,mB;;CAQA,e,eAAaA,K;;CAad,Y;;QA5BH,M;EAAAC,mB;EAAAA,8B;;;QAeI,mE,0CAAaD,K;EAAbE,mB;EAEZA;GACCA,0FADDA;G;;;QAWW,8D;EAAAC,mB;EAEXA;GACCA,yFADDA;G;EAKAA,kF;;;QAnCQ,O;EAAAC,2B;EAAAA;",
+"sources":["HasOrder.java"],
+"names":["order","org.pepstock.charba.client.data.HasOrder.<synthetic: adapt_lambda>","org.pepstock.charba.client.data.HasOrder.setOrder__$default","org.pepstock.charba.client.data.HasOrder.getOrder__$default","org.pepstock.charba.client.data.HasOrder.<clinit>"]
+}
+

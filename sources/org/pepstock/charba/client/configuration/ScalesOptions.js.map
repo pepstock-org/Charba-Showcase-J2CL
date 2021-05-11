@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScalesOptions.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;;MA4BsB,a;;CAAA,W;EAAAA,Q;EAAAA;OAGN,iEAHMA,C;;;;CAWX,6J,gBAAsBC,K,gCAA8BC,a;EAC7DC,wM;;;;CAWS,sK,gBAAsBF,K,gCAA8BC,a,iBAAuBE,W;EACpFD,gM;EADSA,yE;EAGTA;GAECA,sJAFDA;G;;;CAWa,a;EACbE,8E;;;CASI,+D,eAAgBC,E;EAIpBC,IAAWC,KAAXD,sC;EAEAA;GAECA;IAAAA,IAAUE,IAAVF,8DAAAA;;KAECA;MAECA,YAFDA;MAFDA;;IAFDA;G;EAWAA,Y;;;CAhEoB,iE;EAGrBJ,8E;;;QAHqB,O;EAAAO,gC;EAAAA,6B;EAAAA;",
+"sources":["ScalesOptions.java"],
+"names":["org.pepstock.charba.client.configuration.ScalesOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.ScalesOptions.<init>","createScale","org.pepstock.charba.client.configuration.ScalesOptions.getScales","id","org.pepstock.charba.client.configuration.ScalesOptions.getAxisById","xAxes","axis","org.pepstock.charba.client.configuration.ScalesOptions.<clinit>"]
+}
+

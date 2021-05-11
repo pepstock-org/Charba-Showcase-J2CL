@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractHandlerEvent.impl.java.js",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;;;;;MA2Be,oB;;CAAA,W;EAAAA,Q;EAAAA;OAGU,sEAHVA,C;;;CAUd,0G,kBAA+BC,W;EAA/BC,wD;EAECA,wE;EACAA,0F;;;CASoB,6B,wBAA4BC,K;EAEhDC;GAECA;IAAAA,IAAeC,IAAfD,wEAAAA;;KAECA;MACCA,YADDA;MAFDA;;IAFDA;G;EAWAA,a;;;CASoB,0D,kBAAsBC,I;EAE1CD,gG;;;QA9Ca,O;EAAAE,uC;EAAAA,oC;EAAAA;",
+"sources":["AbstractHandlerEvent.java"],
+"names":["org.pepstock.charba.client.events.AbstractHandlerEvent.<synthetic: ctor_js>","handlerType","org.pepstock.charba.client.events.AbstractHandlerEvent.<init>","types","org.pepstock.charba.client.events.AbstractHandlerEvent.isRecognize","type","org.pepstock.charba.client.events.AbstractHandlerEvent.<clinit>"]
+}
+

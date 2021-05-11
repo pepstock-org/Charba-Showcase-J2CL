@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CallbacksDoughnutCase$1.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;;;;MA4DiE,E;;CAAA,W;EAAAA,Q;EAAAA;kG;;;QAAA,oF;EAAAC,a;EAAAA,yB;EAAAA,yL;EAAAA,iB;;;CAAA,iK;EAAAC,8G;EAAAA,iC;;;CAG/C,6D,uBAAsBC,O;EACpCC,IAAIC,IAAJD,gD;EACAA,4E;;;;CAL6D,2D;EAAAA,0I;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["CallbacksDoughnutCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksDoughnutCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksDoughnutCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksDoughnutCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksDoughnutCase$1.invoke","size","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksDoughnutCase$1.<clinit>"]
+}
+

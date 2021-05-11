@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasSpanGaps.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;MA2BiB,W;;CAOD,qB;;CASF,sB,gBAAoBA,Q;;CAYpB,qB,eAAmBA,Q;;CAchB,c;;CAaD,e;;QAvDC,M;EAAAC,sB;EAAAA,8B;;;QAgBH,gF,8CAAoBD,Q;EAApBE,sB;EAEZA;GACCA,yGADDA;G;;;QAUY,+E,6CAAmBF,Q;EAAnBE,sB;EAEZA;GACCA,wGADDA;G;;;QAYe,sE;EAAAC,sB;EAEfA;GACCA,gGADDA;G;EAGAA,mE;;;QAQc,uE;EAAAC,sB;EAEdA;GACCA,iGADDA;G;EAGAA,sE;;;QA5De,O;EAAAC,8B;EAAAA;",
+"sources":["HasSpanGaps.java"],
+"names":["spanGaps","org.pepstock.charba.client.options.HasSpanGaps.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.HasSpanGaps.setSpanGaps__$default","org.pepstock.charba.client.options.HasSpanGaps.isSpanGaps__$default","org.pepstock.charba.client.options.HasSpanGaps.getSpanGaps__$default","org.pepstock.charba.client.options.HasSpanGaps.<clinit>"]
+}
+

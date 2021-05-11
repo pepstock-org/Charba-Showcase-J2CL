@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SegmentContext.impl.java.js",
+"lineCount":51,
+"mappings":"A;;;;;;;;;;;;MA6BmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAkCW,8DAlCXA,C;EAAAA;OAoCW,8DApCXA,C;;;QA2CX,sE,gCAAkDC,O;EAAlDC,yB;EAAAA,qC;EAAAA,6I;EAAAA,iB;;;CAAA,yH,gCAAkDD,O;EACxDE,sI;EAEAA,4R;EACAA,4R;;;CAQqB,iB;EACrBC,2E;;;CAQqB,e;EACrBC,2E;;;CASiB,gB;EAEjBC,sS;;;QA5EiB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["SegmentContext.java"],
+"names":["org.pepstock.charba.client.callbacks.SegmentContext.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.callbacks.SegmentContext.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.SegmentContext.<init>","org.pepstock.charba.client.callbacks.SegmentContext.getStartPoint","org.pepstock.charba.client.callbacks.SegmentContext.getEndPoint","org.pepstock.charba.client.callbacks.SegmentContext.isConsistent","org.pepstock.charba.client.callbacks.SegmentContext.<clinit>"]
+}
+

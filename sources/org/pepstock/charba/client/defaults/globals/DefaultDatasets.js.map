@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultDatasets.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;;MA0BmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAEkB,uEAFlBA,C;;;QAOlB,S;EAAAC,0B;EAAAA,sC;EAAAA,iF;EAAAA,iB;;;CAAA,oE;EAAAC,iC;EAAAA,8E;;;CAU6B,sC,aAASC,I;EACrCC,oF;;;CAlBiB,sE;EAElBF,+G;;;QAFkB,O;EAAAG,kC;EAAAA,+B;EAAAA;",
+"sources":["DefaultDatasets.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultDatasets.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultDatasets.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultDatasets.<init>","type","org.pepstock.charba.client.defaults.globals.DefaultDatasets.get","org.pepstock.charba.client.defaults.globals.DefaultDatasets.<clinit>"]
+}
+

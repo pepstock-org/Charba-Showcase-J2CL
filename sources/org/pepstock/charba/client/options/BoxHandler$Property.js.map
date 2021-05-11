@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BoxHandler$Property.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,gEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,yIAAAA;G;EAAAA,iI;;;QAAA,U;EAAAC,mB;EAAAA,0O;;;QAEZ,uE;EAAAC,gH;;;QACA,wE;EAAAA,iH;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,kR;EACAA,sR;EAHYA,4F;;;;;;;;;;;;;AAAA;mF;AAAA;oF;AAAA;qF;AAEZ;wF;AACA;;",
+"sources":["BoxHandler.java"],
+"names":["org.pepstock.charba.client.options.BoxHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.BoxHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.BoxHandler$Property.<init>","org.pepstock.charba.client.options.BoxHandler$Property.value","org.pepstock.charba.client.options.BoxHandler$Property.valueOf","org.pepstock.charba.client.options.BoxHandler$Property.values","org.pepstock.charba.client.options.BoxHandler$Property.<synthetic: getter>","org.pepstock.charba.client.options.BoxHandler$Property.<clinit>"]
+}
+

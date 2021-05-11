@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultBaseFormatOptions.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAyBiB,0B;;CAOF,oB;;CAOE,sB;;QAdA,O;EAAAA,6C;EAAAA;",
+"sources":["IsDefaultBaseFormatOptions.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultBaseFormatOptions.<clinit>"]
+}
+

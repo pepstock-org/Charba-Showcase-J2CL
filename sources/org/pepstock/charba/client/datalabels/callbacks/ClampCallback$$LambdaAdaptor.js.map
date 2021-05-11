@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ClampCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0F;EAAAA,wK;;;CAAA,8J;EAAAC,iC;EAAAA,6F;;;CAAA,iE;EAAAC,2D;EAAAA,8H;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ClampCallback.java"],
+"names":["org.pepstock.charba.client.datalabels.callbacks.ClampCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.datalabels.callbacks.ClampCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.datalabels.callbacks.ClampCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.datalabels.callbacks.ClampCallback$$LambdaAdaptor.<clinit>"]
+}
+

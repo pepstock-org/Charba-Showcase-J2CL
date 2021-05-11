@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ControllerDatasetElement.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;MA2BmB,wB;;CAAA,W;EAAAA,Q;;;QAOlB,wD,UAAsCC,Y;EAAtCC,mC;EAAAA,+C;EAAAA,gJ;EAAAA,iB;;;CAAA,uH,UAAsCD,Y;EACrCE,wO;;;CAQY,2D;EACZC,mC;;;QAjBiB,O;EAAAC,2C;EAAAA,wC;EAAAA;",
+"sources":["ControllerDatasetElement.java"],
+"names":["org.pepstock.charba.client.controllers.ControllerDatasetElement.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.controllers.ControllerDatasetElement.<synthetic: ctor_create>","org.pepstock.charba.client.controllers.ControllerDatasetElement.<init>","org.pepstock.charba.client.controllers.ControllerDatasetElement.nativeObject","org.pepstock.charba.client.controllers.ControllerDatasetElement.<clinit>"]
+}
+

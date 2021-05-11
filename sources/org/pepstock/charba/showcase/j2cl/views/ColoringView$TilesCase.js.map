@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ColoringView$TilesCase.impl.java.js",
+"lineCount":167,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MA2Kc,S;;CAAA,W;EAAAA,Q;EAAAA;OA2CS,wEA3CTA,C;EAAAA;OA6Cc,0EA7CdA,C;;;QA+CJ,qG,8DAAiBC,K,qBAAmBC,O;EAApCC,gC;EAAAA,+M;EAAAA,iB;;;CAAA,mK,8DAAiBF,K,qBAAmBC,O;EAApCE,qC;EAAAA,2C;EAAAA,mE;EACPA,sF;EACAA,0F;;;CAGa,Y;EACbC,qF;;;CAGkB,c;EAClBC,uF;;;QAzDW,2B;EAAAC,oB;EAAAA;GAAAA,mJAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,oB;EAAAA,wyB;;;QAEZ,yE;EAAAC,oH;;;QAKA,0E;EAAAA,qH;;;QAKA,2E;EAAAA,sH;;;QAKA,2E;EAAAA,sH;;;QAKA,8E;EAAAA,yH;;;QAKA,mF;EAAAA,8H;;;QAKA,kF;EAAAA,6H;;;QAKA,yF;EAAAA,oI;;;QArCY,O;EAAAC,4B;EAAAA,yB;EAAAA,e;EAEZA,uW;EAKAA,2W;EAKAA,+W;EAKAA,oX;EAKAA,2X;EAKAA,gY;EAKAA,iY;EAKAA,yZ;EArCYA,qG;;;;;;;;;;;;;;;;;;;;;AAAA;sF;AAAA;uF;AAAA;wF;AAAA;wF;AAAA;2F;AAAA;gG;AAAA;+F;AAAA;sG;AAAA;8F;AAEZ;2F;AAKA;4F;AAKA;6F;AAKA;6F;AAKA;gG;AAKA;qG;AAKA;oG;AAKA;;",
+"sources":["ColoringView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.<init>","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.getLabel","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.getFactory","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.valueOf","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.values","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase.<clinit>"]
+}
+

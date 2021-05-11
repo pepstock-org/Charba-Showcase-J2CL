@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ZoomOptionsFactory$ZoomDefaultsOptionsFactory.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;;MA4Dc,0B;;CAAA,W;EAAAA,Q;;;QAKZ,S;EAAAC,qC;EAAAA,iD;EAAAA,mG;EAAAA,iB;;;CAAA,sF;EACCC,2J;;;CAUkB,+G,UAAoBC,Y,0BAA+BC,a;EACrEC,uN;;;QAjBW,O;EAAAC,6C;EAAAA,0C;EAAAA;",
+"sources":["ZoomOptionsFactory.java"],
+"names":["org.pepstock.charba.client.zoom.ZoomOptionsFactory$ZoomDefaultsOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.ZoomOptionsFactory$ZoomDefaultsOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.ZoomOptionsFactory$ZoomDefaultsOptionsFactory.<init>","nativeObject","defaultValues","org.pepstock.charba.client.zoom.ZoomOptionsFactory$ZoomDefaultsOptionsFactory.create","org.pepstock.charba.client.zoom.ZoomOptionsFactory$ZoomDefaultsOptionsFactory.<clinit>"]
+}
+

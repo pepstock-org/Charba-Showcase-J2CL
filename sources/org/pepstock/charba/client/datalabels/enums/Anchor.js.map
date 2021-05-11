@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Anchor.impl.java.js",
+"lineCount":98,
+"mappings":"A;;;;;;;;;;;;;;MA0BY,M;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,4DAhBVA,C;;;QAuBH,gD,8DAAcC,K;EAAdC,6B;EAAAA,qI;EAAAA,iB;;;CAAA,kG,8DAAcD,K;EAAdE,qC;EAAAA,2C;EAAAA,mE;EACPA,0E;;;CASa,S;EACbC,yE;;;QAlCU,2B;EAAAC,iB;EAAAA;GAAAA,iIAAAA;G;EAAAA,2H;;;QAAA,U;EAAAC,iB;EAAAA,0R;;;QAEX,gE;EAAAC,qG;;;QAIA,+D;EAAAA,oG;;;QAIA,6D;EAAAA,kG;;;QAVW,O;EAAAC,yB;EAAAA,sB;EAAAA,e;EAEXA,yP;EAIAA,qP;EAIAA,6O;EAVWA,sF;;;;;;;;;;;;;AAAA;0E;AAAA;yE;AAAA;uE;AAAA;+E;AAEX;+E;AAIA;8E;AAIA;;",
+"sources":["Anchor.java"],
+"names":["org.pepstock.charba.client.datalabels.enums.Anchor.<synthetic: ctor_js>","value","org.pepstock.charba.client.datalabels.enums.Anchor.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.enums.Anchor.<init>","org.pepstock.charba.client.datalabels.enums.Anchor.value","org.pepstock.charba.client.datalabels.enums.Anchor.valueOf","org.pepstock.charba.client.datalabels.enums.Anchor.values","org.pepstock.charba.client.datalabels.enums.Anchor.<synthetic: getter>","org.pepstock.charba.client.datalabels.enums.Anchor.<clinit>"]
+}
+

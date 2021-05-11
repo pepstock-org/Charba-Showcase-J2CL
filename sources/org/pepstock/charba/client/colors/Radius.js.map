@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Radius.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;MAyBmB,M;;CAAA,W;EAAAA,Q;EAAAA;OAEH,kDAFGA,K;EAAAA;OAIH,kDAJGA,K;;;QAAA,S;EAAAC,iB;EAAAA,6B;EAAAA,8D;EAAAA,iB;;;CAAA,iD;EAAAC,iC;EAAAA,2D;;;CAWJ,Y;EACbC,+D;;;CAQW,kB,eAAgBC,K;EAC3BC,gE;;;CAQa,Y;EACbC,+D;;;CAQW,kB,eAAgBC,K;EAC3BC,gE;;;CASa,Q;EACbC,+J;;;CAjDiB,mD;EAElBP,4D;EAEAA,4D;;;QAJkB,O;EAAAQ,yB;EAAAA,sB;EAAAA;",
+"sources":["Radius.java"],
+"names":["org.pepstock.charba.client.colors.Radius.<synthetic: ctor_js>","org.pepstock.charba.client.colors.Radius.<synthetic: ctor_create>","org.pepstock.charba.client.colors.Radius.<init>","org.pepstock.charba.client.colors.Radius.getInner","inner","org.pepstock.charba.client.colors.Radius.setInner","org.pepstock.charba.client.colors.Radius.getOuter","outer","org.pepstock.charba.client.colors.Radius.setOuter","org.pepstock.charba.client.colors.Radius.toString","org.pepstock.charba.client.colors.Radius.<clinit>"]
+}
+

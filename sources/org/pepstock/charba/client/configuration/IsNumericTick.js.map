@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsNumericTick.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAyBiB,a;;CAOD,mB;;QAPC,M;EAAAA,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["IsNumericTick.java"],
+"names":["org.pepstock.charba.client.configuration.IsNumericTick.<synthetic: adapt_lambda>","org.pepstock.charba.client.configuration.IsNumericTick.<clinit>"]
+}
+

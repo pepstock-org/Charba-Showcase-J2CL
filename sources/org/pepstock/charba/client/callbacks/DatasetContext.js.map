@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetContext.impl.java.js",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;MA6Ba,c;;CAAA,W;EAAAA,Q;;;;QAOL,sE,gCAAkDC,O;EAAlDC,yB;EAAAA,qC;EAAAA,6I;EAAAA,iB;;;;CAAA,yH,gCAAkDD,O;EACxDE,mT;;;;QAQM,oD,uBAAyCF,O;EAAzCC,yB;EAAAA,qC;EAAAA,2H;EAAAA,iB;;;;CAAA,uG,uBAAyCD,O;EAC/CE,iS;;;;QAQM,gE,6BAA+CF,O;EAA/CC,yB;EAAAA,qC;EAAAA,uI;EAAAA,iB;;;;CAAA,mH,6BAA+CD,O;EACrDE,6S;;;;QAQM,wD,yBAA2CF,O;EAA3CC,yB;EAAAA,qC;EAAAA,+H;EAAAA,iB;;;;CAAA,2G,yBAA2CD,O;EACjDE,qS;;;;QAQO,wD,UAA4BC,Y;EAA5BF,qC;EAAAA,oI;EAAAA,iB;;;;CAAA,2G,UAA4BE,Y;EACnCD,uI;;;QA5CW,O;EAAAE,iC;EAAAA,8B;EAAAA;",
+"sources":["DatasetContext.java"],
+"names":["org.pepstock.charba.client.callbacks.DatasetContext.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.callbacks.DatasetContext.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.DatasetContext.<init>","nativeObject","org.pepstock.charba.client.callbacks.DatasetContext.<clinit>"]
+}
+

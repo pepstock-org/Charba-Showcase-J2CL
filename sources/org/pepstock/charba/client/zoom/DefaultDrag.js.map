@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultDrag.impl.java.js",
+"lineCount":60,
+"mappings":"A;;;;;;;;;MAwBY,W;;CAAA,W;EAAAA,Q;;;QAOH,S;EAAAC,kC;EAAAA,iE;EAAAA,iB;;;CAAA,oD;EAAAC,iC;;;;CAPG,8B;EAAAC,iH;;;;CAAA,0B;EAAAC,6G;;;;CAAA,kB;EAAAC,qG;;;QAEX,2D;EAAAC,0G;;;QAFW,O;EAAAC,8B;EAAAA,2B;EAAAA,qB;EAAAA,wB;EAEXA,oG;;;;;;;;;AAFW;;",
+"sources":["DefaultDrag.java"],
+"names":["org.pepstock.charba.client.zoom.DefaultDrag.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.DefaultDrag.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.DefaultDrag.<init>","org.pepstock.charba.client.zoom.DefaultDrag.getBackgroundColorAsString","org.pepstock.charba.client.zoom.DefaultDrag.getBorderColorAsString","org.pepstock.charba.client.zoom.DefaultDrag.getBorderWidth","org.pepstock.charba.client.zoom.DefaultDrag.<synthetic: getter>","org.pepstock.charba.client.zoom.DefaultDrag.<clinit>"]
+}
+

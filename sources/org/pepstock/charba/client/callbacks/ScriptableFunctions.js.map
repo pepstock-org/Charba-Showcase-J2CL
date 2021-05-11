@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScriptableFunctions.impl.java.js",
+"lineCount":25,
+"mappings":"A;;;;;MA6BmB,mB;;CAAA,W;EAAAA,Q;;;QAuIV,S;EAAAC,0C;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;;;QAvIU,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"sources":["ScriptableFunctions.java"],
+"names":["org.pepstock.charba.client.callbacks.ScriptableFunctions.<synthetic: ctor_js>","org.pepstock.charba.client.callbacks.ScriptableFunctions.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.ScriptableFunctions.<init>","org.pepstock.charba.client.callbacks.ScriptableFunctions.<clinit>"]
+}
+

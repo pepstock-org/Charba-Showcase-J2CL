@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultTooltips$InternalTitleFont.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;MAmfsB,iB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,4B;EAAAA,wC;EAAAA,mG;EAAAA,iB;;;CAAA,sF;EAAAC,8E;;;CAQN,a;EACbC,8D;;;QATmB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["DefaultTooltips.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalTitleFont.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalTitleFont.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalTitleFont.<init>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalTitleFont.getWeight","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalTitleFont.<clinit>"]
+}
+

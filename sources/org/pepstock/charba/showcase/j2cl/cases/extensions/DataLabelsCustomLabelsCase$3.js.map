@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsCustomLabelsCase$3.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MAsH8C,E;;CAAA,W;EAAAA,Q;EAAAA;oG;;;QAAA,sF;EAAAC,a;EAAAA,yB;EAAAA,6L;EAAAA,iB;;;CAAA,qK;EAAAC,gH;EAAAA,iC;;;CAG7B,4G,0BAAyBC,O,kBAAkBC,Q;EACxDC,IAAOC,MAAPD,2N;EACAA,2D;;;QAL0C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["DataLabelsCustomLabelsCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsCustomLabelsCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsCustomLabelsCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsCustomLabelsCase$3.<init>","context","dataItem","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsCustomLabelsCase$3.invoke","labels","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsCustomLabelsCase$3.<clinit>"]
+}
+

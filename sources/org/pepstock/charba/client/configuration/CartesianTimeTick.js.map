@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CartesianTimeTick.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;MA2Ba,iB;;CAAA,W;EAAAA,Q;EAAAA;OAGkB,0EAHlBA,C;;;QAUZ,sD,aAAuBC,I;EAAvBC,4B;EAAAA,wC;EAAAA,iI;EAAAA,iB;;;CAAA,gH,aAAuBD,I;EACtBE,wH;EAEAA,iO;;;CAQW,wD,mBAAqBC,M;EAChCC,0I;;;CAQiB,a;EACjBC,gG;;;CAQuB,e;EACvBC,oN;;;CAQW,oE,yBAA6BC,Q;EACxCC,uK;;;CAQqB,+D;EACrBC,uF;;;QA1DW,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["CartesianTimeTick.java"],
+"names":["org.pepstock.charba.client.configuration.CartesianTimeTick.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.CartesianTimeTick.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.CartesianTimeTick.<init>","source","org.pepstock.charba.client.configuration.CartesianTimeTick.setSource","org.pepstock.charba.client.configuration.CartesianTimeTick.getSource","org.pepstock.charba.client.configuration.CartesianTimeTick.getCallback","callback","org.pepstock.charba.client.configuration.CartesianTimeTick.setCallback","org.pepstock.charba.client.configuration.CartesianTimeTick.getTickHandler","org.pepstock.charba.client.configuration.CartesianTimeTick.<clinit>"]
+}
+

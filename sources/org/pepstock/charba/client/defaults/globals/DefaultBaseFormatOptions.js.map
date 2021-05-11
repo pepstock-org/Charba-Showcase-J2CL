@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultBaseFormatOptions.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;;MA0Ba,wB;;CAAA,W;EAAAA,Q;;;QAOZ,S;EAAAC,mC;EAAAA,+C;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CAUqB,oB;EACpBC,qF;;;CASsB,sB;EACtBC,Y;;;QA1BD,oF;EAAAC,6J;;;QAFY,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;EAEZA,uJ;;;;;;;;;;;AAFY;;",
+"sources":["DefaultBaseFormatOptions.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultBaseFormatOptions.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultBaseFormatOptions.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultBaseFormatOptions.<init>","org.pepstock.charba.client.defaults.globals.DefaultBaseFormatOptions.getLocaleMatcher","org.pepstock.charba.client.defaults.globals.DefaultBaseFormatOptions.getNumberingSystem","org.pepstock.charba.client.defaults.globals.DefaultBaseFormatOptions.<synthetic: getter>","org.pepstock.charba.client.defaults.globals.DefaultBaseFormatOptions.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CanvasObject$InternalGradient.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;MA+MsB,gB;;CAAA,W;EAAAA,Q;;;QAOpB,wD,UAA8BC,Y;EAA9BC,2B;EAAAA,uC;EAAAA,gJ;EAAAA,iB;;;CAAA,uH,UAA8BD,Y;EAC7BE,oI;;;CAQO,+C;EACPC,iH;;;CAQI,+D,gBAAaC,E;EAEjBC;GAECA,qIAFDA;G;;;QA3BmB,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["CanvasObject.java"],
+"names":["org.pepstock.charba.client.colors.CanvasObject$InternalGradient.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.colors.CanvasObject$InternalGradient.<synthetic: ctor_create>","org.pepstock.charba.client.colors.CanvasObject$InternalGradient.<init>","org.pepstock.charba.client.colors.CanvasObject$InternalGradient.hasId","id","org.pepstock.charba.client.colors.CanvasObject$InternalGradient.setId","org.pepstock.charba.client.colors.CanvasObject$InternalGradient.<clinit>"]
+}
+

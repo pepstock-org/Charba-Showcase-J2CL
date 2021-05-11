@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseDocument$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MAkCa,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["BaseDocument.java"],
+"names":["org.pepstock.charba.client.dom.BaseDocument$$Overlay.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeObjectContainerFactory$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,4K;;;CAAA,kK;EAAAC,iC;EAAAA,+F;;;CAAA,yD;EAAAC,oC;EAAAA,gI;;;;CAAA,U;EAAAA,8H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["NativeObjectContainerFactory.java"],
+"names":["org.pepstock.charba.client.commons.NativeObjectContainerFactory$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.commons.NativeObjectContainerFactory$$LambdaAdaptor.<init>","org.pepstock.charba.client.commons.NativeObjectContainerFactory$$LambdaAdaptor.create","org.pepstock.charba.client.commons.NativeObjectContainerFactory$$LambdaAdaptor.<clinit>"]
+}
+

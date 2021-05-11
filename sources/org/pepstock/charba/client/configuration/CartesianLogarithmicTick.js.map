@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CartesianLogarithmicTick.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;MA0Ba,wB;;CAAA,W;EAAAA,Q;EAAAA;OAG8C,iFAH9CA,C;;;QAUZ,sD,aAA8BC,I;EAA9BC,mC;EAAAA,+C;EAAAA,wI;EAAAA,iB;;;CAAA,uH,aAA8BD,I;EAC7BE,+H;EAEAA,yR;;;CAQmB,e;EACnBC,mN;;;CAQW,gE,qBAAyBC,Q;EACpCC,8K;;;QA/BW,O;EAAAC,2C;EAAAA,wC;EAAAA;",
+"sources":["CartesianLogarithmicTick.java"],
+"names":["org.pepstock.charba.client.configuration.CartesianLogarithmicTick.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.CartesianLogarithmicTick.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.CartesianLogarithmicTick.<init>","org.pepstock.charba.client.configuration.CartesianLogarithmicTick.getCallback","callback","org.pepstock.charba.client.configuration.CartesianLogarithmicTick.setCallback","org.pepstock.charba.client.configuration.CartesianLogarithmicTick.<clinit>"]
+}
+

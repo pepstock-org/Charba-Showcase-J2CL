@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TooltipFilterCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,qB;;QAAA,M;EAAAA,gC;EAAAA,8B;;;QAAA,O;EAAAC,wC;EAAAA;",
+"sources":["TooltipFilterCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.TooltipFilterCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.TooltipFilterCallback.<clinit>"]
+}
+

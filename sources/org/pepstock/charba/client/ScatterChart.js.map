@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ScatterChart.impl.java.js",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;;;;;MA4Ba,Y;;CAAA,W;EAAAA,Q;EAAAA;OAEiB,mDAFjBA,C;;;;QAOL,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;;CAAA,gD;EACNC,gJ;;;;QASS,wC,aAAkBC,Y;EAAlBF,uB;EAAAA,mC;EAAAA,wG;EAAAA,iB;;;;CAAA,+E,aAAkBE,Y;EAC3BD,oG;EAEAA,2N;;;CASqB,c;EACrBE,gE;;;CASqB,qB,gBAAmBC,M;EACxCC,wI;;;;CAxCW,c;EAAAA,4J;;;QAAA,O;EAAAC,+B;EAAAA,4B;EAAAA,wB;EAAAA;",
+"sources":["ScatterChart.java"],
+"names":["org.pepstock.charba.client.ScatterChart.<synthetic: ctor_js>","org.pepstock.charba.client.ScatterChart.<synthetic: ctor_create>","org.pepstock.charba.client.ScatterChart.<init>","extendedType","org.pepstock.charba.client.ScatterChart.getOptions","hidden","org.pepstock.charba.client.ScatterChart.newDataset","org.pepstock.charba.client.ScatterChart.<clinit>"]
+}
+

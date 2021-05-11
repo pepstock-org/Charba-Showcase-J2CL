@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultTypedDataset.impl.java.js",
+"lineCount":18,
+"mappings":"A;;;;;;;;;;;MAsBiB,qB;;CAOR,c;;QAPQ,O;EAAAA,wC;EAAAA;",
+"sources":["IsDefaultTypedDataset.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultTypedDataset.<clinit>"]
+}
+

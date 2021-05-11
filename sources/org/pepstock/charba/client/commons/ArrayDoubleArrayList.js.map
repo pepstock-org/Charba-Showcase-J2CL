@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ArrayDoubleArrayList.impl.java.js",
+"lineCount":106,
+"mappings":"A;;;;;;;;;;;;;;;;;MA8BmB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAGa,iEAHbA,C;;;;QAWlB,4H,cAAsCC,K,+CAAmDC,O;EAAzFC,+B;EAAAA,2C;EAAAA,8M;EAAAA,iB;;;;CAAA,mL,cAAsCF,K,+CAAmDC,O;EAAzFE,oF;EAECA;GACCA,qFADDA;;GAKCA,kIALDA;GAOCA,+EAPDA;GASCA,SAASC,CAATD;IAECA,2NAFDA;IATDA;G;;;;QAmBM,S;EAAAD,+B;EAAAA,2C;EAAAA,6E;EAAAA,iB;;;;CAAA,gE;EACNC,qM;;;CASgB,mD;EAChBE,8E;;;CAOW,K;EACXC,c;EACAA,uJ;;;CAQc,G,UAAMC,O;EAGpBC;GAECA,qMAFDA;GAGCA,YAHDA;G;EAOAA,a;;;CAQQ,U,eAAQC,K,WAASF,O;EAEzBG,IAAEC,GAAFD,uF;EAEAA;GACCA,0UADDA;GAGCA,WAHDA;G;EAKAA,Y;;;CASW,U,eAAQD,K,WAASF,O;EAE5BC;GAECA,iCAFDA;GAICA,+UAJDA;G;;;CAcQ,a,eAAWC,K;EAEnBG,IAAED,GAAFC,iF;EAEAA;GAECA,oKAFDA;GAICA,WAJDA;G;EAMAA,Y;;;QA1HiB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["ArrayDoubleArrayList.java"],
+"names":["org.pepstock.charba.client.commons.ArrayDoubleArrayList.<synthetic: ctor_js>","array","factory","org.pepstock.charba.client.commons.ArrayDoubleArrayList.<synthetic: ctor_create>","org.pepstock.charba.client.commons.ArrayDoubleArrayList.<init>","i","org.pepstock.charba.client.commons.ArrayDoubleArrayList.getArray","org.pepstock.charba.client.commons.ArrayDoubleArrayList.clear","element","org.pepstock.charba.client.commons.ArrayDoubleArrayList.add","index","org.pepstock.charba.client.commons.ArrayDoubleArrayList.set","old","org.pepstock.charba.client.commons.ArrayDoubleArrayList.remove","org.pepstock.charba.client.commons.ArrayDoubleArrayList.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DisplayFormats.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;MAyBa,c;;CAAA,W;EAAAA,Q;;;QAOZ,sD,aAAoBC,I;EAApBC,yB;EAAAA,qC;EAAAA,8H;EAAAA,iB;;;CAAA,6G,aAAoBD,I;EACnBE,wH;;;CASW,+E,iBAA0BC,I,iBAAaC,M;EAClDC,mN;;;CASa,6D,iBAA0BF,I;EACvCG,gM;;;QA5BW,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["DisplayFormats.java"],
+"names":["org.pepstock.charba.client.configuration.DisplayFormats.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.DisplayFormats.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.DisplayFormats.<init>","unit","format","org.pepstock.charba.client.configuration.DisplayFormats.setDisplayFormat","org.pepstock.charba.client.configuration.DisplayFormats.getDisplayFormat","org.pepstock.charba.client.configuration.DisplayFormats.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FontItem.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;MA6BmB,Q;;CAAA,W;EAAAA,Q;;;;QAKX,S;EAAAC,mB;EAAAA,+B;EAAAA,+D;EAAAA,iB;;;;CAAA,kD;EACNC,+G;;;;QAQM,0D,sBAAuBC,a;EAAvBF,mB;EAAAA,+B;EAAAA,6H;EAAAA,iB;;;;CAAA,mG,sBAAuBE,a;EAC7BD,wN;;;CAQmB,gB;EACnBE,4B;;;QAxBiB,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"sources":["FontItem.java"],
+"names":["org.pepstock.charba.client.items.FontItem.<synthetic: ctor_js>","org.pepstock.charba.client.items.FontItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.FontItem.<init>","defaultValues","org.pepstock.charba.client.items.FontItem.nativeObject","org.pepstock.charba.client.items.FontItem.<clinit>"]
+}
+

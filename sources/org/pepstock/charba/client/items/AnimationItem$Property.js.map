@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnimationItem$Property.impl.java.js",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;MAoCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,iEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,kZ;;;QAEZ,oE;EAAAC,6G;;;QACA,2E;EAAAA,oH;;;QACA,wE;EAAAA,iH;;;QACA,sE;EAAAA,+G;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qQ;EACAA,gS;EACAA,oR;EACAA,6Q;EALYA,6F;;;;;;;;;;;;;AAAA;gF;AAAA;uF;AAAA;oF;AAAA;kF;AAAA;sF;AAEZ;qF;AACA;4F;AACA;yF;AACA;;",
+"sources":["AnimationItem.java"],
+"names":["org.pepstock.charba.client.items.AnimationItem$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.AnimationItem$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.AnimationItem$Property.<init>","org.pepstock.charba.client.items.AnimationItem$Property.value","org.pepstock.charba.client.items.AnimationItem$Property.valueOf","org.pepstock.charba.client.items.AnimationItem$Property.values","org.pepstock.charba.client.items.AnimationItem$Property.<synthetic: getter>","org.pepstock.charba.client.items.AnimationItem$Property.<clinit>"]
+}
+

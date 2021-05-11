@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ElementsView$SegmentCase$2.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;MAgI0E,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;;;CAClD,U;EACpBC,6C;;;QAFsE,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ElementsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$SegmentCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ElementsView$SegmentCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$SegmentCase$2.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$SegmentCase$2.create","org.pepstock.charba.showcase.j2cl.views.ElementsView$SegmentCase$2.<clinit>"]
+}
+

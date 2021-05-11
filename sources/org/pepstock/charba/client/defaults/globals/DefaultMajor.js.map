@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultMajor.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;MAwBmB,Y;;CAAA,W;EAAAA,Q;;;QAOlB,S;EAAAC,uB;EAAAA,mC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;;;CAUe,a;EACdC,iG;;;QAlBiB,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;;;;;;;;;AAElB;aAA6B,4EAA7B;",
+"sources":["DefaultMajor.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultMajor.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultMajor.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultMajor.<init>","org.pepstock.charba.client.defaults.globals.DefaultMajor.isEnabled","org.pepstock.charba.client.defaults.globals.DefaultMajor.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasDataPoints.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;;;;MA4BiB,a;;CAOH,kE,yBAA2BA,U;;CAY3B,+B,wBAA8BA,U;;CAYnB,iB;;CAUA,wB,gBAAsBC,O;;QAzC9B,M;EAAAC,wB;EAAAA,8B;;;QAOH,2H,yDAA2BF,U;EAA3BG,wB;EAEZA;GACCA,qJADDA;G;;;QAUY,wF,wDAA8BH,U;EAA9BG,wB;EAEZA;GACCA,kHADDA;G;;;QAUuB,wE;EAAAC,wB;EACvBA,gD;;;QASuB,iF,gDAAsBH,O;EAAtBG,wB;EAEvBA;GACCA,wOADDA;G;EAKAA,kE;;;QAhDe,O;EAAAC,gC;EAAAA;",
+"sources":["HasDataPoints.java"],
+"names":["datapoints","binding","org.pepstock.charba.client.data.HasDataPoints.<synthetic: adapt_lambda>","org.pepstock.charba.client.data.HasDataPoints.setDataPoints__$default","org.pepstock.charba.client.data.HasDataPoints.getDataPoints__$default","org.pepstock.charba.client.data.HasDataPoints.<clinit>"]
+}
+

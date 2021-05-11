@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginEventArgument$Property.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MAoCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,uEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gJ;EAAAA,iB;;;CAAA,6G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;;;CASa,S;EACbC,oF;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,gP;;;QAEZ,0E;EAAAC,mH;;;QACA,2E;EAAAA,oH;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iR;EACAA,qR;EAHYA,mG;;;;;;;;;;;;;AAAA;sF;AAAA;uF;AAAA;4F;AAEZ;2F;AACA;;",
+"sources":["PluginEventArgument.java"],
+"names":["org.pepstock.charba.client.items.PluginEventArgument$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.PluginEventArgument$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginEventArgument$Property.<init>","org.pepstock.charba.client.items.PluginEventArgument$Property.value","org.pepstock.charba.client.items.PluginEventArgument$Property.valueOf","org.pepstock.charba.client.items.PluginEventArgument$Property.values","org.pepstock.charba.client.items.PluginEventArgument$Property.<synthetic: getter>","org.pepstock.charba.client.items.PluginEventArgument$Property.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultOptions.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;MAwBU,gB;;CAOI,U;;CAOC,W;;CAOE,a;;QArBP,O;EAAAA,mC;EAAAA;",
+"sources":["IsDefaultOptions.java"],
+"names":["org.pepstock.charba.client.zoom.IsDefaultOptions.<clinit>"]
+}
+

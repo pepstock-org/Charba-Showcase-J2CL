@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LeaveCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MA2BiB,a;;CAQX,uG,gBAAgBA,K,4BAA0BC,U;;QAR/B,M;EAAAC,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["LeaveCallback.java"],
+"names":["chart","annotation","org.pepstock.charba.client.annotation.listeners.LeaveCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.listeners.LeaveCallback.<clinit>"]
+}
+

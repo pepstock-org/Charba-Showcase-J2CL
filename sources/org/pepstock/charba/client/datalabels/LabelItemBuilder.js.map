@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelItemBuilder.impl.java.js",
+"lineCount":31,
+"mappings":"A;;;;;;;;;;MAuBmB,gB;;CAAA,W;EAAAA,Q;;;QAOlB,wD,kBAA2BC,K;EAA3BC,2B;EAAAA,uC;EAAAA,gI;EAAAA,iB;;;CAAA,8G,kBAA2BD,K;EAC1BE,0H;;;QARiB,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"sources":["LabelItemBuilder.java"],
+"names":["org.pepstock.charba.client.datalabels.LabelItemBuilder.<synthetic: ctor_js>","label","org.pepstock.charba.client.datalabels.LabelItemBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.LabelItemBuilder.<init>","org.pepstock.charba.client.datalabels.LabelItemBuilder.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Square.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;MAuCY,M;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,iB;EAAAA,6B;EAAAA,oE;EAAAA,iB;;;CAAA,uD;EAAAC,oE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,yH;EAEAA,+J;EAEAA,6K;EAEAA,e;;;CAWI,oI,iCAAyBJ,O,gBAAaG,I,gBAAaG,O,gBAAgBC,O;EAEvEC,IAAaH,QAAbG,Y;EAEAA,IAAaC,MAAbD,a;EAEAA,IAAaE,eAAbF,c;EAEAA,6G;;;QArCU,O;EAAAG,yB;EAAAA,sB;EAAAA;",
+"sources":["Square.java"],
+"names":["org.pepstock.charba.client.colors.tiles.Square.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Square.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Square.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Square.drawTile","halfSize","offsetX","offsetY","org.pepstock.charba.client.colors.tiles.Square.drawSquare","margin","topBottomMargin","org.pepstock.charba.client.colors.tiles.Square.<clinit>"]
+}
+

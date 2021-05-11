@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"RemoveHandlerEventHandler.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAsBiB,yB;;CAOX,gE,2BAA4BA,K;;QAPjB,M;EAAAC,oC;EAAAA,8B;;;QAAA,O;EAAAC,4C;EAAAA;",
+"sources":["RemoveHandlerEventHandler.java"],
+"names":["event","org.pepstock.charba.client.events.RemoveHandlerEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.RemoveHandlerEventHandler.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultChartAnimationCollection.impl.java.js",
+"lineCount":68,
+"mappings":"A;;;;;;;;;;;;;;;MA4BmB,+B;;CAAA,W;EAAAA,Q;;;QAOlB,yE,qCAA6DC,U;EAA7DC,0C;EAAAA,sD;EAAAA,yK;EAAAA,iB;;;CAAA,kJ,qCAA6DD,U;EAC5DE,4J;;;CASmC,iB;EACnCC,sL;;;CASoB,W;EACpBC,gL;;;CASa,W;EACbC,gL;;;CASc,oB;EACdC,yL;;;CASa,mB;EACbC,wL;;;CASa,S;EACbC,8K;;;CASc,kB;EACdC,uL;;;CASa,iB;EACbC,sL;;;QAxFiB,O;EAAAC,kD;EAAAA,+C;EAAAA;",
+"sources":["DefaultChartAnimationCollection.java"],
+"names":["org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.<synthetic: ctor_js>","collection","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getProperties","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getType","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getFrom","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getFromAsBoolean","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getFromAsString","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getTo","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getToAsBoolean","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.getToAsString","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationCollection.<clinit>"]
+}
+

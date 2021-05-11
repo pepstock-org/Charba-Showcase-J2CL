@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractElement.impl.java.js",
+"lineCount":26,
+"mappings":"A;;;;;;;;MA2Be,e;;CAAA,W;EAAAA,Q;;;CAOd,6G,UAA6BC,Y;EAC5BC,oI;;;CAQkB,0D;EAClBC,kC;;;QAjBa,O;EAAAC,kC;EAAAA,+B;EAAAA;",
+"sources":["AbstractElement.java"],
+"names":["org.pepstock.charba.client.datalabels.AbstractElement.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.datalabels.AbstractElement.<init>","org.pepstock.charba.client.datalabels.AbstractElement.nativeObject","org.pepstock.charba.client.datalabels.AbstractElement.<clinit>"]
+}
+

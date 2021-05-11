@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"EventListener$$Overlay.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;MAsBiB,Q;;QAAA,gD;EAAAA,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["EventListener.java"],
+"names":["elemental2.dom.EventListener$$Overlay.<synthetic: adapt_lambda>","elemental2.dom.EventListener$$Overlay.<clinit>"]
+}
+

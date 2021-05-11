@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultChartScales.impl.java.js",
+"lineCount":87,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAgCmB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAEG,uEAFHA,C;;;QASX,kD,eAA0BC,M;EAA1BC,6B;EAAAA,yC;EAAAA,iI;EAAAA,iB;;;CAAA,8G,eAA0BD,M;EAA1BE,iC;EAENA,qN;;;CASqB,kG,kBAAkBC,O,kBAAkBC,I;EAEzDC;GAECA;IAECA,0NAFDA;;IAKCA,IAAkBC,MAAlBD,yMALDA;IAOCA;KACCA,cADDA;KAPDA;IAFDA;G;EAkBAA,gD;;;CAUyB,iL,kBAAiCF,O,kBAAkBC,I;EAE5EG;GAAAA,IAAoBC,UAApBD,kBAAAA;;IAECA;KAECA,6NAFDA;KAFDA;;G;EAOAA,gJ;;;CASyB,6H,iBAA0BH,I;EAEnDK;GACCA,IAAeD,UAAfC,+MADDA;GAECA;IAECA,6NAFDA;IAFDA;GAOCA;IAECA,2RAFDA;UAGOA;IAENA,2RAFMA;IAVRA;G;EAiBAA,Y;;;QAvFiB,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["DefaultChartScales.java"],
+"names":["org.pepstock.charba.client.defaults.chart.DefaultChartScales.<synthetic: ctor_js>","scales","org.pepstock.charba.client.defaults.chart.DefaultChartScales.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartScales.<init>","scaleId","kind","org.pepstock.charba.client.defaults.chart.DefaultChartScales.getAxis","result","org.pepstock.charba.client.defaults.chart.DefaultChartScales.searchByDefaultScaleId","defScaleId","org.pepstock.charba.client.defaults.chart.DefaultChartScales.searchByAxisKind","org.pepstock.charba.client.defaults.chart.DefaultChartScales.<clinit>"]
+}
+

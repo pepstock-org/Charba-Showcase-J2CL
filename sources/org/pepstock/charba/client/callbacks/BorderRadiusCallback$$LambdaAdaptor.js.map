@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BorderRadiusCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,6D;EAAAC,iD;EAAAA,0H;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["BorderRadiusCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.BorderRadiusCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.BorderRadiusCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.BorderRadiusCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.BorderRadiusCallback$$LambdaAdaptor.<clinit>"]
+}
+

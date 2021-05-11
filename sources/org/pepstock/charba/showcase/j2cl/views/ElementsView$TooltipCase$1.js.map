@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ElementsView$TooltipCase$1.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;MAoK+C,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;;;CACvB,U;EACpBC,0C;;;QAF2C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ElementsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$TooltipCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ElementsView$TooltipCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$TooltipCase$1.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$TooltipCase$1.create","org.pepstock.charba.showcase.j2cl.views.ElementsView$TooltipCase$1.<clinit>"]
+}
+

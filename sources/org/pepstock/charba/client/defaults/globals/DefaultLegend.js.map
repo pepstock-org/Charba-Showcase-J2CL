@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultLegend.impl.java.js",
+"lineCount":128,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAmCmB,a;;CAAA,W;EAAAA,Q;EAAAA;OAcgB,0EAdhBA,C;EAAAA;OAgBe,yEAhBfA,C;;;QAqBlB,S;EAAAC,wB;EAAAA,oC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAAAA,4E;;;CAU6B,a;EAC5BC,uF;;;CAS2B,Y;EAC3BC,sF;;;CASkB,a;EAClBC,qI;;;CASc,a;EACdC,mG;;;CASc,c;EACdC,qG;;;CASc,a;EACdC,mG;;;CASe,e;EACfC,iE;;;CASmB,Y;EACnBC,4E;;;CASc,S;EACdC,+F;;;CASoB,oB;EACpBC,qF;;;CASU,e;EACVC,qG;;;CASU,gB;EACVC,sG;;;CA9IiB,oE;EAclBZ,kH;EAEAA,gH;;;QAhBkB,O;EAAAa,gC;EAAAA,6B;EAAAA,qB;;;;;;;;;;;;;;;;;AAElB;cAA6B,6EAA7B,Q;AAEA;cAA6B,+EAA7B,Q;AAEA;cAA6B,6EAA7B,S;AAEA;cAA6B,yEAA7B,S;AAEA;cAAyB,+EAAzB,e;AAEA;cAAyB,gFAAzB;",
+"sources":["DefaultLegend.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultLegend.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultLegend.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultLegend.<init>","org.pepstock.charba.client.defaults.globals.DefaultLegend.getLabels","org.pepstock.charba.client.defaults.globals.DefaultLegend.getTitle","org.pepstock.charba.client.defaults.globals.DefaultLegend.getEvents","org.pepstock.charba.client.defaults.globals.DefaultLegend.isDisplay","org.pepstock.charba.client.defaults.globals.DefaultLegend.isFullSize","org.pepstock.charba.client.defaults.globals.DefaultLegend.isReverse","org.pepstock.charba.client.defaults.globals.DefaultLegend.getPosition","org.pepstock.charba.client.defaults.globals.DefaultLegend.getAlign","org.pepstock.charba.client.defaults.globals.DefaultLegend.isRtl","org.pepstock.charba.client.defaults.globals.DefaultLegend.getTextDirection","org.pepstock.charba.client.defaults.globals.DefaultLegend.getMaxWidth","org.pepstock.charba.client.defaults.globals.DefaultLegend.getMaxHeight","org.pepstock.charba.client.defaults.globals.DefaultLegend.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AlignCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,a;;QAAA,M;EAAAA,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["AlignCallback.java"],
+"names":["org.pepstock.charba.client.datalabels.callbacks.AlignCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.datalabels.callbacks.AlignCallback.<clinit>"]
+}
+

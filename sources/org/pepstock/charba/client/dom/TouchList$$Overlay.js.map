@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TouchList$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MA6BmB,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["TouchList.java"],
+"names":["org.pepstock.charba.client.dom.TouchList$$Overlay.<clinit>"]
+}
+

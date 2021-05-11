@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"EventPoint.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;MA2BmB,U;;CAAA,W;EAAAA,Q;;;QAsClB,wD,UAAwBC,Y;EAAxBC,qB;EAAAA,iC;EAAAA,2H;EAAAA,iB;;;CAAA,kG,UAAwBD,Y;EACvBE,oI;;;CAQa,Q;EACbC,0M;;;CAQa,Q;EACbC,0M;;;QAzDiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["EventPoint.java"],
+"names":["org.pepstock.charba.client.zoom.EventPoint.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.zoom.EventPoint.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.EventPoint.<init>","org.pepstock.charba.client.zoom.EventPoint.getX","org.pepstock.charba.client.zoom.EventPoint.getY","org.pepstock.charba.client.zoom.EventPoint.<clinit>"]
+}
+

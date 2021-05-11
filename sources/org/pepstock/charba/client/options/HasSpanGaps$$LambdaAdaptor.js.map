@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasSpanGaps$$LambdaAdaptor.impl.java.js",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2E;EAAAA,0I;;;CAAA,gI;EAAAC,iC;EAAAA,8E;;;CAAA,qB;EAAAC,gD;EAAAA,2G;;;;CAAA,e;EAAAC,iG;;;;CAAA,c;EAAAC,gG;;;;CAAA,sB;EAAAC,yG;;;;CAAA,qB;EAAAA,wG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["HasSpanGaps.java"],
+"names":["org.pepstock.charba.client.options.HasSpanGaps$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.HasSpanGaps$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.HasSpanGaps$$LambdaAdaptor.getSpanGapHandler","org.pepstock.charba.client.options.HasSpanGaps$$LambdaAdaptor.getSpanGaps","org.pepstock.charba.client.options.HasSpanGaps$$LambdaAdaptor.isSpanGaps","org.pepstock.charba.client.options.HasSpanGaps$$LambdaAdaptor.setSpanGaps","org.pepstock.charba.client.options.HasSpanGaps$$LambdaAdaptor.<clinit>"]
+}
+

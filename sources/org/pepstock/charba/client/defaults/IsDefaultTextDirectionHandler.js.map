@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultTextDirectionHandler.impl.java.js",
+"lineCount":18,
+"mappings":"A;;;;;;;;;MAwBiB,6B;;CAOR,S;;CAOM,oB;;QAdE,O;EAAAA,gD;EAAAA;",
+"sources":["IsDefaultTextDirectionHandler.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultTextDirectionHandler.<clinit>"]
+}
+

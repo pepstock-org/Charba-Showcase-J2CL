@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LogView.impl.java.js",
+"lineCount":114,
+"mappings":"A;;;;;;;;;;;;;;MASa,O;;CAAA,W;EAAAA,Q;EAAAA;OAIA,mEAJAA,K;EAAAA;OAMA,+DANAA,K;EAAAA;OAQiB,+DARjBA,C;EAAAA;OAUiB,mEAVjBA,C;;;;QAYL,S;EAAAC,kB;EAAAA,8B;EAAAA,6E;EAAAA,iB;;;;CAAA,gE;EACNC,kJ;;;;QAGM,Y,eAAYC,G;EAAZF,kB;EAAAA,8B;EAAAA,mF;EAAAA,iB;;;;CAAA,mE,eAAYE,G;EAAZD,8E;EAAAA,0E;EACNA,wF;EACAA,IAAeE,KAAfF,6I;EACAA,+B;EACAA,iC;EACAA,8BAAiBG,EAAjBH;GACCI;IACCA,0KADDA;IADDJ;GAICI,6EAJDJ;GAKCI,YALDJ;I;EAOAA,wF;EACAA,2J;EACAA,yI;EACAA,4I;;;CAIkB,c;EAClBK,4E;;;CAGW,+B,gBAAmBC,S;EAC9BC,IAAeC,MAAfD,6I;EACAA,uJ;EACAA,mC;EACAA,mL;EACAA;GACCA,yKADDA;G;EAGAA,4J;;;CA/CW,kE;EAIZP,6E;EAIAA,iN;EAEAA,oO;;;QAVY,O;EAAAS,0B;EAAAA,uB;EAAAA,wB;;;;;;;;;;;;;;;;;;AAEZ;QAAyB,+DAAzB;",
+"sources":["LogView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.commons.LogView.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.commons.LogView.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.commons.LogView.<init>","max","title","p0","org.pepstock.charba.showcase.j2cl.cases.commons.LogView.<lambda in <init>>","org.pepstock.charba.showcase.j2cl.cases.commons.LogView.getElement","innerHtml","org.pepstock.charba.showcase.j2cl.cases.commons.LogView.addLogEvent","newDiv","org.pepstock.charba.showcase.j2cl.cases.commons.LogView.<clinit>"]
+}
+

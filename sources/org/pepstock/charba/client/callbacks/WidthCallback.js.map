@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"WidthCallback.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;;;MAyBiB,a;;QAAA,M;EAAAA,wB;EAAAA,gE;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["WidthCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.WidthCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.WidthCallback.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PointStyleCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MA4BiB,kB;;QAAA,M;EAAAA,6B;EAAAA,8B;;;QAAA,O;EAAAC,qC;EAAAA;",
+"sources":["PointStyleCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.PointStyleCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.PointStyleCallback.<clinit>"]
+}
+

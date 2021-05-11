@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasFill.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;;;;MA6BiB,O;;CAOJ,kB;;CAOC,kB,gBAAgBA,I;;CAYhB,c,eAAYC,K;;CAYZ,2B,gBAAeA,K;;CAYf,kD,eAAeD,I;;CAab,W;;QA/DC,M;EAAAE,kB;EAAAA,8B;;;QAcH,wE,0CAAgBF,I;EAAhBG,kB;EAEZA;GACCA,uDADDA;G;;;QAUY,oE,yCAAYF,K;EAAZE,kB;EAEZA;GACCA,wFADDA;G;;;QAUY,iF,0CAAeF,K;EAAfE,kB;EAEZA;GACCA,qGADDA;G;;;QAUY,wG,yCAAeH,I;EAAfG,kB;EAEZA;GACCA,uFADDA;G;;;QAWc,+D;EAAAC,kB;EAEdA;GACCA,mDADDA;G;EAKAA,wF;;;QAtEe,O;EAAAC,0B;EAAAA;",
+"sources":["HasFill.java"],
+"names":["fill","index","org.pepstock.charba.client.options.HasFill.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.HasFill.setFill__$default","org.pepstock.charba.client.options.HasFill.getFill__$default","org.pepstock.charba.client.options.HasFill.<clinit>"]
+}
+

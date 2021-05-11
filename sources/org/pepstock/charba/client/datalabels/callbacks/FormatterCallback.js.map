@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FormatterCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MA8BiB,iB;;CAUT,4G,0BAAyBA,O,kBAAkBC,Q;;QAVlC,M;EAAAC,4B;EAAAA,8B;;;QAAA,O;EAAAC,oC;EAAAA;",
+"sources":["FormatterCallback.java"],
+"names":["context","dataItem","org.pepstock.charba.client.datalabels.callbacks.FormatterCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.datalabels.callbacks.FormatterCallback.<clinit>"]
+}
+

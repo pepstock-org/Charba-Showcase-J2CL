@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MutationHandler.impl.java.js",
+"lineCount":20,
+"mappings":"A;;;;;;;;;MAuBU,e;;CAQF,S;;CAOF,mD,qBAAsBA,I;;CAOtB,mD,qBAAsBA,I;;QAtBlB,O;EAAAC,kC;EAAAA;",
+"sources":["MutationHandler.java"],
+"names":["item","org.pepstock.charba.client.MutationHandler.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractExtensionPlugin.impl.java.js",
+"lineCount":69,
+"mappings":"A;;;;;;;;;;;;;;;;MA4BsB,uB;;CAAA,W;EAAAA,Q;EAAAA;OAGX,uEAHWA,C;EAAAA;OAKL,yEALKA,S;;;CAUX,mE;EAAAC,iC;EAAAA,6E;;;CASc,gB;EACvBC,sF;;;CAQiB,e;EACjBC,oF;;;CASoB,4E,UAAmBC,O;EAEvCC;GAECA,mZAFDA;G;;;CAWoB,+E,wCAA6CC,O;EAGjEC;GAECA,sFAFDA;GAMCA,aAAEC,cAAFD,CANDA;GAQCA;IAECA,IAAEE,gBAAFF,2LAFDA;IAKCA,IAAaG,cAAbH,+LALDA;IAOCA,+JAPDA;;IAWCA,qJAXDA;IARDA;GAsBCA,8FAtBDA;G;;;CAtDoB,qE;EAGrBN,oF;EAEAA,uF;;;QALqB,O;EAAAU,0C;EAAAA,uC;EAAAA;",
+"sources":["AbstractExtensionPlugin.java"],
+"names":["org.pepstock.charba.client.plugins.AbstractExtensionPlugin.<synthetic: ctor_js>","org.pepstock.charba.client.plugins.AbstractExtensionPlugin.<init>","org.pepstock.charba.client.plugins.AbstractExtensionPlugin.isRegistered","org.pepstock.charba.client.plugins.AbstractExtensionPlugin.getDefaults","options","org.pepstock.charba.client.plugins.AbstractExtensionPlugin.applyingDefaults","factory","org.pepstock.charba.client.plugins.AbstractExtensionPlugin.loadDefaults","globalDefaults","originalDefaults","objectDefaults","org.pepstock.charba.client.plugins.AbstractExtensionPlugin.<clinit>"]
+}
+

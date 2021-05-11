@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HtmlLegendCustomCallbackCase$1.impl.java.js",
+"lineCount":66,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MAwF6D,E;;CAAA,W;EAAAA,Q;EAAAA;mG;EAAAA;OAEpC,wFAFoCA,C;;;QAAA,qF;EAAAC,a;EAAAA,yB;EAAAA,2L;EAAAA,iB;;;CAAA,mK;EAAAC,+G;EAAAA,iC;EAAAA,iG;;;CAK1C,sH,gBAAqBC,K,yBAAuBC,I,iBAAaC,W;EACxEC;GACCA,IAAgBC,OAAhBD,gCADDA;GAECA,IAAOE,OAAPF,2HAFDA;GAGCA,kQAHDA;GAICA,wDAJDA;GAKCA,yIALDA;G;EAOAA,oK;;;;CAbyD,oH;EAAAA,iN;;;CAAA,yF;EAE1DJ,+J;;;QAF0D,O;EAAAO,qB;EAAAA,kB;EAAAA;",
+"sources":["HtmlLegendCustomCallbackCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase$1.<init>","chart","item","currentText","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase$1.generateText","builder","newText","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase$1.<clinit>"]
+}
+

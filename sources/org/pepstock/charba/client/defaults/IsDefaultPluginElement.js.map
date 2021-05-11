@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultPluginElement.impl.java.js",
+"lineCount":21,
+"mappings":"A;;;;;;;;;;MA0BiB,sB;;CAOR,a;;CAOC,e;;CAOI,Y;;QArBG,O;EAAAA,yC;EAAAA;",
+"sources":["IsDefaultPluginElement.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultPluginElement.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CategoryTickCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,kG;EAAAC,6E;EAAAA,4I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["CategoryTickCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.CategoryTickCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.CategoryTickCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.CategoryTickCallback$$LambdaAdaptor.onCallback","org.pepstock.charba.client.callbacks.CategoryTickCallback$$LambdaAdaptor.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelsEnvelop.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MA2BmB,a;;CAAA,W;EAAAA,Q;;;QAOlB,yB,UAAgBC,O;EAAhBC,wB;EAAAA,oC;EAAAA,4F;EAAAA,iB;;;CAAA,wE,UAAgBD,O;EACfE,2F;;;QARiB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"sources":["LabelsEnvelop.java"],
+"names":["org.pepstock.charba.client.labels.LabelsEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.labels.LabelsEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsEnvelop.<init>","org.pepstock.charba.client.labels.LabelsEnvelop.<clinit>"]
+}
+

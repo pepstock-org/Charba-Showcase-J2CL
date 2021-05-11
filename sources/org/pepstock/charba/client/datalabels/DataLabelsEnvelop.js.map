@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsEnvelop.impl.java.js",
+"lineCount":30,
+"mappings":"A;;;;;;;;;MA2BmB,iB;;CAAA,W;EAAAA,Q;;;QAOlB,yB,UAAoBC,O;EAApBC,4B;EAAAA,wC;EAAAA,oG;EAAAA,iB;;;CAAA,gF,UAAoBD,O;EACnBE,2F;;;QARiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["DataLabelsEnvelop.java"],
+"names":["org.pepstock.charba.client.datalabels.DataLabelsEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.datalabels.DataLabelsEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.DataLabelsEnvelop.<init>","org.pepstock.charba.client.datalabels.DataLabelsEnvelop.<clinit>"]
+}
+

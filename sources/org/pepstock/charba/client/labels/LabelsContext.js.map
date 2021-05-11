@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelsContext.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;;;;;MAgCmB,a;;CAAA,W;EAAAA,Q;EAAAA;OAmCK,4DAnCLA,C;EAAAA;OAqCE,gEArCFA,C;;;QA6ClB,iG,cAAoBC,Y,WAA2BC,Y;EAA/CC,wB;EAAAA,oC;EAAAA,uL;EAAAA,iB;;;CAAA,gJ,cAAoBF,Y,WAA2BC,Y;EAC9CE,uI;EAGAA,yN;EAEAA,IAAWC,IAAXD,mI;EAEAA;GAECA,oTAFDA;SAGOA;GAENA,IAAYE,KAAZF,mMAFMA;GAINA,8GAJMA;SAKAA;GAENA,8TAFMA;;GAKNA,uKALMA;G;;;CAcK,mB;EACZG,6E;;;CAQa,Y;EACbC,6N;;;CAQa,iB;EACbC,wN;;;CAQe,e;EACfC,yE;;;CASiB,gB;EAEjBC,IAAQC,OAARD,yG;EAEAA,ya;;;QApHiB,O;EAAAE,gC;EAAAA,6B;EAAAA;",
+"sources":["LabelsContext.java"],
+"names":["org.pepstock.charba.client.labels.LabelsContext.<synthetic: ctor_js>","labelOptions","nativeObject","org.pepstock.charba.client.labels.LabelsContext.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsContext.<init>","type","array","org.pepstock.charba.client.labels.LabelsContext.getLabelOptions","org.pepstock.charba.client.labels.LabelsContext.getLabel","org.pepstock.charba.client.labels.LabelsContext.getPercentage","org.pepstock.charba.client.labels.LabelsContext.getDataItem","org.pepstock.charba.client.labels.LabelsContext.isConsistent","indexed","org.pepstock.charba.client.labels.LabelsContext.<clinit>"]
+}
+

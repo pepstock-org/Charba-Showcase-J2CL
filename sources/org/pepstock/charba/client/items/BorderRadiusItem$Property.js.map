@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BorderRadiusItem$Property.impl.java.js",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,oEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,qa;;;QAEZ,0E;EAAAC,mH;;;QACA,2E;EAAAA,oH;;;QACA,6E;EAAAA,sH;;;QACA,8E;EAAAA,uH;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,sR;EACAA,0R;EACAA,kS;EACAA,sS;EALYA,gG;;;;;;;;;;;;;AAAA;sF;AAAA;uF;AAAA;yF;AAAA;0F;AAAA;yF;AAEZ;2F;AACA;4F;AACA;8F;AACA;;",
+"sources":["BorderRadiusItem.java"],
+"names":["org.pepstock.charba.client.items.BorderRadiusItem$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.BorderRadiusItem$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.BorderRadiusItem$Property.<init>","org.pepstock.charba.client.items.BorderRadiusItem$Property.value","org.pepstock.charba.client.items.BorderRadiusItem$Property.valueOf","org.pepstock.charba.client.items.BorderRadiusItem$Property.values","org.pepstock.charba.client.items.BorderRadiusItem$Property.<synthetic: getter>","org.pepstock.charba.client.items.BorderRadiusItem$Property.<clinit>"]
+}
+

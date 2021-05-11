@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractScriptablePadding.impl.java.js",
+"lineCount":65,
+"mappings":"A;;;;;;;;;;;;;;;;MA8BsB,yB;;CAAA,W;EAAAA,Q;EAAAA;OAEwB,0FAFxBA,C;;;;CAUX,yL,uCAAyDC,yB,0BAA4CC,a;EAC9GC,gS;;;;CAUS,0O,uCAAyDF,yB,0BAA4CC,a,WAA4BE,Y;EAC1ID,mM;EAGAA,6T;;;CASW,c,eAAYE,K;EAEvBC,yB;EAEAA,4B;;;CASW,e,eAAaD,K;EAExBE,yB;EAEAA,6B;;;CASW,a,eAAWF,K;EAEtBG,yB;EAEAA,2B;;;CASW,gB,eAAcH,K;EAEzBI,yB;EAEAA,8B;;;CAMc,iB;EAEdC;GAECA,yKAFDA;G;;;QArFoB,O;EAAAC,4C;EAAAA,yC;EAAAA;",
+"sources":["AbstractScriptablePadding.java"],
+"names":["org.pepstock.charba.client.options.AbstractScriptablePadding.<synthetic: ctor_js>","scriptablePaddingProvider","defaultValues","org.pepstock.charba.client.options.AbstractScriptablePadding.<init>","nativeObject","value","org.pepstock.charba.client.options.AbstractScriptablePadding.setLeft","org.pepstock.charba.client.options.AbstractScriptablePadding.setRight","org.pepstock.charba.client.options.AbstractScriptablePadding.setTop","org.pepstock.charba.client.options.AbstractScriptablePadding.setBottom","org.pepstock.charba.client.options.AbstractScriptablePadding.resetCallback","org.pepstock.charba.client.options.AbstractScriptablePadding.<clinit>"]
+}
+

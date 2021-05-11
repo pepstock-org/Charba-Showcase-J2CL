@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginTooltipArgument.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;MA8BmB,qB;;CAAA,W;EAAAA,Q;EAAAA;OAkCS,+DAlCTA,C;;;QAyCX,0D,0BAAmDC,O;EAAnDC,gC;EAAAA,4C;EAAAA,oI;EAAAA,iB;;;CAAA,gH,0BAAmDD,O;EACzDE,4S;EAEAA,2R;;;CAQmB,c;EACnBC,4E;;;QArDiB,O;EAAAC,wC;EAAAA,qC;EAAAA;",
+"sources":["PluginTooltipArgument.java"],
+"names":["org.pepstock.charba.client.items.PluginTooltipArgument.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.PluginTooltipArgument.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginTooltipArgument.<init>","org.pepstock.charba.client.items.PluginTooltipArgument.getTooltip","org.pepstock.charba.client.items.PluginTooltipArgument.<clinit>"]
+}
+

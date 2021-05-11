@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Scale.impl.java.js",
+"lineCount":123,
+"mappings":"A;;;;;;;;;;;;;;;;MA0Ca,K;;CAAA,W;EAAAA,Q;;;;QA2CZ,sG,iBAAeC,I,wBAAqBC,a;EAApCC,gB;EAAAA,4B;EAAAA,8K;EAAAA,iB;;;;CAAA,8I,iBAAeF,I,wBAAqBC,a;EAEnCE,+K;EAEAA,iE;EAEAA,4G;;;;QAUS,4G,uBAAqBF,a,WAA4BG,Y;EAAjDF,gB;EAAAA,4B;EAAAA,4L;EAAAA,iB;;;;CAAA,oJ,uBAAqBD,a,WAA4BG,Y;EAC1DD,+L;;;;QAWS,uJ,iBAAeH,I,wBAAqBC,a,WAA4BG,Y;EAAhEF,gB;EAAAA,4B;EAAAA,6O;EAAAA,iB;;;;CAAA,+L,iBAAeF,I,wBAAqBC,a,WAA4BG,Y;EACzED,+L;EAEAA,iE;EAEAA,4G;;;CAUU,4F,kBAAgBE,E;EAE1BC,2E;EAIAA;GAECA,oLAFDA;G;;;CAasB,S;EACtBC,0P;;;CAQY,gG,iBAAiBP,I;EAC7BQ,wL;;;CAQqB,W;EAErBC,gN;EAGAA,8V;;;CASU,2F,iBAAiBC,I;EAG3BC,IAASX,IAATW,sB;EAEAA,IAASC,WAATD,Q;EAEAA;GAECA,sEAFDA;SAGOA;GAENA,mBAFMA;G;EAIPA,+L;;;CASqB,W;EAErBE;GAECA,8VAFDA;G;EAMAA,qF;;;CAQgB,sE;EAEhBC,IAASd,IAATc,sB;EAEAA;GAECA,+DAFDA;G;EAKAA,IAAUT,EAAVS,oB;EAEAA;GAECA,sDAFDA;G;EAKAA,gN;;;CAQkB,uD;EAClBC,mC;;;QAzMW,O;EAAAC,wB;EAAAA,qB;EAAAA;",
+"sources":["Scale.java"],
+"names":["org.pepstock.charba.client.options.Scale.<synthetic: ctor_js>","type","defaultValues","org.pepstock.charba.client.options.Scale.<synthetic: ctor_create>","org.pepstock.charba.client.options.Scale.<init>","nativeObject","id","org.pepstock.charba.client.options.Scale.setId","org.pepstock.charba.client.options.Scale.getId","org.pepstock.charba.client.options.Scale.setType","org.pepstock.charba.client.options.Scale.getType","kind","org.pepstock.charba.client.options.Scale.setAxis","typeToStore","org.pepstock.charba.client.options.Scale.getAxis","org.pepstock.charba.client.options.Scale.checkAndGetDefaultAxis","org.pepstock.charba.client.options.Scale.nativeObject","org.pepstock.charba.client.options.Scale.<clinit>"]
+}
+

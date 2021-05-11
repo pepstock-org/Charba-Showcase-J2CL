@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"RotationCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,gB;;QAAA,M;EAAAA,2B;EAAAA,gE;;;QAAA,O;EAAAC,mC;EAAAA;",
+"sources":["RotationCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.RotationCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.RotationCallback.<clinit>"]
+}
+

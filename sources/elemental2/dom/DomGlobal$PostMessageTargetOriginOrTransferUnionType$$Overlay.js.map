@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DomGlobal$PostMessageTargetOriginOrTransferUnionType$$Overlay.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;MA6OmB,Q;;QAE6C,sB,UAAUA,C;EAAVC,mB;EAC1DA,uD;;;QAI4B,yF;EAAAC,mB;EAC5BA,8G;;;QAIa,wF;EAAAC,mB;EACbA,iD;;;QAIc,yF;EAAAC,mB;EACdA,+D;;;QAIc,wF;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"sources":["DomGlobal.java"],
+"names":["o","elemental2.dom.DomGlobal$PostMessageTargetOriginOrTransferUnionType$$Overlay.of","elemental2.dom.DomGlobal$PostMessageTargetOriginOrTransferUnionType$$Overlay.asJsArray__$devirt","elemental2.dom.DomGlobal$PostMessageTargetOriginOrTransferUnionType$$Overlay.asString__$devirt","elemental2.dom.DomGlobal$PostMessageTargetOriginOrTransferUnionType$$Overlay.isJsArray__$devirt","elemental2.dom.DomGlobal$PostMessageTargetOriginOrTransferUnionType$$Overlay.isString__$devirt","elemental2.dom.DomGlobal$PostMessageTargetOriginOrTransferUnionType$$Overlay.<clinit>"]
+}
+

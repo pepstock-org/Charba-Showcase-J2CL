@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"JSONType$StringifySpaceUnionType$$Overlay.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;MAgEmB,Q;;QAEyB,sB,UAAUA,C;EAAVC,mB;EACtCA,uD;;;QAIU,kE;EAAAC,mB;EACVA,8C;;;QAIa,qE;EAAAC,mB;EACbA,iD;;;QAIc,kE;EAAAC,mB;EACdA,qD;;;QAIc,qE;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
+"sources":["JSONType.java"],
+"names":["o","elemental2.core.JSONType$StringifySpaceUnionType$$Overlay.of","elemental2.core.JSONType$StringifySpaceUnionType$$Overlay.asInt__$devirt","elemental2.core.JSONType$StringifySpaceUnionType$$Overlay.asString__$devirt","elemental2.core.JSONType$StringifySpaceUnionType$$Overlay.isInt__$devirt","elemental2.core.JSONType$StringifySpaceUnionType$$Overlay.isString__$devirt","elemental2.core.JSONType$StringifySpaceUnionType$$Overlay.<clinit>"]
+}
+

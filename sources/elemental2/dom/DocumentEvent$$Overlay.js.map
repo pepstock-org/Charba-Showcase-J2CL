@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DocumentEvent$$Overlay.impl.java.js",
+"lineCount":16,
+"mappings":"A;;;;;;MAsBiB,Q;;QAAA,gD;EAAAA,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
+"sources":["DocumentEvent.java"],
+"names":["elemental2.dom.DocumentEvent$$Overlay.<synthetic: adapt_lambda>","elemental2.dom.DocumentEvent$$Overlay.<clinit>"]
+}
+

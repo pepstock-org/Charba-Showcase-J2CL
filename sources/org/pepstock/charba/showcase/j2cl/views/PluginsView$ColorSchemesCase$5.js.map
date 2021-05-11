@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginsView$ColorSchemesCase$5.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;MA4M0E,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EAAAC,iC;;;CAClD,U;EACpBC,4C;;;QAFsE,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["PluginsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$5.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$5.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$5.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$5.create","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$5.<clinit>"]
+}
+

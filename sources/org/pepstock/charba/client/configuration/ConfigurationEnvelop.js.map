@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ConfigurationEnvelop.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MA2BmB,oB;;CAAA,W;EAAAA,Q;;;;QAOlB,yB,UAAuBC,O;EAAvBC,+B;EAAAA,2C;EAAAA,0G;EAAAA,iB;;;;CAAA,sF,UAAuBD,O;EACtBE,2F;;;;QASD,kC,UAAuBF,O,iBAAiBG,Q;EAAxCF,+B;EAAAA,2C;EAAAA,6H;EAAAA,iB;;;;CAAA,+F,UAAuBD,O,iBAAiBG,Q;EACvCD,8G;;;QAlBiB,O;EAAAE,uC;EAAAA,oC;EAAAA;",
+"sources":["ConfigurationEnvelop.java"],
+"names":["org.pepstock.charba.client.configuration.ConfigurationEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.configuration.ConfigurationEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.ConfigurationEnvelop.<init>","nullable","org.pepstock.charba.client.configuration.ConfigurationEnvelop.<clinit>"]
+}
+

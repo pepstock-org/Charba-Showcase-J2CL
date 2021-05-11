@@ -1,0 +1,2461 @@
+goog.module('org.pepstock.charba.client.colors.GwtMaterialColor$impl');
+
+const Enum = goog.require('java.lang.Enum$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+const IsEnumeratedColor = goog.require('org.pepstock.charba.client.colors.IsEnumeratedColor$impl');
+
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let ColorBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.ColorBuilder$impl');
+let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
+let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
+let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
+
+/**
+ * @extends {Enum<GwtMaterialColor>}
+ * @implements {IsEnumeratedColor}
+ */
+class GwtMaterialColor extends Enum {
+ /** @protected */
+ constructor() {
+  super();
+  /**@type {IsColor}*/
+  this.f_color__org_pepstock_charba_client_colors_GwtMaterialColor_;
+ }
+ /** @return {!GwtMaterialColor} */
+ static $create__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ hexValue) {
+  let $instance = new GwtMaterialColor();
+  $instance.$ctor__org_pepstock_charba_client_colors_GwtMaterialColor__java_lang_String__int__java_lang_String($name, $ordinal, hexValue);
+  return $instance;
+ }
+ 
+ $ctor__org_pepstock_charba_client_colors_GwtMaterialColor__java_lang_String__int__java_lang_String(/** ?string */ $name, /** number */ $ordinal, /** ?string */ hexValue) {
+  this.f_name__java_lang_Enum_ = $name;
+  this.f_ordinal__java_lang_Enum_ = $ordinal;
+  this.$ctor__java_lang_Enum__java_lang_String__int($name, $ordinal);
+  this.f_color__org_pepstock_charba_client_colors_GwtMaterialColor_ = ColorBuilder.m_buildByHexValue__java_lang_String__boolean(hexValue, false);
+ }
+ /** @override @return {IsColor} */
+ m_getColor__() {
+  return this.f_color__org_pepstock_charba_client_colors_GwtMaterialColor_;
+ }
+ //Default method forwarding stub.
+ /** @override @return {IsColor} */
+ m_alpha__double(/** number */ arg0) {
+  return IsColor.m_alpha__$default__org_pepstock_charba_client_colors_IsColor__double(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override @return {IsColor} */
+ m_brighter__() {
+  return IsColor.m_brighter__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {IsColor} */
+ m_brighter__double(/** number */ arg0) {
+  return IsColor.m_brighter__$default__org_pepstock_charba_client_colors_IsColor__double(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override @return {IsColor} */
+ m_darker__() {
+  return IsColor.m_darker__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {IsColor} */
+ m_darker__double(/** number */ arg0) {
+  return IsColor.m_darker__$default__org_pepstock_charba_client_colors_IsColor__double(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getAlpha__() {
+  return IsEnumeratedColor.m_getAlpha__$default__org_pepstock_charba_client_colors_IsEnumeratedColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getBlue__() {
+  return IsEnumeratedColor.m_getBlue__$default__org_pepstock_charba_client_colors_IsEnumeratedColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getGreen__() {
+  return IsEnumeratedColor.m_getGreen__$default__org_pepstock_charba_client_colors_IsEnumeratedColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getRed__() {
+  return IsEnumeratedColor.m_getRed__$default__org_pepstock_charba_client_colors_IsEnumeratedColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {?string} */
+ m_toHSL__() {
+  return IsColor.m_toHSL__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {?string} */
+ m_toHSLA__() {
+  return IsColor.m_toHSLA__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {?string} */
+ m_toHex__() {
+  return IsColor.m_toHex__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {?string} */
+ m_toRGB__() {
+  return IsColor.m_toRGB__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {?string} */
+ m_toRGBA__() {
+  return IsColor.m_toRGBA__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_toRGBs__() {
+  return IsColor.m_toRGBs__$default__org_pepstock_charba_client_colors_IsColor(this);
+ }
+ /** @return {!GwtMaterialColor} */
+ static m_valueOf__java_lang_String(/** string */ name) {
+  GwtMaterialColor.$clinit();
+  if ($Equality.$same(GwtMaterialColor.f_namesToValuesMap__org_pepstock_charba_client_colors_GwtMaterialColor_, null)) {
+   GwtMaterialColor.f_namesToValuesMap__org_pepstock_charba_client_colors_GwtMaterialColor_ = $Enums.createMapFromValues(GwtMaterialColor.m_values__());
+  }
+  return $Enums.getValueFromNameAndMap(name, GwtMaterialColor.f_namesToValuesMap__org_pepstock_charba_client_colors_GwtMaterialColor_);
+ }
+ /** @return {!Array<!GwtMaterialColor>} */
+ static m_values__() {
+  GwtMaterialColor.$clinit();
+  return /**@type {!Array<GwtMaterialColor>}*/ ($Arrays.$init([GwtMaterialColor.$static_RED_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_RED_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PINK_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_INDIGO_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_CYAN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_TEAL_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_LIME_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_YELLOW_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_AMBER_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BROWN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLUE_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_BLACK__org_pepstock_charba_client_colors_GwtMaterialColor, GwtMaterialColor.$static_WHITE__org_pepstock_charba_client_colors_GwtMaterialColor], GwtMaterialColor));
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_RED_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_RED_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PINK_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PINK_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_INDIGO_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_INDIGO_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_CYAN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_CYAN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_TEAL_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_TEAL_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIGHT_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_LIME_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_LIME_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_YELLOW_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_YELLOW_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_AMBER_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_AMBER_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_DEEP_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BROWN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BROWN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLUE_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLUE_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_BLACK__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_BLACK__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ /** @return {!GwtMaterialColor} */
+ static get f_WHITE__org_pepstock_charba_client_colors_GwtMaterialColor() {
+  return (GwtMaterialColor.$clinit(), GwtMaterialColor.$static_WHITE__org_pepstock_charba_client_colors_GwtMaterialColor);
+ }
+ 
+ static $clinit() {
+  GwtMaterialColor.$clinit = () =>{};
+  GwtMaterialColor.$loadModules();
+  Enum.$clinit();
+  IsEnumeratedColor.$clinit();
+  GwtMaterialColor.$static_RED_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_LIGHTEN_5"), GwtMaterialColor.$ordinal_RED_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffebee");
+  GwtMaterialColor.$static_RED_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_LIGHTEN_4"), GwtMaterialColor.$ordinal_RED_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffcdd2");
+  GwtMaterialColor.$static_RED_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_LIGHTEN_3"), GwtMaterialColor.$ordinal_RED_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ef9a9a");
+  GwtMaterialColor.$static_RED_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_LIGHTEN_2"), GwtMaterialColor.$ordinal_RED_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#e57373");
+  GwtMaterialColor.$static_RED_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_LIGHTEN_1"), GwtMaterialColor.$ordinal_RED_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ef5350");
+  GwtMaterialColor.$static_RED__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED"), GwtMaterialColor.$ordinal_RED__org_pepstock_charba_client_colors_GwtMaterialColor, "#f44336");
+  GwtMaterialColor.$static_RED_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_DARKEN_1"), GwtMaterialColor.$ordinal_RED_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#e53935");
+  GwtMaterialColor.$static_RED_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_DARKEN_2"), GwtMaterialColor.$ordinal_RED_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#d32f2f");
+  GwtMaterialColor.$static_RED_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_DARKEN_3"), GwtMaterialColor.$ordinal_RED_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#c62828");
+  GwtMaterialColor.$static_RED_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_DARKEN_4"), GwtMaterialColor.$ordinal_RED_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#b71c1c");
+  GwtMaterialColor.$static_RED_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_ACCENT_1"), GwtMaterialColor.$ordinal_RED_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff8a80");
+  GwtMaterialColor.$static_RED_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_ACCENT_2"), GwtMaterialColor.$ordinal_RED_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff5252");
+  GwtMaterialColor.$static_RED_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_ACCENT_3"), GwtMaterialColor.$ordinal_RED_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff1744");
+  GwtMaterialColor.$static_RED_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RED_ACCENT_4"), GwtMaterialColor.$ordinal_RED_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#d50000");
+  GwtMaterialColor.$static_PINK_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_LIGHTEN_5"), GwtMaterialColor.$ordinal_PINK_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#fce4ec");
+  GwtMaterialColor.$static_PINK_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_LIGHTEN_4"), GwtMaterialColor.$ordinal_PINK_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#f8bbd0");
+  GwtMaterialColor.$static_PINK_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_LIGHTEN_3"), GwtMaterialColor.$ordinal_PINK_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#f48fb1");
+  GwtMaterialColor.$static_PINK_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_LIGHTEN_2"), GwtMaterialColor.$ordinal_PINK_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#f06292");
+  GwtMaterialColor.$static_PINK_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_LIGHTEN_1"), GwtMaterialColor.$ordinal_PINK_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ec407a");
+  GwtMaterialColor.$static_PINK__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK"), GwtMaterialColor.$ordinal_PINK__org_pepstock_charba_client_colors_GwtMaterialColor, "#e91e63");
+  GwtMaterialColor.$static_PINK_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_DARKEN_1"), GwtMaterialColor.$ordinal_PINK_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#d81b60");
+  GwtMaterialColor.$static_PINK_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_DARKEN_2"), GwtMaterialColor.$ordinal_PINK_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#c2185b");
+  GwtMaterialColor.$static_PINK_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_DARKEN_3"), GwtMaterialColor.$ordinal_PINK_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ad1457");
+  GwtMaterialColor.$static_PINK_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_DARKEN_4"), GwtMaterialColor.$ordinal_PINK_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#880e4f");
+  GwtMaterialColor.$static_PINK_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_ACCENT_1"), GwtMaterialColor.$ordinal_PINK_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff80ab");
+  GwtMaterialColor.$static_PINK_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_ACCENT_2"), GwtMaterialColor.$ordinal_PINK_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff4081");
+  GwtMaterialColor.$static_PINK_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_ACCENT_3"), GwtMaterialColor.$ordinal_PINK_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#f50057");
+  GwtMaterialColor.$static_PINK_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PINK_ACCENT_4"), GwtMaterialColor.$ordinal_PINK_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#c51162");
+  GwtMaterialColor.$static_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_LIGHTEN_5"), GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#f3e5f5");
+  GwtMaterialColor.$static_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_LIGHTEN_4"), GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#e1bee7");
+  GwtMaterialColor.$static_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_LIGHTEN_3"), GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ce93d8");
+  GwtMaterialColor.$static_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_LIGHTEN_2"), GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ba68c8");
+  GwtMaterialColor.$static_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_LIGHTEN_1"), GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ab47bc");
+  GwtMaterialColor.$static_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE"), GwtMaterialColor.$ordinal_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor, "#9c27b0");
+  GwtMaterialColor.$static_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_DARKEN_1"), GwtMaterialColor.$ordinal_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#8e24aa");
+  GwtMaterialColor.$static_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_DARKEN_2"), GwtMaterialColor.$ordinal_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#7b1fa2");
+  GwtMaterialColor.$static_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_DARKEN_3"), GwtMaterialColor.$ordinal_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#6a1b9a");
+  GwtMaterialColor.$static_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_DARKEN_4"), GwtMaterialColor.$ordinal_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#4a148c");
+  GwtMaterialColor.$static_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_ACCENT_1"), GwtMaterialColor.$ordinal_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ea80fc");
+  GwtMaterialColor.$static_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_ACCENT_2"), GwtMaterialColor.$ordinal_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#e040fb");
+  GwtMaterialColor.$static_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_ACCENT_3"), GwtMaterialColor.$ordinal_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#d500f9");
+  GwtMaterialColor.$static_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PURPLE_ACCENT_4"), GwtMaterialColor.$ordinal_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#aa00ff");
+  GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_LIGHTEN_5"), GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#ede7f6");
+  GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_LIGHTEN_4"), GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#d1c4e9");
+  GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_LIGHTEN_3"), GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#b39ddb");
+  GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_LIGHTEN_2"), GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#9575cd");
+  GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_LIGHTEN_1"), GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#7e57c2");
+  GwtMaterialColor.$static_DEEP_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE"), GwtMaterialColor.$ordinal_DEEP_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor, "#673ab7");
+  GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_DARKEN_1"), GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#5e35b1");
+  GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_DARKEN_2"), GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#512da8");
+  GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_DARKEN_3"), GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#4527a0");
+  GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_DARKEN_4"), GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#311b92");
+  GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_ACCENT_1"), GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#b388ff");
+  GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_ACCENT_2"), GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#7c4dff");
+  GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_ACCENT_3"), GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#651fff");
+  GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_PURPLE_ACCENT_4"), GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#6200ea");
+  GwtMaterialColor.$static_INDIGO_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_LIGHTEN_5"), GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#e8eaf6");
+  GwtMaterialColor.$static_INDIGO_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_LIGHTEN_4"), GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#c5cae9");
+  GwtMaterialColor.$static_INDIGO_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_LIGHTEN_3"), GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#9fa8da");
+  GwtMaterialColor.$static_INDIGO_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_LIGHTEN_2"), GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#7986cb");
+  GwtMaterialColor.$static_INDIGO_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_LIGHTEN_1"), GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#5c6bc0");
+  GwtMaterialColor.$static_INDIGO__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO"), GwtMaterialColor.$ordinal_INDIGO__org_pepstock_charba_client_colors_GwtMaterialColor, "#3f51b5");
+  GwtMaterialColor.$static_INDIGO_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_DARKEN_1"), GwtMaterialColor.$ordinal_INDIGO_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#3949ab");
+  GwtMaterialColor.$static_INDIGO_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_DARKEN_2"), GwtMaterialColor.$ordinal_INDIGO_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#303f9f");
+  GwtMaterialColor.$static_INDIGO_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_DARKEN_3"), GwtMaterialColor.$ordinal_INDIGO_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#283593");
+  GwtMaterialColor.$static_INDIGO_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_DARKEN_4"), GwtMaterialColor.$ordinal_INDIGO_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#1a237e");
+  GwtMaterialColor.$static_INDIGO_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_ACCENT_1"), GwtMaterialColor.$ordinal_INDIGO_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#8c9eff");
+  GwtMaterialColor.$static_INDIGO_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_ACCENT_2"), GwtMaterialColor.$ordinal_INDIGO_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#536dfe");
+  GwtMaterialColor.$static_INDIGO_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_ACCENT_3"), GwtMaterialColor.$ordinal_INDIGO_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#3d5afe");
+  GwtMaterialColor.$static_INDIGO_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDIGO_ACCENT_4"), GwtMaterialColor.$ordinal_INDIGO_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#304ffe");
+  GwtMaterialColor.$static_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_LIGHTEN_5"), GwtMaterialColor.$ordinal_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#e3f2fd");
+  GwtMaterialColor.$static_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_LIGHTEN_4"), GwtMaterialColor.$ordinal_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#bbdefb");
+  GwtMaterialColor.$static_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_LIGHTEN_3"), GwtMaterialColor.$ordinal_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#90caf9");
+  GwtMaterialColor.$static_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_LIGHTEN_2"), GwtMaterialColor.$ordinal_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#64b5f6");
+  GwtMaterialColor.$static_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_LIGHTEN_1"), GwtMaterialColor.$ordinal_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#42a5f5");
+  GwtMaterialColor.$static_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE"), GwtMaterialColor.$ordinal_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor, "#2196f3");
+  GwtMaterialColor.$static_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_DARKEN_1"), GwtMaterialColor.$ordinal_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#1e88e5");
+  GwtMaterialColor.$static_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_DARKEN_2"), GwtMaterialColor.$ordinal_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#1976d2");
+  GwtMaterialColor.$static_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_DARKEN_3"), GwtMaterialColor.$ordinal_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#1565c0");
+  GwtMaterialColor.$static_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_DARKEN_4"), GwtMaterialColor.$ordinal_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#0d47a1");
+  GwtMaterialColor.$static_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_ACCENT_1"), GwtMaterialColor.$ordinal_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#82b1ff");
+  GwtMaterialColor.$static_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_ACCENT_2"), GwtMaterialColor.$ordinal_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#448aff");
+  GwtMaterialColor.$static_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_ACCENT_3"), GwtMaterialColor.$ordinal_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#2979ff");
+  GwtMaterialColor.$static_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_ACCENT_4"), GwtMaterialColor.$ordinal_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#2962ff");
+  GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_LIGHTEN_5"), GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#e1f5fe");
+  GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_LIGHTEN_4"), GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#b3e5fc");
+  GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_LIGHTEN_3"), GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#81d4fa");
+  GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_LIGHTEN_2"), GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#4fc3f7");
+  GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_LIGHTEN_1"), GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#29b6f6");
+  GwtMaterialColor.$static_LIGHT_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE"), GwtMaterialColor.$ordinal_LIGHT_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor, "#03a9f4");
+  GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_DARKEN_1"), GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#039be5");
+  GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_DARKEN_2"), GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#0288d1");
+  GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_DARKEN_3"), GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#0277bd");
+  GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_DARKEN_4"), GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#01579b");
+  GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_ACCENT_1"), GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#80d8ff");
+  GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_ACCENT_2"), GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#40c4ff");
+  GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_ACCENT_3"), GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#00b0ff");
+  GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_BLUE_ACCENT_4"), GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#0091ea");
+  GwtMaterialColor.$static_CYAN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_LIGHTEN_5"), GwtMaterialColor.$ordinal_CYAN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#e0f7fa");
+  GwtMaterialColor.$static_CYAN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_LIGHTEN_4"), GwtMaterialColor.$ordinal_CYAN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#b2ebf2");
+  GwtMaterialColor.$static_CYAN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_LIGHTEN_3"), GwtMaterialColor.$ordinal_CYAN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#80deea");
+  GwtMaterialColor.$static_CYAN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_LIGHTEN_2"), GwtMaterialColor.$ordinal_CYAN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#4dd0e1");
+  GwtMaterialColor.$static_CYAN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_LIGHTEN_1"), GwtMaterialColor.$ordinal_CYAN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#26c6da");
+  GwtMaterialColor.$static_CYAN__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN"), GwtMaterialColor.$ordinal_CYAN__org_pepstock_charba_client_colors_GwtMaterialColor, "#00bcd4");
+  GwtMaterialColor.$static_CYAN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_DARKEN_1"), GwtMaterialColor.$ordinal_CYAN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#00acc1");
+  GwtMaterialColor.$static_CYAN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_DARKEN_2"), GwtMaterialColor.$ordinal_CYAN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#0097a7");
+  GwtMaterialColor.$static_CYAN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_DARKEN_3"), GwtMaterialColor.$ordinal_CYAN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#00838f");
+  GwtMaterialColor.$static_CYAN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_DARKEN_4"), GwtMaterialColor.$ordinal_CYAN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#006064");
+  GwtMaterialColor.$static_CYAN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_ACCENT_1"), GwtMaterialColor.$ordinal_CYAN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#84ffff");
+  GwtMaterialColor.$static_CYAN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_ACCENT_2"), GwtMaterialColor.$ordinal_CYAN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#18ffff");
+  GwtMaterialColor.$static_CYAN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_ACCENT_3"), GwtMaterialColor.$ordinal_CYAN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#00e5ff");
+  GwtMaterialColor.$static_CYAN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CYAN_ACCENT_4"), GwtMaterialColor.$ordinal_CYAN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#00b8d4");
+  GwtMaterialColor.$static_TEAL_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_LIGHTEN_5"), GwtMaterialColor.$ordinal_TEAL_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#e0f2f1");
+  GwtMaterialColor.$static_TEAL_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_LIGHTEN_4"), GwtMaterialColor.$ordinal_TEAL_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#b2dfdb");
+  GwtMaterialColor.$static_TEAL_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_LIGHTEN_3"), GwtMaterialColor.$ordinal_TEAL_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#80cbc4");
+  GwtMaterialColor.$static_TEAL_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_LIGHTEN_2"), GwtMaterialColor.$ordinal_TEAL_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#4db6ac");
+  GwtMaterialColor.$static_TEAL_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_LIGHTEN_1"), GwtMaterialColor.$ordinal_TEAL_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#26a69a");
+  GwtMaterialColor.$static_TEAL__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL"), GwtMaterialColor.$ordinal_TEAL__org_pepstock_charba_client_colors_GwtMaterialColor, "#009688");
+  GwtMaterialColor.$static_TEAL_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_DARKEN_1"), GwtMaterialColor.$ordinal_TEAL_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#00897b");
+  GwtMaterialColor.$static_TEAL_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_DARKEN_2"), GwtMaterialColor.$ordinal_TEAL_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#00796b");
+  GwtMaterialColor.$static_TEAL_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_DARKEN_3"), GwtMaterialColor.$ordinal_TEAL_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#00695c");
+  GwtMaterialColor.$static_TEAL_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_DARKEN_4"), GwtMaterialColor.$ordinal_TEAL_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#004d40");
+  GwtMaterialColor.$static_TEAL_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_ACCENT_1"), GwtMaterialColor.$ordinal_TEAL_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#a7ffeb");
+  GwtMaterialColor.$static_TEAL_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_ACCENT_2"), GwtMaterialColor.$ordinal_TEAL_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#64ffda");
+  GwtMaterialColor.$static_TEAL_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_ACCENT_3"), GwtMaterialColor.$ordinal_TEAL_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#1de9b6");
+  GwtMaterialColor.$static_TEAL_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEAL_ACCENT_4"), GwtMaterialColor.$ordinal_TEAL_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#00bfa5");
+  GwtMaterialColor.$static_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_LIGHTEN_5"), GwtMaterialColor.$ordinal_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#e8f5e9");
+  GwtMaterialColor.$static_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_LIGHTEN_4"), GwtMaterialColor.$ordinal_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#c8e6c9");
+  GwtMaterialColor.$static_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_LIGHTEN_3"), GwtMaterialColor.$ordinal_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#a5d6a7");
+  GwtMaterialColor.$static_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_LIGHTEN_2"), GwtMaterialColor.$ordinal_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#81c784");
+  GwtMaterialColor.$static_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_LIGHTEN_1"), GwtMaterialColor.$ordinal_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#66bb6a");
+  GwtMaterialColor.$static_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN"), GwtMaterialColor.$ordinal_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor, "#4caf50");
+  GwtMaterialColor.$static_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_DARKEN_1"), GwtMaterialColor.$ordinal_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#43a047");
+  GwtMaterialColor.$static_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_DARKEN_2"), GwtMaterialColor.$ordinal_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#388e3c");
+  GwtMaterialColor.$static_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_DARKEN_3"), GwtMaterialColor.$ordinal_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#2e7d32");
+  GwtMaterialColor.$static_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_DARKEN_4"), GwtMaterialColor.$ordinal_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#1b5e20");
+  GwtMaterialColor.$static_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_ACCENT_1"), GwtMaterialColor.$ordinal_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#b9f6ca");
+  GwtMaterialColor.$static_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_ACCENT_2"), GwtMaterialColor.$ordinal_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#69f0ae");
+  GwtMaterialColor.$static_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_ACCENT_3"), GwtMaterialColor.$ordinal_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#00e676");
+  GwtMaterialColor.$static_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREEN_ACCENT_4"), GwtMaterialColor.$ordinal_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#00c853");
+  GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_LIGHTEN_5"), GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#f1f8e9");
+  GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_LIGHTEN_4"), GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#dcedc8");
+  GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_LIGHTEN_3"), GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#c5e1a5");
+  GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_LIGHTEN_2"), GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#aed581");
+  GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_LIGHTEN_1"), GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#9ccc65");
+  GwtMaterialColor.$static_LIGHT_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN"), GwtMaterialColor.$ordinal_LIGHT_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor, "#8bc34a");
+  GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_DARKEN_1"), GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#7cb342");
+  GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_DARKEN_2"), GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#689f38");
+  GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_DARKEN_3"), GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#558b2f");
+  GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_DARKEN_4"), GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#33691e");
+  GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_ACCENT_1"), GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ccff90");
+  GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_ACCENT_2"), GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#b2ff59");
+  GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_ACCENT_3"), GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#76ff03");
+  GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIGHT_GREEN_ACCENT_4"), GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#64dd17");
+  GwtMaterialColor.$static_LIME_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_LIGHTEN_5"), GwtMaterialColor.$ordinal_LIME_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#f9fbe7");
+  GwtMaterialColor.$static_LIME_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_LIGHTEN_4"), GwtMaterialColor.$ordinal_LIME_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#f0f4c3");
+  GwtMaterialColor.$static_LIME_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_LIGHTEN_3"), GwtMaterialColor.$ordinal_LIME_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#e6ee9c");
+  GwtMaterialColor.$static_LIME_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_LIGHTEN_2"), GwtMaterialColor.$ordinal_LIME_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#dce775");
+  GwtMaterialColor.$static_LIME_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_LIGHTEN_1"), GwtMaterialColor.$ordinal_LIME_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#d4e157");
+  GwtMaterialColor.$static_LIME__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME"), GwtMaterialColor.$ordinal_LIME__org_pepstock_charba_client_colors_GwtMaterialColor, "#cddc39");
+  GwtMaterialColor.$static_LIME_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_DARKEN_1"), GwtMaterialColor.$ordinal_LIME_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#c0ca33");
+  GwtMaterialColor.$static_LIME_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_DARKEN_2"), GwtMaterialColor.$ordinal_LIME_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#afb42b");
+  GwtMaterialColor.$static_LIME_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_DARKEN_3"), GwtMaterialColor.$ordinal_LIME_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#9e9d24");
+  GwtMaterialColor.$static_LIME_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_DARKEN_4"), GwtMaterialColor.$ordinal_LIME_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#827717");
+  GwtMaterialColor.$static_LIME_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_ACCENT_1"), GwtMaterialColor.$ordinal_LIME_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#f4ff81");
+  GwtMaterialColor.$static_LIME_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_ACCENT_2"), GwtMaterialColor.$ordinal_LIME_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#eeff41");
+  GwtMaterialColor.$static_LIME_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_ACCENT_3"), GwtMaterialColor.$ordinal_LIME_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#c6ff00");
+  GwtMaterialColor.$static_LIME_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LIME_ACCENT_4"), GwtMaterialColor.$ordinal_LIME_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#aeea00");
+  GwtMaterialColor.$static_YELLOW_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_LIGHTEN_5"), GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#fffde7");
+  GwtMaterialColor.$static_YELLOW_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_LIGHTEN_4"), GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#fff9c4");
+  GwtMaterialColor.$static_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_LIGHTEN_3"), GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#fff59d");
+  GwtMaterialColor.$static_YELLOW_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_LIGHTEN_2"), GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#fff176");
+  GwtMaterialColor.$static_YELLOW_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_LIGHTEN_1"), GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffee58");
+  GwtMaterialColor.$static_YELLOW__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW"), GwtMaterialColor.$ordinal_YELLOW__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffeb3b");
+  GwtMaterialColor.$static_YELLOW_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_DARKEN_1"), GwtMaterialColor.$ordinal_YELLOW_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#fdd835");
+  GwtMaterialColor.$static_YELLOW_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_DARKEN_2"), GwtMaterialColor.$ordinal_YELLOW_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#fbc02d");
+  GwtMaterialColor.$static_YELLOW_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_DARKEN_3"), GwtMaterialColor.$ordinal_YELLOW_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#f9a825");
+  GwtMaterialColor.$static_YELLOW_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_DARKEN_4"), GwtMaterialColor.$ordinal_YELLOW_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#f57f17");
+  GwtMaterialColor.$static_YELLOW_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_ACCENT_1"), GwtMaterialColor.$ordinal_YELLOW_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffff8d");
+  GwtMaterialColor.$static_YELLOW_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_ACCENT_2"), GwtMaterialColor.$ordinal_YELLOW_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffff00");
+  GwtMaterialColor.$static_YELLOW_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_ACCENT_3"), GwtMaterialColor.$ordinal_YELLOW_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffea00");
+  GwtMaterialColor.$static_YELLOW_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("YELLOW_ACCENT_4"), GwtMaterialColor.$ordinal_YELLOW_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffd600");
+  GwtMaterialColor.$static_AMBER_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_LIGHTEN_5"), GwtMaterialColor.$ordinal_AMBER_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#fff8e1");
+  GwtMaterialColor.$static_AMBER_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_LIGHTEN_4"), GwtMaterialColor.$ordinal_AMBER_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffecb3");
+  GwtMaterialColor.$static_AMBER_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_LIGHTEN_3"), GwtMaterialColor.$ordinal_AMBER_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffe082");
+  GwtMaterialColor.$static_AMBER_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_LIGHTEN_2"), GwtMaterialColor.$ordinal_AMBER_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffd54f");
+  GwtMaterialColor.$static_AMBER_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_LIGHTEN_1"), GwtMaterialColor.$ordinal_AMBER_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffca28");
+  GwtMaterialColor.$static_AMBER__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER"), GwtMaterialColor.$ordinal_AMBER__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffc107");
+  GwtMaterialColor.$static_AMBER_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_DARKEN_1"), GwtMaterialColor.$ordinal_AMBER_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffb300");
+  GwtMaterialColor.$static_AMBER_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_DARKEN_2"), GwtMaterialColor.$ordinal_AMBER_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffa000");
+  GwtMaterialColor.$static_AMBER_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_DARKEN_3"), GwtMaterialColor.$ordinal_AMBER_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff8f00");
+  GwtMaterialColor.$static_AMBER_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_DARKEN_4"), GwtMaterialColor.$ordinal_AMBER_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff6f00");
+  GwtMaterialColor.$static_AMBER_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_ACCENT_1"), GwtMaterialColor.$ordinal_AMBER_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffe57f");
+  GwtMaterialColor.$static_AMBER_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_ACCENT_2"), GwtMaterialColor.$ordinal_AMBER_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffd740");
+  GwtMaterialColor.$static_AMBER_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_ACCENT_3"), GwtMaterialColor.$ordinal_AMBER_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffc400");
+  GwtMaterialColor.$static_AMBER_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AMBER_ACCENT_4"), GwtMaterialColor.$ordinal_AMBER_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffab00");
+  GwtMaterialColor.$static_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_LIGHTEN_5"), GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#fff3e0");
+  GwtMaterialColor.$static_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_LIGHTEN_4"), GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffe0b2");
+  GwtMaterialColor.$static_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_LIGHTEN_3"), GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffcc80");
+  GwtMaterialColor.$static_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_LIGHTEN_2"), GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffb74d");
+  GwtMaterialColor.$static_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_LIGHTEN_1"), GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffa726");
+  GwtMaterialColor.$static_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE"), GwtMaterialColor.$ordinal_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff9800");
+  GwtMaterialColor.$static_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_DARKEN_1"), GwtMaterialColor.$ordinal_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#fb8c00");
+  GwtMaterialColor.$static_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_DARKEN_2"), GwtMaterialColor.$ordinal_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#f57c00");
+  GwtMaterialColor.$static_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_DARKEN_3"), GwtMaterialColor.$ordinal_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ef6c00");
+  GwtMaterialColor.$static_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_DARKEN_4"), GwtMaterialColor.$ordinal_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#e65100");
+  GwtMaterialColor.$static_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_ACCENT_1"), GwtMaterialColor.$ordinal_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffd180");
+  GwtMaterialColor.$static_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_ACCENT_2"), GwtMaterialColor.$ordinal_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffab40");
+  GwtMaterialColor.$static_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_ACCENT_3"), GwtMaterialColor.$ordinal_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff9100");
+  GwtMaterialColor.$static_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ORANGE_ACCENT_4"), GwtMaterialColor.$ordinal_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff6d00");
+  GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_LIGHTEN_5"), GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#fbe9e7");
+  GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_LIGHTEN_4"), GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffccbc");
+  GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_LIGHTEN_3"), GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffab91");
+  GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_LIGHTEN_2"), GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff8a65");
+  GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_LIGHTEN_1"), GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff7043");
+  GwtMaterialColor.$static_DEEP_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE"), GwtMaterialColor.$ordinal_DEEP_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff5722");
+  GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_DARKEN_1"), GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#f4511e");
+  GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_DARKEN_2"), GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#e64a19");
+  GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_DARKEN_3"), GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#d84315");
+  GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_DARKEN_4"), GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#bf360c");
+  GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_ACCENT_1"), GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff9e80");
+  GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_ACCENT_2"), GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff6e40");
+  GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_ACCENT_3"), GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#ff3d00");
+  GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DEEP_ORANGE_ACCENT_4"), GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#dd2c00");
+  GwtMaterialColor.$static_BROWN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_LIGHTEN_5"), GwtMaterialColor.$ordinal_BROWN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#efebe9");
+  GwtMaterialColor.$static_BROWN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_LIGHTEN_4"), GwtMaterialColor.$ordinal_BROWN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#d7ccc8");
+  GwtMaterialColor.$static_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_LIGHTEN_3"), GwtMaterialColor.$ordinal_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#bcaaa4");
+  GwtMaterialColor.$static_BROWN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_LIGHTEN_2"), GwtMaterialColor.$ordinal_BROWN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#a1887f");
+  GwtMaterialColor.$static_BROWN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_LIGHTEN_1"), GwtMaterialColor.$ordinal_BROWN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#8d6e63");
+  GwtMaterialColor.$static_BROWN__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN"), GwtMaterialColor.$ordinal_BROWN__org_pepstock_charba_client_colors_GwtMaterialColor, "#795548");
+  GwtMaterialColor.$static_BROWN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_DARKEN_1"), GwtMaterialColor.$ordinal_BROWN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#6d4c41");
+  GwtMaterialColor.$static_BROWN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_DARKEN_2"), GwtMaterialColor.$ordinal_BROWN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#5d4037");
+  GwtMaterialColor.$static_BROWN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_DARKEN_3"), GwtMaterialColor.$ordinal_BROWN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#4e342e");
+  GwtMaterialColor.$static_BROWN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BROWN_DARKEN_4"), GwtMaterialColor.$ordinal_BROWN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#3e2723");
+  GwtMaterialColor.$static_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_LIGHTEN_5"), GwtMaterialColor.$ordinal_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#fafafa");
+  GwtMaterialColor.$static_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_LIGHTEN_4"), GwtMaterialColor.$ordinal_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#f5f5f5");
+  GwtMaterialColor.$static_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_LIGHTEN_3"), GwtMaterialColor.$ordinal_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#eeeeee");
+  GwtMaterialColor.$static_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_LIGHTEN_2"), GwtMaterialColor.$ordinal_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#e0e0e0");
+  GwtMaterialColor.$static_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_LIGHTEN_1"), GwtMaterialColor.$ordinal_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#bdbdbd");
+  GwtMaterialColor.$static_GREY__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY"), GwtMaterialColor.$ordinal_GREY__org_pepstock_charba_client_colors_GwtMaterialColor, "#9e9e9e");
+  GwtMaterialColor.$static_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_DARKEN_1"), GwtMaterialColor.$ordinal_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#757575");
+  GwtMaterialColor.$static_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_DARKEN_2"), GwtMaterialColor.$ordinal_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#616161");
+  GwtMaterialColor.$static_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_DARKEN_3"), GwtMaterialColor.$ordinal_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#424242");
+  GwtMaterialColor.$static_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GREY_DARKEN_4"), GwtMaterialColor.$ordinal_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#212121");
+  GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_LIGHTEN_5"), GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor, "#eceff1");
+  GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_LIGHTEN_4"), GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#cfd8dc");
+  GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_LIGHTEN_3"), GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#b0bec5");
+  GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_LIGHTEN_2"), GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#90a4ae");
+  GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_LIGHTEN_1"), GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#78909c");
+  GwtMaterialColor.$static_BLUE_GREY__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY"), GwtMaterialColor.$ordinal_BLUE_GREY__org_pepstock_charba_client_colors_GwtMaterialColor, "#607d8b");
+  GwtMaterialColor.$static_BLUE_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_DARKEN_1"), GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor, "#546e7a");
+  GwtMaterialColor.$static_BLUE_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_DARKEN_2"), GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor, "#455a64");
+  GwtMaterialColor.$static_BLUE_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_DARKEN_3"), GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor, "#37474f");
+  GwtMaterialColor.$static_BLUE_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLUE_GREY_DARKEN_4"), GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor, "#263238");
+  GwtMaterialColor.$static_BLACK__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BLACK"), GwtMaterialColor.$ordinal_BLACK__org_pepstock_charba_client_colors_GwtMaterialColor, "#000000");
+  GwtMaterialColor.$static_WHITE__org_pepstock_charba_client_colors_GwtMaterialColor = GwtMaterialColor.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("WHITE"), GwtMaterialColor.$ordinal_WHITE__org_pepstock_charba_client_colors_GwtMaterialColor, "#ffffff");
+  GwtMaterialColor.f_namesToValuesMap__org_pepstock_charba_client_colors_GwtMaterialColor_ = null;
+ }
+ /** @return {boolean} */
+ static $isInstance(/** ? */ instance) {
+  return instance instanceof GwtMaterialColor;
+ }
+ 
+ static $loadModules() {
+  $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  ColorBuilder = goog.module.get('org.pepstock.charba.client.colors.ColorBuilder$impl');
+  IsColor = goog.module.get('org.pepstock.charba.client.colors.IsColor$impl');
+  $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
+  $Enums = goog.module.get('vmbootstrap.Enums$impl');
+ }
+}
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_RED_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PINK_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_INDIGO_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_CYAN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_TEAL_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIGHT_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_LIME_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_YELLOW_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_AMBER_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_DEEP_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BROWN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLUE_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_BLACK__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@private {!GwtMaterialColor}*/
+GwtMaterialColor.$static_WHITE__org_pepstock_charba_client_colors_GwtMaterialColor;
+/**@type {Map<?string, !GwtMaterialColor>}*/
+GwtMaterialColor.f_namesToValuesMap__org_pepstock_charba_client_colors_GwtMaterialColor_;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 0;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 1;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 2;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 3;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 4;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED__org_pepstock_charba_client_colors_GwtMaterialColor = 5;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 6;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 7;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 8;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 9;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 10;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 11;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 12;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_RED_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 13;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 14;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 15;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 16;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 17;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 18;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK__org_pepstock_charba_client_colors_GwtMaterialColor = 19;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 20;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 21;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 22;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 23;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 24;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 25;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 26;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PINK_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 27;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 28;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 29;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 30;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 31;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 32;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor = 33;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 34;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 35;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 36;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 37;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 38;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 39;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 40;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 41;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 42;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 43;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 44;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 45;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 46;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE__org_pepstock_charba_client_colors_GwtMaterialColor = 47;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 48;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 49;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 50;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 51;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 52;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 53;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 54;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_PURPLE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 55;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 56;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 57;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 58;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 59;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 60;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO__org_pepstock_charba_client_colors_GwtMaterialColor = 61;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 62;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 63;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 64;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 65;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 66;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 67;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 68;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_INDIGO_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 69;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 70;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 71;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 72;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 73;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 74;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor = 75;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 76;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 77;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 78;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 79;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 80;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 81;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 82;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 83;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 84;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 85;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 86;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 87;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 88;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE__org_pepstock_charba_client_colors_GwtMaterialColor = 89;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 90;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 91;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 92;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 93;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 94;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 95;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 96;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_BLUE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 97;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 98;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 99;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 100;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 101;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 102;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN__org_pepstock_charba_client_colors_GwtMaterialColor = 103;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 104;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 105;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 106;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 107;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 108;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 109;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 110;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_CYAN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 111;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 112;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 113;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 114;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 115;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 116;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL__org_pepstock_charba_client_colors_GwtMaterialColor = 117;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 118;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 119;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 120;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 121;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 122;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 123;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 124;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_TEAL_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 125;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 126;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 127;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 128;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 129;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 130;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor = 131;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 132;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 133;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 134;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 135;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 136;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 137;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 138;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 139;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 140;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 141;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 142;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 143;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 144;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN__org_pepstock_charba_client_colors_GwtMaterialColor = 145;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 146;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 147;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 148;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 149;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 150;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 151;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 152;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIGHT_GREEN_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 153;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 154;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 155;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 156;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 157;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 158;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME__org_pepstock_charba_client_colors_GwtMaterialColor = 159;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 160;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 161;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 162;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 163;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 164;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 165;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 166;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_LIME_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 167;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 168;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 169;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 170;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 171;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 172;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW__org_pepstock_charba_client_colors_GwtMaterialColor = 173;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 174;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 175;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 176;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 177;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 178;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 179;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 180;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_YELLOW_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 181;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 182;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 183;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 184;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 185;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 186;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER__org_pepstock_charba_client_colors_GwtMaterialColor = 187;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 188;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 189;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 190;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 191;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 192;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 193;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 194;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_AMBER_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 195;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 196;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 197;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 198;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 199;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 200;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor = 201;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 202;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 203;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 204;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 205;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 206;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 207;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 208;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 209;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 210;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 211;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 212;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 213;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 214;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE__org_pepstock_charba_client_colors_GwtMaterialColor = 215;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 216;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 217;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 218;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 219;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_1__org_pepstock_charba_client_colors_GwtMaterialColor = 220;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_2__org_pepstock_charba_client_colors_GwtMaterialColor = 221;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_3__org_pepstock_charba_client_colors_GwtMaterialColor = 222;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_DEEP_ORANGE_ACCENT_4__org_pepstock_charba_client_colors_GwtMaterialColor = 223;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 224;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 225;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 226;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 227;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 228;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN__org_pepstock_charba_client_colors_GwtMaterialColor = 229;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 230;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 231;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 232;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BROWN_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 233;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 234;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 235;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 236;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 237;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 238;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY__org_pepstock_charba_client_colors_GwtMaterialColor = 239;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 240;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 241;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 242;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 243;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor = 244;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 245;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 246;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 247;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_LIGHTEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 248;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY__org_pepstock_charba_client_colors_GwtMaterialColor = 249;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_1__org_pepstock_charba_client_colors_GwtMaterialColor = 250;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_2__org_pepstock_charba_client_colors_GwtMaterialColor = 251;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_3__org_pepstock_charba_client_colors_GwtMaterialColor = 252;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLUE_GREY_DARKEN_4__org_pepstock_charba_client_colors_GwtMaterialColor = 253;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_BLACK__org_pepstock_charba_client_colors_GwtMaterialColor = 254;
+/**@const {number}*/
+GwtMaterialColor.$ordinal_WHITE__org_pepstock_charba_client_colors_GwtMaterialColor = 255;
+IsEnumeratedColor.$markImplementor(GwtMaterialColor);
+$Util.$setClassMetadataForEnum(GwtMaterialColor, "org.pepstock.charba.client.colors.GwtMaterialColor");
+
+exports = GwtMaterialColor;
+
+//# sourceMappingURL=GwtMaterialColor.js.map

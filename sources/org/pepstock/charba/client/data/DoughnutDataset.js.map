@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DoughnutDataset.impl.java.js",
+"lineCount":98,
+"mappings":"A;;;;;;;;;;MA2Ba,e;;CAAA,W;EAAAA,Q;;;;QAML,S;EAAAC,0B;EAAAA,sC;EAAAA,qE;EAAAA,iB;;;;CAAA,wD;EACNC,wI;;;;QASM,gB,gBAAwBC,M;EAAxBF,0B;EAAAA,sC;EAAAA,kF;EAAAA,iB;;;;CAAA,+D,gBAAwBE,M;EAC9BD,0K;;;;QAQM,6D,yBAAiCE,a;EAAjCH,0B;EAAAA,sC;EAAAA,sI;EAAAA,iB;;;;CAAA,4G,yBAAiCG,a;EACvCF,6M;;;;QASM,sE,yBAAiCE,a,iBAAuBD,M;EAAxDF,0B;EAAAA,sC;EAAAA,uJ;EAAAA,iB;;;;CAAA,qH,yBAAiCG,a,iBAAuBD,M;EAC9DD,+O;;;;QASS,iD,aAAqBG,I,iBAAcF,M;EAAnCF,0B;EAAAA,sC;EAAAA,yH;EAAAA,iB;;;;CAAA,gG,aAAqBI,I,iBAAcF,M;EAC5CD,gL;;;;QAUS,uG,aAAqBG,I,0BAAuBD,a,iBAAuBD,M;EAAnEF,0B;EAAAA,sC;EAAAA,8L;EAAAA,iB;;;;CAAA,sJ,aAAqBI,I,0BAAuBD,a,iBAAuBD,M;EAC5ED,oL;;;QAzDW,O;EAAAI,kC;EAAAA,+B;EAAAA;",
+"sources":["DoughnutDataset.java"],
+"names":["org.pepstock.charba.client.data.DoughnutDataset.<synthetic: ctor_js>","org.pepstock.charba.client.data.DoughnutDataset.<synthetic: ctor_create>","org.pepstock.charba.client.data.DoughnutDataset.<init>","hidden","defaultValues","type","org.pepstock.charba.client.data.DoughnutDataset.<clinit>"]
+}
+

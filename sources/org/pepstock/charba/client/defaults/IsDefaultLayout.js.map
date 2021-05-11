@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultLayout.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAsBiB,e;;CAOC,c;;QAPD,M;EAAAA,0B;EAAAA,8B;;;QAAA,O;EAAAC,kC;EAAAA;",
+"sources":["IsDefaultLayout.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultLayout.<synthetic: adapt_lambda>","org.pepstock.charba.client.defaults.IsDefaultLayout.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ControllersEnvelop.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;MA2BmB,kB;;CAAA,W;EAAAA,Q;;;;QAOlB,yB,UAAqBC,O;EAArBC,6B;EAAAA,yC;EAAAA,sG;EAAAA,iB;;;;CAAA,kF,UAAqBD,O;EACpBE,iH;;;;QASD,kC,UAAqBF,O,iBAAiBG,Q;EAAtCF,6B;EAAAA,yC;EAAAA,yH;EAAAA,iB;;;;CAAA,2F,UAAqBD,O,iBAAiBG,Q;EACrCD,8G;;;QAlBiB,O;EAAAE,qC;EAAAA,kC;EAAAA;",
+"sources":["ControllersEnvelop.java"],
+"names":["org.pepstock.charba.client.controllers.ControllersEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.controllers.ControllersEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.controllers.ControllersEnvelop.<init>","nullable","org.pepstock.charba.client.controllers.ControllersEnvelop.<clinit>"]
+}
+

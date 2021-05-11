@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DecimationAlgorithm.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MAyBY,mB;;CAAA,W;EAAAA,Q;EAAAA;OAcU,8DAdVA,C;;;QAqBH,gD,8DAA2BC,K;EAA3BC,0C;EAAAA,uI;EAAAA,iB;;;CAAA,oG,8DAA2BD,K;EAA3BE,qC;EAAAA,2C;EAAAA,mE;EACPA,4E;;;CASa,S;EACbC,2E;;;QAhCU,2B;EAAAC,8B;EAAAA;GAAAA,6JAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,8B;EAAAA,0Q;;;QAEX,mE;EAAAC,kI;;;QAKA,gE;EAAAA,+H;;;QAPW,O;EAAAC,sC;EAAAA,mC;EAAAA,e;EAEXA,wS;EAKAA,4R;EAPWA,qG;;;;;;;;;;;;;AAAA;0F;AAAA;uF;AAAA;8F;AAEX;+F;AAKA;;",
+"sources":["DecimationAlgorithm.java"],
+"names":["org.pepstock.charba.client.enums.DecimationAlgorithm.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.DecimationAlgorithm.<synthetic: ctor_create>","org.pepstock.charba.client.enums.DecimationAlgorithm.<init>","org.pepstock.charba.client.enums.DecimationAlgorithm.value","org.pepstock.charba.client.enums.DecimationAlgorithm.valueOf","org.pepstock.charba.client.enums.DecimationAlgorithm.values","org.pepstock.charba.client.enums.DecimationAlgorithm.<synthetic: getter>","org.pepstock.charba.client.enums.DecimationAlgorithm.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultOptions.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAyBU,gB;;CAQO,uD,kBAAmBA,E;;CASf,a;;CAUN,uD,kBAAmBA,E;;QAnBjB,qH,qDAAmBA,E;EAAnBC,2B;EACfA,a;;;QAQmB,yE;EAAAC,2B;EACnBA,8D;;;QASa,qH,qDAAmBF,E;EAAnBG,2B;EACbA,Y;;;QA5BQ,O;EAAAC,mC;EAAAA;",
+"sources":["IsDefaultOptions.java"],
+"names":["id","org.pepstock.charba.client.labels.IsDefaultOptions.hasLabel__$default","org.pepstock.charba.client.labels.IsDefaultOptions.getLabels__$default","org.pepstock.charba.client.labels.IsDefaultOptions.getLabel__$default","org.pepstock.charba.client.labels.IsDefaultOptions.<clinit>"]
+}
+

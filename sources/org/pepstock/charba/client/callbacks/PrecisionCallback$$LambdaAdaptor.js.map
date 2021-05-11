@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PrecisionCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,sF;;;CAAA,2D;EAAAC,qD;EAAAA,uH;;;;CAAA,2D;EAAAA,oI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["PrecisionCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.PrecisionCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.PrecisionCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.PrecisionCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.PrecisionCallback$$LambdaAdaptor.<clinit>"]
+}
+

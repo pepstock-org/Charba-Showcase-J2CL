@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"UnsafeNativeLong$$LambdaAdaptor.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MA6BkB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wE;EAAAA,oI;;;CAAA,0H;EAAAC,iC;EAAAA,2E;;;CAAA,kB;EAAAC,0C;EAAAA,wG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["UnsafeNativeLong.java"],
+"names":["com.google.gwt.core.client.UnsafeNativeLong$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","com.google.gwt.core.client.UnsafeNativeLong$$LambdaAdaptor.<init>","com.google.gwt.core.client.UnsafeNativeLong$$LambdaAdaptor.annotationType","com.google.gwt.core.client.UnsafeNativeLong$$LambdaAdaptor.<clinit>"]
+}
+

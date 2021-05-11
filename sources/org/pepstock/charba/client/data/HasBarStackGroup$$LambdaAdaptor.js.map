@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasBarStackGroup$$LambdaAdaptor.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;MAwBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,8I;;;CAAA,oI;EAAAC,iC;EAAAA,gF;;;CAAA,sB;EAAAC,iD;EAAAA,6G;;;;CAAA,iB;EAAAC,0G;;;;CAAA,iC;EAAAC,2H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["HasBarStackGroup.java"],
+"names":["org.pepstock.charba.client.data.HasBarStackGroup$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.data.HasBarStackGroup$$LambdaAdaptor.<init>","org.pepstock.charba.client.data.HasBarStackGroup$$LambdaAdaptor.getBarStackHandler","org.pepstock.charba.client.data.HasBarStackGroup$$LambdaAdaptor.getStackGroup","org.pepstock.charba.client.data.HasBarStackGroup$$LambdaAdaptor.setStackGroup","org.pepstock.charba.client.data.HasBarStackGroup$$LambdaAdaptor.<clinit>"]
+}
+

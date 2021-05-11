@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SelectionStatus.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;MAsBK,e;;CAAA,W;EAAAA,Q;;;QAAA,8B;EAAAC,sC;EAAAA,iH;EAAAA,iB;;;CAAA,qF;EAAAC,qC;EAAAA,2C;EAAAA,mE;;;QAAA,2B;EAAAC,0B;EAAAA;GAAAA,wJAAAA;G;EAAAA,yI;;;QAAA,U;EAAAC,0B;EAAAA,8V;;;QAEJ,oE;EAAAC,2H;;;QAIA,wE;EAAAA,+H;;;QAIA,uE;EAAAA,8H;;;QAVI,O;EAAAC,kC;EAAAA,+B;EAAAA,e;EAEJA,+P;EAIAA,2Q;EAIAA,wQ;EAVIA,oG;;;;;;;;;;;;;AAAA;uF;AAAA;2F;AAAA;0F;AAAA;6F;AAEJ;4F;AAIA;gG;AAIA;;",
+"sources":["SelectionStatus.java"],
+"names":["org.pepstock.charba.client.impl.plugins.SelectionStatus.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.SelectionStatus.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.SelectionStatus.<init>","org.pepstock.charba.client.impl.plugins.SelectionStatus.valueOf","org.pepstock.charba.client.impl.plugins.SelectionStatus.values","org.pepstock.charba.client.impl.plugins.SelectionStatus.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.SelectionStatus.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FillCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAuCiB,Y;;QAAA,M;EAAAA,uB;EAAAA,8B;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["FillCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.FillCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.FillCallback.<clinit>"]
+}
+

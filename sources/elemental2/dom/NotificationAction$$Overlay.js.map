@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NotificationAction$$Overlay.impl.java.js",
+"lineCount":17,
+"mappings":"A;;;;;;;MAyBiB,Q;;QAEW,U;EAAAA,mB;EACxBA,+G;;;QAHa,O;EAAAC,2B;EAAAA;",
+"sources":["NotificationAction.java"],
+"names":["elemental2.dom.NotificationAction$$Overlay.create","elemental2.dom.NotificationAction$$Overlay.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeDate$$Overlay.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;MAkCY,Q;;QAmBO,wB,iBAAYA,I;EAAZC,mB;EAEjBA,kF;EAEAA,oE;;;QAvBU,O;EAAAC,2B;EAAAA;",
+"sources":["NativeDate.java"],
+"names":["date","org.pepstock.charba.client.intl.NativeDate$$Overlay.create","org.pepstock.charba.client.intl.NativeDate$$Overlay.<clinit>"]
+}
+

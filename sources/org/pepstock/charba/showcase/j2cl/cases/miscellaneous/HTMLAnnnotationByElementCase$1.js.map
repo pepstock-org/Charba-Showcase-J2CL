@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HTMLAnnnotationByElementCase$1.impl.java.js",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;MA6FsD,E;;CAAA,W;EAAAA,Q;EAAAA;yG;;;QAAA,6G;EAAAC,a;EAAAA,yB;EAAAA,8N;EAAAA,iB;;;CAAA,iM;EAAAC,qH;EAAAA,qF;;;CASvC,iD,gBAAoBC,K;EAC/BC,IAAoBC,GAApBD,2G;EAEAA,IAAYE,IAAZF,kC;EACAA,IAAeG,IAAfH,kG;EAEAA,IAAII,GAAJJ,gL;EAEAA,IAAOK,CAAPL,6C;EACAA,IAAOM,CAAPN,qC;EAEAA,gL;;;QApBkD,O;EAAAO,qB;EAAAA,kB;EAAAA,yB;;;;;;;;;;;;;;;AAEnD;GAA4B,mGAA5B;",
+"sources":["HTMLAnnnotationByElementCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByElementCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByElementCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByElementCase$1.<init>","chart","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByElementCase$1.onAfterDraw","ctx","item","elem","img","x","y","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByElementCase$1.<clinit>"]
+}
+

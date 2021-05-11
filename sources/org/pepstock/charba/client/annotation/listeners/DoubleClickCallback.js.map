@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DoubleClickCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MA2BiB,mB;;CAQX,6G,gBAAsBA,K,4BAA0BC,U;;QARrC,M;EAAAC,8B;EAAAA,8B;;;QAAA,O;EAAAC,sC;EAAAA;",
+"sources":["DoubleClickCallback.java"],
+"names":["chart","annotation","org.pepstock.charba.client.annotation.listeners.DoubleClickCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.listeners.DoubleClickCallback.<clinit>"]
+}
+

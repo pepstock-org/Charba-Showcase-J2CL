@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HtmlLegendBarCase$1.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;;;;;MAoE0F,E;;CAAA,W;EAAAA,Q;EAAAA;wF;;;QAAA,0E;EAAAC,a;EAAAA,yB;EAAAA,qK;EAAAA,iB;;;CAAA,6I;EAAAC,oG;EAAAA,iC;;;CAG1D,0E,gBAA6BC,K,+BAA6BC,a;EACtFC;GAAAA,IAAqBC,IAArBD,oFAAAA;;IACCA,0FADDA;;G;EAGAA,qB;;;QAPsF,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["HtmlLegendBarCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$1.<init>","chart","defaultLabels","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$1.generateLegendLabels","item","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$1.<clinit>"]
+}
+

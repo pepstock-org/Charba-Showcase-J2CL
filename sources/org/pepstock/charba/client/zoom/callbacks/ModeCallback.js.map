@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ModeCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,Y;;QAAA,M;EAAAA,uB;EAAAA,8B;;;QAAA,O;EAAAC,+B;EAAAA;",
+"sources":["ModeCallback.java"],
+"names":["org.pepstock.charba.client.zoom.callbacks.ModeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.zoom.callbacks.ModeCallback.<clinit>"]
+}
+

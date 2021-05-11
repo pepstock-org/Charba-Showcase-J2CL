@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Animation.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;;MA8BmB,S;;CAAA,W;EAAAA,Q;EAAAA;OAkCe,8DAlCfA,C;;;QA4ClB,yM,qBAAuBC,M,aAAYC,Q,4BAA6BC,a,WAA4BC,Y;EAA5FC,oB;EAAAA,gC;EAAAA,+S;EAAAA,iB;;;CAAA,qP,qBAAuBJ,M,aAAYC,Q,4BAA6BC,a,WAA4BC,Y;EAC3FE,sT;EAEAA,oF;;;CASW,2B,gBAAyBC,a;EACpCC,gL;;;CASc,mB;EACdC,qP;;;CASW,0B,gBAAwBC,Y;EACnCC,8K;;;CASc,kB;EACdC,mP;;;QAvFiB,O;EAAAC,4B;EAAAA,yB;EAAAA;",
+"sources":["Animation.java"],
+"names":["org.pepstock.charba.client.options.Animation.<synthetic: ctor_js>","parent","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Animation.<synthetic: ctor_create>","org.pepstock.charba.client.options.Animation.<init>","animateRotate","org.pepstock.charba.client.options.Animation.setAnimateRotate","org.pepstock.charba.client.options.Animation.isAnimateRotate","animateScale","org.pepstock.charba.client.options.Animation.setAnimateScale","org.pepstock.charba.client.options.Animation.isAnimateScale","org.pepstock.charba.client.options.Animation.<clinit>"]
+}
+

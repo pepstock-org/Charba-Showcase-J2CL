@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultAnimations.impl.java.js",
+"lineCount":92,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MA+Ba,iB;;CAAA,W;EAAAA,Q;;;QAYZ,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAUe,kE,iCAA6BC,U;EAE3CC;GAECA;IAAAA,IAAmCC,iBAAnCD,gHAAAA;;KAECA;MAECA,YAFDA;MAFDA;;IAFDA;G;EAYAA,a;;;CASmC,kE,iCAA6BD,U;EAEhEG;GAECA;IACCA,qHADDA;;IAICA,sHAJDA;IAFDA;G;EAUAA,Y;;;QAzDW,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;EAEZA,0T;EAEAA,wT;EAEAA,2gB;;;;;;;;;;;;;;;;;;AANY;kBAEsC,4FAFtC,C;AAAA;kBAIsC,2FAJtC,C;AAAA;kBAM6C,mGAN7C;",
+"sources":["DefaultAnimations.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultAnimations.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultAnimations.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultAnimations.<init>","collection","org.pepstock.charba.client.defaults.globals.DefaultAnimations.has","defaultCollection","org.pepstock.charba.client.defaults.globals.DefaultAnimations.get","org.pepstock.charba.client.defaults.globals.DefaultAnimations.<clinit>"]
+}
+

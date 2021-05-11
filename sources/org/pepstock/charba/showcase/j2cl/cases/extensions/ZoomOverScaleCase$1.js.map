@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ZoomOverScaleCase$1.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAsI+C,E;;CAAA,W;EAAAA,Q;EAAAA;2F;;;QAAA,6E;EAAAC,a;EAAAA,yB;EAAAA,2K;EAAAA,iB;;;CAAA,mJ;EAAAC,uG;EAAAA,iC;;;CAGhC,2D,uBAAuBC,K;;QAHS,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ZoomOverScaleCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOverScaleCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOverScaleCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOverScaleCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOverScaleCase$1.<clinit>"]
+}
+

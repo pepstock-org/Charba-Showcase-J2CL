@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsNumericTick$$LambdaAdaptor.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,sF;;;CAAA,mB;EAAAC,gD;EAAAA,mH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["IsNumericTick.java"],
+"names":["org.pepstock.charba.client.configuration.IsNumericTick$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.configuration.IsNumericTick$$LambdaAdaptor.<init>","org.pepstock.charba.client.configuration.IsNumericTick$$LambdaAdaptor.getNumberFormat","org.pepstock.charba.client.configuration.IsNumericTick$$LambdaAdaptor.<clinit>"]
+}
+

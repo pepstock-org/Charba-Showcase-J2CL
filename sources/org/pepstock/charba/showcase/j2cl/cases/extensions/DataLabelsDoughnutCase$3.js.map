@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataLabelsDoughnutCase$3.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;;;;;MAiI8C,E;;CAAA,W;EAAAA,Q;EAAAA;gG;;;QAAA,kF;EAAAC,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;CAAA,6J;EAAAC,4G;EAAAA,iC;;;CAG7B,4G,0BAAyBC,O,kBAAkBC,Q;EACxDC,IAAOC,UAAPD,sW;EACAA,kH;;;QAL0C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["DataLabelsDoughnutCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$3.<init>","context","dataItem","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$3.invoke","percentage","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsDoughnutCase$3.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MyHorizontalBarDataset.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;MAKmB,sB;;CAAA,W;EAAAA,Q;;;QAEX,S;EAAAC,iC;EAAAA,6C;EAAAA,kG;EAAAA,iB;;;CAAA,qF;EACNC,iS;;;QAHiB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"sources":["MyHorizontalBarDataset.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarDataset.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarDataset.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarDataset.<init>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarDataset.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultArc.impl.java.js",
+"lineCount":28,
+"mappings":"A;;;;;;;;;;;MAwBiB,Y;;CAOJ,kB;;CAQL,a;;CAOA,Y;;CAOH,a;;CAOA,mB;;CAOA,kB;;QA3CY,O;EAAAA,+B;EAAAA;",
+"sources":["IsDefaultArc.java"],
+"names":["org.pepstock.charba.client.defaults.IsDefaultArc.<clinit>"]
+}
+

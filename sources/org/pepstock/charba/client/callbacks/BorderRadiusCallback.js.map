@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BorderRadiusCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAuBiB,oB;;QAAA,M;EAAAA,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["BorderRadiusCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.BorderRadiusCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.BorderRadiusCallback.<clinit>"]
+}
+

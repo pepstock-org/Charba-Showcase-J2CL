@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.impl.java.js",
+"lineCount":50,
+"mappings":"A;;;;;;;;;;MA0BmB,Q;;QAE0C,sB,UAAUA,C;EAAVC,mB;EACvDA,uD;;;QAIkB,0F;EAAAC,mB;EAClBA,0G;;;QAIoB,4F;EAAAC,mB;EACpBA,8G;;;QAIa,qF;EAAAC,mB;EACbA,gG;;;QAIc,0F;EAAAC,mB;EACdA,mE;;;QAIc,4F;EAAAC,mB;EACdA,qE;;;QAIc,qF;EAAAC,mB;EACdA,8D;;;QAjCa,O;EAAAC,2B;EAAAA;",
+"sources":["MessageEvent.java"],
+"names":["o","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.of","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.asMessagePort__$devirt","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.asServiceWorker__$devirt","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.asWindow__$devirt","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.isMessagePort__$devirt","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.isServiceWorker__$devirt","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.isWindow__$devirt","elemental2.dom.MessageEvent$InitMessageEventNSSourceArgUnionType$$Overlay.<clinit>"]
+}
+

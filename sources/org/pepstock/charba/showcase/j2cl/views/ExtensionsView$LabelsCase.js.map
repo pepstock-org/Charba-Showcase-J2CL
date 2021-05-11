@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ExtensionsView$LabelsCase.impl.java.js",
+"lineCount":167,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MA6Mc,U;;CAAA,W;EAAAA,Q;EAAAA;OA2CS,2EA3CTA,C;EAAAA;OA6Cc,6EA7CdA,C;;;QA+CJ,qG,8DAAkBC,K,qBAAmBC,O;EAArCC,iC;EAAAA,kN;EAAAA,iB;;;CAAA,sK,8DAAkBF,K,qBAAmBC,O;EAArCE,qC;EAAAA,2C;EAAAA,mE;EACPA,yF;EACAA,6F;;;CAGa,Y;EACbC,wF;;;CAGkB,c;EAClBC,0F;;;QAzDW,2B;EAAAC,qB;EAAAA;GAAAA,wJAAAA;G;EAAAA,8I;;;QAAA,U;EAAAC,qB;EAAAA,k0B;;;QAEZ,4E;EAAAC,yH;;;QAKA,8E;EAAAA,2H;;;QAKA,+E;EAAAA,4H;;;QAKA,mF;EAAAA,gI;;;QAKA,6E;EAAAA,0H;;;QAKA,+E;EAAAA,4H;;;QAKA,oF;EAAAA,iI;;;QAKA,yF;EAAAA,sI;;;QArCY,O;EAAAC,6B;EAAAA,0B;EAAAA,e;EAEZA,2W;EAKAA,mX;EAKAA,qX;EAKAA,qY;EAKAA,6W;EAKAA,8W;EAKAA,4X;EAKAA,ia;EArCYA,yG;;;;;;;;;;;;;;;;;;;;;AAAA;0F;AAAA;4F;AAAA;6F;AAAA;iG;AAAA;2F;AAAA;6F;AAAA;kG;AAAA;uG;AAAA;kG;AAEZ;+F;AAKA;iG;AAKA;kG;AAKA;sG;AAKA;gG;AAKA;kG;AAKA;uG;AAKA;;",
+"sources":["ExtensionsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.<init>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.getLabel","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.getFactory","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.valueOf","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.values","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase.<clinit>"]
+}
+

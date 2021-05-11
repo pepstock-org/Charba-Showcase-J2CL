@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AxisClickEvent.impl.java.js",
+"lineCount":86,
+"mappings":"A;;;;;;;;;;;;;;;MA4BmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAOM,yDAPNA,C;EAAAA;OASC,yDATDA,C;EAAAA;OAWW,0DAXXA,C;;;QAqBX,mM,eAA+BC,W,mBAAuBC,I,cAAWC,I,wBAAqBC,K;EAAtFC,yB;EAAAA,qC;EAAAA,8R;EAAAA,iB;;;CAAA,mP,eAA+BJ,W,mBAAuBC,I,cAAWC,I,wBAAqBC,K;EAC5FE,qP;EAGAA,+M;EACAA,sE;EACAA,wE;;;CAQgB,W;EAChBC,sE;;;CAQW,W;EACXC,sE;;;CAQqB,Y;EACrBC,uE;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAsBC,SAAtBD,mFAFDA;GAICA,4EAJDA;G;;;QA/DD,4D;EAAAE,iH;;;QAFkB,O;EAAAC,iC;EAAAA,8B;EAAAA,wB;EAElBA,gJ;;;;;;;;;;;;;;;;AAFkB;;",
+"sources":["AxisClickEvent.java"],
+"names":["org.pepstock.charba.client.events.AxisClickEvent.<synthetic: ctor_js>","nativeEvent","item","axis","value","org.pepstock.charba.client.events.AxisClickEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.AxisClickEvent.<init>","org.pepstock.charba.client.events.AxisClickEvent.getItem","org.pepstock.charba.client.events.AxisClickEvent.getAxis","org.pepstock.charba.client.events.AxisClickEvent.getValue","handler","org.pepstock.charba.client.events.AxisClickEvent.dispatch","myHandler","org.pepstock.charba.client.events.AxisClickEvent.<synthetic: getter>","org.pepstock.charba.client.events.AxisClickEvent.<clinit>"]
+}
+

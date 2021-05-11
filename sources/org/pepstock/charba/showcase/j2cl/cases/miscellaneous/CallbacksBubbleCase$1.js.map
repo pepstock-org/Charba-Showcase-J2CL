@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CallbacksBubbleCase$1.impl.java.js",
+"lineCount":48,
+"mappings":"A;;;;;;;;;;;;;;MA4EiE,E;;CAAA,W;EAAAA,Q;EAAAA;gG;;;QAAA,kF;EAAAC,a;EAAAA,yB;EAAAA,qL;EAAAA,iB;;;CAAA,6J;EAAAC,4G;EAAAA,iC;;;CAGhD,6D,uBAAsBC,O;EACnCC,IAAUC,EAAVD,kS;EACAA,4P;;;;CAL6D,2D;EAAAA,0I;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["CallbacksBubbleCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBubbleCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBubbleCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBubbleCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBubbleCase$1.invoke","dp","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksBubbleCase$1.<clinit>"]
+}
+

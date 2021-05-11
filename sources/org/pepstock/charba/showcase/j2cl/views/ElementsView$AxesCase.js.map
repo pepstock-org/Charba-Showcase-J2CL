@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ElementsView$AxesCase.impl.java.js",
+"lineCount":211,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;MA+Nc,Q;;CAAA,W;EAAAA,Q;EAAAA;OA+DS,uEA/DTA,C;EAAAA;OAiEc,yEAjEdA,C;;;QAmEJ,qG,8DAAgBC,K,qBAAmBC,O;EAAnCC,+B;EAAAA,8M;EAAAA,iB;;;CAAA,kK,8DAAgBF,K,qBAAmBC,O;EAAnCE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;EACAA,yF;;;CAGa,Y;EACbC,oF;;;CAGkB,c;EAClBC,sF;;;QA7EW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,wpC;;;QAEZ,8E;EAAAC,uH;;;QAKA,+E;EAAAA,wH;;;QAKA,kF;EAAAA,2H;;;QAKA,+E;EAAAA,wH;;;QAKA,uF;EAAAA,gI;;;QAKA,iF;EAAAA,0H;;;QAKA,8E;EAAAA,uH;;;QAKA,gF;EAAAA,yH;;;QAKA,8E;EAAAA,uH;;;QAKA,4E;EAAAA,qH;;;QAKA,6E;EAAAA,sH;;;QAKA,gF;EAAAA,yH;;;QAzDY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,uX;EAKAA,2X;EAKAA,uY;EAKAA,qX;EAKAA,0Y;EAKAA,mY;EAKAA,qX;EAKAA,qX;EAKAA,wX;EAKAA,gX;EAKAA,yX;EAKAA,qY;EAzDYA,mG;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;0F;AAAA;2F;AAAA;8F;AAAA;2F;AAAA;mG;AAAA;6F;AAAA;0F;AAAA;4F;AAAA;0F;AAAA;wF;AAAA;yF;AAAA;4F;AAAA;4F;AAEZ;+F;AAKA;gG;AAKA;mG;AAKA;gG;AAKA;wG;AAKA;kG;AAKA;+F;AAKA;iG;AAKA;+F;AAKA;6F;AAKA;+F;AAKA;;",
+"sources":["ElementsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.getLabel","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.getFactory","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.valueOf","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.values","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase.<clinit>"]
+}
+

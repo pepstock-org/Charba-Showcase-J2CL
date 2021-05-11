@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultRoutedFont.impl.java.js",
+"lineCount":70,
+"mappings":"A;;;;;;;;;;;;;;MA4Ba,iB;;CAAA,W;EAAAA,Q;;;QAKF,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAUC,W;EACVC,sE;;;CASgB,Y;EAChBC,uE;;;CASa,a;EACbC,wE;;;CASa,a;EACbC,wE;;;CASa,iB;EACbC,4E;;;CASa,yB;EACbC,oF;;;;CAlEW,U;EAAAC,iG;;;;CAAA,2D;EAAAA,0J;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;EAAAA;",
+"sources":["DefaultRoutedFont.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.<init>","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.getSize","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.getStyle","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.getFamily","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.getWeight","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.getLineHeight","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.getLineHeightAsString","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.create","org.pepstock.charba.client.defaults.globals.DefaultRoutedFont.<clinit>"]
+}
+

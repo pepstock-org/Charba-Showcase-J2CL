@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultFont.impl.java.js",
+"lineCount":62,
+"mappings":"A;;;;;;;;;;;;;;MA4BiB,a;;CAOZ,W;;CAOM,Y;;CAOH,a;;CAOA,a;;CAOA,iB;;CAOA,yB;;CAOU,U;;CAUA,2D,sBAAqBA,a;;QAVrB,qE;EAAAC,wB;EAChBA,8H;;;QASgB,wH,sDAAqBD,a;EAArBC,wB;EAEhBA,IAASC,MAATD,sF;EAEAA,IAAIE,IAAJF,0B;EAEAA;GACCA,4BADDA;G;EAIAA,uF;EACAA,+D;EACAA,sF;EAEAA,IAAOG,mBAAPH,wC;EAEAA;GACCA,8DADDA;;GAKCA,IAAOI,UAAPJ,gCALDA;GAOCA;IACCA,2CADDA;IAPDA;G;EAYAA,c;;;QAvFe,O;EAAAK,gC;EAAAA;",
+"sources":["IsDefaultFont.java"],
+"names":["defaultValues","org.pepstock.charba.client.defaults.IsDefaultFont.create__$default","result","size","lineHeightAsSttring","lineHeight","org.pepstock.charba.client.defaults.IsDefaultFont.<clinit>"]
+}
+

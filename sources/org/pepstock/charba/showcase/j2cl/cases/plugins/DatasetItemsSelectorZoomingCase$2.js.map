@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetItemsSelectorZoomingCase$2.impl.java.js",
+"lineCount":52,
+"mappings":"A;;;;;;;;;;;;;;;;;MA8JgE,E;;CAAA,W;EAAAA,Q;EAAAA;sG;EAAAA;OA/BhCC,iGA+BgCD,C;;;QAAA,0J;EAAAE,a;EAAAA,yB;EAAAA,mR;EAAAA,iB;;;CAAA,2O;EAAAC,kH;EAAAA,wH;EAAAA,iC;;;CAGjD,4E,wCAAwCC,K;EACnDC,sI;EACAA,sI;EACAA,+R;EACAA,sgB;EACAA,gN;;;QAR4D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["DatasetItemsSelectorZoomingCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$2.<synthetic: ctor_js>","axis","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$2.onClean","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$2.<clinit>"]
+}
+

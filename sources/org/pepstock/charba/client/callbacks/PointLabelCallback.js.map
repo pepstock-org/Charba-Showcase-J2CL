@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PointLabelCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAwBiB,kB;;CAUT,kF,aAAgBA,I,iBAAaC,I,gBAAUC,K;;QAV9B,M;EAAAC,6B;EAAAA,8B;;;QAAA,O;EAAAC,qC;EAAAA;",
+"sources":["PointLabelCallback.java"],
+"names":["axis","item","index","org.pepstock.charba.client.callbacks.PointLabelCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.PointLabelCallback.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Element$ScrollIntoViewTopUnionType$$Overlay.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;MA2amB,Q;;QAE2B,sB,UAAUA,C;EAAVC,mB;EACxCA,uD;;;QAIc,uE;EAAAC,mB;EACdA,kD;;;QAI4B,qF;EAAAC,mB;EAC5BA,kF;;;QAIc,uE;EAAAC,mB;EACdA,sD;;;QAlBa,O;EAAAC,2B;EAAAA;",
+"sources":["Element.java"],
+"names":["o","elemental2.dom.Element$ScrollIntoViewTopUnionType$$Overlay.of","elemental2.dom.Element$ScrollIntoViewTopUnionType$$Overlay.asBoolean__$devirt","elemental2.dom.Element$ScrollIntoViewTopUnionType$$Overlay.asScrollIntoViewOptions__$devirt","elemental2.dom.Element$ScrollIntoViewTopUnionType$$Overlay.isBoolean__$devirt","elemental2.dom.Element$ScrollIntoViewTopUnionType$$Overlay.<clinit>"]
+}
+

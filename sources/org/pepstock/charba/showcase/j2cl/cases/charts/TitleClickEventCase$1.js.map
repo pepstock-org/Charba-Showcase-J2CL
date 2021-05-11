@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TitleClickEventCase$1.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;;;MAgEgD,E;;CAAA,W;EAAAA,Q;EAAAA;yF;;;QAAA,2E;EAAAC,a;EAAAA,yB;EAAAA,uK;EAAAA,iB;;;CAAA,+I;EAAAC,qG;EAAAA,iC;;;CAGjC,4D,wBAAwBC,K;EACnCC,IAAQC,KAARD,qE;EACAA,IAAaE,MAAbF,uD;EACAA,IAAcG,KAAdH,6B;EACAA;GACCA;IAAAA,IAAYI,KAAZJ,uEAAAA;;KACCA,wEADDA;;IADDA;G;EAKAA,yT;;;QAZ4C,O;EAAAK,qB;EAAAA,kB;EAAAA;",
+"sources":["TitleClickEventCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase$1.onClick","chart","values","title","value","org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase$1.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Interaction$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,iEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,iJ;;;QAEZ,mE;EAAAC,4G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iQ;EAFYA,6F;;;;;;;;;;;;;AAAA;+E;AAAA;sF;AAEZ;;",
+"sources":["Interaction.java"],
+"names":["org.pepstock.charba.client.options.Interaction$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.Interaction$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.Interaction$Property.<init>","org.pepstock.charba.client.options.Interaction$Property.value","org.pepstock.charba.client.options.Interaction$Property.valueOf","org.pepstock.charba.client.options.Interaction$Property.values","org.pepstock.charba.client.options.Interaction$Property.<synthetic: getter>","org.pepstock.charba.client.options.Interaction$Property.<clinit>"]
+}
+

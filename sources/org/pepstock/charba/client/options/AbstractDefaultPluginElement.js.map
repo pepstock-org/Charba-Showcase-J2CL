@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractDefaultPluginElement.impl.java.js",
+"lineCount":57,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MA8Be,4B;;CAAA,W;EAAAA,Q;;;CA2Cd,uQ,gBAAqCC,O,aAAaC,Q,WAAYC,a,WAA4BC,Y;EACzFC,0Q;;;CAQW,qB,gBAAmBC,O;EAC9BC,sL;;;CASc,a;EACdC,6R;;;CAQW,wD,iBAAqBC,Q;EAChCC,uN;;;CASe,e;EACfC,ob;;;CAQW,yD,qBAAsBC,S;EACjCC,qN;;;CASmB,Y;EACnBC,0b;;;QArGa,O;EAAAC,+C;EAAAA,4C;EAAAA;",
+"sources":["AbstractDefaultPluginElement.java"],
+"names":["org.pepstock.charba.client.options.AbstractDefaultPluginElement.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.AbstractDefaultPluginElement.<init>","display","org.pepstock.charba.client.options.AbstractDefaultPluginElement.setDisplay","org.pepstock.charba.client.options.AbstractDefaultPluginElement.isDisplay","position","org.pepstock.charba.client.options.AbstractDefaultPluginElement.setPosition","org.pepstock.charba.client.options.AbstractDefaultPluginElement.getPosition","alignment","org.pepstock.charba.client.options.AbstractDefaultPluginElement.setAlign","org.pepstock.charba.client.options.AbstractDefaultPluginElement.getAlign","org.pepstock.charba.client.options.AbstractDefaultPluginElement.<clinit>"]
+}
+

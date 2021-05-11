@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnnotationContext.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;MA2BmB,iB;;CAAA,W;EAAAA,Q;EAAAA;OAEe,sEAFfA,C;;;QAUlB,kH,2BAAqCC,U,WAAyBC,Y;EAA9DC,4B;EAAAA,wC;EAAAA,8M;EAAAA,iB;;;CAAA,yK,2BAAqCF,U,WAAyBC,Y;EAC7DE,6H;EAGAA,oP;;;CAQyB,iB;EACzBC,mF;;;CASiB,gB;EAEjBC,yS;;;QAlCiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["AnnotationContext.java"],
+"names":["org.pepstock.charba.client.annotation.AnnotationContext.<synthetic: ctor_js>","annotation","nativeObject","org.pepstock.charba.client.annotation.AnnotationContext.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.AnnotationContext.<init>","org.pepstock.charba.client.annotation.AnnotationContext.getAnnotation","org.pepstock.charba.client.annotation.AnnotationContext.isConsistent","org.pepstock.charba.client.annotation.AnnotationContext.<clinit>"]
+}
+

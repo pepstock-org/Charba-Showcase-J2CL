@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FloatingDatatFactory.impl.java.js",
+"lineCount":58,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA2BmB,oB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EAAAC,iC;;;CAQE,wD,cAAmBC,W;EAEtCC;GAECA,0FAFDA;GAICA,yFAJDA;G;EAQAA,4O;;;;CAlBiB,U;EAAAA,kL;;;;CAAA,kD;EAAAA,sH;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA,qB;EAAAA;",
+"sources":["FloatingDatatFactory.java"],
+"names":["org.pepstock.charba.client.data.FloatingDatatFactory.<synthetic: ctor_js>","org.pepstock.charba.client.data.FloatingDatatFactory.<synthetic: ctor_create>","org.pepstock.charba.client.data.FloatingDatatFactory.<init>","nativeArray","org.pepstock.charba.client.data.FloatingDatatFactory.create","org.pepstock.charba.client.data.FloatingDatatFactory.<clinit>"]
+}
+

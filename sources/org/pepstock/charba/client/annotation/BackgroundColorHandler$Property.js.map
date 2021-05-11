@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BackgroundColorHandler$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAuCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,+EALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,wJ;EAAAA,iB;;;CAAA,qH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,6F;;;CASa,S;EACbC,4F;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,wJAAAA;G;EAAAA,gJ;;;QAAA,U;EAAAC,mB;EAAAA,2K;;;QAEZ,6F;EAAAC,sI;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,4U;EAFYA,2G;;;;;;;;;;;;;AAAA;yG;AAAA;oG;AAEZ;;",
+"sources":["BackgroundColorHandler.java"],
+"names":["org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.<init>","org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.value","org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.valueOf","org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.values","org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.<synthetic: getter>","org.pepstock.charba.client.annotation.BackgroundColorHandler$Property.<clinit>"]
+}
+

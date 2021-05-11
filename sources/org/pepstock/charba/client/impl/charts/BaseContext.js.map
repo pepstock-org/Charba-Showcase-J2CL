@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BaseContext.impl.java.js",
+"lineCount":39,
+"mappings":"A;;;;;;;;;;;MAgCY,W;;CAAA,W;EAAAA,Q;;;QAsCX,2C,gBAAoBC,K;EAApBC,sB;EAAAA,kC;EAAAA,+G;EAAAA,iB;;;CAAA,6F,gBAAoBD,K;EACnBE,yE;EAEAA,kL;EAEAA,wO;EACAA,iP;;;CAQY,2D;EACZC,kC;;;QArDU,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"sources":["BaseContext.java"],
+"names":["org.pepstock.charba.client.impl.charts.BaseContext.<synthetic: ctor_js>","chart","org.pepstock.charba.client.impl.charts.BaseContext.<synthetic: ctor_create>","org.pepstock.charba.client.impl.charts.BaseContext.<init>","org.pepstock.charba.client.impl.charts.BaseContext.nativeObject","org.pepstock.charba.client.impl.charts.BaseContext.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasDataset$$LambdaAdaptor.impl.java.js",
+"lineCount":35,
+"mappings":"A;;;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,kI;;;CAAA,wH;EAAAC,iC;EAAAA,0E;;;CAAA,c;EAAAC,yC;EAAAA,uG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["HasDataset.java"],
+"names":["org.pepstock.charba.client.data.HasDataset$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.data.HasDataset$$LambdaAdaptor.<init>","org.pepstock.charba.client.data.HasDataset$$LambdaAdaptor.getDataset","org.pepstock.charba.client.data.HasDataset$$LambdaAdaptor.<clinit>"]
+}
+

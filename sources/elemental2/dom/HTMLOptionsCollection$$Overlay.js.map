@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HTMLOptionsCollection$$Overlay.impl.java.js",
+"lineCount":61,
+"mappings":"A;;;;;;MAuBa,Q;;QAgEO,0I,kDAA8CA,O,qBAAqBC,M;EAAnEC,mB;EAChBA,qF;;;QAIgB,sH,kDAA8CF,O,gBAAgBC,M;EAA9DC,mB;EAChBA,qF;;;QAMgB,iJ,oEACMF,O,WAAkDC,M;EADxDC,mB;EAEhBA,qF;;;QAIgB,oH,oEAAwBF,O,qBAAqBC,M;EAA7CC,mB;EAChBA,4I;;;QAMgB,gG,oEAAwBF,O,gBAAgBC,M;EAAxCC,mB;EAChBA,4I;;;QAMgB,wF,oEAAwBF,O;EAAxBE,mB;EAChBA,6E;;;QAIgB,+I,kEACIF,O,WAAkDC,M;EADtDC,mB;EAEhBA,qF;;;QAIgB,kH,kEAAsBF,O,qBAAqBC,M;EAA3CC,mB;EAChBA,4I;;;QAMgB,8F,kEAAsBF,O,gBAAgBC,M;EAAtCC,mB;EAChBA,4I;;;QAMgB,sF,kEAAsBF,O;EAAtBE,mB;EAChBA,6E;;;QA1HS,O;EAAAC,2B;EAAAA;",
+"sources":["HTMLOptionsCollection.java"],
+"names":["element","before","elemental2.dom.HTMLOptionsCollection$$Overlay.add__$devirt","elemental2.dom.HTMLOptionsCollection$$Overlay.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BorderAlignCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,8J;;;CAAA,oJ;EAAAC,iC;EAAAA,wF;;;CAAA,6D;EAAAC,2D;EAAAA,yH;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["BorderAlignCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.BorderAlignCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.BorderAlignCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.BorderAlignCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.BorderAlignCallback$$LambdaAdaptor.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetSelectionEventHandler.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAsBiB,4B;;CAOX,mE,8BAA+BA,K;;QAPpB,M;EAAAC,uC;EAAAA,8B;;;QAAA,O;EAAAC,+C;EAAAA;",
+"sources":["DatasetSelectionEventHandler.java"],
+"names":["event","org.pepstock.charba.client.events.DatasetSelectionEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.DatasetSelectionEventHandler.<clinit>"]
+}
+

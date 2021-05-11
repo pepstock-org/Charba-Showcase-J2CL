@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendClickEventHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,6D;;GAAAC,oG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["LegendClickEventHandler.java"],
+"names":["org.pepstock.charba.client.events.LegendClickEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.LegendClickEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.LegendClickEventHandler$$LambdaAdaptor.onClick","org.pepstock.charba.client.events.LegendClickEventHandler$$LambdaAdaptor.<clinit>"]
+}
+

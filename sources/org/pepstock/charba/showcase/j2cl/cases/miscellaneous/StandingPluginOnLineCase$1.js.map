@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"StandingPluginOnLineCase$1.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;;;;;;;;MAuGkD,E;;CAAA,W;EAAAA,Q;EAAAA;qG;;;QAAA,uF;EAAAC,a;EAAAA,yB;EAAAA,+L;EAAAA,iB;;;CAAA,uK;EAAAC,iH;EAAAA,iC;;;CAGjC,wF,aAAgBC,I,gBAAaC,K,gBAAWC,K,uBAAoBC,M;EACzEC,IAAcC,GAAdD,+N;EACAA,IAAQE,EAARF,qE;EACAA,yB;;;QAN8C,O;EAAAG,qB;EAAAA,kB;EAAAA;",
+"sources":["StandingPluginOnLineCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$1.<init>","axis","value","index","values","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$1.onCallback","dss","ds","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase$1.<clinit>"]
+}
+

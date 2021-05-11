@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultLimits.impl.java.js",
+"lineCount":29,
+"mappings":"A;;;;;;;;;;MAuBU,e;;CAOmB,Q;;CASA,Q;;QATA,iE;EAAAA,0B;EAC3BA,uF;;;QAQ2B,iE;EAAAC,0B;EAC3BA,uF;;;QAjBQ,O;EAAAC,kC;EAAAA;",
+"sources":["IsDefaultLimits.java"],
+"names":["org.pepstock.charba.client.zoom.IsDefaultLimits.getX__$default","org.pepstock.charba.client.zoom.IsDefaultLimits.getY__$default","org.pepstock.charba.client.zoom.IsDefaultLimits.<clinit>"]
+}
+

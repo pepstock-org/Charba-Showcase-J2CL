@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ExtendedScales.impl.java.js",
+"lineCount":88,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAgCmB,c;;CAAA,W;EAAAA,Q;;;QAUlB,iM,gBAAuBC,O,aAAaC,Q,yBAA0BC,a,WAA4BC,Y;EAA1FC,yB;EAAAA,qC;EAAAA,6S;EAAAA,iB;;;CAAA,kP,gBAAuBJ,O,aAAaC,Q,yBAA0BC,a,WAA4BC,Y;EACzFE,gS;;;CAQW,2D,qBAAiBC,M;EAE5BC;GAECA;IAAAA,IAASC,GAATD,4DAAAA;;KAGCA;MAECA,2DAFDA;MAHDA;;IAFDA;G;EAaAA,sI;;;CASY,wH,qBAAyBD,M;EAErCG;GAECA,IAAIC,KAAJD,KAFDA;GAKCA;IAAAA,IAAWE,KAAXF,kBAAAA;;KAECA;MAECA,IAASG,IAATH,uBAFDA;MAKCA,iEALDA;MAOCA,IAAUI,EAAVJ,mIAPDA;MAWCA;OACCA,mJADDA;OAXDA;MAeCA,6HAfDA;MAiBCA,sBAjBDA;MAFDA;;IALDA;GA4BCA,+BA5BDA;G;;;CAsCiB,mH,cAAyBE,K;EAE1CG,IAAUD,EAAVC,qB;EAGAA;GAECA,iDAFDA;GAICA,uGAJDA;G;EASAA,mN;EAEAA,U;;;QAnGiB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ExtendedScales.java"],
+"names":["org.pepstock.charba.client.options.ExtendedScales.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.ExtendedScales.<synthetic: ctor_create>","org.pepstock.charba.client.options.ExtendedScales.<init>","scales","org.pepstock.charba.client.options.ExtendedScales.setAxes","key","org.pepstock.charba.client.options.ExtendedScales.setInternalAxes","index","scale","type","id","org.pepstock.charba.client.options.ExtendedScales.checkAndGetScaleId","org.pepstock.charba.client.options.ExtendedScales.<clinit>"]
+}
+

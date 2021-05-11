@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AddHandlerEventHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,8J;;;CAAA,oJ;EAAAC,iC;EAAAA,wF;;;CAAA,0D;;GAAAC,mG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AddHandlerEventHandler.java"],
+"names":["org.pepstock.charba.client.events.AddHandlerEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.AddHandlerEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.AddHandlerEventHandler$$LambdaAdaptor.onAdd","org.pepstock.charba.client.events.AddHandlerEventHandler$$LambdaAdaptor.<clinit>"]
+}
+

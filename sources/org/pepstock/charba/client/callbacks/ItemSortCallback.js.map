@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ItemSortCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;MAyBU,gB;;CAUL,oF,gBAAmBA,K,WAASC,K,WAASC,K;;QAVhC,M;EAAAC,2B;EAAAA,gE;;;QAAA,O;EAAAC,mC;EAAAA;",
+"sources":["ItemSortCallback.java"],
+"names":["chart","item1","item2","org.pepstock.charba.client.callbacks.ItemSortCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.ItemSortCallback.<clinit>"]
+}
+

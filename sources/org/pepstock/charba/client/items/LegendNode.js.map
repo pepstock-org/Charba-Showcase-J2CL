@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendNode.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;;;;;;;MAiCmB,U;;CAAA,W;EAAAA,Q;;;QA2CX,gD,wBAAsCC,O;EAAtCC,qB;EAAAA,iC;EAAAA,+G;EAAAA,iB;;;CAAA,2F,wBAAsCD,O;EAC5CE,gS;;;CAQc,kB;EACdC,yN;;;CAQmB,iB;EAEnBC,IAAYC,KAAZD,qM;EAEAA,iG;;;CAQmB,mB;EAEnBE,IAAYD,KAAZC,uM;EAEAA,iG;;;CAQmB,oB;EAEnBC,IAAYF,KAAZE,wM;EAEAA,iG;;;CAQ6B,e;EAE7BC,IAAYH,KAAZG,0M;EAEAA,uR;;;CAQuB,Y;EAEvBC,IAAYJ,KAAZI,sM;EAEAA,qQ;;;QAjHiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"sources":["LegendNode.java"],
+"names":["org.pepstock.charba.client.items.LegendNode.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.LegendNode.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendNode.<init>","org.pepstock.charba.client.items.LegendNode.isDoughnutMode","org.pepstock.charba.client.items.LegendNode.getLineWidths","array","org.pepstock.charba.client.items.LegendNode.getColumnWidths","org.pepstock.charba.client.items.LegendNode.getColumnHeights","org.pepstock.charba.client.items.LegendNode.getHitBoxes","org.pepstock.charba.client.items.LegendNode.getItems","org.pepstock.charba.client.items.LegendNode.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AxisClickEventHandler.impl.java.js",
+"lineCount":24,
+"mappings":"A;;;;;;;;;;;;MAsBiB,qB;;CAOX,2D,uBAAuBA,K;;QAPZ,M;EAAAC,gC;EAAAA,8B;;;QAAA,O;EAAAC,wC;EAAAA;",
+"sources":["AxisClickEventHandler.java"],
+"names":["event","org.pepstock.charba.client.events.AxisClickEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.AxisClickEventHandler.<clinit>"]
+}
+

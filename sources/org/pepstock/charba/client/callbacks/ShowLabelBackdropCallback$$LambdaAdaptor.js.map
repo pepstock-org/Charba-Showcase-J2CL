@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ShowLabelBackdropCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":41,
+"mappings":"A;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2F;EAAAA,0K;;;CAAA,gK;EAAAC,iC;EAAAA,8F;;;CAAA,2D;EAAAC,sD;EAAAA,+H;;;;CAAA,2D;EAAAA,oI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["ShowLabelBackdropCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.ShowLabelBackdropCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.ShowLabelBackdropCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.ShowLabelBackdropCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.ShowLabelBackdropCallback$$LambdaAdaptor.<clinit>"]
+}
+

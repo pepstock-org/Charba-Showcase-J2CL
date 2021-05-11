@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DatasetItemsSelectorZoomingCase$3.impl.java.js",
+"lineCount":64,
+"mappings":"A;;;;;;;;;;;;;;;;;;;MA0K2D,E;;CAAA,W;EAAAA,Q;EAAAA;sG;EAAAA;OA1DvCC,qGA0DuCD,C;EAAAA;OA3C3BE,iGA2C2BF,C;;;QAAA,uM;EAAAG,a;EAAAA,yB;EAAAA,oV;EAAAA,iB;;;CAAA,wR;EAAAC,kH;EAAAA,gI;EAAAA,wH;EAAAA,iC;;;CAG5C,wE,mCAAoCC,K;EAC/CC,IAAgBC,aAAhBD,gE;EACAA;GAAAA,IAAeE,EAAfF,wEAAAA;;IACCA,sBADDA;;G;EAGAA,gP;EACAA,sgB;EACAA,0K;EACAA,wK;EACAA,gN;;;QAZuD,O;EAAAG,qB;EAAAA,kB;EAAAA;",
+"sources":["DatasetItemsSelectorZoomingCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$3.<synthetic: ctor_js>","dataset2","axis","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$3.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$3.onSelect","newDataPoints","dp","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$3.<clinit>"]
+}
+
