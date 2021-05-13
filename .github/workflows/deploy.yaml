@@ -6,7 +6,7 @@
 # 
 name: Deploy
 # 
-# Runs only on new tag has been published
+# Runs only on new tag has been pushed
 # and then publishes to gh-pages
 # 
 on:
