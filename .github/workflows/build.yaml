@@ -9,40 +9,39 @@ name: Build
 # Runs only on push events on branch 'master'
 # 
 on:
-   push:
-      branches:
-         - master
+  push:
+    branches:
+      - master
 # 
 # Workflow environment and steps
 # 
 jobs:
-   build:
-      runs-on: ubuntu-latest
-      
-      steps:
-         # 
-         # Checkout the repository content
-         # 
-         - name: Checkout
-           uses: actions/checkout@v2
-           with:
-             # Disabling shallow clone 
-             fetch-depth: 0
-         # 
-         # Setup Java JDK
-         # 
-         - name: Setup JDK
-           uses: actions/setup-java@v2
-           with:
-             java-version: '11'
-             distribution: 'adopt'
-         # 
-         # Defines Charba lib in Maven
-         # 
-         - name: Adds Charba lib to Maven
-           run: mvn install:install-file -Dfile=./lib/charba-4.0.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=4.0 -Dpackaging=jar
-         # 
-         # Run the build of project by Maven
-         # 
-         - name: Build
-           run: mvn --file pom.xml install
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 
+      # Checkout the repository content
+      # 
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # Disabling shallow clone 
+          fetch-depth: 0
+      # 
+      # Setup Java JDK
+      # 
+      - name: Setup JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      # 
+      # Defines Charba lib in Maven
+      # 
+      - name: Adds Charba lib to Maven
+        run: mvn install:install-file -Dfile=./lib/charba-4.0.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=4.0 -Dpackaging=jar
+      # 
+      # Run the build of project by Maven
+      # 
+      - name: Build
+        run: mvn --file pom.xml install

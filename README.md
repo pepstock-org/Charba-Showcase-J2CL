@@ -16,4 +16,8 @@ mvn install:install-file -Dfile=./lib/charba-4.0.jar -DgroupId=org.pepstock -Dar
 
 Then you can execute `mvn clean` and `mvn install` to build the **Charba** showcase. 
 
+## Running
+
 The showcase is deployed into `war` folder.
+
+To run locally the showcase, open `war/index.html` file with the browser.
