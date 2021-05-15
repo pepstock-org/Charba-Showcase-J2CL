@@ -4,7 +4,7 @@
 # *************************************
 # Workflow name
 # 
-name: Deploy from master 
+name: Deploy from 'master' branch 
 # 
 # Runs only on new tag has been pushed
 # and then publishes to gh-pages

@@ -323,7 +323,6 @@ public class ColorSchemePieCase extends BaseComposite {
 			name.selectedIndex = 0;
 		}
 		handleName();
-		chart.update();
 	}
 
 	private void clearNames() {
@@ -351,6 +350,7 @@ public class ColorSchemePieCase extends BaseComposite {
 			options.setScheme(Key.getKeyByValue(GoogleChartScheme.values(), name.options.getAt(name.selectedIndex).value));
 			options.setBackgroundColorAlpha(0.5D);
 		}
+		chart.getOptions().getPlugins().setOptions(ColorSchemes.ID, options);
 		chart.update();
 	}
 
