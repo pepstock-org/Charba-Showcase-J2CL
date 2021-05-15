@@ -332,7 +332,6 @@ class ColorSchemePieCase extends BaseComposite {
    this.f_name__org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemePieCase_.selectedIndex = 0;
   }
   this.m_handleName__();
-  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemePieCase_.m_update__();
  }
  
  m_clearNames___$p_org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemePieCase() {
@@ -360,6 +359,7 @@ class ColorSchemePieCase extends BaseComposite {
    options.m_setScheme__org_pepstock_charba_client_impl_plugins_ColorScheme(/**@type {GoogleChartScheme}*/ ($Casts.$to(Key.m_getKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(GoogleChartScheme.m_values__(), /**@type {HTMLOptionElement}*/ ($Casts.$to(JsArrayLike_$Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(this.f_name__org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemePieCase_.options, this.f_name__org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemePieCase_.selectedIndex), HTMLOptionElement_$Overlay)).value), GoogleChartScheme)));
    options.m_setBackgroundColorAlpha__double(0.5);
   }
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemePieCase_.m_getOptions__().m_getPlugins__().m_setOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptions(ColorSchemes.f_ID__org_pepstock_charba_client_impl_plugins_ColorSchemes, options);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemePieCase_.m_update__();
  }
  
