@@ -26,6 +26,8 @@ public class DoughnutCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final DoughnutChart chart = new DoughnutChart();
+	
+	private final HTMLInputElement semiCircle = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	public DoughnutCase() {
 
@@ -136,7 +138,6 @@ public class DoughnutCase extends BaseComposite {
 		labelForCircle.appendChild(DomGlobal.document.createTextNode("Semi circle"));
 		actionsCol.appendChild(labelForCircle);
 
-		HTMLInputElement semiCircle = (HTMLInputElement) DomGlobal.document.createElement("input");
 		semiCircle.id = id;
 		semiCircle.onclick = (p0) -> {
 			handleSemiCircle();
@@ -179,10 +180,18 @@ public class DoughnutCase extends BaseComposite {
 		dataset.setData(getRandomDigits(months, false));
 		datasets.add(dataset);
 		chart.update();
+		semiCircle.checked = false;
+		semiCircle.disabled = true;
 	}
 
 	protected void handleRemoveDataset() {
-		removeDataset(chart);
+		if (chart.getData().getDatasets().size() > 1){
+			removeDataset(chart);
+			if (chart.getData().getDatasets().size() == 1){
+				semiCircle.checked = false;
+				semiCircle.disabled = false;
+			}
+		}
 	}
 
 	protected void handleAddData() {

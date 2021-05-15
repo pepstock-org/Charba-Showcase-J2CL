@@ -9,9 +9,12 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.enums.ElementAlign;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.intl.enums.MeasureUnit;
+import org.pepstock.charba.client.intl.enums.Style;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -92,6 +95,10 @@ public class TicksStepSizeCase extends BaseComposite {
 		axis2.setMin(0);
 		axis2.setMax(100);
 		axis2.getTicks().setStepSize(5);
+		axis2.getTicks().setAlign(ElementAlign.CENTER);
+
+		axis2.getTicks().getNumberFormat().setStyle(Style.UNIT);
+		axis2.getTicks().getNumberFormat().setUnitsOfMeasure(MeasureUnit.KILOMETER, MeasureUnit.HOUR);
 
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 

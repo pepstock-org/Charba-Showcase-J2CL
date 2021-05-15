@@ -245,11 +245,8 @@ public class ColorSchemePieCase extends BaseComposite {
 		dataset.setLabel("dataset " + (datasets.size() + 1));
 		dataset.setBackgroundColor(getSequenceColors(months, 1));
 		dataset.setData(getRandomDigits(months, false));
-
 		datasets.add(dataset);
-
 		chart.update();
-
 	}
 
 	protected void handleRemoveDataset() {

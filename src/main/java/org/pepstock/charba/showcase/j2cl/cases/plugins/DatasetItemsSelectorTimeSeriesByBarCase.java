@@ -63,6 +63,9 @@ public class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
+		chart.getOptions().setAspectRatio(2.5);
+		chart.getOptions().setMaintainAspectRatio(true);
+		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Timeseries by bar chart");
 		

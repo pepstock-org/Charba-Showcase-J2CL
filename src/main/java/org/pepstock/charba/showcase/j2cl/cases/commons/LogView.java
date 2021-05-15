@@ -35,6 +35,7 @@ public class LogView extends BaseComposite {
 			counter = 1;
 			return null;
 		};
+		element.style.fontFamily = "Courier";
 		log.appendChild(title);
 		log.appendChild(element);
 		log.style.width = WidthUnionType.of("80%");

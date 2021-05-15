@@ -9,13 +9,10 @@ import org.pepstock.charba.client.callbacks.BorderDashCallback;
 import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.callbacks.SegmentContext;
 import org.pepstock.charba.client.callbacks.WidthCallback;
-import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
-import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.data.VerticalLineDataset;
 import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.InteractionMode;
@@ -104,7 +101,7 @@ public class SegmentOnVerticalLineCase extends BaseComposite {
 
 		dataset1.setFill(true);
 
-		double[] values = getRandomDigits(months);
+		double[] values = getRandomDigits(months, false);
 		List<Double> data = dataset1.getData(true);
 		for (int i = 0; i < values.length; i++) {
 			data.add(values[i]);
@@ -144,7 +141,7 @@ public class SegmentOnVerticalLineCase extends BaseComposite {
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
 			for (Dataset dataset : chart.getData().getDatasets()) {
-				dataset.setData(getRandomDigits(months));
+				dataset.setData(getRandomDigits(months, false));
 			}
 			chart.update();
 			return null;
@@ -153,55 +150,6 @@ public class SegmentOnVerticalLineCase extends BaseComposite {
 		randomize.textContent = "Randomize data";
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
-
-		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		addDataset.onclick = (p0) -> {
-			List<Dataset> datasetsList = chart.getData().getDatasets();
-			LineDataset dataset = chart.newDataset();
-			dataset.setLabel("dataset " + (datasetsList.size() + 1));
-			IsColor color = GoogleChartColor.values()[datasetsList.size()];
-			dataset.setBackgroundColor(color.toHex());
-			dataset.setBorderColor(color.toHex());
-			dataset.setData(getRandomDigits(months));
-			dataset.setFill(false);
-			datasetsList.add(dataset);
-			chart.update();
-			return null;
-		};
-		addDataset.className = "gwt-Button";
-		addDataset.textContent = "Add dataset";
-		addDataset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(addDataset);
-
-		HTMLButtonElement removeDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		removeDataset.onclick = (p0) -> {
-			removeDataset(chart);
-			return null;
-		};
-		removeDataset.className = "gwt-Button";
-		removeDataset.textContent = "Remove dataset";
-		removeDataset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(removeDataset);
-
-		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		addData.onclick = (p0) -> {
-			addData(chart);
-			return null;
-		};
-		addData.className = "gwt-Button";
-		addData.textContent = "Add data";
-		addData.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(addData);
-
-		HTMLButtonElement removeData = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		removeData.onclick = (p0) -> {
-			removeData(chart);
-			return null;
-		};
-		removeData.className = "gwt-Button";
-		removeData.textContent = "Remove data";
-		removeData.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(removeData);
 
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {

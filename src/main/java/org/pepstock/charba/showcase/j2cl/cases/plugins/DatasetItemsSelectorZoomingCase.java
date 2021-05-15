@@ -29,7 +29,6 @@ import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.client.items.TooltipItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -52,8 +51,6 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 	private final LineChart chart = new LineChart();
 
 	private final LineChart small = new LineChart();
-
-	private final LogView mylog = new LogView(4);
 
 	private final DatasetsItemsSelector selector = DatasetsItemsSelector.get();
 	
@@ -232,20 +229,6 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override

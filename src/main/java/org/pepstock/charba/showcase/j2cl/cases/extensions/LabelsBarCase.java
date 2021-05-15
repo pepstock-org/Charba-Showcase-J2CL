@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.callbacks.ColorCallback;
+import org.pepstock.charba.client.callbacks.FontCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -12,6 +13,7 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.FloatingData;
 import org.pepstock.charba.client.enums.DataType;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.items.FontItem;
 import org.pepstock.charba.client.labels.Label;
 import org.pepstock.charba.client.labels.LabelsContext;
 import org.pepstock.charba.client.labels.LabelsOptions;
@@ -95,12 +97,23 @@ public class LabelsBarCase extends BaseComposite {
 		label.setColor(new ColorCallback<LabelsContext>() {
 
 			@Override
-			public IsColor invoke(LabelsContext item) {
-				if (DataType.ARRAYS.equals(item.getDataItem().getDataType())) {
-					return item.getDataItem().getValueAsFloatingData().getAbsValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
+			public IsColor invoke(LabelsContext context) {
+			if (DataType.ARRAYS.equals(context.getDataItem().getDataType())) {
+					return context.getDataItem().getValueAsFloatingData().getAbsValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
 				} else {
-					return item.getDataItem().getValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
+					return context.getDataItem().getValue() > 25 ? HtmlColor.RED : HtmlColor.BLACK;
 				}
+			}
+		});
+
+		label.setFont(new FontCallback<LabelsContext>() {
+
+			private final FontItem font = new FontItem();
+			
+			@Override
+			public FontItem invoke(LabelsContext context) {
+				font.setSize(16);
+				return font;
 			}
 		});
 
