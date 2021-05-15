@@ -11,8 +11,8 @@ name: Deploy
 # 
 on:
   push:
-    tags:
-      - '[0-9]+.[0-9]+'
+    branches:
+      - master
 
 # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,13 +23,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 
-      # Gets the tag to use as version
-      # 
-      - name: Get version
-        id: version
-        run: |
-          echo ::set-output name=CHARBA_VERSION::${GITHUB_REF#refs/tags/}  
       # 
       # Checkout the repository content
       # 
@@ -50,7 +43,7 @@ jobs:
       # Defines Charba lib in Maven
       # 
       - name: Adds Charba lib to Maven
-        run: mvn install:install-file -Dfile=./lib/charba-${{ steps.version.outputs.CHARBA_VERSION }}.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=${{ steps.version.outputs.CHARBA_VERSION }} -Dpackaging=jar
+        run: mvn install:install-file -Dfile=./lib/charba-4.0.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=4.0 -Dpackaging=jar
       # 
       # Run the build of project by Maven
       # 
@@ -76,4 +69,4 @@ jobs:
           publish_dir: ./war
           enable_jekyll: false
           keep_files: false
-          full_commit_message: Deploy ${{ steps.version.outputs.CHARBA_VERSION }} showcase to GitHub Pages
+          full_commit_message: Deploy 'master' showcase to GitHub Pages
