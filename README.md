@@ -1,6 +1,6 @@
 # Charba Showcase J2CL
 
-[![Build](https://github.com/pepstock-org/Charba-Showcase-J2CL/workflows/Build/badge.svg?branch=master)](https://github.com/pepstock-org/Charba-Showcase-J2CL/actions/) [![ShowCase](https://img.shields.io/static/v1?message=ShowCase&color=informational)](https://pepstock-org.github.io/Charba-Showcase-J2CL/)
+[![Build](https://github.com/pepstock-org/Charba-Showcase-J2CL/workflows/Build/badge.svg?branch=master)](https://github.com/pepstock-org/Charba-Showcase/actions/workflows/build.yaml) [![ShowCase](https://img.shields.io/static/v1?message=ShowCase&color=informational)](https://pepstock-org.github.io/Charba-Showcase-J2CL/)
 
 This repository contains the source code of the **Charba** showcase site, built by [J2CL](https://github.com/google/j2cl) and leveraging on [Elemental2](https://github.com/google/elemental2), located [here](https://pepstock-org.github.io/Charba-Showcase-J2CL/).
 
