@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FullSizeCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kF;EAAAA,wJ;;;CAAA,8I;EAAAC,iC;EAAAA,qF;;;CAAA,2D;EAAAC,2C;EAAAA,sH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["FullSizeCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.FullSizeCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.FullSizeCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.FullSizeCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.FullSizeCallback$$LambdaAdaptor.<clinit>"]
+}
+

@@ -25,6 +25,7 @@ let LabelsOptions = goog.forwardDeclare('org.pepstock.charba.client.labels.Label
 let LabelsPlugin = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelsPlugin$impl');
 let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$1$impl');
 let $2 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$2$impl');
+let $3 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$3$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $int = goog.forwardDeclare('vmbootstrap.primitives.$int$impl');
@@ -77,6 +78,7 @@ class LabelsBarCase extends BaseComposite {
   let label = options.m_createLabel__java_lang_String("bar");
   label.m_setRender__org_pepstock_charba_client_labels_callbacks_RenderCallback($1.$create__org_pepstock_charba_showcase_j2cl_cases_extensions_LabelsBarCase(this));
   label.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback($2.$create__org_pepstock_charba_showcase_j2cl_cases_extensions_LabelsBarCase(this));
+  label.m_setFont__org_pepstock_charba_client_callbacks_FontCallback($3.$create__org_pepstock_charba_showcase_j2cl_cases_extensions_LabelsBarCase(this));
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_LabelsBarCase_.m_getOptions__().m_getPlugins__().m_setOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptions(LabelsPlugin.f_ID__org_pepstock_charba_client_labels_LabelsPlugin, options);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_LabelsBarCase_.m_getData__().m_setLabels__arrayOf_java_lang_String(this.m_getLabels__());
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_LabelsBarCase_.m_getData__().m_setDatasets__arrayOf_org_pepstock_charba_client_data_Dataset(/**@type {!Array<Dataset>}*/ ($Arrays.$init([dataset1], Dataset)));
@@ -222,6 +224,7 @@ class LabelsBarCase extends BaseComposite {
   LabelsPlugin = goog.module.get('org.pepstock.charba.client.labels.LabelsPlugin$impl');
   $1 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$1$impl');
   $2 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$2$impl');
+  $3 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$3$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $int = goog.module.get('vmbootstrap.primitives.$int$impl');

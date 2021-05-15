@@ -119,6 +119,7 @@ class ColorSchemeLineCase extends BaseComposite {
   dataset1.m_setBorderWidth__int(2);
   dataset1.m_setBorderColor__org_pepstock_charba_client_colors_IsColor(color1);
   dataset1.m_setData__arrayOf_double(this.m_getFixedDigits__int(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite));
+  dataset1.m_setFill__boolean(true);
   let options = ColorSchemesOptions.$create__();
   options.m_setSchemeScope__org_pepstock_charba_client_impl_plugins_enums_SchemeScope(SchemeScope.f_DATASET__org_pepstock_charba_client_impl_plugins_enums_SchemeScope);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_ColorSchemeLineCase_.m_getOptions__().m_getPlugins__().m_setOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptions(ColorSchemes.f_ID__org_pepstock_charba_client_impl_plugins_ColorSchemes, options);

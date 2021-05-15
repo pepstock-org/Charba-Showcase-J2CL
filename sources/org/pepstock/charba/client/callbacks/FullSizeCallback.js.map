@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FullSizeCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MAwBiB,gB;;QAAA,M;EAAAA,2B;EAAAA,gE;;;QAAA,O;EAAAC,mC;EAAAA;",
+"sources":["FullSizeCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.FullSizeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.FullSizeCallback.<clinit>"]
+}
+

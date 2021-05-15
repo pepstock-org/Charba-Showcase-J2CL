@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ALIGN__org_pepstock_charba_client_configuration_Title_Property, Property.$static_DISPLAY__org_pepstock_charba_client_configuration_Title_Property, Property.$static_COLOR__org_pepstock_charba_client_configuration_Title_Property, Property.$static_FONT__org_pepstock_charba_client_configuration_Title_Property, Property.$static_PADDING__org_pepstock_charba_client_configuration_Title_Property, Property.$static_POSITION__org_pepstock_charba_client_configuration_Title_Property, Property.$static_TEXT__org_pepstock_charba_client_configuration_Title_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ALIGN__org_pepstock_charba_client_configuration_Title_Property, Property.$static_DISPLAY__org_pepstock_charba_client_configuration_Title_Property, Property.$static_COLOR__org_pepstock_charba_client_configuration_Title_Property, Property.$static_FONT__org_pepstock_charba_client_configuration_Title_Property, Property.$static_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property, Property.$static_PADDING__org_pepstock_charba_client_configuration_Title_Property, Property.$static_POSITION__org_pepstock_charba_client_configuration_Title_Property, Property.$static_TEXT__org_pepstock_charba_client_configuration_Title_Property], Property));
  }
  /** @return {!Property} */
  static get f_ALIGN__org_pepstock_charba_client_configuration_Title_Property() {
@@ -64,6 +64,10 @@ class Property extends Enum {
  /** @return {!Property} */
  static get f_FONT__org_pepstock_charba_client_configuration_Title_Property() {
   return (Property.$clinit(), Property.$static_FONT__org_pepstock_charba_client_configuration_Title_Property);
+ }
+ /** @return {!Property} */
+ static get f_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property() {
+  return (Property.$clinit(), Property.$static_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property);
  }
  /** @return {!Property} */
  static get f_PADDING__org_pepstock_charba_client_configuration_Title_Property() {
@@ -86,6 +90,7 @@ class Property extends Enum {
   Property.$static_DISPLAY__org_pepstock_charba_client_configuration_Title_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DISPLAY"), Property.$ordinal_DISPLAY__org_pepstock_charba_client_configuration_Title_Property, "display");
   Property.$static_COLOR__org_pepstock_charba_client_configuration_Title_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("COLOR"), Property.$ordinal_COLOR__org_pepstock_charba_client_configuration_Title_Property, "color");
   Property.$static_FONT__org_pepstock_charba_client_configuration_Title_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("FONT"), Property.$ordinal_FONT__org_pepstock_charba_client_configuration_Title_Property, "font");
+  Property.$static_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("FULL_SIZE"), Property.$ordinal_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property, "fullSize");
   Property.$static_PADDING__org_pepstock_charba_client_configuration_Title_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PADDING"), Property.$ordinal_PADDING__org_pepstock_charba_client_configuration_Title_Property, "padding");
   Property.$static_POSITION__org_pepstock_charba_client_configuration_Title_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POSITION"), Property.$ordinal_POSITION__org_pepstock_charba_client_configuration_Title_Property, "position");
   Property.$static_TEXT__org_pepstock_charba_client_configuration_Title_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TEXT"), Property.$ordinal_TEXT__org_pepstock_charba_client_configuration_Title_Property, "text");
@@ -111,6 +116,8 @@ Property.$static_COLOR__org_pepstock_charba_client_configuration_Title_Property;
 /**@private {!Property}*/
 Property.$static_FONT__org_pepstock_charba_client_configuration_Title_Property;
 /**@private {!Property}*/
+Property.$static_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property;
+/**@private {!Property}*/
 Property.$static_PADDING__org_pepstock_charba_client_configuration_Title_Property;
 /**@private {!Property}*/
 Property.$static_POSITION__org_pepstock_charba_client_configuration_Title_Property;
@@ -127,11 +134,13 @@ Property.$ordinal_COLOR__org_pepstock_charba_client_configuration_Title_Property
 /**@const {number}*/
 Property.$ordinal_FONT__org_pepstock_charba_client_configuration_Title_Property = 3;
 /**@const {number}*/
-Property.$ordinal_PADDING__org_pepstock_charba_client_configuration_Title_Property = 4;
+Property.$ordinal_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property = 4;
 /**@const {number}*/
-Property.$ordinal_POSITION__org_pepstock_charba_client_configuration_Title_Property = 5;
+Property.$ordinal_PADDING__org_pepstock_charba_client_configuration_Title_Property = 5;
 /**@const {number}*/
-Property.$ordinal_TEXT__org_pepstock_charba_client_configuration_Title_Property = 6;
+Property.$ordinal_POSITION__org_pepstock_charba_client_configuration_Title_Property = 6;
+/**@const {number}*/
+Property.$ordinal_TEXT__org_pepstock_charba_client_configuration_Title_Property = 7;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.configuration.Title$Property");
 

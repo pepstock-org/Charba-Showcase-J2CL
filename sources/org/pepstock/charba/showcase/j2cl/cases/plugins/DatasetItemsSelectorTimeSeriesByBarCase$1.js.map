@@ -2,7 +2,7 @@
 "version":3,
 "file":"DatasetItemsSelectorTimeSeriesByBarCase$1.impl.java.js",
 "lineCount":43,
-"mappings":"A;;;;;;;;;;;;;MA0I2D,E;;CAAA,W;EAAAA,Q;EAAAA;8G;;;QAAA,gG;EAAAC,a;EAAAA,yB;EAAAA,iN;EAAAA,iB;;;CAAA,yL;EAAAC,0H;EAAAA,iC;;;CAG5C,wE,mCAAoCC,K;EAC/CC,IAAcC,EAAdD,6B;EACAA,gN;EACAA,6P;;;QANuD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;MA6I2D,E;;CAAA,W;EAAAA,Q;EAAAA;8G;;;QAAA,gG;EAAAC,a;EAAAA,yB;EAAAA,iN;EAAAA,iB;;;CAAA,yL;EAAAC,0H;EAAAA,iC;;;CAG5C,wE,mCAAoCC,K;EAC/CC,IAAcC,EAAdD,6B;EACAA,gN;EACAA,6P;;;QANuD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
 "sources":["DatasetItemsSelectorTimeSeriesByBarCase.java"],
 "names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase$1.onSelect","sb","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorTimeSeriesByBarCase$1.<clinit>"]
 }

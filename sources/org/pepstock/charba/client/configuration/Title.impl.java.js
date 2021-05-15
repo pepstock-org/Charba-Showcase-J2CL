@@ -14,6 +14,7 @@ let ColorCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.Co
 let DisplayCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DisplayCallback$impl');
 let ElementAlignCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ElementAlignCallback$impl');
 let FontCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.FontCallback$impl');
+let FullSizeCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.FullSizeCallback$impl');
 let PaddingCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.PaddingCallback$impl');
 let PositionCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.PositionCallback$impl');
 let ScriptableUtils = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ScriptableUtils$impl');
@@ -55,6 +56,8 @@ class Title extends ConfigurationOptionsContainer {
   this.f_alignCallbackProxy__org_pepstock_charba_client_configuration_Title_;
   /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
   this.f_positionCallbackProxy__org_pepstock_charba_client_configuration_Title_;
+  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_;
   /**@type {PaddingCallback<ChartContext>}*/
   this.f_paddingCallback__org_pepstock_charba_client_configuration_Title_;
   /**@type {FontCallback<ChartContext>}*/
@@ -69,6 +72,8 @@ class Title extends ConfigurationOptionsContainer {
   this.f_alignCallback__org_pepstock_charba_client_configuration_Title_;
   /**@type {PositionCallback<ChartContext>}*/
   this.f_positionCallback__org_pepstock_charba_client_configuration_Title_;
+  /**@type {FullSizeCallback<ChartContext>}*/
+  this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_;
   /**@type {Font}*/
   this.f_font__org_pepstock_charba_client_configuration_Title_;
   /**@type {Padding}*/
@@ -111,6 +116,9 @@ class Title extends ConfigurationOptionsContainer {
   };
   this.f_alignCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** Object */ contextFunction_6, /** ? */ context_6) =>{
    return /**@type {ElementAlign}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_6), this.m_getAlignCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_getAlign__()), ElementAlign)).m_value__();
+  };
+  this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** Object */ contextFunction_7, /** ? */ context_7) =>{
+   return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_7), this.m_getFullSizeCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_isFullSize__()), Boolean)));
   };
  }
  /** @return {Font} */
@@ -167,6 +175,7 @@ class Title extends ConfigurationOptionsContainer {
  }
  
  m_setFullSize__boolean(/** boolean */ fullSize) {
+  this.m_setFullSize__org_pepstock_charba_client_callbacks_FullSizeCallback(null);
   this.m_getConfiguration__().m_getTitle__().m_setFullSize__boolean(fullSize);
  }
  /** @return {boolean} */
@@ -190,6 +199,15 @@ class Title extends ConfigurationOptionsContainer {
  m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/** DisplayCallback<ChartContext> */ displayCallback) {
   this.f_displayCallback__org_pepstock_charba_client_configuration_Title_ = displayCallback;
   this.m_getChart__().m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(this.m_getConfiguration__().m_getTitle__(), Property.f_DISPLAY__org_pepstock_charba_client_configuration_Title_Property, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_configuration_Title_);
+ }
+ /** @return {FullSizeCallback<ChartContext>} */
+ m_getFullSizeCallback__() {
+  return this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_;
+ }
+ 
+ m_setFullSize__org_pepstock_charba_client_callbacks_FullSizeCallback(/** FullSizeCallback<ChartContext> */ fullSizeCallback) {
+  this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_ = fullSizeCallback;
+  this.m_getChart__().m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(this.m_getConfiguration__().m_getTitle__(), Property.f_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property, fullSizeCallback, this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_);
  }
  /** @override @return {PaddingCallback<ChartContext>} */
  m_getPaddingCallback__() {
@@ -274,6 +292,7 @@ class Title extends ConfigurationOptionsContainer {
   this.f_textCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_alignCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_positionCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_paddingCallback__org_pepstock_charba_client_configuration_Title_ = null;
   this.f_fontCallback__org_pepstock_charba_client_configuration_Title_ = null;
   this.f_displayCallback__org_pepstock_charba_client_configuration_Title_ = null;
@@ -281,6 +300,7 @@ class Title extends ConfigurationOptionsContainer {
   this.f_textCallback__org_pepstock_charba_client_configuration_Title_ = null;
   this.f_alignCallback__org_pepstock_charba_client_configuration_Title_ = null;
   this.f_positionCallback__org_pepstock_charba_client_configuration_Title_ = null;
+  this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_ = null;
  }
  
  static $clinit() {

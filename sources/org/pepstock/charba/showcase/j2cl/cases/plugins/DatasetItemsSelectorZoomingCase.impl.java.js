@@ -35,7 +35,6 @@ let DatasetRangeSelectionEvent = goog.forwardDeclare('org.pepstock.charba.client
 let ChartBackgroundColor = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
 let DatasetsItemsSelector = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector$impl');
 let DatasetsItemsSelectorOptions = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions$impl');
-let LogView = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.LogView$impl');
 let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$1$impl');
 let $2 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$2$impl');
 let $3 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$3$impl');
@@ -54,8 +53,6 @@ class DatasetItemsSelectorZoomingCase extends BaseComposite {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_;
   /**@type {LineChart}*/
   this.f_small__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_;
-  /**@type {LogView}*/
-  this.f_mylog__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_;
   /**@type {DatasetsItemsSelector}*/
   this.f_selector__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_;
   /**@type {LineDataset}*/
@@ -170,15 +167,6 @@ class DatasetItemsSelectorZoomingCase extends BaseComposite {
   img.src = "images/GitHub-Mark-32px.png";
   github.appendChild(img);
   actionsCol.appendChild(github);
-  let logRow = /**@type {HTMLTableRowElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("tr"), HTMLTableRowElement_$Overlay));
-  logRow.style.width = WidthUnionType_$Overlay.m_of__java_lang_Object("100%");
-  this.f_mainPanel__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_.appendChild(logRow);
-  let logCol = /**@type {HTMLTableCellElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("td"), HTMLTableCellElement_$Overlay));
-  logCol.style.width = WidthUnionType_$Overlay.m_of__java_lang_Object("100%");
-  logCol.style.textAlign = "center";
-  logCol.vAlign = "top";
-  logRow.appendChild(logCol);
-  logCol.appendChild(this.f_mylog__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_.m_getElement__());
  }
  /** @override @return {HTMLElement} */
  m_getElement__() {
@@ -215,7 +203,6 @@ class DatasetItemsSelectorZoomingCase extends BaseComposite {
  $init___$p_org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase() {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_ = LineChart.$create__();
   this.f_small__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_ = LineChart.$create__();
-  this.f_mylog__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_ = LogView.$create__int(4);
   this.f_selector__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_ = DatasetsItemsSelector.m_get__();
   this.f_adapter__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorZoomingCase_ = DateAdapter.$create__();
  }
@@ -262,7 +249,6 @@ class DatasetItemsSelectorZoomingCase extends BaseComposite {
   ChartBackgroundColor = goog.module.get('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
   DatasetsItemsSelector = goog.module.get('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector$impl');
   DatasetsItemsSelectorOptions = goog.module.get('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions$impl');
-  LogView = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.commons.LogView$impl');
   $1 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$1$impl');
   $2 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$2$impl');
   $3 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$3$impl');

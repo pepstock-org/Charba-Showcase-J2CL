@@ -26,6 +26,7 @@ goog.require('org.pepstock.charba.client.labels.LabelsPlugin');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$1');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$2');
+goog.require('org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase.$3');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.primitives.$int');

@@ -21,9 +21,12 @@ let CartesianLinearAxis = goog.forwardDeclare('org.pepstock.charba.client.config
 let Dataset = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset$impl');
 let LineDataset = goog.forwardDeclare('org.pepstock.charba.client.data.LineDataset$impl');
 let IsCastable_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
+let ElementAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.ElementAlign$impl');
 let Fill = goog.forwardDeclare('org.pepstock.charba.client.enums.Fill$impl');
 let InteractionMode = goog.forwardDeclare('org.pepstock.charba.client.enums.InteractionMode$impl');
 let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$impl');
+let MeasureUnit = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.MeasureUnit$impl');
+let Style = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Style$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -89,6 +92,9 @@ class TicksStepSizeCase extends BaseComposite {
   axis2.m_setMin__double(0);
   axis2.m_setMax__double(100);
   axis2.m_getTicks__().m_setStepSize__double(5);
+  axis2.m_getTicks__().m_setAlign__org_pepstock_charba_client_enums_ElementAlign(ElementAlign.f_CENTER__org_pepstock_charba_client_enums_ElementAlign);
+  axis2.m_getTicks__().m_getNumberFormat__().m_setStyle__org_pepstock_charba_client_intl_enums_Style(Style.f_UNIT__org_pepstock_charba_client_intl_enums_Style);
+  axis2.m_getTicks__().m_getNumberFormat__().m_setUnitsOfMeasure__arrayOf_org_pepstock_charba_client_intl_enums_MeasureUnit(/**@type {!Array<MeasureUnit>}*/ ($Arrays.$init([MeasureUnit.f_KILOMETER__org_pepstock_charba_client_intl_enums_MeasureUnit, MeasureUnit.f_HOUR__org_pepstock_charba_client_intl_enums_MeasureUnit], MeasureUnit)));
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TicksStepSizeCase_.m_getOptions__().m_getScales__().m_setAxes__arrayOf_org_pepstock_charba_client_configuration_Axis(/**@type {!Array<Axis>}*/ ($Arrays.$init([axis1, axis2], Axis)));
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TicksStepSizeCase_.m_getData__().m_setLabels__arrayOf_java_lang_String(this.m_getLabels__());
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TicksStepSizeCase_.m_getData__().m_setDatasets__arrayOf_org_pepstock_charba_client_data_Dataset(/**@type {!Array<Dataset>}*/ ($Arrays.$init([dataset1, dataset2], Dataset)));
@@ -230,9 +236,12 @@ class TicksStepSizeCase extends BaseComposite {
   Dataset = goog.module.get('org.pepstock.charba.client.data.Dataset$impl');
   LineDataset = goog.module.get('org.pepstock.charba.client.data.LineDataset$impl');
   IsCastable_$Overlay = goog.module.get('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
+  ElementAlign = goog.module.get('org.pepstock.charba.client.enums.ElementAlign$impl');
   Fill = goog.module.get('org.pepstock.charba.client.enums.Fill$impl');
   InteractionMode = goog.module.get('org.pepstock.charba.client.enums.InteractionMode$impl');
   Position = goog.module.get('org.pepstock.charba.client.enums.Position$impl');
+  MeasureUnit = goog.module.get('org.pepstock.charba.client.intl.enums.MeasureUnit$impl');
+  Style = goog.module.get('org.pepstock.charba.client.intl.enums.Style$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

@@ -2,8 +2,8 @@
 "version":3,
 "file":"LabelsBarCase$2.impl.java.js",
 "lineCount":54,
-"mappings":"A;;;;;;;;;;;;;;;;;MA8FoD,E;;CAAA,W;EAAAA,Q;EAAAA;uF;;;QAAA,yE;EAAAC,a;EAAAA,yB;EAAAA,mK;EAAAA,iB;;;CAAA,2I;EAAAC,mG;EAAAA,iC;;;CAGlC,yD,sBAAqBC,I;EACnCC;GACCA,kNADDA;;GAGCA,kLAHDA;G;;;;CAJgD,2D;EAAAA,oI;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;;;MAgGoD,E;;CAAA,W;EAAAA,Q;EAAAA;uF;;;QAAA,yE;EAAAC,a;EAAAA,yB;EAAAA,mK;EAAAA,iB;;;CAAA,2I;EAAAC,mG;EAAAA,iC;;;CAGlC,yD,sBAAqBC,O;EACpCC;GACEA,qNADFA;;GAGEA,qLAHFA;G;;;;CAJiD,2D;EAAAA,oI;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["LabelsBarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<init>","item","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.invoke","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<clinit>"]
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.invoke","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$2.<clinit>"]
 }
 

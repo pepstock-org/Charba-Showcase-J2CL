@@ -5,7 +5,6 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 
 let IndexOutOfBoundsException = goog.forwardDeclare('java.lang.IndexOutOfBoundsException$impl');
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
-let StringBuilder = goog.forwardDeclare('java.lang.StringBuilder$impl');
 let Arrays = goog.forwardDeclare('java.util.Arrays$impl');
 let Collections = goog.forwardDeclare('java.util.Collections$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
@@ -108,19 +107,26 @@ class Labels extends j_l_Object {
  m_isEmpty__() {
   return Array_$Overlay.m_isEmpty__$devirt__org_pepstock_charba_client_commons_Array(this.f_array__org_pepstock_charba_client_data_Labels_);
  }
+ /** @return {number} */
+ m_indexOf__arrayOf_java_lang_String(/** Array<?string> */ values) {
+  if (!$Equality.$same(values, null) && values.length > 0 && !this.m_isEmpty__()) {
+   let array = ArrayString_$Overlay.m_fromOrEmpty__arrayOf_java_lang_String(values);
+   let value = Array_$Overlay.m_join__$devirt__org_pepstock_charba_client_commons_Array__java_lang_String(array, Constants.f_LINE_SEPARATOR__org_pepstock_charba_client_commons_Constants);
+   for (let i = 0; i < this.m_size__(); i = i + 1 | 0) {
+    let storedvalue = this.m_getString__int(i);
+    if (j_l_String.m_equals__java_lang_String__java_lang_Object(value, storedvalue)) {
+     return i;
+    }
+   }
+  }
+  return -1 | 0;
+ }
  /** @return {?string} */
  m_getString__int(/** number */ index) {
   let type = this.m_getType__int(index);
   if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_ARRAY__org_pepstock_charba_client_commons_ObjectType, type)) {
    let internalArray = /**@type {Array}*/ ($Casts.$to($Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayMixedObject__int(this.f_array__org_pepstock_charba_client_data_Labels_, index), ArrayString_$Overlay));
-   let result = StringBuilder.$create__();
-   for (let i = 0; i < internalArray.length; i = i + 1 | 0) {
-    if (i > 0) {
-     result.m_append__java_lang_String(Constants.f_LINE_SEPARATOR__org_pepstock_charba_client_commons_Constants);
-    }
-    result.m_append__java_lang_String(ArrayString_$Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayString__int(internalArray, i));
-   }
-   return result.toString();
+   return Array_$Overlay.m_join__$devirt__org_pepstock_charba_client_commons_Array__java_lang_String(internalArray, Constants.f_LINE_SEPARATOR__org_pepstock_charba_client_commons_Constants);
   }
   return /**@type {?string}*/ ($Casts.$to($Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayMixedObject__int(this.f_array__org_pepstock_charba_client_data_Labels_, index), j_l_String));
  }
@@ -158,7 +164,6 @@ class Labels extends j_l_Object {
  static $loadModules() {
   IndexOutOfBoundsException = goog.module.get('java.lang.IndexOutOfBoundsException$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
-  StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   Arrays = goog.module.get('java.util.Arrays$impl');
   Collections = goog.module.get('java.util.Collections$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');

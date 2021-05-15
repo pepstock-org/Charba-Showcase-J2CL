@@ -26,7 +26,6 @@ let LineDataset = goog.forwardDeclare('org.pepstock.charba.client.data.LineDatas
 let IsCastable_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
 let InteractionMode = goog.forwardDeclare('org.pepstock.charba.client.enums.InteractionMode$impl');
 let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase.$1$impl');
-let $2 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase.$2$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
@@ -72,7 +71,6 @@ class FilteringLegendCase extends BaseComposite {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase_.m_getOptions__().m_getHover__().m_setMode__org_pepstock_charba_client_enums_InteractionMode(InteractionMode.f_NEAREST__org_pepstock_charba_client_enums_InteractionMode);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase_.m_getOptions__().m_getHover__().m_setIntersect__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase_.m_getOptions__().m_getLegend__().m_getLabels__().m_setFilterCallback__org_pepstock_charba_client_callbacks_LegendFilterCallback($1.$create__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase(this));
-  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase_.m_getOptions__().m_getLegend__().m_getLabels__().m_setItemSortCallback__org_pepstock_charba_client_callbacks_LegendItemSortCallback($2.$create__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase(this));
   let datasets = this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase_.m_getData__().m_getDatasets__boolean(true);
   let dataset1 = /**@type {LineDataset}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_FilteringLegendCase_.m_newDataset__(), LineDataset));
   dataset1.m_setLabel__java_lang_String("dataset 1");
@@ -266,7 +264,6 @@ class FilteringLegendCase extends BaseComposite {
   IsCastable_$Overlay = goog.module.get('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
   InteractionMode = goog.module.get('org.pepstock.charba.client.enums.InteractionMode$impl');
   $1 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase.$1$impl');
-  $2 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase.$2$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Primitives = goog.module.get('vmbootstrap.Primitives$impl');

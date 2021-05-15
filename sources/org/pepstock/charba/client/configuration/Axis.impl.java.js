@@ -27,6 +27,7 @@ let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$im
 let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
 let Display = goog.forwardDeclare('org.pepstock.charba.client.enums.Display$impl');
 let AxisItem = goog.forwardDeclare('org.pepstock.charba.client.items.AxisItem$impl');
+let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$impl');
 let ExtendedScale = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedScale$impl');
 let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
@@ -211,6 +212,11 @@ class Axis extends ConfigurationContainer {
  /** @return {Scale} */
  m_getScale___$pp_org_pepstock_charba_client_configuration() {
   return /**@type {ExtendedScale}*/ ($Casts.$to(super.m_getConfiguration__(), ExtendedScale));
+ }
+ /** @return {ScaleItem} */
+ m_getScaleItem___$pp_org_pepstock_charba_client_configuration() {
+  let scaleNode = this.m_getChart__().m_getNode__().m_getScales__();
+  return /**@type {ScaleItem}*/ ($Casts.$to(scaleNode.m_getItems__().get(this.m_getId__().m_value__()), ScaleItem));
  }
  /** @return {IsDefaultScale} */
  m_getDefaultValues___$pp_org_pepstock_charba_client_configuration() {
@@ -455,6 +461,7 @@ class Axis extends ConfigurationContainer {
   ConfigurationOptions = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationOptions$impl');
   AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
   AxisItem = goog.module.get('org.pepstock.charba.client.items.AxisItem$impl');
+  ScaleItem = goog.module.get('org.pepstock.charba.client.items.ScaleItem$impl');
   ExtendedScale = goog.module.get('org.pepstock.charba.client.options.ExtendedScale$impl');
   IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

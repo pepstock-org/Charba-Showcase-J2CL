@@ -33,6 +33,8 @@ class DoughnutCase extends BaseComposite {
   this.f_mainPanel__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_;
   /**@type {DoughnutChart}*/
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_;
+  /**@type {HTMLInputElement}*/
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_;
  }
  /** @return {!DoughnutCase} */
  static $create__() {
@@ -123,16 +125,15 @@ class DoughnutCase extends BaseComposite {
   labelForCircle.htmlFor = id;
   labelForCircle.appendChild(Document_$Overlay.m_createTextNode__$devirt__elemental2_dom_Document__java_lang_String(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay, "Semi circle"));
   actionsCol.appendChild(labelForCircle);
-  let semiCircle = /**@type {HTMLInputElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("input"), HTMLInputElement_$Overlay));
-  semiCircle.id = id;
-  semiCircle.onclick = (/** Event */ p0_5) =>{
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.id = id;
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.onclick = (/** Event */ p0_5) =>{
    this.m_handleSemiCircle__();
    return null;
   };
-  semiCircle.type = "checkbox";
-  semiCircle.className = "gwt-CheckBox";
-  semiCircle.style.marginRight = MarginRightUnionType_$Overlay.m_of__java_lang_Object("5px");
-  actionsCol.appendChild(semiCircle);
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.type = "checkbox";
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.className = "gwt-CheckBox";
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.style.marginRight = MarginRightUnionType_$Overlay.m_of__java_lang_Object("5px");
+  actionsCol.appendChild(this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_);
   let github = /**@type {HTMLButtonElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("button"), HTMLButtonElement_$Overlay));
   github.onclick = (/** Event */ p0_6) =>{
    goog.global.window.open(this.m_getUrl__(), "_blank", "");
@@ -167,10 +168,18 @@ class DoughnutCase extends BaseComposite {
   dataset.m_setData__arrayOf_double(this.m_getRandomDigits__int__boolean(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite, false));
   datasets.add(dataset);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.m_update__();
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.checked = false;
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.disabled = true;
  }
  
  m_handleRemoveDataset__() {
-  this.m_removeDataset__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_);
+  if (this.f_chart__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.m_getData__().m_getDatasets__().size() > 1) {
+   this.m_removeDataset__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_);
+   if (this.f_chart__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.m_getData__().m_getDatasets__().size() == 1) {
+    this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.checked = false;
+    this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_.disabled = false;
+   }
+  }
  }
  
  m_handleAddData__() {
@@ -208,6 +217,7 @@ class DoughnutCase extends BaseComposite {
  /** @private */
  $init___$p_org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase() {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_ = DoughnutChart.$create__();
+  this.f_semiCircle__org_pepstock_charba_showcase_j2cl_cases_charts_DoughnutCase_ = /**@type {HTMLInputElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("input"), HTMLInputElement_$Overlay));
  }
  
  static $clinit() {

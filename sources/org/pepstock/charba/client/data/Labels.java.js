@@ -3,7 +3,6 @@ goog.module('org.pepstock.charba.client.data.Labels');
 goog.require('java.lang.IndexOutOfBoundsException');
 goog.require('java.lang.Object');
 goog.require('java.lang.String');
-goog.require('java.lang.StringBuilder');
 goog.require('java.util.Arrays');
 goog.require('java.util.Collections');
 goog.require('java.util.List');

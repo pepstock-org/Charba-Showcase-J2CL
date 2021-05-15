@@ -14,7 +14,6 @@ goog.require('elemental2.dom.Node.$Overlay');
 goog.require('java.lang.String');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.VerticalLineChart');
-goog.require('org.pepstock.charba.client.colors.GoogleChartColor');
 goog.require('org.pepstock.charba.client.configuration.Axis');
 goog.require('org.pepstock.charba.client.configuration.CartesianCategoryAxis');
 goog.require('org.pepstock.charba.client.configuration.CartesianLinearAxis');

@@ -62,6 +62,7 @@ class LogView extends BaseComposite {
    this.f_counter__org_pepstock_charba_showcase_j2cl_cases_commons_LogView_ = 1;
    return null;
   };
+  this.f_element__org_pepstock_charba_showcase_j2cl_cases_commons_LogView_.style.fontFamily = "Courier";
   this.f_log__org_pepstock_charba_showcase_j2cl_cases_commons_LogView_.appendChild(title);
   this.f_log__org_pepstock_charba_showcase_j2cl_cases_commons_LogView_.appendChild(this.f_element__org_pepstock_charba_showcase_j2cl_cases_commons_LogView_);
   this.f_log__org_pepstock_charba_showcase_j2cl_cases_commons_LogView_.style.width = WidthUnionType_$Overlay.m_of__java_lang_Object("80%");

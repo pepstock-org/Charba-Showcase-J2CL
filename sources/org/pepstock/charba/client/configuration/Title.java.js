@@ -11,6 +11,7 @@ goog.require('org.pepstock.charba.client.callbacks.ColorCallback');
 goog.require('org.pepstock.charba.client.callbacks.DisplayCallback');
 goog.require('org.pepstock.charba.client.callbacks.ElementAlignCallback');
 goog.require('org.pepstock.charba.client.callbacks.FontCallback');
+goog.require('org.pepstock.charba.client.callbacks.FullSizeCallback');
 goog.require('org.pepstock.charba.client.callbacks.PaddingCallback');
 goog.require('org.pepstock.charba.client.callbacks.PositionCallback');
 goog.require('org.pepstock.charba.client.callbacks.ScriptableUtils');

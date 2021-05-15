@@ -27,7 +27,6 @@ goog.require('org.pepstock.charba.client.dom.IsCastable.$Overlay');
 goog.require('org.pepstock.charba.client.enums.InteractionMode');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase.$1');
-goog.require('org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase.$2');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.Primitives');

@@ -2,7 +2,7 @@
 "version":3,
 "file":"SegmentOnVerticalLineCase$4.impl.java.js",
 "lineCount":51,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA2FyF,E;;CAAA,W;EAAAA,Q;EAAAA;iG;;;QAAA,mF;EAAAC,a;EAAAA,yB;EAAAA,uL;EAAAA,iB;;;CAAA,+J;EAAAC,6G;EAAAA,iC;;;CAGjE,6D,uBAAsBC,O;EAC1CC,wW;;;;CAJqF,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;;;;MAwFyF,E;;CAAA,W;EAAAA,Q;EAAAA;iG;;;QAAA,mF;EAAAC,a;EAAAA,yB;EAAAA,uL;EAAAA,iB;;;CAAA,+J;EAAAC,6G;EAAAA,iC;;;CAGjE,6D,uBAAsBC,O;EAC1CC,wW;;;;CAJqF,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["SegmentOnVerticalLineCase.java"],
 "names":["org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$4.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$4.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$4.<init>","context","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$4.invoke","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$4.<clinit>"]
 }

@@ -35,11 +35,11 @@ class $2 extends j_l_Object {
   this.$ctor__java_lang_Object__();
  }
  /** @return {IsColor} */
- m_invoke__org_pepstock_charba_client_labels_LabelsContext(/** LabelsContext */ item) {
-  if ($Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_ARRAYS__org_pepstock_charba_client_enums_DataType, item.m_getDataItem__().m_getDataType__())) {
-   return item.m_getDataItem__().m_getValueAsFloatingData__().m_getAbsValue__() > 25 ? HtmlColor.f_RED__org_pepstock_charba_client_colors_HtmlColor : HtmlColor.f_BLACK__org_pepstock_charba_client_colors_HtmlColor;
+ m_invoke__org_pepstock_charba_client_labels_LabelsContext(/** LabelsContext */ context) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_ARRAYS__org_pepstock_charba_client_enums_DataType, context.m_getDataItem__().m_getDataType__())) {
+   return context.m_getDataItem__().m_getValueAsFloatingData__().m_getAbsValue__() > 25 ? HtmlColor.f_RED__org_pepstock_charba_client_colors_HtmlColor : HtmlColor.f_BLACK__org_pepstock_charba_client_colors_HtmlColor;
   } else {
-   return item.m_getDataItem__().m_getValue__() > 25 ? HtmlColor.f_RED__org_pepstock_charba_client_colors_HtmlColor : HtmlColor.f_BLACK__org_pepstock_charba_client_colors_HtmlColor;
+   return context.m_getDataItem__().m_getValue__() > 25 ? HtmlColor.f_RED__org_pepstock_charba_client_colors_HtmlColor : HtmlColor.f_BLACK__org_pepstock_charba_client_colors_HtmlColor;
   }
  }
  //Bridge method.

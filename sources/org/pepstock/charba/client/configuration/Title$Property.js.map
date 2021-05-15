@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Title$Property.impl.java.js",
-"lineCount":134,
-"mappings":"A;;;;;;;;;;;;;;MAwDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAWS,iEAXTA,C;;;QAkBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QA7BW,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,6nB;;;QAEZ,oE;EAAAC,6G;;;QACA,sE;EAAAA,+G;;;QACA,oE;EAAAA,6G;;;QACA,mE;EAAAA,4G;;;QACA,sE;EAAAA,+G;;;QACA,uE;EAAAA,gH;;;QACA,mE;EAAAA,4G;;;QARY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qQ;EACAA,6Q;EACAA,qQ;EACAA,iQ;EACAA,6Q;EACAA,iR;EACAA,iQ;EARYA,6F;;;;;;;;;;;;;AAAA;gF;AAAA;kF;AAAA;gF;AAAA;+E;AAAA;kF;AAAA;mF;AAAA;+E;AAAA;sF;AAEZ;qF;AACA;uF;AACA;qF;AACA;oF;AACA;uF;AACA;wF;AACA;;",
+"lineCount":143,
+"mappings":"A;;;;;;;;;;;;;;MAyDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAYS,iEAZTA,C;;;QAmBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QA9BW,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,ktB;;;QAEZ,oE;EAAAC,6G;;;QACA,sE;EAAAA,+G;;;QACA,oE;EAAAA,6G;;;QACA,mE;EAAAA,4G;;;QACA,wE;EAAAA,iH;;;QACA,sE;EAAAA,+G;;;QACA,uE;EAAAA,gH;;;QACA,mE;EAAAA,4G;;;QATY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qQ;EACAA,6Q;EACAA,qQ;EACAA,iQ;EACAA,oR;EACAA,6Q;EACAA,iR;EACAA,iQ;EATYA,6F;;;;;;;;;;;;;AAAA;gF;AAAA;kF;AAAA;gF;AAAA;+E;AAAA;oF;AAAA;kF;AAAA;mF;AAAA;+E;AAAA;sF;AAEZ;qF;AACA;uF;AACA;qF;AACA;oF;AACA;yF;AACA;uF;AACA;wF;AACA;;",
 "sources":["Title.java"],
 "names":["org.pepstock.charba.client.configuration.Title$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.Title$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Title$Property.<init>","org.pepstock.charba.client.configuration.Title$Property.value","org.pepstock.charba.client.configuration.Title$Property.valueOf","org.pepstock.charba.client.configuration.Title$Property.values","org.pepstock.charba.client.configuration.Title$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.Title$Property.<clinit>"]
 }

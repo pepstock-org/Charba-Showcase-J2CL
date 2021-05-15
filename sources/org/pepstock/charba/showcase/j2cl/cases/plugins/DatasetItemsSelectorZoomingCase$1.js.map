@@ -2,7 +2,7 @@
 "version":3,
 "file":"DatasetItemsSelectorZoomingCase$1.impl.java.js",
 "lineCount":63,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MA0F8F,E;;CAAA,W;EAAAA,Q;EAAAA;sG;;;QAAA,wF;EAAAC,a;EAAAA,yB;EAAAA,iM;EAAAA,iB;;;CAAA,yK;EAAAC,kH;EAAAA,iC;;;CAGvE,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,+d;;;;CAP0F,kE;EAAAI,sL;;;;CAAA,mE;EAAAC,uL;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAuF8F,E;;CAAA,W;EAAAA,Q;EAAAA;sG;;;QAAA,wF;EAAAC,a;EAAAA,yB;EAAAA,iM;EAAAA,iB;;;CAAA,yK;EAAAC,kH;EAAAA,iC;;;CAGvE,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,+d;;;;CAP0F,kE;EAAAI,sL;;;;CAAA,mE;EAAAC,uL;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA,qB;EAAAA;",
 "sources":["DatasetItemsSelectorZoomingCase.java"],
 "names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$1.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$1.onTitle","item","ds","dp","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$1.onAfterTitle","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$1.onBeforeTitle","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase$1.<clinit>"]
 }

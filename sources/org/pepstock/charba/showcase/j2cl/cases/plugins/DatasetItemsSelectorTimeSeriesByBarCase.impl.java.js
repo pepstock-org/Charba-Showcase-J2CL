@@ -70,6 +70,9 @@ class DatasetItemsSelectorTimeSeriesByBarCase extends BaseComposite {
   chartCol.style.width = WidthUnionType_$Overlay.m_of__java_lang_Object("100%");
   chartRow.appendChild(chartCol);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorTimeSeriesByBarCase_.m_getOptions__().m_setResponsive__boolean(true);
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorTimeSeriesByBarCase_.m_getOptions__().m_setAspectRatio__double(2.5);
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorTimeSeriesByBarCase_.m_getOptions__().m_setMaintainAspectRatio__boolean(true);
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorTimeSeriesByBarCase_.m_getOptions__().m_getLegend__().m_setDisplay__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorTimeSeriesByBarCase_.m_getOptions__().m_getTitle__().m_setDisplay__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_DatasetItemsSelectorTimeSeriesByBarCase_.m_getOptions__().m_getTitle__().m_setText__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init(["Timeseries by bar chart"], j_l_String)));
   let adapter = DateAdapter.$create__();

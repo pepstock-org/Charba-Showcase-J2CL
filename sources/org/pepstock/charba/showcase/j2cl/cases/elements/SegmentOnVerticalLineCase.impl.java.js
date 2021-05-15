@@ -14,7 +14,6 @@ let HTMLTableRowElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLTable
 let Node_$Overlay = goog.forwardDeclare('elemental2.dom.Node.$Overlay$impl');
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let VerticalLineChart = goog.forwardDeclare('org.pepstock.charba.client.VerticalLineChart$impl');
-let GoogleChartColor = goog.forwardDeclare('org.pepstock.charba.client.colors.GoogleChartColor$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
 let CartesianCategoryAxis = goog.forwardDeclare('org.pepstock.charba.client.configuration.CartesianCategoryAxis$impl');
 let CartesianLinearAxis = goog.forwardDeclare('org.pepstock.charba.client.configuration.CartesianLinearAxis$impl');
@@ -72,7 +71,7 @@ class SegmentOnVerticalLineCase extends BaseComposite {
   let dataset1 = this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_.m_newDataset__();
   dataset1.m_setLabel__java_lang_String("dataset 1");
   dataset1.m_setFill__boolean(true);
-  let values = this.m_getRandomDigits__int(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite);
+  let values = this.m_getRandomDigits__int__boolean(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite, false);
   let data = dataset1.m_getData__boolean(true);
   for (let i = 0; i < values.length; i = i + 1 | 0) {
    data.add(values[i]);
@@ -102,7 +101,7 @@ class SegmentOnVerticalLineCase extends BaseComposite {
    for (let $iterator = this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_.m_getData__().m_getDatasets__().m_iterator__(); $iterator.m_hasNext__(); ) {
     let dataset = /**@type {Dataset}*/ ($Casts.$to($iterator.m_next__(), Dataset));
     {
-     dataset.m_setData__arrayOf_double(this.m_getRandomDigits__int(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite));
+     dataset.m_setData__arrayOf_double(this.m_getRandomDigits__int__boolean(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite, false));
     }
    }
    this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_.m_update__();
@@ -112,53 +111,8 @@ class SegmentOnVerticalLineCase extends BaseComposite {
   randomize.textContent = "Randomize data";
   randomize.style.marginRight = MarginRightUnionType_$Overlay.m_of__java_lang_Object("5px");
   actionsCol.appendChild(randomize);
-  let addDataset = /**@type {HTMLButtonElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("button"), HTMLButtonElement_$Overlay));
-  addDataset.onclick = (/** Event */ p0_1) =>{
-   let datasetsList = this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_.m_getData__().m_getDatasets__();
-   let dataset_1 = this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_.m_newDataset__();
-   dataset_1.m_setLabel__java_lang_String("dataset " + (datasetsList.size() + 1 | 0));
-   let color = GoogleChartColor.m_values__()[datasetsList.size()];
-   dataset_1.m_setBackgroundColor__java_lang_String(color.m_toHex__());
-   dataset_1.m_setBorderColor__java_lang_String(color.m_toHex__());
-   dataset_1.m_setData__arrayOf_double(this.m_getRandomDigits__int(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite));
-   dataset_1.m_setFill__boolean(false);
-   datasetsList.add(dataset_1);
-   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_.m_update__();
-   return null;
-  };
-  addDataset.className = "gwt-Button";
-  addDataset.textContent = "Add dataset";
-  addDataset.style.marginRight = MarginRightUnionType_$Overlay.m_of__java_lang_Object("5px");
-  actionsCol.appendChild(addDataset);
-  let removeDataset = /**@type {HTMLButtonElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("button"), HTMLButtonElement_$Overlay));
-  removeDataset.onclick = (/** Event */ p0_2) =>{
-   this.m_removeDataset__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_);
-   return null;
-  };
-  removeDataset.className = "gwt-Button";
-  removeDataset.textContent = "Remove dataset";
-  removeDataset.style.marginRight = MarginRightUnionType_$Overlay.m_of__java_lang_Object("5px");
-  actionsCol.appendChild(removeDataset);
-  let addData = /**@type {HTMLButtonElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("button"), HTMLButtonElement_$Overlay));
-  addData.onclick = (/** Event */ p0_3) =>{
-   this.m_addData__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_);
-   return null;
-  };
-  addData.className = "gwt-Button";
-  addData.textContent = "Add data";
-  addData.style.marginRight = MarginRightUnionType_$Overlay.m_of__java_lang_Object("5px");
-  actionsCol.appendChild(addData);
-  let removeData = /**@type {HTMLButtonElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("button"), HTMLButtonElement_$Overlay));
-  removeData.onclick = (/** Event */ p0_4) =>{
-   this.m_removeData__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_SegmentOnVerticalLineCase_);
-   return null;
-  };
-  removeData.className = "gwt-Button";
-  removeData.textContent = "Remove data";
-  removeData.style.marginRight = MarginRightUnionType_$Overlay.m_of__java_lang_Object("5px");
-  actionsCol.appendChild(removeData);
   let github = /**@type {HTMLButtonElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("button"), HTMLButtonElement_$Overlay));
-  github.onclick = (/** Event */ p0_5) =>{
+  github.onclick = (/** Event */ p0_1) =>{
    goog.global.window.open(this.m_getUrl__(), "_blank", "");
    return null;
   };
@@ -199,7 +153,6 @@ class SegmentOnVerticalLineCase extends BaseComposite {
   Node_$Overlay = goog.module.get('elemental2.dom.Node.$Overlay$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
   VerticalLineChart = goog.module.get('org.pepstock.charba.client.VerticalLineChart$impl');
-  GoogleChartColor = goog.module.get('org.pepstock.charba.client.colors.GoogleChartColor$impl');
   Axis = goog.module.get('org.pepstock.charba.client.configuration.Axis$impl');
   CartesianCategoryAxis = goog.module.get('org.pepstock.charba.client.configuration.CartesianCategoryAxis$impl');
   CartesianLinearAxis = goog.module.get('org.pepstock.charba.client.configuration.CartesianLinearAxis$impl');

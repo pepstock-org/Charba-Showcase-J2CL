@@ -36,7 +36,6 @@ goog.require('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor');
 goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector');
 goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite');
-goog.require('org.pepstock.charba.showcase.j2cl.cases.commons.LogView');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$1');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$2');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorZoomingCase.$3');

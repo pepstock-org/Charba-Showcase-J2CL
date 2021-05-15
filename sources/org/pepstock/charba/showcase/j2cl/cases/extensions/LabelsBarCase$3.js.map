@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelsBarCase$3.impl.java.js",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;MA4GkD,E;;CAAA,W;EAAAA,Q;EAAAA;uF;EAAAA;OAExB,2EAFwBA,C;;;QAAA,yE;EAAAC,a;EAAAA,yB;EAAAA,mK;EAAAA,iB;;;CAAA,2I;EAAAC,mG;EAAAA,iC;EAAAA,qF;;;CAK/B,yD,sBAAqBC,O;EACpCC,oG;EACAA,wF;;;;CAP8C,2D;EAAAA,oI;;;CAAA,6E;EAE/CF,wG;;;QAF+C,O;EAAAG,qB;EAAAA,kB;EAAAA;",
+"sources":["LabelsBarCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$3.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$3.invoke","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase$3.<clinit>"]
+}
+

@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"CategoryTickHandler.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;;;;;;;;MAmCY,mB;;CAAA,W;EAAAA,Q;EAAAA;OA+BoC,kFA/BpCA,C;;;QAuCX,sH,aAAyBC,I,+BAA4BC,a;EAArDC,8B;EAAAA,0C;EAAAA,kN;EAAAA,iB;;;CAAA,kL,aAAyBF,I,+BAA4BC,a;EACpDE,4L;EADDA,+E;EAKCA,kHAA+BC,OAA/BD,iBAAwCE,KAAxCF,gBAA+CG,KAA/CH,eAAsDI,MAAtDJ;GAECK;IAECA,kXAFDA;IAFDL;GAOCK,aAPDL;I;;;CAiBK,yD;EACLM,qG;;;CA9DU,uE;EA+BXN,0N;;;QA/BW,O;EAAAO,sC;EAAAA,mC;EAAAA;",
+"lineCount":56,
+"mappings":"A;;;;;;;;;;;;;;;;MAoCY,mB;;CAAA,W;EAAAA,Q;EAAAA;OA+BoC,kFA/BpCA,C;;;QAuCX,sH,aAAyBC,I,+BAA4BC,a;EAArDC,8B;EAAAA,0C;EAAAA,kN;EAAAA,iB;;;CAAA,kL,aAAyBF,I,+BAA4BC,a;EACpDE,4L;EADDA,+E;EAKCA,kHAA+BC,OAA/BD,gBAAwCE,KAAxCF,gBAA+CG,KAA/CH,eAAsDI,MAAtDJ;GAECK,IAAUC,SAAVD,sFAFDL;GAICK,IAAOE,OAAPF,+CAJDL;GAMCK;IAECA,oXAFDA;IANDL;GAWCK,eAXDL;I;;;CAqBK,yD;EACLQ,qG;;;CAlEU,uE;EA+BXR,yN;;;QA/BW,O;EAAAS,sC;EAAAA,mC;EAAAA;",
 "sources":["CategoryTickHandler.java"],
-"names":["org.pepstock.charba.client.configuration.CategoryTickHandler.<synthetic: ctor_js>","axis","configuration","org.pepstock.charba.client.configuration.CategoryTickHandler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.CategoryTickHandler.<init>","context","value","index","values","org.pepstock.charba.client.configuration.CategoryTickHandler.<lambda in <init>>","org.pepstock.charba.client.configuration.CategoryTickHandler.getProxy","org.pepstock.charba.client.configuration.CategoryTickHandler.<clinit>"]
+"names":["org.pepstock.charba.client.configuration.CategoryTickHandler.<synthetic: ctor_js>","axis","configuration","org.pepstock.charba.client.configuration.CategoryTickHandler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.CategoryTickHandler.<init>","context","value","index","values","org.pepstock.charba.client.configuration.CategoryTickHandler.<lambda in <init>>","scaleItem","current","org.pepstock.charba.client.configuration.CategoryTickHandler.getProxy","org.pepstock.charba.client.configuration.CategoryTickHandler.<clinit>"]
 }
 
