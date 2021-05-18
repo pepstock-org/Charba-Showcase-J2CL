@@ -7,7 +7,6 @@ import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
 import org.pepstock.charba.client.enums.DefaultTransitionKey;
-import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.items.Undefined;
 import org.pepstock.charba.client.zoom.Amount;
 import org.pepstock.charba.client.zoom.ZoomOptions;
@@ -96,8 +95,7 @@ public class ZoomApiPanCase extends BaseComposite {
 
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(true);
-		options.getZoom().setEnabled(false);
-		options.getZoom().setMode(InteractionAxis.XY);
+		options.getZoom().getWheel().setEnabled(false);
 		
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
 

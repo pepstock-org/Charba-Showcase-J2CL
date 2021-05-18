@@ -96,8 +96,8 @@ public class ZoomApiZoomScaleCase extends BaseComposite {
 
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(false);
-		options.getZoom().setEnabled(true);
 		options.getZoom().setMode(InteractionAxis.XY);
+		options.getZoom().getWheel().setEnabled(true);
 		
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
 

@@ -24,7 +24,6 @@ import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.items.TooltipItem;
-import org.pepstock.charba.client.zoom.Drag;
 import org.pepstock.charba.client.zoom.ZoomContext;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
@@ -67,8 +66,6 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 	private final HTMLInputElement modifier = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final HTMLDivElement help = (HTMLDivElement) DomGlobal.document.createElement("div");
-
-	private final Drag drag;
 	
 	private final CartesianTimeSeriesAxis axis;
 
@@ -160,11 +157,10 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		ZoomOptions options = new ZoomOptions();
-		options.getZoom().setEnabled(true);
+		options.getZoom().getWheel().setEnabled(true);
 		options.getZoom().setMode(InteractionAxis.X);
-		options.getZoom().setSpeed(0.05D);
-		drag = ZoomPlugin.createDrag();
-		options.getZoom().setDrag(drag);
+		options.getZoom().getWheel().setSpeed(0.05D);
+		options.getZoom().getDrag().setEnabled(true);
 		options.getZoom().setCompletedCallback(new CompletedCallback() {
 
 			@Override
@@ -324,13 +320,13 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 	protected void handleDragging() {
 		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.ID, ZoomPlugin.FACTORY);
 		if (dragging.checked) {
-			options.getZoom().setDrag(drag);
-			options.getZoom().setWheelModifierKey(null);
+			options.getZoom().getDrag().setEnabled(true);
+			options.getZoom().getWheel().setModifierKey(null);
 			modifier.checked = false;
 			modifier.disabled = true;
 			help.innerHTML = "";
 		} else {
-			options.getZoom().setDrag(false);
+			options.getZoom().getDrag().setEnabled(false);
 			modifier.disabled = false;
 		}
 		chart.update();
@@ -339,10 +335,10 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 	protected void handleModifier() {
 		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.ID, ZoomPlugin.FACTORY);
 		if (modifier.checked) {
-			options.getZoom().setWheelModifierKey(ModifierKey.ALT);
+			options.getZoom().getWheel().setModifierKey(ModifierKey.ALT);
 			help.innerHTML = "<kbd style=\""+CSS+"\">Alt</kbd> + wheeling to zoom";
 		} else {
-			options.getZoom().setWheelModifierKey(null);
+			options.getZoom().getWheel().setModifierKey(null);
 			help.innerHTML = "";
 		}
 		chart.update();
