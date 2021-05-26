@@ -1,23 +1,23 @@
-package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
+package org.pepstock.charba.showcase.j2cl.cases.elements;
 
 import java.util.List;
 
 import org.pepstock.charba.client.LineChart;
+import org.pepstock.charba.client.callbacks.DatasetContext;
+import org.pepstock.charba.client.callbacks.LoopCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.enums.DefaultAnimationPropertyKey;
+import org.pepstock.charba.client.enums.Easing;
+import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.enums.InteractionMode;
-import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.events.AnimationCompleteEvent;
-import org.pepstock.charba.client.events.AnimationCompleteEventHandler;
-import org.pepstock.charba.client.events.AnimationProgressEvent;
-import org.pepstock.charba.client.events.AnimationProgressEventHandler;
+import org.pepstock.charba.client.options.AnimationCollection;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.ProgressBar;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -29,19 +29,13 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class AnimationCase extends BaseComposite {
-
-	private static final int SECOND = 1000;
-
-	private static final int DURATION = 2 * SECOND;
+public class AnimationLoopCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
 
-	private final ProgressBar progress = new ProgressBar();
-
-	public AnimationCase() {
+	public AnimationLoopCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -63,32 +57,28 @@ public class AnimationCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.TOP);
+		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Animation events on line chart");
-		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
-		chart.getOptions().getTooltips().setIntersect(false);
-		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
-		chart.getOptions().getHover().setIntersect(true);
-		chart.getOptions().getAnimation().setDuration(DURATION);
-		chart.addHandler(new AnimationProgressEventHandler() {
-
+		chart.getOptions().getTitle().setText("Animation loop on line chart");
+		chart.getOptions().getTooltips().setEnabled(false);
+		chart.getOptions().getInteraction().setMode(InteractionMode.NEAREST);
+		chart.getOptions().getInteraction().setIntersect(false);
+		chart.getOptions().getInteraction().setAxis(InteractionAxis.X);
+		chart.getOptions().getElements().getPoint().setHoverRadius(12);
+		chart.getOptions().getElements().getPoint().setHoverBackgroundColor(HtmlColor.YELLOW);
+		
+		AnimationCollection radius = chart.getOptions().getAnimations().create(DefaultAnimationPropertyKey.RADIUS);
+		radius.setDuration(400);
+		radius.setEasing(Easing.LINEAR);
+		radius.setLoop(new LoopCallback() {
+			
 			@Override
-			public void onProgress(AnimationProgressEvent event) {
-				double value = event.getItem().getCurrentStep() / event.getItem().getNumSteps() * 100;
-				progress.setProgress(value);
+			public Boolean invoke(DatasetContext context) {
+				return context.isActive();
 			}
+		});
 
-		}, AnimationProgressEvent.TYPE);
-
-		chart.addHandler(new AnimationCompleteEventHandler() {
-
-			@Override
-			public void onComplete(AnimationCompleteEvent event) {
-				progress.setProgress(100);
-			}
-
-		}, AnimationCompleteEvent.TYPE);
+		List<Dataset> datasets = chart.getData().getDatasets(true);
 
 		LineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
@@ -97,8 +87,13 @@ public class AnimationCase extends BaseComposite {
 
 		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
-		dataset1.setData(getRandomDigits(months));
-		dataset1.setFill(Fill.FALSE);
+		dataset1.setFill(false);
+		double[] values = getRandomDigits(months);
+		List<Double> data = dataset1.getData(true);
+		for (int i = 0; i < values.length; i++) {
+			data.add(values[i]);
+		}
+		datasets.add(dataset1);
 
 		LineDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
@@ -108,7 +103,8 @@ public class AnimationCase extends BaseComposite {
 		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
 		dataset2.setData(getRandomDigits(months));
-		dataset2.setFill(Fill.FALSE);
+		dataset2.setFill(false);
+		datasets.add(dataset2);
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
@@ -123,10 +119,7 @@ public class AnimationCase extends BaseComposite {
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
-		chart.getData().setDatasets(dataset1, dataset2);
-
 		chartCol.appendChild(chart.getChartElement().as());
-		chartCol.appendChild(progress.getElement());
 
 		// ----------------------------------------------
 		// Actions element
@@ -144,7 +137,10 @@ public class AnimationCase extends BaseComposite {
 
 		HTMLButtonElement randomize = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		randomize.onclick = (p0) -> {
-			handleRandomize();
+			for (Dataset dataset : chart.getData().getDatasets()) {
+				dataset.setData(getRandomDigits(months));
+			}
+			chart.update();
 			return null;
 		};
 		randomize.className = "gwt-Button";
@@ -154,7 +150,16 @@ public class AnimationCase extends BaseComposite {
 
 		HTMLButtonElement addDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addDataset.onclick = (p0) -> {
-			handleAddDataset();
+			List<Dataset> datasetsList = chart.getData().getDatasets();
+			LineDataset dataset = chart.newDataset();
+			dataset.setLabel("dataset " + (datasetsList.size() + 1));
+			IsColor color = GoogleChartColor.values()[datasetsList.size()];
+			dataset.setBackgroundColor(color.toHex());
+			dataset.setBorderColor(color.toHex());
+			dataset.setData(getRandomDigits(months));
+			dataset.setFill(false);
+			datasetsList.add(dataset);
+			chart.update();
 			return null;
 		};
 		addDataset.className = "gwt-Button";
@@ -164,7 +169,7 @@ public class AnimationCase extends BaseComposite {
 
 		HTMLButtonElement removeDataset = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		removeDataset.onclick = (p0) -> {
-			handleRemoveDataset();
+			removeDataset(chart);
 			return null;
 		};
 		removeDataset.className = "gwt-Button";
@@ -174,7 +179,7 @@ public class AnimationCase extends BaseComposite {
 
 		HTMLButtonElement addData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		addData.onclick = (p0) -> {
-			handleAddData();
+			addData(chart);
 			return null;
 		};
 		addData.className = "gwt-Button";
@@ -184,7 +189,7 @@ public class AnimationCase extends BaseComposite {
 
 		HTMLButtonElement removeData = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		removeData.onclick = (p0) -> {
-			handleRemoveData();
+			removeData(chart);
 			return null;
 		};
 		removeData.className = "gwt-Button";
@@ -208,55 +213,4 @@ public class AnimationCase extends BaseComposite {
 	public HTMLElement getElement() {
 		return mainPanel;
 	}
-
-	protected void handleRandomize() {
-		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(months));
-		}
-		chart.update();
-	}
-
-	protected void handleAddDataset() {
-		List<Dataset> datasets = chart.getData().getDatasets();
-		LineDataset dataset = chart.newDataset();
-		dataset.setLabel("dataset " + (datasets.size() + 1));
-		IsColor color = GoogleChartColor.values()[datasets.size()];
-		dataset.setBackgroundColor(color.toHex());
-		dataset.setBorderColor(color.toHex());
-		dataset.setFill(Fill.FALSE);
-		dataset.setData(getRandomDigits(months));
-		datasets.add(dataset);
-		chart.update();
-	}
-
-	protected void handleRemoveDataset() {
-		List<Dataset> datasets = chart.getData().getDatasets();
-		datasets.remove(datasets.size() - 1);
-		chart.update();
-	}
-
-	protected void handleAddData() {
-		if (months < 12) {
-			chart.getData().getLabels().add(getLabel());
-			months++;
-			List<Dataset> datasets = chart.getData().getDatasets();
-			for (Dataset dataset : datasets) {
-				dataset.getData().add(getRandomDigit());
-			}
-			chart.update();
-		}
-	}
-
-	protected void handleRemoveData() {
-		if (months > 1) {
-			months--;
-			chart.getData().setLabels(getLabels());
-			List<Dataset> datasets = chart.getData().getDatasets();
-			for (Dataset dataset : datasets) {
-				dataset.getData().remove(dataset.getData().size() - 1);
-			}
-			chart.update();
-		}
-	}
-
 }

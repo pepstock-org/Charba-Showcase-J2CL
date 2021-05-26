@@ -3,7 +3,6 @@ package org.pepstock.charba.showcase.j2cl.views;
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.AnimationCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointSizesOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsImageOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase;
@@ -77,11 +76,6 @@ public class MiscellaneousView extends AbstractView {
 
 	private enum OptionsCase implements CaseItem
 	{
-		ANIMATION("Animation events", new CaseFactory() {
-			public BaseComposite create() {
-				return new AnimationCase();
-			}
-		}),
 		STEPPED_LINE("Stepped line options on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new SteppedLineOnLineCase();

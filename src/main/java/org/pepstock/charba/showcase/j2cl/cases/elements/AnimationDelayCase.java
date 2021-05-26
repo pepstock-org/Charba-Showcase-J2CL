@@ -1,12 +1,19 @@
-package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
+package org.pepstock.charba.showcase.j2cl.cases.elements;
 
+import org.pepstock.charba.client.StackedBarChart;
+import org.pepstock.charba.client.callbacks.DatasetContext;
+import org.pepstock.charba.client.callbacks.DelayCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
+import org.pepstock.charba.client.configuration.Animation;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.enums.AxisKind;
+import org.pepstock.charba.client.data.StackedBarDataset;
+import org.pepstock.charba.client.enums.ContextType;
+import org.pepstock.charba.client.enums.DefaultTransitionKey;
+import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.impl.plugins.ColorSchemes;
+import org.pepstock.charba.client.events.AnimationCompleteEvent;
+import org.pepstock.charba.client.events.AnimationCompleteEventHandler;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -19,17 +26,15 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ControllerMyHorizontalBarCase extends BaseComposite {
-
-	private static final String[] COUNTRIES = { "br", "de", "fr", "gb", "it", "us" };
+public class AnimationDelayCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final MyHorizontalBarChart chart = new MyHorizontalBarChart();
+	private final StackedBarChart chart = new StackedBarChart();
+	
+    private boolean delayed = false;
 
-	private final CartesianCategoryAxis axis;
-
-	public ControllerMyHorizontalBarCase() {
+	public AnimationDelayCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -51,31 +56,66 @@ public class ControllerMyHorizontalBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().getLegend().setPosition(Position.RIGHT);
+		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("My horizontal bar chart by controller");
+		chart.getOptions().getTitle().setText("Delay drawing on stacked bar chart");
+		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setIntersect(false);
 
-		MyHorizontalBarDataset dataset1 = chart.newDataset();
-		dataset1.setLabel("Countries");
+		StackedBarDataset dataset1 = chart.newDataset();
+		dataset1.setLabel("dataset 1");
 
 		IsColor color1 = GoogleChartColor.values()[0];
 
 		dataset1.setBackgroundColor(color1.alpha(0.2));
 		dataset1.setBorderColor(color1.toHex());
 		dataset1.setBorderWidth(1);
-		dataset1.setData(getRandomDigits(COUNTRIES.length, false));
+		dataset1.setData(getRandomDigits(months));
 
-		axis = new CartesianCategoryAxis(chart, AxisKind.Y);
-		axis.setDisplay(true);
-		axis.getTitle().setDisplay(true);
+		StackedBarDataset dataset2 = chart.newDataset();
+		dataset2.setLabel("dataset 2");
 
-		chart.getData().setLabels(COUNTRIES);
-		chart.getData().setDatasets(dataset1);
+		IsColor color2 = GoogleChartColor.values()[1];
 
-		chart.getOptions().getScales().setAxes(axis);
+		dataset2.setBackgroundColor(color2.alpha(0.2));
+		dataset2.setBorderColor(color2.toHex());
+		dataset2.setBorderWidth(1);
+		dataset2.setData(getRandomDigits(months));
 
-		chart.getPlugins().add(ColorSchemes.get());
+		StackedBarDataset dataset3 = chart.newDataset();
+		dataset3.setLabel("dataset 3");
 
+		IsColor color3 = GoogleChartColor.values()[2];
+
+		dataset3.setBackgroundColor(color3.alpha(0.2));
+		dataset3.setBorderColor(color3.toHex());
+		dataset3.setBorderWidth(1);
+		dataset3.setData(getRandomDigits(months));
+
+		chart.getData().setLabels(getLabels());
+		chart.getData().setDatasets(dataset1, dataset2, dataset3);
+		
+		chart.addHandler(new AnimationCompleteEventHandler() {
+			
+			@Override
+			public void onComplete(AnimationCompleteEvent event) {
+				delayed = true;
+			}
+		}, AnimationCompleteEvent.TYPE);
+
+		Animation animation = chart.getOptions().getAnimation();
+		animation.setDelay(new DelayCallback() {
+			@Override
+			public Integer invoke(DatasetContext context) {
+				int delay = 0;
+				if (ContextType.DATA.equals(context.getType()) && DefaultTransitionKey.DEFAULT.equals(context.getMode()) && !delayed) {
+					delay = context.getDataIndex() * 300 + context.getDatasetIndex() * 100;
+				}
+				return delay;
+			}
+
+		});
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -120,10 +160,10 @@ public class ControllerMyHorizontalBarCase extends BaseComposite {
 	}
 
 	protected void handleRandomize() {
+		delayed = false;
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(COUNTRIES.length, false));
+			dataset.setData(getRandomDigits(months));
 		}
 		chart.update();
 	}
-
 }

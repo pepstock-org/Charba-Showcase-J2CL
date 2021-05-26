@@ -3,6 +3,10 @@ package org.pepstock.charba.showcase.j2cl.views;
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.elements.AnimationCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.AnimationDelayCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.AnimationLoopCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.AnimationProgressiveLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.ChangingLegendLabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.FilteringAxisLabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.FilteringLegendCase;
@@ -339,6 +343,52 @@ public class ElementsView extends AbstractView {
 
 	}
 	
+	// ----------------------------------------------
+	// Animation
+	// ----------------------------------------------
+
+	private enum AnimationsCase implements CaseItem
+	{
+		DELAY("Delay drawing", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnimationDelayCase();
+			}
+		}),
+		LOOP("Animation looping", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnimationLoopCase();
+			}
+		}),
+		PROGRESSIVE("Progressive line", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnimationProgressiveLineCase();
+			}
+		}),
+		EVENTS("Animation events", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnimationCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private AnimationsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+	
 	public ElementsView(HTMLElement content) {
 		super(content);
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
@@ -402,6 +452,31 @@ public class ElementsView extends AbstractView {
 				catCol.appendChild(labelPointer);
 				
 				for (CaseItem caseItem : SegmentCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = caseItem.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+			}
+
+			if (Category.TITLE.equals(cat)) {
+				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPointer.innerHTML = "Animation";
+				labelPointer.style.textAlign = "left";
+				labelPointer.className = "myCategory";
+				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPointer);
+				
+				for (CaseItem caseItem : AnimationsCase.values()) {
 					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
 					item.style.textAlign = "left";
 					item.className = "myCategoryItem";
