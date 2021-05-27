@@ -111,7 +111,7 @@ public class ZoomDragLineareAxisCase extends BaseComposite {
 		options.getPan().setModifierKey(ModifierKey.ALT);
 		options.getZoom().setMode(InteractionAxis.XY);
 		options.getZoom().getWheel().setEnabled(true);
-		options.getZoom().getDrag().setEnabled(true);;
+		options.getZoom().getDrag().setEnabled(true);
 		options.getZoom().getDrag().setBackgroundColor(HtmlColor.LIGHT_GREEN.alpha(0.2));
 		options.getZoom().getDrag().setBorderColor(HtmlColor.LIGHT_GREEN.alpha(0.6));
 		options.getZoom().getDrag().setBorderWidth(1);
