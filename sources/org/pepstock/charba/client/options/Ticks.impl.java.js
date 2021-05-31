@@ -95,6 +95,14 @@ class Ticks extends AbstractModel {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_AUTO_SKIP_PADDING__org_pepstock_charba_client_options_Ticks_Property, /**@type {IsDefaultTicks}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTicks)).m_getAutoSkipPadding__());
  }
  
+ m_setIncludeBounds__boolean(/** boolean */ includeBounds) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__boolean(Property.f_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property, includeBounds);
+ }
+ /** @override @return {boolean} */
+ m_isIncludeBounds__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property, /**@type {IsDefaultTicks}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTicks)).m_isIncludeBounds__());
+ }
+ 
  m_setLabelOffset__int(/** number */ labelOffset) {
   this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__int(Property.f_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property, labelOffset);
  }

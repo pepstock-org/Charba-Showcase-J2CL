@@ -6,7 +6,6 @@ goog.require('java.lang.String');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.IsChart');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');
 goog.require('org.pepstock.charba.client.commons.JsHelper');
 goog.require('org.pepstock.charba.client.dom.BaseEventTypes');

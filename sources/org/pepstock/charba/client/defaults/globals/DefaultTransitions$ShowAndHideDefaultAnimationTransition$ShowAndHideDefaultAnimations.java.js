@@ -8,8 +8,8 @@ goog.require('org.pepstock.charba.client.defaults.globals.DefaultTransitions.Sho
 goog.require('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ShowAndHideDefaultAnimationTransition.ShowAndHideDefaultVisibleAnimationCollection');
 goog.require('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey');
 goog.require('org.pepstock.charba.client.enums.DefaultTransitionKey');
-goog.require('org.pepstock.charba.client.options.IsAnimationCollectionKey');
-goog.require('org.pepstock.charba.client.options.IsTransitionKey');
+goog.require('org.pepstock.charba.client.options.AnimationCollectionKey');
+goog.require('org.pepstock.charba.client.options.TransitionKey');
 goog.require('vmbootstrap.Objects');
 
 const ShowAndHideDefaultAnimations = goog.require('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ShowAndHideDefaultAnimationTransition.ShowAndHideDefaultAnimations$impl');

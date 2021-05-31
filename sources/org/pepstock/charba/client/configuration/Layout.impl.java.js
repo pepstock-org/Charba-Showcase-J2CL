@@ -22,7 +22,7 @@ class Layout extends ConfigurationOptionsContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Layout_;
   /**@type {PaddingCallback<ChartContext>}*/
   this.f_paddingCallback__org_pepstock_charba_client_configuration_Layout_;
@@ -43,7 +43,7 @@ class Layout extends ConfigurationOptionsContainer {
   this.f_padding__org_pepstock_charba_client_configuration_Layout_ = Padding.$create__org_pepstock_charba_client_options_IsScriptablePaddingProvider__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(this, IsProvider.$adapt(() =>{
    return this.m_getConfiguration__().m_getLayout__().m_getPadding__();
   }));
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Layout_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Layout_.callback = (/** ? */ context) =>{
    return ScriptableUtils.m_getOptionValueAsPadding__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultPadding(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getPaddingCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getLayout__().m_getPadding__()).m_nativeObject__();
   };
  }
@@ -60,9 +60,14 @@ class Layout extends ConfigurationOptionsContainer {
   this.f_paddingCallback__org_pepstock_charba_client_configuration_Layout_ = paddingCallback;
   this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getLayout__(), Property.f_PADDING__org_pepstock_charba_client_configuration_Layout_Property, paddingCallback, this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Layout_);
  }
+ /** @override */
+ m_setPadding__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ paddingCallback) {
+  this.m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(/**@type {PaddingCallback<ChartContext>}*/ (null));
+  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getLayout__(), Property.f_PADDING__org_pepstock_charba_client_configuration_Layout_Property, paddingCallback);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_Layout() {
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Layout_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Layout_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_paddingCallback__org_pepstock_charba_client_configuration_Layout_ = null;
  }
  

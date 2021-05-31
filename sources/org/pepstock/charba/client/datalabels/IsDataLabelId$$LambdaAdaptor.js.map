@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDataLabelId$$LambdaAdaptor.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,S;EAAAC,yC;EAAAA,gH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["IsDataLabelId.java"],
-"names":["org.pepstock.charba.client.datalabels.IsDataLabelId$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.datalabels.IsDataLabelId$$LambdaAdaptor.<init>","org.pepstock.charba.client.datalabels.IsDataLabelId$$LambdaAdaptor.value","org.pepstock.charba.client.datalabels.IsDataLabelId$$LambdaAdaptor.<clinit>"]
-}
-

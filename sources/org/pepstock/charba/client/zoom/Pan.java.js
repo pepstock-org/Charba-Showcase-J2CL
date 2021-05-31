@@ -2,6 +2,7 @@ goog.module('org.pepstock.charba.client.zoom.Pan');
 
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.commons.CallbackPropertyHandler');
+goog.require('org.pepstock.charba.client.commons.Checker');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.enums.ModifierKey');
 goog.require('org.pepstock.charba.client.zoom.AbstractConfigurationItem');

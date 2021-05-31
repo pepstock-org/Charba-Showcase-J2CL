@@ -53,7 +53,7 @@ let IndexAxis = goog.forwardDeclare('org.pepstock.charba.client.enums.IndexAxis$
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let BarDatasetOptionsHandler = goog.forwardDeclare('org.pepstock.charba.client.options.BarDatasetOptionsHandler$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
@@ -67,17 +67,17 @@ class BarDataset extends HovingFlexDataset {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_borderSkippedCallbackProxy__org_pepstock_charba_client_data_BarDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_data_BarDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BarDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_baseCallbackProxy__org_pepstock_charba_client_data_BarDataset_;
   /**@type {BorderSkippedCallback}*/
   this.f_borderSkippedCallback__org_pepstock_charba_client_data_BarDataset_;
@@ -179,22 +179,22 @@ class BarDataset extends HovingFlexDataset {
   this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_ = BorderItemsHandler.$create__org_pepstock_charba_client_commons_NativeObject(this.m_getNativeObject__());
   this.f_orderHandler__org_pepstock_charba_client_data_BarDataset_ = OrderHandler.$create__org_pepstock_charba_client_commons_NativeObject(this.m_getNativeObject__());
   this.f_barOptionsHandler__org_pepstock_charba_client_data_BarDataset_ = BarDatasetOptionsHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_data_DataEnvelop(this, this.m_getTypedDataset__(), /**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object__boolean(this.m_getNativeObject__(), true)));
-  this.f_borderSkippedCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_borderSkippedCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** ? */ context) =>{
    return this.m_onBorderSkipped__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_BarDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context));
   };
-  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** ? */ context_1) =>{
    return this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_onBorderItem__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_NativeObjectContainerFactory__int_$pp_org_pepstock_charba_client_data(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_1), this.m_getBorderRadiusCallback__(), BarBorderRadius.f_FACTORY__org_pepstock_charba_client_data_BarBorderRadius, this.m_getDefaultValues__().m_getElements__().m_getBar__().m_getBorderRadius__());
   };
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** ? */ context_2) =>{
    return this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_onBorderItem__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_NativeObjectContainerFactory__int_$pp_org_pepstock_charba_client_data(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_2), this.m_getBorderWidthCallback__(), BarBorderWidth.f_FACTORY__org_pepstock_charba_client_data_BarBorderWidth, this.m_getDefaultBorderWidth__());
   };
-  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** ? */ context_3) =>{
    return this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_onBorderItem__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_NativeObjectContainerFactory__int_$pp_org_pepstock_charba_client_data(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_3), this.m_getHoverBorderWidthCallback__(), BarBorderWidth.f_FACTORY__org_pepstock_charba_client_data_BarBorderWidth, this.m_getDefaultBorderWidth__());
   };
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** Object */ contextFunction_4, /** ? */ context_4) =>{
+  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** ? */ context_4) =>{
    return this.m_onPointStyle__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_BarDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_4));
   };
-  this.f_baseCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** Object */ contextFunction_5, /** ? */ context_5) =>{
+  this.f_baseCallbackProxy__org_pepstock_charba_client_data_BarDataset_.callback = (/** ? */ context_5) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_5), this.m_getBaseCallback__(), Undefined.f_DOUBLE__org_pepstock_charba_client_items_Undefined), Double)));
   };
  }
@@ -249,29 +249,29 @@ class BarDataset extends HovingFlexDataset {
  }
  
  m_setXAxisID__java_lang_String(/** ?string */ xAxisID) {
-  IsScaleId.m_checkIfValid__java_lang_String(xAxisID);
+  ScaleId.m_checkIfValid__java_lang_String(xAxisID);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, xAxisID);
  }
  
- m_setXAxisID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ xAxisID) {
+ m_setXAxisID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ xAxisID) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, xAxisID);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getXAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  
  m_setYAxisID__java_lang_String(/** ?string */ yAxisID) {
-  IsScaleId.m_checkIfValid__java_lang_String(yAxisID);
+  ScaleId.m_checkIfValid__java_lang_String(yAxisID);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, yAxisID);
  }
  
- m_setYAxisID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ yAxisID) {
+ m_setYAxisID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ yAxisID) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, yAxisID);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getYAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_BarDataset_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  
  m_setIndexAxis__org_pepstock_charba_client_enums_IndexAxis(/** IndexAxis */ indexAxis) {
@@ -522,6 +522,11 @@ class BarDataset extends HovingFlexDataset {
   this.f_borderWidthCallback__org_pepstock_charba_client_data_BarDataset_ = borderWidthCallback;
   this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy_$pp_org_pepstock_charba_client_data(CommonProperty.f_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, Property.f_CHARBA_BORDER_WIDTH_TYPE__org_pepstock_charba_client_data_BarDataset_Property, borderWidthCallback, this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_.proxy);
  }
+ 
+ m_setBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderWidthCallback) {
+  this.m_setBorderWidth__org_pepstock_charba_client_callbacks_BarBorderWidthCallback(/**@type {BarBorderWidthCallback}*/ (null));
+  this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(CommonProperty.f_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, Property.f_CHARBA_BORDER_WIDTH_TYPE__org_pepstock_charba_client_data_BarDataset_Property, borderWidthCallback);
+ }
  /** @return {BarBorderWidthCallback} */
  m_getHoverBorderWidthCallback__() {
   return this.f_hoverBorderWidthCallback__org_pepstock_charba_client_data_BarDataset_;
@@ -530,6 +535,11 @@ class BarDataset extends HovingFlexDataset {
  m_setHoverBorderWidth__org_pepstock_charba_client_callbacks_BarBorderWidthCallback(/** BarBorderWidthCallback */ hoverBorderWidthCallback) {
   this.f_hoverBorderWidthCallback__org_pepstock_charba_client_data_BarDataset_ = hoverBorderWidthCallback;
   this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy_$pp_org_pepstock_charba_client_data(CommonProperty.f_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, Property.f_CHARBA_HOVER_BORDER_WIDTH_TYPE__org_pepstock_charba_client_data_BarDataset_Property, hoverBorderWidthCallback, this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_.proxy);
+ }
+ 
+ m_setHoverBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ hoverBorderWidthCallback) {
+  this.m_setHoverBorderWidth__org_pepstock_charba_client_callbacks_BarBorderWidthCallback(/**@type {BarBorderWidthCallback}*/ (null));
+  this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(CommonProperty.f_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, Property.f_CHARBA_HOVER_BORDER_WIDTH_TYPE__org_pepstock_charba_client_data_BarDataset_Property, hoverBorderWidthCallback);
  }
  /** @return {BorderSkippedCallback} */
  m_getBorderSkippedCallback__() {
@@ -540,6 +550,11 @@ class BarDataset extends HovingFlexDataset {
   this.f_borderSkippedCallback__org_pepstock_charba_client_data_BarDataset_ = borderSkippedCallback;
   this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy_$pp_org_pepstock_charba_client_data(Property.f_BORDER_SKIPPED__org_pepstock_charba_client_data_BarDataset_Property, borderSkippedCallback, this.f_borderSkippedCallbackProxy__org_pepstock_charba_client_data_BarDataset_.proxy);
  }
+ 
+ m_setBorderSkipped__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderSkippedCallback) {
+  this.m_setBorderSkipped__org_pepstock_charba_client_callbacks_BorderSkippedCallback(/**@type {BorderSkippedCallback}*/ (null));
+  this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(Property.f_BORDER_SKIPPED__org_pepstock_charba_client_data_BarDataset_Property, borderSkippedCallback);
+ }
  /** @return {BorderRadiusCallback} */
  m_getBorderRadiusCallback__() {
   return this.f_borderRadiusCallback__org_pepstock_charba_client_data_BarDataset_;
@@ -548,6 +563,11 @@ class BarDataset extends HovingFlexDataset {
  m_setBorderRadius__org_pepstock_charba_client_callbacks_BorderRadiusCallback(/** BorderRadiusCallback */ borderRadiusCallback) {
   this.f_borderRadiusCallback__org_pepstock_charba_client_data_BarDataset_ = borderRadiusCallback;
   this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy_$pp_org_pepstock_charba_client_data(Property.f_BORDER_RADIUS__org_pepstock_charba_client_data_BarDataset_Property, Property.f_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_BarDataset_Property, borderRadiusCallback, this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_data_BarDataset_.proxy);
+ }
+ 
+ m_setBorderRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderRadiusCallback) {
+  this.m_setBorderRadius__org_pepstock_charba_client_callbacks_BorderRadiusCallback(/**@type {BorderRadiusCallback}*/ (null));
+  this.f_borderItemsHandler__org_pepstock_charba_client_data_BarDataset_.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(Property.f_BORDER_RADIUS__org_pepstock_charba_client_data_BarDataset_Property, Property.f_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_BarDataset_Property, borderRadiusCallback);
  }
  /** @return {PointStyleCallback} */
  m_getPointStyleCallback__() {
@@ -562,6 +582,11 @@ class BarDataset extends HovingFlexDataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_STYLE__org_pepstock_charba_client_data_BarDataset_Property);
   }
  }
+ 
+ m_setPointStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointStyleCallback) {
+  this.m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/**@type {PointStyleCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_STYLE__org_pepstock_charba_client_data_BarDataset_Property, pointStyleCallback);
+ }
  /** @return {BaseCallback} */
  m_getBaseCallback__() {
   return this.f_baseCallback__org_pepstock_charba_client_data_BarDataset_;
@@ -574,6 +599,11 @@ class BarDataset extends HovingFlexDataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_BASE__org_pepstock_charba_client_data_BarDataset_Property);
   }
+ }
+ 
+ m_setBase__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ baseCallback) {
+  this.m_setBase__org_pepstock_charba_client_callbacks_BaseCallback(/**@type {BaseCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BASE__org_pepstock_charba_client_data_BarDataset_Property, baseCallback);
  }
  /** @return {*} */
  m_onBorderSkipped__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_BarDataset(/** DatasetContext */ context) {
@@ -688,12 +718,12 @@ class BarDataset extends HovingFlexDataset {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_BarDataset() {
-  this.f_borderSkippedCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_baseCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderSkippedCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_baseCallbackProxy__org_pepstock_charba_client_data_BarDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_borderSkippedCallback__org_pepstock_charba_client_data_BarDataset_ = null;
   this.f_borderRadiusCallback__org_pepstock_charba_client_data_BarDataset_ = null;
   this.f_hoverBorderWidthCallback__org_pepstock_charba_client_data_BarDataset_ = null;
@@ -758,7 +788,7 @@ class BarDataset extends HovingFlexDataset {
   PointStyle = goog.module.get('org.pepstock.charba.client.enums.PointStyle$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   BarDatasetOptionsHandler = goog.module.get('org.pepstock.charba.client.options.BarDatasetOptionsHandler$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');

@@ -2,7 +2,7 @@
 "version":3,
 "file":"Grid$Property.impl.java.js",
 "lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MA4Dc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,gEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,yIAAAA;G;EAAAA,iI;;;QAAA,U;EAAAC,mB;EAAAA,6U;;;QAEZ,qF;EAAAC,8H;;;QACA,wE;EAAAA,iH;;;QACA,wE;EAAAA,iH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,wU;EACAA,sR;EACAA,sR;EAJYA,4F;;;;;;;;;;;;;AAAA;iG;AAAA;oF;AAAA;oF;AAAA;qF;AAEZ;sG;AACA;yF;AACA;;",
+"mappings":"A;;;;;;;;;;;;;;MA6Dc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,gEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,yIAAAA;G;EAAAA,iI;;;QAAA,U;EAAAC,mB;EAAAA,6U;;;QAEZ,qF;EAAAC,8H;;;QACA,wE;EAAAA,iH;;;QACA,wE;EAAAA,iH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,wU;EACAA,sR;EACAA,sR;EAJYA,4F;;;;;;;;;;;;;AAAA;iG;AAAA;oF;AAAA;oF;AAAA;qF;AAEZ;sG;AACA;yF;AACA;;",
 "sources":["Grid.java"],
 "names":["org.pepstock.charba.client.configuration.Grid$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.Grid$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Grid$Property.<init>","org.pepstock.charba.client.configuration.Grid$Property.value","org.pepstock.charba.client.configuration.Grid$Property.valueOf","org.pepstock.charba.client.configuration.Grid$Property.values","org.pepstock.charba.client.configuration.Grid$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.Grid$Property.<clinit>"]
 }

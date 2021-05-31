@@ -8,7 +8,7 @@ let List = goog.forwardDeclare('java.util.List$impl');
 let DatasetsItemsSelectorOptions = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions$impl');
 let $LambdaAdaptor = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions.$LambdaAdaptor$impl');
 let IsDatasetsItemsSelectorDefaultSelectionCleaner = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultSelectionCleaner$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
  * @interface
@@ -18,7 +18,7 @@ class IsDatasetsItemsSelectorDefaultOptions {
  m_getSelectionCleaner__() {}
  /** @abstract @return {boolean} */
  m_isEnabled__() {}
- /** @abstract @return {IsScaleId} */
+ /** @abstract @return {ScaleId} */
  m_getXAxisID__() {}
  /** @abstract @return {?string} */
  m_getColorAsString__() {}
@@ -40,7 +40,7 @@ class IsDatasetsItemsSelectorDefaultOptions {
   IsDatasetsItemsSelectorDefaultOptions.$clinit();
   return DatasetsItemsSelectorOptions.f_DEFAULT_ENABLED__org_pepstock_charba_client_impl_plugins_DatasetsItemsSelectorOptions;
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getXAxisID__$default__org_pepstock_charba_client_impl_plugins_IsDatasetsItemsSelectorDefaultOptions(/** !IsDatasetsItemsSelectorDefaultOptions */ $thisArg) {
   IsDatasetsItemsSelectorDefaultOptions.$clinit();
   return DatasetsItemsSelectorOptions.f_DEFAULT_AXIS_ID__org_pepstock_charba_client_impl_plugins_DatasetsItemsSelectorOptions;

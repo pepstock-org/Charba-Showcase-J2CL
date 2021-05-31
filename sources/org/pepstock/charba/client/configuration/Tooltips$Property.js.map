@@ -2,7 +2,7 @@
 "version":3,
 "file":"Tooltips$Property.impl.java.js",
 "lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAmJc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,oEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,qU;;;QAEZ,0E;EAAAC,mH;;;QACA,2E;EAAAA,oH;;;QACA,wE;EAAAA,iH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,uR;EACAA,0R;EACAA,+Q;EAJYA,gG;;;;;;;;;;;;;AAAA;sF;AAAA;uF;AAAA;oF;AAAA;yF;AAEZ;2F;AACA;4F;AACA;;",
+"mappings":"A;;;;;;;;;;;;;;MA+Ic,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,oEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,qU;;;QAEZ,0E;EAAAC,mH;;;QACA,2E;EAAAA,oH;;;QACA,wE;EAAAA,iH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,uR;EACAA,0R;EACAA,+Q;EAJYA,gG;;;;;;;;;;;;;AAAA;sF;AAAA;uF;AAAA;oF;AAAA;yF;AAEZ;2F;AACA;4F;AACA;;",
 "sources":["Tooltips.java"],
 "names":["org.pepstock.charba.client.configuration.Tooltips$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.Tooltips$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Tooltips$Property.<init>","org.pepstock.charba.client.configuration.Tooltips$Property.value","org.pepstock.charba.client.configuration.Tooltips$Property.valueOf","org.pepstock.charba.client.configuration.Tooltips$Property.values","org.pepstock.charba.client.configuration.Tooltips$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.Tooltips$Property.<clinit>"]
 }

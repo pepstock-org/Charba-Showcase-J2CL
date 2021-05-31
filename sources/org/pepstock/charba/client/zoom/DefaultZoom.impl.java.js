@@ -5,10 +5,13 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultZoom = goog.require('org.pepstock.charba.client.zoom.IsDefaultZoom$impl');
 
 let InteractionAxis = goog.forwardDeclare('org.pepstock.charba.client.enums.InteractionAxis$impl');
-let ModifierKey = goog.forwardDeclare('org.pepstock.charba.client.enums.ModifierKey$impl');
 let DefaultDrag = goog.forwardDeclare('org.pepstock.charba.client.zoom.DefaultDrag$impl');
+let DefaultPinch = goog.forwardDeclare('org.pepstock.charba.client.zoom.DefaultPinch$impl');
+let DefaultWheel = goog.forwardDeclare('org.pepstock.charba.client.zoom.DefaultWheel$impl');
 let IsDefaultConfigurationItem = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultConfigurationItem$impl');
 let IsDefaultDrag = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultDrag$impl');
+let IsDefaultPinch = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultPinch$impl');
+let IsDefaultWheel = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultWheel$impl');
 let CompletedCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.CompletedCallback$impl');
 let ModeCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.ModeCallback$impl');
 let ProgressCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.ProgressCallback$impl');
@@ -37,6 +40,14 @@ class DefaultZoom extends j_l_Object {
  /** @override @return {IsDefaultDrag} */
  m_getDrag__() {
   return DefaultDrag.f_INSTANCE__org_pepstock_charba_client_zoom_DefaultDrag;
+ }
+ /** @override @return {IsDefaultWheel} */
+ m_getWheel__() {
+  return DefaultWheel.f_INSTANCE__org_pepstock_charba_client_zoom_DefaultWheel;
+ }
+ /** @override @return {IsDefaultPinch} */
+ m_getPinch__() {
+  return DefaultPinch.f_INSTANCE__org_pepstock_charba_client_zoom_DefaultPinch;
  }
  //Default method forwarding stub.
  /** @override @return {CompletedCallback} */
@@ -78,37 +89,12 @@ class DefaultZoom extends j_l_Object {
  m_getStartCallback__() {
   return IsDefaultConfigurationItem.m_getStartCallback__$default__org_pepstock_charba_client_zoom_IsDefaultConfigurationItem(this);
  }
- //Default method forwarding stub.
- /** @override @return {number} */
- m_getThreshold__() {
-  return IsDefaultZoom.m_getThreshold__$default__org_pepstock_charba_client_zoom_IsDefaultZoom(this);
- }
- //Default method forwarding stub.
- /** @override @return {boolean} */
- m_isEnabled__() {
-  return IsDefaultConfigurationItem.m_isEnabled__$default__org_pepstock_charba_client_zoom_IsDefaultConfigurationItem(this);
- }
- //Default method forwarding stub.
- /** @override @return {number} */
- m_getSpeed__() {
-  return IsDefaultZoom.m_getSpeed__$default__org_pepstock_charba_client_zoom_IsDefaultZoom(this);
- }
- //Default method forwarding stub.
- /** @override @return {ModifierKey} */
- m_getWheelModifierKey__() {
-  return IsDefaultZoom.m_getWheelModifierKey__$default__org_pepstock_charba_client_zoom_IsDefaultZoom(this);
- }
- //Default method forwarding stub.
- /** @override @return {boolean} */
- m_isDrag__() {
-  return IsDefaultZoom.m_isDrag__$default__org_pepstock_charba_client_zoom_IsDefaultZoom(this);
- }
  
  static $clinit() {
   DefaultZoom.$clinit = () =>{};
   DefaultZoom.$loadModules();
   j_l_Object.$clinit();
-  IsDefaultZoom.$clinit();
+  IsDefaultConfigurationItem.$clinit();
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -117,6 +103,8 @@ class DefaultZoom extends j_l_Object {
  
  static $loadModules() {
   DefaultDrag = goog.module.get('org.pepstock.charba.client.zoom.DefaultDrag$impl');
+  DefaultPinch = goog.module.get('org.pepstock.charba.client.zoom.DefaultPinch$impl');
+  DefaultWheel = goog.module.get('org.pepstock.charba.client.zoom.DefaultWheel$impl');
   IsDefaultConfigurationItem = goog.module.get('org.pepstock.charba.client.zoom.IsDefaultConfigurationItem$impl');
  }
 }

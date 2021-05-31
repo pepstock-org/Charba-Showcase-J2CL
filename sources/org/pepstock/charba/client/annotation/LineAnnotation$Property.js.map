@@ -2,7 +2,7 @@
 "version":3,
 "file":"LineAnnotation$Property.impl.java.js",
 "lineCount":107,
-"mappings":"A;;;;;;;;;;;;;;MAgDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,uEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gJ;EAAAA,iB;;;CAAA,6G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;;;CASa,S;EACbC,oF;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,oa;;;QAEZ,0E;EAAAC,mH;;;QACA,8E;EAAAA,uH;;;QACA,6E;EAAAA,sH;;;QACA,0E;EAAAA,mH;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iR;EACAA,gS;EACAA,4R;EACAA,iR;EALYA,mG;;;;;;;;;;;;;AAAA;sF;AAAA;0F;AAAA;yF;AAAA;sF;AAAA;4F;AAEZ;2F;AACA;+F;AACA;8F;AACA;;",
+"mappings":"A;;;;;;;;;;;;;;MAiDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,uEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gJ;EAAAA,iB;;;CAAA,6G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;;;CASa,S;EACbC,oF;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,oa;;;QAEZ,0E;EAAAC,mH;;;QACA,8E;EAAAA,uH;;;QACA,6E;EAAAA,sH;;;QACA,0E;EAAAA,mH;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iR;EACAA,gS;EACAA,4R;EACAA,iR;EALYA,mG;;;;;;;;;;;;;AAAA;sF;AAAA;0F;AAAA;yF;AAAA;sF;AAAA;4F;AAEZ;2F;AACA;+F;AACA;8F;AACA;;",
 "sources":["LineAnnotation.java"],
 "names":["org.pepstock.charba.client.annotation.LineAnnotation$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.LineAnnotation$Property.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.LineAnnotation$Property.<init>","org.pepstock.charba.client.annotation.LineAnnotation$Property.value","org.pepstock.charba.client.annotation.LineAnnotation$Property.valueOf","org.pepstock.charba.client.annotation.LineAnnotation$Property.values","org.pepstock.charba.client.annotation.LineAnnotation$Property.<synthetic: getter>","org.pepstock.charba.client.annotation.LineAnnotation$Property.<clinit>"]
 }

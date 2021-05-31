@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"Envelop.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;MAwBsB,O;;CAAA,W;EAAAA,Q;;;;CAKX,mD;EACTC,+E;;;;CAQS,0D,gBAAgBC,Q;EACzBD,kG;;;;CAQS,mE,UAAUE,O;EACnBF,kG;;;;CASS,4E,UAAUE,O,iBAAiBD,Q;EACpCD,8G;;;CAQiB,8B,UAAaE,O;EAC9BC,+F;;;QA3CoB,O;EAAAC,0B;EAAAA,uB;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;MAwBiB,O;;QAQD,qD,gBAAgBA,O;EAAhBC,kB;EACdA,iG;;;QASW,0D,gBAAqBD,O;EAArBE,kB;EACXA;GACCA,gHADDA;G;;;QAa4B,gE,UAAqBF,O;EAArBG,kB;EAE5BA,4E;EAGAA,e;;;CAQO,c;;CAOA,c;;QApDQ,O;EAAAC,0B;EAAAA;",
 "sources":["Envelop.java"],
-"names":["org.pepstock.charba.client.commons.Envelop.<synthetic: ctor_js>","org.pepstock.charba.client.commons.Envelop.<init>","nullable","content","org.pepstock.charba.client.commons.Envelop.setContent","org.pepstock.charba.client.commons.Envelop.<clinit>"]
+"names":["envelop","org.pepstock.charba.client.commons.Envelop.isValid","org.pepstock.charba.client.commons.Envelop.checkIfValid","org.pepstock.charba.client.commons.Envelop.checkAndGetIfValid","org.pepstock.charba.client.commons.Envelop.<clinit>"]
 }
 

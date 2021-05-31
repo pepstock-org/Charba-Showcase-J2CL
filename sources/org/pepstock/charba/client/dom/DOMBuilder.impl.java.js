@@ -48,8 +48,15 @@ class DOMBuilder extends j_l_Object {
   return DOMBuilder.f_INSTANCE__org_pepstock_charba_client_dom_DOMBuilder_;
  }
  /** @return {?string} */
- m_createUniqueId__() {
+ m_createUniqueChartId__() {
   return j_l_String.m_valueOf__java_lang_Object(DOMBuilder.f_CHART_PREFIX_ID__org_pepstock_charba_client_dom_DOMBuilder_) + this.f_counter__org_pepstock_charba_client_dom_DOMBuilder_.m_getAndIncrement__();
+ }
+ /** @return {boolean} */
+ m_isUniqueChartId__java_lang_String(/** ?string */ id) {
+  if (!$Equality.$same(id, null)) {
+   return j_l_String.m_startsWith__java_lang_String__java_lang_String(id, DOMBuilder.f_CHART_PREFIX_ID__org_pepstock_charba_client_dom_DOMBuilder_);
+  }
+  return false;
  }
  /** @return {boolean} */
  m_isCanvasSupported__() {

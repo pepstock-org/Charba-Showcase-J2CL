@@ -2,14 +2,14 @@ goog.module('org.pepstock.charba.client.commons.ImmutableEnvelop$impl');
 
 const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
-const IsEnvelop = goog.require('org.pepstock.charba.client.commons.IsEnvelop$impl');
+const Envelop = goog.require('org.pepstock.charba.client.commons.Envelop$impl');
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 
 /**
  * @abstract
  * @template T
- * @implements {IsEnvelop}
+ * @implements {Envelop}
  */
 class ImmutableEnvelop extends j_l_Object {
  /** @protected */
@@ -68,7 +68,7 @@ class ImmutableEnvelop extends j_l_Object {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
  }
 }
-IsEnvelop.$markImplementor(ImmutableEnvelop);
+Envelop.$markImplementor(ImmutableEnvelop);
 $Util.$setClassMetadata(ImmutableEnvelop, "org.pepstock.charba.client.commons.ImmutableEnvelop");
 
 exports = ImmutableEnvelop;

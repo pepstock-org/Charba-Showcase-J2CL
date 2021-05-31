@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnimationCollectionKey.impl.java.js",
+"lineCount":81,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MA6BiB,sB;;QASc,0E,gBAAcA,U,uBAA0BC,I;EAAxCC,iC;EAE7BA;GAAAA,IAAmCC,aAAnCD,kBAAAA;;IAECA;KAECA,qBAFDA;KAFDA;;G;EASAA,+H;;;QAU6B,2F,gBAAcF,U,qCAAoCI,U;EAAlDF,iC;EAE7BA,0G;EAEAA,uI;EAEAA,IAAuBG,MAAvBH,Q;EAEAA;GAAAA,IAA0BI,QAA1BJ,kBAAAA;;IAECA,uGAFDA;IAICA;KAECA,4IAFDA;WAGOA;KAENA,wIAFMA;KAPRA;IAYCA,sCAZDA;;G;EAcAA,c;;;QASc,oE,+BAA+BF,U;EAA/BO,iC;EACdA,yJ;;;QASW,yE,+BAAoCP,U;EAApCQ,iC;EACXA;GAGCA,IAAOC,gBAAPD,6NAHDA;GAKCA,6FALDA;G;;;QAgB6B,+E,+BAA0CR,U;EAA1CU,iC;EAE7BA,6G;EAGAA,kB;;;CAQ0B,c;;QArGX,O;EAAAC,yC;EAAAA;",
+"sources":["AnimationCollectionKey.java"],
+"names":["collection","type","org.pepstock.charba.client.options.AnimationCollectionKey.create","defCollection","properties","result","property","org.pepstock.charba.client.options.AnimationCollectionKey.isValid","org.pepstock.charba.client.options.AnimationCollectionKey.checkIfValid","exceptionMessage","org.pepstock.charba.client.options.AnimationCollectionKey.checkAndGetIfValid","org.pepstock.charba.client.options.AnimationCollectionKey.<clinit>"]
+}
+

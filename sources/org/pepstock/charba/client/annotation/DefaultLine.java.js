@@ -25,7 +25,7 @@ goog.require('org.pepstock.charba.client.callbacks.BorderDashOffsetCallback');
 goog.require('org.pepstock.charba.client.callbacks.ColorCallback');
 goog.require('org.pepstock.charba.client.callbacks.DisplayCallback');
 goog.require('org.pepstock.charba.client.callbacks.WidthCallback');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 
 const DefaultLine = goog.require('org.pepstock.charba.client.annotation.DefaultLine$impl');
 exports = DefaultLine;

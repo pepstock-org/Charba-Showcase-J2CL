@@ -7,7 +7,7 @@ let HashMap = goog.forwardDeclare('java.util.HashMap$impl');
 let Map = goog.forwardDeclare('java.util.Map$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let AbstractAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let DrawTime = goog.forwardDeclare('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -44,12 +44,12 @@ class AnnotationCachedMap extends AnnotationMap {
   }
  }
  /** @override @return {boolean} */
- m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(/** IsAnnotationId */ id) {
-  return super.m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(id) && this.f_annotationsCache__org_pepstock_charba_client_annotation_AnnotationCachedMap_.containsKey(id.m_value__());
+ m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(/** AnnotationId */ id) {
+  return super.m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(id) && this.f_annotationsCache__org_pepstock_charba_client_annotation_AnnotationCachedMap_.containsKey(id.m_value__());
  }
  /** @override */
- m_removeAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(/** IsAnnotationId */ id) {
-  super.m_removeAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(id);
+ m_removeAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(/** AnnotationId */ id) {
+  super.m_removeAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(id);
   this.f_annotationsCache__org_pepstock_charba_client_annotation_AnnotationCachedMap_.remove(id.m_value__());
  }
  /** @override */

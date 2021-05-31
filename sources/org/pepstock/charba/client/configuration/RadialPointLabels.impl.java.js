@@ -31,15 +31,15 @@ class RadialPointLabels extends AxisContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?string, number):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?string, number):?string>}*/
   this.f_pointLabelCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_backdropColorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_;
   /**@type {PointLabelCallback}*/
   this.f_callback__org_pepstock_charba_client_configuration_RadialPointLabels_;
@@ -73,24 +73,24 @@ class RadialPointLabels extends AxisContainer {
   this.f_font__org_pepstock_charba_client_configuration_RadialPointLabels_ = Font.$create__org_pepstock_charba_client_options_IsScriptableFontProvider__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(this, IsProvider.$adapt(() =>{
    return /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__().m_getFont__();
   }));
-  this.f_pointLabelCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** Object */ context, /** ?string */ item, /** number */ index) =>{
+  this.f_pointLabelCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** ?string */ item, /** number */ index) =>{
    let callback = this.m_getCallback__();
    if (!$Equality.$same(callback, null)) {
     return callback.m_onCallback__org_pepstock_charba_client_configuration_Axis__java_lang_String__int(this.m_getAxis__(), item, index);
    }
    return item;
   };
-  this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** Object */ contextFunction, /** ? */ context_1) =>{
-   return ScriptableUtils.m_getOptionValueAsFont__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultFont(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_1), this.m_getFontCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getFont__()).m_nativeObject__();
+  this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** ? */ context) =>{
+   return ScriptableUtils.m_getOptionValueAsFont__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultFont(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getFontCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getFont__()).m_nativeObject__();
   };
-  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** Object */ contextFunction_1, /** ? */ context_2) =>{
-   return this.m_onColor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_callbacks_ColorCallback__java_lang_String_$p_org_pepstock_charba_client_configuration_RadialPointLabels(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_2), this.m_getColorCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getColorAsString__());
+  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** ? */ context_1) =>{
+   return this.m_onColor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_callbacks_ColorCallback__java_lang_String_$p_org_pepstock_charba_client_configuration_RadialPointLabels(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_1), this.m_getColorCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getColorAsString__());
   };
-  this.f_backdropColorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** Object */ contextFunction_2, /** ? */ context_3) =>{
-   return this.m_onColor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_callbacks_ColorCallback__java_lang_String_$p_org_pepstock_charba_client_configuration_RadialPointLabels(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_3), this.m_getBackdropColorCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getBackdropColorAsString__());
+  this.f_backdropColorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** ? */ context_2) =>{
+   return this.m_onColor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_callbacks_ColorCallback__java_lang_String_$p_org_pepstock_charba_client_configuration_RadialPointLabels(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_2), this.m_getBackdropColorCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getBackdropColorAsString__());
   };
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** Object */ contextFunction_3, /** ? */ context_4) =>{
-   return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_4), this.m_getPaddingCallback__(), Integer.m_valueOf__int(this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getPadding__())), Integer)).m_intValue__();
+  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_.callback = (/** ? */ context_3) =>{
+   return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_3), this.m_getPaddingCallback__(), Integer.m_valueOf__int(this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getPointLabels__().m_getPadding__())), Integer)).m_intValue__();
   };
  }
  /** @return {Padding} */
@@ -167,6 +167,11 @@ class RadialPointLabels extends AxisContainer {
   this.f_fontCallback__org_pepstock_charba_client_configuration_RadialPointLabels_ = fontCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_FONT__org_pepstock_charba_client_configuration_RadialPointLabels_Property, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_);
  }
+ /** @override */
+ m_setFont__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fontCallback) {
+  this.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/**@type {FontCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_FONT__org_pepstock_charba_client_configuration_RadialPointLabels_Property, fontCallback);
+ }
  /** @return {SimplePaddingCallback} */
  m_getPaddingCallback__() {
   return this.f_paddingCallback__org_pepstock_charba_client_configuration_RadialPointLabels_;
@@ -175,6 +180,11 @@ class RadialPointLabels extends AxisContainer {
  m_setPadding__org_pepstock_charba_client_callbacks_SimplePaddingCallback(/** SimplePaddingCallback */ paddingCallback) {
   this.f_paddingCallback__org_pepstock_charba_client_configuration_RadialPointLabels_ = paddingCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_PADDING__org_pepstock_charba_client_configuration_RadialPointLabels_Property, paddingCallback, this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_);
+ }
+ 
+ m_setPadding__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ paddingCallback) {
+  this.m_setPadding__org_pepstock_charba_client_callbacks_SimplePaddingCallback(/**@type {SimplePaddingCallback}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_PADDING__org_pepstock_charba_client_configuration_RadialPointLabels_Property, paddingCallback);
  }
  /** @return {ColorCallback<ScaleContext>} */
  m_getColorCallback__() {
@@ -185,6 +195,11 @@ class RadialPointLabels extends AxisContainer {
   this.f_colorCallback__org_pepstock_charba_client_configuration_RadialPointLabels_ = colorCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_COLOR__org_pepstock_charba_client_configuration_RadialPointLabels_Property, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_);
  }
+ 
+ m_setColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ colorCallback) {
+  this.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_COLOR__org_pepstock_charba_client_configuration_RadialPointLabels_Property, colorCallback);
+ }
  /** @return {ColorCallback<ScaleContext>} */
  m_getBackdropColorCallback__() {
   return this.f_backdropColorCallback__org_pepstock_charba_client_configuration_RadialPointLabels_;
@@ -193,6 +208,11 @@ class RadialPointLabels extends AxisContainer {
  m_setBackdropColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<ScaleContext> */ backdropColorCallback) {
   this.f_backdropColorCallback__org_pepstock_charba_client_configuration_RadialPointLabels_ = backdropColorCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_BACKDROP_COLOR__org_pepstock_charba_client_configuration_RadialPointLabels_Property, backdropColorCallback, this.f_backdropColorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_);
+ }
+ 
+ m_setBackdropColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ backdropColorCallback) {
+  this.m_setBackdropColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getPointLabels__(), Property.f_BACKDROP_COLOR__org_pepstock_charba_client_configuration_RadialPointLabels_Property, backdropColorCallback);
  }
  /** @return {?string} */
  m_onColor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_callbacks_ColorCallback__java_lang_String_$p_org_pepstock_charba_client_configuration_RadialPointLabels(/** ScaleContext */ context, /** ColorCallback<ScaleContext> */ callback, /** ?string */ defaultValue) {
@@ -204,11 +224,11 @@ class RadialPointLabels extends AxisContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_RadialPointLabels() {
-  this.f_pointLabelCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(Object, ?string, number):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_backdropColorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointLabelCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(?string, number):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_backdropColorCallbackProxy__org_pepstock_charba_client_configuration_RadialPointLabels_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_callback__org_pepstock_charba_client_configuration_RadialPointLabels_ = null;
   this.f_fontCallback__org_pepstock_charba_client_configuration_RadialPointLabels_ = null;
   this.f_colorCallback__org_pepstock_charba_client_configuration_RadialPointLabels_ = null;

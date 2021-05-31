@@ -17,6 +17,7 @@ let ArrayEnumList = goog.forwardDeclare('org.pepstock.charba.client.commons.Arra
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let HasCallbackScope = goog.forwardDeclare('org.pepstock.charba.client.commons.HasCallbackScope$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Event = goog.forwardDeclare('org.pepstock.charba.client.enums.Event$impl');
 let InteractionMode = goog.forwardDeclare('org.pepstock.charba.client.enums.InteractionMode$impl');
@@ -85,7 +86,7 @@ class Tooltips extends AbstractInteraction {
   this.f_footerFont__org_pepstock_charba_client_options_Tooltips_ = Font.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultFont__org_pepstock_charba_client_commons_NativeObject(this, Property.f_FOOTER_FONT__org_pepstock_charba_client_options_Tooltips_Property, /**@type {IsDefaultTooltips}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTooltips)).m_getFooterFont__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_FOOTER_FONT__org_pepstock_charba_client_options_Tooltips_Property));
   this.f_textDirectionHandler__org_pepstock_charba_client_options_Tooltips_ = TextDirectionHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultTextDirectionHandler__org_pepstock_charba_client_commons_NativeObject(this, /**@type {IsDefaultTooltips}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTooltips)), this.m_getNativeObject__());
   this.f_boxHandler__org_pepstock_charba_client_options_Tooltips_ = BoxHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultBoxHandler__org_pepstock_charba_client_commons_NativeObject(this, /**@type {IsDefaultTooltips}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTooltips)), this.m_getNativeObject__());
-  this.f_animationContainer__org_pepstock_charba_client_options_Tooltips_ = AnimationContainer.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(options, childKey, /**@type {IsDefaultTooltips}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTooltips)), this.m_getNativeObject__());
+  this.f_animationContainer__org_pepstock_charba_client_options_Tooltips_ = AnimationContainer.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(options, childKey, /**@type {IsDefaultTooltips}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTooltips)), this.m_getNativeObject__(), HasCallbackScope.m_extractScope__org_pepstock_charba_client_commons_AbstractNode(options));
  }
  /** @override @return {BoxHandler} */
  m_getBoxHandler__() {
@@ -475,6 +476,7 @@ class Tooltips extends AbstractInteraction {
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
+  HasCallbackScope = goog.module.get('org.pepstock.charba.client.commons.HasCallbackScope$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   Event = goog.module.get('org.pepstock.charba.client.enums.Event$impl');
   TextAlign = goog.module.get('org.pepstock.charba.client.enums.TextAlign$impl');

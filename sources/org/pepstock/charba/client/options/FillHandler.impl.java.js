@@ -6,7 +6,7 @@ const PropertyHandler = goog.require('org.pepstock.charba.client.commons.Propert
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let DataEnvelop = goog.forwardDeclare('org.pepstock.charba.client.data.DataEnvelop$impl');
 let AbsoluteDatasetIndexFill = goog.forwardDeclare('org.pepstock.charba.client.enums.AbsoluteDatasetIndexFill$impl');
 let Fill = goog.forwardDeclare('org.pepstock.charba.client.enums.Fill$impl');
@@ -36,7 +36,7 @@ class FillHandler extends PropertyHandler {
  //Initialization from constructor 'FillHandler(AbstractNode, IsFill, DataEnvelop)'.
  
  $ctor__org_pepstock_charba_client_options_FillHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_enums_IsFill__org_pepstock_charba_client_data_DataEnvelop(/** AbstractNode */ parent, /** IsFill */ defaultValues, /** DataEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_FillHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_enums_IsFill__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), DataEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_options_FillHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_enums_IsFill__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), DataEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'FillHandler(AbstractNode, IsFill, NativeObject)'.
  /** @return {!FillHandler} */
@@ -114,7 +114,7 @@ class FillHandler extends PropertyHandler {
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   DataEnvelop = goog.module.get('org.pepstock.charba.client.data.DataEnvelop$impl');
   AbsoluteDatasetIndexFill = goog.module.get('org.pepstock.charba.client.enums.AbsoluteDatasetIndexFill$impl');
   Fill = goog.module.get('org.pepstock.charba.client.enums.Fill$impl');

@@ -11,8 +11,8 @@ goog.require('org.pepstock.charba.client.defaults.globals.DefaultTooltips.Intern
 goog.require('org.pepstock.charba.client.defaults.globals.DefaultTooltips.InternalOpacityAnimationCollection');
 goog.require('org.pepstock.charba.client.enums.AnimationType');
 goog.require('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey');
-goog.require('org.pepstock.charba.client.options.IsAnimationCollectionKey');
-goog.require('org.pepstock.charba.client.options.IsAnimationPropertyKey');
+goog.require('org.pepstock.charba.client.options.AnimationCollectionKey');
+goog.require('org.pepstock.charba.client.options.AnimationPropertyKey');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');
 

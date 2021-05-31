@@ -4,6 +4,7 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.ChartType');
 goog.require('org.pepstock.charba.client.Type');
 goog.require('org.pepstock.charba.client.callbacks.FillCallback');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.data.Dataset');
 goog.require('org.pepstock.charba.client.data.LineDataset');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultOptions');

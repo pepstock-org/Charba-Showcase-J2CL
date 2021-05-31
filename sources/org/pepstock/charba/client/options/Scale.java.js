@@ -9,8 +9,8 @@ goog.require('org.pepstock.charba.client.enums.AxisKind');
 goog.require('org.pepstock.charba.client.enums.AxisType');
 goog.require('org.pepstock.charba.client.enums.DefaultScaleId');
 goog.require('org.pepstock.charba.client.options.AbstractScale');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
 goog.require('org.pepstock.charba.client.options.Scale.Property');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.Objects');
 

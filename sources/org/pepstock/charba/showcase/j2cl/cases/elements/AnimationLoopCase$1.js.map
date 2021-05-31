@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnimationLoopCase$1.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;;;MAwEoC,E;;CAAA,W;EAAAA,Q;EAAAA;yF;;;QAAA,2E;EAAAC,a;EAAAA,yB;EAAAA,uK;EAAAA,iB;;;CAAA,+I;EAAAC,qG;EAAAA,iC;;;CAGlB,6D,uBAAsBC,O;EACpCC,8B;;;;CAJgC,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["AnimationLoopCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.elements.AnimationLoopCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationLoopCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationLoopCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationLoopCase$1.invoke","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationLoopCase$1.<clinit>"]
+}
+

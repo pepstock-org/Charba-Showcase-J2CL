@@ -7,7 +7,7 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.Chart.$Overlay$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let BaseNativeEvent_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.BaseNativeEvent.$Overlay$impl');
@@ -66,7 +66,7 @@ class ChartEventContext extends NativeObjectContainer {
  //Initialization from constructor 'ChartEventContext(ConfigurationEnvelop)'.
  
  $ctor__org_pepstock_charba_client_events_ChartEventContext__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** ConfigurationEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'ChartEventContext(ItemsEnvelop)'.
  /** @return {!ChartEventContext} */
@@ -79,7 +79,7 @@ class ChartEventContext extends NativeObjectContainer {
  //Initialization from constructor 'ChartEventContext(ItemsEnvelop)'.
  
  $ctor__org_pepstock_charba_client_events_ChartEventContext__org_pepstock_charba_client_items_ItemsEnvelop(/** ItemsEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ItemsEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ItemsEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ItemsEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ItemsEnvelop)).m_getContent__()));
  }
  /** @return {Chart} */
  m_getNativeChart__() {
@@ -134,7 +134,7 @@ class ChartEventContext extends NativeObjectContainer {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.pepstock.charba.client.Chart.$Overlay$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   BaseNativeEvent_$Overlay = goog.module.get('org.pepstock.charba.client.dom.BaseNativeEvent.$Overlay$impl');

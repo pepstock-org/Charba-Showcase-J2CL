@@ -4,7 +4,6 @@ goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.Chart.$Overlay');
 goog.require('org.pepstock.charba.client.Defaults');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.LegendFilterCallback');
 goog.require('org.pepstock.charba.client.callbacks.LegendItemSortCallback');
 goog.require('org.pepstock.charba.client.callbacks.LegendLabelsCallback');

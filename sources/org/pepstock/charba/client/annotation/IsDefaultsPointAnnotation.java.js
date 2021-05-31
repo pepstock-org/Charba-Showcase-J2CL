@@ -12,7 +12,7 @@ goog.require('org.pepstock.charba.client.annotation.callbacks.ValueCallback');
 goog.require('org.pepstock.charba.client.callbacks.RadiusCallback');
 goog.require('org.pepstock.charba.client.enums.DefaultScaleId');
 goog.require('org.pepstock.charba.client.items.Undefined');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 
 const IsDefaultsPointAnnotation = goog.require('org.pepstock.charba.client.annotation.IsDefaultsPointAnnotation$impl');
 exports = IsDefaultsPointAnnotation;

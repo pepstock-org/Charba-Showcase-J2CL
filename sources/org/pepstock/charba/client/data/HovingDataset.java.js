@@ -8,6 +8,7 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.Type');
 goog.require('org.pepstock.charba.client.callbacks.ColorCallback');
 goog.require('org.pepstock.charba.client.callbacks.DatasetContext');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.WidthCallback');
 goog.require('org.pepstock.charba.client.colors.Gradient');
 goog.require('org.pepstock.charba.client.colors.IsColor');

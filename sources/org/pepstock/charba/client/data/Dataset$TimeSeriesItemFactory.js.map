@@ -2,7 +2,7 @@
 "version":3,
 "file":"Dataset$TimeSeriesItemFactory.impl.java.js",
 "lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAgyCsB,qB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,gC;EAAAA,4C;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAQE,yD,UAAoBC,Y;EACzCC,6F;;;;CATmB,U;EAAAA,wL;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA,qB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MA03CsB,qB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,gC;EAAAA,4C;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAQE,yD,UAAoBC,Y;EACzCC,6F;;;;CATmB,U;EAAAA,wL;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA,qB;EAAAA;",
 "sources":["Dataset.java"],
 "names":["org.pepstock.charba.client.data.Dataset$TimeSeriesItemFactory.<synthetic: ctor_js>","org.pepstock.charba.client.data.Dataset$TimeSeriesItemFactory.<synthetic: ctor_create>","org.pepstock.charba.client.data.Dataset$TimeSeriesItemFactory.<init>","nativeObject","org.pepstock.charba.client.data.Dataset$TimeSeriesItemFactory.create","org.pepstock.charba.client.data.Dataset$TimeSeriesItemFactory.<clinit>"]
 }

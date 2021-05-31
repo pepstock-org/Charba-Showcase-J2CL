@@ -1,7 +1,7 @@
 goog.module('org.pepstock.charba.client.labels.Label$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
+const AbstractNode = goog.require('org.pepstock.charba.client.commons.AbstractNode$impl');
 const IsDefaultLabel = goog.require('org.pepstock.charba.client.labels.IsDefaultLabel$impl');
 const IsScriptableFontProvider = goog.require('org.pepstock.charba.client.options.IsScriptableFontProvider$impl');
 
@@ -23,8 +23,8 @@ let Img_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let DefaultLabel = goog.forwardDeclare('org.pepstock.charba.client.labels.DefaultLabel$impl');
 let Font = goog.forwardDeclare('org.pepstock.charba.client.labels.Font$impl');
-let IsLabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.IsLabelId$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.labels.Label.Property$impl');
+let LabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelId$impl');
 let LabelsContext = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelsContext$impl');
 let LabelsPlugin = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelsPlugin$impl');
 let RenderCallback = goog.forwardDeclare('org.pepstock.charba.client.labels.callbacks.RenderCallback$impl');
@@ -37,15 +37,15 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @implements {IsDefaultLabel}
  * @implements {IsScriptableFontProvider<LabelsContext>}
  */
-class Label extends NativeObjectContainer {
+class Label extends AbstractNode {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_renderCallbackProxy__org_pepstock_charba_client_labels_Label_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_fontCallbackProxy__org_pepstock_charba_client_labels_Label_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_colorCallbackProxy__org_pepstock_charba_client_labels_Label_;
   /**@type {IsDefaultLabel}*/
   this.f_defaultOptions__org_pepstock_charba_client_labels_Label_;
@@ -63,7 +63,7 @@ class Label extends NativeObjectContainer {
  //Initialization from constructor 'Label()'.
  
  $ctor__org_pepstock_charba_client_labels_Label__() {
-  this.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_IsLabelId(Label.f_TEMPORARY_ID__org_pepstock_charba_client_labels_Label_);
+  this.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_LabelId(Label.f_TEMPORARY_ID__org_pepstock_charba_client_labels_Label_);
  }
  //Factory method corresponding to constructor 'Label(String)'.
  /** @return {!Label} */
@@ -76,38 +76,38 @@ class Label extends NativeObjectContainer {
  //Initialization from constructor 'Label(String)'.
  
  $ctor__org_pepstock_charba_client_labels_Label__java_lang_String(/** ?string */ id) {
-  this.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_IsLabelId(IsLabelId.m_create__java_lang_String(id));
+  this.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_LabelId(LabelId.m_create__java_lang_String(id));
  }
- //Factory method corresponding to constructor 'Label(IsLabelId)'.
+ //Factory method corresponding to constructor 'Label(LabelId)'.
  /** @return {!Label} */
- static $create__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
+ static $create__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
   Label.$clinit();
   let $instance = new Label();
-  $instance.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_IsLabelId(id);
+  $instance.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_LabelId(id);
   return $instance;
  }
- //Initialization from constructor 'Label(IsLabelId)'.
+ //Initialization from constructor 'Label(LabelId)'.
  
- $ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
-  this.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_IsLabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, DefaultLabel.f_INSTANCE__org_pepstock_charba_client_labels_DefaultLabel, null);
+ $ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
+  this.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_LabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, DefaultLabel.f_INSTANCE__org_pepstock_charba_client_labels_DefaultLabel, null);
  }
- //Factory method corresponding to constructor 'Label(IsLabelId, IsDefaultLabel, NativeObject)'.
+ //Factory method corresponding to constructor 'Label(LabelId, IsDefaultLabel, NativeObject)'.
  /** @return {!Label} */
- static $create__org_pepstock_charba_client_labels_IsLabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(/** IsLabelId */ id, /** IsDefaultLabel */ defaultOptions, /** ? */ nativeObject) {
+ static $create__org_pepstock_charba_client_labels_LabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(/** LabelId */ id, /** IsDefaultLabel */ defaultOptions, /** ? */ nativeObject) {
   Label.$clinit();
   let $instance = new Label();
-  $instance.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_IsLabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, defaultOptions, nativeObject);
+  $instance.$ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_LabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, defaultOptions, nativeObject);
   return $instance;
  }
- //Initialization from constructor 'Label(IsLabelId, IsDefaultLabel, NativeObject)'.
+ //Initialization from constructor 'Label(LabelId, IsDefaultLabel, NativeObject)'.
  
- $ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_IsLabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(/** IsLabelId */ id, /** IsDefaultLabel */ defaultOptions, /** ? */ nativeObject) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(nativeObject);
+ $ctor__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_labels_LabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(/** LabelId */ id, /** IsDefaultLabel */ defaultOptions, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_NativeObject(nativeObject);
   this.$init___$p_org_pepstock_charba_client_labels_Label();
   this.m_setNewIncrementalId__();
   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(id);
   if (Key.m_equals__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Label.f_TEMPORARY_ID__org_pepstock_charba_client_labels_Label_, id)) {
-   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_ID__org_pepstock_charba_client_labels_Label_Property, IsLabelId.m_create__java_lang_String(this.m_getIncrementalId__()));
+   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_ID__org_pepstock_charba_client_labels_Label_Property, LabelId.m_create__java_lang_String(this.m_getIncrementalId__()));
   } else {
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_ID__org_pepstock_charba_client_labels_Label_Property, id);
   }
@@ -120,19 +120,19 @@ class Label extends NativeObjectContainer {
   if (!this.m_has__org_pepstock_charba_client_commons_Key(Property.f_FONT__org_pepstock_charba_client_labels_Label_Property)) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(Property.f_FONT__org_pepstock_charba_client_labels_Label_Property, this.f_font__org_pepstock_charba_client_labels_Label_);
   }
-  this.f_renderCallbackProxy__org_pepstock_charba_client_labels_Label_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_renderCallbackProxy__org_pepstock_charba_client_labels_Label_.callback = (/** ? */ context) =>{
    return this.m_onRender__org_pepstock_charba_client_labels_LabelsContext_$p_org_pepstock_charba_client_labels_Label(LabelsContext.$create__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_commons_NativeObject(this, context));
   };
-  this.f_fontCallbackProxy__org_pepstock_charba_client_labels_Label_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_fontCallbackProxy__org_pepstock_charba_client_labels_Label_.callback = (/** ? */ context_1) =>{
    return ScriptableUtils.m_getOptionValueAsFont__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultFont(LabelsContext.$create__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_commons_NativeObject(this, context_1), this.m_getFontCallback__(), this.f_defaultOptions__org_pepstock_charba_client_labels_Label_.m_getFont__()).m_nativeObject__();
   };
-  this.f_colorCallbackProxy__org_pepstock_charba_client_labels_Label_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_colorCallbackProxy__org_pepstock_charba_client_labels_Label_.callback = (/** ? */ context_2) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(LabelsContext.$create__org_pepstock_charba_client_labels_Label__org_pepstock_charba_client_commons_NativeObject(this, context_2), this.m_getColorCallback__(), this.m_getColorAsString__());
   };
  }
- /** @return {IsLabelId} */
+ /** @return {LabelId} */
  m_getId__() {
-  return IsLabelId.m_create__java_lang_String(this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_ID__org_pepstock_charba_client_labels_Label_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined));
+  return LabelId.m_create__java_lang_String(this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_ID__org_pepstock_charba_client_labels_Label_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined));
  }
  /** @override @return {Font} */
  m_getFont__() {
@@ -291,7 +291,12 @@ class Label extends NativeObjectContainer {
  }
  
  m_setRender__org_pepstock_charba_client_labels_callbacks_RenderCallback(/** RenderCallback */ renderCallback) {
-  Label.f_RENDER_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, LabelsPlugin.f_ID__org_pepstock_charba_client_labels_LabelsPlugin, renderCallback, this.f_renderCallbackProxy__org_pepstock_charba_client_labels_Label_.proxy);
+  Label.f_RENDER_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, LabelsPlugin.f_ID__org_pepstock_charba_client_labels_LabelsPlugin, renderCallback, this.f_renderCallbackProxy__org_pepstock_charba_client_labels_Label_.proxy);
+ }
+ 
+ m_setRender__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ renderCallback) {
+  this.m_setRender__org_pepstock_charba_client_labels_callbacks_RenderCallback(/**@type {RenderCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_RENDER__org_pepstock_charba_client_labels_Label_Property, renderCallback);
  }
  /** @override @return {FontCallback<LabelsContext>} */
  m_getFontCallback__() {
@@ -299,7 +304,12 @@ class Label extends NativeObjectContainer {
  }
  /** @override */
  m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/** FontCallback<LabelsContext> */ fontCallback) {
-  Label.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, LabelsPlugin.f_ID__org_pepstock_charba_client_labels_LabelsPlugin, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_labels_Label_.proxy);
+  Label.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, LabelsPlugin.f_ID__org_pepstock_charba_client_labels_LabelsPlugin, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_labels_Label_.proxy);
+ }
+ /** @override */
+ m_setFont__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fontCallback) {
+  this.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/**@type {FontCallback<LabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_FONT__org_pepstock_charba_client_labels_Label_Property, fontCallback);
  }
  /** @override @return {ColorCallback<LabelsContext>} */
  m_getColorCallback__() {
@@ -307,7 +317,12 @@ class Label extends NativeObjectContainer {
  }
  
  m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<LabelsContext> */ colorCallback) {
-  Label.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, LabelsPlugin.f_ID__org_pepstock_charba_client_labels_LabelsPlugin, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_labels_Label_.proxy);
+  Label.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, LabelsPlugin.f_ID__org_pepstock_charba_client_labels_LabelsPlugin, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_labels_Label_.proxy);
+ }
+ 
+ m_setColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ colorCallback) {
+  this.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<LabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_COLOR__org_pepstock_charba_client_labels_Label_Property, colorCallback);
  }
  /** @return {*} */
  m_onRender__org_pepstock_charba_client_labels_LabelsContext_$p_org_pepstock_charba_client_labels_Label(/** LabelsContext */ context) {
@@ -326,9 +341,9 @@ class Label extends NativeObjectContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_labels_Label() {
-  this.f_renderCallbackProxy__org_pepstock_charba_client_labels_Label_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_fontCallbackProxy__org_pepstock_charba_client_labels_Label_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_colorCallbackProxy__org_pepstock_charba_client_labels_Label_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_renderCallbackProxy__org_pepstock_charba_client_labels_Label_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_fontCallbackProxy__org_pepstock_charba_client_labels_Label_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_colorCallbackProxy__org_pepstock_charba_client_labels_Label_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  /** @return {Render} */
  static get f_DEFAULT_RENDER__org_pepstock_charba_client_labels_Label() {
@@ -342,14 +357,14 @@ class Label extends NativeObjectContainer {
  static $clinit() {
   Label.$clinit = () =>{};
   Label.$loadModules();
-  NativeObjectContainer.$clinit();
+  AbstractNode.$clinit();
   IsDefaultLabel.$clinit();
   Label.$static_DEFAULT_RENDER__org_pepstock_charba_client_labels_Label = Render.f_VALUE__org_pepstock_charba_client_labels_enums_Render;
   Label.$static_DEFAULT_POSITION__org_pepstock_charba_client_labels_Label = Position.f_DEFAULT__org_pepstock_charba_client_labels_enums_Position;
   Label.f_RENDER_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_ = /**@type {!CallbackPropertyHandler<RenderCallback>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Property.f_RENDER__org_pepstock_charba_client_labels_Label_Property));
   Label.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_ = /**@type {!CallbackPropertyHandler<FontCallback<LabelsContext>>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Property.f_FONT__org_pepstock_charba_client_labels_Label_Property));
   Label.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_ = /**@type {!CallbackPropertyHandler<ColorCallback<LabelsContext>>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Property.f_COLOR__org_pepstock_charba_client_labels_Label_Property));
-  Label.f_TEMPORARY_ID__org_pepstock_charba_client_labels_Label_ = IsLabelId.m_create__java_lang_String("charbaTemporaryLabelId");
+  Label.f_TEMPORARY_ID__org_pepstock_charba_client_labels_Label_ = LabelId.m_create__java_lang_String("charbaTemporaryLabelId");
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -374,8 +389,8 @@ class Label extends NativeObjectContainer {
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   DefaultLabel = goog.module.get('org.pepstock.charba.client.labels.DefaultLabel$impl');
   Font = goog.module.get('org.pepstock.charba.client.labels.Font$impl');
-  IsLabelId = goog.module.get('org.pepstock.charba.client.labels.IsLabelId$impl');
   Property = goog.module.get('org.pepstock.charba.client.labels.Label.Property$impl');
+  LabelId = goog.module.get('org.pepstock.charba.client.labels.LabelId$impl');
   LabelsContext = goog.module.get('org.pepstock.charba.client.labels.LabelsContext$impl');
   LabelsPlugin = goog.module.get('org.pepstock.charba.client.labels.LabelsPlugin$impl');
   RenderCallback = goog.module.get('org.pepstock.charba.client.labels.callbacks.RenderCallback$impl');
@@ -419,7 +434,7 @@ Label.f_RENDER_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_;
 Label.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_;
 /**@type {CallbackPropertyHandler<ColorCallback<LabelsContext>>}*/
 Label.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_labels_Label_;
-/**@type {IsLabelId}*/
+/**@type {LabelId}*/
 Label.f_TEMPORARY_ID__org_pepstock_charba_client_labels_Label_;
 IsDefaultLabel.$markImplementor(Label);
 IsScriptableFontProvider.$markImplementor(Label);

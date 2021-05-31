@@ -17,10 +17,10 @@ let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation.Property$impl');
 let AnnotationContext = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationContext$impl');
 let AnnotationHelper = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let AnnotationOptions_Property = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationOptions.Property$impl');
 let AnnotationPlugin = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
 let AnnotationType = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationType$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let LineAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.LineAnnotation$impl');
 let AdjustScaleRangeCallback = goog.forwardDeclare('org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback$impl');
 let DrawTimeCallback = goog.forwardDeclare('org.pepstock.charba.client.annotation.callbacks.DrawTimeCallback$impl');
@@ -58,76 +58,76 @@ class AbstractAnnotation extends AbstractNode {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_borderColorCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_borderWidthCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(?):Array>}*/
   this.f_borderDashCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_drawTimeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_adjustScaleRangeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_enterCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_leaveCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_clickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_dblclickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_;
   /**@type {IsDefaultsAnnotation}*/
   this.f_defaultValues__org_pepstock_charba_client_annotation_AbstractAnnotation_;
   /**@type {DrawTime}*/
   this.f_parentDrawTime__org_pepstock_charba_client_annotation_AbstractAnnotation_;
  }
- //Initialization from constructor 'AbstractAnnotation(AnnotationType, IsAnnotationId, IsDefaultsAnnotation)'.
+ //Initialization from constructor 'AbstractAnnotation(AnnotationType, AnnotationId, IsDefaultsAnnotation)'.
  
- $ctor__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationType */ type, /** IsAnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
+ $ctor__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationType */ type, /** AnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
   this.$ctor__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(null, defaultValues);
-  IsAnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_IsAnnotationId(id);
+  AnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_AnnotationId(id);
   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(type);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_ID__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, id);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_TYPE__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, type);
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_CHARBA_ANNOTATION_ID__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, AbstractAnnotation.f_COUNTER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_getAndIncrement__());
   this.m_setNewIncrementalId__();
   AnnotationHelper.m_get__().m_addAnnotation__org_pepstock_charba_client_annotation_AbstractAnnotation_$pp_org_pepstock_charba_client_annotation(this);
-  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ context) =>{
    return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context), this.m_getDisplayCallback__(), defaultValues.m_isDisplay__()), Boolean)));
   };
-  this.f_borderColorCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_borderColorCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ context_1) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String__boolean(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_1), this.m_getBorderColorCallback__(), defaultValues.m_getBorderColorAsString__(), false);
   };
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ context_2) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_2), this.m_getBorderWidthCallback__(), Integer.m_valueOf__int(defaultValues.m_getBorderWidth__())), Integer)).m_intValue__();
   };
-  this.f_borderDashCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_borderDashCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ context_3) =>{
    return this.m_onBorderDash__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_callbacks_BorderDashCallback__java_util_List_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_3), this.m_getBorderDashCallback__(), defaultValues.m_getBorderDash__());
   };
-  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ contextFunction_4, /** ? */ context_4) =>{
+  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ context_4) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_4), this.m_getBorderDashOffsetCallback__(), defaultValues.m_getBorderDashOffset__()), Double)));
   };
-  this.f_drawTimeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ contextFunction_5, /** ? */ context_5) =>{
+  this.f_drawTimeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ context_5) =>{
    return /**@type {DrawTime}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_5), this.m_getDrawTimeCallback__(), defaultValues.m_getDrawTime__()), DrawTime)).m_value__();
   };
-  this.f_adjustScaleRangeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ contextFunction_6, /** ? */ context_6) =>{
+  this.f_adjustScaleRangeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ context_6) =>{
    return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_6), this.m_getAdjustScaleRangeCallback__(), defaultValues.m_isAdjustScaleRange__()), Boolean)));
   };
-  this.f_enterCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ arg0, /** ? */ arg1) =>{
-   this.m_onEnter__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0, arg1);
+  this.f_enterCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ arg0) =>{
+   this.m_onEnter__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0);
   };
-  this.f_leaveCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ arg0_1, /** ? */ arg1_1) =>{
-   this.m_onLeave__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0_1, arg1_1);
+  this.f_leaveCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ arg0_1) =>{
+   this.m_onLeave__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0_1);
   };
-  this.f_clickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ arg0_2, /** ? */ arg1_2) =>{
-   this.m_onClick__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0_2, arg1_2);
+  this.f_clickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ arg0_2) =>{
+   this.m_onClick__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0_2);
   };
-  this.f_dblclickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** Object */ arg0_3, /** ? */ arg1_3) =>{
-   this.m_onDblclick__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0_3, arg1_3);
+  this.f_dblclickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.callback = (/** ? */ arg0_3) =>{
+   this.m_onDblclick__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(arg0_3);
   };
  }
  //Initialization from constructor 'AbstractAnnotation(NativeObject, IsDefaultsAnnotation)'.
@@ -145,9 +145,9 @@ class AbstractAnnotation extends AbstractNode {
  m_getAnnotationId___$pp_org_pepstock_charba_client_annotation() {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_CHARBA_ANNOTATION_ID__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, Undefined.f_INTEGER__org_pepstock_charba_client_items_Undefined);
  }
- /** @return {IsAnnotationId} */
+ /** @return {AnnotationId} */
  m_getId__() {
-  return IsAnnotationId.m_create__java_lang_String(this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_ID__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined));
+  return AnnotationId.m_create__java_lang_String(this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_ID__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined));
  }
  /** @override @return {AnnotationType} */
  m_getType__() {
@@ -155,7 +155,7 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setDisplay__boolean(/** boolean */ display) {
-  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(null);
+  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/**@type {DisplayCallback<AnnotationContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_DISPLAY__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, display);
  }
  /** @override @return {boolean} */
@@ -164,7 +164,7 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setAdjustScaleRange__boolean(/** boolean */ display) {
-  this.m_setAdjustScaleRange__org_pepstock_charba_client_annotation_callbacks_AdjustScaleRangeCallback(null);
+  this.m_setAdjustScaleRange__org_pepstock_charba_client_annotation_callbacks_AdjustScaleRangeCallback(/**@type {AdjustScaleRangeCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_ADJUST_SCALE_RANGE__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, display);
  }
  /** @override @return {boolean} */
@@ -207,7 +207,7 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setBorderWidth__int(/** number */ borderWidth) {
-  this.m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(null);
+  this.m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<AnnotationContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_BORDER_WIDTH__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, Checker.m_positiveOrZero__int(borderWidth));
  }
  
@@ -225,7 +225,7 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setBorderDashOffset__double(/** number */ borderDashOffset) {
-  this.m_setBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(null);
+  this.m_setBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(/**@type {BorderDashOffsetCallback<AnnotationContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_BORDER_DASH_OFFSET__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, borderDashOffset);
  }
  /** @override @return {number} */
@@ -238,7 +238,12 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setDrawTime__org_pepstock_charba_client_annotation_callbacks_DrawTimeCallback(/** DrawTimeCallback */ drawTimeCallback) {
-  AbstractAnnotation.f_DRAW_TIME_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, drawTimeCallback, this.f_drawTimeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_DRAW_TIME_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, drawTimeCallback, this.f_drawTimeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+ }
+ 
+ m_setDrawTime__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ drawTimeCallback) {
+  this.m_setDrawTime__org_pepstock_charba_client_annotation_callbacks_DrawTimeCallback(/**@type {DrawTimeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(AnnotationOptions_Property.f_DRAW_TIME__org_pepstock_charba_client_annotation_AnnotationOptions_Property, drawTimeCallback);
  }
  /** @override @return {DisplayCallback<AnnotationContext>} */
  m_getDisplayCallback__() {
@@ -246,7 +251,12 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/** DisplayCallback<AnnotationContext> */ displayCallback) {
-  AbstractAnnotation.f_DISPLAY_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_DISPLAY_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+ }
+ 
+ m_setDisplay__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ displayCallback) {
+  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/**@type {DisplayCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_DISPLAY__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, displayCallback);
  }
  /** @override @return {ColorCallback<AnnotationContext>} */
  m_getBorderColorCallback__() {
@@ -254,7 +264,12 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<AnnotationContext> */ borderColorCallback) {
-  AbstractAnnotation.f_BORDER_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderColorCallback, this.f_borderColorCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_BORDER_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderColorCallback, this.f_borderColorCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+ }
+ 
+ m_setBorderColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderColorCallback) {
+  this.m_setBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_COLOR__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, borderColorCallback);
  }
  /** @override @return {WidthCallback<AnnotationContext>} */
  m_getBorderWidthCallback__() {
@@ -262,7 +277,12 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<AnnotationContext> */ borderWidthCallback) {
-  AbstractAnnotation.f_BORDER_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderWidthCallback, this.f_borderWidthCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_BORDER_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderWidthCallback, this.f_borderWidthCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+ }
+ 
+ m_setBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderWidthCallback) {
+  this.m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_WIDTH__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, borderWidthCallback);
  }
  /** @override @return {BorderDashCallback<AnnotationContext>} */
  m_getBorderDashCallback__() {
@@ -270,7 +290,12 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setBorderDash__org_pepstock_charba_client_callbacks_BorderDashCallback(/** BorderDashCallback<AnnotationContext> */ borderDashCallback) {
-  AbstractAnnotation.f_BORDER_DASH_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderDashCallback, this.f_borderDashCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_BORDER_DASH_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderDashCallback, this.f_borderDashCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+ }
+ 
+ m_setBorderDash__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashCallback) {
+  this.m_setBorderDash__org_pepstock_charba_client_callbacks_BorderDashCallback(/**@type {BorderDashCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_DASH__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, borderDashCallback);
  }
  /** @override @return {BorderDashOffsetCallback<AnnotationContext>} */
  m_getBorderDashOffsetCallback__() {
@@ -278,7 +303,12 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(/** BorderDashOffsetCallback<AnnotationContext> */ borderDashOffsetCallback) {
-  AbstractAnnotation.f_BORDER_DASH_OFFSET_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderDashOffsetCallback, this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_BORDER_DASH_OFFSET_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, borderDashOffsetCallback, this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+ }
+ 
+ m_setBorderDashOffset__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashOffsetCallback) {
+  this.m_setBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(/**@type {BorderDashOffsetCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_DASH_OFFSET__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, borderDashOffsetCallback);
  }
  /** @override @return {AdjustScaleRangeCallback} */
  m_getAdjustScaleRangeCallback__() {
@@ -286,7 +316,12 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setAdjustScaleRange__org_pepstock_charba_client_annotation_callbacks_AdjustScaleRangeCallback(/** AdjustScaleRangeCallback */ adjustScaleRangeCallback) {
-  AbstractAnnotation.f_ADJUST_SCALE_RANGE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, adjustScaleRangeCallback, this.f_adjustScaleRangeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_ADJUST_SCALE_RANGE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, adjustScaleRangeCallback, this.f_adjustScaleRangeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+ }
+ 
+ m_setAdjustScaleRange__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ adjustScaleRangeCallback) {
+  this.m_setAdjustScaleRange__org_pepstock_charba_client_annotation_callbacks_AdjustScaleRangeCallback(/**@type {AdjustScaleRangeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_ADJUST_SCALE_RANGE__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, adjustScaleRangeCallback);
  }
  /** @override @return {EnterCallback} */
  m_getEnterCallback__() {
@@ -294,7 +329,7 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setEnterCallback__org_pepstock_charba_client_annotation_listeners_EnterCallback(/** EnterCallback */ enterCallback) {
-  AbstractAnnotation.f_ENTER_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, enterCallback, this.f_enterCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_ENTER_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, enterCallback, this.f_enterCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
  }
  /** @override @return {LeaveCallback} */
  m_getLeaveCallback__() {
@@ -302,7 +337,7 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setLeaveCallback__org_pepstock_charba_client_annotation_listeners_LeaveCallback(/** LeaveCallback */ leaveCallback) {
-  AbstractAnnotation.f_LEAVE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, leaveCallback, this.f_leaveCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_LEAVE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, leaveCallback, this.f_leaveCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
  }
  /** @override @return {ClickCallback} */
  m_getClickCallback__() {
@@ -310,7 +345,7 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setClickCallback__org_pepstock_charba_client_annotation_listeners_ClickCallback(/** ClickCallback */ clickCallback) {
-  AbstractAnnotation.f_CLICK_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, clickCallback, this.f_clickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_CLICK_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, clickCallback, this.f_clickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
  }
  /** @override @return {DoubleClickCallback} */
  m_getDoubleClickCallback__() {
@@ -318,10 +353,10 @@ class AbstractAnnotation extends AbstractNode {
  }
  
  m_setDoubleClickCallback__org_pepstock_charba_client_annotation_listeners_DoubleClickCallback(/** DoubleClickCallback */ dblclickCallback) {
-  AbstractAnnotation.f_DOUBLE_CLICK_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, dblclickCallback, this.f_dblclickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
+  AbstractAnnotation.f_DOUBLE_CLICK_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, dblclickCallback, this.f_dblclickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_.proxy);
  }
  
- m_onEnter__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** Object */ functionContext, /** ? */ context) {
+ m_onEnter__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** ? */ context) {
   let enterCallback = this.m_getEnterCallback__();
   let internalContext = AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context);
   let chart = internalContext.m_getChart__();
@@ -330,7 +365,7 @@ class AbstractAnnotation extends AbstractNode {
   }
  }
  
- m_onLeave__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** Object */ functionContext, /** ? */ context) {
+ m_onLeave__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** ? */ context) {
   let leaveCallback = this.m_getLeaveCallback__();
   let internalContext = AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context);
   let chart = internalContext.m_getChart__();
@@ -339,7 +374,7 @@ class AbstractAnnotation extends AbstractNode {
   }
  }
  
- m_onClick__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** Object */ functionContext, /** ? */ context) {
+ m_onClick__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** ? */ context) {
   let clickCallback = this.m_getClickCallback__();
   let internalContext = AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context);
   let chart = internalContext.m_getChart__();
@@ -348,7 +383,7 @@ class AbstractAnnotation extends AbstractNode {
   }
  }
  
- m_onDblclick__org_pepstock_charba_client_callbacks_CallbackFunctionContext__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** Object */ functionContext, /** ? */ context) {
+ m_onDblclick__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_annotation_AbstractAnnotation(/** ? */ context) {
   let dblclickCallback = this.m_getDoubleClickCallback__();
   let internalContext = AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context);
   let chart = internalContext.m_getChart__();
@@ -385,17 +420,17 @@ class AbstractAnnotation extends AbstractNode {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_annotation_AbstractAnnotation() {
-  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderColorCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderDashCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_drawTimeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_adjustScaleRangeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_enterCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_leaveCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_clickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_dblclickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderColorCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderDashCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_drawTimeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_adjustScaleRangeCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_enterCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_leaveCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_clickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_dblclickCallbackProxy__org_pepstock_charba_client_annotation_AbstractAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_parentDrawTime__org_pepstock_charba_client_annotation_AbstractAnnotation_ = null;
  }
  
@@ -436,10 +471,10 @@ class AbstractAnnotation extends AbstractNode {
   Property = goog.module.get('org.pepstock.charba.client.annotation.AbstractAnnotation.Property$impl');
   AnnotationContext = goog.module.get('org.pepstock.charba.client.annotation.AnnotationContext$impl');
   AnnotationHelper = goog.module.get('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+  AnnotationId = goog.module.get('org.pepstock.charba.client.annotation.AnnotationId$impl');
   AnnotationOptions_Property = goog.module.get('org.pepstock.charba.client.annotation.AnnotationOptions.Property$impl');
   AnnotationPlugin = goog.module.get('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
   AnnotationType = goog.module.get('org.pepstock.charba.client.annotation.AnnotationType$impl');
-  IsAnnotationId = goog.module.get('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
   LineAnnotation = goog.module.get('org.pepstock.charba.client.annotation.LineAnnotation$impl');
   AdjustScaleRangeCallback = goog.module.get('org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback$impl');
   DrawTimeCallback = goog.module.get('org.pepstock.charba.client.annotation.callbacks.DrawTimeCallback$impl');

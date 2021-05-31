@@ -2,7 +2,7 @@
 "version":3,
 "file":"DefaultChartTransitions.impl.java.js",
 "lineCount":44,
-"mappings":"A;;;;;;;;;;;;MA0BmB,uB;;CAAA,W;EAAAA,Q;EAAAA;OAEiB,iFAFjBA,C;;;QASX,iE,6BAA6CC,W;EAA7CC,kC;EAAAA,8C;EAAAA,0J;EAAAA,iB;;;CAAA,kI,6BAA6CD,W;EAA7CE,iC;EACNA,qG;;;CASc,yD,wBAAoBC,U;EAClCC,oK;;;CASmC,yD,wBAAoBD,U;EACvDE,oK;;;QA9BiB,O;EAAAC,0C;EAAAA,uC;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MA0BmB,uB;;CAAA,W;EAAAA,Q;EAAAA;OAEiB,iFAFjBA,C;;;QASX,iE,6BAA6CC,W;EAA7CC,kC;EAAAA,8C;EAAAA,0J;EAAAA,iB;;;CAAA,kI,6BAA6CD,W;EAA7CE,iC;EACNA,qG;;;CASc,uD,sBAAkBC,U;EAChCC,kK;;;CASmC,uD,sBAAkBD,U;EACrDE,kK;;;QA9BiB,O;EAAAC,0C;EAAAA,uC;EAAAA;",
 "sources":["DefaultChartTransitions.java"],
 "names":["org.pepstock.charba.client.defaults.chart.DefaultChartTransitions.<synthetic: ctor_js>","transitions","org.pepstock.charba.client.defaults.chart.DefaultChartTransitions.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartTransitions.<init>","transition","org.pepstock.charba.client.defaults.chart.DefaultChartTransitions.has","org.pepstock.charba.client.defaults.chart.DefaultChartTransitions.get","org.pepstock.charba.client.defaults.chart.DefaultChartTransitions.<clinit>"]
 }

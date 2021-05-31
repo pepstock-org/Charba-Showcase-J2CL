@@ -18,7 +18,7 @@ class CategoryTickHandler extends AbstractTickHandler {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, number, number, Array):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(number, number, Array):?string>}*/
   this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_CategoryTickHandler_;
  }
  /** @return {!CategoryTickHandler} */
@@ -32,7 +32,7 @@ class CategoryTickHandler extends AbstractTickHandler {
  $ctor__org_pepstock_charba_client_configuration_CategoryTickHandler__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_CartesianCategoryTick(/** Axis */ axis, /** CartesianCategoryTick */ configuration) {
   this.$ctor__org_pepstock_charba_client_configuration_AbstractTickHandler__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_Tick(axis, configuration);
   this.$init___$p_org_pepstock_charba_client_configuration_CategoryTickHandler();
-  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_CategoryTickHandler_.callback = (/** Object */ context, /** number */ value, /** number */ index, /** Array */ values) =>{
+  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_CategoryTickHandler_.callback = (/** number */ value, /** number */ index, /** Array */ values) =>{
    let scaleItem = this.m_getAxis__().m_getScaleItem___$pp_org_pepstock_charba_client_configuration();
    let current = scaleItem.m_getLabelForValue__double(value);
    if (!$Equality.$same(this.m_getCallback___$pp_org_pepstock_charba_client_configuration(), null)) {
@@ -47,7 +47,7 @@ class CategoryTickHandler extends AbstractTickHandler {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_CategoryTickHandler() {
-  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_CategoryTickHandler_ = /**@type {CharbaCallbackProxy<?function(Object, number, number, Array):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_CategoryTickHandler_ = /**@type {CharbaCallbackProxy<?function(number, number, Array):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {

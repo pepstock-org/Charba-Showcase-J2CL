@@ -2,7 +2,7 @@
 "version":3,
 "file":"StandardAnimationCollection.impl.java.js",
 "lineCount":55,
-"mappings":"A;;;;;;;;;;;;;;MA4BmB,2B;;CAAA,W;EAAAA,Q;EAAAA;OAEyB,6EAFzBA,C;;;QAUlB,yE,gBAAmCC,K,uBAAqBC,I;EAAxDC,sC;EAAAA,kD;EAAAA,+J;EAAAA,iB;;;CAAA,uI,gBAAmCF,K,uBAAqBC,I;EACvDE,wJ;EADDA,iF;EAGCA,2G;;;CASmC,c;EACnCC,0F;;;CASU,Q;EACVC,wB;;;CASc,M,UAAcC,G;EAC5BC,yB;;;CA3CiB,yE;EAElBJ,+J;;;QAFkB,O;EAAAK,8C;EAAAA,2C;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;MA4BmB,2B;;CAAA,W;EAAAA,Q;EAAAA;OAEuB,6EAFvBA,C;;;QAUlB,yE,gBAAmCC,K,uBAAqBC,I;EAAxDC,sC;EAAAA,kD;EAAAA,+J;EAAAA,iB;;;CAAA,uI,gBAAmCF,K,uBAAqBC,I;EACvDE,wJ;EADDA,iF;EAGCA,uG;;;CASiC,c;EACjCC,0F;;;CASU,Q;EACVC,wB;;;CASc,M,UAAcC,G;EAC5BC,yB;;;CA3CiB,yE;EAElBJ,6J;;;QAFkB,O;EAAAK,8C;EAAAA,2C;EAAAA;",
 "sources":["StandardAnimationCollection.java"],
 "names":["org.pepstock.charba.client.options.StandardAnimationCollection.<synthetic: ctor_js>","value","type","org.pepstock.charba.client.options.StandardAnimationCollection.<synthetic: ctor_create>","org.pepstock.charba.client.options.StandardAnimationCollection.<init>","org.pepstock.charba.client.options.StandardAnimationCollection.properties","org.pepstock.charba.client.options.StandardAnimationCollection.hashCode","obj","org.pepstock.charba.client.options.StandardAnimationCollection.equals","org.pepstock.charba.client.options.StandardAnimationCollection.<clinit>"]
 }

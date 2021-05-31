@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Pinch$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MAsCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,wDALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iI;EAAAA,iB;;;CAAA,8F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;;;CASa,S;EACbC,qE;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,iIAAAA;G;EAAAA,yH;;;QAAA,U;EAAAC,mB;EAAAA,2I;;;QAEZ,6D;EAAAC,sG;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2P;EAFYA,oF;;;;;;;;;;;;;AAAA;yE;AAAA;6E;AAEZ;;",
+"sources":["Pinch.java"],
+"names":["org.pepstock.charba.client.zoom.Pinch$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.zoom.Pinch$Property.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Pinch$Property.<init>","org.pepstock.charba.client.zoom.Pinch$Property.value","org.pepstock.charba.client.zoom.Pinch$Property.valueOf","org.pepstock.charba.client.zoom.Pinch$Property.values","org.pepstock.charba.client.zoom.Pinch$Property.<synthetic: getter>","org.pepstock.charba.client.zoom.Pinch$Property.<clinit>"]
+}
+

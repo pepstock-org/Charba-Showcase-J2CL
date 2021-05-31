@@ -119,7 +119,7 @@ class App extends j_l_Object {
  }
 }
 /**@const {?string}*/
-App.f_BASE_URL__org_pepstock_charba_showcase_j2cl_App = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/3.2/src/main/java/";
+App.f_BASE_URL__org_pepstock_charba_showcase_j2cl_App = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/4.0/src/main/java/";
 /**@private {boolean}*/
 App.$static_isDeferred__org_pepstock_charba_showcase_j2cl_App = false;
 EntryPoint.$markImplementor(App);

@@ -73,6 +73,11 @@ class DefaultPan extends j_l_Object {
   return IsDefaultConfigurationItem.m_getStartCallback__$default__org_pepstock_charba_client_zoom_IsDefaultConfigurationItem(this);
  }
  //Default method forwarding stub.
+ /** @override @return {ModifierKey} */
+ m_getModifierKey__() {
+  return IsDefaultPan.m_getModifierKey__$default__org_pepstock_charba_client_zoom_IsDefaultPan(this);
+ }
+ //Default method forwarding stub.
  /** @override @return {number} */
  m_getThreshold__() {
   return IsDefaultPan.m_getThreshold__$default__org_pepstock_charba_client_zoom_IsDefaultPan(this);
@@ -80,12 +85,7 @@ class DefaultPan extends j_l_Object {
  //Default method forwarding stub.
  /** @override @return {boolean} */
  m_isEnabled__() {
-  return IsDefaultConfigurationItem.m_isEnabled__$default__org_pepstock_charba_client_zoom_IsDefaultConfigurationItem(this);
- }
- //Default method forwarding stub.
- /** @override @return {ModifierKey} */
- m_getModifierKey__() {
-  return IsDefaultPan.m_getModifierKey__$default__org_pepstock_charba_client_zoom_IsDefaultPan(this);
+  return IsDefaultPan.m_isEnabled__$default__org_pepstock_charba_client_zoom_IsDefaultPan(this);
  }
  
  static $clinit() {

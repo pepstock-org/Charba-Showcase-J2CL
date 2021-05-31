@@ -3,7 +3,6 @@ goog.module('org.pepstock.charba.client.impl.plugins.HtmlLegendOptions');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.IsChart');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.HtmlLegendItemCallback');
 goog.require('org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback');
 goog.require('org.pepstock.charba.client.commons.CallbackPropertyHandler');

@@ -10,7 +10,7 @@ goog.require('org.pepstock.charba.client.enums.Position');
 goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions');
 goog.require('org.pepstock.charba.client.impl.plugins.enums.Align');
 goog.require('org.pepstock.charba.client.impl.plugins.enums.Render');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 
 const DatasetsItemsSelectorOptionsBuilder = goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptionsBuilder$impl');
 exports = DatasetsItemsSelectorOptionsBuilder;

@@ -7,9 +7,8 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let CallbacksEnvelop = goog.forwardDeclare('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ScaleContext.Property$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
-let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$impl');
 let ScaleTickItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleTickItem$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
@@ -27,15 +26,15 @@ class ScaleContext extends ChartContext {
   this.f_tick__org_pepstock_charba_client_callbacks_ScaleContext_;
  }
  /** @return {!ScaleContext} */
- static $create__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** Axis */ axis, /** ConfigurationEnvelop<?> */ envelop) {
+ static $create__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_commons_NativeObject(/** Axis */ axis, /** ? */ nativeObject) {
   ScaleContext.$clinit();
   let $instance = new ScaleContext();
-  $instance.$ctor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_ConfigurationEnvelop(axis, envelop);
+  $instance.$ctor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_commons_NativeObject(axis, nativeObject);
   return $instance;
  }
  
- $ctor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** Axis */ axis, /** ConfigurationEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__()));
+ $ctor__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_commons_NativeObject(/** Axis */ axis, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_commons_NativeObject(nativeObject);
   this.$init___$p_org_pepstock_charba_client_callbacks_ScaleContext();
   this.f_axis__org_pepstock_charba_client_callbacks_ScaleContext_ = /**@type {Axis}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(axis, "Axis argument"), Axis));
  }
@@ -61,6 +60,13 @@ class ScaleContext extends ChartContext {
   }
   return this.f_tick__org_pepstock_charba_client_callbacks_ScaleContext_;
  }
+ /** @override @return {boolean} */
+ m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(/** Key */ property) {
+  if (super.m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(property)) {
+   return !Key.m_hasKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(Property.m_values__(), property.m_value__());
+  }
+  return false;
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_callbacks_ScaleContext() {
   this.f_scale__org_pepstock_charba_client_callbacks_ScaleContext_ = null;
@@ -82,9 +88,8 @@ class ScaleContext extends ChartContext {
   CallbacksEnvelop = goog.module.get('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.callbacks.ScaleContext.Property$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   Axis = goog.module.get('org.pepstock.charba.client.configuration.Axis$impl');
-  ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   ScaleItem = goog.module.get('org.pepstock.charba.client.items.ScaleItem$impl');
   ScaleTickItem = goog.module.get('org.pepstock.charba.client.items.ScaleTickItem$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');

@@ -47,11 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, Property.$static_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, Property.$static_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, Property.$static_THRESHOLD__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property], Property));
- }
- /** @return {!Property} */
- static get f_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property() {
-  return (Property.$clinit(), Property.$static_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property);
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, Property.$static_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property], Property));
  }
  /** @return {!Property} */
  static get f_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property() {
@@ -61,19 +57,13 @@ class Property extends Enum {
  static get f_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property() {
   return (Property.$clinit(), Property.$static_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property);
  }
- /** @return {!Property} */
- static get f_THRESHOLD__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property() {
-  return (Property.$clinit(), Property.$static_THRESHOLD__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property);
- }
  
  static $clinit() {
   Property.$clinit = () =>{};
   Property.$loadModules();
   Enum.$clinit();
-  Property.$static_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ENABLED"), Property.$ordinal_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, "enabled");
   Property.$static_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("MODE"), Property.$ordinal_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, "mode");
   Property.$static_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("OVER_SCALE_MODE"), Property.$ordinal_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, "overScaleMode");
-  Property.$static_THRESHOLD__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("THRESHOLD"), Property.$ordinal_THRESHOLD__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property, "threshold");
   Property.f_namesToValuesMap__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property_ = null;
  }
  /** @return {boolean} */
@@ -88,23 +78,15 @@ class Property extends Enum {
  }
 }
 /**@private {!Property}*/
-Property.$static_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property;
-/**@private {!Property}*/
 Property.$static_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property;
 /**@private {!Property}*/
 Property.$static_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property;
-/**@private {!Property}*/
-Property.$static_THRESHOLD__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property_;
 /**@const {number}*/
-Property.$ordinal_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = 0;
+Property.$ordinal_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = 0;
 /**@const {number}*/
-Property.$ordinal_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = 1;
-/**@const {number}*/
-Property.$ordinal_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = 2;
-/**@const {number}*/
-Property.$ordinal_THRESHOLD__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = 3;
+Property.$ordinal_OVER_SCALE_MODE__org_pepstock_charba_client_zoom_AbstractConfigurationItem_Property = 1;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.zoom.AbstractConfigurationItem$Property");
 

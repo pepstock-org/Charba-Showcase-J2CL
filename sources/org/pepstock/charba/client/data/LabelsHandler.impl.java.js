@@ -5,7 +5,7 @@ const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.N
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ArrayMixedObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayMixedObject.$Overlay$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Labels = goog.forwardDeclare('org.pepstock.charba.client.data.Labels$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.data.LabelsHandler.Property$impl');
 let OptionsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.options.OptionsEnvelop$impl');
@@ -27,7 +27,7 @@ class LabelsHandler extends NativeObjectContainer {
  //Initialization from constructor 'LabelsHandler(OptionsEnvelop)'.
  
  $ctor__org_pepstock_charba_client_data_LabelsHandler__org_pepstock_charba_client_options_OptionsEnvelop(/** OptionsEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_data_LabelsHandler__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {OptionsEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), OptionsEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_data_LabelsHandler__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {OptionsEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), OptionsEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'LabelsHandler(NativeObject)'.
  /** @return {!LabelsHandler} */
@@ -74,7 +74,7 @@ class LabelsHandler extends NativeObjectContainer {
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ArrayMixedObject_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayMixedObject.$Overlay$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Labels = goog.module.get('org.pepstock.charba.client.data.Labels$impl');
   Property = goog.module.get('org.pepstock.charba.client.data.LabelsHandler.Property$impl');
   OptionsEnvelop = goog.module.get('org.pepstock.charba.client.options.OptionsEnvelop$impl');

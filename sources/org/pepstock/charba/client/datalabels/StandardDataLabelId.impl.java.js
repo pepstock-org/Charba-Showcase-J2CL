@@ -2,10 +2,10 @@ goog.module('org.pepstock.charba.client.datalabels.StandardDataLabelId$impl');
 
 const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
-const IsDataLabelId = goog.require('org.pepstock.charba.client.datalabels.IsDataLabelId$impl');
+const DataLabelId = goog.require('org.pepstock.charba.client.datalabels.DataLabelId$impl');
 
 /**
- * @implements {IsDataLabelId}
+ * @implements {DataLabelId}
  */
 class StandardDataLabelId extends j_l_Object {
  /** @protected */
@@ -43,7 +43,7 @@ class StandardDataLabelId extends j_l_Object {
  
  static $loadModules() {}
 }
-IsDataLabelId.$markImplementor(StandardDataLabelId);
+DataLabelId.$markImplementor(StandardDataLabelId);
 $Util.$setClassMetadata(StandardDataLabelId, "org.pepstock.charba.client.datalabels.StandardDataLabelId");
 
 exports = StandardDataLabelId;

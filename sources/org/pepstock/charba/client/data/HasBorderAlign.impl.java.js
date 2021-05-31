@@ -28,6 +28,8 @@ class HasBorderAlign {
  m_getBorderAlignCallback__() {}
  /** @abstract */
  m_setBorderAlign__org_pepstock_charba_client_callbacks_BorderAlignCallback(/** BorderAlignCallback */ borderAlignCallback) {}
+ /** @abstract */
+ m_setBorderAlign__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderAlignCallback) {}
  /** @return {HasBorderAlign} */
  static $adapt(/** ?function():BorderAlignHandler */ fn) {
   HasBorderAlign.$clinit();
@@ -68,6 +70,13 @@ class HasBorderAlign {
   HasBorderAlign.$clinit();
   if (!$Equality.$same($thisArg.m_getBorderAlignHandler__(), null)) {
    $thisArg.m_getBorderAlignHandler__().m_setBorderAlign__org_pepstock_charba_client_callbacks_BorderAlignCallback_$pp_org_pepstock_charba_client_data(borderAlignCallback);
+  }
+ }
+ 
+ static m_setBorderAlign__$default__org_pepstock_charba_client_data_HasBorderAlign__org_pepstock_charba_client_callbacks_NativeCallback(/** !HasBorderAlign */ $thisArg, /** Function */ borderAlignCallback) {
+  HasBorderAlign.$clinit();
+  if (!$Equality.$same($thisArg.m_getBorderAlignHandler__(), null)) {
+   $thisArg.m_getBorderAlignHandler__().m_setBorderAlign__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(borderAlignCallback);
   }
  }
  

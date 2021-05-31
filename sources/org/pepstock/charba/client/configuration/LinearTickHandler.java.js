@@ -3,7 +3,6 @@ goog.module('org.pepstock.charba.client.configuration.LinearTickHandler');
 goog.require('java.lang.String');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.TickCallback');
 goog.require('org.pepstock.charba.client.commons.ArrayDouble.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayListHelper');

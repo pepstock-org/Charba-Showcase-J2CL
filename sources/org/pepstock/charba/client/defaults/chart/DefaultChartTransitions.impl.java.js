@@ -5,7 +5,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultTransitions = goog.require('org.pepstock.charba.client.defaults.IsDefaultTransitions$impl');
 
 let IsDefaultAnimationTransition = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultAnimationTransition$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 
 /**
  * @implements {IsDefaultTransitions}
@@ -30,12 +30,12 @@ class DefaultChartTransitions extends j_l_Object {
   this.f_transitions__org_pepstock_charba_client_defaults_chart_DefaultChartTransitions_ = transitions;
  }
  /** @override @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  return this.f_transitions__org_pepstock_charba_client_defaults_chart_DefaultChartTransitions_.m_has__org_pepstock_charba_client_options_IsTransitionKey(transition);
+ m_has__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  return this.f_transitions__org_pepstock_charba_client_defaults_chart_DefaultChartTransitions_.m_has__org_pepstock_charba_client_options_TransitionKey(transition);
  }
  /** @override @return {IsDefaultAnimationTransition} */
- m_get__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  return this.f_transitions__org_pepstock_charba_client_defaults_chart_DefaultChartTransitions_.m_get__org_pepstock_charba_client_options_IsTransitionKey(transition);
+ m_get__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  return this.f_transitions__org_pepstock_charba_client_defaults_chart_DefaultChartTransitions_.m_get__org_pepstock_charba_client_options_TransitionKey(transition);
  }
  
  static $clinit() {

@@ -61,6 +61,11 @@ class $LambdaAdaptor extends j_l_Object {
  m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<AnnotationContext> */ arg0) {
   HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(this, arg0);
  }
+ //Default method forwarding stub.
+ /** @override */
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
+ }
  
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};

@@ -2,7 +2,7 @@
 "version":3,
 "file":"DefaultChartOptions.impl.java.js",
 "lineCount":82,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAiCmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAEY,wEAFZA,C;;;;QASX,gD,sCAAkDC,O;EAAlDC,8B;EAAAA,0C;EAAAA,iI;EAAAA,iB;;;;CAAA,6G,sCAAkDD,O;EACxDE,gpB;;;;QAQM,gD,qBAAiCC,Y;EAAjCF,8B;EAAAA,0C;EAAAA,sI;EAAAA,iB;;;;CAAA,6G,qBAAiCE,Y;EACvCD,uM;;;;QASO,0F,sBAAkCC,Y,cAAmBC,I;EAArDH,0C;EAAAA,sL;EAAAA,iB;;;;CAAA,uJ,sBAAkCE,Y,cAAmBC,I;EAC5DF,sJ;EAEAA,2D;EAEAA;GAECA,iJAFDA;;GAKCA,oLALDA;G;;;CAesB,a;EACtBG,qF;;;QAjDiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAiCmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAEY,wEAFZA,C;;;;QASX,gD,sCAAkDC,O;EAAlDC,8B;EAAAA,0C;EAAAA,iI;EAAAA,iB;;;;CAAA,6G,sCAAkDD,O;EACxDE,woB;;;;QAQM,gD,qBAAiCC,Y;EAAjCF,8B;EAAAA,0C;EAAAA,sI;EAAAA,iB;;;;CAAA,6G,qBAAiCE,Y;EACvCD,uM;;;;QASO,0F,sBAAkCC,Y,cAAmBC,I;EAArDH,0C;EAAAA,sL;EAAAA,iB;;;;CAAA,uJ,sBAAkCE,Y,cAAmBC,I;EAC5DF,sJ;EAEAA,2D;EAEAA;GAECA,iJAFDA;;GAKCA,oLALDA;G;;;CAesB,a;EACtBG,qF;;;QAjDiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["DefaultChartOptions.java"],
 "names":["org.pepstock.charba.client.defaults.chart.DefaultChartOptions.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.defaults.chart.DefaultChartOptions.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartOptions.<init>","chartOptions","type","org.pepstock.charba.client.defaults.chart.DefaultChartOptions.getScales","org.pepstock.charba.client.defaults.chart.DefaultChartOptions.<clinit>"]
 }

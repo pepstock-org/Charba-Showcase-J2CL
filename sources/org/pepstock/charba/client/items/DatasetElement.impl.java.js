@@ -5,8 +5,7 @@ const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.N
 
 let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
 let CallbacksEnvelop = goog.forwardDeclare('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
-let ControllersEnvelop = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllersEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let DatasetItemFactory = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetElement.DatasetItemFactory$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetElement.Property$impl');
 let DatasetElementOptions = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetElementOptions$impl');
@@ -34,20 +33,7 @@ class DatasetElement extends NativeObjectContainer {
  //Initialization from constructor 'DatasetElement(CallbacksEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_DatasetElement__org_pepstock_charba_client_callbacks_CallbacksEnvelop(/** CallbacksEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_DatasetElement__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), CallbacksEnvelop)).m_getContent__()));
- }
- //Factory method corresponding to constructor 'DatasetElement(ControllersEnvelop)'.
- /** @return {!DatasetElement} */
- static $create__org_pepstock_charba_client_controllers_ControllersEnvelop(/** ControllersEnvelop<?> */ envelop) {
-  DatasetElement.$clinit();
-  let $instance = new DatasetElement();
-  $instance.$ctor__org_pepstock_charba_client_items_DatasetElement__org_pepstock_charba_client_controllers_ControllersEnvelop(envelop);
-  return $instance;
- }
- //Initialization from constructor 'DatasetElement(ControllersEnvelop)'.
- 
- $ctor__org_pepstock_charba_client_items_DatasetElement__org_pepstock_charba_client_controllers_ControllersEnvelop(/** ControllersEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_DatasetElement__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ControllersEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ControllersEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_DatasetElement__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), CallbacksEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'DatasetElement(NativeObject)'.
  /** @return {!DatasetElement} */
@@ -163,8 +149,7 @@ class DatasetElement extends NativeObjectContainer {
  static $loadModules() {
   Defaults = goog.module.get('org.pepstock.charba.client.Defaults$impl');
   CallbacksEnvelop = goog.module.get('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
-  ControllersEnvelop = goog.module.get('org.pepstock.charba.client.controllers.ControllersEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   DatasetItemFactory = goog.module.get('org.pepstock.charba.client.items.DatasetElement.DatasetItemFactory$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.DatasetElement.Property$impl');
   DatasetElementOptions = goog.module.get('org.pepstock.charba.client.items.DatasetElementOptions$impl');

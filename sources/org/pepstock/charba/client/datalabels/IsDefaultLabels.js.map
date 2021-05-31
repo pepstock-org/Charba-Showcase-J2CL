@@ -2,7 +2,7 @@
 "version":3,
 "file":"IsDefaultLabels.impl.java.js",
 "lineCount":29,
-"mappings":"A;;;;;;;;;;MAsBU,e;;CAQS,+D,sBAAuBA,G;;CAUzB,+D,sBAAuBA,G;;QAVrB,gI,wDAAuBA,G;EAAvBC,0B;EACjBA,Y;;;QASe,gI,wDAAuBD,G;EAAvBE,0B;EACfA,a;;;QAnBQ,O;EAAAC,kC;EAAAA;",
+"mappings":"A;;;;;;;;;;MAsBU,e;;CAQS,6D,oBAAqBA,G;;CAUvB,6D,oBAAqBA,G;;QAVnB,8H,sDAAqBA,G;EAArBC,0B;EACjBA,Y;;;QASe,8H,sDAAqBD,G;EAArBE,0B;EACfA,a;;;QAnBQ,O;EAAAC,kC;EAAAA;",
 "sources":["IsDefaultLabels.java"],
 "names":["key","org.pepstock.charba.client.datalabels.IsDefaultLabels.getLabel__$default","org.pepstock.charba.client.datalabels.IsDefaultLabels.hasLabel__$default","org.pepstock.charba.client.datalabels.IsDefaultLabels.<clinit>"]
 }

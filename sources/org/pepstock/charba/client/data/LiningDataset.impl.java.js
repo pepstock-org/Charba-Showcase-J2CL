@@ -68,43 +68,43 @@ class LiningDataset extends Dataset {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(?):Array>}*/
   this.f_borderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_borderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_hoverBorderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(?):Array>}*/
   this.f_hoverBorderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_hoverBorderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_hoverBorderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_pointBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_pointBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_pointBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_pointHoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_pointHoverBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_pointHoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_pointRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_pointHitRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_pointHoverRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {ColorCallback<DatasetContext>}*/
   this.f_pointBackgroundColorCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -158,61 +158,61 @@ class LiningDataset extends Dataset {
   this.f_fillHandler__org_pepstock_charba_client_data_LiningDataset_ = LiningDatasetFillHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_enums_IsFill__org_pepstock_charba_client_commons_NativeObject(this, this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getFill__(), this.m_getNativeObject__());
   this.f_orderHandler__org_pepstock_charba_client_data_LiningDataset_ = OrderHandler.$create__org_pepstock_charba_client_commons_NativeObject(this.m_getNativeObject__());
   this.f_spanGapHandler__org_pepstock_charba_client_data_LiningDataset_ = SpanGapHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultOptions__org_pepstock_charba_client_data_DataEnvelop(this, this.m_getDefaultValues__(), /**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object__boolean(this.m_getNativeObject__(), true)));
-  this.f_pointBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_pointBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context), this.m_getPointBackgroundColorCallback__(), InternalCanvasObjectProperty.f_POINT_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getBackgroundColorAsString__());
   };
-  this.f_pointBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_pointBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_1) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_1), this.m_getPointBorderColorCallback__(), InternalCanvasObjectProperty.f_POINT_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getBorderColorAsString__());
   };
-  this.f_pointBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_pointBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_2) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_2), this.m_getPointBorderWidthCallback__(), Integer.m_valueOf__int(this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getBorderWidth__())), Integer)).m_intValue__();
   };
-  this.f_pointHoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_pointHoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_3) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_3), this.m_getPointHoverBackgroundColorCallback__(), InternalCanvasObjectProperty.f_POINT_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getBackgroundColorAsString__());
   };
-  this.f_pointHoverBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_4, /** ? */ context_4) =>{
+  this.f_pointHoverBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_4) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_4), this.m_getPointHoverBorderColorCallback__(), InternalCanvasObjectProperty.f_POINT_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getBorderColorAsString__());
   };
-  this.f_pointHoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_5, /** ? */ context_5) =>{
+  this.f_pointHoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_5) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_5), this.m_getPointHoverBorderWidthCallback__(), Integer.m_valueOf__int(this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getBorderWidth__())), Integer)).m_intValue__();
   };
-  this.f_pointRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_6, /** ? */ context_6) =>{
+  this.f_pointRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_6) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_6), this.m_getPointRadiusCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getRadius__()), Double)));
   };
-  this.f_pointHitRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_7, /** ? */ context_7) =>{
+  this.f_pointHitRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_7) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_7), this.m_getPointHitRadiusCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getHitRadius__()), Double)));
   };
-  this.f_pointHoverRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_8, /** ? */ context_8) =>{
+  this.f_pointHoverRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_8) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_8), this.m_getPointHoverRadiusCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getHoverRadius__()), Double)));
   };
-  this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_9, /** ? */ context_9) =>{
+  this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_9) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_9), this.m_getPointRotationCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getRotation__()), Double)));
   };
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_10, /** ? */ context_10) =>{
+  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_10) =>{
    return this.m_onPointStyle__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_10));
   };
-  this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_11, /** ? */ context_11) =>{
+  this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_11) =>{
    return this.m_onBorderCapStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_CapStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_11), this.m_getBorderCapStyleCallback__());
   };
-  this.f_borderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_12, /** ? */ context_12) =>{
+  this.f_borderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_12) =>{
    return this.m_onBorderDash__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_BorderDashCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_12), this.m_getBorderDashCallback__());
   };
-  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_13, /** ? */ context_13) =>{
+  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_13) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_13), this.m_getBorderDashOffsetCallback__(), this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getBorderDashOffset__()), Double)));
   };
-  this.f_borderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_14, /** ? */ context_14) =>{
+  this.f_borderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_14) =>{
    return this.m_onBorderJoinStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_JoinStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_14), this.m_getBorderJoinStyleCallback__());
   };
-  this.f_hoverBorderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_15, /** ? */ context_15) =>{
+  this.f_hoverBorderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_15) =>{
    return this.m_onBorderCapStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_CapStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_15), this.m_getHoverBorderCapStyleCallback__());
   };
-  this.f_hoverBorderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_16, /** ? */ context_16) =>{
+  this.f_hoverBorderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_16) =>{
    return this.m_onBorderDash__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_BorderDashCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_16), this.m_getHoverBorderDashCallback__());
   };
-  this.f_hoverBorderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_17, /** ? */ context_17) =>{
+  this.f_hoverBorderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_17) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_17), this.m_getHoverBorderDashOffsetCallback__(), this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getBorderDashOffset__()), Double)));
   };
-  this.f_hoverBorderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** Object */ contextFunction_18, /** ? */ context_18) =>{
+  this.f_hoverBorderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_18) =>{
    return this.m_onBorderJoinStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_JoinStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_18), this.m_getHoverBorderJoinStyleCallback__());
   };
  }
@@ -348,6 +348,10 @@ class LiningDataset extends Dataset {
  
  m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<DatasetContext> */ borderWidthCallback) {
   this.m_setInternalBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback_$pp_org_pepstock_charba_client_data(borderWidthCallback);
+ }
+ 
+ m_setBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderWidthCallback) {
+  this.m_setInternalBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(borderWidthCallback);
  }
  
  m_setBorderDash__arrayOf_int(/** Array<number> */ borderDash) {
@@ -518,6 +522,10 @@ class LiningDataset extends Dataset {
  
  m_setHoverBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<DatasetContext> */ hoverBorderWidthCallback) {
   this.m_setInternalHoverBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback_$pp_org_pepstock_charba_client_data(hoverBorderWidthCallback);
+ }
+ 
+ m_setHoverBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ hoverBorderWidthCallback) {
+  this.m_setInternalHoverBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(hoverBorderWidthCallback);
  }
  
  m_setHoverBorderDash__arrayOf_int(/** Array<number> */ borderDash) {
@@ -845,6 +853,12 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(InternalCanvasObjectProperty.f_POINT_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
   }
  }
+ 
+ m_setPointBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointBackgroundColorCallback) {
+  this.m_setPointBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(InternalCanvasObjectProperty.f_POINT_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(InternalCanvasObjectProperty.f_POINT_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, pointBackgroundColorCallback);
+ }
  /** @return {ColorCallback<DatasetContext>} */
  m_getPointBorderColorCallback__() {
   return this.f_pointBorderColorCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -859,6 +873,12 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(InternalCanvasObjectProperty.f_POINT_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
   }
  }
+ 
+ m_setPointBorderColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointBorderColorCallback) {
+  this.m_setPointBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(InternalCanvasObjectProperty.f_POINT_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(InternalCanvasObjectProperty.f_POINT_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, pointBorderColorCallback);
+ }
  /** @return {WidthCallback<DatasetContext>} */
  m_getPointBorderWidthCallback__() {
   return this.f_pointBorderWidthCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -871,6 +891,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setPointBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointBorderWidthCallback) {
+  this.m_setPointBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, pointBorderWidthCallback);
  }
  /** @return {ColorCallback<DatasetContext>} */
  m_getPointHoverBackgroundColorCallback__() {
@@ -886,6 +911,12 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(InternalCanvasObjectProperty.f_POINT_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
   }
  }
+ 
+ m_setPointHoverBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointHoverBackgroundColorCallback) {
+  this.m_setPointHoverBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(InternalCanvasObjectProperty.f_POINT_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(InternalCanvasObjectProperty.f_POINT_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, pointHoverBackgroundColorCallback);
+ }
  /** @return {ColorCallback<DatasetContext>} */
  m_getPointHoverBorderColorCallback__() {
   return this.f_pointHoverBorderColorCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -900,6 +931,12 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(InternalCanvasObjectProperty.f_POINT_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
   }
  }
+ 
+ m_setPointHoverBorderColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointHoverBorderColorCallback) {
+  this.m_setPointHoverBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(InternalCanvasObjectProperty.f_POINT_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(InternalCanvasObjectProperty.f_POINT_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, pointHoverBorderColorCallback);
+ }
  /** @return {WidthCallback<DatasetContext>} */
  m_getPointHoverBorderWidthCallback__() {
   return this.f_pointHoverBorderWidthCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -912,6 +949,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setPointHoverBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointHoverBorderWidthCallback) {
+  this.m_setPointHoverBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, pointHoverBorderWidthCallback);
  }
  /** @return {RadiusCallback<DatasetContext>} */
  m_getPointRadiusCallback__() {
@@ -926,6 +968,11 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property);
   }
  }
+ 
+ m_setPointRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointRadiusCallback) {
+  this.m_setPointRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, pointRadiusCallback);
+ }
  /** @return {RadiusCallback<DatasetContext>} */
  m_getPointHitRadiusCallback__() {
   return this.f_pointHitRadiusCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -938,6 +985,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setPointHitRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointHitRadiusCallback) {
+  this.m_setPointHitRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, pointHitRadiusCallback);
  }
  /** @return {RadiusCallback<DatasetContext>} */
  m_getPointHoverRadiusCallback__() {
@@ -952,6 +1004,11 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property);
   }
  }
+ 
+ m_setPointHoverRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointHoverRadiusCallback) {
+  this.m_setPointHoverRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, pointHoverRadiusCallback);
+ }
  /** @return {RotationCallback<DatasetContext>} */
  m_getPointRotationCallback__() {
   return this.f_pointRotationCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -964,6 +1021,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setPointRotation__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointRotationCallback) {
+  this.m_setPointRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property, pointRotationCallback);
  }
  /** @return {PointStyleCallback} */
  m_getPointStyleCallback__() {
@@ -979,6 +1041,11 @@ class LiningDataset extends Dataset {
   }
   this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
  }
+ 
+ m_setPointStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointStyleCallback) {
+  this.m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/**@type {PointStyleCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, pointStyleCallback);
+ }
  /** @return {CapStyleCallback<DatasetContext>} */
  m_getBorderCapStyleCallback__() {
   return this.f_borderCapStyleCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -991,6 +1058,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setBorderCapStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderCapStyleCallback) {
+  this.m_setBorderCapStyle__org_pepstock_charba_client_callbacks_CapStyleCallback(/**@type {CapStyleCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, borderCapStyleCallback);
  }
  /** @return {JoinStyleCallback<DatasetContext>} */
  m_getBorderJoinStyleCallback__() {
@@ -1005,6 +1077,11 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
   }
  }
+ 
+ m_setBorderJoinStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderJoinStyleCallback) {
+  this.m_setBorderJoinStyle__org_pepstock_charba_client_callbacks_JoinStyleCallback(/**@type {JoinStyleCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, borderJoinStyleCallback);
+ }
  /** @return {BorderDashCallback<DatasetContext>} */
  m_getBorderDashCallback__() {
   return this.f_borderDashCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -1017,6 +1094,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setBorderDash__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashCallback) {
+  this.m_setBorderDash__org_pepstock_charba_client_callbacks_BorderDashCallback(/**@type {BorderDashCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property, borderDashCallback);
  }
  /** @return {BorderDashOffsetCallback<DatasetContext>} */
  m_getBorderDashOffsetCallback__() {
@@ -1031,6 +1113,11 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property);
   }
  }
+ 
+ m_setBorderDashOffset__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashOffsetCallback) {
+  this.m_setBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(/**@type {BorderDashOffsetCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property, borderDashOffsetCallback);
+ }
  /** @return {CapStyleCallback<DatasetContext>} */
  m_getHoverBorderCapStyleCallback__() {
   return this.f_hoverBorderCapStyleCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -1043,6 +1130,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_HOVER_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setHoverBorderCapStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderCapStyleCallback) {
+  this.m_setHoverBorderCapStyle__org_pepstock_charba_client_callbacks_CapStyleCallback(/**@type {CapStyleCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_HOVER_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, borderCapStyleCallback);
  }
  /** @return {JoinStyleCallback<DatasetContext>} */
  m_getHoverBorderJoinStyleCallback__() {
@@ -1057,6 +1149,11 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_HOVER_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
   }
  }
+ 
+ m_setHoverBorderJoinStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderJoinStyleCallback) {
+  this.m_setHoverBorderJoinStyle__org_pepstock_charba_client_callbacks_JoinStyleCallback(/**@type {JoinStyleCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_HOVER_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, borderJoinStyleCallback);
+ }
  /** @return {BorderDashCallback<DatasetContext>} */
  m_getHoverBorderDashCallback__() {
   return this.f_hoverBorderDashCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -1069,6 +1166,11 @@ class LiningDataset extends Dataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_HOVER_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property);
   }
+ }
+ 
+ m_setHoverBorderDash__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashCallback) {
+  this.m_setHoverBorderDash__org_pepstock_charba_client_callbacks_BorderDashCallback(/**@type {BorderDashCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_HOVER_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property, borderDashCallback);
  }
  /** @return {BorderDashOffsetCallback<DatasetContext>} */
  m_getHoverBorderDashOffsetCallback__() {
@@ -1083,6 +1185,11 @@ class LiningDataset extends Dataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_HOVER_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property);
   }
  }
+ 
+ m_setHoverBorderDashOffset__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashOffsetCallback) {
+  this.m_setHoverBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(/**@type {BorderDashOffsetCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_HOVER_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property, borderDashOffsetCallback);
+ }
  /** @return {FillCallback} */
  m_getFillCallback__() {
   return this.f_fillHandler__org_pepstock_charba_client_data_LiningDataset_.m_getFillCallback___$pp_org_pepstock_charba_client_data();
@@ -1090,6 +1197,10 @@ class LiningDataset extends Dataset {
  
  m_setFill__org_pepstock_charba_client_callbacks_FillCallback(/** FillCallback */ fillCallback) {
   this.f_fillHandler__org_pepstock_charba_client_data_LiningDataset_.m_setFill__org_pepstock_charba_client_callbacks_FillCallback_$pp_org_pepstock_charba_client_data(fillCallback);
+ }
+ 
+ m_setFill__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fillCallback) {
+  this.f_fillHandler__org_pepstock_charba_client_data_LiningDataset_.m_setFill__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(fillCallback);
  }
  /** @override @return {?string} */
  m_getDefaultBackgroundColorAsString__() {
@@ -1199,25 +1310,25 @@ class LiningDataset extends Dataset {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_LiningDataset() {
-  this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBorderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBorderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBorderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBorderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointHoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointHoverBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointHoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointHitRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointHoverRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBorderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBorderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBorderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBorderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointHoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointHoverBorderColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointHoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointHitRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointHoverRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_pointBackgroundColorCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_pointBorderColorCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_pointBorderWidthCallback__org_pepstock_charba_client_data_LiningDataset_ = null;

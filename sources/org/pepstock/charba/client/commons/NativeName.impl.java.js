@@ -48,6 +48,8 @@ NativeName.f_JS_OBJECT_ARRAY_HELPER__org_pepstock_charba_client_commons_NativeNa
 /**@const {?string}*/
 NativeName.f_JS_OBJECT_BOOLEAN_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectBooleanHelper";
 /**@const {?string}*/
+NativeName.f_JS_OBJECT_CALLBACK_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectCallbackHelper";
+/**@const {?string}*/
 NativeName.f_JS_OBJECT_CALLBACK_PROXY_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectCallbackProxyHelper";
 /**@const {?string}*/
 NativeName.f_JS_OBJECT_CHART_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectChartHelper";

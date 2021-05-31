@@ -1,6 +1,7 @@
 goog.module('org.pepstock.charba.client.options.Options$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
+const HasCallbackScope = goog.require('org.pepstock.charba.client.commons.HasCallbackScope$impl');
 const IsDefaultOptions = goog.require('org.pepstock.charba.client.defaults.IsDefaultOptions$impl');
 const AbstractModel = goog.require('org.pepstock.charba.client.options.AbstractModel$impl');
 const HasAnimationOptions = goog.require('org.pepstock.charba.client.options.HasAnimationOptions$impl');
@@ -49,6 +50,7 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {IsDefaultOptions}
  * @implements {HasSpanGaps}
  * @implements {HasAnimationOptions}
+ * @implements {HasCallbackScope}
  */
 class Options extends AbstractModel {
  /** @protected */
@@ -119,7 +121,7 @@ class Options extends AbstractModel {
   this.f_font__org_pepstock_charba_client_options_Options_ = Font.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultFont__org_pepstock_charba_client_commons_NativeObject(this, Property.f_FONT__org_pepstock_charba_client_options_Options_Property, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getFont__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_FONT__org_pepstock_charba_client_options_Options_Property));
   this.f_datasets__org_pepstock_charba_client_options_Options_ = Datasets.$create__org_pepstock_charba_client_options_Options__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultDatasets__org_pepstock_charba_client_commons_NativeObject(this, Property.f_DATASETS__org_pepstock_charba_client_options_Options_Property, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getDatasets__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_DATASETS__org_pepstock_charba_client_options_Options_Property));
   this.f_spanGapHandler__org_pepstock_charba_client_options_Options_ = SpanGapHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultOptions__org_pepstock_charba_client_commons_NativeObject(this, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)), this.m_getNativeObject__());
-  this.f_animationContainer__org_pepstock_charba_client_options_Options_ = AnimationContainer.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(this, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)), this.m_getNativeObject__());
+  this.f_animationContainer__org_pepstock_charba_client_options_Options_ = AnimationContainer.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(this, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)), this.m_getNativeObject__(), this.f_scope__org_pepstock_charba_client_options_Options_);
   this.f_legend__org_pepstock_charba_client_options_Options_ = Legend.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultLegend__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getLegend__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId));
   this.f_title__org_pepstock_charba_client_options_Options_ = Title.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultTitle__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_TITLE__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getTitle__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_TITLE__org_pepstock_charba_client_enums_DefaultPluginId));
   this.f_tooltips__org_pepstock_charba_client_options_Options_ = Tooltips.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultTooltips__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getTooltips__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId));
@@ -497,6 +499,7 @@ class Options extends AbstractModel {
 IsDefaultOptions.$markImplementor(Options);
 HasSpanGaps.$markImplementor(Options);
 HasAnimationOptions.$markImplementor(Options);
+HasCallbackScope.$markImplementor(Options);
 $Util.$setClassMetadata(Options, "org.pepstock.charba.client.options.Options");
 
 exports = Options;

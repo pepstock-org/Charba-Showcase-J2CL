@@ -109,7 +109,7 @@ class Font extends AbstractDynamicConfiguration {
  
  m_resetCallback__() {
   if (!$Equality.$same(this.f_scriptableFontProvider__org_pepstock_charba_client_configuration_Font_, null) && !$Equality.$same(this.f_scriptableFontProvider__org_pepstock_charba_client_configuration_Font_.m_getFontCallback__(), null)) {
-   this.f_scriptableFontProvider__org_pepstock_charba_client_configuration_Font_.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(null);
+   this.f_scriptableFontProvider__org_pepstock_charba_client_configuration_Font_.m_setFont__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {Function}*/ (null));
   }
  }
  //Default method forwarding stub.

@@ -11,7 +11,7 @@ goog.require('org.pepstock.charba.client.enums.AxisKind');
 goog.require('org.pepstock.charba.client.enums.AxisType');
 goog.require('org.pepstock.charba.client.enums.DefaultScaleId');
 goog.require('org.pepstock.charba.client.options.ExtendedScale');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 goog.require('vmbootstrap.Casts');
 
 const CartesianCategoryAxis = goog.require('org.pepstock.charba.client.configuration.CartesianCategoryAxis$impl');

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultWheel.impl.java.js",
+"lineCount":62,
+"mappings":"A;;;;;;;;;;;MAwBY,Y;;CAAA,W;EAAAA,Q;;;QAOH,S;EAAAC,mC;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,iC;;;;CAPG,kB;EAAAC,uG;;;;CAAA,Y;EAAAC,iG;;;;CAAA,a;EAAAC,kG;;;QAEX,4D;EAAAC,6G;;;QAFW,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;EAAAA,yB;EAEXA,uG;;;;;;;;;AAFW;;",
+"sources":["DefaultWheel.java"],
+"names":["org.pepstock.charba.client.zoom.DefaultWheel.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.DefaultWheel.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.DefaultWheel.<init>","org.pepstock.charba.client.zoom.DefaultWheel.getModifierKey","org.pepstock.charba.client.zoom.DefaultWheel.getSpeed","org.pepstock.charba.client.zoom.DefaultWheel.isEnabled","org.pepstock.charba.client.zoom.DefaultWheel.<synthetic: getter>","org.pepstock.charba.client.zoom.DefaultWheel.<clinit>"]
+}
+

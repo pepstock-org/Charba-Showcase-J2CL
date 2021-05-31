@@ -20,13 +20,13 @@ class LinearTickOptionsHandler extends AxisContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_countCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_maxTicksLimitCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_precisionCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_stepSizeCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_;
   /**@type {CountCallback}*/
   this.f_countCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_;
@@ -48,16 +48,16 @@ class LinearTickOptionsHandler extends AxisContainer {
  $ctor__org_pepstock_charba_client_configuration_LinearTickOptionsHandler__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {
   this.$ctor__org_pepstock_charba_client_configuration_AxisContainer__org_pepstock_charba_client_configuration_Axis(axis);
   this.$init___$p_org_pepstock_charba_client_configuration_LinearTickOptionsHandler();
-  this.f_countCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_countCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** ? */ context) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getCountCallback___$pp_org_pepstock_charba_client_configuration(), Integer.m_valueOf__int(this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_getCount__())), Integer)).m_intValue__();
   };
-  this.f_maxTicksLimitCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_maxTicksLimitCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** ? */ context_1) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_1), this.m_getMaxTicksLimitCallback___$pp_org_pepstock_charba_client_configuration(), Integer.m_valueOf__int(this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_getMaxTicksLimit__())), Integer)).m_intValue__();
   };
-  this.f_precisionCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_precisionCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** ? */ context_2) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_2), this.m_getPrecisionCallback___$pp_org_pepstock_charba_client_configuration(), Integer.m_valueOf__int(this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_getPrecision__())), Integer)).m_intValue__();
   };
-  this.f_stepSizeCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_stepSizeCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** ? */ context_3) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_3), this.m_getStepSizeCallback___$pp_org_pepstock_charba_client_configuration(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_getStepSize__()), Double)));
   };
  }
@@ -70,6 +70,11 @@ class LinearTickOptionsHandler extends AxisContainer {
   this.f_countCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = countCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_COUNT__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, countCallback, this.f_countCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_);
  }
+ 
+ m_setCount__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/** Function */ countCallback) {
+  this.m_setCount__org_pepstock_charba_client_callbacks_CountCallback_$pp_org_pepstock_charba_client_configuration(/**@type {CountCallback}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_COUNT__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, countCallback);
+ }
  /** @return {MaxTicksLimitCallback} */
  m_getMaxTicksLimitCallback___$pp_org_pepstock_charba_client_configuration() {
   return this.f_maxTicksLimitCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_;
@@ -78,6 +83,11 @@ class LinearTickOptionsHandler extends AxisContainer {
  m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback_$pp_org_pepstock_charba_client_configuration(/** MaxTicksLimitCallback */ maxTicksLimitCallback) {
   this.f_maxTicksLimitCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = maxTicksLimitCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_MAX_TICKS_LIMIT__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, maxTicksLimitCallback, this.f_maxTicksLimitCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_);
+ }
+ 
+ m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/** Function */ maxTicksLimitCallback) {
+  this.m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback_$pp_org_pepstock_charba_client_configuration(/**@type {MaxTicksLimitCallback}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_MAX_TICKS_LIMIT__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, maxTicksLimitCallback);
  }
  /** @return {PrecisionCallback} */
  m_getPrecisionCallback___$pp_org_pepstock_charba_client_configuration() {
@@ -88,6 +98,11 @@ class LinearTickOptionsHandler extends AxisContainer {
   this.f_precisionCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = precisionCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_PRECISION__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, precisionCallback, this.f_precisionCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_);
  }
+ 
+ m_setPrecision__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/** Function */ precisionCallback) {
+  this.m_setPrecision__org_pepstock_charba_client_callbacks_PrecisionCallback_$pp_org_pepstock_charba_client_configuration(/**@type {PrecisionCallback}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_PRECISION__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, precisionCallback);
+ }
  /** @return {StepSizeCallback} */
  m_getStepSizeCallback___$pp_org_pepstock_charba_client_configuration() {
   return this.f_stepSizeCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_;
@@ -97,12 +112,17 @@ class LinearTickOptionsHandler extends AxisContainer {
   this.f_stepSizeCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = stepSizeCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_STEP_SIZE__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, stepSizeCallback, this.f_stepSizeCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_);
  }
+ 
+ m_setStepSize__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/** Function */ stepSizeCallback) {
+  this.m_setStepSize__org_pepstock_charba_client_callbacks_StepSizeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {StepSizeCallback}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getTicks__(), Property.f_STEP_SIZE__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_Property, stepSizeCallback);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_LinearTickOptionsHandler() {
-  this.f_countCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_maxTicksLimitCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_precisionCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_stepSizeCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_countCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_maxTicksLimitCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_precisionCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_stepSizeCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_countCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = null;
   this.f_maxTicksLimitCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = null;
   this.f_precisionCallback__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_ = null;

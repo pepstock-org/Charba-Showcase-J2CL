@@ -17,7 +17,7 @@ goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector');
 goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions.Property');
 goog.require('org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions');
 goog.require('org.pepstock.charba.client.impl.plugins.SelectionCleaner');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 goog.require('org.pepstock.charba.client.plugins.AbstractPluginOptions');
 goog.require('vmbootstrap.Casts');
 

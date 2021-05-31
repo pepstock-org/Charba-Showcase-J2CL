@@ -37,13 +37,13 @@ class SelectionHandler extends j_l_Object {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_mouseDownCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_;
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_mouseMoveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_;
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_mouseUpCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_;
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_mouseLeaveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_;
   /**@type {IsChart}*/
   this.f_chart__org_pepstock_charba_client_impl_plugins_SelectionHandler_;
@@ -85,17 +85,17 @@ class SelectionHandler extends j_l_Object {
   this.$init___$p_org_pepstock_charba_client_impl_plugins_SelectionHandler();
   this.f_chart__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = chart;
   this.f_options__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = options;
-  this.f_mouseDownCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ context, /** Object */ event) =>{
-   this.m_onMouseDown__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(event);
+  this.f_mouseDownCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ arg0) =>{
+   this.m_onMouseDown__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(arg0);
   };
-  this.f_mouseMoveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ context_1, /** Object */ event_1) =>{
-   this.m_onMouseMove__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(event_1);
+  this.f_mouseMoveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ arg0_1) =>{
+   this.m_onMouseMove__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(arg0_1);
   };
-  this.f_mouseUpCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ context_2, /** Object */ event_2) =>{
-   this.m_onMouseUp__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(event_2);
+  this.f_mouseUpCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ arg0_2) =>{
+   this.m_onMouseUp__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(arg0_2);
   };
-  this.f_mouseLeaveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ context_3, /** Object */ event_3) =>{
-   this.m_onMouseLeave__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(event_3);
+  this.f_mouseLeaveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_.callback = (/** Object */ arg0_3) =>{
+   this.m_onMouseLeave__org_pepstock_charba_client_dom_BaseNativeEvent_$pp_org_pepstock_charba_client_impl_plugins(arg0_3);
   };
   this.f_paddingTop__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = chart.m_getOptions__().m_getLayout__().m_getPadding__().m_getTop__();
   this.f_paddingBottom__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = chart.m_getOptions__().m_getLayout__().m_getPadding__().m_getBottom__();
@@ -541,10 +541,10 @@ class SelectionHandler extends j_l_Object {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_impl_plugins_SelectionHandler() {
-  this.f_mouseDownCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_mouseMoveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_mouseUpCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_mouseLeaveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_mouseDownCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_mouseMoveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_mouseUpCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_mouseLeaveCallbackProxy__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_area__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = SelectionArea.$create__();
   this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = null;
   this.f_status__org_pepstock_charba_client_impl_plugins_SelectionHandler_ = SelectionStatus.f_READY__org_pepstock_charba_client_impl_plugins_SelectionStatus;

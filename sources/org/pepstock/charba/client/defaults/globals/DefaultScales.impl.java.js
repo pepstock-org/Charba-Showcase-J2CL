@@ -7,7 +7,7 @@ const IsDefaultScales = goog.require('org.pepstock.charba.client.defaults.IsDefa
 let IsDefaultScale = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScale$impl');
 let DefaultScale = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultScale$impl');
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
  * @implements {IsDefaultScales}
@@ -32,7 +32,7 @@ class DefaultScales extends j_l_Object {
   this.$init___$p_org_pepstock_charba_client_defaults_globals_DefaultScales();
  }
  /** @override @return {IsDefaultScale} */
- m_getAxis__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_enums_AxisKind(/** IsScaleId */ scaleId, /** AxisKind */ kind) {
+ m_getAxis__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(/** ScaleId */ scaleId, /** AxisKind */ kind) {
   return this.f_scale__org_pepstock_charba_client_defaults_globals_DefaultScales_;
  }
  /** @private */

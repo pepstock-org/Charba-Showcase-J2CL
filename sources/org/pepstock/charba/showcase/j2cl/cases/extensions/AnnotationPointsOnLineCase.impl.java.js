@@ -80,8 +80,8 @@ class AnnotationPointsOnLineCase extends BaseComposite {
   let point1 = PointAnnotation.$create__();
   point1.m_setDrawTime__org_pepstock_charba_client_annotation_enums_DrawTime(DrawTime.f_AFTER_DATASETS_DRAW__org_pepstock_charba_client_annotation_enums_DrawTime);
   point1.m_setXValue__java_lang_String("February");
-  point1.m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
-  point1.m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  point1.m_setXScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  point1.m_setYScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
   point1.m_setYValue__double(50);
   point1.m_setRadius__double(10);
   point1.m_setBackgroundColor__org_pepstock_charba_client_colors_IsColor(GwtMaterialColor.f_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor.m_alpha__double(0.3));
@@ -89,8 +89,8 @@ class AnnotationPointsOnLineCase extends BaseComposite {
   point1.m_setBorderColor__org_pepstock_charba_client_colors_IsColor(GwtMaterialColor.f_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor.m_darker__());
   let point2 = PointAnnotation.$create__();
   point2.m_setDrawTime__org_pepstock_charba_client_annotation_enums_DrawTime(DrawTime.f_AFTER_DATASETS_DRAW__org_pepstock_charba_client_annotation_enums_DrawTime);
-  point2.m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
-  point2.m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  point2.m_setXScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  point2.m_setYScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
   point2.m_setXValue__java_lang_String("April");
   point2.m_setYValue__double(20);
   point2.m_setRadius__double(25);
@@ -99,8 +99,8 @@ class AnnotationPointsOnLineCase extends BaseComposite {
   point2.m_setBorderColor__org_pepstock_charba_client_colors_IsColor(GwtMaterialColor.f_BROWN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor.m_darker__());
   let point3 = PointAnnotation.$create__();
   point3.m_setDrawTime__org_pepstock_charba_client_annotation_enums_DrawTime(DrawTime.f_AFTER_DATASETS_DRAW__org_pepstock_charba_client_annotation_enums_DrawTime);
-  point3.m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
-  point3.m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  point3.m_setXScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  point3.m_setYScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
   point3.m_setXValue__java_lang_String("July");
   point3.m_setYValue__double(30);
   point3.m_setRadius__double(15);
@@ -108,8 +108,8 @@ class AnnotationPointsOnLineCase extends BaseComposite {
   point3.m_setBorderWidth__int(4);
   point3.m_setBorderColor__org_pepstock_charba_client_colors_IsColor(GwtMaterialColor.f_GREEN_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor.m_darker__());
   let point4 = PointAnnotation.$create__();
-  point4.m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
-  point4.m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  point4.m_setXScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  point4.m_setYScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
   point4.m_setDrawTime__org_pepstock_charba_client_annotation_enums_DrawTime(DrawTime.f_AFTER_DATASETS_DRAW__org_pepstock_charba_client_annotation_enums_DrawTime);
   point4.m_setXValue__java_lang_String("November");
   point4.m_setYValue__double(60);

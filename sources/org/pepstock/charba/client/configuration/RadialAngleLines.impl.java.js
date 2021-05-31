@@ -25,7 +25,7 @@ class RadialAngleLines extends AbstractScaleLines {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(?):Array>}*/
   this.f_borderDashCallbackProxy__org_pepstock_charba_client_configuration_RadialAngleLines_;
   /**@type {BorderDashCallback<ScaleContext>}*/
   this.f_borderDashCallback__org_pepstock_charba_client_configuration_RadialAngleLines_;
@@ -41,7 +41,7 @@ class RadialAngleLines extends AbstractScaleLines {
  $ctor__org_pepstock_charba_client_configuration_RadialAngleLines__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {
   this.$ctor__org_pepstock_charba_client_configuration_AbstractScaleLines__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_defaults_IsDefaultScaleLines(axis, axis.m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getAngleLines__());
   this.$init___$p_org_pepstock_charba_client_configuration_RadialAngleLines();
-  this.f_borderDashCallbackProxy__org_pepstock_charba_client_configuration_RadialAngleLines_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_borderDashCallbackProxy__org_pepstock_charba_client_configuration_RadialAngleLines_.callback = (/** ? */ context) =>{
    return this.m_onBorderDash__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_callbacks_BorderDashCallback__java_util_List_$p_org_pepstock_charba_client_configuration_RadialAngleLines(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getBorderDashCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getAngleLines__().m_getBorderDash__());
   };
  }
@@ -111,6 +111,11 @@ class RadialAngleLines extends AbstractScaleLines {
   this.f_borderDashCallback__org_pepstock_charba_client_configuration_RadialAngleLines_ = borderDashCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getAngleLines__(), Property.f_BORDER_DASH__org_pepstock_charba_client_configuration_RadialAngleLines_Property, borderDashCallback, this.f_borderDashCallbackProxy__org_pepstock_charba_client_configuration_RadialAngleLines_);
  }
+ 
+ m_setBorderDash__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashCallback) {
+  this.m_setBorderDash__org_pepstock_charba_client_callbacks_BorderDashCallback(/**@type {BorderDashCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getAngleLines__(), Property.f_BORDER_DASH__org_pepstock_charba_client_configuration_RadialAngleLines_Property, borderDashCallback);
+ }
  /** @return {Array} */
  m_onBorderDash__org_pepstock_charba_client_callbacks_ScaleContext__org_pepstock_charba_client_callbacks_BorderDashCallback__java_util_List_$p_org_pepstock_charba_client_configuration_RadialAngleLines(/** ScaleContext */ context, /** BorderDashCallback<ScaleContext> */ borderDashCallback, /** List<Integer> */ defaultValue) {
   let result = /**@type {List<Integer>}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, borderDashCallback), List));
@@ -121,7 +126,7 @@ class RadialAngleLines extends AbstractScaleLines {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_RadialAngleLines() {
-  this.f_borderDashCallbackProxy__org_pepstock_charba_client_configuration_RadialAngleLines_ = /**@type {CharbaCallbackProxy<?function(Object, ?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderDashCallbackProxy__org_pepstock_charba_client_configuration_RadialAngleLines_ = /**@type {CharbaCallbackProxy<?function(?):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_borderDashCallback__org_pepstock_charba_client_configuration_RadialAngleLines_ = null;
  }
  

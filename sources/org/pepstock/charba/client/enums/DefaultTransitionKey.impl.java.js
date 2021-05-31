@@ -2,7 +2,7 @@ goog.module('org.pepstock.charba.client.enums.DefaultTransitionKey$impl');
 
 const Enum = goog.require('java.lang.Enum$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
-const IsTransitionKey = goog.require('org.pepstock.charba.client.options.IsTransitionKey$impl');
+const TransitionKey = goog.require('org.pepstock.charba.client.options.TransitionKey$impl');
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
@@ -11,7 +11,7 @@ let $Enums = goog.forwardDeclare('vmbootstrap.Enums$impl');
 
 /**
  * @extends {Enum<DefaultTransitionKey>}
- * @implements {IsTransitionKey}
+ * @implements {TransitionKey}
  */
 class DefaultTransitionKey extends Enum {
  /** @protected */
@@ -38,7 +38,7 @@ class DefaultTransitionKey extends Enum {
   return this.f_value__org_pepstock_charba_client_enums_DefaultTransitionKey_;
  }
  /** @return {boolean} */
- static m_is__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ mode) {
+ static m_is__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ mode) {
   DefaultTransitionKey.$clinit();
   if (Key.m_isValid__org_pepstock_charba_client_commons_Key(mode)) {
    return DefaultTransitionKey.m_is__java_lang_String(mode.m_value__());
@@ -147,7 +147,7 @@ DefaultTransitionKey.$ordinal_RESIZE__org_pepstock_charba_client_enums_DefaultTr
 DefaultTransitionKey.$ordinal_SHOW__org_pepstock_charba_client_enums_DefaultTransitionKey = 5;
 /**@const {number}*/
 DefaultTransitionKey.$ordinal_NONE__org_pepstock_charba_client_enums_DefaultTransitionKey = 6;
-IsTransitionKey.$markImplementor(DefaultTransitionKey);
+TransitionKey.$markImplementor(DefaultTransitionKey);
 $Util.$setClassMetadataForEnum(DefaultTransitionKey, "org.pepstock.charba.client.enums.DefaultTransitionKey");
 
 exports = DefaultTransitionKey;

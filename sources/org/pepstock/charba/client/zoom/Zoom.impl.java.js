@@ -5,11 +5,10 @@ const AbstractConfigurationItem = goog.require('org.pepstock.charba.client.zoom.
 const IsDefaultZoom = goog.require('org.pepstock.charba.client.zoom.IsDefaultZoom$impl');
 
 let CallbackPropertyHandler = goog.forwardDeclare('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
-let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
-let ModifierKey = goog.forwardDeclare('org.pepstock.charba.client.enums.ModifierKey$impl');
 let Drag = goog.forwardDeclare('org.pepstock.charba.client.zoom.Drag$impl');
 let IsDefaultConfigurationItem = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultConfigurationItem$impl');
+let Pinch = goog.forwardDeclare('org.pepstock.charba.client.zoom.Pinch$impl');
+let Wheel = goog.forwardDeclare('org.pepstock.charba.client.zoom.Wheel$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.zoom.Zoom.Property$impl');
 let CompletedCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.CompletedCallback$impl');
 let ProgressCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.ProgressCallback$impl');
@@ -26,6 +25,12 @@ class Zoom extends AbstractConfigurationItem {
   super();
   /**@type {IsDefaultZoom}*/
   this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_;
+  /**@type {Wheel}*/
+  this.f_wheel__org_pepstock_charba_client_zoom_Zoom_;
+  /**@type {Drag}*/
+  this.f_drag__org_pepstock_charba_client_zoom_Zoom_;
+  /**@type {Pinch}*/
+  this.f_pinch__org_pepstock_charba_client_zoom_Zoom_;
  }
  /** @return {!Zoom} */
  static $create__org_pepstock_charba_client_zoom_IsDefaultZoom__org_pepstock_charba_client_commons_NativeObject(/** IsDefaultZoom */ defaultOptions, /** ? */ nativeObject) {
@@ -38,6 +43,9 @@ class Zoom extends AbstractConfigurationItem {
  $ctor__org_pepstock_charba_client_zoom_Zoom__org_pepstock_charba_client_zoom_IsDefaultZoom__org_pepstock_charba_client_commons_NativeObject(/** IsDefaultZoom */ defaultOptions, /** ? */ nativeObject) {
   this.$ctor__org_pepstock_charba_client_zoom_AbstractConfigurationItem__org_pepstock_charba_client_commons_NativeObject(nativeObject);
   this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_ = /**@type {IsDefaultZoom}*/ ($Casts.$to(this.m_checkDefaultValuesArgument__java_lang_Object(defaultOptions), IsDefaultZoom));
+  this.f_wheel__org_pepstock_charba_client_zoom_Zoom_ = Wheel.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_zoom_IsDefaultWheel__org_pepstock_charba_client_commons_NativeObject(this, Property.f_WHEEL__org_pepstock_charba_client_zoom_Zoom_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_.m_getWheel__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_WHEEL__org_pepstock_charba_client_zoom_Zoom_Property));
+  this.f_drag__org_pepstock_charba_client_zoom_Zoom_ = Drag.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_zoom_IsDefaultDrag__org_pepstock_charba_client_commons_NativeObject(this, Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_.m_getDrag__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property));
+  this.f_pinch__org_pepstock_charba_client_zoom_Zoom_ = Pinch.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_zoom_IsDefaultPinch__org_pepstock_charba_client_commons_NativeObject(this, Property.f_PINCH__org_pepstock_charba_client_zoom_Zoom_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_.m_getPinch__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_PINCH__org_pepstock_charba_client_zoom_Zoom_Property));
  }
  /** @override @return {IsDefaultConfigurationItem} */
  m_getDefaultsOptions___$pp_org_pepstock_charba_client_zoom() {
@@ -59,50 +67,24 @@ class Zoom extends AbstractConfigurationItem {
  m_getStartPropertyHandler___$pp_org_pepstock_charba_client_zoom() {
   return Zoom.f_ZOOM_START_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Zoom_;
  }
- 
- m_setDrag__boolean(/** boolean */ drag) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property, drag);
- }
- 
- m_setDrag__org_pepstock_charba_client_zoom_Drag(/** Drag */ drag) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property, drag);
- }
- /** @override @return {boolean} */
- m_isDrag__() {
-  if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
-   return true;
-  }
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_.m_isDrag__());
+ /** @override @return {Wheel} */
+ m_getWheel__() {
+  return this.f_wheel__org_pepstock_charba_client_zoom_Zoom_;
  }
  /** @override @return {Drag} */
  m_getDrag__() {
-  if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
-   return Drag.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_zoom_IsDefaultDrag(this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_DRAG__org_pepstock_charba_client_zoom_Zoom_Property), this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_.m_getDrag__());
-  }
-  return null;
+  return this.f_drag__org_pepstock_charba_client_zoom_Zoom_;
  }
- 
- m_setSpeed__double(/** number */ speed) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_SPEED__org_pepstock_charba_client_zoom_Zoom_Property, Checker.m_checkAndGetIfBetween__double__double__double__java_lang_String(speed, 0, 1, "Speed value"));
- }
- /** @override @return {number} */
- m_getSpeed__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_SPEED__org_pepstock_charba_client_zoom_Zoom_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_.m_getSpeed__());
- }
- 
- m_setWheelModifierKey__org_pepstock_charba_client_enums_ModifierKey(/** ModifierKey */ modifierKey) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_WHEEL_MODIFIER_KEY__org_pepstock_charba_client_zoom_Zoom_Property, modifierKey);
- }
- /** @override @return {ModifierKey} */
- m_getWheelModifierKey__() {
-  return /**@type {ModifierKey}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_WHEEL_MODIFIER_KEY__org_pepstock_charba_client_zoom_Zoom_Property, ModifierKey.m_values__(), this.f_defaultOptions__org_pepstock_charba_client_zoom_Zoom_.m_getWheelModifierKey__()), ModifierKey));
+ /** @override @return {Pinch} */
+ m_getPinch__() {
+  return this.f_pinch__org_pepstock_charba_client_zoom_Zoom_;
  }
  
  static $clinit() {
   Zoom.$clinit = () =>{};
   Zoom.$loadModules();
   AbstractConfigurationItem.$clinit();
-  IsDefaultZoom.$clinit();
+  IsDefaultConfigurationItem.$clinit();
   Zoom.f_ZOOM_PROGRESS_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Zoom_ = /**@type {!CallbackPropertyHandler<ProgressCallback>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Property.f_ON_ZOOM__org_pepstock_charba_client_zoom_Zoom_Property));
   Zoom.f_ZOOM_COMPLETED_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Zoom_ = /**@type {!CallbackPropertyHandler<CompletedCallback>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Property.f_ON_ZOOM_COMPLETED__org_pepstock_charba_client_zoom_Zoom_Property));
   Zoom.f_ZOOM_REJECTED_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Zoom_ = /**@type {!CallbackPropertyHandler<RejectedCallback>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Property.f_ON_ZOOM_REJECTED__org_pepstock_charba_client_zoom_Zoom_Property));
@@ -115,10 +97,10 @@ class Zoom extends AbstractConfigurationItem {
  
  static $loadModules() {
   CallbackPropertyHandler = goog.module.get('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
-  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
-  ModifierKey = goog.module.get('org.pepstock.charba.client.enums.ModifierKey$impl');
   Drag = goog.module.get('org.pepstock.charba.client.zoom.Drag$impl');
+  IsDefaultConfigurationItem = goog.module.get('org.pepstock.charba.client.zoom.IsDefaultConfigurationItem$impl');
+  Pinch = goog.module.get('org.pepstock.charba.client.zoom.Pinch$impl');
+  Wheel = goog.module.get('org.pepstock.charba.client.zoom.Wheel$impl');
   Property = goog.module.get('org.pepstock.charba.client.zoom.Zoom.Property$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
@@ -131,12 +113,6 @@ Zoom.f_ZOOM_COMPLETED_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Zoom_;
 Zoom.f_ZOOM_REJECTED_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Zoom_;
 /**@type {CallbackPropertyHandler<StartCallback>}*/
 Zoom.f_ZOOM_START_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Zoom_;
-/**@const {number}*/
-Zoom.f_DEFAULT_SPEED__org_pepstock_charba_client_zoom_Zoom = 0.1;
-/**@const {boolean}*/
-Zoom.f_DEFAULT_DRAG__org_pepstock_charba_client_zoom_Zoom = false;
-/**@const {number}*/
-Zoom.f_DEFAULT_THRESHOLD__org_pepstock_charba_client_zoom_Zoom = 0;
 IsDefaultZoom.$markImplementor(Zoom);
 $Util.$setClassMetadata(Zoom, "org.pepstock.charba.client.zoom.Zoom");
 

@@ -25,11 +25,11 @@ class AbstractScaleLines extends AxisContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_lineWidthCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_;
   /**@type {ColorCallback<ScaleContext>}*/
   this.f_colorCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_;
@@ -43,13 +43,13 @@ class AbstractScaleLines extends AxisContainer {
   this.$ctor__org_pepstock_charba_client_configuration_AxisContainer__org_pepstock_charba_client_configuration_Axis(axis);
   this.$init___$p_org_pepstock_charba_client_configuration_AbstractScaleLines();
   Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(defaultValues, "Default value argument");
-  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_.callback = (/** ? */ context) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String__boolean(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getColorCallback__(), defaultValues.m_getColorAsString__(), false);
   };
-  this.f_lineWidthCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_lineWidthCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_.callback = (/** ? */ context_1) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_1), this.m_getLineWidthCallback__(), Integer.m_valueOf__int(defaultValues.m_getLineWidth__())), Integer)).m_intValue__();
   };
-  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_.callback = (/** ? */ context_2) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_2), this.m_getBorderDashOffsetCallback__(), defaultValues.m_getBorderDashOffset__()), Double)));
   };
  }
@@ -64,6 +64,11 @@ class AbstractScaleLines extends AxisContainer {
   this.f_colorCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_ = colorCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(this.m_checkAndGet___$p_org_pepstock_charba_client_configuration_AbstractScaleLines(), Property.f_COLOR__org_pepstock_charba_client_configuration_AbstractScaleLines_Property, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_);
  }
+ 
+ m_setColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ colorCallback) {
+  this.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(this.m_checkAndGet___$p_org_pepstock_charba_client_configuration_AbstractScaleLines(), Property.f_COLOR__org_pepstock_charba_client_configuration_AbstractScaleLines_Property, colorCallback);
+ }
  /** @return {WidthCallback<ScaleContext>} */
  m_getLineWidthCallback__() {
   return this.f_lineWidthCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_;
@@ -72,6 +77,11 @@ class AbstractScaleLines extends AxisContainer {
  m_setLineWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<ScaleContext> */ lineWidthCallback) {
   this.f_lineWidthCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_ = lineWidthCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(this.m_checkAndGet___$p_org_pepstock_charba_client_configuration_AbstractScaleLines(), Property.f_LINE_WIDTH__org_pepstock_charba_client_configuration_AbstractScaleLines_Property, lineWidthCallback, this.f_lineWidthCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_);
+ }
+ 
+ m_setLineWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ lineWidthCallback) {
+  this.m_setLineWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(this.m_checkAndGet___$p_org_pepstock_charba_client_configuration_AbstractScaleLines(), Property.f_LINE_WIDTH__org_pepstock_charba_client_configuration_AbstractScaleLines_Property, lineWidthCallback);
  }
  /** @return {BorderDashOffsetCallback<ScaleContext>} */
  m_getBorderDashOffsetCallback__() {
@@ -82,15 +92,20 @@ class AbstractScaleLines extends AxisContainer {
   this.f_borderDashOffsetCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_ = borderDashOffsetCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(this.m_checkAndGet___$p_org_pepstock_charba_client_configuration_AbstractScaleLines(), Property.f_BORDER_DASH_OFFSET__org_pepstock_charba_client_configuration_AbstractScaleLines_Property, borderDashOffsetCallback, this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_);
  }
+ 
+ m_setBorderDashOffset__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderDashOffsetCallback) {
+  this.m_setBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(/**@type {BorderDashOffsetCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(this.m_checkAndGet___$p_org_pepstock_charba_client_configuration_AbstractScaleLines(), Property.f_BORDER_DASH_OFFSET__org_pepstock_charba_client_configuration_AbstractScaleLines_Property, borderDashOffsetCallback);
+ }
  /** @return {AbstractNode} */
  m_checkAndGet___$p_org_pepstock_charba_client_configuration_AbstractScaleLines() {
   return /**@type {AbstractNode}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(this.m_getElement___$pp_org_pepstock_charba_client_configuration(), "Node element"), AbstractNode));
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_AbstractScaleLines() {
-  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_lineWidthCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_lineWidthCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_AbstractScaleLines_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_colorCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_ = null;
   this.f_lineWidthCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_ = null;
   this.f_borderDashOffsetCallback__org_pepstock_charba_client_configuration_AbstractScaleLines_ = null;

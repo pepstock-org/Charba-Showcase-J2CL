@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"Transitions.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;;;;;;;MA+BmB,W;;CAAA,W;EAAAA,Q;EAAAA;OAGiB,gEAHjBA,C;;;QAalB,2M,qBAAyBC,M,aAAYC,Q,8BAA+BC,a,WAA4BC,Y;EAAhGC,sB;EAAAA,kC;EAAAA,mT;EAAAA,iB;;;CAAA,yP,qBAAyBJ,M,aAAYC,Q,8BAA+BC,a,WAA4BC,Y;EAC/FE,sO;EAEAA,sF;;;CAUc,yD,wBAAoBC,U;EAElCC;GAECA,4LAFDA;G;EAMAA,a;;;CAU0B,yD,wBAAoBD,U;EAE9CE;GAECA,mdAFDA;G;EAMAA,Y;;;CAUW,iH,wBAAoBF,U,6BAAgCG,mB;EAE/DC;GAECA,mJAFDA;G;;;CAa0B,4D,wBAAuBJ,U;EAEjDK,IAAoBC,OAApBD,gZ;EAEAA,uI;EAEAA,e;;;CASW,4D,wBAAuBL,U;EAElCO;GAECA,8EAFDA;G;;;QA9FiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"lineCount":83,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MAiCmB,W;;CAAA,W;EAAAA,Q;EAAAA;OAGiB,gEAHjBA,C;EAAAA;OAKG,wDALHA,C;;;QAgBlB,6N,qBAAyBC,M,aAAYC,Q,8BAA+BC,a,WAA4BC,Y,iBAAqBC,K;EAArHC,sB;EAAAA,kC;EAAAA,4U;EAAAA,iB;;;CAAA,2Q,qBAAyBL,M,aAAYC,Q,8BAA+BC,a,WAA4BC,Y,iBAAqBC,K;EACpHE,sO;EAEAA,sF;EAEAA,yM;;;CASa,Y;EACbC,qE;;;CAUc,uD,sBAAkBC,U;EAEhCC;GAECA,4LAFDA;G;EAMAA,a;;;CAU0B,uD,sBAAkBD,U;EAE5CE;GAECA,wfAFDA;G;EAMAA,Y;;;CAUW,+G,sBAAkBF,U,6BAAgCG,mB;EAE7DC;GAECA,mJAFDA;G;;;CAa0B,0D,sBAAqBJ,U;EAE/CK,IAAoBC,OAApBD,qb;EAEAA,uI;EAEAA,e;;;CASW,0D,sBAAqBL,U;EAEhCO;GAECA,4EAFDA;G;;;QA7GiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
 "sources":["Transitions.java"],
-"names":["org.pepstock.charba.client.options.Transitions.<synthetic: ctor_js>","parent","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Transitions.<synthetic: ctor_create>","org.pepstock.charba.client.options.Transitions.<init>","transition","org.pepstock.charba.client.options.Transitions.has","org.pepstock.charba.client.options.Transitions.get","animationTransition","org.pepstock.charba.client.options.Transitions.set","org.pepstock.charba.client.options.Transitions.create","options","org.pepstock.charba.client.options.Transitions.remove","org.pepstock.charba.client.options.Transitions.<clinit>"]
+"names":["org.pepstock.charba.client.options.Transitions.<synthetic: ctor_js>","parent","childKey","defaultValues","nativeObject","scope","org.pepstock.charba.client.options.Transitions.<synthetic: ctor_create>","org.pepstock.charba.client.options.Transitions.<init>","org.pepstock.charba.client.options.Transitions.getScope","transition","org.pepstock.charba.client.options.Transitions.has","org.pepstock.charba.client.options.Transitions.get","animationTransition","org.pepstock.charba.client.options.Transitions.set","org.pepstock.charba.client.options.Transitions.create","options","org.pepstock.charba.client.options.Transitions.remove","org.pepstock.charba.client.options.Transitions.<clinit>"]
 }
 

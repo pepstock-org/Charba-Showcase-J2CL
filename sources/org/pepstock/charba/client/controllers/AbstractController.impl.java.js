@@ -4,11 +4,11 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const Controller = goog.require('org.pepstock.charba.client.Controller$impl');
 
-let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
-let ControllerDatasetElement = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerDatasetElement$impl');
-let JsControllerHelper = goog.forwardDeclare('org.pepstock.charba.client.controllers.JsControllerHelper$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let ControllerType = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerType$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
+let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
  * @abstract
@@ -18,64 +18,74 @@ class AbstractController extends j_l_Object {
  /** @protected */
  constructor() {
   super();
+  /**@type {ControllerType}*/
+  this.f_type__org_pepstock_charba_client_controllers_AbstractController_;
  }
  
- $ctor__org_pepstock_charba_client_controllers_AbstractController__() {
+ $ctor__org_pepstock_charba_client_controllers_AbstractController__org_pepstock_charba_client_controllers_ControllerType(/** ControllerType */ type) {
   this.$ctor__java_lang_Object__();
+  this.f_type__org_pepstock_charba_client_controllers_AbstractController_ = /**@type {ControllerType}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(type, "Controller type argument"), ControllerType));
  }
- /** @override */
- m_initialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart)) {
-   JsControllerHelper.m_get__().m_initialize__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context);
-  }
+ /** @override @return {ControllerType} */
+ m_getType__() {
+  return this.f_type__org_pepstock_charba_client_controllers_AbstractController_;
  }
+ //Default method forwarding stub.
  /** @override */
- m_addElements__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart)) {
-   JsControllerHelper.m_get__().m_addElements__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context);
-  }
+ m_onAfterDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ arg0, /** IsChart */ arg1) {
+  Controller.m_onAfterDraw__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, arg0, arg1);
  }
+ //Default method forwarding stub.
  /** @override */
- m_draw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart)) {
-   JsControllerHelper.m_get__().m_draw__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context);
-  }
+ m_onAfterInitialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ arg0, /** IsChart */ arg1) {
+  Controller.m_onAfterInitialize__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, arg0, arg1);
  }
+ //Default method forwarding stub.
  /** @override */
- m_removeHoverStyle__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_controllers_ControllerDatasetElement__int__int(/** CharbaControllerContext */ context, /** IsChart */ chart, /** ControllerDatasetElement */ element, /** number */ datasetIndex, /** number */ index) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart) && !$Equality.$same(element, null)) {
-   JsControllerHelper.m_get__().m_removeHoverStyle__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_commons_NativeObject__int__int_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context, element.m_nativeObject___$pp_org_pepstock_charba_client_controllers(), datasetIndex, index);
-  }
+ m_onAfterLinkScales__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ arg0, /** IsChart */ arg1) {
+  Controller.m_onAfterLinkScales__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, arg0, arg1);
  }
+ //Default method forwarding stub.
  /** @override */
- m_setHoverStyle__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_controllers_ControllerDatasetElement__int__int(/** CharbaControllerContext */ context, /** IsChart */ chart, /** ControllerDatasetElement */ element, /** number */ datasetIndex, /** number */ index) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart) && !$Equality.$same(element, null)) {
-   JsControllerHelper.m_get__().m_setHoverStyle__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_commons_NativeObject__int__int_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context, element.m_nativeObject___$pp_org_pepstock_charba_client_controllers(), datasetIndex, index);
-  }
+ m_onAfterParse__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__int__int(/** CharbaControllerContext */ arg0, /** IsChart */ arg1, /** number */ arg2, /** number */ arg3) {
+  Controller.m_onAfterParse__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__int__int(this, arg0, arg1, arg2, arg3);
  }
+ //Default method forwarding stub.
  /** @override */
- m_update__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsTransitionKey(/** CharbaControllerContext */ context, /** IsChart */ chart, /** IsTransitionKey */ mode) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart)) {
-   JsControllerHelper.m_get__().m_update__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__java_lang_String_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context, IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(mode) ? mode.m_value__() : null);
-  }
+ m_onAfterUpdate__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_TransitionKey(/** CharbaControllerContext */ arg0, /** IsChart */ arg1, /** TransitionKey */ arg2) {
+  Controller.m_onAfterUpdate__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_TransitionKey(this, arg0, arg1, arg2);
  }
+ //Default method forwarding stub.
  /** @override */
- m_linkScales__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart)) {
-   JsControllerHelper.m_get__().m_linkScales__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context);
-  }
+ m_onBeforeDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ arg0, /** IsChart */ arg1) {
+  Controller.m_onBeforeDraw__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, arg0, arg1);
  }
+ //Default method forwarding stub.
  /** @override */
- m_buildOrUpdateElements__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__boolean(/** CharbaControllerContext */ context, /** IsChart */ chart, /** boolean */ resetNewElements) {
-  if (Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart)) {
-   JsControllerHelper.m_get__().m_buildOrUpdateElements__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__boolean_$pp_org_pepstock_charba_client_controllers(this.m_getType__(), context, resetNewElements);
-  }
+ m_onBeforeInitialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ arg0, /** IsChart */ arg1) {
+  Controller.m_onBeforeInitialize__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, arg0, arg1);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_onBeforeLinkScales__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ arg0, /** IsChart */ arg1) {
+  Controller.m_onBeforeLinkScales__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, arg0, arg1);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_onBeforeParse__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__int__int(/** CharbaControllerContext */ arg0, /** IsChart */ arg1, /** number */ arg2, /** number */ arg3) {
+  Controller.m_onBeforeParse__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__int__int(this, arg0, arg1, arg2, arg3);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_onBeforeUpdate__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_TransitionKey(/** CharbaControllerContext */ arg0, /** IsChart */ arg1, /** TransitionKey */ arg2) {
+  Controller.m_onBeforeUpdate__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_TransitionKey(this, arg0, arg1, arg2);
  }
  
  static $clinit() {
   AbstractController.$clinit = () =>{};
   AbstractController.$loadModules();
   j_l_Object.$clinit();
+  Controller.$clinit();
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -83,9 +93,9 @@ class AbstractController extends j_l_Object {
  }
  
  static $loadModules() {
-  $Equality = goog.module.get('nativebootstrap.Equality$impl');
-  JsControllerHelper = goog.module.get('org.pepstock.charba.client.controllers.JsControllerHelper$impl');
-  IsTransitionKey = goog.module.get('org.pepstock.charba.client.options.IsTransitionKey$impl');
+  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
+  ControllerType = goog.module.get('org.pepstock.charba.client.controllers.ControllerType$impl');
+  $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }
 Controller.$markImplementor(AbstractController);

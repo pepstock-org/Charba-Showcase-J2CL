@@ -114,7 +114,7 @@ class ControllerMyHorizontalBarCase extends BaseComposite {
   for (let $iterator = this.f_chart__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_ControllerMyHorizontalBarCase_.m_getData__().m_getDatasets__().m_iterator__(); $iterator.m_hasNext__(); ) {
    let dataset = /**@type {Dataset}*/ ($Casts.$to($iterator.m_next__(), Dataset));
    {
-    dataset.m_setData__arrayOf_double(this.m_getRandomDigits__int(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite));
+    dataset.m_setData__arrayOf_double(this.m_getRandomDigits__int__boolean(ControllerMyHorizontalBarCase.f_COUNTRIES__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_ControllerMyHorizontalBarCase_.length, false));
    }
   }
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_ControllerMyHorizontalBarCase_.m_update__();

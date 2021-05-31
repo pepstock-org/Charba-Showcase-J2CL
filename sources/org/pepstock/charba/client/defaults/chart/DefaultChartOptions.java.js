@@ -5,7 +5,7 @@ goog.require('org.pepstock.charba.client.ChartEnvelop');
 goog.require('org.pepstock.charba.client.ChartOptions');
 goog.require('org.pepstock.charba.client.ScaleType');
 goog.require('org.pepstock.charba.client.Type');
-goog.require('org.pepstock.charba.client.commons.IsEnvelop');
+goog.require('org.pepstock.charba.client.commons.Envelop');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultScaledOptions');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultScales');
 goog.require('org.pepstock.charba.client.defaults.chart.AbstractDefaultChartOptions');

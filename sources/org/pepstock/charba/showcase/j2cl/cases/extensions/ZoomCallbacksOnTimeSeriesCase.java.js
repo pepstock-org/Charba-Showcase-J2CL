@@ -32,7 +32,6 @@ goog.require('org.pepstock.charba.client.enums.InteractionAxis');
 goog.require('org.pepstock.charba.client.enums.ModifierKey');
 goog.require('org.pepstock.charba.client.enums.TickSource');
 goog.require('org.pepstock.charba.client.enums.TimeUnit');
-goog.require('org.pepstock.charba.client.zoom.Drag');
 goog.require('org.pepstock.charba.client.zoom.ZoomOptions');
 goog.require('org.pepstock.charba.client.zoom.ZoomPlugin');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite');

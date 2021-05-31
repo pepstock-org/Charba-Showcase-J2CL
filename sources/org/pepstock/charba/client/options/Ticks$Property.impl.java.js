@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_DISPLAY__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MAJOR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_PADDING__org_pepstock_charba_client_options_Ticks_Property, Property.$static_TEXT_STROKE_COLOR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_TEXT_STROKE_WIDTH__org_pepstock_charba_client_options_Ticks_Property, Property.$static_Z__org_pepstock_charba_client_options_Ticks_Property, Property.$static_AUTO_SKIP__org_pepstock_charba_client_options_Ticks_Property, Property.$static_AUTO_SKIP_PADDING__org_pepstock_charba_client_options_Ticks_Property, Property.$static_ALIGN__org_pepstock_charba_client_options_Ticks_Property, Property.$static_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property, Property.$static_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MAX_ROTATION__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MIN_ROTATION__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MIRROR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_SAMPLE_SIZE__org_pepstock_charba_client_options_Ticks_Property, Property.$static_FORMAT__org_pepstock_charba_client_options_Ticks_Property, Property.$static_COUNT__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MAX_TICKS_LIMIT__org_pepstock_charba_client_options_Ticks_Property, Property.$static_PRECISION__org_pepstock_charba_client_options_Ticks_Property, Property.$static_STEP_SIZE__org_pepstock_charba_client_options_Ticks_Property, Property.$static_BACKDROP_COLOR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_BACKDROP_PADDING__org_pepstock_charba_client_options_Ticks_Property, Property.$static_SHOW_LABEL_BACKDROP__org_pepstock_charba_client_options_Ticks_Property, Property.$static_SOURCE__org_pepstock_charba_client_options_Ticks_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_DISPLAY__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MAJOR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_PADDING__org_pepstock_charba_client_options_Ticks_Property, Property.$static_TEXT_STROKE_COLOR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_TEXT_STROKE_WIDTH__org_pepstock_charba_client_options_Ticks_Property, Property.$static_Z__org_pepstock_charba_client_options_Ticks_Property, Property.$static_AUTO_SKIP__org_pepstock_charba_client_options_Ticks_Property, Property.$static_AUTO_SKIP_PADDING__org_pepstock_charba_client_options_Ticks_Property, Property.$static_ALIGN__org_pepstock_charba_client_options_Ticks_Property, Property.$static_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property, Property.$static_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property, Property.$static_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MAX_ROTATION__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MIN_ROTATION__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MIRROR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_SAMPLE_SIZE__org_pepstock_charba_client_options_Ticks_Property, Property.$static_FORMAT__org_pepstock_charba_client_options_Ticks_Property, Property.$static_COUNT__org_pepstock_charba_client_options_Ticks_Property, Property.$static_MAX_TICKS_LIMIT__org_pepstock_charba_client_options_Ticks_Property, Property.$static_PRECISION__org_pepstock_charba_client_options_Ticks_Property, Property.$static_STEP_SIZE__org_pepstock_charba_client_options_Ticks_Property, Property.$static_BACKDROP_COLOR__org_pepstock_charba_client_options_Ticks_Property, Property.$static_BACKDROP_PADDING__org_pepstock_charba_client_options_Ticks_Property, Property.$static_SHOW_LABEL_BACKDROP__org_pepstock_charba_client_options_Ticks_Property, Property.$static_SOURCE__org_pepstock_charba_client_options_Ticks_Property], Property));
  }
  /** @return {!Property} */
  static get f_DISPLAY__org_pepstock_charba_client_options_Ticks_Property() {
@@ -88,6 +88,10 @@ class Property extends Enum {
  /** @return {!Property} */
  static get f_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property() {
   return (Property.$clinit(), Property.$static_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property);
+ }
+ /** @return {!Property} */
+ static get f_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property() {
+  return (Property.$clinit(), Property.$static_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property);
  }
  /** @return {!Property} */
  static get f_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property() {
@@ -160,6 +164,7 @@ class Property extends Enum {
   Property.$static_AUTO_SKIP_PADDING__org_pepstock_charba_client_options_Ticks_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AUTO_SKIP_PADDING"), Property.$ordinal_AUTO_SKIP_PADDING__org_pepstock_charba_client_options_Ticks_Property, "autoSkipPadding");
   Property.$static_ALIGN__org_pepstock_charba_client_options_Ticks_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ALIGN"), Property.$ordinal_ALIGN__org_pepstock_charba_client_options_Ticks_Property, "align");
   Property.$static_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CROSS_ALIGN"), Property.$ordinal_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property, "crossAlign");
+  Property.$static_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INCLUDE_BOUNDS"), Property.$ordinal_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property, "includeBounds");
   Property.$static_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LABEL_OFFSET"), Property.$ordinal_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property, "labelOffset");
   Property.$static_MAX_ROTATION__org_pepstock_charba_client_options_Ticks_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("MAX_ROTATION"), Property.$ordinal_MAX_ROTATION__org_pepstock_charba_client_options_Ticks_Property, "maxRotation");
   Property.$static_MIN_ROTATION__org_pepstock_charba_client_options_Ticks_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("MIN_ROTATION"), Property.$ordinal_MIN_ROTATION__org_pepstock_charba_client_options_Ticks_Property, "minRotation");
@@ -207,6 +212,8 @@ Property.$static_AUTO_SKIP_PADDING__org_pepstock_charba_client_options_Ticks_Pro
 Property.$static_ALIGN__org_pepstock_charba_client_options_Ticks_Property;
 /**@private {!Property}*/
 Property.$static_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property;
+/**@private {!Property}*/
+Property.$static_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property;
 /**@private {!Property}*/
 Property.$static_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property;
 /**@private {!Property}*/
@@ -258,33 +265,35 @@ Property.$ordinal_ALIGN__org_pepstock_charba_client_options_Ticks_Property = 8;
 /**@const {number}*/
 Property.$ordinal_CROSS_ALIGN__org_pepstock_charba_client_options_Ticks_Property = 9;
 /**@const {number}*/
-Property.$ordinal_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property = 10;
+Property.$ordinal_INCLUDE_BOUNDS__org_pepstock_charba_client_options_Ticks_Property = 10;
 /**@const {number}*/
-Property.$ordinal_MAX_ROTATION__org_pepstock_charba_client_options_Ticks_Property = 11;
+Property.$ordinal_LABEL_OFFSET__org_pepstock_charba_client_options_Ticks_Property = 11;
 /**@const {number}*/
-Property.$ordinal_MIN_ROTATION__org_pepstock_charba_client_options_Ticks_Property = 12;
+Property.$ordinal_MAX_ROTATION__org_pepstock_charba_client_options_Ticks_Property = 12;
 /**@const {number}*/
-Property.$ordinal_MIRROR__org_pepstock_charba_client_options_Ticks_Property = 13;
+Property.$ordinal_MIN_ROTATION__org_pepstock_charba_client_options_Ticks_Property = 13;
 /**@const {number}*/
-Property.$ordinal_SAMPLE_SIZE__org_pepstock_charba_client_options_Ticks_Property = 14;
+Property.$ordinal_MIRROR__org_pepstock_charba_client_options_Ticks_Property = 14;
 /**@const {number}*/
-Property.$ordinal_FORMAT__org_pepstock_charba_client_options_Ticks_Property = 15;
+Property.$ordinal_SAMPLE_SIZE__org_pepstock_charba_client_options_Ticks_Property = 15;
 /**@const {number}*/
-Property.$ordinal_COUNT__org_pepstock_charba_client_options_Ticks_Property = 16;
+Property.$ordinal_FORMAT__org_pepstock_charba_client_options_Ticks_Property = 16;
 /**@const {number}*/
-Property.$ordinal_MAX_TICKS_LIMIT__org_pepstock_charba_client_options_Ticks_Property = 17;
+Property.$ordinal_COUNT__org_pepstock_charba_client_options_Ticks_Property = 17;
 /**@const {number}*/
-Property.$ordinal_PRECISION__org_pepstock_charba_client_options_Ticks_Property = 18;
+Property.$ordinal_MAX_TICKS_LIMIT__org_pepstock_charba_client_options_Ticks_Property = 18;
 /**@const {number}*/
-Property.$ordinal_STEP_SIZE__org_pepstock_charba_client_options_Ticks_Property = 19;
+Property.$ordinal_PRECISION__org_pepstock_charba_client_options_Ticks_Property = 19;
 /**@const {number}*/
-Property.$ordinal_BACKDROP_COLOR__org_pepstock_charba_client_options_Ticks_Property = 20;
+Property.$ordinal_STEP_SIZE__org_pepstock_charba_client_options_Ticks_Property = 20;
 /**@const {number}*/
-Property.$ordinal_BACKDROP_PADDING__org_pepstock_charba_client_options_Ticks_Property = 21;
+Property.$ordinal_BACKDROP_COLOR__org_pepstock_charba_client_options_Ticks_Property = 21;
 /**@const {number}*/
-Property.$ordinal_SHOW_LABEL_BACKDROP__org_pepstock_charba_client_options_Ticks_Property = 22;
+Property.$ordinal_BACKDROP_PADDING__org_pepstock_charba_client_options_Ticks_Property = 22;
 /**@const {number}*/
-Property.$ordinal_SOURCE__org_pepstock_charba_client_options_Ticks_Property = 23;
+Property.$ordinal_SHOW_LABEL_BACKDROP__org_pepstock_charba_client_options_Ticks_Property = 23;
+/**@const {number}*/
+Property.$ordinal_SOURCE__org_pepstock_charba_client_options_Ticks_Property = 24;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.options.Ticks$Property");
 

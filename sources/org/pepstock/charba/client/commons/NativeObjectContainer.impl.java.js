@@ -22,16 +22,16 @@ let ArrayObjectContainerList = goog.forwardDeclare('org.pepstock.charba.client.c
 let ArrayPattern_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayPattern.$Overlay$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ImmutableDate = goog.forwardDeclare('org.pepstock.charba.client.commons.ImmutableDate$impl');
 let IncrementalIdHandler = goog.forwardDeclare('org.pepstock.charba.client.commons.IncrementalIdHandler$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let NativeArrayContainer = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeArrayContainer$impl');
 let NativeObjectUtils = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeObjectUtils$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let JSON_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.utils.JSON.$Overlay$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -71,7 +71,7 @@ class NativeObjectContainer extends j_l_Object {
  }
  /** @return {ChartEnvelop<?>} */
  m_loadNativeObject__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
-  IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop);
+  Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop);
   envelop.m_setContent__java_lang_Object(this.f_nativeObject__org_pepstock_charba_client_commons_NativeObjectContainer_);
   return envelop;
  }
@@ -363,6 +363,15 @@ class NativeObjectContainer extends j_l_Object {
    NativeObjectUtils.m_defineCallbackProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this.f_nativeObject__org_pepstock_charba_client_commons_NativeObjectContainer_, key.m_value__(), value);
   }
  }
+ 
+ m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/** Key */ key, /** Function */ value) {
+  if ($Equality.$same(value, null)) {
+   this.m_remove__org_pepstock_charba_client_commons_Key(key);
+  } else {
+   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(key);
+   NativeObjectUtils.m_defineCallbackProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_callbacks_NativeCallback(this.f_nativeObject__org_pepstock_charba_client_commons_NativeObjectContainer_, key.m_value__(), value);
+  }
+ }
  /** @return {HTMLImageElement} */
  m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(/** Key */ key, /** HTMLImageElement */ defaultValue) {
   if (!this.m_has__org_pepstock_charba_client_commons_Key(key)) {
@@ -495,13 +504,13 @@ class NativeObjectContainer extends j_l_Object {
    NativeObjectUtils.m_defineStringProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__java_lang_String(this.f_nativeObject__org_pepstock_charba_client_commons_NativeObjectContainer_, key.m_value__(), /**@type {Key}*/ (value).m_value__());
   }
  }
- /** @return {IsScaleId} */
- m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(/** Key */ key, /** IsScaleId */ defaultValue) {
+ /** @return {ScaleId} */
+ m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(/** Key */ key, /** ScaleId */ defaultValue) {
   if (!this.m_has__org_pepstock_charba_client_commons_Key(key)) {
    return defaultValue;
   }
   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(defaultValue);
-  return IsScaleId.m_checkAndGetScaleID__java_lang_String__org_pepstock_charba_client_options_IsScaleId(this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(key, defaultValue.m_value__()), defaultValue);
+  return ScaleId.m_checkAndGetScaleID__java_lang_String__org_pepstock_charba_client_options_ScaleId(this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(key, defaultValue.m_value__()), defaultValue);
  }
  /** @template T @return {T} */
  m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(/** Key */ key, /** Array<T> */ enumValues, /** T */ defaultValue) {
@@ -652,15 +661,15 @@ class NativeObjectContainer extends j_l_Object {
   ArrayPattern_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayPattern.$Overlay$impl');
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ImmutableDate = goog.module.get('org.pepstock.charba.client.commons.ImmutableDate$impl');
   IncrementalIdHandler = goog.module.get('org.pepstock.charba.client.commons.IncrementalIdHandler$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   NativeObjectUtils = goog.module.get('org.pepstock.charba.client.commons.NativeObjectUtils$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   JSON_$Overlay = goog.module.get('org.pepstock.charba.client.utils.JSON.$Overlay$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

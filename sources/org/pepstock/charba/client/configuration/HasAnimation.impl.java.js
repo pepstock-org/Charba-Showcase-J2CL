@@ -6,9 +6,9 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let Animation = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animation$impl');
 let AnimationContainer = goog.forwardDeclare('org.pepstock.charba.client.configuration.AnimationContainer$impl');
+let Animations = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animations$impl');
 let $LambdaAdaptor = goog.forwardDeclare('org.pepstock.charba.client.configuration.HasAnimation.$LambdaAdaptor$impl');
 let Transitions = goog.forwardDeclare('org.pepstock.charba.client.configuration.Transitions$impl');
-let IsAnimations = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimations$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
@@ -19,7 +19,7 @@ class HasAnimation {
  m_getAnimationContainer__() {}
  /** @abstract @return {Animation} */
  m_getAnimation__() {}
- /** @abstract @return {IsAnimations} */
+ /** @abstract @return {Animations} */
  m_getAnimations__() {}
  /** @abstract @return {Transitions} */
  m_getTransitions__() {}
@@ -37,7 +37,7 @@ class HasAnimation {
   HasAnimation.$clinit();
   return /**@type {AnimationContainer}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String($thisArg.m_getAnimationContainer__(), "Animation container"), AnimationContainer)).m_getAnimation___$pp_org_pepstock_charba_client_configuration();
  }
- /** @return {IsAnimations} */
+ /** @return {Animations} */
  static m_getAnimations__$default__org_pepstock_charba_client_configuration_HasAnimation(/** !HasAnimation */ $thisArg) {
   HasAnimation.$clinit();
   return /**@type {AnimationContainer}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String($thisArg.m_getAnimationContainer__(), "Animation container"), AnimationContainer)).m_getAnimations___$pp_org_pepstock_charba_client_configuration();

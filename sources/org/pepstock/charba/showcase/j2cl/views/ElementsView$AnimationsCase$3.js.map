@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ElementsView$AnimationsCase$3.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;MAyWoD,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,2F;EAAAA,iB;;;CAAA,8E;EAAAC,iC;;;CAC5B,U;EACpBC,gD;;;QAFgD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ElementsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$AnimationsCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AnimationsCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AnimationsCase$3.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AnimationsCase$3.create","org.pepstock.charba.showcase.j2cl.views.ElementsView$AnimationsCase$3.<clinit>"]
+}
+

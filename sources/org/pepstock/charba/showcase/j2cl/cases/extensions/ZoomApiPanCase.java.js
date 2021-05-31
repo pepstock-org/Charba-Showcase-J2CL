@@ -20,7 +20,6 @@ goog.require('org.pepstock.charba.client.data.Dataset');
 goog.require('org.pepstock.charba.client.data.ScatterDataset');
 goog.require('org.pepstock.charba.client.dom.IsCastable.$Overlay');
 goog.require('org.pepstock.charba.client.enums.DefaultTransitionKey');
-goog.require('org.pepstock.charba.client.enums.InteractionAxis');
 goog.require('org.pepstock.charba.client.items.Undefined');
 goog.require('org.pepstock.charba.client.zoom.Amount');
 goog.require('org.pepstock.charba.client.zoom.ZoomOptions');

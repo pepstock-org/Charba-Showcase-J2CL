@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"IsDefaultZoom.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;;;;;MA0BU,a;;CAQM,gB;;CASC,U;;CASF,W;;CAOC,Y;;CASK,uB;;QA1CX,M;EAAAA,wB;EAAAA,8B;;;QAQM,uE;EAAAC,wB;EACdA,sE;;;QAQe,iE;EAAAC,wB;EACfA,iE;;;QAec,mE;EAAAC,wB;EACdA,kE;;;QAQmB,8E;EAAAC,wB;EACnBA,Y;;;QA3CQ,O;EAAAC,gC;EAAAA,6B;EAAAA;",
+"lineCount":25,
+"mappings":"A;;;;;;;;;;;;;MAwBU,a;;CAOM,Y;;CAOD,W;;CAOC,Y;;QArBN,O;EAAAA,gC;EAAAA,6B;EAAAA;",
 "sources":["IsDefaultZoom.java"],
-"names":["org.pepstock.charba.client.zoom.IsDefaultZoom.<synthetic: adapt_lambda>","org.pepstock.charba.client.zoom.IsDefaultZoom.getThreshold__$default","org.pepstock.charba.client.zoom.IsDefaultZoom.isDrag__$default","org.pepstock.charba.client.zoom.IsDefaultZoom.getSpeed__$default","org.pepstock.charba.client.zoom.IsDefaultZoom.getWheelModifierKey__$default","org.pepstock.charba.client.zoom.IsDefaultZoom.<clinit>"]
+"names":["org.pepstock.charba.client.zoom.IsDefaultZoom.<clinit>"]
 }
 

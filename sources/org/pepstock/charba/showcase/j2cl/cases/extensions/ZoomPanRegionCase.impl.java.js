@@ -92,7 +92,7 @@ class ZoomPanRegionCase extends BaseComposite {
   options.m_getPan__().m_setEnabled__boolean(true);
   options.m_getPan__().m_setStartCallback__org_pepstock_charba_client_zoom_callbacks_StartCallback($1.$create__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomPanRegionCase(this));
   options.m_getPan__().m_setMode__org_pepstock_charba_client_enums_InteractionAxis(InteractionAxis.f_XY__org_pepstock_charba_client_enums_InteractionAxis);
-  options.m_getZoom__().m_setEnabled__boolean(false);
+  options.m_getZoom__().m_getWheel__().m_setEnabled__boolean(false);
   options.m_getLimits__().m_getX__().m_setMin__double(-200 | 0);
   options.m_getLimits__().m_getX__().m_setMax__double(200);
   options.m_getLimits__().m_getX__().m_setMinRange__double(50);

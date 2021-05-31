@@ -6,7 +6,7 @@ const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.N
 let Date = goog.forwardDeclare('java.util.Date$impl');
 let ArrayDouble_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.data.DataPoint.Property$impl');
@@ -45,7 +45,7 @@ class DataPoint extends NativeObjectContainer {
  //Initialization from constructor 'DataPoint(ItemsEnvelop)'.
  
  $ctor__org_pepstock_charba_client_data_DataPoint__org_pepstock_charba_client_items_ItemsEnvelop(/** ItemsEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_data_DataPoint__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ItemsEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ItemsEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ItemsEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ItemsEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'DataPoint(NativeObject)'.
  /** @return {!DataPoint} */
@@ -153,7 +153,7 @@ class DataPoint extends NativeObjectContainer {
  static $loadModules() {
   ArrayDouble_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   Property = goog.module.get('org.pepstock.charba.client.data.DataPoint.Property$impl');
   FloatingData = goog.module.get('org.pepstock.charba.client.data.FloatingData$impl');

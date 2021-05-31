@@ -2,6 +2,10 @@ goog.module('org.pepstock.charba.client.defaults.IsDefaultBaseAnimation$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 
+let DelayCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DelayCallback$impl');
+let DurationCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DurationCallback$impl');
+let EasingCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.EasingCallback$impl');
+let LoopCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.LoopCallback$impl');
 let Easing = goog.forwardDeclare('org.pepstock.charba.client.enums.Easing$impl');
 
 /**
@@ -16,6 +20,14 @@ class IsDefaultBaseAnimation {
  m_getDelay__() {}
  /** @abstract @return {boolean} */
  m_isLoop__() {}
+ /** @abstract @return {DurationCallback} */
+ m_getDurationCallback__() {}
+ /** @abstract @return {DelayCallback} */
+ m_getDelayCallback__() {}
+ /** @abstract @return {LoopCallback} */
+ m_getLoopCallback__() {}
+ /** @abstract @return {EasingCallback} */
+ m_getEasingCallback__() {}
  
  static $clinit() {
   IsDefaultBaseAnimation.$clinit = () =>{};

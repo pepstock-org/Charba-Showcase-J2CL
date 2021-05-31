@@ -14,6 +14,8 @@ class IsScriptablePaddingProvider {
  m_getPaddingCallback__() {}
  /** @abstract */
  m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(/** PaddingCallback<T> */ paddingCallback) {}
+ /** @abstract */
+ m_setPadding__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ paddingCallback) {}
  
  static $clinit() {
   IsScriptablePaddingProvider.$clinit = () =>{};

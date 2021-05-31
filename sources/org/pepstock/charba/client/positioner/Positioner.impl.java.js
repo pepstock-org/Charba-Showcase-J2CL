@@ -39,6 +39,7 @@ class Positioner extends j_l_Object {
  $ctor__org_pepstock_charba_client_positioner_Positioner__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_pepstock_charba_client_positioner_Positioner();
+  this.f_positionerCallbackProxy__org_pepstock_charba_client_positioner_Positioner_.ignoreFunctionContext = false;
   this.f_positionerCallbackProxy__org_pepstock_charba_client_positioner_Positioner_.callback = (/** ? */ arg0, /** Array */ arg1, /** ? */ arg2) =>{
    return this.m_onToolipPosition__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_commons_ArrayObject__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_positioner_Positioner(arg0, arg1, arg2);
   };

@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const BaseBoxItem = goog.require('org.pepstock.charba.client.items.BaseBoxItem$impl');
 
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.BaseBoxItem.Property$impl');
 let JSON_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.utils.JSON.$Overlay$impl');
@@ -25,7 +25,7 @@ class ChartAreaNode extends BaseBoxItem {
  }
  
  $ctor__org_pepstock_charba_client_items_ChartAreaNode__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_BaseBoxItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_BaseBoxItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__()));
  }
  /** @return {boolean} */
  m_isConsistent__() {
@@ -48,7 +48,7 @@ class ChartAreaNode extends BaseBoxItem {
  
  static $loadModules() {
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.BaseBoxItem.Property$impl');
   JSON_$Overlay = goog.module.get('org.pepstock.charba.client.utils.JSON.$Overlay$impl');

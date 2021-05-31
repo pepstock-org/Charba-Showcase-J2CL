@@ -2,7 +2,7 @@
 "version":3,
 "file":"DatasetPoint.impl.java.js",
 "lineCount":55,
-"mappings":"A;;;;;;;;;;;MA6BmB,Y;;CAAA,W;EAAAA,Q;;;;QAuCX,8D,4BAA4CC,O;EAA5CC,uB;EAAAA,mC;EAAAA,+H;EAAAA,iB;;;;CAAA,2G,4BAA4CD,O;EAClDE,gT;;;;QAQD,wD,UAA0BC,Y;EAA1BF,uB;EAAAA,mC;EAAAA,8H;EAAAA,iB;;;;CAAA,qG,UAA0BE,Y;EACzBD,oI;;;CAQa,Q;EACbE,6M;;;CAQa,Q;EACbC,6M;;;QAnEiB,O;EAAAC,+B;EAAAA,4B;EAAAA;",
+"mappings":"A;;;;;;;;;;;MA6BmB,Y;;CAAA,W;EAAAA,Q;;;;QAuCX,8D,4BAA4CC,O;EAA5CC,uB;EAAAA,mC;EAAAA,+H;EAAAA,iB;;;;CAAA,2G,4BAA4CD,O;EAClDE,4S;;;;QAQD,wD,UAA0BC,Y;EAA1BF,uB;EAAAA,mC;EAAAA,8H;EAAAA,iB;;;;CAAA,qG,UAA0BE,Y;EACzBD,oI;;;CAQa,Q;EACbE,6M;;;CAQa,Q;EACbC,6M;;;QAnEiB,O;EAAAC,+B;EAAAA,4B;EAAAA;",
 "sources":["DatasetPoint.java"],
 "names":["org.pepstock.charba.client.items.DatasetPoint.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.DatasetPoint.<synthetic: ctor_create>","org.pepstock.charba.client.items.DatasetPoint.<init>","nativeObject","org.pepstock.charba.client.items.DatasetPoint.getX","org.pepstock.charba.client.items.DatasetPoint.getY","org.pepstock.charba.client.items.DatasetPoint.<clinit>"]
 }

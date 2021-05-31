@@ -22,9 +22,9 @@ class HtmlLegendOptions extends AbstractCursorPointerOptions {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_itemCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_titleCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_;
   /**@type {IsHtmlLegendDefaultOptions}*/
   this.f_defaultOptions__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_;
@@ -102,7 +102,7 @@ class HtmlLegendOptions extends AbstractCursorPointerOptions {
  }
  
  m_setLegendItemCallback__org_pepstock_charba_client_callbacks_HtmlLegendItemCallback(/** HtmlLegendItemCallback */ legendTextCallback) {
-  HtmlLegendOptions.f_ITEM_CALLBACK__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, this.m_getId__(), legendTextCallback, this.f_itemCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.proxy);
+  HtmlLegendOptions.f_ITEM_CALLBACK__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, this.m_getId__(), legendTextCallback, this.f_itemCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.proxy);
  }
  /** @override @return {HtmlLegendTitleCallback} */
  m_getLegendTitleCallback__() {
@@ -110,7 +110,7 @@ class HtmlLegendOptions extends AbstractCursorPointerOptions {
  }
  
  m_setLegendTitleCallback__org_pepstock_charba_client_callbacks_HtmlLegendTitleCallback(/** HtmlLegendTitleCallback */ legendTitleCallback) {
-  HtmlLegendOptions.f_TITLE_CALLBACK__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, this.m_getId__(), legendTitleCallback, this.f_titleCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.proxy);
+  HtmlLegendOptions.f_TITLE_CALLBACK__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, this.m_getId__(), legendTitleCallback, this.f_titleCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_.proxy);
  }
  
  m_setMaximumLegendColumns__int(/** number */ maxColumns) {
@@ -127,8 +127,8 @@ class HtmlLegendOptions extends AbstractCursorPointerOptions {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_impl_plugins_HtmlLegendOptions() {
-  this.f_itemCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_titleCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_itemCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_titleCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendOptions_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {

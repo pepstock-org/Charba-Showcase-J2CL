@@ -2,7 +2,7 @@
 "version":3,
 "file":"DefaultOptions.impl.java.js",
 "lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;MAuBY,c;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,qC;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EAAAC,iC;;;;CARG,qE;EAAAC,kM;;;;CAAA,kB;EAAAC,uI;;;;CAAA,uB;EAAAC,4I;;;;CAAA,e;EAAAC,oI;;;;CAAA,qE;EAAAC,kM;;;QAGX,oE;EAAAC,yH;;;QAHW,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA,sC;EAGXA,mH;;;;;;;;;AAHW;;",
+"mappings":"A;;;;;;;;;;;;;;MAuBY,c;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,qC;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EAAAC,iC;;;;CARG,mE;EAAAC,gM;;;;CAAA,kB;EAAAC,uI;;;;CAAA,uB;EAAAC,4I;;;;CAAA,e;EAAAC,oI;;;;CAAA,mE;EAAAC,gM;;;QAGX,oE;EAAAC,yH;;;QAHW,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA,sC;EAGXA,mH;;;;;;;;;AAHW;;",
 "sources":["DefaultOptions.java"],
 "names":["org.pepstock.charba.client.annotation.DefaultOptions.<synthetic: ctor_js>","org.pepstock.charba.client.annotation.DefaultOptions.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.DefaultOptions.<init>","org.pepstock.charba.client.annotation.DefaultOptions.getAnnotation","org.pepstock.charba.client.annotation.DefaultOptions.getAnnotations","org.pepstock.charba.client.annotation.DefaultOptions.getDoubleClickSpeed","org.pepstock.charba.client.annotation.DefaultOptions.getDrawTime","org.pepstock.charba.client.annotation.DefaultOptions.hasAnnotation","org.pepstock.charba.client.annotation.DefaultOptions.<synthetic: getter>","org.pepstock.charba.client.annotation.DefaultOptions.<clinit>"]
 }

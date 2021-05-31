@@ -2,8 +2,8 @@
 "version":3,
 "file":"LinearTickHandler.impl.java.js",
 "lineCount":56,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAmCY,iB;;CAAA,W;EAAAA,Q;EAAAA;OA+BoC,gFA/BpCA,C;;;QAuCX,qG,aAAuBC,I,WAAQC,a;EAA/BC,4B;EAAAA,wC;EAAAA,+L;EAAAA,iB;;;CAAA,+J,aAAuBF,I,WAAQC,a;EAC9BE,4L;EADDA,6E;EAMCA,gHAA+BC,OAA/BD,gBAAwCE,KAAxCF,gBAA+CG,KAA/CH,eAAsDI,MAAtDJ;GAECK;IAECA,wVAFDA;IAFDL;GAOCK,2CAPDL;I;;;CAiBK,yD;EACLM,mG;;;CA/DU,qE;EA+BXN,uN;;;QA/BW,O;EAAAO,oC;EAAAA,iC;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;;;;MAkCY,iB;;CAAA,W;EAAAA,Q;EAAAA;OA8BoC,gFA9BpCA,C;;;QAsCX,qG,aAAuBC,I,WAAQC,a;EAA/BC,4B;EAAAA,wC;EAAAA,+L;EAAAA,iB;;;CAAA,+J,aAAuBF,I,WAAQC,a;EAC9BE,4L;EADDA,6E;EAMCA,gHAA+BC,KAA/BD,gBAAsCE,KAAtCF,eAA6CG,MAA7CH;GAECI;IAECA,wVAFDA;IAFDJ;GAOCI,2CAPDJ;I;;;CAiBK,yD;EACLK,mG;;;CA9DU,qE;EA8BXL,+M;;;QA9BW,O;EAAAM,oC;EAAAA,iC;EAAAA;",
 "sources":["LinearTickHandler.java"],
-"names":["org.pepstock.charba.client.configuration.LinearTickHandler.<synthetic: ctor_js>","axis","configuration","org.pepstock.charba.client.configuration.LinearTickHandler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.LinearTickHandler.<init>","context","value","index","values","org.pepstock.charba.client.configuration.LinearTickHandler.<lambda in <init>>","org.pepstock.charba.client.configuration.LinearTickHandler.getProxy","org.pepstock.charba.client.configuration.LinearTickHandler.<clinit>"]
+"names":["org.pepstock.charba.client.configuration.LinearTickHandler.<synthetic: ctor_js>","axis","configuration","org.pepstock.charba.client.configuration.LinearTickHandler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.LinearTickHandler.<init>","value","index","values","org.pepstock.charba.client.configuration.LinearTickHandler.<lambda in <init>>","org.pepstock.charba.client.configuration.LinearTickHandler.getProxy","org.pepstock.charba.client.configuration.LinearTickHandler.<clinit>"]
 }
 

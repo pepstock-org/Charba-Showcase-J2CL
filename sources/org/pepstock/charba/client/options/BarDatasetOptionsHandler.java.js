@@ -4,7 +4,7 @@ goog.require('java.lang.String');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.commons.AbstractNode');
 goog.require('org.pepstock.charba.client.commons.Checker');
-goog.require('org.pepstock.charba.client.commons.IsEnvelop');
+goog.require('org.pepstock.charba.client.commons.Envelop');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ObjectType');
 goog.require('org.pepstock.charba.client.commons.PropertyHandler');

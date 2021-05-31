@@ -4,6 +4,7 @@ goog.require('java.lang.Object');
 goog.require('java.util.List');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.Chart.$Overlay');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.commons.Array.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayListHelper');
 goog.require('org.pepstock.charba.client.commons.JsHelper');

@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const ScaledOptions = goog.require('org.pepstock.charba.client.options.ScaledOptions$impl');
 
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let IsDefaultScaledOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScaledOptions$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -22,7 +22,7 @@ class OptionsNode extends ScaledOptions {
  }
  
  $ctor__org_pepstock_charba_client_items_OptionsNode__java_lang_String__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_ChartEnvelop(/** ?string */ chartId, /** IsDefaultScaledOptions */ defaultValues, /** ChartEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_ScaledOptions__java_lang_String__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_commons_NativeObject__boolean(chartId, defaultValues, /**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__()), true);
+  this.$ctor__org_pepstock_charba_client_options_ScaledOptions__java_lang_String__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_commons_NativeObject__boolean(chartId, defaultValues, /**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__()), true);
  }
  
  static $clinit() {
@@ -37,7 +37,7 @@ class OptionsNode extends ScaledOptions {
  
  static $loadModules() {
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }

@@ -8,9 +8,9 @@ let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
 let IsProvider = goog.forwardDeclare('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
 let Animation = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animation$impl');
 let AnimationContainer = goog.forwardDeclare('org.pepstock.charba.client.configuration.AnimationContainer$impl');
+let Animations = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animations$impl');
 let ConfigurationOptions = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationOptions$impl');
 let Transitions = goog.forwardDeclare('org.pepstock.charba.client.configuration.Transitions$impl');
-let IsAnimations = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimations$impl');
 
 /**
  * @implements {HasAnimation}
@@ -104,7 +104,7 @@ class TypedDataset extends ConfigurationOptionsContainer {
   return HasAnimation.m_getAnimation__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }
  //Default method forwarding stub.
- /** @override @return {IsAnimations} */
+ /** @override @return {Animations} */
  m_getAnimations__() {
   return HasAnimation.m_getAnimations__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }

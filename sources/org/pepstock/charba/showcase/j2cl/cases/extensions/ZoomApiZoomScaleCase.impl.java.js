@@ -91,8 +91,8 @@ class ZoomApiZoomScaleCase extends BaseComposite {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomApiZoomScaleCase_.m_getData__().m_setDatasets__arrayOf_org_pepstock_charba_client_data_Dataset(/**@type {!Array<Dataset>}*/ ($Arrays.$init([dataset1, dataset2], Dataset)));
   let options = ZoomOptions.$create__();
   options.m_getPan__().m_setEnabled__boolean(false);
-  options.m_getZoom__().m_setEnabled__boolean(true);
   options.m_getZoom__().m_setMode__org_pepstock_charba_client_enums_InteractionAxis(InteractionAxis.f_XY__org_pepstock_charba_client_enums_InteractionAxis);
+  options.m_getZoom__().m_getWheel__().m_setEnabled__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomApiZoomScaleCase_.m_getOptions__().m_getPlugins__().m_setOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptions(ZoomPlugin.f_ID__org_pepstock_charba_client_zoom_ZoomPlugin, options);
   chartCol.appendChild(/**@type {Node}*/ ($Casts.$to(IsCastable_$Overlay.m_as__$devirt__org_pepstock_charba_client_dom_IsCastable(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomApiZoomScaleCase_.m_getChartElement__()), Node_$Overlay)));
   let actionsRow = /**@type {HTMLTableRowElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("tr"), HTMLTableRowElement_$Overlay));
@@ -189,14 +189,14 @@ class ZoomApiZoomScaleCase extends BaseComposite {
   let range = ScaleRange.$create__();
   range.m_setMin__double(-100 | 0);
   range.m_setMax__double(0);
-  ZoomPlugin.m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_IsTransitionKey(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomApiZoomScaleCase_, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId, range, DefaultTransitionKey.f_DEFAULT__org_pepstock_charba_client_enums_DefaultTransitionKey);
+  ZoomPlugin.m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_TransitionKey(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomApiZoomScaleCase_, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId, range, DefaultTransitionKey.f_DEFAULT__org_pepstock_charba_client_enums_DefaultTransitionKey);
  }
  
  m_handleZoomY__() {
   let range = ScaleRange.$create__();
   range.m_setMin__double(0);
   range.m_setMax__double(100);
-  ZoomPlugin.m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_IsTransitionKey(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomApiZoomScaleCase_, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId, range, DefaultTransitionKey.f_DEFAULT__org_pepstock_charba_client_enums_DefaultTransitionKey);
+  ZoomPlugin.m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_TransitionKey(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomApiZoomScaleCase_, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId, range, DefaultTransitionKey.f_DEFAULT__org_pepstock_charba_client_enums_DefaultTransitionKey);
  }
  
  m_handleZoomXY__() {

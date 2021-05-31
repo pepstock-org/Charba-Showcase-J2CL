@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsDefaultBaseAnimation.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;MAwBiB,sB;;CAOT,a;;CAOH,e;;CAOA,Y;;CAOI,U;;QA5BQ,O;EAAAA,yC;EAAAA;",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;MA4BiB,sB;;CAOT,a;;CAOH,e;;CAOA,Y;;CAOI,U;;CAOS,uB;;CAOH,oB;;CAOD,mB;;CAOE,qB;;QAxDC,O;EAAAA,yC;EAAAA;",
 "sources":["IsDefaultBaseAnimation.java"],
 "names":["org.pepstock.charba.client.defaults.IsDefaultBaseAnimation.<clinit>"]
 }

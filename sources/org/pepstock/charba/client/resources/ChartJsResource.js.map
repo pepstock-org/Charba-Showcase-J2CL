@@ -2,7 +2,7 @@
 "version":3,
 "file":"ChartJsResource.impl.java.js",
 "lineCount":45,
-"mappings":"A;;;;;;;;;MAuBmB,e;;CAAA,W;EAAAA,Q;;;QA6MlB,S;EAAAC,0B;EAAAA,sC;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EACCC,yS;;;QA9MiB,O;EAAAC,kC;EAAAA,+B;EAAAA,qC;EAGlBA,qzqL;;;;;;;;;;;;;AAHkB;gBAGY,gEAHZ;",
+"mappings":"A;;;;;;;;;MAuBmB,e;;CAAA,W;EAAAA,Q;;;QA+MlB,S;EAAAC,0B;EAAAA,sC;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EACCC,yS;;;QAhNiB,O;EAAAC,kC;EAAAA,+B;EAAAA,qC;EAGlBA,04tL;;;;;;;;;;;;;AAHkB;gBAGY,gEAHZ;",
 "sources":["ChartJsResource.java"],
 "names":["org.pepstock.charba.client.resources.ChartJsResource.<synthetic: ctor_js>","org.pepstock.charba.client.resources.ChartJsResource.<synthetic: ctor_create>","org.pepstock.charba.client.resources.ChartJsResource.<init>","org.pepstock.charba.client.resources.ChartJsResource.<clinit>"]
 }

@@ -5,6 +5,7 @@ const AbstractFont = goog.require('org.pepstock.charba.client.options.AbstractFo
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartContext = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ChartContext$impl');
+let FontCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.FontCallback$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let IsDefaultFont = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultFont$impl');
 let FontStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.FontStyle$impl');
@@ -67,7 +68,7 @@ class AbstractScriptableFont extends AbstractFont {
  
  m_resetCallback__() {
   if (!$Equality.$same(this.f_scriptableFontProvider__org_pepstock_charba_client_options_AbstractScriptableFont_.m_getFontCallback__(), null)) {
-   this.f_scriptableFontProvider__org_pepstock_charba_client_options_AbstractScriptableFont_.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(null);
+   this.f_scriptableFontProvider__org_pepstock_charba_client_options_AbstractScriptableFont_.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/**@type {FontCallback<T>}*/ (null));
   }
  }
  

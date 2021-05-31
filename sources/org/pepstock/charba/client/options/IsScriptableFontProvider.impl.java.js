@@ -14,6 +14,8 @@ class IsScriptableFontProvider {
  m_getFontCallback__() {}
  /** @abstract */
  m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/** FontCallback<T> */ fontCallback) {}
+ /** @abstract */
+ m_setFont__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fontCallback) {}
  
  static $clinit() {
   IsScriptableFontProvider.$clinit = () =>{};

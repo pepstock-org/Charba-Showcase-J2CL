@@ -9,9 +9,9 @@ let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let AbstractAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
 let AnnotationContext = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationContext$impl');
 let AnnotationHelper = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let AnnotationType = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationType$impl');
 let BackgroundColorHandler = goog.forwardDeclare('org.pepstock.charba.client.annotation.BackgroundColorHandler$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let IsDefaultsAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsDefaultsAnnotation$impl');
 let ColorCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ColorCallback$impl');
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
@@ -43,7 +43,7 @@ class EllipseAnnotation extends AbstractXYAnnotation {
  //Initialization from constructor 'EllipseAnnotation()'.
  
  $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__() {
-  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType.m_createId__(), AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation());
+  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType.m_createId__(), AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation());
  }
  //Factory method corresponding to constructor 'EllipseAnnotation(String)'.
  /** @return {!EllipseAnnotation} */
@@ -56,20 +56,20 @@ class EllipseAnnotation extends AbstractXYAnnotation {
  //Initialization from constructor 'EllipseAnnotation(String)'.
  
  $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__java_lang_String(/** ?string */ id) {
-  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(IsAnnotationId.m_create__java_lang_String(id));
+  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId(AnnotationId.m_create__java_lang_String(id));
  }
- //Factory method corresponding to constructor 'EllipseAnnotation(IsAnnotationId)'.
+ //Factory method corresponding to constructor 'EllipseAnnotation(AnnotationId)'.
  /** @return {!EllipseAnnotation} */
- static $create__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {
+ static $create__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {
   EllipseAnnotation.$clinit();
   let $instance = new EllipseAnnotation();
-  $instance.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(id);
+  $instance.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId(id);
   return $instance;
  }
- //Initialization from constructor 'EllipseAnnotation(IsAnnotationId)'.
+ //Initialization from constructor 'EllipseAnnotation(AnnotationId)'.
  
- $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {
-  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByGlobal__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType, id));
+ $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {
+  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByGlobal__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType, id));
  }
  //Factory method corresponding to constructor 'EllipseAnnotation(String, IsChart)'.
  /** @return {!EllipseAnnotation} */
@@ -82,32 +82,32 @@ class EllipseAnnotation extends AbstractXYAnnotation {
  //Initialization from constructor 'EllipseAnnotation(String, IsChart)'.
  
  $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__java_lang_String__org_pepstock_charba_client_IsChart(/** ?string */ id, /** IsChart */ chart) {
-  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(IsAnnotationId.m_create__java_lang_String(id), chart);
+  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(AnnotationId.m_create__java_lang_String(id), chart);
  }
- //Factory method corresponding to constructor 'EllipseAnnotation(IsAnnotationId, IsChart)'.
+ //Factory method corresponding to constructor 'EllipseAnnotation(AnnotationId, IsChart)'.
  /** @return {!EllipseAnnotation} */
- static $create__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(/** IsAnnotationId */ id, /** IsChart */ chart) {
+ static $create__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(/** AnnotationId */ id, /** IsChart */ chart) {
   EllipseAnnotation.$clinit();
   let $instance = new EllipseAnnotation();
-  $instance.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(id, chart);
+  $instance.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(id, chart);
   return $instance;
  }
- //Initialization from constructor 'EllipseAnnotation(IsAnnotationId, IsChart)'.
+ //Initialization from constructor 'EllipseAnnotation(AnnotationId, IsChart)'.
  
- $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(/** IsAnnotationId */ id, /** IsChart */ chart) {
-  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByChart__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType, id, chart));
+ $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(/** AnnotationId */ id, /** IsChart */ chart) {
+  this.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByChart__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType, id, chart));
  }
- //Factory method corresponding to constructor 'EllipseAnnotation(IsAnnotationId, IsDefaultsAnnotation)'.
+ //Factory method corresponding to constructor 'EllipseAnnotation(AnnotationId, IsDefaultsAnnotation)'.
  /** @return {!EllipseAnnotation} */
- static $create__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** IsAnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
+ static $create__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
   let $instance = new EllipseAnnotation();
-  $instance.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, defaultValues);
+  $instance.$ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, defaultValues);
   return $instance;
  }
- //Initialization from constructor 'EllipseAnnotation(IsAnnotationId, IsDefaultsAnnotation)'.
+ //Initialization from constructor 'EllipseAnnotation(AnnotationId, IsDefaultsAnnotation)'.
  
- $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** IsAnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
-  this.$ctor__org_pepstock_charba_client_annotation_AbstractXYAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType, id, defaultValues);
+ $ctor__org_pepstock_charba_client_annotation_EllipseAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
+  this.$ctor__org_pepstock_charba_client_annotation_AbstractXYAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType, id, defaultValues);
   Checker.m_assertCheck__boolean__java_lang_String(IsDefaultsEllipseAnnotation.$isInstance(this.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation()), Utilities.m_applyTemplate__java_lang_String__arrayOf_java_lang_Object(AbstractAnnotation.f_INVALID_DEFAULTS_VALUES_CLASS__org_pepstock_charba_client_annotation_AbstractAnnotation, [AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType.m_value__()]));
   this.f_defaultValues__org_pepstock_charba_client_annotation_EllipseAnnotation_ = /**@type {IsDefaultsEllipseAnnotation}*/ ($Casts.$to(this.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation(), IsDefaultsEllipseAnnotation));
   this.f_backgroundColorHandler__org_pepstock_charba_client_annotation_EllipseAnnotation_ = BackgroundColorHandler.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_IsDefaultsBackgroundColorHandler__org_pepstock_charba_client_commons_NativeObject(this, this.f_defaultValues__org_pepstock_charba_client_annotation_EllipseAnnotation_, this.m_getNativeObject__());
@@ -167,6 +167,11 @@ class EllipseAnnotation extends AbstractXYAnnotation {
  m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<AnnotationContext> */ arg0) {
   HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(this, arg0);
  }
+ //Default method forwarding stub.
+ /** @override */
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
+ }
  
  static $clinit() {
   EllipseAnnotation.$clinit = () =>{};
@@ -183,9 +188,9 @@ class EllipseAnnotation extends AbstractXYAnnotation {
  static $loadModules() {
   AbstractAnnotation = goog.module.get('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
   AnnotationHelper = goog.module.get('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+  AnnotationId = goog.module.get('org.pepstock.charba.client.annotation.AnnotationId$impl');
   AnnotationType = goog.module.get('org.pepstock.charba.client.annotation.AnnotationType$impl');
   BackgroundColorHandler = goog.module.get('org.pepstock.charba.client.annotation.BackgroundColorHandler$impl');
-  IsAnnotationId = goog.module.get('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   Utilities = goog.module.get('org.pepstock.charba.client.utils.Utilities$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

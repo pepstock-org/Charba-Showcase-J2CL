@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ON_PROGRESS__org_pepstock_charba_client_configuration_Animation_Property, Property.$static_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property, Property.$static_DURATION__org_pepstock_charba_client_configuration_Animation_Property, Property.$static_EASING__org_pepstock_charba_client_configuration_Animation_Property, Property.$static_DELAY__org_pepstock_charba_client_configuration_Animation_Property, Property.$static_LOOP__org_pepstock_charba_client_configuration_Animation_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ON_PROGRESS__org_pepstock_charba_client_configuration_Animation_Property, Property.$static_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property], Property));
  }
  /** @return {!Property} */
  static get f_ON_PROGRESS__org_pepstock_charba_client_configuration_Animation_Property() {
@@ -57,22 +57,6 @@ class Property extends Enum {
  static get f_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property() {
   return (Property.$clinit(), Property.$static_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property);
  }
- /** @return {!Property} */
- static get f_DURATION__org_pepstock_charba_client_configuration_Animation_Property() {
-  return (Property.$clinit(), Property.$static_DURATION__org_pepstock_charba_client_configuration_Animation_Property);
- }
- /** @return {!Property} */
- static get f_EASING__org_pepstock_charba_client_configuration_Animation_Property() {
-  return (Property.$clinit(), Property.$static_EASING__org_pepstock_charba_client_configuration_Animation_Property);
- }
- /** @return {!Property} */
- static get f_DELAY__org_pepstock_charba_client_configuration_Animation_Property() {
-  return (Property.$clinit(), Property.$static_DELAY__org_pepstock_charba_client_configuration_Animation_Property);
- }
- /** @return {!Property} */
- static get f_LOOP__org_pepstock_charba_client_configuration_Animation_Property() {
-  return (Property.$clinit(), Property.$static_LOOP__org_pepstock_charba_client_configuration_Animation_Property);
- }
  
  static $clinit() {
   Property.$clinit = () =>{};
@@ -80,10 +64,6 @@ class Property extends Enum {
   Enum.$clinit();
   Property.$static_ON_PROGRESS__org_pepstock_charba_client_configuration_Animation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ON_PROGRESS"), Property.$ordinal_ON_PROGRESS__org_pepstock_charba_client_configuration_Animation_Property, "onProgress");
   Property.$static_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ON_COMPLETE"), Property.$ordinal_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property, "onComplete");
-  Property.$static_DURATION__org_pepstock_charba_client_configuration_Animation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DURATION"), Property.$ordinal_DURATION__org_pepstock_charba_client_configuration_Animation_Property, "duration");
-  Property.$static_EASING__org_pepstock_charba_client_configuration_Animation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("EASING"), Property.$ordinal_EASING__org_pepstock_charba_client_configuration_Animation_Property, "easing");
-  Property.$static_DELAY__org_pepstock_charba_client_configuration_Animation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DELAY"), Property.$ordinal_DELAY__org_pepstock_charba_client_configuration_Animation_Property, "delay");
-  Property.$static_LOOP__org_pepstock_charba_client_configuration_Animation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LOOP"), Property.$ordinal_LOOP__org_pepstock_charba_client_configuration_Animation_Property, "loop");
   Property.f_namesToValuesMap__org_pepstock_charba_client_configuration_Animation_Property_ = null;
  }
  /** @return {boolean} */
@@ -101,28 +81,12 @@ class Property extends Enum {
 Property.$static_ON_PROGRESS__org_pepstock_charba_client_configuration_Animation_Property;
 /**@private {!Property}*/
 Property.$static_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property;
-/**@private {!Property}*/
-Property.$static_DURATION__org_pepstock_charba_client_configuration_Animation_Property;
-/**@private {!Property}*/
-Property.$static_EASING__org_pepstock_charba_client_configuration_Animation_Property;
-/**@private {!Property}*/
-Property.$static_DELAY__org_pepstock_charba_client_configuration_Animation_Property;
-/**@private {!Property}*/
-Property.$static_LOOP__org_pepstock_charba_client_configuration_Animation_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_configuration_Animation_Property_;
 /**@const {number}*/
 Property.$ordinal_ON_PROGRESS__org_pepstock_charba_client_configuration_Animation_Property = 0;
 /**@const {number}*/
 Property.$ordinal_ON_COMPLETE__org_pepstock_charba_client_configuration_Animation_Property = 1;
-/**@const {number}*/
-Property.$ordinal_DURATION__org_pepstock_charba_client_configuration_Animation_Property = 2;
-/**@const {number}*/
-Property.$ordinal_EASING__org_pepstock_charba_client_configuration_Animation_Property = 3;
-/**@const {number}*/
-Property.$ordinal_DELAY__org_pepstock_charba_client_configuration_Animation_Property = 4;
-/**@const {number}*/
-Property.$ordinal_LOOP__org_pepstock_charba_client_configuration_Animation_Property = 5;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.configuration.Animation$Property");
 

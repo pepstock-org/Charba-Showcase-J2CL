@@ -5,7 +5,7 @@ const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.N
 
 let Chart_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.Chart.$Overlay$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.AnimationItem.Property$impl');
@@ -26,7 +26,7 @@ class AnimationItem extends NativeObjectContainer {
  }
  
  $ctor__org_pepstock_charba_client_items_AnimationItem__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** ConfigurationEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__()));
  }
  /** @return {IsChart} */
  m_getChart__() {
@@ -60,7 +60,7 @@ class AnimationItem extends NativeObjectContainer {
  
  static $loadModules() {
   Chart_$Overlay = goog.module.get('org.pepstock.charba.client.Chart.$Overlay$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.AnimationItem.Property$impl');

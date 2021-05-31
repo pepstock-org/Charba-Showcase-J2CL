@@ -2,7 +2,6 @@ goog.module('org.pepstock.charba.client.data.AbstractContainer.CallbackWrapper')
 
 goog.require('java.lang.Object');
 goog.require('nativebootstrap.Util');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.DatasetContext');
 goog.require('org.pepstock.charba.client.callbacks.Scriptable');
 goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');

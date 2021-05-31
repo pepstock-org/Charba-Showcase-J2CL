@@ -13,7 +13,7 @@ let ActiveDefaultAnimationTransition = goog.forwardDeclare('org.pepstock.charba.
 let ResizeDefaultAnimationTransition = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ResizeDefaultAnimationTransition$impl');
 let ShowAndHideDefaultAnimationTransition = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ShowAndHideDefaultAnimationTransition$impl');
 let DefaultTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultTransitionKey$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
@@ -38,8 +38,8 @@ class DefaultTransitions extends j_l_Object {
   this.$ctor__java_lang_Object__();
  }
  /** @override @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+ m_has__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition)) {
    for (let $iterator = DefaultTransitions.f_DEFAULT_ANIMATION_MODE_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTransitions_.m_iterator__(); $iterator.m_hasNext__(); ) {
     let defaultMode = /**@type {DefaultTransitionKey}*/ ($Casts.$to($iterator.m_next__(), DefaultTransitionKey));
     {
@@ -52,8 +52,8 @@ class DefaultTransitions extends j_l_Object {
   return false;
  }
  /** @override @return {IsDefaultAnimationTransition} */
- m_get__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition) && DefaultTransitionKey.m_is__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+ m_get__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition) && DefaultTransitionKey.m_is__org_pepstock_charba_client_options_TransitionKey(transition)) {
    if (Key.m_equals__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(transition, DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey)) {
     return DefaultTransitions.f_ACTIVE_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions_;
    } else if (Key.m_equals__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(transition, DefaultTransitionKey.f_RESIZE__org_pepstock_charba_client_enums_DefaultTransitionKey)) {
@@ -78,8 +78,8 @@ class DefaultTransitions extends j_l_Object {
   DefaultTransitions.$static_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions = DefaultAnimationTransition.$create__();
   DefaultTransitions.f_ACTIVE_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ = ActiveDefaultAnimationTransition.$create__();
   DefaultTransitions.f_RESIZE_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ = ResizeDefaultAnimationTransition.$create__();
-  DefaultTransitions.f_SHOW_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ = ShowAndHideDefaultAnimationTransition.$create__org_pepstock_charba_client_options_IsTransitionKey(DefaultTransitionKey.f_SHOW__org_pepstock_charba_client_enums_DefaultTransitionKey);
-  DefaultTransitions.f_HIDE_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ = ShowAndHideDefaultAnimationTransition.$create__org_pepstock_charba_client_options_IsTransitionKey(DefaultTransitionKey.f_HIDE__org_pepstock_charba_client_enums_DefaultTransitionKey);
+  DefaultTransitions.f_SHOW_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ = ShowAndHideDefaultAnimationTransition.$create__org_pepstock_charba_client_options_TransitionKey(DefaultTransitionKey.f_SHOW__org_pepstock_charba_client_enums_DefaultTransitionKey);
+  DefaultTransitions.f_HIDE_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ = ShowAndHideDefaultAnimationTransition.$create__org_pepstock_charba_client_options_TransitionKey(DefaultTransitionKey.f_HIDE__org_pepstock_charba_client_enums_DefaultTransitionKey);
   DefaultTransitions.f_DEFAULT_ANIMATION_MODE_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ = /**@type {List<DefaultTransitionKey>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<DefaultTransitionKey>}*/ ($Arrays.$init([DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey, DefaultTransitionKey.f_RESIZE__org_pepstock_charba_client_enums_DefaultTransitionKey, DefaultTransitionKey.f_SHOW__org_pepstock_charba_client_enums_DefaultTransitionKey, DefaultTransitionKey.f_HIDE__org_pepstock_charba_client_enums_DefaultTransitionKey], DefaultTransitionKey))));
  }
  /** @return {boolean} */
@@ -95,7 +95,7 @@ class DefaultTransitions extends j_l_Object {
   ResizeDefaultAnimationTransition = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ResizeDefaultAnimationTransition$impl');
   ShowAndHideDefaultAnimationTransition = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ShowAndHideDefaultAnimationTransition$impl');
   DefaultTransitionKey = goog.module.get('org.pepstock.charba.client.enums.DefaultTransitionKey$impl');
-  IsTransitionKey = goog.module.get('org.pepstock.charba.client.options.IsTransitionKey$impl');
+  TransitionKey = goog.module.get('org.pepstock.charba.client.options.TransitionKey$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');

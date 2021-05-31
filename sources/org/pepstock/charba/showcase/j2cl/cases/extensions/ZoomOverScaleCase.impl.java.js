@@ -116,8 +116,8 @@ class ZoomOverScaleCase extends BaseComposite {
   let options = ZoomOptions.$create__();
   options.m_getPan__().m_setEnabled__boolean(true);
   options.m_getPan__().m_setOverScaleMode__org_pepstock_charba_client_enums_InteractionAxis(InteractionAxis.f_XY__org_pepstock_charba_client_enums_InteractionAxis);
-  options.m_getZoom__().m_setEnabled__boolean(true);
   options.m_getZoom__().m_setOverScaleMode__org_pepstock_charba_client_enums_InteractionAxis(InteractionAxis.f_XY__org_pepstock_charba_client_enums_InteractionAxis);
+  options.m_getZoom__().m_getWheel__().m_setEnabled__boolean(true);
   options.m_getLimits__().m_getX__().m_setMin__double(-200 | 0);
   options.m_getLimits__().m_getX__().m_setMax__double(200);
   options.m_getLimits__().m_getX__().m_setMinRange__double(20);
@@ -227,7 +227,7 @@ class ZoomOverScaleCase extends BaseComposite {
  
  m_handleZoom__() {
   let options = /**@type {ZoomOptions}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomOverScaleCase_.m_getOptions__().m_getPlugins__().m_getOptions__org_pepstock_charba_client_plugins_AbstractPluginOptionsFactory(ZoomPlugin.f_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin), ZoomOptions));
-  options.m_getZoom__().m_setEnabled__boolean(this.f_enableZoom__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomOverScaleCase_.checked);
+  options.m_getZoom__().m_getWheel__().m_setEnabled__boolean(this.f_enableZoom__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomOverScaleCase_.checked);
   this.m_updatePointer___$p_org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomOverScaleCase();
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomOverScaleCase_.m_update__();
  }

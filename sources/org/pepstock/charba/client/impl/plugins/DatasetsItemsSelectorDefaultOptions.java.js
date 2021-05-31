@@ -7,7 +7,7 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorDefaultSelectionCleaner');
 goog.require('org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions');
 goog.require('org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultSelectionCleaner');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 
 const DatasetsItemsSelectorDefaultOptions = goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorDefaultOptions$impl');
 exports = DatasetsItemsSelectorDefaultOptions;

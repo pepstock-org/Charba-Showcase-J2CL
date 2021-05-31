@@ -2,7 +2,7 @@
 "version":3,
 "file":"StandardAnimationTransition.impl.java.js",
 "lineCount":31,
-"mappings":"A;;;;;;;;;MAuBmB,2B;;CAAA,W;EAAAA,Q;;;QAOlB,yB,gBAAmCC,K;EAAnCC,sC;EAAAA,kD;EAAAA,yG;EAAAA,iB;;;CAAA,uF,gBAAmCD,K;EAClCE,4F;EAEAA,yF;;;QAViB,O;EAAAC,8C;EAAAA,2C;EAAAA;",
+"mappings":"A;;;;;;;;;MAuBmB,2B;;CAAA,W;EAAAA,Q;;;QAOlB,yB,gBAAmCC,K;EAAnCC,sC;EAAAA,kD;EAAAA,yG;EAAAA,iB;;;CAAA,uF,gBAAmCD,K;EAClCE,4F;EAEAA,qF;;;QAViB,O;EAAAC,8C;EAAAA,2C;EAAAA;",
 "sources":["StandardAnimationTransition.java"],
 "names":["org.pepstock.charba.client.options.StandardAnimationTransition.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.StandardAnimationTransition.<synthetic: ctor_create>","org.pepstock.charba.client.options.StandardAnimationTransition.<init>","org.pepstock.charba.client.options.StandardAnimationTransition.<clinit>"]
 }

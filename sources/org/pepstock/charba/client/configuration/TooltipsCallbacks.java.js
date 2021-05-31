@@ -5,7 +5,6 @@ goog.require('java.util.List');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.Defaults');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.TooltipBodyCallback');
 goog.require('org.pepstock.charba.client.callbacks.TooltipFooterCallback');
 goog.require('org.pepstock.charba.client.callbacks.TooltipLabelCallback');

@@ -3,16 +3,16 @@ goog.module('org.pepstock.charba.client.defaults.IsDefaultTransitions$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 let IsDefaultAnimationTransition = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultAnimationTransition$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 
 /**
  * @interface
  */
 class IsDefaultTransitions {
  /** @abstract @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {}
+ m_has__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {}
  /** @abstract @return {IsDefaultAnimationTransition} */
- m_get__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {}
+ m_get__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {}
  
  static $clinit() {
   IsDefaultTransitions.$clinit = () =>{};

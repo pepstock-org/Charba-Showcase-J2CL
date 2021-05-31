@@ -109,6 +109,10 @@ class ScatterDataset extends LineDataset {
  m_setFill__org_pepstock_charba_client_callbacks_FillCallback(/** FillCallback */ fillCallback) {
   HasFill.m_setFill__$default__org_pepstock_charba_client_options_HasFill__org_pepstock_charba_client_enums_IsFill(this, Fill.f_FALSE__org_pepstock_charba_client_enums_Fill);
  }
+ /** @override */
+ m_setFill__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fillCallback) {
+  HasFill.m_setFill__$default__org_pepstock_charba_client_options_HasFill__org_pepstock_charba_client_enums_IsFill(this, Fill.f_FALSE__org_pepstock_charba_client_enums_Fill);
+ }
  
  static $clinit() {
   ScatterDataset.$clinit = () =>{};

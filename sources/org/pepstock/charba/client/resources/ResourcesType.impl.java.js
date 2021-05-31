@@ -7,7 +7,7 @@ let IllegalArgumentException = goog.forwardDeclare('java.lang.IllegalArgumentExc
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let AbstractResources = goog.forwardDeclare('org.pepstock.charba.client.resources.AbstractResources$impl');
 let IsResourceType = goog.forwardDeclare('org.pepstock.charba.client.resources.IsResourceType$impl');
@@ -32,7 +32,7 @@ class ResourcesType extends j_l_Object {
  /** @template T */
  static m_setResources__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<T> */ envelop) {
   ResourcesType.$clinit();
-  IsEnvelop.m_checkIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop);
+  Envelop.m_checkIfValid__org_pepstock_charba_client_commons_Envelop(envelop);
   let resources = /**@type {AbstractResources}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(/**@type {T}*/ ($Casts.$to(envelop.m_getContent__(), AbstractResources)), "Resources type argument"), AbstractResources));
   Checker.m_assertCheck__boolean__java_lang_String(IsResourceType.$isInstance(resources), "Resources type is not correct. Must be an EmbeddedResources or DeferredResources instance");
   Checker.m_assertCheck__boolean__java_lang_String(!ResourcesType.m_isInjected__(), "Resources type is already loaded and can not be changed");
@@ -74,7 +74,7 @@ class ResourcesType extends j_l_Object {
   IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   AbstractResources = goog.module.get('org.pepstock.charba.client.resources.AbstractResources$impl');
   IsResourceType = goog.module.get('org.pepstock.charba.client.resources.IsResourceType$impl');

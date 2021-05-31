@@ -1,7 +1,10 @@
 goog.module('org.pepstock.charba.client.options.TypedDataset');
 
+goog.require('java.lang.String');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.Type');
+goog.require('org.pepstock.charba.client.commons.Checker');
+goog.require('org.pepstock.charba.client.commons.HasCallbackScope');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultTypedDataset');
 goog.require('org.pepstock.charba.client.options.AbstractModel');

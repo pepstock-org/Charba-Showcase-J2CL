@@ -26,33 +26,33 @@ class TooltipsCallbacks extends ConfigurationOptionsContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_beforeTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_titleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_afterTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_beforeBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_afterBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_beforeLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_labelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_labelColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_labelPointStyleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_labelTextColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_afterLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_beforeFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_footerCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
-  /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Array):Array>}*/
   this.f_afterFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
   /**@type {TooltipTitleCallback}*/
   this.f_titleCallback__org_pepstock_charba_client_configuration_TooltipsCallbacks_;
@@ -74,47 +74,47 @@ class TooltipsCallbacks extends ConfigurationOptionsContainer {
  $ctor__org_pepstock_charba_client_configuration_TooltipsCallbacks__org_pepstock_charba_client_configuration_ConfigurationOptions(/** ConfigurationOptions */ options) {
   this.$ctor__org_pepstock_charba_client_configuration_ConfigurationOptionsContainer__org_pepstock_charba_client_configuration_ConfigurationOptions(options);
   this.$init___$p_org_pepstock_charba_client_configuration_TooltipsCallbacks();
-  this.f_beforeTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context, /** Array */ items) =>{
-   return this.m_onBeforeTitleCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items);
+  this.f_beforeTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0) =>{
+   return this.m_onBeforeTitleCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0);
   };
-  this.f_titleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_1, /** Array */ items_1) =>{
-   return this.m_onTitleCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items_1);
+  this.f_titleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0_1) =>{
+   return this.m_onTitleCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_1);
   };
-  this.f_afterTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_2, /** Array */ items_2) =>{
-   return this.m_onAfterTitleCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items_2);
+  this.f_afterTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0_2) =>{
+   return this.m_onAfterTitleCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_2);
   };
-  this.f_beforeBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_3, /** Array */ items_3) =>{
-   return this.m_onBeforeBodyCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items_3);
+  this.f_beforeBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0_3) =>{
+   return this.m_onBeforeBodyCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_3);
   };
-  this.f_afterBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_4, /** Array */ items_4) =>{
-   return this.m_onAfterBodyCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items_4);
+  this.f_afterBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0_4) =>{
+   return this.m_onAfterBodyCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_4);
   };
-  this.f_beforeLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_5, /** ? */ item) =>{
-   return this.m_onBeforeLabelCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(item);
+  this.f_beforeLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** ? */ arg0_5) =>{
+   return this.m_onBeforeLabelCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_5);
   };
-  this.f_labelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_6, /** ? */ item_1) =>{
-   return this.m_onLabelCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(item_1);
+  this.f_labelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** ? */ arg0_6) =>{
+   return this.m_onLabelCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_6);
   };
-  this.f_labelColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_7, /** ? */ item_2) =>{
-   return this.m_onLabelColorCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(item_2);
+  this.f_labelColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** ? */ arg0_7) =>{
+   return this.m_onLabelColorCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_7);
   };
-  this.f_labelPointStyleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_8, /** ? */ item_3) =>{
-   return this.m_onLabelPointStyleCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(item_3);
+  this.f_labelPointStyleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** ? */ arg0_8) =>{
+   return this.m_onLabelPointStyleCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_8);
   };
-  this.f_labelTextColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_9, /** ? */ item_4) =>{
-   return this.m_onLabelTextColorCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(item_4);
+  this.f_labelTextColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** ? */ arg0_9) =>{
+   return this.m_onLabelTextColorCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_9);
   };
-  this.f_afterLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_10, /** ? */ item_5) =>{
-   return this.m_onAfterLabelCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(item_5);
+  this.f_afterLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** ? */ arg0_10) =>{
+   return this.m_onAfterLabelCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_10);
   };
-  this.f_beforeFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_11, /** Array */ items_5) =>{
-   return this.m_onBeforeFooterCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items_5);
+  this.f_beforeFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0_11) =>{
+   return this.m_onBeforeFooterCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_11);
   };
-  this.f_footerCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_12, /** Array */ items_6) =>{
-   return this.m_onFooterCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items_6);
+  this.f_footerCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0_12) =>{
+   return this.m_onFooterCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_12);
   };
-  this.f_afterFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Object */ context_13, /** Array */ items_7) =>{
-   return this.m_onAfterFooterCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(items_7);
+  this.f_afterFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_.callback = (/** Array */ arg0_13) =>{
+   return this.m_onAfterFooterCallback__org_pepstock_charba_client_commons_ArrayObject_$p_org_pepstock_charba_client_configuration_TooltipsCallbacks(arg0_13);
   };
  }
  /** @return {TooltipTitleCallback} */
@@ -314,20 +314,20 @@ class TooltipsCallbacks extends ConfigurationOptionsContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_TooltipsCallbacks() {
-  this.f_beforeTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_titleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_labelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_labelColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_labelPointStyleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_labelTextColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_footerCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Object, Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_titleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterTitleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterBodyCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_labelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_labelColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_labelPointStyleCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_labelTextColorCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterLabelCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_footerCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterFooterCallbackProxy__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = /**@type {CharbaCallbackProxy<?function(Array):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_titleCallback__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = null;
   this.f_bodyCallback__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = null;
   this.f_labelCallback__org_pepstock_charba_client_configuration_TooltipsCallbacks_ = null;

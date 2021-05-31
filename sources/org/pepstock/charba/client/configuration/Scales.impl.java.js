@@ -13,8 +13,8 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
 let ScalesOptions = goog.forwardDeclare('org.pepstock.charba.client.configuration.ScalesOptions$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -57,8 +57,8 @@ class Scales extends ConfigurationOptionsContainer {
   return /**@type {Axis}*/ ($Casts.$to(this.f_storedAxes__org_pepstock_charba_client_configuration_Scales_.get(scaleId), Axis));
  }
  /** @return {Axis} */
- m_getAxisById__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ scaleId) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(scaleId);
+ m_getAxisById__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ scaleId) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(scaleId);
   return /**@type {Axis}*/ ($Casts.$to(this.f_storedAxes__org_pepstock_charba_client_configuration_Scales_.get(scaleId.m_value__()), Axis));
  }
  /** @return {List<Axis>} */
@@ -89,8 +89,8 @@ class Scales extends ConfigurationOptionsContainer {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   Axis = goog.module.get('org.pepstock.charba.client.configuration.Axis$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
   Scale = goog.module.get('org.pepstock.charba.client.options.Scale$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

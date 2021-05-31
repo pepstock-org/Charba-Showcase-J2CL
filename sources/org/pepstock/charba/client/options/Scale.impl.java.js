@@ -9,8 +9,8 @@ let IsDefaultScale = goog.forwardDeclare('org.pepstock.charba.client.defaults.Is
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
 let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.options.Scale.Property$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
@@ -63,15 +63,15 @@ class Scale extends AbstractScale {
   this.m_setType__org_pepstock_charba_client_enums_AxisType_$p_org_pepstock_charba_client_options_Scale(type);
  }
  
- m_setId__org_pepstock_charba_client_options_IsScaleId_$pp_org_pepstock_charba_client_options(/** IsScaleId */ id) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(id);
+ m_setId__org_pepstock_charba_client_options_ScaleId_$pp_org_pepstock_charba_client_options(/** ScaleId */ id) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(id);
   if (!DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId.m_is__java_lang_String(id.m_value__())) {
    this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_ID__org_pepstock_charba_client_options_Scale_Property, id);
   }
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getId__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_ID__org_pepstock_charba_client_options_Scale_Property, DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_ID__org_pepstock_charba_client_options_Scale_Property, DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  
  m_setType__org_pepstock_charba_client_enums_AxisType_$p_org_pepstock_charba_client_options_Scale(/** AxisType */ type) {
@@ -133,8 +133,8 @@ class Scale extends AbstractScale {
   AxisKind = goog.module.get('org.pepstock.charba.client.enums.AxisKind$impl');
   AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
   Property = goog.module.get('org.pepstock.charba.client.options.Scale.Property$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }

@@ -65,33 +65,33 @@ class LineLabel extends AbstractNode {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_colorCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_contentCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_rotationCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_cornerRadiusCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_imageWidthCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_imageHeightCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_positionCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_textAlignCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_xPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_yPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_xAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_yAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_fontCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_;
   /**@type {LineAnnotation}*/
   this.f_parent__org_pepstock_charba_client_annotation_LineLabel_;
@@ -135,46 +135,46 @@ class LineLabel extends AbstractNode {
   this.m_setNewIncrementalId__();
   this.f_font__org_pepstock_charba_client_annotation_LineLabel_ = Font.$create__org_pepstock_charba_client_annotation_LineLabel__org_pepstock_charba_client_defaults_IsDefaultFont__org_pepstock_charba_client_commons_NativeObject(this, this.f_defaultValues__org_pepstock_charba_client_annotation_LineLabel_.m_getFont__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_FONT__org_pepstock_charba_client_annotation_LineLabel_Property));
   this.f_backgroundColorHandler__org_pepstock_charba_client_annotation_LineLabel_ = BackgroundColorHandler.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_IsDefaultsBackgroundColorHandler__org_pepstock_charba_client_commons_NativeObject__java_lang_String(parent, this.f_defaultValues__org_pepstock_charba_client_annotation_LineLabel_, this.m_getNativeObject__(), LineLabel.$static_DEFAULT_BACKGROUND_COLOR_AS_STRING__org_pepstock_charba_client_annotation_LineLabel);
-  this.f_colorCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_colorCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String__boolean(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context), this.m_getColorCallback__(), defaultValues.m_getColorAsString__(), false);
   };
-  this.f_contentCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_contentCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_1) =>{
    return this.m_onContent__org_pepstock_charba_client_annotation_AnnotationContext_$p_org_pepstock_charba_client_annotation_LineLabel(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_1));
   };
-  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_2) =>{
    return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_2), this.m_getDisplayCallback__(), defaultValues.m_isDisplay__()), Boolean)));
   };
-  this.f_rotationCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_rotationCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_3) =>{
    return this.m_onRotation__org_pepstock_charba_client_annotation_AnnotationContext__double_$p_org_pepstock_charba_client_annotation_LineLabel(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_3), defaultValues.m_getRotation__());
   };
-  this.f_cornerRadiusCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_4, /** ? */ context_4) =>{
+  this.f_cornerRadiusCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_4) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_4), this.m_getCornerRadiusCallback__(), Integer.m_valueOf__int(defaultValues.m_getCornerRadius__())), Integer)).m_intValue__();
   };
-  this.f_imageWidthCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_5, /** ? */ context_5) =>{
+  this.f_imageWidthCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_5) =>{
    return this.m_onImageSize__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ImageSizeCallback__double__java_lang_String_$p_org_pepstock_charba_client_annotation_LineLabel(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_5), this.m_getImageWidthCallback__(), defaultValues.m_getImageWidth__(), defaultValues.m_getImageWidthAsPercentage__());
   };
-  this.f_imageHeightCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_6, /** ? */ context_6) =>{
+  this.f_imageHeightCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_6) =>{
    return this.m_onImageSize__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ImageSizeCallback__double__java_lang_String_$p_org_pepstock_charba_client_annotation_LineLabel(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_6), this.m_getImageHeightCallback__(), defaultValues.m_getImageHeight__(), defaultValues.m_getImageHeightAsPercentage__());
   };
-  this.f_positionCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_7, /** ? */ context_7) =>{
+  this.f_positionCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_7) =>{
    return /**@type {LabelPosition}*/ ($Casts.$to(ScriptableUtils.m_getOptionValueAsString__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_Key(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_7), this.m_getPositionCallback__(), this.m_getPosition__()), LabelPosition)).m_value__();
   };
-  this.f_xPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_8, /** ? */ context_8) =>{
+  this.f_xPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_8) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_8), this.m_getXPaddingCallback__(), Integer.m_valueOf__int(defaultValues.m_getXPadding__())), Integer)).m_intValue__();
   };
-  this.f_yPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_9, /** ? */ context_9) =>{
+  this.f_yPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_9) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_9), this.m_getYPaddingCallback__(), Integer.m_valueOf__int(defaultValues.m_getYPadding__())), Integer)).m_intValue__();
   };
-  this.f_xAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_10, /** ? */ context_10) =>{
+  this.f_xAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_10) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_10), this.m_getXAdjustCallback__(), defaultValues.m_getXAdjust__()), Double)));
   };
-  this.f_yAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_11, /** ? */ context_11) =>{
+  this.f_yAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_11) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_11), this.m_getYAdjustCallback__(), defaultValues.m_getYAdjust__()), Double)));
   };
-  this.f_textAlignCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_12, /** ? */ context_12) =>{
+  this.f_textAlignCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_12) =>{
    return this.m_onTextAlign__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_enums_TextAlign_$p_org_pepstock_charba_client_annotation_LineLabel(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_12), defaultValues.m_getTextAlign__());
   };
-  this.f_fontCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** Object */ contextFunction_13, /** ? */ context_13) =>{
+  this.f_fontCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.callback = (/** ? */ context_13) =>{
    return ScriptableUtils.m_getOptionValueAsFont__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultFont(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_annotation_LineLabel_, context_13), this.m_getFontCallback__(), this.m_getFont__()).m_nativeObject__();
   };
  }
@@ -188,7 +188,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setDisplay__boolean(/** boolean */ display) {
-  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(null);
+  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/**@type {DisplayCallback<AnnotationContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_ENABLED__org_pepstock_charba_client_annotation_LineLabel_Property, display);
  }
  /** @override @return {boolean} */
@@ -214,7 +214,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setXPadding__int(/** number */ xPadding) {
-  this.m_setXPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(null);
+  this.m_setXPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(/**@type {PaddingSizeCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_X_PADDING__org_pepstock_charba_client_annotation_LineLabel_Property, Checker.m_positiveOrZero__int(xPadding));
  }
  /** @override @return {number} */
@@ -223,7 +223,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setYPadding__int(/** number */ yPadding) {
-  this.m_setYPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(null);
+  this.m_setYPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(/**@type {PaddingSizeCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_Y_PADDING__org_pepstock_charba_client_annotation_LineLabel_Property, Checker.m_positiveOrZero__int(yPadding));
  }
  /** @override @return {number} */
@@ -232,7 +232,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setCornerRadius__int(/** number */ cornerRadius) {
-  this.m_setCornerRadius__org_pepstock_charba_client_callbacks_CornerRadiusCallback(null);
+  this.m_setCornerRadius__org_pepstock_charba_client_callbacks_CornerRadiusCallback(/**@type {CornerRadiusCallback<AnnotationContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_CORNER_RADIUS__org_pepstock_charba_client_annotation_LineLabel_Property, Checker.m_positiveOrZero__int(cornerRadius));
  }
  /** @override @return {number} */
@@ -259,7 +259,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setXAdjust__double(/** number */ xAdjust) {
-  this.m_setXAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(null);
+  this.m_setXAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(/**@type {AdjustSizeCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_X_ADJUST__org_pepstock_charba_client_annotation_LineLabel_Property, xAdjust);
  }
  /** @override @return {number} */
@@ -268,7 +268,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setYAdjust__double(/** number */ yAdjust) {
-  this.m_setYAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(null);
+  this.m_setYAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(/**@type {AdjustSizeCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_Y_ADJUST__org_pepstock_charba_client_annotation_LineLabel_Property, yAdjust);
  }
  /** @override @return {number} */
@@ -277,7 +277,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setRotation__double(/** number */ rotation) {
-  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(null);
+  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<AnnotationContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_ROTATION__org_pepstock_charba_client_annotation_LineLabel_Property, rotation);
  }
  /** @override @return {number} */
@@ -286,7 +286,7 @@ class LineLabel extends AbstractNode {
  }
  
  m_setAutoRotation__boolean(/** boolean */ autoRotation) {
-  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(null);
+  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<AnnotationContext>}*/ (null));
   if (autoRotation) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_ROTATION__org_pepstock_charba_client_annotation_LineLabel_Property, LineLabel.f_AUTO_ROTATION_AS_STRING__org_pepstock_charba_client_annotation_LineLabel_);
   } else {
@@ -401,7 +401,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<AnnotationContext> */ colorCallback) {
-  LineLabel.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ colorCallback) {
+  this.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_COLOR__org_pepstock_charba_client_annotation_LineLabel_Property, colorCallback);
  }
  /** @override @return {CornerRadiusCallback<AnnotationContext>} */
  m_getCornerRadiusCallback__() {
@@ -409,7 +414,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setCornerRadius__org_pepstock_charba_client_callbacks_CornerRadiusCallback(/** CornerRadiusCallback<AnnotationContext> */ cornerRadiusCallback) {
-  LineLabel.f_CORNER_RADIUS_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, cornerRadiusCallback, this.f_cornerRadiusCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_CORNER_RADIUS_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, cornerRadiusCallback, this.f_cornerRadiusCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setCornerRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ cornerRadiusCallback) {
+  this.m_setCornerRadius__org_pepstock_charba_client_callbacks_CornerRadiusCallback(/**@type {CornerRadiusCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_CORNER_RADIUS__org_pepstock_charba_client_annotation_LineLabel_Property, cornerRadiusCallback);
  }
  /** @override @return {ContentCallback} */
  m_getContentCallback__() {
@@ -417,7 +427,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setContent__org_pepstock_charba_client_annotation_callbacks_ContentCallback(/** ContentCallback */ contentCallback) {
-  LineLabel.f_CONTENT_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, contentCallback, this.f_contentCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_CONTENT_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, contentCallback, this.f_contentCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setContent__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ contentCallback) {
+  this.m_setContent__org_pepstock_charba_client_annotation_callbacks_ContentCallback(/**@type {ContentCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_CONTENT__org_pepstock_charba_client_annotation_LineLabel_Property, contentCallback);
  }
  /** @override @return {DisplayCallback<AnnotationContext>} */
  m_getDisplayCallback__() {
@@ -425,7 +440,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/** DisplayCallback<AnnotationContext> */ displayCallback) {
-  LineLabel.f_DISPLAY_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_DISPLAY_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setDisplay__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ displayCallback) {
+  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/**@type {DisplayCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_ENABLED__org_pepstock_charba_client_annotation_LineLabel_Property, displayCallback);
  }
  /** @override @return {RotationCallback<AnnotationContext>} */
  m_getRotationCallback__() {
@@ -433,7 +453,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/** RotationCallback<AnnotationContext> */ rotationCallback) {
-  LineLabel.f_ROTATION_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, rotationCallback, this.f_rotationCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_ROTATION_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, rotationCallback, this.f_rotationCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setRotation__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ rotationCallback) {
+  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_ROTATION__org_pepstock_charba_client_annotation_LineLabel_Property, rotationCallback);
  }
  /** @override @return {ImageSizeCallback} */
  m_getImageHeightCallback__() {
@@ -441,7 +466,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setImageHeight__org_pepstock_charba_client_annotation_callbacks_ImageSizeCallback(/** ImageSizeCallback */ imageSizeCallback) {
-  LineLabel.f_IMAGE_HEIGHT_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, imageSizeCallback, this.f_imageHeightCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_IMAGE_HEIGHT_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, imageSizeCallback, this.f_imageHeightCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setImageHeight__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ imageSizeCallback) {
+  this.m_setImageHeight__org_pepstock_charba_client_annotation_callbacks_ImageSizeCallback(/**@type {ImageSizeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_HEIGHT__org_pepstock_charba_client_annotation_LineLabel_Property, imageSizeCallback);
  }
  /** @override @return {ImageSizeCallback} */
  m_getImageWidthCallback__() {
@@ -449,7 +479,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setImageWidth__org_pepstock_charba_client_annotation_callbacks_ImageSizeCallback(/** ImageSizeCallback */ imageSizeCallback) {
-  LineLabel.f_IMAGE_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, imageSizeCallback, this.f_imageWidthCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_IMAGE_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, imageSizeCallback, this.f_imageWidthCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setImageWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ imageSizeCallback) {
+  this.m_setImageWidth__org_pepstock_charba_client_annotation_callbacks_ImageSizeCallback(/**@type {ImageSizeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_WIDTH__org_pepstock_charba_client_annotation_LineLabel_Property, imageSizeCallback);
  }
  /** @override @return {LabelPositionCallback} */
  m_getPositionCallback__() {
@@ -457,7 +492,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setPosition__org_pepstock_charba_client_annotation_callbacks_LabelPositionCallback(/** LabelPositionCallback */ positionCallback) {
-  LineLabel.f_POSITION_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, positionCallback, this.f_positionCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_POSITION_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, positionCallback, this.f_positionCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setPosition__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ positionCallback) {
+  this.m_setPosition__org_pepstock_charba_client_annotation_callbacks_LabelPositionCallback(/**@type {LabelPositionCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POSITION__org_pepstock_charba_client_annotation_LineLabel_Property, positionCallback);
  }
  /** @override @return {TextAlignCallback<AnnotationContext>} */
  m_getTextAlignCallback__() {
@@ -465,7 +505,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setTextAlign__org_pepstock_charba_client_callbacks_TextAlignCallback(/** TextAlignCallback<AnnotationContext> */ alignCallback) {
-  LineLabel.f_TEXT_ALIGN_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, alignCallback, this.f_textAlignCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_TEXT_ALIGN_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, alignCallback, this.f_textAlignCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setTextAlign__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ alignCallback) {
+  this.m_setTextAlign__org_pepstock_charba_client_callbacks_TextAlignCallback(/**@type {TextAlignCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_TEXT_ALIGN__org_pepstock_charba_client_annotation_LineLabel_Property, alignCallback);
  }
  /** @override @return {PaddingSizeCallback} */
  m_getXPaddingCallback__() {
@@ -473,7 +518,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setXPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(/** PaddingSizeCallback */ paddingCallback) {
-  LineLabel.f_X_PADDING_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, paddingCallback, this.f_xPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_X_PADDING_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, paddingCallback, this.f_xPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setXPadding__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ paddingCallback) {
+  this.m_setXPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(/**@type {PaddingSizeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_X_PADDING__org_pepstock_charba_client_annotation_LineLabel_Property, paddingCallback);
  }
  /** @override @return {PaddingSizeCallback} */
  m_getYPaddingCallback__() {
@@ -481,7 +531,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setYPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(/** PaddingSizeCallback */ paddingCallback) {
-  LineLabel.f_Y_PADDING_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, paddingCallback, this.f_yPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_Y_PADDING_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, paddingCallback, this.f_yPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setYPadding__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ paddingCallback) {
+  this.m_setYPadding__org_pepstock_charba_client_annotation_callbacks_PaddingSizeCallback(/**@type {PaddingSizeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_Y_PADDING__org_pepstock_charba_client_annotation_LineLabel_Property, paddingCallback);
  }
  /** @override @return {AdjustSizeCallback} */
  m_getXAdjustCallback__() {
@@ -489,7 +544,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setXAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(/** AdjustSizeCallback */ adjustCallback) {
-  LineLabel.f_X_ADJUST_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, adjustCallback, this.f_xAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_X_ADJUST_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, adjustCallback, this.f_xAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setXAdjust__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ adjustCallback) {
+  this.m_setXAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(/**@type {AdjustSizeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_X_ADJUST__org_pepstock_charba_client_annotation_LineLabel_Property, adjustCallback);
  }
  /** @override @return {AdjustSizeCallback} */
  m_getYAdjustCallback__() {
@@ -497,7 +557,12 @@ class LineLabel extends AbstractNode {
  }
  
  m_setYAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(/** AdjustSizeCallback */ adjustCallback) {
-  LineLabel.f_Y_ADJUST_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, adjustCallback, this.f_yAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_Y_ADJUST_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, adjustCallback, this.f_yAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ 
+ m_setYAdjust__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ adjustCallback) {
+  this.m_setYAdjust__org_pepstock_charba_client_annotation_callbacks_AdjustSizeCallback(/**@type {AdjustSizeCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_Y_ADJUST__org_pepstock_charba_client_annotation_LineLabel_Property, adjustCallback);
  }
  /** @override @return {FontCallback<AnnotationContext>} */
  m_getFontCallback__() {
@@ -505,7 +570,12 @@ class LineLabel extends AbstractNode {
  }
  /** @override */
  m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/** FontCallback<AnnotationContext> */ fontCallback) {
-  LineLabel.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+  LineLabel.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_LineLabel_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_.proxy);
+ }
+ /** @override */
+ m_setFont__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fontCallback) {
+  this.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/**@type {FontCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_FONT__org_pepstock_charba_client_annotation_LineLabel_Property, fontCallback);
  }
  /** @return {*} */
  m_onContent__org_pepstock_charba_client_annotation_AnnotationContext_$p_org_pepstock_charba_client_annotation_LineLabel(/** AnnotationContext */ context) {
@@ -591,22 +661,27 @@ class LineLabel extends AbstractNode {
  m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<AnnotationContext> */ arg0) {
   HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(this, arg0);
  }
+ //Default method forwarding stub.
+ /** @override */
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_annotation_LineLabel() {
-  this.f_colorCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_contentCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_rotationCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_cornerRadiusCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_imageWidthCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_imageHeightCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_positionCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_textAlignCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_xPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_yPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_xAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_yAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_fontCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_colorCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_contentCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_displayCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_rotationCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_cornerRadiusCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_imageWidthCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_imageHeightCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_positionCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_textAlignCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_xPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_yPaddingCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_xAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_yAdjustCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_fontCallbackProxy__org_pepstock_charba_client_annotation_LineLabel_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_parentDrawTime__org_pepstock_charba_client_annotation_LineLabel_ = null;
  }
  /** @return {IsColor} */

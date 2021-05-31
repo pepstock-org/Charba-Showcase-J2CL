@@ -32,10 +32,6 @@ class AbstractDefaultChartOptions extends AbstractDefaultOptions {
  m_getLocale__() {
   return this.f_options__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartOptions_.m_getLocale__();
  }
- /** @override @return {?string} */
- m_getScope__() {
-  return this.f_options__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartOptions_.m_getScope__();
- }
  /** @override @return {boolean} */
  m_isResponsive__() {
   return this.f_options__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartOptions_.m_isResponsive__();

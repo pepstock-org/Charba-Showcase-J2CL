@@ -10,7 +10,7 @@ let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$im
 let DatasetsItemsSelectorOptions = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions$impl');
 let Align = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.enums.Align$impl');
 let Render = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.enums.Render$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 class DatasetsItemsSelectorOptionsBuilder extends j_l_Object {
  /** @protected */
@@ -55,8 +55,8 @@ class DatasetsItemsSelectorOptionsBuilder extends j_l_Object {
   return this;
  }
  /** @return {DatasetsItemsSelectorOptionsBuilder} */
- m_setXAxisID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ xAxisID) {
-  this.f_options__org_pepstock_charba_client_impl_plugins_DatasetsItemsSelectorOptionsBuilder_.m_setXAxisID__org_pepstock_charba_client_options_IsScaleId(xAxisID);
+ m_setXAxisID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ xAxisID) {
+  this.f_options__org_pepstock_charba_client_impl_plugins_DatasetsItemsSelectorOptionsBuilder_.m_setXAxisID__org_pepstock_charba_client_options_ScaleId(xAxisID);
   return this;
  }
  /** @return {DatasetsItemsSelectorOptionsBuilder} */

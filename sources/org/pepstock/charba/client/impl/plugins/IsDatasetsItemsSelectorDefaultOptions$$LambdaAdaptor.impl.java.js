@@ -7,7 +7,7 @@ const IsDatasetsItemsSelectorDefaultOptions = goog.require('org.pepstock.charba.
 let Integer = goog.forwardDeclare('java.lang.Integer$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let IsDatasetsItemsSelectorDefaultSelectionCleaner = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultSelectionCleaner$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
  * @implements {IsDatasetsItemsSelectorDefaultOptions}
@@ -57,7 +57,7 @@ class $LambdaAdaptor extends j_l_Object {
   return IsDatasetsItemsSelectorDefaultOptions.m_getColorAsString__$default__org_pepstock_charba_client_impl_plugins_IsDatasetsItemsSelectorDefaultOptions(this);
  }
  //Default method forwarding stub.
- /** @override @return {IsScaleId} */
+ /** @override @return {ScaleId} */
  m_getXAxisID__() {
   return IsDatasetsItemsSelectorDefaultOptions.m_getXAxisID__$default__org_pepstock_charba_client_impl_plugins_IsDatasetsItemsSelectorDefaultOptions(this);
  }

@@ -2,7 +2,7 @@
 "version":3,
 "file":"DefaultChartAnimations.impl.java.js",
 "lineCount":44,
-"mappings":"A;;;;;;;;;;;;MA0BmB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,+EAFhBA,C;;;QASX,gE,4BAA2CC,U;EAA3CC,iC;EAAAA,6C;EAAAA,uJ;EAAAA,iB;;;CAAA,gI,4BAA2CD,U;EAA3CE,iC;EACNA,kG;;;CASc,kE,iCAA6BC,U;EAC3CC,2K;;;CASmC,kE,iCAA6BD,U;EAChEE,2K;;;QA9BiB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MA0BmB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,+EAFhBA,C;;;QASX,gE,4BAA2CC,U;EAA3CC,iC;EAAAA,6C;EAAAA,uJ;EAAAA,iB;;;CAAA,gI,4BAA2CD,U;EAA3CE,iC;EACNA,kG;;;CASc,gE,+BAA2BC,U;EACzCC,yK;;;CASmC,gE,+BAA2BD,U;EAC9DE,yK;;;QA9BiB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
 "sources":["DefaultChartAnimations.java"],
 "names":["org.pepstock.charba.client.defaults.chart.DefaultChartAnimations.<synthetic: ctor_js>","animations","org.pepstock.charba.client.defaults.chart.DefaultChartAnimations.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartAnimations.<init>","collection","org.pepstock.charba.client.defaults.chart.DefaultChartAnimations.has","org.pepstock.charba.client.defaults.chart.DefaultChartAnimations.get","org.pepstock.charba.client.defaults.chart.DefaultChartAnimations.<clinit>"]
 }

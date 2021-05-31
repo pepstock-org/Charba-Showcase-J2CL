@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDataLabelId.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;MAwBiB,a;;QAQK,0B,gBAAcA,E;EAAdC,wB;EAEpBA,iD;EAEAA,yD;;;QAWc,8D,sBAAsBD,E;EAAtBE,wB;EACdA,iF;;;QASW,mE,sBAA2BF,E;EAA3BG,wB;EACXA,+E;;;QAlCe,M;EAAAC,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
-"sources":["IsDataLabelId.java"],
-"names":["id","org.pepstock.charba.client.datalabels.IsDataLabelId.create","org.pepstock.charba.client.datalabels.IsDataLabelId.isValid","org.pepstock.charba.client.datalabels.IsDataLabelId.checkIfValid","org.pepstock.charba.client.datalabels.IsDataLabelId.<synthetic: adapt_lambda>","org.pepstock.charba.client.datalabels.IsDataLabelId.<clinit>"]
-}
-

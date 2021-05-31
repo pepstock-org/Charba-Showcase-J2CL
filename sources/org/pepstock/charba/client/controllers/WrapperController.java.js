@@ -12,9 +12,9 @@ goog.require('org.pepstock.charba.client.commons.JsHelper');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.NativeObjectContainer');
 goog.require('org.pepstock.charba.client.controllers.ControllerContext.$Overlay');
-goog.require('org.pepstock.charba.client.controllers.ControllerDatasetElement');
+goog.require('org.pepstock.charba.client.controllers.JsControllerHelper');
 goog.require('org.pepstock.charba.client.controllers.WrapperController.Property');
-goog.require('org.pepstock.charba.client.options.IsTransitionKey');
+goog.require('org.pepstock.charba.client.options.TransitionKey');
 
 const WrapperController = goog.require('org.pepstock.charba.client.controllers.WrapperController$impl');
 exports = WrapperController;

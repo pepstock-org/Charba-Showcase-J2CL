@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeJsObjectCallback$$Overlay.impl.java.js",
+"lineCount":9,
+"mappings":"A;;;;MA4BY,Q;;QAAA,O;EAAAA,2B;EAAAA;",
+"sources":["NativeJsObjectCallback.java"],
+"names":["org.pepstock.charba.client.commons.NativeJsObjectCallback$$Overlay.<clinit>"]
+}
+

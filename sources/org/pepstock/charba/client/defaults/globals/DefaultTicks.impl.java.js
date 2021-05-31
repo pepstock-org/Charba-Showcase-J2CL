@@ -77,6 +77,10 @@ class DefaultTicks extends j_l_Object {
  m_getAutoSkipPadding__() {
   return DefaultTicks.f_DEFAULT_AUTO_SKIP_PADDING__org_pepstock_charba_client_defaults_globals_DefaultTicks_;
  }
+ /** @override @return {boolean} */
+ m_isIncludeBounds__() {
+  return DefaultTicks.f_DEFAULT_INCLUDE_BOUNDS__org_pepstock_charba_client_defaults_globals_DefaultTicks_;
+ }
  /** @override @return {number} */
  m_getLabelOffset__() {
   return DefaultTicks.f_DEFAULT_LABEL_OFFSET__org_pepstock_charba_client_defaults_globals_DefaultTicks_;
@@ -184,6 +188,8 @@ class DefaultTicks extends j_l_Object {
 DefaultTicks.f_DEFAULT_DISPLAY__org_pepstock_charba_client_defaults_globals_DefaultTicks_ = true;
 /**@const {boolean}*/
 DefaultTicks.f_DEFAULT_AUTO_SKIP__org_pepstock_charba_client_defaults_globals_DefaultTicks_ = true;
+/**@const {boolean}*/
+DefaultTicks.f_DEFAULT_INCLUDE_BOUNDS__org_pepstock_charba_client_defaults_globals_DefaultTicks_ = true;
 /**@const {number}*/
 DefaultTicks.f_DEFAULT_AUTO_SKIP_PADDING__org_pepstock_charba_client_defaults_globals_DefaultTicks_ = 3;
 /**@const {number}*/

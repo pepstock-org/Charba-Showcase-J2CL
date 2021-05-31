@@ -35,10 +35,6 @@ class DefaultOptions extends AbstractDefaultOptions {
  m_getLocale__() {
   return CLocale.m_getDefault__();
  }
- /** @override @return {?string} */
- m_getScope__() {
-  return DefaultOptions.f_SCOPE__org_pepstock_charba_client_defaults_globals_DefaultOptions;
- }
  /** @override @return {boolean} */
  m_isResponsive__() {
   return DefaultOptions.f_DEFAULT_RESPONSIVE__org_pepstock_charba_client_defaults_globals_DefaultOptions_;
@@ -141,8 +137,6 @@ class DefaultOptions extends AbstractDefaultOptions {
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
  }
 }
-/**@const {?string}*/
-DefaultOptions.f_SCOPE__org_pepstock_charba_client_defaults_globals_DefaultOptions = "defaults";
 /**@const {?string}*/
 DefaultOptions.f_DEFAULT_BORDER_COLOR__org_pepstock_charba_client_defaults_globals_DefaultOptions_ = "rgba(0,0,0,0.1)";
 /**@const {?string}*/

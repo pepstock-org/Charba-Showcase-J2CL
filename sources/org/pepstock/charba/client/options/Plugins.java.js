@@ -7,7 +7,7 @@ goog.require('java.util.List');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.ChartEnvelop');
-goog.require('org.pepstock.charba.client.commons.IsEnvelop');
+goog.require('org.pepstock.charba.client.commons.Envelop');
 goog.require('org.pepstock.charba.client.commons.Key');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ObjectType');

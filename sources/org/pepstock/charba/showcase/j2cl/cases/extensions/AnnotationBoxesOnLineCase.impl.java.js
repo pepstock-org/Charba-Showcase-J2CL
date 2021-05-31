@@ -80,8 +80,8 @@ class AnnotationBoxesOnLineCase extends BaseComposite {
   let options = AnnotationOptions.$create__();
   let box1 = BoxAnnotation.$create__();
   box1.m_setDrawTime__org_pepstock_charba_client_annotation_enums_DrawTime(DrawTime.f_BEFORE_DATASETS_DRAW__org_pepstock_charba_client_annotation_enums_DrawTime);
-  box1.m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
-  box1.m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  box1.m_setXScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  box1.m_setYScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
   box1.m_setXMin__java_lang_String("January");
   box1.m_setXMax__java_lang_String("April");
   box1.m_setBackgroundColor__org_pepstock_charba_client_colors_IsColor(GwtMaterialColor.f_YELLOW_LIGHTEN_3__org_pepstock_charba_client_colors_GwtMaterialColor.m_alpha__double(0.3));

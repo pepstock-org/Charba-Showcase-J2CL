@@ -2,10 +2,10 @@ goog.module('org.pepstock.charba.client.options.StandardAnimationTransition$impl
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 const AbstractStandardKey = goog.require('org.pepstock.charba.client.options.AbstractStandardKey$impl');
-const IsTransitionKey = goog.require('org.pepstock.charba.client.options.IsTransitionKey$impl');
+const TransitionKey = goog.require('org.pepstock.charba.client.options.TransitionKey$impl');
 
 /**
- * @implements {IsTransitionKey}
+ * @implements {TransitionKey}
  */
 class StandardAnimationTransition extends AbstractStandardKey {
  /** @protected */
@@ -22,7 +22,7 @@ class StandardAnimationTransition extends AbstractStandardKey {
  
  $ctor__org_pepstock_charba_client_options_StandardAnimationTransition__java_lang_String(/** ?string */ value) {
   this.$ctor__org_pepstock_charba_client_options_AbstractStandardKey__java_lang_String(value);
-  IsTransitionKey.m_checkIfValid__org_pepstock_charba_client_options_IsTransitionKey(this);
+  TransitionKey.m_checkIfValid__org_pepstock_charba_client_options_TransitionKey(this);
  }
  
  static $clinit() {
@@ -37,7 +37,7 @@ class StandardAnimationTransition extends AbstractStandardKey {
  
  static $loadModules() {}
 }
-IsTransitionKey.$markImplementor(StandardAnimationTransition);
+TransitionKey.$markImplementor(StandardAnimationTransition);
 $Util.$setClassMetadata(StandardAnimationTransition, "org.pepstock.charba.client.options.StandardAnimationTransition");
 
 exports = StandardAnimationTransition;

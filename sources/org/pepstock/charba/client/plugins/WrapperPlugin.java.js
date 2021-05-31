@@ -7,7 +7,6 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.Chart.$Overlay');
 goog.require('org.pepstock.charba.client.IsChart');
 goog.require('org.pepstock.charba.client.Plugin');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');
 goog.require('org.pepstock.charba.client.commons.JsHelper');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');

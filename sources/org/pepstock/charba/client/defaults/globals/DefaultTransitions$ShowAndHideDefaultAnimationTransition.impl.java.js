@@ -5,7 +5,7 @@ const DefaultAnimationTransition = goog.require('org.pepstock.charba.client.defa
 
 let IsDefaultAnimations = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultAnimations$impl');
 let ShowAndHideDefaultAnimations = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ShowAndHideDefaultAnimationTransition.ShowAndHideDefaultAnimations$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 
 class ShowAndHideDefaultAnimationTransition extends DefaultAnimationTransition {
  /** @protected */
@@ -15,16 +15,16 @@ class ShowAndHideDefaultAnimationTransition extends DefaultAnimationTransition {
   this.f_animations__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ShowAndHideDefaultAnimationTransition_;
  }
  /** @return {!ShowAndHideDefaultAnimationTransition} */
- static $create__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ mode) {
+ static $create__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ mode) {
   ShowAndHideDefaultAnimationTransition.$clinit();
   let $instance = new ShowAndHideDefaultAnimationTransition();
-  $instance.$ctor__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ShowAndHideDefaultAnimationTransition__org_pepstock_charba_client_options_IsTransitionKey(mode);
+  $instance.$ctor__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ShowAndHideDefaultAnimationTransition__org_pepstock_charba_client_options_TransitionKey(mode);
   return $instance;
  }
  
- $ctor__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ShowAndHideDefaultAnimationTransition__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ mode) {
+ $ctor__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ShowAndHideDefaultAnimationTransition__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ mode) {
   this.$ctor__org_pepstock_charba_client_defaults_globals_DefaultAnimationTransition__();
-  this.f_animations__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ShowAndHideDefaultAnimationTransition_ = ShowAndHideDefaultAnimations.$create__org_pepstock_charba_client_options_IsTransitionKey(mode);
+  this.f_animations__org_pepstock_charba_client_defaults_globals_DefaultTransitions_ShowAndHideDefaultAnimationTransition_ = ShowAndHideDefaultAnimations.$create__org_pepstock_charba_client_options_TransitionKey(mode);
  }
  /** @override @return {IsDefaultAnimations} */
  m_getAnimations__() {

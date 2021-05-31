@@ -30,11 +30,11 @@ class Legend extends ConfigurationOptionsContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?, ?, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?, ?, ?):void>}*/
   this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_Legend_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?, ?, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?, ?, ?):void>}*/
   this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_Legend_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?, ?, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?, ?, ?):void>}*/
   this.f_leaveCallbackProxy__org_pepstock_charba_client_configuration_Legend_;
   /**@type {LegendLabels}*/
   this.f_labels__org_pepstock_charba_client_configuration_Legend_;
@@ -61,13 +61,13 @@ class Legend extends ConfigurationOptionsContainer {
   IsEventProvider.m_register__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_configuration_IsEventProvider(this.m_getChart__(), this);
   this.f_labels__org_pepstock_charba_client_configuration_Legend_ = LegendLabels.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this.m_getOptions__());
   this.f_title__org_pepstock_charba_client_configuration_Legend_ = LegendTitle.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this.m_getOptions__());
-  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_Legend_.callback = (/** Object */ context, /** ? */ event, /** ? */ item, /** ? */ legend) =>{
+  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_Legend_.callback = (/** ? */ event, /** ? */ item, /** ? */ legend) =>{
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(LegendClickEvent.$create__org_pepstock_charba_client_events_ChartEventContext__org_pepstock_charba_client_items_LegendItem(ChartEventContext.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(event))), LegendItem.f_FACTORY__org_pepstock_charba_client_items_LegendItem.m_create__org_pepstock_charba_client_commons_NativeObject(item)));
   };
-  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_Legend_.callback = (/** Object */ context_1, /** ? */ event_1, /** ? */ item_1, /** ? */ legend_1) =>{
+  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_Legend_.callback = (/** ? */ event_1, /** ? */ item_1, /** ? */ legend_1) =>{
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(LegendHoverEvent.$create__org_pepstock_charba_client_events_ChartEventContext__org_pepstock_charba_client_items_LegendItem(ChartEventContext.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(event_1))), LegendItem.f_FACTORY__org_pepstock_charba_client_items_LegendItem.m_create__org_pepstock_charba_client_commons_NativeObject(item_1)));
   };
-  this.f_leaveCallbackProxy__org_pepstock_charba_client_configuration_Legend_.callback = (/** Object */ context_2, /** ? */ event_2, /** ? */ item_2, /** ? */ legend_2) =>{
+  this.f_leaveCallbackProxy__org_pepstock_charba_client_configuration_Legend_.callback = (/** ? */ event_2, /** ? */ item_2, /** ? */ legend_2) =>{
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(LegendLeaveEvent.$create__org_pepstock_charba_client_events_ChartEventContext__org_pepstock_charba_client_items_LegendItem(ChartEventContext.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(event_2))), LegendItem.f_FACTORY__org_pepstock_charba_client_items_LegendItem.m_create__org_pepstock_charba_client_commons_NativeObject(item_2)));
   };
  }
@@ -211,9 +211,9 @@ class Legend extends ConfigurationOptionsContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_Legend() {
-  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_Legend_ = /**@type {CharbaCallbackProxy<?function(Object, ?, ?, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_Legend_ = /**@type {CharbaCallbackProxy<?function(Object, ?, ?, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_leaveCallbackProxy__org_pepstock_charba_client_configuration_Legend_ = /**@type {CharbaCallbackProxy<?function(Object, ?, ?, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_Legend_ = /**@type {CharbaCallbackProxy<?function(?, ?, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_Legend_ = /**@type {CharbaCallbackProxy<?function(?, ?, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_leaveCallbackProxy__org_pepstock_charba_client_configuration_Legend_ = /**@type {CharbaCallbackProxy<?function(?, ?, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_onClickHandlers__org_pepstock_charba_client_configuration_Legend_ = 0;
   this.f_onHoverHandlers__org_pepstock_charba_client_configuration_Legend_ = 0;
   this.f_onLeaveHandlers__org_pepstock_charba_client_configuration_Legend_ = 0;

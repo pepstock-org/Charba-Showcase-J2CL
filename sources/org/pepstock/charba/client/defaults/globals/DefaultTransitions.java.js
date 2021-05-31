@@ -12,7 +12,7 @@ goog.require('org.pepstock.charba.client.defaults.globals.DefaultTransitions.Act
 goog.require('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ResizeDefaultAnimationTransition');
 goog.require('org.pepstock.charba.client.defaults.globals.DefaultTransitions.ShowAndHideDefaultAnimationTransition');
 goog.require('org.pepstock.charba.client.enums.DefaultTransitionKey');
-goog.require('org.pepstock.charba.client.options.IsTransitionKey');
+goog.require('org.pepstock.charba.client.options.TransitionKey');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.Objects');

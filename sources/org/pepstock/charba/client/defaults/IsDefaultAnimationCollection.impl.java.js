@@ -4,8 +4,10 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultBaseAnimation = goog.require('org.pepstock.charba.client.defaults.IsDefaultBaseAnimation$impl');
 
 let List = goog.forwardDeclare('java.util.List$impl');
+let FromCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.FromCallback$impl');
+let ToCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ToCallback$impl');
 let AnimationType = goog.forwardDeclare('org.pepstock.charba.client.enums.AnimationType$impl');
-let IsAnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+let AnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
 
 /**
  * @interface
@@ -26,8 +28,12 @@ class IsDefaultAnimationCollection {
  m_getToAsBoolean__() {}
  /** @abstract @return {?string} */
  m_getToAsString__() {}
- /** @abstract @return {List<IsAnimationPropertyKey>} */
+ /** @abstract @return {List<AnimationPropertyKey>} */
  m_getProperties__() {}
+ /** @abstract @return {FromCallback} */
+ m_getFromCallback__() {}
+ /** @abstract @return {ToCallback} */
+ m_getToCallback__() {}
  
  static $clinit() {
   IsDefaultAnimationCollection.$clinit = () =>{};

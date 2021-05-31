@@ -13,7 +13,7 @@ goog.require('org.pepstock.charba.client.enums.AxisPosition');
 goog.require('org.pepstock.charba.client.enums.AxisType');
 goog.require('org.pepstock.charba.client.enums.Bounds');
 goog.require('org.pepstock.charba.client.enums.DefaultScaleId');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 goog.require('vmbootstrap.Objects');
 
 const CartesianAxis = goog.require('org.pepstock.charba.client.configuration.CartesianAxis$impl');

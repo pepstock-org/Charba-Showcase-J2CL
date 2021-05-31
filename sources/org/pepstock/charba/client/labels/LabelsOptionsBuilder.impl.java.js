@@ -6,8 +6,8 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let HashMap = goog.forwardDeclare('java.util.HashMap$impl');
 let Map = goog.forwardDeclare('java.util.Map$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
-let IsLabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.IsLabelId$impl');
 let LabelBuilder = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelBuilder$impl');
+let LabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelId$impl');
 let LabelsOptions = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelsOptions$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -48,25 +48,25 @@ class LabelsOptionsBuilder extends j_l_Object {
  }
  /** @return {LabelBuilder} */
  m_createLabel__java_lang_String(/** ?string */ id) {
-  return this.m_createLabel__org_pepstock_charba_client_labels_IsLabelId(IsLabelId.m_create__java_lang_String(id));
+  return this.m_createLabel__org_pepstock_charba_client_labels_LabelId(LabelId.m_create__java_lang_String(id));
  }
  /** @return {LabelBuilder} */
- m_createLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
-  IsLabelId.m_checkIfValid__org_pepstock_charba_client_labels_IsLabelId(id);
-  let builder = LabelBuilder.$create__org_pepstock_charba_client_labels_LabelsOptionsBuilder__org_pepstock_charba_client_labels_Label(this, this.f_options__org_pepstock_charba_client_labels_LabelsOptionsBuilder_.m_createLabel__org_pepstock_charba_client_labels_IsLabelId(id));
+ m_createLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
+  LabelId.m_checkIfValid__org_pepstock_charba_client_labels_LabelId(id);
+  let builder = LabelBuilder.$create__org_pepstock_charba_client_labels_LabelsOptionsBuilder__org_pepstock_charba_client_labels_Label(this, this.f_options__org_pepstock_charba_client_labels_LabelsOptionsBuilder_.m_createLabel__org_pepstock_charba_client_labels_LabelId(id));
   builder.m_setOptionsBuilder__org_pepstock_charba_client_labels_LabelsOptionsBuilder_$pp_org_pepstock_charba_client_labels(this);
   this.f_labelBuilders__org_pepstock_charba_client_labels_LabelsOptionsBuilder_.put(id.m_value__(), builder);
   return builder;
  }
  /** @return {LabelBuilder} */
  m_getLabel__java_lang_String(/** ?string */ id) {
-  return this.m_getLabel__org_pepstock_charba_client_labels_IsLabelId(IsLabelId.m_create__java_lang_String(id));
+  return this.m_getLabel__org_pepstock_charba_client_labels_LabelId(LabelId.m_create__java_lang_String(id));
  }
  /** @return {LabelBuilder} */
- m_getLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
-  IsLabelId.m_checkIfValid__org_pepstock_charba_client_labels_IsLabelId(id);
+ m_getLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
+  LabelId.m_checkIfValid__org_pepstock_charba_client_labels_LabelId(id);
   if (this.f_labelBuilders__org_pepstock_charba_client_labels_LabelsOptionsBuilder_.containsKey(id.m_value__())) {
-   return this.m_createLabel__org_pepstock_charba_client_labels_IsLabelId(id);
+   return this.m_createLabel__org_pepstock_charba_client_labels_LabelId(id);
   }
   return /**@type {LabelBuilder}*/ ($Casts.$to(this.f_labelBuilders__org_pepstock_charba_client_labels_LabelsOptionsBuilder_.get(id.m_value__()), LabelBuilder));
  }
@@ -87,8 +87,8 @@ class LabelsOptionsBuilder extends j_l_Object {
  
  static $loadModules() {
   HashMap = goog.module.get('java.util.HashMap$impl');
-  IsLabelId = goog.module.get('org.pepstock.charba.client.labels.IsLabelId$impl');
   LabelBuilder = goog.module.get('org.pepstock.charba.client.labels.LabelBuilder$impl');
+  LabelId = goog.module.get('org.pepstock.charba.client.labels.LabelId$impl');
   LabelsOptions = goog.module.get('org.pepstock.charba.client.labels.LabelsOptions$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

@@ -23,11 +23,11 @@ class Grid extends AbstractScaleLines {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_tickColorCallbackProxy__org_pepstock_charba_client_configuration_Grid_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_tickWidthCallbackProxy__org_pepstock_charba_client_configuration_Grid_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_tickBorderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_Grid_;
   /**@type {ColorCallback<ScaleContext>}*/
   this.f_tickColorCallback__org_pepstock_charba_client_configuration_Grid_;
@@ -47,13 +47,13 @@ class Grid extends AbstractScaleLines {
  $ctor__org_pepstock_charba_client_configuration_Grid__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {
   this.$ctor__org_pepstock_charba_client_configuration_AbstractScaleLines__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_defaults_IsDefaultScaleLines(axis, axis.m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getGrid__());
   this.$init___$p_org_pepstock_charba_client_configuration_Grid();
-  this.f_tickColorCallbackProxy__org_pepstock_charba_client_configuration_Grid_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_tickColorCallbackProxy__org_pepstock_charba_client_configuration_Grid_.callback = (/** ? */ context) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String__boolean(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getTickColorCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getGrid__().m_getTickColorAsString__(), false);
   };
-  this.f_tickWidthCallbackProxy__org_pepstock_charba_client_configuration_Grid_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_tickWidthCallbackProxy__org_pepstock_charba_client_configuration_Grid_.callback = (/** ? */ context_1) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_1), this.m_getTickWidthCallback__(), Integer.m_valueOf__int(this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getGrid__().m_getTickWidth__())), Integer)).m_intValue__();
   };
-  this.f_tickBorderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_Grid_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_tickBorderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_Grid_.callback = (/** ? */ context_2) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_2), this.m_getTickBorderDashOffsetCallback__(), this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getGrid__().m_getTickBorderDashOffset__()), Double)));
   };
  }
@@ -254,6 +254,11 @@ class Grid extends AbstractScaleLines {
   this.f_tickColorCallback__org_pepstock_charba_client_configuration_Grid_ = tickColorCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getGrid__(), Property.f_TICK_COLOR__org_pepstock_charba_client_configuration_Grid_Property, tickColorCallback, this.f_tickColorCallbackProxy__org_pepstock_charba_client_configuration_Grid_);
  }
+ 
+ m_setTickColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ tickColorCallback) {
+  this.m_setTickColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getGrid__(), Property.f_TICK_COLOR__org_pepstock_charba_client_configuration_Grid_Property, tickColorCallback);
+ }
  /** @return {WidthCallback<ScaleContext>} */
  m_getTickWidthCallback__() {
   return this.f_tickWidthCallback__org_pepstock_charba_client_configuration_Grid_;
@@ -262,6 +267,11 @@ class Grid extends AbstractScaleLines {
  m_setTickWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<ScaleContext> */ tickWidthCallback) {
   this.f_tickWidthCallback__org_pepstock_charba_client_configuration_Grid_ = tickWidthCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getGrid__(), Property.f_TICK_WIDTH__org_pepstock_charba_client_configuration_Grid_Property, tickWidthCallback, this.f_tickWidthCallbackProxy__org_pepstock_charba_client_configuration_Grid_);
+ }
+ 
+ m_setTickWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ tickWidthCallback) {
+  this.m_setTickWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getGrid__(), Property.f_TICK_WIDTH__org_pepstock_charba_client_configuration_Grid_Property, tickWidthCallback);
  }
  /** @return {BorderDashOffsetCallback<ScaleContext>} */
  m_getTickBorderDashOffsetCallback__() {
@@ -272,11 +282,16 @@ class Grid extends AbstractScaleLines {
   this.f_tickBorderDashOffsetCallback__org_pepstock_charba_client_configuration_Grid_ = tickBorderDashOffsetCallback;
   this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getGrid__(), Property.f_TICK_BORDER_DASH_OFFSET__org_pepstock_charba_client_configuration_Grid_Property, tickBorderDashOffsetCallback, this.f_tickBorderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_Grid_);
  }
+ 
+ m_setTickBorderDashOffset__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ tickBorderDashOffsetCallback) {
+  this.m_setTickBorderDashOffset__org_pepstock_charba_client_callbacks_BorderDashOffsetCallback(/**@type {BorderDashOffsetCallback<ScaleContext>}*/ (null));
+  this.m_getAxis__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedScale}*/ ($Casts.$to(this.m_getAxis__().m_getConfiguration__(), ExtendedScale)).m_getGrid__(), Property.f_TICK_BORDER_DASH_OFFSET__org_pepstock_charba_client_configuration_Grid_Property, tickBorderDashOffsetCallback);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_Grid() {
-  this.f_tickColorCallbackProxy__org_pepstock_charba_client_configuration_Grid_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_tickWidthCallbackProxy__org_pepstock_charba_client_configuration_Grid_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_tickBorderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_Grid_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_tickColorCallbackProxy__org_pepstock_charba_client_configuration_Grid_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_tickWidthCallbackProxy__org_pepstock_charba_client_configuration_Grid_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_tickBorderDashOffsetCallbackProxy__org_pepstock_charba_client_configuration_Grid_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_tickColorCallback__org_pepstock_charba_client_configuration_Grid_ = null;
   this.f_tickWidthCallback__org_pepstock_charba_client_configuration_Grid_ = null;
   this.f_tickBorderDashOffsetCallback__org_pepstock_charba_client_configuration_Grid_ = null;

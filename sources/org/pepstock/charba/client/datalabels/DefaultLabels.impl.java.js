@@ -4,7 +4,7 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultLabels = goog.require('org.pepstock.charba.client.datalabels.IsDefaultLabels$impl');
 
-let IsDataLabelId = goog.forwardDeclare('org.pepstock.charba.client.datalabels.IsDataLabelId$impl');
+let DataLabelId = goog.forwardDeclare('org.pepstock.charba.client.datalabels.DataLabelId$impl');
 let LabelItem = goog.forwardDeclare('org.pepstock.charba.client.datalabels.LabelItem$impl');
 
 /**
@@ -28,13 +28,13 @@ class DefaultLabels extends j_l_Object {
  }
  //Default method forwarding stub.
  /** @override @return {LabelItem} */
- m_getLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ arg0) {
-  return IsDefaultLabels.m_getLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_IsDataLabelId(this, arg0);
+ m_getLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ arg0) {
+  return IsDefaultLabels.m_getLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_DataLabelId(this, arg0);
  }
  //Default method forwarding stub.
  /** @override @return {boolean} */
- m_hasLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ arg0) {
-  return IsDefaultLabels.m_hasLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_IsDataLabelId(this, arg0);
+ m_hasLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ arg0) {
+  return IsDefaultLabels.m_hasLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_DataLabelId(this, arg0);
  }
  
  static $clinit() {

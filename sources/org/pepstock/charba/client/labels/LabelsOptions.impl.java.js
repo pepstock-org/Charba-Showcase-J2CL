@@ -11,8 +11,8 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
-let IsLabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.IsLabelId$impl');
 let Label = goog.forwardDeclare('org.pepstock.charba.client.labels.Label$impl');
+let LabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelId$impl');
 let LabelsPlugin = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelsPlugin$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -72,34 +72,34 @@ class LabelsOptions extends AbstractPluginOptions {
  }
  /** @return {Label} */
  m_createLabel__java_lang_String(/** ?string */ id) {
-  return this.m_createLabel__org_pepstock_charba_client_labels_IsLabelId(IsLabelId.m_create__java_lang_String(id));
+  return this.m_createLabel__org_pepstock_charba_client_labels_LabelId(LabelId.m_create__java_lang_String(id));
  }
  /** @return {Label} */
- m_createLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
+ m_createLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(id);
   if (!this.m_has__org_pepstock_charba_client_commons_Key(id)) {
-   let label = Label.$create__org_pepstock_charba_client_labels_IsLabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_IsLabelId(id), null);
+   let label = Label.$create__org_pepstock_charba_client_labels_LabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_LabelId(id), null);
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(id, label);
    return label;
   }
-  return this.m_getLabel__org_pepstock_charba_client_labels_IsLabelId(id);
+  return this.m_getLabel__org_pepstock_charba_client_labels_LabelId(id);
  }
  /** @return {boolean} */
  m_hasLabel__java_lang_String(/** ?string */ id) {
-  return this.m_hasLabel__org_pepstock_charba_client_labels_IsLabelId(IsLabelId.m_create__java_lang_String(id));
+  return this.m_hasLabel__org_pepstock_charba_client_labels_LabelId(LabelId.m_create__java_lang_String(id));
  }
  /** @override @return {boolean} */
- m_hasLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
-  IsLabelId.m_checkIfValid__org_pepstock_charba_client_labels_IsLabelId(id);
-  return this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(id, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType) || this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_hasLabel__org_pepstock_charba_client_labels_IsLabelId(id);
+ m_hasLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
+  LabelId.m_checkIfValid__org_pepstock_charba_client_labels_LabelId(id);
+  return this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(id, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType) || this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_hasLabel__org_pepstock_charba_client_labels_LabelId(id);
  }
  
  m_removeLabel__java_lang_String(/** ?string */ id) {
-  this.m_removeLabel__org_pepstock_charba_client_labels_IsLabelId(IsLabelId.m_create__java_lang_String(id));
+  this.m_removeLabel__org_pepstock_charba_client_labels_LabelId(LabelId.m_create__java_lang_String(id));
  }
  
- m_removeLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
-  IsLabelId.m_checkIfValid__org_pepstock_charba_client_labels_IsLabelId(id);
+ m_removeLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
+  LabelId.m_checkIfValid__org_pepstock_charba_client_labels_LabelId(id);
   if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(id, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
    this.m_remove__org_pepstock_charba_client_commons_Key(id);
   }
@@ -111,8 +111,8 @@ class LabelsOptions extends AbstractPluginOptions {
    let key = /**@type {Key}*/ ($Casts.$to($iterator.m_next__(), Key));
    {
     if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(key, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
-     let id = IsLabelId.m_create__java_lang_String(key.m_value__());
-     let label = Label.$create__org_pepstock_charba_client_labels_IsLabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_IsLabelId(id), this.m_getValue__org_pepstock_charba_client_commons_Key(key));
+     let id = LabelId.m_create__java_lang_String(key.m_value__());
+     let label = Label.$create__org_pepstock_charba_client_labels_LabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_LabelId(id), this.m_getValue__org_pepstock_charba_client_commons_Key(key));
      result.add(label);
     }
    }
@@ -121,15 +121,15 @@ class LabelsOptions extends AbstractPluginOptions {
  }
  /** @return {Label} */
  m_getLabel__java_lang_String(/** ?string */ id) {
-  return this.m_getLabel__org_pepstock_charba_client_labels_IsLabelId(IsLabelId.m_create__java_lang_String(id));
+  return this.m_getLabel__org_pepstock_charba_client_labels_LabelId(LabelId.m_create__java_lang_String(id));
  }
  /** @override @return {Label} */
- m_getLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ id) {
-  IsLabelId.m_checkIfValid__org_pepstock_charba_client_labels_IsLabelId(id);
-  if (this.m_hasLabel__org_pepstock_charba_client_labels_IsLabelId(id) && this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(id, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
-   return Label.$create__org_pepstock_charba_client_labels_IsLabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_IsLabelId(id), this.m_getValue__org_pepstock_charba_client_commons_Key(id));
+ m_getLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ id) {
+  LabelId.m_checkIfValid__org_pepstock_charba_client_labels_LabelId(id);
+  if (this.m_hasLabel__org_pepstock_charba_client_labels_LabelId(id) && this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(id, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
+   return Label.$create__org_pepstock_charba_client_labels_LabelId__org_pepstock_charba_client_labels_IsDefaultLabel__org_pepstock_charba_client_commons_NativeObject(id, this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_LabelId(id), this.m_getValue__org_pepstock_charba_client_commons_Key(id));
   }
-  return this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_IsLabelId(id);
+  return this.f_defaultOptions__org_pepstock_charba_client_labels_LabelsOptions_.m_getLabel__org_pepstock_charba_client_labels_LabelId(id);
  }
  
  static $clinit() {
@@ -150,8 +150,8 @@ class LabelsOptions extends AbstractPluginOptions {
   IsChart = goog.module.get('org.pepstock.charba.client.IsChart$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
-  IsLabelId = goog.module.get('org.pepstock.charba.client.labels.IsLabelId$impl');
   Label = goog.module.get('org.pepstock.charba.client.labels.Label$impl');
+  LabelId = goog.module.get('org.pepstock.charba.client.labels.LabelId$impl');
   LabelsPlugin = goog.module.get('org.pepstock.charba.client.labels.LabelsPlugin$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

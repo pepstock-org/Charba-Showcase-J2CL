@@ -31,6 +31,8 @@ class HasBackgroundColor {
  m_getBackgroundColorCallback__() {}
  /** @abstract */
  m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<AnnotationContext> */ backgroundColorCallback) {}
+ /** @abstract */
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ backgroundColorCallback) {}
  /** @return {HasBackgroundColor} */
  static $adapt(/** ?function():BackgroundColorHandler */ fn) {
   HasBackgroundColor.$clinit();
@@ -74,6 +76,13 @@ class HasBackgroundColor {
   HasBackgroundColor.$clinit();
   if (!$Equality.$same($thisArg.m_getBackgroundColorHandler__(), null)) {
    $thisArg.m_getBackgroundColorHandler__().m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback_$pp_org_pepstock_charba_client_annotation(backgroundColorCallback);
+  }
+ }
+ 
+ static m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** !HasBackgroundColor */ $thisArg, /** Function */ backgroundColorCallback) {
+  HasBackgroundColor.$clinit();
+  if (!$Equality.$same($thisArg.m_getBackgroundColorHandler__(), null)) {
+   $thisArg.m_getBackgroundColorHandler__().m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_annotation(backgroundColorCallback);
   }
  }
  

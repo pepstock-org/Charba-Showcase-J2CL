@@ -8,7 +8,7 @@ let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$
 let ArrayDouble_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let LegendHitBoxItem = goog.forwardDeclare('org.pepstock.charba.client.items.LegendHitBoxItem$impl');
 let LegendItem = goog.forwardDeclare('org.pepstock.charba.client.items.LegendItem$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.LegendNode.Property$impl');
@@ -29,7 +29,7 @@ class LegendNode extends BaseBoxNodeItem {
  }
  
  $ctor__org_pepstock_charba_client_items_LegendNode__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_BaseBoxNodeItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_BaseBoxNodeItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__()));
  }
  /** @return {boolean} */
  m_isDoughnutMode__() {
@@ -76,7 +76,7 @@ class LegendNode extends BaseBoxNodeItem {
   ArrayDouble_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ArrayObject_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   LegendHitBoxItem = goog.module.get('org.pepstock.charba.client.items.LegendHitBoxItem$impl');
   LegendItem = goog.module.get('org.pepstock.charba.client.items.LegendItem$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.LegendNode.Property$impl');

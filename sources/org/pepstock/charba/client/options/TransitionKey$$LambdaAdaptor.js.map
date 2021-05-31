@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TransitionKey$$LambdaAdaptor.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,8I;;;CAAA,oI;EAAAC,iC;EAAAA,gF;;;CAAA,S;EAAAC,yC;EAAAA,6G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["TransitionKey.java"],
+"names":["org.pepstock.charba.client.options.TransitionKey$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.TransitionKey$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.TransitionKey$$LambdaAdaptor.value","org.pepstock.charba.client.options.TransitionKey$$LambdaAdaptor.<clinit>"]
+}
+

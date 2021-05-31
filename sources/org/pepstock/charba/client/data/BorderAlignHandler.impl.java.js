@@ -16,7 +16,6 @@ let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.data.BorderAlignHandler.Property$impl');
-let DataEnvelop = goog.forwardDeclare('org.pepstock.charba.client.data.DataEnvelop$impl');
 let IsDefaultOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultOptions$impl');
 let BorderAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.BorderAlign$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
@@ -27,7 +26,7 @@ class BorderAlignHandler extends NativeObjectContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_borderAlignCallbackProxy__org_pepstock_charba_client_data_BorderAlignHandler_;
   /**@type {BorderAlignCallback}*/
   this.f_borderAlignCallback__org_pepstock_charba_client_data_BorderAlignHandler_;
@@ -46,8 +45,8 @@ class BorderAlignHandler extends NativeObjectContainer {
   this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(nativeObject);
   this.$init___$p_org_pepstock_charba_client_data_BorderAlignHandler();
   this.f_defaultValues__org_pepstock_charba_client_data_BorderAlignHandler_ = defaultValues;
-  this.f_borderAlignCallbackProxy__org_pepstock_charba_client_data_BorderAlignHandler_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
-   return /**@type {BorderAlign}*/ ($Casts.$to(ScriptableUtils.m_getOptionValueAsString__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_Key(DatasetContext.$create__org_pepstock_charba_client_data_DataEnvelop(/**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object(context))), this.m_getBorderAlignCallback___$pp_org_pepstock_charba_client_data(), defaultValues.m_getElements__().m_getArc__().m_getBorderAlign__()), BorderAlign)).m_value__();
+  this.f_borderAlignCallbackProxy__org_pepstock_charba_client_data_BorderAlignHandler_.callback = (/** ? */ context) =>{
+   return /**@type {BorderAlign}*/ ($Casts.$to(ScriptableUtils.m_getOptionValueAsString__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_Key(DatasetContext.$create__org_pepstock_charba_client_commons_NativeObject(context), this.m_getBorderAlignCallback___$pp_org_pepstock_charba_client_data(), defaultValues.m_getElements__().m_getArc__().m_getBorderAlign__()), BorderAlign)).m_value__();
   };
  }
  
@@ -89,9 +88,14 @@ class BorderAlignHandler extends NativeObjectContainer {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_BORDER_ALIGN__org_pepstock_charba_client_data_BorderAlignHandler_Property);
   }
  }
+ 
+ m_setBorderAlign__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(/** Function */ borderAlignCallback) {
+  this.m_setBorderAlign__org_pepstock_charba_client_callbacks_BorderAlignCallback_$pp_org_pepstock_charba_client_data(/**@type {BorderAlignCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_ALIGN__org_pepstock_charba_client_data_BorderAlignHandler_Property, borderAlignCallback);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_BorderAlignHandler() {
-  this.f_borderAlignCallbackProxy__org_pepstock_charba_client_data_BorderAlignHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderAlignCallbackProxy__org_pepstock_charba_client_data_BorderAlignHandler_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_borderAlignCallback__org_pepstock_charba_client_data_BorderAlignHandler_ = null;
  }
  
@@ -116,7 +120,6 @@ class BorderAlignHandler extends NativeObjectContainer {
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   Property = goog.module.get('org.pepstock.charba.client.data.BorderAlignHandler.Property$impl');
-  DataEnvelop = goog.module.get('org.pepstock.charba.client.data.DataEnvelop$impl');
   BorderAlign = goog.module.get('org.pepstock.charba.client.enums.BorderAlign$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

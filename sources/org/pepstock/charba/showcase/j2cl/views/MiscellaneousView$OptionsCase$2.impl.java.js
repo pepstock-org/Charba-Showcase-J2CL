@@ -5,7 +5,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const CaseFactory = goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseFactory$impl');
 
 let BaseComposite = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite$impl');
-let SteppedLineOnLineCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SteppedLineOnLineCase$impl');
+let InterpolationOnLineCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.InterpolationOnLineCase$impl');
 
 /**
  * @implements {CaseFactory}
@@ -28,7 +28,7 @@ class $2 extends j_l_Object {
  }
  /** @override @return {BaseComposite} */
  m_create__() {
-  return SteppedLineOnLineCase.$create__();
+  return InterpolationOnLineCase.$create__();
  }
  
  static $clinit() {
@@ -42,7 +42,7 @@ class $2 extends j_l_Object {
  }
  
  static $loadModules() {
-  SteppedLineOnLineCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SteppedLineOnLineCase$impl');
+  InterpolationOnLineCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.InterpolationOnLineCase$impl');
  }
 }
 CaseFactory.$markImplementor($2);

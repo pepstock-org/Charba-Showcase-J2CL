@@ -14,7 +14,7 @@ let AxisPosition = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisPos
 let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
 let Bounds = goog.forwardDeclare('org.pepstock.charba.client.enums.Bounds$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 /**
@@ -31,8 +31,8 @@ class CartesianAxis extends Axis {
   this.f_title__org_pepstock_charba_client_configuration_CartesianAxis_;
  }
  
- $ctor__org_pepstock_charba_client_configuration_CartesianAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** IsScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
-  this.$ctor__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
+ $ctor__org_pepstock_charba_client_configuration_CartesianAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+  this.$ctor__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
   Checker.m_assertCheck__boolean__java_lang_String(!DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId.m_is__java_lang_String(id.m_value__()), "The scale id is invalid. It must not be " + j_l_String.m_valueOf__java_lang_Object(id.m_value__()));
   Checker.m_assertCheck__boolean__java_lang_String(!$Objects.m_equals__java_lang_Object__java_lang_Object(AxisKind.f_R__org_pepstock_charba_client_enums_AxisKind, kind), "The axis kind is invalid. It must not be " + j_l_String.m_valueOf__java_lang_Object(AxisKind.f_R__org_pepstock_charba_client_enums_AxisKind.m_value__()));
   this.f_grid__org_pepstock_charba_client_configuration_CartesianAxis_ = Grid.$create__org_pepstock_charba_client_configuration_Axis(this);

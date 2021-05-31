@@ -43,20 +43,12 @@ class JsControllerHelper extends j_l_Object {
   CharbaJsControllerHelper.initialize(controllerType.m_getChartType__().m_value__(), context);
  }
  
- m_addElements__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context) {
-  CharbaJsControllerHelper.addElements(controllerType.m_getChartType__().m_value__(), context);
+ m_parse__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__int__int_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context, /** number */ start, /** number */ count) {
+  CharbaJsControllerHelper.parse(controllerType.m_getChartType__().m_value__(), context, start, count);
  }
  
  m_draw__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context) {
   CharbaJsControllerHelper.draw(controllerType.m_getChartType__().m_value__(), context);
- }
- 
- m_removeHoverStyle__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_commons_NativeObject__int__int_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context, /** ? */ element, /** number */ datasetIndex, /** number */ index) {
-  CharbaJsControllerHelper.removeHoverStyle(controllerType.m_getChartType__().m_value__(), context, element, datasetIndex, index);
- }
- 
- m_setHoverStyle__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_commons_NativeObject__int__int_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context, /** ? */ element, /** number */ datasetIndex, /** number */ index) {
-  CharbaJsControllerHelper.setHoverStyle(controllerType.m_getChartType__().m_value__(), context, element, datasetIndex, index);
  }
  
  m_update__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__java_lang_String_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context, /** ?string */ mode) {
@@ -65,10 +57,6 @@ class JsControllerHelper extends j_l_Object {
  
  m_linkScales__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context) {
   CharbaJsControllerHelper.linkScales(controllerType.m_getChartType__().m_value__(), context);
- }
- 
- m_buildOrUpdateElements__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_controllers_ControllerContext__boolean_$pp_org_pepstock_charba_client_controllers(/** ControllerType */ controllerType, /** CharbaControllerContext */ context, /** boolean */ resetNewElements) {
-  CharbaJsControllerHelper.buildOrUpdateElements(controllerType.m_getChartType__().m_value__(), context, resetNewElements);
  }
  
  static $clinit() {

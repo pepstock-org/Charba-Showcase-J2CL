@@ -6,7 +6,7 @@ const IsDefaultsAnnotationOptions = goog.require('org.pepstock.charba.client.ann
 
 let List = goog.forwardDeclare('java.util.List$impl');
 let AbstractAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let DrawTime = goog.forwardDeclare('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
 
 /**
@@ -29,8 +29,8 @@ class DefaultOptions extends j_l_Object {
  }
  //Default method forwarding stub.
  /** @override @return {AbstractAnnotation} */
- m_getAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ arg0) {
-  return IsDefaultsAnnotationOptions.m_getAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_IsAnnotationId(this, arg0);
+ m_getAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ arg0) {
+  return IsDefaultsAnnotationOptions.m_getAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_AnnotationId(this, arg0);
  }
  //Default method forwarding stub.
  /** @override @return {List<AbstractAnnotation>} */
@@ -49,8 +49,8 @@ class DefaultOptions extends j_l_Object {
  }
  //Default method forwarding stub.
  /** @override @return {boolean} */
- m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ arg0) {
-  return IsDefaultsAnnotationOptions.m_hasAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_IsAnnotationId(this, arg0);
+ m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ arg0) {
+  return IsDefaultsAnnotationOptions.m_hasAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_AnnotationId(this, arg0);
  }
  /** @return {DefaultOptions} */
  static get f_INSTANCE__org_pepstock_charba_client_annotation_DefaultOptions() {

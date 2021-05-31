@@ -22,7 +22,7 @@ let EventType = goog.forwardDeclare('org.pepstock.charba.client.events.EventType
 let HandlerRegistration = goog.forwardDeclare('org.pepstock.charba.client.events.HandlerRegistration$impl');
 let DatasetItem = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetItem$impl');
 let DatasetReference = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetReference$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let Plugins = goog.forwardDeclare('org.pepstock.charba.client.plugins.Plugins$impl');
 let CTimer = goog.forwardDeclare('org.pepstock.charba.client.utils.CTimer$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
@@ -148,13 +148,13 @@ class IsChart {
  /** @abstract */
  m_update__() {}
  /** @abstract */
- m_update__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ mode) {}
+ m_update__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ mode) {}
  /** @abstract */
  m_update__org_pepstock_charba_client_UpdateConfiguration(/** UpdateConfiguration */ config) {}
  /** @abstract */
  m_reconfigure__() {}
  /** @abstract */
- m_reconfigure__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ mode) {}
+ m_reconfigure__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ mode) {}
  /** @abstract */
  m_reconfigure__org_pepstock_charba_client_UpdateConfiguration(/** UpdateConfiguration */ config) {}
  /** @abstract */

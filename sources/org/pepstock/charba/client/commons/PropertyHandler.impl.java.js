@@ -116,6 +116,11 @@ class PropertyHandler extends NativeObjectContainer {
   this.f_parent__org_pepstock_charba_client_commons_PropertyHandler_.m_checkAndAddToParent__();
  }
  
+ m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/** Key */ key, /** Function */ value) {
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(key, value);
+  this.f_parent__org_pepstock_charba_client_commons_PropertyHandler_.m_checkAndAddToParent__();
+ }
+ 
  m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(/** Key */ key, /** HTMLImageElement */ value) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(key, value);
   this.f_parent__org_pepstock_charba_client_commons_PropertyHandler_.m_checkAndAddToParent__();

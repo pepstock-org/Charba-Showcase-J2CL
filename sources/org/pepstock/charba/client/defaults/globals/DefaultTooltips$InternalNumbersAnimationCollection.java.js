@@ -8,7 +8,7 @@ goog.require('org.pepstock.charba.client.defaults.globals.DefaultAnimationCollec
 goog.require('org.pepstock.charba.client.enums.AnimationType');
 goog.require('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey');
 goog.require('org.pepstock.charba.client.enums.DefaultAnimationPropertyKey');
-goog.require('org.pepstock.charba.client.options.IsAnimationPropertyKey');
+goog.require('org.pepstock.charba.client.options.AnimationPropertyKey');
 goog.require('vmbootstrap.Arrays');
 
 const InternalNumbersAnimationCollection = goog.require('org.pepstock.charba.client.defaults.globals.DefaultTooltips.InternalNumbersAnimationCollection$impl');

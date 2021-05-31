@@ -9,7 +9,7 @@ let List = goog.forwardDeclare('java.util.List$impl');
 let AnimationType = goog.forwardDeclare('org.pepstock.charba.client.enums.AnimationType$impl');
 let DefaultAnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey$impl');
 let DefaultAnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultAnimationPropertyKey$impl');
-let IsAnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+let AnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class InternalNumbersAnimationCollection extends DefaultAnimationCollection {
@@ -28,7 +28,7 @@ class InternalNumbersAnimationCollection extends DefaultAnimationCollection {
  $ctor__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalNumbersAnimationCollection__() {
   this.$ctor__org_pepstock_charba_client_defaults_globals_DefaultAnimationCollection__();
  }
- /** @override @return {List<IsAnimationPropertyKey>} */
+ /** @override @return {List<AnimationPropertyKey>} */
  m_getProperties__() {
   return InternalNumbersAnimationCollection.f_DEFAULT_ANIMATION_PROPERTIES_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalNumbersAnimationCollection_;
  }
@@ -41,7 +41,7 @@ class InternalNumbersAnimationCollection extends DefaultAnimationCollection {
   InternalNumbersAnimationCollection.$clinit = () =>{};
   InternalNumbersAnimationCollection.$loadModules();
   DefaultAnimationCollection.$clinit();
-  InternalNumbersAnimationCollection.f_DEFAULT_ANIMATION_PROPERTIES_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalNumbersAnimationCollection_ = /**@type {List<IsAnimationPropertyKey>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<IsAnimationPropertyKey>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<IsAnimationPropertyKey>}*/ ($Arrays.$init([DefaultAnimationPropertyKey.f_X__org_pepstock_charba_client_enums_DefaultAnimationPropertyKey, DefaultAnimationPropertyKey.f_Y__org_pepstock_charba_client_enums_DefaultAnimationPropertyKey, IsAnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("width", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType), IsAnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("height", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType), IsAnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("caretX", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType), IsAnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("caretY", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType)], IsAnimationPropertyKey))))));
+  InternalNumbersAnimationCollection.f_DEFAULT_ANIMATION_PROPERTIES_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalNumbersAnimationCollection_ = /**@type {List<AnimationPropertyKey>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<AnimationPropertyKey>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<AnimationPropertyKey>}*/ ($Arrays.$init([DefaultAnimationPropertyKey.f_X__org_pepstock_charba_client_enums_DefaultAnimationPropertyKey, DefaultAnimationPropertyKey.f_Y__org_pepstock_charba_client_enums_DefaultAnimationPropertyKey, AnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("width", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType), AnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("height", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType), AnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("caretX", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType), AnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("caretY", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType)], AnimationPropertyKey))))));
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -54,11 +54,11 @@ class InternalNumbersAnimationCollection extends DefaultAnimationCollection {
   AnimationType = goog.module.get('org.pepstock.charba.client.enums.AnimationType$impl');
   DefaultAnimationCollectionKey = goog.module.get('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey$impl');
   DefaultAnimationPropertyKey = goog.module.get('org.pepstock.charba.client.enums.DefaultAnimationPropertyKey$impl');
-  IsAnimationPropertyKey = goog.module.get('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+  AnimationPropertyKey = goog.module.get('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
  }
 }
-/**@type {List<IsAnimationPropertyKey>}*/
+/**@type {List<AnimationPropertyKey>}*/
 InternalNumbersAnimationCollection.f_DEFAULT_ANIMATION_PROPERTIES_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalNumbersAnimationCollection_;
 $Util.$setClassMetadata(InternalNumbersAnimationCollection, "org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalNumbersAnimationCollection");
 

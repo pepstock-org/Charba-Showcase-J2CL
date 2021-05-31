@@ -5,7 +5,7 @@ const Plugins = goog.require('org.pepstock.charba.client.options.Plugins$impl');
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
-let DefaultOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultOptions$impl');
+let GlobalOptions = goog.forwardDeclare('org.pepstock.charba.client.GlobalOptions$impl');
 let AbstractPluginOptions = goog.forwardDeclare('org.pepstock.charba.client.plugins.AbstractPluginOptions$impl');
 
 class GlobalPlugins extends Plugins {
@@ -43,7 +43,7 @@ class GlobalPlugins extends Plugins {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_GlobalOptions_GlobalPlugins() {
-  this.f_envelop__org_pepstock_charba_client_GlobalOptions_GlobalPlugins_ = /**@type {!ChartEnvelop<?string>}*/ (ChartEnvelop.$create__java_lang_Object(DefaultOptions.f_SCOPE__org_pepstock_charba_client_defaults_globals_DefaultOptions));
+  this.f_envelop__org_pepstock_charba_client_GlobalOptions_GlobalPlugins_ = /**@type {!ChartEnvelop<?string>}*/ (ChartEnvelop.$create__java_lang_Object(GlobalOptions.f_SCOPE__org_pepstock_charba_client_GlobalOptions_));
  }
  
  static $clinit() {
@@ -59,7 +59,7 @@ class GlobalPlugins extends Plugins {
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
-  DefaultOptions = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultOptions$impl');
+  GlobalOptions = goog.module.get('org.pepstock.charba.client.GlobalOptions$impl');
  }
 }
 $Util.$setClassMetadata(GlobalPlugins, "org.pepstock.charba.client.GlobalOptions$GlobalPlugins");

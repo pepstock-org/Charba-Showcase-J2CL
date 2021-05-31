@@ -12,8 +12,8 @@ goog.require('org.pepstock.charba.client.commons.Checker');
 goog.require('org.pepstock.charba.client.configuration.Axis');
 goog.require('org.pepstock.charba.client.configuration.ConfigurationOptionsContainer');
 goog.require('org.pepstock.charba.client.configuration.ScalesOptions');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
 goog.require('org.pepstock.charba.client.options.Scale');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');
 

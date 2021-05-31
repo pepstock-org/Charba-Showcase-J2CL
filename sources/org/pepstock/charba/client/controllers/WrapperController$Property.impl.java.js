@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_TYPE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_INITIALIZE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_ADD_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_REMOVE_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_SET_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_BUILD_OR_UPDATE_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_TYPE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_INITIALIZE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_PARSE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property, Property.$static_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property], Property));
  }
  /** @return {!Property} */
  static get f_TYPE__org_pepstock_charba_client_controllers_WrapperController_Property() {
@@ -58,20 +58,12 @@ class Property extends Enum {
   return (Property.$clinit(), Property.$static_INITIALIZE__org_pepstock_charba_client_controllers_WrapperController_Property);
  }
  /** @return {!Property} */
- static get f_ADD_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property() {
-  return (Property.$clinit(), Property.$static_ADD_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property);
+ static get f_PARSE__org_pepstock_charba_client_controllers_WrapperController_Property() {
+  return (Property.$clinit(), Property.$static_PARSE__org_pepstock_charba_client_controllers_WrapperController_Property);
  }
  /** @return {!Property} */
  static get f_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property() {
   return (Property.$clinit(), Property.$static_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property);
- }
- /** @return {!Property} */
- static get f_REMOVE_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property() {
-  return (Property.$clinit(), Property.$static_REMOVE_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property);
- }
- /** @return {!Property} */
- static get f_SET_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property() {
-  return (Property.$clinit(), Property.$static_SET_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property);
  }
  /** @return {!Property} */
  static get f_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property() {
@@ -81,10 +73,6 @@ class Property extends Enum {
  static get f_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property() {
   return (Property.$clinit(), Property.$static_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property);
  }
- /** @return {!Property} */
- static get f_BUILD_OR_UPDATE_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property() {
-  return (Property.$clinit(), Property.$static_BUILD_OR_UPDATE_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property);
- }
  
  static $clinit() {
   Property.$clinit = () =>{};
@@ -92,13 +80,10 @@ class Property extends Enum {
   Enum.$clinit();
   Property.$static_TYPE__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TYPE"), Property.$ordinal_TYPE__org_pepstock_charba_client_controllers_WrapperController_Property, "type");
   Property.$static_INITIALIZE__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INITIALIZE"), Property.$ordinal_INITIALIZE__org_pepstock_charba_client_controllers_WrapperController_Property, "initialize");
-  Property.$static_ADD_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ADD_ELEMENTS"), Property.$ordinal_ADD_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property, "addElements");
+  Property.$static_PARSE__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PARSE"), Property.$ordinal_PARSE__org_pepstock_charba_client_controllers_WrapperController_Property, "parse");
   Property.$static_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DRAW"), Property.$ordinal_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property, "draw");
-  Property.$static_REMOVE_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("REMOVE_HOVER_STYLE"), Property.$ordinal_REMOVE_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property, "removeHoverStyle");
-  Property.$static_SET_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SET_HOVER_STYLE"), Property.$ordinal_SET_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property, "setHoverStyle");
   Property.$static_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("UPDATE"), Property.$ordinal_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property, "update");
   Property.$static_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LINK_SCALES"), Property.$ordinal_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property, "linkScales");
-  Property.$static_BUILD_OR_UPDATE_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BUILD_OR_UPDATE_ELEMENTS"), Property.$ordinal_BUILD_OR_UPDATE_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property, "buildOrUpdateElements");
   Property.f_namesToValuesMap__org_pepstock_charba_client_controllers_WrapperController_Property_ = null;
  }
  /** @return {boolean} */
@@ -117,19 +102,13 @@ Property.$static_TYPE__org_pepstock_charba_client_controllers_WrapperController_
 /**@private {!Property}*/
 Property.$static_INITIALIZE__org_pepstock_charba_client_controllers_WrapperController_Property;
 /**@private {!Property}*/
-Property.$static_ADD_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property;
+Property.$static_PARSE__org_pepstock_charba_client_controllers_WrapperController_Property;
 /**@private {!Property}*/
 Property.$static_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property;
-/**@private {!Property}*/
-Property.$static_REMOVE_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property;
-/**@private {!Property}*/
-Property.$static_SET_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property;
 /**@private {!Property}*/
 Property.$static_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property;
 /**@private {!Property}*/
 Property.$static_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property;
-/**@private {!Property}*/
-Property.$static_BUILD_OR_UPDATE_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_controllers_WrapperController_Property_;
 /**@const {number}*/
@@ -137,19 +116,13 @@ Property.$ordinal_TYPE__org_pepstock_charba_client_controllers_WrapperController
 /**@const {number}*/
 Property.$ordinal_INITIALIZE__org_pepstock_charba_client_controllers_WrapperController_Property = 1;
 /**@const {number}*/
-Property.$ordinal_ADD_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property = 2;
+Property.$ordinal_PARSE__org_pepstock_charba_client_controllers_WrapperController_Property = 2;
 /**@const {number}*/
 Property.$ordinal_DRAW__org_pepstock_charba_client_controllers_WrapperController_Property = 3;
 /**@const {number}*/
-Property.$ordinal_REMOVE_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property = 4;
+Property.$ordinal_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property = 4;
 /**@const {number}*/
-Property.$ordinal_SET_HOVER_STYLE__org_pepstock_charba_client_controllers_WrapperController_Property = 5;
-/**@const {number}*/
-Property.$ordinal_UPDATE__org_pepstock_charba_client_controllers_WrapperController_Property = 6;
-/**@const {number}*/
-Property.$ordinal_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property = 7;
-/**@const {number}*/
-Property.$ordinal_BUILD_OR_UPDATE_ELEMENTS__org_pepstock_charba_client_controllers_WrapperController_Property = 8;
+Property.$ordinal_LINK_SCALES__org_pepstock_charba_client_controllers_WrapperController_Property = 5;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.controllers.WrapperController$Property");
 

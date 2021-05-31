@@ -2,21 +2,21 @@ goog.module('org.pepstock.charba.client.options.StandardAnimationCollection$impl
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 const AbstractTypedAnimationKey = goog.require('org.pepstock.charba.client.options.AbstractTypedAnimationKey$impl');
-const IsAnimationCollectionKey = goog.require('org.pepstock.charba.client.options.IsAnimationCollectionKey$impl');
+const AnimationCollectionKey = goog.require('org.pepstock.charba.client.options.AnimationCollectionKey$impl');
 
 let LinkedList = goog.forwardDeclare('java.util.LinkedList$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let AnimationType = goog.forwardDeclare('org.pepstock.charba.client.enums.AnimationType$impl');
-let IsAnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+let AnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
 
 /**
- * @implements {IsAnimationCollectionKey}
+ * @implements {AnimationCollectionKey}
  */
 class StandardAnimationCollection extends AbstractTypedAnimationKey {
  /** @protected */
  constructor() {
   super();
-  /**@type {List<IsAnimationPropertyKey>}*/
+  /**@type {List<AnimationPropertyKey>}*/
   this.f_properties__org_pepstock_charba_client_options_StandardAnimationCollection_;
  }
  /** @return {!StandardAnimationCollection} */
@@ -30,9 +30,9 @@ class StandardAnimationCollection extends AbstractTypedAnimationKey {
  $ctor__org_pepstock_charba_client_options_StandardAnimationCollection__java_lang_String__org_pepstock_charba_client_enums_AnimationType(/** ?string */ value, /** AnimationType */ type) {
   this.$ctor__org_pepstock_charba_client_options_AbstractTypedAnimationKey__java_lang_String__org_pepstock_charba_client_enums_AnimationType(value, type);
   this.$init___$p_org_pepstock_charba_client_options_StandardAnimationCollection();
-  IsAnimationCollectionKey.m_checkIfValid__org_pepstock_charba_client_options_IsAnimationCollectionKey(this);
+  AnimationCollectionKey.m_checkIfValid__org_pepstock_charba_client_options_AnimationCollectionKey(this);
  }
- /** @override @return {List<IsAnimationPropertyKey>} */
+ /** @override @return {List<AnimationPropertyKey>} */
  m_properties__() {
   return this.f_properties__org_pepstock_charba_client_options_StandardAnimationCollection_;
  }
@@ -46,7 +46,7 @@ class StandardAnimationCollection extends AbstractTypedAnimationKey {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_options_StandardAnimationCollection() {
-  this.f_properties__org_pepstock_charba_client_options_StandardAnimationCollection_ = /**@type {!LinkedList<IsAnimationPropertyKey>}*/ (LinkedList.$create__());
+  this.f_properties__org_pepstock_charba_client_options_StandardAnimationCollection_ = /**@type {!LinkedList<AnimationPropertyKey>}*/ (LinkedList.$create__());
  }
  
  static $clinit() {
@@ -63,7 +63,7 @@ class StandardAnimationCollection extends AbstractTypedAnimationKey {
   LinkedList = goog.module.get('java.util.LinkedList$impl');
  }
 }
-IsAnimationCollectionKey.$markImplementor(StandardAnimationCollection);
+AnimationCollectionKey.$markImplementor(StandardAnimationCollection);
 $Util.$setClassMetadata(StandardAnimationCollection, "org.pepstock.charba.client.options.StandardAnimationCollection");
 
 exports = StandardAnimationCollection;

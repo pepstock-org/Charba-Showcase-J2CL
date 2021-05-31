@@ -25,11 +25,11 @@ class LegendLabels extends ConfigurationOptionsContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, Chart):Array>}*/
+  /**@type {CharbaCallbackProxy<?function(Chart):Array>}*/
   this.f_labelsCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?, Chart):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?, Chart):boolean>}*/
   this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?, ?, Chart):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?, ?, Chart):number>}*/
   this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_;
   /**@type {LegendFilterCallback}*/
   this.f_filterCallback__org_pepstock_charba_client_configuration_LegendLabels_;
@@ -54,21 +54,21 @@ class LegendLabels extends ConfigurationOptionsContainer {
   this.f_font__org_pepstock_charba_client_configuration_LegendLabels_ = Font.$create__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(IsProvider.$adapt(() =>{
    return this.m_getConfiguration__().m_getLegend__().m_getLabels__().m_getFont__();
   }));
-  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_.callback = (/** Object */ context, /** ? */ item, /** Chart */ nativeChart) =>{
+  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_.callback = (/** ? */ item, /** Chart */ nativeChart) =>{
    let filterCallback = this.m_getFilterCallback__();
    if (!$Equality.$same(filterCallback, null)) {
     return filterCallback.m_onFilter__org_pepstock_charba_client_IsChart__java_lang_Object(this.m_getChart__(), LegendLabelItem.f_FACTORY__org_pepstock_charba_client_items_LegendLabelItem.m_create__org_pepstock_charba_client_commons_NativeObject(item));
    }
    return true;
   };
-  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_.callback = (/** Object */ context_1, /** ? */ item1, /** ? */ item2, /** Chart */ nativeChart_1) =>{
+  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_.callback = (/** ? */ item1, /** ? */ item2, /** Chart */ nativeChart_1) =>{
    let itemSortCallback = this.m_getItemSortCallback__();
    if (!$Equality.$same(itemSortCallback, null)) {
     return itemSortCallback.m_onItemSort__org_pepstock_charba_client_IsChart__java_lang_Object__java_lang_Object(this.m_getChart__(), LegendLabelItem.f_FACTORY__org_pepstock_charba_client_items_LegendLabelItem.m_create__org_pepstock_charba_client_commons_NativeObject(item1), LegendLabelItem.f_FACTORY__org_pepstock_charba_client_items_LegendLabelItem.m_create__org_pepstock_charba_client_commons_NativeObject(item2));
    }
    return 0;
   };
-  this.f_labelsCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_.callback = (/** Object */ context_2, /** Chart */ nativeChart_2) =>{
+  this.f_labelsCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_.callback = (/** Chart */ nativeChart_2) =>{
    let labelsCallback = this.m_getLabelsCallback__();
    if (!$Equality.$same(labelsCallback, null)) {
     let result = labelsCallback.m_generateLegendLabels__org_pepstock_charba_client_IsChart__java_util_List(this.m_getChart__(), Defaults.m_get__().m_generateLabels__org_pepstock_charba_client_Chart(nativeChart_2));
@@ -186,9 +186,9 @@ class LegendLabels extends ConfigurationOptionsContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_LegendLabels() {
-  this.f_labelsCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_ = /**@type {CharbaCallbackProxy<?function(Object, Chart):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_ = /**@type {CharbaCallbackProxy<?function(Object, ?, Chart):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_ = /**@type {CharbaCallbackProxy<?function(Object, ?, ?, Chart):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_labelsCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_ = /**@type {CharbaCallbackProxy<?function(Chart):Array>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_ = /**@type {CharbaCallbackProxy<?function(?, Chart):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_LegendLabels_ = /**@type {CharbaCallbackProxy<?function(?, ?, Chart):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_filterCallback__org_pepstock_charba_client_configuration_LegendLabels_ = null;
   this.f_labelsCallback__org_pepstock_charba_client_configuration_LegendLabels_ = null;
   this.f_itemSortCallback__org_pepstock_charba_client_configuration_LegendLabels_ = null;

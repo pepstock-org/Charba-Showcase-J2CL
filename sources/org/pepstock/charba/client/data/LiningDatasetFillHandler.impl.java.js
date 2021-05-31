@@ -23,7 +23,7 @@ class LiningDatasetFillHandler extends FillHandler {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_fillCallbackProxy__org_pepstock_charba_client_data_LiningDatasetFillHandler_;
   /**@type {FillCallback}*/
   this.f_fillCallback__org_pepstock_charba_client_data_LiningDatasetFillHandler_;
@@ -39,8 +39,8 @@ class LiningDatasetFillHandler extends FillHandler {
  $ctor__org_pepstock_charba_client_data_LiningDatasetFillHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_enums_IsFill__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** IsFill */ defaultValues, /** ? */ nativeObject) {
   this.$ctor__org_pepstock_charba_client_options_FillHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_enums_IsFill__org_pepstock_charba_client_data_DataEnvelop(parent, defaultValues, /**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object(nativeObject)));
   this.$init___$p_org_pepstock_charba_client_data_LiningDatasetFillHandler();
-  this.f_fillCallbackProxy__org_pepstock_charba_client_data_LiningDatasetFillHandler_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
-   return this.m_onFill__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LiningDatasetFillHandler(DatasetContext.$create__org_pepstock_charba_client_data_DataEnvelop(/**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object(context))));
+  this.f_fillCallbackProxy__org_pepstock_charba_client_data_LiningDatasetFillHandler_.callback = (/** ? */ context) =>{
+   return this.m_onFill__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LiningDatasetFillHandler(DatasetContext.$create__org_pepstock_charba_client_commons_NativeObject(context));
   };
  }
  /** @override */
@@ -74,6 +74,11 @@ class LiningDatasetFillHandler extends FillHandler {
   }
   this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_CHARBA_FILLING_MODE__org_pepstock_charba_client_options_FillHandler_Property);
  }
+ 
+ m_setFill__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(/** Function */ fillCallback) {
+  this.m_setFill__org_pepstock_charba_client_callbacks_FillCallback_$pp_org_pepstock_charba_client_data(/**@type {FillCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_FILL__org_pepstock_charba_client_options_FillHandler_Property, fillCallback);
+ }
  /** @return {*} */
  m_onFill__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LiningDatasetFillHandler(/** DatasetContext */ context) {
   let result = ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, this.m_getFillCallback___$pp_org_pepstock_charba_client_data());
@@ -105,7 +110,7 @@ class LiningDatasetFillHandler extends FillHandler {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_LiningDatasetFillHandler() {
-  this.f_fillCallbackProxy__org_pepstock_charba_client_data_LiningDatasetFillHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_fillCallbackProxy__org_pepstock_charba_client_data_LiningDatasetFillHandler_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_fillCallback__org_pepstock_charba_client_data_LiningDatasetFillHandler_ = null;
  }
  

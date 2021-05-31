@@ -1,7 +1,7 @@
 goog.module('org.pepstock.charba.client.datalabels.Listeners$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
+const AbstractNode = goog.require('org.pepstock.charba.client.commons.AbstractNode$impl');
 const IsDefaultListeners = goog.require('org.pepstock.charba.client.datalabels.IsDefaultListeners$impl');
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
@@ -9,6 +9,7 @@ let ScriptableUtils = goog.forwardDeclare('org.pepstock.charba.client.callbacks.
 let CallbackPropertyHandler = goog.forwardDeclare('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
+let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let DataLabelsContext = goog.forwardDeclare('org.pepstock.charba.client.datalabels.DataLabelsContext$impl');
 let DataLabelsPlugin = goog.forwardDeclare('org.pepstock.charba.client.datalabels.DataLabelsPlugin$impl');
 let LabelItem = goog.forwardDeclare('org.pepstock.charba.client.datalabels.LabelItem$impl');
@@ -21,15 +22,15 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 /**
  * @implements {IsDefaultListeners}
  */
-class Listeners extends NativeObjectContainer {
+class Listeners extends AbstractNode {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_enterEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_leaveEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_clickEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_;
   /**@type {LabelItem}*/
   this.f_parent__org_pepstock_charba_client_datalabels_Listeners_;
@@ -37,26 +38,26 @@ class Listeners extends NativeObjectContainer {
   this.f_defaultOptions__org_pepstock_charba_client_datalabels_Listeners_;
  }
  /** @return {!Listeners} */
- static $create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(/** LabelItem */ parent, /** IsDefaultListeners */ defaultOptions, /** ? */ nativeObject) {
+ static $create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(/** LabelItem */ parent, /** Key */ childKey, /** IsDefaultListeners */ defaultOptions, /** ? */ nativeObject) {
   Listeners.$clinit();
   let $instance = new Listeners();
-  $instance.$ctor__org_pepstock_charba_client_datalabels_Listeners__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(parent, defaultOptions, nativeObject);
+  $instance.$ctor__org_pepstock_charba_client_datalabels_Listeners__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(parent, childKey, defaultOptions, nativeObject);
   return $instance;
  }
  
- $ctor__org_pepstock_charba_client_datalabels_Listeners__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(/** LabelItem */ parent, /** IsDefaultListeners */ defaultOptions, /** ? */ nativeObject) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(nativeObject);
+ $ctor__org_pepstock_charba_client_datalabels_Listeners__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(/** LabelItem */ parent, /** Key */ childKey, /** IsDefaultListeners */ defaultOptions, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObject(parent, childKey, nativeObject);
   this.$init___$p_org_pepstock_charba_client_datalabels_Listeners();
   this.f_parent__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {LabelItem}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(parent, "Parent label argument"), LabelItem));
   this.f_defaultOptions__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {IsDefaultListeners}*/ ($Casts.$to(this.m_checkDefaultValuesArgument__java_lang_Object(defaultOptions), IsDefaultListeners));
   this.m_setNewIncrementalId__();
-  this.f_enterEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_enterEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.callback = (/** ? */ context) =>{
    return this.m_onEnter__org_pepstock_charba_client_datalabels_DataLabelsContext_$p_org_pepstock_charba_client_datalabels_Listeners(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_datalabels_Listeners_, context));
   };
-  this.f_leaveEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_leaveEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.callback = (/** ? */ context_1) =>{
    return this.m_onLeave__org_pepstock_charba_client_datalabels_DataLabelsContext_$p_org_pepstock_charba_client_datalabels_Listeners(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_datalabels_Listeners_, context_1));
   };
-  this.f_clickEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_clickEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.callback = (/** ? */ context_2) =>{
    return this.m_onClick__org_pepstock_charba_client_datalabels_DataLabelsContext_$p_org_pepstock_charba_client_datalabels_Listeners(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_datalabels_Listeners_, context_2));
   };
  }
@@ -66,7 +67,7 @@ class Listeners extends NativeObjectContainer {
  }
  
  m_setClickEventHandler__org_pepstock_charba_client_datalabels_events_ClickEventHandler(/** ClickEventHandler */ clickEventHandler) {
-  Listeners.f_CLICK_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, clickEventHandler, this.f_clickEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.proxy);
+  Listeners.f_CLICK_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, clickEventHandler, this.f_clickEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.proxy);
  }
  /** @override @return {EnterEventHandler} */
  m_getEnterEventHandler__() {
@@ -74,7 +75,7 @@ class Listeners extends NativeObjectContainer {
  }
  
  m_setEnterEventHandler__org_pepstock_charba_client_datalabels_events_EnterEventHandler(/** EnterEventHandler */ enterEventHandler) {
-  Listeners.f_ENTER_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, enterEventHandler, this.f_enterEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.proxy);
+  Listeners.f_ENTER_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, enterEventHandler, this.f_enterEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.proxy);
  }
  /** @override @return {LeaveEventHandler} */
  m_getLeaveEventHandler__() {
@@ -82,7 +83,7 @@ class Listeners extends NativeObjectContainer {
  }
  
  m_setLeaveEventHandler__org_pepstock_charba_client_datalabels_events_LeaveEventHandler(/** LeaveEventHandler */ leaveEventHandler) {
-  Listeners.f_LEAVE_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, leaveEventHandler, this.f_leaveEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.proxy);
+  Listeners.f_LEAVE_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, leaveEventHandler, this.f_leaveEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_.proxy);
  }
  /** @return {boolean} */
  m_onClick__org_pepstock_charba_client_datalabels_DataLabelsContext_$p_org_pepstock_charba_client_datalabels_Listeners(/** DataLabelsContext */ context) {
@@ -110,15 +111,15 @@ class Listeners extends NativeObjectContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_datalabels_Listeners() {
-  this.f_enterEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_leaveEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_clickEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_enterEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_leaveEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_clickEventCallbackProxy__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {
   Listeners.$clinit = () =>{};
   Listeners.$loadModules();
-  NativeObjectContainer.$clinit();
+  AbstractNode.$clinit();
   IsDefaultListeners.$clinit();
   Listeners.f_CLICK_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {!CallbackPropertyHandler<ClickEventHandler>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Event.f_CLICK__org_pepstock_charba_client_datalabels_enums_Event));
   Listeners.f_ENTER_EVENT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_Listeners_ = /**@type {!CallbackPropertyHandler<EnterEventHandler>}*/ (CallbackPropertyHandler.$create__org_pepstock_charba_client_commons_Key(Event.f_ENTER__org_pepstock_charba_client_datalabels_enums_Event));

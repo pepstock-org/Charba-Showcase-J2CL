@@ -38,8 +38,6 @@ class BaseMeterController extends AbstractController {
  /** @protected */
  constructor() {
   super();
-  /**@type {ControllerType}*/
-  this.f_type__org_pepstock_charba_client_impl_charts_BaseMeterController_;
  }
  /** @return {!BaseMeterController} */
  static $create__org_pepstock_charba_client_controllers_ControllerType(/** ControllerType */ type) {
@@ -50,15 +48,10 @@ class BaseMeterController extends AbstractController {
  }
  
  $ctor__org_pepstock_charba_client_impl_charts_BaseMeterController__org_pepstock_charba_client_controllers_ControllerType(/** ControllerType */ type) {
-  this.$ctor__org_pepstock_charba_client_controllers_AbstractController__();
-  this.f_type__org_pepstock_charba_client_impl_charts_BaseMeterController_ = type;
- }
- /** @override @return {ControllerType} */
- m_getType__() {
-  return this.f_type__org_pepstock_charba_client_impl_charts_BaseMeterController_;
+  this.$ctor__org_pepstock_charba_client_controllers_AbstractController__org_pepstock_charba_client_controllers_ControllerType(type);
  }
  /** @override */
- m_initialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
+ m_onBeforeInitialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
   Checker.m_assertCheck__boolean__java_lang_String(Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart), "Initialize method arguments are not consistent");
   let dataset = /**@type {Dataset}*/ ($Casts.$to(chart.m_getData__().m_getDatasets__().getAtIndex($Overlay.m_getIndex__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context)), Dataset));
   Checker.m_assertCheck__boolean__java_lang_String(MeterDataset.$isInstance(dataset), "Dataset at index " + $Overlay.m_getIndex__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context) + " is not a MeterDataset");
@@ -66,12 +59,13 @@ class BaseMeterController extends AbstractController {
   if ($Overlay.m_getIndex__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context) > 0) {
    meterDataset.m_hide___$pp_org_pepstock_charba_client_impl_charts();
   }
-  super.m_initialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(context, chart);
  }
  /** @override */
- m_draw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
+ m_onBeforeDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
   Checker.m_assertCheck__boolean__java_lang_String(Controller.m_isConsistent__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, context, chart) && $Overlay.m_getIndex__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context) == 0, "Draw method arguments are not consistent");
-  super.m_draw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(context, chart);
+ }
+ /** @override */
+ m_onAfterDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
   let node = $Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context);
   this.m_drawLabels__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_ChartNode_$pp_org_pepstock_charba_client_impl_charts(chart, node);
  }

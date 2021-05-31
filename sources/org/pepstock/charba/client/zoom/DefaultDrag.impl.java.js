@@ -37,6 +37,11 @@ class DefaultDrag extends j_l_Object {
  m_getBorderWidth__() {
   return IsDefaultDrag.m_getBorderWidth__$default__org_pepstock_charba_client_zoom_IsDefaultDrag(this);
  }
+ //Default method forwarding stub.
+ /** @override @return {boolean} */
+ m_isEnabled__() {
+  return IsDefaultDrag.m_isEnabled__$default__org_pepstock_charba_client_zoom_IsDefaultDrag(this);
+ }
  /** @return {DefaultDrag} */
  static get f_INSTANCE__org_pepstock_charba_client_zoom_DefaultDrag() {
   return (DefaultDrag.$clinit(), DefaultDrag.$static_INSTANCE__org_pepstock_charba_client_zoom_DefaultDrag);

@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"Pan$Property.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MAmDM,Q;;CAAA,W;EAAAA,Q;EAAAA;OASiB,sDATjBA,C;;;QAgBI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,+H;EAAAA,iB;;;CAAA,4F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,oE;;;CASa,S;EACbC,mE;;;QA3BG,2B;EAAAC,mB;EAAAA;GAAAA,+HAAAA;G;EAAAA,uH;;;QAAA,U;EAAAC,mB;EAAAA,mc;;;QAEJ,gE;EAAAC,yG;;;QACA,0D;EAAAA,mG;;;QACA,gE;EAAAA,yG;;;QACA,oE;EAAAA,6G;;;QACA,mE;EAAAA,4G;;;QANI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,0Q;EACAA,kP;EACAA,yQ;EACAA,wR;EACAA,qR;EANIA,kF;;;;;;;;;;;;;AAAA;4E;AAAA;sE;AAAA;4E;AAAA;gF;AAAA;+E;AAAA;2E;AAEJ;iF;AACA;2E;AACA;iF;AACA;qF;AACA;;",
+"lineCount":134,
+"mappings":"A;;;;;;;;;;;;;;MAyDM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAWiB,sDAXjBA,C;;;QAkBI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,+H;EAAAA,iB;;;CAAA,4F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,oE;;;CASa,S;EACbC,mE;;;QA7BG,2B;EAAAC,mB;EAAAA;GAAAA,+HAAAA;G;EAAAA,uH;;;QAAA,U;EAAAC,mB;EAAAA,qlB;;;QAEJ,2D;EAAAC,oG;;;QACA,gE;EAAAA,yG;;;QACA,0D;EAAAA,mG;;;QACA,gE;EAAAA,yG;;;QACA,oE;EAAAA,6G;;;QACA,mE;EAAAA,4G;;;QACA,6D;EAAAA,sG;;;QARI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,uP;EACAA,0Q;EACAA,kP;EACAA,yQ;EACAA,wR;EACAA,qR;EACAA,+P;EARIA,kF;;;;;;;;;;;;;AAAA;uE;AAAA;4E;AAAA;sE;AAAA;4E;AAAA;gF;AAAA;+E;AAAA;yE;AAAA;2E;AAEJ;4E;AACA;iF;AACA;2E;AACA;iF;AACA;qF;AACA;oF;AACA;;",
 "sources":["Pan.java"],
 "names":["org.pepstock.charba.client.zoom.Pan$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.zoom.Pan$Property.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Pan$Property.<init>","org.pepstock.charba.client.zoom.Pan$Property.value","org.pepstock.charba.client.zoom.Pan$Property.valueOf","org.pepstock.charba.client.zoom.Pan$Property.values","org.pepstock.charba.client.zoom.Pan$Property.<synthetic: getter>","org.pepstock.charba.client.zoom.Pan$Property.<clinit>"]
 }

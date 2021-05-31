@@ -75,7 +75,7 @@ class DataLabelsBarCase extends BaseComposite {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_DataLabelsBarCase_.m_getOptions__().m_getElements__().m_getPoint__().m_setRadius__double(5);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_DataLabelsBarCase_.m_getOptions__().m_getPlugins__().m_setEnabled__org_pepstock_charba_client_enums_DefaultPluginId__boolean(DefaultPluginId.f_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId, false);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_DataLabelsBarCase_.m_getOptions__().m_getPlugins__().m_setEnabled__org_pepstock_charba_client_enums_DefaultPluginId__boolean(DefaultPluginId.f_TITLE__org_pepstock_charba_client_enums_DefaultPluginId, false);
-  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_DataLabelsBarCase_.m_getOptions__().m_getTransitions__().m_create__org_pepstock_charba_client_options_IsTransitionKey(DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey).m_getAnimation__().m_setDuration__int(0);
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_DataLabelsBarCase_.m_getOptions__().m_getTransitions__().m_create__org_pepstock_charba_client_options_TransitionKey(DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey).m_getAnimation__().m_setDuration__int(0);
   let dataset1 = /**@type {BarDataset}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_DataLabelsBarCase_.m_newDataset__(), BarDataset));
   dataset1.m_setLabel__java_lang_String("dataset 1");
   let color1 = GoogleChartColor.m_values__()[0];

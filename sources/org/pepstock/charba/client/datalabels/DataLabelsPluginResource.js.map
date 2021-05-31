@@ -2,7 +2,7 @@
 "version":3,
 "file":"DataLabelsPluginResource.impl.java.js",
 "lineCount":45,
-"mappings":"A;;;;;;;;;MA0BmB,wB;;CAAA,W;EAAAA,Q;;;QA4BlB,S;EAAAC,mC;EAAAA,+C;EAAAA,oF;EAAAA,iB;;;CAAA,uE;EACCC,wU;;;QA7BiB,O;EAAAC,2C;EAAAA,wC;EAAAA,qC;EAGlBA,q3Z;;;;;;;;;;;;;AAHkB;yBAGY,0EAHZ;",
+"mappings":"A;;;;;;;;;MA0BmB,wB;;CAAA,W;EAAAA,Q;;;QA4BlB,S;EAAAC,mC;EAAAA,+C;EAAAA,oF;EAAAA,iB;;;CAAA,uE;EACCC,wU;;;QA7BiB,O;EAAAC,2C;EAAAA,wC;EAAAA,qC;EAGlBA,u6Z;;;;;;;;;;;;;AAHkB;yBAGY,0EAHZ;",
 "sources":["DataLabelsPluginResource.java"],
 "names":["org.pepstock.charba.client.datalabels.DataLabelsPluginResource.<synthetic: ctor_js>","org.pepstock.charba.client.datalabels.DataLabelsPluginResource.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.DataLabelsPluginResource.<init>","org.pepstock.charba.client.datalabels.DataLabelsPluginResource.<clinit>"]
 }

@@ -2,7 +2,7 @@
 "version":3,
 "file":"ElementsView$AxesCase$7.impl.java.js",
 "lineCount":37,
-"mappings":"A;;;;;;;;;;;;MA+P0D,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,qF;EAAAA,iB;;;CAAA,wE;EAAAC,iC;;;CAClC,U;EACpBC,2C;;;QAFsD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAmQ0D,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,qF;EAAAA,iB;;;CAAA,wE;EAAAC,iC;;;CAClC,U;EACpBC,2C;;;QAFsD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ElementsView.java"],
 "names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$7.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$7.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$7.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$7.create","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$7.<clinit>"]
 }

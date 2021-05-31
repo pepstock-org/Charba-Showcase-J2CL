@@ -58,15 +58,15 @@ class BaseMeterChart extends AbstractChart {
   options.m_getLegend__().m_setDisplay__boolean(false);
   options.m_getTooltips__().m_setEnabled__boolean(false);
   options.m_getTooltips__().m_setExternalCallback__org_pepstock_charba_client_callbacks_TooltipExternalCallback(null);
-  let disabledActiveMode = options.m_getTransitions__().m_create__org_pepstock_charba_client_options_IsTransitionKey(DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey);
+  let disabledActiveMode = options.m_getTransitions__().m_create__org_pepstock_charba_client_options_TransitionKey(DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey);
   disabledActiveMode.m_getAnimation__().m_setDuration__int(0);
-  let disabledResizeMode = options.m_getTransitions__().m_create__org_pepstock_charba_client_options_IsTransitionKey(DefaultTransitionKey.f_RESIZE__org_pepstock_charba_client_enums_DefaultTransitionKey);
+  let disabledResizeMode = options.m_getTransitions__().m_create__org_pepstock_charba_client_options_TransitionKey(DefaultTransitionKey.f_RESIZE__org_pepstock_charba_client_enums_DefaultTransitionKey);
   disabledResizeMode.m_getAnimation__().m_setDuration__int(0);
   for (let $iterator = this.m_getData__().m_getDatasets__().m_iterator__(); $iterator.m_hasNext__(); ) {
    let dataset = /**@type {Dataset}*/ ($Casts.$to($iterator.m_next__(), Dataset));
    {
-    dataset.m_getTransitions__().m_create__org_pepstock_charba_client_options_IsTransitionKey(DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey).m_getAnimation__().m_setDuration__int(0);
-    dataset.m_getTransitions__().m_create__org_pepstock_charba_client_options_IsTransitionKey(DefaultTransitionKey.f_RESIZE__org_pepstock_charba_client_enums_DefaultTransitionKey).m_getAnimation__().m_setDuration__int(0);
+    dataset.m_getTransitions__().m_create__org_pepstock_charba_client_options_TransitionKey(DefaultTransitionKey.f_ACTIVE__org_pepstock_charba_client_enums_DefaultTransitionKey).m_getAnimation__().m_setDuration__int(0);
+    dataset.m_getTransitions__().m_create__org_pepstock_charba_client_options_TransitionKey(DefaultTransitionKey.f_RESIZE__org_pepstock_charba_client_enums_DefaultTransitionKey).m_getAnimation__().m_setDuration__int(0);
    }
   }
   options.m_resetFontItem___$pp_org_pepstock_charba_client_impl_charts();

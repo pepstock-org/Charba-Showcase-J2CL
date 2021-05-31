@@ -12,9 +12,9 @@ let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectT
 let IsDefaultScales = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScales$impl');
 let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
 let Options = goog.forwardDeclare('org.pepstock.charba.client.options.Options$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
@@ -71,12 +71,12 @@ class ExtendedScales extends Scales {
    this.m_checkAndAddToParent__();
   }
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_checkAndGetScaleId__org_pepstock_charba_client_options_Scale_$p_org_pepstock_charba_client_options_ExtendedScales(/** Scale */ scale) {
   let id = scale.m_getId__();
-  if (DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId.m_is__org_pepstock_charba_client_options_IsScaleId(id)) {
+  if (DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId.m_is__org_pepstock_charba_client_options_ScaleId(id)) {
    id = scale.m_getType__().m_getDefaultScaleId__();
-   scale.m_setId__org_pepstock_charba_client_options_IsScaleId_$pp_org_pepstock_charba_client_options(id);
+   scale.m_setId__org_pepstock_charba_client_options_ScaleId_$pp_org_pepstock_charba_client_options(id);
   }
   Checker.m_assertCheck__boolean__java_lang_String(!this.m_has__org_pepstock_charba_client_commons_Key(id), "A scale with id " + j_l_String.m_valueOf__java_lang_Object(id.m_value__()) + " has been already added");
   return id;

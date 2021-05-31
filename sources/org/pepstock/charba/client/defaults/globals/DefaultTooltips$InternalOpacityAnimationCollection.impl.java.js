@@ -10,14 +10,14 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let InternalAnimations = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTooltips.InternalAnimations$impl');
 let AnimationType = goog.forwardDeclare('org.pepstock.charba.client.enums.AnimationType$impl');
 let Easing = goog.forwardDeclare('org.pepstock.charba.client.enums.Easing$impl');
-let IsAnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+let AnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class InternalOpacityAnimationCollection extends DefaultAnimationCollection {
  /** @protected */
  constructor() {
   super();
-  /**@type {List<IsAnimationPropertyKey>}*/
+  /**@type {List<AnimationPropertyKey>}*/
   this.f_properties__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalOpacityAnimationCollection_;
  }
  /** @return {!InternalOpacityAnimationCollection} */
@@ -32,10 +32,10 @@ class InternalOpacityAnimationCollection extends DefaultAnimationCollection {
   this.$ctor__org_pepstock_charba_client_defaults_globals_DefaultAnimationCollection__();
   this.$init___$p_org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalOpacityAnimationCollection();
  }
- /** @override @return {List<IsAnimationPropertyKey>} */
+ /** @override @return {List<AnimationPropertyKey>} */
  m_getProperties__() {
   if ($Equality.$same(this.f_properties__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalOpacityAnimationCollection_, null)) {
-   this.f_properties__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalOpacityAnimationCollection_ = /**@type {List<IsAnimationPropertyKey>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<IsAnimationPropertyKey>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<IsAnimationPropertyKey>}*/ ($Arrays.$init([InternalAnimations.f_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_], IsAnimationPropertyKey))))));
+   this.f_properties__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalOpacityAnimationCollection_ = /**@type {List<AnimationPropertyKey>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<AnimationPropertyKey>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<AnimationPropertyKey>}*/ ($Arrays.$init([InternalAnimations.f_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_], AnimationPropertyKey))))));
   }
   return this.f_properties__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalOpacityAnimationCollection_;
  }
@@ -72,7 +72,7 @@ class InternalOpacityAnimationCollection extends DefaultAnimationCollection {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   InternalAnimations = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTooltips.InternalAnimations$impl');
   Easing = goog.module.get('org.pepstock.charba.client.enums.Easing$impl');
-  IsAnimationPropertyKey = goog.module.get('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+  AnimationPropertyKey = goog.module.get('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
  }
 }

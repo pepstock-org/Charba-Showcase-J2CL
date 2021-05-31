@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 
 let CallbacksEnvelop = goog.forwardDeclare('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetPoint.Property$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -25,7 +25,7 @@ class DatasetPoint extends NativeObjectContainer {
  //Initialization from constructor 'DatasetPoint(CallbacksEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_DatasetPoint__org_pepstock_charba_client_callbacks_CallbacksEnvelop(/** CallbacksEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), CallbacksEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), CallbacksEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'DatasetPoint(NativeObject)'.
  /** @return {!DatasetPoint} */
@@ -61,7 +61,7 @@ class DatasetPoint extends NativeObjectContainer {
  
  static $loadModules() {
   CallbacksEnvelop = goog.module.get('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.DatasetPoint.Property$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -4,7 +4,7 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let TooltipModel = goog.forwardDeclare('org.pepstock.charba.client.items.TooltipModel$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -25,7 +25,7 @@ class TooltipNode extends j_l_Object {
  
  $ctor__org_pepstock_charba_client_items_TooltipNode__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
   this.$ctor__java_lang_Object__();
-  this.f_model__org_pepstock_charba_client_items_TooltipNode_ = TooltipModel.$create__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__()));
+  this.f_model__org_pepstock_charba_client_items_TooltipNode_ = TooltipModel.$create__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__()));
  }
  /** @return {TooltipModel} */
  m_getModel__() {
@@ -44,7 +44,7 @@ class TooltipNode extends j_l_Object {
  
  static $loadModules() {
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   TooltipModel = goog.module.get('org.pepstock.charba.client.items.TooltipModel$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

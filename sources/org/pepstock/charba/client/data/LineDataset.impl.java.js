@@ -27,7 +27,7 @@ let DataType = goog.forwardDeclare('org.pepstock.charba.client.enums.DataType$im
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let IndexAxis = goog.forwardDeclare('org.pepstock.charba.client.enums.IndexAxis$impl');
 let Stepped = goog.forwardDeclare('org.pepstock.charba.client.enums.Stepped$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
@@ -38,7 +38,7 @@ class LineDataset extends LiningDataset {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_;
   /**@type {CubicInterpolationModeCallback}*/
   this.f_cubicInterpolationModeCallback__org_pepstock_charba_client_data_LineDataset_;
@@ -121,37 +121,37 @@ class LineDataset extends LiningDataset {
  $ctor__org_pepstock_charba_client_data_LineDataset__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultOptions__boolean(/** Type */ type, /** IsDefaultOptions */ defaultValues, /** boolean */ hidden) {
   this.$ctor__org_pepstock_charba_client_data_LiningDataset__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultOptions__boolean(type, defaultValues, hidden);
   this.$init___$p_org_pepstock_charba_client_data_LineDataset();
-  this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_.callback = (/** ? */ context) =>{
    return this.m_onCubicInterpolationMode__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LineDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context));
   };
  }
  
  m_setXAxisID__java_lang_String(/** ?string */ xAxisID) {
-  IsScaleId.m_checkIfValid__java_lang_String(xAxisID);
+  ScaleId.m_checkIfValid__java_lang_String(xAxisID);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, xAxisID);
  }
  
- m_setXAxisID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ xAxisID) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(xAxisID);
+ m_setXAxisID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ xAxisID) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(xAxisID);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, xAxisID);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getXAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_X_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  
  m_setYAxisID__java_lang_String(/** ?string */ yAxisID) {
-  IsScaleId.m_checkIfValid__java_lang_String(yAxisID);
+  ScaleId.m_checkIfValid__java_lang_String(yAxisID);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, yAxisID);
  }
  
- m_setYAxisID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ yAxisID) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(yAxisID);
+ m_setYAxisID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ yAxisID) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(yAxisID);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, yAxisID);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getYAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_Y_AXIS_ID__org_pepstock_charba_client_data_LineDataset_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  
  m_setIndexAxis__org_pepstock_charba_client_enums_IndexAxis(/** IndexAxis */ indexAxis) {
@@ -246,6 +246,11 @@ class LineDataset extends LiningDataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_data_LineDataset_Property);
   }
  }
+ 
+ m_setCubicInterpolationMode__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ cubicInterpolationModeCallback) {
+  this.m_setCubicInterpolationMode__org_pepstock_charba_client_callbacks_CubicInterpolationModeCallback(/**@type {CubicInterpolationModeCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_data_LineDataset_Property, cubicInterpolationModeCallback);
+ }
  /** @return {?string} */
  m_onCubicInterpolationMode__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LineDataset(/** DatasetContext */ context) {
   let result = /**@type {CubicInterpolationMode}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, this.m_getCubicInterpolationModeCallback__()), CubicInterpolationMode));
@@ -276,7 +281,7 @@ class LineDataset extends LiningDataset {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_LineDataset() {
-  this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_cubicInterpolationModeCallback__org_pepstock_charba_client_data_LineDataset_ = null;
  }
  
@@ -309,7 +314,7 @@ class LineDataset extends LiningDataset {
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');
   IndexAxis = goog.module.get('org.pepstock.charba.client.enums.IndexAxis$impl');
   Stepped = goog.module.get('org.pepstock.charba.client.enums.Stepped$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }

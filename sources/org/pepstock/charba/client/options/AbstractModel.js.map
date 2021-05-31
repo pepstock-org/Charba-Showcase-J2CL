@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"AbstractModel.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;MAiCsB,a;;CAAA,W;EAAAA,Q;EAAAA;OAEL,kEAFKA,C;EAAAA;OAIL,2DAJKA,C;;;;CAYrB,yE,UAAgBC,a;EACfC,oM;;;;CAWD,mK,UAAgBC,M,aAAYC,Q,WAAYH,a;EACvCC,iQ;;;;CAUD,0H,UAAgBD,a,WAA4BI,Y;EAC3CH,mQ;;;;CAWD,oN,UAAgBC,M,aAAYC,Q,WAAYH,a,WAA4BI,Y;EACnEH,sO;EAEAA,6I;EACAA,0E;;;CAQiB,a;EACjBI,wE;;;CAQiB,oB;EACjBC,+E;;;CAUoB,kK,qBAA6BC,K,aAAWC,G,0BAAyBC,K;EACrFC,sM;;;CAUoB,qK,qBAAgCH,K,aAAWC,G,0BAAyBC,K;EACxFE,sM;;;CAUuB,2G,YAAgBC,Q,0BAA2BC,c;EAElEC,qE;EAEAA,IAAIC,WAAJD,2I;EAEAA;GAGCA,gEAHDA;G;EAMAA,4U;;;QAjHoB,O;EAAAE,gC;EAAAA,6B;EAAAA;",
+"lineCount":79,
+"mappings":"A;;;;;;;;;;;;;;MAkCsB,a;;CAAA,W;EAAAA,Q;EAAAA;OAEL,kEAFKA,C;EAAAA;OAIL,2DAJKA,C;;;;CAYrB,yE,UAAgBC,a;EACfC,oM;;;;CAWD,mK,UAAgBC,M,aAAYC,Q,WAAYH,a;EACvCC,iQ;;;;CAUD,0H,UAAgBD,a,WAA4BI,Y;EAC3CH,mQ;;;;CAWD,oN,UAAgBC,M,aAAYC,Q,WAAYH,a,WAA4BI,Y;EACnEH,sO;EAEAA,6I;EACAA,0E;;;CAQiB,a;EACjBI,wE;;;CAQiB,oB;EACjBC,+E;;;CAUoB,kK,qBAA6BC,K,aAAWC,G,0BAAyBC,K;EACrFC,sM;;;CAUoB,qK,qBAAgCH,K,aAAWC,G,0BAAyBC,K;EACxFE,sM;;;CAUoB,kK,qBAAgCJ,K,aAAWC,G,kBAAoBI,Q;EACnFD,sM;;;CAUuB,2G,YAAgBE,Q,0BAA2BC,c;EAElEC,qE;EAEAA,IAAIC,WAAJD,2I;EAEAA;GAGCA,gEAHDA;G;EAMAA,4U;;;QA5HoB,O;EAAAE,gC;EAAAA,6B;EAAAA;",
 "sources":["AbstractModel.java"],
-"names":["org.pepstock.charba.client.options.AbstractModel.<synthetic: ctor_js>","defaultValues","org.pepstock.charba.client.options.AbstractModel.<init>","parent","childKey","nativeObject","org.pepstock.charba.client.options.AbstractModel.getParent","org.pepstock.charba.client.options.AbstractModel.getDefaultValues","model","key","proxy","org.pepstock.charba.client.options.AbstractModel.setEventToModel","org.pepstock.charba.client.options.AbstractModel.setCallbackToModel","property","defaultPadding","org.pepstock.charba.client.options.AbstractModel.loadPadding","paddingSize","org.pepstock.charba.client.options.AbstractModel.<clinit>"]
+"names":["org.pepstock.charba.client.options.AbstractModel.<synthetic: ctor_js>","defaultValues","org.pepstock.charba.client.options.AbstractModel.<init>","parent","childKey","nativeObject","org.pepstock.charba.client.options.AbstractModel.getParent","org.pepstock.charba.client.options.AbstractModel.getDefaultValues","model","key","proxy","org.pepstock.charba.client.options.AbstractModel.setEventToModel","org.pepstock.charba.client.options.AbstractModel.setCallbackToModel","callback","property","defaultPadding","org.pepstock.charba.client.options.AbstractModel.loadPadding","paddingSize","org.pepstock.charba.client.options.AbstractModel.<clinit>"]
 }
 

@@ -5,6 +5,7 @@ const AbstractDatasetContext = goog.require('org.pepstock.charba.client.callback
 
 let ArrayDouble_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let ContextType = goog.forwardDeclare('org.pepstock.charba.client.enums.ContextType$impl');
 let DataItem = goog.forwardDeclare('org.pepstock.charba.client.items.DataItem$impl');
@@ -67,6 +68,13 @@ class LabelsContext extends AbstractDatasetContext {
   let indexed = Undefined.m_isNot__int(this.m_getDatasetIndex__()) && Undefined.m_isNot__int(this.m_getDataIndex__());
   return indexed && $Objects.m_equals__java_lang_Object__java_lang_Object(ContextType.f_LABELS__org_pepstock_charba_client_enums_ContextType, this.m_getType__()) && this.m_has__org_pepstock_charba_client_commons_Key(Property.f_LABEL__org_pepstock_charba_client_labels_LabelsContext_Property) && this.m_has__org_pepstock_charba_client_commons_Key(Property.f_PERCENTAGE__org_pepstock_charba_client_labels_LabelsContext_Property);
  }
+ /** @override @return {boolean} */
+ m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(/** Key */ property) {
+  if (super.m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(property)) {
+   return !Key.m_hasKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(Property.m_values__(), property.m_value__());
+  }
+  return false;
+ }
  
  static $clinit() {
   LabelsContext.$clinit = () =>{};
@@ -81,6 +89,7 @@ class LabelsContext extends AbstractDatasetContext {
  static $loadModules() {
   ArrayDouble_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
+  Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   ContextType = goog.module.get('org.pepstock.charba.client.enums.ContextType$impl');
   DataItem = goog.module.get('org.pepstock.charba.client.items.DataItem$impl');

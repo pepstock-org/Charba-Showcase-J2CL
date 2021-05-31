@@ -5,8 +5,8 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let Collections = goog.forwardDeclare('java.util.Collections$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let AbstractAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let AnnotationOptions = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationOptions$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let DrawTime = goog.forwardDeclare('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
 
 /**
@@ -18,11 +18,11 @@ class IsDefaultsAnnotationOptions {
  /** @abstract @return {DrawTime} */
  m_getDrawTime__() {}
  /** @abstract @return {boolean} */
- m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {}
+ m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {}
  /** @abstract @return {List<AbstractAnnotation>} */
  m_getAnnotations__() {}
  /** @abstract @return {AbstractAnnotation} */
- m_getAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {}
+ m_getAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {}
  /** @return {number} */
  static m_getDoubleClickSpeed__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions(/** !IsDefaultsAnnotationOptions */ $thisArg) {
   IsDefaultsAnnotationOptions.$clinit();
@@ -34,7 +34,7 @@ class IsDefaultsAnnotationOptions {
   return AnnotationOptions.f_DEFAULT_DRAW_TIME__org_pepstock_charba_client_annotation_AnnotationOptions;
  }
  /** @return {boolean} */
- static m_hasAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_IsAnnotationId(/** !IsDefaultsAnnotationOptions */ $thisArg, /** IsAnnotationId */ id) {
+ static m_hasAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_AnnotationId(/** !IsDefaultsAnnotationOptions */ $thisArg, /** AnnotationId */ id) {
   IsDefaultsAnnotationOptions.$clinit();
   return false;
  }
@@ -44,7 +44,7 @@ class IsDefaultsAnnotationOptions {
   return /**@type {List<AbstractAnnotation>}*/ (Collections.m_emptyList__());
  }
  /** @return {AbstractAnnotation} */
- static m_getAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_IsAnnotationId(/** !IsDefaultsAnnotationOptions */ $thisArg, /** IsAnnotationId */ id) {
+ static m_getAnnotation__$default__org_pepstock_charba_client_annotation_IsDefaultsAnnotationOptions__org_pepstock_charba_client_annotation_AnnotationId(/** !IsDefaultsAnnotationOptions */ $thisArg, /** AnnotationId */ id) {
   IsDefaultsAnnotationOptions.$clinit();
   return null;
  }

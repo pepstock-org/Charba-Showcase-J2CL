@@ -5,7 +5,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultAnimations = goog.require('org.pepstock.charba.client.defaults.IsDefaultAnimations$impl');
 
 let IsDefaultAnimationCollection = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultAnimationCollection$impl');
-let IsAnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationCollectionKey$impl');
+let AnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationCollectionKey$impl');
 
 /**
  * @implements {IsDefaultAnimations}
@@ -30,12 +30,12 @@ class DefaultChartAnimations extends j_l_Object {
   this.f_animations__org_pepstock_charba_client_defaults_chart_DefaultChartAnimations_ = animations;
  }
  /** @override @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  return this.f_animations__org_pepstock_charba_client_defaults_chart_DefaultChartAnimations_.m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_has__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  return this.f_animations__org_pepstock_charba_client_defaults_chart_DefaultChartAnimations_.m_has__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
  }
  /** @override @return {IsDefaultAnimationCollection} */
- m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  return this.f_animations__org_pepstock_charba_client_defaults_chart_DefaultChartAnimations_.m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_get__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  return this.f_animations__org_pepstock_charba_client_defaults_chart_DefaultChartAnimations_.m_get__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
  }
  
  static $clinit() {

@@ -25,6 +25,8 @@ class IsDefaultTicks {
  m_isAutoSkip__() {}
  /** @abstract @return {number} */
  m_getAutoSkipPadding__() {}
+ /** @abstract @return {boolean} */
+ m_isIncludeBounds__() {}
  /** @abstract @return {number} */
  m_getLabelOffset__() {}
  /** @abstract @return {number} */

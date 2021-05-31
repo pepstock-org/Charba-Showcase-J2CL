@@ -23,7 +23,7 @@ goog.require('org.pepstock.charba.client.events.EventType');
 goog.require('org.pepstock.charba.client.events.HandlerRegistration');
 goog.require('org.pepstock.charba.client.items.DatasetItem');
 goog.require('org.pepstock.charba.client.items.DatasetReference');
-goog.require('org.pepstock.charba.client.options.IsTransitionKey');
+goog.require('org.pepstock.charba.client.options.TransitionKey');
 goog.require('org.pepstock.charba.client.plugins.Plugins');
 goog.require('org.pepstock.charba.client.utils.CTimer');
 goog.require('vmbootstrap.Exceptions');

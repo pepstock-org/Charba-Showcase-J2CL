@@ -8,6 +8,7 @@ goog.require('java.util.List');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.callbacks.DatasetContext');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.Scriptable');
 goog.require('org.pepstock.charba.client.callbacks.ScriptableUtils');
 goog.require('org.pepstock.charba.client.commons.ArrayInteger.$Overlay');

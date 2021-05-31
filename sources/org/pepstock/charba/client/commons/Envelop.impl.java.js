@@ -1,56 +1,59 @@
 goog.module('org.pepstock.charba.client.commons.Envelop$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const ImmutableEnvelop = goog.require('org.pepstock.charba.client.commons.ImmutableEnvelop$impl');
+
+let IllegalArgumentException = goog.forwardDeclare('java.lang.IllegalArgumentException$impl');
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 
 /**
- * @abstract
- * @template T
- * @extends {ImmutableEnvelop<T>}
+ * @interface
  */
-class Envelop extends ImmutableEnvelop {
- /** @protected */
- constructor() {
-  super();
- }
- //Initialization from constructor 'Envelop()'.
- 
- $ctor__org_pepstock_charba_client_commons_Envelop__() {
-  this.$ctor__org_pepstock_charba_client_commons_Envelop__java_lang_Object(null);
- }
- //Initialization from constructor 'Envelop(boolean)'.
- 
- $ctor__org_pepstock_charba_client_commons_Envelop__boolean(/** boolean */ nullable) {
-  this.$ctor__org_pepstock_charba_client_commons_Envelop__java_lang_Object__boolean(null, nullable);
- }
- //Initialization from constructor 'Envelop(Object)'.
- 
- $ctor__org_pepstock_charba_client_commons_Envelop__java_lang_Object(/** T */ content) {
-  this.$ctor__org_pepstock_charba_client_commons_Envelop__java_lang_Object__boolean(content, false);
- }
- //Initialization from constructor 'Envelop(Object, boolean)'.
- 
- $ctor__org_pepstock_charba_client_commons_Envelop__java_lang_Object__boolean(/** T */ content, /** boolean */ nullable) {
-  this.$ctor__org_pepstock_charba_client_commons_ImmutableEnvelop__java_lang_Object__boolean(content, nullable);
+class Envelop {
+ /** @return {boolean} */
+ static m_isValid__org_pepstock_charba_client_commons_Envelop(/** Envelop */ envelop) {
+  Envelop.$clinit();
+  return !$Equality.$same(envelop, null) && (envelop.m_hasContent__() || envelop.m_isNullable__());
  }
  
- m_setContent__java_lang_Object(/** T */ content) {
-  super.m_setContentInternally__java_lang_Object_$pp_org_pepstock_charba_client_commons(content);
+ static m_checkIfValid__org_pepstock_charba_client_commons_Envelop(/** Envelop */ envelop) {
+  Envelop.$clinit();
+  if (!Envelop.m_isValid__org_pepstock_charba_client_commons_Envelop(envelop)) {
+   throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("Envelop is null or not consistent"));
+  }
  }
+ /** @template T @return {T} */
+ static m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(/** T */ envelop) {
+  Envelop.$clinit();
+  Envelop.m_checkIfValid__org_pepstock_charba_client_commons_Envelop(envelop);
+  return envelop;
+ }
+ /** @abstract @return {boolean} */
+ m_hasContent__() {}
+ /** @abstract @return {boolean} */
+ m_isNullable__() {}
  
  static $clinit() {
   Envelop.$clinit = () =>{};
   Envelop.$loadModules();
-  ImmutableEnvelop.$clinit();
+ }
+ 
+ static $markImplementor(/** Function */ ctor) {
+  ctor.prototype.$implements__org_pepstock_charba_client_commons_Envelop = true;
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
-  return instance instanceof Envelop;
+  return instance != null && !!instance.$implements__org_pepstock_charba_client_commons_Envelop;
  }
  
- static $loadModules() {}
+ static $loadModules() {
+  IllegalArgumentException = goog.module.get('java.lang.IllegalArgumentException$impl');
+  $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');
+ }
 }
-$Util.$setClassMetadata(Envelop, "org.pepstock.charba.client.commons.Envelop");
+Envelop.$markImplementor(/**@type {Function}*/ (Envelop));
+$Util.$setClassMetadataForInterface(Envelop, "org.pepstock.charba.client.commons.Envelop");
 
 exports = Envelop;
 

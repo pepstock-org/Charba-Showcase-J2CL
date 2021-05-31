@@ -14,7 +14,7 @@ let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let ScaleType = goog.forwardDeclare('org.pepstock.charba.client.ScaleType$impl');
 let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.commons.Merger.Property$impl');
 let NativeObjectContainer = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
@@ -47,7 +47,7 @@ class Merger extends j_l_Object {
  }
  
  m_load__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_ChartEnvelop(/** NativeObjectContainer */ options, /** ChartEnvelop<?> */ envelop) {
-  if (IsEnvelop.m_isValid__org_pepstock_charba_client_commons_IsEnvelop(envelop)) {
+  if (Envelop.m_isValid__org_pepstock_charba_client_commons_Envelop(envelop)) {
    this.m_mergeNativeObjects__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_commons_Merger(options.m_getNativeObject__(), /**@type {?}*/ (envelop.m_getContent__()));
   }
  }
@@ -172,7 +172,7 @@ class Merger extends j_l_Object {
   ScaleType = goog.module.get('org.pepstock.charba.client.ScaleType$impl');
   Type = goog.module.get('org.pepstock.charba.client.Type$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   Property = goog.module.get('org.pepstock.charba.client.commons.Merger.Property$impl');
   NativeObjectUtils = goog.module.get('org.pepstock.charba.client.commons.NativeObjectUtils$impl');

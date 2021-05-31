@@ -110,8 +110,8 @@ class Labels extends j_l_Object {
  /** @return {number} */
  m_indexOf__arrayOf_java_lang_String(/** Array<?string> */ values) {
   if (!$Equality.$same(values, null) && values.length > 0 && !this.m_isEmpty__()) {
-   let array = ArrayString_$Overlay.m_fromOrEmpty__arrayOf_java_lang_String(values);
-   let value = Array_$Overlay.m_join__$devirt__org_pepstock_charba_client_commons_Array__java_lang_String(array, Constants.f_LINE_SEPARATOR__org_pepstock_charba_client_commons_Constants);
+   let internalArray = ArrayString_$Overlay.m_fromOrEmpty__arrayOf_java_lang_String(values);
+   let value = Array_$Overlay.m_join__$devirt__org_pepstock_charba_client_commons_Array__java_lang_String(internalArray, Constants.f_LINE_SEPARATOR__org_pepstock_charba_client_commons_Constants);
    for (let i = 0; i < this.m_size__(); i = i + 1 | 0) {
     let storedvalue = this.m_getString__int(i);
     if (j_l_String.m_equals__java_lang_String__java_lang_Object(value, storedvalue)) {

@@ -12,6 +12,7 @@ let HTMLTableCellElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLTabl
 let HTMLTableElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLTableElement.$Overlay$impl');
 let HTMLTableRowElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLTableRowElement.$Overlay$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let AnimationsCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.ElementsView.AnimationsCase$impl');
 let Category = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.ElementsView.Category$impl');
 let SegmentCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.ElementsView.SegmentCase$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -109,6 +110,32 @@ class ElementsView extends AbstractView {
       }
      }
     }
+    if ($Objects.m_equals__java_lang_Object__java_lang_Object(Category.f_TITLE__org_pepstock_charba_showcase_j2cl_views_ElementsView_Category, cat)) {
+     let labelPointer_1 = /**@type {HTMLElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), $Overlay));
+     labelPointer_1.innerHTML = "Animation";
+     labelPointer_1.style.textAlign = "left";
+     labelPointer_1.className = "myCategory";
+     labelPointer_1.style.paddingTop = PaddingTopUnionType_$Overlay.m_of__java_lang_Object("12px");
+     catCol.appendChild(labelPointer_1);
+     for (let $array_3 = AnimationsCase.m_values__(), $index_3 = 0; $index_3 < $array_3.length; $index_3++) {
+      let caseItem_2 = $array_3[$index_3];
+      {
+       let item_2 = /**@type {HTMLDivElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), HTMLDivElement_$Overlay));
+       item_2.style.textAlign = "left";
+       item_2.className = "myCategoryItem";
+       catCol.appendChild(item_2);
+       item_2.innerHTML = caseItem_2.m_getLabel__();
+       item_2.onclick = (/** Event */ p0_2) =>{
+        let composite_2 = caseItem_2.m_getFactory__().m_create__();
+        if (!$Equality.$same(composite_2, null)) {
+         this.m_clearPreviousChart__();
+         content.appendChild(composite_2.m_getElement__());
+        }
+        return null;
+       };
+      }
+     }
+    }
    }
   }
  }
@@ -133,6 +160,7 @@ class ElementsView extends AbstractView {
   HTMLTableElement_$Overlay = goog.module.get('elemental2.dom.HTMLTableElement.$Overlay$impl');
   HTMLTableRowElement_$Overlay = goog.module.get('elemental2.dom.HTMLTableRowElement.$Overlay$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  AnimationsCase = goog.module.get('org.pepstock.charba.showcase.j2cl.views.ElementsView.AnimationsCase$impl');
   Category = goog.module.get('org.pepstock.charba.showcase.j2cl.views.ElementsView.Category$impl');
   SegmentCase = goog.module.get('org.pepstock.charba.showcase.j2cl.views.ElementsView.SegmentCase$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -1,19 +1,13 @@
 goog.module('org.pepstock.charba.client.configuration.Animation');
 
-goog.require('java.lang.Boolean');
-goog.require('java.lang.Integer');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
-goog.require('org.pepstock.charba.client.Chart.$Overlay');
-goog.require('org.pepstock.charba.client.Defaults');
 goog.require('org.pepstock.charba.client.IsChart');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
-goog.require('org.pepstock.charba.client.callbacks.DatasetContext');
 goog.require('org.pepstock.charba.client.callbacks.DelayCallback');
 goog.require('org.pepstock.charba.client.callbacks.DurationCallback');
 goog.require('org.pepstock.charba.client.callbacks.EasingCallback');
 goog.require('org.pepstock.charba.client.callbacks.LoopCallback');
-goog.require('org.pepstock.charba.client.callbacks.ScriptableUtils');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');
 goog.require('org.pepstock.charba.client.commons.JsHelper');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');

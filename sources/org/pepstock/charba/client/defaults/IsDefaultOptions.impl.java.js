@@ -52,8 +52,6 @@ class IsDefaultOptions {
  m_getEvents__() {}
  /** @abstract @return {CLocale} */
  m_getLocale__() {}
- /** @abstract @return {?string} */
- m_getScope__() {}
  /** @abstract @return {boolean} */
  m_isResponsive__() {}
  /** @abstract @return {boolean} */

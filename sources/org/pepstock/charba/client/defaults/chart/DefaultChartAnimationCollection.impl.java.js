@@ -5,8 +5,10 @@ const IsDefaultAnimationCollection = goog.require('org.pepstock.charba.client.de
 const AbstractDefaultChartAnimation = goog.require('org.pepstock.charba.client.defaults.chart.AbstractDefaultChartAnimation$impl');
 
 let List = goog.forwardDeclare('java.util.List$impl');
+let FromCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.FromCallback$impl');
+let ToCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ToCallback$impl');
 let AnimationType = goog.forwardDeclare('org.pepstock.charba.client.enums.AnimationType$impl');
-let IsAnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+let AnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
@@ -29,7 +31,7 @@ class DefaultChartAnimationCollection extends AbstractDefaultChartAnimation {
  $ctor__org_pepstock_charba_client_defaults_chart_DefaultChartAnimationCollection__org_pepstock_charba_client_defaults_IsDefaultAnimationCollection(/** IsDefaultAnimationCollection */ collection) {
   this.$ctor__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartAnimation__org_pepstock_charba_client_defaults_IsDefaultBaseAnimation(collection);
  }
- /** @override @return {List<IsAnimationPropertyKey>} */
+ /** @override @return {List<AnimationPropertyKey>} */
  m_getProperties__() {
   return /**@type {IsDefaultAnimationCollection}*/ ($Casts.$to(this.m_getDefaults___$pp_org_pepstock_charba_client_defaults_chart(), IsDefaultAnimationCollection)).m_getProperties__();
  }
@@ -60,6 +62,14 @@ class DefaultChartAnimationCollection extends AbstractDefaultChartAnimation {
  /** @override @return {?string} */
  m_getToAsString__() {
   return /**@type {IsDefaultAnimationCollection}*/ ($Casts.$to(this.m_getDefaults___$pp_org_pepstock_charba_client_defaults_chart(), IsDefaultAnimationCollection)).m_getToAsString__();
+ }
+ /** @override @return {FromCallback} */
+ m_getFromCallback__() {
+  return /**@type {IsDefaultAnimationCollection}*/ ($Casts.$to(this.m_getDefaults___$pp_org_pepstock_charba_client_defaults_chart(), IsDefaultAnimationCollection)).m_getFromCallback__();
+ }
+ /** @override @return {ToCallback} */
+ m_getToCallback__() {
+  return /**@type {IsDefaultAnimationCollection}*/ ($Casts.$to(this.m_getDefaults___$pp_org_pepstock_charba_client_defaults_chart(), IsDefaultAnimationCollection)).m_getToCallback__();
  }
  
  static $clinit() {

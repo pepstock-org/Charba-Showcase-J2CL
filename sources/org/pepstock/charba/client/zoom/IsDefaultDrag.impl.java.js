@@ -8,12 +8,19 @@ let Drag = goog.forwardDeclare('org.pepstock.charba.client.zoom.Drag$impl');
  * @interface
  */
 class IsDefaultDrag {
+ /** @abstract @return {boolean} */
+ m_isEnabled__() {}
  /** @abstract @return {?string} */
  m_getBackgroundColorAsString__() {}
  /** @abstract @return {?string} */
  m_getBorderColorAsString__() {}
  /** @abstract @return {number} */
  m_getBorderWidth__() {}
+ /** @return {boolean} */
+ static m_isEnabled__$default__org_pepstock_charba_client_zoom_IsDefaultDrag(/** !IsDefaultDrag */ $thisArg) {
+  IsDefaultDrag.$clinit();
+  return Drag.f_DEFAULT_ENABLED__org_pepstock_charba_client_zoom_Drag;
+ }
  /** @return {?string} */
  static m_getBackgroundColorAsString__$default__org_pepstock_charba_client_zoom_IsDefaultDrag(/** !IsDefaultDrag */ $thisArg) {
   IsDefaultDrag.$clinit();

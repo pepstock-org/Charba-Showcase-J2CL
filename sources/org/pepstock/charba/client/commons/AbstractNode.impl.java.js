@@ -44,6 +44,10 @@ class AbstractNode extends NativeObjectContainer {
  m_getParentNode__() {
   return this.f_parent__org_pepstock_charba_client_commons_AbstractNode_;
  }
+ /** @return {AbstractNode} */
+ m_getRootNode__() {
+  return this.m_retrieveRoot__();
+ }
  
  m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__int(/** Key */ key, /** number */ value) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(key, value);
@@ -120,6 +124,11 @@ class AbstractNode extends NativeObjectContainer {
   this.m_checkAndAddToParent__();
  }
  
+ m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/** Key */ key, /** Function */ value) {
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(key, value);
+  this.m_checkAndAddToParent__();
+ }
+ 
  m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(/** Key */ key, /** HTMLImageElement */ value) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(key, value);
   this.m_checkAndAddToParent__();
@@ -185,11 +194,23 @@ class AbstractNode extends NativeObjectContainer {
   model.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(key, proxy);
  }
  
+ m_setInternalCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/** AbstractNode */ model, /** Key */ key, /** Function */ callback) {
+  Checker.m_checkIfValid__java_lang_Object__java_lang_String(model, "Options model argument");
+  model.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(key, callback);
+ }
+ 
  m_checkAndAddToParent__() {
   if (!$Equality.$same(this.f_parent__org_pepstock_charba_client_commons_AbstractNode_, null) && Key.m_isValid__org_pepstock_charba_client_commons_Key(this.f_childKey__org_pepstock_charba_client_commons_AbstractNode_) && !this.f_parent__org_pepstock_charba_client_commons_AbstractNode_.m_has__org_pepstock_charba_client_commons_Key(this.f_childKey__org_pepstock_charba_client_commons_AbstractNode_)) {
    this.f_parent__org_pepstock_charba_client_commons_AbstractNode_.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObject(this.f_childKey__org_pepstock_charba_client_commons_AbstractNode_, this.m_getNativeObject__());
    this.f_parent__org_pepstock_charba_client_commons_AbstractNode_.m_checkAndAddToParent__();
   }
+ }
+ /** @return {AbstractNode} */
+ m_retrieveRoot__() {
+  if (!$Equality.$same(this.f_parent__org_pepstock_charba_client_commons_AbstractNode_, null)) {
+   return this.f_parent__org_pepstock_charba_client_commons_AbstractNode_.m_retrieveRoot__();
+  }
+  return this;
  }
  
  static $clinit() {

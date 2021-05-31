@@ -4,6 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const ChartContext = goog.require('org.pepstock.charba.client.callbacks.ChartContext$impl');
 
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ContextType = goog.forwardDeclare('org.pepstock.charba.client.enums.ContextType$impl');
 let AbstractConfigurationItem = goog.forwardDeclare('org.pepstock.charba.client.zoom.AbstractConfigurationItem$impl');
 let EventPoint = goog.forwardDeclare('org.pepstock.charba.client.zoom.EventPoint$impl');
@@ -48,6 +49,13 @@ class ZoomContext extends ChartContext {
  m_isConsistent__() {
   return $Objects.m_equals__java_lang_Object__java_lang_Object(ContextType.f_CHART__org_pepstock_charba_client_enums_ContextType, this.m_getType__()) || $Objects.m_equals__java_lang_Object__java_lang_Object(ContextType.f_ZOOM__org_pepstock_charba_client_enums_ContextType, this.m_getType__());
  }
+ /** @override @return {boolean} */
+ m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(/** Key */ property) {
+  if (super.m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(property)) {
+   return !Key.m_hasKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(Property.m_values__(), property.m_value__());
+  }
+  return false;
+ }
  
  static $clinit() {
   ZoomContext.$clinit = () =>{};
@@ -61,6 +69,7 @@ class ZoomContext extends ChartContext {
  
  static $loadModules() {
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
+  Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ContextType = goog.module.get('org.pepstock.charba.client.enums.ContextType$impl');
   AbstractConfigurationItem = goog.module.get('org.pepstock.charba.client.zoom.AbstractConfigurationItem$impl');
   EventPoint = goog.module.get('org.pepstock.charba.client.zoom.EventPoint$impl');

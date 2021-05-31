@@ -4,6 +4,7 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.callbacks.AbstractDatasetContext');
 goog.require('org.pepstock.charba.client.commons.ArrayDouble.$Overlay');
 goog.require('org.pepstock.charba.client.commons.Checker');
+goog.require('org.pepstock.charba.client.commons.Key');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ObjectType');
 goog.require('org.pepstock.charba.client.enums.ContextType');

@@ -6,7 +6,7 @@ const PropertyHandler = goog.require('org.pepstock.charba.client.commons.Propert
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let DataEnvelop = goog.forwardDeclare('org.pepstock.charba.client.data.DataEnvelop$impl');
 let IsDefaultTypedDataset = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultTypedDataset$impl');
@@ -33,7 +33,7 @@ class BarDatasetOptionsHandler extends PropertyHandler {
  //Initialization from constructor 'BarDatasetOptionsHandler(AbstractNode, IsDefaultTypedDataset, DataEnvelop)'.
  
  $ctor__org_pepstock_charba_client_options_BarDatasetOptionsHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_data_DataEnvelop(/** AbstractNode */ parent, /** IsDefaultTypedDataset */ defaultValues, /** DataEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_BarDatasetOptionsHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), DataEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_options_BarDatasetOptionsHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), DataEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'BarDatasetOptionsHandler(AbstractNode, IsDefaultTypedDataset, NativeObject)'.
  /** @return {!BarDatasetOptionsHandler} */
@@ -122,7 +122,7 @@ class BarDatasetOptionsHandler extends PropertyHandler {
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   DataEnvelop = goog.module.get('org.pepstock.charba.client.data.DataEnvelop$impl');
   IsDefaultTypedDataset = goog.module.get('org.pepstock.charba.client.defaults.IsDefaultTypedDataset$impl');

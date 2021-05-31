@@ -7,14 +7,14 @@ let Date = goog.forwardDeclare('java.util.Date$impl');
 let ValueCallback = goog.forwardDeclare('org.pepstock.charba.client.annotation.callbacks.ValueCallback$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
  * @interface
  * @extends {IsDefaultsAnnotation}
  */
 class IsDefaultsXYAnnotation {
- /** @abstract @return {IsScaleId} */
+ /** @abstract @return {ScaleId} */
  m_getXScaleID__() {}
  /** @abstract @return {?string} */
  m_getXMaxAsString__() {}
@@ -28,7 +28,7 @@ class IsDefaultsXYAnnotation {
  m_getXMinAsDouble__() {}
  /** @abstract @return {Date} */
  m_getXMinAsDate__() {}
- /** @abstract @return {IsScaleId} */
+ /** @abstract @return {ScaleId} */
  m_getYScaleID__() {}
  /** @abstract @return {?string} */
  m_getYMaxAsString__() {}
@@ -50,7 +50,7 @@ class IsDefaultsXYAnnotation {
  m_getYMinCallback__() {}
  /** @abstract @return {ValueCallback} */
  m_getYMaxCallback__() {}
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getXScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation(/** !IsDefaultsXYAnnotation */ $thisArg) {
   IsDefaultsXYAnnotation.$clinit();
   return DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId;
@@ -85,7 +85,7 @@ class IsDefaultsXYAnnotation {
   IsDefaultsXYAnnotation.$clinit();
   return null;
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getYScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation(/** !IsDefaultsXYAnnotation */ $thisArg) {
   IsDefaultsXYAnnotation.$clinit();
   return DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId;

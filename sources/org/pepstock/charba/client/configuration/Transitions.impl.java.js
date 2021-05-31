@@ -6,7 +6,7 @@ const IsTransitions = goog.require('org.pepstock.charba.client.options.IsTransit
 
 let IsProvider = goog.forwardDeclare('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
 let AnimationTransition = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationTransition$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
@@ -30,24 +30,24 @@ class Transitions extends AbstractDynamicConfiguration {
   this.$ctor__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(provider);
  }
  /** @override @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  return /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_has__org_pepstock_charba_client_options_IsTransitionKey(transition);
+ m_has__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  return /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_has__org_pepstock_charba_client_options_TransitionKey(transition);
  }
  /** @override @return {AnimationTransition} */
- m_get__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  return /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_get__org_pepstock_charba_client_options_IsTransitionKey(transition);
+ m_get__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  return /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_get__org_pepstock_charba_client_options_TransitionKey(transition);
  }
  /** @override */
- m_set__org_pepstock_charba_client_options_IsTransitionKey__org_pepstock_charba_client_options_AnimationTransition(/** IsTransitionKey */ transition, /** AnimationTransition */ animationTransition) {
-  /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_set__org_pepstock_charba_client_options_IsTransitionKey__org_pepstock_charba_client_options_AnimationTransition(transition, animationTransition);
+ m_set__org_pepstock_charba_client_options_TransitionKey__org_pepstock_charba_client_options_AnimationTransition(/** TransitionKey */ transition, /** AnimationTransition */ animationTransition) {
+  /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_set__org_pepstock_charba_client_options_TransitionKey__org_pepstock_charba_client_options_AnimationTransition(transition, animationTransition);
  }
  /** @override @return {AnimationTransition} */
- m_create__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  return /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_create__org_pepstock_charba_client_options_IsTransitionKey(transition);
+ m_create__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  return /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_create__org_pepstock_charba_client_options_TransitionKey(transition);
  }
  /** @override */
- m_remove__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {
-  /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_remove__org_pepstock_charba_client_options_IsTransitionKey(transition);
+ m_remove__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {
+  /**@type {IsTransitions}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsTransitions)).m_remove__org_pepstock_charba_client_options_TransitionKey(transition);
  }
  
  static $clinit() {

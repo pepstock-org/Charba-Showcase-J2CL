@@ -5,7 +5,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const CaseFactory = goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseFactory$impl');
 
 let BaseComposite = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite$impl');
-let ApplyingPointStylesOnLineCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase$impl');
+let ApplyingPointStylesAsImageOnLineCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsImageOnLineCase$impl');
 
 /**
  * @implements {CaseFactory}
@@ -28,7 +28,7 @@ class $5 extends j_l_Object {
  }
  /** @override @return {BaseComposite} */
  m_create__() {
-  return ApplyingPointStylesOnLineCase.$create__();
+  return ApplyingPointStylesAsImageOnLineCase.$create__();
  }
  
  static $clinit() {
@@ -42,7 +42,7 @@ class $5 extends j_l_Object {
  }
  
  static $loadModules() {
-  ApplyingPointStylesOnLineCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase$impl');
+  ApplyingPointStylesAsImageOnLineCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsImageOnLineCase$impl');
  }
 }
 CaseFactory.$markImplementor($5);

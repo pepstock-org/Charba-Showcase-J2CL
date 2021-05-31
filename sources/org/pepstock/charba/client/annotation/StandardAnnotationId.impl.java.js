@@ -2,10 +2,10 @@ goog.module('org.pepstock.charba.client.annotation.StandardAnnotationId$impl');
 
 const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
-const IsAnnotationId = goog.require('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
+const AnnotationId = goog.require('org.pepstock.charba.client.annotation.AnnotationId$impl');
 
 /**
- * @implements {IsAnnotationId}
+ * @implements {AnnotationId}
  */
 class StandardAnnotationId extends j_l_Object {
  /** @protected */
@@ -43,7 +43,7 @@ class StandardAnnotationId extends j_l_Object {
  
  static $loadModules() {}
 }
-IsAnnotationId.$markImplementor(StandardAnnotationId);
+AnnotationId.$markImplementor(StandardAnnotationId);
 $Util.$setClassMetadata(StandardAnnotationId, "org.pepstock.charba.client.annotation.StandardAnnotationId");
 
 exports = StandardAnnotationId;

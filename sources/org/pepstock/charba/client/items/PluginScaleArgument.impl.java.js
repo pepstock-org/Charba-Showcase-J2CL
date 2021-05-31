@@ -3,7 +3,7 @@ goog.module('org.pepstock.charba.client.items.PluginScaleArgument$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.PluginScaleArgument.Property$impl');
 let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$impl');
 let PluginsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.plugins.PluginsEnvelop$impl');
@@ -25,7 +25,7 @@ class PluginScaleArgument extends NativeObjectContainer {
  }
  
  $ctor__org_pepstock_charba_client_items_PluginScaleArgument__org_pepstock_charba_client_plugins_PluginsEnvelop(/** PluginsEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {PluginsEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), PluginsEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {PluginsEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), PluginsEnvelop)).m_getContent__()));
   this.f_scaleItem__org_pepstock_charba_client_items_PluginScaleArgument_ = ScaleItem.$create__org_pepstock_charba_client_commons_NativeObject(this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_SCALE__org_pepstock_charba_client_items_PluginScaleArgument_Property));
  }
  /** @return {ScaleItem} */
@@ -44,7 +44,7 @@ class PluginScaleArgument extends NativeObjectContainer {
  }
  
  static $loadModules() {
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.PluginScaleArgument.Property$impl');
   ScaleItem = goog.module.get('org.pepstock.charba.client.items.ScaleItem$impl');
   PluginsEnvelop = goog.module.get('org.pepstock.charba.client.plugins.PluginsEnvelop$impl');

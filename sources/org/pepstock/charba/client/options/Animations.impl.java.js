@@ -4,11 +4,13 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const AbstractNode = goog.require('org.pepstock.charba.client.commons.AbstractNode$impl');
 const IsAnimations = goog.require('org.pepstock.charba.client.options.IsAnimations$impl');
 
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let IsDefaultAnimations = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultAnimations$impl');
+let DefaultAnimationCollection = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultAnimationCollection$impl');
 let AnimationCollection = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationCollection$impl');
-let IsAnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationCollectionKey$impl');
+let AnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationCollectionKey$impl');
 
 /**
  * @implements {IsAnimations}
@@ -33,11 +35,11 @@ class Animations extends AbstractNode {
   this.f_defaultValues__org_pepstock_charba_client_options_Animations_ = defaultValues;
  }
  /** @override */
- m_setEnabled__org_pepstock_charba_client_options_IsAnimationCollectionKey__boolean(/** IsAnimationCollectionKey */ collection, /** boolean */ enabled) {
-  if (IsAnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection)) {
+ m_setEnabled__org_pepstock_charba_client_options_AnimationCollectionKey__boolean(/** AnimationCollectionKey */ collection, /** boolean */ enabled) {
+  if (AnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_AnimationCollectionKey(collection)) {
    if (enabled) {
     if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(collection, ObjectType.f_BOOLEAN__org_pepstock_charba_client_commons_ObjectType)) {
-     this.m_remove__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+     this.m_remove__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
     }
    } else {
     this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__boolean(collection, false);
@@ -45,39 +47,41 @@ class Animations extends AbstractNode {
   }
  }
  /** @override @return {boolean} */
- m_isEnabled__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  return IsAnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection) && !this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(collection, ObjectType.f_BOOLEAN__org_pepstock_charba_client_commons_ObjectType);
+ m_isEnabled__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  return AnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_AnimationCollectionKey(collection) && !this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(collection, ObjectType.f_BOOLEAN__org_pepstock_charba_client_commons_ObjectType);
  }
  /** @override @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  if (IsAnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection)) {
+ m_has__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  if (AnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_AnimationCollectionKey(collection)) {
    return this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(collection, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType);
   }
   return false;
  }
  /** @override @return {AnimationCollection} */
- m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  if (this.m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection)) {
-   return AnimationCollection.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_options_IsAnimationCollectionKey__org_pepstock_charba_client_defaults_IsDefaultAnimationCollection__org_pepstock_charba_client_commons_NativeObject(this, collection, this.f_defaultValues__org_pepstock_charba_client_options_Animations_.m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection), this.m_getValue__org_pepstock_charba_client_commons_Key(collection));
+ m_get__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  if (this.m_has__org_pepstock_charba_client_options_AnimationCollectionKey(collection)) {
+   let defaultCollection = this.f_defaultValues__org_pepstock_charba_client_options_Animations_.m_get__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
+   return AnimationCollection.$create__org_pepstock_charba_client_options_Animations__org_pepstock_charba_client_options_AnimationCollectionKey__org_pepstock_charba_client_defaults_IsDefaultAnimationCollection__org_pepstock_charba_client_commons_NativeObject(this, collection, $Equality.$same(defaultCollection, null) ? DefaultAnimationCollection.$create__org_pepstock_charba_client_options_AnimationCollectionKey(collection) : defaultCollection, this.m_getValue__org_pepstock_charba_client_commons_Key(collection));
   }
   return null;
  }
  /** @override */
- m_set__org_pepstock_charba_client_options_IsAnimationCollectionKey__org_pepstock_charba_client_options_AnimationCollection(/** IsAnimationCollectionKey */ collection, /** AnimationCollection */ animationCollection) {
-  if (IsAnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection)) {
-   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(collection, animationCollection);
+ m_set__org_pepstock_charba_client_options_AnimationCollectionKey__org_pepstock_charba_client_options_AnimationCollection(/** AnimationCollectionKey */ collection, /** AnimationCollection */ animationCollection) {
+  if (AnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_AnimationCollectionKey(collection)) {
+   this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(collection, animationCollection);
   }
  }
  /** @override @return {AnimationCollection} */
- m_create__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  let options = AnimationCollection.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_options_IsAnimationCollectionKey__org_pepstock_charba_client_defaults_IsDefaultAnimationCollection__org_pepstock_charba_client_commons_NativeObject(this, collection, this.f_defaultValues__org_pepstock_charba_client_options_Animations_.m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection), null);
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(collection, options);
+ m_create__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  let defaultCollection = this.f_defaultValues__org_pepstock_charba_client_options_Animations_.m_get__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
+  let options = AnimationCollection.$create__org_pepstock_charba_client_options_Animations__org_pepstock_charba_client_options_AnimationCollectionKey__org_pepstock_charba_client_defaults_IsDefaultAnimationCollection__org_pepstock_charba_client_commons_NativeObject(this, collection, $Equality.$same(defaultCollection, null) ? DefaultAnimationCollection.$create__org_pepstock_charba_client_options_AnimationCollectionKey(collection) : defaultCollection, null);
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(collection, options);
   return options;
  }
  /** @override */
- m_remove__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  if (IsAnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection)) {
-   this.m_remove__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_remove__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  if (AnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_AnimationCollectionKey(collection)) {
+   this.m_remove__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
   }
  }
  
@@ -92,9 +96,11 @@ class Animations extends AbstractNode {
  }
  
  static $loadModules() {
+  $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
+  DefaultAnimationCollection = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultAnimationCollection$impl');
   AnimationCollection = goog.module.get('org.pepstock.charba.client.options.AnimationCollection$impl');
-  IsAnimationCollectionKey = goog.module.get('org.pepstock.charba.client.options.IsAnimationCollectionKey$impl');
+  AnimationCollectionKey = goog.module.get('org.pepstock.charba.client.options.AnimationCollectionKey$impl');
  }
 }
 IsAnimations.$markImplementor(Animations);

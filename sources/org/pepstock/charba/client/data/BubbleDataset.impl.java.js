@@ -36,15 +36,15 @@ class BubbleDataset extends HovingDataset {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_radiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_hitRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_hoverRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_rotationCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_;
   /**@type {RadiusCallback<DatasetContext>}*/
   this.f_radiusCallback__org_pepstock_charba_client_data_BubbleDataset_;
@@ -138,19 +138,19 @@ class BubbleDataset extends HovingDataset {
   this.$ctor__org_pepstock_charba_client_data_HovingDataset__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultOptions__boolean(type, defaultValues, hidden);
   this.$init___$p_org_pepstock_charba_client_data_BubbleDataset();
   this.f_orderHandler__org_pepstock_charba_client_data_BubbleDataset_ = OrderHandler.$create__org_pepstock_charba_client_commons_NativeObject(this.m_getNativeObject__());
-  this.f_radiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_radiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** ? */ context) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context), this.m_getRadiusCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getRadius__()), Double)));
   };
-  this.f_hitRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_hitRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** ? */ context_1) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_1), this.m_getHitRadiusCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getHitRadius__()), Double)));
   };
-  this.f_hoverRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_hoverRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** ? */ context_2) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_2), this.m_getHoverRadiusCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getHoverRadius__()), Double)));
   };
-  this.f_rotationCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_rotationCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** ? */ context_3) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_3), this.m_getRotationCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getRotation__()), Double)));
   };
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** Object */ contextFunction_4, /** ? */ context_4) =>{
+  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_.callback = (/** ? */ context_4) =>{
    return this.m_onPointStyle__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_BubbleDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_4));
   };
  }
@@ -264,6 +264,11 @@ class BubbleDataset extends HovingDataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_RADIUS__org_pepstock_charba_client_data_BubbleDataset_Property);
   }
  }
+ 
+ m_setRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ radiusCallback) {
+  this.m_setRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_RADIUS__org_pepstock_charba_client_data_BubbleDataset_Property, radiusCallback);
+ }
  /** @return {RadiusCallback<DatasetContext>} */
  m_getHitRadiusCallback__() {
   return this.f_hitRadiusCallback__org_pepstock_charba_client_data_BubbleDataset_;
@@ -276,6 +281,11 @@ class BubbleDataset extends HovingDataset {
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_HIT_RADIUS__org_pepstock_charba_client_data_BubbleDataset_Property);
   }
+ }
+ 
+ m_setHitRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ hitRadiusCallback) {
+  this.m_setHitRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_HIT_RADIUS__org_pepstock_charba_client_data_BubbleDataset_Property, hitRadiusCallback);
  }
  /** @return {RadiusCallback<DatasetContext>} */
  m_getHoverRadiusCallback__() {
@@ -290,6 +300,11 @@ class BubbleDataset extends HovingDataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_HOVER_RADIUS__org_pepstock_charba_client_data_BubbleDataset_Property);
   }
  }
+ 
+ m_setHoverRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ hoverRadiusCallback) {
+  this.m_setHoverRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_HOVER_RADIUS__org_pepstock_charba_client_data_BubbleDataset_Property, hoverRadiusCallback);
+ }
  /** @return {RotationCallback<DatasetContext>} */
  m_getRotationCallback__() {
   return this.f_rotationCallback__org_pepstock_charba_client_data_BubbleDataset_;
@@ -303,9 +318,19 @@ class BubbleDataset extends HovingDataset {
    this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_ROTATION__org_pepstock_charba_client_data_BubbleDataset_Property);
   }
  }
+ 
+ m_setRotation__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ rotationCallback) {
+  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<DatasetContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_ROTATION__org_pepstock_charba_client_data_BubbleDataset_Property, rotationCallback);
+ }
  /** @return {PointStyleCallback} */
  m_getPointStyleCallback__() {
   return this.f_pointStyleCallback__org_pepstock_charba_client_data_BubbleDataset_;
+ }
+ 
+ m_setPointStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointStyleCallback) {
+  this.m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/**@type {PointStyleCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_STYLE__org_pepstock_charba_client_data_BubbleDataset_Property, pointStyleCallback);
  }
  
  m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/** PointStyleCallback */ pointStyleCallback) {
@@ -357,11 +382,11 @@ class BubbleDataset extends HovingDataset {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_BubbleDataset() {
-  this.f_radiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hitRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_rotationCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_radiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hitRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverRadiusCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_rotationCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_BubbleDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_radiusCallback__org_pepstock_charba_client_data_BubbleDataset_ = null;
   this.f_hitRadiusCallback__org_pepstock_charba_client_data_BubbleDataset_ = null;
   this.f_hoverRadiusCallback__org_pepstock_charba_client_data_BubbleDataset_ = null;

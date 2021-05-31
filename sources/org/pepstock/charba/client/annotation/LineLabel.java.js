@@ -26,11 +26,11 @@ goog.require('org.pepstock.charba.client.annotation.callbacks.LabelPositionCallb
 goog.require('org.pepstock.charba.client.annotation.callbacks.PaddingSizeCallback');
 goog.require('org.pepstock.charba.client.annotation.enums.DrawTime');
 goog.require('org.pepstock.charba.client.annotation.enums.LabelPosition');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.ColorCallback');
 goog.require('org.pepstock.charba.client.callbacks.CornerRadiusCallback');
 goog.require('org.pepstock.charba.client.callbacks.DisplayCallback');
 goog.require('org.pepstock.charba.client.callbacks.FontCallback');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.RotationCallback');
 goog.require('org.pepstock.charba.client.callbacks.ScriptableUtils');
 goog.require('org.pepstock.charba.client.callbacks.TextAlignCallback');

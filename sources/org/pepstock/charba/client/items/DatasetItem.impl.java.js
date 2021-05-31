@@ -11,7 +11,7 @@ let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
 let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
@@ -21,7 +21,7 @@ let Property = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetItem
 let DatasetItemController = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetItemController$impl');
 let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class DatasetItem extends NativeObjectContainer {
@@ -42,7 +42,7 @@ class DatasetItem extends NativeObjectContainer {
  //Initialization from constructor 'DatasetItem(ChartEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_DatasetItem__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_DatasetItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_DatasetItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'DatasetItem()'.
  /** @return {!DatasetItem} */
@@ -108,41 +108,41 @@ class DatasetItem extends NativeObjectContainer {
  m_getLabel__() {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_LABEL__org_pepstock_charba_client_items_DatasetItem_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getYAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_Y_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_Y_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  /** @return {ScaleItem} */
  m_getYScale__() {
   return this.m_retrieveScale__org_pepstock_charba_client_items_DatasetItem_Property_$p_org_pepstock_charba_client_items_DatasetItem(Property.f_Y_SCALE__org_pepstock_charba_client_items_DatasetItem_Property);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getXAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_X_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_X_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  /** @return {ScaleItem} */
  m_getXScale__() {
   return this.m_retrieveScale__org_pepstock_charba_client_items_DatasetItem_Property_$p_org_pepstock_charba_client_items_DatasetItem(Property.f_X_SCALE__org_pepstock_charba_client_items_DatasetItem_Property);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getRAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_R_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_R__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_R_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_R__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  /** @return {ScaleItem} */
  m_getRScale__() {
   return this.m_retrieveScale__org_pepstock_charba_client_items_DatasetItem_Property_$p_org_pepstock_charba_client_items_DatasetItem(Property.f_R_SCALE__org_pepstock_charba_client_items_DatasetItem_Property);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getValueAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_V_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_V_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  /** @return {ScaleItem} */
  m_getValueScale__() {
   return this.m_retrieveScale__org_pepstock_charba_client_items_DatasetItem_Property_$p_org_pepstock_charba_client_items_DatasetItem(Property.f_V_SCALE__org_pepstock_charba_client_items_DatasetItem_Property);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getIndexAxisID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_I_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_I_AXIS_ID__org_pepstock_charba_client_items_DatasetItem_Property, DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
  }
  /** @return {ScaleItem} */
  m_getIndexScale__() {
@@ -182,7 +182,7 @@ class DatasetItem extends NativeObjectContainer {
   Defaults = goog.module.get('org.pepstock.charba.client.Defaults$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ArrayObject_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');

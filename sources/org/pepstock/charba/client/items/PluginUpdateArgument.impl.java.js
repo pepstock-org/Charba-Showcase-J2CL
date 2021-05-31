@@ -4,10 +4,10 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.PluginUpdateArgument.Property$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let PluginsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.plugins.PluginsEnvelop$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -25,12 +25,12 @@ class PluginUpdateArgument extends NativeObjectContainer {
  }
  
  $ctor__org_pepstock_charba_client_items_PluginUpdateArgument__org_pepstock_charba_client_plugins_PluginsEnvelop(/** PluginsEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {PluginsEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), PluginsEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {PluginsEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), PluginsEnvelop)).m_getContent__()));
  }
- /** @return {IsTransitionKey} */
+ /** @return {TransitionKey} */
  m_getMode__() {
   let mode = this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_MODE__org_pepstock_charba_client_items_PluginUpdateArgument_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined);
-  return !$Equality.$same(mode, null) ? IsTransitionKey.m_create__java_lang_String(mode) : null;
+  return !$Equality.$same(mode, null) ? TransitionKey.m_create__java_lang_String(mode) : null;
  }
  
  static $clinit() {
@@ -45,10 +45,10 @@ class PluginUpdateArgument extends NativeObjectContainer {
  
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.PluginUpdateArgument.Property$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
-  IsTransitionKey = goog.module.get('org.pepstock.charba.client.options.IsTransitionKey$impl');
+  TransitionKey = goog.module.get('org.pepstock.charba.client.options.TransitionKey$impl');
   PluginsEnvelop = goog.module.get('org.pepstock.charba.client.plugins.PluginsEnvelop$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

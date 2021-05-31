@@ -36,6 +36,14 @@ class CartesianTick extends Tick {
   return this.m_getConfiguration___$pp_org_pepstock_charba_client_configuration().m_getAutoSkipPadding__();
  }
  
+ m_setIncludeBounds__boolean(/** boolean */ includeBounds) {
+  this.m_getConfiguration___$pp_org_pepstock_charba_client_configuration().m_setIncludeBounds__boolean(includeBounds);
+ }
+ /** @return {boolean} */
+ m_isIncludeBounds__() {
+  return this.m_getConfiguration___$pp_org_pepstock_charba_client_configuration().m_isIncludeBounds__();
+ }
+ 
  m_setLabelOffset__int(/** number */ labelOffset) {
   this.m_getConfiguration___$pp_org_pepstock_charba_client_configuration().m_setLabelOffset__int(labelOffset);
  }

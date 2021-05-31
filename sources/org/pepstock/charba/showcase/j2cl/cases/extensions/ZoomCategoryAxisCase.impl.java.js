@@ -89,7 +89,7 @@ class ZoomCategoryAxisCase extends BaseComposite {
   options.m_getPan__().m_setEnabled__boolean(true);
   options.m_getPan__().m_setMode__org_pepstock_charba_client_enums_InteractionAxis(InteractionAxis.f_XY__org_pepstock_charba_client_enums_InteractionAxis);
   options.m_getPan__().m_setThreshold__double(5);
-  options.m_getZoom__().m_setEnabled__boolean(true);
+  options.m_getZoom__().m_getWheel__().m_setEnabled__boolean(true);
   options.m_getZoom__().m_setMode__org_pepstock_charba_client_enums_InteractionAxis(InteractionAxis.f_XY__org_pepstock_charba_client_enums_InteractionAxis);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCategoryAxisCase_.m_getOptions__().m_getPlugins__().m_setOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptions(ZoomPlugin.f_ID__org_pepstock_charba_client_zoom_ZoomPlugin, options);
   chartCol.appendChild(/**@type {Node}*/ ($Casts.$to(IsCastable_$Overlay.m_as__$devirt__org_pepstock_charba_client_dom_IsCastable(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCategoryAxisCase_.m_getChartElement__()), Node_$Overlay)));

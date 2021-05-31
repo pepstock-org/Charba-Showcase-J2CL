@@ -11,10 +11,10 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let AnnotationContext = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationContext$impl');
 let AnnotationHelper = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let AnnotationPlugin = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
 let AnnotationType = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationType$impl');
 let BackgroundColorHandler = goog.forwardDeclare('org.pepstock.charba.client.annotation.BackgroundColorHandler$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let IsDefaultsAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsDefaultsAnnotation$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.annotation.PointAnnotation.Property$impl');
 let ValueCallback = goog.forwardDeclare('org.pepstock.charba.client.annotation.callbacks.ValueCallback$impl');
@@ -25,7 +25,7 @@ let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$imp
 let CallbackPropertyHandler = goog.forwardDeclare('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let Utilities = goog.forwardDeclare('org.pepstock.charba.client.utils.Utilities$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -37,11 +37,11 @@ class PointAnnotation extends AbstractAnnotation {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_radiusCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_xValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_yValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_;
   /**@type {IsDefaultsPointAnnotation}*/
   this.f_defaultValues__org_pepstock_charba_client_annotation_PointAnnotation_;
@@ -59,7 +59,7 @@ class PointAnnotation extends AbstractAnnotation {
  //Initialization from constructor 'PointAnnotation()'.
  
  $ctor__org_pepstock_charba_client_annotation_PointAnnotation__() {
-  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_createId__(), AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation());
+  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_createId__(), AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation());
  }
  //Factory method corresponding to constructor 'PointAnnotation(String)'.
  /** @return {!PointAnnotation} */
@@ -72,20 +72,20 @@ class PointAnnotation extends AbstractAnnotation {
  //Initialization from constructor 'PointAnnotation(String)'.
  
  $ctor__org_pepstock_charba_client_annotation_PointAnnotation__java_lang_String(/** ?string */ id) {
-  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(IsAnnotationId.m_create__java_lang_String(id));
+  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId(AnnotationId.m_create__java_lang_String(id));
  }
- //Factory method corresponding to constructor 'PointAnnotation(IsAnnotationId)'.
+ //Factory method corresponding to constructor 'PointAnnotation(AnnotationId)'.
  /** @return {!PointAnnotation} */
- static $create__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {
+ static $create__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {
   PointAnnotation.$clinit();
   let $instance = new PointAnnotation();
-  $instance.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(id);
+  $instance.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId(id);
   return $instance;
  }
- //Initialization from constructor 'PointAnnotation(IsAnnotationId)'.
+ //Initialization from constructor 'PointAnnotation(AnnotationId)'.
  
- $ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {
-  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByGlobal__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType, id));
+ $ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {
+  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByGlobal__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType, id));
  }
  //Factory method corresponding to constructor 'PointAnnotation(String, IsChart)'.
  /** @return {!PointAnnotation} */
@@ -98,32 +98,32 @@ class PointAnnotation extends AbstractAnnotation {
  //Initialization from constructor 'PointAnnotation(String, IsChart)'.
  
  $ctor__org_pepstock_charba_client_annotation_PointAnnotation__java_lang_String__org_pepstock_charba_client_IsChart(/** ?string */ id, /** IsChart */ chart) {
-  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(IsAnnotationId.m_create__java_lang_String(id), chart);
+  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(AnnotationId.m_create__java_lang_String(id), chart);
  }
- //Factory method corresponding to constructor 'PointAnnotation(IsAnnotationId, IsChart)'.
+ //Factory method corresponding to constructor 'PointAnnotation(AnnotationId, IsChart)'.
  /** @return {!PointAnnotation} */
- static $create__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(/** IsAnnotationId */ id, /** IsChart */ chart) {
+ static $create__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(/** AnnotationId */ id, /** IsChart */ chart) {
   PointAnnotation.$clinit();
   let $instance = new PointAnnotation();
-  $instance.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(id, chart);
+  $instance.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(id, chart);
   return $instance;
  }
- //Initialization from constructor 'PointAnnotation(IsAnnotationId, IsChart)'.
+ //Initialization from constructor 'PointAnnotation(AnnotationId, IsChart)'.
  
- $ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart(/** IsAnnotationId */ id, /** IsChart */ chart) {
-  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByChart__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_IsChart_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType, id, chart));
+ $ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart(/** AnnotationId */ id, /** IsChart */ chart) {
+  this.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, AnnotationHelper.m_get__().m_getDefaultsAnnotationOptionsByChart__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_IsChart_$pp_org_pepstock_charba_client_annotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType, id, chart));
  }
- //Factory method corresponding to constructor 'PointAnnotation(IsAnnotationId, IsDefaultsAnnotation)'.
+ //Factory method corresponding to constructor 'PointAnnotation(AnnotationId, IsDefaultsAnnotation)'.
  /** @return {!PointAnnotation} */
- static $create__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** IsAnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
+ static $create__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
   let $instance = new PointAnnotation();
-  $instance.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, defaultValues);
+  $instance.$ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(id, defaultValues);
   return $instance;
  }
- //Initialization from constructor 'PointAnnotation(IsAnnotationId, IsDefaultsAnnotation)'.
+ //Initialization from constructor 'PointAnnotation(AnnotationId, IsDefaultsAnnotation)'.
  
- $ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** IsAnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
-  this.$ctor__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType, $Equality.$same(id, null) ? AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_createId__() : id, $Equality.$same(defaultValues, null) ? AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation() : defaultValues);
+ $ctor__org_pepstock_charba_client_annotation_PointAnnotation__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
+  this.$ctor__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType, $Equality.$same(id, null) ? AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_createId__() : id, $Equality.$same(defaultValues, null) ? AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation() : defaultValues);
   this.$init___$p_org_pepstock_charba_client_annotation_PointAnnotation();
   Checker.m_assertCheck__boolean__java_lang_String(IsDefaultsPointAnnotation.$isInstance(this.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation()), Utilities.m_applyTemplate__java_lang_String__arrayOf_java_lang_Object(AbstractAnnotation.f_INVALID_DEFAULTS_VALUES_CLASS__org_pepstock_charba_client_annotation_AbstractAnnotation, [AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType.m_value__()]));
   this.f_defaultValues__org_pepstock_charba_client_annotation_PointAnnotation_ = /**@type {IsDefaultsPointAnnotation}*/ ($Casts.$to(this.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation(), IsDefaultsPointAnnotation));
@@ -150,13 +150,13 @@ class PointAnnotation extends AbstractAnnotation {
  }
  
  m_initCallbacks___$p_org_pepstock_charba_client_annotation_PointAnnotation() {
-  this.f_radiusCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_radiusCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.callback = (/** ? */ context) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context), this.m_getRadiusCallback__(), this.f_defaultValues__org_pepstock_charba_client_annotation_PointAnnotation_.m_getRadius__()), Double)));
   };
-  this.f_xValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_xValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.callback = (/** ? */ context_1) =>{
    return this.m_onValue__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ValueCallback_$pp_org_pepstock_charba_client_annotation(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_1), this.m_getXValueCallback__());
   };
-  this.f_yValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_yValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.callback = (/** ? */ context_2) =>{
    return this.m_onValue__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ValueCallback_$pp_org_pepstock_charba_client_annotation(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_2), this.m_getYValueCallback__());
   };
  }
@@ -166,7 +166,7 @@ class PointAnnotation extends AbstractAnnotation {
  }
  
  m_setRadius__double(/** number */ radius) {
-  this.m_setRadius__org_pepstock_charba_client_callbacks_RadiusCallback(null);
+  this.m_setRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<AnnotationContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_RADIUS__org_pepstock_charba_client_annotation_PointAnnotation_Property, Checker.m_positiveOrZero__double(radius));
  }
  /** @override @return {number} */
@@ -175,31 +175,31 @@ class PointAnnotation extends AbstractAnnotation {
  }
  
  m_setYScaleID__java_lang_String(/** ?string */ scaleId) {
-  IsScaleId.m_checkIfValid__java_lang_String(scaleId);
+  ScaleId.m_checkIfValid__java_lang_String(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, scaleId);
  }
  
- m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ scaleId) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(scaleId);
+ m_setYScaleID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ scaleId) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, scaleId);
  }
- /** @override @return {IsScaleId} */
+ /** @override @return {ScaleId} */
  m_getYScaleID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_PointAnnotation_.m_getYScaleID__());
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_PointAnnotation_.m_getYScaleID__());
  }
  
  m_setXScaleID__java_lang_String(/** ?string */ scaleId) {
-  IsScaleId.m_checkIfValid__java_lang_String(scaleId);
+  ScaleId.m_checkIfValid__java_lang_String(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, scaleId);
  }
  
- m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ scaleId) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(scaleId);
+ m_setXScaleID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ scaleId) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, scaleId);
  }
- /** @override @return {IsScaleId} */
+ /** @override @return {ScaleId} */
  m_getXScaleID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_PointAnnotation_.m_getXScaleID__());
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_PointAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_PointAnnotation_.m_getXScaleID__());
  }
  
  m_setXValue__java_lang_String(/** ?string */ value) {
@@ -261,7 +261,12 @@ class PointAnnotation extends AbstractAnnotation {
  }
  
  m_setRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/** RadiusCallback<AnnotationContext> */ radiusCallback) {
-  PointAnnotation.f_RADIUS_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_PointAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, radiusCallback, this.f_radiusCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.proxy);
+  PointAnnotation.f_RADIUS_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_PointAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, radiusCallback, this.f_radiusCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.proxy);
+ }
+ 
+ m_setRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ radiusCallback) {
+  this.m_setRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_RADIUS__org_pepstock_charba_client_annotation_PointAnnotation_Property, radiusCallback);
  }
  /** @override @return {ValueCallback} */
  m_getXValueCallback__() {
@@ -269,7 +274,12 @@ class PointAnnotation extends AbstractAnnotation {
  }
  
  m_setXValue__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/** ValueCallback */ valueCallback) {
-  PointAnnotation.f_X_VALUE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_PointAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_xValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.proxy);
+  PointAnnotation.f_X_VALUE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_PointAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_xValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.proxy);
+ }
+ 
+ m_setXValue__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ valueCallback) {
+  this.m_setXValue__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/**@type {ValueCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_X_VALUE__org_pepstock_charba_client_annotation_PointAnnotation_Property, valueCallback);
  }
  /** @override @return {ValueCallback} */
  m_getYValueCallback__() {
@@ -277,7 +287,12 @@ class PointAnnotation extends AbstractAnnotation {
  }
  
  m_setYValue__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/** ValueCallback */ valueCallback) {
-  PointAnnotation.f_Y_VALUE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_PointAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_yValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.proxy);
+  PointAnnotation.f_Y_VALUE_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_PointAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_yValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_.proxy);
+ }
+ 
+ m_setYValue__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ valueCallback) {
+  this.m_setYValue__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/**@type {ValueCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_Y_VALUE__org_pepstock_charba_client_annotation_PointAnnotation_Property, valueCallback);
  }
  //Default method forwarding stub.
  /** @override @return {number} */
@@ -314,11 +329,16 @@ class PointAnnotation extends AbstractAnnotation {
  m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<AnnotationContext> */ arg0) {
   HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(this, arg0);
  }
+ //Default method forwarding stub.
+ /** @override */
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  HasBackgroundColor.m_setBackgroundColor__$default__org_pepstock_charba_client_annotation_HasBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_annotation_PointAnnotation() {
-  this.f_radiusCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_xValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_yValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_radiusCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_xValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_yValueCallbackProxy__org_pepstock_charba_client_annotation_PointAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {
@@ -341,10 +361,10 @@ class PointAnnotation extends AbstractAnnotation {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   AnnotationContext = goog.module.get('org.pepstock.charba.client.annotation.AnnotationContext$impl');
   AnnotationHelper = goog.module.get('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+  AnnotationId = goog.module.get('org.pepstock.charba.client.annotation.AnnotationId$impl');
   AnnotationPlugin = goog.module.get('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
   AnnotationType = goog.module.get('org.pepstock.charba.client.annotation.AnnotationType$impl');
   BackgroundColorHandler = goog.module.get('org.pepstock.charba.client.annotation.BackgroundColorHandler$impl');
-  IsAnnotationId = goog.module.get('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
   Property = goog.module.get('org.pepstock.charba.client.annotation.PointAnnotation.Property$impl');
   ValueCallback = goog.module.get('org.pepstock.charba.client.annotation.callbacks.ValueCallback$impl');
   RadiusCallback = goog.module.get('org.pepstock.charba.client.callbacks.RadiusCallback$impl');
@@ -352,7 +372,7 @@ class PointAnnotation extends AbstractAnnotation {
   CallbackPropertyHandler = goog.module.get('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   Utilities = goog.module.get('org.pepstock.charba.client.utils.Utilities$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

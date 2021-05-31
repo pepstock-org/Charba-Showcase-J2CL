@@ -10,7 +10,7 @@ let IsDefaultsLineLabel = goog.forwardDeclare('org.pepstock.charba.client.annota
 let LineAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.LineAnnotation$impl');
 let ValueCallback = goog.forwardDeclare('org.pepstock.charba.client.annotation.callbacks.ValueCallback$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
  * @interface
@@ -19,15 +19,15 @@ let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleI
 class IsDefaultsLineAnnotation {
  /** @abstract @override @return {AnnotationType} */
  m_getType__() {}
- /** @abstract @override @return {IsScaleId} */
+ /** @abstract @override @return {ScaleId} */
  m_getXScaleID__() {}
- /** @abstract @override @return {IsScaleId} */
+ /** @abstract @override @return {ScaleId} */
  m_getYScaleID__() {}
  /** @abstract @override @return {number} */
  m_getBorderWidth__() {}
  /** @abstract @return {IsDefaultsLineLabel} */
  m_getLabel__() {}
- /** @abstract @return {IsScaleId} */
+ /** @abstract @return {ScaleId} */
  m_getScaleID__() {}
  /** @abstract @return {?string} */
  m_getValueAsString__() {}
@@ -55,12 +55,12 @@ class IsDefaultsLineAnnotation {
   IsDefaultsLineAnnotation.$clinit();
   return null;
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getXScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsLineAnnotation(/** !IsDefaultsLineAnnotation */ $thisArg) {
   IsDefaultsLineAnnotation.$clinit();
   return IsDefaultsXYAnnotation.m_getXScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation($thisArg);
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getYScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsLineAnnotation(/** !IsDefaultsLineAnnotation */ $thisArg) {
   IsDefaultsLineAnnotation.$clinit();
   return IsDefaultsXYAnnotation.m_getYScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation($thisArg);
@@ -70,7 +70,7 @@ class IsDefaultsLineAnnotation {
   IsDefaultsLineAnnotation.$clinit();
   return LineAnnotation.f_DEFAULT_BORDER_WIDTH__org_pepstock_charba_client_annotation_LineAnnotation;
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsLineAnnotation(/** !IsDefaultsLineAnnotation */ $thisArg) {
   IsDefaultsLineAnnotation.$clinit();
   return null;

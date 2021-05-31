@@ -7,7 +7,7 @@ const IsDefaultLabels = goog.require('org.pepstock.charba.client.datalabels.IsDe
 let Collections = goog.forwardDeclare('java.util.Collections$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
-let IsDataLabelId = goog.forwardDeclare('org.pepstock.charba.client.datalabels.IsDataLabelId$impl');
+let DataLabelId = goog.forwardDeclare('org.pepstock.charba.client.datalabels.DataLabelId$impl');
 let IsDefaultDataLabelsOptions = goog.forwardDeclare('org.pepstock.charba.client.datalabels.IsDefaultDataLabelsOptions$impl');
 let LabelItem = goog.forwardDeclare('org.pepstock.charba.client.datalabels.LabelItem$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -39,11 +39,11 @@ class Labels extends AbstractElement {
  }
  /** @return {LabelItem} */
  m_createLabel__java_lang_String(/** ?string */ id) {
-  return this.m_createLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(IsDataLabelId.m_create__java_lang_String(id));
+  return this.m_createLabel__org_pepstock_charba_client_datalabels_DataLabelId(DataLabelId.m_create__java_lang_String(id));
  }
  /** @return {LabelItem} */
- m_createLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ id) {
-  IsDataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_IsDataLabelId(id);
+ m_createLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ id) {
+  DataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_DataLabelId(id);
   if (this.m_has__org_pepstock_charba_client_commons_Key(id)) {
    return LabelItem.$create__org_pepstock_charba_client_datalabels_IsDefaultDataLabelsItem__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_datalabels_Labels_, this.m_getValue__org_pepstock_charba_client_commons_Key(id));
   } else {
@@ -54,32 +54,32 @@ class Labels extends AbstractElement {
  }
  /** @return {LabelItem} */
  m_getLabel__java_lang_String(/** ?string */ id) {
-  return this.m_getLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(IsDataLabelId.m_create__java_lang_String(id));
+  return this.m_getLabel__org_pepstock_charba_client_datalabels_DataLabelId(DataLabelId.m_create__java_lang_String(id));
  }
  /** @override @return {LabelItem} */
- m_getLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ id) {
-  IsDataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_IsDataLabelId(id);
+ m_getLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ id) {
+  DataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_DataLabelId(id);
   if (this.m_has__org_pepstock_charba_client_commons_Key(id)) {
    return LabelItem.$create__org_pepstock_charba_client_datalabels_IsDefaultDataLabelsItem__org_pepstock_charba_client_commons_NativeObject(this.f_parent__org_pepstock_charba_client_datalabels_Labels_, this.m_getValue__org_pepstock_charba_client_commons_Key(id));
   }
-  return this.f_defaultOptions__org_pepstock_charba_client_datalabels_Labels_.m_getLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(id);
+  return this.f_defaultOptions__org_pepstock_charba_client_datalabels_Labels_.m_getLabel__org_pepstock_charba_client_datalabels_DataLabelId(id);
  }
  /** @return {boolean} */
  m_hasLabel__java_lang_String(/** ?string */ id) {
-  return this.m_hasLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(IsDataLabelId.m_create__java_lang_String(id));
+  return this.m_hasLabel__org_pepstock_charba_client_datalabels_DataLabelId(DataLabelId.m_create__java_lang_String(id));
  }
  /** @override @return {boolean} */
- m_hasLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ id) {
-  IsDataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_IsDataLabelId(id);
-  return this.m_has__org_pepstock_charba_client_commons_Key(id) || this.f_defaultOptions__org_pepstock_charba_client_datalabels_Labels_.m_hasLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(id);
+ m_hasLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ id) {
+  DataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_DataLabelId(id);
+  return this.m_has__org_pepstock_charba_client_commons_Key(id) || this.f_defaultOptions__org_pepstock_charba_client_datalabels_Labels_.m_hasLabel__org_pepstock_charba_client_datalabels_DataLabelId(id);
  }
  
  m_removeLabel__java_lang_String(/** ?string */ id) {
-  this.m_removeLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(IsDataLabelId.m_create__java_lang_String(id));
+  this.m_removeLabel__org_pepstock_charba_client_datalabels_DataLabelId(DataLabelId.m_create__java_lang_String(id));
  }
  
- m_removeLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ id) {
-  IsDataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_IsDataLabelId(id);
+ m_removeLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ id) {
+  DataLabelId.m_checkIfValid__org_pepstock_charba_client_datalabels_DataLabelId(id);
   this.m_remove__org_pepstock_charba_client_commons_Key(id);
  }
  /** @return {List<Key>} */
@@ -100,7 +100,7 @@ class Labels extends AbstractElement {
  
  static $loadModules() {
   Collections = goog.module.get('java.util.Collections$impl');
-  IsDataLabelId = goog.module.get('org.pepstock.charba.client.datalabels.IsDataLabelId$impl');
+  DataLabelId = goog.module.get('org.pepstock.charba.client.datalabels.DataLabelId$impl');
   IsDefaultDataLabelsOptions = goog.module.get('org.pepstock.charba.client.datalabels.IsDefaultDataLabelsOptions$impl');
   LabelItem = goog.module.get('org.pepstock.charba.client.datalabels.LabelItem$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasCallbackScope$$LambdaAdaptor.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,Y;EAAAC,yC;EAAAA,gH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["HasCallbackScope.java"],
+"names":["org.pepstock.charba.client.commons.HasCallbackScope$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.commons.HasCallbackScope$$LambdaAdaptor.<init>","org.pepstock.charba.client.commons.HasCallbackScope$$LambdaAdaptor.getScope","org.pepstock.charba.client.commons.HasCallbackScope$$LambdaAdaptor.<clinit>"]
+}
+

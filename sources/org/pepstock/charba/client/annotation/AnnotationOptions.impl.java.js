@@ -9,10 +9,10 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let AbstractAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
 let AnnotationCachedMap = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationCachedMap$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let AnnotationMap = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationMap$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationOptions.Property$impl');
 let AnnotationPlugin = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let DrawTime = goog.forwardDeclare('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -115,19 +115,19 @@ class AnnotationOptions extends AbstractPluginOptions {
  }
  /** @return {boolean} */
  m_hasAnnotation__java_lang_String(/** ?string */ id) {
-  return this.m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(IsAnnotationId.m_create__java_lang_String(id));
+  return this.m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId(AnnotationId.m_create__java_lang_String(id));
  }
  /** @override @return {boolean} */
- m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {
-  return this.f_annotationsMap__org_pepstock_charba_client_annotation_AnnotationOptions_.m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(id) || this.f_defaultOptions__org_pepstock_charba_client_annotation_AnnotationOptions_.m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(id);
+ m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {
+  return this.f_annotationsMap__org_pepstock_charba_client_annotation_AnnotationOptions_.m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(id) || this.f_defaultOptions__org_pepstock_charba_client_annotation_AnnotationOptions_.m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId(id);
  }
  
  m_removeAnnotation__java_lang_String(/** ?string */ id) {
-  this.m_removeAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(IsAnnotationId.m_create__java_lang_String(id));
+  this.m_removeAnnotation__org_pepstock_charba_client_annotation_AnnotationId(AnnotationId.m_create__java_lang_String(id));
  }
  
- m_removeAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {
-  this.f_annotationsMap__org_pepstock_charba_client_annotation_AnnotationOptions_.m_removeAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(id);
+ m_removeAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {
+  this.f_annotationsMap__org_pepstock_charba_client_annotation_AnnotationOptions_.m_removeAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(id);
  }
  
  m_addAnnotations__arrayOf_org_pepstock_charba_client_annotation_AbstractAnnotation(/** Array<AbstractAnnotation> */ annotations) {
@@ -143,13 +143,13 @@ class AnnotationOptions extends AbstractPluginOptions {
  }
  /** @return {AbstractAnnotation} */
  m_getAnnotation__java_lang_String(/** ?string */ id) {
-  return this.m_getAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(IsAnnotationId.m_create__java_lang_String(id));
+  return this.m_getAnnotation__org_pepstock_charba_client_annotation_AnnotationId(AnnotationId.m_create__java_lang_String(id));
  }
  /** @override @return {AbstractAnnotation} */
- m_getAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(/** IsAnnotationId */ id) {
-  let result = this.f_annotationsMap__org_pepstock_charba_client_annotation_AnnotationOptions_.m_getAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(id);
+ m_getAnnotation__org_pepstock_charba_client_annotation_AnnotationId(/** AnnotationId */ id) {
+  let result = this.f_annotationsMap__org_pepstock_charba_client_annotation_AnnotationOptions_.m_getAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(id);
   if ($Equality.$same(result, null)) {
-   return this.f_defaultOptions__org_pepstock_charba_client_annotation_AnnotationOptions_.m_getAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId(id);
+   return this.f_defaultOptions__org_pepstock_charba_client_annotation_AnnotationOptions_.m_getAnnotation__org_pepstock_charba_client_annotation_AnnotationId(id);
   }
   return result;
  }
@@ -174,10 +174,10 @@ class AnnotationOptions extends AbstractPluginOptions {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   IsChart = goog.module.get('org.pepstock.charba.client.IsChart$impl');
   AnnotationCachedMap = goog.module.get('org.pepstock.charba.client.annotation.AnnotationCachedMap$impl');
+  AnnotationId = goog.module.get('org.pepstock.charba.client.annotation.AnnotationId$impl');
   AnnotationMap = goog.module.get('org.pepstock.charba.client.annotation.AnnotationMap$impl');
   Property = goog.module.get('org.pepstock.charba.client.annotation.AnnotationOptions.Property$impl');
   AnnotationPlugin = goog.module.get('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
-  IsAnnotationId = goog.module.get('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
   DrawTime = goog.module.get('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NativeCallback$$Overlay.impl.java.js",
+"lineCount":40,
+"mappings":"A;;;;;;;;MAiCmB,Q;;QA4BW,0B,gBAAcA,I;EAAdC,mB;EAC5BA,uK;;;QAa4B,4C,gBAAcC,Q,iBAAiBF,I;EAA/BC,mB;EAE5BA,kF;EACAA,6K;EAEAA,IAAOE,gBAAPF,gP;EAEAA,4C;;;QAjDiB,O;EAAAG,2B;EAAAA,wB;;;;;;;;;;;;;AAGlB;SAC4B,yFAD5B;",
+"sources":["NativeCallback.java"],
+"names":["code","org.pepstock.charba.client.callbacks.NativeCallback$$Overlay.create","argument","argumentVariable","org.pepstock.charba.client.callbacks.NativeCallback$$Overlay.<clinit>"]
+}
+

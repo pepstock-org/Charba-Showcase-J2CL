@@ -2,7 +2,7 @@
 "version":3,
 "file":"Transitions.impl.java.js",
 "lineCount":56,
-"mappings":"A;;;;;;;;;;;;;;;MA4Ba,W;;CAAA,W;EAAAA,Q;;;QAOZ,yF,kCAAsCC,Q;EAAtCC,sB;EAAAA,kC;EAAAA,kK;EAAAA,iB;;;CAAA,6I,kCAAsCD,Q;EACrCE,8K;;;CAUc,yD,wBAAoBC,U;EAClCC,yM;;;CAU0B,yD,wBAAoBD,U;EAC9CE,yM;;;CAUW,iH,wBAAoBF,U,6BAAgCG,mB;EAC/DC,+Q;;;CAU0B,4D,wBAAuBJ,U;EACjDK,4M;;;CASW,4D,wBAAuBL,U;EAClCM,qM;;;QA9DW,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;MA4Ba,W;;CAAA,W;EAAAA,Q;;;QAOZ,yF,kCAAsCC,Q;EAAtCC,sB;EAAAA,kC;EAAAA,kK;EAAAA,iB;;;CAAA,6I,kCAAsCD,Q;EACrCE,8K;;;CAUc,uD,sBAAkBC,U;EAChCC,uM;;;CAU0B,uD,sBAAkBD,U;EAC5CE,uM;;;CAUW,+G,sBAAkBF,U,6BAAgCG,mB;EAC7DC,6Q;;;CAU0B,0D,sBAAqBJ,U;EAC/CK,0M;;;CASW,0D,sBAAqBL,U;EAChCM,mM;;;QA9DW,O;EAAAC,8B;EAAAA,2B;EAAAA;",
 "sources":["Transitions.java"],
 "names":["org.pepstock.charba.client.configuration.Transitions.<synthetic: ctor_js>","provider","org.pepstock.charba.client.configuration.Transitions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Transitions.<init>","transition","org.pepstock.charba.client.configuration.Transitions.has","org.pepstock.charba.client.configuration.Transitions.get","animationTransition","org.pepstock.charba.client.configuration.Transitions.set","org.pepstock.charba.client.configuration.Transitions.create","org.pepstock.charba.client.configuration.Transitions.remove","org.pepstock.charba.client.configuration.Transitions.<clinit>"]
 }

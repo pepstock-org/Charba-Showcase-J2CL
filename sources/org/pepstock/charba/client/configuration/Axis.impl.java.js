@@ -21,7 +21,6 @@ let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis.Property$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
-let ConfigurationOptions = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationOptions$impl');
 let IsDefaultScale = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScale$impl');
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
 let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
@@ -29,8 +28,8 @@ let Display = goog.forwardDeclare('org.pepstock.charba.client.enums.Display$impl
 let AxisItem = goog.forwardDeclare('org.pepstock.charba.client.items.AxisItem$impl');
 let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$impl');
 let ExtendedScale = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedScale$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
@@ -42,33 +41,33 @@ class Axis extends ConfigurationContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_beforeUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_beforeSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_afterSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_beforeDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_afterDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_beforeTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_afterTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_beforeCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_afterCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_beforeFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_afterFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_afterUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_beforeBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_afterBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_;
   /**@type {AxisCalculateTickRotationCallback}*/
   this.f_axisCalculateTickRotationCallback__org_pepstock_charba_client_configuration_Axis_;
@@ -90,62 +89,62 @@ class Axis extends ConfigurationContainer {
   this.f_defaultValues__org_pepstock_charba_client_configuration_Axis_;
  }
  
- $ctor__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** IsScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+ $ctor__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
   this.$ctor__org_pepstock_charba_client_configuration_ConfigurationContainer__org_pepstock_charba_client_IsChart(chart);
   this.$init___$p_org_pepstock_charba_client_configuration_Axis();
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(id);
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(id);
   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(kind);
   this.f_storeType__org_pepstock_charba_client_configuration_Axis_ = /**@type {AxisType}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(type), AxisType));
-  this.f_defaultValues__org_pepstock_charba_client_configuration_Axis_ = this.m_getDefaultScale__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_enums_AxisKind_$p_org_pepstock_charba_client_configuration_Axis(id, kind);
-  this.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedScale.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_defaults_IsDefaultScale(/**@type {!ConfigurationEnvelop<IsScaleId>}*/ (ConfigurationEnvelop.$create__java_lang_Object(id)), type, kind, this.f_defaultValues__org_pepstock_charba_client_configuration_Axis_));
-  this.f_beforeUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context, /** ? */ item) =>{
-   this.m_onBeforeUpdateCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item);
+  this.f_defaultValues__org_pepstock_charba_client_configuration_Axis_ = this.m_getDefaultScale__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind_$p_org_pepstock_charba_client_configuration_Axis(id, kind);
+  this.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedScale.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_defaults_IsDefaultScale(/**@type {!ConfigurationEnvelop<ScaleId>}*/ (ConfigurationEnvelop.$create__java_lang_Object(id)), type, kind, this.f_defaultValues__org_pepstock_charba_client_configuration_Axis_));
+  this.f_beforeUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0) =>{
+   this.m_onBeforeUpdateCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0);
   };
-  this.f_beforeSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_1, /** ? */ item_1) =>{
-   this.m_onBeforeSetDimensionsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_1);
+  this.f_beforeSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_1) =>{
+   this.m_onBeforeSetDimensionsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_1);
   };
-  this.f_afterSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_2, /** ? */ item_2) =>{
-   this.m_onAfterSetDimensionsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_2);
+  this.f_afterSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_2) =>{
+   this.m_onAfterSetDimensionsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_2);
   };
-  this.f_beforeDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_3, /** ? */ item_3) =>{
-   this.m_onBeforeDataLimitsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_3);
+  this.f_beforeDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_3) =>{
+   this.m_onBeforeDataLimitsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_3);
   };
-  this.f_afterDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_4, /** ? */ item_4) =>{
-   this.m_onAfterDataLimitsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_4);
+  this.f_afterDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_4) =>{
+   this.m_onAfterDataLimitsCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_4);
   };
-  this.f_beforeTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_5, /** ? */ item_5) =>{
-   this.m_onBeforeTickToLabelConversionCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_5);
+  this.f_beforeTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_5) =>{
+   this.m_onBeforeTickToLabelConversionCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_5);
   };
-  this.f_afterTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_6, /** ? */ item_6) =>{
-   this.m_onAfterTickToLabelConversionCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_6);
+  this.f_afterTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_6) =>{
+   this.m_onAfterTickToLabelConversionCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_6);
   };
-  this.f_beforeCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_7, /** ? */ item_7) =>{
-   this.m_onBeforeCalculateTickRotationCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_7);
+  this.f_beforeCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_7) =>{
+   this.m_onBeforeCalculateTickRotationCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_7);
   };
-  this.f_afterCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_8, /** ? */ item_8) =>{
-   this.m_onAfterCalculateTickRotationCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_8);
+  this.f_afterCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_8) =>{
+   this.m_onAfterCalculateTickRotationCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_8);
   };
-  this.f_beforeFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_9, /** ? */ item_9) =>{
-   this.m_onBeforeFitCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_9);
+  this.f_beforeFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_9) =>{
+   this.m_onBeforeFitCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_9);
   };
-  this.f_afterFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_10, /** ? */ item_10) =>{
-   this.m_onAfterFitCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_10);
+  this.f_afterFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_10) =>{
+   this.m_onAfterFitCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_10);
   };
-  this.f_afterUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_11, /** ? */ item_11) =>{
-   this.m_onAfterUpdateCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_11);
+  this.f_afterUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_11) =>{
+   this.m_onAfterUpdateCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_11);
   };
-  this.f_beforeBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_12, /** ? */ item_12) =>{
-   this.m_onBeforeBuildTicksCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_12);
+  this.f_beforeBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_12) =>{
+   this.m_onBeforeBuildTicksCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_12);
   };
-  this.f_afterBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** Object */ context_13, /** ? */ item_13) =>{
-   this.m_onAfterBuildTicksCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(item_13);
+  this.f_afterBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_.callback = (/** ? */ arg0_13) =>{
+   this.m_onAfterBuildTicksCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(arg0_13);
   };
  }
  /** @return {number} */
  m_getCharbaId__() {
   return /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_getCharbaId__();
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getId__() {
   return /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_getId__();
  }
@@ -223,10 +222,10 @@ class Axis extends ConfigurationContainer {
   return this.f_defaultValues__org_pepstock_charba_client_configuration_Axis_;
  }
  /** @return {IsDefaultScale} */
- m_getDefaultScale__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_enums_AxisKind_$p_org_pepstock_charba_client_configuration_Axis(/** IsScaleId */ scaleId, /** AxisKind */ kind) {
+ m_getDefaultScale__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind_$p_org_pepstock_charba_client_configuration_Axis(/** ScaleId */ scaleId, /** AxisKind */ kind) {
   let options = this.m_getChart__().m_getDefaultChartOptions__();
   if (!$Objects.m_equals__java_lang_Object__java_lang_Object(ScaleType.f_NONE__org_pepstock_charba_client_ScaleType, this.m_getChart__().m_getType__().m_scaleType__()) && Key.m_isValid__org_pepstock_charba_client_commons_Key(kind)) {
-   return options.m_getScales__().m_getAxis__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_enums_AxisKind(scaleId, kind);
+   return options.m_getScales__().m_getAxis__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(scaleId, kind);
   }
   return Defaults.m_get__().m_getScale__org_pepstock_charba_client_enums_AxisType(this.f_storeType__org_pepstock_charba_client_configuration_Axis_);
  }
@@ -307,14 +306,22 @@ class Axis extends ConfigurationContainer {
  
  m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy_$pp_org_pepstock_charba_client_configuration(/** AbstractNode */ node, /** Key */ property, /** * */ callBack, /** ?function():void */ proxy) {
   if (!$Equality.$same(callBack, null)) {
-   /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(node, property, /**@type {!ConfigurationEnvelop<?function():void>}*/ (ConfigurationEnvelop.$create__java_lang_Object(proxy)));
+   /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, proxy);
   } else {
-   /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(node, property, ConfigurationOptions.f_RESET_CALLBACK_ENVELOP__org_pepstock_charba_client_configuration_ConfigurationOptions);
+   /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, /**@type {?function():void}*/ (null));
+  }
+ }
+ 
+ m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/** AbstractNode */ node, /** Key */ property, /** Function */ callBack) {
+  if (!$Equality.$same(callBack, null)) {
+   /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, callBack);
+  } else {
+   /**@type {ExtendedScale}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedScale)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, /**@type {Function}*/ (null));
   }
  }
  /** @return {ScaleContext} */
  m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(/** ? */ context) {
-  return ScaleContext.$create__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_ConfigurationEnvelop(this, /**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(context)));
+  return ScaleContext.$create__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_commons_NativeObject(this, context);
  }
  
  m_onBeforeUpdateCallback__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_configuration_Axis(/** ? */ item) {
@@ -416,20 +423,20 @@ class Axis extends ConfigurationContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_Axis() {
-  this.f_beforeUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_beforeBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_afterBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterSetDimensionsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterDataLimitsCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterTickToLabelConversionCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterCalculateTickRotationCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterFitCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterUpdateCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_beforeBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_afterBuildTicksCallbackProxy__org_pepstock_charba_client_configuration_Axis_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_axisCalculateTickRotationCallback__org_pepstock_charba_client_configuration_Axis_ = null;
   this.f_axisDataLimitsCallback__org_pepstock_charba_client_configuration_Axis_ = null;
   this.f_axisDimensionsCallback__org_pepstock_charba_client_configuration_Axis_ = null;
@@ -458,12 +465,11 @@ class Axis extends ConfigurationContainer {
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   Property = goog.module.get('org.pepstock.charba.client.configuration.Axis.Property$impl');
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
-  ConfigurationOptions = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationOptions$impl');
   AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
   AxisItem = goog.module.get('org.pepstock.charba.client.items.AxisItem$impl');
   ScaleItem = goog.module.get('org.pepstock.charba.client.items.ScaleItem$impl');
   ExtendedScale = goog.module.get('org.pepstock.charba.client.options.ExtendedScale$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }

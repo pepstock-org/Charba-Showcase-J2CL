@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsDefaultOptions.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;MA6BiB,gB;;CAOK,Y;;CAOA,kB;;CAON,Y;;CAOC,a;;CAOE,e;;CAOE,iB;;CAOJ,a;;CAOA,a;;CAOE,e;;CAOD,c;;CAOC,e;;CAOJ,W;;CAOF,a;;CAOJ,a;;CAOD,Y;;CAOC,gB;;CAOA,yB;;CAQD,kB;;CAQA,kB;;CAQA,uB;;CAOA,oB;;CAOA,8B;;CAOA,0B;;CAOC,c;;CAOA,c;;CAOA,c;;CASD,a;;CASA,uB;;CASA,a;;CASA,uB;;CAOA,e;;CAOA,oB;;CAOG,gB;;CAOF,kB;;CAOA,qB;;QAhQQ,O;EAAAA,mC;EAAAA;",
+"lineCount":98,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;MA6BiB,gB;;CAOK,Y;;CAOA,kB;;CAON,Y;;CAOC,a;;CAOE,e;;CAOE,iB;;CAOJ,a;;CAOA,a;;CAOE,e;;CAOD,c;;CAOC,e;;CAOJ,W;;CAOF,a;;CAOJ,a;;CAOA,gB;;CAOA,yB;;CAQD,kB;;CAQA,kB;;CAQA,uB;;CAOA,oB;;CAOA,8B;;CAOA,0B;;CAOC,c;;CAOA,c;;CAOA,c;;CASD,a;;CASA,uB;;CASA,a;;CASA,uB;;CAOA,e;;CAOA,oB;;CAOG,gB;;CAOF,kB;;CAOA,qB;;QAzPQ,O;EAAAA,mC;EAAAA;",
 "sources":["IsDefaultOptions.java"],
 "names":["org.pepstock.charba.client.defaults.IsDefaultOptions.<clinit>"]
 }

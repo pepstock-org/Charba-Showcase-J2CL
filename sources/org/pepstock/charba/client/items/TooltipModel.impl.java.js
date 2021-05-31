@@ -8,7 +8,7 @@ let CallbacksEnvelop = goog.forwardDeclare('org.pepstock.charba.client.callbacks
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let TooltipAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TooltipAlign$impl');
 let TooltipBodyItem = goog.forwardDeclare('org.pepstock.charba.client.items.TooltipBodyItem$impl');
@@ -35,7 +35,7 @@ class TooltipModel extends NativeObjectContainer {
  //Initialization from constructor 'TooltipModel(ConfigurationEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_TooltipModel__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** ConfigurationEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_TooltipModel__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_TooltipModel__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'TooltipModel(CallbacksEnvelop)'.
  /** @return {!TooltipModel} */
@@ -48,7 +48,7 @@ class TooltipModel extends NativeObjectContainer {
  //Initialization from constructor 'TooltipModel(CallbacksEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_TooltipModel__org_pepstock_charba_client_callbacks_CallbacksEnvelop(/** CallbacksEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_TooltipModel__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), CallbacksEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_TooltipModel__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), CallbacksEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'TooltipModel(NativeObject)'.
  /** @return {!TooltipModel} */
@@ -160,7 +160,7 @@ class TooltipModel extends NativeObjectContainer {
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ArrayObject_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   TooltipAlign = goog.module.get('org.pepstock.charba.client.enums.TooltipAlign$impl');
   TooltipBodyItem = goog.module.get('org.pepstock.charba.client.items.TooltipBodyItem$impl');

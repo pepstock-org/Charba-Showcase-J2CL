@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsDefaultPinch.impl.java.js",
+"lineCount":21,
+"mappings":"A;;;;;;;;;MAwBU,c;;CAOO,a;;QAAA,qE;EAAAA,yB;EACfA,sE;;;QARQ,O;EAAAC,iC;EAAAA;",
+"sources":["IsDefaultPinch.java"],
+"names":["org.pepstock.charba.client.zoom.IsDefaultPinch.isEnabled__$default","org.pepstock.charba.client.zoom.IsDefaultPinch.<clinit>"]
+}
+

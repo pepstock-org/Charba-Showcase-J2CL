@@ -2,7 +2,6 @@ goog.module('org.pepstock.charba.client.configuration.CategoryTickHandler');
 
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.CategoryTickCallback');
 goog.require('org.pepstock.charba.client.commons.ArrayListHelper');
 goog.require('org.pepstock.charba.client.commons.ArrayString.$Overlay');

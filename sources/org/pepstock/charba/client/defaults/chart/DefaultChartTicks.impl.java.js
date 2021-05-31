@@ -67,6 +67,10 @@ class DefaultChartTicks extends j_l_Object {
  m_getAutoSkipPadding__() {
   return this.f_ticks__org_pepstock_charba_client_defaults_chart_DefaultChartTicks_.m_getAutoSkipPadding__();
  }
+ /** @override @return {boolean} */
+ m_isIncludeBounds__() {
+  return this.f_ticks__org_pepstock_charba_client_defaults_chart_DefaultChartTicks_.m_isIncludeBounds__();
+ }
  /** @override @return {number} */
  m_getLabelOffset__() {
   return this.f_ticks__org_pepstock_charba_client_defaults_chart_DefaultChartTicks_.m_getLabelOffset__();

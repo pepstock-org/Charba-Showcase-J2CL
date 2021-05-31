@@ -15,7 +15,7 @@ goog.require('org.pepstock.charba.client.colors.PatternBuilder');
 goog.require('org.pepstock.charba.client.commons.AbstractNode');
 goog.require('org.pepstock.charba.client.commons.ArrayInteger.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayListHelper');
-goog.require('org.pepstock.charba.client.commons.IsEnvelop');
+goog.require('org.pepstock.charba.client.commons.Envelop');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ObjectType');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay');

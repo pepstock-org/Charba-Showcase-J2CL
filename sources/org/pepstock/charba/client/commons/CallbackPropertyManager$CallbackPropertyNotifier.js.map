@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CallbackPropertyManager$CallbackPropertyNotifier.impl.java.js",
+"lineCount":77,
+"mappings":"A;;;;;;;;;;;;;;;;MAkG4B,wB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,mC;EAAAA,+C;EAAAA,yG;EAAAA,iB;;;CAAA,4F;EAAAC,iC;;;CAQd,qD,gBAAwBC,K;EAEnCC;GAGCA;IAECC,IAAoCC,QAApCD,6GAFDD;IAICC;KAECA,IAA0BE,OAA1BF,uGAFDA;KAMCA;MAECA,sBAFDA;MANDA;KAJDD;OAHDA;G;;;;CAVyB,sD;EAAAI,yJ;;;;CAAA,oD;EAAAC,uJ;;;;CAAA,iD;EAAAC,oJ;;;;CAAA,uD;EAAAC,0J;;;;CAAA,kD;EAAAC,qJ;;;QAAA,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;EAAAA;",
+"sources":["CallbackPropertyManager.java"],
+"names":["org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.<synthetic: ctor_js>","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.<synthetic: ctor_create>","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.<init>","chart","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.onBeforeDestroy","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.<lambda in onBeforeDestroy>","iterator","handler","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.onAfterConfigure","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.onAfterDestroy","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.onAfterInit","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.onBeforeConfigure","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.onBeforeInit","org.pepstock.charba.client.commons.CallbackPropertyManager$CallbackPropertyNotifier.<clinit>"]
+}
+

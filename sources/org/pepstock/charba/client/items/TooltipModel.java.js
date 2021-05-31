@@ -6,7 +6,7 @@ goog.require('org.pepstock.charba.client.callbacks.CallbacksEnvelop');
 goog.require('org.pepstock.charba.client.commons.ArrayListHelper');
 goog.require('org.pepstock.charba.client.commons.ArrayObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayString.$Overlay');
-goog.require('org.pepstock.charba.client.commons.IsEnvelop');
+goog.require('org.pepstock.charba.client.commons.Envelop');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.NativeObjectContainer');
 goog.require('org.pepstock.charba.client.configuration.ConfigurationEnvelop');

@@ -2,14 +2,14 @@ goog.module('org.pepstock.charba.client.datalabels.Listeners');
 
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.ScriptableUtils');
+goog.require('org.pepstock.charba.client.commons.AbstractNode');
 goog.require('org.pepstock.charba.client.commons.CallbackPropertyHandler');
 goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');
 goog.require('org.pepstock.charba.client.commons.Checker');
 goog.require('org.pepstock.charba.client.commons.JsHelper');
+goog.require('org.pepstock.charba.client.commons.Key');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
-goog.require('org.pepstock.charba.client.commons.NativeObjectContainer');
 goog.require('org.pepstock.charba.client.datalabels.DataLabelsContext');
 goog.require('org.pepstock.charba.client.datalabels.DataLabelsPlugin');
 goog.require('org.pepstock.charba.client.datalabels.IsDefaultListeners');

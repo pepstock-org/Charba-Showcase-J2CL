@@ -2,7 +2,7 @@
 "version":3,
 "file":"SegmentContext$SegementDatasetElement.impl.java.js",
 "lineCount":28,
-"mappings":"A;;;;;;;MAiH4B,sB;;CAAA,W;EAAAA,Q;;;QAOlB,wD,UAAoCC,Y;EAApCC,iC;EAAAA,6C;EAAAA,2J;EAAAA,iB;;;CAAA,kI,UAAoCD,Y;EAC3CE,iN;;;QARyB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
+"mappings":"A;;;;;;;MAiI4B,sB;;CAAA,W;EAAAA,Q;;;QAOlB,wD,UAAoCC,Y;EAApCC,iC;EAAAA,6C;EAAAA,2J;EAAAA,iB;;;CAAA,kI,UAAoCD,Y;EAC3CE,iN;;;QARyB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
 "sources":["SegmentContext.java"],
 "names":["org.pepstock.charba.client.callbacks.SegmentContext$SegementDatasetElement.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.callbacks.SegmentContext$SegementDatasetElement.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.SegmentContext$SegementDatasetElement.<init>","org.pepstock.charba.client.callbacks.SegmentContext$SegementDatasetElement.<clinit>"]
 }

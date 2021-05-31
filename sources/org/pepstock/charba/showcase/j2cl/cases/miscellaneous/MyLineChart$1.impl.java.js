@@ -6,6 +6,7 @@ const ControllerProvider = goog.require('org.pepstock.charba.client.controllers.
 
 let Controller = goog.forwardDeclare('org.pepstock.charba.client.Controller$impl');
 let ControllerType = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerType$impl');
+let MyLineChart = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$impl');
 let $1_$1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.$1.$1$impl');
 
 /**
@@ -29,7 +30,7 @@ class $1 extends j_l_Object {
  }
  /** @override @return {Controller} */
  m_provide__org_pepstock_charba_client_controllers_ControllerType(/** ControllerType */ controllerType) {
-  return $1_$1.$create__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1(this);
+  return $1_$1.$create__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1__org_pepstock_charba_client_controllers_ControllerType(this, MyLineChart.f_TYPE__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart);
  }
  
  static $clinit() {
@@ -43,6 +44,7 @@ class $1 extends j_l_Object {
  }
  
  static $loadModules() {
+  MyLineChart = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$impl');
   $1_$1 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.$1.$1$impl');
  }
 }

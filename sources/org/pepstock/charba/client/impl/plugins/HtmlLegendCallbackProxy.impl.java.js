@@ -30,11 +30,11 @@ class HtmlLegendCallbackProxy extends j_l_Object {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_clickCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_;
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_hoverCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_;
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_leaveCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_;
  }
  /** @return {!HtmlLegendCallbackProxy} */
@@ -48,14 +48,14 @@ class HtmlLegendCallbackProxy extends j_l_Object {
  $ctor__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy__() {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy();
-  this.f_clickCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_.callback = (/** Object */ context, /** Object */ event) =>{
-   this.m_handleEvent__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy(event);
+  this.f_clickCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_.callback = (/** Object */ arg0) =>{
+   this.m_handleEvent__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy(arg0);
   };
-  this.f_hoverCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_.callback = (/** Object */ context_1, /** Object */ event_1) =>{
-   this.m_handleEvent__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy(event_1);
+  this.f_hoverCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_.callback = (/** Object */ arg0_1) =>{
+   this.m_handleEvent__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy(arg0_1);
   };
-  this.f_leaveCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_.callback = (/** Object */ context_2, /** Object */ event_2) =>{
-   this.m_handleEvent__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy(event_2);
+  this.f_leaveCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_.callback = (/** Object */ arg0_2) =>{
+   this.m_handleEvent__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy(arg0_2);
   };
  }
  
@@ -162,9 +162,9 @@ class HtmlLegendCallbackProxy extends j_l_Object {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy() {
-  this.f_clickCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_leaveCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_clickCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_leaveCallbackProxy__org_pepstock_charba_client_impl_plugins_HtmlLegendCallbackProxy_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {

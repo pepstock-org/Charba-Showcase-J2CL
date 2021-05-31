@@ -80,8 +80,8 @@ class AnnotationEllipseOnLineCase extends BaseComposite {
   let options = AnnotationOptions.$create__();
   let ellipse = EllipseAnnotation.$create__();
   ellipse.m_setDrawTime__org_pepstock_charba_client_annotation_enums_DrawTime(DrawTime.f_BEFORE_DATASETS_DRAW__org_pepstock_charba_client_annotation_enums_DrawTime);
-  ellipse.m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
-  ellipse.m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
+  ellipse.m_setXScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId);
+  ellipse.m_setYScaleID__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId);
   ellipse.m_setXMin__java_lang_String("February");
   ellipse.m_setXMax__java_lang_String("April");
   ellipse.m_setYMin__double(10);

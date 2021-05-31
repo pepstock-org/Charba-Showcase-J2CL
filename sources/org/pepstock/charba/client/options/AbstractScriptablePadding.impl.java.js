@@ -5,6 +5,7 @@ const AbstractPadding = goog.require('org.pepstock.charba.client.options.Abstrac
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartContext = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ChartContext$impl');
+let PaddingCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.PaddingCallback$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let IsDefaultPadding = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPadding$impl');
 let IsScriptablePaddingProvider = goog.forwardDeclare('org.pepstock.charba.client.options.IsScriptablePaddingProvider$impl');
@@ -55,7 +56,7 @@ class AbstractScriptablePadding extends AbstractPadding {
  
  m_resetCallback__() {
   if (!$Equality.$same(this.f_scriptablePaddingProvider__org_pepstock_charba_client_options_AbstractScriptablePadding_.m_getPaddingCallback__(), null)) {
-   this.f_scriptablePaddingProvider__org_pepstock_charba_client_options_AbstractScriptablePadding_.m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(null);
+   this.f_scriptablePaddingProvider__org_pepstock_charba_client_options_AbstractScriptablePadding_.m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(/**@type {PaddingCallback<T>}*/ (null));
   }
  }
  

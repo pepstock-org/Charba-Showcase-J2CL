@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ScatterDataset.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MA+BmB,c;;CAAA,W;EAAAA,Q;;;;QAMX,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;;CAAA,uD;EACNC,uI;;;;QASM,gB,gBAAuBC,M;EAAvBF,yB;EAAAA,qC;EAAAA,iF;EAAAA,iB;;;;CAAA,8D,gBAAuBE,M;EAC7BD,wK;;;;QAQM,6D,yBAAgCE,a;EAAhCH,yB;EAAAA,qC;EAAAA,qI;EAAAA,iB;;;;CAAA,2G,yBAAgCG,a;EACtCF,4M;;;;QASM,sE,yBAAgCE,a,iBAAuBD,M;EAAvDF,yB;EAAAA,qC;EAAAA,sJ;EAAAA,iB;;;;CAAA,oH,yBAAgCG,a,iBAAuBD,M;EAC7DD,6O;;;;QASS,iD,aAAoBG,I,iBAAcF,M;EAAlCF,yB;EAAAA,qC;EAAAA,wH;EAAAA,iB;;;;CAAA,+F,aAAoBI,I,iBAAcF,M;EAC3CD,+K;;;;QAUS,uG,aAAoBG,I,0BAAuBD,a,iBAAuBD,M;EAAlEF,yB;EAAAA,qC;EAAAA,6L;EAAAA,iB;;;;CAAA,qJ,aAAoBI,I,0BAAuBD,a,iBAAuBD,M;EAC3ED,qL;EAEAA,4K;EAEAA,oC;;;CASa,yD;EACbI,Y;;;CASW,kD,eAAeC,I;EAE1BC,4K;;;CASW,4D,qBAAqBC,Y;EAEhCD,4K;;;QA7FiB,O;EAAAE,iC;EAAAA,8B;EAAAA;",
+"lineCount":120,
+"mappings":"A;;;;;;;;;;;;;;MAgCmB,c;;CAAA,W;EAAAA,Q;;;;QAMX,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;;CAAA,uD;EACNC,uI;;;;QASM,gB,gBAAuBC,M;EAAvBF,yB;EAAAA,qC;EAAAA,iF;EAAAA,iB;;;;CAAA,8D,gBAAuBE,M;EAC7BD,wK;;;;QAQM,6D,yBAAgCE,a;EAAhCH,yB;EAAAA,qC;EAAAA,qI;EAAAA,iB;;;;CAAA,2G,yBAAgCG,a;EACtCF,4M;;;;QASM,sE,yBAAgCE,a,iBAAuBD,M;EAAvDF,yB;EAAAA,qC;EAAAA,sJ;EAAAA,iB;;;;CAAA,oH,yBAAgCG,a,iBAAuBD,M;EAC7DD,6O;;;;QASS,iD,aAAoBG,I,iBAAcF,M;EAAlCF,yB;EAAAA,qC;EAAAA,wH;EAAAA,iB;;;;CAAA,+F,aAAoBI,I,iBAAcF,M;EAC3CD,+K;;;;QAUS,uG,aAAoBG,I,0BAAuBD,a,iBAAuBD,M;EAAlEF,yB;EAAAA,qC;EAAAA,6L;EAAAA,iB;;;;CAAA,qJ,aAAoBI,I,0BAAuBD,a,iBAAuBD,M;EAC3ED,qL;EAEAA,4K;EAEAA,oC;;;CASa,yD;EACbI,Y;;;CASW,kD,eAAeC,I;EAE1BC,4K;;;CASW,4D,qBAAqBC,Y;EAEhCD,4K;;;CASW,8D,iBAAuBC,Y;EAElCD,4K;;;QAxGiB,O;EAAAE,iC;EAAAA,8B;EAAAA;",
 "sources":["ScatterDataset.java"],
 "names":["org.pepstock.charba.client.data.ScatterDataset.<synthetic: ctor_js>","org.pepstock.charba.client.data.ScatterDataset.<synthetic: ctor_create>","org.pepstock.charba.client.data.ScatterDataset.<init>","hidden","defaultValues","type","org.pepstock.charba.client.data.ScatterDataset.mustUseDataPoints","fill","org.pepstock.charba.client.data.ScatterDataset.setFill","fillCallback","org.pepstock.charba.client.data.ScatterDataset.<clinit>"]
 }

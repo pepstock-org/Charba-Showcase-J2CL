@@ -15,6 +15,7 @@ let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$
 let IsProvider = goog.forwardDeclare('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
 let Animation = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animation$impl');
 let AnimationContainer = goog.forwardDeclare('org.pepstock.charba.client.configuration.AnimationContainer$impl');
+let Animations = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animations$impl');
 let ConfigurationOptions = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationOptions$impl');
 let Font = goog.forwardDeclare('org.pepstock.charba.client.configuration.Font$impl');
 let Padding = goog.forwardDeclare('org.pepstock.charba.client.configuration.Padding$impl');
@@ -29,7 +30,6 @@ let TextAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TextAlign$
 let TextDirection = goog.forwardDeclare('org.pepstock.charba.client.enums.TextDirection$impl');
 let TooltipAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TooltipAlign$impl');
 let TooltipItem = goog.forwardDeclare('org.pepstock.charba.client.items.TooltipItem$impl');
-let IsAnimations = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimations$impl');
 
 /**
  * @implements {HasAnimation}
@@ -38,11 +38,11 @@ class Tooltips extends ConfigurationOptionsContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?):void>}*/
   this.f_externalCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?, ?):number>}*/
   this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_;
   /**@type {TooltipExternalCallback}*/
   this.f_externalCallback__org_pepstock_charba_client_configuration_Tooltips_;
@@ -90,21 +90,21 @@ class Tooltips extends ConfigurationOptionsContainer {
   this.f_footerFont__org_pepstock_charba_client_configuration_Tooltips_ = Font.$create__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(IsProvider.$adapt(() =>{
    return this.m_getConfiguration__().m_getTooltips__().m_getFooterFont__();
   }));
-  this.f_externalCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_.callback = (/** Object */ context, /** ? */ tooltipContext) =>{
+  this.f_externalCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_.callback = (/** ? */ tooltipContext) =>{
    let externalCallback = this.m_getExternalCallback__();
    if (!$Equality.$same(externalCallback, null)) {
     let tempContext = TooltipContext.$create__org_pepstock_charba_client_commons_NativeObject(tooltipContext);
     externalCallback.m_onExternal__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_items_TooltipModel(this.m_getChart__(), tempContext.m_getModel___$pp_org_pepstock_charba_client_configuration());
    }
   };
-  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_.callback = (/** Object */ context_1, /** ? */ item1, /** ? */ item2) =>{
+  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_.callback = (/** ? */ item1, /** ? */ item2) =>{
    let itemSortCallback = this.m_getItemSortCallback__();
    if (!$Equality.$same(itemSortCallback, null)) {
     return itemSortCallback.m_onItemSort__org_pepstock_charba_client_IsChart__java_lang_Object__java_lang_Object(this.m_getChart__(), TooltipItem.f_FACTORY__org_pepstock_charba_client_items_TooltipItem.m_create__org_pepstock_charba_client_commons_NativeObject(item1), TooltipItem.f_FACTORY__org_pepstock_charba_client_items_TooltipItem.m_create__org_pepstock_charba_client_commons_NativeObject(item2));
    }
    return 0;
   };
-  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_.callback = (/** Object */ context_2, /** ? */ item) =>{
+  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_.callback = (/** ? */ item) =>{
    let filterCallback = this.m_getFilterCallback__();
    if (!$Equality.$same(filterCallback, null)) {
     return filterCallback.m_onFilter__org_pepstock_charba_client_IsChart__java_lang_Object(this.m_getChart__(), TooltipItem.f_FACTORY__org_pepstock_charba_client_items_TooltipItem.m_create__org_pepstock_charba_client_commons_NativeObject(item));
@@ -465,7 +465,7 @@ class Tooltips extends ConfigurationOptionsContainer {
   return HasAnimation.m_getAnimation__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }
  //Default method forwarding stub.
- /** @override @return {IsAnimations} */
+ /** @override @return {Animations} */
  m_getAnimations__() {
   return HasAnimation.m_getAnimations__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }
@@ -486,9 +486,9 @@ class Tooltips extends ConfigurationOptionsContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_Tooltips() {
-  this.f_externalCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_ = /**@type {CharbaCallbackProxy<?function(Object, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_ = /**@type {CharbaCallbackProxy<?function(Object, ?, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_externalCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_ = /**@type {CharbaCallbackProxy<?function(?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_itemSortCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_ = /**@type {CharbaCallbackProxy<?function(?, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_filterCallbackProxy__org_pepstock_charba_client_configuration_Tooltips_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_externalCallback__org_pepstock_charba_client_configuration_Tooltips_ = null;
   this.f_itemSortCallback__org_pepstock_charba_client_configuration_Tooltips_ = null;
   this.f_filterCallback__org_pepstock_charba_client_configuration_Tooltips_ = null;

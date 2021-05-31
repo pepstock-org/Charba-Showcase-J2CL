@@ -12,8 +12,8 @@ let InternalNumbersAnimationCollection = goog.forwardDeclare('org.pepstock.charb
 let InternalOpacityAnimationCollection = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTooltips.InternalOpacityAnimationCollection$impl');
 let AnimationType = goog.forwardDeclare('org.pepstock.charba.client.enums.AnimationType$impl');
 let DefaultAnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey$impl');
-let IsAnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationCollectionKey$impl');
-let IsAnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+let AnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationCollectionKey$impl');
+let AnimationPropertyKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -34,10 +34,10 @@ class InternalAnimations extends DefaultAnimations {
   this.$ctor__org_pepstock_charba_client_defaults_globals_DefaultAnimations__();
  }
  /** @override @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  if (IsAnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection)) {
+ m_has__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  if (AnimationCollectionKey.m_isValid__org_pepstock_charba_client_options_AnimationCollectionKey(collection)) {
    for (let $iterator = InternalAnimations.f_DEFAULT_ANIMATION_COLLECTION_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_.m_iterator__(); $iterator.m_hasNext__(); ) {
-    let defaultCollection = /**@type {IsAnimationCollectionKey}*/ ($Casts.$to($iterator.m_next__(), IsAnimationCollectionKey));
+    let defaultCollection = /**@type {AnimationCollectionKey}*/ ($Casts.$to($iterator.m_next__(), AnimationCollectionKey));
     {
      if (Key.m_equals__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(defaultCollection, collection)) {
       return true;
@@ -48,8 +48,8 @@ class InternalAnimations extends DefaultAnimations {
   return false;
  }
  /** @override @return {IsDefaultAnimationCollection} */
- m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  if (this.m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection)) {
+ m_get__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  if (this.m_has__org_pepstock_charba_client_options_AnimationCollectionKey(collection)) {
    if (Key.m_equals__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(DefaultAnimationCollectionKey.f_NUMBERS__org_pepstock_charba_client_enums_DefaultAnimationCollectionKey, collection)) {
     return InternalAnimations.f_NUMBERS_COLLECTION__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_;
    } else if (Key.m_equals__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalAnimations.f_DEFAULT_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_, collection)) {
@@ -58,7 +58,7 @@ class InternalAnimations extends DefaultAnimations {
   }
   return null;
  }
- /** @return {IsAnimationPropertyKey} */
+ /** @return {AnimationPropertyKey} */
  static get f_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_() {
   return (InternalAnimations.$clinit(), InternalAnimations.$static_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_);
  }
@@ -67,9 +67,9 @@ class InternalAnimations extends DefaultAnimations {
   InternalAnimations.$clinit = () =>{};
   InternalAnimations.$loadModules();
   DefaultAnimations.$clinit();
-  InternalAnimations.$static_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = IsAnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("opacity", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType);
-  InternalAnimations.f_DEFAULT_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = IsAnimationCollectionKey.m_create__java_lang_String__arrayOf_org_pepstock_charba_client_options_IsAnimationPropertyKey("opacity", /**@type {!Array<IsAnimationPropertyKey>}*/ ($Arrays.$init([InternalAnimations.$static_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_], IsAnimationPropertyKey)));
-  InternalAnimations.f_DEFAULT_ANIMATION_COLLECTION_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = /**@type {List<IsAnimationCollectionKey>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<IsAnimationCollectionKey>}*/ ($Arrays.$init([DefaultAnimationCollectionKey.f_NUMBERS__org_pepstock_charba_client_enums_DefaultAnimationCollectionKey, InternalAnimations.f_DEFAULT_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_], IsAnimationCollectionKey))));
+  InternalAnimations.$static_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = AnimationPropertyKey.m_create__java_lang_String__org_pepstock_charba_client_enums_AnimationType("opacity", AnimationType.f_NUMBER__org_pepstock_charba_client_enums_AnimationType);
+  InternalAnimations.f_DEFAULT_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = AnimationCollectionKey.m_create__java_lang_String__arrayOf_org_pepstock_charba_client_options_AnimationPropertyKey("opacity", /**@type {!Array<AnimationPropertyKey>}*/ ($Arrays.$init([InternalAnimations.$static_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_], AnimationPropertyKey)));
+  InternalAnimations.f_DEFAULT_ANIMATION_COLLECTION_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = /**@type {List<AnimationCollectionKey>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<AnimationCollectionKey>}*/ ($Arrays.$init([DefaultAnimationCollectionKey.f_NUMBERS__org_pepstock_charba_client_enums_DefaultAnimationCollectionKey, InternalAnimations.f_DEFAULT_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_], AnimationCollectionKey))));
   InternalAnimations.f_NUMBERS_COLLECTION__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = InternalNumbersAnimationCollection.$create__();
   InternalAnimations.f_OPACITY_COLLECTION__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_ = InternalOpacityAnimationCollection.$create__();
  }
@@ -85,17 +85,17 @@ class InternalAnimations extends DefaultAnimations {
   InternalOpacityAnimationCollection = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTooltips.InternalOpacityAnimationCollection$impl');
   AnimationType = goog.module.get('org.pepstock.charba.client.enums.AnimationType$impl');
   DefaultAnimationCollectionKey = goog.module.get('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey$impl');
-  IsAnimationCollectionKey = goog.module.get('org.pepstock.charba.client.options.IsAnimationCollectionKey$impl');
-  IsAnimationPropertyKey = goog.module.get('org.pepstock.charba.client.options.IsAnimationPropertyKey$impl');
+  AnimationCollectionKey = goog.module.get('org.pepstock.charba.client.options.AnimationCollectionKey$impl');
+  AnimationPropertyKey = goog.module.get('org.pepstock.charba.client.options.AnimationPropertyKey$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }
-/**@private {IsAnimationPropertyKey}*/
+/**@private {AnimationPropertyKey}*/
 InternalAnimations.$static_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_;
-/**@type {IsAnimationCollectionKey}*/
+/**@type {AnimationCollectionKey}*/
 InternalAnimations.f_DEFAULT_OPACITY__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_;
-/**@type {List<IsAnimationCollectionKey>}*/
+/**@type {List<AnimationCollectionKey>}*/
 InternalAnimations.f_DEFAULT_ANIMATION_COLLECTION_KEYS__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_;
 /**@type {DefaultAnimationCollection}*/
 InternalAnimations.f_NUMBERS_COLLECTION__org_pepstock_charba_client_defaults_globals_DefaultTooltips_InternalAnimations_;

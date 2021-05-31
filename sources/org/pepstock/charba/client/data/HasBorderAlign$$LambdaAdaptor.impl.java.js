@@ -56,6 +56,11 @@ class $LambdaAdaptor extends j_l_Object {
  m_setBorderAlign__org_pepstock_charba_client_callbacks_BorderAlignCallback(/** BorderAlignCallback */ arg0) {
   HasBorderAlign.m_setBorderAlign__$default__org_pepstock_charba_client_data_HasBorderAlign__org_pepstock_charba_client_callbacks_BorderAlignCallback(this, arg0);
  }
+ //Default method forwarding stub.
+ /** @override */
+ m_setBorderAlign__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  HasBorderAlign.m_setBorderAlign__$default__org_pepstock_charba_client_data_HasBorderAlign__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
+ }
  
  static $clinit() {
   $LambdaAdaptor.$clinit = () =>{};

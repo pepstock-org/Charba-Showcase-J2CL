@@ -2,7 +2,7 @@ goog.module('org.pepstock.charba.client.datalabels.IsDefaultLabels$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 
-let IsDataLabelId = goog.forwardDeclare('org.pepstock.charba.client.datalabels.IsDataLabelId$impl');
+let DataLabelId = goog.forwardDeclare('org.pepstock.charba.client.datalabels.DataLabelId$impl');
 let LabelItem = goog.forwardDeclare('org.pepstock.charba.client.datalabels.LabelItem$impl');
 
 /**
@@ -10,16 +10,16 @@ let LabelItem = goog.forwardDeclare('org.pepstock.charba.client.datalabels.Label
  */
 class IsDefaultLabels {
  /** @abstract @return {LabelItem} */
- m_getLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ key) {}
+ m_getLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ key) {}
  /** @abstract @return {boolean} */
- m_hasLabel__org_pepstock_charba_client_datalabels_IsDataLabelId(/** IsDataLabelId */ key) {}
+ m_hasLabel__org_pepstock_charba_client_datalabels_DataLabelId(/** DataLabelId */ key) {}
  /** @return {LabelItem} */
- static m_getLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_IsDataLabelId(/** !IsDefaultLabels */ $thisArg, /** IsDataLabelId */ key) {
+ static m_getLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_DataLabelId(/** !IsDefaultLabels */ $thisArg, /** DataLabelId */ key) {
   IsDefaultLabels.$clinit();
   return null;
  }
  /** @return {boolean} */
- static m_hasLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_IsDataLabelId(/** !IsDefaultLabels */ $thisArg, /** IsDataLabelId */ key) {
+ static m_hasLabel__$default__org_pepstock_charba_client_datalabels_IsDefaultLabels__org_pepstock_charba_client_datalabels_DataLabelId(/** !IsDefaultLabels */ $thisArg, /** DataLabelId */ key) {
   IsDefaultLabels.$clinit();
   return false;
  }

@@ -89,7 +89,7 @@ class Padding extends AbstractDynamicConfiguration {
  
  m_resetCallback__() {
   if (!$Equality.$same(this.f_scriptablePaddingProvider__org_pepstock_charba_client_configuration_Padding_, null) && !$Equality.$same(this.f_scriptablePaddingProvider__org_pepstock_charba_client_configuration_Padding_.m_getPaddingCallback__(), null)) {
-   this.f_scriptablePaddingProvider__org_pepstock_charba_client_configuration_Padding_.m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(null);
+   this.f_scriptablePaddingProvider__org_pepstock_charba_client_configuration_Padding_.m_setPadding__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {Function}*/ (null));
   }
  }
  //Default method forwarding stub.

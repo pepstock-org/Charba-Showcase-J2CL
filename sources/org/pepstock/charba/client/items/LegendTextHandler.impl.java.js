@@ -5,7 +5,7 @@ const PropertyHandler = goog.require('org.pepstock.charba.client.commons.Propert
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let SafeHtml = goog.forwardDeclare('org.pepstock.charba.client.dom.safehtml.SafeHtml$impl');
 let SafeHtmlBuilder = goog.forwardDeclare('org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.LegendTextHandler.Property$impl');
@@ -32,7 +32,7 @@ class LegendTextHandler extends PropertyHandler {
  //Initialization from constructor 'LegendTextHandler(AbstractNode, OptionsEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_LegendTextHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_options_OptionsEnvelop(/** AbstractNode */ parent, /** OptionsEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_LegendTextHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_NativeObject(parent, /**@type {?}*/ (/**@type {OptionsEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), OptionsEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_LegendTextHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_NativeObject(parent, /**@type {?}*/ (/**@type {OptionsEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), OptionsEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'LegendTextHandler(NativeObject)'.
  /** @return {!LegendTextHandler} */
@@ -108,7 +108,7 @@ class LegendTextHandler extends PropertyHandler {
  
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   SafeHtmlBuilder = goog.module.get('org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.LegendTextHandler.Property$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');

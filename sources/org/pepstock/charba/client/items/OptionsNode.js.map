@@ -2,7 +2,7 @@
 "version":3,
 "file":"OptionsNode.impl.java.js",
 "lineCount":31,
-"mappings":"A;;;;;;;;;;MA4BmB,W;;CAAA,W;EAAAA,Q;;;QASX,8H,gBAAmBC,O,gCAAgCC,a,yBAA0CC,O;EAA7FC,sB;EAAAA,kC;EAAAA,sN;EAAAA,iB;;;CAAA,0K,gBAAmBH,O,gCAAgCC,a,yBAA0CC,O;EACnGE,qZ;;;QAViB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"mappings":"A;;;;;;;;;;MA4BmB,W;;CAAA,W;EAAAA,Q;;;QASX,8H,gBAAmBC,O,gCAAgCC,a,yBAA0CC,O;EAA7FC,sB;EAAAA,kC;EAAAA,sN;EAAAA,iB;;;CAAA,0K,gBAAmBH,O,gCAAgCC,a,yBAA0CC,O;EACnGE,iZ;;;QAViB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
 "sources":["OptionsNode.java"],
 "names":["org.pepstock.charba.client.items.OptionsNode.<synthetic: ctor_js>","chartId","defaultValues","envelop","org.pepstock.charba.client.items.OptionsNode.<synthetic: ctor_create>","org.pepstock.charba.client.items.OptionsNode.<init>","org.pepstock.charba.client.items.OptionsNode.<clinit>"]
 }

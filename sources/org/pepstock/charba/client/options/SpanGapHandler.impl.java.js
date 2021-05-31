@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const PropertyHandler = goog.require('org.pepstock.charba.client.commons.PropertyHandler$impl');
 
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let DataEnvelop = goog.forwardDeclare('org.pepstock.charba.client.data.DataEnvelop$impl');
 let IsDefaultOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultOptions$impl');
@@ -31,7 +31,7 @@ class SpanGapHandler extends PropertyHandler {
  //Initialization from constructor 'SpanGapHandler(AbstractNode, IsDefaultOptions, DataEnvelop)'.
  
  $ctor__org_pepstock_charba_client_options_SpanGapHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultOptions__org_pepstock_charba_client_data_DataEnvelop(/** AbstractNode */ parent, /** IsDefaultOptions */ defaultValues, /** DataEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_SpanGapHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultOptions__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), DataEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_options_SpanGapHandler__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultOptions__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), DataEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'SpanGapHandler(AbstractNode, IsDefaultOptions, NativeObject)'.
  /** @return {!SpanGapHandler} */
@@ -77,7 +77,7 @@ class SpanGapHandler extends PropertyHandler {
  }
  
  static $loadModules() {
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   DataEnvelop = goog.module.get('org.pepstock.charba.client.data.DataEnvelop$impl');
   IsDefaultOptions = goog.module.get('org.pepstock.charba.client.defaults.IsDefaultOptions$impl');

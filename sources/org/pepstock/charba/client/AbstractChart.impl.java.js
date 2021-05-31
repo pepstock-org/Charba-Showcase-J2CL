@@ -57,7 +57,7 @@ let DatasetItem = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetI
 let DatasetReference = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetReference$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let ExtendedOptions = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedOptions$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let Plugins = goog.forwardDeclare('org.pepstock.charba.client.plugins.Plugins$impl');
 let ResourcesType = goog.forwardDeclare('org.pepstock.charba.client.resources.ResourcesType$impl');
 let CTimer = goog.forwardDeclare('org.pepstock.charba.client.utils.CTimer$impl');
@@ -76,7 +76,7 @@ class AbstractChart extends HandlerManager {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_canvasCallbackProxy__org_pepstock_charba_client_AbstractChart_;
   /**@type {Chart}*/
   this.f_chart__org_pepstock_charba_client_AbstractChart_;
@@ -124,8 +124,8 @@ class AbstractChart extends HandlerManager {
    this.f_canvas__org_pepstock_charba_client_AbstractChart_ = DOMBuilder.m_get__().m_createCanvasElement__();
    this.f_canvas__org_pepstock_charba_client_AbstractChart_.id = j_l_String.m_valueOf__java_lang_Object(this.f_id__org_pepstock_charba_client_AbstractChart_) + j_l_String.m_valueOf__java_lang_Object(AbstractChart.f_SUFFIX_CANVAS_ELEMENT_ID__org_pepstock_charba_client_AbstractChart_);
    this.f_element__org_pepstock_charba_client_AbstractChart_.appendChild(this.f_canvas__org_pepstock_charba_client_AbstractChart_);
-   this.f_canvasCallbackProxy__org_pepstock_charba_client_AbstractChart_.callback = (/** Object */ context, /** Object */ event) =>{
-    event.preventDefault();
+   this.f_canvasCallbackProxy__org_pepstock_charba_client_AbstractChart_.callback = (/** Object */ arg0) =>{
+    arg0.preventDefault();
    };
    this.f_canvas__org_pepstock_charba_client_AbstractChart_.addEventListener(BaseEventTypes.f_MOUSE_DOWN__org_pepstock_charba_client_dom_BaseEventTypes, this.f_canvasCallbackProxy__org_pepstock_charba_client_AbstractChart_.proxy);
   } else {
@@ -352,12 +352,12 @@ class AbstractChart extends HandlerManager {
  }
  /** @override */
  m_update__() {
-  this.m_update__org_pepstock_charba_client_options_IsTransitionKey(/**@type {IsTransitionKey}*/ (null));
+  this.m_update__org_pepstock_charba_client_options_TransitionKey(/**@type {TransitionKey}*/ (null));
  }
  /** @override */
- m_update__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ mode) {
+ m_update__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ mode) {
   if (this.m_isInitialized__()) {
-   if (!$Equality.$same(mode, null) && IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(mode)) {
+   if (!$Equality.$same(mode, null) && TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(mode)) {
     this.m_applyConfiguration__();
     this.f_chart__org_pepstock_charba_client_AbstractChart_.update(mode.m_value__());
    } else {
@@ -373,19 +373,19 @@ class AbstractChart extends HandlerManager {
     this.m_applyConfiguration__();
     this.f_chart__org_pepstock_charba_client_AbstractChart_.update();
    } else {
-    this.m_getOptions__().m_getTransitions__().m_set__org_pepstock_charba_client_options_IsTransitionKey__org_pepstock_charba_client_options_AnimationTransition(UpdateConfiguration.f_UPDATE__org_pepstock_charba_client_UpdateConfiguration, configuration.m_getTransition___$pp_org_pepstock_charba_client());
-    this.m_update__org_pepstock_charba_client_options_IsTransitionKey(UpdateConfiguration.f_UPDATE__org_pepstock_charba_client_UpdateConfiguration);
+    this.m_getOptions__().m_getTransitions__().m_set__org_pepstock_charba_client_options_TransitionKey__org_pepstock_charba_client_options_AnimationTransition(UpdateConfiguration.f_UPDATE__org_pepstock_charba_client_UpdateConfiguration, configuration.m_getTransition___$pp_org_pepstock_charba_client());
+    this.m_update__org_pepstock_charba_client_options_TransitionKey(UpdateConfiguration.f_UPDATE__org_pepstock_charba_client_UpdateConfiguration);
    }
   }
  }
  /** @override */
  m_reconfigure__() {
-  this.m_reconfigure__org_pepstock_charba_client_options_IsTransitionKey(/**@type {IsTransitionKey}*/ (null));
+  this.m_reconfigure__org_pepstock_charba_client_options_TransitionKey(/**@type {TransitionKey}*/ (null));
  }
  /** @override */
- m_reconfigure__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ mode) {
+ m_reconfigure__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ mode) {
   if (this.m_reconfigureOptions___$p_org_pepstock_charba_client_AbstractChart()) {
-   this.m_update__org_pepstock_charba_client_options_IsTransitionKey(mode);
+   this.m_update__org_pepstock_charba_client_options_TransitionKey(mode);
    this.m_updateForReconfiguring___$p_org_pepstock_charba_client_AbstractChart();
   }
  }
@@ -583,9 +583,9 @@ class AbstractChart extends HandlerManager {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_AbstractChart() {
-  this.f_canvasCallbackProxy__org_pepstock_charba_client_AbstractChart_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_canvasCallbackProxy__org_pepstock_charba_client_AbstractChart_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_chart__org_pepstock_charba_client_AbstractChart_ = null;
-  this.f_id__org_pepstock_charba_client_AbstractChart_ = DOMBuilder.m_get__().m_createUniqueId__();
+  this.f_id__org_pepstock_charba_client_AbstractChart_ = DOMBuilder.m_get__().m_createUniqueChartId__();
   this.f_handlerRegistrations__org_pepstock_charba_client_AbstractChart_ = /**@type {!ArrayList<HandlerRegistration>}*/ (ArrayList.$create__());
   this.f_configuration__org_pepstock_charba_client_AbstractChart_ = Configuration.$create__();
   this.f_data__org_pepstock_charba_client_AbstractChart_ = Data.$create__();
@@ -651,7 +651,7 @@ class AbstractChart extends HandlerManager {
   DatasetReference = goog.module.get('org.pepstock.charba.client.items.DatasetReference$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   ExtendedOptions = goog.module.get('org.pepstock.charba.client.options.ExtendedOptions$impl');
-  IsTransitionKey = goog.module.get('org.pepstock.charba.client.options.IsTransitionKey$impl');
+  TransitionKey = goog.module.get('org.pepstock.charba.client.options.TransitionKey$impl');
   Plugins = goog.module.get('org.pepstock.charba.client.plugins.Plugins$impl');
   ResourcesType = goog.module.get('org.pepstock.charba.client.resources.ResourcesType$impl');
   CTimer = goog.module.get('org.pepstock.charba.client.utils.CTimer$impl');

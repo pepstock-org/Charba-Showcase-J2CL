@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsCallbackPropertyHandler$$LambdaAdaptor.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;MAuBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yF;EAAAA,sK;;;CAAA,4J;EAAAC,iC;EAAAA,4F;;;CAAA,oC;EAAAC,gD;EAAAA,6H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["IsCallbackPropertyHandler.java"],
+"names":["org.pepstock.charba.client.commons.IsCallbackPropertyHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.commons.IsCallbackPropertyHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.commons.IsCallbackPropertyHandler$$LambdaAdaptor.removeChartScope","org.pepstock.charba.client.commons.IsCallbackPropertyHandler$$LambdaAdaptor.<clinit>"]
+}
+

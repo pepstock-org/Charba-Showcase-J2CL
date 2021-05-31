@@ -8,10 +8,10 @@ let HashMap = goog.forwardDeclare('java.util.HashMap$impl');
 let Map = goog.forwardDeclare('java.util.Map$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class ScalesNode extends NativeObjectContainer {
@@ -28,7 +28,7 @@ class ScalesNode extends NativeObjectContainer {
  }
  
  $ctor__org_pepstock_charba_client_items_ScalesNode__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__()));
  }
  /** @return {Map<?string, ScaleItem>} */
  m_getItems__() {
@@ -38,7 +38,7 @@ class ScalesNode extends NativeObjectContainer {
    for (let $iterator = keys.m_iterator__(); $iterator.m_hasNext__(); ) {
     let key = /**@type {Key}*/ ($Casts.$to($iterator.m_next__(), Key));
     {
-     result.put(key.m_value__(), ScaleItem.$create__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_commons_NativeObject(IsScaleId.m_create__java_lang_String(key.m_value__()), this.m_getValue__org_pepstock_charba_client_commons_Key(key)));
+     result.put(key.m_value__(), ScaleItem.$create__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_commons_NativeObject(ScaleId.m_create__java_lang_String(key.m_value__()), this.m_getValue__org_pepstock_charba_client_commons_Key(key)));
     }
    }
   }
@@ -51,7 +51,7 @@ class ScalesNode extends NativeObjectContainer {
    for (let $iterator = keys.m_iterator__(); $iterator.m_hasNext__(); ) {
     let key = /**@type {Key}*/ ($Casts.$to($iterator.m_next__(), Key));
     {
-     let scaleItem = ScaleItem.$create__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_commons_NativeObject(IsScaleId.m_create__java_lang_String(key.m_value__()), this.m_getValue__org_pepstock_charba_client_commons_Key(key));
+     let scaleItem = ScaleItem.$create__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_commons_NativeObject(ScaleId.m_create__java_lang_String(key.m_value__()), this.m_getValue__org_pepstock_charba_client_commons_Key(key));
      if (scaleItem.m_isInside__org_pepstock_charba_client_dom_BaseNativeEvent(event)) {
       return scaleItem;
      }
@@ -80,10 +80,10 @@ class ScalesNode extends NativeObjectContainer {
   HashMap = goog.module.get('java.util.HashMap$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ScaleItem = goog.module.get('org.pepstock.charba.client.items.ScaleItem$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }

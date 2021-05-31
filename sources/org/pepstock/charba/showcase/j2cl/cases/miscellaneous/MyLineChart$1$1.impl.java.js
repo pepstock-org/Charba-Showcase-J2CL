@@ -9,7 +9,6 @@ let ControllerType = goog.forwardDeclare('org.pepstock.charba.client.controllers
 let Canvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
 let Context2dItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
 let DatasetElement = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetElement$impl');
-let MyLineChart = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$impl');
 let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.$1$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -21,25 +20,20 @@ class $1_$1 extends AbstractController {
   this.$outer_this__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1_1;
  }
  /** @return {!$1_$1} */
- static $create__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1(/** $1 */ $outer_this) {
+ static $create__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1__org_pepstock_charba_client_controllers_ControllerType(/** $1 */ $outer_this, /** ControllerType */ $_0) {
   $1_$1.$clinit();
   let $instance = new $1_$1();
-  $instance.$ctor__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1_1__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1($outer_this);
+  $instance.$ctor__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1_1__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1__org_pepstock_charba_client_controllers_ControllerType($outer_this, $_0);
   return $instance;
  }
  
- $ctor__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1_1__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1(/** $1 */ $outer_this) {
+ $ctor__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1_1__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1__org_pepstock_charba_client_controllers_ControllerType(/** $1 */ $outer_this, /** ControllerType */ $_0) {
   this.$outer_this__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart_1_1 = $outer_this;
-  this.$ctor__org_pepstock_charba_client_controllers_AbstractController__();
- }
- /** @override @return {ControllerType} */
- m_getType__() {
-  return MyLineChart.f_TYPE__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyLineChart;
+  this.$ctor__org_pepstock_charba_client_controllers_AbstractController__org_pepstock_charba_client_controllers_ControllerType($_0);
  }
  /** @override */
- m_draw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ jsThis, /** IsChart */ chart) {
-  super.m_draw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(jsThis, chart);
-  let item = chart.m_getDatasetItem__int($Overlay.m_getIndex__$devirt__org_pepstock_charba_client_controllers_ControllerContext(jsThis));
+ m_onAfterDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
+  let item = chart.m_getDatasetItem__int($Overlay.m_getIndex__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context));
   let elements = item.m_getElements__();
   for (let $iterator = elements.m_iterator__(); $iterator.m_hasNext__(); ) {
    let elem = /**@type {DatasetElement}*/ ($Casts.$to($iterator.m_next__(), DatasetElement));
@@ -69,7 +63,6 @@ class $1_$1 extends AbstractController {
   Canvas_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
   Context2dItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
   DatasetElement = goog.module.get('org.pepstock.charba.client.items.DatasetElement$impl');
-  MyLineChart = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }

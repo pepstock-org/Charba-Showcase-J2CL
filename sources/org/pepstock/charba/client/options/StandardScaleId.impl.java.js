@@ -2,10 +2,10 @@ goog.module('org.pepstock.charba.client.options.StandardScaleId$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 const AbstractStandardKey = goog.require('org.pepstock.charba.client.options.AbstractStandardKey$impl');
-const IsScaleId = goog.require('org.pepstock.charba.client.options.IsScaleId$impl');
+const ScaleId = goog.require('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
- * @implements {IsScaleId}
+ * @implements {ScaleId}
  */
 class StandardScaleId extends AbstractStandardKey {
  /** @protected */
@@ -22,7 +22,7 @@ class StandardScaleId extends AbstractStandardKey {
  
  $ctor__org_pepstock_charba_client_options_StandardScaleId__java_lang_String(/** ?string */ value) {
   this.$ctor__org_pepstock_charba_client_options_AbstractStandardKey__java_lang_String(value);
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(this);
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(this);
  }
  
  static $clinit() {
@@ -37,7 +37,7 @@ class StandardScaleId extends AbstractStandardKey {
  
  static $loadModules() {}
 }
-IsScaleId.$markImplementor(StandardScaleId);
+ScaleId.$markImplementor(StandardScaleId);
 $Util.$setClassMetadata(StandardScaleId, "org.pepstock.charba.client.options.StandardScaleId");
 
 exports = StandardScaleId;

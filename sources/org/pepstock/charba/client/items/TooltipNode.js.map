@@ -2,7 +2,7 @@
 "version":3,
 "file":"TooltipNode.impl.java.js",
 "lineCount":38,
-"mappings":"A;;;;;;;;;;MA4BmB,W;;CAAA,W;EAAAA,Q;EAAAA;OAGS,sDAHTA,C;;;QAUX,gD,wBAAuCC,O;EAAvCC,sB;EAAAA,kC;EAAAA,gH;EAAAA,iB;;;CAAA,4F,wBAAuCD,O;EAAvCE,iC;EAENA,sT;;;CAQmB,Y;EACnBC,mE;;;QArBiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"mappings":"A;;;;;;;;;;MA4BmB,W;;CAAA,W;EAAAA,Q;EAAAA;OAGS,sDAHTA,C;;;QAUX,gD,wBAAuCC,O;EAAvCC,sB;EAAAA,kC;EAAAA,gH;EAAAA,iB;;;CAAA,4F,wBAAuCD,O;EAAvCE,iC;EAENA,kT;;;CAQmB,Y;EACnBC,mE;;;QArBiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
 "sources":["TooltipNode.java"],
 "names":["org.pepstock.charba.client.items.TooltipNode.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.TooltipNode.<synthetic: ctor_create>","org.pepstock.charba.client.items.TooltipNode.<init>","org.pepstock.charba.client.items.TooltipNode.getModel","org.pepstock.charba.client.items.TooltipNode.<clinit>"]
 }

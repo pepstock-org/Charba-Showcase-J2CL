@@ -3,7 +3,7 @@ goog.module('org.pepstock.charba.client.items.PluginEventArgument$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ChartEventContext = goog.forwardDeclare('org.pepstock.charba.client.events.ChartEventContext$impl');
 let ItemsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.items.ItemsEnvelop$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.PluginEventArgument.Property$impl');
@@ -27,7 +27,7 @@ class PluginEventArgument extends NativeObjectContainer {
  }
  
  $ctor__org_pepstock_charba_client_items_PluginEventArgument__org_pepstock_charba_client_plugins_PluginsEnvelop(/** PluginsEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {PluginsEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), PluginsEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {PluginsEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), PluginsEnvelop)).m_getContent__()));
   this.f_eventContext__org_pepstock_charba_client_items_PluginEventArgument_ = ChartEventContext.$create__org_pepstock_charba_client_items_ItemsEnvelop(/**@type {!ItemsEnvelop<?>}*/ (ItemsEnvelop.$create__java_lang_Object__boolean(this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_EVENT__org_pepstock_charba_client_items_PluginEventArgument_Property), true)));
  }
  /** @return {ChartEventContext} */
@@ -50,7 +50,7 @@ class PluginEventArgument extends NativeObjectContainer {
  }
  
  static $loadModules() {
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ChartEventContext = goog.module.get('org.pepstock.charba.client.events.ChartEventContext$impl');
   ItemsEnvelop = goog.module.get('org.pepstock.charba.client.items.ItemsEnvelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.PluginEventArgument.Property$impl');

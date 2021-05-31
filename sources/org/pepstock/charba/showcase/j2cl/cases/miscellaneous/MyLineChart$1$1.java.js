@@ -8,7 +8,6 @@ goog.require('org.pepstock.charba.client.controllers.ControllerType');
 goog.require('org.pepstock.charba.client.dom.elements.Canvas.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay');
 goog.require('org.pepstock.charba.client.items.DatasetElement');
-goog.require('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.$1');
 goog.require('vmbootstrap.Casts');
 

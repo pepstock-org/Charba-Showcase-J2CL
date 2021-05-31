@@ -1,12 +1,15 @@
 goog.module('org.pepstock.charba.client.options.TypedDataset$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
+const HasCallbackScope = goog.require('org.pepstock.charba.client.commons.HasCallbackScope$impl');
 const IsDefaultTypedDataset = goog.require('org.pepstock.charba.client.defaults.IsDefaultTypedDataset$impl');
 const AbstractModel = goog.require('org.pepstock.charba.client.options.AbstractModel$impl');
 const HasAnimationOptions = goog.require('org.pepstock.charba.client.options.HasAnimationOptions$impl');
 const HasBarDatasetOptions = goog.require('org.pepstock.charba.client.options.HasBarDatasetOptions$impl');
 
+let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
+let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let Animation = goog.forwardDeclare('org.pepstock.charba.client.options.Animation$impl');
 let AnimationContainer = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationContainer$impl');
 let Animations = goog.forwardDeclare('org.pepstock.charba.client.options.Animations$impl');
@@ -21,6 +24,7 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {IsDefaultTypedDataset}
  * @implements {HasBarDatasetOptions}
  * @implements {HasAnimationOptions}
+ * @implements {HasCallbackScope}
  */
 class TypedDataset extends AbstractModel {
  /** @protected */
@@ -32,20 +36,27 @@ class TypedDataset extends AbstractModel {
   this.f_animationContainer__org_pepstock_charba_client_options_TypedDataset_;
   /**@type {Type}*/
   this.f_type__org_pepstock_charba_client_options_TypedDataset_;
+  /**@type {?string}*/
+  this.f_scope__org_pepstock_charba_client_options_TypedDataset_;
  }
  /** @return {!TypedDataset} */
- static $create__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject(/** Datasets */ options, /** Type */ type, /** IsDefaultTypedDataset */ defaultValues, /** ? */ nativeObject) {
+ static $create__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject__java_lang_String(/** Datasets */ options, /** Type */ type, /** IsDefaultTypedDataset */ defaultValues, /** ? */ nativeObject, /** ?string */ scope) {
   TypedDataset.$clinit();
   let $instance = new TypedDataset();
-  $instance.$ctor__org_pepstock_charba_client_options_TypedDataset__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject(options, type, defaultValues, nativeObject);
+  $instance.$ctor__org_pepstock_charba_client_options_TypedDataset__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject__java_lang_String(options, type, defaultValues, nativeObject, scope);
   return $instance;
  }
  
- $ctor__org_pepstock_charba_client_options_TypedDataset__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject(/** Datasets */ options, /** Type */ type, /** IsDefaultTypedDataset */ defaultValues, /** ? */ nativeObject) {
+ $ctor__org_pepstock_charba_client_options_TypedDataset__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject__java_lang_String(/** Datasets */ options, /** Type */ type, /** IsDefaultTypedDataset */ defaultValues, /** ? */ nativeObject, /** ?string */ scope) {
   this.$ctor__org_pepstock_charba_client_options_AbstractModel__org_pepstock_charba_client_options_AbstractModel__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_NativeObject(options, type, defaultValues, nativeObject);
   this.f_type__org_pepstock_charba_client_options_TypedDataset_ = Type.m_checkAndGetIfValid__org_pepstock_charba_client_Type(type);
+  this.f_scope__org_pepstock_charba_client_options_TypedDataset_ = /**@type {?string}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(scope, "Scope argument"), j_l_String));
   this.f_barOptionsHandler__org_pepstock_charba_client_options_TypedDataset_ = BarDatasetOptionsHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject(this, /**@type {IsDefaultTypedDataset}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTypedDataset)), this.m_getNativeObject__());
-  this.f_animationContainer__org_pepstock_charba_client_options_TypedDataset_ = AnimationContainer.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(options, this.f_type__org_pepstock_charba_client_options_TypedDataset_, /**@type {IsDefaultTypedDataset}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTypedDataset)), this.m_getNativeObject__());
+  this.f_animationContainer__org_pepstock_charba_client_options_TypedDataset_ = AnimationContainer.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(options, this.f_type__org_pepstock_charba_client_options_TypedDataset_, /**@type {IsDefaultTypedDataset}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultTypedDataset)), this.m_getNativeObject__(), this.f_scope__org_pepstock_charba_client_options_TypedDataset_);
+ }
+ /** @override @return {?string} */
+ m_getScope__() {
+  return this.f_scope__org_pepstock_charba_client_options_TypedDataset_;
  }
  /** @override @return {AnimationContainer} */
  m_getAnimationContainer__() {
@@ -166,7 +177,9 @@ class TypedDataset extends AbstractModel {
  }
  
  static $loadModules() {
+  j_l_String = goog.module.get('java.lang.String$impl');
   Type = goog.module.get('org.pepstock.charba.client.Type$impl');
+  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   AnimationContainer = goog.module.get('org.pepstock.charba.client.options.AnimationContainer$impl');
   BarDatasetOptionsHandler = goog.module.get('org.pepstock.charba.client.options.BarDatasetOptionsHandler$impl');
   Property = goog.module.get('org.pepstock.charba.client.options.TypedDataset.Property$impl');
@@ -176,6 +189,7 @@ class TypedDataset extends AbstractModel {
 IsDefaultTypedDataset.$markImplementor(TypedDataset);
 HasBarDatasetOptions.$markImplementor(TypedDataset);
 HasAnimationOptions.$markImplementor(TypedDataset);
+HasCallbackScope.$markImplementor(TypedDataset);
 $Util.$setClassMetadata(TypedDataset, "org.pepstock.charba.client.options.TypedDataset");
 
 exports = TypedDataset;

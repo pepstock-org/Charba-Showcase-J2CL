@@ -5,6 +5,7 @@ const AbstractConfigurationItem = goog.require('org.pepstock.charba.client.zoom.
 const IsDefaultPan = goog.require('org.pepstock.charba.client.zoom.IsDefaultPan$impl');
 
 let CallbackPropertyHandler = goog.forwardDeclare('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
+let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let ModifierKey = goog.forwardDeclare('org.pepstock.charba.client.enums.ModifierKey$impl');
 let IsDefaultConfigurationItem = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultConfigurationItem$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.zoom.Pan.Property$impl');
@@ -57,12 +58,28 @@ class Pan extends AbstractConfigurationItem {
   return Pan.f_PAN_START_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Pan_;
  }
  
+ m_setEnabled__boolean(/** boolean */ enabled) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__boolean(Property.f_ENABLED__org_pepstock_charba_client_zoom_Pan_Property, enabled);
+ }
+ /** @override @return {boolean} */
+ m_isEnabled__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_ENABLED__org_pepstock_charba_client_zoom_Pan_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Pan_.m_isEnabled__());
+ }
+ 
  m_setModifierKey__org_pepstock_charba_client_enums_ModifierKey(/** ModifierKey */ modifierKey) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_MODIFIER_KEY__org_pepstock_charba_client_zoom_Pan_Property, modifierKey);
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_MODIFIER_KEY__org_pepstock_charba_client_zoom_Pan_Property, modifierKey);
  }
  /** @override @return {ModifierKey} */
  m_getModifierKey__() {
   return /**@type {ModifierKey}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_MODIFIER_KEY__org_pepstock_charba_client_zoom_Pan_Property, ModifierKey.m_values__(), this.f_defaultOptions__org_pepstock_charba_client_zoom_Pan_.m_getModifierKey__()), ModifierKey));
+ }
+ 
+ m_setThreshold__double(/** number */ threshold) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__double(Property.f_THRESHOLD__org_pepstock_charba_client_zoom_Pan_Property, Checker.m_positiveOrZero__double(threshold));
+ }
+ /** @override @return {number} */
+ m_getThreshold__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_THRESHOLD__org_pepstock_charba_client_zoom_Pan_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Pan_.m_getThreshold__());
  }
  
  static $clinit() {
@@ -82,6 +99,7 @@ class Pan extends AbstractConfigurationItem {
  
  static $loadModules() {
   CallbackPropertyHandler = goog.module.get('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
+  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   ModifierKey = goog.module.get('org.pepstock.charba.client.enums.ModifierKey$impl');
   Property = goog.module.get('org.pepstock.charba.client.zoom.Pan.Property$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
@@ -95,6 +113,8 @@ Pan.f_PAN_COMPLETED_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Pan_;
 Pan.f_PAN_REJECTED_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Pan_;
 /**@type {CallbackPropertyHandler<StartCallback>}*/
 Pan.f_PAN_START_PROPERTY_HANDLER__org_pepstock_charba_client_zoom_Pan_;
+/**@const {boolean}*/
+Pan.f_DEFAULT_ENABLED__org_pepstock_charba_client_zoom_Pan = false;
 /**@const {number}*/
 Pan.f_DEFAULT_THRESHOLD__org_pepstock_charba_client_zoom_Pan = 10;
 IsDefaultPan.$markImplementor(Pan);

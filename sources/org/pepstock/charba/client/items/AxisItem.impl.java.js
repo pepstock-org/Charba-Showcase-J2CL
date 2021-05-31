@@ -6,7 +6,7 @@ const ScaleItem = goog.require('org.pepstock.charba.client.items.ScaleItem$impl'
 let Date = goog.forwardDeclare('java.util.Date$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$impl');
 let BaseBoxItem_Property = goog.forwardDeclare('org.pepstock.charba.client.items.BaseBoxItem.Property$impl');
@@ -29,7 +29,7 @@ class AxisItem extends ScaleItem {
  }
  
  $ctor__org_pepstock_charba_client_items_AxisItem__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** ConfigurationEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__()));
  }
  
  m_setFullSize__boolean(/** boolean */ fullSize) {
@@ -145,7 +145,7 @@ class AxisItem extends ScaleItem {
  static $loadModules() {
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   BaseBoxItem_Property = goog.module.get('org.pepstock.charba.client.items.BaseBoxItem.Property$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.BaseBoxNodeItem.Property$impl');

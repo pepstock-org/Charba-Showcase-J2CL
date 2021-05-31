@@ -2,7 +2,7 @@
 "version":3,
 "file":"PluginEventArgument.impl.java.js",
 "lineCount":45,
-"mappings":"A;;;;;;;;;;;;;MA+BmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAmCc,qEAnCdA,C;;;QA0CX,0D,0BAAiDC,O;EAAjDC,8B;EAAAA,0C;EAAAA,kI;EAAAA,iB;;;CAAA,8G,0BAAiDD,O;EACvDE,4S;EAEAA,uX;;;CAQwB,mB;EACxBC,kF;;;CAQc,Y;EACdC,2N;;;QA/DiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;MA+BmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAmCc,qEAnCdA,C;;;QA0CX,0D,0BAAiDC,O;EAAjDC,8B;EAAAA,0C;EAAAA,kI;EAAAA,iB;;;CAAA,8G,0BAAiDD,O;EACvDE,wS;EAEAA,uX;;;CAQwB,mB;EACxBC,kF;;;CAQc,Y;EACdC,2N;;;QA/DiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["PluginEventArgument.java"],
 "names":["org.pepstock.charba.client.items.PluginEventArgument.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.PluginEventArgument.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginEventArgument.<init>","org.pepstock.charba.client.items.PluginEventArgument.getEventContext","org.pepstock.charba.client.items.PluginEventArgument.isReplay","org.pepstock.charba.client.items.PluginEventArgument.<clinit>"]
 }

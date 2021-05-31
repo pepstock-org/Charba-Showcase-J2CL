@@ -6,8 +6,8 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let ResourcesType = goog.forwardDeclare('org.pepstock.charba.client.resources.ResourcesType$impl');
 let Amount = goog.forwardDeclare('org.pepstock.charba.client.zoom.Amount$impl');
 let ScaleRange = goog.forwardDeclare('org.pepstock.charba.client.zoom.ScaleRange$impl');
@@ -35,9 +35,9 @@ class JsZoomHelper extends j_l_Object {
   return JsZoomHelper.f_INSTANCE__org_pepstock_charba_client_zoom_JsZoomHelper_;
  }
  
- m_resetZoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** IsTransitionKey */ transition) {
+ m_resetZoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** TransitionKey */ transition) {
   if (!$Equality.$same(chart, null)) {
-   if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+   if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition)) {
     CharbaJsZoomHelper.resetZoom(chart, transition.m_value__());
    } else {
     CharbaJsZoomHelper.resetZoom(chart);
@@ -45,9 +45,9 @@ class JsZoomHelper extends j_l_Object {
   }
  }
  
- m_pan__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** Amount */ amount, /** IsTransitionKey */ transition) {
+ m_pan__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** Amount */ amount, /** TransitionKey */ transition) {
   if (!$Equality.$same(chart, null) && !$Equality.$same(amount, null)) {
-   if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+   if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition)) {
     CharbaJsZoomHelper.pan(chart, amount.m_nativeObject___$pp_org_pepstock_charba_client_zoom(), transition.m_value__());
    } else {
     CharbaJsZoomHelper.pan(chart, amount.m_nativeObject___$pp_org_pepstock_charba_client_zoom());
@@ -55,9 +55,9 @@ class JsZoomHelper extends j_l_Object {
   }
  }
  
- m_pan__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** number */ amount, /** IsTransitionKey */ transition) {
+ m_pan__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** number */ amount, /** TransitionKey */ transition) {
   if (!$Equality.$same(chart, null) && Undefined.m_isNot__double(amount)) {
-   if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+   if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition)) {
     CharbaJsZoomHelper.pan(chart, amount, transition.m_value__());
    } else {
     CharbaJsZoomHelper.pan(chart, amount);
@@ -65,9 +65,9 @@ class JsZoomHelper extends j_l_Object {
   }
  }
  
- m_zoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** Amount */ amount, /** IsTransitionKey */ transition) {
+ m_zoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** Amount */ amount, /** TransitionKey */ transition) {
   if (!$Equality.$same(chart, null) && !$Equality.$same(amount, null)) {
-   if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+   if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition)) {
     CharbaJsZoomHelper.zoom(chart, amount.m_nativeObject___$pp_org_pepstock_charba_client_zoom(), transition.m_value__());
    } else {
     CharbaJsZoomHelper.zoom(chart, amount.m_nativeObject___$pp_org_pepstock_charba_client_zoom());
@@ -75,9 +75,9 @@ class JsZoomHelper extends j_l_Object {
   }
  }
  
- m_zoom__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** number */ amount, /** IsTransitionKey */ transition) {
+ m_zoom__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** number */ amount, /** TransitionKey */ transition) {
   if (!$Equality.$same(chart, null) && Undefined.m_isNot__double(amount)) {
-   if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+   if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition)) {
     CharbaJsZoomHelper.zoom(chart, amount, transition.m_value__());
    } else {
     CharbaJsZoomHelper.zoom(chart, amount);
@@ -85,9 +85,9 @@ class JsZoomHelper extends j_l_Object {
   }
  }
  
- m_zoomScale__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** IsScaleId */ scaleId, /** ScaleRange */ range, /** IsTransitionKey */ transition) {
-  if (!$Equality.$same(chart, null) && IsScaleId.m_isValid__org_pepstock_charba_client_options_IsScaleId(scaleId) && !$Equality.$same(range, null)) {
-   if (IsTransitionKey.m_isValid__org_pepstock_charba_client_options_IsTransitionKey(transition)) {
+ m_zoomScale__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** ScaleId */ scaleId, /** ScaleRange */ range, /** TransitionKey */ transition) {
+  if (!$Equality.$same(chart, null) && ScaleId.m_isValid__org_pepstock_charba_client_options_ScaleId(scaleId) && !$Equality.$same(range, null)) {
+   if (TransitionKey.m_isValid__org_pepstock_charba_client_options_TransitionKey(transition)) {
     CharbaJsZoomHelper.zoomScale(chart, scaleId.m_value__(), range.m_nativeObject___$pp_org_pepstock_charba_client_zoom(), transition.m_value__());
    } else {
     CharbaJsZoomHelper.zoomScale(chart, scaleId.m_value__(), range.m_nativeObject___$pp_org_pepstock_charba_client_zoom());
@@ -110,8 +110,8 @@ class JsZoomHelper extends j_l_Object {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
-  IsTransitionKey = goog.module.get('org.pepstock.charba.client.options.IsTransitionKey$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
+  TransitionKey = goog.module.get('org.pepstock.charba.client.options.TransitionKey$impl');
   ResourcesType = goog.module.get('org.pepstock.charba.client.resources.ResourcesType$impl');
  }
 }

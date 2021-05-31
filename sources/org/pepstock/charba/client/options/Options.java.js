@@ -10,6 +10,7 @@ goog.require('org.pepstock.charba.client.commons.ArrayEnumList');
 goog.require('org.pepstock.charba.client.commons.ArrayListHelper');
 goog.require('org.pepstock.charba.client.commons.ArrayString.$Overlay');
 goog.require('org.pepstock.charba.client.commons.Checker');
+goog.require('org.pepstock.charba.client.commons.HasCallbackScope');
 goog.require('org.pepstock.charba.client.commons.Id');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ObjectType');

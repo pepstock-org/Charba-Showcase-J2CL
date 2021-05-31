@@ -11,9 +11,9 @@ goog.require('org.pepstock.charba.client.defaults.globals.DefaultsBuilder');
 goog.require('org.pepstock.charba.client.enums.AxisKind');
 goog.require('org.pepstock.charba.client.enums.DefaultScaleId');
 goog.require('org.pepstock.charba.client.options.AbstractModel');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
 goog.require('org.pepstock.charba.client.options.Options');
 goog.require('org.pepstock.charba.client.options.Scale');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 goog.require('vmbootstrap.Casts');
 
 const Scales = goog.require('org.pepstock.charba.client.options.Scales$impl');

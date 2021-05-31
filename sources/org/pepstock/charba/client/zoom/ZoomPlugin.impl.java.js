@@ -7,14 +7,11 @@ let Charts = goog.forwardDeclare('org.pepstock.charba.client.Charts$impl');
 let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
 let Injector = goog.forwardDeclare('org.pepstock.charba.client.Injector$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let ResourceName = goog.forwardDeclare('org.pepstock.charba.client.resources.ResourceName$impl');
 let ResourcesType = goog.forwardDeclare('org.pepstock.charba.client.resources.ResourcesType$impl');
 let Amount = goog.forwardDeclare('org.pepstock.charba.client.zoom.Amount$impl');
-let DefaultOptions = goog.forwardDeclare('org.pepstock.charba.client.zoom.DefaultOptions$impl');
-let Drag = goog.forwardDeclare('org.pepstock.charba.client.zoom.Drag$impl');
-let IsDefaultOptions = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultOptions$impl');
 let JsZoomHelper = goog.forwardDeclare('org.pepstock.charba.client.zoom.JsZoomHelper$impl');
 let ScaleRange = goog.forwardDeclare('org.pepstock.charba.client.zoom.ScaleRange$impl');
 let ZoomOptions = goog.forwardDeclare('org.pepstock.charba.client.zoom.ZoomOptions$impl');
@@ -22,7 +19,6 @@ let ZoomOptionsFactory = goog.forwardDeclare('org.pepstock.charba.client.zoom.Zo
 let ZoomDefaultsOptionsFactory = goog.forwardDeclare('org.pepstock.charba.client.zoom.ZoomOptionsFactory.ZoomDefaultsOptionsFactory$impl');
 let ZoomPluginHammerResource = goog.forwardDeclare('org.pepstock.charba.client.zoom.ZoomPluginHammerResource$impl');
 let ZoomPluginResource = goog.forwardDeclare('org.pepstock.charba.client.zoom.ZoomPluginResource$impl');
-let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
  * @extends {AbstractExtensionPlugin<ZoomOptions>}
@@ -75,102 +71,80 @@ class ZoomPlugin extends AbstractExtensionPlugin {
  
  static m_reset__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
   ZoomPlugin.$clinit();
-  ZoomPlugin.m_reset__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsTransitionKey(chart, null);
+  ZoomPlugin.m_reset__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_TransitionKey(chart, null);
  }
  
- static m_reset__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsTransitionKey(/** IsChart */ chart, /** IsTransitionKey */ transition) {
+ static m_reset__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_TransitionKey(/** IsChart */ chart, /** TransitionKey */ transition) {
   ZoomPlugin.$clinit();
   if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart)) {
    let nativeChart = Charts.m_getNative__org_pepstock_charba_client_IsChart(chart);
-   JsZoomHelper.m_get__().m_resetZoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, transition);
+   JsZoomHelper.m_get__().m_resetZoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, transition);
   }
  }
  
  static m_pan__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount(/** IsChart */ chart, /** Amount */ amount) {
   ZoomPlugin.$clinit();
-  ZoomPlugin.m_pan__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey(chart, amount, null);
+  ZoomPlugin.m_pan__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey(chart, amount, null);
  }
  
- static m_pan__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey(/** IsChart */ chart, /** Amount */ amount, /** IsTransitionKey */ transition) {
+ static m_pan__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey(/** IsChart */ chart, /** Amount */ amount, /** TransitionKey */ transition) {
   ZoomPlugin.$clinit();
   if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart)) {
    let nativeChart = Charts.m_getNative__org_pepstock_charba_client_IsChart(chart);
-   JsZoomHelper.m_get__().m_pan__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
+   JsZoomHelper.m_get__().m_pan__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
   }
  }
  
  static m_pan__org_pepstock_charba_client_IsChart__double(/** IsChart */ chart, /** number */ amount) {
   ZoomPlugin.$clinit();
-  ZoomPlugin.m_pan__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_IsTransitionKey(chart, amount, null);
+  ZoomPlugin.m_pan__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_TransitionKey(chart, amount, null);
  }
  
- static m_pan__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_IsTransitionKey(/** IsChart */ chart, /** number */ amount, /** IsTransitionKey */ transition) {
+ static m_pan__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_TransitionKey(/** IsChart */ chart, /** number */ amount, /** TransitionKey */ transition) {
   ZoomPlugin.$clinit();
   if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart)) {
    let nativeChart = Charts.m_getNative__org_pepstock_charba_client_IsChart(chart);
-   JsZoomHelper.m_get__().m_pan__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
+   JsZoomHelper.m_get__().m_pan__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
   }
  }
  
  static m_zoom__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount(/** IsChart */ chart, /** Amount */ amount) {
   ZoomPlugin.$clinit();
-  ZoomPlugin.m_zoom__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey(chart, amount, null);
+  ZoomPlugin.m_zoom__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey(chart, amount, null);
  }
  
- static m_zoom__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey(/** IsChart */ chart, /** Amount */ amount, /** IsTransitionKey */ transition) {
+ static m_zoom__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey(/** IsChart */ chart, /** Amount */ amount, /** TransitionKey */ transition) {
   ZoomPlugin.$clinit();
   if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart)) {
    let nativeChart = Charts.m_getNative__org_pepstock_charba_client_IsChart(chart);
-   JsZoomHelper.m_get__().m_zoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
+   JsZoomHelper.m_get__().m_zoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_zoom_Amount__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
   }
  }
  
  static m_zoom__org_pepstock_charba_client_IsChart__double(/** IsChart */ chart, /** number */ amount) {
   ZoomPlugin.$clinit();
-  ZoomPlugin.m_zoom__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_IsTransitionKey(chart, amount, null);
+  ZoomPlugin.m_zoom__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_TransitionKey(chart, amount, null);
  }
  
- static m_zoom__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_IsTransitionKey(/** IsChart */ chart, /** number */ amount, /** IsTransitionKey */ transition) {
+ static m_zoom__org_pepstock_charba_client_IsChart__double__org_pepstock_charba_client_options_TransitionKey(/** IsChart */ chart, /** number */ amount, /** TransitionKey */ transition) {
   ZoomPlugin.$clinit();
   if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart)) {
    let nativeChart = Charts.m_getNative__org_pepstock_charba_client_IsChart(chart);
-   JsZoomHelper.m_get__().m_zoom__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
+   JsZoomHelper.m_get__().m_zoom__org_pepstock_charba_client_Chart__double__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, amount, transition);
   }
  }
  
- static m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_zoom_ScaleRange(/** IsChart */ chart, /** IsScaleId */ scaleId, /** ScaleRange */ range) {
+ static m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_zoom_ScaleRange(/** IsChart */ chart, /** ScaleId */ scaleId, /** ScaleRange */ range) {
   ZoomPlugin.$clinit();
-  ZoomPlugin.m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_IsTransitionKey(chart, scaleId, range, null);
+  ZoomPlugin.m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_TransitionKey(chart, scaleId, range, null);
  }
  
- static m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_IsTransitionKey(/** IsChart */ chart, /** IsScaleId */ scaleId, /** ScaleRange */ range, /** IsTransitionKey */ transition) {
+ static m_zoomScale__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_TransitionKey(/** IsChart */ chart, /** ScaleId */ scaleId, /** ScaleRange */ range, /** TransitionKey */ transition) {
   ZoomPlugin.$clinit();
-  if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart) && IsScaleId.m_isValid__org_pepstock_charba_client_options_IsScaleId(scaleId) && chart.m_getNode__().m_getScales__().m_getItems__().containsKey(scaleId.m_value__())) {
+  if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart) && ScaleId.m_isValid__org_pepstock_charba_client_options_ScaleId(scaleId) && chart.m_getNode__().m_getScales__().m_getItems__().containsKey(scaleId.m_value__())) {
    let nativeChart = Charts.m_getNative__org_pepstock_charba_client_IsChart(chart);
-   JsZoomHelper.m_get__().m_zoomScale__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_IsTransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, scaleId, range, transition);
+   JsZoomHelper.m_get__().m_zoomScale__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_zoom_ScaleRange__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(nativeChart, scaleId, range, transition);
   }
- }
- /** @return {Drag} */
- static m_createDrag__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
-  ZoomPlugin.$clinit();
-  if (IsChart.m_isConsistent__org_pepstock_charba_client_IsChart(chart) && chart.m_getDefaultChartOptions__().m_getPlugins__().m_hasOptions__java_lang_String(ZoomPlugin.$static_ID__org_pepstock_charba_client_zoom_ZoomPlugin)) {
-   let defaultValues = /**@type {ZoomOptions}*/ ($Casts.$to(chart.m_getDefaultChartOptions__().m_getPlugins__().m_getOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptionsFactory(ZoomPlugin.$static_ID__org_pepstock_charba_client_zoom_ZoomPlugin, ZoomPlugin.$static_DEFAULTS_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin), ZoomOptions));
-   return ZoomPlugin.m_createDrag__org_pepstock_charba_client_zoom_IsDefaultOptions(defaultValues);
-  }
-  return ZoomPlugin.m_createDrag__org_pepstock_charba_client_zoom_IsDefaultOptions(DefaultOptions.f_INSTANCE__org_pepstock_charba_client_zoom_DefaultOptions);
- }
- /** @return {Drag} */
- static m_createDrag__() {
-  ZoomPlugin.$clinit();
-  if (Defaults.m_get__().m_getGlobal__().m_getPlugins__().m_hasOptions__java_lang_String(ZoomPlugin.$static_ID__org_pepstock_charba_client_zoom_ZoomPlugin)) {
-   let defaultOptions = /**@type {ZoomOptions}*/ ($Casts.$to(Defaults.m_get__().m_getGlobal__().m_getPlugins__().m_getOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptionsFactory(ZoomPlugin.$static_ID__org_pepstock_charba_client_zoom_ZoomPlugin, ZoomPlugin.$static_DEFAULTS_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin), ZoomOptions));
-   return ZoomPlugin.m_createDrag__org_pepstock_charba_client_zoom_IsDefaultOptions(defaultOptions);
-  }
-  return ZoomPlugin.m_createDrag__org_pepstock_charba_client_zoom_IsDefaultOptions(DefaultOptions.f_INSTANCE__org_pepstock_charba_client_zoom_DefaultOptions);
- }
- /** @return {Drag} */
- static m_createDrag__org_pepstock_charba_client_zoom_IsDefaultOptions(/** IsDefaultOptions */ defaultValues) {
-  return Drag.$create__org_pepstock_charba_client_zoom_IsDefaultDrag(defaultValues.m_getZoom__().m_getDrag__());
  }
  /** @return {boolean} */
  static m_isReadyForApi__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
@@ -184,7 +158,7 @@ class ZoomPlugin extends AbstractExtensionPlugin {
  static get f_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin() {
   return (ZoomPlugin.$clinit(), ZoomPlugin.$static_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin);
  }
- /** @return {IsTransitionKey} */
+ /** @return {TransitionKey} */
  static get f_ZOOM_TRANSITION_MODE__org_pepstock_charba_client_zoom_ZoomPlugin() {
   return (ZoomPlugin.$clinit(), ZoomPlugin.$static_ZOOM_TRANSITION_MODE__org_pepstock_charba_client_zoom_ZoomPlugin);
  }
@@ -199,7 +173,7 @@ class ZoomPlugin extends AbstractExtensionPlugin {
   AbstractExtensionPlugin.$clinit();
   ZoomPlugin.$static_ID__org_pepstock_charba_client_zoom_ZoomPlugin = ResourceName.f_ZOOM_PLUGIN__org_pepstock_charba_client_resources_ResourceName.m_value__();
   ZoomPlugin.$static_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin = ZoomOptionsFactory.$create__();
-  ZoomPlugin.$static_ZOOM_TRANSITION_MODE__org_pepstock_charba_client_zoom_ZoomPlugin = IsTransitionKey.m_create__java_lang_String("zoom");
+  ZoomPlugin.$static_ZOOM_TRANSITION_MODE__org_pepstock_charba_client_zoom_ZoomPlugin = TransitionKey.m_create__java_lang_String("zoom");
   ZoomPlugin.$static_DEFAULTS_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin = ZoomDefaultsOptionsFactory.$create__();
   ZoomPlugin.f_RESOURCE__org_pepstock_charba_client_zoom_ZoomPlugin_ = ZoomPluginResource.$create__();
   ZoomPlugin.f_RESOURCE_HAMMER__org_pepstock_charba_client_zoom_ZoomPlugin_ = ZoomPluginHammerResource.$create__();
@@ -215,26 +189,22 @@ class ZoomPlugin extends AbstractExtensionPlugin {
   Defaults = goog.module.get('org.pepstock.charba.client.Defaults$impl');
   Injector = goog.module.get('org.pepstock.charba.client.Injector$impl');
   IsChart = goog.module.get('org.pepstock.charba.client.IsChart$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
-  IsTransitionKey = goog.module.get('org.pepstock.charba.client.options.IsTransitionKey$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
+  TransitionKey = goog.module.get('org.pepstock.charba.client.options.TransitionKey$impl');
   ResourceName = goog.module.get('org.pepstock.charba.client.resources.ResourceName$impl');
   ResourcesType = goog.module.get('org.pepstock.charba.client.resources.ResourcesType$impl');
-  DefaultOptions = goog.module.get('org.pepstock.charba.client.zoom.DefaultOptions$impl');
-  Drag = goog.module.get('org.pepstock.charba.client.zoom.Drag$impl');
   JsZoomHelper = goog.module.get('org.pepstock.charba.client.zoom.JsZoomHelper$impl');
-  ZoomOptions = goog.module.get('org.pepstock.charba.client.zoom.ZoomOptions$impl');
   ZoomOptionsFactory = goog.module.get('org.pepstock.charba.client.zoom.ZoomOptionsFactory$impl');
   ZoomDefaultsOptionsFactory = goog.module.get('org.pepstock.charba.client.zoom.ZoomOptionsFactory.ZoomDefaultsOptionsFactory$impl');
   ZoomPluginHammerResource = goog.module.get('org.pepstock.charba.client.zoom.ZoomPluginHammerResource$impl');
   ZoomPluginResource = goog.module.get('org.pepstock.charba.client.zoom.ZoomPluginResource$impl');
-  $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }
 /**@private {?string}*/
 ZoomPlugin.$static_ID__org_pepstock_charba_client_zoom_ZoomPlugin;
 /**@private {ZoomOptionsFactory}*/
 ZoomPlugin.$static_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin;
-/**@private {IsTransitionKey}*/
+/**@private {TransitionKey}*/
 ZoomPlugin.$static_ZOOM_TRANSITION_MODE__org_pepstock_charba_client_zoom_ZoomPlugin;
 /**@private {ZoomDefaultsOptionsFactory}*/
 ZoomPlugin.$static_DEFAULTS_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin;

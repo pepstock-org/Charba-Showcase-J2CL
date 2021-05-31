@@ -3,6 +3,7 @@ goog.module('org.pepstock.charba.client.configuration.Padding');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.callbacks.ChartContext');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration');
 goog.require('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultPadding');

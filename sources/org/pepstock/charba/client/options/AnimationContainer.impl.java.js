@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const AnimationTransition = goog.require('org.pepstock.charba.client.options.AnimationTransition$impl');
 
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let DataEnvelop = goog.forwardDeclare('org.pepstock.charba.client.data.DataEnvelop$impl');
@@ -21,45 +21,45 @@ class AnimationContainer extends AnimationTransition {
   /**@type {Transitions}*/
   this.f_transitions__org_pepstock_charba_client_options_AnimationContainer_;
  }
- //Factory method corresponding to constructor 'AnimationContainer(IsDefaultAnimationContainer, DataEnvelop)'.
+ //Factory method corresponding to constructor 'AnimationContainer(IsDefaultAnimationContainer, DataEnvelop, String)'.
  /** @return {!AnimationContainer} */
- static $create__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop(/** IsDefaultAnimationContainer */ defaultValues, /** DataEnvelop<?> */ envelop) {
+ static $create__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop__java_lang_String(/** IsDefaultAnimationContainer */ defaultValues, /** DataEnvelop<?> */ envelop, /** ?string */ scope) {
   AnimationContainer.$clinit();
   let $instance = new AnimationContainer();
-  $instance.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop(defaultValues, envelop);
+  $instance.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop__java_lang_String(defaultValues, envelop, scope);
   return $instance;
  }
- //Initialization from constructor 'AnimationContainer(IsDefaultAnimationContainer, DataEnvelop)'.
+ //Initialization from constructor 'AnimationContainer(IsDefaultAnimationContainer, DataEnvelop, String)'.
  
- $ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop(/** IsDefaultAnimationContainer */ defaultValues, /** DataEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(null, null, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), DataEnvelop)).m_getContent__()));
+ $ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop__java_lang_String(/** IsDefaultAnimationContainer */ defaultValues, /** DataEnvelop<?> */ envelop, /** ?string */ scope) {
+  this.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(null, null, defaultValues, /**@type {?}*/ (/**@type {DataEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), DataEnvelop)).m_getContent__()), scope);
  }
- //Factory method corresponding to constructor 'AnimationContainer(AbstractNode, IsDefaultAnimationContainer, NativeObject)'.
+ //Factory method corresponding to constructor 'AnimationContainer(AbstractNode, IsDefaultAnimationContainer, NativeObject, String)'.
  /** @return {!AnimationContainer} */
- static $create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject) {
+ static $create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(/** AbstractNode */ parent, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject, /** ?string */ scope) {
   AnimationContainer.$clinit();
   let $instance = new AnimationContainer();
-  $instance.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, nativeObject);
+  $instance.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(parent, defaultValues, nativeObject, scope);
   return $instance;
  }
- //Initialization from constructor 'AnimationContainer(AbstractNode, IsDefaultAnimationContainer, NativeObject)'.
+ //Initialization from constructor 'AnimationContainer(AbstractNode, IsDefaultAnimationContainer, NativeObject, String)'.
  
- $ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject) {
-  this.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(parent, null, defaultValues, nativeObject);
+ $ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(/** AbstractNode */ parent, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject, /** ?string */ scope) {
+  this.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(parent, null, defaultValues, nativeObject, scope);
  }
- //Factory method corresponding to constructor 'AnimationContainer(AbstractNode, Key, IsDefaultAnimationContainer, NativeObject)'.
+ //Factory method corresponding to constructor 'AnimationContainer(AbstractNode, Key, IsDefaultAnimationContainer, NativeObject, String)'.
  /** @return {!AnimationContainer} */
- static $create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** Key */ childKey, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject) {
+ static $create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(/** AbstractNode */ parent, /** Key */ childKey, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject, /** ?string */ scope) {
   AnimationContainer.$clinit();
   let $instance = new AnimationContainer();
-  $instance.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(parent, childKey, defaultValues, nativeObject);
+  $instance.$ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(parent, childKey, defaultValues, nativeObject, scope);
   return $instance;
  }
- //Initialization from constructor 'AnimationContainer(AbstractNode, Key, IsDefaultAnimationContainer, NativeObject)'.
+ //Initialization from constructor 'AnimationContainer(AbstractNode, Key, IsDefaultAnimationContainer, NativeObject, String)'.
  
- $ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** Key */ childKey, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject) {
-  this.$ctor__org_pepstock_charba_client_options_AnimationTransition__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationTransition__org_pepstock_charba_client_commons_NativeObject(parent, childKey, defaultValues, nativeObject);
-  this.f_transitions__org_pepstock_charba_client_options_AnimationContainer_ = Transitions.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultTransitions__org_pepstock_charba_client_commons_NativeObject(this, Property.f_TRANSITIONS__org_pepstock_charba_client_options_AnimationContainer_Property, defaultValues.m_getTransitions__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_TRANSITIONS__org_pepstock_charba_client_options_AnimationContainer_Property));
+ $ctor__org_pepstock_charba_client_options_AnimationContainer__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(/** AbstractNode */ parent, /** Key */ childKey, /** IsDefaultAnimationContainer */ defaultValues, /** ? */ nativeObject, /** ?string */ scope) {
+  this.$ctor__org_pepstock_charba_client_options_AnimationTransition__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationTransition__org_pepstock_charba_client_commons_NativeObject__java_lang_String(parent, childKey, defaultValues, nativeObject, scope);
+  this.f_transitions__org_pepstock_charba_client_options_AnimationContainer_ = Transitions.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultTransitions__org_pepstock_charba_client_commons_NativeObject__java_lang_String(this, Property.f_TRANSITIONS__org_pepstock_charba_client_options_AnimationContainer_Property, defaultValues.m_getTransitions__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_TRANSITIONS__org_pepstock_charba_client_options_AnimationContainer_Property), scope);
  }
  /** @return {Transitions} */
  m_getTransitions___$pp_org_pepstock_charba_client_options() {
@@ -89,7 +89,7 @@ class AnimationContainer extends AnimationTransition {
  }
  
  static $loadModules() {
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   DataEnvelop = goog.module.get('org.pepstock.charba.client.data.DataEnvelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.options.AnimationContainer.Property$impl');

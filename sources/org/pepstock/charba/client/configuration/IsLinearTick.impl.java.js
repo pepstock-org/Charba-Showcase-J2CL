@@ -41,23 +41,31 @@ class IsLinearTick {
  m_getCountCallback__() {}
  /** @abstract */
  m_setCount__org_pepstock_charba_client_callbacks_CountCallback(/** CountCallback */ countCallback) {}
+ /** @abstract */
+ m_setCount__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ countCallback) {}
  /** @abstract @return {MaxTicksLimitCallback} */
  m_getMaxTicksLimitCallback__() {}
  /** @abstract */
  m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback(/** MaxTicksLimitCallback */ maxTicksLimitCallback) {}
+ /** @abstract */
+ m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ maxTicksLimitCallback) {}
  /** @abstract @return {PrecisionCallback} */
  m_getPrecisionCallback__() {}
  /** @abstract */
  m_setPrecision__org_pepstock_charba_client_callbacks_PrecisionCallback(/** PrecisionCallback */ precisionCallback) {}
+ /** @abstract */
+ m_setPrecision__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ precisionCallback) {}
  /** @abstract @return {StepSizeCallback} */
  m_getStepSizeCallback__() {}
  /** @abstract */
  m_setStepSize__org_pepstock_charba_client_callbacks_StepSizeCallback(/** StepSizeCallback */ stepSizeCallback) {}
+ /** @abstract */
+ m_setStepSize__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ stepSizeCallback) {}
  
  static m_setCount__$default__org_pepstock_charba_client_configuration_IsLinearTick__int(/** !IsLinearTick */ $thisArg, /** number */ count) {
   IsLinearTick.$clinit();
   if (!$Equality.$same($thisArg.m_getAxis__(), null)) {
-   $thisArg.m_setCount__org_pepstock_charba_client_callbacks_CountCallback(null);
+   $thisArg.m_setCount__org_pepstock_charba_client_callbacks_CountCallback(/**@type {CountCallback}*/ (null));
    $thisArg.m_getAxis__().m_getScale___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_setCount__int(count);
   }
  }
@@ -73,7 +81,7 @@ class IsLinearTick {
  static m_setMaxTicksLimit__$default__org_pepstock_charba_client_configuration_IsLinearTick__int(/** !IsLinearTick */ $thisArg, /** number */ maxTicksLimit) {
   IsLinearTick.$clinit();
   if (!$Equality.$same($thisArg.m_getAxis__(), null)) {
-   $thisArg.m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback(null);
+   $thisArg.m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback(/**@type {MaxTicksLimitCallback}*/ (null));
    $thisArg.m_getAxis__().m_getScale___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_setMaxTicksLimit__int(maxTicksLimit);
   }
  }
@@ -89,7 +97,7 @@ class IsLinearTick {
  static m_setStepSize__$default__org_pepstock_charba_client_configuration_IsLinearTick__double(/** !IsLinearTick */ $thisArg, /** number */ stepSize) {
   IsLinearTick.$clinit();
   if (!$Equality.$same($thisArg.m_getAxis__(), null)) {
-   $thisArg.m_setStepSize__org_pepstock_charba_client_callbacks_StepSizeCallback(null);
+   $thisArg.m_setStepSize__org_pepstock_charba_client_callbacks_StepSizeCallback(/**@type {StepSizeCallback}*/ (null));
    $thisArg.m_getAxis__().m_getScale___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_setStepSize__double(stepSize);
   }
  }
@@ -105,7 +113,7 @@ class IsLinearTick {
  static m_setPrecision__$default__org_pepstock_charba_client_configuration_IsLinearTick__int(/** !IsLinearTick */ $thisArg, /** number */ precision) {
   IsLinearTick.$clinit();
   if (!$Equality.$same($thisArg.m_getAxis__(), null)) {
-   $thisArg.m_setPrecision__org_pepstock_charba_client_callbacks_PrecisionCallback(null);
+   $thisArg.m_setPrecision__org_pepstock_charba_client_callbacks_PrecisionCallback(/**@type {PrecisionCallback}*/ (null));
    $thisArg.m_getAxis__().m_getScale___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_setPrecision__int(precision);
   }
  }
@@ -132,6 +140,13 @@ class IsLinearTick {
    $thisArg.m_getLinearTickOptionsHandler__().m_setCount__org_pepstock_charba_client_callbacks_CountCallback_$pp_org_pepstock_charba_client_configuration(countCallback);
   }
  }
+ 
+ static m_setCount__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(/** !IsLinearTick */ $thisArg, /** Function */ countCallback) {
+  IsLinearTick.$clinit();
+  if (!$Equality.$same($thisArg.m_getLinearTickOptionsHandler__(), null)) {
+   $thisArg.m_getLinearTickOptionsHandler__().m_setCount__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(countCallback);
+  }
+ }
  /** @return {MaxTicksLimitCallback} */
  static m_getMaxTicksLimitCallback__$default__org_pepstock_charba_client_configuration_IsLinearTick(/** !IsLinearTick */ $thisArg) {
   IsLinearTick.$clinit();
@@ -145,6 +160,13 @@ class IsLinearTick {
   IsLinearTick.$clinit();
   if (!$Equality.$same($thisArg.m_getLinearTickOptionsHandler__(), null)) {
    $thisArg.m_getLinearTickOptionsHandler__().m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback_$pp_org_pepstock_charba_client_configuration(maxTicksLimitCallback);
+  }
+ }
+ 
+ static m_setMaxTicksLimit__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(/** !IsLinearTick */ $thisArg, /** Function */ maxTicksLimitCallback) {
+  IsLinearTick.$clinit();
+  if (!$Equality.$same($thisArg.m_getLinearTickOptionsHandler__(), null)) {
+   $thisArg.m_getLinearTickOptionsHandler__().m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(maxTicksLimitCallback);
   }
  }
  /** @return {PrecisionCallback} */
@@ -162,6 +184,13 @@ class IsLinearTick {
    $thisArg.m_getLinearTickOptionsHandler__().m_setPrecision__org_pepstock_charba_client_callbacks_PrecisionCallback_$pp_org_pepstock_charba_client_configuration(precisionCallback);
   }
  }
+ 
+ static m_setPrecision__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(/** !IsLinearTick */ $thisArg, /** Function */ precisionCallback) {
+  IsLinearTick.$clinit();
+  if (!$Equality.$same($thisArg.m_getLinearTickOptionsHandler__(), null)) {
+   $thisArg.m_getLinearTickOptionsHandler__().m_setPrecision__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(precisionCallback);
+  }
+ }
  /** @return {StepSizeCallback} */
  static m_getStepSizeCallback__$default__org_pepstock_charba_client_configuration_IsLinearTick(/** !IsLinearTick */ $thisArg) {
   IsLinearTick.$clinit();
@@ -175,6 +204,13 @@ class IsLinearTick {
   IsLinearTick.$clinit();
   if (!$Equality.$same($thisArg.m_getLinearTickOptionsHandler__(), null)) {
    $thisArg.m_getLinearTickOptionsHandler__().m_setStepSize__org_pepstock_charba_client_callbacks_StepSizeCallback_$pp_org_pepstock_charba_client_configuration(stepSizeCallback);
+  }
+ }
+ 
+ static m_setStepSize__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(/** !IsLinearTick */ $thisArg, /** Function */ stepSizeCallback) {
+  IsLinearTick.$clinit();
+  if (!$Equality.$same($thisArg.m_getLinearTickOptionsHandler__(), null)) {
+   $thisArg.m_getLinearTickOptionsHandler__().m_setStepSize__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(stepSizeCallback);
   }
  }
  

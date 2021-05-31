@@ -13,7 +13,7 @@ goog.require('org.pepstock.charba.client.IsChart');
 goog.require('org.pepstock.charba.client.ScaleType');
 goog.require('org.pepstock.charba.client.Type');
 goog.require('org.pepstock.charba.client.commons.Checker');
-goog.require('org.pepstock.charba.client.commons.IsEnvelop');
+goog.require('org.pepstock.charba.client.commons.Envelop');
 goog.require('org.pepstock.charba.client.commons.Key');
 goog.require('org.pepstock.charba.client.commons.Merger.Property');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');

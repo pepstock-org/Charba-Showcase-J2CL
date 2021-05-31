@@ -118,9 +118,24 @@ class BorderItemsHandler extends NativeObjectContainer {
   this.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy_$pp_org_pepstock_charba_client_data(property, null, borderItemCallback, proxy);
  }
  
+ m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(/** Key */ property, /** Function */ borderItemCallback) {
+  this.m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(property, null, borderItemCallback);
+ }
+ 
  m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy_$pp_org_pepstock_charba_client_data(/** Key */ property, /** Key */ propertyType, /** * */ borderItemCallback, /** ?function():void */ proxy) {
   if (!$Equality.$same(borderItemCallback, null)) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(property, proxy);
+  } else {
+   this.m_remove__org_pepstock_charba_client_commons_Key(property);
+  }
+  if (Key.m_isValid__org_pepstock_charba_client_commons_Key(propertyType)) {
+   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(propertyType, BorderItemType.f_UNKNOWN__org_pepstock_charba_client_enums_BorderItemType);
+  }
+ }
+ 
+ m_setBorderItemCallback__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(/** Key */ property, /** Key */ propertyType, /** Function */ borderItemCallback) {
+  if (!$Equality.$same(borderItemCallback, null)) {
+   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(property, borderItemCallback);
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(property);
   }

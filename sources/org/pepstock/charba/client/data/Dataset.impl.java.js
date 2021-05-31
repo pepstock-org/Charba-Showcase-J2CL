@@ -2,6 +2,7 @@ goog.module('org.pepstock.charba.client.data.Dataset$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 const AbstractNode = goog.require('org.pepstock.charba.client.commons.AbstractNode$impl');
+const HasCallbackScope = goog.require('org.pepstock.charba.client.commons.HasCallbackScope$impl');
 const HasDataset = goog.require('org.pepstock.charba.client.data.HasDataset$impl');
 const HasAnimationOptions = goog.require('org.pepstock.charba.client.options.HasAnimationOptions$impl');
 
@@ -67,22 +68,23 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
  * @abstract
  * @implements {HasDataset}
  * @implements {HasAnimationOptions}
+ * @implements {HasCallbackScope}
  */
 class Dataset extends AbstractNode {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_borderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_hoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_hoverBorderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_;
   /**@type {ColorCallback<DatasetContext>}*/
   this.f_hoverBackgroundColorCallback__org_pepstock_charba_client_data_Dataset_;
@@ -118,7 +120,8 @@ class Dataset extends AbstractNode {
   this.$ctor__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_NativeObject(null);
   this.$init___$p_org_pepstock_charba_client_data_Dataset();
   this.f_defaultValues__org_pepstock_charba_client_data_Dataset_ = $Equality.$same(defaultValues, null) ? Defaults.m_get__().m_getOptions__org_pepstock_charba_client_Type(Type.m_checkAndGetIfValid__org_pepstock_charba_client_Type(type)) : defaultValues;
-  this.f_animationContainer__org_pepstock_charba_client_data_Dataset_ = AnimationContainer.$create__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop(this.m_getDefaultValues__(), /**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object(this.m_getNativeObject__())));
+  this.f_scope__org_pepstock_charba_client_data_Dataset_ = Dataset.m_createScope__int(this.m_getId__());
+  this.f_animationContainer__org_pepstock_charba_client_data_Dataset_ = AnimationContainer.$create__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_data_DataEnvelop__java_lang_String(this.m_getDefaultValues__(), /**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object(this.m_getNativeObject__())), this.f_scope__org_pepstock_charba_client_data_Dataset_);
   this.f_type__org_pepstock_charba_client_data_Dataset_ = type;
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, type);
   if (hidden) {
@@ -130,23 +133,22 @@ class Dataset extends AbstractNode {
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(InternalProperty.f_CHARBA_PATTERNS__org_pepstock_charba_client_data_Dataset_InternalProperty, this.f_patternsContainer__org_pepstock_charba_client_data_Dataset_);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(InternalProperty.f_CHARBA_GRADIENTS__org_pepstock_charba_client_data_Dataset_InternalProperty, this.f_gradientsContainer__org_pepstock_charba_client_data_Dataset_);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
-  this.f_scope__org_pepstock_charba_client_data_Dataset_ = Dataset.m_createScope__int(this.m_getId__());
-  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** ? */ context) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context), this.m_getBackgroundColorCallback__(), CanvasObjectProperty.f_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, this.m_getDefaultBackgroundColorAsString__());
   };
-  this.f_borderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_borderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** ? */ context_1) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_1), this.m_getBorderColorCallback__(), CanvasObjectProperty.f_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, this.m_getDefaultBorderColorAsString__());
   };
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** ? */ context_2) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_2), this.f_borderWidthCallback__org_pepstock_charba_client_data_Dataset_, Integer.m_valueOf__int(this.m_getDefaultBorderWidth__())), Integer)).m_intValue__();
   };
-  this.f_hoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_hoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** ? */ context_3) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_3), this.m_getHoverBackgroundColorCallback__(), CanvasObjectProperty.f_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, this.m_getDefaultBackgroundColorAsString__());
   };
-  this.f_hoverBorderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** Object */ contextFunction_4, /** ? */ context_4) =>{
+  this.f_hoverBorderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** ? */ context_4) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_4), this.m_getHoverBorderColorCallback__(), CanvasObjectProperty.f_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, this.m_getDefaultBorderColorAsString__());
   };
-  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** Object */ contextFunction_5, /** ? */ context_5) =>{
+  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_.callback = (/** ? */ context_5) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_5), this.f_hoverBorderWidthCallback__org_pepstock_charba_client_data_Dataset_, Integer.m_valueOf__int(this.m_getDefaultBorderWidth__())), Integer)).m_intValue__();
   };
  }
@@ -158,7 +160,7 @@ class Dataset extends AbstractNode {
  m_getId__() {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__int(InternalProperty.f_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty, Undefined.f_INTEGER__org_pepstock_charba_client_items_Undefined);
  }
- /** @return {?string} */
+ /** @override @return {?string} */
  m_getScope__() {
   return this.f_scope__org_pepstock_charba_client_data_Dataset_;
  }
@@ -231,6 +233,12 @@ class Dataset extends AbstractNode {
    this.m_remove__org_pepstock_charba_client_commons_Key(CanvasObjectProperty.f_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
   }
  }
+ 
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ backgroundColorCallback) {
+  this.m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(CanvasObjectProperty.f_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(CanvasObjectProperty.f_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, backgroundColorCallback);
+ }
  /** @return {ColorCallback<DatasetContext>} */
  m_getBorderColorCallback__() {
   return this.f_borderColorCallback__org_pepstock_charba_client_data_Dataset_;
@@ -245,6 +253,12 @@ class Dataset extends AbstractNode {
    this.m_remove__org_pepstock_charba_client_commons_Key(CanvasObjectProperty.f_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
   }
  }
+ 
+ m_setBorderColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderColorCallback) {
+  this.m_setBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(CanvasObjectProperty.f_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(CanvasObjectProperty.f_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, borderColorCallback);
+ }
  /** @return {WidthCallback<DatasetContext>} */
  m_getInternalBorderWidthCallback___$pp_org_pepstock_charba_client_data() {
   return this.f_borderWidthCallback__org_pepstock_charba_client_data_Dataset_;
@@ -258,9 +272,17 @@ class Dataset extends AbstractNode {
    this.m_remove__org_pepstock_charba_client_commons_Key(CommonProperty.f_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty);
   }
  }
+ 
+ m_setInternalBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(/** Function */ borderWidthCallback) {
+  if (!$Equality.$same(borderWidthCallback, null)) {
+   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(CommonProperty.f_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, borderWidthCallback);
+  } else {
+   this.m_remove__org_pepstock_charba_client_commons_Key(CommonProperty.f_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty);
+  }
+ }
  /** @return {DatasetContext} */
  m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(/** ? */ context) {
-  return DatasetContext.$create__org_pepstock_charba_client_data_DataEnvelop(/**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object(context)));
+  return DatasetContext.$create__org_pepstock_charba_client_commons_NativeObject(context);
  }
  /** @return {ColorCallback<DatasetContext>} */
  m_getHoverBackgroundColorCallback__() {
@@ -276,6 +298,12 @@ class Dataset extends AbstractNode {
    this.m_remove__org_pepstock_charba_client_commons_Key(CanvasObjectProperty.f_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
   }
  }
+ 
+ m_setHoverBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ hoverBackgroundColorCallback) {
+  this.m_setHoverBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(CanvasObjectProperty.f_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(CanvasObjectProperty.f_HOVER_BACKGROUND_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, hoverBackgroundColorCallback);
+ }
  /** @return {ColorCallback<DatasetContext>} */
  m_getHoverBorderColorCallback__() {
   return this.f_hoverBorderColorCallback__org_pepstock_charba_client_data_Dataset_;
@@ -290,6 +318,12 @@ class Dataset extends AbstractNode {
    this.m_remove__org_pepstock_charba_client_commons_Key(CanvasObjectProperty.f_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
   }
  }
+ 
+ m_setHoverBorderColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ hoverBorderColorCallback) {
+  this.m_setHoverBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));
+  this.m_resetBeingCallback__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(CanvasObjectProperty.f_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty);
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(CanvasObjectProperty.f_HOVER_BORDER_COLOR__org_pepstock_charba_client_data_Dataset_CanvasObjectProperty, hoverBorderColorCallback);
+ }
  /** @return {WidthCallback<DatasetContext>} */
  m_getInternalHoverBorderWidthCallback___$pp_org_pepstock_charba_client_data() {
   return this.f_hoverBorderWidthCallback__org_pepstock_charba_client_data_Dataset_;
@@ -299,6 +333,14 @@ class Dataset extends AbstractNode {
   this.f_hoverBorderWidthCallback__org_pepstock_charba_client_data_Dataset_ = hoverBorderWidthCallback;
   if (!$Equality.$same(hoverBorderWidthCallback, null)) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(CommonProperty.f_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_.proxy);
+  } else {
+   this.m_remove__org_pepstock_charba_client_commons_Key(CommonProperty.f_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty);
+  }
+ }
+ 
+ m_setInternalHoverBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(/** Function */ hoverBorderWidthCallback) {
+  if (!$Equality.$same(hoverBorderWidthCallback, null)) {
+   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(CommonProperty.f_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, hoverBorderWidthCallback);
   } else {
    this.m_remove__org_pepstock_charba_client_commons_Key(CommonProperty.f_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty);
   }
@@ -601,12 +643,12 @@ class Dataset extends AbstractNode {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_Dataset() {
-  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBorderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBackgroundColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBorderColorCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverBorderWidthCallbackProxy__org_pepstock_charba_client_data_Dataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_hoverBackgroundColorCallback__org_pepstock_charba_client_data_Dataset_ = null;
   this.f_hoverBorderColorCallback__org_pepstock_charba_client_data_Dataset_ = null;
   this.f_hoverBorderWidthCallback__org_pepstock_charba_client_data_Dataset_ = null;
@@ -706,6 +748,7 @@ Dataset.f_TIME_SERIES_DATA_USAGE_MESSAGE__org_pepstock_charba_client_data_Datase
 Dataset.f_COMPARATOR__org_pepstock_charba_client_data_Dataset_;
 HasDataset.$markImplementor(Dataset);
 HasAnimationOptions.$markImplementor(Dataset);
+HasCallbackScope.$markImplementor(Dataset);
 $Util.$setClassMetadata(Dataset, "org.pepstock.charba.client.data.Dataset");
 
 exports = Dataset;

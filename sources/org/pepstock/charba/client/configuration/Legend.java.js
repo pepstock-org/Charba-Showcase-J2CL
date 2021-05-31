@@ -2,7 +2,6 @@ goog.module('org.pepstock.charba.client.configuration.Legend');
 
 goog.require('java.util.List');
 goog.require('nativebootstrap.Util');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');
 goog.require('org.pepstock.charba.client.commons.JsHelper');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');

@@ -2,7 +2,7 @@
 "version":3,
 "file":"GlobalOptions$GlobalPlugins.impl.java.js",
 "lineCount":52,
-"mappings":"A;;;;;;;;;;MAoF4B,a;;CAAA,W;EAAAA,Q;EAAAA;OAEG,kEAFHA,C;;;QASlB,gD,8BAAoCC,O;EAApCC,wB;EAAAA,oC;EAAAA,0H;EAAAA,iB;;;CAAA,sG,8BAAoCD,O;EAC3CE,yG;EADOA,yE;;;CAUsC,sE,UAAaC,O;EAE1DC;GAECA,kLAFDA;GAICA,sFAJDA;G;;;CAc6C,wF,gBAAkBC,Q,WAAYF,O;EAE3EC;GAECA,kLAFDA;GAICA,kHAJDA;G;;;CArCyB,iE;EAE1BF,2O;;;QAF0B,O;EAAAI,gC;EAAAA,6B;EAAAA;",
+"mappings":"A;;;;;;;;;;MAsF4B,a;;CAAA,W;EAAAA,Q;EAAAA;OAEG,kEAFHA,C;;;QASlB,gD,8BAAoCC,O;EAApCC,wB;EAAAA,oC;EAAAA,0H;EAAAA,iB;;;CAAA,sG,8BAAoCD,O;EAC3CE,yG;EADOA,yE;;;CAUsC,sE,UAAaC,O;EAE1DC;GAECA,kLAFDA;GAICA,sFAJDA;G;;;CAc6C,wF,gBAAkBC,Q,WAAYF,O;EAE3EC;GAECA,kLAFDA;GAICA,kHAJDA;G;;;CArCyB,iE;EAE1BF,yN;;;QAF0B,O;EAAAI,gC;EAAAA,6B;EAAAA;",
 "sources":["GlobalOptions.java"],
 "names":["org.pepstock.charba.client.GlobalOptions$GlobalPlugins.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.GlobalOptions$GlobalPlugins.<synthetic: ctor_create>","org.pepstock.charba.client.GlobalOptions$GlobalPlugins.<init>","options","org.pepstock.charba.client.GlobalOptions$GlobalPlugins.setOptions","pluginId","org.pepstock.charba.client.GlobalOptions$GlobalPlugins.<clinit>"]
 }

@@ -24,7 +24,7 @@ goog.require('org.pepstock.charba.client.callbacks.BorderDashOffsetCallback');
 goog.require('org.pepstock.charba.client.callbacks.ColorCallback');
 goog.require('org.pepstock.charba.client.callbacks.DisplayCallback');
 goog.require('org.pepstock.charba.client.callbacks.WidthCallback');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 
 const $LambdaAdaptor = goog.require('org.pepstock.charba.client.annotation.IsDefaultsEllipseAnnotation.$LambdaAdaptor$impl');
 exports = $LambdaAdaptor;

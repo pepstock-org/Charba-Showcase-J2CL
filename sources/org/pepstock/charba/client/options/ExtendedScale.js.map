@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"ExtendedScale.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAoCmB,a;;CAAA,W;EAAAA,Q;;;;QA8CX,gN,wCAA8CC,O,kBAAkBC,I,kBAAeC,I,wBAAqBC,a;EAApGC,wB;EAAAA,oC;EAAAA,+S;EAAAA,iB;;;;CAAA,gQ,wCAA8CJ,O,kBAAkBC,I,kBAAeC,I,wBAAqBC,a;EAC1GE,yK;EAEAA,gF;EAEAA,uN;EAEAA,4K;EAEAA,gP;;;;QASM,0H,oCAA0CL,O,wBAAwBG,a;EAAlEC,wB;EAAAA,oC;EAAAA,6M;EAAAA,iB;;;;CAAA,0K,oCAA0CJ,O,wBAAwBG,a;EACxEE,gc;;;CAQU,e;EACVC,sN;;;CAUW,qK,qBAAyBC,I,aAAUC,Q,gDAAoDR,O;EAClGS,4b;;;QArFiB,O;EAAAC,gC;EAAAA,6B;EAAAA,gB;EAGlBA,2G;;;;;;;;;;;;;;;;;;;;AAHkB;cAGiB,4DAHjB;",
+"lineCount":92,
+"mappings":"A;;;;;;;;;;;;;;;;;;MAqCmB,a;;CAAA,W;EAAAA,Q;;;;QA8CX,gN,sCAA4CC,O,kBAAkBC,I,kBAAeC,I,wBAAqBC,a;EAAlGC,wB;EAAAA,oC;EAAAA,+S;EAAAA,iB;;;;CAAA,gQ,sCAA4CJ,O,kBAAkBC,I,kBAAeC,I,wBAAqBC,a;EACxGE,yK;EAEAA,4E;EAEAA,uN;EAEAA,sK;EAEAA,gP;;;;QASM,0H,oCAA0CL,O,wBAAwBG,a;EAAlEC,wB;EAAAA,oC;EAAAA,6M;EAAAA,iB;;;;CAAA,0K,oCAA0CJ,O,wBAAwBG,a;EACxEE,4b;;;CAQU,e;EACVC,sN;;;CAUW,4K,2CAA+CN,O,aAAaO,Q,0BAA8BC,K;EACrGC,0a;;;CAUW,yK,2CAA+CT,O,aAAaO,Q,kBAAyBG,Q;EAChGD,0a;;;QAhGiB,O;EAAAE,gC;EAAAA,6B;EAAAA,gB;EAGlBA,2G;;;;;;;;;;;;;;;;;;;;AAHkB;cAGiB,4DAHjB;",
 "sources":["ExtendedScale.java"],
-"names":["org.pepstock.charba.client.options.ExtendedScale.<synthetic: ctor_js>","envelop","type","kind","defaultValues","org.pepstock.charba.client.options.ExtendedScale.<synthetic: ctor_create>","org.pepstock.charba.client.options.ExtendedScale.<init>","org.pepstock.charba.client.options.ExtendedScale.getCharbaId","node","property","org.pepstock.charba.client.options.ExtendedScale.setCallback","org.pepstock.charba.client.options.ExtendedScale.<clinit>"]
+"names":["org.pepstock.charba.client.options.ExtendedScale.<synthetic: ctor_js>","envelop","type","kind","defaultValues","org.pepstock.charba.client.options.ExtendedScale.<synthetic: ctor_create>","org.pepstock.charba.client.options.ExtendedScale.<init>","org.pepstock.charba.client.options.ExtendedScale.getCharbaId","property","proxy","org.pepstock.charba.client.options.ExtendedScale.setCallback","callback","org.pepstock.charba.client.options.ExtendedScale.<clinit>"]
 }
 

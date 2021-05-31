@@ -7,8 +7,8 @@ let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Id = goog.forwardDeclare('org.pepstock.charba.client.commons.Id$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let IsDefaultScaledOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScaledOptions$impl');
@@ -41,7 +41,7 @@ class ExtendedOptions extends ScaledOptions {
  //Initialization from constructor 'ExtendedOptions(IsChart, IsDefaultScaledOptions, ConfigurationEnvelop)'.
  
  $ctor__org_pepstock_charba_client_options_ExtendedOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** IsChart */ chart, /** IsDefaultScaledOptions */ defaultValues, /** ConfigurationEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_ExtendedOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_commons_NativeObject(chart, defaultValues, /**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_options_ExtendedOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_commons_NativeObject(chart, defaultValues, /**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'ExtendedOptions(IsChart, IsDefaultScaledOptions, ChartEnvelop)'.
  /** @return {!ExtendedOptions} */
@@ -54,7 +54,7 @@ class ExtendedOptions extends ScaledOptions {
  //Initialization from constructor 'ExtendedOptions(IsChart, IsDefaultScaledOptions, ChartEnvelop)'.
  
  $ctor__org_pepstock_charba_client_options_ExtendedOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_ChartEnvelop(/** IsChart */ chart, /** IsDefaultScaledOptions */ defaultValues, /** ChartEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_ExtendedOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_commons_NativeObject(chart, defaultValues, /**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_options_ExtendedOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_commons_NativeObject(chart, defaultValues, /**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'ExtendedOptions(IsChart, IsDefaultScaledOptions, NativeObject)'.
  /** @return {!ExtendedOptions} */
@@ -90,12 +90,16 @@ class ExtendedOptions extends ScaledOptions {
   return this.f_segment__org_pepstock_charba_client_options_ExtendedOptions_;
  }
  
- m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** AbstractNode */ node, /** Key */ property, /** ConfigurationEnvelop<?function():void> */ envelop) {
-  this.m_setCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(node, property, /**@type {?function():void}*/ ($Casts.$to(/**@type {ConfigurationEnvelop<?function():void>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__(), $JavaScriptFunction)));
+ m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(/** ConfigurationEnvelop<AbstractNode> */ envelop, /** Key */ property, /** ?function():void */ proxy) {
+  this.m_setCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(/**@type {AbstractNode}*/ ($Casts.$to(/**@type {ConfigurationEnvelop<AbstractNode>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__(), AbstractNode)), property, proxy);
+ }
+ 
+ m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/** ConfigurationEnvelop<AbstractNode> */ envelop, /** Key */ property, /** Function */ callback) {
+  this.m_setCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {AbstractNode}*/ ($Casts.$to(/**@type {ConfigurationEnvelop<AbstractNode>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__(), AbstractNode)), property, callback);
  }
  
  m_setEvent__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** AbstractNode */ node, /** Key */ property, /** ConfigurationEnvelop<?function():void> */ envelop) {
-  this.m_setEventToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(node, property, /**@type {?function():void}*/ ($Casts.$to(/**@type {ConfigurationEnvelop<?function():void>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__(), $JavaScriptFunction)));
+  this.m_setEventToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(node, property, /**@type {?function():void}*/ ($Casts.$to(/**@type {ConfigurationEnvelop<?function():void>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__(), $JavaScriptFunction)));
  }
  
  static $clinit() {
@@ -111,9 +115,10 @@ class ExtendedOptions extends ScaledOptions {
  static $loadModules() {
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
   IsChart = goog.module.get('org.pepstock.charba.client.IsChart$impl');
+  AbstractNode = goog.module.get('org.pepstock.charba.client.commons.AbstractNode$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Id = goog.module.get('org.pepstock.charba.client.commons.Id$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   ExtendedOptions_Property = goog.module.get('org.pepstock.charba.client.options.ExtendedOptions.Property$impl');
   ExtendedScales = goog.module.get('org.pepstock.charba.client.options.ExtendedScales$impl');

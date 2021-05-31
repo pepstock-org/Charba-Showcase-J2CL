@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultTransitions = goog.require('org.pepstock.charba.client.defaults.IsDefaultTransitions$impl');
 
 let AnimationTransition = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationTransition$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 
 /**
  * @interface
@@ -12,13 +12,13 @@ let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.Is
  */
 class IsTransitions {
  /** @abstract @override @return {AnimationTransition} */
- m_get__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {}
+ m_get__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {}
  /** @abstract */
- m_set__org_pepstock_charba_client_options_IsTransitionKey__org_pepstock_charba_client_options_AnimationTransition(/** IsTransitionKey */ transition, /** AnimationTransition */ animationTransition) {}
+ m_set__org_pepstock_charba_client_options_TransitionKey__org_pepstock_charba_client_options_AnimationTransition(/** TransitionKey */ transition, /** AnimationTransition */ animationTransition) {}
  /** @abstract @return {AnimationTransition} */
- m_create__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {}
+ m_create__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {}
  /** @abstract */
- m_remove__org_pepstock_charba_client_options_IsTransitionKey(/** IsTransitionKey */ transition) {}
+ m_remove__org_pepstock_charba_client_options_TransitionKey(/** TransitionKey */ transition) {}
  
  static $clinit() {
   IsTransitions.$clinit = () =>{};

@@ -5,8 +5,8 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultOptions = goog.require('org.pepstock.charba.client.labels.IsDefaultOptions$impl');
 
 let List = goog.forwardDeclare('java.util.List$impl');
-let IsLabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.IsLabelId$impl');
 let Label = goog.forwardDeclare('org.pepstock.charba.client.labels.Label$impl');
+let LabelId = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelId$impl');
 
 /**
  * @implements {IsDefaultOptions}
@@ -28,8 +28,8 @@ class DefaultOptions extends j_l_Object {
  }
  //Default method forwarding stub.
  /** @override @return {Label} */
- m_getLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ arg0) {
-  return IsDefaultOptions.m_getLabel__$default__org_pepstock_charba_client_labels_IsDefaultOptions__org_pepstock_charba_client_labels_IsLabelId(this, arg0);
+ m_getLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ arg0) {
+  return IsDefaultOptions.m_getLabel__$default__org_pepstock_charba_client_labels_IsDefaultOptions__org_pepstock_charba_client_labels_LabelId(this, arg0);
  }
  //Default method forwarding stub.
  /** @override @return {List<Label>} */
@@ -38,8 +38,8 @@ class DefaultOptions extends j_l_Object {
  }
  //Default method forwarding stub.
  /** @override @return {boolean} */
- m_hasLabel__org_pepstock_charba_client_labels_IsLabelId(/** IsLabelId */ arg0) {
-  return IsDefaultOptions.m_hasLabel__$default__org_pepstock_charba_client_labels_IsDefaultOptions__org_pepstock_charba_client_labels_IsLabelId(this, arg0);
+ m_hasLabel__org_pepstock_charba_client_labels_LabelId(/** LabelId */ arg0) {
+  return IsDefaultOptions.m_hasLabel__$default__org_pepstock_charba_client_labels_IsDefaultOptions__org_pepstock_charba_client_labels_LabelId(this, arg0);
  }
  /** @return {DefaultOptions} */
  static get f_INSTANCE__org_pepstock_charba_client_labels_DefaultOptions() {

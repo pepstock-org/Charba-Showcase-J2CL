@@ -2,7 +2,7 @@ goog.module('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 
 const Enum = goog.require('java.lang.Enum$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
-const IsScaleId = goog.require('org.pepstock.charba.client.options.IsScaleId$impl');
+const ScaleId = goog.require('org.pepstock.charba.client.options.ScaleId$impl');
 
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let Locale = goog.forwardDeclare('java.util.Locale$impl');
@@ -16,7 +16,7 @@ let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 /**
  * @extends {Enum<DefaultScaleId>}
- * @implements {IsScaleId}
+ * @implements {ScaleId}
  */
 class DefaultScaleId extends Enum {
  /** @protected */
@@ -58,8 +58,8 @@ class DefaultScaleId extends Enum {
   return false;
  }
  /** @return {boolean} */
- m_is__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ scaleId) {
-  return this.m_is__java_lang_String(/**@type {IsScaleId}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(scaleId), IsScaleId)).m_value__());
+ m_is__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ scaleId) {
+  return this.m_is__java_lang_String(/**@type {ScaleId}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(scaleId), ScaleId)).m_value__());
  }
  /** @return {DefaultScaleId} */
  static m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_enums_DefaultScaleId(/** AxisKind */ kind, /** DefaultScaleId */ defaultValue) {
@@ -180,7 +180,7 @@ DefaultScaleId.$ordinal_Y__org_pepstock_charba_client_enums_DefaultScaleId = 1;
 DefaultScaleId.$ordinal_R__org_pepstock_charba_client_enums_DefaultScaleId = 2;
 /**@const {number}*/
 DefaultScaleId.$ordinal_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId = 3;
-IsScaleId.$markImplementor(DefaultScaleId);
+ScaleId.$markImplementor(DefaultScaleId);
 $Util.$setClassMetadataForEnum(DefaultScaleId, "org.pepstock.charba.client.enums.DefaultScaleId");
 
 exports = DefaultScaleId;

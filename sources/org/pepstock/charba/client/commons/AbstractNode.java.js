@@ -4,6 +4,7 @@ goog.require('java.util.Date');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.Chart.$Overlay');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.colors.IsColor');
 goog.require('org.pepstock.charba.client.commons.Array.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayDouble.$Overlay');

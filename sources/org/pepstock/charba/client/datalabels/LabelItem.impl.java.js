@@ -59,47 +59,47 @@ class LabelItem extends AbstractPluginOptions {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, *, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(*, ?):?string>}*/
   this.f_formatterCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_borderColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_colorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_alignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_anchorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_borderWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_clampCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/
+  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
   this.f_clipCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_displayCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_offsetCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_opacityCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_rotationCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_textAlignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_textStrokeColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_textStrokeWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/
+  /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_textShadowBlurCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_textShadowColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_fontCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/
+  /**@type {CharbaCallbackProxy<?function(?):?>}*/
   this.f_paddingCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_;
   /**@type {IsDefaultDataLabelsItem}*/
   this.f_defaultOptions__org_pepstock_charba_client_datalabels_LabelItem_;
@@ -135,71 +135,71 @@ class LabelItem extends AbstractPluginOptions {
   if (!this.m_has__org_pepstock_charba_client_commons_Key(Property.f_FONT__org_pepstock_charba_client_datalabels_LabelItem_Property)) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(Property.f_FONT__org_pepstock_charba_client_datalabels_LabelItem_Property, this.f_font__org_pepstock_charba_client_datalabels_LabelItem_);
   }
-  this.f_listeners__org_pepstock_charba_client_datalabels_LabelItem_ = Listeners.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(this, this.f_defaultOptions__org_pepstock_charba_client_datalabels_LabelItem_.m_getListeners__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_LISTENERS__org_pepstock_charba_client_datalabels_LabelItem_Property));
+  this.f_listeners__org_pepstock_charba_client_datalabels_LabelItem_ = Listeners.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_datalabels_IsDefaultListeners__org_pepstock_charba_client_commons_NativeObject(this, Property.f_LISTENERS__org_pepstock_charba_client_datalabels_LabelItem_Property, this.f_defaultOptions__org_pepstock_charba_client_datalabels_LabelItem_.m_getListeners__(), this.m_getValue__org_pepstock_charba_client_commons_Key(Property.f_LISTENERS__org_pepstock_charba_client_datalabels_LabelItem_Property));
   if (!this.m_has__org_pepstock_charba_client_commons_Key(Property.f_LISTENERS__org_pepstock_charba_client_datalabels_LabelItem_Property)) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(Property.f_LISTENERS__org_pepstock_charba_client_datalabels_LabelItem_Property, this.f_listeners__org_pepstock_charba_client_datalabels_LabelItem_);
   }
-  this.f_formatterCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction, /** * */ value, /** ? */ context) =>{
+  this.f_formatterCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** * */ value, /** ? */ context) =>{
    return this.m_onFormatter__org_pepstock_charba_client_datalabels_DataLabelsContext__java_lang_Object_$p_org_pepstock_charba_client_datalabels_LabelItem(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context), value);
   };
-  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_1) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_1), this.m_getBackgroundColorCallback__(), this.m_getBackgroundColorAsString__());
   };
-  this.f_borderColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_borderColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_2) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_2), this.m_getBorderColorCallback__(), this.m_getBorderColorAsString__());
   };
-  this.f_colorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_colorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_3) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_3), this.m_getColorCallback__(), this.m_getColorAsString__());
   };
-  this.f_alignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_4, /** ? */ context_4) =>{
+  this.f_alignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_4) =>{
    return /**@type {Align}*/ ($Casts.$to(ScriptableUtils.m_getOptionValueAsString__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_Key(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_4), this.m_getAlignCallback__(), this.m_getAlign__()), Align)).m_value__();
   };
-  this.f_anchorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_5, /** ? */ context_5) =>{
+  this.f_anchorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_5) =>{
    return /**@type {Anchor}*/ ($Casts.$to(ScriptableUtils.m_getOptionValueAsString__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_Key(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_5), this.m_getAnchorCallback__(), this.m_getAnchor__()), Anchor)).m_value__();
   };
-  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_6, /** ? */ context_6) =>{
+  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_6) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_6), this.m_getBorderRadiusCallback__(), this.m_getBorderRadius__()), Double)));
   };
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_7, /** ? */ context_7) =>{
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_7) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_7), this.m_getBorderWidthCallback__(), Integer.m_valueOf__int(this.m_getBorderWidth__())), Integer)).m_intValue__();
   };
-  this.f_clampCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_8, /** ? */ context_8) =>{
+  this.f_clampCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_8) =>{
    return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_8), this.m_getClampCallback__(), this.m_isClamp__()), Boolean)));
   };
-  this.f_clipCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_9, /** ? */ context_9) =>{
+  this.f_clipCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_9) =>{
    return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_9), this.m_getClipCallback__(), this.m_isClip__()), Boolean)));
   };
-  this.f_displayCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_10, /** ? */ context_10) =>{
+  this.f_displayCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_10) =>{
    return this.m_onDisplay__org_pepstock_charba_client_datalabels_DataLabelsContext_$p_org_pepstock_charba_client_datalabels_LabelItem(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_10));
   };
-  this.f_offsetCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_11, /** ? */ context_11) =>{
+  this.f_offsetCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_11) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_11), this.m_getOffsetCallback__(), Integer.m_valueOf__int(this.m_getOffset__())), Integer)).m_intValue__();
   };
-  this.f_opacityCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_12, /** ? */ context_12) =>{
+  this.f_opacityCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_12) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_12), this.m_getOpacityCallback__(), this.m_getOpacity__()), Double)));
   };
-  this.f_rotationCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_13, /** ? */ context_13) =>{
+  this.f_rotationCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_13) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_13), this.m_getRotationCallback__(), this.m_getRotation__()), Double)));
   };
-  this.f_textAlignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_14, /** ? */ context_14) =>{
+  this.f_textAlignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_14) =>{
    return /**@type {TextAlign}*/ ($Casts.$to(ScriptableUtils.m_getOptionValueAsString__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_commons_Key(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_14), this.m_getTextAlignCallback__(), this.m_getTextAlign__()), TextAlign)).m_value__();
   };
-  this.f_textStrokeColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_15, /** ? */ context_15) =>{
+  this.f_textStrokeColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_15) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_15), this.m_getTextStrokeColorCallback__(), this.m_getTextStrokeColorAsString__());
   };
-  this.f_textStrokeWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_16, /** ? */ context_16) =>{
+  this.f_textStrokeWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_16) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_16), this.m_getTextStrokeWidthCallback__(), Integer.m_valueOf__int(this.m_getTextStrokeWidth__())), Integer)).m_intValue__();
   };
-  this.f_textShadowBlurCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_17, /** ? */ context_17) =>{
+  this.f_textShadowBlurCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_17) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_17), this.m_getTextShadowBlurCallback__(), this.m_getTextShadowBlur__()), Double)));
   };
-  this.f_textShadowColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_18, /** ? */ context_18) =>{
+  this.f_textShadowColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_18) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_18), this.m_getTextShadowColorCallback__(), this.m_getTextShadowColorAsString__());
   };
-  this.f_fontCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_19, /** ? */ context_19) =>{
+  this.f_fontCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_19) =>{
    return ScriptableUtils.m_getOptionValueAsFont__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultFont(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_19), this.m_getFontCallback__(), this.m_getFont__()).m_nativeObject__();
   };
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** Object */ contextFunction_20, /** ? */ context_20) =>{
+  this.f_paddingCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.callback = (/** ? */ context_20) =>{
    return ScriptableUtils.m_getOptionValueAsPadding__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultPadding(DataLabelsContext.$create__org_pepstock_charba_client_datalabels_LabelItem__org_pepstock_charba_client_commons_NativeObject(this, context_20), this.m_getPaddingCallback__(), this.m_getPadding__()).m_nativeObject__();
   };
  }
@@ -283,7 +283,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setBorderRadius__double(/** number */ radius) {
-  this.m_setBorderRadius__org_pepstock_charba_client_callbacks_RadiusCallback(null);
+  this.m_setBorderRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DataLabelsContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_BORDER_RADIUS__org_pepstock_charba_client_datalabels_LabelItem_Property, Checker.m_positiveOrZero__double(radius));
  }
  /** @override @return {number} */
@@ -292,7 +292,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setBorderWidth__int(/** number */ width) {
-  this.m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(null);
+  this.m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<DataLabelsContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_BORDER_WIDTH__org_pepstock_charba_client_datalabels_LabelItem_Property, Checker.m_positiveOrZero__int(width));
  }
  /** @override @return {number} */
@@ -301,7 +301,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setClamp__boolean(/** boolean */ clamp) {
-  this.m_setClamp__org_pepstock_charba_client_datalabels_callbacks_ClampCallback(null);
+  this.m_setClamp__org_pepstock_charba_client_datalabels_callbacks_ClampCallback(/**@type {ClampCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_CLAMP__org_pepstock_charba_client_datalabels_LabelItem_Property, clamp);
  }
  /** @override @return {boolean} */
@@ -310,7 +310,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setClip__boolean(/** boolean */ clip) {
-  this.m_setClip__org_pepstock_charba_client_datalabels_callbacks_ClipCallback(null);
+  this.m_setClip__org_pepstock_charba_client_datalabels_callbacks_ClipCallback(/**@type {ClipCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_CLIP__org_pepstock_charba_client_datalabels_LabelItem_Property, clip);
  }
  /** @override @return {boolean} */
@@ -360,7 +360,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setOffset__int(/** number */ offset) {
-  this.m_setOffset__org_pepstock_charba_client_callbacks_OffsetCallback(null);
+  this.m_setOffset__org_pepstock_charba_client_callbacks_OffsetCallback(/**@type {OffsetCallback<DataLabelsContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_OFFSET__org_pepstock_charba_client_datalabels_LabelItem_Property, offset);
  }
  /** @override @return {number} */
@@ -369,7 +369,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setOpacity__double(/** number */ opacity) {
-  this.m_setOpacity__org_pepstock_charba_client_datalabels_callbacks_OpacityCallback(null);
+  this.m_setOpacity__org_pepstock_charba_client_datalabels_callbacks_OpacityCallback(/**@type {OpacityCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_OPACITY__org_pepstock_charba_client_datalabels_LabelItem_Property, Checker.m_betweenOrMaximum__double__double__double(opacity, 0, 1));
  }
  /** @override @return {number} */
@@ -378,7 +378,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setRotation__double(/** number */ rotation) {
-  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(null);
+  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<DataLabelsContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_ROTATION__org_pepstock_charba_client_datalabels_LabelItem_Property, rotation);
  }
  /** @override @return {number} */
@@ -413,7 +413,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setTextStrokeWidth__int(/** number */ textStrokeWidth) {
-  this.m_setTextStrokeWidth__org_pepstock_charba_client_callbacks_WidthCallback(null);
+  this.m_setTextStrokeWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<DataLabelsContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_TEXT_STROKE_WIDTH__org_pepstock_charba_client_datalabels_LabelItem_Property, Checker.m_positiveOrZero__int(textStrokeWidth));
  }
  /** @override @return {number} */
@@ -422,7 +422,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setTextShadowBlur__double(/** number */ textShadowBlur) {
-  this.m_setTextShadowBlur__org_pepstock_charba_client_datalabels_callbacks_TextShadowBlurCallback(null);
+  this.m_setTextShadowBlur__org_pepstock_charba_client_datalabels_callbacks_TextShadowBlurCallback(/**@type {TextShadowBlurCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_TEXT_SHADOW_BLUR__org_pepstock_charba_client_datalabels_LabelItem_Property, textShadowBlur);
  }
  /** @override @return {number} */
@@ -452,7 +452,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<DataLabelsContext> */ backgroundColorCallback) {
-  LabelItem.f_BACKGROUND_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, backgroundColorCallback, this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_BACKGROUND_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, backgroundColorCallback, this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ backgroundColorCallback) {
+  this.m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BACKGROUND_COLOR__org_pepstock_charba_client_datalabels_LabelItem_Property, backgroundColorCallback);
  }
  /** @override @return {ColorCallback<DataLabelsContext>} */
  m_getBorderColorCallback__() {
@@ -460,7 +465,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<DataLabelsContext> */ borderColorCallback) {
-  LabelItem.f_BORDER_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, borderColorCallback, this.f_borderColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_BORDER_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, borderColorCallback, this.f_borderColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setBorderColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderColorCallback) {
+  this.m_setBorderColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_COLOR__org_pepstock_charba_client_datalabels_LabelItem_Property, borderColorCallback);
  }
  /** @override @return {ColorCallback<DataLabelsContext>} */
  m_getColorCallback__() {
@@ -468,7 +478,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<DataLabelsContext> */ colorCallback) {
-  LabelItem.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ colorCallback) {
+  this.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_COLOR__org_pepstock_charba_client_datalabels_LabelItem_Property, colorCallback);
  }
  /** @override @return {FormatterCallback} */
  m_getFormatterCallback__() {
@@ -476,7 +491,7 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setFormatter__org_pepstock_charba_client_datalabels_callbacks_FormatterCallback(/** FormatterCallback */ formatterCallback) {
-  LabelItem.f_FORMATTER_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, formatterCallback, this.f_formatterCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_FORMATTER_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, formatterCallback, this.f_formatterCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
  }
  /** @override @return {AlignCallback} */
  m_getAlignCallback__() {
@@ -484,7 +499,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setAlign__org_pepstock_charba_client_datalabels_callbacks_AlignCallback(/** AlignCallback */ alignCallback) {
-  LabelItem.f_ALIGN_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, alignCallback, this.f_alignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_ALIGN_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, alignCallback, this.f_alignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setAlign__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ alignCallback) {
+  this.m_setAlign__org_pepstock_charba_client_datalabels_callbacks_AlignCallback(/**@type {AlignCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_ALIGN__org_pepstock_charba_client_datalabels_LabelItem_Property, alignCallback);
  }
  /** @override @return {AnchorCallback} */
  m_getAnchorCallback__() {
@@ -492,7 +512,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setAnchor__org_pepstock_charba_client_datalabels_callbacks_AnchorCallback(/** AnchorCallback */ anchorCallback) {
-  LabelItem.f_ANCHOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, anchorCallback, this.f_anchorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_ANCHOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, anchorCallback, this.f_anchorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setAnchor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ anchorCallback) {
+  this.m_setAnchor__org_pepstock_charba_client_datalabels_callbacks_AnchorCallback(/**@type {AnchorCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_ANCHOR__org_pepstock_charba_client_datalabels_LabelItem_Property, anchorCallback);
  }
  /** @override @return {RadiusCallback<DataLabelsContext>} */
  m_getBorderRadiusCallback__() {
@@ -500,7 +525,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setBorderRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/** RadiusCallback<DataLabelsContext> */ borderRadiusCallback) {
-  LabelItem.f_BORDER_RADIUS_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, borderRadiusCallback, this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_BORDER_RADIUS_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, borderRadiusCallback, this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setBorderRadius__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderRadiusCallback) {
+  this.m_setBorderRadius__org_pepstock_charba_client_callbacks_RadiusCallback(/**@type {RadiusCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_RADIUS__org_pepstock_charba_client_datalabels_LabelItem_Property, borderRadiusCallback);
  }
  /** @override @return {WidthCallback<DataLabelsContext>} */
  m_getBorderWidthCallback__() {
@@ -508,7 +538,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<DataLabelsContext> */ borderWidthCallback) {
-  LabelItem.f_BORDER_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, borderWidthCallback, this.f_borderWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_BORDER_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, borderWidthCallback, this.f_borderWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderWidthCallback) {
+  this.m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BORDER_WIDTH__org_pepstock_charba_client_datalabels_LabelItem_Property, borderWidthCallback);
  }
  /** @override @return {ClampCallback} */
  m_getClampCallback__() {
@@ -516,7 +551,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setClamp__org_pepstock_charba_client_datalabels_callbacks_ClampCallback(/** ClampCallback */ clampCallback) {
-  LabelItem.f_CLAMP_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, clampCallback, this.f_clampCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_CLAMP_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, clampCallback, this.f_clampCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setClamp__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ clampCallback) {
+  this.m_setClamp__org_pepstock_charba_client_datalabels_callbacks_ClampCallback(/**@type {ClampCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_CLAMP__org_pepstock_charba_client_datalabels_LabelItem_Property, clampCallback);
  }
  /** @override @return {ClipCallback} */
  m_getClipCallback__() {
@@ -524,7 +564,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setClip__org_pepstock_charba_client_datalabels_callbacks_ClipCallback(/** ClipCallback */ clipCallback) {
-  LabelItem.f_CLIP_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, clipCallback, this.f_clipCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_CLIP_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, clipCallback, this.f_clipCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setClip__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ clipCallback) {
+  this.m_setClip__org_pepstock_charba_client_datalabels_callbacks_ClipCallback(/**@type {ClipCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_CLIP__org_pepstock_charba_client_datalabels_LabelItem_Property, clipCallback);
  }
  /** @override @return {DisplayCallback} */
  m_getDisplayCallback__() {
@@ -532,7 +577,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setDisplay__org_pepstock_charba_client_datalabels_callbacks_DisplayCallback(/** DisplayCallback */ displayCallback) {
-  LabelItem.f_DISPLAY_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_DISPLAY_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setDisplay__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ displayCallback) {
+  this.m_setDisplay__org_pepstock_charba_client_datalabels_callbacks_DisplayCallback(/**@type {DisplayCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_DISPLAY__org_pepstock_charba_client_datalabels_LabelItem_Property, displayCallback);
  }
  /** @override @return {OffsetCallback<DataLabelsContext>} */
  m_getOffsetCallback__() {
@@ -540,7 +590,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setOffset__org_pepstock_charba_client_callbacks_OffsetCallback(/** OffsetCallback<DataLabelsContext> */ offsetCallback) {
-  LabelItem.f_OFFSET_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, offsetCallback, this.f_offsetCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_OFFSET_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, offsetCallback, this.f_offsetCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setOffset__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ offsetCallback) {
+  this.m_setOffset__org_pepstock_charba_client_callbacks_OffsetCallback(/**@type {OffsetCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_OFFSET__org_pepstock_charba_client_datalabels_LabelItem_Property, offsetCallback);
  }
  /** @override @return {OpacityCallback} */
  m_getOpacityCallback__() {
@@ -548,7 +603,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setOpacity__org_pepstock_charba_client_datalabels_callbacks_OpacityCallback(/** OpacityCallback */ opacityCallback) {
-  LabelItem.f_OPACITY_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, opacityCallback, this.f_opacityCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_OPACITY_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, opacityCallback, this.f_opacityCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setOpacity__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ opacityCallback) {
+  this.m_setOpacity__org_pepstock_charba_client_datalabels_callbacks_OpacityCallback(/**@type {OpacityCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_OPACITY__org_pepstock_charba_client_datalabels_LabelItem_Property, opacityCallback);
  }
  /** @override @return {RotationCallback<DataLabelsContext>} */
  m_getRotationCallback__() {
@@ -556,7 +616,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/** RotationCallback<DataLabelsContext> */ rotationCallback) {
-  LabelItem.f_ROTATION_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, rotationCallback, this.f_rotationCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_ROTATION_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, rotationCallback, this.f_rotationCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setRotation__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ rotationCallback) {
+  this.m_setRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_ROTATION__org_pepstock_charba_client_datalabels_LabelItem_Property, rotationCallback);
  }
  /** @override @return {TextAlignCallback<DataLabelsContext>} */
  m_getTextAlignCallback__() {
@@ -564,7 +629,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setTextAlign__org_pepstock_charba_client_callbacks_TextAlignCallback(/** TextAlignCallback<DataLabelsContext> */ textAlignCallback) {
-  LabelItem.f_TEXT_ALIGN_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textAlignCallback, this.f_textAlignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_TEXT_ALIGN_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textAlignCallback, this.f_textAlignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setTextAlign__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ textAlignCallback) {
+  this.m_setTextAlign__org_pepstock_charba_client_callbacks_TextAlignCallback(/**@type {TextAlignCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_TEXT_ALIGN__org_pepstock_charba_client_datalabels_LabelItem_Property, textAlignCallback);
  }
  /** @override @return {ColorCallback<DataLabelsContext>} */
  m_getTextStrokeColorCallback__() {
@@ -572,7 +642,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setTextStrokeColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<DataLabelsContext> */ textStrokeColorCallback) {
-  LabelItem.f_TEXT_STROKE_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textStrokeColorCallback, this.f_textStrokeColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_TEXT_STROKE_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textStrokeColorCallback, this.f_textStrokeColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setTextStrokeColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ textStrokeColorCallback) {
+  this.m_setTextStrokeColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_TEXT_STROKE_COLOR__org_pepstock_charba_client_datalabels_LabelItem_Property, textStrokeColorCallback);
  }
  /** @override @return {WidthCallback<DataLabelsContext>} */
  m_getTextStrokeWidthCallback__() {
@@ -580,7 +655,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setTextStrokeWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<DataLabelsContext> */ textStrokeWidthCallback) {
-  LabelItem.f_TEXT_STROKE_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textStrokeWidthCallback, this.f_textStrokeWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_TEXT_STROKE_WIDTH_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textStrokeWidthCallback, this.f_textStrokeWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setTextStrokeWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ textStrokeWidthCallback) {
+  this.m_setTextStrokeWidth__org_pepstock_charba_client_callbacks_WidthCallback(/**@type {WidthCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_TEXT_STROKE_WIDTH__org_pepstock_charba_client_datalabels_LabelItem_Property, textStrokeWidthCallback);
  }
  /** @override @return {TextShadowBlurCallback} */
  m_getTextShadowBlurCallback__() {
@@ -588,7 +668,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setTextShadowBlur__org_pepstock_charba_client_datalabels_callbacks_TextShadowBlurCallback(/** TextShadowBlurCallback */ textShadowBlurCallback) {
-  LabelItem.f_TEXT_SHADOW_BLUR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textShadowBlurCallback, this.f_textShadowBlurCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_TEXT_SHADOW_BLUR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textShadowBlurCallback, this.f_textShadowBlurCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setTextShadowBlur__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ textShadowBlurCallback) {
+  this.m_setTextShadowBlur__org_pepstock_charba_client_datalabels_callbacks_TextShadowBlurCallback(/**@type {TextShadowBlurCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_TEXT_SHADOW_BLUR__org_pepstock_charba_client_datalabels_LabelItem_Property, textShadowBlurCallback);
  }
  /** @override @return {ColorCallback<DataLabelsContext>} */
  m_getTextShadowColorCallback__() {
@@ -596,7 +681,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  
  m_setTextShadowColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<DataLabelsContext> */ textShadowColorCallback) {
-  LabelItem.f_TEXT_SHADOW_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textShadowColorCallback, this.f_textShadowColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_TEXT_SHADOW_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, textShadowColorCallback, this.f_textShadowColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ 
+ m_setTextShadowColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ textShadowColorCallback) {
+  this.m_setTextShadowColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_TEXT_SHADOW_COLOR__org_pepstock_charba_client_datalabels_LabelItem_Property, textShadowColorCallback);
  }
  /** @override @return {FontCallback<DataLabelsContext>} */
  m_getFontCallback__() {
@@ -604,7 +694,12 @@ class LabelItem extends AbstractPluginOptions {
  }
  /** @override */
  m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/** FontCallback<DataLabelsContext> */ fontCallback) {
-  LabelItem.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_FONT_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+ }
+ /** @override */
+ m_setFont__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fontCallback) {
+  this.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/**@type {FontCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_FONT__org_pepstock_charba_client_datalabels_LabelItem_Property, fontCallback);
  }
  /** @override @return {PaddingCallback<DataLabelsContext>} */
  m_getPaddingCallback__() {
@@ -612,10 +707,15 @@ class LabelItem extends AbstractPluginOptions {
  }
  /** @override */
  m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(/** PaddingCallback<DataLabelsContext> */ paddingCallback) {
-  LabelItem.f_PADDING_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, paddingCallback, this.f_paddingCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
+  LabelItem.f_PADDING_PROPERTY_HANDLER__org_pepstock_charba_client_datalabels_LabelItem_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, DataLabelsPlugin.f_ID__org_pepstock_charba_client_datalabels_DataLabelsPlugin, paddingCallback, this.f_paddingCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_.proxy);
   if ($Equality.$same(paddingCallback, null) && !this.m_has__org_pepstock_charba_client_commons_Key(Property.f_PADDING__org_pepstock_charba_client_datalabels_LabelItem_Property)) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(Property.f_PADDING__org_pepstock_charba_client_datalabels_LabelItem_Property, this.f_padding__org_pepstock_charba_client_datalabels_LabelItem_);
   }
+ }
+ /** @override */
+ m_setPadding__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ paddingCallback) {
+  this.m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(/**@type {PaddingCallback<DataLabelsContext>}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_PADDING__org_pepstock_charba_client_datalabels_LabelItem_Property, paddingCallback);
  }
  /** @return {?string} */
  m_onFormatter__org_pepstock_charba_client_datalabels_DataLabelsContext__java_lang_Object_$p_org_pepstock_charba_client_datalabels_LabelItem(/** DataLabelsContext */ context, /** * */ value) {
@@ -640,27 +740,27 @@ class LabelItem extends AbstractPluginOptions {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_datalabels_LabelItem() {
-  this.f_formatterCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, *, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_colorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_alignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_anchorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_clampCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_clipCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_displayCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_offsetCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_opacityCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_rotationCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_textAlignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_textStrokeColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_textStrokeWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_textShadowBlurCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_textShadowColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_fontCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(Object, ?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_formatterCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(*, ?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_colorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_alignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_anchorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderRadiusCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_borderWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_clampCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_clipCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_displayCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_offsetCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_opacityCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_rotationCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_textAlignCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_textStrokeColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_textStrokeWidthCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_textShadowBlurCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_textShadowColorCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_fontCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_paddingCallbackProxy__org_pepstock_charba_client_datalabels_LabelItem_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {

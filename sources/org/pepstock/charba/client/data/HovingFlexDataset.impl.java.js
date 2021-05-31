@@ -10,6 +10,7 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
 let ColorCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ColorCallback$impl');
 let DatasetContext = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DatasetContext$impl');
+let WidthCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.WidthCallback$impl');
 let ColorBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.ColorBuilder$impl');
 let Gradient = goog.forwardDeclare('org.pepstock.charba.client.colors.Gradient$impl');
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
@@ -142,7 +143,7 @@ class HovingFlexDataset extends Dataset {
  }
  
  m_setBorderWidth__arrayOf_int(/** Array<number> */ borderWidth) {
-  this.m_setInternalBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback_$pp_org_pepstock_charba_client_data(null);
+  this.m_setInternalBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback_$pp_org_pepstock_charba_client_data(/**@type {WidthCallback<DatasetContext>}*/ (null));
   this.m_setWidths__org_pepstock_charba_client_commons_Key__arrayOf_int_$pp_org_pepstock_charba_client_data(CommonProperty.f_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, borderWidth);
  }
  /** @return {List<Integer>} */
@@ -235,7 +236,7 @@ class HovingFlexDataset extends Dataset {
  }
  
  m_setHoverBorderWidth__arrayOf_int(/** Array<number> */ widths) {
-  this.m_setInternalHoverBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback_$pp_org_pepstock_charba_client_data(null);
+  this.m_setInternalHoverBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback_$pp_org_pepstock_charba_client_data(/**@type {WidthCallback<DatasetContext>}*/ (null));
   this.m_setWidths__org_pepstock_charba_client_commons_Key__arrayOf_int_$pp_org_pepstock_charba_client_data(CommonProperty.f_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, widths);
  }
  /** @return {List<Integer>} */

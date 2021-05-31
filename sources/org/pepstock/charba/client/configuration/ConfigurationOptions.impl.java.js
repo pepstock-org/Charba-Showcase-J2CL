@@ -19,13 +19,14 @@ let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$imp
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ConfigurationLoader = goog.forwardDeclare('org.pepstock.charba.client.commons.ConfigurationLoader$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Merger = goog.forwardDeclare('org.pepstock.charba.client.commons.Merger$impl');
 let IsProvider = goog.forwardDeclare('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
 let Animation = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animation$impl');
 let AnimationContainer = goog.forwardDeclare('org.pepstock.charba.client.configuration.AnimationContainer$impl');
+let Animations = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animations$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let Datasets = goog.forwardDeclare('org.pepstock.charba.client.configuration.Datasets$impl');
@@ -61,7 +62,6 @@ let SizeItem = goog.forwardDeclare('org.pepstock.charba.client.items.SizeItem$im
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let ExtendedOptions = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedOptions$impl');
 let ExtendedScale = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedScale$impl');
-let IsAnimations = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimations$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -78,13 +78,13 @@ class ConfigurationOptions extends ConfigurationContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, Chart, ?):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Chart, ?):void>}*/
   this.f_resizeCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?, Array, Chart):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?, Array, Chart):void>}*/
   this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?, Array, Chart):void>}*/
+  /**@type {CharbaCallbackProxy<?function(?, Array, Chart):void>}*/
   this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_;
-  /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/
+  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
   this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {IsDefaultScaledOptions}*/
   this.f_defaultValues__org_pepstock_charba_client_configuration_ConfigurationOptions_;
@@ -148,22 +148,22 @@ class ConfigurationOptions extends ConfigurationContainer {
    return /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_getFont__();
   }));
   /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setCharbaId__java_lang_String(chart.m_getId__());
-  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** Object */ context, /** ? */ event, /** Array */ items, /** Chart */ nativeChart) =>{
+  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** ? */ event, /** Array */ items, /** Chart */ nativeChart) =>{
    let eventContext = ChartEventContext.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(event)));
    let nativeEvent = eventContext.m_getNativeEvent__();
    this.m_handleDatasetSelection__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(nativeEvent);
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(ChartClickEvent.$create__org_pepstock_charba_client_events_ChartEventContext__java_util_List(eventContext, /**@type {List<DatasetReference>}*/ (ArrayListHelper.m_unmodifiableList__org_pepstock_charba_client_commons_ArrayObject__org_pepstock_charba_client_commons_NativeObjectContainerFactory(items, DatasetReference.f_FACTORY__org_pepstock_charba_client_items_DatasetReference))));
   };
-  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** Object */ context_1, /** ? */ event_1, /** Array */ items_1, /** Chart */ nativeChart_1) =>{
+  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** ? */ event_1, /** Array */ items_1, /** Chart */ nativeChart_1) =>{
    let eventContext_1 = ChartEventContext.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(event_1)));
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(ChartHoverEvent.$create__org_pepstock_charba_client_events_ChartEventContext__java_util_List(eventContext_1, /**@type {List<DatasetReference>}*/ (ArrayListHelper.m_unmodifiableList__org_pepstock_charba_client_commons_ArrayObject__org_pepstock_charba_client_commons_NativeObjectContainerFactory(items_1, DatasetReference.f_FACTORY__org_pepstock_charba_client_items_DatasetReference))));
   };
-  this.f_resizeCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** Object */ context_2, /** Chart */ nativeChart_2, /** ? */ size) =>{
+  this.f_resizeCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** Chart */ nativeChart_2, /** ? */ size) =>{
    let eventContext_2 = ChartEventContext.$create__org_pepstock_charba_client_Chart(nativeChart_2);
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(ChartResizeEvent.$create__org_pepstock_charba_client_events_ChartEventContext__org_pepstock_charba_client_items_SizeItem(eventContext_2, SizeItem.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object__boolean(size, true)))));
   };
-  this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** Object */ context_3, /** Object */ event_2) =>{
-   this.m_handleClickEventOnElements__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(event_2);
+  this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** Object */ arg0) =>{
+   this.m_handleClickEventOnElements__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(arg0);
   };
  }
  
@@ -172,13 +172,13 @@ class ConfigurationOptions extends ConfigurationContainer {
  }
  
  m_setChartOptions__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
-  this.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedOptions.$create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_configuration_ConfigurationEnvelop(this.m_getChart__(), this.f_defaultValues__org_pepstock_charba_client_configuration_ConfigurationOptions_, /**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__())))));
+  this.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedOptions.$create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_configuration_ConfigurationEnvelop(this.m_getChart__(), this.f_defaultValues__org_pepstock_charba_client_configuration_ConfigurationOptions_, /**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__())))));
   if (ScalesOptions.$isInstance(this)) {
    let options = /**@type {ScalesOptions}*/ ($Casts.$to(this, ScalesOptions));
    for (let $iterator = options.m_getScales__().m_getAxes__().m_iterator__(); $iterator.m_hasNext__(); ) {
     let axis = /**@type {Axis}*/ ($Casts.$to($iterator.m_next__(), Axis));
     {
-     axis.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedScale.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_defaults_IsDefaultScale(/**@type {!ConfigurationEnvelop<Scale>}*/ (ConfigurationEnvelop.$create__java_lang_Object(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_getScales__().m_getAxis__org_pepstock_charba_client_options_IsScaleId(axis.m_getId__()))), axis.m_getDefaultValues___$pp_org_pepstock_charba_client_configuration()));
+     axis.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedScale.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_defaults_IsDefaultScale(/**@type {!ConfigurationEnvelop<Scale>}*/ (ConfigurationEnvelop.$create__java_lang_Object(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_getScales__().m_getAxis__org_pepstock_charba_client_options_ScaleId(axis.m_getId__()))), axis.m_getDefaultValues___$pp_org_pepstock_charba_client_configuration()));
     }
    }
   }
@@ -436,14 +436,22 @@ class ConfigurationOptions extends ConfigurationContainer {
  
  m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/** AbstractNode */ node, /** Key */ property, /** * */ callBack, /** CharbaCallbackProxy<?> */ callbackProxy) {
   if (!$Equality.$same(callBack, null)) {
-   /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(node, property, /**@type {!ConfigurationEnvelop<?function():void>}*/ (ConfigurationEnvelop.$create__java_lang_Object(callbackProxy.proxy)));
+   /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, callbackProxy.proxy);
   } else {
-   /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(node, property, ConfigurationOptions.$static_RESET_CALLBACK_ENVELOP__org_pepstock_charba_client_configuration_ConfigurationOptions);
+   /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, /**@type {?function():void}*/ (null));
+  }
+ }
+ 
+ m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/** AbstractNode */ node, /** Key */ property, /** Function */ callBack) {
+  if (!$Equality.$same(callBack, null)) {
+   /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, callBack);
+  } else {
+   /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setCallback__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {!ConfigurationEnvelop<AbstractNode>}*/ (ConfigurationEnvelop.$create__java_lang_Object(node)), property, /**@type {Function}*/ (null));
   }
  }
  /** @return {ChartContext} */
  m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(/** ? */ context) {
-  return ChartContext.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(context)));
+  return ChartContext.$create__org_pepstock_charba_client_commons_NativeObject(context);
  }
  
  m_checkAndManageCanvasListeners__boolean_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(/** boolean */ isAdding) {
@@ -498,7 +506,7 @@ class ConfigurationOptions extends ConfigurationContainer {
   return HasAnimation.m_getAnimation__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }
  //Default method forwarding stub.
- /** @override @return {IsAnimations} */
+ /** @override @return {Animations} */
  m_getAnimations__() {
   return HasAnimation.m_getAnimations__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }
@@ -519,10 +527,10 @@ class ConfigurationOptions extends ConfigurationContainer {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_ConfigurationOptions() {
-  this.f_resizeCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Object, Chart, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Object, ?, Array, Chart):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Object, ?, Array, Chart):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Object, Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_resizeCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Chart, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(?, Array, Chart):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(?, Array, Chart):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_onDatasetSelectionHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
   this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
   this.f_onHoverHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
@@ -557,7 +565,7 @@ class ConfigurationOptions extends ConfigurationContainer {
   ChartContext = goog.module.get('org.pepstock.charba.client.callbacks.ChartContext$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ConfigurationLoader = goog.module.get('org.pepstock.charba.client.commons.ConfigurationLoader$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   Merger = goog.module.get('org.pepstock.charba.client.commons.Merger$impl');
   IsProvider = goog.module.get('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');

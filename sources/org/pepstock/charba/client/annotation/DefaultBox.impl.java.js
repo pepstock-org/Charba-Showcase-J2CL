@@ -26,7 +26,7 @@ let ColorCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.Co
 let CornerRadiusCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.CornerRadiusCallback$impl');
 let DisplayCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DisplayCallback$impl');
 let WidthCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.WidthCallback$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
  * @implements {IsDefaultsBoxAnnotation}
@@ -181,7 +181,7 @@ class DefaultBox extends j_l_Object {
   return IsDefaultsXYAnnotation.m_getXMinCallback__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation(this);
  }
  //Default method forwarding stub.
- /** @override @return {IsScaleId} */
+ /** @override @return {ScaleId} */
  m_getXScaleID__() {
   return IsDefaultsXYAnnotation.m_getXScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation(this);
  }
@@ -226,7 +226,7 @@ class DefaultBox extends j_l_Object {
   return IsDefaultsXYAnnotation.m_getYMinCallback__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation(this);
  }
  //Default method forwarding stub.
- /** @override @return {IsScaleId} */
+ /** @override @return {ScaleId} */
  m_getYScaleID__() {
   return IsDefaultsXYAnnotation.m_getYScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsXYAnnotation(this);
  }

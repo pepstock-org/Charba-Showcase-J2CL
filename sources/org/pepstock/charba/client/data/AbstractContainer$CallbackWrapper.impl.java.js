@@ -13,7 +13,7 @@ class CallbackWrapper extends j_l_Object {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_callbackProxy__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_;
   /**@type {Dataset}*/
   this.f_dataset__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_;
@@ -39,7 +39,7 @@ class CallbackWrapper extends j_l_Object {
   this.f_property__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_ = property;
   this.f_callback__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_ = callback;
   this.f_defaultValue__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_ = defaultValue;
-  this.f_callbackProxy__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_callbackProxy__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_.callback = (/** ? */ context) =>{
    return this.m_getDataset___$p_org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper().m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(dataset.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context), this.m_getCallback___$p_org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper(), this.m_getProperty___$p_org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper(), this.m_getDefaultValue___$p_org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper());
   };
  }
@@ -65,7 +65,7 @@ class CallbackWrapper extends j_l_Object {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper() {
-  this.f_callbackProxy__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_callbackProxy__org_pepstock_charba_client_data_AbstractContainer_CallbackWrapper_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {

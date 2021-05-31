@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AnnotationId$$LambdaAdaptor.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,kJ;;;CAAA,wI;EAAAC,iC;EAAAA,kF;;;CAAA,S;EAAAC,yC;EAAAA,+G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["AnnotationId.java"],
+"names":["org.pepstock.charba.client.annotation.AnnotationId$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.AnnotationId$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.AnnotationId$$LambdaAdaptor.value","org.pepstock.charba.client.annotation.AnnotationId$$LambdaAdaptor.<clinit>"]
+}
+

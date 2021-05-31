@@ -3,7 +3,7 @@ goog.module('org.pepstock.charba.client.items.SizeItem$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.SizeItem.Property$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
@@ -25,7 +25,7 @@ class SizeItem extends NativeObjectContainer {
  //Initialization from constructor 'SizeItem(ConfigurationEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_SizeItem__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/** ConfigurationEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_SizeItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ConfigurationEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_SizeItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ConfigurationEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ConfigurationEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'SizeItem(NativeObject)'.
  /** @return {!SizeItem} */
@@ -60,7 +60,7 @@ class SizeItem extends NativeObjectContainer {
  }
  
  static $loadModules() {
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.SizeItem.Property$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');

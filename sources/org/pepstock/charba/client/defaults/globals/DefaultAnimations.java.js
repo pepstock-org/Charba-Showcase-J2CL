@@ -9,7 +9,7 @@ goog.require('org.pepstock.charba.client.defaults.IsDefaultAnimationCollection')
 goog.require('org.pepstock.charba.client.defaults.IsDefaultAnimations');
 goog.require('org.pepstock.charba.client.defaults.globals.DefaultAnimationCollection');
 goog.require('org.pepstock.charba.client.enums.DefaultAnimationCollectionKey');
-goog.require('org.pepstock.charba.client.options.IsAnimationCollectionKey');
+goog.require('org.pepstock.charba.client.options.AnimationCollectionKey');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.Objects');

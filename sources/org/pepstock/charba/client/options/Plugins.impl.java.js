@@ -10,7 +10,7 @@ let Collections = goog.forwardDeclare('java.util.Collections$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
@@ -44,7 +44,7 @@ class Plugins extends AbstractModel {
  //Initialization from constructor 'Plugins(ChartEnvelop)'.
  
  $ctor__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<Plugins> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_options_Options__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultPlugins__org_pepstock_charba_client_commons_NativeObject(/**@type {Options}*/ ($Casts.$to(/**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getParent__(), Options)), /**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getChildKey__(), /**@type {IsDefaultPlugins}*/ ($Casts.$to(/**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getDefaultValues__(), IsDefaultPlugins)), /**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getNativeObject__());
+  this.$ctor__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_options_Options__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultPlugins__org_pepstock_charba_client_commons_NativeObject(/**@type {Options}*/ ($Casts.$to(/**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getParent__(), Options)), /**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getChildKey__(), /**@type {IsDefaultPlugins}*/ ($Casts.$to(/**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getDefaultValues__(), IsDefaultPlugins)), /**@type {Plugins}*/ ($Casts.$to(/**@type {ChartEnvelop<Plugins>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), Plugins)).m_getNativeObject__());
  }
  //Factory method corresponding to constructor 'Plugins(Options, Key, IsDefaultPlugins, NativeObject)'.
  /** @return {!Plugins} */
@@ -73,7 +73,7 @@ class Plugins extends AbstractModel {
  }
  
  m_setEnabled__org_pepstock_charba_client_configuration_ConfigurationEnvelop__boolean(/** ConfigurationEnvelop<DefaultPluginId> */ envelop, /** boolean */ enabled) {
-  if (IsEnvelop.m_isValid__org_pepstock_charba_client_commons_IsEnvelop(envelop)) {
+  if (Envelop.m_isValid__org_pepstock_charba_client_commons_Envelop(envelop)) {
    this.m_setEnabled__org_pepstock_charba_client_commons_Key__boolean__boolean_$p_org_pepstock_charba_client_options_Plugins(/**@type {DefaultPluginId}*/ ($Casts.$to(envelop.m_getContent__(), DefaultPluginId)), enabled, true);
   }
  }
@@ -208,7 +208,7 @@ class Plugins extends AbstractModel {
   Collections = goog.module.get('java.util.Collections$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   DefaultPluginId = goog.module.get('org.pepstock.charba.client.enums.DefaultPluginId$impl');

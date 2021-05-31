@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultZoom$$LambdaAdaptor.impl.java.js",
-"lineCount":109,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MA0BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0E;EAAAA,wI;;;CAAA,8H;EAAAC,iC;EAAAA,6E;;;CAAA,W;EAAAC,+C;EAAAA,0G;;;;CAAA,wB;EAAAC,qI;;;;CAAA,W;EAAAC,wH;;;;CAAA,mB;EAAAC,gI;;;;CAAA,oB;EAAAC,iI;;;;CAAA,4B;EAAAC,yI;;;;CAAA,uB;EAAAC,oI;;;;CAAA,uB;EAAAC,oI;;;;CAAA,oB;EAAAC,iI;;;;CAAA,gB;EAAAC,mG;;;;CAAA,a;EAAAC,0H;;;;CAAA,Y;EAAAC,+F;;;;CAAA,uB;EAAAC,0G;;;;CAAA,U;EAAAC,6F;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["IsDefaultZoom.java"],
-"names":["org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.<init>","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getDrag","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getCompletedCallback","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getMode","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getModeCallback","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getOverScaleMode","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getOverScaleModeCallback","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getProgressCallback","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getRejectedCallback","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getStartCallback","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getThreshold","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.isEnabled","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getSpeed","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.getWheelModifierKey","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.isDrag","org.pepstock.charba.client.zoom.IsDefaultZoom$$LambdaAdaptor.<clinit>"]
-}
-

@@ -11,10 +11,17 @@ let Pan = goog.forwardDeclare('org.pepstock.charba.client.zoom.Pan$impl');
  * @extends {IsDefaultConfigurationItem}
  */
 class IsDefaultPan {
- /** @abstract @override @return {number} */
+ /** @abstract @return {boolean} */
+ m_isEnabled__() {}
+ /** @abstract @return {number} */
  m_getThreshold__() {}
  /** @abstract @return {ModifierKey} */
  m_getModifierKey__() {}
+ /** @return {boolean} */
+ static m_isEnabled__$default__org_pepstock_charba_client_zoom_IsDefaultPan(/** !IsDefaultPan */ $thisArg) {
+  IsDefaultPan.$clinit();
+  return Pan.f_DEFAULT_ENABLED__org_pepstock_charba_client_zoom_Pan;
+ }
  /** @return {number} */
  static m_getThreshold__$default__org_pepstock_charba_client_zoom_IsDefaultPan(/** !IsDefaultPan */ $thisArg) {
   IsDefaultPan.$clinit();

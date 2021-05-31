@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelId.impl.java.js",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;;MAwBiB,O;;QAQD,0B,gBAAcA,E;EAAdC,kB;EAEdA,iD;EAEAA,qD;;;QAWc,oD,gBAAgBD,E;EAAhBE,kB;EACdA,iF;;;QASW,yD,gBAAqBF,E;EAArBG,kB;EACXA,+E;;;QAlCe,M;EAAAC,kB;EAAAA,8B;;;QAAA,O;EAAAC,0B;EAAAA;",
+"sources":["LabelId.java"],
+"names":["id","org.pepstock.charba.client.labels.LabelId.create","org.pepstock.charba.client.labels.LabelId.isValid","org.pepstock.charba.client.labels.LabelId.checkIfValid","org.pepstock.charba.client.labels.LabelId.<synthetic: adapt_lambda>","org.pepstock.charba.client.labels.LabelId.<clinit>"]
+}
+

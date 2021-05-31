@@ -1,7 +1,7 @@
 goog.module('org.pepstock.charba.client.plugins.AbstractPluginOptions$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
+const AbstractNode = goog.require('org.pepstock.charba.client.commons.AbstractNode$impl');
 
 let StringBuilder = goog.forwardDeclare('java.lang.StringBuilder$impl');
 let Collections = goog.forwardDeclare('java.util.Collections$impl');
@@ -16,7 +16,8 @@ let ArrayEnumList = goog.forwardDeclare('org.pepstock.charba.client.commons.Arra
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
 let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constants$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
+let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Dataset = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset$impl');
 let Event = goog.forwardDeclare('org.pepstock.charba.client.enums.Event$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
@@ -28,16 +29,22 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 /**
  * @abstract
  */
-class AbstractPluginOptions extends NativeObjectContainer {
+class AbstractPluginOptions extends AbstractNode {
  /** @protected */
  constructor() {
   super();
   /**@type {?string}*/
   this.f_pluginId__org_pepstock_charba_client_plugins_AbstractPluginOptions_;
  }
+ //Initialization from constructor 'AbstractPluginOptions(String, NativeObject)'.
  
  $ctor__org_pepstock_charba_client_plugins_AbstractPluginOptions__java_lang_String__org_pepstock_charba_client_commons_NativeObject(/** ?string */ pluginId, /** ? */ nativeObject) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(nativeObject);
+  this.$ctor__org_pepstock_charba_client_plugins_AbstractPluginOptions__java_lang_String__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObject(pluginId, null, null, nativeObject);
+ }
+ //Initialization from constructor 'AbstractPluginOptions(String, AbstractNode, Key, NativeObject)'.
+ 
+ $ctor__org_pepstock_charba_client_plugins_AbstractPluginOptions__java_lang_String__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObject(/** ?string */ pluginId, /** AbstractNode */ parent, /** Key */ childKey, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_NativeObject(nativeObject);
   PluginIdChecker.m_check__java_lang_String(pluginId);
   this.f_pluginId__org_pepstock_charba_client_plugins_AbstractPluginOptions_ = pluginId;
   if (!this.m_has__org_pepstock_charba_client_commons_Key(Property.f_CHARBA_OPTIONS_ID__org_pepstock_charba_client_plugins_AbstractPluginOptions_Property)) {
@@ -75,7 +82,7 @@ class AbstractPluginOptions extends NativeObjectContainer {
  }
  
  m_applyingDefaults__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?string> */ envelop) {
-  if (IsEnvelop.m_isValid__org_pepstock_charba_client_commons_IsEnvelop(envelop)) {
+  if (Envelop.m_isValid__org_pepstock_charba_client_commons_Envelop(envelop)) {
    this.m_applyingDefaults__();
   }
  }
@@ -112,7 +119,7 @@ class AbstractPluginOptions extends NativeObjectContainer {
  static $clinit() {
   AbstractPluginOptions.$clinit = () =>{};
   AbstractPluginOptions.$loadModules();
-  NativeObjectContainer.$clinit();
+  AbstractNode.$clinit();
   AbstractPluginOptions.f_COUNTER__org_pepstock_charba_client_plugins_AbstractPluginOptions_ = AtomicInteger.$create__int(0);
  }
  /** @return {boolean} */
@@ -131,7 +138,7 @@ class AbstractPluginOptions extends NativeObjectContainer {
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Event = goog.module.get('org.pepstock.charba.client.enums.Event$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   Property = goog.module.get('org.pepstock.charba.client.plugins.AbstractPluginOptions.Property$impl');

@@ -11,7 +11,7 @@ goog.require('org.pepstock.charba.client.configuration.Time');
 goog.require('org.pepstock.charba.client.enums.AxisKind');
 goog.require('org.pepstock.charba.client.enums.AxisType');
 goog.require('org.pepstock.charba.client.enums.DefaultScaleId');
-goog.require('org.pepstock.charba.client.options.IsScaleId');
+goog.require('org.pepstock.charba.client.options.ScaleId');
 
 const CartesianTimeAxis = goog.require('org.pepstock.charba.client.configuration.CartesianTimeAxis$impl');
 exports = CartesianTimeAxis;

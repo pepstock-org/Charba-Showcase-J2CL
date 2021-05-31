@@ -10,10 +10,10 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let AbstractAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation.Property$impl');
 let AnnotationHelper = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let AnnotationType = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationType$impl');
 let BoxAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.BoxAnnotation$impl');
 let EllipseAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.EllipseAnnotation$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let LineAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.LineAnnotation$impl');
 let PointAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.PointAnnotation$impl');
 let DrawTime = goog.forwardDeclare('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
@@ -66,13 +66,13 @@ class AnnotationMap extends NativeObjectContainer {
   }
  }
  /** @return {boolean} */
- m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(/** IsAnnotationId */ id) {
-  IsAnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_IsAnnotationId(id);
+ m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(/** AnnotationId */ id) {
+  AnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_AnnotationId(id);
   return this.m_has__org_pepstock_charba_client_commons_Key(id);
  }
  
- m_removeAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(/** IsAnnotationId */ id) {
-  IsAnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_IsAnnotationId(id);
+ m_removeAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(/** AnnotationId */ id) {
+  AnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_AnnotationId(id);
   this.m_remove__org_pepstock_charba_client_commons_Key(id);
  }
  
@@ -119,9 +119,9 @@ class AnnotationMap extends NativeObjectContainer {
   return /**@type {List<AbstractAnnotation>}*/ (Collections.m_unmodifiableList__java_util_List(result));
  }
  /** @return {AbstractAnnotation} */
- m_getAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(/** IsAnnotationId */ id) {
-  IsAnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_IsAnnotationId(id);
-  if (this.m_hasAnnotation__org_pepstock_charba_client_annotation_IsAnnotationId_$pp_org_pepstock_charba_client_annotation(id) && this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(id, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
+ m_getAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(/** AnnotationId */ id) {
+  AnnotationId.m_checkIfValid__org_pepstock_charba_client_annotation_AnnotationId(id);
+  if (this.m_hasAnnotation__org_pepstock_charba_client_annotation_AnnotationId_$pp_org_pepstock_charba_client_annotation(id) && this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(id, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
    return this.m_getAndCreateAnnotation__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_annotation(id);
   }
   return null;
@@ -162,10 +162,10 @@ class AnnotationMap extends NativeObjectContainer {
   AbstractAnnotation = goog.module.get('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
   Property = goog.module.get('org.pepstock.charba.client.annotation.AbstractAnnotation.Property$impl');
   AnnotationHelper = goog.module.get('org.pepstock.charba.client.annotation.AnnotationHelper$impl');
+  AnnotationId = goog.module.get('org.pepstock.charba.client.annotation.AnnotationId$impl');
   AnnotationType = goog.module.get('org.pepstock.charba.client.annotation.AnnotationType$impl');
   BoxAnnotation = goog.module.get('org.pepstock.charba.client.annotation.BoxAnnotation$impl');
   EllipseAnnotation = goog.module.get('org.pepstock.charba.client.annotation.EllipseAnnotation$impl');
-  IsAnnotationId = goog.module.get('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
   LineAnnotation = goog.module.get('org.pepstock.charba.client.annotation.LineAnnotation$impl');
   PointAnnotation = goog.module.get('org.pepstock.charba.client.annotation.PointAnnotation$impl');
   Id = goog.module.get('org.pepstock.charba.client.commons.Id$impl');

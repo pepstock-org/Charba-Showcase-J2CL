@@ -7,11 +7,11 @@ const Key = goog.require('org.pepstock.charba.client.commons.Key$impl');
 let StringBuilder = goog.forwardDeclare('java.lang.StringBuilder$impl');
 let AtomicInteger = goog.forwardDeclare('java.util.concurrent.atomic.AtomicInteger$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let DefaultBox = goog.forwardDeclare('org.pepstock.charba.client.annotation.DefaultBox$impl');
 let DefaultEllipse = goog.forwardDeclare('org.pepstock.charba.client.annotation.DefaultEllipse$impl');
 let DefaultLine = goog.forwardDeclare('org.pepstock.charba.client.annotation.DefaultLine$impl');
 let DefaultPoint = goog.forwardDeclare('org.pepstock.charba.client.annotation.DefaultPoint$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let IsDefaultsAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsDefaultsAnnotation$impl');
 let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constants$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
@@ -55,10 +55,10 @@ class AnnotationType extends Enum {
  m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation() {
   return this.f_defaultValues__org_pepstock_charba_client_annotation_AnnotationType_;
  }
- /** @return {IsAnnotationId} */
+ /** @return {AnnotationId} */
  m_createId__() {
   let builder = StringBuilder.$create__java_lang_String(this.m_value__());
-  return IsAnnotationId.m_create__java_lang_String(builder.m_append__java_lang_String(Constants.f_MINUS__org_pepstock_charba_client_commons_Constants).m_append__int(this.f_counter__org_pepstock_charba_client_annotation_AnnotationType_.m_incrementAndGet__()).toString());
+  return AnnotationId.m_create__java_lang_String(builder.m_append__java_lang_String(Constants.f_MINUS__org_pepstock_charba_client_commons_Constants).m_append__int(this.f_counter__org_pepstock_charba_client_annotation_AnnotationType_.m_incrementAndGet__()).toString());
  }
  /** @return {!AnnotationType} */
  static m_valueOf__java_lang_String(/** string */ name) {
@@ -113,11 +113,11 @@ class AnnotationType extends Enum {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
   AtomicInteger = goog.module.get('java.util.concurrent.atomic.AtomicInteger$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  AnnotationId = goog.module.get('org.pepstock.charba.client.annotation.AnnotationId$impl');
   DefaultBox = goog.module.get('org.pepstock.charba.client.annotation.DefaultBox$impl');
   DefaultEllipse = goog.module.get('org.pepstock.charba.client.annotation.DefaultEllipse$impl');
   DefaultLine = goog.module.get('org.pepstock.charba.client.annotation.DefaultLine$impl');
   DefaultPoint = goog.module.get('org.pepstock.charba.client.annotation.DefaultPoint$impl');
-  IsAnnotationId = goog.module.get('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Enums = goog.module.get('vmbootstrap.Enums$impl');

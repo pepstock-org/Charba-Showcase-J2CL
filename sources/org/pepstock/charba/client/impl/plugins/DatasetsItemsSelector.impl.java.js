@@ -16,7 +16,7 @@ let LineOptions = goog.forwardDeclare('org.pepstock.charba.client.configuration.
 let BarDataset = goog.forwardDeclare('org.pepstock.charba.client.data.BarDataset$impl');
 let Dataset = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset$impl');
 let LineDataset = goog.forwardDeclare('org.pepstock.charba.client.data.LineDataset$impl');
-let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.BaseStyleProperties.$Overlay$impl');
+let BaseStyleProperties_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.BaseStyleProperties.$Overlay$impl');
 let DOMBuilder = goog.forwardDeclare('org.pepstock.charba.client.dom.DOMBuilder$impl');
 let Canvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
 let CursorType = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.CursorType$impl');
@@ -121,7 +121,7 @@ class DatasetsItemsSelector extends AbstractPlugin {
   this.m_storePluginEnablement__org_pepstock_charba_client_IsChart_$p_org_pepstock_charba_client_impl_plugins_DatasetsItemsSelector(chart);
   if (this.m_mustBeActivated__org_pepstock_charba_client_IsChart_$p_org_pepstock_charba_client_impl_plugins_DatasetsItemsSelector(chart)) {
    chart.m_getOptions__().m_getTooltips__().m_setEnabled__boolean(false);
-   chart.m_getOptions__().m_getLayout__().m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(null);
+   chart.m_getOptions__().m_getLayout__().m_setPadding__org_pepstock_charba_client_callbacks_NativeCallback(/**@type {Function}*/ (null));
    chart.m_getOptions__().m_setEvents__arrayOf_org_pepstock_charba_client_enums_Event(/**@type {!Array<org_pepstock_charba_client_enums_Event>}*/ ($Arrays.$init([org_pepstock_charba_client_enums_Event.f_CLICK__org_pepstock_charba_client_enums_Event, org_pepstock_charba_client_enums_Event.f_TOUCHSTART__org_pepstock_charba_client_enums_Event], org_pepstock_charba_client_enums_Event)));
    if (!this.f_pluginEventsRegistrationHandlers__org_pepstock_charba_client_impl_plugins_DatasetsItemsSelector_.containsKey(chart.m_getId__()) && chart.m_getOptions__().m_getLegend__().m_isDisplay__()) {
     let registratrion = chart.m_addHandler__org_pepstock_charba_client_events_EventHandler__org_pepstock_charba_client_events_EventType(this.f_pluginLegendClickHandler__org_pepstock_charba_client_impl_plugins_DatasetsItemsSelector_, LegendClickEvent.f_TYPE__org_pepstock_charba_client_events_LegendClickEvent);
@@ -144,7 +144,7 @@ class DatasetsItemsSelector extends AbstractPlugin {
   if (this.m_mustBeActivated__org_pepstock_charba_client_IsChart_$p_org_pepstock_charba_client_impl_plugins_DatasetsItemsSelector(chart)) {
    Checker.m_assertCheck__boolean__java_lang_String(!chart.m_getOptions__().m_hasDatasetSelectionHandlers__(), "Unable to activate plugin because a dataset selection handler has been defined");
    if (this.f_pluginSelectionHandlers__org_pepstock_charba_client_impl_plugins_DatasetsItemsSelector_.containsKey(chart.m_getId__())) {
-    $Overlay.m_setCursorType__$devirt__org_pepstock_charba_client_dom_BaseStyleProperties__org_pepstock_charba_client_dom_enums_CursorType(chart.m_getCanvas__().style, CursorType.f_WAIT__org_pepstock_charba_client_dom_enums_CursorType);
+    BaseStyleProperties_$Overlay.m_setCursorType__$devirt__org_pepstock_charba_client_dom_BaseStyleProperties__org_pepstock_charba_client_dom_enums_CursorType(chart.m_getCanvas__().style, CursorType.f_WAIT__org_pepstock_charba_client_dom_enums_CursorType);
    }
   }
  }
@@ -288,7 +288,7 @@ class DatasetsItemsSelector extends AbstractPlugin {
   if ($Objects.m_equals__java_lang_Object__java_lang_Object(handler.m_getStatus___$pp_org_pepstock_charba_client_impl_plugins(), SelectionStatus.f_SELECTED__org_pepstock_charba_client_impl_plugins_SelectionStatus)) {
    handler.m_refresh___$pp_org_pepstock_charba_client_impl_plugins();
   }
-  $Overlay.m_setCursorType__$devirt__org_pepstock_charba_client_dom_BaseStyleProperties__org_pepstock_charba_client_dom_enums_CursorType(chart.m_getCanvas__().style, CursorType.f_DEFAULT__org_pepstock_charba_client_dom_enums_CursorType);
+  BaseStyleProperties_$Overlay.m_setCursorType__$devirt__org_pepstock_charba_client_dom_BaseStyleProperties__org_pepstock_charba_client_dom_enums_CursorType(chart.m_getCanvas__().style, CursorType.f_DEFAULT__org_pepstock_charba_client_dom_enums_CursorType);
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_impl_plugins_DatasetsItemsSelector() {
@@ -333,7 +333,7 @@ class DatasetsItemsSelector extends AbstractPlugin {
   BarDataset = goog.module.get('org.pepstock.charba.client.data.BarDataset$impl');
   Dataset = goog.module.get('org.pepstock.charba.client.data.Dataset$impl');
   LineDataset = goog.module.get('org.pepstock.charba.client.data.LineDataset$impl');
-  $Overlay = goog.module.get('org.pepstock.charba.client.dom.BaseStyleProperties.$Overlay$impl');
+  BaseStyleProperties_$Overlay = goog.module.get('org.pepstock.charba.client.dom.BaseStyleProperties.$Overlay$impl');
   DOMBuilder = goog.module.get('org.pepstock.charba.client.dom.DOMBuilder$impl');
   Canvas_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
   CursorType = goog.module.get('org.pepstock.charba.client.dom.enums.CursorType$impl');

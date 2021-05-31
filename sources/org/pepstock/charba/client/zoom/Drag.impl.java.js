@@ -1,50 +1,45 @@
 goog.module('org.pepstock.charba.client.zoom.Drag$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
+const AbstractNode = goog.require('org.pepstock.charba.client.commons.AbstractNode$impl');
 const IsDefaultDrag = goog.require('org.pepstock.charba.client.zoom.IsDefaultDrag$impl');
 
 let ColorBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.ColorBuilder$impl');
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.zoom.Drag.Property$impl');
+let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
  * @implements {IsDefaultDrag}
  */
-class Drag extends NativeObjectContainer {
+class Drag extends AbstractNode {
  /** @protected */
  constructor() {
   super();
   /**@type {IsDefaultDrag}*/
   this.f_defaultOptions__org_pepstock_charba_client_zoom_Drag_;
  }
- //Factory method corresponding to constructor 'Drag(IsDefaultDrag)'.
  /** @return {!Drag} */
- static $create__org_pepstock_charba_client_zoom_IsDefaultDrag(/** IsDefaultDrag */ defaultOptions) {
+ static $create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_zoom_IsDefaultDrag__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** Key */ childKey, /** IsDefaultDrag */ defaultOptions, /** ? */ nativeObject) {
   Drag.$clinit();
   let $instance = new Drag();
-  $instance.$ctor__org_pepstock_charba_client_zoom_Drag__org_pepstock_charba_client_zoom_IsDefaultDrag(defaultOptions);
+  $instance.$ctor__org_pepstock_charba_client_zoom_Drag__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_zoom_IsDefaultDrag__org_pepstock_charba_client_commons_NativeObject(parent, childKey, defaultOptions, nativeObject);
   return $instance;
  }
- //Initialization from constructor 'Drag(IsDefaultDrag)'.
  
- $ctor__org_pepstock_charba_client_zoom_Drag__org_pepstock_charba_client_zoom_IsDefaultDrag(/** IsDefaultDrag */ defaultOptions) {
-  this.$ctor__org_pepstock_charba_client_zoom_Drag__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_zoom_IsDefaultDrag(null, defaultOptions);
+ $ctor__org_pepstock_charba_client_zoom_Drag__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_zoom_IsDefaultDrag__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** Key */ childKey, /** IsDefaultDrag */ defaultOptions, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObject(parent, childKey, nativeObject);
+  this.f_defaultOptions__org_pepstock_charba_client_zoom_Drag_ = /**@type {IsDefaultDrag}*/ ($Casts.$to(this.m_checkDefaultValuesArgument__java_lang_Object(defaultOptions), IsDefaultDrag));
  }
- //Factory method corresponding to constructor 'Drag(NativeObject, IsDefaultDrag)'.
- /** @return {!Drag} */
- static $create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_zoom_IsDefaultDrag(/** ? */ nativeObject, /** IsDefaultDrag */ defaultOptions) {
-  Drag.$clinit();
-  let $instance = new Drag();
-  $instance.$ctor__org_pepstock_charba_client_zoom_Drag__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_zoom_IsDefaultDrag(nativeObject, defaultOptions);
-  return $instance;
- }
- //Initialization from constructor 'Drag(NativeObject, IsDefaultDrag)'.
  
- $ctor__org_pepstock_charba_client_zoom_Drag__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_zoom_IsDefaultDrag(/** ? */ nativeObject, /** IsDefaultDrag */ defaultOptions) {
-  this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(nativeObject);
-  this.f_defaultOptions__org_pepstock_charba_client_zoom_Drag_ = defaultOptions;
+ m_setEnabled__boolean(/** boolean */ enabled) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__boolean(Property.f_ENABLED__org_pepstock_charba_client_zoom_Drag_Property, enabled);
+ }
+ /** @override @return {boolean} */
+ m_isEnabled__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_ENABLED__org_pepstock_charba_client_zoom_Drag_Property, this.f_defaultOptions__org_pepstock_charba_client_zoom_Drag_.m_isEnabled__());
  }
  
  m_setBackgroundColor__org_pepstock_charba_client_colors_IsColor(/** IsColor */ backgroundColor) {
@@ -52,7 +47,7 @@ class Drag extends NativeObjectContainer {
  }
  
  m_setBackgroundColor__java_lang_String(/** ?string */ backgroundColor) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property, backgroundColor);
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property, backgroundColor);
  }
  /** @override @return {?string} */
  m_getBackgroundColorAsString__() {
@@ -68,7 +63,7 @@ class Drag extends NativeObjectContainer {
  }
  
  m_setBorderColor__java_lang_String(/** ?string */ borderColor) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property, borderColor);
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property, borderColor);
  }
  /** @override @return {?string} */
  m_getBorderColorAsString__() {
@@ -80,7 +75,7 @@ class Drag extends NativeObjectContainer {
  }
  
  m_setBorderWidth__int(/** number */ borderWidth) {
-  this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property, Checker.m_positiveOrZero__int(borderWidth));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__int(Property.f_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property, Checker.m_positiveOrZero__int(borderWidth));
  }
  /** @override @return {number} */
  m_getBorderWidth__() {
@@ -90,7 +85,7 @@ class Drag extends NativeObjectContainer {
  static $clinit() {
   Drag.$clinit = () =>{};
   Drag.$loadModules();
-  NativeObjectContainer.$clinit();
+  AbstractNode.$clinit();
   IsDefaultDrag.$clinit();
  }
  /** @return {boolean} */
@@ -103,8 +98,11 @@ class Drag extends NativeObjectContainer {
   IsColor = goog.module.get('org.pepstock.charba.client.colors.IsColor$impl');
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   Property = goog.module.get('org.pepstock.charba.client.zoom.Drag.Property$impl');
+  $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }
+/**@const {boolean}*/
+Drag.f_DEFAULT_ENABLED__org_pepstock_charba_client_zoom_Drag = false;
 /**@const {?string}*/
 Drag.f_DEFAULT_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag = "rgba(225,225,225,0.3)";
 /**@const {?string}*/

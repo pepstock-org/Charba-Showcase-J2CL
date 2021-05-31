@@ -103,6 +103,11 @@ class CartesianLinearTick extends CartesianNumericTick {
  }
  //Default method forwarding stub.
  /** @override */
+ m_setCount__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  IsLinearTick.m_setCount__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
  m_setMaxTicksLimit__int(/** number */ arg0) {
   IsLinearTick.m_setMaxTicksLimit__$default__org_pepstock_charba_client_configuration_IsLinearTick__int(this, arg0);
  }
@@ -110,6 +115,11 @@ class CartesianLinearTick extends CartesianNumericTick {
  /** @override */
  m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback(/** MaxTicksLimitCallback */ arg0) {
   IsLinearTick.m_setMaxTicksLimit__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_MaxTicksLimitCallback(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setMaxTicksLimit__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  IsLinearTick.m_setMaxTicksLimit__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
  }
  //Default method forwarding stub.
  /** @override */
@@ -123,6 +133,11 @@ class CartesianLinearTick extends CartesianNumericTick {
  }
  //Default method forwarding stub.
  /** @override */
+ m_setPrecision__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  IsLinearTick.m_setPrecision__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
  m_setStepSize__double(/** number */ arg0) {
   IsLinearTick.m_setStepSize__$default__org_pepstock_charba_client_configuration_IsLinearTick__double(this, arg0);
  }
@@ -130,6 +145,11 @@ class CartesianLinearTick extends CartesianNumericTick {
  /** @override */
  m_setStepSize__org_pepstock_charba_client_callbacks_StepSizeCallback(/** StepSizeCallback */ arg0) {
   IsLinearTick.m_setStepSize__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_StepSizeCallback(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setStepSize__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  IsLinearTick.m_setStepSize__$default__org_pepstock_charba_client_configuration_IsLinearTick__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
  }
  
  static $clinit() {

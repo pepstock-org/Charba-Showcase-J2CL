@@ -6,12 +6,16 @@ const IsAnimation = goog.require('org.pepstock.charba.client.options.IsAnimation
 const IsAnimations = goog.require('org.pepstock.charba.client.options.IsAnimations$impl');
 
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
+let DelayCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DelayCallback$impl');
+let DurationCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DurationCallback$impl');
+let EasingCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.EasingCallback$impl');
+let LoopCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.LoopCallback$impl');
 let DefaultTransitions = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTransitions$impl');
 let Easing = goog.forwardDeclare('org.pepstock.charba.client.enums.Easing$impl');
 let AnimationCollection = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationCollection$impl');
+let AnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationCollectionKey$impl');
 let AnimationTransition = goog.forwardDeclare('org.pepstock.charba.client.options.AnimationTransition$impl');
-let IsAnimationCollectionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimationCollectionKey$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 
 /**
  * @implements {IsAnimation}
@@ -34,7 +38,7 @@ class UpdateConfiguration extends NativeObjectContainer {
  
  $ctor__org_pepstock_charba_client_UpdateConfiguration__() {
   this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__();
-  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_ = AnimationTransition.$create__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationTransition__org_pepstock_charba_client_ChartEnvelop(UpdateConfiguration.$static_UPDATE__org_pepstock_charba_client_UpdateConfiguration, DefaultTransitions.f_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions, /**@type {!ChartEnvelop<?>}*/ (ChartEnvelop.$create__java_lang_Object(this.m_getNativeObject__())));
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_ = AnimationTransition.$create__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultAnimationTransition__org_pepstock_charba_client_ChartEnvelop__java_lang_String(UpdateConfiguration.$static_UPDATE__org_pepstock_charba_client_UpdateConfiguration, DefaultTransitions.f_DEFAULT_ANIMATION_TRANSITION__org_pepstock_charba_client_defaults_globals_DefaultTransitions, /**@type {!ChartEnvelop<?>}*/ (ChartEnvelop.$create__java_lang_Object(this.m_getNativeObject__())), UpdateConfiguration.f_UPDATE_MODE_KEY__org_pepstock_charba_client_UpdateConfiguration_);
  }
  /** @return {AnimationTransition} */
  m_getTransition___$pp_org_pepstock_charba_client() {
@@ -88,39 +92,87 @@ class UpdateConfiguration extends NativeObjectContainer {
  m_isAnimateScale__() {
   return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_isAnimateScale__();
  }
+ /** @override @return {DurationCallback} */
+ m_getDurationCallback__() {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_getDurationCallback__();
+ }
+ /** @override @return {DelayCallback} */
+ m_getDelayCallback__() {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_getDelayCallback__();
+ }
+ /** @override @return {LoopCallback} */
+ m_getLoopCallback__() {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_getLoopCallback__();
+ }
+ /** @override @return {EasingCallback} */
+ m_getEasingCallback__() {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_getEasingCallback__();
+ }
  /** @override */
- m_setEnabled__org_pepstock_charba_client_options_IsAnimationCollectionKey__boolean(/** IsAnimationCollectionKey */ collection, /** boolean */ enabled) {
-  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_setEnabled__org_pepstock_charba_client_options_IsAnimationCollectionKey__boolean(collection, enabled);
+ m_setDuration__org_pepstock_charba_client_callbacks_DurationCallback(/** DurationCallback */ durationCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setDuration__org_pepstock_charba_client_callbacks_DurationCallback(durationCallback);
+ }
+ /** @override */
+ m_setDelay__org_pepstock_charba_client_callbacks_DelayCallback(/** DelayCallback */ delayCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setDelay__org_pepstock_charba_client_callbacks_DelayCallback(delayCallback);
+ }
+ /** @override */
+ m_setLoop__org_pepstock_charba_client_callbacks_LoopCallback(/** LoopCallback */ loopCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setLoop__org_pepstock_charba_client_callbacks_LoopCallback(loopCallback);
+ }
+ /** @override */
+ m_setEasing__org_pepstock_charba_client_callbacks_EasingCallback(/** EasingCallback */ easingCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setEasing__org_pepstock_charba_client_callbacks_EasingCallback(easingCallback);
+ }
+ /** @override */
+ m_setDuration__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ durationCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setDuration__org_pepstock_charba_client_callbacks_NativeCallback(durationCallback);
+ }
+ /** @override */
+ m_setDelay__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ delayCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setDelay__org_pepstock_charba_client_callbacks_NativeCallback(delayCallback);
+ }
+ /** @override */
+ m_setLoop__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ loopCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setLoop__org_pepstock_charba_client_callbacks_NativeCallback(loopCallback);
+ }
+ /** @override */
+ m_setEasing__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ easingCallback) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimation__().m_setEasing__org_pepstock_charba_client_callbacks_NativeCallback(easingCallback);
+ }
+ /** @override */
+ m_setEnabled__org_pepstock_charba_client_options_AnimationCollectionKey__boolean(/** AnimationCollectionKey */ collection, /** boolean */ enabled) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_setEnabled__org_pepstock_charba_client_options_AnimationCollectionKey__boolean(collection, enabled);
  }
  /** @override @return {boolean} */
- m_isEnabled__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_isEnabled__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_isEnabled__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_isEnabled__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
  }
  /** @override @return {boolean} */
- m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_has__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_has__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_has__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
  }
  /** @override @return {AnimationCollection} */
- m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_get__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_get__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_get__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
  }
  /** @override */
- m_set__org_pepstock_charba_client_options_IsAnimationCollectionKey__org_pepstock_charba_client_options_AnimationCollection(/** IsAnimationCollectionKey */ collection, /** AnimationCollection */ animationCollection) {
-  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_set__org_pepstock_charba_client_options_IsAnimationCollectionKey__org_pepstock_charba_client_options_AnimationCollection(collection, animationCollection);
+ m_set__org_pepstock_charba_client_options_AnimationCollectionKey__org_pepstock_charba_client_options_AnimationCollection(/** AnimationCollectionKey */ collection, /** AnimationCollection */ animationCollection) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_set__org_pepstock_charba_client_options_AnimationCollectionKey__org_pepstock_charba_client_options_AnimationCollection(collection, animationCollection);
  }
  /** @override @return {AnimationCollection} */
- m_create__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_create__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_create__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  return this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_create__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
  }
  /** @override */
- m_remove__org_pepstock_charba_client_options_IsAnimationCollectionKey(/** IsAnimationCollectionKey */ collection) {
-  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_remove__org_pepstock_charba_client_options_IsAnimationCollectionKey(collection);
+ m_remove__org_pepstock_charba_client_options_AnimationCollectionKey(/** AnimationCollectionKey */ collection) {
+  this.f_transition__org_pepstock_charba_client_UpdateConfiguration_.m_getAnimations__().m_remove__org_pepstock_charba_client_options_AnimationCollectionKey(collection);
  }
  /** @return {?} */
  m_nativeObject___$pp_org_pepstock_charba_client() {
   return this.m_getNativeObject__();
  }
- /** @return {IsTransitionKey} */
+ /** @return {TransitionKey} */
  static get f_UPDATE__org_pepstock_charba_client_UpdateConfiguration() {
   return (UpdateConfiguration.$clinit(), UpdateConfiguration.$static_UPDATE__org_pepstock_charba_client_UpdateConfiguration);
  }
@@ -129,7 +181,7 @@ class UpdateConfiguration extends NativeObjectContainer {
   UpdateConfiguration.$clinit = () =>{};
   UpdateConfiguration.$loadModules();
   NativeObjectContainer.$clinit();
-  UpdateConfiguration.$static_UPDATE__org_pepstock_charba_client_UpdateConfiguration = IsTransitionKey.m_create__java_lang_String(UpdateConfiguration.f_UPDATE_MODE_KEY__org_pepstock_charba_client_UpdateConfiguration_);
+  UpdateConfiguration.$static_UPDATE__org_pepstock_charba_client_UpdateConfiguration = TransitionKey.m_create__java_lang_String(UpdateConfiguration.f_UPDATE_MODE_KEY__org_pepstock_charba_client_UpdateConfiguration_);
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -140,12 +192,12 @@ class UpdateConfiguration extends NativeObjectContainer {
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
   DefaultTransitions = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTransitions$impl');
   AnimationTransition = goog.module.get('org.pepstock.charba.client.options.AnimationTransition$impl');
-  IsTransitionKey = goog.module.get('org.pepstock.charba.client.options.IsTransitionKey$impl');
+  TransitionKey = goog.module.get('org.pepstock.charba.client.options.TransitionKey$impl');
  }
 }
 /**@const {?string}*/
 UpdateConfiguration.f_UPDATE_MODE_KEY__org_pepstock_charba_client_UpdateConfiguration_ = "charbaupdate";
-/**@private {IsTransitionKey}*/
+/**@private {TransitionKey}*/
 UpdateConfiguration.$static_UPDATE__org_pepstock_charba_client_UpdateConfiguration;
 IsAnimation.$markImplementor(UpdateConfiguration);
 IsAnimations.$markImplementor(UpdateConfiguration);

@@ -32,7 +32,6 @@ let InteractionAxis = goog.forwardDeclare('org.pepstock.charba.client.enums.Inte
 let ModifierKey = goog.forwardDeclare('org.pepstock.charba.client.enums.ModifierKey$impl');
 let TickSource = goog.forwardDeclare('org.pepstock.charba.client.enums.TickSource$impl');
 let TimeUnit = goog.forwardDeclare('org.pepstock.charba.client.enums.TimeUnit$impl');
-let Drag = goog.forwardDeclare('org.pepstock.charba.client.zoom.Drag$impl');
 let ZoomOptions = goog.forwardDeclare('org.pepstock.charba.client.zoom.ZoomOptions$impl');
 let ZoomPlugin = goog.forwardDeclare('org.pepstock.charba.client.zoom.ZoomPlugin$impl');
 let LogView = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.LogView$impl');
@@ -61,8 +60,6 @@ class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
   this.f_modifier__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_;
   /**@type {HTMLDivElement}*/
   this.f_help__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_;
-  /**@type {Drag}*/
-  this.f_drag__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_;
   /**@type {CartesianTimeSeriesAxis}*/
   this.f_axis__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_;
  }
@@ -127,11 +124,10 @@ class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
   axis2.m_setStacked__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.m_getData__().m_setDatasets__arrayOf_org_pepstock_charba_client_data_Dataset(/**@type {!Array<Dataset>}*/ ($Arrays.$init([dataset1, dataset2], Dataset)));
   let options = ZoomOptions.$create__();
-  options.m_getZoom__().m_setEnabled__boolean(true);
+  options.m_getZoom__().m_getWheel__().m_setEnabled__boolean(true);
   options.m_getZoom__().m_setMode__org_pepstock_charba_client_enums_InteractionAxis(InteractionAxis.f_X__org_pepstock_charba_client_enums_InteractionAxis);
-  options.m_getZoom__().m_setSpeed__double(0.05);
-  this.f_drag__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_ = ZoomPlugin.m_createDrag__();
-  options.m_getZoom__().m_setDrag__org_pepstock_charba_client_zoom_Drag(this.f_drag__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_);
+  options.m_getZoom__().m_getWheel__().m_setSpeed__double(0.05);
+  options.m_getZoom__().m_getDrag__().m_setEnabled__boolean(true);
   options.m_getZoom__().m_setCompletedCallback__org_pepstock_charba_client_zoom_callbacks_CompletedCallback($2.$create__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase(this));
   options.m_getZoom__().m_setProgressCallback__org_pepstock_charba_client_zoom_callbacks_ProgressCallback($3.$create__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase(this));
   options.m_getZoom__().m_setRejectedCallback__org_pepstock_charba_client_zoom_callbacks_RejectedCallback($4.$create__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase(this));
@@ -247,13 +243,13 @@ class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
  m_handleDragging__() {
   let options = /**@type {ZoomOptions}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.m_getOptions__().m_getPlugins__().m_getOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptionsFactory(ZoomPlugin.f_ID__org_pepstock_charba_client_zoom_ZoomPlugin, ZoomPlugin.f_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin), ZoomOptions));
   if (this.f_dragging__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.checked) {
-   options.m_getZoom__().m_setDrag__org_pepstock_charba_client_zoom_Drag(this.f_drag__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_);
-   options.m_getZoom__().m_setWheelModifierKey__org_pepstock_charba_client_enums_ModifierKey(null);
+   options.m_getZoom__().m_getDrag__().m_setEnabled__boolean(true);
+   options.m_getZoom__().m_getWheel__().m_setModifierKey__org_pepstock_charba_client_enums_ModifierKey(null);
    this.f_modifier__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.checked = false;
    this.f_modifier__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.disabled = true;
    this.f_help__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.innerHTML = "";
   } else {
-   options.m_getZoom__().m_setDrag__boolean(false);
+   options.m_getZoom__().m_getDrag__().m_setEnabled__boolean(false);
    this.f_modifier__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.disabled = false;
   }
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.m_update__();
@@ -262,10 +258,10 @@ class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
  m_handleModifier__() {
   let options = /**@type {ZoomOptions}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.m_getOptions__().m_getPlugins__().m_getOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptionsFactory(ZoomPlugin.f_ID__org_pepstock_charba_client_zoom_ZoomPlugin, ZoomPlugin.f_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin), ZoomOptions));
   if (this.f_modifier__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.checked) {
-   options.m_getZoom__().m_setWheelModifierKey__org_pepstock_charba_client_enums_ModifierKey(ModifierKey.f_ALT__org_pepstock_charba_client_enums_ModifierKey);
+   options.m_getZoom__().m_getWheel__().m_setModifierKey__org_pepstock_charba_client_enums_ModifierKey(ModifierKey.f_ALT__org_pepstock_charba_client_enums_ModifierKey);
    this.f_help__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.innerHTML = "<kbd style=\"" + j_l_String.m_valueOf__java_lang_Object(ZoomCallbacksOnTimeSeriesCase.f_CSS__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_) + "\">Alt</kbd> + wheeling to zoom";
   } else {
-   options.m_getZoom__().m_setWheelModifierKey__org_pepstock_charba_client_enums_ModifierKey(null);
+   options.m_getZoom__().m_getWheel__().m_setModifierKey__org_pepstock_charba_client_enums_ModifierKey(null);
    this.f_help__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.innerHTML = "";
   }
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_ZoomCallbacksOnTimeSeriesCase_.m_update__();

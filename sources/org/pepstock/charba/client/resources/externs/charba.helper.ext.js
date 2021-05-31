@@ -14,6 +14,10 @@ CharbaCallbackProxy.prototype.proxy;
  * @type {Function}
  */
 CharbaCallbackProxy.prototype.callback;
+  /**
+   * @type {boolean}
+   */
+CharbaCallbackProxy.prototype.ignoreFunctionContext;
 /**
  * @constructor
  * @return {CharbaJsHelper}
@@ -103,61 +107,40 @@ function CharbaJsControllerHelper() {}
  */
 CharbaJsControllerHelper.register = function(controllerType, chartType, object) {};
 /**
- * @param {string} chartType 
+ * @param {string} controllerType 
  * @param {Object} context 
  * @return {undefined}
  */
-CharbaJsControllerHelper.initialize = function(chartType, context) {};
+CharbaJsControllerHelper.initialize = function(controllerType, context) {};
 /**
- * @param {string} chartType 
+ * Invokes the default "parse" method.
+ * 
+ * @param {string} controllerType controller type
+ * @param {Object} context context of controller
+ * @param {number} start start index of metadata
+ * @param {number} count count of metadata
+ * @return {undefined}
+ */
+CharbaJsControllerHelper.parse = function(controllerType, context, start, count) {};
+/**
+ * @param {string} controllerType 
  * @param {Object} context 
  * @return {undefined}
  */
-CharbaJsControllerHelper.addElements = function(chartType, context) {};
+CharbaJsControllerHelper.draw = function(controllerType, context) {};
 /**
- * @param {string} chartType 
- * @param {Object} context 
- * @return {undefined}
- */
-CharbaJsControllerHelper.draw = function(chartType, context) {};
-/**
- * @param {string} chartType 
- * @param {Object} context 
- * @param {Object} element
- * @param {number} datasetIndex
- * @param {number} index
- * @return {undefined}
- */
-CharbaJsControllerHelper.removeHoverStyle = function(chartType, context, element, datasetIndex, index) {};
-/**
- * @param {string} chartType 
- * @param {Object} context 
- * @param {Object} element
- * @param {number} datasetIndex
- * @param {number} index
- * @return {undefined}
- */
-CharbaJsControllerHelper.setHoverStyle = function(chartType, context, element, datasetIndex, index) {};
-/**
- * @param {string} chartType 
+ * @param {string} controllerType 
  * @param {Object} context 
  * @param {string} mode
  * @return {undefined}
  */
-CharbaJsControllerHelper.update = function(chartType, context, mode) {};
+CharbaJsControllerHelper.update = function(controllerType, context, mode) {};
 /**
- * @param {string} chartType 
+ * @param {string} controllerType 
  * @param {Object} context 
  * @return {undefined}
  */
-CharbaJsControllerHelper.linkScales = function(chartType, context) {};
-/**
- * @param {string} chartType 
- * @param {Object} context
- * @parma {boolean} resetNewElements
- * @return {undefined}
- */
-CharbaJsControllerHelper.buildOrUpdateElements = function(chartType, context, resetNewElements) {};
+CharbaJsControllerHelper.linkScales = function(controllerType, context) {};
 /**
  * @constructor
  * @return {CharbaJsPositionerHelper}
@@ -399,6 +382,24 @@ CharbaJsObjectCallbackProxyHelper.set = function(object, key, value) {};
  * @return {Function}
  */
 CharbaJsObjectCallbackProxyHelper.get = function(object, key) {};
+/**
+ * @constructor
+ * @return {CharbaJsObjectCallbackHelper}
+ */
+function CharbaJsObjectCallbackHelper() {}
+/**
+ * @param {Object} object
+ * @param {string} key 
+ * @param {Function} value
+ * @return {undefined}
+ */
+CharbaJsObjectCallbackHelper.set = function(object, key, value) {};
+/**
+ * @param {Object} object
+ * @param {string} key 
+ * @return {Function}
+ */
+CharbaJsObjectCallbackHelper.get = function(object, key) {};
 /**
  * @constructor
  * @return {CharbaJsObjectChartHelper}

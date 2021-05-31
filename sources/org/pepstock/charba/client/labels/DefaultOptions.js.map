@@ -2,7 +2,7 @@
 "version":3,
 "file":"DefaultOptions.impl.java.js",
 "lineCount":64,
-"mappings":"A;;;;;;;;;;;;;MAsBY,c;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,qC;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EAAAC,iC;;;;CARG,uD;EAAAC,0J;;;;CAAA,a;EAAAC,wG;;;;CAAA,uD;EAAAC,0J;;;QAGX,gE;EAAAC,qH;;;QAHW,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA,2B;EAGXA,+G;;;;;;;;;AAHW;;",
+"mappings":"A;;;;;;;;;;;;;MAsBY,c;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,qC;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EAAAC,iC;;;;CARG,qD;EAAAC,wJ;;;;CAAA,a;EAAAC,wG;;;;CAAA,qD;EAAAC,wJ;;;QAGX,gE;EAAAC,qH;;;QAHW,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA,2B;EAGXA,+G;;;;;;;;;AAHW;;",
 "sources":["DefaultOptions.java"],
 "names":["org.pepstock.charba.client.labels.DefaultOptions.<synthetic: ctor_js>","org.pepstock.charba.client.labels.DefaultOptions.<synthetic: ctor_create>","org.pepstock.charba.client.labels.DefaultOptions.<init>","org.pepstock.charba.client.labels.DefaultOptions.getLabel","org.pepstock.charba.client.labels.DefaultOptions.getLabels","org.pepstock.charba.client.labels.DefaultOptions.hasLabel","org.pepstock.charba.client.labels.DefaultOptions.<synthetic: getter>","org.pepstock.charba.client.labels.DefaultOptions.<clinit>"]
 }

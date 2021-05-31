@@ -16,7 +16,7 @@ let Pattern = goog.forwardDeclare('org.pepstock.charba.client.colors.Pattern$imp
 let PatternBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.PatternBuilder$impl');
 let ArrayInteger_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayInteger.$Overlay$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let CapStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.CapStyle$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
@@ -92,7 +92,7 @@ class LegendItem extends AbstractNode {
  //Initialization from constructor 'LegendItem(ChartEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_LegendItem__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<LegendItem> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_LegendItem__org_pepstock_charba_client_commons_NativeObject(/**@type {LegendItem}*/ ($Casts.$to(/**@type {ChartEnvelop<LegendItem>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__(), LegendItem)).m_getNativeObject__());
+  this.$ctor__org_pepstock_charba_client_items_LegendItem__org_pepstock_charba_client_commons_NativeObject(/**@type {LegendItem}*/ ($Casts.$to(/**@type {ChartEnvelop<LegendItem>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), LegendItem)).m_getNativeObject__());
  }
  /** @return {number} */
  m_getDatasetIndex__() {
@@ -264,7 +264,7 @@ class LegendItem extends AbstractNode {
   PatternBuilder = goog.module.get('org.pepstock.charba.client.colors.PatternBuilder$impl');
   ArrayInteger_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayInteger.$Overlay$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   CapStyle = goog.module.get('org.pepstock.charba.client.enums.CapStyle$impl');
   JoinStyle = goog.module.get('org.pepstock.charba.client.enums.JoinStyle$impl');

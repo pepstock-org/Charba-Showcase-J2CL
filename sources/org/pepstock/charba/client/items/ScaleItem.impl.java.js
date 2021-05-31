@@ -18,12 +18,11 @@ let ArrayMixedObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.
 let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
 let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constants$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ImmutableDate = goog.forwardDeclare('org.pepstock.charba.client.commons.ImmutableDate$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
-let ControllersEnvelop = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllersEnvelop$impl');
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
 let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
 let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$impl');
@@ -33,7 +32,7 @@ let Property = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem.P
 let ScaleTickItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleTickItem$impl');
 let ScaleValueItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleValueItem$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
@@ -42,36 +41,23 @@ class ScaleItem extends BaseBoxNodeItem {
  /** @protected */
  constructor() {
   super();
-  /**@type {IsScaleId}*/
+  /**@type {ScaleId}*/
   this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_;
  }
- //Factory method corresponding to constructor 'ScaleItem(IsScaleId, NativeObject)'.
+ //Factory method corresponding to constructor 'ScaleItem(ScaleId, NativeObject)'.
  /** @return {!ScaleItem} */
- static $create__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_commons_NativeObject(/** IsScaleId */ scaleId, /** ? */ nativeObject) {
+ static $create__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_commons_NativeObject(/** ScaleId */ scaleId, /** ? */ nativeObject) {
   ScaleItem.$clinit();
   let $instance = new ScaleItem();
-  $instance.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_commons_NativeObject(scaleId, nativeObject);
+  $instance.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_commons_NativeObject(scaleId, nativeObject);
   return $instance;
  }
- //Initialization from constructor 'ScaleItem(IsScaleId, NativeObject)'.
+ //Initialization from constructor 'ScaleItem(ScaleId, NativeObject)'.
  
- $ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_options_IsScaleId__org_pepstock_charba_client_commons_NativeObject(/** IsScaleId */ scaleId, /** ? */ nativeObject) {
+ $ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_commons_NativeObject(/** ScaleId */ scaleId, /** ? */ nativeObject) {
   this.$ctor__org_pepstock_charba_client_items_BaseBoxNodeItem__org_pepstock_charba_client_commons_NativeObject(nativeObject);
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(scaleId);
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(scaleId);
   this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_ = scaleId;
- }
- //Factory method corresponding to constructor 'ScaleItem(ControllersEnvelop)'.
- /** @return {!ScaleItem} */
- static $create__org_pepstock_charba_client_controllers_ControllersEnvelop(/** ControllersEnvelop<?> */ envelop) {
-  ScaleItem.$clinit();
-  let $instance = new ScaleItem();
-  $instance.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_controllers_ControllersEnvelop(envelop);
-  return $instance;
- }
- //Initialization from constructor 'ScaleItem(ControllersEnvelop)'.
- 
- $ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_controllers_ControllersEnvelop(/** ControllersEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {ControllersEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ControllersEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'ScaleItem(CallbacksEnvelop)'.
  /** @return {!ScaleItem} */
@@ -84,7 +70,7 @@ class ScaleItem extends BaseBoxNodeItem {
  //Initialization from constructor 'ScaleItem(CallbacksEnvelop)'.
  
  $ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_callbacks_CallbacksEnvelop(/** CallbacksEnvelop<?> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), CallbacksEnvelop)).m_getContent__()));
+  this.$ctor__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (/**@type {CallbacksEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), CallbacksEnvelop)).m_getContent__()));
  }
  //Factory method corresponding to constructor 'ScaleItem(NativeObject)'.
  /** @return {!ScaleItem} */
@@ -100,11 +86,11 @@ class ScaleItem extends BaseBoxNodeItem {
   this.$ctor__org_pepstock_charba_client_items_BaseBoxNodeItem__org_pepstock_charba_client_commons_NativeObject(nativeObject);
   this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_ = null;
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  m_getId__() {
   if ($Equality.$same(this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_, null)) {
    let storedId = this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_ID__org_pepstock_charba_client_items_ScaleItem_Property, this.m_getType__().m_getDefaultScaleId__().m_value__());
-   this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_ = IsScaleId.m_create__java_lang_String(storedId);
+   this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_ = ScaleId.m_create__java_lang_String(storedId);
   }
   return this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_;
  }
@@ -332,12 +318,11 @@ class ScaleItem extends BaseBoxNodeItem {
   ArrayObject_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ImmutableDate = goog.module.get('org.pepstock.charba.client.commons.ImmutableDate$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
-  ControllersEnvelop = goog.module.get('org.pepstock.charba.client.controllers.ControllersEnvelop$impl');
   AxisKind = goog.module.get('org.pepstock.charba.client.enums.AxisKind$impl');
   AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
   Position = goog.module.get('org.pepstock.charba.client.enums.Position$impl');
@@ -347,7 +332,7 @@ class ScaleItem extends BaseBoxNodeItem {
   ScaleTickItem = goog.module.get('org.pepstock.charba.client.items.ScaleTickItem$impl');
   ScaleValueItem = goog.module.get('org.pepstock.charba.client.items.ScaleValueItem$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
   $Primitives = goog.module.get('vmbootstrap.Primitives$impl');

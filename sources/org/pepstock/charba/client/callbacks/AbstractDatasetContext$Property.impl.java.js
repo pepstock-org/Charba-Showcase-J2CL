@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ACTIVE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, Property.$static_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ACTIVE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, Property.$static_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, Property.$static_MODE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property], Property));
  }
  /** @return {!Property} */
  static get f_ACTIVE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property() {
@@ -61,6 +61,10 @@ class Property extends Enum {
  static get f_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property() {
   return (Property.$clinit(), Property.$static_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property);
  }
+ /** @return {!Property} */
+ static get f_MODE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property() {
+  return (Property.$clinit(), Property.$static_MODE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property);
+ }
  
  static $clinit() {
   Property.$clinit = () =>{};
@@ -69,6 +73,7 @@ class Property extends Enum {
   Property.$static_ACTIVE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ACTIVE"), Property.$ordinal_ACTIVE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, "active");
   Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DATASET_INDEX"), Property.$ordinal_DATASET_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, "datasetIndex");
   Property.$static_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DATA_INDEX"), Property.$ordinal_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, "dataIndex");
+  Property.$static_MODE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("MODE"), Property.$ordinal_MODE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property, "mode");
   Property.f_namesToValuesMap__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property_ = null;
  }
  /** @return {boolean} */
@@ -88,6 +93,8 @@ Property.$static_ACTIVE__org_pepstock_charba_client_callbacks_AbstractDatasetCon
 Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property;
 /**@private {!Property}*/
 Property.$static_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property;
+/**@private {!Property}*/
+Property.$static_MODE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property_;
 /**@const {number}*/
@@ -96,6 +103,8 @@ Property.$ordinal_ACTIVE__org_pepstock_charba_client_callbacks_AbstractDatasetCo
 Property.$ordinal_DATASET_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property = 1;
 /**@const {number}*/
 Property.$ordinal_DATA_INDEX__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property = 2;
+/**@const {number}*/
+Property.$ordinal_MODE__org_pepstock_charba_client_callbacks_AbstractDatasetContext_Property = 3;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.callbacks.AbstractDatasetContext$Property");
 

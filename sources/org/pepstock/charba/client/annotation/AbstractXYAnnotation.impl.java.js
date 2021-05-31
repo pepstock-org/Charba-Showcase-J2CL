@@ -8,16 +8,16 @@ let Date = goog.forwardDeclare('java.util.Date$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractXYAnnotation.Property$impl');
 let AnnotationContext = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationContext$impl');
+let AnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationId$impl');
 let AnnotationPlugin = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
 let AnnotationType = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationType$impl');
-let IsAnnotationId = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsAnnotationId$impl');
 let IsDefaultsAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.IsDefaultsAnnotation$impl');
 let ValueCallback = goog.forwardDeclare('org.pepstock.charba.client.annotation.callbacks.ValueCallback$impl');
 let CallbackPropertyHandler = goog.forwardDeclare('org.pepstock.charba.client.commons.CallbackPropertyHandler$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let Utilities = goog.forwardDeclare('org.pepstock.charba.client.utils.Utilities$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
@@ -29,21 +29,21 @@ class AbstractXYAnnotation extends AbstractAnnotation {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_xMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_xMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_yMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_;
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_yMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_;
   /**@type {IsDefaultsXYAnnotation}*/
   this.f_defaultValues__org_pepstock_charba_client_annotation_AbstractXYAnnotation_;
  }
- //Initialization from constructor 'AbstractXYAnnotation(AnnotationType, IsAnnotationId, IsDefaultsAnnotation)'.
+ //Initialization from constructor 'AbstractXYAnnotation(AnnotationType, AnnotationId, IsDefaultsAnnotation)'.
  
- $ctor__org_pepstock_charba_client_annotation_AbstractXYAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationType */ type, /** IsAnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
-  this.$ctor__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_IsAnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/**@type {AnnotationType}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(type), AnnotationType)), $Equality.$same(id, null) ? type.m_createId__() : id, $Equality.$same(defaultValues, null) ? type.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation() : defaultValues);
+ $ctor__org_pepstock_charba_client_annotation_AbstractXYAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/** AnnotationType */ type, /** AnnotationId */ id, /** IsDefaultsAnnotation */ defaultValues) {
+  this.$ctor__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_annotation_AnnotationType__org_pepstock_charba_client_annotation_AnnotationId__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(/**@type {AnnotationType}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(type), AnnotationType)), $Equality.$same(id, null) ? type.m_createId__() : id, $Equality.$same(defaultValues, null) ? type.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation() : defaultValues);
   this.$init___$p_org_pepstock_charba_client_annotation_AbstractXYAnnotation();
   Checker.m_assertCheck__boolean__java_lang_String(IsDefaultsXYAnnotation.$isInstance(this.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation()), Utilities.m_applyTemplate__java_lang_String__arrayOf_java_lang_Object(AbstractAnnotation.f_INVALID_DEFAULTS_VALUES_CLASS__org_pepstock_charba_client_annotation_AbstractAnnotation, [type.m_value__()]));
   this.f_defaultValues__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {IsDefaultsXYAnnotation}*/ ($Casts.$to(this.m_getDefaultsValues___$pp_org_pepstock_charba_client_annotation(), IsDefaultsXYAnnotation));
@@ -60,32 +60,32 @@ class AbstractXYAnnotation extends AbstractAnnotation {
  }
  
  m_initAbstractXYCallbacks___$p_org_pepstock_charba_client_annotation_AbstractXYAnnotation() {
-  this.f_xMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_xMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** ? */ context) =>{
    return this.m_onValue__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ValueCallback_$pp_org_pepstock_charba_client_annotation(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context), this.m_getXMinCallback__());
   };
-  this.f_xMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** Object */ contextFunction_1, /** ? */ context_1) =>{
+  this.f_xMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** ? */ context_1) =>{
    return this.m_onValue__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ValueCallback_$pp_org_pepstock_charba_client_annotation(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_1), this.m_getXMaxCallback__());
   };
-  this.f_yMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** Object */ contextFunction_2, /** ? */ context_2) =>{
+  this.f_yMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** ? */ context_2) =>{
    return this.m_onValue__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ValueCallback_$pp_org_pepstock_charba_client_annotation(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_2), this.m_getYMinCallback__());
   };
-  this.f_yMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** Object */ contextFunction_3, /** ? */ context_3) =>{
+  this.f_yMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.callback = (/** ? */ context_3) =>{
    return this.m_onValue__org_pepstock_charba_client_annotation_AnnotationContext__org_pepstock_charba_client_annotation_callbacks_ValueCallback_$pp_org_pepstock_charba_client_annotation(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(this, context_3), this.m_getYMaxCallback__());
   };
  }
  
  m_setXScaleID__java_lang_String(/** ?string */ scaleId) {
-  IsScaleId.m_checkIfValid__java_lang_String(scaleId);
+  ScaleId.m_checkIfValid__java_lang_String(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, scaleId);
  }
  
- m_setXScaleID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ scaleId) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(scaleId);
+ m_setXScaleID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ scaleId) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, scaleId);
  }
- /** @override @return {IsScaleId} */
+ /** @override @return {ScaleId} */
  m_getXScaleID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_getXScaleID__());
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_X_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_getXScaleID__());
  }
  
  m_setXMax__java_lang_String(/** ?string */ max) {
@@ -143,17 +143,17 @@ class AbstractXYAnnotation extends AbstractAnnotation {
  }
  
  m_setYScaleID__java_lang_String(/** ?string */ scaleId) {
-  IsScaleId.m_checkIfValid__java_lang_String(scaleId);
+  ScaleId.m_checkIfValid__java_lang_String(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, scaleId);
  }
  
- m_setYScaleID__org_pepstock_charba_client_options_IsScaleId(/** IsScaleId */ scaleId) {
-  IsScaleId.m_checkIfValid__org_pepstock_charba_client_options_IsScaleId(scaleId);
+ m_setYScaleID__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ scaleId) {
+  ScaleId.m_checkIfValid__org_pepstock_charba_client_options_ScaleId(scaleId);
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, scaleId);
  }
- /** @override @return {IsScaleId} */
+ /** @override @return {ScaleId} */
  m_getYScaleID__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_IsScaleId(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_getYScaleID__());
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_options_ScaleId(Property.f_Y_SCALE_ID__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, this.f_defaultValues__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_getYScaleID__());
  }
  
  m_setYMax__java_lang_String(/** ?string */ max) {
@@ -215,7 +215,12 @@ class AbstractXYAnnotation extends AbstractAnnotation {
  }
  
  m_setXMin__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/** ValueCallback */ valueCallback) {
-  AbstractXYAnnotation.f_X_MIN_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_xMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+  AbstractXYAnnotation.f_X_MIN_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_xMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+ }
+ 
+ m_setXMin__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ valueCallback) {
+  this.m_setXMin__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/**@type {ValueCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_X_MIN__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, valueCallback);
  }
  /** @override @return {ValueCallback} */
  m_getXMaxCallback__() {
@@ -223,7 +228,12 @@ class AbstractXYAnnotation extends AbstractAnnotation {
  }
  
  m_setXMax__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/** ValueCallback */ valueCallback) {
-  AbstractXYAnnotation.f_X_MAX_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_xMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+  AbstractXYAnnotation.f_X_MAX_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_xMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+ }
+ 
+ m_setXMax__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ valueCallback) {
+  this.m_setXMax__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/**@type {ValueCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_X_MAX__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, valueCallback);
  }
  /** @override @return {ValueCallback} */
  m_getYMinCallback__() {
@@ -231,7 +241,12 @@ class AbstractXYAnnotation extends AbstractAnnotation {
  }
  
  m_setYMin__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/** ValueCallback */ valueCallback) {
-  AbstractXYAnnotation.f_Y_MIN_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_yMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+  AbstractXYAnnotation.f_Y_MIN_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_yMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+ }
+ 
+ m_setYMin__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ valueCallback) {
+  this.m_setYMin__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/**@type {ValueCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_Y_MIN__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, valueCallback);
  }
  /** @override @return {ValueCallback} */
  m_getYMaxCallback__() {
@@ -239,14 +254,19 @@ class AbstractXYAnnotation extends AbstractAnnotation {
  }
  
  m_setYMax__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/** ValueCallback */ valueCallback) {
-  AbstractXYAnnotation.f_Y_MAX_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_yMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+  AbstractXYAnnotation.f_Y_MAX_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, valueCallback, this.f_yMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_.proxy);
+ }
+ 
+ m_setYMax__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ valueCallback) {
+  this.m_setYMax__org_pepstock_charba_client_annotation_callbacks_ValueCallback(/**@type {ValueCallback}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_Y_MAX__org_pepstock_charba_client_annotation_AbstractXYAnnotation_Property, valueCallback);
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_annotation_AbstractXYAnnotation() {
-  this.f_xMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_xMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_yMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_yMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_xMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_xMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_yMinCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_yMaxCallbackProxy__org_pepstock_charba_client_annotation_AbstractXYAnnotation_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {
@@ -275,7 +295,7 @@ class AbstractXYAnnotation extends AbstractAnnotation {
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
-  IsScaleId = goog.module.get('org.pepstock.charba.client.options.IsScaleId$impl');
+  ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   Utilities = goog.module.get('org.pepstock.charba.client.utils.Utilities$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

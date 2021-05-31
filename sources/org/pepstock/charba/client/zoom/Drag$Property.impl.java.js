@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property, Property.$static_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property, Property.$static_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property, Property.$static_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property, Property.$static_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property, Property.$static_ENABLED__org_pepstock_charba_client_zoom_Drag_Property], Property));
  }
  /** @return {!Property} */
  static get f_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property() {
@@ -61,6 +61,10 @@ class Property extends Enum {
  static get f_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property() {
   return (Property.$clinit(), Property.$static_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property);
  }
+ /** @return {!Property} */
+ static get f_ENABLED__org_pepstock_charba_client_zoom_Drag_Property() {
+  return (Property.$clinit(), Property.$static_ENABLED__org_pepstock_charba_client_zoom_Drag_Property);
+ }
  
  static $clinit() {
   Property.$clinit = () =>{};
@@ -69,6 +73,7 @@ class Property extends Enum {
   Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BACKGROUND_COLOR"), Property.$ordinal_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property, "backgroundColor");
   Property.$static_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BORDER_COLOR"), Property.$ordinal_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property, "borderColor");
   Property.$static_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BORDER_WIDTH"), Property.$ordinal_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property, "borderWidth");
+  Property.$static_ENABLED__org_pepstock_charba_client_zoom_Drag_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ENABLED"), Property.$ordinal_ENABLED__org_pepstock_charba_client_zoom_Drag_Property, "enabled");
   Property.f_namesToValuesMap__org_pepstock_charba_client_zoom_Drag_Property_ = null;
  }
  /** @return {boolean} */
@@ -88,6 +93,8 @@ Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Property
 Property.$static_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property;
 /**@private {!Property}*/
 Property.$static_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property;
+/**@private {!Property}*/
+Property.$static_ENABLED__org_pepstock_charba_client_zoom_Drag_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_zoom_Drag_Property_;
 /**@const {number}*/
@@ -96,6 +103,8 @@ Property.$ordinal_BACKGROUND_COLOR__org_pepstock_charba_client_zoom_Drag_Propert
 Property.$ordinal_BORDER_COLOR__org_pepstock_charba_client_zoom_Drag_Property = 1;
 /**@const {number}*/
 Property.$ordinal_BORDER_WIDTH__org_pepstock_charba_client_zoom_Drag_Property = 2;
+/**@const {number}*/
+Property.$ordinal_ENABLED__org_pepstock_charba_client_zoom_Drag_Property = 3;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.zoom.Drag$Property");
 

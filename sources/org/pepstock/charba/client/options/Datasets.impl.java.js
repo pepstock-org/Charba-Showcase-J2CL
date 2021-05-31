@@ -39,7 +39,7 @@ class Datasets extends AbstractModel {
    let controllerType = /**@type {ControllerType}*/ ($Casts.$to(type, ControllerType));
    controllerType.m_register__();
   }
-  return TypedDataset.$create__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject(this, type, /**@type {IsDefaultDatasets}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultDatasets)).m_get__org_pepstock_charba_client_Type(type), this.m_getDatasets__org_pepstock_charba_client_Type_$p_org_pepstock_charba_client_options_Datasets(type));
+  return TypedDataset.$create__org_pepstock_charba_client_options_Datasets__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultTypedDataset__org_pepstock_charba_client_commons_NativeObject__java_lang_String(this, type, /**@type {IsDefaultDatasets}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultDatasets)).m_get__org_pepstock_charba_client_Type(type), this.m_getDatasets__org_pepstock_charba_client_Type_$p_org_pepstock_charba_client_options_Datasets(type), /**@type {Options}*/ ($Casts.$to(this.m_getParent__(), Options)).m_getScope__());
  }
  /** @return {?} */
  m_getDatasets__org_pepstock_charba_client_Type_$p_org_pepstock_charba_client_options_Datasets(/** Type */ type) {
@@ -64,6 +64,7 @@ class Datasets extends AbstractModel {
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   ControllerType = goog.module.get('org.pepstock.charba.client.controllers.ControllerType$impl');
+  Options = goog.module.get('org.pepstock.charba.client.options.Options$impl');
   TypedDataset = goog.module.get('org.pepstock.charba.client.options.TypedDataset$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

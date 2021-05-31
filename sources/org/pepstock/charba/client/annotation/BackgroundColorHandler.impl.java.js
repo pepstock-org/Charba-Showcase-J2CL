@@ -22,7 +22,7 @@ class BackgroundColorHandler extends PropertyHandler {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
   this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_annotation_BackgroundColorHandler_;
   /**@type {?string}*/
   this.f_defaultBackgroundColor__org_pepstock_charba_client_annotation_BackgroundColorHandler_;
@@ -54,7 +54,7 @@ class BackgroundColorHandler extends PropertyHandler {
   this.$ctor__org_pepstock_charba_client_commons_PropertyHandler__org_pepstock_charba_client_commons_AbstractNode__java_lang_Object__org_pepstock_charba_client_commons_NativeObject(parent, defaultValues, nativeObject);
   this.$init___$p_org_pepstock_charba_client_annotation_BackgroundColorHandler();
   this.f_defaultBackgroundColor__org_pepstock_charba_client_annotation_BackgroundColorHandler_ = defaultBackgroundColor;
-  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_annotation_BackgroundColorHandler_.callback = (/** Object */ contextFunction, /** ? */ context) =>{
+  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_annotation_BackgroundColorHandler_.callback = (/** ? */ context) =>{
    return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(AnnotationContext.$create__org_pepstock_charba_client_annotation_AbstractAnnotation__org_pepstock_charba_client_commons_NativeObject(parent, context), this.m_getBackgroundColorCallback___$pp_org_pepstock_charba_client_annotation(), defaultBackgroundColor);
   };
  }
@@ -73,11 +73,16 @@ class BackgroundColorHandler extends PropertyHandler {
  }
  
  m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback_$pp_org_pepstock_charba_client_annotation(/** ColorCallback<AnnotationContext> */ backgroundColorCallback) {
-  BackgroundColorHandler.f_BACKGROUND_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_BackgroundColorHandler_.m_setCallback__org_pepstock_charba_client_commons_NativeObjectContainer__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this, AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, backgroundColorCallback, this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_annotation_BackgroundColorHandler_.proxy);
+  BackgroundColorHandler.f_BACKGROUND_COLOR_PROPERTY_HANDLER__org_pepstock_charba_client_annotation_BackgroundColorHandler_.m_setCallback__org_pepstock_charba_client_commons_AbstractNode__java_lang_String__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_Proxy(this.m_getParent__(), AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, backgroundColorCallback, this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_annotation_BackgroundColorHandler_.proxy);
+ }
+ 
+ m_setBackgroundColor__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_annotation(/** Function */ backgroundColorCallback) {
+  this.m_setBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback_$pp_org_pepstock_charba_client_annotation(/**@type {ColorCallback<AnnotationContext>}*/ (null));
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_BACKGROUND_COLOR__org_pepstock_charba_client_annotation_BackgroundColorHandler_Property, backgroundColorCallback);
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_annotation_BackgroundColorHandler() {
-  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_annotation_BackgroundColorHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_backgroundColorCallbackProxy__org_pepstock_charba_client_annotation_BackgroundColorHandler_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {

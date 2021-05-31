@@ -59,6 +59,10 @@ class AbstractModel extends AbstractNode {
  m_setCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(/** AbstractNode */ model, /** Key */ key, /** ?function():void */ proxy) {
   this.m_setInternalCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(model, key, proxy);
  }
+ 
+ m_setCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(/** AbstractNode */ model, /** Key */ key, /** Function */ callback) {
+  this.m_setInternalCallbackToModel__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(model, key, callback);
+ }
  /** @return {Padding} */
  m_loadPadding__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultPadding(/** Key */ property, /** IsDefaultPadding */ defaultPadding) {
   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(property);

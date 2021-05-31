@@ -6,8 +6,8 @@ const HasAnimation = goog.require('org.pepstock.charba.client.configuration.HasA
 
 let Animation = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animation$impl');
 let AnimationContainer = goog.forwardDeclare('org.pepstock.charba.client.configuration.AnimationContainer$impl');
+let Animations = goog.forwardDeclare('org.pepstock.charba.client.configuration.Animations$impl');
 let Transitions = goog.forwardDeclare('org.pepstock.charba.client.configuration.Transitions$impl');
-let IsAnimations = goog.forwardDeclare('org.pepstock.charba.client.options.IsAnimations$impl');
 
 /**
  * @implements {HasAnimation}
@@ -37,7 +37,7 @@ class $LambdaAdaptor extends j_l_Object {
   return HasAnimation.m_getAnimation__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }
  //Default method forwarding stub.
- /** @override @return {IsAnimations} */
+ /** @override @return {Animations} */
  m_getAnimations__() {
   return HasAnimation.m_getAnimations__$default__org_pepstock_charba_client_configuration_HasAnimation(this);
  }

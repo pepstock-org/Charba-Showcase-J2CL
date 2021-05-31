@@ -17,8 +17,8 @@ let Context2dItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$impl');
 let ScaleTickItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleTickItem$impl');
-let IsTransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.IsTransitionKey$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
+let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let Images = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.Images$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
@@ -37,25 +37,19 @@ class MyHorizontalBarController extends AbstractController {
  }
  
  $ctor__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyHorizontalBarController__() {
-  this.$ctor__org_pepstock_charba_client_controllers_AbstractController__();
- }
- /** @override @return {ControllerType} */
- m_getType__() {
-  return MyHorizontalBarController.$static_TYPE__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyHorizontalBarController;
+  this.$ctor__org_pepstock_charba_client_controllers_AbstractController__org_pepstock_charba_client_controllers_ControllerType(MyHorizontalBarController.$static_TYPE__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyHorizontalBarController);
  }
  /** @override */
- m_initialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
-  let axis = /**@type {Scale}*/ ($Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context).m_getOptions__().m_getScales__().m_getAxis__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId));
+ m_onBeforeInitialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
+  let axis = /**@type {Scale}*/ ($Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context).m_getOptions__().m_getScales__().m_getAxis__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId));
   this.m_calculateAndSetScaleLabelPadding__org_pepstock_charba_client_options_Scale__int_$p_org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyHorizontalBarController(axis, BaseHtmlElement_$Overlay.m_getParentHtmlElement__$devirt__org_pepstock_charba_client_dom_BaseHtmlElement(chart.m_getCanvas__()).offsetWidth);
-  super.m_initialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(context, chart);
  }
  /** @override */
- m_draw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
-  super.m_draw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(context, chart);
+ m_onAfterDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
   let padding = 4;
   let ctx = Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(chart.m_getCanvas__());
   let scale = /**@type {ScaleItem}*/ ($Casts.$to(chart.m_getNode__().m_getScales__().m_getItems__().get(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId.m_value__()), ScaleItem));
-  let axis = /**@type {Scale}*/ ($Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context).m_getOptions__().m_getScales__().m_getAxis__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId));
+  let axis = /**@type {Scale}*/ ($Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context).m_getOptions__().m_getScales__().m_getAxis__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId));
   let ticks = scale.m_getTicks__();
   let heightAmongLabels = (scale.m_getBottom__() - scale.m_getTop__()) / ticks.size();
   let height = Math.min(heightAmongLabels - Math.imul(padding, 2), MyHorizontalBarController.f_MIN__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyHorizontalBarController_);
@@ -88,10 +82,9 @@ class MyHorizontalBarController extends AbstractController {
   }
  }
  /** @override */
- m_update__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsTransitionKey(/** CharbaControllerContext */ context, /** IsChart */ chart, /** IsTransitionKey */ mode) {
-  let axis = /**@type {Scale}*/ ($Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context).m_getOptions__().m_getScales__().m_getAxis__org_pepstock_charba_client_options_IsScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId));
+ m_onBeforeUpdate__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_TransitionKey(/** CharbaControllerContext */ context, /** IsChart */ chart, /** TransitionKey */ mode) {
+  let axis = /**@type {Scale}*/ ($Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context).m_getOptions__().m_getScales__().m_getAxis__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId));
   this.m_calculateAndSetScaleLabelPadding__org_pepstock_charba_client_options_Scale__int_$p_org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyHorizontalBarController(axis, BaseHtmlElement_$Overlay.m_getParentHtmlElement__$devirt__org_pepstock_charba_client_dom_BaseHtmlElement(chart.m_getCanvas__()).offsetWidth);
-  super.m_update__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_IsTransitionKey(context, chart, mode);
  }
  
  m_calculateAndSetScaleLabelPadding__org_pepstock_charba_client_options_Scale__int_$p_org_pepstock_charba_showcase_j2cl_cases_miscellaneous_MyHorizontalBarController(/** Scale */ axis, /** number */ width) {

@@ -20,7 +20,7 @@ class TimeTickHandler extends AbstractTickHandler {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(Object, ?string, number, Array):?string>}*/
+  /**@type {CharbaCallbackProxy<?function(?string, number, Array):?string>}*/
   this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_TimeTickHandler_;
  }
  /** @return {!TimeTickHandler} */
@@ -34,7 +34,7 @@ class TimeTickHandler extends AbstractTickHandler {
  $ctor__org_pepstock_charba_client_configuration_TimeTickHandler__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_CartesianTimeTick(/** Axis */ axis, /** CartesianTimeTick */ configuration) {
   this.$ctor__org_pepstock_charba_client_configuration_AbstractTickHandler__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_Tick(axis, configuration);
   this.$init___$p_org_pepstock_charba_client_configuration_TimeTickHandler();
-  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_TimeTickHandler_.callback = (/** Object */ context, /** ?string */ label, /** number */ index, /** Array */ values) =>{
+  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_TimeTickHandler_.callback = (/** ?string */ label, /** number */ index, /** Array */ values) =>{
    if (!$Equality.$same(this.m_getCallback___$pp_org_pepstock_charba_client_configuration(), null)) {
     let tickItems = this.m_getTickItems__org_pepstock_charba_client_commons_ArrayObject_$pp_org_pepstock_charba_client_configuration(values);
     let value = /**@type {ScaleTickItem}*/ ($Casts.$to(tickItems.getAtIndex(index), ScaleTickItem)).m_getValueAsDate__();
@@ -53,7 +53,7 @@ class TimeTickHandler extends AbstractTickHandler {
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_configuration_TimeTickHandler() {
-  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_TimeTickHandler_ = /**@type {CharbaCallbackProxy<?function(Object, ?string, number, Array):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_tickCallbackProxy__org_pepstock_charba_client_configuration_TimeTickHandler_ = /**@type {CharbaCallbackProxy<?function(?string, number, Array):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
  }
  
  static $clinit() {

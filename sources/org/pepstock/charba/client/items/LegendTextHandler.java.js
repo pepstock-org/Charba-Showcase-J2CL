@@ -3,7 +3,7 @@ goog.module('org.pepstock.charba.client.items.LegendTextHandler');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.commons.AbstractNode');
-goog.require('org.pepstock.charba.client.commons.IsEnvelop');
+goog.require('org.pepstock.charba.client.commons.Envelop');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.PropertyHandler');
 goog.require('org.pepstock.charba.client.dom.safehtml.SafeHtml');

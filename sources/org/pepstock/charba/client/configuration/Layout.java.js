@@ -1,8 +1,8 @@
 goog.module('org.pepstock.charba.client.configuration.Layout');
 
 goog.require('nativebootstrap.Util');
-goog.require('org.pepstock.charba.client.callbacks.CallbackFunctionContext.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.ChartContext');
+goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.PaddingCallback');
 goog.require('org.pepstock.charba.client.callbacks.ScriptableUtils');
 goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');

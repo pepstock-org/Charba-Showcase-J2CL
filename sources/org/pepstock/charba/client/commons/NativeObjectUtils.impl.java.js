@@ -88,6 +88,11 @@ class NativeObjectUtils extends j_l_Object {
   CharbaJsObjectCallbackProxyHelper.set(object, key, value);
  }
  
+ static m_defineCallbackProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_callbacks_NativeCallback(/** ? */ object, /** ?string */ key, /** Function */ value) {
+  NativeObjectUtils.$clinit();
+  CharbaJsObjectCallbackHelper.set(object, key, value);
+ }
+ 
  static m_defineObjectProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_commons_NativeObject(/** ? */ object, /** ?string */ key, /** ? */ value) {
   NativeObjectUtils.$clinit();
   CharbaJsObjectNativeObjectHelper.set(object, key, value);

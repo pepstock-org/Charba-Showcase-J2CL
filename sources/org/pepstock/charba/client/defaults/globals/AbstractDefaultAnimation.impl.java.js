@@ -4,6 +4,10 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultBaseAnimation = goog.require('org.pepstock.charba.client.defaults.IsDefaultBaseAnimation$impl');
 
+let DelayCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DelayCallback$impl');
+let DurationCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DurationCallback$impl');
+let EasingCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.EasingCallback$impl');
+let LoopCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.LoopCallback$impl');
 let Easing = goog.forwardDeclare('org.pepstock.charba.client.enums.Easing$impl');
 
 /**
@@ -34,6 +38,22 @@ class AbstractDefaultAnimation extends j_l_Object {
  /** @override @return {boolean} */
  m_isLoop__() {
   return AbstractDefaultAnimation.f_DEFAULT_LOOP__org_pepstock_charba_client_defaults_globals_AbstractDefaultAnimation_;
+ }
+ /** @override @return {DurationCallback} */
+ m_getDurationCallback__() {
+  return null;
+ }
+ /** @override @return {DelayCallback} */
+ m_getDelayCallback__() {
+  return null;
+ }
+ /** @override @return {LoopCallback} */
+ m_getLoopCallback__() {
+  return null;
+ }
+ /** @override @return {EasingCallback} */
+ m_getEasingCallback__() {
+  return null;
  }
  
  static $clinit() {

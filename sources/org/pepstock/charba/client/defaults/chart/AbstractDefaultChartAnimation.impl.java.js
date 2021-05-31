@@ -4,6 +4,10 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultBaseAnimation = goog.require('org.pepstock.charba.client.defaults.IsDefaultBaseAnimation$impl');
 
+let DelayCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DelayCallback$impl');
+let DurationCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DurationCallback$impl');
+let EasingCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.EasingCallback$impl');
+let LoopCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.LoopCallback$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let Easing = goog.forwardDeclare('org.pepstock.charba.client.enums.Easing$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -44,6 +48,22 @@ class AbstractDefaultChartAnimation extends j_l_Object {
  /** @override @return {boolean} */
  m_isLoop__() {
   return /**@type {IsDefaultBaseAnimation}*/ (this.f_animation__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartAnimation_).m_isLoop__();
+ }
+ /** @override @return {DurationCallback} */
+ m_getDurationCallback__() {
+  return /**@type {IsDefaultBaseAnimation}*/ (this.f_animation__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartAnimation_).m_getDurationCallback__();
+ }
+ /** @override @return {DelayCallback} */
+ m_getDelayCallback__() {
+  return /**@type {IsDefaultBaseAnimation}*/ (this.f_animation__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartAnimation_).m_getDelayCallback__();
+ }
+ /** @override @return {LoopCallback} */
+ m_getLoopCallback__() {
+  return /**@type {IsDefaultBaseAnimation}*/ (this.f_animation__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartAnimation_).m_getLoopCallback__();
+ }
+ /** @override @return {EasingCallback} */
+ m_getEasingCallback__() {
+  return /**@type {IsDefaultBaseAnimation}*/ (this.f_animation__org_pepstock_charba_client_defaults_chart_AbstractDefaultChartAnimation_).m_getEasingCallback__();
  }
  
  static $clinit() {

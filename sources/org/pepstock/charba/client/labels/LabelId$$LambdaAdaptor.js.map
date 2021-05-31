@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LabelId$$LambdaAdaptor.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,gI;;;CAAA,sH;EAAAC,iC;EAAAA,yE;;;CAAA,S;EAAAC,yC;EAAAA,sG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["LabelId.java"],
+"names":["org.pepstock.charba.client.labels.LabelId$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.labels.LabelId$$LambdaAdaptor.<init>","org.pepstock.charba.client.labels.LabelId$$LambdaAdaptor.value","org.pepstock.charba.client.labels.LabelId$$LambdaAdaptor.<clinit>"]
+}
+

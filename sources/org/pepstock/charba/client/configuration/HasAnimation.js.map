@@ -2,7 +2,7 @@
 "version":3,
 "file":"HasAnimation.impl.java.js",
 "lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;;MA2BiB,Y;;CAOG,yB;;CAOD,gB;;CAUG,iB;;CAUD,kB;;CAUP,8B,gBAA4BA,O;;CAYzB,sB;;QAxDA,M;EAAAC,uB;EAAAA,8B;;;QAcE,+E;EAAAC,uB;EAEjBA,uQ;;;QAQoB,gF;EAAAC,uB;EAEpBA,wQ;;;QAQmB,iF;EAAAC,uB;EAEnBA,yQ;;;QAQY,+F,+CAA4BJ,O;EAA5BK,uB;EAEZA;GACCA,0HADDA;G;;;QAUe,qF;EAAAC,uB;EAEfA;GACCA,kHADDA;G;EAKAA,Y;;;QA/De,O;EAAAC,+B;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;;MA0BiB,Y;;CAOG,yB;;CAOD,gB;;CAUC,iB;;CAUC,kB;;CAUP,8B,gBAA4BA,O;;CAYzB,sB;;QAxDA,M;EAAAC,uB;EAAAA,8B;;;QAcE,+E;EAAAC,uB;EAEjBA,uQ;;;QAQkB,gF;EAAAC,uB;EAElBA,wQ;;;QAQmB,iF;EAAAC,uB;EAEnBA,yQ;;;QAQY,+F,+CAA4BJ,O;EAA5BK,uB;EAEZA;GACCA,0HADDA;G;;;QAUe,qF;EAAAC,uB;EAEfA;GACCA,kHADDA;G;EAKAA,Y;;;QA/De,O;EAAAC,+B;EAAAA;",
 "sources":["HasAnimation.java"],
 "names":["enabled","org.pepstock.charba.client.configuration.HasAnimation.<synthetic: adapt_lambda>","org.pepstock.charba.client.configuration.HasAnimation.getAnimation__$default","org.pepstock.charba.client.configuration.HasAnimation.getAnimations__$default","org.pepstock.charba.client.configuration.HasAnimation.getTransitions__$default","org.pepstock.charba.client.configuration.HasAnimation.setAnimationEnabled__$default","org.pepstock.charba.client.configuration.HasAnimation.isAnimationEnabled__$default","org.pepstock.charba.client.configuration.HasAnimation.<clinit>"]
 }

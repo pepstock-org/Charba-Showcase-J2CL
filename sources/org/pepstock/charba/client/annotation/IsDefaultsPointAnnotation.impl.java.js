@@ -13,7 +13,7 @@ let ValueCallback = goog.forwardDeclare('org.pepstock.charba.client.annotation.c
 let RadiusCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.RadiusCallback$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
-let IsScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.IsScaleId$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
 /**
  * @interface
@@ -25,9 +25,9 @@ class IsDefaultsPointAnnotation {
  m_getBorderWidth__() {}
  /** @abstract @return {number} */
  m_getRadius__() {}
- /** @abstract @return {IsScaleId} */
+ /** @abstract @return {ScaleId} */
  m_getXScaleID__() {}
- /** @abstract @return {IsScaleId} */
+ /** @abstract @return {ScaleId} */
  m_getYScaleID__() {}
  /** @abstract @return {?string} */
  m_getXValueAsString__() {}
@@ -62,12 +62,12 @@ class IsDefaultsPointAnnotation {
   IsDefaultsPointAnnotation.$clinit();
   return PointAnnotation.f_DEFAULT_RADIUS__org_pepstock_charba_client_annotation_PointAnnotation;
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getXScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsPointAnnotation(/** !IsDefaultsPointAnnotation */ $thisArg) {
   IsDefaultsPointAnnotation.$clinit();
   return DefaultScaleId.f_X__org_pepstock_charba_client_enums_DefaultScaleId;
  }
- /** @return {IsScaleId} */
+ /** @return {ScaleId} */
  static m_getYScaleID__$default__org_pepstock_charba_client_annotation_IsDefaultsPointAnnotation(/** !IsDefaultsPointAnnotation */ $thisArg) {
   IsDefaultsPointAnnotation.$clinit();
   return DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId;

@@ -12,6 +12,7 @@ goog.require('elemental2.dom.HTMLTableRowElement.$Overlay');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.showcase.j2cl.views.AbstractView');
+goog.require('org.pepstock.charba.showcase.j2cl.views.ElementsView.AnimationsCase');
 goog.require('org.pepstock.charba.showcase.j2cl.views.ElementsView.Category');
 goog.require('org.pepstock.charba.showcase.j2cl.views.ElementsView.SegmentCase');
 goog.require('vmbootstrap.Casts');

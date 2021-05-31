@@ -60,6 +60,10 @@ class HovingDataset extends HovingFlexDataset {
  m_setBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback(/** WidthCallback<DatasetContext> */ borderWidthCallback) {
   this.m_setInternalBorderWidth__org_pepstock_charba_client_callbacks_WidthCallback_$pp_org_pepstock_charba_client_data(borderWidthCallback);
  }
+ 
+ m_setBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ borderWidthCallback) {
+  this.m_setInternalBorderWidth__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_data(borderWidthCallback);
+ }
  /** @override */
  m_setHoverBackgroundColor__arrayOf_org_pepstock_charba_client_colors_IsColor(/** Array<IsColor> */ colors) {
   this.m_setHoverBackgroundColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<DatasetContext>}*/ (null));

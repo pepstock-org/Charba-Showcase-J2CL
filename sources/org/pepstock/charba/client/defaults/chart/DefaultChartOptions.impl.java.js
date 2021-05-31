@@ -8,7 +8,7 @@ let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$
 let ChartOptions = goog.forwardDeclare('org.pepstock.charba.client.ChartOptions$impl');
 let ScaleType = goog.forwardDeclare('org.pepstock.charba.client.ScaleType$impl');
 let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
-let IsEnvelop = goog.forwardDeclare('org.pepstock.charba.client.commons.IsEnvelop$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let IsDefaultScales = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScales$impl');
 let DefaultChartScales = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartScales$impl');
 let DefaultsBuilder = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultsBuilder$impl');
@@ -38,7 +38,7 @@ class DefaultChartOptions extends AbstractDefaultChartOptions {
  //Initialization from constructor 'DefaultChartOptions(ChartEnvelop)'.
  
  $ctor__org_pepstock_charba_client_defaults_chart_DefaultChartOptions__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<ExtendedOptions> */ envelop) {
-  this.$ctor__org_pepstock_charba_client_defaults_chart_DefaultChartOptions__org_pepstock_charba_client_options_ScaledOptions__org_pepstock_charba_client_Type(/**@type {ExtendedOptions}*/ ($Casts.$to(/**@type {ChartEnvelop<ExtendedOptions>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__(), ExtendedOptions)), /**@type {ExtendedOptions}*/ ($Casts.$to(/**@type {ChartEnvelop<ExtendedOptions>}*/ ($Casts.$to(IsEnvelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_IsEnvelop(envelop), ChartEnvelop)).m_getContent__(), ExtendedOptions)).m_getChart__().m_getType__());
+  this.$ctor__org_pepstock_charba_client_defaults_chart_DefaultChartOptions__org_pepstock_charba_client_options_ScaledOptions__org_pepstock_charba_client_Type(/**@type {ExtendedOptions}*/ ($Casts.$to(/**@type {ChartEnvelop<ExtendedOptions>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), ExtendedOptions)), /**@type {ExtendedOptions}*/ ($Casts.$to(/**@type {ChartEnvelop<ExtendedOptions>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), ExtendedOptions)).m_getChart__().m_getType__());
  }
  //Factory method corresponding to constructor 'DefaultChartOptions(ChartOptions)'.
  /** @return {!DefaultChartOptions} */
@@ -90,7 +90,7 @@ class DefaultChartOptions extends AbstractDefaultChartOptions {
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
   ScaleType = goog.module.get('org.pepstock.charba.client.ScaleType$impl');
   Type = goog.module.get('org.pepstock.charba.client.Type$impl');
-  IsEnvelop = goog.module.get('org.pepstock.charba.client.commons.IsEnvelop$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   DefaultChartScales = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartScales$impl');
   DefaultsBuilder = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultsBuilder$impl');
   ExtendedOptions = goog.module.get('org.pepstock.charba.client.options.ExtendedOptions$impl');

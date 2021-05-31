@@ -4,7 +4,6 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 
 let InteractionAxis = goog.forwardDeclare('org.pepstock.charba.client.enums.InteractionAxis$impl');
 let AbstractConfigurationItem = goog.forwardDeclare('org.pepstock.charba.client.zoom.AbstractConfigurationItem$impl');
-let $LambdaAdaptor = goog.forwardDeclare('org.pepstock.charba.client.zoom.IsDefaultConfigurationItem.$LambdaAdaptor$impl');
 let CompletedCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.CompletedCallback$impl');
 let ModeCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.ModeCallback$impl');
 let ProgressCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbacks.ProgressCallback$impl');
@@ -15,14 +14,10 @@ let StartCallback = goog.forwardDeclare('org.pepstock.charba.client.zoom.callbac
  * @interface
  */
 class IsDefaultConfigurationItem {
- /** @abstract @return {boolean} */
- m_isEnabled__() {}
  /** @abstract @return {InteractionAxis} */
  m_getMode__() {}
  /** @abstract @return {InteractionAxis} */
  m_getOverScaleMode__() {}
- /** @abstract @return {number} */
- m_getThreshold__() {}
  /** @abstract @return {ModeCallback} */
  m_getModeCallback__() {}
  /** @abstract @return {ModeCallback} */
@@ -35,16 +30,6 @@ class IsDefaultConfigurationItem {
  m_getRejectedCallback__() {}
  /** @abstract @return {StartCallback} */
  m_getStartCallback__() {}
- /** @return {IsDefaultConfigurationItem} */
- static $adapt(/** ?function():number */ fn) {
-  IsDefaultConfigurationItem.$clinit();
-  return new $LambdaAdaptor(fn);
- }
- /** @return {boolean} */
- static m_isEnabled__$default__org_pepstock_charba_client_zoom_IsDefaultConfigurationItem(/** !IsDefaultConfigurationItem */ $thisArg) {
-  IsDefaultConfigurationItem.$clinit();
-  return AbstractConfigurationItem.f_DEFAULT_ENABLED__org_pepstock_charba_client_zoom_AbstractConfigurationItem;
- }
  /** @return {InteractionAxis} */
  static m_getMode__$default__org_pepstock_charba_client_zoom_IsDefaultConfigurationItem(/** !IsDefaultConfigurationItem */ $thisArg) {
   IsDefaultConfigurationItem.$clinit();
@@ -101,7 +86,6 @@ class IsDefaultConfigurationItem {
  
  static $loadModules() {
   AbstractConfigurationItem = goog.module.get('org.pepstock.charba.client.zoom.AbstractConfigurationItem$impl');
-  $LambdaAdaptor = goog.module.get('org.pepstock.charba.client.zoom.IsDefaultConfigurationItem.$LambdaAdaptor$impl');
  }
 }
 IsDefaultConfigurationItem.$markImplementor(/**@type {Function}*/ (IsDefaultConfigurationItem));

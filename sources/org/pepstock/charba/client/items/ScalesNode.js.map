@@ -2,7 +2,7 @@
 "version":3,
 "file":"ScalesNode.impl.java.js",
 "lineCount":71,
-"mappings":"A;;;;;;;;;;;;;;;;MAoCmB,U;;CAAA,W;EAAAA,Q;;;QAOX,gD,wBAAsCC,O;EAAtCC,qB;EAAAA,iC;EAAAA,+G;EAAAA,iB;;;CAAA,2F,wBAAsCD,O;EAC5CE,wS;;;CAQ6B,Y;EAE7BC,IAAuBC,MAAvBD,mE;EAEAA,IAAUE,IAAVF,mB;EAEAA;GAECA;IAAAA,IAASG,GAATH,4DAAAA;;KAECA,mQAFDA;;IAFDA;G;EAQAA,mG;;;CASgB,kE,eAAiCI,K;EAEjDC,IAAUH,IAAVG,mB;EAEAA;GAECA;IAAAA,IAASF,GAATE,4DAAAA;;KAECA,IAAUC,SAAVD,yOAFDA;KAICA;MAECA,iBAFDA;MAJDA;;IAFDA;G;EAcAA,Y;;;CASc,0D,eAAyBD,K;EACvCG,8G;;;QAnEiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;;;MAoCmB,U;;CAAA,W;EAAAA,Q;;;QAOX,gD,wBAAsCC,O;EAAtCC,qB;EAAAA,iC;EAAAA,+G;EAAAA,iB;;;CAAA,2F,wBAAsCD,O;EAC5CE,oS;;;CAQ6B,Y;EAE7BC,IAAuBC,MAAvBD,mE;EAEAA,IAAUE,IAAVF,mB;EAEAA;GAECA;IAAAA,IAASG,GAATH,4DAAAA;;KAECA,+PAFDA;;IAFDA;G;EAQAA,mG;;;CASgB,kE,eAAiCI,K;EAEjDC,IAAUH,IAAVG,mB;EAEAA;GAECA;IAAAA,IAASF,GAATE,4DAAAA;;KAECA,IAAUC,SAAVD,qOAFDA;KAICA;MAECA,iBAFDA;MAJDA;;IAFDA;G;EAcAA,Y;;;CASc,0D,eAAyBD,K;EACvCG,8G;;;QAnEiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["ScalesNode.java"],
 "names":["org.pepstock.charba.client.items.ScalesNode.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.ScalesNode.<synthetic: ctor_create>","org.pepstock.charba.client.items.ScalesNode.<init>","org.pepstock.charba.client.items.ScalesNode.getItems","result","keys","key","event","org.pepstock.charba.client.items.ScalesNode.getScaleIsInside","scaleItem","org.pepstock.charba.client.items.ScalesNode.isInside","org.pepstock.charba.client.items.ScalesNode.<clinit>"]
 }
