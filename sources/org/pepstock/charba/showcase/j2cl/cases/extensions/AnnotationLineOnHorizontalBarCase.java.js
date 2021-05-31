@@ -16,6 +16,7 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.HorizontalBarChart');
 goog.require('org.pepstock.charba.client.annotation.AbstractAnnotation');
 goog.require('org.pepstock.charba.client.annotation.AnnotationOptions');
+goog.require('org.pepstock.charba.client.annotation.AnnotationPlugin');
 goog.require('org.pepstock.charba.client.annotation.BoxAnnotation');
 goog.require('org.pepstock.charba.client.annotation.LineAnnotation');
 goog.require('org.pepstock.charba.client.annotation.enums.DrawTime');

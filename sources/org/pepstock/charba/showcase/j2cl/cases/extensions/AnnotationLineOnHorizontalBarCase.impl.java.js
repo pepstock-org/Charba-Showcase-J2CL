@@ -16,6 +16,7 @@ let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let HorizontalBarChart = goog.forwardDeclare('org.pepstock.charba.client.HorizontalBarChart$impl');
 let AbstractAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
 let AnnotationOptions = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationOptions$impl');
+let AnnotationPlugin = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
 let BoxAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.BoxAnnotation$impl');
 let LineAnnotation = goog.forwardDeclare('org.pepstock.charba.client.annotation.LineAnnotation$impl');
 let DrawTime = goog.forwardDeclare('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
@@ -92,6 +93,7 @@ class AnnotationLineOnHorizontalBarCase extends BaseComposite {
   box.m_setBackgroundColor__org_pepstock_charba_client_colors_IsColor(HtmlColor.f_LIGHT_GRAY__org_pepstock_charba_client_colors_HtmlColor.m_alpha__double(0.3));
   box.m_setBorderWidth__int(0);
   options.m_setAnnotations__arrayOf_org_pepstock_charba_client_annotation_AbstractAnnotation(/**@type {!Array<AbstractAnnotation>}*/ ($Arrays.$init([line, box], AbstractAnnotation)));
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_AnnotationLineOnHorizontalBarCase_.m_getOptions__().m_getPlugins__().m_setOptions__java_lang_String__org_pepstock_charba_client_plugins_AbstractPluginOptions(AnnotationPlugin.f_ID__org_pepstock_charba_client_annotation_AnnotationPlugin, options);
   chartCol.appendChild(/**@type {Node}*/ ($Casts.$to(IsCastable_$Overlay.m_as__$devirt__org_pepstock_charba_client_dom_IsCastable(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_extensions_AnnotationLineOnHorizontalBarCase_.m_getChartElement__()), Node_$Overlay)));
   let actionsRow = /**@type {HTMLTableRowElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("tr"), HTMLTableRowElement_$Overlay));
   actionsRow.style.width = WidthUnionType_$Overlay.m_of__java_lang_Object("100%");
@@ -164,6 +166,7 @@ class AnnotationLineOnHorizontalBarCase extends BaseComposite {
   HorizontalBarChart = goog.module.get('org.pepstock.charba.client.HorizontalBarChart$impl');
   AbstractAnnotation = goog.module.get('org.pepstock.charba.client.annotation.AbstractAnnotation$impl');
   AnnotationOptions = goog.module.get('org.pepstock.charba.client.annotation.AnnotationOptions$impl');
+  AnnotationPlugin = goog.module.get('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
   BoxAnnotation = goog.module.get('org.pepstock.charba.client.annotation.BoxAnnotation$impl');
   LineAnnotation = goog.module.get('org.pepstock.charba.client.annotation.LineAnnotation$impl');
   DrawTime = goog.module.get('org.pepstock.charba.client.annotation.enums.DrawTime$impl');
