@@ -1,6 +1,6 @@
 # Charba Showcase J2CL
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/pepstock-org/Charba-Showcase/actions/workflows/build.yaml"><img alt="Build" src="https://github.com/pepstock-org/Charba-Showcase-J2CL/workflows/Build/badge.svg?branch=master"></a>
   <a href="https://pepstock-org.github.io/Charba-Showcase-J2CL/"><img alt="J2CL showcase" src="https://img.shields.io/badge/Showcase-J2CL-F27173.svg"></a>
 </p>
