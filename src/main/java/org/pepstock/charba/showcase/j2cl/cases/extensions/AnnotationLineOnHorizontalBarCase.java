@@ -2,6 +2,7 @@ package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
 import org.pepstock.charba.client.HorizontalBarChart;
 import org.pepstock.charba.client.annotation.AnnotationOptions;
+import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.BoxAnnotation;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
@@ -90,6 +91,8 @@ public class AnnotationLineOnHorizontalBarCase extends BaseComposite {
 		box.setBorderWidth(0);
 
 		options.setAnnotations(line, box);
+
+		chart.getOptions().getPlugins().setOptions(AnnotationPlugin.ID, options);
 		
 		chartCol.appendChild(chart.getChartElement().as());
 
