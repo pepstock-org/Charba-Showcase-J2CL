@@ -20,6 +20,7 @@ let Event = goog.forwardDeclare('org.pepstock.charba.client.events.Event$impl');
 let EventHandler = goog.forwardDeclare('org.pepstock.charba.client.events.EventHandler$impl');
 let EventType = goog.forwardDeclare('org.pepstock.charba.client.events.EventType$impl');
 let HandlerRegistration = goog.forwardDeclare('org.pepstock.charba.client.events.HandlerRegistration$impl');
+let ActiveDatasetElement = goog.forwardDeclare('org.pepstock.charba.client.items.ActiveDatasetElement$impl');
 let DatasetItem = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetItem$impl');
 let DatasetReference = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetReference$impl');
 let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
@@ -125,6 +126,22 @@ class IsChart {
  m_isDestroyOnDetach__() {}
  /** @abstract */
  m_setDestroyOnDetach__boolean(/** boolean */ destroyOnDetach) {}
+ /** @abstract */
+ m_setActiveElements__java_util_List(/** List<ActiveDatasetElement> */ elements) {}
+ /** @abstract */
+ m_setActiveElements__arrayOf_org_pepstock_charba_client_items_ActiveDatasetElement(/** Array<ActiveDatasetElement> */ elements) {}
+ /** @abstract */
+ m_resetActiveElements__() {}
+ /** @abstract @return {List<ActiveDatasetElement>} */
+ m_getActiveElements__() {}
+ /** @abstract */
+ m_setTooltipActiveElements__java_util_List(/** List<ActiveDatasetElement> */ elements) {}
+ /** @abstract */
+ m_resetTooltipActiveElements__() {}
+ /** @abstract */
+ m_setTooltipActiveElements__arrayOf_org_pepstock_charba_client_items_ActiveDatasetElement(/** Array<ActiveDatasetElement> */ elements) {}
+ /** @abstract @return {List<ActiveDatasetElement>} */
+ m_getTooltipActiveElements__() {}
  /** @abstract */
  m_destroy__() {}
  /** @abstract */

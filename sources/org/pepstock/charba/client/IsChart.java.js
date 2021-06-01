@@ -21,6 +21,7 @@ goog.require('org.pepstock.charba.client.events.Event');
 goog.require('org.pepstock.charba.client.events.EventHandler');
 goog.require('org.pepstock.charba.client.events.EventType');
 goog.require('org.pepstock.charba.client.events.HandlerRegistration');
+goog.require('org.pepstock.charba.client.items.ActiveDatasetElement');
 goog.require('org.pepstock.charba.client.items.DatasetItem');
 goog.require('org.pepstock.charba.client.items.DatasetReference');
 goog.require('org.pepstock.charba.client.options.TransitionKey');

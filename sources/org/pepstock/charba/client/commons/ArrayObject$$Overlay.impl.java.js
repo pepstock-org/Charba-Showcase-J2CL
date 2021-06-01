@@ -37,7 +37,9 @@ class $Overlay {
   for (let $array = items, $index = 0; $index < $array.length; $index++) {
    let value = $array[$index];
    {
-    result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    if (!$Equality.$same(value, null)) {
+     result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    }
    }
   }
   return result;
@@ -52,7 +54,9 @@ class $Overlay {
   for (let $array = items, $index = 0; $index < $array.length; $index++) {
    let value = $array[$index];
    {
-    result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    if (!$Equality.$same(value, null)) {
+     result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    }
    }
   }
   return result;
@@ -71,7 +75,9 @@ class $Overlay {
   for (let $iterator = items.m_iterator__(); $iterator.m_hasNext__(); ) {
    let value = /**@type {E}*/ ($Casts.$to($iterator.m_next__(), NativeObjectContainer));
    {
-    result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    if (!$Equality.$same(value, null)) {
+     result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    }
    }
   }
   return result;
@@ -90,7 +96,9 @@ class $Overlay {
   for (let $iterator = items.m_iterator__(); $iterator.m_hasNext__(); ) {
    let value = /**@type {E}*/ ($Casts.$to($iterator.m_next__(), NativeObjectContainer));
    {
-    result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    if (!$Equality.$same(value, null)) {
+     result.push(/**@type {NativeObjectContainer}*/ (value).m_getNativeObject__());
+    }
    }
   }
   return result;

@@ -4,6 +4,7 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 let List = goog.forwardDeclare('java.util.List$impl');
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartOptions = goog.forwardDeclare('org.pepstock.charba.client.ChartOptions$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
@@ -51,6 +52,16 @@ class JsChartHelper extends j_l_Object {
   }
  }
  
+ m_setTooltipActiveElements__org_pepstock_charba_client_Chart__org_pepstock_charba_client_commons_ArrayObject_$pp_org_pepstock_charba_client(/** Chart */ chart, /** Array */ elements) {
+  if (!$Equality.$same(chart, null) && !$Equality.$same(elements, null)) {
+   CharbaJsChartHelper.setTooltipActiveElements(chart, elements);
+  }
+ }
+ /** @return {Array} */
+ m_getTooltipActiveElements__org_pepstock_charba_client_Chart_$pp_org_pepstock_charba_client(/** Chart */ chart) {
+  return CharbaJsChartHelper.getTooltipActiveElements(chart);
+ }
+ 
  static $clinit() {
   JsChartHelper.$clinit = () =>{};
   JsChartHelper.$loadModules();
@@ -63,6 +74,7 @@ class JsChartHelper extends j_l_Object {
  }
  
  static $loadModules() {
+  $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');

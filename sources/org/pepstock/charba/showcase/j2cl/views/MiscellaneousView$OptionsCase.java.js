@@ -6,6 +6,7 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseFactory');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseItem');
 goog.require('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$1');
+goog.require('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$10');
 goog.require('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$2');
 goog.require('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$3');
 goog.require('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$4');

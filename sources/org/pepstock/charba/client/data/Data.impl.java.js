@@ -6,8 +6,11 @@ const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.N
 const HasLabels = goog.require('org.pepstock.charba.client.data.HasLabels$impl');
 
 let StringBuilder = goog.forwardDeclare('java.lang.StringBuilder$impl');
+let ArrayList = goog.forwardDeclare('java.util.ArrayList$impl');
+let Arrays = goog.forwardDeclare('java.util.Arrays$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
 let Configuration = goog.forwardDeclare('org.pepstock.charba.client.Configuration$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let DatasetContext = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DatasetContext$impl');
@@ -19,6 +22,7 @@ let ArrayMixedObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.
 let ArrayObjectContainerList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObjectContainerList$impl');
 let ConfigurationLoader = goog.forwardDeclare('org.pepstock.charba.client.commons.ConfigurationLoader$impl');
 let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constants$impl');
+let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let AbstractContainer = goog.forwardDeclare('org.pepstock.charba.client.data.AbstractContainer$impl');
 let CanvasObjectHandler = goog.forwardDeclare('org.pepstock.charba.client.data.CanvasObjectHandler$impl');
@@ -28,6 +32,7 @@ let CanvasObjectProperty = goog.forwardDeclare('org.pepstock.charba.client.data.
 let HasPointFillStrokeStyles = goog.forwardDeclare('org.pepstock.charba.client.data.HasPointFillStrokeStyles$impl');
 let Labels = goog.forwardDeclare('org.pepstock.charba.client.data.Labels$impl');
 let LabelsHandler = goog.forwardDeclare('org.pepstock.charba.client.data.LabelsHandler$impl');
+let ActiveDatasetElement = goog.forwardDeclare('org.pepstock.charba.client.items.ActiveDatasetElement$impl');
 let LegendItem = goog.forwardDeclare('org.pepstock.charba.client.items.LegendItem$impl');
 let TooltipItem = goog.forwardDeclare('org.pepstock.charba.client.items.TooltipItem$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
@@ -41,6 +46,8 @@ class Data extends NativeObjectContainer {
  /** @protected */
  constructor() {
   super();
+  /**@type {IsChart}*/
+  this.f_chart__org_pepstock_charba_client_data_Data_;
   /**@type {ArrayObjectContainerList<Dataset>}*/
   this.f_currentDatasets__org_pepstock_charba_client_data_Data_;
   /**@type {LabelsHandler}*/
@@ -49,16 +56,17 @@ class Data extends NativeObjectContainer {
   this.f_canvasObjectHandling__org_pepstock_charba_client_data_Data_ = false;
  }
  /** @return {!Data} */
- static $create__() {
+ static $create__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<IsChart> */ envelop) {
   Data.$clinit();
   let $instance = new Data();
-  $instance.$ctor__org_pepstock_charba_client_data_Data__();
+  $instance.$ctor__org_pepstock_charba_client_data_Data__org_pepstock_charba_client_ChartEnvelop(envelop);
   return $instance;
  }
  
- $ctor__org_pepstock_charba_client_data_Data__() {
+ $ctor__org_pepstock_charba_client_data_Data__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<IsChart> */ envelop) {
   this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__();
   this.$init___$p_org_pepstock_charba_client_data_Data();
+  this.f_chart__org_pepstock_charba_client_data_Data_ = /**@type {IsChart}*/ ($Casts.$to(/**@type {ChartEnvelop<IsChart>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__(), IsChart));
   this.f_labelsHandler__org_pepstock_charba_client_data_Data_ = LabelsHandler.$create__org_pepstock_charba_client_commons_NativeObject(this.m_getNativeObject__());
  }
  /** @override @return {LabelsHandler} */
@@ -149,6 +157,48 @@ class Data extends NativeObjectContainer {
  
  m_setCanvasObjectHandling__boolean(/** boolean */ canvasObjectHandling) {
   this.f_canvasObjectHandling__org_pepstock_charba_client_data_Data_ = canvasObjectHandling;
+ }
+ /** @return {List<ActiveDatasetElement>} */
+ m_createActiveElementsByDatasetIndex__arrayOf_int(/** Array<number> */ datasetIndexes) {
+  let result = /**@type {!ArrayList<ActiveDatasetElement>}*/ (ArrayList.$create__());
+  if (!$Equality.$same(datasetIndexes, null) && datasetIndexes.length > 0) {
+   let indexes = Arrays.m_stream__arrayOf_int(datasetIndexes).m_distinct__().m_toArray__();
+   for (let i = 0; i < indexes.length; i = i + 1 | 0) {
+    let index = indexes[i];
+    if (index >= 0 && index < this.f_currentDatasets__org_pepstock_charba_client_data_Data_.size() && this.f_chart__org_pepstock_charba_client_data_Data_.m_isDatasetVisible__int(index)) {
+     let dataset = /**@type {Dataset}*/ ($Casts.$to(this.f_currentDatasets__org_pepstock_charba_client_data_Data_.getAtIndex(index), Dataset));
+     for (let k = 0; k < dataset.m_getDataCount__(); k = k + 1 | 0) {
+      result.add(ActiveDatasetElement.$create__int__int(index, k));
+     }
+    }
+   }
+   return result;
+  }
+  return result;
+ }
+ /** @return {List<ActiveDatasetElement>} */
+ m_createActiveElementsByDataIndex__arrayOf_int(/** Array<number> */ dataIndexes) {
+  let result = /**@type {!ArrayList<ActiveDatasetElement>}*/ (ArrayList.$create__());
+  if (!$Equality.$same(dataIndexes, null) && dataIndexes.length > 0) {
+   let indexes = Arrays.m_stream__arrayOf_int(dataIndexes).m_distinct__().m_toArray__();
+   let datasetIndex = 0;
+   for (let $iterator = this.f_currentDatasets__org_pepstock_charba_client_data_Data_.m_iterator__(); $iterator.m_hasNext__(); ) {
+    let dataset = /**@type {Dataset}*/ ($Casts.$to($iterator.m_next__(), Dataset));
+    {
+     if (this.f_chart__org_pepstock_charba_client_data_Data_.m_isDatasetVisible__int(datasetIndex)) {
+      for (let i = 0; i < indexes.length; i = i + 1 | 0) {
+       let index = indexes[i];
+       if (index >= 0 && index < dataset.m_getDataCount__()) {
+        result.add(ActiveDatasetElement.$create__int__int(datasetIndex, index));
+       }
+      }
+     }
+     datasetIndex = datasetIndex + 1 | 0;
+    }
+   }
+   return result;
+  }
+  return result;
  }
  /** @return {Gradient} */
  m_retrieveFillStyleAsGradient__org_pepstock_charba_client_items_LegendItem(/** LegendItem */ legendItem) {
@@ -354,7 +404,10 @@ class Data extends NativeObjectContainer {
  
  static $loadModules() {
   StringBuilder = goog.module.get('java.lang.StringBuilder$impl');
+  ArrayList = goog.module.get('java.util.ArrayList$impl');
+  Arrays = goog.module.get('java.util.Arrays$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
   IsChart = goog.module.get('org.pepstock.charba.client.IsChart$impl');
   CanvasObject = goog.module.get('org.pepstock.charba.client.colors.CanvasObject$impl');
   Gradient = goog.module.get('org.pepstock.charba.client.colors.Gradient$impl');
@@ -364,6 +417,7 @@ class Data extends NativeObjectContainer {
   ArrayObjectContainerList = goog.module.get('org.pepstock.charba.client.commons.ArrayObjectContainerList$impl');
   ConfigurationLoader = goog.module.get('org.pepstock.charba.client.commons.ConfigurationLoader$impl');
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
+  Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   CanvasObjectHandler = goog.module.get('org.pepstock.charba.client.data.CanvasObjectHandler$impl');
   Property = goog.module.get('org.pepstock.charba.client.data.Data.Property$impl');
@@ -372,6 +426,7 @@ class Data extends NativeObjectContainer {
   HasPointFillStrokeStyles = goog.module.get('org.pepstock.charba.client.data.HasPointFillStrokeStyles$impl');
   Labels = goog.module.get('org.pepstock.charba.client.data.Labels$impl');
   LabelsHandler = goog.module.get('org.pepstock.charba.client.data.LabelsHandler$impl');
+  ActiveDatasetElement = goog.module.get('org.pepstock.charba.client.items.ActiveDatasetElement$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }

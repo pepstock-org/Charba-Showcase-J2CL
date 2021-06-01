@@ -176,8 +176,8 @@ class HomeView extends BaseComposite {
   HomeView.$loadModules();
   BaseComposite.$clinit();
   HomeView.f_LABELS__org_pepstock_charba_showcase_j2cl_views_HomeView_ = /**@type {!Array<?string>}*/ ($Arrays.$init(["1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "2.0", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "3.0", "3.1", "3.2", "3.3", "4.0"], j_l_String));
-  HomeView.f_VALUES_GWT__org_pepstock_charba_showcase_j2cl_views_HomeView_ = /**@type {!Array<number>}*/ ($Arrays.$init([746, 760, 763, 832, 861, 863, 1200, 1550, 1710, 1720, 1910, 1950, 2040, 2334, 2536, 3064, 3091, 3125, 3125, 4090], $double));
-  HomeView.f_VALUES_J2CL__org_pepstock_charba_showcase_j2cl_views_HomeView_ = /**@type {!Array<number>}*/ ($Arrays.$init([Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, 2536, 2881, 2910, 2941, 2942, 3926], $double));
+  HomeView.f_VALUES_GWT__org_pepstock_charba_showcase_j2cl_views_HomeView_ = /**@type {!Array<number>}*/ ($Arrays.$init([746, 760, 763, 832, 861, 863, 1200, 1550, 1710, 1720, 1910, 1950, 2040, 2334, 2536, 3064, 3091, 3125, 3125, 4098], $double));
+  HomeView.f_VALUES_J2CL__org_pepstock_charba_showcase_j2cl_views_HomeView_ = /**@type {!Array<number>}*/ ($Arrays.$init([Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, Double.f_NaN__java_lang_Double, 2536, 2881, 2910, 2941, 2942, 3933], $double));
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {

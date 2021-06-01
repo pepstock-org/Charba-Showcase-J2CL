@@ -2,7 +2,7 @@
 "version":3,
 "file":"AbstractChart$InternalInterationModeObject.impl.java.js",
 "lineCount":51,
-"mappings":"A;;;;;;;;;MAsqCoB,4B;;CAAA,W;EAAAA,Q;;;QAuCV,gB,gBAAqCC,S;EAArCC,uC;EAAAA,mD;EAAAA,2G;EAAAA,iB;;;CAAA,qF,gBAAqCD,S;EAC5CE,yE;EAEAA,kL;;;CASI,0F,wBAAwBC,I;EAC5BC,uM;;;CAQe,0C;EACfC,yZ;;;CAQU,sD,gBAAqBL,S;EAC/BM,kL;;;CAQa,8C;EACbC,oL;;;CAQoB,yF;EACpBC,mC;;;QAxFiB,O;EAAAC,+C;EAAAA,4C;EAAAA;",
+"mappings":"A;;;;;;;;;MAyxCoB,4B;;CAAA,W;EAAAA,Q;;;QAuCV,gB,gBAAqCC,S;EAArCC,uC;EAAAA,mD;EAAAA,2G;EAAAA,iB;;;CAAA,qF,gBAAqCD,S;EAC5CE,yE;EAEAA,kL;;;CASI,0F,wBAAwBC,I;EAC5BC,uM;;;CAQe,0C;EACfC,yZ;;;CAQU,sD,gBAAqBL,S;EAC/BM,kL;;;CAQa,8C;EACbC,oL;;;CAQoB,yF;EACpBC,mC;;;QAxFiB,O;EAAAC,+C;EAAAA,4C;EAAAA;",
 "sources":["AbstractChart.java"],
 "names":["org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.<synthetic: ctor_js>","intersect","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.<synthetic: ctor_create>","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.<init>","axis","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.setAxis","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.getAxis","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.setIntersect","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.isIntersect","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.nativeObject","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject.<clinit>"]
 }

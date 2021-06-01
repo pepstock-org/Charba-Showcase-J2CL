@@ -7,6 +7,7 @@ const CaseItem = goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseItem$
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let CaseFactory = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.CaseFactory$impl');
 let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$1$impl');
+let $10 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$10$impl');
 let $2 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$2$impl');
 let $3 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$3$impl');
 let $4 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$4$impl');
@@ -64,7 +65,7 @@ class OptionsCase extends Enum {
  /** @return {!Array<!OptionsCase>} */
  static m_values__() {
   OptionsCase.$clinit();
-  return /**@type {!Array<OptionsCase>}*/ ($Arrays.$init([OptionsCase.$static_STEPPED_LINE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_INTERPOLATION__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_POINT_STYLES_AS_IMAGES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_POINT_SIZE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_HOVER_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase], OptionsCase));
+  return /**@type {!Array<OptionsCase>}*/ ($Arrays.$init([OptionsCase.$static_STEPPED_LINE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_INTERPOLATION__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_POINT_STYLES_AS_IMAGES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_POINT_SIZE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_HOVER_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_ACTIVE_ELEMENTS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, OptionsCase.$static_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase], OptionsCase));
  }
  /** @return {!OptionsCase} */
  static get f_STEPPED_LINE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase() {
@@ -95,6 +96,10 @@ class OptionsCase extends Enum {
   return (OptionsCase.$clinit(), OptionsCase.$static_HOVER_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase);
  }
  /** @return {!OptionsCase} */
+ static get f_ACTIVE_ELEMENTS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase() {
+  return (OptionsCase.$clinit(), OptionsCase.$static_ACTIVE_ELEMENTS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase);
+ }
+ /** @return {!OptionsCase} */
  static get f_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase() {
   return (OptionsCase.$clinit(), OptionsCase.$static_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase);
  }
@@ -114,8 +119,9 @@ class OptionsCase extends Enum {
   OptionsCase.$static_POINT_STYLES_AS_IMAGES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("POINT_STYLES_AS_IMAGES"), OptionsCase.$ordinal_POINT_STYLES_AS_IMAGES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Applying point styles as images on line chart", $5.$create__());
   OptionsCase.$static_POINT_SIZE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("POINT_SIZE"), OptionsCase.$ordinal_POINT_SIZE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Applying point sizes on line chart", $6.$create__());
   OptionsCase.$static_HOVER_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("HOVER_STYLES"), OptionsCase.$ordinal_HOVER_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Applying hover styles on stacked area chart", $7.$create__());
-  OptionsCase.$static_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("TRENDS"), OptionsCase.$ordinal_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Drawing trend and forecast on timeseries chart", $8.$create__());
-  OptionsCase.$static_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("AUTO_UPDATE"), OptionsCase.$ordinal_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Auto updating on timeseries chart", $9.$create__());
+  OptionsCase.$static_ACTIVE_ELEMENTS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("ACTIVE_ELEMENTS"), OptionsCase.$ordinal_ACTIVE_ELEMENTS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Active elements on bar chart", $8.$create__());
+  OptionsCase.$static_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("TRENDS"), OptionsCase.$ordinal_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Drawing trend and forecast on timeseries chart", $9.$create__());
+  OptionsCase.$static_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = OptionsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("AUTO_UPDATE"), OptionsCase.$ordinal_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase, "Auto updating on timeseries chart", $10.$create__());
   OptionsCase.f_namesToValuesMap__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase_ = null;
  }
  /** @return {boolean} */
@@ -126,6 +132,7 @@ class OptionsCase extends Enum {
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $1 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$1$impl');
+  $10 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$10$impl');
   $2 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$2$impl');
   $3 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$3$impl');
   $4 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.MiscellaneousView.OptionsCase.$4$impl');
@@ -153,6 +160,8 @@ OptionsCase.$static_POINT_SIZE__org_pepstock_charba_showcase_j2cl_views_Miscella
 /**@private {!OptionsCase}*/
 OptionsCase.$static_HOVER_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase;
 /**@private {!OptionsCase}*/
+OptionsCase.$static_ACTIVE_ELEMENTS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase;
+/**@private {!OptionsCase}*/
 OptionsCase.$static_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase;
 /**@private {!OptionsCase}*/
 OptionsCase.$static_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase;
@@ -173,9 +182,11 @@ OptionsCase.$ordinal_POINT_SIZE__org_pepstock_charba_showcase_j2cl_views_Miscell
 /**@const {number}*/
 OptionsCase.$ordinal_HOVER_STYLES__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = 6;
 /**@const {number}*/
-OptionsCase.$ordinal_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = 7;
+OptionsCase.$ordinal_ACTIVE_ELEMENTS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = 7;
 /**@const {number}*/
-OptionsCase.$ordinal_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = 8;
+OptionsCase.$ordinal_TRENDS__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = 8;
+/**@const {number}*/
+OptionsCase.$ordinal_AUTO_UPDATE__org_pepstock_charba_showcase_j2cl_views_MiscellaneousView_OptionsCase = 9;
 CaseItem.$markImplementor(OptionsCase);
 $Util.$setClassMetadataForEnum(OptionsCase, "org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$OptionsCase");
 

@@ -21,15 +21,18 @@ let ChartTimerTask = goog.forwardDeclare('org.pepstock.charba.client.ChartTimerT
 let Charts = goog.forwardDeclare('org.pepstock.charba.client.Charts$impl');
 let Configuration = goog.forwardDeclare('org.pepstock.charba.client.Configuration$impl');
 let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
+let JsChartHelper = goog.forwardDeclare('org.pepstock.charba.client.JsChartHelper$impl');
 let MutationItem = goog.forwardDeclare('org.pepstock.charba.client.MutationItem$impl');
 let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
 let UpdateConfiguration = goog.forwardDeclare('org.pepstock.charba.client.UpdateConfiguration$impl');
 let Array_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.Array.$Overlay$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
+let ArrayObjectContainerList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObjectContainerList$impl');
 let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
+let NativeObjectContainer = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 let ControllerType = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerType$impl');
 let BarDataset = goog.forwardDeclare('org.pepstock.charba.client.data.BarDataset$impl');
 let Data = goog.forwardDeclare('org.pepstock.charba.client.data.Data$impl');
@@ -53,6 +56,7 @@ let ChartEventHandler = goog.forwardDeclare('org.pepstock.charba.client.events.C
 let EventHandler = goog.forwardDeclare('org.pepstock.charba.client.events.EventHandler$impl');
 let EventType = goog.forwardDeclare('org.pepstock.charba.client.events.EventType$impl');
 let HandlerRegistration = goog.forwardDeclare('org.pepstock.charba.client.events.HandlerRegistration$impl');
+let ActiveDatasetElement = goog.forwardDeclare('org.pepstock.charba.client.items.ActiveDatasetElement$impl');
 let DatasetItem = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetItem$impl');
 let DatasetReference = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetReference$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
@@ -115,6 +119,7 @@ class AbstractChart extends HandlerManager {
   this.$init___$p_org_pepstock_charba_client_AbstractChart();
   Type.m_checkIfValid__org_pepstock_charba_client_Type(type);
   this.f_type__org_pepstock_charba_client_AbstractChart_ = type;
+  this.f_data__org_pepstock_charba_client_AbstractChart_ = Data.$create__org_pepstock_charba_client_ChartEnvelop(/**@type {!ChartEnvelop<IsChart>}*/ (ChartEnvelop.$create__java_lang_Object(this)));
   this.f_element__org_pepstock_charba_client_AbstractChart_ = DOMBuilder.m_get__().m_createDivElement__();
   this.f_element__org_pepstock_charba_client_AbstractChart_.id = this.f_id__org_pepstock_charba_client_AbstractChart_;
   BaseStyleProperties_$Overlay.m_setPosition__$devirt__org_pepstock_charba_client_dom_BaseStyleProperties__org_pepstock_charba_client_dom_enums_Position(this.f_element__org_pepstock_charba_client_AbstractChart_.style, Position.f_RELATIVE__org_pepstock_charba_client_dom_enums_Position);
@@ -289,6 +294,58 @@ class AbstractChart extends HandlerManager {
     this.m_destroy__();
    }
   }
+ }
+ /** @override */
+ m_setActiveElements__java_util_List(/** List<ActiveDatasetElement> */ elements) {
+  if (this.m_isInitialized__()) {
+   let array = ArrayObject_$Overlay.m_fromOrEmpty__java_util_List(elements);
+   this.f_chart__org_pepstock_charba_client_AbstractChart_.setActiveElements(array);
+  }
+ }
+ /** @override */
+ m_setActiveElements__arrayOf_org_pepstock_charba_client_items_ActiveDatasetElement(/** Array<ActiveDatasetElement> */ elements) {
+  if (this.m_isInitialized__()) {
+   let array = ArrayObject_$Overlay.m_fromOrEmpty__arrayOf_org_pepstock_charba_client_commons_NativeObjectContainer(elements);
+   this.f_chart__org_pepstock_charba_client_AbstractChart_.setActiveElements(array);
+  }
+ }
+ /** @override */
+ m_resetActiveElements__() {
+  this.f_chart__org_pepstock_charba_client_AbstractChart_.setActiveElements(ArrayObject_$Overlay.m_fromOrEmpty__org_pepstock_charba_client_commons_NativeObjectContainer(/**@type {NativeObjectContainer}*/ (null)));
+ }
+ /** @override @return {List<ActiveDatasetElement>} */
+ m_getActiveElements__() {
+  if (this.m_isInitialized__()) {
+   let array = this.f_chart__org_pepstock_charba_client_AbstractChart_.getActiveElements();
+   return /**@type {ArrayObjectContainerList<ActiveDatasetElement>}*/ (ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayObject__org_pepstock_charba_client_commons_NativeObjectContainerFactory(array, ActiveDatasetElement.f_FACTORY__org_pepstock_charba_client_items_ActiveDatasetElement));
+  }
+  return /**@type {List<ActiveDatasetElement>}*/ (Collections.m_emptyList__());
+ }
+ /** @override */
+ m_setTooltipActiveElements__java_util_List(/** List<ActiveDatasetElement> */ elements) {
+  if (this.m_isInitialized__()) {
+   let array = ArrayObject_$Overlay.m_fromOrEmpty__java_util_List(elements);
+   JsChartHelper.m_get__().m_setTooltipActiveElements__org_pepstock_charba_client_Chart__org_pepstock_charba_client_commons_ArrayObject_$pp_org_pepstock_charba_client(this.f_chart__org_pepstock_charba_client_AbstractChart_, array);
+  }
+ }
+ /** @override */
+ m_setTooltipActiveElements__arrayOf_org_pepstock_charba_client_items_ActiveDatasetElement(/** Array<ActiveDatasetElement> */ elements) {
+  if (this.m_isInitialized__()) {
+   let array = ArrayObject_$Overlay.m_fromOrEmpty__arrayOf_org_pepstock_charba_client_commons_NativeObjectContainer(elements);
+   JsChartHelper.m_get__().m_setTooltipActiveElements__org_pepstock_charba_client_Chart__org_pepstock_charba_client_commons_ArrayObject_$pp_org_pepstock_charba_client(this.f_chart__org_pepstock_charba_client_AbstractChart_, array);
+  }
+ }
+ /** @override */
+ m_resetTooltipActiveElements__() {
+  JsChartHelper.m_get__().m_setTooltipActiveElements__org_pepstock_charba_client_Chart__org_pepstock_charba_client_commons_ArrayObject_$pp_org_pepstock_charba_client(this.f_chart__org_pepstock_charba_client_AbstractChart_, ArrayObject_$Overlay.m_fromOrEmpty__org_pepstock_charba_client_commons_NativeObjectContainer(/**@type {NativeObjectContainer}*/ (null)));
+ }
+ /** @override @return {List<ActiveDatasetElement>} */
+ m_getTooltipActiveElements__() {
+  if (this.m_isInitialized__()) {
+   let array = JsChartHelper.m_get__().m_getTooltipActiveElements__org_pepstock_charba_client_Chart_$pp_org_pepstock_charba_client(this.f_chart__org_pepstock_charba_client_AbstractChart_);
+   return /**@type {ArrayObjectContainerList<ActiveDatasetElement>}*/ (ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayObject__org_pepstock_charba_client_commons_NativeObjectContainerFactory(array, ActiveDatasetElement.f_FACTORY__org_pepstock_charba_client_items_ActiveDatasetElement));
+  }
+  return /**@type {List<ActiveDatasetElement>}*/ (Collections.m_emptyList__());
  }
  /** @override */
  m_destroy__() {
@@ -588,7 +645,6 @@ class AbstractChart extends HandlerManager {
   this.f_id__org_pepstock_charba_client_AbstractChart_ = DOMBuilder.m_get__().m_createUniqueChartId__();
   this.f_handlerRegistrations__org_pepstock_charba_client_AbstractChart_ = /**@type {!ArrayList<HandlerRegistration>}*/ (ArrayList.$create__());
   this.f_configuration__org_pepstock_charba_client_AbstractChart_ = Configuration.$create__();
-  this.f_data__org_pepstock_charba_client_AbstractChart_ = Data.$create__();
   this.f_isCanvasSupported__org_pepstock_charba_client_AbstractChart_ = DOMBuilder.m_get__().m_isCanvasSupported__();
   this.f_timer__org_pepstock_charba_client_AbstractChart_ = null;
   this.f_attached__org_pepstock_charba_client_AbstractChart_ = false;
@@ -620,6 +676,7 @@ class AbstractChart extends HandlerManager {
   Charts = goog.module.get('org.pepstock.charba.client.Charts$impl');
   Configuration = goog.module.get('org.pepstock.charba.client.Configuration$impl');
   Defaults = goog.module.get('org.pepstock.charba.client.Defaults$impl');
+  JsChartHelper = goog.module.get('org.pepstock.charba.client.JsChartHelper$impl');
   Type = goog.module.get('org.pepstock.charba.client.Type$impl');
   UpdateConfiguration = goog.module.get('org.pepstock.charba.client.UpdateConfiguration$impl');
   Array_$Overlay = goog.module.get('org.pepstock.charba.client.commons.Array.$Overlay$impl');
@@ -647,6 +704,7 @@ class AbstractChart extends HandlerManager {
   AddHandlerEvent = goog.module.get('org.pepstock.charba.client.events.AddHandlerEvent$impl');
   ChartEventHandler = goog.module.get('org.pepstock.charba.client.events.ChartEventHandler$impl');
   HandlerRegistration = goog.module.get('org.pepstock.charba.client.events.HandlerRegistration$impl');
+  ActiveDatasetElement = goog.module.get('org.pepstock.charba.client.items.ActiveDatasetElement$impl');
   DatasetItem = goog.module.get('org.pepstock.charba.client.items.DatasetItem$impl');
   DatasetReference = goog.module.get('org.pepstock.charba.client.items.DatasetReference$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');

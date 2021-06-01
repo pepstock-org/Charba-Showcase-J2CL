@@ -2,7 +2,7 @@
 "version":3,
 "file":"JsHelperResource.impl.java.js",
 "lineCount":45,
-"mappings":"A;;;;;;;;;MA0BmB,gB;;CAAA,W;EAAAA,Q;;;QA8BlB,S;EAAAC,2B;EAAAA,uC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EACCC,iT;;;QA/BiB,O;EAAAC,mC;EAAAA,gC;EAAAA,qC;EAGlBA,uwS;;;;;;;;;;;;;AAHkB;iBAGY,+DAHZ;",
+"mappings":"A;;;;;;;;;MA0BmB,gB;;CAAA,W;EAAAA,Q;;;QA8BlB,S;EAAAC,2B;EAAAA,uC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EACCC,iT;;;QA/BiB,O;EAAAC,mC;EAAAA,gC;EAAAA,qC;EAGlBA,6jT;;;;;;;;;;;;;AAHkB;iBAGY,+DAHZ;",
 "sources":["JsHelperResource.java"],
 "names":["org.pepstock.charba.client.commons.JsHelperResource.<synthetic: ctor_js>","org.pepstock.charba.client.commons.JsHelperResource.<synthetic: ctor_create>","org.pepstock.charba.client.commons.JsHelperResource.<init>","org.pepstock.charba.client.commons.JsHelperResource.<clinit>"]
 }

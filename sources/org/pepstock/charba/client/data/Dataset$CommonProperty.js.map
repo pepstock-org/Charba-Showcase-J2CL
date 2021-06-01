@@ -2,7 +2,7 @@
 "version":3,
 "file":"Dataset$CommonProperty.impl.java.js",
 "lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAyLgB,c;;CAAA,W;EAAAA,Q;EAAAA;OAOO,gEAPPA,C;;;QAcN,gD,8DAAsBC,K;EAAtBC,qC;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAsBD,K;EAAtBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAzBa,2B;EAAAC,yB;EAAAA;GAAAA,qJAAAA;G;EAAAA,uI;;;QAAA,U;EAAAC,yB;EAAAA,kW;;;QAEd,kE;EAAAC,uH;;;QACA,0E;EAAAA,+H;;;QACA,gF;EAAAA,qI;;;QAJc,O;EAAAC,iC;EAAAA,8B;EAAAA,e;EAEdA,iR;EACAA,gT;EACAA,uU;EAJcA,kG;;;;;;;;;;;;;AAAA;oF;AAAA;4F;AAAA;kG;AAAA;2F;AAEd;yF;AACA;iG;AACA;;",
+"mappings":"A;;;;;;;;;;;;;;MA0LgB,c;;CAAA,W;EAAAA,Q;EAAAA;OAOO,gEAPPA,C;;;QAcN,gD,8DAAsBC,K;EAAtBC,qC;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAsBD,K;EAAtBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAzBa,2B;EAAAC,yB;EAAAA;GAAAA,qJAAAA;G;EAAAA,uI;;;QAAA,U;EAAAC,yB;EAAAA,kW;;;QAEd,kE;EAAAC,uH;;;QACA,0E;EAAAA,+H;;;QACA,gF;EAAAA,qI;;;QAJc,O;EAAAC,iC;EAAAA,8B;EAAAA,e;EAEdA,iR;EACAA,gT;EACAA,uU;EAJcA,kG;;;;;;;;;;;;;AAAA;oF;AAAA;4F;AAAA;kG;AAAA;2F;AAEd;yF;AACA;iG;AACA;;",
 "sources":["Dataset.java"],
 "names":["org.pepstock.charba.client.data.Dataset$CommonProperty.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.Dataset$CommonProperty.<synthetic: ctor_create>","org.pepstock.charba.client.data.Dataset$CommonProperty.<init>","org.pepstock.charba.client.data.Dataset$CommonProperty.value","org.pepstock.charba.client.data.Dataset$CommonProperty.valueOf","org.pepstock.charba.client.data.Dataset$CommonProperty.values","org.pepstock.charba.client.data.Dataset$CommonProperty.<synthetic: getter>","org.pepstock.charba.client.data.Dataset$CommonProperty.<clinit>"]
 }

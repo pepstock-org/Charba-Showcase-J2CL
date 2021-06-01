@@ -157,6 +157,11 @@ class Dataset extends AbstractNode {
   return this.f_animationContainer__org_pepstock_charba_client_data_Dataset_;
  }
  /** @return {number} */
+ m_getDataCount__() {
+  let array = this.m_getArrayValue__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty);
+  return !$Equality.$same(array, null) ? array.length : 0;
+ }
+ /** @return {number} */
  m_getId__() {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__int(InternalProperty.f_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty, Undefined.f_INTEGER__org_pepstock_charba_client_items_Undefined);
  }

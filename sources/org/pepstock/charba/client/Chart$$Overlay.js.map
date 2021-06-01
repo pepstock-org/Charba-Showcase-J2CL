@@ -2,7 +2,7 @@
 "version":3,
 "file":"Chart$$Overlay.impl.java.js",
 "lineCount":23,
-"mappings":"A;;;;;;;;MAsCmB,Q;;QAuVJ,wD;EAAAA,mB;EACbA,mF;;;QASc,qD;EAAAC,mB;EACdA,mH;;;QAlWiB,O;EAAAC,2B;EAAAA;",
+"mappings":"A;;;;;;;;MAsCmB,Q;;QAuWJ,wD;EAAAA,mB;EACbA,mF;;;QASc,qD;EAAAC,mB;EACdA,mH;;;QAlXiB,O;EAAAC,2B;EAAAA;",
 "sources":["Chart.java"],
 "names":["org.pepstock.charba.client.Chart$$Overlay.getCharbaId__$devirt","org.pepstock.charba.client.Chart$$Overlay.getChart__$devirt","org.pepstock.charba.client.Chart$$Overlay.<clinit>"]
 }

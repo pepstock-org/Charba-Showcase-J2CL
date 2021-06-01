@@ -2,7 +2,7 @@
 "version":3,
 "file":"MiscellaneousView$ScriptableOptionsCase$8.impl.java.js",
 "lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAwL8E,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,uG;EAAAA,iB;;;CAAA,0F;EAAAC,iC;;;CACtD,U;EACpBC,iD;;;QAF0E,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MA8L8E,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,uG;EAAAA,iB;;;CAAA,0F;EAAAC,iC;;;CACtD,U;EACpBC,iD;;;QAF0E,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["MiscellaneousView.java"],
 "names":["org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase$8.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase$8.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase$8.<init>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase$8.create","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase$8.<clinit>"]
 }

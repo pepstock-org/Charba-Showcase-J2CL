@@ -2,7 +2,7 @@
 "version":3,
 "file":"Dataset$DataPointFactory.impl.java.js",
 "lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAu2CsB,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;;;CAQH,yD,UAAoBC,Y;EACpCC,wF;;;;CATmB,U;EAAAA,8K;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAo3CsB,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;;;CAQH,yD,UAAoBC,Y;EACpCC,wF;;;;CATmB,U;EAAAA,8K;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAAAA;",
 "sources":["Dataset.java"],
 "names":["org.pepstock.charba.client.data.Dataset$DataPointFactory.<synthetic: ctor_js>","org.pepstock.charba.client.data.Dataset$DataPointFactory.<synthetic: ctor_create>","org.pepstock.charba.client.data.Dataset$DataPointFactory.<init>","nativeObject","org.pepstock.charba.client.data.Dataset$DataPointFactory.create","org.pepstock.charba.client.data.Dataset$DataPointFactory.<clinit>"]
 }
