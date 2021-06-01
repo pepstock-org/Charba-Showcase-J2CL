@@ -3,6 +3,7 @@ package org.pepstock.charba.showcase.j2cl.views;
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointSizesOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsImageOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase;
@@ -109,6 +110,11 @@ public class MiscellaneousView extends AbstractView {
 		HOVER_STYLES("Applying hover styles on stacked area chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new HoverStyleOnStackedAreaCase();
+			}
+		}),
+		ACTIVE_ELEMENTS("Active elements on bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new ActiveElementsOnBarCase();
 			}
 		}),
 		TRENDS("Drawing trend and forecast on timeseries chart", new CaseFactory() {
