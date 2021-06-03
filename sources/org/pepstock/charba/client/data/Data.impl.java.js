@@ -185,20 +185,24 @@ class Data extends NativeObjectContainer {
    for (let $iterator = this.f_currentDatasets__org_pepstock_charba_client_data_Data_.m_iterator__(); $iterator.m_hasNext__(); ) {
     let dataset = /**@type {Dataset}*/ ($Casts.$to($iterator.m_next__(), Dataset));
     {
-     if (this.f_chart__org_pepstock_charba_client_data_Data_.m_isDatasetVisible__int(datasetIndex)) {
-      for (let i = 0; i < indexes.length; i = i + 1 | 0) {
-       let index = indexes[i];
-       if (index >= 0 && index < dataset.m_getDataCount__()) {
-        result.add(ActiveDatasetElement.$create__int__int(datasetIndex, index));
-       }
-      }
-     }
+     this.m_checkAndLoadActiveElementForDataset__org_pepstock_charba_client_data_Dataset__int__arrayOf_int__java_util_List_$p_org_pepstock_charba_client_data_Data(dataset, datasetIndex, indexes, result);
      datasetIndex = datasetIndex + 1 | 0;
     }
    }
    return result;
   }
   return result;
+ }
+ 
+ m_checkAndLoadActiveElementForDataset__org_pepstock_charba_client_data_Dataset__int__arrayOf_int__java_util_List_$p_org_pepstock_charba_client_data_Data(/** Dataset */ dataset, /** number */ datasetIndex, /** Array<number> */ indexes, /** List<ActiveDatasetElement> */ result) {
+  if (this.f_chart__org_pepstock_charba_client_data_Data_.m_isDatasetVisible__int(datasetIndex)) {
+   for (let i = 0; i < indexes.length; i = i + 1 | 0) {
+    let index = indexes[i];
+    if (index >= 0 && index < dataset.m_getDataCount__()) {
+     result.add(ActiveDatasetElement.$create__int__int(datasetIndex, index));
+    }
+   }
+  }
  }
  /** @return {Gradient} */
  m_retrieveFillStyleAsGradient__org_pepstock_charba_client_items_LegendItem(/** LegendItem */ legendItem) {

@@ -2,7 +2,7 @@
 "version":3,
 "file":"IsDefaultDrag.impl.java.js",
 "lineCount":42,
-"mappings":"A;;;;;;;;;MAwBU,a;;CAOO,a;;CAUD,8B;;CASA,0B;;CASH,kB;;QA5BI,oE;EAAAA,wB;EACfA,oE;;;QASc,qF;EAAAC,wB;EACdA,6E;;;QAQc,iF;EAAAC,wB;EACdA,yE;;;QAQW,yE;EAAAC,wB;EACXA,yE;;;QApCQ,O;EAAAC,gC;EAAAA;",
+"mappings":"A;;;;;;;;;MAwBU,a;;CAOO,a;;CASD,8B;;CASA,0B;;CASH,kB;;QA3BI,oE;EAAAA,wB;EACfA,oE;;;QAQc,qF;EAAAC,wB;EACdA,6E;;;QAQc,iF;EAAAC,wB;EACdA,yE;;;QAQW,yE;EAAAC,wB;EACXA,yE;;;QAnCQ,O;EAAAC,gC;EAAAA;",
 "sources":["IsDefaultDrag.java"],
 "names":["org.pepstock.charba.client.zoom.IsDefaultDrag.isEnabled__$default","org.pepstock.charba.client.zoom.IsDefaultDrag.getBackgroundColorAsString__$default","org.pepstock.charba.client.zoom.IsDefaultDrag.getBorderColorAsString__$default","org.pepstock.charba.client.zoom.IsDefaultDrag.getBorderWidth__$default","org.pepstock.charba.client.zoom.IsDefaultDrag.<clinit>"]
 }

@@ -2,7 +2,7 @@
 "version":3,
 "file":"ControllerTemplate.impl.java.js",
 "lineCount":69,
-"mappings":"A;;;;;;;;;MAwBY,kB;;CAAA,W;EAAAA,Q;EAAAA;OAsBgB,qEAtBhBA,C;;;QA2BJ,S;EAAAC,yC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAAAA,4E;EACRA;GAAAA,IAAYC,IAAZD,kBAAAA;;IACAA,4GADAA;;G;;;QAU0B,O;EAAAE,6B;EAC1BA,iG;;;CAQO,0D;EACPC,6F;;;CAhDY,oE;EAsBZH,uG;;;QAtBY,O;EAAAI,qC;EAAAA,kC;EAAAA,qB;EAEZA,+4D;EAkBAA,2H;;;;;;;;;;;;;AApBY;mBAEkB,qEAFlB,C;AAAA;mBAoB4B,sEApB5B;",
+"mappings":"A;;;;;;;;;MAwBY,kB;;CAAA,W;EAAAA,Q;EAAAA;OAaiB,qEAbjBA,C;;;QAkBH,S;EAAAC,yC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAAAA,4E;EACPA;GAAAA,IAAYC,IAAZD,kBAAAA;;IACCA,4GADDA;;G;;;QAUyB,O;EAAAE,6B;EACzBA,iG;;;CAQM,0D;EACNC,6F;;;CAvCU,oE;EAaXH,uG;;;QAbW,O;EAAAI,qC;EAAAA,kC;EAAAA,qB;EAEXA,+4D;EASAA,2H;;;;;;;;;;;;;AAXW;mBAEmB,qEAFnB,C;AAAA;mBAW6B,sEAX7B;",
 "sources":["ControllerTemplate.java"],
 "names":["org.pepstock.charba.client.controllers.ControllerTemplate.<synthetic: ctor_js>","org.pepstock.charba.client.controllers.ControllerTemplate.<synthetic: ctor_create>","org.pepstock.charba.client.controllers.ControllerTemplate.<init>","line","org.pepstock.charba.client.controllers.ControllerTemplate.get","org.pepstock.charba.client.controllers.ControllerTemplate.getTemplate","org.pepstock.charba.client.controllers.ControllerTemplate.<clinit>"]
 }

@@ -2,7 +2,7 @@
 "version":3,
 "file":"DefaultTooltips$InternalNumbersAnimationCollection.impl.java.js",
 "lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;MA8mBsB,kC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6C;EAAAA,yD;EAAAA,oH;EAAAA,iB;;;CAAA,uG;EAAAC,uF;;;CAYc,iB;EACjCC,+K;;;CASoB,W;EACpBC,0H;;;QAvBmB,O;EAAAC,qD;EAAAA,kD;EAAAA,qC;EAEpBA,ozC;;;;;;;;;;;;;;;;;AAFoB;mCAE4B,oIAF5B;",
+"mappings":"A;;;;;;;;;;;;;;MA+mBsB,kC;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6C;EAAAA,yD;EAAAA,oH;EAAAA,iB;;;CAAA,uG;EAAAC,uF;;;CAYc,iB;EACjCC,+K;;;CASoB,W;EACpBC,0H;;;QAvBmB,O;EAAAC,qD;EAAAA,kD;EAAAA,qC;EAEpBA,ozC;;;;;;;;;;;;;;;;;AAFoB;mCAE4B,oIAF5B;",
 "sources":["DefaultTooltips.java"],
 "names":["org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalNumbersAnimationCollection.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalNumbersAnimationCollection.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalNumbersAnimationCollection.<init>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalNumbersAnimationCollection.getProperties","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalNumbersAnimationCollection.getType","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalNumbersAnimationCollection.<clinit>"]
 }

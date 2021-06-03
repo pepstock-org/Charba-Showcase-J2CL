@@ -2,7 +2,7 @@
 "version":3,
 "file":"Pinch.impl.java.js",
 "lineCount":59,
-"mappings":"A;;;;;;;;;;;;;MA2BmB,K;;CAAA,W;EAAAA,Q;EAAAA;OAwCW,wDAxCXA,C;;;QAkDlB,iM,qBAAmBC,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EAArFC,gB;EAAAA,4B;EAAAA,iS;EAAAA,iB;;;CAAA,sO,qBAAmBJ,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EACpFE,sO;EAGAA,8L;;;CAQW,qB,gBAAmBC,O;EAC9BC,4J;;;CASc,a;EACdC,2N;;;QAzEiB,O;EAAAC,wB;EAAAA,qB;EAAAA,uB;EAAAA,yB;;;;;;;;;;;;AAElB;MAG4B,wDAH5B;",
+"mappings":"A;;;;;;;;;;;;;MA2BmB,K;;CAAA,W;EAAAA,Q;EAAAA;OAuCW,wDAvCXA,C;;;QAiDlB,iM,qBAAmBC,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EAArFC,gB;EAAAA,4B;EAAAA,iS;EAAAA,iB;;;CAAA,sO,qBAAmBJ,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EACpFE,sO;EAGAA,8L;;;CAQW,qB,gBAAmBC,O;EAC9BC,4J;;;CASc,a;EACdC,2N;;;QAxEiB,O;EAAAC,wB;EAAAA,qB;EAAAA,uB;EAAAA,yB;;;;;;;;;;;;AAElB;MAG4B,wDAH5B;",
 "sources":["Pinch.java"],
 "names":["org.pepstock.charba.client.zoom.Pinch.<synthetic: ctor_js>","parent","childKey","defaultOptions","nativeObject","org.pepstock.charba.client.zoom.Pinch.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Pinch.<init>","enabled","org.pepstock.charba.client.zoom.Pinch.setEnabled","org.pepstock.charba.client.zoom.Pinch.isEnabled","org.pepstock.charba.client.zoom.Pinch.<clinit>"]
 }

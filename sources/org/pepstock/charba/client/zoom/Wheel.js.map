@@ -2,7 +2,7 @@
 "version":3,
 "file":"Wheel.impl.java.js",
 "lineCount":81,
-"mappings":"A;;;;;;;;;;;;;;;MA6BmB,K;;CAAA,W;EAAAA,Q;EAAAA;OA+CW,wDA/CXA,C;;;QAyDlB,iM,qBAAmBC,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EAArFC,gB;EAAAA,4B;EAAAA,iS;EAAAA,iB;;;CAAA,sO,qBAAmBJ,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EACpFE,sO;EAGAA,8L;;;CAQW,qB,gBAAmBC,O;EAC9BC,4J;;;CASc,a;EACdC,2N;;;CASW,kB,eAAgBC,K;EAC3BC,sP;;;CASa,Y;EACbC,uN;;;CAQW,8D,oBAA2BC,W;EACtCC,oM;;;CASkB,kB;EAClBC,kY;;;QAvHiB,O;EAAAC,wB;EAAAA,qB;EAAAA,uB;EAAAA,yB;;;;;;;;;;;;;;AAElB;MAG4B,wDAH5B,S;AAKA;MAG2B,sDAH3B;",
+"mappings":"A;;;;;;;;;;;;;;;MA6BmB,K;;CAAA,W;EAAAA,Q;EAAAA;OA8CW,wDA9CXA,C;;;QAwDlB,iM,qBAAmBC,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EAArFC,gB;EAAAA,4B;EAAAA,iS;EAAAA,iB;;;CAAA,sO,qBAAmBJ,M,aAAYC,Q,wBAAyBC,c,WAA6BC,Y;EACpFE,sO;EAGAA,8L;;;CAQW,qB,gBAAmBC,O;EAC9BC,4J;;;CASc,a;EACdC,2N;;;CASW,kB,eAAgBC,K;EAC3BC,sP;;;CASa,Y;EACbC,uN;;;CAQW,8D,oBAA2BC,W;EACtCC,oM;;;CASkB,kB;EAClBC,kY;;;QAtHiB,O;EAAAC,wB;EAAAA,qB;EAAAA,uB;EAAAA,yB;;;;;;;;;;;;;;AAElB;MAG4B,wDAH5B,S;AAKA;MAG2B,sDAH3B;",
 "sources":["Wheel.java"],
 "names":["org.pepstock.charba.client.zoom.Wheel.<synthetic: ctor_js>","parent","childKey","defaultOptions","nativeObject","org.pepstock.charba.client.zoom.Wheel.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Wheel.<init>","enabled","org.pepstock.charba.client.zoom.Wheel.setEnabled","org.pepstock.charba.client.zoom.Wheel.isEnabled","speed","org.pepstock.charba.client.zoom.Wheel.setSpeed","org.pepstock.charba.client.zoom.Wheel.getSpeed","modifierKey","org.pepstock.charba.client.zoom.Wheel.setModifierKey","org.pepstock.charba.client.zoom.Wheel.getModifierKey","org.pepstock.charba.client.zoom.Wheel.<clinit>"]
 }

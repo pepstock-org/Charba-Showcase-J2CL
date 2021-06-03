@@ -2,7 +2,7 @@
 "version":3,
 "file":"DefaultTooltips$InternalBodyFont.impl.java.js",
 "lineCount":32,
-"mappings":"A;;;;;;;MAugBsB,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,kG;EAAAA,iB;;;CAAA,qF;EAAAC,8E;;;CAQH,Y;EAChBC,sE;;;QATmB,O;EAAAC,mC;EAAAA,gC;EAAAA;",
+"mappings":"A;;;;;;;MAwgBsB,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,kG;EAAAA,iB;;;CAAA,qF;EAAAC,8E;;;CAQH,Y;EAChBC,sE;;;QATmB,O;EAAAC,mC;EAAAA,gC;EAAAA;",
 "sources":["DefaultTooltips.java"],
 "names":["org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalBodyFont.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalBodyFont.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalBodyFont.<init>","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalBodyFont.getStyle","org.pepstock.charba.client.defaults.globals.DefaultTooltips$InternalBodyFont.<clinit>"]
 }
