@@ -2,7 +2,7 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
-import org.pepstock.charba.showcase.j2cl.cases.charts.AxesClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.AxesEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.BubbleCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ChartClickEventCase;
@@ -30,7 +30,7 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
-import org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.VerticalLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -293,14 +293,14 @@ public class ChartsView extends AbstractView {
 				return new LegendHoverAndLeaveEventsCase();
 			}
 		}),
-		TITLE_CLICK("Title click events", new CaseFactory() {
+		TITLE_EVENTS("Title events", new CaseFactory() {
 			public BaseComposite create() {
-				return new TitleClickEventCase();
+				return new TitleEventsCase();
 			}
 		}),
-		AXES_CLICK("Axes click events", new CaseFactory() {
+		AXES_EVENTS("Axes events", new CaseFactory() {
 			public BaseComposite create() {
-				return new AxesClickEventCase();
+				return new AxesEventsCase();
 			}
 		});
 

@@ -2,6 +2,7 @@ package org.pepstock.charba.showcase.j2cl.cases.charts;
 
 import java.util.List;
 
+import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -9,8 +10,8 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.events.AxisClickEvent;
-import org.pepstock.charba.client.events.AxisClickEventHandler;
+import org.pepstock.charba.client.events.TitleClickEvent;
+import org.pepstock.charba.client.events.TitleClickEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
@@ -25,7 +26,7 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class AxesClickEventCase extends BaseComposite {
+public class TitleEventsCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
@@ -33,7 +34,7 @@ public class AxesClickEventCase extends BaseComposite {
 
 	private final LogView mylog = new LogView();
 
-	public AxesClickEventCase() {
+	public TitleEventsCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -53,14 +54,30 @@ public class AxesClickEventCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setAspectRatio(3);
-		chart.getOptions().setMaintainAspectRatio(true);
+		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Click axes events  on line chart");
+		chart.getOptions().getTitle().setText("Click title event on line chart");
 		chart.getOptions().getTooltips().setEnabled(false);
 
-		List<Dataset> datasets = chart.getData().getDatasets(true);
+		chart.addHandler(new TitleClickEventHandler() {
+
+			@Override
+			public void onClick(TitleClickEvent event) {
+				IsChart chart = (IsChart) event.getSource();
+				List<String> values = chart.getOptions().getTitle().getText();
+				StringBuilder title = new StringBuilder();
+				if (!values.isEmpty()) {
+					for (String value : values) {
+						title.append(value).append(" ");
+					}
+				}
+				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+			}
+
+		}, TitleClickEvent.TYPE);
 
 		LineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
@@ -70,12 +87,7 @@ public class AxesClickEventCase extends BaseComposite {
 		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
 		dataset1.setFill(false);
-		double[] values = getRandomDigits(months);
-		List<Double> data = dataset1.getData(true);
-		for (int i = 0; i < values.length; i++) {
-			data.add(values[i]);
-		}
-		datasets.add(dataset1);
+		dataset1.setData(getRandomDigits(months));
 
 		LineDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
@@ -86,7 +98,6 @@ public class AxesClickEventCase extends BaseComposite {
 		dataset2.setBorderColor(color2.toHex());
 		dataset2.setData(getRandomDigits(months));
 		dataset2.setFill(false);
-		datasets.add(dataset2);
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
@@ -101,13 +112,7 @@ public class AxesClickEventCase extends BaseComposite {
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(getLabels());
-		chart.addHandler(new AxisClickEventHandler() {
-
-			@Override
-			public void onClick(AxisClickEvent event) {
-				mylog.addLogEvent("> CLICK: Axis value: " + event.getValue().getLabel());
-			}
-		}, AxisClickEvent.TYPE);
+		chart.getData().setDatasets(dataset1, dataset2);
 
 		chart.getPlugins().add(ChartPointer.get());
 
