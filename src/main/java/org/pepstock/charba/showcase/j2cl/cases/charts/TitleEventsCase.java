@@ -1,10 +1,9 @@
 package org.pepstock.charba.showcase.j2cl.cases.charts;
 
-import java.util.List;
-
-import org.pepstock.charba.client.IsChart;
+import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
@@ -12,6 +11,10 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.events.TitleClickEvent;
 import org.pepstock.charba.client.events.TitleClickEventHandler;
+import org.pepstock.charba.client.events.TitleEnterEvent;
+import org.pepstock.charba.client.events.TitleEnterEventHandler;
+import org.pepstock.charba.client.events.TitleLeaveEvent;
+import org.pepstock.charba.client.events.TitleLeaveEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
@@ -57,28 +60,44 @@ public class TitleEventsCase extends BaseComposite {
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setAspectRatio(3);
-		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Click title event on line chart");
+		chart.getOptions().getTitle().setText("Title event on line chart");
+		chart.getOptions().getTitle().setFullSize(false);
 		chart.getOptions().getTooltips().setEnabled(false);
 
 		chart.addHandler(new TitleClickEventHandler() {
 
 			@Override
 			public void onClick(TitleClickEvent event) {
-				IsChart chart = (IsChart) event.getSource();
-				List<String> values = chart.getOptions().getTitle().getText();
-				StringBuilder title = new StringBuilder();
-				if (!values.isEmpty()) {
-					for (String value : values) {
-						title.append(value).append(" ");
-					}
-				}
 				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
 			}
 
 		}, TitleClickEvent.TYPE);
 
+		chart.addHandler(new TitleEnterEventHandler() {
+
+			@Override
+			public void onEnter(TitleEnterEvent event) {
+				mylog.addLogEvent("> ENTER: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+				event.getItem().setColor(HtmlColor.RED);
+				event.getChart().update();
+
+			}
+
+		}, TitleEnterEvent.TYPE);
+
+		chart.addHandler(new TitleLeaveEventHandler() {
+
+			@Override
+			public void onLeave(TitleLeaveEvent event) {
+				mylog.addLogEvent("> LEAVE: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+				event.getItem().setColor(Defaults.get().getGlobal().getTitle().getColor());
+				event.getChart().update();
+			}
+
+		}, TitleLeaveEvent.TYPE);
+
+		
 		LineDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 

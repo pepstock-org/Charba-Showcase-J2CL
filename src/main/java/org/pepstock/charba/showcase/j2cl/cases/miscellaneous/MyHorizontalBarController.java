@@ -3,6 +3,7 @@ package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
 import java.util.List;
 
 import org.pepstock.charba.client.ChartType;
+import org.pepstock.charba.client.Helpers;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.controllers.AbstractController;
 import org.pepstock.charba.client.controllers.ControllerContext;
@@ -43,6 +44,7 @@ public class MyHorizontalBarController extends AbstractController {
 	public void onAfterDraw(ControllerContext context, IsChart chart) {
 		final int padding = 4;
 		Context2dItem ctx = chart.getCanvas().getContext2d();
+		Helpers.get().unclipArea(ctx);
 		ScaleItem scale = chart.getNode().getScales().getItems().get(DefaultScaleId.Y.value());
 		Scale axis = (Scale) context.getNode().getOptions().getScales().getAxis(DefaultScaleId.Y);
 		List<ScaleTickItem> ticks = scale.getTicks();

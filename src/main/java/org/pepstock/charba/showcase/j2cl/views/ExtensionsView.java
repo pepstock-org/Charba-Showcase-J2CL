@@ -29,6 +29,10 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsC
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsPolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapDatalabelsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethItalyCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsMultiOptionsCase;
@@ -264,6 +268,52 @@ public class ExtensionsView extends AbstractView {
 		}
 
 	}
+	
+	// ----------------------------------------------
+	// GEO CHARTS
+	// ----------------------------------------------
+	private enum GeoChartsCase implements CaseItem
+	{
+		INTERPOLATIONS("Interpolations", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoChoroplethItalyCase();
+			}
+		}),
+		CUSTOM_INTERPOLATION("Custom interpolation", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoChoroplethGermanyCase();
+			}
+		}),
+		CLICK("Select country from map", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoChoroplethSelectCountryCase();
+			}
+		}),
+		BUBBLE_MAP_DATALABELS("Using Datalabels on map", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoBubbleMapDatalabelsCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private GeoChartsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+
 
 	// ----------------------------------------------
 	// ZOOM plugin
@@ -474,7 +524,32 @@ public class ExtensionsView extends AbstractView {
 					};
 				}
 			}
-			
+
+			if (Category.LABELS.equals(cat)) {
+				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPointer.innerHTML = "Geographical controller";
+				labelPointer.style.textAlign = "left";
+				labelPointer.className = "myCategory";
+				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPointer);
+				
+				for (CaseItem caseItem : GeoChartsCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = caseItem.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+			}
+
 			if (Category.ANNOTATION.equals(cat)) {
 				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
 				labelPointer.innerHTML = "Importing Chart.JS plugin";

@@ -5,6 +5,8 @@ import java.util.List;
 import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.UpdateConfigurationBuilder;
+import org.pepstock.charba.client.callbacks.ChartContext;
+import org.pepstock.charba.client.callbacks.FontCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -12,6 +14,8 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.enums.FontStyle;
+import org.pepstock.charba.client.items.FontItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -88,6 +92,35 @@ public class TitleStyleCase extends BaseComposite {
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Changing title style on line chart");
+		
+		chart.getOptions().getTitle().setFont(new FontCallback<ChartContext>() {
+			
+			FontItem f = new FontItem();
+			
+			@Override
+			public FontItem invoke(ChartContext context) {
+				String selected = fontSize.options.getAt(fontSize.selectedIndex).value;
+				f.setSize(Integer.parseInt(selected));
+				return f;
+			}
+		});
+
+		chart.getOptions().getSubtitle().setDisplay(true);
+		chart.getOptions().getSubtitle().setText("This is the subtitle");
+		chart.getOptions().getSubtitle().getFont().setStyle(FontStyle.NORMAL);
+
+		chart.getOptions().getSubtitle().setFont(new FontCallback<ChartContext>() {
+			
+			FontItem f = new FontItem();
+			
+			@Override
+			public FontItem invoke(ChartContext context) {
+				String selected = fontSize.options.getAt(fontSize.selectedIndex).value;
+				f.setSize(Integer.parseInt(selected)-2);
+				return f;
+			}
+		});
+
 
 		List<Dataset> datasets = chart.getData().getDatasets(true);
 
@@ -203,9 +236,7 @@ public class TitleStyleCase extends BaseComposite {
 	}
 
 	protected void handleFontSize() {
-		String selected = fontSize.options.getAt(fontSize.selectedIndex).value;
-		chart.getOptions().getTitle().getFont().setSize(Integer.parseInt(selected));
-		chart.reconfigure(UpdateConfigurationBuilder.create().setDuration(0).build());
+		chart.update();
 	}
 
 }

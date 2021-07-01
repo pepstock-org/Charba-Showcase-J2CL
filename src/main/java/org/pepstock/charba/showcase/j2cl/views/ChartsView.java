@@ -13,6 +13,9 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DatasetSelectionPieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.DoughnutCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.GeoBubbleMapUSCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.GeoChoroplethCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.GeoChoroplethUSCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase;
@@ -34,6 +37,7 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.VerticalLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
+import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLDivElement;
@@ -251,6 +255,46 @@ public class ChartsView extends AbstractView {
 		}
 
 	}
+	
+	// ----------------------------------------------
+	// GEO CHARTS
+	// ----------------------------------------------
+	private enum GeoChartsCase implements CaseItem
+	{
+		EARTH_CHOROPLETH("Earth choropleth", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoChoroplethCase();
+			}
+		}),
+		CHOROPLETH("Choropleth", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoChoroplethUSCase();
+			}
+		}),
+		BUBBLE_MAP("Bubble map", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoBubbleMapUSCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private GeoChartsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
 
 	// ----------------------------------------------
 	// Events
@@ -376,6 +420,32 @@ public class ChartsView extends AbstractView {
 					};
 				}
 			}
+			
+			if (Category.EXTENDED_CHARTS.equals(cat)) {
+				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPointer.innerHTML = "Geographic map charts";
+				labelPointer.style.textAlign = "left";
+				labelPointer.className = "myCategory";
+				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPointer);
+				
+				for (CaseItem caseItem : GeoChartsCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = caseItem.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+			}
+
 		}
 	}
 

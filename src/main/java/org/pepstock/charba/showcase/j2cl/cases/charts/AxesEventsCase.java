@@ -4,13 +4,19 @@ import java.util.List;
 
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
+import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.enums.ScaleDataType;
 import org.pepstock.charba.client.events.AxisClickEvent;
 import org.pepstock.charba.client.events.AxisClickEventHandler;
+import org.pepstock.charba.client.events.AxisEnterEvent;
+import org.pepstock.charba.client.events.AxisEnterEventHandler;
+import org.pepstock.charba.client.events.AxisLeaveEvent;
+import org.pepstock.charba.client.events.AxisLeaveEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
@@ -57,7 +63,7 @@ public class AxesEventsCase extends BaseComposite {
 		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Click axes events  on line chart");
+		chart.getOptions().getTitle().setText("Axes events  on line chart");
 		chart.getOptions().getTooltips().setEnabled(false);
 
 		List<Dataset> datasets = chart.getData().getDatasets(true);
@@ -105,9 +111,30 @@ public class AxesEventsCase extends BaseComposite {
 
 			@Override
 			public void onClick(AxisClickEvent event) {
-				mylog.addLogEvent("> CLICK: Axis value: " + event.getValue().getLabel());
+				String value = ScaleDataType.NUMBER.equals(event.getValue().getDataType()) ? event.getValue().getValueAsString() : event.getValue().getLabel();
+				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY() + ", value:" + value);
 			}
 		}, AxisClickEvent.TYPE);
+
+		chart.addHandler(new AxisLeaveEventHandler() {
+
+			@Override
+			public void onLeave(AxisLeaveEvent event) {
+				mylog.addLogEvent("> LEAVE: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+				event.getChart().getNode().getOptions().getScales().getAxis(event.getItem().getId()).setBackgroundColor(HtmlColor.TRANSPARENT);
+				event.getChart().update();
+			}
+		}, AxisLeaveEvent.TYPE);
+
+		chart.addHandler(new AxisEnterEventHandler() {
+
+			@Override
+			public void onEnter(AxisEnterEvent event) {
+				mylog.addLogEvent("> ENTER: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+				event.getChart().getNode().getOptions().getScales().getAxis(event.getItem().getId()).setBackgroundColor(HtmlColor.LIGHT_GREEN.alpha(0.2));
+				event.getChart().update();
+			}
+		}, AxisEnterEvent.TYPE);
 
 		chart.getPlugins().add(ChartPointer.get());
 

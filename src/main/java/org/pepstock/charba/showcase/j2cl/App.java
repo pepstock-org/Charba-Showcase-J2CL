@@ -1,19 +1,30 @@
 package org.pepstock.charba.showcase.j2cl;
 
+import java.util.List;
+
 import org.pepstock.charba.client.Charba;
 import org.pepstock.charba.client.ChartType;
 import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
+import org.pepstock.charba.client.geo.Feature;
+import org.pepstock.charba.client.geo.GeoUtils;
+import org.pepstock.charba.client.geo.TopoJson;
 import org.pepstock.charba.client.impl.charts.GaugeChart;
 import org.pepstock.charba.client.impl.charts.MeterChart;
 import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
 import org.pepstock.charba.client.labels.LabelsPlugin;
+import org.pepstock.charba.client.utils.CScheduler;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarController;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart;
+import org.pepstock.charba.showcase.j2cl.topojson.Earthmap;
+import org.pepstock.charba.showcase.j2cl.topojson.Europemap;
+import org.pepstock.charba.showcase.j2cl.topojson.Germanymap;
+import org.pepstock.charba.showcase.j2cl.topojson.Italymap;
+import org.pepstock.charba.showcase.j2cl.topojson.USmap;
 import org.pepstock.charba.showcase.j2cl.views.MainView;
 
 import com.google.gwt.core.client.EntryPoint;
@@ -25,7 +36,15 @@ public class App implements EntryPoint {
 
 	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/4.0/src/main/java/";
 
-	public static boolean isDeferred = false;
+	public static List<Feature> EARTH_FEATURES;
+
+	public static TopoJson US;
+
+	public static TopoJson EUROPE;
+
+	public static TopoJson ITALY;
+
+	public static TopoJson GERMANY;
 	
 	public void onModuleLoad() {
 		Images.get();
@@ -74,6 +93,24 @@ public class App implements EntryPoint {
 
 		MainView main = new MainView();
 		div.appendChild(main.getElement());
+		
+		CScheduler.get().submit(new Runnable() {
+			
+			@Override
+			public void run() {
+				USmap us = new USmap();
+				Earthmap earth = new Earthmap();
+				Europemap europe = new Europemap();
+				Germanymap germany = new Germanymap();
+				Italymap italy = new Italymap();
+				App.EARTH_FEATURES = GeoUtils.features(earth.getContent(), "countries");
+				App.US = GeoUtils.createTopoJson(us.getContent());
+				App.EUROPE = GeoUtils.createTopoJson(europe.getContent());
+				App.ITALY = GeoUtils.createTopoJson(italy.getContent());
+				App.GERMANY = GeoUtils.createTopoJson(germany.getContent());
+			}
+		});
+
 	}
 
 }
