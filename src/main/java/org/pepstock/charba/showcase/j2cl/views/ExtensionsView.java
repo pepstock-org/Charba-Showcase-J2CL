@@ -30,8 +30,10 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsPolarAreaCas
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapDatalabelsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapLogarithmicCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethItalyCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethLogarithmicCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
@@ -274,6 +276,16 @@ public class ExtensionsView extends AbstractView {
 	// ----------------------------------------------
 	private enum GeoChartsCase implements CaseItem
 	{
+		LOG_COLOR_SCALE("Choropleth with logarithmic axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoChoroplethLogarithmicCase();
+			}
+		}),
+		LOG_SIZE_SCALE("Bubble map with logarithmic axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoBubbleMapLogarithmicCase();
+			}
+		}),
 		INTERPOLATIONS("Interpolations", new CaseFactory() {
 			public BaseComposite create() {
 				return new GeoChoroplethItalyCase();
