@@ -7,7 +7,7 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions;
+import org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -76,9 +76,7 @@ public class BackgroundColorBarCase extends BaseComposite {
 		chart.getData().setLabels(getLabels());
 		chart.getData().setDatasets(dataset1, dataset2);
 
-		ChartBackgroundColorOptions option = new ChartBackgroundColorOptions(chart);
-		option.setBackgroundColor(GwtMaterialColor.ORANGE_LIGHTEN_5);
-		option.store(chart);
+		ChartBackgroundColorOptionsBuilder.create(chart).setBackgroundColor(GwtMaterialColor.ORANGE_LIGHTEN_5).build().store(chart);
 
 		chartCol.appendChild(chart.getChartElement().as());
 
