@@ -28,6 +28,7 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendLinearGradientC
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendMaxItemsCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPatternCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPieCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPointStylesAsCanvasCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPointStylesAsImageCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendRadialGradientCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendSplittingTextCase;
@@ -290,6 +291,11 @@ public class PluginsView extends AbstractView {
 		IMAGES_AS_POINT_STYLE("Managing image as point styles", new CaseFactory() {
 			public BaseComposite create() {
 				return new HtmlLegendPointStylesAsImageCase();
+			}
+		}),
+		CANVAS_AS_POINT_STYLE("Managing canvas as point styles", new CaseFactory() {
+			public BaseComposite create() {
+				return new HtmlLegendPointStylesAsCanvasCase();
 			}
 		}),
 		CALLBACK("Custom legend item text by callback", new CaseFactory() {

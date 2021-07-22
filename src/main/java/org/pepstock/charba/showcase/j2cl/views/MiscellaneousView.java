@@ -5,6 +5,7 @@ import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointSizesOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsCanvasOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsImageOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingStylesOnLineCase;
@@ -100,6 +101,11 @@ public class MiscellaneousView extends AbstractView {
 		POINT_STYLES_AS_IMAGES("Applying point styles as images on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new ApplyingPointStylesAsImageOnLineCase();
+			}
+		}),
+		POINT_STYLES_AS_CANVAS("Applying point styles as canvas on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new ApplyingPointStylesAsCanvasOnLineCase();
 			}
 		}),
 		POINT_SIZE("Applying point sizes on line chart", new CaseFactory() {

@@ -7,13 +7,14 @@ import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
-import org.pepstock.charba.client.dom.elements.CastHelper;
+import org.pepstock.charba.client.dom.DOMBuilder;
+import org.pepstock.charba.client.dom.elements.Canvas;
+import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.impl.plugins.HtmlLegend;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -25,13 +26,17 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class HtmlLegendPointStylesAsImageCase extends BaseComposite {
+public class HtmlLegendPointStylesAsCanvasCase extends BaseComposite {
+
+	private static Canvas imageCanvas = null;
 
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
+	
+	private final LineDataset dataset1;
 
-	public HtmlLegendPointStylesAsImageCase() {
+	public HtmlLegendPointStylesAsCanvasCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -52,19 +57,23 @@ public class HtmlLegendPointStylesAsImageCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
+		if (imageCanvas == null) {
+			imageCanvas = initCanvas();
+		}
+
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getLegend().getLabels().setUsePointStyle(true);
 
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("HTML legend using image as point style on line chart");
+		chart.getOptions().getTitle().setText("HTML legend using canvas as point style on line chart");
 		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
 		chart.getOptions().getTooltips().setIntersect(false);
 		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
 		chart.getOptions().getHover().setIntersect(true);
 
-		LineDataset dataset1 = chart.newDataset();
+		dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
 		IsColor color1 = GoogleChartColor.values()[0];
@@ -74,8 +83,9 @@ public class HtmlLegendPointStylesAsImageCase extends BaseComposite {
 		double[] values = getRandomDigits(months);
 		dataset1.setData(values);
 		dataset1.setFill(Fill.FALSE);
-
-		dataset1.setPointStyle(CastHelper.toImg(Images.get().customPoint));
+		dataset1.setClip(40);
+		dataset1.setPointStyle(imageCanvas);
+		setRotations();
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
@@ -161,8 +171,8 @@ public class HtmlLegendPointStylesAsImageCase extends BaseComposite {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months));
 		}
+		setRotations();
 		chart.update();
-
 	}
 
 	protected void handleAddData() {
@@ -171,5 +181,40 @@ public class HtmlLegendPointStylesAsImageCase extends BaseComposite {
 
 	protected void handleRemoveData() {
 		removeData(chart);
+	}
+	
+	private void setRotations() {
+		double[] rotations = new double[months];
+		rotations[0] = 0D;
+		for (int i=0; i<(months-1); i++) {
+			rotations[i+1] = getRandomDigit(0, 360);
+		}
+		dataset1.setPointRotation(rotations);
+	}
+	
+	private Canvas initCanvas() {
+		Canvas imageCanvas = DOMBuilder.get().createCanvasElement();
+		imageCanvas.setWidth(40);
+		imageCanvas.setHeight(40);
+		
+		Context2dItem imageContext = imageCanvas.getContext2d();
+
+		imageContext.setFillColor("#f00");
+		imageContext.beginPath();
+		imageContext.moveTo(20, 0);
+		imageContext.lineTo(10, 40);
+		imageContext.lineTo(20, 30);
+		imageContext.closePath();
+		imageContext.fill();
+
+		imageContext.setFillColor("#a00");
+		imageContext.beginPath();
+		imageContext.moveTo(20, 0);
+		imageContext.lineTo(30, 40);
+		imageContext.lineTo(20, 30);
+		imageContext.closePath();
+		imageContext.fill();
+		
+		return imageCanvas;
 	}
 }
