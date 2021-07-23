@@ -8,7 +8,7 @@
 
 This repository contains the source code of the **Charba** showcase site, built by [J2CL](https://github.com/google/j2cl) and leveraging on [Elemental2](https://github.com/google/elemental2), located [here](https://pepstock-org.github.io/Charba-Showcase-J2CL/).
 
-There are more than 180 samples about all **Charba** capabilities.
+There are more than 200 samples about all **Charba** capabilities.
 
 ## Building
 

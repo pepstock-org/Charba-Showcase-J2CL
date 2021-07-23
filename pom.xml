@@ -128,6 +128,7 @@
 		<pluginRepository>
 			<id>vertispan-releases</id>
 			<name>Vertispan hosted artifacts-releases</name>
+			<!-- https://repo.vertispan.com/webapp/#/home/ -->
 			<url>https://repo.vertispan.com/j2cl</url>
 			<releases>
 				<enabled>true</enabled>

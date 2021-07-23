@@ -1,6 +1,8 @@
 package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
 
 import org.pepstock.charba.client.LineChart;
+import org.pepstock.charba.client.callbacks.DatasetContext;
+import org.pepstock.charba.client.callbacks.PointStyleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
@@ -83,7 +85,13 @@ public class ApplyingPointStylesAsCanvasOnLineCase extends BaseComposite {
 		dataset1.setData(values);
 		dataset1.setFill(Fill.FALSE);
 		dataset1.setClip(40);
-		dataset1.setPointStyle(imageCanvas);
+		dataset1.setPointStyle(new PointStyleCallback() {
+			
+			@Override
+			public Object invoke(DatasetContext context) {
+				return imageCanvas;
+			}
+		});
 		setRotations();
 
 
