@@ -5,6 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import org.pepstock.charba.client.callbacks.ColorCallback;
+import org.pepstock.charba.client.callbacks.DatasetContext;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.commons.Key;
 import org.pepstock.charba.client.data.Labels;
@@ -16,6 +18,7 @@ import org.pepstock.charba.client.geo.GeoUtils;
 import org.pepstock.charba.client.geo.ProjectionAxis;
 import org.pepstock.charba.client.geo.SizeLogarithmicAxis;
 import org.pepstock.charba.client.geo.enums.Projection;
+import org.pepstock.charba.client.items.Undefined;
 import org.pepstock.charba.showcase.j2cl.App;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.topojson.UScapitals;
@@ -86,7 +89,7 @@ public class GeoBubbleMapLogarithmicCase extends BaseComposite {
 			if (CAPITALS.containsKey(state)) {
 				Capital c = CAPITALS.get(state);
 				labels.add(c.capital);
-				geodata.add(new BubbleMapDataPoint(c.latitude, c.longitude, getRandomDigit(0, 1000)));
+				geodata.add(new BubbleMapDataPoint(c.latitude, c.longitude, getRandomDigit(0, 1000000)));
 			}
 		}
 
@@ -94,13 +97,23 @@ public class GeoBubbleMapLogarithmicCase extends BaseComposite {
 		dataset1.setLabel("States");
 		dataset1.setOutline(stateFeatures);
 		dataset1.setValues(geodata);
-		dataset1.setBackgroundColor(HtmlColor.STEEL_BLUE.alpha(0.4));
+		dataset1.setBackgroundColor(new ColorCallback<DatasetContext>() {
+			
+			@Override
+			public Object invoke(DatasetContext context) {
+				if (Undefined.is(context.getDataIndex())) {
+					return null;
+				}
+				BubbleMapDataPoint dataPoint = dataset1.getValues().get(context.getDataIndex());
+				return HtmlColor.STEEL_BLUE.alpha(dataPoint.getValue()/1000000);
+			}
+		});
 
 		ProjectionAxis axis1 = new ProjectionAxis(chart);
 		axis1.setProjection(Projection.ALBERS_USA);
 		
 		SizeLogarithmicAxis axis2 = new SizeLogarithmicAxis(chart);
-		axis2.setRange(0, 25);
+		axis2.setDisplay(false);
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(labels);
@@ -151,7 +164,7 @@ public class GeoBubbleMapLogarithmicCase extends BaseComposite {
 
 	protected void handleRandomize() {
 		for (BubbleMapDataPoint g : geodata) {
-			g.setValue(getRandomDigit(0, 1000));
+			g.setValue(getRandomDigit(0, 1000000));
 		}
 		dataset1.setValues(geodata);
 		chart.update();
