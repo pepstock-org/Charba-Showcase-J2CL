@@ -17,7 +17,7 @@ goog.require('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Img.$Overlay');
 goog.require('org.pepstock.charba.client.dom.enums.CursorType');
 goog.require('org.pepstock.charba.client.dom.enums.TextBaseline');
-goog.require('org.pepstock.charba.client.enums.AxisType');
+goog.require('org.pepstock.charba.client.enums.ChartAxisType');
 goog.require('org.pepstock.charba.client.enums.Position');
 goog.require('org.pepstock.charba.client.events.DatasetRangeSelectionEvent');
 goog.require('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions');

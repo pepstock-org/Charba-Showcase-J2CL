@@ -8,6 +8,7 @@ let Collection = goog.forwardDeclare('java.util.Collection$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
+let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 /**
  * @extends {AbstractArrayList<?, Array>}
@@ -148,6 +149,14 @@ class ArrayObjectList extends AbstractArrayList {
   let value = /**@type {?}*/ (JsHelper.m_get__().m_cast__java_lang_Object(object));
   return this.f_array__org_pepstock_charba_client_commons_ArrayObjectList_.lastIndexOf(value);
  }
+ /** @override @return {Array<*>} */
+ toArray() {
+  let toArray = new Array(this.f_array__org_pepstock_charba_client_commons_ArrayObjectList_.length);
+  for (let i = 0; i < this.f_array__org_pepstock_charba_client_commons_ArrayObjectList_.length; i = i + 1 | 0) {
+   $Arrays.$set(toArray, i, $Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayObject__int(this.f_array__org_pepstock_charba_client_commons_ArrayObjectList_, i));
+  }
+  return toArray;
+ }
  
  static $clinit() {
   ArrayObjectList.$clinit = () =>{};
@@ -164,6 +173,7 @@ class ArrayObjectList extends AbstractArrayList {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
+  $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
  }
 }
 $Util.$setClassMetadata(ArrayObjectList, "org.pepstock.charba.client.commons.ArrayObjectList");

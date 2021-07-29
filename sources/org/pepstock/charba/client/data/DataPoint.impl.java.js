@@ -34,6 +34,110 @@ class DataPoint extends NativeObjectContainer {
  $ctor__org_pepstock_charba_client_data_DataPoint__() {
   this.$ctor__org_pepstock_charba_client_data_DataPoint__org_pepstock_charba_client_commons_NativeObject(/**@type {?}*/ (null));
  }
+ //Factory method corresponding to constructor 'DataPoint(double, double)'.
+ /** @return {!DataPoint} */
+ static $create__double__double(/** number */ x, /** number */ y) {
+  DataPoint.$clinit();
+  let $instance = new DataPoint();
+  $instance.$ctor__org_pepstock_charba_client_data_DataPoint__double__double(x, y);
+  return $instance;
+ }
+ //Initialization from constructor 'DataPoint(double, double)'.
+ 
+ $ctor__org_pepstock_charba_client_data_DataPoint__double__double(/** number */ x, /** number */ y) {
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__();
+  this.m_setX__double(x);
+  this.m_setY__double(y);
+ }
+ //Factory method corresponding to constructor 'DataPoint(Date, double)'.
+ /** @return {!DataPoint} */
+ static $create__java_util_Date__double(/** Date */ x, /** number */ y) {
+  DataPoint.$clinit();
+  let $instance = new DataPoint();
+  $instance.$ctor__org_pepstock_charba_client_data_DataPoint__java_util_Date__double(x, y);
+  return $instance;
+ }
+ //Initialization from constructor 'DataPoint(Date, double)'.
+ 
+ $ctor__org_pepstock_charba_client_data_DataPoint__java_util_Date__double(/** Date */ x, /** number */ y) {
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__();
+  this.m_setX__java_util_Date(x);
+  this.m_setY__double(y);
+ }
+ //Factory method corresponding to constructor 'DataPoint(String, double)'.
+ /** @return {!DataPoint} */
+ static $create__java_lang_String__double(/** ?string */ x, /** number */ y) {
+  DataPoint.$clinit();
+  let $instance = new DataPoint();
+  $instance.$ctor__org_pepstock_charba_client_data_DataPoint__java_lang_String__double(x, y);
+  return $instance;
+ }
+ //Initialization from constructor 'DataPoint(String, double)'.
+ 
+ $ctor__org_pepstock_charba_client_data_DataPoint__java_lang_String__double(/** ?string */ x, /** number */ y) {
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__();
+  this.m_setX__java_lang_String(x);
+  this.m_setY__double(y);
+ }
+ //Factory method corresponding to constructor 'DataPoint(double, FloatingData)'.
+ /** @return {!DataPoint} */
+ static $create__double__org_pepstock_charba_client_data_FloatingData(/** number */ x, /** FloatingData */ y) {
+  DataPoint.$clinit();
+  let $instance = new DataPoint();
+  $instance.$ctor__org_pepstock_charba_client_data_DataPoint__double__org_pepstock_charba_client_data_FloatingData(x, y);
+  return $instance;
+ }
+ //Initialization from constructor 'DataPoint(double, FloatingData)'.
+ 
+ $ctor__org_pepstock_charba_client_data_DataPoint__double__org_pepstock_charba_client_data_FloatingData(/** number */ x, /** FloatingData */ y) {
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__();
+  this.m_setX__double(x);
+  this.m_setY__org_pepstock_charba_client_data_FloatingData(y);
+ }
+ //Factory method corresponding to constructor 'DataPoint(Date, FloatingData)'.
+ /** @return {!DataPoint} */
+ static $create__java_util_Date__org_pepstock_charba_client_data_FloatingData(/** Date */ x, /** FloatingData */ y) {
+  DataPoint.$clinit();
+  let $instance = new DataPoint();
+  $instance.$ctor__org_pepstock_charba_client_data_DataPoint__java_util_Date__org_pepstock_charba_client_data_FloatingData(x, y);
+  return $instance;
+ }
+ //Initialization from constructor 'DataPoint(Date, FloatingData)'.
+ 
+ $ctor__org_pepstock_charba_client_data_DataPoint__java_util_Date__org_pepstock_charba_client_data_FloatingData(/** Date */ x, /** FloatingData */ y) {
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__();
+  this.m_setX__java_util_Date(x);
+  this.m_setY__org_pepstock_charba_client_data_FloatingData(y);
+ }
+ //Factory method corresponding to constructor 'DataPoint(String, FloatingData)'.
+ /** @return {!DataPoint} */
+ static $create__java_lang_String__org_pepstock_charba_client_data_FloatingData(/** ?string */ x, /** FloatingData */ y) {
+  DataPoint.$clinit();
+  let $instance = new DataPoint();
+  $instance.$ctor__org_pepstock_charba_client_data_DataPoint__java_lang_String__org_pepstock_charba_client_data_FloatingData(x, y);
+  return $instance;
+ }
+ //Initialization from constructor 'DataPoint(String, FloatingData)'.
+ 
+ $ctor__org_pepstock_charba_client_data_DataPoint__java_lang_String__org_pepstock_charba_client_data_FloatingData(/** ?string */ x, /** FloatingData */ y) {
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__();
+  this.m_setX__java_lang_String(x);
+  this.m_setY__org_pepstock_charba_client_data_FloatingData(y);
+ }
+ //Factory method corresponding to constructor 'DataPoint(double, double, double)'.
+ /** @return {!DataPoint} */
+ static $create__double__double__double(/** number */ x, /** number */ y, /** number */ r) {
+  DataPoint.$clinit();
+  let $instance = new DataPoint();
+  $instance.$ctor__org_pepstock_charba_client_data_DataPoint__double__double__double(x, y, r);
+  return $instance;
+ }
+ //Initialization from constructor 'DataPoint(double, double, double)'.
+ 
+ $ctor__org_pepstock_charba_client_data_DataPoint__double__double__double(/** number */ x, /** number */ y, /** number */ r) {
+  this.$ctor__org_pepstock_charba_client_data_DataPoint__double__double(x, y);
+  this.m_setR__double(r);
+ }
  //Factory method corresponding to constructor 'DataPoint(ItemsEnvelop)'.
  /** @return {!DataPoint} */
  static $create__org_pepstock_charba_client_items_ItemsEnvelop(/** ItemsEnvelop<?> */ envelop) {

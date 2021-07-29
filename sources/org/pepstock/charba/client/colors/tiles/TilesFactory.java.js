@@ -22,9 +22,11 @@ goog.require('org.pepstock.charba.client.dom.DOMBuilder');
 goog.require('org.pepstock.charba.client.dom.elements.Canvas.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay');
 goog.require('org.pepstock.charba.client.enums.PointStyle');
+goog.require('org.pepstock.charba.client.enums.PointStyleType');
 goog.require('org.pepstock.charba.client.impl.plugins.HtmlLegendItem');
 goog.require('org.pepstock.charba.client.items.Undefined');
 goog.require('vmbootstrap.Casts');
+goog.require('vmbootstrap.Objects');
 
 const TilesFactory = goog.require('org.pepstock.charba.client.colors.tiles.TilesFactory$impl');
 exports = TilesFactory;

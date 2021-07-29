@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_SCALE__org_pepstock_charba_client_callbacks_ScaleContext_Property, Property.$static_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property, Property.$static_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_SCALE__org_pepstock_charba_client_callbacks_ScaleContext_Property, Property.$static_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property, Property.$static_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property, Property.$static_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property], Property));
  }
  /** @return {!Property} */
  static get f_SCALE__org_pepstock_charba_client_callbacks_ScaleContext_Property() {
@@ -56,6 +56,10 @@ class Property extends Enum {
  /** @return {!Property} */
  static get f_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property() {
   return (Property.$clinit(), Property.$static_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property);
+ }
+ /** @return {!Property} */
+ static get f_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property() {
+  return (Property.$clinit(), Property.$static_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property);
  }
  /** @return {!Property} */
  static get f_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property() {
@@ -68,6 +72,7 @@ class Property extends Enum {
   Enum.$clinit();
   Property.$static_SCALE__org_pepstock_charba_client_callbacks_ScaleContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SCALE"), Property.$ordinal_SCALE__org_pepstock_charba_client_callbacks_ScaleContext_Property, "scale");
   Property.$static_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("INDEX"), Property.$ordinal_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property, "index");
+  Property.$static_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LABEL"), Property.$ordinal_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property, "label");
   Property.$static_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TICK"), Property.$ordinal_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property, "tick");
   Property.f_namesToValuesMap__org_pepstock_charba_client_callbacks_ScaleContext_Property_ = null;
  }
@@ -87,6 +92,8 @@ Property.$static_SCALE__org_pepstock_charba_client_callbacks_ScaleContext_Proper
 /**@private {!Property}*/
 Property.$static_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property;
 /**@private {!Property}*/
+Property.$static_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property;
+/**@private {!Property}*/
 Property.$static_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_callbacks_ScaleContext_Property_;
@@ -95,7 +102,9 @@ Property.$ordinal_SCALE__org_pepstock_charba_client_callbacks_ScaleContext_Prope
 /**@const {number}*/
 Property.$ordinal_INDEX__org_pepstock_charba_client_callbacks_ScaleContext_Property = 1;
 /**@const {number}*/
-Property.$ordinal_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property = 2;
+Property.$ordinal_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property = 2;
+/**@const {number}*/
+Property.$ordinal_TICK__org_pepstock_charba_client_callbacks_ScaleContext_Property = 3;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.callbacks.ScaleContext$Property");
 

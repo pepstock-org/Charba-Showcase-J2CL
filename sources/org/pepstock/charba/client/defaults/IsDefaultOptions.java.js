@@ -12,6 +12,7 @@ goog.require('org.pepstock.charba.client.defaults.IsDefaultInteraction');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultLayout');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultLegend');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultPlugins');
+goog.require('org.pepstock.charba.client.defaults.IsDefaultSubtitle');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultTitle');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultTooltips');
 goog.require('org.pepstock.charba.client.enums.Event');

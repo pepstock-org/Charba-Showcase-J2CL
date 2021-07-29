@@ -6,18 +6,23 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 
 let DomGlobal_$Overlay = goog.forwardDeclare('elemental2.dom.DomGlobal.$Overlay$impl');
 let HTMLDivElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLDivElement.$Overlay$impl');
+let List = goog.forwardDeclare('java.util.List$impl');
 let Charba = goog.forwardDeclare('org.pepstock.charba.client.Charba$impl');
 let ChartType = goog.forwardDeclare('org.pepstock.charba.client.ChartType$impl');
 let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
 let AnnotationPlugin = goog.forwardDeclare('org.pepstock.charba.client.annotation.AnnotationPlugin$impl');
 let DataLabelsOptions = goog.forwardDeclare('org.pepstock.charba.client.datalabels.DataLabelsOptions$impl');
 let DataLabelsPlugin = goog.forwardDeclare('org.pepstock.charba.client.datalabels.DataLabelsPlugin$impl');
+let Feature = goog.forwardDeclare('org.pepstock.charba.client.geo.Feature$impl');
+let TopoJson = goog.forwardDeclare('org.pepstock.charba.client.geo.TopoJson$impl');
 let GaugeChart = goog.forwardDeclare('org.pepstock.charba.client.impl.charts.GaugeChart$impl');
 let MeterChart = goog.forwardDeclare('org.pepstock.charba.client.impl.charts.MeterChart$impl');
 let ChartBackgroundColor = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
 let LabelsPlugin = goog.forwardDeclare('org.pepstock.charba.client.labels.LabelsPlugin$impl');
+let CScheduler = goog.forwardDeclare('org.pepstock.charba.client.utils.CScheduler$impl');
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.utils.Window.$Overlay$impl');
 let ZoomPlugin = goog.forwardDeclare('org.pepstock.charba.client.zoom.ZoomPlugin$impl');
+let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.App.$1$impl');
 let Images = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.Images$impl');
 let MyHorizontalBarController = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarController$impl');
 let MyLineChart = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$impl');
@@ -75,21 +80,53 @@ class App extends j_l_Object {
   DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.body.appendChild(div);
   let main = MainView.$create__();
   div.appendChild(main.m_getElement__());
+  CScheduler.m_get__().m_submit__java_lang_Runnable($1.$create__org_pepstock_charba_showcase_j2cl_App(this));
  }
- /** @return {boolean} */
- static get f_isDeferred__org_pepstock_charba_showcase_j2cl_App() {
-  return (App.$clinit(), App.$static_isDeferred__org_pepstock_charba_showcase_j2cl_App);
+ /** @return {List<Feature>} */
+ static get f_EARTH_FEATURES__org_pepstock_charba_showcase_j2cl_App() {
+  return (App.$clinit(), App.$static_EARTH_FEATURES__org_pepstock_charba_showcase_j2cl_App);
  }
  
- static set f_isDeferred__org_pepstock_charba_showcase_j2cl_App(/** boolean */ value) {
-  (App.$clinit(), App.$static_isDeferred__org_pepstock_charba_showcase_j2cl_App = value);
+ static set f_EARTH_FEATURES__org_pepstock_charba_showcase_j2cl_App(/** List<Feature> */ value) {
+  (App.$clinit(), App.$static_EARTH_FEATURES__org_pepstock_charba_showcase_j2cl_App = value);
+ }
+ /** @return {TopoJson} */
+ static get f_US__org_pepstock_charba_showcase_j2cl_App() {
+  return (App.$clinit(), App.$static_US__org_pepstock_charba_showcase_j2cl_App);
+ }
+ 
+ static set f_US__org_pepstock_charba_showcase_j2cl_App(/** TopoJson */ value) {
+  (App.$clinit(), App.$static_US__org_pepstock_charba_showcase_j2cl_App = value);
+ }
+ /** @return {TopoJson} */
+ static get f_EUROPE__org_pepstock_charba_showcase_j2cl_App() {
+  return (App.$clinit(), App.$static_EUROPE__org_pepstock_charba_showcase_j2cl_App);
+ }
+ 
+ static set f_EUROPE__org_pepstock_charba_showcase_j2cl_App(/** TopoJson */ value) {
+  (App.$clinit(), App.$static_EUROPE__org_pepstock_charba_showcase_j2cl_App = value);
+ }
+ /** @return {TopoJson} */
+ static get f_ITALY__org_pepstock_charba_showcase_j2cl_App() {
+  return (App.$clinit(), App.$static_ITALY__org_pepstock_charba_showcase_j2cl_App);
+ }
+ 
+ static set f_ITALY__org_pepstock_charba_showcase_j2cl_App(/** TopoJson */ value) {
+  (App.$clinit(), App.$static_ITALY__org_pepstock_charba_showcase_j2cl_App = value);
+ }
+ /** @return {TopoJson} */
+ static get f_GERMANY__org_pepstock_charba_showcase_j2cl_App() {
+  return (App.$clinit(), App.$static_GERMANY__org_pepstock_charba_showcase_j2cl_App);
+ }
+ 
+ static set f_GERMANY__org_pepstock_charba_showcase_j2cl_App(/** TopoJson */ value) {
+  (App.$clinit(), App.$static_GERMANY__org_pepstock_charba_showcase_j2cl_App = value);
  }
  
  static $clinit() {
   App.$clinit = () =>{};
   App.$loadModules();
   j_l_Object.$clinit();
-  App.$static_isDeferred__org_pepstock_charba_showcase_j2cl_App = false;
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -109,8 +146,10 @@ class App extends j_l_Object {
   MeterChart = goog.module.get('org.pepstock.charba.client.impl.charts.MeterChart$impl');
   ChartBackgroundColor = goog.module.get('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
   LabelsPlugin = goog.module.get('org.pepstock.charba.client.labels.LabelsPlugin$impl');
+  CScheduler = goog.module.get('org.pepstock.charba.client.utils.CScheduler$impl');
   $Overlay = goog.module.get('org.pepstock.charba.client.utils.Window.$Overlay$impl');
   ZoomPlugin = goog.module.get('org.pepstock.charba.client.zoom.ZoomPlugin$impl');
+  $1 = goog.module.get('org.pepstock.charba.showcase.j2cl.App.$1$impl');
   Images = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.commons.Images$impl');
   MyHorizontalBarController = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarController$impl');
   MyLineChart = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$impl');
@@ -119,9 +158,17 @@ class App extends j_l_Object {
  }
 }
 /**@const {?string}*/
-App.f_BASE_URL__org_pepstock_charba_showcase_j2cl_App = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/4.0/src/main/java/";
-/**@private {boolean}*/
-App.$static_isDeferred__org_pepstock_charba_showcase_j2cl_App = false;
+App.f_BASE_URL__org_pepstock_charba_showcase_j2cl_App = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/4.1/src/main/java/";
+/**@private {List<Feature>}*/
+App.$static_EARTH_FEATURES__org_pepstock_charba_showcase_j2cl_App;
+/**@private {TopoJson}*/
+App.$static_US__org_pepstock_charba_showcase_j2cl_App;
+/**@private {TopoJson}*/
+App.$static_EUROPE__org_pepstock_charba_showcase_j2cl_App;
+/**@private {TopoJson}*/
+App.$static_ITALY__org_pepstock_charba_showcase_j2cl_App;
+/**@private {TopoJson}*/
+App.$static_GERMANY__org_pepstock_charba_showcase_j2cl_App;
 EntryPoint.$markImplementor(App);
 $Util.$setClassMetadata(App, "org.pepstock.charba.showcase.j2cl.App");
 

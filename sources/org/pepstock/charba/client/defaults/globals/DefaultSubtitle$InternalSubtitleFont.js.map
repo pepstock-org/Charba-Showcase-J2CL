@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultSubtitle$InternalSubtitleFont.impl.java.js",
+"lineCount":32,
+"mappings":"A;;;;;;;MAoEsB,oB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,sG;EAAAA,iB;;;CAAA,yF;EAAAC,8E;;;CAQN,a;EACbC,gE;;;QATmB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"sources":["DefaultSubtitle.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultSubtitle$InternalSubtitleFont.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultSubtitle$InternalSubtitleFont.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultSubtitle$InternalSubtitleFont.<init>","org.pepstock.charba.client.defaults.globals.DefaultSubtitle$InternalSubtitleFont.getWeight","org.pepstock.charba.client.defaults.globals.DefaultSubtitle$InternalSubtitleFont.<clinit>"]
+}
+

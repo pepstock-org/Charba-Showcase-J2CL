@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ChoroplethOptionsMapper.impl.java.js",
+"lineCount":50,
+"mappings":"A;;;;;;;;MA2BY,uB;;CAAA,W;EAAAA,Q;;;QAWX,4G,wBAAwCC,O,WAAsBC,Y;EAA9DC,kC;EAAAA,8C;EAAAA,oM;EAAAA,iB;;;CAAA,kK,wBAAwCF,O,WAAsBC,Y;EAC7DE,4L;;;CASO,wD;EACPC,gH;;;QAnBD,8E;EAAAC,qJ;;;QAHW,O;EAAAC,0C;EAAAA,uC;EAAAA,+B;EAGXA,wK;;;;;;;;;;;AAHW;;",
+"sources":["ChoroplethOptionsMapper.java"],
+"names":["org.pepstock.charba.client.geo.ChoroplethOptionsMapper.<synthetic: ctor_js>","options","nativeObject","org.pepstock.charba.client.geo.ChoroplethOptionsMapper.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ChoroplethOptionsMapper.<init>","org.pepstock.charba.client.geo.ChoroplethOptionsMapper.getDefaultClipMap","org.pepstock.charba.client.geo.ChoroplethOptionsMapper.<synthetic: getter>","org.pepstock.charba.client.geo.ChoroplethOptionsMapper.<clinit>"]
+}
+

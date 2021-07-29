@@ -16,7 +16,7 @@ let Canvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elemen
 let Context2dItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
 let CursorType = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.CursorType$impl');
 let TextBaseline = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.TextBaseline$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let ChartAxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.ChartAxisType$impl');
 let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$impl');
 let DatasetRangeSelectionEvent = goog.forwardDeclare('org.pepstock.charba.client.events.DatasetRangeSelectionEvent$impl');
 let DatasetsItemsSelectorOptions = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions$impl');
@@ -294,7 +294,7 @@ class SelectionHandler extends j_l_Object {
    this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_setEndValue__double_$pp_org_pepstock_charba_client_impl_plugins(scaleItem.m_getValueForPixel__double(this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_getEnd___$pp_org_pepstock_charba_client_impl_plugins()));
    endPixel = chartArea.m_getRight__();
   }
-  if ($Objects.m_equals__java_lang_Object__java_lang_Object(AxisType.f_CATEGORY__org_pepstock_charba_client_enums_AxisType, scaleItem.m_getType__()) && Double.m_compare__double__double(this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_getStartValue___$pp_org_pepstock_charba_client_impl_plugins(), this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_getEndValue___$pp_org_pepstock_charba_client_impl_plugins()) == 0) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(ChartAxisType.f_CATEGORY__org_pepstock_charba_client_enums_ChartAxisType, scaleItem.m_getType__().m_getBaseType__()) && Double.m_compare__double__double(this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_getStartValue___$pp_org_pepstock_charba_client_impl_plugins(), this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_getEndValue___$pp_org_pepstock_charba_client_impl_plugins()) == 0) {
    let nextValueIndex = this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_getStartValue___$pp_org_pepstock_charba_client_impl_plugins() == 0 ? 1 : this.f_track__org_pepstock_charba_client_impl_plugins_SelectionHandler_.m_getStartValue___$pp_org_pepstock_charba_client_impl_plugins() - 1;
    let nextEndPixel = scaleItem.m_getPixelForValue__double(nextValueIndex);
    if (Undefined.m_isNot__double(nextEndPixel)) {
@@ -579,7 +579,7 @@ class SelectionHandler extends j_l_Object {
   Context2dItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
   CursorType = goog.module.get('org.pepstock.charba.client.dom.enums.CursorType$impl');
   TextBaseline = goog.module.get('org.pepstock.charba.client.dom.enums.TextBaseline$impl');
-  AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
+  ChartAxisType = goog.module.get('org.pepstock.charba.client.enums.ChartAxisType$impl');
   Position = goog.module.get('org.pepstock.charba.client.enums.Position$impl');
   DatasetRangeSelectionEvent = goog.module.get('org.pepstock.charba.client.events.DatasetRangeSelectionEvent$impl');
   SelectionArea = goog.module.get('org.pepstock.charba.client.impl.plugins.SelectionArea$impl');

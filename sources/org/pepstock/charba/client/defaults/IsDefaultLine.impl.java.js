@@ -7,6 +7,7 @@ const IsDefaultOptionsElement = goog.require('org.pepstock.charba.client.default
 let CapStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.CapStyle$impl');
 let CubicInterpolationMode = goog.forwardDeclare('org.pepstock.charba.client.enums.CubicInterpolationMode$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
+let Stepped = goog.forwardDeclare('org.pepstock.charba.client.enums.Stepped$impl');
 
 /**
  * @interface
@@ -26,8 +27,8 @@ class IsDefaultLine {
  m_isCapBezierPoints__() {}
  /** @abstract @return {CubicInterpolationMode} */
  m_getCubicInterpolationMode__() {}
- /** @abstract @return {boolean} */
- m_isStepped__() {}
+ /** @abstract @return {Stepped} */
+ m_getStepped__() {}
  
  static $clinit() {
   IsDefaultLine.$clinit = () =>{};

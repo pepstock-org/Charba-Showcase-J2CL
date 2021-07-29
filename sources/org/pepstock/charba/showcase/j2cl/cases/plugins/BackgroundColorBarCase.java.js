@@ -22,7 +22,7 @@ goog.require('org.pepstock.charba.client.data.BarDataset');
 goog.require('org.pepstock.charba.client.data.Dataset');
 goog.require('org.pepstock.charba.client.dom.IsCastable.$Overlay');
 goog.require('org.pepstock.charba.client.enums.Position');
-goog.require('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions');
+goog.require('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');

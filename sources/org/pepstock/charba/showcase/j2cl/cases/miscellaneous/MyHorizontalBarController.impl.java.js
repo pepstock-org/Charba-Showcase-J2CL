@@ -6,6 +6,7 @@ const AbstractController = goog.require('org.pepstock.charba.client.controllers.
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartType = goog.forwardDeclare('org.pepstock.charba.client.ChartType$impl');
+let Helpers = goog.forwardDeclare('org.pepstock.charba.client.Helpers$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerContext.$Overlay$impl');
 let ControllerProvider = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerProvider$impl');
@@ -48,6 +49,7 @@ class MyHorizontalBarController extends AbstractController {
  m_onAfterDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {
   let padding = 4;
   let ctx = Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(chart.m_getCanvas__());
+  Helpers.m_get__().m_unclipArea__org_pepstock_charba_client_dom_elements_Context2dItem(ctx);
   let scale = /**@type {ScaleItem}*/ ($Casts.$to(chart.m_getNode__().m_getScales__().m_getItems__().get(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId.m_value__()), ScaleItem));
   let axis = /**@type {Scale}*/ ($Overlay.m_getNode__$devirt__org_pepstock_charba_client_controllers_ControllerContext(context).m_getOptions__().m_getScales__().m_getAxis__org_pepstock_charba_client_options_ScaleId(DefaultScaleId.f_Y__org_pepstock_charba_client_enums_DefaultScaleId));
   let ticks = scale.m_getTicks__();
@@ -118,6 +120,7 @@ class MyHorizontalBarController extends AbstractController {
   j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ChartType = goog.module.get('org.pepstock.charba.client.ChartType$impl');
+  Helpers = goog.module.get('org.pepstock.charba.client.Helpers$impl');
   $Overlay = goog.module.get('org.pepstock.charba.client.controllers.ControllerContext.$Overlay$impl');
   ControllerProvider = goog.module.get('org.pepstock.charba.client.controllers.ControllerProvider$impl');
   ControllerType = goog.module.get('org.pepstock.charba.client.controllers.ControllerType$impl');

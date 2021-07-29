@@ -1,7 +1,7 @@
 goog.module('org.pepstock.charba.client.options.AbstractNumberFormat$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const AbstractModel = goog.require('org.pepstock.charba.client.options.AbstractModel$impl');
+const AbstractNode = goog.require('org.pepstock.charba.client.commons.AbstractNode$impl');
 const IsNumberFormat = goog.require('org.pepstock.charba.client.options.IsNumberFormat$impl');
 
 let List = goog.forwardDeclare('java.util.List$impl');
@@ -19,25 +19,35 @@ let Notation = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Notati
 let NumberingSystem = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.NumberingSystem$impl');
 let SignDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.SignDisplay$impl');
 let Style = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Style$impl');
+let NumberFormatItem = goog.forwardDeclare('org.pepstock.charba.client.items.NumberFormatItem$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
  * @abstract
- * @template P
- * @extends {AbstractModel<P, IsDefaultNumberFormatOptions>}
  * @implements {IsNumberFormat}
  */
-class AbstractNumberFormat extends AbstractModel {
+class AbstractNumberFormat extends AbstractNode {
  /** @protected */
  constructor() {
   super();
   /**@type {NumberFormatOptions}*/
   this.f_numberFormatOptions__org_pepstock_charba_client_options_AbstractNumberFormat_;
  }
+ //Initialization from constructor 'AbstractNumberFormat(IsDefaultNumberFormatOptions)'.
  
- $ctor__org_pepstock_charba_client_options_AbstractNumberFormat__org_pepstock_charba_client_options_AbstractModel__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_commons_NativeObject(/** P */ model, /** Key */ childKey, /** IsDefaultNumberFormatOptions */ defaultValues, /** ? */ nativeObject) {
-  this.$ctor__org_pepstock_charba_client_options_AbstractModel__org_pepstock_charba_client_options_AbstractModel__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_NativeObject(model, childKey, defaultValues, nativeObject);
-  this.f_numberFormatOptions__org_pepstock_charba_client_options_AbstractNumberFormat_ = NumberFormatOptions.f_FACTORY__org_pepstock_charba_client_intl_NumberFormatOptions.m_create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this.m_getNativeObject__(), /**@type {IsDefaultNumberFormatOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultNumberFormatOptions)));
+ $ctor__org_pepstock_charba_client_options_AbstractNumberFormat__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** IsDefaultNumberFormatOptions */ defaultValues) {
+  this.$ctor__org_pepstock_charba_client_options_AbstractNumberFormat__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_commons_NativeObject(defaultValues, null);
+ }
+ //Initialization from constructor 'AbstractNumberFormat(IsDefaultNumberFormatOptions, NativeObject)'.
+ 
+ $ctor__org_pepstock_charba_client_options_AbstractNumberFormat__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_commons_NativeObject(/** IsDefaultNumberFormatOptions */ defaultValues, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_options_AbstractNumberFormat__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_commons_NativeObject(null, null, defaultValues, nativeObject);
+ }
+ //Initialization from constructor 'AbstractNumberFormat(AbstractNode, Key, IsDefaultNumberFormatOptions, NativeObject)'.
+ 
+ $ctor__org_pepstock_charba_client_options_AbstractNumberFormat__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_commons_NativeObject(/** AbstractNode */ parent, /** Key */ childKey, /** IsDefaultNumberFormatOptions */ defaultValues, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObject(parent, childKey, nativeObject);
+  this.f_numberFormatOptions__org_pepstock_charba_client_options_AbstractNumberFormat_ = NumberFormatOptions.f_FACTORY__org_pepstock_charba_client_intl_NumberFormatOptions.m_create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this.m_getNativeObject__(), /**@type {IsDefaultNumberFormatOptions}*/ ($Casts.$to(this.m_checkDefaultValuesArgument__java_lang_Object(defaultValues), IsDefaultNumberFormatOptions)));
  }
  /** @override */
  m_setLocaleMatcher__org_pepstock_charba_client_intl_enums_LocaleMatcher(/** LocaleMatcher */ localeMatcher) {
@@ -197,11 +207,21 @@ class AbstractNumberFormat extends AbstractModel {
  m_getMaximumSignificantDigits__() {
   return this.f_numberFormatOptions__org_pepstock_charba_client_options_AbstractNumberFormat_.m_getMaximumSignificantDigits__();
  }
+ //Default method forwarding stub.
+ /** @override @return {NumberFormatItem} */
+ m_create__() {
+  return IsDefaultNumberFormatOptions.m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {NumberFormatItem} */
+ m_create__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** IsDefaultNumberFormatOptions */ arg0) {
+  return IsDefaultNumberFormatOptions.m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this, arg0);
+ }
  
  static $clinit() {
   AbstractNumberFormat.$clinit = () =>{};
   AbstractNumberFormat.$loadModules();
-  AbstractModel.$clinit();
+  AbstractNode.$clinit();
   IsDefaultNumberFormatOptions.$clinit();
  }
  /** @return {boolean} */

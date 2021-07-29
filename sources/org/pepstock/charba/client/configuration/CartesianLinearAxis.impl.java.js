@@ -7,10 +7,11 @@ const IsLinearAxis = goog.require('org.pepstock.charba.client.configuration.IsLi
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
+let AxisType = goog.forwardDeclare('org.pepstock.charba.client.configuration.AxisType$impl');
 let CartesianLinearTick = goog.forwardDeclare('org.pepstock.charba.client.configuration.CartesianLinearTick$impl');
 let IsNumericAxis = goog.forwardDeclare('org.pepstock.charba.client.configuration.IsNumericAxis$impl');
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let ChartAxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.ChartAxisType$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
@@ -36,7 +37,7 @@ class CartesianLinearAxis extends CartesianAxis {
  //Initialization from constructor 'CartesianLinearAxis(IsChart)'.
  
  $ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
-  this.$ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId(chart, AxisType.f_LINEAR__org_pepstock_charba_client_enums_AxisType.m_getDefaultScaleId__());
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId(chart, ChartAxisType.f_LINEAR__org_pepstock_charba_client_enums_ChartAxisType.m_getDefaultScaleId__());
  }
  //Factory method corresponding to constructor 'CartesianLinearAxis(IsChart, String)'.
  /** @return {!CartesianLinearAxis} */
@@ -75,7 +76,7 @@ class CartesianLinearAxis extends CartesianAxis {
  //Initialization from constructor 'CartesianLinearAxis(IsChart, AxisKind)'.
  
  $ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** AxisKind */ kind) {
-  this.$ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(chart, DefaultScaleId.m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_enums_DefaultScaleId(kind, AxisType.f_LINEAR__org_pepstock_charba_client_enums_AxisType.m_getDefaultScaleId__()), kind);
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(chart, DefaultScaleId.m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_options_ScaleId(kind, ChartAxisType.f_LINEAR__org_pepstock_charba_client_enums_ChartAxisType.m_getDefaultScaleId__()), kind);
  }
  //Factory method corresponding to constructor 'CartesianLinearAxis(IsChart, String, AxisKind)'.
  /** @return {!CartesianLinearAxis} */
@@ -101,7 +102,20 @@ class CartesianLinearAxis extends CartesianAxis {
  //Initialization from constructor 'CartesianLinearAxis(IsChart, ScaleId, AxisKind)'.
  
  $ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisKind */ kind) {
-  this.$ctor__org_pepstock_charba_client_configuration_CartesianAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, AxisType.f_LINEAR__org_pepstock_charba_client_enums_AxisType, Key.m_isValid__org_pepstock_charba_client_commons_Key(kind) ? kind : DefaultScaleId.m_getAxisKindByScaleId__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_enums_AxisKind(id, AxisKind.f_Y__org_pepstock_charba_client_enums_AxisKind));
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, ChartAxisType.f_LINEAR__org_pepstock_charba_client_enums_ChartAxisType, Key.m_isValid__org_pepstock_charba_client_commons_Key(kind) ? kind : DefaultScaleId.m_getAxisKindByScaleId__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_enums_AxisKind(id, AxisKind.f_Y__org_pepstock_charba_client_enums_AxisKind));
+ }
+ //Factory method corresponding to constructor 'CartesianLinearAxis(IsChart, ScaleId, AxisType, AxisKind)'.
+ /** @return {!CartesianLinearAxis} */
+ static $create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+  CartesianLinearAxis.$clinit();
+  let $instance = new CartesianLinearAxis();
+  $instance.$ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
+  return $instance;
+ }
+ //Initialization from constructor 'CartesianLinearAxis(IsChart, ScaleId, AxisType, AxisKind)'.
+ 
+ $ctor__org_pepstock_charba_client_configuration_CartesianLinearAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
   this.f_ticks__org_pepstock_charba_client_configuration_CartesianLinearAxis_ = CartesianLinearTick.$create__org_pepstock_charba_client_configuration_Axis(this);
  }
  /** @override @return {Axis} */
@@ -195,7 +209,7 @@ class CartesianLinearAxis extends CartesianAxis {
   CartesianLinearTick = goog.module.get('org.pepstock.charba.client.configuration.CartesianLinearTick$impl');
   IsNumericAxis = goog.module.get('org.pepstock.charba.client.configuration.IsNumericAxis$impl');
   AxisKind = goog.module.get('org.pepstock.charba.client.enums.AxisKind$impl');
-  AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
+  ChartAxisType = goog.module.get('org.pepstock.charba.client.enums.ChartAxisType$impl');
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');
   ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
  }

@@ -10,6 +10,7 @@ let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsVie
 let $10 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$10$impl');
 let $11 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$11$impl');
 let $12 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$12$impl');
+let $13 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$13$impl');
 let $2 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$2$impl');
 let $3 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$3$impl');
 let $4 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$4$impl');
@@ -67,7 +68,7 @@ class HtmlLegendCase extends Enum {
  /** @return {!Array<!HtmlLegendCase>} */
  static m_values__() {
   HtmlLegendCase.$clinit();
-  return /**@type {!Array<HtmlLegendCase>}*/ ($Arrays.$init([HtmlLegendCase.$static_BAR__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_HBAR__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_LINE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_PIR__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_MAX_LEGEND_ITEMS__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_SPLITTING__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_LINEAR_GRADIENT__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_RADIAL_GRADIENT__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_PATTERN__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_IMAGES_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase], HtmlLegendCase));
+  return /**@type {!Array<HtmlLegendCase>}*/ ($Arrays.$init([HtmlLegendCase.$static_BAR__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_HBAR__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_LINE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_PIR__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_MAX_LEGEND_ITEMS__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_SPLITTING__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_LINEAR_GRADIENT__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_RADIAL_GRADIENT__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_PATTERN__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_IMAGES_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_CANVAS_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, HtmlLegendCase.$static_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase], HtmlLegendCase));
  }
  /** @return {!HtmlLegendCase} */
  static get f_BAR__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase() {
@@ -114,6 +115,10 @@ class HtmlLegendCase extends Enum {
   return (HtmlLegendCase.$clinit(), HtmlLegendCase.$static_IMAGES_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase);
  }
  /** @return {!HtmlLegendCase} */
+ static get f_CANVAS_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase() {
+  return (HtmlLegendCase.$clinit(), HtmlLegendCase.$static_CANVAS_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase);
+ }
+ /** @return {!HtmlLegendCase} */
  static get f_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase() {
   return (HtmlLegendCase.$clinit(), HtmlLegendCase.$static_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase);
  }
@@ -133,7 +138,8 @@ class HtmlLegendCase extends Enum {
   HtmlLegendCase.$static_PATTERN__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = HtmlLegendCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("PATTERN"), HtmlLegendCase.$ordinal_PATTERN__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, "Managing patterns", $9.$create__());
   HtmlLegendCase.$static_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = HtmlLegendCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("POINT_STYLES"), HtmlLegendCase.$ordinal_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, "Managing point styles", $10.$create__());
   HtmlLegendCase.$static_IMAGES_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = HtmlLegendCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("IMAGES_AS_POINT_STYLE"), HtmlLegendCase.$ordinal_IMAGES_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, "Managing image as point styles", $11.$create__());
-  HtmlLegendCase.$static_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = HtmlLegendCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("CALLBACK"), HtmlLegendCase.$ordinal_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, "Custom legend item text by callback", $12.$create__());
+  HtmlLegendCase.$static_CANVAS_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = HtmlLegendCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("CANVAS_AS_POINT_STYLE"), HtmlLegendCase.$ordinal_CANVAS_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, "Managing canvas as point styles", $12.$create__());
+  HtmlLegendCase.$static_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = HtmlLegendCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("CALLBACK"), HtmlLegendCase.$ordinal_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase, "Custom legend item text by callback", $13.$create__());
   HtmlLegendCase.f_namesToValuesMap__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase_ = null;
  }
  /** @return {boolean} */
@@ -147,6 +153,7 @@ class HtmlLegendCase extends Enum {
   $10 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$10$impl');
   $11 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$11$impl');
   $12 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$12$impl');
+  $13 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$13$impl');
   $2 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$2$impl');
   $3 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$3$impl');
   $4 = goog.module.get('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$4$impl');
@@ -182,6 +189,8 @@ HtmlLegendCase.$static_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_Plu
 /**@private {!HtmlLegendCase}*/
 HtmlLegendCase.$static_IMAGES_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase;
 /**@private {!HtmlLegendCase}*/
+HtmlLegendCase.$static_CANVAS_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase;
+/**@private {!HtmlLegendCase}*/
 HtmlLegendCase.$static_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase;
 /**@type {Map<?string, !HtmlLegendCase>}*/
 HtmlLegendCase.f_namesToValuesMap__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase_;
@@ -208,7 +217,9 @@ HtmlLegendCase.$ordinal_POINT_STYLES__org_pepstock_charba_showcase_j2cl_views_Pl
 /**@const {number}*/
 HtmlLegendCase.$ordinal_IMAGES_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = 10;
 /**@const {number}*/
-HtmlLegendCase.$ordinal_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = 11;
+HtmlLegendCase.$ordinal_CANVAS_AS_POINT_STYLE__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = 11;
+/**@const {number}*/
+HtmlLegendCase.$ordinal_CALLBACK__org_pepstock_charba_showcase_j2cl_views_PluginsView_HtmlLegendCase = 12;
 CaseItem.$markImplementor(HtmlLegendCase);
 $Util.$setClassMetadataForEnum(HtmlLegendCase, "org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase");
 

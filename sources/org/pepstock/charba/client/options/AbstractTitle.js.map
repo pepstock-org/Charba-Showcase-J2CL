@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractTitle.impl.java.js",
+"lineCount":97,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAgCe,a;;CAAA,W;EAAAA,Q;EAAAA;OAoCc,kEApCdA,C;EAAAA;OAsCQ,4DAtCRA,C;;;CAgDd,wP,gBAAsBC,O,aAAaC,Q,WAAYC,a,WAA4BC,Y;EAC1EC,6T;EAEAA,uY;EACAA,4X;;;CAS0B,oB;EAC1BC,+E;;;CASoB,c;EACpBC,yE;;;CASW,4B,gBAAgBC,K;EAC3BC,wG;;;CASW,W;EACXC,qF;;;CASiB,sB,gBAAoBC,Q;EACrCC,0K;;;CASoB,c;EACpBC,iR;;;CAWiB,mC,uBAAkBC,I;EACnCC,yL;;;CASyB,W;EAGzBC,IAAYC,KAAZD,gO;EACAA,qF;;;;CAzIa,oB;EAAAE,8F;;;;CAAA,Y;EAAAC,sF;;;;CAAA,qD;EAAAV,gI;;;QAAA,O;EAAAW,gC;EAAAA,6B;EAAAA,uC;EAAAA;",
+"sources":["AbstractTitle.java"],
+"names":["org.pepstock.charba.client.options.AbstractTitle.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.AbstractTitle.<init>","org.pepstock.charba.client.options.AbstractTitle.getFontContainer","org.pepstock.charba.client.options.AbstractTitle.getPadding","color","org.pepstock.charba.client.options.AbstractTitle.setColor","org.pepstock.charba.client.options.AbstractTitle.getFont","fullSize","org.pepstock.charba.client.options.AbstractTitle.setFullSize","org.pepstock.charba.client.options.AbstractTitle.isFullSize","text","org.pepstock.charba.client.options.AbstractTitle.setText","org.pepstock.charba.client.options.AbstractTitle.getText","array","org.pepstock.charba.client.options.AbstractTitle.getColorAsString","org.pepstock.charba.client.options.AbstractTitle.getColor","org.pepstock.charba.client.options.AbstractTitle.<clinit>"]
+}
+

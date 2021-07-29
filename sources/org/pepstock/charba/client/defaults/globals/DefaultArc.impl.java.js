@@ -50,6 +50,10 @@ class DefaultArc extends AbstractDefaultOptionsElement {
  m_getHoverOffset__() {
   return this.m_getOffset__();
  }
+ /** @override @return {number} */
+ m_getSpacing__() {
+  return DefaultArc.f_DEFAULT_SPACING__org_pepstock_charba_client_defaults_globals_DefaultArc_;
+ }
  
  static $clinit() {
   DefaultArc.$clinit = () =>{};
@@ -76,6 +80,8 @@ DefaultArc.f_DEFAULT_WEIGHT__org_pepstock_charba_client_defaults_globals_Default
 DefaultArc.f_DEFAULT_OFFSET__org_pepstock_charba_client_defaults_globals_DefaultArc_ = 0;
 /**@const {number}*/
 DefaultArc.f_DEFAULT_BORDER_RADIUS__org_pepstock_charba_client_defaults_globals_DefaultArc_ = 0;
+/**@const {number}*/
+DefaultArc.f_DEFAULT_SPACING__org_pepstock_charba_client_defaults_globals_DefaultArc_ = 0;
 IsDefaultArc.$markImplementor(DefaultArc);
 $Util.$setClassMetadata(DefaultArc, "org.pepstock.charba.client.defaults.globals.DefaultArc");
 

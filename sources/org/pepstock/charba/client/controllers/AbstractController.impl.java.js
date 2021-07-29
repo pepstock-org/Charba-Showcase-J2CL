@@ -1,34 +1,30 @@
 goog.module('org.pepstock.charba.client.controllers.AbstractController$impl');
 
-const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const Controller = goog.require('org.pepstock.charba.client.Controller$impl');
+const AbstractControllerContainer = goog.require('org.pepstock.charba.client.controllers.AbstractControllerContainer$impl');
 
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
-let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let ControllerType = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerType$impl');
 let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
-let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
  * @abstract
  * @implements {Controller}
  */
-class AbstractController extends j_l_Object {
+class AbstractController extends AbstractControllerContainer {
  /** @protected */
  constructor() {
   super();
-  /**@type {ControllerType}*/
-  this.f_type__org_pepstock_charba_client_controllers_AbstractController_;
  }
  
  $ctor__org_pepstock_charba_client_controllers_AbstractController__org_pepstock_charba_client_controllers_ControllerType(/** ControllerType */ type) {
-  this.$ctor__java_lang_Object__();
-  this.f_type__org_pepstock_charba_client_controllers_AbstractController_ = /**@type {ControllerType}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(type, "Controller type argument"), ControllerType));
+  this.$ctor__org_pepstock_charba_client_controllers_AbstractControllerContainer__org_pepstock_charba_client_controllers_ControllerType(type);
  }
- /** @override @return {ControllerType} */
- m_getType__() {
-  return this.f_type__org_pepstock_charba_client_controllers_AbstractController_;
+ //Default method forwarding stub.
+ /** @override @return {boolean} */
+ m_mustBeRegistered__() {
+  return Controller.m_mustBeRegistered__$default__org_pepstock_charba_client_Controller(this);
  }
  //Default method forwarding stub.
  /** @override */
@@ -84,7 +80,7 @@ class AbstractController extends j_l_Object {
  static $clinit() {
   AbstractController.$clinit = () =>{};
   AbstractController.$loadModules();
-  j_l_Object.$clinit();
+  AbstractControllerContainer.$clinit();
   Controller.$clinit();
  }
  /** @return {boolean} */
@@ -92,11 +88,7 @@ class AbstractController extends j_l_Object {
   return instance instanceof AbstractController;
  }
  
- static $loadModules() {
-  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
-  ControllerType = goog.module.get('org.pepstock.charba.client.controllers.ControllerType$impl');
-  $Casts = goog.module.get('vmbootstrap.Casts$impl');
- }
+ static $loadModules() {}
 }
 Controller.$markImplementor(AbstractController);
 $Util.$setClassMetadata(AbstractController, "org.pepstock.charba.client.controllers.AbstractController");

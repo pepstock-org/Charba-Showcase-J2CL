@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractDefaultTitle.impl.java.js",
+"lineCount":64,
+"mappings":"A;;;;;;;;;;;;;;MA2Be,oB;;CAAA,W;EAAAA,Q;;;CASd,yE;EAAAC,iC;;;CAUe,a;EACdC,iH;;;CASe,e;EACfC,iE;;;CASc,c;EACdC,mH;;;CASmB,Y;EACnBC,4E;;;CASa,oB;EACbC,iE;;;QA5Da,O;EAAAC,uC;EAAAA,oC;EAAAA,qB;;;;;;;;;;;;;AAEd;qBAA6B,sFAA7B,Q;AAEA;qBAA6B,oFAA7B;",
+"sources":["AbstractDefaultTitle.java"],
+"names":["org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.<init>","org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.isDisplay","org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.getPosition","org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.isFullSize","org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.getAlign","org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.getColorAsString","org.pepstock.charba.client.defaults.globals.AbstractDefaultTitle.<clinit>"]
+}
+

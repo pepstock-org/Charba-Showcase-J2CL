@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"Decimation.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;;;;MAyCmB,U;;CAAA,W;EAAAA,Q;;;QA2ClB,qM,gBAAmBC,O,aAAaC,Q,6BAA8BC,a,WAA4BC,Y;EAA1FC,qB;EAAAA,iC;EAAAA,6S;EAAAA,iB;;;CAAA,kP,gBAAmBJ,O,aAAaC,Q,6BAA8BC,a,WAA4BC,Y;EACzFE,0Q;;;CAQW,qB,gBAAmBC,O;EAC9BC,oK;;;CASc,a;EACdC,qQ;;;CAQW,oE,4BAAiCC,S;EAC5CC,uM;;;CAS0B,gB;EAC1BC,+b;;;CASW,oB,eAAkBC,O;EAC7BC,qM;;;CAUa,c;EACbC,qQ;;;QAvGiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":70,
+"mappings":"A;;;;;;;;;;;;;;;;;MAyCmB,U;;CAAA,W;EAAAA,Q;;;QA4ClB,qM,gBAAmBC,O,aAAaC,Q,6BAA8BC,a,WAA4BC,Y;EAA1FC,qB;EAAAA,iC;EAAAA,6S;EAAAA,iB;;;CAAA,kP,gBAAmBJ,O,aAAaC,Q,6BAA8BC,a,WAA4BC,Y;EACzFE,0Q;;;CAQW,qB,gBAAmBC,O;EAC9BC,oK;;;CASc,a;EACdC,qQ;;;CAQW,oE,4BAAiCC,S;EAC5CC,uM;;;CAS0B,gB;EAC1BC,+b;;;CASW,oB,eAAkBC,O;EAC7BC,qM;;;CAUa,c;EACbC,qQ;;;CAUW,sB,eAAoBC,S;EAC/BC,yM;;;CAWa,gB;EACbC,yQ;;;QA/HiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["Decimation.java"],
-"names":["org.pepstock.charba.client.options.Decimation.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Decimation.<synthetic: ctor_create>","org.pepstock.charba.client.options.Decimation.<init>","enabled","org.pepstock.charba.client.options.Decimation.setEnabled","org.pepstock.charba.client.options.Decimation.isEnabled","algorithm","org.pepstock.charba.client.options.Decimation.setAlgorithm","org.pepstock.charba.client.options.Decimation.getAlgorithm","samples","org.pepstock.charba.client.options.Decimation.setSamples","org.pepstock.charba.client.options.Decimation.getSamples","org.pepstock.charba.client.options.Decimation.<clinit>"]
+"names":["org.pepstock.charba.client.options.Decimation.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Decimation.<synthetic: ctor_create>","org.pepstock.charba.client.options.Decimation.<init>","enabled","org.pepstock.charba.client.options.Decimation.setEnabled","org.pepstock.charba.client.options.Decimation.isEnabled","algorithm","org.pepstock.charba.client.options.Decimation.setAlgorithm","org.pepstock.charba.client.options.Decimation.getAlgorithm","samples","org.pepstock.charba.client.options.Decimation.setSamples","org.pepstock.charba.client.options.Decimation.getSamples","threshold","org.pepstock.charba.client.options.Decimation.setThreshold","org.pepstock.charba.client.options.Decimation.getThreshold","org.pepstock.charba.client.options.Decimation.<clinit>"]
 }
 

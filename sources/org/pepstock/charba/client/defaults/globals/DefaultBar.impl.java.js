@@ -7,6 +7,8 @@ const AbstractDefaultOptionsElement = goog.require('org.pepstock.charba.client.d
 let IsDefaultPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
 let BorderSkipped = goog.forwardDeclare('org.pepstock.charba.client.enums.BorderSkipped$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
+let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 
 /**
  * @implements {IsDefaultBar}
@@ -39,13 +41,17 @@ class DefaultBar extends AbstractDefaultOptionsElement {
  m_getPointStyle__() {
   return null;
  }
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return false;
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return PointStyleType.f_STRING__org_pepstock_charba_client_enums_PointStyleType;
  }
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {
-  return null;
+  return Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined;
+ }
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return Undefined.f_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined;
  }
  /** @override @return {number} */
  m_getHoverBorderRadius__() {
@@ -70,6 +76,8 @@ class DefaultBar extends AbstractDefaultOptionsElement {
  static $loadModules() {
   IsDefaultPointStyleHandler = goog.module.get('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
   BorderSkipped = goog.module.get('org.pepstock.charba.client.enums.BorderSkipped$impl');
+  PointStyleType = goog.module.get('org.pepstock.charba.client.enums.PointStyleType$impl');
+  Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
  }
 }
 /**@const {boolean}*/

@@ -7,6 +7,7 @@ let Charts = goog.forwardDeclare('org.pepstock.charba.client.Charts$impl');
 let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
 let Injector = goog.forwardDeclare('org.pepstock.charba.client.Injector$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
+let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let TransitionKey = goog.forwardDeclare('org.pepstock.charba.client.options.TransitionKey$impl');
 let ResourceName = goog.forwardDeclare('org.pepstock.charba.client.resources.ResourceName$impl');
@@ -67,6 +68,15 @@ class ZoomPlugin extends AbstractExtensionPlugin {
   Injector.m_ensureInjected__org_pepstock_charba_client_resources_AbstractInjectableResource(ZoomPlugin.f_RESOURCE__org_pepstock_charba_client_zoom_ZoomPlugin_);
   Defaults.m_get__().m_getPlugins__().m_setEnabledAllCharts__java_lang_String__boolean(ZoomPlugin.$static_ID__org_pepstock_charba_client_zoom_ZoomPlugin, enableToAllCharts);
   ZoomPlugin.m_get__().m_loadDefaults__org_pepstock_charba_client_plugins_AbstractPluginOptionsFactory(ZoomPlugin.$static_DEFAULTS_FACTORY__org_pepstock_charba_client_zoom_ZoomPlugin);
+ }
+ /** @return {number} */
+ static m_getZoomLevel__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
+  ZoomPlugin.$clinit();
+  if (ZoomPlugin.m_isReadyForApi__org_pepstock_charba_client_IsChart(chart)) {
+   let nativeChart = Charts.m_getNative__org_pepstock_charba_client_IsChart(chart);
+   return JsZoomHelper.m_get__().m_getZoomLevel__org_pepstock_charba_client_Chart_$pp_org_pepstock_charba_client_zoom(nativeChart);
+  }
+  return Undefined.f_DOUBLE__org_pepstock_charba_client_items_Undefined;
  }
  
  static m_reset__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
@@ -189,6 +199,7 @@ class ZoomPlugin extends AbstractExtensionPlugin {
   Defaults = goog.module.get('org.pepstock.charba.client.Defaults$impl');
   Injector = goog.module.get('org.pepstock.charba.client.Injector$impl');
   IsChart = goog.module.get('org.pepstock.charba.client.IsChart$impl');
+  Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
   TransitionKey = goog.module.get('org.pepstock.charba.client.options.TransitionKey$impl');
   ResourceName = goog.module.get('org.pepstock.charba.client.resources.ResourceName$impl');

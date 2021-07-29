@@ -62,6 +62,8 @@ NativeName.f_JS_OBJECT_GRADIENT_HELPER__org_pepstock_charba_client_commons_Nativ
 /**@const {?string}*/
 NativeName.f_JS_OBJECT_IMAGE_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectImageHelper";
 /**@const {?string}*/
+NativeName.f_JS_OBJECT_CANVAS_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectCanvasHelper";
+/**@const {?string}*/
 NativeName.f_JS_OBJECT_NATIVE_OBJECT_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectNativeObjectHelper";
 /**@const {?string}*/
 NativeName.f_JS_OBJECT_NATIVE_EVENT_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsObjectNativeEventHelper";
@@ -89,6 +91,8 @@ NativeName.f_JS_HTML_LEGEND_BUILDER_HELPER__org_pepstock_charba_client_commons_N
 NativeName.f_JS_ZOOM_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsZoomHelper";
 /**@const {?string}*/
 NativeName.f_JS_DATALABELS_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsDataLabelsHelper";
+/**@const {?string}*/
+NativeName.f_JS_GEO_HELPER__org_pepstock_charba_client_commons_NativeName = "CharbaJsGeoHelper";
 /**@const {?string}*/
 NativeName.f_CHART__org_pepstock_charba_client_commons_NativeName = "Chart";
 /**@const {?string}*/

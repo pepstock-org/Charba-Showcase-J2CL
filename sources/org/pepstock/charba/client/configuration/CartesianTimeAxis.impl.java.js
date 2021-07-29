@@ -7,10 +7,11 @@ let Date = goog.forwardDeclare('java.util.Date$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Adapters = goog.forwardDeclare('org.pepstock.charba.client.configuration.Adapters$impl');
+let AxisType = goog.forwardDeclare('org.pepstock.charba.client.configuration.AxisType$impl');
 let CartesianTimeTick = goog.forwardDeclare('org.pepstock.charba.client.configuration.CartesianTimeTick$impl');
 let Time = goog.forwardDeclare('org.pepstock.charba.client.configuration.Time$impl');
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let ChartAxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.ChartAxisType$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 
@@ -39,7 +40,7 @@ class CartesianTimeAxis extends CartesianAxis {
  //Initialization from constructor 'CartesianTimeAxis(IsChart)'.
  
  $ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
-  this.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId(chart, AxisType.f_TIME__org_pepstock_charba_client_enums_AxisType.m_getDefaultScaleId__());
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId(chart, ChartAxisType.f_TIME__org_pepstock_charba_client_enums_ChartAxisType.m_getDefaultScaleId__());
  }
  //Factory method corresponding to constructor 'CartesianTimeAxis(IsChart, String)'.
  /** @return {!CartesianTimeAxis} */
@@ -78,7 +79,7 @@ class CartesianTimeAxis extends CartesianAxis {
  //Initialization from constructor 'CartesianTimeAxis(IsChart, AxisKind)'.
  
  $ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** AxisKind */ kind) {
-  this.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(chart, DefaultScaleId.m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_enums_DefaultScaleId(kind, AxisType.f_TIME__org_pepstock_charba_client_enums_AxisType.m_getDefaultScaleId__()), kind);
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(chart, DefaultScaleId.m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_options_ScaleId(kind, ChartAxisType.f_TIME__org_pepstock_charba_client_enums_ChartAxisType.m_getDefaultScaleId__()), kind);
  }
  //Factory method corresponding to constructor 'CartesianTimeAxis(IsChart, String, AxisKind)'.
  /** @return {!CartesianTimeAxis} */
@@ -104,20 +105,20 @@ class CartesianTimeAxis extends CartesianAxis {
  //Initialization from constructor 'CartesianTimeAxis(IsChart, ScaleId, AxisKind)'.
  
  $ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisKind */ kind) {
-  this.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, AxisType.f_TIME__org_pepstock_charba_client_enums_AxisType, Key.m_isValid__org_pepstock_charba_client_commons_Key(kind) ? kind : DefaultScaleId.m_getAxisKindByScaleId__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_enums_AxisKind(id, AxisKind.f_X__org_pepstock_charba_client_enums_AxisKind));
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, ChartAxisType.f_TIME__org_pepstock_charba_client_enums_ChartAxisType, Key.m_isValid__org_pepstock_charba_client_commons_Key(kind) ? kind : DefaultScaleId.m_getAxisKindByScaleId__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_enums_AxisKind(id, AxisKind.f_X__org_pepstock_charba_client_enums_AxisKind));
  }
  //Factory method corresponding to constructor 'CartesianTimeAxis(IsChart, ScaleId, AxisType, AxisKind)'.
  /** @return {!CartesianTimeAxis} */
- static $create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+ static $create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
   CartesianTimeAxis.$clinit();
   let $instance = new CartesianTimeAxis();
-  $instance.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
+  $instance.$ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
   return $instance;
  }
  //Initialization from constructor 'CartesianTimeAxis(IsChart, ScaleId, AxisType, AxisKind)'.
  
- $ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
-  this.$ctor__org_pepstock_charba_client_configuration_CartesianAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, AxisType.f_TIME__org_pepstock_charba_client_enums_AxisType, Key.m_isValid__org_pepstock_charba_client_commons_Key(kind) ? kind : DefaultScaleId.m_getAxisKindByScaleId__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_enums_AxisKind(id, AxisKind.f_X__org_pepstock_charba_client_enums_AxisKind));
+ $ctor__org_pepstock_charba_client_configuration_CartesianTimeAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+  this.$ctor__org_pepstock_charba_client_configuration_CartesianAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
   this.f_time__org_pepstock_charba_client_configuration_CartesianTimeAxis_ = Time.$create__org_pepstock_charba_client_configuration_Axis(this);
   this.f_ticks__org_pepstock_charba_client_configuration_CartesianTimeAxis_ = CartesianTimeTick.$create__org_pepstock_charba_client_configuration_Axis(this);
   this.f_adapters__org_pepstock_charba_client_configuration_CartesianTimeAxis_ = Adapters.$create__org_pepstock_charba_client_configuration_Axis(this);
@@ -167,7 +168,7 @@ class CartesianTimeAxis extends CartesianAxis {
   CartesianTimeTick = goog.module.get('org.pepstock.charba.client.configuration.CartesianTimeTick$impl');
   Time = goog.module.get('org.pepstock.charba.client.configuration.Time$impl');
   AxisKind = goog.module.get('org.pepstock.charba.client.enums.AxisKind$impl');
-  AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
+  ChartAxisType = goog.module.get('org.pepstock.charba.client.enums.ChartAxisType$impl');
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');
   ScaleId = goog.module.get('org.pepstock.charba.client.options.ScaleId$impl');
  }

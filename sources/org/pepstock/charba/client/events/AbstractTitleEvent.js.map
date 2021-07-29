@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractTitleEvent.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;MA0Be,kB;;CAAA,W;EAAAA,Q;EAAAA;OAGM,6DAHNA,C;;;CAYd,kM,eAAmCC,W,mBAAuBC,I,eAAYC,I;EACrEC,4K;EAEAA,2M;;;CAQkB,W;EAClBC,0E;;;QAxBa,O;EAAAC,qC;EAAAA,kC;EAAAA;",
+"sources":["AbstractTitleEvent.java"],
+"names":["org.pepstock.charba.client.events.AbstractTitleEvent.<synthetic: ctor_js>","nativeEvent","type","item","org.pepstock.charba.client.events.AbstractTitleEvent.<init>","org.pepstock.charba.client.events.AbstractTitleEvent.getItem","org.pepstock.charba.client.events.AbstractTitleEvent.<clinit>"]
+}
+

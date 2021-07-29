@@ -60,7 +60,6 @@ class CallbacksPolarAreaCase extends BaseComposite {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_CallbacksPolarAreaCase_.m_getOptions__().m_getTitle__().m_setText__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init(["Callbacks on polar area chart dataset"], j_l_String)));
   let axis = RadialAxis.$create__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_CallbacksPolarAreaCase_);
   axis.m_setBeginAtZero__boolean(true);
-  axis.m_setReverse__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_CallbacksPolarAreaCase_.m_getOptions__().m_getScales__().m_setAxes__arrayOf_org_pepstock_charba_client_configuration_Axis(/**@type {!Array<Axis>}*/ ($Arrays.$init([axis], Axis)));
   let dataset = /**@type {PolarAreaDataset}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_miscellaneous_CallbacksPolarAreaCase_.m_newDataset__(), PolarAreaDataset));
   dataset.m_setLabel__java_lang_String("dataset 1");

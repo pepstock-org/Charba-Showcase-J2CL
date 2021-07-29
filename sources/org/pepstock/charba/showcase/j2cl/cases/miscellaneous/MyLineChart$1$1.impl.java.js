@@ -3,6 +3,7 @@ goog.module('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.$
 const $Util = goog.require('nativebootstrap.Util$impl');
 const AbstractController = goog.require('org.pepstock.charba.client.controllers.AbstractController$impl');
 
+let Helpers = goog.forwardDeclare('org.pepstock.charba.client.Helpers$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerContext.$Overlay$impl');
 let ControllerType = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerType$impl');
@@ -39,6 +40,7 @@ class $1_$1 extends AbstractController {
    let elem = /**@type {DatasetElement}*/ ($Casts.$to($iterator.m_next__(), DatasetElement));
    {
     let ctx = Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(chart.m_getCanvas__());
+    Helpers.m_get__().m_unclipArea__org_pepstock_charba_client_dom_elements_Context2dItem(ctx);
     ctx.save();
     Context2dItem_$Overlay.m_setStrokeColor__$devirt__org_pepstock_charba_client_dom_elements_Context2dItem__java_lang_String(ctx, elem.m_getOptions__().m_getBorderColorAsString__());
     ctx.lineWidth = 1;
@@ -59,6 +61,7 @@ class $1_$1 extends AbstractController {
  }
  
  static $loadModules() {
+  Helpers = goog.module.get('org.pepstock.charba.client.Helpers$impl');
   $Overlay = goog.module.get('org.pepstock.charba.client.controllers.ControllerContext.$Overlay$impl');
   Canvas_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
   Context2dItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');

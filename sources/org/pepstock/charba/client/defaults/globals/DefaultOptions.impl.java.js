@@ -10,6 +10,7 @@ let Event = goog.forwardDeclare('org.pepstock.charba.client.enums.Event$impl');
 let IndexAxis = goog.forwardDeclare('org.pepstock.charba.client.enums.IndexAxis$impl');
 let CLocale = goog.forwardDeclare('org.pepstock.charba.client.intl.CLocale$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
+let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 
 class DefaultOptions extends AbstractDefaultOptions {
  /** @protected */
@@ -121,7 +122,7 @@ class DefaultOptions extends AbstractDefaultOptions {
   DefaultOptions.$loadModules();
   AbstractDefaultOptions.$clinit();
   DefaultOptions.f_DEFAULT_CUTOUT_PERCENTAGE__org_pepstock_charba_client_defaults_globals_DefaultOptions_ = Undefined.f_STRING__org_pepstock_charba_client_items_Undefined;
-  DefaultOptions.f_DEFAULT_EVENTS__org_pepstock_charba_client_defaults_globals_DefaultOptions_ = /**@type {List<Event>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<Event>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(Event.m_values__()))));
+  DefaultOptions.f_DEFAULT_EVENTS__org_pepstock_charba_client_defaults_globals_DefaultOptions_ = /**@type {List<Event>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<Event>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<Event>}*/ ($Arrays.$init([Event.f_MOUSE_MOVE__org_pepstock_charba_client_enums_Event, Event.f_MOUSE_OUT__org_pepstock_charba_client_enums_Event, Event.f_CLICK__org_pepstock_charba_client_enums_Event, Event.f_TOUCH_MOVE__org_pepstock_charba_client_enums_Event, Event.f_TOUCH_START__org_pepstock_charba_client_enums_Event], Event))))));
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -135,6 +136,7 @@ class DefaultOptions extends AbstractDefaultOptions {
   IndexAxis = goog.module.get('org.pepstock.charba.client.enums.IndexAxis$impl');
   CLocale = goog.module.get('org.pepstock.charba.client.intl.CLocale$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
+  $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
  }
 }
 /**@const {?string}*/

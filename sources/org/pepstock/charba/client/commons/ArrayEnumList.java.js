@@ -1,6 +1,5 @@
 goog.module('org.pepstock.charba.client.commons.ArrayEnumList');
 
-goog.require('java.lang.String');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.commons.AbstractArrayContainerList');

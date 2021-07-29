@@ -23,6 +23,7 @@ goog.require('org.pepstock.charba.client.intl.enums.MeasureUnitDisplay');
 goog.require('org.pepstock.charba.client.intl.enums.Notation');
 goog.require('org.pepstock.charba.client.intl.enums.SignDisplay');
 goog.require('org.pepstock.charba.client.intl.enums.Style');
+goog.require('org.pepstock.charba.client.items.NumberFormatItem');
 goog.require('org.pepstock.charba.client.items.Undefined');
 goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');

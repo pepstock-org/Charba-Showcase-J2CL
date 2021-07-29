@@ -9,6 +9,7 @@ let CubicInterpolationMode = goog.forwardDeclare('org.pepstock.charba.client.enu
 let Fill = goog.forwardDeclare('org.pepstock.charba.client.enums.Fill$impl');
 let IsFill = goog.forwardDeclare('org.pepstock.charba.client.enums.IsFill$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
+let Stepped = goog.forwardDeclare('org.pepstock.charba.client.enums.Stepped$impl');
 
 /**
  * @implements {IsDefaultLine}
@@ -57,9 +58,9 @@ class DefaultLine extends AbstractDefaultOptionsElement {
  m_getFill__() {
   return Fill.f_FALSE__org_pepstock_charba_client_enums_Fill;
  }
- /** @override @return {boolean} */
- m_isStepped__() {
-  return DefaultLine.f_DEFAULT_STEPPED__org_pepstock_charba_client_defaults_globals_DefaultLine_;
+ /** @override @return {Stepped} */
+ m_getStepped__() {
+  return Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped;
  }
  
  static $clinit() {
@@ -77,6 +78,7 @@ class DefaultLine extends AbstractDefaultOptionsElement {
   CubicInterpolationMode = goog.module.get('org.pepstock.charba.client.enums.CubicInterpolationMode$impl');
   Fill = goog.module.get('org.pepstock.charba.client.enums.Fill$impl');
   JoinStyle = goog.module.get('org.pepstock.charba.client.enums.JoinStyle$impl');
+  Stepped = goog.module.get('org.pepstock.charba.client.enums.Stepped$impl');
  }
 }
 /**@const {number}*/
@@ -87,8 +89,6 @@ DefaultLine.f_DEFAULT_BORDER_WIDTH__org_pepstock_charba_client_defaults_globals_
 DefaultLine.f_DEFAULT_BORDER_DASH_OFFSET__org_pepstock_charba_client_defaults_globals_DefaultLine_ = 0;
 /**@const {boolean}*/
 DefaultLine.f_DEFAULT_CAP_BEZIER_POINTS__org_pepstock_charba_client_defaults_globals_DefaultLine_ = true;
-/**@const {boolean}*/
-DefaultLine.f_DEFAULT_STEPPED__org_pepstock_charba_client_defaults_globals_DefaultLine_ = false;
 IsDefaultLine.$markImplementor(DefaultLine);
 $Util.$setClassMetadata(DefaultLine, "org.pepstock.charba.client.defaults.globals.DefaultLine");
 

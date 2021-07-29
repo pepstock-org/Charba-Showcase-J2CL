@@ -6,6 +6,7 @@ const AbstractDefaultOptionsElement = goog.require('org.pepstock.charba.client.d
 
 let IsDefaultPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 
 /**
  * @implements {IsDefaultPoint}
@@ -52,14 +53,19 @@ class DefaultPoint extends AbstractDefaultOptionsElement {
   return IsDefaultPointStyleHandler.m_getPointStyle__$default__org_pepstock_charba_client_defaults_IsDefaultPointStyleHandler(this);
  }
  //Default method forwarding stub.
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return IsDefaultPointStyleHandler.m_getPointStyleAsCanvas__$default__org_pepstock_charba_client_defaults_IsDefaultPointStyleHandler(this);
+ }
+ //Default method forwarding stub.
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {
   return IsDefaultPointStyleHandler.m_getPointStyleAsImage__$default__org_pepstock_charba_client_defaults_IsDefaultPointStyleHandler(this);
  }
  //Default method forwarding stub.
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return IsDefaultPointStyleHandler.m_isPointStyleAsImage__$default__org_pepstock_charba_client_defaults_IsDefaultPointStyleHandler(this);
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return IsDefaultPointStyleHandler.m_getPointStyleType__$default__org_pepstock_charba_client_defaults_IsDefaultPointStyleHandler(this);
  }
  
  static $clinit() {

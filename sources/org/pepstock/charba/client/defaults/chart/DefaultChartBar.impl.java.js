@@ -7,6 +7,7 @@ const IsDefaultBar = goog.require('org.pepstock.charba.client.defaults.IsDefault
 let IsDefaultPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
 let BorderSkipped = goog.forwardDeclare('org.pepstock.charba.client.enums.BorderSkipped$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 
 /**
  * @implements {IsDefaultBar}
@@ -54,9 +55,13 @@ class DefaultChartBar extends j_l_Object {
  m_getPointStyle__() {
   return this.f_bar__org_pepstock_charba_client_defaults_chart_DefaultChartBar_.m_getPointStyle__();
  }
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return this.f_bar__org_pepstock_charba_client_defaults_chart_DefaultChartBar_.m_isPointStyleAsImage__();
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return this.f_bar__org_pepstock_charba_client_defaults_chart_DefaultChartBar_.m_getPointStyleType__();
+ }
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return this.f_bar__org_pepstock_charba_client_defaults_chart_DefaultChartBar_.m_getPointStyleAsCanvas__();
  }
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {

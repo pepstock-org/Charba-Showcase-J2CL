@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ID__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_AXIS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_MIN__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_MAX__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_TICKS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_LABEL_ROTATION__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_START__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_END__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_X_CENTER__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_Y_CENTER__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_DRAWING_AREA__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_POINT_LABELS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_TYPE__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_POSITION__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_OPTIONS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ID__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_AXIS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_MIN__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_MAX__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_TICKS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_LABEL_ROTATION__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_START__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_END__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_X_CENTER__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_Y_CENTER__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_DRAWING_AREA__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_POINT_LABELS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_TYPE__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_POSITION__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_OPTIONS__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_CHART__org_pepstock_charba_client_items_ScaleItem_Property, Property.$static_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property], Property));
  }
  /** @return {!Property} */
  static get f_ID__org_pepstock_charba_client_items_ScaleItem_Property() {
@@ -110,6 +110,10 @@ class Property extends Enum {
   return (Property.$clinit(), Property.$static_OPTIONS__org_pepstock_charba_client_items_ScaleItem_Property);
  }
  /** @return {!Property} */
+ static get f_CHART__org_pepstock_charba_client_items_ScaleItem_Property() {
+  return (Property.$clinit(), Property.$static_CHART__org_pepstock_charba_client_items_ScaleItem_Property);
+ }
+ /** @return {!Property} */
  static get f_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property() {
   return (Property.$clinit(), Property.$static_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property);
  }
@@ -133,6 +137,7 @@ class Property extends Enum {
   Property.$static_TYPE__org_pepstock_charba_client_items_ScaleItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TYPE"), Property.$ordinal_TYPE__org_pepstock_charba_client_items_ScaleItem_Property, "type");
   Property.$static_POSITION__org_pepstock_charba_client_items_ScaleItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POSITION"), Property.$ordinal_POSITION__org_pepstock_charba_client_items_ScaleItem_Property, "position");
   Property.$static_OPTIONS__org_pepstock_charba_client_items_ScaleItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("OPTIONS"), Property.$ordinal_OPTIONS__org_pepstock_charba_client_items_ScaleItem_Property, "options");
+  Property.$static_CHART__org_pepstock_charba_client_items_ScaleItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHART"), Property.$ordinal_CHART__org_pepstock_charba_client_items_ScaleItem_Property, "chart");
   Property.$static_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHARBA_ID"), Property.$ordinal_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property, "charbaId");
   Property.f_namesToValuesMap__org_pepstock_charba_client_items_ScaleItem_Property_ = null;
  }
@@ -178,6 +183,8 @@ Property.$static_POSITION__org_pepstock_charba_client_items_ScaleItem_Property;
 /**@private {!Property}*/
 Property.$static_OPTIONS__org_pepstock_charba_client_items_ScaleItem_Property;
 /**@private {!Property}*/
+Property.$static_CHART__org_pepstock_charba_client_items_ScaleItem_Property;
+/**@private {!Property}*/
 Property.$static_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_items_ScaleItem_Property_;
@@ -212,7 +219,9 @@ Property.$ordinal_POSITION__org_pepstock_charba_client_items_ScaleItem_Property 
 /**@const {number}*/
 Property.$ordinal_OPTIONS__org_pepstock_charba_client_items_ScaleItem_Property = 14;
 /**@const {number}*/
-Property.$ordinal_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property = 15;
+Property.$ordinal_CHART__org_pepstock_charba_client_items_ScaleItem_Property = 15;
+/**@const {number}*/
+Property.$ordinal_CHARBA_ID__org_pepstock_charba_client_items_ScaleItem_Property = 16;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.items.ScaleItem$Property");
 

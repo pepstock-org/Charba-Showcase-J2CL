@@ -5,6 +5,7 @@ goog.require('org.pepstock.charba.client.Charts');
 goog.require('org.pepstock.charba.client.Defaults');
 goog.require('org.pepstock.charba.client.Injector');
 goog.require('org.pepstock.charba.client.IsChart');
+goog.require('org.pepstock.charba.client.items.Undefined');
 goog.require('org.pepstock.charba.client.options.ScaleId');
 goog.require('org.pepstock.charba.client.options.TransitionKey');
 goog.require('org.pepstock.charba.client.plugins.AbstractExtensionPlugin');

@@ -30,10 +30,10 @@ let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commo
 let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constants$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let Merger = goog.forwardDeclare('org.pepstock.charba.client.commons.Merger$impl');
+let AxisType = goog.forwardDeclare('org.pepstock.charba.client.configuration.AxisType$impl');
 let ControllerType = goog.forwardDeclare('org.pepstock.charba.client.controllers.ControllerType$impl');
 let Controllers = goog.forwardDeclare('org.pepstock.charba.client.controllers.Controllers$impl');
 let DefaultsBuilder = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultsBuilder$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
 let ChartClickEvent = goog.forwardDeclare('org.pepstock.charba.client.events.ChartClickEvent$impl');
 let ChartHoverEvent = goog.forwardDeclare('org.pepstock.charba.client.events.ChartHoverEvent$impl');
 let IsChartEvent = goog.forwardDeclare('org.pepstock.charba.client.events.IsChartEvent$impl');
@@ -111,10 +111,10 @@ class Defaults extends j_l_Object {
   return this.f_scale__org_pepstock_charba_client_Defaults_;
  }
  /** @return {Scale} */
- m_getScale__org_pepstock_charba_client_enums_AxisType(/** AxisType */ axisType) {
+ m_getScale__org_pepstock_charba_client_configuration_AxisType(/** AxisType */ axisType) {
   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(axisType);
   if (!this.f_scaleOptions__org_pepstock_charba_client_Defaults_.containsKey(axisType.m_value__())) {
-   let storedScale = InternalDefaultScale.$create__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(axisType, this.m_getScale__(), this.f_scales__org_pepstock_charba_client_Defaults_.m_getScale__org_pepstock_charba_client_enums_AxisType_$pp_org_pepstock_charba_client(axisType));
+   let storedScale = InternalDefaultScale.$create__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(axisType, this.m_getScale__(), this.f_scales__org_pepstock_charba_client_Defaults_.m_getScale__org_pepstock_charba_client_configuration_AxisType_$pp_org_pepstock_charba_client(axisType));
    this.f_scaleOptions__org_pepstock_charba_client_Defaults_.put(axisType.m_value__(), storedScale);
   }
   return /**@type {InternalDefaultScale}*/ ($Casts.$to(this.f_scaleOptions__org_pepstock_charba_client_Defaults_.get(axisType.m_value__()), InternalDefaultScale));

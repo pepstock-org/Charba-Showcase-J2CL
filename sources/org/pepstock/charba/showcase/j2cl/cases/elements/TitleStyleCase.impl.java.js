@@ -16,7 +16,6 @@ let HTMLTableCellElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLTabl
 let $Overlay = goog.forwardDeclare('elemental2.dom.HTMLTableElement.$Overlay$impl');
 let HTMLTableRowElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLTableRowElement.$Overlay$impl');
 let Node_$Overlay = goog.forwardDeclare('elemental2.dom.Node.$Overlay$impl');
-let Integer = goog.forwardDeclare('java.lang.Integer$impl');
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let JsArrayLike_$Overlay = goog.forwardDeclare('jsinterop.base.JsArrayLike.$Overlay$impl');
 let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
@@ -29,6 +28,9 @@ let CartesianCategoryAxis = goog.forwardDeclare('org.pepstock.charba.client.conf
 let CartesianLinearAxis = goog.forwardDeclare('org.pepstock.charba.client.configuration.CartesianLinearAxis$impl');
 let LineDataset = goog.forwardDeclare('org.pepstock.charba.client.data.LineDataset$impl');
 let IsCastable_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
+let FontStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.FontStyle$impl');
+let $1 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.elements.TitleStyleCase.$1$impl');
+let $2 = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.elements.TitleStyleCase.$2$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
@@ -97,6 +99,11 @@ class TitleStyleCase extends BaseComposite {
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getLegend__().m_setDisplay__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getTitle__().m_setDisplay__boolean(true);
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getTitle__().m_setText__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init(["Changing title style on line chart"], j_l_String)));
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getTitle__().m_setFont__org_pepstock_charba_client_callbacks_FontCallback($1.$create__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase(this));
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getSubtitle__().m_setDisplay__boolean(true);
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getSubtitle__().m_setText__arrayOf_java_lang_String(/**@type {!Array<?string>}*/ ($Arrays.$init(["This is the subtitle"], j_l_String)));
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getSubtitle__().m_getFont__().m_setStyle__org_pepstock_charba_client_enums_FontStyle(FontStyle.f_NORMAL__org_pepstock_charba_client_enums_FontStyle);
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getSubtitle__().m_setFont__org_pepstock_charba_client_callbacks_FontCallback($2.$create__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase(this));
   let datasets = this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getData__().m_getDatasets__boolean(true);
   let dataset1 = /**@type {LineDataset}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_newDataset__(), LineDataset));
   dataset1.m_setLabel__java_lang_String("dataset 1");
@@ -186,9 +193,7 @@ class TitleStyleCase extends BaseComposite {
  }
  
  m_handleFontSize__() {
-  let selected = /**@type {HTMLOptionElement}*/ ($Casts.$to(JsArrayLike_$Overlay.m_getAt__$devirt__jsinterop_base_JsArrayLike__int(this.f_fontSize__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.options, this.f_fontSize__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.selectedIndex), HTMLOptionElement_$Overlay)).value;
-  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_getOptions__().m_getTitle__().m_getFont__().m_setSize__int(Integer.m_parseInt__java_lang_String(selected));
-  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_reconfigure__org_pepstock_charba_client_UpdateConfiguration(UpdateConfigurationBuilder.m_create__().m_setDuration__int(0).m_build__());
+  this.f_chart__org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase_.m_update__();
  }
  /** @private */
  $init___$p_org_pepstock_charba_showcase_j2cl_cases_elements_TitleStyleCase() {
@@ -223,7 +228,6 @@ class TitleStyleCase extends BaseComposite {
   $Overlay = goog.module.get('elemental2.dom.HTMLTableElement.$Overlay$impl');
   HTMLTableRowElement_$Overlay = goog.module.get('elemental2.dom.HTMLTableRowElement.$Overlay$impl');
   Node_$Overlay = goog.module.get('elemental2.dom.Node.$Overlay$impl');
-  Integer = goog.module.get('java.lang.Integer$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
   JsArrayLike_$Overlay = goog.module.get('jsinterop.base.JsArrayLike.$Overlay$impl');
   Defaults = goog.module.get('org.pepstock.charba.client.Defaults$impl');
@@ -236,6 +240,9 @@ class TitleStyleCase extends BaseComposite {
   CartesianLinearAxis = goog.module.get('org.pepstock.charba.client.configuration.CartesianLinearAxis$impl');
   LineDataset = goog.module.get('org.pepstock.charba.client.data.LineDataset$impl');
   IsCastable_$Overlay = goog.module.get('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
+  FontStyle = goog.module.get('org.pepstock.charba.client.enums.FontStyle$impl');
+  $1 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.elements.TitleStyleCase.$1$impl');
+  $2 = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.elements.TitleStyleCase.$2$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Primitives = goog.module.get('vmbootstrap.Primitives$impl');

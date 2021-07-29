@@ -20,7 +20,7 @@ class NativeObjectHashing extends j_l_Object {
  $ctor__org_pepstock_charba_client_commons_NativeObjectHashing__() {
   this.$ctor__java_lang_Object__();
  }
- 
+ /** @return {?} */
  static m_handleHashCode__org_pepstock_charba_client_commons_NativeObject(/** ? */ nativeObject) {
   NativeObjectHashing.$clinit();
   let newDescriptor = new Object();
@@ -29,6 +29,7 @@ class NativeObjectHashing extends j_l_Object {
   newDescriptor.enumerable = false;
   newDescriptor.value = $Objects.m_hashCode__java_lang_Object(nativeObject);
   Object.defineProperty(nativeObject, NativeObjectHashing.f_HASH_CODE_PROPERTY__org_pepstock_charba_client_commons_NativeObjectHashing_, newDescriptor);
+  return nativeObject;
  }
  
  static $clinit() {

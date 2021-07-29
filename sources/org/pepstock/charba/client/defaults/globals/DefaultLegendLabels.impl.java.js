@@ -9,6 +9,7 @@ let IsDefaultFont = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsD
 let IsDefaultPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
 let DefaultRoutedFont = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultRoutedFont$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let TextAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TextAlign$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 
@@ -62,13 +63,17 @@ class DefaultLegendLabels extends j_l_Object {
  m_getPadding__() {
   return DefaultLegendLabels.f_DEFAULT_PADDING__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_;
  }
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return DefaultLegendLabels.f_DEFAULT_POINT_STYLE_AS_IMG__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_;
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return PointStyleType.f_STRING__org_pepstock_charba_client_enums_PointStyleType;
+ }
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return Undefined.f_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined;
  }
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {
-  return DefaultLegendLabels.f_DEFAULT_POINT_STYLE_IMG__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_;
+  return Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined;
  }
  /** @override @return {TextAlign} */
  m_getTextAlign__() {
@@ -84,7 +89,6 @@ class DefaultLegendLabels extends j_l_Object {
   DefaultLegendLabels.$loadModules();
   j_l_Object.$clinit();
   IsDefaultPointStyleHandler.$clinit();
-  DefaultLegendLabels.f_DEFAULT_POINT_STYLE_IMG__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_ = Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined;
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -96,6 +100,7 @@ class DefaultLegendLabels extends j_l_Object {
   IsDefaultPointStyleHandler = goog.module.get('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
   DefaultRoutedFont = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultRoutedFont$impl');
   PointStyle = goog.module.get('org.pepstock.charba.client.enums.PointStyle$impl');
+  PointStyleType = goog.module.get('org.pepstock.charba.client.enums.PointStyleType$impl');
   TextAlign = goog.module.get('org.pepstock.charba.client.enums.TextAlign$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
  }
@@ -106,10 +111,6 @@ DefaultLegendLabels.f_DEFAULT_PADDING__org_pepstock_charba_client_defaults_globa
 DefaultLegendLabels.f_DEFAULT_BOX_WIDTH__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_ = 40;
 /**@const {boolean}*/
 DefaultLegendLabels.f_DEFAULT_USE_POINT_STYLE__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_ = false;
-/**@const {boolean}*/
-DefaultLegendLabels.f_DEFAULT_POINT_STYLE_AS_IMG__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_ = false;
-/**@type {HTMLImageElement}*/
-DefaultLegendLabels.f_DEFAULT_POINT_STYLE_IMG__org_pepstock_charba_client_defaults_globals_DefaultLegendLabels_;
 IsDefaultLegendLabels.$markImplementor(DefaultLegendLabels);
 $Util.$setClassMetadata(DefaultLegendLabels, "org.pepstock.charba.client.defaults.globals.DefaultLegendLabels");
 

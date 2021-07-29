@@ -47,6 +47,14 @@ class Decimation extends ConfigurationOptionsContainer {
   return this.m_getConfiguration__().m_getDecimation__().m_getSamples__();
  }
  
+ m_setThreshold__double(/** number */ threshold) {
+  this.m_getConfiguration__().m_getDecimation__().m_setThreshold__double(threshold);
+ }
+ /** @return {number} */
+ m_getThreshold__() {
+  return this.m_getConfiguration__().m_getDecimation__().m_getThreshold__();
+ }
+ 
  static $clinit() {
   Decimation.$clinit = () =>{};
   Decimation.$loadModules();

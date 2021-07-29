@@ -10,6 +10,7 @@ goog.require('org.pepstock.charba.client.colors.IsColor');
 goog.require('org.pepstock.charba.client.colors.Pattern');
 goog.require('org.pepstock.charba.client.colors.PatternBuilder');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
+goog.require('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation');
 goog.require('org.pepstock.charba.client.enums.ColorType');
 goog.require('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor');
 goog.require('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions.Property');

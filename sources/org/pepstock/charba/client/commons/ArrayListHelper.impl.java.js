@@ -8,6 +8,7 @@ let Collections = goog.forwardDeclare('java.util.Collections$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
+let ArrayCanvasList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayCanvasList$impl');
 let ArrayDoubleArrayList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDoubleArrayList$impl');
 let ArrayDoubleList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDoubleList$impl');
 let ArrayEnumList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayEnumList$impl');
@@ -57,6 +58,11 @@ class ArrayListHelper extends j_l_Object {
  static m_list__org_pepstock_charba_client_commons_ArrayImage(/** Array */ values) {
   ArrayListHelper.$clinit();
   return ArrayImageList.$create__org_pepstock_charba_client_commons_ArrayImage(values);
+ }
+ /** @return {ArrayCanvasList} */
+ static m_list__org_pepstock_charba_client_commons_ArrayCanvas(/** Array */ values) {
+  ArrayListHelper.$clinit();
+  return ArrayCanvasList.$create__org_pepstock_charba_client_commons_ArrayCanvas(values);
  }
  /** @return {ArrayStringList} */
  static m_list__arrayOf_org_pepstock_charba_client_colors_IsColor(/** Array<IsColor> */ values) {
@@ -112,6 +118,11 @@ class ArrayListHelper extends j_l_Object {
   ArrayListHelper.$clinit();
   return /**@type {List<HTMLImageElement>}*/ (Collections.m_unmodifiableList__java_util_List(ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayImage(values)));
  }
+ /** @return {List<HTMLCanvasElement>} */
+ static m_unmodifiableList__org_pepstock_charba_client_commons_ArrayCanvas(/** Array */ values) {
+  ArrayListHelper.$clinit();
+  return /**@type {List<HTMLCanvasElement>}*/ (Collections.m_unmodifiableList__java_util_List(ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayCanvas(values)));
+ }
  /** @template E @return {List<E>} */
  static m_unmodifiableList__arrayOf_org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key(/** Array<E> */ enumValues, /** Array<E> */ values) {
   ArrayListHelper.$clinit();
@@ -151,6 +162,7 @@ class ArrayListHelper extends j_l_Object {
  static $loadModules() {
   Collections = goog.module.get('java.util.Collections$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  ArrayCanvasList = goog.module.get('org.pepstock.charba.client.commons.ArrayCanvasList$impl');
   ArrayDoubleArrayList = goog.module.get('org.pepstock.charba.client.commons.ArrayDoubleArrayList$impl');
   ArrayDoubleList = goog.module.get('org.pepstock.charba.client.commons.ArrayDoubleList$impl');
   ArrayEnumList = goog.module.get('org.pepstock.charba.client.commons.ArrayEnumList$impl');

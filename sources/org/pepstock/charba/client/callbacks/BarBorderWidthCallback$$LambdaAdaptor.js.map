@@ -2,7 +2,7 @@
 "version":3,
 "file":"BarBorderWidthCallback$$LambdaAdaptor.impl.java.js",
 "lineCount":41,
-"mappings":"A;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,oK;;;CAAA,0J;EAAAC,iC;EAAAA,2F;;;CAAA,6D;EAAAC,iD;EAAAA,4H;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wF;EAAAA,oK;;;CAAA,0J;EAAAC,iC;EAAAA,2F;;;CAAA,6D;EAAAC,iD;EAAAA,4H;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["BarBorderWidthCallback.java"],
 "names":["org.pepstock.charba.client.callbacks.BarBorderWidthCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.BarBorderWidthCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.BarBorderWidthCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.BarBorderWidthCallback$$LambdaAdaptor.<clinit>"]
 }

@@ -149,6 +149,7 @@ class Utilities extends j_l_Object {
  }
  /** @return {?string} */
  static m_getImageURLFromCanvasPattern__org_pepstock_charba_client_dom_elements_CanvasPatternItem__int__int(/** CanvasPattern */ pattern, /** number */ width, /** number */ height) {
+  Utilities.$clinit();
   if ($Equality.$same(pattern, null) || $Equality.$same(Utilities.f_WORKING_CANVAS__org_pepstock_charba_client_utils_Utilities_, null)) {
    return Constants.f_EMPTY_STRING__org_pepstock_charba_client_commons_Constants;
   }

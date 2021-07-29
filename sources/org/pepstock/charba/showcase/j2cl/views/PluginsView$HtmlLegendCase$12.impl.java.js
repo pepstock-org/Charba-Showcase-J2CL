@@ -5,7 +5,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const CaseFactory = goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseFactory$impl');
 
 let BaseComposite = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite$impl');
-let HtmlLegendCustomCallbackCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase$impl');
+let HtmlLegendPointStylesAsCanvasCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPointStylesAsCanvasCase$impl');
 
 /**
  * @implements {CaseFactory}
@@ -28,7 +28,7 @@ class $12 extends j_l_Object {
  }
  /** @override @return {BaseComposite} */
  m_create__() {
-  return HtmlLegendCustomCallbackCase.$create__();
+  return HtmlLegendPointStylesAsCanvasCase.$create__();
  }
  
  static $clinit() {
@@ -42,7 +42,7 @@ class $12 extends j_l_Object {
  }
  
  static $loadModules() {
-  HtmlLegendCustomCallbackCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendCustomCallbackCase$impl');
+  HtmlLegendPointStylesAsCanvasCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPointStylesAsCanvasCase$impl');
  }
 }
 CaseFactory.$markImplementor($12);

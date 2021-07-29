@@ -10,7 +10,7 @@ let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$im
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let IsDefaultScales = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScales$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let ChartAxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.ChartAxisType$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let Options = goog.forwardDeclare('org.pepstock.charba.client.options.Options$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
@@ -60,7 +60,7 @@ class ExtendedScales extends Scales {
       let type = scale.m_getType__();
       Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(type);
       let id = this.m_checkAndGetScaleId__org_pepstock_charba_client_options_Scale_$p_org_pepstock_charba_client_options_ExtendedScales(scale);
-      if ($Objects.m_equals__java_lang_Object__java_lang_Object(AxisType.f_RADIAL_LINEAR__org_pepstock_charba_client_enums_AxisType, type) && (index > 0 || scales.length != 1)) {
+      if ($Objects.m_equals__java_lang_Object__java_lang_Object(ChartAxisType.f_RADIAL_LINEAR__org_pepstock_charba_client_enums_ChartAxisType, type.m_getBaseType__()) && (index > 0 || scales.length != 1)) {
        throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("A radial linear scale can not be added to a scales with other scales"));
       }
       this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObjectContainer(id, scale);
@@ -99,7 +99,7 @@ class ExtendedScales extends Scales {
   Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
-  AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
+  ChartAxisType = goog.module.get('org.pepstock.charba.client.enums.ChartAxisType$impl');
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');

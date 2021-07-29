@@ -47,7 +47,7 @@ class AxisPosition extends Enum {
  /** @return {!Array<!AxisPosition>} */
  static m_values__() {
   AxisPosition.$clinit();
-  return /**@type {!Array<AxisPosition>}*/ ($Arrays.$init([AxisPosition.$static_CENTER__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_TOP__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_LEFT__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_BOTTOM__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_RIGHT__org_pepstock_charba_client_enums_AxisPosition], AxisPosition));
+  return /**@type {!Array<AxisPosition>}*/ ($Arrays.$init([AxisPosition.$static_CENTER__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_TOP__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_LEFT__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_BOTTOM__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_RIGHT__org_pepstock_charba_client_enums_AxisPosition, AxisPosition.$static_CHART_AREA__org_pepstock_charba_client_enums_AxisPosition], AxisPosition));
  }
  /** @return {!AxisPosition} */
  static get f_CENTER__org_pepstock_charba_client_enums_AxisPosition() {
@@ -69,6 +69,10 @@ class AxisPosition extends Enum {
  static get f_RIGHT__org_pepstock_charba_client_enums_AxisPosition() {
   return (AxisPosition.$clinit(), AxisPosition.$static_RIGHT__org_pepstock_charba_client_enums_AxisPosition);
  }
+ /** @return {!AxisPosition} */
+ static get f_CHART_AREA__org_pepstock_charba_client_enums_AxisPosition() {
+  return (AxisPosition.$clinit(), AxisPosition.$static_CHART_AREA__org_pepstock_charba_client_enums_AxisPosition);
+ }
  
  static $clinit() {
   AxisPosition.$clinit = () =>{};
@@ -79,6 +83,7 @@ class AxisPosition extends Enum {
   AxisPosition.$static_LEFT__org_pepstock_charba_client_enums_AxisPosition = AxisPosition.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LEFT"), AxisPosition.$ordinal_LEFT__org_pepstock_charba_client_enums_AxisPosition, "left");
   AxisPosition.$static_BOTTOM__org_pepstock_charba_client_enums_AxisPosition = AxisPosition.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BOTTOM"), AxisPosition.$ordinal_BOTTOM__org_pepstock_charba_client_enums_AxisPosition, "bottom");
   AxisPosition.$static_RIGHT__org_pepstock_charba_client_enums_AxisPosition = AxisPosition.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RIGHT"), AxisPosition.$ordinal_RIGHT__org_pepstock_charba_client_enums_AxisPosition, "right");
+  AxisPosition.$static_CHART_AREA__org_pepstock_charba_client_enums_AxisPosition = AxisPosition.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHART_AREA"), AxisPosition.$ordinal_CHART_AREA__org_pepstock_charba_client_enums_AxisPosition, "chartArea");
   AxisPosition.f_namesToValuesMap__org_pepstock_charba_client_enums_AxisPosition_ = null;
  }
  /** @return {boolean} */
@@ -102,6 +107,8 @@ AxisPosition.$static_LEFT__org_pepstock_charba_client_enums_AxisPosition;
 AxisPosition.$static_BOTTOM__org_pepstock_charba_client_enums_AxisPosition;
 /**@private {!AxisPosition}*/
 AxisPosition.$static_RIGHT__org_pepstock_charba_client_enums_AxisPosition;
+/**@private {!AxisPosition}*/
+AxisPosition.$static_CHART_AREA__org_pepstock_charba_client_enums_AxisPosition;
 /**@type {Map<?string, !AxisPosition>}*/
 AxisPosition.f_namesToValuesMap__org_pepstock_charba_client_enums_AxisPosition_;
 /**@const {number}*/
@@ -114,6 +121,8 @@ AxisPosition.$ordinal_LEFT__org_pepstock_charba_client_enums_AxisPosition = 2;
 AxisPosition.$ordinal_BOTTOM__org_pepstock_charba_client_enums_AxisPosition = 3;
 /**@const {number}*/
 AxisPosition.$ordinal_RIGHT__org_pepstock_charba_client_enums_AxisPosition = 4;
+/**@const {number}*/
+AxisPosition.$ordinal_CHART_AREA__org_pepstock_charba_client_enums_AxisPosition = 5;
 Key.$markImplementor(AxisPosition);
 $Util.$setClassMetadataForEnum(AxisPosition, "org.pepstock.charba.client.enums.AxisPosition");
 

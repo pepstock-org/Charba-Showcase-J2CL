@@ -4,7 +4,7 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const CaseFactory = goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseFactory$impl');
 
-let TitleClickEventCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase$impl');
+let TitleEventsCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase$impl');
 let BaseComposite = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite$impl');
 
 /**
@@ -28,7 +28,7 @@ class $8 extends j_l_Object {
  }
  /** @override @return {BaseComposite} */
  m_create__() {
-  return TitleClickEventCase.$create__();
+  return TitleEventsCase.$create__();
  }
  
  static $clinit() {
@@ -42,7 +42,7 @@ class $8 extends j_l_Object {
  }
  
  static $loadModules() {
-  TitleClickEventCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.charts.TitleClickEventCase$impl');
+  TitleEventsCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase$impl');
  }
 }
 CaseFactory.$markImplementor($8);

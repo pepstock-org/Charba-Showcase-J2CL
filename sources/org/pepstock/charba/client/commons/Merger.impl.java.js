@@ -103,7 +103,7 @@ class Merger extends j_l_Object {
     let scaleObject = NativeObjectUtils.m_getObjectProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String(scales, storedScale.m_getId__().m_value__());
     let type = storedScale.m_getType__();
     if (Key.m_isValid__org_pepstock_charba_client_commons_Key(type)) {
-     let axisDefault = Defaults.m_get__().m_getScale__org_pepstock_charba_client_enums_AxisType(type);
+     let axisDefault = Defaults.m_get__().m_getScale__org_pepstock_charba_client_configuration_AxisType(type);
      let tempObject = this.m_mergeNativeObjects__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_commons_Merger(scaleObject, axisDefault.m_getNativeObject__());
      NativeObjectUtils.m_defineObjectProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_commons_NativeObject(scales, storedScale.m_getId__().m_value__(), this.m_mergeNativeObjects__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_commons_NativeObject_$p_org_pepstock_charba_client_commons_Merger(tempObject, scaleOptions));
     } else {

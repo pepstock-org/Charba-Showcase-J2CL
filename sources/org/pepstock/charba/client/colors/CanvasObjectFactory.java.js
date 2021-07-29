@@ -25,6 +25,7 @@ goog.require('org.pepstock.charba.client.dom.elements.Canvas.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay');
+goog.require('org.pepstock.charba.client.items.IsArea');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.Exceptions');
 goog.require('vmbootstrap.Objects');

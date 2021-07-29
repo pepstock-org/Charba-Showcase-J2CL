@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsColorAxis.impl.java.js",
+"lineCount":121,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA6BU,W;;CAQO,a;;CAOH,4D,gBAAwBA,Y;;CASxB,mC,gBAAuBA,Y;;CAarB,2B;;CAgBC,mB;;CASH,kB,eAAgBC,Q;;CAajB,e;;CAgBC,kE,oBAA2BC,W;;CAapB,kB;;CAgBP,8E,4BAAmCC,mB;;CAapB,0B;;QArInB,M;EAAAC,sB;EAAAA,8B;;;QAeI,kH,8CAAwBJ,Y;EAAxBK,sB;EACZA,kI;;;QAQY,yF,8CAAuBL,Y;EAAvBK,sB;EAEZA;GAECA,8GAFDA;G;;;QAWc,+E;EAAAC,sB;EAEdA;GAECA,iGAFDA;G;EAMAA,mF;;;QAQe,uE;EAAAC,sB;EACfA,sF;;;QAQY,wE,6CAAgBN,Q;EAAhBO,sB;EAEZA;GAECA,yFAFDA;G;;;QAWW,mE;EAAAC,sB;EAEXA;GAECA,qFAFDA;G;EAMAA,8E;;;QAQY,wH,kDAA2BP,W;EAA3BQ,sB;EAEZA;GAECA,4IAFDA;G;;;QAWmB,sE;EAAAC,sB;EAEnBA;GAECA,wFAFDA;G;EAMAA,6E;;;QAQY,oI,0DAAmCR,mB;EAAnCO,sB;EAEZA;GAECA,gKAFDA;G;;;QAW2B,8E;EAAAE,sB;EAE3BA;GAECA,gGAFDA;G;EAMAA,Y;;;QA7IQ,O;EAAAC,8B;EAAAA,2B;EAAAA;",
+"sources":["IsColorAxis.java"],
+"names":["missingColor","quantize","interpolate","interpolateCallback","org.pepstock.charba.client.geo.IsColorAxis.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.IsColorAxis.setMissingColor__$default","org.pepstock.charba.client.geo.IsColorAxis.getMissingColorAsString__$default","org.pepstock.charba.client.geo.IsColorAxis.getMissingColor__$default","org.pepstock.charba.client.geo.IsColorAxis.setQuantize__$default","org.pepstock.charba.client.geo.IsColorAxis.getQuantize__$default","org.pepstock.charba.client.geo.IsColorAxis.setInterpolate__$default","org.pepstock.charba.client.geo.IsColorAxis.getInterpolate__$default","org.pepstock.charba.client.geo.IsColorAxis.getInterpolateCallback__$default","org.pepstock.charba.client.geo.IsColorAxis.<clinit>"]
+}
+

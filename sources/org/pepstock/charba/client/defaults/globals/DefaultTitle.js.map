@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"DefaultTitle.impl.java.js",
-"lineCount":97,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA8BmB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAQc,iEARdA,C;EAAAA;OAUW,oEAVXA,C;;;QAelB,S;EAAAC,uB;EAAAA,mC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;EAAAA,2E;;;CAUqB,W;EACpBC,8E;;;CASuB,c;EACvBC,iF;;;CASc,a;EACdC,iG;;;CASe,e;EACfC,iE;;;CASc,c;EACdC,mG;;;CASmB,Y;EACnBC,4E;;;CASa,oB;EACbC,iE;;;CAtFiB,mE;EAQlBP,uG;EAEAA,mM;;;QAVkB,O;EAAAQ,+B;EAAAA,4B;EAAAA,qB;;;;;;;;;;;;;;;AAElB;aAAyB,4EAAzB,M;AAEA;aAA6B,8EAA7B,Q;AAEA;aAA6B,4EAA7B;",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;;;;;MA2BmB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAIc,iEAJdA,C;EAAAA;OAMW,oEANXA,C;;;QAWlB,S;EAAAC,uB;EAAAA,mC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iF;EAAAA,2E;;;CAUqB,W;EACpBC,8E;;;CASuB,c;EACvBC,iF;;;CAhCiB,mE;EAIlBF,uG;EAEAA,mM;;;QANkB,O;EAAAG,+B;EAAAA,4B;EAAAA,+B;;;;;;;;;;;;AAElB;aAAyB,4EAAzB;",
 "sources":["DefaultTitle.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultTitle.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTitle.<init>","org.pepstock.charba.client.defaults.globals.DefaultTitle.getFont","org.pepstock.charba.client.defaults.globals.DefaultTitle.getPadding","org.pepstock.charba.client.defaults.globals.DefaultTitle.isDisplay","org.pepstock.charba.client.defaults.globals.DefaultTitle.getPosition","org.pepstock.charba.client.defaults.globals.DefaultTitle.isFullSize","org.pepstock.charba.client.defaults.globals.DefaultTitle.getAlign","org.pepstock.charba.client.defaults.globals.DefaultTitle.getColorAsString","org.pepstock.charba.client.defaults.globals.DefaultTitle.<clinit>"]
+"names":["org.pepstock.charba.client.defaults.globals.DefaultTitle.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTitle.<init>","org.pepstock.charba.client.defaults.globals.DefaultTitle.getFont","org.pepstock.charba.client.defaults.globals.DefaultTitle.getPadding","org.pepstock.charba.client.defaults.globals.DefaultTitle.<clinit>"]
 }
 

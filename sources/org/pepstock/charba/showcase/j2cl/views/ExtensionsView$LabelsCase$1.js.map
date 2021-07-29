@@ -2,7 +2,7 @@
 "version":3,
 "file":"ExtensionsView$LabelsCase$1.impl.java.js",
 "lineCount":37,
-"mappings":"A;;;;;;;;;;;;MA+M8C,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EAAAC,iC;;;CACtB,U;EACpBC,iC;;;QAF0C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAqN8C,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EAAAC,iC;;;CACtB,U;EACpBC,iC;;;QAF0C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ExtensionsView.java"],
 "names":["org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase$1.<init>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase$1.create","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$LabelsCase$1.<clinit>"]
 }

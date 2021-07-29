@@ -3,6 +3,7 @@ goog.module('org.pepstock.charba.client.impl.plugins.IsChartBackgroundColorDefau
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.colors.Gradient');
 goog.require('org.pepstock.charba.client.colors.Pattern');
+goog.require('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation');
 goog.require('org.pepstock.charba.client.enums.ColorType');
 goog.require('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor');
 

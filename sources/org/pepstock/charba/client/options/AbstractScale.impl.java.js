@@ -335,6 +335,22 @@ class AbstractScale extends AbstractModel {
  m_getBounds__() {
   return /**@type {Bounds}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_BOUNDS__org_pepstock_charba_client_options_AbstractScale_Property, Bounds.m_values__(), /**@type {IsDefaultScale}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultScale)).m_getBounds__()), Bounds));
  }
+ 
+ m_setStack__java_lang_String(/** ?string */ stack) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_STACK__org_pepstock_charba_client_options_AbstractScale_Property, stack);
+ }
+ /** @override @return {?string} */
+ m_getStack__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_STACK__org_pepstock_charba_client_options_AbstractScale_Property, /**@type {IsDefaultScale}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultScale)).m_getStack__());
+ }
+ 
+ m_setStackWeight__double(/** number */ stackWeight) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__double(Property.f_STACK_WEIGHT__org_pepstock_charba_client_options_AbstractScale_Property, stackWeight);
+ }
+ /** @override @return {number} */
+ m_getStackWeight__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_STACK_WEIGHT__org_pepstock_charba_client_options_AbstractScale_Property, /**@type {IsDefaultScale}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultScale)).m_getStackWeight__());
+ }
  /** @override */
  m_setLabels__arrayOf_java_lang_String(/** Array<?string> */ labels) {
   HasLabels.m_setLabels__$default__org_pepstock_charba_client_data_HasLabels__arrayOf_java_lang_String(this, labels);

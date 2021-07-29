@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BubbleMapChart.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;MAyBmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAWa,yDAXbA,C;;;QAgBX,S;EAAAC,yB;EAAAA,qC;EAAAA,mE;EAAAA,iB;;;CAAA,sD;EACNC,gL;EAEAA,mO;;;CASuB,c;EACvBC,sE;;;CASuB,qB,gBAAmBC,M;EAE1CC,oC;;;CASc,wD;EACdC,6F;;;QA5CD,oE;EAAAC,yH;;;QANkB,O;EAAAC,iC;EAAAA,8B;EAAAA,uB;EAMlBA,wc;;;;;;;;;;;;;;AAJA;eAG2B,qDAH3B,e;AAFkB;;",
+"sources":["BubbleMapChart.java"],
+"names":["org.pepstock.charba.client.geo.BubbleMapChart.<synthetic: ctor_js>","org.pepstock.charba.client.geo.BubbleMapChart.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapChart.<init>","org.pepstock.charba.client.geo.BubbleMapChart.getOptions","hidden","org.pepstock.charba.client.geo.BubbleMapChart.newDataset","org.pepstock.charba.client.geo.BubbleMapChart.getControllerType","org.pepstock.charba.client.geo.BubbleMapChart.<synthetic: getter>","org.pepstock.charba.client.geo.BubbleMapChart.<clinit>"]
+}
+

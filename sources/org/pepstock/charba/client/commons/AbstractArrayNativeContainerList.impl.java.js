@@ -142,6 +142,10 @@ class AbstractArrayNativeContainerList extends AbstractArrayContainerList {
  toArray() {
   return this.f_delegate__org_pepstock_charba_client_commons_AbstractArrayNativeContainerList_.toArray();
  }
+ /** @override @template T @return {Array<T>} */
+ m_toArray__arrayOf_java_lang_Object(/** Array<T> */ a) {
+  return this.f_delegate__org_pepstock_charba_client_commons_AbstractArrayNativeContainerList_.m_toArray__arrayOf_java_lang_Object(a);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_commons_AbstractArrayNativeContainerList() {
   this.f_delegate__org_pepstock_charba_client_commons_AbstractArrayNativeContainerList_ = /**@type {!LinkedList<E>}*/ (LinkedList.$create__());

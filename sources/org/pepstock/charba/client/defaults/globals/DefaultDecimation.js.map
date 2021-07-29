@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"DefaultDecimation.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;MA0BmB,iB;;CAAA,W;EAAAA,Q;;;QASlB,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAUe,a;EACdC,2G;;;CAS0B,gB;EAC1BC,2F;;;CASa,c;EACbC,2G;;;QAxCiB,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;;;;;;;;;;;AAElB;kBAA6B,iFAA7B,S;AAEA;kBAA4B,iFAA5B;",
+"lineCount":64,
+"mappings":"A;;;;;;;;;;;MA0BmB,iB;;CAAA,W;EAAAA,Q;;;QAWlB,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAUe,a;EACdC,2G;;;CAS0B,gB;EAC1BC,2F;;;CASa,c;EACbC,2G;;;CASa,gB;EACbC,6G;;;QApDiB,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;;;;;;;;;;;AAElB;kBAA6B,iFAA7B,S;AAEA;kBAA4B,iFAA5B,O;AAEA;kBAA4B,mFAA5B;",
 "sources":["DefaultDecimation.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultDecimation.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultDecimation.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultDecimation.<init>","org.pepstock.charba.client.defaults.globals.DefaultDecimation.isEnabled","org.pepstock.charba.client.defaults.globals.DefaultDecimation.getAlgorithm","org.pepstock.charba.client.defaults.globals.DefaultDecimation.getSamples","org.pepstock.charba.client.defaults.globals.DefaultDecimation.<clinit>"]
+"names":["org.pepstock.charba.client.defaults.globals.DefaultDecimation.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultDecimation.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultDecimation.<init>","org.pepstock.charba.client.defaults.globals.DefaultDecimation.isEnabled","org.pepstock.charba.client.defaults.globals.DefaultDecimation.getAlgorithm","org.pepstock.charba.client.defaults.globals.DefaultDecimation.getSamples","org.pepstock.charba.client.defaults.globals.DefaultDecimation.getThreshold","org.pepstock.charba.client.defaults.globals.DefaultDecimation.<clinit>"]
 }
 

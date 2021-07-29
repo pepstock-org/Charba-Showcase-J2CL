@@ -11,20 +11,24 @@ let Date = goog.forwardDeclare('java.util.Date$impl');
 let LinkedList = goog.forwardDeclare('java.util.LinkedList$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let Chart_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.Chart.$Overlay$impl');
+let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
 let CallbacksEnvelop = goog.forwardDeclare('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
 let Array_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.Array.$Overlay$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayMixedObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayMixedObject.$Overlay$impl');
 let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
+let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constants$impl');
 let Envelop = goog.forwardDeclare('org.pepstock.charba.client.commons.Envelop$impl');
 let ImmutableDate = goog.forwardDeclare('org.pepstock.charba.client.commons.ImmutableDate$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
+let AxisType = goog.forwardDeclare('org.pepstock.charba.client.configuration.AxisType$impl');
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let ChartAxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.ChartAxisType$impl');
 let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$impl');
 let ScaleDataType = goog.forwardDeclare('org.pepstock.charba.client.enums.ScaleDataType$impl');
 let JsItemsHelper = goog.forwardDeclare('org.pepstock.charba.client.items.JsItemsHelper$impl');
@@ -86,6 +90,10 @@ class ScaleItem extends BaseBoxNodeItem {
   this.$ctor__org_pepstock_charba_client_items_BaseBoxNodeItem__org_pepstock_charba_client_commons_NativeObject(nativeObject);
   this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_ = null;
  }
+ /** @return {IsChart} */
+ m_getChart__() {
+  return Chart_$Overlay.m_getChart__$devirt__org_pepstock_charba_client_Chart(this.m_getNativeChart__org_pepstock_charba_client_commons_Key(Property.f_CHART__org_pepstock_charba_client_items_ScaleItem_Property));
+ }
  /** @return {ScaleId} */
  m_getId__() {
   if ($Equality.$same(this.f_scaleId__org_pepstock_charba_client_items_ScaleItem_, null)) {
@@ -110,7 +118,10 @@ class ScaleItem extends BaseBoxNodeItem {
  }
  /** @return {AxisType} */
  m_getType__() {
-  return /**@type {AxisType}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_TYPE__org_pepstock_charba_client_items_ScaleItem_Property, AxisType.m_values__(), AxisType.f_CATEGORY__org_pepstock_charba_client_enums_AxisType), AxisType));
+  Checker.m_assertCheck__boolean__java_lang_String(this.m_has__org_pepstock_charba_client_commons_Key(Property.f_TYPE__org_pepstock_charba_client_items_ScaleItem_Property), "The scale does not contain any type");
+  let type = this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_TYPE__org_pepstock_charba_client_items_ScaleItem_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined);
+  Checker.m_checkIfValid__java_lang_Object__java_lang_String(type, "The scale does not contain a consistent type");
+  return AxisType.m_checkAndGet__java_lang_String(type);
  }
  /** @return {number} */
  m_getMax__() {
@@ -130,14 +141,14 @@ class ScaleItem extends BaseBoxNodeItem {
  }
  /** @return {Date} */
  m_getMaxAsDate__() {
-  if ($Objects.m_equals__java_lang_Object__java_lang_Object(AxisType.f_TIME__org_pepstock_charba_client_enums_AxisType, this.m_getType__()) || $Objects.m_equals__java_lang_Object__java_lang_Object(AxisType.f_TIMESERIES__org_pepstock_charba_client_enums_AxisType, this.m_getType__())) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(ChartAxisType.f_TIME__org_pepstock_charba_client_enums_ChartAxisType, this.m_getType__().m_getBaseType__()) || $Objects.m_equals__java_lang_Object__java_lang_Object(ChartAxisType.f_TIMESERIES__org_pepstock_charba_client_enums_ChartAxisType, this.m_getType__().m_getBaseType__())) {
    return this.m_getValue__org_pepstock_charba_client_commons_Key__java_util_Date(Property.f_MAX__org_pepstock_charba_client_items_ScaleItem_Property, /**@type {Date}*/ (null));
   }
   return null;
  }
  /** @return {Date} */
  m_getMinAsDate__() {
-  if ($Objects.m_equals__java_lang_Object__java_lang_Object(AxisType.f_TIME__org_pepstock_charba_client_enums_AxisType, this.m_getType__()) || $Objects.m_equals__java_lang_Object__java_lang_Object(AxisType.f_TIMESERIES__org_pepstock_charba_client_enums_AxisType, this.m_getType__())) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(ChartAxisType.f_TIME__org_pepstock_charba_client_enums_ChartAxisType, this.m_getType__().m_getBaseType__()) || $Objects.m_equals__java_lang_Object__java_lang_Object(ChartAxisType.f_TIMESERIES__org_pepstock_charba_client_enums_ChartAxisType, this.m_getType__().m_getBaseType__())) {
    return this.m_getValue__org_pepstock_charba_client_commons_Key__java_util_Date(Property.f_MIN__org_pepstock_charba_client_items_ScaleItem_Property, /**@type {Date}*/ (null));
   }
   return null;
@@ -311,20 +322,23 @@ class ScaleItem extends BaseBoxNodeItem {
   Collections = goog.module.get('java.util.Collections$impl');
   LinkedList = goog.module.get('java.util.LinkedList$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  Chart_$Overlay = goog.module.get('org.pepstock.charba.client.Chart.$Overlay$impl');
   CallbacksEnvelop = goog.module.get('org.pepstock.charba.client.callbacks.CallbacksEnvelop$impl');
   Array_$Overlay = goog.module.get('org.pepstock.charba.client.commons.Array.$Overlay$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ArrayMixedObject_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayMixedObject.$Overlay$impl');
   ArrayObject_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
+  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
   Envelop = goog.module.get('org.pepstock.charba.client.commons.Envelop$impl');
   ImmutableDate = goog.module.get('org.pepstock.charba.client.commons.ImmutableDate$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
+  AxisType = goog.module.get('org.pepstock.charba.client.configuration.AxisType$impl');
   AxisKind = goog.module.get('org.pepstock.charba.client.enums.AxisKind$impl');
-  AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
+  ChartAxisType = goog.module.get('org.pepstock.charba.client.enums.ChartAxisType$impl');
   Position = goog.module.get('org.pepstock.charba.client.enums.Position$impl');
   ScaleDataType = goog.module.get('org.pepstock.charba.client.enums.ScaleDataType$impl');
   JsItemsHelper = goog.module.get('org.pepstock.charba.client.items.JsItemsHelper$impl');

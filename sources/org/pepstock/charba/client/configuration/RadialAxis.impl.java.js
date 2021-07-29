@@ -5,15 +5,17 @@ const Axis = goog.require('org.pepstock.charba.client.configuration.Axis$impl');
 const IsLinearAxis = goog.require('org.pepstock.charba.client.configuration.IsLinearAxis$impl');
 
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
+let AxisType = goog.forwardDeclare('org.pepstock.charba.client.configuration.AxisType$impl');
 let Grid = goog.forwardDeclare('org.pepstock.charba.client.configuration.Grid$impl');
 let IsNumericAxis = goog.forwardDeclare('org.pepstock.charba.client.configuration.IsNumericAxis$impl');
 let RadialAngleLines = goog.forwardDeclare('org.pepstock.charba.client.configuration.RadialAngleLines$impl');
 let RadialLinearTick = goog.forwardDeclare('org.pepstock.charba.client.configuration.RadialLinearTick$impl');
 let RadialPointLabels = goog.forwardDeclare('org.pepstock.charba.client.configuration.RadialPointLabels$impl');
 let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let ChartAxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.ChartAxisType$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
 let ExtendedScale = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedScale$impl');
+let ScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
@@ -32,6 +34,7 @@ class RadialAxis extends Axis {
   /**@type {RadialPointLabels}*/
   this.f_pointLabels__org_pepstock_charba_client_configuration_RadialAxis_;
  }
+ //Factory method corresponding to constructor 'RadialAxis(IsChart)'.
  /** @return {!RadialAxis} */
  static $create__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
   RadialAxis.$clinit();
@@ -39,9 +42,23 @@ class RadialAxis extends Axis {
   $instance.$ctor__org_pepstock_charba_client_configuration_RadialAxis__org_pepstock_charba_client_IsChart(chart);
   return $instance;
  }
+ //Initialization from constructor 'RadialAxis(IsChart)'.
  
  $ctor__org_pepstock_charba_client_configuration_RadialAxis__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
-  this.$ctor__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, DefaultScaleId.f_R__org_pepstock_charba_client_enums_DefaultScaleId, AxisType.f_RADIAL_LINEAR__org_pepstock_charba_client_enums_AxisType, AxisKind.f_R__org_pepstock_charba_client_enums_AxisKind);
+  this.$ctor__org_pepstock_charba_client_configuration_RadialAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, DefaultScaleId.f_R__org_pepstock_charba_client_enums_DefaultScaleId, ChartAxisType.f_RADIAL_LINEAR__org_pepstock_charba_client_enums_ChartAxisType, AxisKind.f_R__org_pepstock_charba_client_enums_AxisKind);
+ }
+ //Factory method corresponding to constructor 'RadialAxis(IsChart, ScaleId, AxisType, AxisKind)'.
+ /** @return {!RadialAxis} */
+ static $create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+  RadialAxis.$clinit();
+  let $instance = new RadialAxis();
+  $instance.$ctor__org_pepstock_charba_client_configuration_RadialAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
+  return $instance;
+ }
+ //Initialization from constructor 'RadialAxis(IsChart, ScaleId, AxisType, AxisKind)'.
+ 
+ $ctor__org_pepstock_charba_client_configuration_RadialAxis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(/** IsChart */ chart, /** ScaleId */ id, /** AxisType */ type, /** AxisKind */ kind) {
+  this.$ctor__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_options_ScaleId__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_enums_AxisKind(chart, id, type, kind);
   this.f_pointLabels__org_pepstock_charba_client_configuration_RadialAxis_ = RadialPointLabels.$create__org_pepstock_charba_client_configuration_Axis(this);
   this.f_grid__org_pepstock_charba_client_configuration_RadialAxis_ = Grid.$create__org_pepstock_charba_client_configuration_Axis(this);
   this.f_ticks__org_pepstock_charba_client_configuration_RadialAxis_ = RadialLinearTick.$create__org_pepstock_charba_client_configuration_Axis(this);
@@ -152,7 +169,7 @@ class RadialAxis extends Axis {
   RadialLinearTick = goog.module.get('org.pepstock.charba.client.configuration.RadialLinearTick$impl');
   RadialPointLabels = goog.module.get('org.pepstock.charba.client.configuration.RadialPointLabels$impl');
   AxisKind = goog.module.get('org.pepstock.charba.client.enums.AxisKind$impl');
-  AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
+  ChartAxisType = goog.module.get('org.pepstock.charba.client.enums.ChartAxisType$impl');
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');
   ExtendedScale = goog.module.get('org.pepstock.charba.client.options.ExtendedScale$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

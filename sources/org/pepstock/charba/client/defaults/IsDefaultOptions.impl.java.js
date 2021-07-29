@@ -13,6 +13,7 @@ let IsDefaultInteraction = goog.forwardDeclare('org.pepstock.charba.client.defau
 let IsDefaultLayout = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultLayout$impl');
 let IsDefaultLegend = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultLegend$impl');
 let IsDefaultPlugins = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPlugins$impl');
+let IsDefaultSubtitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultSubtitle$impl');
 let IsDefaultTitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultTitle$impl');
 let IsDefaultTooltips = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultTooltips$impl');
 let Event = goog.forwardDeclare('org.pepstock.charba.client.enums.Event$impl');
@@ -30,6 +31,8 @@ class IsDefaultOptions {
  m_getInteraction__() {}
  /** @abstract @return {IsDefaultTitle} */
  m_getTitle__() {}
+ /** @abstract @return {IsDefaultSubtitle} */
+ m_getSubtitle__() {}
  /** @abstract @return {IsDefaultLegend} */
  m_getLegend__() {}
  /** @abstract @return {IsDefaultTooltips} */

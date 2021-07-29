@@ -5,6 +5,7 @@ goog.require('java.lang.Iterable');
 goog.require('java.lang.Object');
 goog.require('java.lang.String');
 goog.require('java.lang.UnsupportedOperationException');
+goog.require('java.util.Arrays');
 goog.require('java.util.Collection');
 goog.require('java.util.Comparator');
 goog.require('java.util.Iterator');

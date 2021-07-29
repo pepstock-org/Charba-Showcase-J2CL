@@ -6,11 +6,13 @@ const Tick = goog.require('org.pepstock.charba.client.configuration.Tick$impl');
 
 let CountCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.CountCallback$impl');
 let MaxTicksLimitCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.MaxTicksLimitCallback$impl');
+let NumberFormatCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.NumberFormatCallback$impl');
 let PrecisionCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.PrecisionCallback$impl');
 let StepSizeCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.StepSizeCallback$impl');
 let TickCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.TickCallback$impl');
 let IsProvider = goog.forwardDeclare('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
+let IsNumericTick = goog.forwardDeclare('org.pepstock.charba.client.configuration.IsNumericTick$impl');
 let LinearTickHandler = goog.forwardDeclare('org.pepstock.charba.client.configuration.LinearTickHandler$impl');
 let LinearTickOptionsHandler = goog.forwardDeclare('org.pepstock.charba.client.configuration.LinearTickOptionsHandler$impl');
 let NumberFormatter = goog.forwardDeclare('org.pepstock.charba.client.configuration.NumberFormatter$impl');
@@ -48,7 +50,7 @@ class RadialLinearTick extends Tick {
   this.f_optionsHandler__org_pepstock_charba_client_configuration_RadialLinearTick_ = LinearTickOptionsHandler.$create__org_pepstock_charba_client_configuration_Axis(axis);
  }
  /** @override @return {LinearTickOptionsHandler} */
- m_getLinearTickOptionsHandler__() {
+ m_getTickOptionsHandler__() {
   return this.f_optionsHandler__org_pepstock_charba_client_configuration_RadialLinearTick_;
  }
  /** @override @return {IsNumberFormat} */
@@ -62,6 +64,21 @@ class RadialLinearTick extends Tick {
  
  m_setCallback__org_pepstock_charba_client_callbacks_TickCallback(/** TickCallback */ callback) {
   this.f_tickHandler__org_pepstock_charba_client_configuration_RadialLinearTick_.m_setCallback__java_lang_Object_$pp_org_pepstock_charba_client_configuration(callback);
+ }
+ //Default method forwarding stub.
+ /** @override @return {NumberFormatCallback} */
+ m_getNumberFormatCallback__() {
+  return IsNumericTick.m_getNumberFormatCallback__$default__org_pepstock_charba_client_configuration_IsNumericTick(this);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setNumberFormat__org_pepstock_charba_client_callbacks_NumberFormatCallback(/** NumberFormatCallback */ arg0) {
+  IsNumericTick.m_setNumberFormat__$default__org_pepstock_charba_client_configuration_IsNumericTick__org_pepstock_charba_client_callbacks_NumberFormatCallback(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setNumberFormat__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ arg0) {
+  IsNumericTick.m_setNumberFormat__$default__org_pepstock_charba_client_configuration_IsNumericTick__org_pepstock_charba_client_callbacks_NativeCallback(this, arg0);
  }
  //Default method forwarding stub.
  /** @override @return {number} */
@@ -178,6 +195,7 @@ class RadialLinearTick extends Tick {
  static $loadModules() {
   TickCallback = goog.module.get('org.pepstock.charba.client.callbacks.TickCallback$impl');
   IsProvider = goog.module.get('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
+  IsNumericTick = goog.module.get('org.pepstock.charba.client.configuration.IsNumericTick$impl');
   LinearTickHandler = goog.module.get('org.pepstock.charba.client.configuration.LinearTickHandler$impl');
   LinearTickOptionsHandler = goog.module.get('org.pepstock.charba.client.configuration.LinearTickOptionsHandler$impl');
   NumberFormatter = goog.module.get('org.pepstock.charba.client.configuration.NumberFormatter$impl');

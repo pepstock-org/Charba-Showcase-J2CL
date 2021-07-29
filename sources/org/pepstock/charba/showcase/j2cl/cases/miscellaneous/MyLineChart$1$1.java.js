@@ -1,6 +1,7 @@
 goog.module('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.$1.$1');
 
 goog.require('nativebootstrap.Util');
+goog.require('org.pepstock.charba.client.Helpers');
 goog.require('org.pepstock.charba.client.IsChart');
 goog.require('org.pepstock.charba.client.controllers.AbstractController');
 goog.require('org.pepstock.charba.client.controllers.ControllerContext.$Overlay');

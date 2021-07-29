@@ -61,7 +61,7 @@ class ResourceName extends Enum {
  /** @return {!Array<!ResourceName>} */
  static m_values__() {
   ResourceName.$clinit();
-  return /**@type {!Array<ResourceName>}*/ ($Arrays.$init([ResourceName.$static_CHART__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_DATE_TIME_ADAPTER__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_DATE_TIME_LIBRARY__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_CHARBA_HELPER__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_DATALABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_ZOOM_PLUGIN__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_HAMMER_LIBRARY__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_LABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName], ResourceName));
+  return /**@type {!Array<ResourceName>}*/ ($Arrays.$init([ResourceName.$static_CHART__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_DATE_TIME_ADAPTER__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_DATE_TIME_LIBRARY__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_CHARBA_HELPER__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_DATALABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_ZOOM_PLUGIN__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_HAMMER_LIBRARY__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_LABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName, ResourceName.$static_GEO_CONTROLLER__org_pepstock_charba_client_resources_ResourceName], ResourceName));
  }
  /** @return {!ResourceName} */
  static get f_CHART__org_pepstock_charba_client_resources_ResourceName() {
@@ -99,6 +99,10 @@ class ResourceName extends Enum {
  static get f_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName() {
   return (ResourceName.$clinit(), ResourceName.$static_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName);
  }
+ /** @return {!ResourceName} */
+ static get f_GEO_CONTROLLER__org_pepstock_charba_client_resources_ResourceName() {
+  return (ResourceName.$clinit(), ResourceName.$static_GEO_CONTROLLER__org_pepstock_charba_client_resources_ResourceName);
+ }
  
  static $clinit() {
   ResourceName.$clinit = () =>{};
@@ -113,6 +117,7 @@ class ResourceName extends Enum {
   ResourceName.$static_HAMMER_LIBRARY__org_pepstock_charba_client_resources_ResourceName = ResourceName.$create__java_lang_String__int__java_lang_String__boolean__java_lang_String($Util.$makeEnumName("HAMMER_LIBRARY"), ResourceName.$ordinal_HAMMER_LIBRARY__org_pepstock_charba_client_resources_ResourceName, "hammerjs", true, "org.pepstock.charba.client.zoom.ZoomPluginHammerResource");
   ResourceName.$static_LABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName = ResourceName.$create__java_lang_String__int__java_lang_String__boolean__java_lang_String($Util.$makeEnumName("LABELS_PLUGIN"), ResourceName.$ordinal_LABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName, "labels", false, "org.pepstock.charba.client.labels.LabelsPluginResource");
   ResourceName.$static_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName = ResourceName.$create__java_lang_String__int__java_lang_String__boolean__java_lang_String($Util.$makeEnumName("ANNOTATION_PLUGIN"), ResourceName.$ordinal_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName, "annotation", false, "org.pepstock.charba.client.annotation.AnnotationPluginResource");
+  ResourceName.$static_GEO_CONTROLLER__org_pepstock_charba_client_resources_ResourceName = ResourceName.$create__java_lang_String__int__java_lang_String__boolean__java_lang_String($Util.$makeEnumName("GEO_CONTROLLER"), ResourceName.$ordinal_GEO_CONTROLLER__org_pepstock_charba_client_resources_ResourceName, "geo", false, "org.pepstock.charba.client.geo.GeoControllerResource");
   ResourceName.f_namesToValuesMap__org_pepstock_charba_client_resources_ResourceName_ = null;
  }
  /** @return {boolean} */
@@ -144,6 +149,8 @@ ResourceName.$static_HAMMER_LIBRARY__org_pepstock_charba_client_resources_Resour
 ResourceName.$static_LABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName;
 /**@private {!ResourceName}*/
 ResourceName.$static_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName;
+/**@private {!ResourceName}*/
+ResourceName.$static_GEO_CONTROLLER__org_pepstock_charba_client_resources_ResourceName;
 /**@type {Map<?string, !ResourceName>}*/
 ResourceName.f_namesToValuesMap__org_pepstock_charba_client_resources_ResourceName_;
 /**@const {number}*/
@@ -164,6 +171,8 @@ ResourceName.$ordinal_HAMMER_LIBRARY__org_pepstock_charba_client_resources_Resou
 ResourceName.$ordinal_LABELS_PLUGIN__org_pepstock_charba_client_resources_ResourceName = 7;
 /**@const {number}*/
 ResourceName.$ordinal_ANNOTATION_PLUGIN__org_pepstock_charba_client_resources_ResourceName = 8;
+/**@const {number}*/
+ResourceName.$ordinal_GEO_CONTROLLER__org_pepstock_charba_client_resources_ResourceName = 9;
 Key.$markImplementor(ResourceName);
 $Util.$setClassMetadataForEnum(ResourceName, "org.pepstock.charba.client.resources.ResourceName");
 

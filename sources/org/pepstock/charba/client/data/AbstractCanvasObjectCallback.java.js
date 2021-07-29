@@ -11,6 +11,7 @@ goog.require('org.pepstock.charba.client.colors.CanvasObject');
 goog.require('org.pepstock.charba.client.commons.Key');
 goog.require('org.pepstock.charba.client.data.AbstractContainer');
 goog.require('org.pepstock.charba.client.data.Dataset.CanvasObjectKey');
+goog.require('org.pepstock.charba.client.items.IsArea');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.Primitives');
 

@@ -4,6 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 
 let Gradient = goog.forwardDeclare('org.pepstock.charba.client.colors.Gradient$impl');
 let Pattern = goog.forwardDeclare('org.pepstock.charba.client.colors.Pattern$impl');
+let GlobalCompositeOperation = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation$impl');
 let ColorType = goog.forwardDeclare('org.pepstock.charba.client.enums.ColorType$impl');
 let ChartBackgroundColor = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
 
@@ -19,6 +20,8 @@ class IsChartBackgroundColorDefaultOptions {
  m_getBackgroundColorAsGradient__() {}
  /** @abstract @return {Pattern} */
  m_getBackgroundColorAsPattern__() {}
+ /** @abstract @return {GlobalCompositeOperation} */
+ m_getGlobalCompositeOperation__() {}
  /** @return {ColorType} */
  static m_getColorType__$default__org_pepstock_charba_client_impl_plugins_IsChartBackgroundColorDefaultOptions(/** !IsChartBackgroundColorDefaultOptions */ $thisArg) {
   IsChartBackgroundColorDefaultOptions.$clinit();
@@ -39,6 +42,11 @@ class IsChartBackgroundColorDefaultOptions {
   IsChartBackgroundColorDefaultOptions.$clinit();
   return null;
  }
+ /** @return {GlobalCompositeOperation} */
+ static m_getGlobalCompositeOperation__$default__org_pepstock_charba_client_impl_plugins_IsChartBackgroundColorDefaultOptions(/** !IsChartBackgroundColorDefaultOptions */ $thisArg) {
+  IsChartBackgroundColorDefaultOptions.$clinit();
+  return GlobalCompositeOperation.f_SOURCE_OVER__org_pepstock_charba_client_dom_enums_GlobalCompositeOperation;
+ }
  
  static $clinit() {
   IsChartBackgroundColorDefaultOptions.$clinit = () =>{};
@@ -54,6 +62,7 @@ class IsChartBackgroundColorDefaultOptions {
  }
  
  static $loadModules() {
+  GlobalCompositeOperation = goog.module.get('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation$impl');
   ColorType = goog.module.get('org.pepstock.charba.client.enums.ColorType$impl');
   ChartBackgroundColor = goog.module.get('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
  }

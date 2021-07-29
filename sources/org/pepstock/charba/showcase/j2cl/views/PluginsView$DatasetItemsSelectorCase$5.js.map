@@ -2,7 +2,7 @@
 "version":3,
 "file":"PluginsView$DatasetItemsSelectorCase$5.impl.java.js",
 "lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAgJuF,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,oG;EAAAA,iB;;;CAAA,uF;EAAAC,iC;;;CAC/D,U;EACpBC,2D;;;QAFmF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAiJuF,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,oG;EAAAA,iB;;;CAAA,uF;EAAAC,iC;;;CAC/D,U;EACpBC,2D;;;QAFmF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["PluginsView.java"],
 "names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$5.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$5.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$5.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$5.create","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$5.<clinit>"]
 }

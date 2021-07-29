@@ -2,6 +2,7 @@ goog.module('org.pepstock.charba.client.data.Clip$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
+const IsArea = goog.require('org.pepstock.charba.client.items.IsArea$impl');
 
 let Defaults = goog.forwardDeclare('org.pepstock.charba.client.Defaults$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
@@ -9,6 +10,9 @@ let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$im
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
+/**
+ * @implements {IsArea}
+ */
 class Clip extends NativeObjectContainer {
  /** @protected */
  constructor() {
@@ -69,7 +73,7 @@ class Clip extends NativeObjectContainer {
  m_setLeft__boolean(/** boolean */ clip) {
   this.m_setInternalValue__org_pepstock_charba_client_enums_Position__boolean_$p_org_pepstock_charba_client_data_Clip(Position.f_LEFT__org_pepstock_charba_client_enums_Position, clip);
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getLeft__() {
   return this.m_getInternalValue__org_pepstock_charba_client_enums_Position_$p_org_pepstock_charba_client_data_Clip(Position.f_LEFT__org_pepstock_charba_client_enums_Position);
  }
@@ -85,7 +89,7 @@ class Clip extends NativeObjectContainer {
  m_setRight__boolean(/** boolean */ clip) {
   this.m_setInternalValue__org_pepstock_charba_client_enums_Position__boolean_$p_org_pepstock_charba_client_data_Clip(Position.f_RIGHT__org_pepstock_charba_client_enums_Position, clip);
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getRight__() {
   return this.m_getInternalValue__org_pepstock_charba_client_enums_Position_$p_org_pepstock_charba_client_data_Clip(Position.f_RIGHT__org_pepstock_charba_client_enums_Position);
  }
@@ -101,7 +105,7 @@ class Clip extends NativeObjectContainer {
  m_setTop__boolean(/** boolean */ clip) {
   this.m_setInternalValue__org_pepstock_charba_client_enums_Position__boolean_$p_org_pepstock_charba_client_data_Clip(Position.f_TOP__org_pepstock_charba_client_enums_Position, clip);
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getTop__() {
   return this.m_getInternalValue__org_pepstock_charba_client_enums_Position_$p_org_pepstock_charba_client_data_Clip(Position.f_TOP__org_pepstock_charba_client_enums_Position);
  }
@@ -117,7 +121,7 @@ class Clip extends NativeObjectContainer {
  m_setBottom__boolean(/** boolean */ clip) {
   this.m_setInternalValue__org_pepstock_charba_client_enums_Position__boolean_$p_org_pepstock_charba_client_data_Clip(Position.f_BOTTOM__org_pepstock_charba_client_enums_Position, clip);
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getBottom__() {
   return this.m_getInternalValue__org_pepstock_charba_client_enums_Position_$p_org_pepstock_charba_client_data_Clip(Position.f_BOTTOM__org_pepstock_charba_client_enums_Position);
  }
@@ -150,11 +154,22 @@ class Clip extends NativeObjectContainer {
    this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(position, false);
   }
  }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getHeight__() {
+  return IsArea.m_getHeight__$default__org_pepstock_charba_client_items_IsArea(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getWidth__() {
+  return IsArea.m_getWidth__$default__org_pepstock_charba_client_items_IsArea(this);
+ }
  
  static $clinit() {
   Clip.$clinit = () =>{};
   Clip.$loadModules();
   NativeObjectContainer.$clinit();
+  IsArea.$clinit();
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -169,6 +184,7 @@ class Clip extends NativeObjectContainer {
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }
 }
+IsArea.$markImplementor(Clip);
 $Util.$setClassMetadata(Clip, "org.pepstock.charba.client.data.Clip");
 
 exports = Clip;

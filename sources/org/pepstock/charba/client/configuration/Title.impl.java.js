@@ -1,83 +1,16 @@
 goog.module('org.pepstock.charba.client.configuration.Title$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const ConfigurationOptionsContainer = goog.require('org.pepstock.charba.client.configuration.ConfigurationOptionsContainer$impl');
-const IsScriptableFontProvider = goog.require('org.pepstock.charba.client.options.IsScriptableFontProvider$impl');
-const IsScriptablePaddingProvider = goog.require('org.pepstock.charba.client.options.IsScriptablePaddingProvider$impl');
+const AbstractTitle = goog.require('org.pepstock.charba.client.configuration.AbstractTitle$impl');
 
-let Boolean = goog.forwardDeclare('java.lang.Boolean$impl');
-let j_l_String = goog.forwardDeclare('java.lang.String$impl');
-let LinkedList = goog.forwardDeclare('java.util.LinkedList$impl');
-let List = goog.forwardDeclare('java.util.List$impl');
-let ChartContext = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ChartContext$impl');
-let ColorCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ColorCallback$impl');
-let DisplayCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DisplayCallback$impl');
-let ElementAlignCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ElementAlignCallback$impl');
-let FontCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.FontCallback$impl');
-let FullSizeCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.FullSizeCallback$impl');
-let PaddingCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.PaddingCallback$impl');
-let PositionCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.PositionCallback$impl');
-let ScriptableUtils = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ScriptableUtils$impl');
-let TextCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.TextCallback$impl');
-let ColorBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.ColorBuilder$impl');
-let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
-let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
-let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
-let IsProvider = goog.forwardDeclare('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
+let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
 let ConfigurationOptions = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationOptions$impl');
-let Font = goog.forwardDeclare('org.pepstock.charba.client.configuration.Font$impl');
-let Padding = goog.forwardDeclare('org.pepstock.charba.client.configuration.Padding$impl');
-let Property = goog.forwardDeclare('org.pepstock.charba.client.configuration.Title.Property$impl');
-let ElementAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.ElementAlign$impl');
-let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$impl');
-let ExtendedOptions = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedOptions$impl');
-let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
-let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
+let IsTitle = goog.forwardDeclare('org.pepstock.charba.client.options.IsTitle$impl');
 
-/**
- * @implements {IsScriptableFontProvider<ChartContext>}
- * @implements {IsScriptablePaddingProvider<ChartContext>}
- */
-class Title extends ConfigurationOptionsContainer {
+class Title extends AbstractTitle {
  /** @protected */
  constructor() {
   super();
-  /**@type {CharbaCallbackProxy<?function(?):?>}*/
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {CharbaCallbackProxy<?function(?):?>}*/
-  this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
-  this.f_displayCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {CharbaCallbackProxy<?function(?):*>}*/
-  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {CharbaCallbackProxy<?function(?):*>}*/
-  this.f_textCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
-  this.f_alignCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {CharbaCallbackProxy<?function(?):?string>}*/
-  this.f_positionCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {CharbaCallbackProxy<?function(?):boolean>}*/
-  this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_;
-  /**@type {PaddingCallback<ChartContext>}*/
-  this.f_paddingCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {FontCallback<ChartContext>}*/
-  this.f_fontCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {DisplayCallback<ChartContext>}*/
-  this.f_displayCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {ColorCallback<ChartContext>}*/
-  this.f_colorCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {TextCallback<ChartContext>}*/
-  this.f_textCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {ElementAlignCallback<ChartContext>}*/
-  this.f_alignCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {PositionCallback<ChartContext>}*/
-  this.f_positionCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {FullSizeCallback<ChartContext>}*/
-  this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_;
-  /**@type {Font}*/
-  this.f_font__org_pepstock_charba_client_configuration_Title_;
-  /**@type {Padding}*/
-  this.f_padding__org_pepstock_charba_client_configuration_Title_;
  }
  /** @return {!Title} */
  static $create__org_pepstock_charba_client_configuration_ConfigurationOptions(/** ConfigurationOptions */ options) {
@@ -88,294 +21,29 @@ class Title extends ConfigurationOptionsContainer {
  }
  
  $ctor__org_pepstock_charba_client_configuration_Title__org_pepstock_charba_client_configuration_ConfigurationOptions(/** ConfigurationOptions */ options) {
-  this.$ctor__org_pepstock_charba_client_configuration_ConfigurationOptionsContainer__org_pepstock_charba_client_configuration_ConfigurationOptions(options);
-  this.$init___$p_org_pepstock_charba_client_configuration_Title();
-  this.f_font__org_pepstock_charba_client_configuration_Title_ = Font.$create__org_pepstock_charba_client_options_IsScriptableFontProvider__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(this, IsProvider.$adapt(() =>{
-   return this.m_getConfiguration__().m_getTitle__().m_getFont__();
-  }));
-  this.f_padding__org_pepstock_charba_client_configuration_Title_ = Padding.$create__org_pepstock_charba_client_options_IsScriptablePaddingProvider__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(this, IsProvider.$adapt(() =>{
-   return this.m_getConfiguration__().m_getTitle__().m_getPadding__();
-  }));
-  this.f_displayCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context) =>{
-   return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getDisplayCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_isDisplay__()), Boolean)));
-  };
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context_1) =>{
-   return ScriptableUtils.m_getOptionValueAsPadding__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultPadding(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_1), this.m_getPaddingCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_getPadding__()).m_nativeObject__();
-  };
-  this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context_2) =>{
-   return ScriptableUtils.m_getOptionValueAsFont__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_defaults_IsDefaultFont(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_2), this.m_getFontCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_getFont__()).m_nativeObject__();
-  };
-  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context_3) =>{
-   return ScriptableUtils.m_getOptionValueAsColor__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_String(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_3), this.m_getColorCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_getColorAsString__());
-  };
-  this.f_textCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context_4) =>{
-   return this.m_onText__org_pepstock_charba_client_callbacks_ChartContext_$p_org_pepstock_charba_client_configuration_Title(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_4));
-  };
-  this.f_positionCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context_5) =>{
-   return /**@type {Position}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_5), this.m_getPositionCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_getPosition__()), Position)).m_value__();
-  };
-  this.f_alignCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context_6) =>{
-   return /**@type {ElementAlign}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_6), this.m_getAlignCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_getAlign__()), ElementAlign)).m_value__();
-  };
-  this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_.callback = (/** ? */ context_7) =>{
-   return Boolean.m_booleanValue__java_lang_Boolean(/**@type {?boolean}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getOptions__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context_7), this.m_getFullSizeCallback__(), this.m_getOptions__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTitle__().m_isFullSize__()), Boolean)));
-  };
+  this.$ctor__org_pepstock_charba_client_configuration_AbstractTitle__org_pepstock_charba_client_configuration_ConfigurationOptions(options);
  }
- /** @return {Font} */
- m_getFont__() {
-  return this.f_font__org_pepstock_charba_client_configuration_Title_;
+ /** @override @return {IsTitle} */
+ m_getTitleElement___$pp_org_pepstock_charba_client_configuration() {
+  return this.m_getConfiguration__().m_getTitle__();
  }
- /** @return {Padding} */
- m_getPadding__() {
-  return this.f_padding__org_pepstock_charba_client_configuration_Title_;
- }
- 
- m_setColor__org_pepstock_charba_client_colors_IsColor(/** IsColor */ color) {
-  this.m_setColor__java_lang_String(IsColor.m_checkAndGetValue__org_pepstock_charba_client_colors_IsColor(color));
- }
- 
- m_setColor__java_lang_String(/** ?string */ color) {
-  this.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<ChartContext>}*/ (null));
-  this.m_getConfiguration__().m_getTitle__().m_setColor__java_lang_String(color);
- }
- /** @return {?string} */
- m_getColorAsString__() {
-  return this.m_getConfiguration__().m_getTitle__().m_getColorAsString__();
- }
- /** @return {IsColor} */
- m_getColor__() {
-  return ColorBuilder.m_parse__java_lang_String(this.m_getColorAsString__());
- }
- 
- m_setDisplay__boolean(/** boolean */ display) {
-  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/**@type {DisplayCallback<ChartContext>}*/ (null));
-  this.m_getConfiguration__().m_getTitle__().m_setDisplay__boolean(display);
- }
- /** @return {boolean} */
- m_isDisplay__() {
-  return this.m_getConfiguration__().m_getTitle__().m_isDisplay__();
- }
- 
- m_setText__arrayOf_java_lang_String(/** Array<?string> */ text) {
-  this.m_setText__org_pepstock_charba_client_callbacks_TextCallback(/**@type {TextCallback<ChartContext>}*/ (null));
-  this.m_getConfiguration__().m_getTitle__().m_setText__arrayOf_java_lang_String(text);
- }
- /** @return {List<?string>} */
- m_getText__() {
-  return this.m_getConfiguration__().m_getTitle__().m_getText__();
- }
- 
- m_setPosition__org_pepstock_charba_client_enums_Position(/** Position */ position) {
-  this.m_setPosition__org_pepstock_charba_client_callbacks_PositionCallback(/**@type {PositionCallback<ChartContext>}*/ (null));
-  this.m_getConfiguration__().m_getTitle__().m_setPosition__org_pepstock_charba_client_enums_Position(position);
- }
- /** @return {Position} */
- m_getPosition__() {
-  return this.m_getConfiguration__().m_getTitle__().m_getPosition__();
- }
- 
- m_setFullSize__boolean(/** boolean */ fullSize) {
-  this.m_setFullSize__org_pepstock_charba_client_callbacks_FullSizeCallback(/**@type {FullSizeCallback<ChartContext>}*/ (null));
-  this.m_getConfiguration__().m_getTitle__().m_setFullSize__boolean(fullSize);
- }
- /** @return {boolean} */
- m_isFullSize__() {
-  return this.m_getConfiguration__().m_getTitle__().m_isFullSize__();
- }
- 
- m_setAlign__org_pepstock_charba_client_enums_ElementAlign(/** ElementAlign */ alignment) {
-  this.m_setAlign__org_pepstock_charba_client_callbacks_ElementAlignCallback(/**@type {ElementAlignCallback<ChartContext>}*/ (null));
-  this.m_getConfiguration__().m_getTitle__().m_setAlign__org_pepstock_charba_client_enums_ElementAlign(alignment);
- }
- /** @return {ElementAlign} */
- m_getAlign__() {
-  return this.m_getConfiguration__().m_getTitle__().m_getAlign__();
- }
- /** @return {DisplayCallback<ChartContext>} */
- m_getDisplayCallback__() {
-  return this.f_displayCallback__org_pepstock_charba_client_configuration_Title_;
- }
- 
- m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/** DisplayCallback<ChartContext> */ displayCallback) {
-  this.f_displayCallback__org_pepstock_charba_client_configuration_Title_ = displayCallback;
-  this.m_getChart__().m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(this.m_getConfiguration__().m_getTitle__(), Property.f_DISPLAY__org_pepstock_charba_client_configuration_Title_Property, displayCallback, this.f_displayCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- 
- m_setDisplay__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ displayCallback) {
-  this.m_setDisplay__org_pepstock_charba_client_callbacks_DisplayCallback(/**@type {DisplayCallback<ChartContext>}*/ (null));
-  this.m_getChart__().m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(this.m_getConfiguration__().m_getTitle__(), Property.f_DISPLAY__org_pepstock_charba_client_configuration_Title_Property, displayCallback);
- }
- /** @return {FullSizeCallback<ChartContext>} */
- m_getFullSizeCallback__() {
-  return this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_;
- }
- 
- m_setFullSize__org_pepstock_charba_client_callbacks_FullSizeCallback(/** FullSizeCallback<ChartContext> */ fullSizeCallback) {
-  this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_ = fullSizeCallback;
-  this.m_getChart__().m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(this.m_getConfiguration__().m_getTitle__(), Property.f_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property, fullSizeCallback, this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- 
- m_setFullSize__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fullSizeCallback) {
-  this.m_setFullSize__org_pepstock_charba_client_callbacks_FullSizeCallback(/**@type {FullSizeCallback<ChartContext>}*/ (null));
-  this.m_getChart__().m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(this.m_getConfiguration__().m_getTitle__(), Property.f_FULL_SIZE__org_pepstock_charba_client_configuration_Title_Property, fullSizeCallback);
- }
- /** @override @return {PaddingCallback<ChartContext>} */
- m_getPaddingCallback__() {
-  return this.f_paddingCallback__org_pepstock_charba_client_configuration_Title_;
- }
- /** @override */
- m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(/** PaddingCallback<ChartContext> */ paddingCallback) {
-  this.f_paddingCallback__org_pepstock_charba_client_configuration_Title_ = paddingCallback;
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_PADDING__org_pepstock_charba_client_configuration_Title_Property, paddingCallback, this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- /** @override */
- m_setPadding__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ paddingCallback) {
-  this.m_setPadding__org_pepstock_charba_client_callbacks_PaddingCallback(/**@type {PaddingCallback<ChartContext>}*/ (null));
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_PADDING__org_pepstock_charba_client_configuration_Title_Property, paddingCallback);
- }
- /** @override @return {FontCallback<ChartContext>} */
- m_getFontCallback__() {
-  return this.f_fontCallback__org_pepstock_charba_client_configuration_Title_;
- }
- /** @override */
- m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/** FontCallback<ChartContext> */ fontCallback) {
-  this.f_fontCallback__org_pepstock_charba_client_configuration_Title_ = fontCallback;
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_FONT__org_pepstock_charba_client_configuration_Title_Property, fontCallback, this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- /** @override */
- m_setFont__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ fontCallback) {
-  this.m_setFont__org_pepstock_charba_client_callbacks_FontCallback(/**@type {FontCallback<ChartContext>}*/ (null));
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_FONT__org_pepstock_charba_client_configuration_Title_Property, fontCallback);
- }
- /** @return {ColorCallback<ChartContext>} */
- m_getColorCallback__() {
-  return this.f_colorCallback__org_pepstock_charba_client_configuration_Title_;
- }
- 
- m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/** ColorCallback<ChartContext> */ colorCallback) {
-  this.f_colorCallback__org_pepstock_charba_client_configuration_Title_ = colorCallback;
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_COLOR__org_pepstock_charba_client_configuration_Title_Property, colorCallback, this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- 
- m_setColor__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ colorCallback) {
-  this.m_setColor__org_pepstock_charba_client_callbacks_ColorCallback(/**@type {ColorCallback<ChartContext>}*/ (null));
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_COLOR__org_pepstock_charba_client_configuration_Title_Property, colorCallback);
- }
- /** @return {TextCallback<ChartContext>} */
- m_getTextCallback__() {
-  return this.f_textCallback__org_pepstock_charba_client_configuration_Title_;
- }
- 
- m_setText__org_pepstock_charba_client_callbacks_TextCallback(/** TextCallback<ChartContext> */ textCallback) {
-  this.f_textCallback__org_pepstock_charba_client_configuration_Title_ = textCallback;
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_TEXT__org_pepstock_charba_client_configuration_Title_Property, textCallback, this.f_textCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- 
- m_setText__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ textCallback) {
-  this.m_setText__org_pepstock_charba_client_callbacks_TextCallback(/**@type {TextCallback<ChartContext>}*/ (null));
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_TEXT__org_pepstock_charba_client_configuration_Title_Property, textCallback);
- }
- /** @return {PositionCallback<ChartContext>} */
- m_getPositionCallback__() {
-  return this.f_positionCallback__org_pepstock_charba_client_configuration_Title_;
- }
- 
- m_setPosition__org_pepstock_charba_client_callbacks_PositionCallback(/** PositionCallback<ChartContext> */ positionCallback) {
-  this.f_positionCallback__org_pepstock_charba_client_configuration_Title_ = positionCallback;
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_POSITION__org_pepstock_charba_client_configuration_Title_Property, positionCallback, this.f_positionCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- 
- m_setPosition__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ positionCallback) {
-  this.m_setPosition__org_pepstock_charba_client_callbacks_PositionCallback(/**@type {PositionCallback<ChartContext>}*/ (null));
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_POSITION__org_pepstock_charba_client_configuration_Title_Property, positionCallback);
- }
- /** @return {ElementAlignCallback<ChartContext>} */
- m_getAlignCallback__() {
-  return this.f_alignCallback__org_pepstock_charba_client_configuration_Title_;
- }
- 
- m_setAlign__org_pepstock_charba_client_callbacks_ElementAlignCallback(/** ElementAlignCallback<ChartContext> */ alignCallback) {
-  this.f_alignCallback__org_pepstock_charba_client_configuration_Title_ = alignCallback;
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__java_lang_Object__org_pepstock_charba_client_commons_CallbackProxy_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_ALIGN__org_pepstock_charba_client_configuration_Title_Property, alignCallback, this.f_alignCallbackProxy__org_pepstock_charba_client_configuration_Title_);
- }
- 
- m_setAlign__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ alignCallback) {
-  this.m_setAlign__org_pepstock_charba_client_callbacks_ElementAlignCallback(/**@type {ElementAlignCallback<ChartContext>}*/ (null));
-  this.m_getOptions__().m_setCallback__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback_$pp_org_pepstock_charba_client_configuration(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getOptions__().m_getConfiguration__(), ExtendedOptions)).m_getTitle__(), Property.f_ALIGN__org_pepstock_charba_client_configuration_Title_Property, alignCallback);
- }
- /** @return {*} */
- m_onText__org_pepstock_charba_client_callbacks_ChartContext_$p_org_pepstock_charba_client_configuration_Title(/** ChartContext */ context) {
-  let result = ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, this.m_getTextCallback__());
-  if (j_l_String.$isInstance(result)) {
-   return result;
-  } else if (List.$isInstance(result)) {
-   let list = /**@type {List<*>}*/ ($Casts.$to(result, List));
-   if (!list.isEmpty()) {
-    let normalizedList = /**@type {!LinkedList<?string>}*/ (LinkedList.$create__());
-    for (let $iterator = list.m_iterator__(); $iterator.m_hasNext__(); ) {
-     let textItem = $iterator.m_next__();
-     {
-      normalizedList.add($Objects.m_toString__java_lang_Object(textItem));
-     }
-    }
-    return normalizedList.size() == 1 ? /**@type {?string}*/ ($Casts.$to(normalizedList.getAtIndex(0), j_l_String)) : ArrayString_$Overlay.m_fromOrNull__java_util_List(normalizedList);
-   }
-  }
-  return window.undefined;
- }
- /** @private */
- $init___$p_org_pepstock_charba_client_configuration_Title() {
-  this.f_paddingCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_fontCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):?>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_displayCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_colorCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_textCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_alignCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_positionCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_fullSizeCallbackProxy__org_pepstock_charba_client_configuration_Title_ = /**@type {CharbaCallbackProxy<?function(?):boolean>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_paddingCallback__org_pepstock_charba_client_configuration_Title_ = null;
-  this.f_fontCallback__org_pepstock_charba_client_configuration_Title_ = null;
-  this.f_displayCallback__org_pepstock_charba_client_configuration_Title_ = null;
-  this.f_colorCallback__org_pepstock_charba_client_configuration_Title_ = null;
-  this.f_textCallback__org_pepstock_charba_client_configuration_Title_ = null;
-  this.f_alignCallback__org_pepstock_charba_client_configuration_Title_ = null;
-  this.f_positionCallback__org_pepstock_charba_client_configuration_Title_ = null;
-  this.f_fullSizeCallback__org_pepstock_charba_client_configuration_Title_ = null;
+ /** @override @return {AbstractNode} */
+ m_getTitleNode___$pp_org_pepstock_charba_client_configuration() {
+  return this.m_getConfiguration__().m_getTitle__();
  }
  
  static $clinit() {
   Title.$clinit = () =>{};
   Title.$loadModules();
-  ConfigurationOptionsContainer.$clinit();
+  AbstractTitle.$clinit();
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
   return instance instanceof Title;
  }
  
- static $loadModules() {
-  Boolean = goog.module.get('java.lang.Boolean$impl');
-  j_l_String = goog.module.get('java.lang.String$impl');
-  LinkedList = goog.module.get('java.util.LinkedList$impl');
-  List = goog.module.get('java.util.List$impl');
-  ScriptableUtils = goog.module.get('org.pepstock.charba.client.callbacks.ScriptableUtils$impl');
-  ColorBuilder = goog.module.get('org.pepstock.charba.client.colors.ColorBuilder$impl');
-  IsColor = goog.module.get('org.pepstock.charba.client.colors.IsColor$impl');
-  ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
-  JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
-  IsProvider = goog.module.get('org.pepstock.charba.client.configuration.AbstractDynamicConfiguration.IsProvider$impl');
-  Font = goog.module.get('org.pepstock.charba.client.configuration.Font$impl');
-  Padding = goog.module.get('org.pepstock.charba.client.configuration.Padding$impl');
-  Property = goog.module.get('org.pepstock.charba.client.configuration.Title.Property$impl');
-  ElementAlign = goog.module.get('org.pepstock.charba.client.enums.ElementAlign$impl');
-  Position = goog.module.get('org.pepstock.charba.client.enums.Position$impl');
-  ExtendedOptions = goog.module.get('org.pepstock.charba.client.options.ExtendedOptions$impl');
-  $Casts = goog.module.get('vmbootstrap.Casts$impl');
-  $Objects = goog.module.get('vmbootstrap.Objects$impl');
- }
+ static $loadModules() {}
 }
-IsScriptableFontProvider.$markImplementor(Title);
-IsScriptablePaddingProvider.$markImplementor(Title);
 $Util.$setClassMetadata(Title, "org.pepstock.charba.client.configuration.Title");
 
 exports = Title;

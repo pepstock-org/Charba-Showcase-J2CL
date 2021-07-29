@@ -541,10 +541,24 @@ class AbstractChart extends HandlerManager {
   }
  }
  /** @override */
+ m_hide__int__int(/** number */ datasetIndex, /** number */ dataIndex) {
+  let instance = this.m_lookForConsistentInstance___$p_org_pepstock_charba_client_AbstractChart();
+  if (!$Equality.$same(instance, null) && this.m_isValidDatasetIndex__int_$p_org_pepstock_charba_client_AbstractChart(datasetIndex) && dataIndex >= 0) {
+   instance.hide(datasetIndex, dataIndex);
+  }
+ }
+ /** @override */
  m_show__int(/** number */ datasetIndex) {
   let instance = this.m_lookForConsistentInstance___$p_org_pepstock_charba_client_AbstractChart();
   if (!$Equality.$same(instance, null) && this.m_isValidDatasetIndex__int_$p_org_pepstock_charba_client_AbstractChart(datasetIndex)) {
    instance.show(datasetIndex);
+  }
+ }
+ /** @override */
+ m_show__int__int(/** number */ datasetIndex, /** number */ dataIndex) {
+  let instance = this.m_lookForConsistentInstance___$p_org_pepstock_charba_client_AbstractChart();
+  if (!$Equality.$same(instance, null) && this.m_isValidDatasetIndex__int_$p_org_pepstock_charba_client_AbstractChart(datasetIndex) && dataIndex >= 0) {
+   instance.show(datasetIndex, dataIndex);
   }
  }
  /** @override @return {DatasetReference} */
@@ -569,27 +583,31 @@ class AbstractChart extends HandlerManager {
  }
  /** @override */
  m_draw__() {
-  if (this.f_isCanvasSupported__org_pepstock_charba_client_AbstractChart_ && this.m_isChartAttached__() && IsChart.m_isConsistent__org_pepstock_charba_client_IsChart(this)) {
-   this.m_applyConfiguration__();
-   Charts.m_fireBeforeConfigure__org_pepstock_charba_client_IsChart(this);
-   Defaults.m_get__().m_getPlugins__().m_onChartConfigure__org_pepstock_charba_client_Configuration__org_pepstock_charba_client_IsChart(this.f_configuration__org_pepstock_charba_client_AbstractChart_, this);
-   this.f_plugins__org_pepstock_charba_client_AbstractChart_.m_onChartConfigure__org_pepstock_charba_client_Configuration__org_pepstock_charba_client_IsChart(this.f_configuration__org_pepstock_charba_client_AbstractChart_, this);
-   let internalOptions = this.m_getOptions__();
-   let internalData = this.m_getData__();
-   this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setType__org_pepstock_charba_client_Type_$pp_org_pepstock_charba_client(this.m_getType__());
-   this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_configuration_ConfigurationOptions_$pp_org_pepstock_charba_client(this, internalOptions);
-   this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setData__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_data_Data_$pp_org_pepstock_charba_client(this, internalData);
-   this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setPlugins__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_plugins_Plugins_$pp_org_pepstock_charba_client(this, this.f_plugins__org_pepstock_charba_client_AbstractChart_);
-   Charts.m_fireAfterConfigure__org_pepstock_charba_client_IsChart(this);
-   if (this.m_isInitialized__()) {
-    this.f_chart__org_pepstock_charba_client_AbstractChart_.destroy();
-   }
-   Charts.m_add__org_pepstock_charba_client_IsChart(this);
-   this.f_chart__org_pepstock_charba_client_AbstractChart_ = new Chart(Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(this.f_canvas__org_pepstock_charba_client_AbstractChart_), this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_nativeObject___$pp_org_pepstock_charba_client());
-   this.m_updateForReconfiguring___$p_org_pepstock_charba_client_AbstractChart();
-   Charts.m_fireAfterInit__org_pepstock_charba_client_IsChart(this);
-   if (!$Equality.$same(this.f_timer__org_pepstock_charba_client_AbstractChart_, null) && $Objects.m_equals__java_lang_Object__java_lang_Object(Status.f_INITIALIZED__org_pepstock_charba_client_utils_CTimer_Status, this.f_timer__org_pepstock_charba_client_AbstractChart_.m_getStatus__())) {
-    this.f_timer__org_pepstock_charba_client_AbstractChart_.m_start__();
+  if (this.f_isCanvasSupported__org_pepstock_charba_client_AbstractChart_ && this.m_isChartAttached__()) {
+   if (IsChart.m_isConsistent__org_pepstock_charba_client_IsChart(this)) {
+    this.m_applyConfiguration__();
+    Charts.m_fireBeforeConfigure__org_pepstock_charba_client_IsChart(this);
+    Defaults.m_get__().m_getPlugins__().m_onChartConfigure__org_pepstock_charba_client_Configuration__org_pepstock_charba_client_IsChart(this.f_configuration__org_pepstock_charba_client_AbstractChart_, this);
+    this.f_plugins__org_pepstock_charba_client_AbstractChart_.m_onChartConfigure__org_pepstock_charba_client_Configuration__org_pepstock_charba_client_IsChart(this.f_configuration__org_pepstock_charba_client_AbstractChart_, this);
+    let internalOptions = this.m_getOptions__();
+    let internalData = this.m_getData__();
+    this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setType__org_pepstock_charba_client_Type_$pp_org_pepstock_charba_client(this.m_getType__());
+    this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_configuration_ConfigurationOptions_$pp_org_pepstock_charba_client(this, internalOptions);
+    this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setData__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_data_Data_$pp_org_pepstock_charba_client(this, internalData);
+    this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_setPlugins__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_plugins_Plugins_$pp_org_pepstock_charba_client(this, this.f_plugins__org_pepstock_charba_client_AbstractChart_);
+    Charts.m_fireAfterConfigure__org_pepstock_charba_client_IsChart(this);
+    if (this.m_isInitialized__()) {
+     this.f_chart__org_pepstock_charba_client_AbstractChart_.destroy();
+    }
+    Charts.m_add__org_pepstock_charba_client_IsChart(this);
+    this.f_chart__org_pepstock_charba_client_AbstractChart_ = new Chart(Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(this.f_canvas__org_pepstock_charba_client_AbstractChart_), this.f_configuration__org_pepstock_charba_client_AbstractChart_.m_nativeObject___$pp_org_pepstock_charba_client());
+    this.m_updateForReconfiguring___$p_org_pepstock_charba_client_AbstractChart();
+    Charts.m_fireAfterInit__org_pepstock_charba_client_IsChart(this);
+    if (!$Equality.$same(this.f_timer__org_pepstock_charba_client_AbstractChart_, null) && $Objects.m_equals__java_lang_Object__java_lang_Object(Status.f_INITIALIZED__org_pepstock_charba_client_utils_CTimer_Status, this.f_timer__org_pepstock_charba_client_AbstractChart_.m_getStatus__())) {
+     this.f_timer__org_pepstock_charba_client_AbstractChart_.m_start__();
+    }
+   } else {
+    this.m_update__();
    }
   }
  }

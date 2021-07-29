@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"FeatureFindCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;MAyBiB,mB;;CASR,mD,gBAAaA,O,gBAAaC,K;;QATlB,M;EAAAC,8B;EAAAA,8B;;;QAAA,O;EAAAC,sC;EAAAA;",
+"sources":["FeatureFindCallback.java"],
+"names":["feature","index","org.pepstock.charba.client.geo.callbacks.FeatureFindCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.callbacks.FeatureFindCallback.<clinit>"]
+}
+

@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const NativeObjectContainer = goog.require('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let AxisType = goog.forwardDeclare('org.pepstock.charba.client.configuration.AxisType$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class InternalDefaultScales extends NativeObjectContainer {
@@ -24,7 +24,7 @@ class InternalDefaultScales extends NativeObjectContainer {
   this.$ctor__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_NativeObject(nativeObject);
  }
  /** @return {?} */
- m_getScale__org_pepstock_charba_client_enums_AxisType_$pp_org_pepstock_charba_client(/** AxisType */ type) {
+ m_getScale__org_pepstock_charba_client_configuration_AxisType_$pp_org_pepstock_charba_client(/** AxisType */ type) {
   return this.m_getValue__org_pepstock_charba_client_commons_Key(/**@type {AxisType}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(type), AxisType)));
  }
  
@@ -40,7 +40,7 @@ class InternalDefaultScales extends NativeObjectContainer {
  
  static $loadModules() {
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
-  AxisType = goog.module.get('org.pepstock.charba.client.enums.AxisType$impl');
+  AxisType = goog.module.get('org.pepstock.charba.client.configuration.AxisType$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }

@@ -12,6 +12,7 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
 let Array_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.Array.$Overlay$impl');
+let ArrayCanvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayCanvas.$Overlay$impl');
 let ArrayDouble_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
 let ArrayDoubleArrayList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDoubleArrayList$impl');
 let ArrayGradient_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayGradient.$Overlay$impl');
@@ -372,6 +373,44 @@ class NativeObjectContainer extends j_l_Object {
    NativeObjectUtils.m_defineCallbackProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_callbacks_NativeCallback(this.f_nativeObject__org_pepstock_charba_client_commons_NativeObjectContainer_, key.m_value__(), value);
   }
  }
+ /** @return {HTMLCanvasElement} */
+ m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(/** Key */ key, /** HTMLCanvasElement */ defaultValue) {
+  if (!this.m_has__org_pepstock_charba_client_commons_Key(key)) {
+   return defaultValue;
+  }
+  return NativeObjectUtils.m_getCanvasProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_dom_elements_Canvas(this.f_nativeObject__org_pepstock_charba_client_commons_NativeObjectContainer_, key.m_value__(), defaultValue);
+ }
+ 
+ m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(/** Key */ key, /** HTMLCanvasElement */ value) {
+  if ($Equality.$same(value, null)) {
+   this.m_remove__org_pepstock_charba_client_commons_Key(key);
+  } else {
+   Key.m_checkIfValid__org_pepstock_charba_client_commons_Key(key);
+   NativeObjectUtils.m_defineCanvasProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_dom_elements_Canvas(this.f_nativeObject__org_pepstock_charba_client_commons_NativeObjectContainer_, key.m_value__(), value);
+  }
+ }
+ 
+ m_setValueOrArray__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_dom_elements_Canvas(/** Key */ key, /** Array<HTMLCanvasElement> */ values) {
+  if (!$Equality.$same(values, null)) {
+   if (values.length == 1) {
+    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(key, values[0]);
+   } else {
+    this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(key, ArrayCanvas_$Overlay.m_fromOrEmpty__arrayOf_org_pepstock_charba_client_dom_elements_Canvas(values));
+   }
+  } else {
+   this.m_remove__org_pepstock_charba_client_commons_Key(key);
+  }
+ }
+ /** @return {Array} */
+ m_getValueOrArray__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(/** Key */ key, /** HTMLCanvasElement */ defaultValue) {
+  let type = this.m_type__org_pepstock_charba_client_commons_Key(key);
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType, type)) {
+   return ArrayCanvas_$Overlay.m_fromOrEmpty__arrayOf_org_pepstock_charba_client_dom_elements_Canvas([this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(key, defaultValue)]);
+  } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_ARRAY__org_pepstock_charba_client_commons_ObjectType, type)) {
+   return /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(key), ArrayCanvas_$Overlay));
+  }
+  return ArrayCanvas_$Overlay.m_fromOrEmpty__arrayOf_org_pepstock_charba_client_dom_elements_Canvas([defaultValue]);
+ }
  /** @return {HTMLImageElement} */
  m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(/** Key */ key, /** HTMLImageElement */ defaultValue) {
   if (!this.m_has__org_pepstock_charba_client_commons_Key(key)) {
@@ -653,6 +692,7 @@ class NativeObjectContainer extends j_l_Object {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   IsColor = goog.module.get('org.pepstock.charba.client.colors.IsColor$impl');
   Array_$Overlay = goog.module.get('org.pepstock.charba.client.commons.Array.$Overlay$impl');
+  ArrayCanvas_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayCanvas.$Overlay$impl');
   ArrayDouble_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
   ArrayGradient_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayGradient.$Overlay$impl');
   ArrayImage_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayImage.$Overlay$impl');

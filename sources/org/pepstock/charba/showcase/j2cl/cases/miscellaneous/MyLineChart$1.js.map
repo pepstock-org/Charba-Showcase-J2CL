@@ -2,7 +2,7 @@
 "version":3,
 "file":"MyLineChart$1.impl.java.js",
 "lineCount":39,
-"mappings":"A;;;;;;;;;;;;;;MAkBgH,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EAAAC,iC;;;CAG5F,gE,uBAAuBC,c;EACxCC,8O;;;QAJ6G,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;;;MAmBgH,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EAAAC,iC;;;CAG5F,gE,uBAAuBC,c;EACxCC,8O;;;QAJ6G,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["MyLineChart.java"],
 "names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1.<init>","controllerType","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1.provide","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1.<clinit>"]
 }

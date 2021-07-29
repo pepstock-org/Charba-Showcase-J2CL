@@ -40,6 +40,7 @@ goog.require('org.pepstock.charba.client.options.Options.CommonProperty');
 goog.require('org.pepstock.charba.client.options.Options.Property');
 goog.require('org.pepstock.charba.client.options.Plugins');
 goog.require('org.pepstock.charba.client.options.SpanGapHandler');
+goog.require('org.pepstock.charba.client.options.Subtitle');
 goog.require('org.pepstock.charba.client.options.Title');
 goog.require('org.pepstock.charba.client.options.Tooltips');
 goog.require('org.pepstock.charba.client.options.Transitions');

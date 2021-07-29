@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AxisPosition.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MA8BY,Y;;CAAA,W;EAAAA,Q;EAAAA;OAwBU,uDAxBVA,C;;;QA+BH,gD,8DAAoBC,K;EAApBC,mC;EAAAA,gI;EAAAA,iB;;;CAAA,6F,8DAAoBD,K;EAApBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qE;;;CASa,S;EACbC,oE;;;QA1CU,2B;EAAAC,uB;EAAAA;GAAAA,wIAAAA;G;EAAAA,4H;;;QAAA,U;EAAAC,uB;EAAAA,+b;;;QAEX,2D;EAAAC,4G;;;QAIA,wD;EAAAA,yG;;;QAIA,yD;EAAAA,0G;;;QAIA,2D;EAAAA,4G;;;QAIA,0D;EAAAA,2G;;;QAlBW,O;EAAAC,+B;EAAAA,4B;EAAAA,e;EAEXA,iQ;EAIAA,qP;EAIAA,yP;EAIAA,iQ;EAIAA,6P;EAlBWA,uF;;;;;;;;;;;;;AAAA;2E;AAAA;wE;AAAA;yE;AAAA;2E;AAAA;0E;AAAA;gF;AAEX;gF;AAIA;6E;AAIA;8E;AAIA;gF;AAIA;;",
+"lineCount":125,
+"mappings":"A;;;;;;;;;;;;;;MA8BY,Y;;CAAA,W;EAAAA,Q;EAAAA;OA4BU,uDA5BVA,C;;;QAmCH,gD,8DAAoBC,K;EAApBC,mC;EAAAA,gI;EAAAA,iB;;;CAAA,6F,8DAAoBD,K;EAApBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qE;;;CASa,S;EACbC,oE;;;QA9CU,2B;EAAAC,uB;EAAAA;GAAAA,wIAAAA;G;EAAAA,4H;;;QAAA,U;EAAAC,uB;EAAAA,+gB;;;QAEX,2D;EAAAC,4G;;;QAIA,wD;EAAAA,yG;;;QAIA,yD;EAAAA,0G;;;QAIA,2D;EAAAA,4G;;;QAIA,0D;EAAAA,2G;;;QAIA,+D;EAAAA,gH;;;QAtBW,O;EAAAC,+B;EAAAA,4B;EAAAA,e;EAEXA,iQ;EAIAA,qP;EAIAA,yP;EAIAA,iQ;EAIAA,6P;EAIAA,gR;EAtBWA,uF;;;;;;;;;;;;;AAAA;2E;AAAA;wE;AAAA;yE;AAAA;2E;AAAA;0E;AAAA;+E;AAAA;gF;AAEX;gF;AAIA;6E;AAIA;8E;AAIA;gF;AAIA;+E;AAIA;;",
 "sources":["AxisPosition.java"],
 "names":["org.pepstock.charba.client.enums.AxisPosition.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.AxisPosition.<synthetic: ctor_create>","org.pepstock.charba.client.enums.AxisPosition.<init>","org.pepstock.charba.client.enums.AxisPosition.value","org.pepstock.charba.client.enums.AxisPosition.valueOf","org.pepstock.charba.client.enums.AxisPosition.values","org.pepstock.charba.client.enums.AxisPosition.<synthetic: getter>","org.pepstock.charba.client.enums.AxisPosition.<clinit>"]
 }

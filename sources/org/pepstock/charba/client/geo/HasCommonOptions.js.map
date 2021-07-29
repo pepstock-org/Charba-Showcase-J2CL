@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasCommonOptions.impl.java.js",
+"lineCount":147,
+"mappings":"A;;;;;;;;;;;;;;;;;MA4BU,gB;;CAOY,c;;CAOR,4D,uBAAsBA,O;;CAatB,4B,sBAAyBA,O;;CAahB,c;;CAgBT,yB,gBAAuBC,W;;CAapB,iB;;CAgBH,2B,gBAAyBC,a;;CAazB,4D,kBAA2BA,a;;CAaxB,mB;;CAgBE,oB;;CAgBL,0D,gBAAmBC,O;;CAahB,c;;CAgBH,qB,gBAAmBA,O;;CAShB,a;;QArLP,M;EAAAC,2B;EAAAA,8B;;;QAcI,uH,0DAAsBJ,O;EAAtBK,2B;EAEZA;GAECA,mIAFDA;G;;;QAWY,uF,yDAAyBL,O;EAAzBK,2B;EAEZA;GAECA,mGAFDA;G;;;QAWqB,uE;EAAAC,2B;EAErBA;GAECA,qFAFDA;G;EAMAA,gE;;;QAQY,oF,mDAAuBL,W;EAAvBM,2B;EAEZA;GAECA,oGAFDA;G;;;QAWe,0E;EAAAC,2B;EAEfA;GAECA,wFAFDA;G;EAMAA,qG;;;QAQY,sF,mDAAyBN,a;EAAzBO,2B;EAEZA;GAECA,wGAFDA;G;;;QAWY,uH,qDAA2BP,a;EAA3BO,2B;EAEZA;GAECA,yIAFDA;G;;;QAWe,4E;EAAAC,2B;EAEfA;GAECA,0FAFDA;G;EAMAA,a;;;QAQiB,6E;EAAAC,2B;EAEjBA;GAECA,2FAFDA;G;EAMAA,Y;;;QAQY,qH,mDAAmBR,O;EAAnBS,2B;EAEZA;GAECA,iIAFDA;G;;;QAWe,uE;EAAAC,2B;EAEfA;GAECA,qFAFDA;G;EAMAA,Y;;;QAQY,gF,mDAAmBV,O;EAAnBS,2B;EACZA,4M;;;QAQe,sE;EAAAE,2B;EACfA,wJ;;;QAtLQ,O;EAAAC,mC;EAAAA;",
+"sources":["HasCommonOptions.java"],
+"names":["outline","showOutline","showGraticule","clipMap","org.pepstock.charba.client.geo.HasCommonOptions.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.HasCommonOptions.setOutline__$default","org.pepstock.charba.client.geo.HasCommonOptions.getOutline__$default","org.pepstock.charba.client.geo.HasCommonOptions.setShowOutline__$default","org.pepstock.charba.client.geo.HasCommonOptions.isShowOutline__$default","org.pepstock.charba.client.geo.HasCommonOptions.setShowGraticule__$default","org.pepstock.charba.client.geo.HasCommonOptions.isShowGraticule__$default","org.pepstock.charba.client.geo.HasCommonOptions.getShowGraticule__$default","org.pepstock.charba.client.geo.HasCommonOptions.setClipMap__$default","org.pepstock.charba.client.geo.HasCommonOptions.getClipMap__$default","org.pepstock.charba.client.geo.HasCommonOptions.isClipMap__$default","org.pepstock.charba.client.geo.HasCommonOptions.<clinit>"]
+}
+

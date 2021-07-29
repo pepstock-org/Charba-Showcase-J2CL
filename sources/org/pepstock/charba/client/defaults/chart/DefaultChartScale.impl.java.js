@@ -170,6 +170,14 @@ class DefaultChartScale extends j_l_Object {
  m_getBackgroundColorAsString__() {
   return this.f_scale__org_pepstock_charba_client_defaults_chart_DefaultChartScale_.m_getBackgroundColorAsString__();
  }
+ /** @override @return {?string} */
+ m_getStack__() {
+  return this.f_scale__org_pepstock_charba_client_defaults_chart_DefaultChartScale_.m_getStack__();
+ }
+ /** @override @return {number} */
+ m_getStackWeight__() {
+  return this.f_scale__org_pepstock_charba_client_defaults_chart_DefaultChartScale_.m_getStackWeight__();
+ }
  
  static $clinit() {
   DefaultChartScale.$clinit = () =>{};

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractAxisEvent.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;;MA2Be,iB;;CAAA,W;EAAAA,Q;EAAAA;OAGU,4DAHVA,C;EAAAA;OAKK,4DALLA,C;;;CAed,kP,eAAkCC,W,mBAAuBC,I,mBAAgBC,I,cAAWC,I;EACnFC,4K;EAGAA,kN;EACAA,yE;;;CAQsB,W;EACtBC,yE;;;CAQiB,W;EACjBC,yE;;;QAtCa,O;EAAAC,oC;EAAAA,iC;EAAAA;",
+"sources":["AbstractAxisEvent.java"],
+"names":["org.pepstock.charba.client.events.AbstractAxisEvent.<synthetic: ctor_js>","nativeEvent","type","item","axis","org.pepstock.charba.client.events.AbstractAxisEvent.<init>","org.pepstock.charba.client.events.AbstractAxisEvent.getItem","org.pepstock.charba.client.events.AbstractAxisEvent.getAxis","org.pepstock.charba.client.events.AbstractAxisEvent.<clinit>"]
+}
+

@@ -40,6 +40,16 @@ class DefaultScaleLimit extends j_l_Object {
  m_getMinRange__() {
   return IsDefaultScaleLimit.m_getMinRange__$default__org_pepstock_charba_client_zoom_IsDefaultScaleLimit(this);
  }
+ //Default method forwarding stub.
+ /** @override @return {boolean} */
+ m_isOriginalMax__() {
+  return IsDefaultScaleLimit.m_isOriginalMax__$default__org_pepstock_charba_client_zoom_IsDefaultScaleLimit(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {boolean} */
+ m_isOriginalMin__() {
+  return IsDefaultScaleLimit.m_isOriginalMin__$default__org_pepstock_charba_client_zoom_IsDefaultScaleLimit(this);
+ }
  /** @return {DefaultScaleLimit} */
  static get f_INSTANCE__org_pepstock_charba_client_zoom_DefaultScaleLimit() {
   return (DefaultScaleLimit.$clinit(), DefaultScaleLimit.$static_INSTANCE__org_pepstock_charba_client_zoom_DefaultScaleLimit);

@@ -137,6 +137,7 @@ class ChartBackgroundColor extends AbstractPlugin {
    let bgOptions = this.m_getOptions__org_pepstock_charba_client_IsChart_$p_org_pepstock_charba_client_impl_plugins_ChartBackgroundColor(chart);
    let ctx = $Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(chart.m_getCanvas__());
    ctx.save();
+   Context2dItem_$Overlay.m_setGlobalCompositeOperation__$devirt__org_pepstock_charba_client_dom_elements_Context2dItem__org_pepstock_charba_client_dom_enums_GlobalCompositeOperation(ctx, bgOptions.m_getGlobalCompositeOperation__());
    if ($Objects.m_equals__java_lang_Object__java_lang_Object(ColorType.f_COLOR__org_pepstock_charba_client_enums_ColorType, bgOptions.m_getColorType__())) {
     Context2dItem_$Overlay.m_setFillColor__$devirt__org_pepstock_charba_client_dom_elements_Context2dItem__java_lang_String(ctx, bgOptions.m_getBackgroundColorAsString__());
     this.m_applyBackgroundColorToChartElement__org_pepstock_charba_client_IsChart__java_lang_String_$p_org_pepstock_charba_client_impl_plugins_ChartBackgroundColor(chart, bgOptions.m_getBackgroundColorAsString__());

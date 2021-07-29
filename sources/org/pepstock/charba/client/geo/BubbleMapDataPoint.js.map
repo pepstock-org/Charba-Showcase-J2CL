@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BubbleMapDataPoint.impl.java.js",
+"lineCount":109,
+"mappings":"A;;;;;;;;;MA8BmB,kB;;CAAA,W;EAAAA,Q;;;;QA0CX,S;EAAAC,6B;EAAAA,yC;EAAAA,uE;EAAAA,iB;;;;CAAA,0D;EACNC,sI;;;;QASM,uB,eAA0BC,Q,gBAAiBC,S;EAA3CH,6B;EAAAA,yC;EAAAA,wG;EAAAA,iB;;;;CAAA,wE,eAA0BE,Q,gBAAiBC,S;EACjDF,kE;EAEAA,qC;EACAA,uC;;;;QAUM,+B,eAA0BC,Q,gBAAiBC,S,gBAAkBC,K;EAA7DJ,6B;EAAAA,yC;EAAAA,uH;EAAAA,iB;;;;CAAA,gF,eAA0BE,Q,gBAAiBC,S,gBAAkBC,K;EACnEH,mG;EAEAA,+B;;;;QAQD,wD,UAAgCI,Y;EAAhCL,6B;EAAAA,yC;EAAAA,kI;EAAAA,iB;;;;CAAA,yG,UAAgCK,Y;EAC/BJ,uH;;;CAQW,qB,eAAmBC,Q;EAC9BI,2J;;;CAQa,e;EACbC,wN;;;CAQW,sB,eAAoBJ,S;EAC/BK,6J;;;CAQa,gB;EACbC,yN;;;QAhHD,gE;EAAAC,6H;;;QAFkB,O;EAAAC,qC;EAAAA,kC;EAAAA,uB;EAElBA,8H;;;;;;;;;;;;;AAFkB;;",
+"sources":["BubbleMapDataPoint.java"],
+"names":["org.pepstock.charba.client.geo.BubbleMapDataPoint.<synthetic: ctor_js>","org.pepstock.charba.client.geo.BubbleMapDataPoint.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapDataPoint.<init>","latitude","longitude","value","nativeObject","org.pepstock.charba.client.geo.BubbleMapDataPoint.setLatitude","org.pepstock.charba.client.geo.BubbleMapDataPoint.getLatitude","org.pepstock.charba.client.geo.BubbleMapDataPoint.setLongitude","org.pepstock.charba.client.geo.BubbleMapDataPoint.getLongitude","org.pepstock.charba.client.geo.BubbleMapDataPoint.<synthetic: getter>","org.pepstock.charba.client.geo.BubbleMapDataPoint.<clinit>"]
+}
+

@@ -60,7 +60,7 @@ class DefaultPluginId extends Enum {
  /** @return {!Array<!DefaultPluginId>} */
  static m_values__() {
   DefaultPluginId.$clinit();
-  return /**@type {!Array<DefaultPluginId>}*/ ($Arrays.$init([DefaultPluginId.$static_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_FILLER__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_DECIMATION__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_TITLE__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId], DefaultPluginId));
+  return /**@type {!Array<DefaultPluginId>}*/ ($Arrays.$init([DefaultPluginId.$static_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_FILLER__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_DECIMATION__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_TITLE__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId, DefaultPluginId.$static_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId], DefaultPluginId));
  }
  /** @return {!DefaultPluginId} */
  static get f_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId() {
@@ -79,6 +79,10 @@ class DefaultPluginId extends Enum {
   return (DefaultPluginId.$clinit(), DefaultPluginId.$static_TITLE__org_pepstock_charba_client_enums_DefaultPluginId);
  }
  /** @return {!DefaultPluginId} */
+ static get f_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId() {
+  return (DefaultPluginId.$clinit(), DefaultPluginId.$static_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId);
+ }
+ /** @return {!DefaultPluginId} */
  static get f_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId() {
   return (DefaultPluginId.$clinit(), DefaultPluginId.$static_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId);
  }
@@ -91,6 +95,7 @@ class DefaultPluginId extends Enum {
   DefaultPluginId.$static_FILLER__org_pepstock_charba_client_enums_DefaultPluginId = DefaultPluginId.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("FILLER"), DefaultPluginId.$ordinal_FILLER__org_pepstock_charba_client_enums_DefaultPluginId, "filler");
   DefaultPluginId.$static_DECIMATION__org_pepstock_charba_client_enums_DefaultPluginId = DefaultPluginId.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DECIMATION"), DefaultPluginId.$ordinal_DECIMATION__org_pepstock_charba_client_enums_DefaultPluginId, "decimation");
   DefaultPluginId.$static_TITLE__org_pepstock_charba_client_enums_DefaultPluginId = DefaultPluginId.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TITLE"), DefaultPluginId.$ordinal_TITLE__org_pepstock_charba_client_enums_DefaultPluginId, "title");
+  DefaultPluginId.$static_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId = DefaultPluginId.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SUBTITLE"), DefaultPluginId.$ordinal_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId, "subtitle");
   DefaultPluginId.$static_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId = DefaultPluginId.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TOOLTIP"), DefaultPluginId.$ordinal_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId, "tooltip");
   DefaultPluginId.f_namesToValuesMap__org_pepstock_charba_client_enums_DefaultPluginId_ = null;
  }
@@ -114,6 +119,8 @@ DefaultPluginId.$static_DECIMATION__org_pepstock_charba_client_enums_DefaultPlug
 /**@private {!DefaultPluginId}*/
 DefaultPluginId.$static_TITLE__org_pepstock_charba_client_enums_DefaultPluginId;
 /**@private {!DefaultPluginId}*/
+DefaultPluginId.$static_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId;
+/**@private {!DefaultPluginId}*/
 DefaultPluginId.$static_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId;
 /**@type {Map<?string, !DefaultPluginId>}*/
 DefaultPluginId.f_namesToValuesMap__org_pepstock_charba_client_enums_DefaultPluginId_;
@@ -126,7 +133,9 @@ DefaultPluginId.$ordinal_DECIMATION__org_pepstock_charba_client_enums_DefaultPlu
 /**@const {number}*/
 DefaultPluginId.$ordinal_TITLE__org_pepstock_charba_client_enums_DefaultPluginId = 3;
 /**@const {number}*/
-DefaultPluginId.$ordinal_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId = 4;
+DefaultPluginId.$ordinal_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId = 4;
+/**@const {number}*/
+DefaultPluginId.$ordinal_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId = 5;
 Key.$markImplementor(DefaultPluginId);
 $Util.$setClassMetadataForEnum(DefaultPluginId, "org.pepstock.charba.client.enums.DefaultPluginId");
 

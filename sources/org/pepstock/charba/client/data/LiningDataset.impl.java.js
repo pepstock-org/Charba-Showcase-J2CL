@@ -2,6 +2,7 @@ goog.module('org.pepstock.charba.client.data.LiningDataset$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
 const Dataset = goog.require('org.pepstock.charba.client.data.Dataset$impl');
+const HasDataPointStyle = goog.require('org.pepstock.charba.client.data.HasDataPointStyle$impl');
 const HasOrder = goog.require('org.pepstock.charba.client.data.HasOrder$impl');
 const HasPointFillStrokeStyles = goog.require('org.pepstock.charba.client.data.HasPointFillStrokeStyles$impl');
 const HasFill = goog.require('org.pepstock.charba.client.options.HasFill$impl');
@@ -30,7 +31,6 @@ let ColorBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.ColorB
 let Gradient = goog.forwardDeclare('org.pepstock.charba.client.colors.Gradient$impl');
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
 let Pattern = goog.forwardDeclare('org.pepstock.charba.client.colors.Pattern$impl');
-let ArrayEnumList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayEnumList$impl');
 let ArrayInteger_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayInteger.$Overlay$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayObject_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayObject.$Overlay$impl');
@@ -38,6 +38,7 @@ let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commo
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let DataEnvelop = goog.forwardDeclare('org.pepstock.charba.client.data.DataEnvelop$impl');
+let DataPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.data.DataPointStyleHandler$impl');
 let CanvasObjectProperty = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset.CanvasObjectProperty$impl');
 let CommonProperty = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset.CommonProperty$impl');
 let InternalProperty = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset.InternalProperty$impl');
@@ -46,12 +47,11 @@ let Property = goog.forwardDeclare('org.pepstock.charba.client.data.LiningDatase
 let LiningDatasetFillHandler = goog.forwardDeclare('org.pepstock.charba.client.data.LiningDatasetFillHandler$impl');
 let OrderHandler = goog.forwardDeclare('org.pepstock.charba.client.data.OrderHandler$impl');
 let IsDefaultOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultOptions$impl');
-let Img_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Img.$Overlay$impl');
 let CapStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.CapStyle$impl');
 let IsFill = goog.forwardDeclare('org.pepstock.charba.client.enums.IsFill$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
-let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let FillHandler = goog.forwardDeclare('org.pepstock.charba.client.options.FillHandler$impl');
 let SpanGapHandler = goog.forwardDeclare('org.pepstock.charba.client.options.SpanGapHandler$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
@@ -63,6 +63,7 @@ let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
  * @implements {HasOrder}
  * @implements {HasPointFillStrokeStyles}
  * @implements {HasSpanGaps}
+ * @implements {HasDataPointStyle}
  */
 class LiningDataset extends Dataset {
  /** @protected */
@@ -104,8 +105,6 @@ class LiningDataset extends Dataset {
   this.f_pointHoverRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {CharbaCallbackProxy<?function(?):number>}*/
   this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {CharbaCallbackProxy<?function(?):*>}*/
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {ColorCallback<DatasetContext>}*/
   this.f_pointBackgroundColorCallback__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {ColorCallback<DatasetContext>}*/
@@ -126,8 +125,6 @@ class LiningDataset extends Dataset {
   this.f_pointHoverRadiusCallback__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {RotationCallback<DatasetContext>}*/
   this.f_pointRotationCallback__org_pepstock_charba_client_data_LiningDataset_;
-  /**@type {PointStyleCallback}*/
-  this.f_pointStyleCallback__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {CapStyleCallback<DatasetContext>}*/
   this.f_borderCapStyleCallback__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {BorderDashCallback<DatasetContext>}*/
@@ -150,6 +147,8 @@ class LiningDataset extends Dataset {
   this.f_orderHandler__org_pepstock_charba_client_data_LiningDataset_;
   /**@type {SpanGapHandler}*/
   this.f_spanGapHandler__org_pepstock_charba_client_data_LiningDataset_;
+  /**@type {DataPointStyleHandler}*/
+  this.f_pointStyleHandler__org_pepstock_charba_client_data_LiningDataset_;
  }
  
  $ctor__org_pepstock_charba_client_data_LiningDataset__org_pepstock_charba_client_Type__org_pepstock_charba_client_defaults_IsDefaultOptions__boolean(/** Type */ type, /** IsDefaultOptions */ defaultValues, /** boolean */ hidden) {
@@ -158,6 +157,7 @@ class LiningDataset extends Dataset {
   this.f_fillHandler__org_pepstock_charba_client_data_LiningDataset_ = LiningDatasetFillHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_enums_IsFill__org_pepstock_charba_client_commons_NativeObject(this, this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getFill__(), this.m_getNativeObject__());
   this.f_orderHandler__org_pepstock_charba_client_data_LiningDataset_ = OrderHandler.$create__org_pepstock_charba_client_commons_NativeObject(this.m_getNativeObject__());
   this.f_spanGapHandler__org_pepstock_charba_client_data_LiningDataset_ = SpanGapHandler.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultOptions__org_pepstock_charba_client_data_DataEnvelop(this, this.m_getDefaultValues__(), /**@type {!DataEnvelop<?>}*/ (DataEnvelop.$create__java_lang_Object__boolean(this.m_getNativeObject__(), true)));
+  this.f_pointStyleHandler__org_pepstock_charba_client_data_LiningDataset_ = DataPointStyleHandler.$create__org_pepstock_charba_client_data_Dataset__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_defaults_IsDefaultPoint(this, this.m_getNativeObject__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__());
   this.f_pointBackgroundColorCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context) =>{
    return this.m_invokeColorCallback__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_Scriptable__org_pepstock_charba_client_data_Dataset_CanvasObjectKey__java_lang_String(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context), this.m_getPointBackgroundColorCallback__(), InternalCanvasObjectProperty.f_POINT_BACKGROUND_COLOR__org_pepstock_charba_client_data_LiningDataset_InternalCanvasObjectProperty, this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getBackgroundColorAsString__());
   };
@@ -188,32 +188,29 @@ class LiningDataset extends Dataset {
   this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_9) =>{
    return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_9), this.m_getPointRotationCallback__(), this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getRotation__()), Double)));
   };
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_10) =>{
-   return this.m_onPointStyle__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_10));
+  this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_10) =>{
+   return this.m_onBorderCapStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_CapStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_10), this.m_getBorderCapStyleCallback__());
   };
-  this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_11) =>{
-   return this.m_onBorderCapStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_CapStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_11), this.m_getBorderCapStyleCallback__());
+  this.f_borderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_11) =>{
+   return this.m_onBorderDash__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_BorderDashCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_11), this.m_getBorderDashCallback__());
   };
-  this.f_borderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_12) =>{
-   return this.m_onBorderDash__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_BorderDashCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_12), this.m_getBorderDashCallback__());
+  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_12) =>{
+   return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_12), this.m_getBorderDashOffsetCallback__(), this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getBorderDashOffset__()), Double)));
   };
-  this.f_borderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_13) =>{
-   return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_13), this.m_getBorderDashOffsetCallback__(), this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getBorderDashOffset__()), Double)));
+  this.f_borderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_13) =>{
+   return this.m_onBorderJoinStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_JoinStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_13), this.m_getBorderJoinStyleCallback__());
   };
-  this.f_borderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_14) =>{
-   return this.m_onBorderJoinStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_JoinStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_14), this.m_getBorderJoinStyleCallback__());
+  this.f_hoverBorderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_14) =>{
+   return this.m_onBorderCapStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_CapStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_14), this.m_getHoverBorderCapStyleCallback__());
   };
-  this.f_hoverBorderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_15) =>{
-   return this.m_onBorderCapStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_CapStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_15), this.m_getHoverBorderCapStyleCallback__());
+  this.f_hoverBorderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_15) =>{
+   return this.m_onBorderDash__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_BorderDashCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_15), this.m_getHoverBorderDashCallback__());
   };
-  this.f_hoverBorderDashCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_16) =>{
-   return this.m_onBorderDash__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_BorderDashCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_16), this.m_getHoverBorderDashCallback__());
+  this.f_hoverBorderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_16) =>{
+   return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_16), this.m_getHoverBorderDashOffsetCallback__(), this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getBorderDashOffset__()), Double)));
   };
-  this.f_hoverBorderDashOffsetCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_17) =>{
-   return Double.m_doubleValue__java_lang_Double(/**@type {?number}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_17), this.m_getHoverBorderDashOffsetCallback__(), this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getBorderDashOffset__()), Double)));
-  };
-  this.f_hoverBorderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_18) =>{
-   return this.m_onBorderJoinStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_JoinStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_18), this.m_getHoverBorderJoinStyleCallback__());
+  this.f_hoverBorderJoinStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.callback = (/** ? */ context_17) =>{
+   return this.m_onBorderJoinStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_JoinStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_17), this.m_getHoverBorderJoinStyleCallback__());
   };
  }
  /** @override @return {FillHandler} */
@@ -227,6 +224,10 @@ class LiningDataset extends Dataset {
  /** @override @return {SpanGapHandler} */
  m_getSpanGapHandler__() {
   return this.f_spanGapHandler__org_pepstock_charba_client_data_LiningDataset_;
+ }
+ /** @override @return {DataPointStyleHandler} */
+ m_getPointStyleHandler__() {
+  return this.f_pointStyleHandler__org_pepstock_charba_client_data_LiningDataset_;
  }
  /** @override @return {Key} */
  m_getPointFillStyleProperty__() {
@@ -798,35 +799,6 @@ class LiningDataset extends Dataset {
   return /**@type {List<?number>}*/ (Collections.m_emptyList__());
  }
  
- m_setPointStyle__arrayOf_org_pepstock_charba_client_enums_PointStyle(/** Array<PointStyle> */ pointStyle) {
-  this.m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/**@type {PointStyleCallback}*/ (null));
-  this.m_setValueOrArray__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, pointStyle);
- }
- /** @return {List<PointStyle>} */
- m_getPointStyle__() {
-  if (!this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, false) && $Equality.$same(this.f_pointStyleCallback__org_pepstock_charba_client_data_LiningDataset_, null)) {
-   let array = this.m_getValueOrArray__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getPointStyle__());
-   return /**@type {ArrayEnumList<PointStyle>}*/ (ArrayListHelper.m_list__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ArrayString(PointStyle.m_values__(), array));
-  } else {
-   return /**@type {ArrayEnumList<PointStyle>}*/ (ArrayListHelper.m_list__arrayOf_org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key(PointStyle.m_values__(), /**@type {!Array<PointStyle>}*/ ($Arrays.$create([0], PointStyle))));
-  }
- }
- 
- m_setPointStyle__arrayOf_org_pepstock_charba_client_dom_elements_Img(/** Array<HTMLImageElement> */ pointStyle) {
-  this.m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/**@type {PointStyleCallback}*/ (null));
-  this.m_setValueOrArray__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_dom_elements_Img(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, pointStyle);
-  this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, true);
- }
- /** @return {List<HTMLImageElement>} */
- m_getPointStyleAsImages__() {
-  if (this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, false) && $Equality.$same(this.m_getPointStyleCallback__(), null)) {
-   let array = this.m_getValueOrArray__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined);
-   return ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayImage(array);
-  } else {
-   return /**@type {List<HTMLImageElement>}*/ (Collections.m_emptyList__());
-  }
- }
- 
  m_setPointRotation__arrayOf_double(/** Array<number> */ pointRotation) {
   this.m_setPointRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<DatasetContext>}*/ (null));
   this.m_setValueOrArray__org_pepstock_charba_client_commons_Key__arrayOf_double(Property.f_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property, pointRotation);
@@ -1027,25 +999,6 @@ class LiningDataset extends Dataset {
   this.m_setPointRotation__org_pepstock_charba_client_callbacks_RotationCallback(/**@type {RotationCallback<DatasetContext>}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property, pointRotationCallback);
  }
- /** @return {PointStyleCallback} */
- m_getPointStyleCallback__() {
-  return this.f_pointStyleCallback__org_pepstock_charba_client_data_LiningDataset_;
- }
- 
- m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/** PointStyleCallback */ pointStyleCallback) {
-  this.f_pointStyleCallback__org_pepstock_charba_client_data_LiningDataset_ = pointStyleCallback;
-  if (!$Equality.$same(pointStyleCallback, null)) {
-   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_.proxy);
-  } else {
-   this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
-  }
-  this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
- }
- 
- m_setPointStyle__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ pointStyleCallback) {
-  this.m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/**@type {PointStyleCallback}*/ (null));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, pointStyleCallback);
- }
  /** @return {CapStyleCallback<DatasetContext>} */
  m_getBorderCapStyleCallback__() {
   return this.f_borderCapStyleCallback__org_pepstock_charba_client_data_LiningDataset_;
@@ -1226,17 +1179,6 @@ class LiningDataset extends Dataset {
  m_getDefaultHoverBorderWidth__() {
   return this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getHoverBorderWidth__();
  }
- /** @return {*} */
- m_onPointStyle__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LiningDataset(/** DatasetContext */ context) {
-  let result = ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, this.m_getPointStyleCallback__());
-  if (PointStyle.$isInstance(result)) {
-   let style = /**@type {PointStyle}*/ ($Casts.$to(result, PointStyle));
-   return style.m_value__();
-  } else if (Img_$Overlay.$isInstance(result)) {
-   return result;
-  }
-  return this.m_getDefaultValues__().m_getElements__().m_getPoint__().m_getPointStyle__().m_value__();
- }
  /** @return {?string} */
  m_onBorderCapStyle__org_pepstock_charba_client_callbacks_DatasetContext__org_pepstock_charba_client_callbacks_CapStyleCallback_$p_org_pepstock_charba_client_data_LiningDataset(/** DatasetContext */ context, /** CapStyleCallback<DatasetContext> */ borderCapStyleCallback) {
   let result = /**@type {CapStyle}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, borderCapStyleCallback), CapStyle));
@@ -1308,6 +1250,51 @@ class LiningDataset extends Dataset {
  m_setSpanGaps__double(/** number */ arg0) {
   HasSpanGaps.m_setSpanGaps__$default__org_pepstock_charba_client_options_HasSpanGaps__double(this, arg0);
  }
+ //Default method forwarding stub.
+ /** @override @return {List<PointStyle>} */
+ m_getPointStyle__() {
+  return HasDataPointStyle.m_getPointStyle__$default__org_pepstock_charba_client_data_HasDataPointStyle(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {List<HTMLCanvasElement>} */
+ m_getPointStyleAsCanvas__() {
+  return HasDataPointStyle.m_getPointStyleAsCanvas__$default__org_pepstock_charba_client_data_HasDataPointStyle(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {List<HTMLImageElement>} */
+ m_getPointStyleAsImages__() {
+  return HasDataPointStyle.m_getPointStyleAsImages__$default__org_pepstock_charba_client_data_HasDataPointStyle(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {PointStyleCallback} */
+ m_getPointStyleCallback__() {
+  return HasDataPointStyle.m_getPointStyleCallback__$default__org_pepstock_charba_client_data_HasDataPointStyle(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return HasDataPointStyle.m_getPointStyleType__$default__org_pepstock_charba_client_data_HasDataPointStyle(this);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setPointStyle__arrayOf_org_pepstock_charba_client_enums_PointStyle(/** Array<PointStyle> */ arg0) {
+  HasDataPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_data_HasDataPointStyle__arrayOf_org_pepstock_charba_client_enums_PointStyle(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setPointStyle__arrayOf_org_pepstock_charba_client_dom_elements_Img(/** Array<HTMLImageElement> */ arg0) {
+  HasDataPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_data_HasDataPointStyle__arrayOf_org_pepstock_charba_client_dom_elements_Img(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setPointStyle__arrayOf_org_pepstock_charba_client_dom_elements_Canvas(/** Array<HTMLCanvasElement> */ arg0) {
+  HasDataPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_data_HasDataPointStyle__arrayOf_org_pepstock_charba_client_dom_elements_Canvas(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(/** PointStyleCallback */ arg0) {
+  HasDataPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_data_HasDataPointStyle__org_pepstock_charba_client_callbacks_PointStyleCallback(this, arg0);
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_data_LiningDataset() {
   this.f_borderCapStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
@@ -1328,7 +1315,6 @@ class LiningDataset extends Dataset {
   this.f_pointHitRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_pointHoverRadiusCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_pointRotationCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):number>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_pointStyleCallbackProxy__org_pepstock_charba_client_data_LiningDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_pointBackgroundColorCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_pointBorderColorCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_pointBorderWidthCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
@@ -1339,7 +1325,6 @@ class LiningDataset extends Dataset {
   this.f_pointHitRadiusCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_pointHoverRadiusCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_pointRotationCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
-  this.f_pointStyleCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_borderCapStyleCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_borderDashCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
   this.f_borderDashOffsetCallback__org_pepstock_charba_client_data_LiningDataset_ = null;
@@ -1357,6 +1342,7 @@ class LiningDataset extends Dataset {
   HasFill.$clinit();
   HasOrder.$clinit();
   HasSpanGaps.$clinit();
+  HasDataPointStyle.$clinit();
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -1381,6 +1367,7 @@ class LiningDataset extends Dataset {
   ArrayString_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   DataEnvelop = goog.module.get('org.pepstock.charba.client.data.DataEnvelop$impl');
+  DataPointStyleHandler = goog.module.get('org.pepstock.charba.client.data.DataPointStyleHandler$impl');
   CanvasObjectProperty = goog.module.get('org.pepstock.charba.client.data.Dataset.CanvasObjectProperty$impl');
   CommonProperty = goog.module.get('org.pepstock.charba.client.data.Dataset.CommonProperty$impl');
   InternalProperty = goog.module.get('org.pepstock.charba.client.data.Dataset.InternalProperty$impl');
@@ -1388,11 +1375,8 @@ class LiningDataset extends Dataset {
   Property = goog.module.get('org.pepstock.charba.client.data.LiningDataset.Property$impl');
   LiningDatasetFillHandler = goog.module.get('org.pepstock.charba.client.data.LiningDatasetFillHandler$impl');
   OrderHandler = goog.module.get('org.pepstock.charba.client.data.OrderHandler$impl');
-  Img_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Img.$Overlay$impl');
   CapStyle = goog.module.get('org.pepstock.charba.client.enums.CapStyle$impl');
   JoinStyle = goog.module.get('org.pepstock.charba.client.enums.JoinStyle$impl');
-  PointStyle = goog.module.get('org.pepstock.charba.client.enums.PointStyle$impl');
-  Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   SpanGapHandler = goog.module.get('org.pepstock.charba.client.options.SpanGapHandler$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
@@ -1404,6 +1388,7 @@ HasFill.$markImplementor(LiningDataset);
 HasOrder.$markImplementor(LiningDataset);
 HasPointFillStrokeStyles.$markImplementor(LiningDataset);
 HasSpanGaps.$markImplementor(LiningDataset);
+HasDataPointStyle.$markImplementor(LiningDataset);
 $Util.$setClassMetadata(LiningDataset, "org.pepstock.charba.client.data.LiningDataset");
 
 exports = LiningDataset;

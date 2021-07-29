@@ -2,7 +2,7 @@
 "version":3,
 "file":"MyLineChart.impl.java.js",
 "lineCount":59,
-"mappings":"A;;;;;;;;;;MAgBa,W;;CAAA,W;EAAAA,Q;;;QAyBL,S;EAAAC,sB;EAAAA,kC;EAAAA,uF;EAAAA,iB;;;CAAA,0E;EACNC,+K;;;CAIoB,c;EACpBC,yC;;;CAIoB,qB,gBAAmBC,M;EACvCD,iC;;;QAlCD,6E;EAAAE,4H;;;QAFY,O;EAAAC,8B;EAAAA,2B;EAAAA,oB;EAEZA,oT;;;;;;;;;;;;;;AAFY;;",
+"mappings":"A;;;;;;;;;;MAiBa,W;;CAAA,W;EAAAA,Q;;;QA0BL,S;EAAAC,sB;EAAAA,kC;EAAAA,uF;EAAAA,iB;;;CAAA,0E;EACNC,+K;;;CAIoB,c;EACpBC,yC;;;CAIoB,qB,gBAAmBC,M;EACvCD,iC;;;QAnCD,6E;EAAAE,4H;;;QAFY,O;EAAAC,8B;EAAAA,2B;EAAAA,oB;EAEZA,oT;;;;;;;;;;;;;;AAFY;;",
 "sources":["MyLineChart.java"],
 "names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.<init>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.newDataset","hidden","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart.<clinit>"]
 }

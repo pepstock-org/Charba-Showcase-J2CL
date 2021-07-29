@@ -34,6 +34,13 @@ class JsZoomHelper extends j_l_Object {
   JsZoomHelper.$clinit();
   return JsZoomHelper.f_INSTANCE__org_pepstock_charba_client_zoom_JsZoomHelper_;
  }
+ /** @return {number} */
+ m_getZoomLevel__org_pepstock_charba_client_Chart_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart) {
+  if (!$Equality.$same(chart, null)) {
+   return CharbaJsZoomHelper.getZoomLevel(chart);
+  }
+  return Undefined.f_DOUBLE__org_pepstock_charba_client_items_Undefined;
+ }
  
  m_resetZoom__org_pepstock_charba_client_Chart__org_pepstock_charba_client_options_TransitionKey_$pp_org_pepstock_charba_client_zoom(/** Chart */ chart, /** TransitionKey */ transition) {
   if (!$Equality.$same(chart, null)) {

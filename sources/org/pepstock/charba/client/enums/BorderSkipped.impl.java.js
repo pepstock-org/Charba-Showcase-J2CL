@@ -47,7 +47,7 @@ class BorderSkipped extends Enum {
  /** @return {!Array<!BorderSkipped>} */
  static m_values__() {
   BorderSkipped.$clinit();
-  return /**@type {!Array<BorderSkipped>}*/ ($Arrays.$init([BorderSkipped.$static_START__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_END__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_TOP__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_LEFT__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_BOTTOM__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_RIGHT__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_FALSE__org_pepstock_charba_client_enums_BorderSkipped], BorderSkipped));
+  return /**@type {!Array<BorderSkipped>}*/ ($Arrays.$init([BorderSkipped.$static_START__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_END__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_TOP__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_LEFT__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_BOTTOM__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_RIGHT__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_MIDDLE__org_pepstock_charba_client_enums_BorderSkipped, BorderSkipped.$static_FALSE__org_pepstock_charba_client_enums_BorderSkipped], BorderSkipped));
  }
  /** @return {!BorderSkipped} */
  static get f_START__org_pepstock_charba_client_enums_BorderSkipped() {
@@ -74,6 +74,10 @@ class BorderSkipped extends Enum {
   return (BorderSkipped.$clinit(), BorderSkipped.$static_RIGHT__org_pepstock_charba_client_enums_BorderSkipped);
  }
  /** @return {!BorderSkipped} */
+ static get f_MIDDLE__org_pepstock_charba_client_enums_BorderSkipped() {
+  return (BorderSkipped.$clinit(), BorderSkipped.$static_MIDDLE__org_pepstock_charba_client_enums_BorderSkipped);
+ }
+ /** @return {!BorderSkipped} */
  static get f_FALSE__org_pepstock_charba_client_enums_BorderSkipped() {
   return (BorderSkipped.$clinit(), BorderSkipped.$static_FALSE__org_pepstock_charba_client_enums_BorderSkipped);
  }
@@ -88,6 +92,7 @@ class BorderSkipped extends Enum {
   BorderSkipped.$static_LEFT__org_pepstock_charba_client_enums_BorderSkipped = BorderSkipped.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LEFT"), BorderSkipped.$ordinal_LEFT__org_pepstock_charba_client_enums_BorderSkipped, "left");
   BorderSkipped.$static_BOTTOM__org_pepstock_charba_client_enums_BorderSkipped = BorderSkipped.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BOTTOM"), BorderSkipped.$ordinal_BOTTOM__org_pepstock_charba_client_enums_BorderSkipped, "bottom");
   BorderSkipped.$static_RIGHT__org_pepstock_charba_client_enums_BorderSkipped = BorderSkipped.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("RIGHT"), BorderSkipped.$ordinal_RIGHT__org_pepstock_charba_client_enums_BorderSkipped, "right");
+  BorderSkipped.$static_MIDDLE__org_pepstock_charba_client_enums_BorderSkipped = BorderSkipped.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("MIDDLE"), BorderSkipped.$ordinal_MIDDLE__org_pepstock_charba_client_enums_BorderSkipped, "middle");
   BorderSkipped.$static_FALSE__org_pepstock_charba_client_enums_BorderSkipped = BorderSkipped.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("FALSE"), BorderSkipped.$ordinal_FALSE__org_pepstock_charba_client_enums_BorderSkipped, "false");
   BorderSkipped.f_namesToValuesMap__org_pepstock_charba_client_enums_BorderSkipped_ = null;
  }
@@ -115,6 +120,8 @@ BorderSkipped.$static_BOTTOM__org_pepstock_charba_client_enums_BorderSkipped;
 /**@private {!BorderSkipped}*/
 BorderSkipped.$static_RIGHT__org_pepstock_charba_client_enums_BorderSkipped;
 /**@private {!BorderSkipped}*/
+BorderSkipped.$static_MIDDLE__org_pepstock_charba_client_enums_BorderSkipped;
+/**@private {!BorderSkipped}*/
 BorderSkipped.$static_FALSE__org_pepstock_charba_client_enums_BorderSkipped;
 /**@type {Map<?string, !BorderSkipped>}*/
 BorderSkipped.f_namesToValuesMap__org_pepstock_charba_client_enums_BorderSkipped_;
@@ -131,7 +138,9 @@ BorderSkipped.$ordinal_BOTTOM__org_pepstock_charba_client_enums_BorderSkipped = 
 /**@const {number}*/
 BorderSkipped.$ordinal_RIGHT__org_pepstock_charba_client_enums_BorderSkipped = 5;
 /**@const {number}*/
-BorderSkipped.$ordinal_FALSE__org_pepstock_charba_client_enums_BorderSkipped = 6;
+BorderSkipped.$ordinal_MIDDLE__org_pepstock_charba_client_enums_BorderSkipped = 6;
+/**@const {number}*/
+BorderSkipped.$ordinal_FALSE__org_pepstock_charba_client_enums_BorderSkipped = 7;
 Key.$markImplementor(BorderSkipped);
 $Util.$setClassMetadataForEnum(BorderSkipped, "org.pepstock.charba.client.enums.BorderSkipped");
 

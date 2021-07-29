@@ -2,7 +2,7 @@
 "version":3,
 "file":"Defaults$InternalDefaultScales.impl.java.js",
 "lineCount":34,
-"mappings":"A;;;;;;;;;MAojBsB,qB;;CAAA,W;EAAAA,Q;;;QAOpB,wD,UAAmCC,Y;EAAnCC,gC;EAAAA,4C;EAAAA,0I;EAAAA,iB;;;CAAA,iH,UAAmCD,Y;EAClCE,oI;;;CASY,oF,iBAAkBC,I;EAE9BC,qL;;;QAnBmB,O;EAAAC,wC;EAAAA,qC;EAAAA;",
+"mappings":"A;;;;;;;;;MAojBsB,qB;;CAAA,W;EAAAA,Q;;;QAOpB,wD,UAAmCC,Y;EAAnCC,gC;EAAAA,4C;EAAAA,0I;EAAAA,iB;;;CAAA,iH,UAAmCD,Y;EAClCE,oI;;;CASY,4F,iBAAkBC,I;EAE9BC,qL;;;QAnBmB,O;EAAAC,wC;EAAAA,qC;EAAAA;",
 "sources":["Defaults.java"],
 "names":["org.pepstock.charba.client.Defaults$InternalDefaultScales.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.Defaults$InternalDefaultScales.<synthetic: ctor_create>","org.pepstock.charba.client.Defaults$InternalDefaultScales.<init>","type","org.pepstock.charba.client.Defaults$InternalDefaultScales.getScale","org.pepstock.charba.client.Defaults$InternalDefaultScales.<clinit>"]
 }

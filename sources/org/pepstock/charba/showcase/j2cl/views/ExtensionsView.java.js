@@ -14,6 +14,7 @@ goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase');
 goog.require('org.pepstock.charba.showcase.j2cl.views.AbstractView');
 goog.require('org.pepstock.charba.showcase.j2cl.views.ExtensionsView.Category');
+goog.require('org.pepstock.charba.showcase.j2cl.views.ExtensionsView.GeoChartsCase');
 goog.require('vmbootstrap.Casts');
 goog.require('vmbootstrap.Objects');
 

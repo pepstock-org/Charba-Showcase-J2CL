@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ColorAxis$ColorAxisRemappedOptionsFactory.impl.java.js",
+"lineCount":36,
+"mappings":"A;;;;;;;;;;;MAmGc,+B;;CAAA,W;EAAAA,Q;;;QAKZ,S;EAAAC,0C;EAAAA,sD;EAAAA,8F;EAAAA,iB;;;CAAA,iF;EACCC,qN;;;CASsB,yD,UAAoBC,Y;EAC1CC,8F;;;QAhBW,O;EAAAC,kD;EAAAA,+C;EAAAA;",
+"sources":["ColorAxis.java"],
+"names":["org.pepstock.charba.client.geo.ColorAxis$ColorAxisRemappedOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.geo.ColorAxis$ColorAxisRemappedOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ColorAxis$ColorAxisRemappedOptionsFactory.<init>","nativeObject","org.pepstock.charba.client.geo.ColorAxis$ColorAxisRemappedOptionsFactory.create","org.pepstock.charba.client.geo.ColorAxis$ColorAxisRemappedOptionsFactory.<clinit>"]
+}
+

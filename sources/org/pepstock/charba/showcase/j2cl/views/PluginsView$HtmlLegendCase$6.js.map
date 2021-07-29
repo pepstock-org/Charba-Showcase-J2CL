@@ -2,7 +2,7 @@
 "version":3,
 "file":"PluginsView$HtmlLegendCase$6.impl.java.js",
 "lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAwQkE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CAC1C,U;EACpBC,+C;;;QAF8D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAyQkE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CAC1C,U;EACpBC,+C;;;QAF8D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["PluginsView.java"],
 "names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$6.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$6.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$6.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$6.create","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$6.<clinit>"]
 }

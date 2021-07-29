@@ -31,6 +31,11 @@ class $LambdaAdaptor extends j_l_Object {
   return ($function = this.f_fn__org_pepstock_charba_client_Controller_$LambdaAdaptor, $function());
  }
  //Default method forwarding stub.
+ /** @override @return {boolean} */
+ m_mustBeRegistered__() {
+  return Controller.m_mustBeRegistered__$default__org_pepstock_charba_client_Controller(this);
+ }
+ //Default method forwarding stub.
  /** @override */
  m_onAfterDraw__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ arg0, /** IsChart */ arg1) {
   Controller.m_onAfterDraw__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(this, arg0, arg1);

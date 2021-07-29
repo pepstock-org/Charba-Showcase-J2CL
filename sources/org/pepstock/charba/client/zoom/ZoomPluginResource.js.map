@@ -2,7 +2,7 @@
 "version":3,
 "file":"ZoomPluginResource.impl.java.js",
 "lineCount":45,
-"mappings":"A;;;;;;;;;MA0BmB,kB;;CAAA,W;EAAAA,Q;;;QAmBlB,S;EAAAC,6B;EAAAA,yC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EACCC,gT;;;QApBiB,O;EAAAC,qC;EAAAA,kC;EAAAA,qC;EAGlBA,uqV;;;;;;;;;;;;;AAHkB;mBAGY,8DAHZ;",
+"mappings":"A;;;;;;;;;MA0BmB,kB;;CAAA,W;EAAAA,Q;;;QAoBlB,S;EAAAC,6B;EAAAA,yC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EACCC,gT;;;QArBiB,O;EAAAC,qC;EAAAA,kC;EAAAA,qC;EAGlBA,onX;;;;;;;;;;;;;AAHkB;mBAGY,8DAHZ;",
 "sources":["ZoomPluginResource.java"],
 "names":["org.pepstock.charba.client.zoom.ZoomPluginResource.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.ZoomPluginResource.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.ZoomPluginResource.<init>","org.pepstock.charba.client.zoom.ZoomPluginResource.<clinit>"]
 }

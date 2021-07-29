@@ -47,8 +47,8 @@ class IsChart {
    throw $Exceptions.toJs(IllegalArgumentException.$create__java_lang_String("Chart is not consistent"));
   }
  }
- /** @return {IsChart} */
- static m_checkAndGetIfConsistent__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
+ /** @template T @return {T} */
+ static m_checkAndGetIfConsistent__org_pepstock_charba_client_IsChart(/** T */ chart) {
   IsChart.$clinit();
   IsChart.m_checkIfConsistent__org_pepstock_charba_client_IsChart(chart);
   return chart;
@@ -193,7 +193,11 @@ class IsChart {
  /** @abstract */
  m_hide__int(/** number */ datasetIndex) {}
  /** @abstract */
+ m_hide__int__int(/** number */ datasetIndex, /** number */ dataIndex) {}
+ /** @abstract */
  m_show__int(/** number */ datasetIndex) {}
+ /** @abstract */
+ m_show__int__int(/** number */ datasetIndex, /** number */ dataIndex) {}
  /** @abstract @return {DatasetReference} */
  m_getElementAtEvent__org_pepstock_charba_client_dom_BaseNativeEvent(/** Object */ event) {}
  /** @abstract @return {List<DatasetReference>} */

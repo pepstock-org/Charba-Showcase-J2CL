@@ -63,6 +63,10 @@ class IsDefaultScale {
  m_getPosition__() {}
  /** @abstract @return {Bounds} */
  m_getBounds__() {}
+ /** @abstract @return {?string} */
+ m_getStack__() {}
+ /** @abstract @return {number} */
+ m_getStackWeight__() {}
  /** @abstract @return {boolean} */
  m_isAnimate__() {}
  /** @abstract @return {number} */

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AngleCallback.impl.java.js",
+"lineCount":22,
+"mappings":"A;;;;;;;;;;;;MAyBiB,a;;QAAA,M;EAAAA,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
+"sources":["AngleCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.AngleCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.AngleCallback.<clinit>"]
+}
+

@@ -78,13 +78,6 @@ class HtmlLegendPointStylesAsImageCase extends BaseComposite {
   dataset1.m_setData__arrayOf_double(values);
   dataset1.m_setFill__org_pepstock_charba_client_enums_IsFill(Fill.f_FALSE__org_pepstock_charba_client_enums_Fill);
   dataset1.m_setPointStyle__arrayOf_org_pepstock_charba_client_dom_elements_Img([CastHelper.m_toImg__java_lang_Object(Images.m_get__().f_customPoint__org_pepstock_charba_showcase_j2cl_cases_commons_Images)]);
-  let dataset2 = /**@type {LineDataset}*/ ($Casts.$to(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_HtmlLegendPointStylesAsImageCase_.m_newDataset__(), LineDataset));
-  dataset2.m_setLabel__java_lang_String("dataset 2");
-  let color2 = GoogleChartColor.m_values__()[1];
-  dataset2.m_setBackgroundColor__java_lang_String(color2.m_toHex__());
-  dataset2.m_setBorderColor__java_lang_String(color2.m_toHex__());
-  dataset2.m_setData__arrayOf_double(this.m_getRandomDigits__int(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite));
-  dataset2.m_setFill__org_pepstock_charba_client_enums_IsFill(Fill.f_ORIGIN__org_pepstock_charba_client_enums_Fill);
   let axis1 = CartesianCategoryAxis.$create__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_HtmlLegendPointStylesAsImageCase_);
   axis1.m_setDisplay__boolean(true);
   axis1.m_getTitle__().m_setDisplay__boolean(true);

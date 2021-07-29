@@ -17,6 +17,7 @@ goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.NativeObjectContainer');
 goog.require('org.pepstock.charba.client.commons.PropertyHandler.DefaultAbstractNode');
 goog.require('org.pepstock.charba.client.dom.BaseNativeEvent.$Overlay');
+goog.require('org.pepstock.charba.client.dom.elements.Canvas.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Img.$Overlay');

@@ -2,7 +2,7 @@
 "version":3,
 "file":"LegendItem$LegendItemFactory.impl.java.js",
 "lineCount":43,
-"mappings":"A;;;;;;;;;;;;MA6eqB,iB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAUU,yD,UAAoBC,Y;EACrCC,yF;;;;CAhBkB,U;EAAAA,gL;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MA6fqB,iB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAUU,yD,UAAoBC,Y;EACrCC,yF;;;;CAhBkB,U;EAAAA,gL;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;EAAAA;",
 "sources":["LegendItem.java"],
 "names":["org.pepstock.charba.client.items.LegendItem$LegendItemFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.LegendItem$LegendItemFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendItem$LegendItemFactory.<init>","nativeObject","org.pepstock.charba.client.items.LegendItem$LegendItemFactory.create","org.pepstock.charba.client.items.LegendItem$LegendItemFactory.<clinit>"]
 }

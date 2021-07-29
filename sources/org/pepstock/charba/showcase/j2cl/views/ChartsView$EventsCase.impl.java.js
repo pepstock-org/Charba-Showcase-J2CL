@@ -64,7 +64,7 @@ class EventsCase extends Enum {
  /** @return {!Array<!EventsCase>} */
  static m_values__() {
   EventsCase.$clinit();
-  return /**@type {!Array<EventsCase>}*/ ($Arrays.$init([EventsCase.$static_CHART_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_CHART_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_CHART_RESIZE__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_DATASET_SELECTION_BAR__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_DATASET_SELECTION_PIE__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_LEGEND_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_LEGEND_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_TITLE_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_AXES_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase], EventsCase));
+  return /**@type {!Array<EventsCase>}*/ ($Arrays.$init([EventsCase.$static_CHART_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_CHART_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_CHART_RESIZE__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_DATASET_SELECTION_BAR__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_DATASET_SELECTION_PIE__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_LEGEND_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_LEGEND_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_TITLE_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, EventsCase.$static_AXES_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase], EventsCase));
  }
  /** @return {!EventsCase} */
  static get f_CHART_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase() {
@@ -95,12 +95,12 @@ class EventsCase extends Enum {
   return (EventsCase.$clinit(), EventsCase.$static_LEGEND_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase);
  }
  /** @return {!EventsCase} */
- static get f_TITLE_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase() {
-  return (EventsCase.$clinit(), EventsCase.$static_TITLE_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase);
+ static get f_TITLE_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase() {
+  return (EventsCase.$clinit(), EventsCase.$static_TITLE_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase);
  }
  /** @return {!EventsCase} */
- static get f_AXES_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase() {
-  return (EventsCase.$clinit(), EventsCase.$static_AXES_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase);
+ static get f_AXES_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase() {
+  return (EventsCase.$clinit(), EventsCase.$static_AXES_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase);
  }
  
  static $clinit() {
@@ -114,8 +114,8 @@ class EventsCase extends Enum {
   EventsCase.$static_DATASET_SELECTION_PIE__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = EventsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("DATASET_SELECTION_PIE"), EventsCase.$ordinal_DATASET_SELECTION_PIE__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, "Selecting dataset on pie chart", $5.$create__());
   EventsCase.$static_LEGEND_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = EventsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("LEGEND_CLICK"), EventsCase.$ordinal_LEGEND_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, "Legend click events", $6.$create__());
   EventsCase.$static_LEGEND_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = EventsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("LEGEND_HOVER"), EventsCase.$ordinal_LEGEND_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, "Legend hover and leave events", $7.$create__());
-  EventsCase.$static_TITLE_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = EventsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("TITLE_CLICK"), EventsCase.$ordinal_TITLE_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, "Title click events", $8.$create__());
-  EventsCase.$static_AXES_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = EventsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("AXES_CLICK"), EventsCase.$ordinal_AXES_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, "Axes click events", $9.$create__());
+  EventsCase.$static_TITLE_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = EventsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("TITLE_EVENTS"), EventsCase.$ordinal_TITLE_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, "Title events", $8.$create__());
+  EventsCase.$static_AXES_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = EventsCase.$create__java_lang_String__int__java_lang_String__org_pepstock_charba_showcase_j2cl_cases_CaseFactory($Util.$makeEnumName("AXES_EVENTS"), EventsCase.$ordinal_AXES_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase, "Axes events", $9.$create__());
   EventsCase.f_namesToValuesMap__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase_ = null;
  }
  /** @return {boolean} */
@@ -153,9 +153,9 @@ EventsCase.$static_LEGEND_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsV
 /**@private {!EventsCase}*/
 EventsCase.$static_LEGEND_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase;
 /**@private {!EventsCase}*/
-EventsCase.$static_TITLE_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase;
+EventsCase.$static_TITLE_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase;
 /**@private {!EventsCase}*/
-EventsCase.$static_AXES_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase;
+EventsCase.$static_AXES_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase;
 /**@type {Map<?string, !EventsCase>}*/
 EventsCase.f_namesToValuesMap__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase_;
 /**@const {number}*/
@@ -173,9 +173,9 @@ EventsCase.$ordinal_LEGEND_CLICK__org_pepstock_charba_showcase_j2cl_views_Charts
 /**@const {number}*/
 EventsCase.$ordinal_LEGEND_HOVER__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = 6;
 /**@const {number}*/
-EventsCase.$ordinal_TITLE_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = 7;
+EventsCase.$ordinal_TITLE_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = 7;
 /**@const {number}*/
-EventsCase.$ordinal_AXES_CLICK__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = 8;
+EventsCase.$ordinal_AXES_EVENTS__org_pepstock_charba_showcase_j2cl_views_ChartsView_EventsCase = 8;
 CaseItem.$markImplementor(EventsCase);
 $Util.$setClassMetadataForEnum(EventsCase, "org.pepstock.charba.showcase.j2cl.views.ChartsView$EventsCase");
 

@@ -45,7 +45,7 @@ class DefaultScaleId extends Enum {
  m_value__() {
   return this.f_value__org_pepstock_charba_client_enums_DefaultScaleId_;
  }
- /** @return {AxisKind} */
+ /** @override @return {AxisKind} */
  m_getAxisKind__() {
   return this.f_axisKind__org_pepstock_charba_client_enums_DefaultScaleId_;
  }
@@ -61,8 +61,8 @@ class DefaultScaleId extends Enum {
  m_is__org_pepstock_charba_client_options_ScaleId(/** ScaleId */ scaleId) {
   return this.m_is__java_lang_String(/**@type {ScaleId}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(scaleId), ScaleId)).m_value__());
  }
- /** @return {DefaultScaleId} */
- static m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_enums_DefaultScaleId(/** AxisKind */ kind, /** DefaultScaleId */ defaultValue) {
+ /** @return {ScaleId} */
+ static m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_options_ScaleId(/** AxisKind */ kind, /** ScaleId */ defaultValue) {
   DefaultScaleId.$clinit();
   if (Key.m_isValid__org_pepstock_charba_client_commons_Key(kind)) {
    for (let $array = DefaultScaleId.m_values__(), $index = 0; $index < $array.length; $index++) {
@@ -74,7 +74,7 @@ class DefaultScaleId extends Enum {
     }
    }
   }
-  return /**@type {DefaultScaleId}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(defaultValue), DefaultScaleId));
+  return /**@type {ScaleId}*/ ($Casts.$to(Key.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Key(defaultValue), ScaleId));
  }
  /** @return {AxisKind} */
  static m_getAxisKindByScaleId__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_enums_AxisKind(/** Key */ scaleId, /** AxisKind */ defaultValue) {

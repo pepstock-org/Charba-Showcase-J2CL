@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TitleEventsCase$2.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;;MA4EgD,E;;CAAA,W;EAAAA,Q;EAAAA;qF;;;QAAA,uE;EAAAC,a;EAAAA,yB;EAAAA,+J;EAAAA,iB;;;CAAA,uI;EAAAC,iG;EAAAA,iC;;;CAGjC,4D,wBAAwBC,K;EACnCC,iT;EACAA,wI;EACAA,kC;;;QAN4C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["TitleEventsCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase$2.onEnter","org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase$2.<clinit>"]
+}
+

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HasCommonOptions$$LambdaAdaptor.impl.java.js",
+"lineCount":105,
+"mappings":"A;;;;;;;;;;;;;;;MA4BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4E;EAAAA,4I;;;CAAA,kI;EAAAC,iC;EAAAA,+E;;;CAAA,c;EAAAC,sD;EAAAA,4G;;;;CAAA,c;EAAAC,sG;;;;CAAA,c;EAAAC,sG;;;;CAAA,oB;EAAAC,4G;;;;CAAA,a;EAAAC,qG;;;;CAAA,mB;EAAAC,2G;;;;CAAA,iB;EAAAC,yG;;;;CAAA,0D;EAAAC,mJ;;;;CAAA,qB;EAAAA,8G;;;;CAAA,4D;EAAAC,qJ;;;;CAAA,4B;EAAAA,qH;;;;CAAA,2B;EAAAC,oH;;;;CAAA,4D;EAAAA,qJ;;;;CAAA,yB;EAAAC,kH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["HasCommonOptions.java"],
+"names":["org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.<init>","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.getHandler","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.getClipMap","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.getOutline","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.getShowGraticule","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.isClipMap","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.isShowGraticule","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.isShowOutline","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.setClipMap","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.setOutline","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.setShowGraticule","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.setShowOutline","org.pepstock.charba.client.geo.HasCommonOptions$$LambdaAdaptor.<clinit>"]
+}
+

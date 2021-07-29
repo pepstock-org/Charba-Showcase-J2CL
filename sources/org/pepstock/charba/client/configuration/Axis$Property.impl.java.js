@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BEFORE_UPDATE__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_UPDATE__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_SET_DIMENSIONS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_SET_DIMENSIONS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_DATA_LIMITS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_DATA_LIMITS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_BUILD_TICKS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_BUILD_TICKS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_FIT__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_FIT__org_pepstock_charba_client_configuration_Axis_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BEFORE_UPDATE__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_UPDATE__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_SET_DIMENSIONS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_SET_DIMENSIONS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_DATA_LIMITS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_DATA_LIMITS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_BUILD_TICKS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_BUILD_TICKS__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_BEFORE_FIT__org_pepstock_charba_client_configuration_Axis_Property, Property.$static_AFTER_FIT__org_pepstock_charba_client_configuration_Axis_Property], Property));
  }
  /** @return {!Property} */
  static get f_BEFORE_UPDATE__org_pepstock_charba_client_configuration_Axis_Property() {
@@ -90,12 +90,12 @@ class Property extends Enum {
   return (Property.$clinit(), Property.$static_AFTER_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property);
  }
  /** @return {!Property} */
- static get f_BEFORE_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property() {
-  return (Property.$clinit(), Property.$static_BEFORE_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property);
+ static get f_BEFORE_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property() {
+  return (Property.$clinit(), Property.$static_BEFORE_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property);
  }
  /** @return {!Property} */
- static get f_AFTER_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property() {
-  return (Property.$clinit(), Property.$static_AFTER_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property);
+ static get f_AFTER_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property() {
+  return (Property.$clinit(), Property.$static_AFTER_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property);
  }
  /** @return {!Property} */
  static get f_BEFORE_FIT__org_pepstock_charba_client_configuration_Axis_Property() {
@@ -120,8 +120,8 @@ class Property extends Enum {
   Property.$static_AFTER_BUILD_TICKS__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AFTER_BUILD_TICKS"), Property.$ordinal_AFTER_BUILD_TICKS__org_pepstock_charba_client_configuration_Axis_Property, "afterBuildTicks");
   Property.$static_BEFORE_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BEFORE_TICK_TO_LABEL_CONVERSION"), Property.$ordinal_BEFORE_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property, "beforeTickToLabelConversion");
   Property.$static_AFTER_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AFTER_TICK_TO_LABEL_CONVERSION"), Property.$ordinal_AFTER_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property, "afterTickToLabelConversion");
-  Property.$static_BEFORE_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BEFORE_CALCULATE_TICK_ROTATION"), Property.$ordinal_BEFORE_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, "beforeCalculateTickRotation");
-  Property.$static_AFTER_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AFTER_CALCULATE_TICK_ROTATION"), Property.$ordinal_AFTER_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, "afterCalculateTickRotation");
+  Property.$static_BEFORE_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BEFORE_CALCULATE_LABEL_ROTATION"), Property.$ordinal_BEFORE_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, "beforeCalculateLabelRotation");
+  Property.$static_AFTER_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AFTER_CALCULATE_LABEL_ROTATION"), Property.$ordinal_AFTER_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property, "afterCalculateLabelRotation");
   Property.$static_BEFORE_FIT__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BEFORE_FIT"), Property.$ordinal_BEFORE_FIT__org_pepstock_charba_client_configuration_Axis_Property, "beforeFit");
   Property.$static_AFTER_FIT__org_pepstock_charba_client_configuration_Axis_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("AFTER_FIT"), Property.$ordinal_AFTER_FIT__org_pepstock_charba_client_configuration_Axis_Property, "afterFit");
   Property.f_namesToValuesMap__org_pepstock_charba_client_configuration_Axis_Property_ = null;
@@ -158,9 +158,9 @@ Property.$static_BEFORE_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_con
 /**@private {!Property}*/
 Property.$static_AFTER_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property;
 /**@private {!Property}*/
-Property.$static_BEFORE_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property;
+Property.$static_BEFORE_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property;
 /**@private {!Property}*/
-Property.$static_AFTER_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property;
+Property.$static_AFTER_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property;
 /**@private {!Property}*/
 Property.$static_BEFORE_FIT__org_pepstock_charba_client_configuration_Axis_Property;
 /**@private {!Property}*/
@@ -188,9 +188,9 @@ Property.$ordinal_BEFORE_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_co
 /**@const {number}*/
 Property.$ordinal_AFTER_TICK_TO_LABEL_CONVERSION__org_pepstock_charba_client_configuration_Axis_Property = 9;
 /**@const {number}*/
-Property.$ordinal_BEFORE_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = 10;
+Property.$ordinal_BEFORE_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = 10;
 /**@const {number}*/
-Property.$ordinal_AFTER_CALCULATE_TICK_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = 11;
+Property.$ordinal_AFTER_CALCULATE_LABEL_ROTATION__org_pepstock_charba_client_configuration_Axis_Property = 11;
 /**@const {number}*/
 Property.$ordinal_BEFORE_FIT__org_pepstock_charba_client_configuration_Axis_Property = 12;
 /**@const {number}*/

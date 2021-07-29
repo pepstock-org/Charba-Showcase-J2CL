@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CommonOptionsElementHandler.impl.java.js",
+"lineCount":91,
+"mappings":"A;;;;;;;;;;;MA8BY,2B;;CAAA,W;EAAAA,Q;;;QA2DX,iJ,qBAAyCC,M,aAAYC,Q,WAAuBC,Y;EAA5EC,sC;EAAAA,kD;EAAAA,sP;EAAAA,iB;;;CAAA,2M,qBAAyCH,M,aAAYC,Q,WAAuBC,Y;EAC3EE,sO;;;CAQI,gF,gBAAiCC,e;EACrCC,mN;;;CAQM,wE;EACNC,2P;;;CAQI,+D,eAA0BC,W;EAC9BC,6N;;;CAQG,4D;EACHC,kS;;;CAQI,4E,gBAA6BC,W;EACjCC,2M;;;CAQM,oE;EACNC,wP;;;CAYI,iE,eAA4BL,W;EAChCM,+N;;;CAQG,8D;EACHC,sS;;;CAQI,8E,gBAA+BJ,W;EACnCK,6M;;;CAQM,sE;EACNC,mT;;;QA1JU,O;EAAAC,8C;EAAAA,2C;EAAAA,uB;;;;;;;;;;;;;;AAEX;4BAGiB,0FAHjB,K;AAKA;4BAGoB,4FAHpB,a;AAKA;4BAGiB,4FAHjB;",
+"sources":["CommonOptionsElementHandler.java"],
+"names":["org.pepstock.charba.client.geo.CommonOptionsElementHandler.<synthetic: ctor_js>","parent","childKey","nativeObject","org.pepstock.charba.client.geo.CommonOptionsElementHandler.<synthetic: ctor_create>","org.pepstock.charba.client.geo.CommonOptionsElementHandler.<init>","backgroundColor","org.pepstock.charba.client.geo.CommonOptionsElementHandler.setOutlineBackgroundColor","org.pepstock.charba.client.geo.CommonOptionsElementHandler.getOutlineBackgroundColorAsString","borderWidth","org.pepstock.charba.client.geo.CommonOptionsElementHandler.setOutlineBorderWidth","org.pepstock.charba.client.geo.CommonOptionsElementHandler.getOutlineBorderWidth","borderColor","org.pepstock.charba.client.geo.CommonOptionsElementHandler.setOutlineBorderColor","org.pepstock.charba.client.geo.CommonOptionsElementHandler.getOutlineBorderColorAsString","org.pepstock.charba.client.geo.CommonOptionsElementHandler.setGraticuleBorderWidth","org.pepstock.charba.client.geo.CommonOptionsElementHandler.getGraticuleBorderWidth","org.pepstock.charba.client.geo.CommonOptionsElementHandler.setGraticuleBorderColor","org.pepstock.charba.client.geo.CommonOptionsElementHandler.getGraticuleBorderColorAsString","org.pepstock.charba.client.geo.CommonOptionsElementHandler.<clinit>"]
+}
+

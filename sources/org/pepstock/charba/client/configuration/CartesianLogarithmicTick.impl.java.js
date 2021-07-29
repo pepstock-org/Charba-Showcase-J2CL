@@ -6,6 +6,7 @@ const CartesianNumericTick = goog.require('org.pepstock.charba.client.configurat
 let TickCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.TickCallback$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
 let LinearTickHandler = goog.forwardDeclare('org.pepstock.charba.client.configuration.LinearTickHandler$impl');
+let NumericTickOptionsHandler = goog.forwardDeclare('org.pepstock.charba.client.configuration.NumericTickOptionsHandler$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 class CartesianLogarithmicTick extends CartesianNumericTick {
@@ -14,6 +15,8 @@ class CartesianLogarithmicTick extends CartesianNumericTick {
   super();
   /**@type {LinearTickHandler<CartesianLogarithmicTick>}*/
   this.f_tickHandler__org_pepstock_charba_client_configuration_CartesianLogarithmicTick_;
+  /**@type {NumericTickOptionsHandler}*/
+  this.f_optionsHandler__org_pepstock_charba_client_configuration_CartesianLogarithmicTick_;
  }
  /** @return {!CartesianLogarithmicTick} */
  static $create__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {
@@ -26,6 +29,11 @@ class CartesianLogarithmicTick extends CartesianNumericTick {
  $ctor__org_pepstock_charba_client_configuration_CartesianLogarithmicTick__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {
   this.$ctor__org_pepstock_charba_client_configuration_CartesianNumericTick__org_pepstock_charba_client_configuration_Axis(axis);
   this.f_tickHandler__org_pepstock_charba_client_configuration_CartesianLogarithmicTick_ = /**@type {!LinearTickHandler<CartesianLogarithmicTick>}*/ (LinearTickHandler.$create__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_configuration_Tick(axis, this));
+  this.f_optionsHandler__org_pepstock_charba_client_configuration_CartesianLogarithmicTick_ = NumericTickOptionsHandler.$create__org_pepstock_charba_client_configuration_Axis(axis);
+ }
+ /** @override @return {NumericTickOptionsHandler} */
+ m_getTickOptionsHandler__() {
+  return this.f_optionsHandler__org_pepstock_charba_client_configuration_CartesianLogarithmicTick_;
  }
  /** @return {TickCallback} */
  m_getCallback__() {
@@ -49,6 +57,7 @@ class CartesianLogarithmicTick extends CartesianNumericTick {
  static $loadModules() {
   TickCallback = goog.module.get('org.pepstock.charba.client.callbacks.TickCallback$impl');
   LinearTickHandler = goog.module.get('org.pepstock.charba.client.configuration.LinearTickHandler$impl');
+  NumericTickOptionsHandler = goog.module.get('org.pepstock.charba.client.configuration.NumericTickOptionsHandler$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }

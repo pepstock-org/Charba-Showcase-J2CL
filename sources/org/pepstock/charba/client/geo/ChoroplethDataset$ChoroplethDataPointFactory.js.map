@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ChoroplethDataset$ChoroplethDataPointFactory.impl.java.js",
+"lineCount":43,
+"mappings":"A;;;;;;;;;;;;MAkHsB,0B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,iG;EAAAA,iB;;;CAAA,oF;EAAAC,iC;;;CAQO,yD,UAAoBC,Y;EAC9CC,kG;;;;CATmB,U;EAAAA,kM;;;QAAA,O;EAAAC,6C;EAAAA,0C;EAAAA,qB;EAAAA;",
+"sources":["ChoroplethDataset.java"],
+"names":["org.pepstock.charba.client.geo.ChoroplethDataset$ChoroplethDataPointFactory.<synthetic: ctor_js>","org.pepstock.charba.client.geo.ChoroplethDataset$ChoroplethDataPointFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ChoroplethDataset$ChoroplethDataPointFactory.<init>","nativeObject","org.pepstock.charba.client.geo.ChoroplethDataset$ChoroplethDataPointFactory.create","org.pepstock.charba.client.geo.ChoroplethDataset$ChoroplethDataPointFactory.<clinit>"]
+}
+

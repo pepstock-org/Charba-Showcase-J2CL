@@ -8,6 +8,7 @@ goog.require('org.pepstock.charba.client.commons.AbstractArrayList');
 goog.require('org.pepstock.charba.client.commons.ArrayObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.JsHelper');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
+goog.require('vmbootstrap.Arrays');
 
 const ArrayObjectList = goog.require('org.pepstock.charba.client.commons.ArrayObjectList$impl');
 exports = ArrayObjectList;

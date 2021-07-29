@@ -68,7 +68,7 @@ class DefaultChartScales extends j_l_Object {
  /** @return {DefaultChartScale} */
  m_searchByAxisKind__org_pepstock_charba_client_enums_AxisKind_$p_org_pepstock_charba_client_defaults_chart_DefaultChartScales(/** AxisKind */ kind) {
   if (Key.m_isValid__org_pepstock_charba_client_commons_Key(kind)) {
-   let defScaleId = DefaultScaleId.m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_enums_DefaultScaleId(kind, DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId);
+   let defScaleId = DefaultScaleId.m_getByAxisKind__org_pepstock_charba_client_enums_AxisKind__org_pepstock_charba_client_options_ScaleId(kind, DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId);
    if (!$Objects.m_equals__java_lang_Object__java_lang_Object(DefaultScaleId.f_UNKNOWN__org_pepstock_charba_client_enums_DefaultScaleId, defScaleId) && this.f_scales__org_pepstock_charba_client_defaults_chart_DefaultChartScales_.m_hasAxis__org_pepstock_charba_client_options_ScaleId(defScaleId)) {
     return DefaultChartScale.$create__org_pepstock_charba_client_options_Scale(this.f_scales__org_pepstock_charba_client_defaults_chart_DefaultChartScales_.m_getAxis__org_pepstock_charba_client_options_ScaleId(defScaleId));
    }

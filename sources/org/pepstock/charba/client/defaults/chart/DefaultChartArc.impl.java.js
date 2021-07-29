@@ -76,6 +76,10 @@ class DefaultChartArc extends j_l_Object {
  m_getHoverOffset__() {
   return this.f_arc__org_pepstock_charba_client_defaults_chart_DefaultChartArc_.m_getHoverOffset__();
  }
+ /** @override @return {number} */
+ m_getSpacing__() {
+  return this.f_arc__org_pepstock_charba_client_defaults_chart_DefaultChartArc_.m_getSpacing__();
+ }
  
  static $clinit() {
   DefaultChartArc.$clinit = () =>{};

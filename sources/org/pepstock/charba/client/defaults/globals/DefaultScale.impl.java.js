@@ -22,6 +22,7 @@ let DefaultTime = goog.forwardDeclare('org.pepstock.charba.client.defaults.globa
 let AxisPosition = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisPosition$impl');
 let Bounds = goog.forwardDeclare('org.pepstock.charba.client.enums.Bounds$impl');
 let Display = goog.forwardDeclare('org.pepstock.charba.client.enums.Display$impl');
+let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 
 /**
  * @implements {IsDefaultScale}
@@ -161,6 +162,14 @@ class DefaultScale extends j_l_Object {
  m_getBackgroundColorAsString__() {
   return DefaultScale.f_DEFAULT_BACKGROUND_COLOR__org_pepstock_charba_client_defaults_globals_DefaultScale_;
  }
+ /** @override @return {?string} */
+ m_getStack__() {
+  return DefaultScale.f_DEFAULT_STACK__org_pepstock_charba_client_defaults_globals_DefaultScale_;
+ }
+ /** @override @return {number} */
+ m_getStackWeight__() {
+  return DefaultScale.f_DEFAULT_STACK_WEIGHT__org_pepstock_charba_client_defaults_globals_DefaultScale_;
+ }
  /** @private */
  $init___$p_org_pepstock_charba_client_defaults_globals_DefaultScale() {
   this.f_angleLines__org_pepstock_charba_client_defaults_globals_DefaultScale_ = DefaultAngleLines.$create__();
@@ -177,6 +186,7 @@ class DefaultScale extends j_l_Object {
   DefaultScale.$loadModules();
   j_l_Object.$clinit();
   DefaultScale.f_DEFAULT_BACKGROUND_COLOR__org_pepstock_charba_client_defaults_globals_DefaultScale_ = HtmlColor.f_TRANSPARENT__org_pepstock_charba_client_colors_HtmlColor.m_toRGBA__();
+  DefaultScale.f_DEFAULT_STACK__org_pepstock_charba_client_defaults_globals_DefaultScale_ = Undefined.f_STRING__org_pepstock_charba_client_items_Undefined;
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -195,6 +205,7 @@ class DefaultScale extends j_l_Object {
   AxisPosition = goog.module.get('org.pepstock.charba.client.enums.AxisPosition$impl');
   Bounds = goog.module.get('org.pepstock.charba.client.enums.Bounds$impl');
   Display = goog.module.get('org.pepstock.charba.client.enums.Display$impl');
+  Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
  }
 }
 /**@const {boolean}*/
@@ -229,6 +240,10 @@ DefaultScale.f_DEFAULT_SUGGESTED_MAX__org_pepstock_charba_client_defaults_global
 DefaultScale.f_DEFAULT_SUGGESTED_MIN__org_pepstock_charba_client_defaults_globals_DefaultScale_ = 4.9E-324;
 /**@type {?string}*/
 DefaultScale.f_DEFAULT_BACKGROUND_COLOR__org_pepstock_charba_client_defaults_globals_DefaultScale_;
+/**@type {?string}*/
+DefaultScale.f_DEFAULT_STACK__org_pepstock_charba_client_defaults_globals_DefaultScale_;
+/**@const {number}*/
+DefaultScale.f_DEFAULT_STACK_WEIGHT__org_pepstock_charba_client_defaults_globals_DefaultScale_ = 1;
 IsDefaultScale.$markImplementor(DefaultScale);
 $Util.$setClassMetadata(DefaultScale, "org.pepstock.charba.client.defaults.globals.DefaultScale");
 

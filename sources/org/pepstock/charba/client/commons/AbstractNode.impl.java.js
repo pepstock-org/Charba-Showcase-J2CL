@@ -129,6 +129,16 @@ class AbstractNode extends NativeObjectContainer {
   this.m_checkAndAddToParent__();
  }
  
+ m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(/** Key */ key, /** HTMLCanvasElement */ value) {
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(key, value);
+  this.m_checkAndAddToParent__();
+ }
+ 
+ m_setValueOrArrayAndAddToParent__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_dom_elements_Canvas(/** Key */ key, /** Array<HTMLCanvasElement> */ values) {
+  this.m_setValueOrArray__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_dom_elements_Canvas(key, values);
+  this.m_checkAndAddToParent__();
+ }
+ 
  m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(/** Key */ key, /** HTMLImageElement */ value) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(key, value);
   this.m_checkAndAddToParent__();

@@ -9,6 +9,7 @@ let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayImage.$Overlay$impl');
 let Img_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Img.$Overlay$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
+let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
@@ -157,6 +158,14 @@ class ArrayImageList extends AbstractArrayList {
   }
   return AbstractArrayList.f_NOT_FOUND__org_pepstock_charba_client_commons_AbstractArrayList;
  }
+ /** @override @return {Array<*>} */
+ toArray() {
+  let toArray = new Array(this.f_array__org_pepstock_charba_client_commons_ArrayImageList_.length);
+  for (let i = 0; i < this.f_array__org_pepstock_charba_client_commons_ArrayImageList_.length; i = i + 1 | 0) {
+   $Arrays.$set(toArray, i, $Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayImage__int(this.f_array__org_pepstock_charba_client_commons_ArrayImageList_, i));
+  }
+  return toArray;
+ }
  
  static $clinit() {
   ArrayImageList.$clinit = () =>{};
@@ -174,6 +183,7 @@ class ArrayImageList extends AbstractArrayList {
   $Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayImage.$Overlay$impl');
   Img_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Img.$Overlay$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
+  $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }

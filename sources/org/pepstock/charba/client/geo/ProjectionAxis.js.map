@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ProjectionAxis.impl.java.js",
+"lineCount":135,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;MAsCmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAWiC,yDAXjCA,C;EAAAA;OAaW,wDAbXA,C;;;QAoBX,2C,gBAAuBC,K;EAAvBC,yB;EAAAA,qC;EAAAA,0G;EAAAA,iB;;;CAAA,wF,gBAAuBD,K;EAC7BE,8b;EAEAA,IAAeC,SAAfD,gI;EAEAA,gL;EAEAA,2E;;;CAMI,mE;EAEJE,+W;;;CAQW,gE,mBAAyBC,U;EACpCC,8K;;;CAQiB,iB;EACjBC,4H;;;CAQW,4B,eAA0BC,e;EACrCC,+I;;;CAQa,sB;EACbC,iI;;;CASW,qC,eAA2BC,C,gBAAUC,C;EAChDC,6I;;;CAQmB,uB;EACnBC,kI;;;CASsB,gH,gBAAkCd,K;EAExDe;GAECA,IAAeZ,SAAfY,iFAFDA;GAICA;IAECA,iBAFDA;;IAMCA,oTANDA;IAJDA;;GAeCA,kHAfDA;G;;;QAnGD,uD;EAAAC,4G;;;QAIA,yD;EAAAA,8G;;;QANkB,O;EAAAC,iC;EAAAA,8B;EAAAA,e;EAElBA,oH;EAIAA,ma;;;;;;;;;;;;;;;;;;;;;;;;;;;AANkB;yE;AAAA;;",
+"sources":["ProjectionAxis.java"],
+"names":["org.pepstock.charba.client.geo.ProjectionAxis.<synthetic: ctor_js>","chart","org.pepstock.charba.client.geo.ProjectionAxis.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ProjectionAxis.<init>","chartType","org.pepstock.charba.client.geo.ProjectionAxis.afterAxisConfigurationUpdate","projection","org.pepstock.charba.client.geo.ProjectionAxis.setProjection","org.pepstock.charba.client.geo.ProjectionAxis.getProjection","projectionScale","org.pepstock.charba.client.geo.ProjectionAxis.setProjectionScale","org.pepstock.charba.client.geo.ProjectionAxis.getProjectionScale","x","y","org.pepstock.charba.client.geo.ProjectionAxis.setProjectionOffset","org.pepstock.charba.client.geo.ProjectionAxis.getProjectionOffset","org.pepstock.charba.client.geo.ProjectionAxis.checkAndGetControllerType","org.pepstock.charba.client.geo.ProjectionAxis.<synthetic: getter>","org.pepstock.charba.client.geo.ProjectionAxis.<clinit>"]
+}
+

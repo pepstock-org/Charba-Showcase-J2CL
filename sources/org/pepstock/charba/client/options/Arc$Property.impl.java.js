@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BORDER_ALIGN__org_pepstock_charba_client_options_Arc_Property, Property.$static_WEIGHT__org_pepstock_charba_client_options_Arc_Property, Property.$static_ANGLE__org_pepstock_charba_client_options_Arc_Property, Property.$static_OFFSET__org_pepstock_charba_client_options_Arc_Property, Property.$static_HOVER_OFFSET__org_pepstock_charba_client_options_Arc_Property, Property.$static_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BORDER_ALIGN__org_pepstock_charba_client_options_Arc_Property, Property.$static_WEIGHT__org_pepstock_charba_client_options_Arc_Property, Property.$static_ANGLE__org_pepstock_charba_client_options_Arc_Property, Property.$static_OFFSET__org_pepstock_charba_client_options_Arc_Property, Property.$static_HOVER_OFFSET__org_pepstock_charba_client_options_Arc_Property, Property.$static_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property, Property.$static_SPACING__org_pepstock_charba_client_options_Arc_Property], Property));
  }
  /** @return {!Property} */
  static get f_BORDER_ALIGN__org_pepstock_charba_client_options_Arc_Property() {
@@ -73,6 +73,10 @@ class Property extends Enum {
  static get f_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property() {
   return (Property.$clinit(), Property.$static_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property);
  }
+ /** @return {!Property} */
+ static get f_SPACING__org_pepstock_charba_client_options_Arc_Property() {
+  return (Property.$clinit(), Property.$static_SPACING__org_pepstock_charba_client_options_Arc_Property);
+ }
  
  static $clinit() {
   Property.$clinit = () =>{};
@@ -84,6 +88,7 @@ class Property extends Enum {
   Property.$static_OFFSET__org_pepstock_charba_client_options_Arc_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("OFFSET"), Property.$ordinal_OFFSET__org_pepstock_charba_client_options_Arc_Property, "offset");
   Property.$static_HOVER_OFFSET__org_pepstock_charba_client_options_Arc_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("HOVER_OFFSET"), Property.$ordinal_HOVER_OFFSET__org_pepstock_charba_client_options_Arc_Property, "hoverOffset");
   Property.$static_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BORDER_RADIUS"), Property.$ordinal_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property, "borderRadius");
+  Property.$static_SPACING__org_pepstock_charba_client_options_Arc_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SPACING"), Property.$ordinal_SPACING__org_pepstock_charba_client_options_Arc_Property, "spacing");
   Property.f_namesToValuesMap__org_pepstock_charba_client_options_Arc_Property_ = null;
  }
  /** @return {boolean} */
@@ -109,6 +114,8 @@ Property.$static_OFFSET__org_pepstock_charba_client_options_Arc_Property;
 Property.$static_HOVER_OFFSET__org_pepstock_charba_client_options_Arc_Property;
 /**@private {!Property}*/
 Property.$static_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property;
+/**@private {!Property}*/
+Property.$static_SPACING__org_pepstock_charba_client_options_Arc_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_options_Arc_Property_;
 /**@const {number}*/
@@ -123,6 +130,8 @@ Property.$ordinal_OFFSET__org_pepstock_charba_client_options_Arc_Property = 3;
 Property.$ordinal_HOVER_OFFSET__org_pepstock_charba_client_options_Arc_Property = 4;
 /**@const {number}*/
 Property.$ordinal_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property = 5;
+/**@const {number}*/
+Property.$ordinal_SPACING__org_pepstock_charba_client_options_Arc_Property = 6;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.options.Arc$Property");
 

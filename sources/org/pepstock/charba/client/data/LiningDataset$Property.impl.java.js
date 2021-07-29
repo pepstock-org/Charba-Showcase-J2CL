@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_TENSION__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_DASH_OFFSET__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_CAP_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_HOVER_BORDER_JOIN_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_TENSION__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, Property.$static_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property], Property));
  }
  /** @return {!Property} */
  static get f_BORDER_DASH__org_pepstock_charba_client_data_LiningDataset_Property() {
@@ -94,10 +94,6 @@ class Property extends Enum {
   return (Property.$clinit(), Property.$static_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property);
  }
  /** @return {!Property} */
- static get f_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property() {
-  return (Property.$clinit(), Property.$static_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
- }
- /** @return {!Property} */
  static get f_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property() {
   return (Property.$clinit(), Property.$static_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property);
  }
@@ -112,10 +108,6 @@ class Property extends Enum {
  /** @return {!Property} */
  static get f_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property() {
   return (Property.$clinit(), Property.$static_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property);
- }
- /** @return {!Property} */
- static get f_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property() {
-  return (Property.$clinit(), Property.$static_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property);
  }
  
  static $clinit() {
@@ -133,12 +125,10 @@ class Property extends Enum {
   Property.$static_TENSION__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TENSION"), Property.$ordinal_TENSION__org_pepstock_charba_client_data_LiningDataset_Property, "tension");
   Property.$static_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_BORDER_WIDTH"), Property.$ordinal_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, "pointBorderWidth");
   Property.$static_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_RADIUS"), Property.$ordinal_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, "pointRadius");
-  Property.$static_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_STYLE"), Property.$ordinal_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, "pointStyle");
   Property.$static_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_HIT_RADIUS"), Property.$ordinal_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, "pointHitRadius");
   Property.$static_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_HOVER_BORDER_WIDTH"), Property.$ordinal_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property, "pointHoverBorderWidth");
   Property.$static_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_HOVER_RADIUS"), Property.$ordinal_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property, "pointHoverRadius");
   Property.$static_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_ROTATION"), Property.$ordinal_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property, "pointRotation");
-  Property.$static_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHARBA_POINT_STYLE"), Property.$ordinal_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property, "charbaPointStyle");
   Property.f_namesToValuesMap__org_pepstock_charba_client_data_LiningDataset_Property_ = null;
  }
  /** @return {boolean} */
@@ -175,8 +165,6 @@ Property.$static_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDatas
 /**@private {!Property}*/
 Property.$static_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property;
 /**@private {!Property}*/
-Property.$static_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property;
-/**@private {!Property}*/
 Property.$static_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property;
 /**@private {!Property}*/
 Property.$static_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property;
@@ -184,8 +172,6 @@ Property.$static_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Linin
 Property.$static_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property;
 /**@private {!Property}*/
 Property.$static_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property;
-/**@private {!Property}*/
-Property.$static_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_data_LiningDataset_Property_;
 /**@const {number}*/
@@ -211,17 +197,13 @@ Property.$ordinal_POINT_BORDER_WIDTH__org_pepstock_charba_client_data_LiningData
 /**@const {number}*/
 Property.$ordinal_POINT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = 10;
 /**@const {number}*/
-Property.$ordinal_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property = 11;
+Property.$ordinal_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = 11;
 /**@const {number}*/
-Property.$ordinal_POINT_HIT_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = 12;
+Property.$ordinal_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property = 12;
 /**@const {number}*/
-Property.$ordinal_POINT_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_LiningDataset_Property = 13;
+Property.$ordinal_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = 13;
 /**@const {number}*/
-Property.$ordinal_POINT_HOVER_RADIUS__org_pepstock_charba_client_data_LiningDataset_Property = 14;
-/**@const {number}*/
-Property.$ordinal_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property = 15;
-/**@const {number}*/
-Property.$ordinal_CHARBA_POINT_STYLE__org_pepstock_charba_client_data_LiningDataset_Property = 16;
+Property.$ordinal_POINT_ROTATION__org_pepstock_charba_client_data_LiningDataset_Property = 14;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.data.LiningDataset$Property");
 

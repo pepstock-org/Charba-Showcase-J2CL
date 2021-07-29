@@ -2,7 +2,7 @@
 "version":3,
 "file":"ChartsView$OtherChartsCase$9.impl.java.js",
 "lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAkM+D,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CACvC,U;EACpBC,oC;;;QAF2D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAsM+D,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CACvC,U;EACpBC,oC;;;QAF2D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["ChartsView.java"],
 "names":["org.pepstock.charba.showcase.j2cl.views.ChartsView$OtherChartsCase$9.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ChartsView$OtherChartsCase$9.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ChartsView$OtherChartsCase$9.<init>","org.pepstock.charba.showcase.j2cl.views.ChartsView$OtherChartsCase$9.create","org.pepstock.charba.showcase.j2cl.views.ChartsView$OtherChartsCase$9.<clinit>"]
 }

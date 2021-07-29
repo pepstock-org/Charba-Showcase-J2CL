@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"ScaleContext$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAyCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,oEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,4T;;;QAEZ,uE;EAAAC,gH;;;QACA,uE;EAAAA,gH;;;QACA,sE;EAAAA,+G;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2Q;EACAA,2Q;EACAA,uQ;EAJYA,gG;;;;;;;;;;;;;AAAA;mF;AAAA;mF;AAAA;kF;AAAA;yF;AAEZ;wF;AACA;wF;AACA;;",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;MA2Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,oEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,gZ;;;QAEZ,uE;EAAAC,gH;;;QACA,uE;EAAAA,gH;;;QACA,uE;EAAAA,gH;;;QACA,sE;EAAAA,+G;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2Q;EACAA,2Q;EACAA,2Q;EACAA,uQ;EALYA,gG;;;;;;;;;;;;;AAAA;mF;AAAA;mF;AAAA;mF;AAAA;kF;AAAA;yF;AAEZ;wF;AACA;wF;AACA;wF;AACA;;",
 "sources":["ScaleContext.java"],
 "names":["org.pepstock.charba.client.callbacks.ScaleContext$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.callbacks.ScaleContext$Property.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.ScaleContext$Property.<init>","org.pepstock.charba.client.callbacks.ScaleContext$Property.value","org.pepstock.charba.client.callbacks.ScaleContext$Property.valueOf","org.pepstock.charba.client.callbacks.ScaleContext$Property.values","org.pepstock.charba.client.callbacks.ScaleContext$Property.<synthetic: getter>","org.pepstock.charba.client.callbacks.ScaleContext$Property.<clinit>"]
 }

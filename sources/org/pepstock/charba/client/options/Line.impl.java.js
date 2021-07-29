@@ -10,14 +10,17 @@ let List = goog.forwardDeclare('java.util.List$impl');
 let ArrayInteger_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayInteger.$Overlay$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
+let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let CapStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.CapStyle$impl');
 let CubicInterpolationMode = goog.forwardDeclare('org.pepstock.charba.client.enums.CubicInterpolationMode$impl');
 let IsFill = goog.forwardDeclare('org.pepstock.charba.client.enums.IsFill$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
+let Stepped = goog.forwardDeclare('org.pepstock.charba.client.enums.Stepped$impl');
 let Elements = goog.forwardDeclare('org.pepstock.charba.client.options.Elements$impl');
 let FillHandler = goog.forwardDeclare('org.pepstock.charba.client.options.FillHandler$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.options.Line.Property$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
+let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 /**
  * @extends {AbstractElement<IsDefaultLine>}
@@ -105,12 +108,28 @@ class Line extends AbstractElement {
   return /**@type {CubicInterpolationMode}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Line_Property, CubicInterpolationMode.m_values__(), /**@type {IsDefaultLine}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultLine)).m_getCubicInterpolationMode__()), CubicInterpolationMode));
  }
  
- m_setStepped__boolean(/** boolean */ stepped) {
-  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__boolean(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, stepped);
+ m_setStepped__boolean(/** boolean */ line) {
+  if (!line) {
+   this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__boolean(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, false);
+  } else {
+   this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, Stepped.f_BEFORE__org_pepstock_charba_client_enums_Stepped);
+  }
  }
- /** @override @return {boolean} */
- m_isStepped__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, /**@type {IsDefaultLine}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultLine)).m_isStepped__());
+ 
+ m_setStepped__org_pepstock_charba_client_enums_Stepped(/** Stepped */ line) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped, line)) {
+   this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__boolean(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, false);
+  } else {
+   this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, line);
+  }
+ }
+ /** @override @return {Stepped} */
+ m_getStepped__() {
+  if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, ObjectType.f_BOOLEAN__org_pepstock_charba_client_commons_ObjectType)) {
+   return Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped;
+  } else {
+   return /**@type {Stepped}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_STEPPED__org_pepstock_charba_client_options_Line_Property, Stepped.m_values__(), /**@type {IsDefaultLine}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultLine)).m_getStepped__()), Stepped));
+  }
  }
  //Default method forwarding stub.
  /** @override @return {IsFill} */
@@ -152,12 +171,15 @@ class Line extends AbstractElement {
  static $loadModules() {
   ArrayInteger_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayInteger.$Overlay$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
+  ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   CapStyle = goog.module.get('org.pepstock.charba.client.enums.CapStyle$impl');
   CubicInterpolationMode = goog.module.get('org.pepstock.charba.client.enums.CubicInterpolationMode$impl');
   JoinStyle = goog.module.get('org.pepstock.charba.client.enums.JoinStyle$impl');
+  Stepped = goog.module.get('org.pepstock.charba.client.enums.Stepped$impl');
   FillHandler = goog.module.get('org.pepstock.charba.client.options.FillHandler$impl');
   Property = goog.module.get('org.pepstock.charba.client.options.Line.Property$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
+  $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }
 }
 IsDefaultLine.$markImplementor(Line);

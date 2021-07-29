@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BORDER_RADIUS__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_CIRCUMFERENCE__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_HOVER_OFFSET__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_OFFSET__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_ROTATION__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_PieDataset_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BORDER_RADIUS__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_CIRCUMFERENCE__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_HOVER_OFFSET__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_OFFSET__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_ROTATION__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_SPACING__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property, Property.$static_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_PieDataset_Property], Property));
  }
  /** @return {!Property} */
  static get f_BORDER_RADIUS__org_pepstock_charba_client_data_PieDataset_Property() {
@@ -70,6 +70,10 @@ class Property extends Enum {
   return (Property.$clinit(), Property.$static_ROTATION__org_pepstock_charba_client_data_PieDataset_Property);
  }
  /** @return {!Property} */
+ static get f_SPACING__org_pepstock_charba_client_data_PieDataset_Property() {
+  return (Property.$clinit(), Property.$static_SPACING__org_pepstock_charba_client_data_PieDataset_Property);
+ }
+ /** @return {!Property} */
  static get f_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property() {
   return (Property.$clinit(), Property.$static_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property);
  }
@@ -87,6 +91,7 @@ class Property extends Enum {
   Property.$static_HOVER_OFFSET__org_pepstock_charba_client_data_PieDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("HOVER_OFFSET"), Property.$ordinal_HOVER_OFFSET__org_pepstock_charba_client_data_PieDataset_Property, "hoverOffset");
   Property.$static_OFFSET__org_pepstock_charba_client_data_PieDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("OFFSET"), Property.$ordinal_OFFSET__org_pepstock_charba_client_data_PieDataset_Property, "offset");
   Property.$static_ROTATION__org_pepstock_charba_client_data_PieDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ROTATION"), Property.$ordinal_ROTATION__org_pepstock_charba_client_data_PieDataset_Property, "rotation");
+  Property.$static_SPACING__org_pepstock_charba_client_data_PieDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SPACING"), Property.$ordinal_SPACING__org_pepstock_charba_client_data_PieDataset_Property, "spacing");
   Property.$static_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("WEIGHT"), Property.$ordinal_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property, "weight");
   Property.$static_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_PieDataset_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHARBA_BORDER_RADIUS_TYPE"), Property.$ordinal_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_PieDataset_Property, "charbaBorderRadiusType");
   Property.f_namesToValuesMap__org_pepstock_charba_client_data_PieDataset_Property_ = null;
@@ -113,6 +118,8 @@ Property.$static_OFFSET__org_pepstock_charba_client_data_PieDataset_Property;
 /**@private {!Property}*/
 Property.$static_ROTATION__org_pepstock_charba_client_data_PieDataset_Property;
 /**@private {!Property}*/
+Property.$static_SPACING__org_pepstock_charba_client_data_PieDataset_Property;
+/**@private {!Property}*/
 Property.$static_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property;
 /**@private {!Property}*/
 Property.$static_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_PieDataset_Property;
@@ -129,9 +136,11 @@ Property.$ordinal_OFFSET__org_pepstock_charba_client_data_PieDataset_Property = 
 /**@const {number}*/
 Property.$ordinal_ROTATION__org_pepstock_charba_client_data_PieDataset_Property = 4;
 /**@const {number}*/
-Property.$ordinal_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property = 5;
+Property.$ordinal_SPACING__org_pepstock_charba_client_data_PieDataset_Property = 5;
 /**@const {number}*/
-Property.$ordinal_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_PieDataset_Property = 6;
+Property.$ordinal_WEIGHT__org_pepstock_charba_client_data_PieDataset_Property = 6;
+/**@const {number}*/
+Property.$ordinal_CHARBA_BORDER_RADIUS_TYPE__org_pepstock_charba_client_data_PieDataset_Property = 7;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.data.PieDataset$Property");
 

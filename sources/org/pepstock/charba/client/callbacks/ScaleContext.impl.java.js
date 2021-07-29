@@ -60,6 +60,10 @@ class ScaleContext extends ChartContext {
   }
   return this.f_tick__org_pepstock_charba_client_callbacks_ScaleContext_;
  }
+ /** @return {?string} */
+ m_getLabel__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__java_lang_String(Property.f_LABEL__org_pepstock_charba_client_callbacks_ScaleContext_Property, Undefined.f_STRING__org_pepstock_charba_client_items_Undefined);
+ }
  /** @override @return {boolean} */
  m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(/** Key */ property) {
   if (super.m_checkIfPropertyIsValid__org_pepstock_charba_client_commons_Key(property)) {

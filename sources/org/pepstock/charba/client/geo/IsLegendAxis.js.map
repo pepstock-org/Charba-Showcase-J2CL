@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsLegendAxis.impl.java.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;MAwBU,Y;;CAOQ,a;;CAOF,a;;QAdN,M;EAAAA,uB;EAAAA,8B;;;QAcM,kE;EAAAC,uB;EAEdA;GAECA,mFAFDA;G;EAMAA,Y;;;QAtBQ,O;EAAAC,+B;EAAAA;",
+"sources":["IsLegendAxis.java"],
+"names":["org.pepstock.charba.client.geo.IsLegendAxis.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.IsLegendAxis.getLegend__$default","org.pepstock.charba.client.geo.IsLegendAxis.<clinit>"]
+}
+

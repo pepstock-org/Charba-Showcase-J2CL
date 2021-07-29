@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AxesEventsCase$1.impl.java.js",
+"lineCount":44,
+"mappings":"A;;;;;;;;;;;;;;;MA6G+C,E;;CAAA,W;EAAAA,Q;EAAAA;oF;;;QAAA,sE;EAAAC,a;EAAAA,yB;EAAAA,6J;EAAAA,iB;;;CAAA,qI;EAAAC,gG;EAAAA,iC;;;CAGhC,2D,uBAAuBC,K;EAClCC,IAAOC,KAAPD,6P;EACAA,4W;;;QAL2C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
+"sources":["AxesEventsCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.charts.AxesEventsCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.charts.AxesEventsCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.AxesEventsCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.charts.AxesEventsCase$1.onClick","value","org.pepstock.charba.showcase.j2cl.cases.charts.AxesEventsCase$1.<clinit>"]
+}
+

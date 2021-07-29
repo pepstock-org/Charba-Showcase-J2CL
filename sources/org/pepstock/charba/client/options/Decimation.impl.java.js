@@ -56,6 +56,14 @@ class Decimation extends AbstractModel {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_SAMPLES__org_pepstock_charba_client_options_Decimation_Property, /**@type {IsDefaultDecimation}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultDecimation)).m_getSamples__());
  }
  
+ m_setThreshold__double(/** number */ threshold) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__double(Property.f_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property, Checker.m_positiveOrZero__double(threshold));
+ }
+ /** @override @return {number} */
+ m_getThreshold__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property, /**@type {IsDefaultDecimation}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultDecimation)).m_getThreshold__());
+ }
+ 
  static $clinit() {
   Decimation.$clinit = () =>{};
   Decimation.$loadModules();

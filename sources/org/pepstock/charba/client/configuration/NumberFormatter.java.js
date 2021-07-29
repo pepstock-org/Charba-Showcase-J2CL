@@ -16,6 +16,7 @@ goog.require('org.pepstock.charba.client.intl.enums.Notation');
 goog.require('org.pepstock.charba.client.intl.enums.NumberingSystem');
 goog.require('org.pepstock.charba.client.intl.enums.SignDisplay');
 goog.require('org.pepstock.charba.client.intl.enums.Style');
+goog.require('org.pepstock.charba.client.items.NumberFormatItem');
 goog.require('org.pepstock.charba.client.options.IsNumberFormat');
 goog.require('vmbootstrap.Casts');
 

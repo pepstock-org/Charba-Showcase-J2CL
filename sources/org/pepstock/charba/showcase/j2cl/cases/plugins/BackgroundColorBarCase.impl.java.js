@@ -22,7 +22,7 @@ let BarDataset = goog.forwardDeclare('org.pepstock.charba.client.data.BarDataset
 let Dataset = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset$impl');
 let IsCastable_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
 let Position = goog.forwardDeclare('org.pepstock.charba.client.enums.Position$impl');
-let ChartBackgroundColorOptions = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions$impl');
+let ChartBackgroundColorOptionsBuilder = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $int = goog.forwardDeclare('vmbootstrap.primitives.$int$impl');
@@ -76,9 +76,7 @@ class BackgroundColorBarCase extends BaseComposite {
   dataset2.m_setData__arrayOf_double(this.m_getRandomDigits__int(this.f_months__org_pepstock_charba_showcase_j2cl_cases_commons_AbstractComposite));
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_BackgroundColorBarCase_.m_getData__().m_setLabels__arrayOf_java_lang_String(this.m_getLabels__());
   this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_BackgroundColorBarCase_.m_getData__().m_setDatasets__arrayOf_org_pepstock_charba_client_data_Dataset(/**@type {!Array<Dataset>}*/ ($Arrays.$init([dataset1, dataset2], Dataset)));
-  let option = ChartBackgroundColorOptions.$create__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_BackgroundColorBarCase_);
-  option.m_setBackgroundColor__org_pepstock_charba_client_colors_IsColor(GwtMaterialColor.f_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor);
-  option.m_store__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_BackgroundColorBarCase_);
+  ChartBackgroundColorOptionsBuilder.m_create__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_BackgroundColorBarCase_).m_setBackgroundColor__org_pepstock_charba_client_colors_IsColor(GwtMaterialColor.f_ORANGE_LIGHTEN_5__org_pepstock_charba_client_colors_GwtMaterialColor).m_build__().m_store__org_pepstock_charba_client_IsChart(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_BackgroundColorBarCase_);
   chartCol.appendChild(/**@type {Node}*/ ($Casts.$to(IsCastable_$Overlay.m_as__$devirt__org_pepstock_charba_client_dom_IsCastable(this.f_chart__org_pepstock_charba_showcase_j2cl_cases_plugins_BackgroundColorBarCase_.m_getChartElement__()), Node_$Overlay)));
   let actionsRow = /**@type {HTMLTableRowElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("tr"), HTMLTableRowElement_$Overlay));
   actionsRow.style.width = WidthUnionType_$Overlay.m_of__java_lang_Object("100%");
@@ -158,7 +156,7 @@ class BackgroundColorBarCase extends BaseComposite {
   Dataset = goog.module.get('org.pepstock.charba.client.data.Dataset$impl');
   IsCastable_$Overlay = goog.module.get('org.pepstock.charba.client.dom.IsCastable.$Overlay$impl');
   Position = goog.module.get('org.pepstock.charba.client.enums.Position$impl');
-  ChartBackgroundColorOptions = goog.module.get('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions$impl');
+  ChartBackgroundColorOptionsBuilder = goog.module.get('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder$impl');
   $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $int = goog.module.get('vmbootstrap.primitives.$int$impl');

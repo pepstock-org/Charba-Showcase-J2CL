@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DefaultSubtitle.impl.java.js",
+"lineCount":67,
+"mappings":"A;;;;;;;;;;;;;;;MA2BmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAIc,oEAJdA,C;EAAAA;OAMW,uEANXA,C;;;QAWlB,S;EAAAC,0B;EAAAA,sC;EAAAA,iF;EAAAA,iB;;;CAAA,oE;EAAAC,iF;EAAAA,8E;;;CAUqB,W;EACpBC,iF;;;CASuB,c;EACvBC,oF;;;CAhCiB,sE;EAIlBF,6G;EAEAA,4M;;;QANkB,O;EAAAG,kC;EAAAA,+B;EAAAA,+B;;;;;;;;;;;;AAElB;gBAAyB,+EAAzB;",
+"sources":["DefaultSubtitle.java"],
+"names":["org.pepstock.charba.client.defaults.globals.DefaultSubtitle.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultSubtitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultSubtitle.<init>","org.pepstock.charba.client.defaults.globals.DefaultSubtitle.getFont","org.pepstock.charba.client.defaults.globals.DefaultSubtitle.getPadding","org.pepstock.charba.client.defaults.globals.DefaultSubtitle.<clinit>"]
+}
+

@@ -2,7 +2,7 @@
 "version":3,
 "file":"PointStyleCallback$$LambdaAdaptor.impl.java.js",
 "lineCount":41,
-"mappings":"A;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,uF;;;CAAA,6D;EAAAC,iD;EAAAA,wH;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MA8BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,uF;;;CAAA,6D;EAAAC,iD;EAAAA,wH;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
 "sources":["PointStyleCallback.java"],
 "names":["org.pepstock.charba.client.callbacks.PointStyleCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.PointStyleCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.PointStyleCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.PointStyleCallback$$LambdaAdaptor.<clinit>"]
 }

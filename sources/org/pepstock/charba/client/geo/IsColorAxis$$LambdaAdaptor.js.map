@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsColorAxis$$LambdaAdaptor.impl.java.js",
+"lineCount":96,
+"mappings":"A;;;;;;;;;;;;;;;;MA6BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,kI;;;CAAA,wH;EAAAC,iC;EAAAA,0E;;;CAAA,a;EAAAC,iD;EAAAA,uG;;;;CAAA,a;EAAAC,6F;;;;CAAA,kB;EAAAC,gG;;;;CAAA,0B;EAAAC,wG;;;;CAAA,mB;EAAAC,iG;;;;CAAA,2B;EAAAC,yG;;;;CAAA,e;EAAAC,6F;;;;CAAA,kE;EAAAC,iJ;;;;CAAA,8E;EAAAA,6J;;;;CAAA,4D;EAAAC,2I;;;;CAAA,mC;EAAAA,kH;;;;CAAA,kB;EAAAC,iG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["IsColorAxis.java"],
+"names":["org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.<init>","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.getMapper","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.getLegend","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.getInterpolate","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.getInterpolateCallback","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.getMissingColor","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.getMissingColorAsString","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.getQuantize","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.setInterpolate","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.setMissingColor","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.setQuantize","org.pepstock.charba.client.geo.IsColorAxis$$LambdaAdaptor.<clinit>"]
+}
+

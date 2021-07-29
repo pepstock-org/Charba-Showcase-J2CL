@@ -4,8 +4,8 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const PropertyKey = goog.require('org.pepstock.charba.client.commons.PropertyKey$impl');
 
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
+let AxisKind = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisKind$impl');
 let DefaultScaleId = goog.forwardDeclare('org.pepstock.charba.client.enums.DefaultScaleId$impl');
-let $LambdaAdaptor = goog.forwardDeclare('org.pepstock.charba.client.options.ScaleId.$LambdaAdaptor$impl');
 let StandardScaleId = goog.forwardDeclare('org.pepstock.charba.client.options.StandardScaleId$impl');
 
 /**
@@ -62,11 +62,8 @@ class ScaleId {
   }
   return defaultValue;
  }
- /** @return {ScaleId} */
- static $adapt(/** ?function():?string */ fn) {
-  ScaleId.$clinit();
-  return new $LambdaAdaptor(fn);
- }
+ /** @abstract @return {AxisKind} */
+ m_getAxisKind__() {}
  
  static $clinit() {
   ScaleId.$clinit = () =>{};
@@ -85,7 +82,6 @@ class ScaleId {
  static $loadModules() {
   j_l_String = goog.module.get('java.lang.String$impl');
   DefaultScaleId = goog.module.get('org.pepstock.charba.client.enums.DefaultScaleId$impl');
-  $LambdaAdaptor = goog.module.get('org.pepstock.charba.client.options.ScaleId.$LambdaAdaptor$impl');
   StandardScaleId = goog.module.get('org.pepstock.charba.client.options.StandardScaleId$impl');
  }
 }

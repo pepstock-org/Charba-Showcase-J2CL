@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AbstractControllerContainer.impl.java.js",
+"lineCount":33,
+"mappings":"A;;;;;;;;;;;;MAyBe,2B;;CAAA,W;EAAAA,Q;EAAAA;OAEe,2EAFfA,C;;;CASd,gI,uBAA2CC,I;EAA3CC,iC;EAECA,gP;;;CAS2B,W;EAC3BC,wF;;;QArBa,O;EAAAC,8C;EAAAA,2C;EAAAA;",
+"sources":["AbstractControllerContainer.java"],
+"names":["org.pepstock.charba.client.controllers.AbstractControllerContainer.<synthetic: ctor_js>","type","org.pepstock.charba.client.controllers.AbstractControllerContainer.<init>","org.pepstock.charba.client.controllers.AbstractControllerContainer.getType","org.pepstock.charba.client.controllers.AbstractControllerContainer.<clinit>"]
+}
+

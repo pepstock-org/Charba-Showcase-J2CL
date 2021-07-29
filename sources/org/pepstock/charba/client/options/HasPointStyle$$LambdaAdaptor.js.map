@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"HasPointStyle$$LambdaAdaptor.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;MA6BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,8I;;;CAAA,oI;EAAAC,iC;EAAAA,gF;;;CAAA,wB;EAAAC,mD;EAAAA,6G;;;;CAAA,iB;EAAAC,uG;;;;CAAA,wB;EAAAC,8G;;;;CAAA,uB;EAAAC,6G;;;;CAAA,4D;EAAAC,mJ;;;;CAAA,4D;EAAAA,mJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"lineCount":73,
+"mappings":"A;;;;;;;;;;;;;MA+BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,8I;;;CAAA,oI;EAAAC,iC;EAAAA,gF;;;CAAA,wB;EAAAC,mD;EAAAA,6G;;;;CAAA,iB;EAAAC,uG;;;;CAAA,yB;EAAAC,+G;;;;CAAA,wB;EAAAC,8G;;;;CAAA,qB;EAAAC,2G;;;;CAAA,4D;EAAAC,mJ;;;;CAAA,4D;EAAAA,mJ;;;;CAAA,+D;EAAAA,sJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
 "sources":["HasPointStyle.java"],
-"names":["org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyleHandler","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyle","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyleAsImage","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.isPointStyleAsImage","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.setPointStyle","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.<clinit>"]
+"names":["org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyleHandler","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyle","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyleAsCanvas","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyleAsImage","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.getPointStyleType","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.setPointStyle","org.pepstock.charba.client.options.HasPointStyle$$LambdaAdaptor.<clinit>"]
 }
 

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ProjectionAxisMapper.impl.java.js",
+"lineCount":65,
+"mappings":"A;;;;;;;;;;;;;;;MAmCY,oB;;CAAA,W;EAAAA,Q;;;QAwCX,wD,UAAkCC,Y;EAAlCC,+B;EAAAA,2C;EAAAA,oI;EAAAA,iB;;;CAAA,2G,UAAkCD,Y;EACjCE,oI;;;CAQI,mG,mBAAyBC,U;EAC7BC,iM;;;CAQU,oD;EACVC,iY;;;CAQI,+D,eAA0BC,e;EAC9BC,4K;;;CAQM,yD;EACNC,kO;;;CASI,wE,eAA2BC,C,gBAAUC,C;EAEzCC;GAECA,yOAFDA;;GAMCA,kJANDA;G;;;CAeY,0D;EACZC,IAAYC,KAAZD,mN;EACAA,qF;;;QAzGU,O;EAAAE,uC;EAAAA,oC;EAAAA;",
+"sources":["ProjectionAxisMapper.java"],
+"names":["org.pepstock.charba.client.geo.ProjectionAxisMapper.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.ProjectionAxisMapper.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ProjectionAxisMapper.<init>","projection","org.pepstock.charba.client.geo.ProjectionAxisMapper.setProjection","org.pepstock.charba.client.geo.ProjectionAxisMapper.getProjection","projectionScale","org.pepstock.charba.client.geo.ProjectionAxisMapper.setProjectionScale","org.pepstock.charba.client.geo.ProjectionAxisMapper.getProjectionScale","x","y","org.pepstock.charba.client.geo.ProjectionAxisMapper.setProjectionOffset","org.pepstock.charba.client.geo.ProjectionAxisMapper.getProjectionOffset","array","org.pepstock.charba.client.geo.ProjectionAxisMapper.<clinit>"]
+}
+

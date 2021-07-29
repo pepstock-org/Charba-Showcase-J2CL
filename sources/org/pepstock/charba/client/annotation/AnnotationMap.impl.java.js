@@ -134,13 +134,13 @@ class AnnotationMap extends NativeObjectContainer {
   let annotationId = Id.m_getIntegerProperty__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_NativeObject(Property.f_CHARBA_ANNOTATION_ID__org_pepstock_charba_client_annotation_AbstractAnnotation_Property, nativeObject);
   let defaultOptions = AnnotationHelper.m_get__().m_getAnnotation__int_$pp_org_pepstock_charba_client_annotation(annotationId);
   if ($Objects.m_equals__java_lang_Object__java_lang_Object(AnnotationType.f_BOX__org_pepstock_charba_client_annotation_AnnotationType, type) && BoxAnnotation.$isInstance(defaultOptions)) {
-   return BoxAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, /**@type {BoxAnnotation}*/ ($Casts.$to(defaultOptions, BoxAnnotation)));
+   return BoxAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, defaultOptions);
   } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(AnnotationType.f_LINE__org_pepstock_charba_client_annotation_AnnotationType, type) && LineAnnotation.$isInstance(defaultOptions)) {
-   return LineAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, /**@type {LineAnnotation}*/ ($Casts.$to(defaultOptions, LineAnnotation)));
+   return LineAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, defaultOptions);
   } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(AnnotationType.f_ELLIPSE__org_pepstock_charba_client_annotation_AnnotationType, type) && EllipseAnnotation.$isInstance(defaultOptions)) {
-   return EllipseAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, /**@type {EllipseAnnotation}*/ ($Casts.$to(defaultOptions, EllipseAnnotation)));
+   return EllipseAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, defaultOptions);
   } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(AnnotationType.f_POINT__org_pepstock_charba_client_annotation_AnnotationType, type) && PointAnnotation.$isInstance(defaultOptions)) {
-   return PointAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, /**@type {PointAnnotation}*/ ($Casts.$to(defaultOptions, PointAnnotation)));
+   return PointAnnotation.$create__org_pepstock_charba_client_commons_NativeObject__org_pepstock_charba_client_annotation_IsDefaultsAnnotation(nativeObject, defaultOptions);
   }
   return null;
  }

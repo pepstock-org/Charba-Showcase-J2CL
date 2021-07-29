@@ -22,9 +22,11 @@ let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constant
 let DOMBuilder = goog.forwardDeclare('org.pepstock.charba.client.dom.DOMBuilder$impl');
 let CanvasPatternItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let HtmlLegendItem = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.HtmlLegendItem$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
+let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class TilesFactory extends j_l_Object {
  /** @protected */
@@ -191,7 +193,7 @@ class TilesFactory extends j_l_Object {
  /** @return {?string} */
  static m_createHtmlLegendItem__org_pepstock_charba_client_impl_plugins_HtmlLegendItem(/** HtmlLegendItem */ htmlLegendItem) {
   TilesFactory.$clinit();
-  if (!$Equality.$same(htmlLegendItem, null) && !$Equality.$same(htmlLegendItem.m_getLegendItem__(), null) && !htmlLegendItem.m_getLegendItem__().m_isPointStyleAsImage__()) {
+  if (!$Equality.$same(htmlLegendItem, null) && !$Equality.$same(htmlLegendItem.m_getLegendItem__(), null) && $Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_STRING__org_pepstock_charba_client_enums_PointStyleType, htmlLegendItem.m_getLegendItem__().m_getPointStyleType__())) {
    let key = htmlLegendItem.m_toUniqueKey__();
    if (!$Equality.$same(key, null) && TilesFactory.f_HTML_LEGEND_ITEMS__org_pepstock_charba_client_colors_tiles_TilesFactory_.containsKey(key)) {
     return /**@type {?string}*/ ($Casts.$to(TilesFactory.f_HTML_LEGEND_ITEMS__org_pepstock_charba_client_colors_tiles_TilesFactory_.get(key), j_l_String));
@@ -252,8 +254,10 @@ class TilesFactory extends j_l_Object {
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
   DOMBuilder = goog.module.get('org.pepstock.charba.client.dom.DOMBuilder$impl');
   CanvasPatternItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay$impl');
+  PointStyleType = goog.module.get('org.pepstock.charba.client.enums.PointStyleType$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
+  $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }
 }
 /**@type {TilesFactory}*/

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"GeoDatasetHandler$Property.impl.java.js",
+"lineCount":80,
+"mappings":"A;;;;;;;;;;;;;;MA4Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,mEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,4I;EAAAA,iB;;;CAAA,yG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,iF;;;CASa,S;EACbC,gF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,4IAAAA;G;EAAAA,oI;;;QAAA,U;EAAAC,mB;EAAAA,mJ;;;QAEZ,qE;EAAAC,8G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qQ;EAFYA,+F;;;;;;;;;;;;;AAAA;iF;AAAA;wF;AAEZ;;",
+"sources":["GeoDatasetHandler.java"],
+"names":["org.pepstock.charba.client.geo.GeoDatasetHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.GeoDatasetHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.GeoDatasetHandler$Property.<init>","org.pepstock.charba.client.geo.GeoDatasetHandler$Property.value","org.pepstock.charba.client.geo.GeoDatasetHandler$Property.valueOf","org.pepstock.charba.client.geo.GeoDatasetHandler$Property.values","org.pepstock.charba.client.geo.GeoDatasetHandler$Property.<synthetic: getter>","org.pepstock.charba.client.geo.GeoDatasetHandler$Property.<clinit>"]
+}
+

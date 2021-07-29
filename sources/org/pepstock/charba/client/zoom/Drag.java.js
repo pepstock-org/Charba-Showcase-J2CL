@@ -7,6 +7,7 @@ goog.require('org.pepstock.charba.client.commons.AbstractNode');
 goog.require('org.pepstock.charba.client.commons.Checker');
 goog.require('org.pepstock.charba.client.commons.Key');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
+goog.require('org.pepstock.charba.client.enums.ModifierKey');
 goog.require('org.pepstock.charba.client.zoom.Drag.Property');
 goog.require('org.pepstock.charba.client.zoom.IsDefaultDrag');
 goog.require('vmbootstrap.Casts');

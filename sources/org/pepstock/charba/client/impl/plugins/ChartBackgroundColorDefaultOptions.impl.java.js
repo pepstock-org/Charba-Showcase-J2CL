@@ -6,6 +6,7 @@ const IsChartBackgroundColorDefaultOptions = goog.require('org.pepstock.charba.c
 
 let Gradient = goog.forwardDeclare('org.pepstock.charba.client.colors.Gradient$impl');
 let Pattern = goog.forwardDeclare('org.pepstock.charba.client.colors.Pattern$impl');
+let GlobalCompositeOperation = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation$impl');
 let ColorType = goog.forwardDeclare('org.pepstock.charba.client.enums.ColorType$impl');
 
 /**
@@ -45,6 +46,11 @@ class ChartBackgroundColorDefaultOptions extends j_l_Object {
  /** @override @return {ColorType} */
  m_getColorType__() {
   return IsChartBackgroundColorDefaultOptions.m_getColorType__$default__org_pepstock_charba_client_impl_plugins_IsChartBackgroundColorDefaultOptions(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {GlobalCompositeOperation} */
+ m_getGlobalCompositeOperation__() {
+  return IsChartBackgroundColorDefaultOptions.m_getGlobalCompositeOperation__$default__org_pepstock_charba_client_impl_plugins_IsChartBackgroundColorDefaultOptions(this);
  }
  /** @return {ChartBackgroundColorDefaultOptions} */
  static get f_INSTANCE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorDefaultOptions() {

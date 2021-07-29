@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"BaseBoxItem.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;;MA6BsB,W;;CAAA,W;EAAAA,Q;;;CA0CrB,oG,UAAyBC,Y;EACxBC,oI;;;CAQmB,U;EACnBC,8M;;;CAQmB,Y;EACnBC,gN;;;CAQmB,a;EACnBC,iN;;;CAQmB,W;EACnBC,+M;;;CAQmB,Y;EACnBC,gN;;;CAQmB,a;EACnBC,iN;;;CASoB,0D,eAAyBC,K;EAE7CC,IAAQC,GAARD,6E;EAEAA,IAAQE,GAARF,6E;EACAA,kB;;;QA/GoB,O;EAAAG,8B;EAAAA,2B;EAAAA;",
+"lineCount":61,
+"mappings":"A;;;;;;;;;;;;;MA6BsB,W;;CAAA,W;EAAAA,Q;;;CA0CrB,oG,UAAyBC,Y;EACxBC,oI;;;CASmB,U;EACnBC,8M;;;CASmB,Y;EACnBC,gN;;;CASmB,a;EACnBC,iN;;;CASmB,W;EACnBC,+M;;;CASmB,Y;EACnBC,gN;;;CASmB,a;EACnBC,iN;;;CASoB,0D,eAAyBC,K;EAE7CC;GAECA,IAAcC,GAAdD,6EAFDA;GAICA,IAAcE,GAAdF,6EAJDA;GAKCA,kBALDA;G;EASAA,a;;;QA3HoB,O;EAAAG,8B;EAAAA,2B;EAAAA,gC;EAAAA;",
 "sources":["BaseBoxItem.java"],
 "names":["org.pepstock.charba.client.items.BaseBoxItem.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.items.BaseBoxItem.<init>","org.pepstock.charba.client.items.BaseBoxItem.getTop","org.pepstock.charba.client.items.BaseBoxItem.getRight","org.pepstock.charba.client.items.BaseBoxItem.getBottom","org.pepstock.charba.client.items.BaseBoxItem.getLeft","org.pepstock.charba.client.items.BaseBoxItem.getWidth","org.pepstock.charba.client.items.BaseBoxItem.getHeight","event","org.pepstock.charba.client.items.BaseBoxItem.isInside","isX","isY","org.pepstock.charba.client.items.BaseBoxItem.<clinit>"]
 }

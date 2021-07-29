@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SteppedCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,e;;QAAA,M;EAAAA,0B;EAAAA,8B;;;QAAA,O;EAAAC,kC;EAAAA;",
+"sources":["SteppedCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.SteppedCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.SteppedCallback.<clinit>"]
+}
+

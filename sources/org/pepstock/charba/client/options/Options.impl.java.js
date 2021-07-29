@@ -40,6 +40,7 @@ let CommonProperty = goog.forwardDeclare('org.pepstock.charba.client.options.Opt
 let Property = goog.forwardDeclare('org.pepstock.charba.client.options.Options.Property$impl');
 let Plugins = goog.forwardDeclare('org.pepstock.charba.client.options.Plugins$impl');
 let SpanGapHandler = goog.forwardDeclare('org.pepstock.charba.client.options.SpanGapHandler$impl');
+let Subtitle = goog.forwardDeclare('org.pepstock.charba.client.options.Subtitle$impl');
 let Title = goog.forwardDeclare('org.pepstock.charba.client.options.Title$impl');
 let Tooltips = goog.forwardDeclare('org.pepstock.charba.client.options.Tooltips$impl');
 let Transitions = goog.forwardDeclare('org.pepstock.charba.client.options.Transitions$impl');
@@ -68,6 +69,8 @@ class Options extends AbstractModel {
   this.f_elements__org_pepstock_charba_client_options_Options_;
   /**@type {Title}*/
   this.f_title__org_pepstock_charba_client_options_Options_;
+  /**@type {Subtitle}*/
+  this.f_subtitle__org_pepstock_charba_client_options_Options_;
   /**@type {Tooltips}*/
   this.f_tooltips__org_pepstock_charba_client_options_Options_;
   /**@type {Decimation}*/
@@ -124,6 +127,7 @@ class Options extends AbstractModel {
   this.f_animationContainer__org_pepstock_charba_client_options_Options_ = AnimationContainer.$create__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_defaults_IsDefaultAnimationContainer__org_pepstock_charba_client_commons_NativeObject__java_lang_String(this, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)), this.m_getNativeObject__(), this.f_scope__org_pepstock_charba_client_options_Options_);
   this.f_legend__org_pepstock_charba_client_options_Options_ = Legend.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultLegend__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getLegend__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_LEGEND__org_pepstock_charba_client_enums_DefaultPluginId));
   this.f_title__org_pepstock_charba_client_options_Options_ = Title.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultTitle__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_TITLE__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getTitle__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_TITLE__org_pepstock_charba_client_enums_DefaultPluginId));
+  this.f_subtitle__org_pepstock_charba_client_options_Options_ = Subtitle.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultSubtitle__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getSubtitle__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_SUBTITLE__org_pepstock_charba_client_enums_DefaultPluginId));
   this.f_tooltips__org_pepstock_charba_client_options_Options_ = Tooltips.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultTooltips__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getTooltips__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_TOOLTIP__org_pepstock_charba_client_enums_DefaultPluginId));
   this.f_decimation__org_pepstock_charba_client_options_Options_ = Decimation.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultDecimation__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_DECIMATION__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getDecimation__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_DECIMATION__org_pepstock_charba_client_enums_DefaultPluginId));
   this.f_filler__org_pepstock_charba_client_options_Options_ = Filler.$create__org_pepstock_charba_client_options_Plugins__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_defaults_IsDefaultFiller__org_pepstock_charba_client_commons_NativeObject(this.f_plugins__org_pepstock_charba_client_options_Options_, DefaultPluginId.f_FILLER__org_pepstock_charba_client_enums_DefaultPluginId, /**@type {IsDefaultOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultOptions)).m_getFiller__(), this.f_plugins__org_pepstock_charba_client_options_Options_.m_getDefaultPluginOptions__org_pepstock_charba_client_enums_DefaultPluginId_$pp_org_pepstock_charba_client_options(DefaultPluginId.f_FILLER__org_pepstock_charba_client_enums_DefaultPluginId));
@@ -179,6 +183,10 @@ class Options extends AbstractModel {
  /** @override @return {Title} */
  m_getTitle__() {
   return this.f_title__org_pepstock_charba_client_options_Options_;
+ }
+ /** @override @return {Subtitle} */
+ m_getSubtitle__() {
+  return this.f_subtitle__org_pepstock_charba_client_options_Options_;
  }
  /** @override @return {Tooltips} */
  m_getTooltips__() {
@@ -491,6 +499,7 @@ class Options extends AbstractModel {
   Property = goog.module.get('org.pepstock.charba.client.options.Options.Property$impl');
   Plugins = goog.module.get('org.pepstock.charba.client.options.Plugins$impl');
   SpanGapHandler = goog.module.get('org.pepstock.charba.client.options.SpanGapHandler$impl');
+  Subtitle = goog.module.get('org.pepstock.charba.client.options.Subtitle$impl');
   Title = goog.module.get('org.pepstock.charba.client.options.Title$impl');
   Tooltips = goog.module.get('org.pepstock.charba.client.options.Tooltips$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');

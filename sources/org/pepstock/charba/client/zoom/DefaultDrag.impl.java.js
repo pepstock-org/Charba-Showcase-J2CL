@@ -4,6 +4,8 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const IsDefaultDrag = goog.require('org.pepstock.charba.client.zoom.IsDefaultDrag$impl');
 
+let ModifierKey = goog.forwardDeclare('org.pepstock.charba.client.enums.ModifierKey$impl');
+
 /**
  * @implements {IsDefaultDrag}
  */
@@ -36,6 +38,16 @@ class DefaultDrag extends j_l_Object {
  /** @override @return {number} */
  m_getBorderWidth__() {
   return IsDefaultDrag.m_getBorderWidth__$default__org_pepstock_charba_client_zoom_IsDefaultDrag(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {ModifierKey} */
+ m_getModifierKey__() {
+  return IsDefaultDrag.m_getModifierKey__$default__org_pepstock_charba_client_zoom_IsDefaultDrag(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getThreshold__() {
+  return IsDefaultDrag.m_getThreshold__$default__org_pepstock_charba_client_zoom_IsDefaultDrag(this);
  }
  //Default method forwarding stub.
  /** @override @return {boolean} */

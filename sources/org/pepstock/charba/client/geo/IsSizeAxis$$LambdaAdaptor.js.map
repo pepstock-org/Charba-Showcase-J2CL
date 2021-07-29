@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IsSizeAxis$$LambdaAdaptor.impl.java.js",
+"lineCount":76,
+"mappings":"A;;;;;;;;;;;;;;;;MA6BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,gI;;;CAAA,sH;EAAAC,iC;EAAAA,yE;;;CAAA,a;EAAAC,gD;EAAAA,sG;;;;CAAA,a;EAAAC,6F;;;;CAAA,oB;EAAAC,gG;;;;CAAA,W;EAAAC,uF;;;;CAAA,Y;EAAAC,wF;;;;CAAA,0B;EAAAC,uG;;;;CAAA,oD;EAAAC,iI;;;;CAAA,oB;EAAAC,uG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
+"sources":["IsSizeAxis.java"],
+"names":["org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.<init>","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.getMapper","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.getLegend","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.getMissingRadius","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.getMode","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.getRange","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.setMissingRadius","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.setMode","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.setRange","org.pepstock.charba.client.geo.IsSizeAxis$$LambdaAdaptor.<clinit>"]
+}
+

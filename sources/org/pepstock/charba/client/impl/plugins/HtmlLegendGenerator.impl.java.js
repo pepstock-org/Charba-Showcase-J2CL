@@ -21,6 +21,8 @@ let Legend = goog.forwardDeclare('org.pepstock.charba.client.configuration.Legen
 let LegendTitle = goog.forwardDeclare('org.pepstock.charba.client.configuration.LegendTitle$impl');
 let BaseStyleProperties_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.BaseStyleProperties.$Overlay$impl');
 let DOMBuilder = goog.forwardDeclare('org.pepstock.charba.client.dom.DOMBuilder$impl');
+let Canvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
+let Context2dItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
 let BorderStyle = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.BorderStyle$impl');
 let Display = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.Display$impl');
 let Repetition = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.Repetition$impl');
@@ -29,6 +31,7 @@ let TextDecoration = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.T
 let Unit = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.Unit$impl');
 let SafeHtml = goog.forwardDeclare('org.pepstock.charba.client.dom.safehtml.SafeHtml$impl');
 let SafeHtmlBuilder = goog.forwardDeclare('org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let TextAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TextAlign$impl');
 let TextDirection = goog.forwardDeclare('org.pepstock.charba.client.enums.TextDirection$impl');
 let HtmlLegend = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.HtmlLegend$impl');
@@ -256,12 +259,19 @@ class HtmlLegendGenerator extends j_l_Object {
  
  m_applyPointStyle__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_impl_plugins_HtmlLegendItem__org_pepstock_charba_client_dom_elements_Div__int__int_$p_org_pepstock_charba_client_impl_plugins_HtmlLegendGenerator(/** IsChart */ chart, /** HtmlLegendItem */ htmlLegendItem, /** HTMLDivElement */ color, /** number */ width, /** number */ height) {
   let item = htmlLegendItem.m_getLegendItem__();
-  if (item.m_isPointStyleAsImage__()) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_IMAGE__org_pepstock_charba_client_enums_PointStyleType, item.m_getPointStyleType__())) {
    let image = item.m_getPointStyleAsImage__();
    let imageAsCss = Utilities.m_toCSSBackgroundProperty__org_pepstock_charba_client_dom_elements_Img(image);
    color.style.background = imageAsCss;
    color.style.width = Unit.f_PX__org_pepstock_charba_client_dom_enums_Unit.m_format__int(image.width);
    color.style.height = Unit.f_PX__org_pepstock_charba_client_dom_enums_Unit.m_format__int(image.height);
+  } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_CANVAS__org_pepstock_charba_client_enums_PointStyleType, item.m_getPointStyleType__())) {
+   let canvas = item.m_getPointStyleAsCanvas__();
+   let pattern = Context2dItem_$Overlay.m_createPattern__$devirt__org_pepstock_charba_client_dom_elements_Context2dItem__org_pepstock_charba_client_dom_elements_Canvas__org_pepstock_charba_client_dom_enums_Repetition(Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(canvas), canvas, Repetition.f_NO_REPEAT__org_pepstock_charba_client_dom_enums_Repetition);
+   let canvasAsCss = Utilities.m_toCSSBackgroundProperty__java_lang_String(Utilities.m_getImageURLFromCanvasPattern__org_pepstock_charba_client_dom_elements_CanvasPatternItem__int__int(pattern, canvas.width, canvas.height));
+   color.style.background = canvasAsCss;
+   color.style.width = Unit.f_PX__org_pepstock_charba_client_dom_enums_Unit.m_format__int(canvas.width);
+   color.style.height = Unit.f_PX__org_pepstock_charba_client_dom_enums_Unit.m_format__int(canvas.height);
   } else {
    let size = Math.min(width, height);
    let radius = (size - 2 | 0) / 2;
@@ -275,9 +285,9 @@ class HtmlLegendGenerator extends j_l_Object {
    size = $Primitives.$narrowDoubleToInt(radius * 2) + 2 | 0;
    htmlLegendItem.m_setSize__int_$pp_org_pepstock_charba_client_impl_plugins(size);
    htmlLegendItem.m_setRadius__double_$pp_org_pepstock_charba_client_impl_plugins(radius);
-   let pattern = TilesFactory.m_createHtmlLegendItem__org_pepstock_charba_client_impl_plugins_HtmlLegendItem(htmlLegendItem);
-   if (!$Equality.$same(pattern, null) && j_l_String.m_length__java_lang_String(j_l_String.m_trim__java_lang_String(pattern)) > 0) {
-    let patternAsCss = Utilities.m_toCSSBackgroundProperty__java_lang_String__org_pepstock_charba_client_dom_enums_Repetition(pattern, Repetition.f_NO_REPEAT__org_pepstock_charba_client_dom_enums_Repetition);
+   let pattern_1 = TilesFactory.m_createHtmlLegendItem__org_pepstock_charba_client_impl_plugins_HtmlLegendItem(htmlLegendItem);
+   if (!$Equality.$same(pattern_1, null) && j_l_String.m_length__java_lang_String(j_l_String.m_trim__java_lang_String(pattern_1)) > 0) {
+    let patternAsCss = Utilities.m_toCSSBackgroundProperty__java_lang_String__org_pepstock_charba_client_dom_enums_Repetition(pattern_1, Repetition.f_NO_REPEAT__org_pepstock_charba_client_dom_enums_Repetition);
     color.style.background = patternAsCss;
     color.style.width = Unit.f_PX__org_pepstock_charba_client_dom_enums_Unit.m_format__int(size);
     color.style.height = Unit.f_PX__org_pepstock_charba_client_dom_enums_Unit.m_format__int(size);
@@ -417,6 +427,8 @@ class HtmlLegendGenerator extends j_l_Object {
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
   BaseStyleProperties_$Overlay = goog.module.get('org.pepstock.charba.client.dom.BaseStyleProperties.$Overlay$impl');
   DOMBuilder = goog.module.get('org.pepstock.charba.client.dom.DOMBuilder$impl');
+  Canvas_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
+  Context2dItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
   BorderStyle = goog.module.get('org.pepstock.charba.client.dom.enums.BorderStyle$impl');
   Display = goog.module.get('org.pepstock.charba.client.dom.enums.Display$impl');
   Repetition = goog.module.get('org.pepstock.charba.client.dom.enums.Repetition$impl');
@@ -424,6 +436,7 @@ class HtmlLegendGenerator extends j_l_Object {
   TextDecoration = goog.module.get('org.pepstock.charba.client.dom.enums.TextDecoration$impl');
   Unit = goog.module.get('org.pepstock.charba.client.dom.enums.Unit$impl');
   SafeHtmlBuilder = goog.module.get('org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder$impl');
+  PointStyleType = goog.module.get('org.pepstock.charba.client.enums.PointStyleType$impl');
   TextAlign = goog.module.get('org.pepstock.charba.client.enums.TextAlign$impl');
   TextDirection = goog.module.get('org.pepstock.charba.client.enums.TextDirection$impl');
   HtmlLegend = goog.module.get('org.pepstock.charba.client.impl.plugins.HtmlLegend$impl');

@@ -1,7 +1,7 @@
 goog.module('org.pepstock.charba.client.configuration.LinearTickOptionsHandler$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const AxisContainer = goog.require('org.pepstock.charba.client.configuration.AxisContainer$impl');
+const NumericTickOptionsHandler = goog.require('org.pepstock.charba.client.configuration.NumericTickOptionsHandler$impl');
 
 let Double = goog.forwardDeclare('java.lang.Double$impl');
 let Integer = goog.forwardDeclare('java.lang.Integer$impl');
@@ -16,7 +16,7 @@ let Property = goog.forwardDeclare('org.pepstock.charba.client.configuration.Lin
 let ExtendedScale = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedScale$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
-class LinearTickOptionsHandler extends AxisContainer {
+class LinearTickOptionsHandler extends NumericTickOptionsHandler {
  /** @protected */
  constructor() {
   super();
@@ -46,7 +46,7 @@ class LinearTickOptionsHandler extends AxisContainer {
  }
  
  $ctor__org_pepstock_charba_client_configuration_LinearTickOptionsHandler__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {
-  this.$ctor__org_pepstock_charba_client_configuration_AxisContainer__org_pepstock_charba_client_configuration_Axis(axis);
+  this.$ctor__org_pepstock_charba_client_configuration_NumericTickOptionsHandler__org_pepstock_charba_client_configuration_Axis(axis);
   this.$init___$p_org_pepstock_charba_client_configuration_LinearTickOptionsHandler();
   this.f_countCallbackProxy__org_pepstock_charba_client_configuration_LinearTickOptionsHandler_.callback = (/** ? */ context) =>{
    return /**@type {Integer}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable__java_lang_Object(this.m_getAxis__().m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_configuration(context), this.m_getCountCallback___$pp_org_pepstock_charba_client_configuration(), Integer.m_valueOf__int(this.m_getAxis__().m_getDefaultValues___$pp_org_pepstock_charba_client_configuration().m_getTicks__().m_getCount__())), Integer)).m_intValue__();
@@ -132,7 +132,7 @@ class LinearTickOptionsHandler extends AxisContainer {
  static $clinit() {
   LinearTickOptionsHandler.$clinit = () =>{};
   LinearTickOptionsHandler.$loadModules();
-  AxisContainer.$clinit();
+  NumericTickOptionsHandler.$clinit();
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {

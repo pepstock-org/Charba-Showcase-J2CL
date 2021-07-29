@@ -47,7 +47,7 @@ class InternalProperty extends Enum {
  /** @return {!Array<!InternalProperty>} */
  static m_values__() {
   InternalProperty.$clinit();
-  return /**@type {!Array<InternalProperty>}*/ ($Arrays.$init([InternalProperty.$static_ANIMATION__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_PATTERNS__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_GRADIENTS__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty], InternalProperty));
+  return /**@type {!Array<InternalProperty>}*/ ($Arrays.$init([InternalProperty.$static_ANIMATION__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_PATTERNS__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_GRADIENTS__org_pepstock_charba_client_data_Dataset_InternalProperty, InternalProperty.$static_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty], InternalProperty));
  }
  /** @return {!InternalProperty} */
  static get f_ANIMATION__org_pepstock_charba_client_data_Dataset_InternalProperty() {
@@ -58,16 +58,20 @@ class InternalProperty extends Enum {
   return (InternalProperty.$clinit(), InternalProperty.$static_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty);
  }
  /** @return {!InternalProperty} */
- static get f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty() {
-  return (InternalProperty.$clinit(), InternalProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty);
- }
- /** @return {!InternalProperty} */
  static get f_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty() {
   return (InternalProperty.$clinit(), InternalProperty.$static_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty);
  }
  /** @return {!InternalProperty} */
  static get f_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty() {
   return (InternalProperty.$clinit(), InternalProperty.$static_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty);
+ }
+ /** @return {!InternalProperty} */
+ static get f_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty() {
+  return (InternalProperty.$clinit(), InternalProperty.$static_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty);
+ }
+ /** @return {!InternalProperty} */
+ static get f_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty() {
+  return (InternalProperty.$clinit(), InternalProperty.$static_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty);
  }
  /** @return {!InternalProperty} */
  static get f_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty() {
@@ -92,9 +96,10 @@ class InternalProperty extends Enum {
   Enum.$clinit();
   InternalProperty.$static_ANIMATION__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ANIMATION"), InternalProperty.$ordinal_ANIMATION__org_pepstock_charba_client_data_Dataset_InternalProperty, "animation");
   InternalProperty.$static_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LABEL"), InternalProperty.$ordinal_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty, "label");
-  InternalProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DATA"), InternalProperty.$ordinal_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, "data");
   InternalProperty.$static_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TYPE"), InternalProperty.$ordinal_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, "type");
   InternalProperty.$static_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("HIDDEN"), InternalProperty.$ordinal_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty, "hidden");
+  InternalProperty.$static_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("PARSING"), InternalProperty.$ordinal_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty, "parsing");
+  InternalProperty.$static_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("NORMALIZED"), InternalProperty.$ordinal_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty, "normalized");
   InternalProperty.$static_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHARBA_ID"), InternalProperty.$ordinal_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty, "charbaId");
   InternalProperty.$static_CHARBA_PATTERNS__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHARBA_PATTERNS"), InternalProperty.$ordinal_CHARBA_PATTERNS__org_pepstock_charba_client_data_Dataset_InternalProperty, "charbaPatterns");
   InternalProperty.$static_CHARBA_GRADIENTS__org_pepstock_charba_client_data_Dataset_InternalProperty = InternalProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CHARBA_GRADIENTS"), InternalProperty.$ordinal_CHARBA_GRADIENTS__org_pepstock_charba_client_data_Dataset_InternalProperty, "charbaGradients");
@@ -117,11 +122,13 @@ InternalProperty.$static_ANIMATION__org_pepstock_charba_client_data_Dataset_Inte
 /**@private {!InternalProperty}*/
 InternalProperty.$static_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty;
 /**@private {!InternalProperty}*/
-InternalProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty;
-/**@private {!InternalProperty}*/
 InternalProperty.$static_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty;
 /**@private {!InternalProperty}*/
 InternalProperty.$static_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty;
+/**@private {!InternalProperty}*/
+InternalProperty.$static_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty;
+/**@private {!InternalProperty}*/
+InternalProperty.$static_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty;
 /**@private {!InternalProperty}*/
 InternalProperty.$static_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty;
 /**@private {!InternalProperty}*/
@@ -137,19 +144,21 @@ InternalProperty.$ordinal_ANIMATION__org_pepstock_charba_client_data_Dataset_Int
 /**@const {number}*/
 InternalProperty.$ordinal_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty = 1;
 /**@const {number}*/
-InternalProperty.$ordinal_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty = 2;
+InternalProperty.$ordinal_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty = 2;
 /**@const {number}*/
-InternalProperty.$ordinal_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty = 3;
+InternalProperty.$ordinal_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty = 3;
 /**@const {number}*/
-InternalProperty.$ordinal_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty = 4;
+InternalProperty.$ordinal_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty = 4;
 /**@const {number}*/
-InternalProperty.$ordinal_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty = 5;
+InternalProperty.$ordinal_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty = 5;
 /**@const {number}*/
-InternalProperty.$ordinal_CHARBA_PATTERNS__org_pepstock_charba_client_data_Dataset_InternalProperty = 6;
+InternalProperty.$ordinal_CHARBA_ID__org_pepstock_charba_client_data_Dataset_InternalProperty = 6;
 /**@const {number}*/
-InternalProperty.$ordinal_CHARBA_GRADIENTS__org_pepstock_charba_client_data_Dataset_InternalProperty = 7;
+InternalProperty.$ordinal_CHARBA_PATTERNS__org_pepstock_charba_client_data_Dataset_InternalProperty = 7;
 /**@const {number}*/
-InternalProperty.$ordinal_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty = 8;
+InternalProperty.$ordinal_CHARBA_GRADIENTS__org_pepstock_charba_client_data_Dataset_InternalProperty = 8;
+/**@const {number}*/
+InternalProperty.$ordinal_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty = 9;
 Key.$markImplementor(InternalProperty);
 $Util.$setClassMetadataForEnum(InternalProperty, "org.pepstock.charba.client.data.Dataset$InternalProperty");
 

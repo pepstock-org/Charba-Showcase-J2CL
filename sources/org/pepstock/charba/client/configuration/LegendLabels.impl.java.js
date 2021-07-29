@@ -17,6 +17,7 @@ let ConfigurationOptions = goog.forwardDeclare('org.pepstock.charba.client.confi
 let Font = goog.forwardDeclare('org.pepstock.charba.client.configuration.Font$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.configuration.LegendLabels.Property$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let TextAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TextAlign$impl');
 let LegendLabelItem = goog.forwardDeclare('org.pepstock.charba.client.items.LegendLabelItem$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
@@ -113,13 +114,21 @@ class LegendLabels extends ConfigurationOptionsContainer {
  m_setPointStyle__org_pepstock_charba_client_dom_elements_Img(/** HTMLImageElement */ pointStyle) {
   this.m_getConfiguration__().m_getLegend__().m_getLabels__().m_setPointStyle__org_pepstock_charba_client_dom_elements_Img(pointStyle);
  }
- /** @return {boolean} */
- m_isPointStyleAsImage__() {
-  return this.m_getConfiguration__().m_getLegend__().m_getLabels__().m_isPointStyleAsImage__();
+ 
+ m_setPointStyle__org_pepstock_charba_client_dom_elements_Canvas(/** HTMLCanvasElement */ pointStyle) {
+  this.m_getConfiguration__().m_getLegend__().m_getLabels__().m_setPointStyle__org_pepstock_charba_client_dom_elements_Canvas(pointStyle);
+ }
+ /** @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return this.m_getConfiguration__().m_getLegend__().m_getLabels__().m_getPointStyleType__();
  }
  /** @return {PointStyle} */
  m_getPointStyle__() {
   return this.m_getConfiguration__().m_getLegend__().m_getLabels__().m_getPointStyle__();
+ }
+ /** @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return this.m_getConfiguration__().m_getLegend__().m_getLabels__().m_getPointStyleAsCanvas__();
  }
  /** @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {

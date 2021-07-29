@@ -1,10 +1,9 @@
 goog.module('org.pepstock.charba.client.events.AxisClickEvent$impl');
 
 const $Util = goog.require('nativebootstrap.Util$impl');
-const AbstractEvent = goog.require('org.pepstock.charba.client.events.AbstractEvent$impl');
+const AbstractAxisEvent = goog.require('org.pepstock.charba.client.events.AbstractAxisEvent$impl');
 
 let Class = goog.forwardDeclare('java.lang.Class$impl');
-let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
 let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$impl');
 let AxisClickEventHandler = goog.forwardDeclare('org.pepstock.charba.client.events.AxisClickEventHandler$impl');
 let EventHandler = goog.forwardDeclare('org.pepstock.charba.client.events.EventHandler$impl');
@@ -13,14 +12,10 @@ let ScaleItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleItem$
 let ScaleValueItem = goog.forwardDeclare('org.pepstock.charba.client.items.ScaleValueItem$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
-class AxisClickEvent extends AbstractEvent {
+class AxisClickEvent extends AbstractAxisEvent {
  /** @protected */
  constructor() {
   super();
-  /**@type {ScaleItem}*/
-  this.f_item__org_pepstock_charba_client_events_AxisClickEvent_;
-  /**@type {Axis}*/
-  this.f_axis__org_pepstock_charba_client_events_AxisClickEvent_;
   /**@type {ScaleValueItem}*/
   this.f_value__org_pepstock_charba_client_events_AxisClickEvent_;
  }
@@ -33,18 +28,8 @@ class AxisClickEvent extends AbstractEvent {
  }
  
  $ctor__org_pepstock_charba_client_events_AxisClickEvent__org_pepstock_charba_client_dom_BaseNativeEvent__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_items_ScaleValueItem(/** Object */ nativeEvent, /** ScaleItem */ item, /** Axis */ axis, /** ScaleValueItem */ value) {
-  this.$ctor__org_pepstock_charba_client_events_AbstractEvent__org_pepstock_charba_client_dom_BaseNativeEvent__org_pepstock_charba_client_events_EventType(nativeEvent, AxisClickEvent.$static_TYPE__org_pepstock_charba_client_events_AxisClickEvent);
-  this.f_item__org_pepstock_charba_client_events_AxisClickEvent_ = /**@type {ScaleItem}*/ ($Casts.$to(Checker.m_checkAndGetIfValid__java_lang_Object__java_lang_String(item, "Scale item argument"), ScaleItem));
-  this.f_axis__org_pepstock_charba_client_events_AxisClickEvent_ = axis;
+  this.$ctor__org_pepstock_charba_client_events_AbstractAxisEvent__org_pepstock_charba_client_dom_BaseNativeEvent__org_pepstock_charba_client_events_EventType__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_configuration_Axis(nativeEvent, AxisClickEvent.$static_TYPE__org_pepstock_charba_client_events_AxisClickEvent, item, axis);
   this.f_value__org_pepstock_charba_client_events_AxisClickEvent_ = value;
- }
- /** @return {ScaleItem} */
- m_getItem__() {
-  return this.f_item__org_pepstock_charba_client_events_AxisClickEvent_;
- }
- /** @return {Axis} */
- m_getAxis__() {
-  return this.f_axis__org_pepstock_charba_client_events_AxisClickEvent_;
  }
  /** @return {ScaleValueItem} */
  m_getValue__() {
@@ -65,7 +50,7 @@ class AxisClickEvent extends AbstractEvent {
  static $clinit() {
   AxisClickEvent.$clinit = () =>{};
   AxisClickEvent.$loadModules();
-  AbstractEvent.$clinit();
+  AbstractAxisEvent.$clinit();
   AxisClickEvent.$static_TYPE__org_pepstock_charba_client_events_AxisClickEvent = EventType.m_create__java_lang_Class(Class.$get(AxisClickEvent));
  }
  /** @return {boolean} */
@@ -75,10 +60,8 @@ class AxisClickEvent extends AbstractEvent {
  
  static $loadModules() {
   Class = goog.module.get('java.lang.Class$impl');
-  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
   AxisClickEventHandler = goog.module.get('org.pepstock.charba.client.events.AxisClickEventHandler$impl');
   EventType = goog.module.get('org.pepstock.charba.client.events.EventType$impl');
-  ScaleItem = goog.module.get('org.pepstock.charba.client.items.ScaleItem$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
  }
 }

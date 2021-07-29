@@ -21,6 +21,7 @@ goog.require('org.pepstock.charba.client.defaults.globals.DefaultTime');
 goog.require('org.pepstock.charba.client.enums.AxisPosition');
 goog.require('org.pepstock.charba.client.enums.Bounds');
 goog.require('org.pepstock.charba.client.enums.Display');
+goog.require('org.pepstock.charba.client.items.Undefined');
 
 const DefaultScale = goog.require('org.pepstock.charba.client.defaults.globals.DefaultScale$impl');
 exports = DefaultScale;

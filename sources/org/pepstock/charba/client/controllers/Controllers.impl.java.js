@@ -44,8 +44,10 @@ class Controllers extends j_l_Object {
  m_register__org_pepstock_charba_client_Controller_$pp_org_pepstock_charba_client_controllers(/** Controller */ controller) {
   let wController = this.m_check__org_pepstock_charba_client_Controller_$p_org_pepstock_charba_client_controllers_Controllers(controller);
   if (!$Equality.$same(wController, null)) {
-   let type = controller.m_getType__();
-   JsControllerHelper.m_get__().m_register__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_controllers(type, wController.m_nativeObject___$pp_org_pepstock_charba_client_controllers());
+   if (controller.m_mustBeRegistered__()) {
+    let type = controller.m_getType__();
+    JsControllerHelper.m_get__().m_register__org_pepstock_charba_client_controllers_ControllerType__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_controllers(type, wController.m_nativeObject___$pp_org_pepstock_charba_client_controllers());
+   }
    return true;
   }
   return false;

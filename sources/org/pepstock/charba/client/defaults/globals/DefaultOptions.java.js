@@ -9,6 +9,7 @@ goog.require('org.pepstock.charba.client.enums.Event');
 goog.require('org.pepstock.charba.client.enums.IndexAxis');
 goog.require('org.pepstock.charba.client.intl.CLocale');
 goog.require('org.pepstock.charba.client.items.Undefined');
+goog.require('vmbootstrap.Arrays');
 
 const DefaultOptions = goog.require('org.pepstock.charba.client.defaults.globals.DefaultOptions$impl');
 exports = DefaultOptions;

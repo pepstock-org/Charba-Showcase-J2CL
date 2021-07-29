@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NumberFormatCallback$$LambdaAdaptor.impl.java.js",
+"lineCount":42,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,2D;EAAAC,8D;EAAAA,0H;;;;CAAA,2D;EAAAA,oI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
+"sources":["NumberFormatCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.NumberFormatCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.NumberFormatCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.NumberFormatCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.NumberFormatCallback$$LambdaAdaptor.<clinit>"]
+}
+

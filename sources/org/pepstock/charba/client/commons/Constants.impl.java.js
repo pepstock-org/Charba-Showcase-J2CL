@@ -43,6 +43,8 @@ Constants.$static_REGEXP_ID__org_pepstock_charba_client_commons_Constants;
 /**@const {?string}*/
 Constants.f_EMPTY_STRING__org_pepstock_charba_client_commons_Constants = "";
 /**@const {?string}*/
+Constants.f_APOSTROPHE__org_pepstock_charba_client_commons_Constants = "'";
+/**@const {?string}*/
 Constants.f_SLASH__org_pepstock_charba_client_commons_Constants = "/";
 /**@const {?string}*/
 Constants.f_NULL_STRING__org_pepstock_charba_client_commons_Constants = "<null>";

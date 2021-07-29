@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Italymap.impl.java.js",
+"lineCount":45,
+"mappings":"A;;;;;;;;MAIa,Q;;CAAA,W;EAAAA,Q;;;QAsEL,S;EAAAC,mB;EAAAA,+B;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EACNC,sQ;;;QAvEW,O;EAAAC,2B;EAAAA,wB;EAAAA,qC;EAIZA,qvpE;;;;;;;;;;;;AAFA;SAAoB,yDAApB,c;AAFY;SAIkB,+DAJlB;",
+"sources":["Italymap.java"],
+"names":["org.pepstock.charba.showcase.j2cl.topojson.Italymap.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.topojson.Italymap.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.topojson.Italymap.<init>","org.pepstock.charba.showcase.j2cl.topojson.Italymap.<clinit>"]
+}
+

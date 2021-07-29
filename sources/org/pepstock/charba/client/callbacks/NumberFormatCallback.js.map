@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NumberFormatCallback.impl.java.js",
+"lineCount":23,
+"mappings":"A;;;;;;;;;;;;;MAyBiB,oB;;QAAA,M;EAAAA,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
+"sources":["NumberFormatCallback.java"],
+"names":["org.pepstock.charba.client.callbacks.NumberFormatCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.NumberFormatCallback.<clinit>"]
+}
+

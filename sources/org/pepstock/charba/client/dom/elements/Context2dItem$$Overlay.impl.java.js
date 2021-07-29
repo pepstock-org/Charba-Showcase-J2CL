@@ -17,6 +17,7 @@ let Canvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elemen
 let CanvasGradientItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay$impl');
 let CanvasPatternItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay$impl');
 let Img_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Img.$Overlay$impl');
+let GlobalCompositeOperation = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation$impl');
 let Repetition = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.Repetition$impl');
 let TextBaseline = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.TextBaseline$impl');
 let CapStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.CapStyle$impl');
@@ -180,6 +181,18 @@ class $Overlay {
   $Overlay.$clinit();
   return /**@type {TextBaseline}*/ ($Casts.$to(Key.m_getKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String__org_pepstock_charba_client_commons_Key(TextBaseline.m_values__(), $thisArg.textBaseline, TextBaseline.f_ALPHABETIC__org_pepstock_charba_client_dom_enums_TextBaseline), TextBaseline));
  }
+ 
+ static m_setGlobalCompositeOperation__$devirt__org_pepstock_charba_client_dom_elements_Context2dItem__org_pepstock_charba_client_dom_enums_GlobalCompositeOperation(/** !CanvasRenderingContext2D */ $thisArg, /** GlobalCompositeOperation */ globalCompositeOperation) {
+  $Overlay.$clinit();
+  if (Key.m_isValid__org_pepstock_charba_client_commons_Key(globalCompositeOperation)) {
+   $thisArg.globalCompositeOperation = globalCompositeOperation.m_value__();
+  }
+ }
+ /** @return {GlobalCompositeOperation} */
+ static m_getGlobalCompositeOperation__$devirt__org_pepstock_charba_client_dom_elements_Context2dItem(/** !CanvasRenderingContext2D */ $thisArg) {
+  $Overlay.$clinit();
+  return /**@type {GlobalCompositeOperation}*/ ($Casts.$to(Key.m_getKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String__org_pepstock_charba_client_commons_Key(GlobalCompositeOperation.m_values__(), $thisArg.globalCompositeOperation, GlobalCompositeOperation.f_SOURCE_OVER__org_pepstock_charba_client_dom_enums_GlobalCompositeOperation), GlobalCompositeOperation));
+ }
  /** @return {CanvasPattern} */
  static m_createPattern__$devirt__org_pepstock_charba_client_dom_elements_Context2dItem__org_pepstock_charba_client_dom_elements_Canvas__org_pepstock_charba_client_dom_enums_Repetition(/** !CanvasRenderingContext2D */ $thisArg, /** HTMLCanvasElement */ canvas, /** Repetition */ repetition) {
   $Overlay.$clinit();
@@ -283,6 +296,7 @@ class $Overlay {
   CanvasGradientItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay$impl');
   CanvasPatternItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay$impl');
   Img_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Img.$Overlay$impl');
+  GlobalCompositeOperation = goog.module.get('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation$impl');
   Repetition = goog.module.get('org.pepstock.charba.client.dom.enums.Repetition$impl');
   TextBaseline = goog.module.get('org.pepstock.charba.client.dom.enums.TextBaseline$impl');
   CapStyle = goog.module.get('org.pepstock.charba.client.enums.CapStyle$impl');

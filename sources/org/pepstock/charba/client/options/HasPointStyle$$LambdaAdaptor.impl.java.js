@@ -5,6 +5,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const HasPointStyle = goog.require('org.pepstock.charba.client.options.HasPointStyle$impl');
 
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let PointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.options.PointStyleHandler$impl');
 
 /**
@@ -35,14 +36,19 @@ class $LambdaAdaptor extends j_l_Object {
   return HasPointStyle.m_getPointStyle__$default__org_pepstock_charba_client_options_HasPointStyle(this);
  }
  //Default method forwarding stub.
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return HasPointStyle.m_getPointStyleAsCanvas__$default__org_pepstock_charba_client_options_HasPointStyle(this);
+ }
+ //Default method forwarding stub.
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {
   return HasPointStyle.m_getPointStyleAsImage__$default__org_pepstock_charba_client_options_HasPointStyle(this);
  }
  //Default method forwarding stub.
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return HasPointStyle.m_isPointStyleAsImage__$default__org_pepstock_charba_client_options_HasPointStyle(this);
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return HasPointStyle.m_getPointStyleType__$default__org_pepstock_charba_client_options_HasPointStyle(this);
  }
  //Default method forwarding stub.
  /** @override */
@@ -53,6 +59,11 @@ class $LambdaAdaptor extends j_l_Object {
  /** @override */
  m_setPointStyle__org_pepstock_charba_client_dom_elements_Img(/** HTMLImageElement */ arg0) {
   HasPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_options_HasPointStyle__org_pepstock_charba_client_dom_elements_Img(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setPointStyle__org_pepstock_charba_client_dom_elements_Canvas(/** HTMLCanvasElement */ arg0) {
+  HasPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_options_HasPointStyle__org_pepstock_charba_client_dom_elements_Canvas(this, arg0);
  }
  
  static $clinit() {

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ArrayCanvas$$Overlay.impl.java.js",
+"lineCount":95,
+"mappings":"A;;;;;;;;;;;MAgCmB,Q;;QAuBQ,oE,iCAAqBA,K;EAArBC,mB;EAEzBA;GAECA,YAFDA;G;EAKAA,kF;;;QAUyB,qE,iCAAsBD,K;EAAtBE,mB;EAEzBA;GAECA,mBAFDA;G;EAKAA,kF;;;QAUyB,4B,gCAAwBF,K;EAAxBC,mB;EAEzBA;GACCA,YADDA;G;EAIAA;GAECA,IAAgBE,IAAhBF,qEAFDA;GAICA,kEAJDA;G;EAOAA,IAAYG,MAAZH,e;EAEAA;GAAAA,IAAYI,KAAZJ,sFAAAA;;IAECA,mBAFDA;;G;EAKAA,c;;;QAUyB,6B,gCAAyBD,K;EAAzBE,mB;EAEzBA;GAECA,IAAgBC,IAAhBD,qEAFDA;GAICA,kEAJDA;G;EAOAA,IAAYE,MAAZF,e;EAEAA;GACCA,cADDA;G;EAIAA;GAAAA,IAAYG,KAAZH,sFAAAA;;IAECA,mBAFDA;;G;EAKAA,c;;;QAuFI,gE;EAAAI,mB;EACJA,oC;;;QAWM,sE,uCAAWC,K;EAAXC,mB;EACNA,kH;;;QAWI,wH,uCAAaD,K,2BAAcE,I;EAA3BC,mB;EACJA,gC;;;QAaa,mE,uCAAQH,K;EAARI,mB;EACbA,kD;;;QAmCI,mH,uCAAQJ,K,2BAAcE,I;EAAtBG,mB;EACJA,0C;;;QA7QiB,O;EAAAC,2B;EAAAA;",
+"sources":["ArrayCanvas.java"],
+"names":["items","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.fromOrNull","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.fromOrEmpty","list","result","value","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.clear__$devirt","index","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.remove__$devirt","item","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.insertAt__$devirt","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.get__$devirt","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.set__$devirt","org.pepstock.charba.client.commons.ArrayCanvas$$Overlay.<clinit>"]
+}
+

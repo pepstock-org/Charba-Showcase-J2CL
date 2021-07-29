@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"CastHelper.impl.java.js",
-"lineCount":57,
-"mappings":"A;;;;;;;;;;;;;MA0BmB,U;;CAAA,W;EAAAA,Q;;;QAKV,S;EAAAC,iC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EAAAC,iC;;;QAUU,yB,UAAaC,M;EAAbC,qB;EACjBA,iK;;;QASiB,yB,UAAaD,M;EAAbE,qB;EACjBA,uK;;;QAS+B,6B,UAAiBF,M;EAAjBG,qB;EAC/BA,kL;;;QASgC,8B,UAAkBH,M;EAAlBI,qB;EAChCA,oL;;;QAUqB,qC,UAAyBJ,M;EAG9CK,kG;;;QA3DiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
+"lineCount":63,
+"mappings":"A;;;;;;;;;;;;;;MA0BmB,U;;CAAA,W;EAAAA,Q;;;QAKV,S;EAAAC,iC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EAAAC,iC;;;QAUa,4B,UAAgBC,M;EAAhBC,qB;EACpBA,oK;;;QASiB,yB,UAAaD,M;EAAbE,qB;EACjBA,qK;;;QASiB,yB,UAAaF,M;EAAbG,qB;EACjBA,uK;;;QAS+B,6B,UAAiBH,M;EAAjBI,qB;EAC/BA,kL;;;QASgC,8B,UAAkBJ,M;EAAlBK,qB;EAChCA,oL;;;QAUqB,qC,UAAyBL,M;EAG9CM,kG;;;QArEiB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
 "sources":["CastHelper.java"],
-"names":["org.pepstock.charba.client.dom.elements.CastHelper.<synthetic: ctor_js>","org.pepstock.charba.client.dom.elements.CastHelper.<synthetic: ctor_create>","org.pepstock.charba.client.dom.elements.CastHelper.<init>","object","org.pepstock.charba.client.dom.elements.CastHelper.toDiv","org.pepstock.charba.client.dom.elements.CastHelper.toImg","org.pepstock.charba.client.dom.elements.CastHelper.toPattern","org.pepstock.charba.client.dom.elements.CastHelper.toGradient","org.pepstock.charba.client.dom.elements.CastHelper.checkAndGetObject","org.pepstock.charba.client.dom.elements.CastHelper.<clinit>"]
+"names":["org.pepstock.charba.client.dom.elements.CastHelper.<synthetic: ctor_js>","org.pepstock.charba.client.dom.elements.CastHelper.<synthetic: ctor_create>","org.pepstock.charba.client.dom.elements.CastHelper.<init>","object","org.pepstock.charba.client.dom.elements.CastHelper.toCanvas","org.pepstock.charba.client.dom.elements.CastHelper.toDiv","org.pepstock.charba.client.dom.elements.CastHelper.toImg","org.pepstock.charba.client.dom.elements.CastHelper.toPattern","org.pepstock.charba.client.dom.elements.CastHelper.toGradient","org.pepstock.charba.client.dom.elements.CastHelper.checkAndGetObject","org.pepstock.charba.client.dom.elements.CastHelper.<clinit>"]
 }
 

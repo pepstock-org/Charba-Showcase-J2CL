@@ -8,6 +8,7 @@ let SegementDatasetElement = goog.forwardDeclare('org.pepstock.charba.client.cal
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let ContextType = goog.forwardDeclare('org.pepstock.charba.client.enums.ContextType$impl');
 let DatasetElement = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetElement$impl');
+let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class SegmentContext extends ChartContext {
@@ -40,6 +41,18 @@ class SegmentContext extends ChartContext {
  m_getEndPoint__() {
   return this.f_point1__org_pepstock_charba_client_callbacks_SegmentContext_;
  }
+ /** @return {number} */
+ m_getDatasetIndex__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, Undefined.f_INTEGER__org_pepstock_charba_client_items_Undefined);
+ }
+ /** @return {number} */
+ m_getStartDataIndex__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, Undefined.f_INTEGER__org_pepstock_charba_client_items_Undefined);
+ }
+ /** @return {number} */
+ m_getEndDataIndex__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, Undefined.f_INTEGER__org_pepstock_charba_client_items_Undefined);
+ }
  /** @override @return {boolean} */
  m_isConsistent__() {
   return $Objects.m_equals__java_lang_Object__java_lang_Object(ContextType.f_CHART__org_pepstock_charba_client_enums_ContextType, this.m_getType__()) || $Objects.m_equals__java_lang_Object__java_lang_Object(ContextType.f_SEGMENT__org_pepstock_charba_client_enums_ContextType, this.m_getType__());
@@ -67,6 +80,7 @@ class SegmentContext extends ChartContext {
   SegementDatasetElement = goog.module.get('org.pepstock.charba.client.callbacks.SegmentContext.SegementDatasetElement$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   ContextType = goog.module.get('org.pepstock.charba.client.enums.ContextType$impl');
+  Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }
 }

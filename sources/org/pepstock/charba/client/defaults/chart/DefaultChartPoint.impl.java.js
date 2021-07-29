@@ -6,6 +6,7 @@ const IsDefaultPoint = goog.require('org.pepstock.charba.client.defaults.IsDefau
 
 let IsDefaultPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 
 /**
  * @implements {IsDefaultPoint}
@@ -65,9 +66,13 @@ class DefaultChartPoint extends j_l_Object {
  m_getRotation__() {
   return this.f_point__org_pepstock_charba_client_defaults_chart_DefaultChartPoint_.m_getRotation__();
  }
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return this.f_point__org_pepstock_charba_client_defaults_chart_DefaultChartPoint_.m_isPointStyleAsImage__();
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return this.f_point__org_pepstock_charba_client_defaults_chart_DefaultChartPoint_.m_getPointStyleType__();
+ }
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return this.f_point__org_pepstock_charba_client_defaults_chart_DefaultChartPoint_.m_getPointStyleAsCanvas__();
  }
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {

@@ -154,6 +154,14 @@ class PieDataset extends HovingDataset {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_ROTATION__org_pepstock_charba_client_data_PieDataset_Property, this.m_getDefaultValues__().m_getRotation__());
  }
  
+ m_setSpacing__int(/** number */ spacing) {
+  this.m_setValue__org_pepstock_charba_client_commons_Key__int(Property.f_SPACING__org_pepstock_charba_client_data_PieDataset_Property, spacing);
+ }
+ /** @return {number} */
+ m_getSpacing__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_SPACING__org_pepstock_charba_client_data_PieDataset_Property, this.m_getDefaultValues__().m_getElements__().m_getArc__().m_getSpacing__());
+ }
+ 
  m_setCircumference__double(/** number */ circumference) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_CIRCUMFERENCE__org_pepstock_charba_client_data_PieDataset_Property, circumference);
  }

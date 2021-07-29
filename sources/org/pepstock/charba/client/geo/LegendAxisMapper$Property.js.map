@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendAxisMapper$Property.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;MAoCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,kEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,2IAAAA;G;EAAAA,mI;;;QAAA,U;EAAAC,mB;EAAAA,yO;;;QAEZ,wE;EAAAC,iH;;;QACA,sE;EAAAA,+G;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,mR;EACAA,2Q;EAHYA,8F;;;;;;;;;;;;;AAAA;oF;AAAA;kF;AAAA;uF;AAEZ;yF;AACA;;",
+"sources":["LegendAxisMapper.java"],
+"names":["org.pepstock.charba.client.geo.LegendAxisMapper$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.LegendAxisMapper$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.LegendAxisMapper$Property.<init>","org.pepstock.charba.client.geo.LegendAxisMapper$Property.value","org.pepstock.charba.client.geo.LegendAxisMapper$Property.valueOf","org.pepstock.charba.client.geo.LegendAxisMapper$Property.values","org.pepstock.charba.client.geo.LegendAxisMapper$Property.<synthetic: getter>","org.pepstock.charba.client.geo.LegendAxisMapper$Property.<clinit>"]
+}
+

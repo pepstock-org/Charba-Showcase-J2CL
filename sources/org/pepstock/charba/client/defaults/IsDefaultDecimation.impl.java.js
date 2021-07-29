@@ -14,6 +14,8 @@ class IsDefaultDecimation {
  m_getAlgorithm__() {}
  /** @abstract @return {number} */
  m_getSamples__() {}
+ /** @abstract @return {number} */
+ m_getThreshold__() {}
  
  static $clinit() {
   IsDefaultDecimation.$clinit = () =>{};

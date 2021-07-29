@@ -4,7 +4,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const Scale = goog.require('org.pepstock.charba.client.options.Scale$impl');
 
 let GlobalScale = goog.forwardDeclare('org.pepstock.charba.client.GlobalScale$impl');
-let AxisType = goog.forwardDeclare('org.pepstock.charba.client.enums.AxisType$impl');
+let AxisType = goog.forwardDeclare('org.pepstock.charba.client.configuration.AxisType$impl');
 
 class InternalDefaultScale extends Scale {
  /** @protected */
@@ -12,15 +12,15 @@ class InternalDefaultScale extends Scale {
   super();
  }
  /** @return {!InternalDefaultScale} */
- static $create__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(/** AxisType */ type, /** GlobalScale */ scale, /** ? */ nativeObject) {
+ static $create__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(/** AxisType */ type, /** GlobalScale */ scale, /** ? */ nativeObject) {
   InternalDefaultScale.$clinit();
   let $instance = new InternalDefaultScale();
-  $instance.$ctor__org_pepstock_charba_client_Defaults_InternalDefaultScale__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(type, scale, nativeObject);
+  $instance.$ctor__org_pepstock_charba_client_Defaults_InternalDefaultScale__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(type, scale, nativeObject);
   return $instance;
  }
  
- $ctor__org_pepstock_charba_client_Defaults_InternalDefaultScale__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(/** AxisType */ type, /** GlobalScale */ scale, /** ? */ nativeObject) {
-  this.$ctor__org_pepstock_charba_client_options_Scale__org_pepstock_charba_client_enums_AxisType__org_pepstock_charba_client_defaults_IsDefaultScale__org_pepstock_charba_client_commons_NativeObject(type, scale, nativeObject);
+ $ctor__org_pepstock_charba_client_Defaults_InternalDefaultScale__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_GlobalScale__org_pepstock_charba_client_commons_NativeObject(/** AxisType */ type, /** GlobalScale */ scale, /** ? */ nativeObject) {
+  this.$ctor__org_pepstock_charba_client_options_Scale__org_pepstock_charba_client_configuration_AxisType__org_pepstock_charba_client_defaults_IsDefaultScale__org_pepstock_charba_client_commons_NativeObject(type, scale, nativeObject);
  }
  
  static $clinit() {

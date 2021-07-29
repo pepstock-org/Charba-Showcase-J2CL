@@ -5,6 +5,7 @@ goog.require('org.pepstock.charba.client.callbacks.TickCallback');
 goog.require('org.pepstock.charba.client.configuration.Axis');
 goog.require('org.pepstock.charba.client.configuration.CartesianNumericTick');
 goog.require('org.pepstock.charba.client.configuration.LinearTickHandler');
+goog.require('org.pepstock.charba.client.configuration.NumericTickOptionsHandler');
 goog.require('vmbootstrap.Casts');
 
 const CartesianLogarithmicTick = goog.require('org.pepstock.charba.client.configuration.CartesianLogarithmicTick$impl');

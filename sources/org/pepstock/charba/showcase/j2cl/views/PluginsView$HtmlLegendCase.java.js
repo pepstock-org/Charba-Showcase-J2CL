@@ -9,6 +9,7 @@ goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase
 goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$10');
 goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$11');
 goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$12');
+goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$13');
 goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$2');
 goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$3');
 goog.require('org.pepstock.charba.showcase.j2cl.views.PluginsView.HtmlLegendCase.$4');

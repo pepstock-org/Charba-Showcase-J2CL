@@ -47,11 +47,23 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property, Property.$static_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, Property.$static_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, Property.$static_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property, Property.$static_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, Property.$static_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property], Property));
+ }
+ /** @return {!Property} */
+ static get f_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property() {
+  return (Property.$clinit(), Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property);
+ }
+ /** @return {!Property} */
+ static get f_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property() {
+  return (Property.$clinit(), Property.$static_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property);
  }
  /** @return {!Property} */
  static get f_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property() {
   return (Property.$clinit(), Property.$static_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property);
+ }
+ /** @return {!Property} */
+ static get f_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property() {
+  return (Property.$clinit(), Property.$static_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property);
  }
  /** @return {!Property} */
  static get f_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property() {
@@ -62,7 +74,10 @@ class Property extends Enum {
   Property.$clinit = () =>{};
   Property.$loadModules();
   Enum.$clinit();
+  Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DATASET_INDEX"), Property.$ordinal_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, "datasetIndex");
+  Property.$static_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("P0_DATA_INDEX"), Property.$ordinal_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, "p0DataIndex");
   Property.$static_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("P0"), Property.$ordinal_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property, "p0");
+  Property.$static_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("P1_DATA_INDEX"), Property.$ordinal_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property, "p1DataIndex");
   Property.$static_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("P1"), Property.$ordinal_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property, "p1");
   Property.f_namesToValuesMap__org_pepstock_charba_client_callbacks_SegmentContext_Property_ = null;
  }
@@ -78,15 +93,27 @@ class Property extends Enum {
  }
 }
 /**@private {!Property}*/
+Property.$static_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property;
+/**@private {!Property}*/
+Property.$static_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property;
+/**@private {!Property}*/
 Property.$static_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property;
+/**@private {!Property}*/
+Property.$static_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property;
 /**@private {!Property}*/
 Property.$static_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_callbacks_SegmentContext_Property_;
 /**@const {number}*/
-Property.$ordinal_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property = 0;
+Property.$ordinal_DATASET_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property = 0;
 /**@const {number}*/
-Property.$ordinal_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property = 1;
+Property.$ordinal_P0_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property = 1;
+/**@const {number}*/
+Property.$ordinal_P0__org_pepstock_charba_client_callbacks_SegmentContext_Property = 2;
+/**@const {number}*/
+Property.$ordinal_P1_DATA_INDEX__org_pepstock_charba_client_callbacks_SegmentContext_Property = 3;
+/**@const {number}*/
+Property.$ordinal_P1__org_pepstock_charba_client_callbacks_SegmentContext_Property = 4;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.callbacks.SegmentContext$Property");
 

@@ -2,7 +2,7 @@
 "version":3,
 "file":"Elements.impl.java.js",
 "lineCount":60,
-"mappings":"A;;;;;;;;;;;MAwBa,Q;;CAAA,W;EAAAA,Q;EAAAA;OAGQ,2DAHRA,C;EAAAA;OAKO,0DALPA,C;EAAAA;OAOM,yDAPNA,C;EAAAA;OASM,yDATNA,C;;;QAgBZ,sE,6BAA8BC,O;EAA9BC,mB;EAAAA,+B;EAAAA,2I;EAAAA,iB;;;CAAA,uH,6BAA8BD,O;EAC7BE,2J;EAEAA,uK;EACAA,qK;EACAA,mK;EACAA,mK;;;CAQY,Y;EACZC,wE;;;CAQW,W;EACXC,uE;;;CAQU,U;EACVC,sE;;;CAQU,U;EACVC,sE;;;QA1DW,O;EAAAC,2B;EAAAA,wB;EAAAA;",
+"mappings":"A;;;;;;;;;;;MAwBa,Q;;CAAA,W;EAAAA,Q;EAAAA;OAGQ,2DAHRA,C;EAAAA;OAKO,0DALPA,C;EAAAA;OAOM,yDAPNA,C;EAAAA;OASM,yDATNA,C;;;QAgBF,sE,6BAA8BC,O;EAA9BC,mB;EAAAA,+B;EAAAA,2I;EAAAA,iB;;;CAAA,uH,6BAA8BD,O;EACvCE,2J;EAEAA,uK;EACAA,qK;EACAA,mK;EACAA,mK;;;CAQY,Y;EACZC,wE;;;CAQW,W;EACXC,uE;;;CAQU,U;EACVC,sE;;;CAQU,U;EACVC,sE;;;QA1DW,O;EAAAC,2B;EAAAA,wB;EAAAA;",
 "sources":["Elements.java"],
 "names":["org.pepstock.charba.client.configuration.Elements.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Elements.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Elements.<init>","org.pepstock.charba.client.configuration.Elements.getPoint","org.pepstock.charba.client.configuration.Elements.getLine","org.pepstock.charba.client.configuration.Elements.getArc","org.pepstock.charba.client.configuration.Elements.getBar","org.pepstock.charba.client.configuration.Elements.<clinit>"]
 }

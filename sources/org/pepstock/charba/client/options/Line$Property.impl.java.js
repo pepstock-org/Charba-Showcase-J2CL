@@ -47,11 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property, Property.$static_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property, Property.$static_BORDER_DASH__org_pepstock_charba_client_options_Line_Property, Property.$static_BORDER_DASH_OFFSET__org_pepstock_charba_client_options_Line_Property, Property.$static_BORDER_JOIN_STYLE__org_pepstock_charba_client_options_Line_Property, Property.$static_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Line_Property, Property.$static_CAP_BEZIER_POINTS__org_pepstock_charba_client_options_Line_Property, Property.$static_STEPPED__org_pepstock_charba_client_options_Line_Property], Property));
- }
- /** @return {!Property} */
- static get f_TENSION__org_pepstock_charba_client_options_Line_Property() {
-  return (Property.$clinit(), Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property);
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property, Property.$static_BORDER_DASH__org_pepstock_charba_client_options_Line_Property, Property.$static_BORDER_DASH_OFFSET__org_pepstock_charba_client_options_Line_Property, Property.$static_BORDER_JOIN_STYLE__org_pepstock_charba_client_options_Line_Property, Property.$static_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Line_Property, Property.$static_CAP_BEZIER_POINTS__org_pepstock_charba_client_options_Line_Property, Property.$static_STEPPED__org_pepstock_charba_client_options_Line_Property, Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property], Property));
  }
  /** @return {!Property} */
  static get f_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property() {
@@ -81,12 +77,15 @@ class Property extends Enum {
  static get f_STEPPED__org_pepstock_charba_client_options_Line_Property() {
   return (Property.$clinit(), Property.$static_STEPPED__org_pepstock_charba_client_options_Line_Property);
  }
+ /** @return {!Property} */
+ static get f_TENSION__org_pepstock_charba_client_options_Line_Property() {
+  return (Property.$clinit(), Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property);
+ }
  
  static $clinit() {
   Property.$clinit = () =>{};
   Property.$loadModules();
   Enum.$clinit();
-  Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TENSION"), Property.$ordinal_TENSION__org_pepstock_charba_client_options_Line_Property, "tension");
   Property.$static_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BORDER_CAP_STYLE"), Property.$ordinal_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property, "borderCapStyle");
   Property.$static_BORDER_DASH__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BORDER_DASH"), Property.$ordinal_BORDER_DASH__org_pepstock_charba_client_options_Line_Property, "borderDash");
   Property.$static_BORDER_DASH_OFFSET__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BORDER_DASH_OFFSET"), Property.$ordinal_BORDER_DASH_OFFSET__org_pepstock_charba_client_options_Line_Property, "borderDashOffset");
@@ -94,6 +93,7 @@ class Property extends Enum {
   Property.$static_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CUBIC_INTERPOLATION_MODE"), Property.$ordinal_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Line_Property, "cubicInterpolationMode");
   Property.$static_CAP_BEZIER_POINTS__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CAP_BEZIER_POINTS"), Property.$ordinal_CAP_BEZIER_POINTS__org_pepstock_charba_client_options_Line_Property, "capBezierPoints");
   Property.$static_STEPPED__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("STEPPED"), Property.$ordinal_STEPPED__org_pepstock_charba_client_options_Line_Property, "stepped");
+  Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TENSION"), Property.$ordinal_TENSION__org_pepstock_charba_client_options_Line_Property, "tension");
   Property.f_namesToValuesMap__org_pepstock_charba_client_options_Line_Property_ = null;
  }
  /** @return {boolean} */
@@ -108,8 +108,6 @@ class Property extends Enum {
  }
 }
 /**@private {!Property}*/
-Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property;
-/**@private {!Property}*/
 Property.$static_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property;
 /**@private {!Property}*/
 Property.$static_BORDER_DASH__org_pepstock_charba_client_options_Line_Property;
@@ -123,24 +121,26 @@ Property.$static_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Li
 Property.$static_CAP_BEZIER_POINTS__org_pepstock_charba_client_options_Line_Property;
 /**@private {!Property}*/
 Property.$static_STEPPED__org_pepstock_charba_client_options_Line_Property;
+/**@private {!Property}*/
+Property.$static_TENSION__org_pepstock_charba_client_options_Line_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_options_Line_Property_;
 /**@const {number}*/
-Property.$ordinal_TENSION__org_pepstock_charba_client_options_Line_Property = 0;
+Property.$ordinal_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property = 0;
 /**@const {number}*/
-Property.$ordinal_BORDER_CAP_STYLE__org_pepstock_charba_client_options_Line_Property = 1;
+Property.$ordinal_BORDER_DASH__org_pepstock_charba_client_options_Line_Property = 1;
 /**@const {number}*/
-Property.$ordinal_BORDER_DASH__org_pepstock_charba_client_options_Line_Property = 2;
+Property.$ordinal_BORDER_DASH_OFFSET__org_pepstock_charba_client_options_Line_Property = 2;
 /**@const {number}*/
-Property.$ordinal_BORDER_DASH_OFFSET__org_pepstock_charba_client_options_Line_Property = 3;
+Property.$ordinal_BORDER_JOIN_STYLE__org_pepstock_charba_client_options_Line_Property = 3;
 /**@const {number}*/
-Property.$ordinal_BORDER_JOIN_STYLE__org_pepstock_charba_client_options_Line_Property = 4;
+Property.$ordinal_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Line_Property = 4;
 /**@const {number}*/
-Property.$ordinal_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_options_Line_Property = 5;
+Property.$ordinal_CAP_BEZIER_POINTS__org_pepstock_charba_client_options_Line_Property = 5;
 /**@const {number}*/
-Property.$ordinal_CAP_BEZIER_POINTS__org_pepstock_charba_client_options_Line_Property = 6;
+Property.$ordinal_STEPPED__org_pepstock_charba_client_options_Line_Property = 6;
 /**@const {number}*/
-Property.$ordinal_STEPPED__org_pepstock_charba_client_options_Line_Property = 7;
+Property.$ordinal_TENSION__org_pepstock_charba_client_options_Line_Property = 7;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.options.Line$Property");
 

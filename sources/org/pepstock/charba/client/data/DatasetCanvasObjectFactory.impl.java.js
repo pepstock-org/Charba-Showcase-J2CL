@@ -13,6 +13,7 @@ let Radius = goog.forwardDeclare('org.pepstock.charba.client.colors.Radius$impl'
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let DatasetElement = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetElement$impl');
 let DatasetItem = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetItem$impl');
+let IsArea = goog.forwardDeclare('org.pepstock.charba.client.items.IsArea$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
@@ -41,7 +42,7 @@ class DatasetCanvasObjectFactory extends CanvasObjectFactory {
  m_getArea__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_colors_Gradient(/** IsChart */ chart, /** Gradient */ gradient) {
   let area = Area.$create__();
   let chartArea = chart.m_getNode__().m_getChartArea__();
-  if ($Objects.m_equals__java_lang_Object__java_lang_Object(GradientScope.f_CANVAS__org_pepstock_charba_client_colors_GradientScope, gradient.m_getScope__()) || !chartArea.m_isConsistent__()) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(GradientScope.f_CANVAS__org_pepstock_charba_client_colors_GradientScope, gradient.m_getScope__()) || !IsArea.m_isConsistent__org_pepstock_charba_client_items_IsArea(chartArea)) {
    let canvas = chart.m_getCanvas__();
    area.m_setTop__double(0);
    area.m_setLeft__double(0);
@@ -60,7 +61,7 @@ class DatasetCanvasObjectFactory extends CanvasObjectFactory {
   let center = Center.$create__();
   let node = chart.m_getNode__();
   let chartArea = node.m_getChartArea__();
-  if ($Objects.m_equals__java_lang_Object__java_lang_Object(GradientScope.f_CANVAS__org_pepstock_charba_client_colors_GradientScope, gradient.m_getScope__()) || !chartArea.m_isConsistent__()) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(GradientScope.f_CANVAS__org_pepstock_charba_client_colors_GradientScope, gradient.m_getScope__()) || !IsArea.m_isConsistent__org_pepstock_charba_client_items_IsArea(chartArea)) {
    let canvas = chart.m_getCanvas__();
    center.m_setX__double(canvas.offsetWidth / 2);
    center.m_setY__double(canvas.offsetHeight / 2);
@@ -76,7 +77,7 @@ class DatasetCanvasObjectFactory extends CanvasObjectFactory {
   let node = chart.m_getNode__();
   let chartArea = node.m_getChartArea__();
   let datasetItem = chart.m_getDatasetItem__int(datasetIndex);
-  if ($Objects.m_equals__java_lang_Object__java_lang_Object(GradientScope.f_CANVAS__org_pepstock_charba_client_colors_GradientScope, gradient.m_getScope__()) || !chartArea.m_isConsistent__()) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(GradientScope.f_CANVAS__org_pepstock_charba_client_colors_GradientScope, gradient.m_getScope__()) || !IsArea.m_isConsistent__org_pepstock_charba_client_items_IsArea(chartArea)) {
    if (!$Equality.$same(datasetItem, null) && Undefined.m_isNot__double(datasetItem.m_getController__().m_getInnerRadius__()) && Undefined.m_isNot__double(datasetItem.m_getController__().m_getOuterRadius__())) {
     this.m_manageRadiusByChartNode__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_items_DatasetItem__int__int__org_pepstock_charba_client_colors_Radius_$p_org_pepstock_charba_client_data_DatasetCanvasObjectFactory(chart, datasetItem, datasetIndex, index, radius);
    } else {
@@ -131,6 +132,7 @@ class DatasetCanvasObjectFactory extends CanvasObjectFactory {
   Radius = goog.module.get('org.pepstock.charba.client.colors.Radius$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   DatasetElement = goog.module.get('org.pepstock.charba.client.items.DatasetElement$impl');
+  IsArea = goog.module.get('org.pepstock.charba.client.items.IsArea$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');

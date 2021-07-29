@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"IsDefaultScaleLimit.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;MA0BU,mB;;CASM,e;;QAAA,4E;EAAAA,8B;EACdA,sE;;;QAVQ,O;EAAAC,sC;EAAAA,mC;EAAAA;",
+"lineCount":38,
+"mappings":"A;;;;;;;;;;;MA0BU,mB;;CAOO,iB;;CASA,iB;;CAWD,e;;QApBC,8E;EAAAA,8B;EACfA,a;;;QAQe,8E;EAAAC,8B;EACfA,a;;;QAUc,4E;EAAAC,8B;EACdA,sE;;;QA5BQ,O;EAAAC,sC;EAAAA,mC;EAAAA;",
 "sources":["IsDefaultScaleLimit.java"],
-"names":["org.pepstock.charba.client.zoom.IsDefaultScaleLimit.getMinRange__$default","org.pepstock.charba.client.zoom.IsDefaultScaleLimit.<clinit>"]
+"names":["org.pepstock.charba.client.zoom.IsDefaultScaleLimit.isOriginalMin__$default","org.pepstock.charba.client.zoom.IsDefaultScaleLimit.isOriginalMax__$default","org.pepstock.charba.client.zoom.IsDefaultScaleLimit.getMinRange__$default","org.pepstock.charba.client.zoom.IsDefaultScaleLimit.<clinit>"]
 }
 

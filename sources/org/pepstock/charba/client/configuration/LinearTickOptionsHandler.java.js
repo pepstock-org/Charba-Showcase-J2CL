@@ -13,8 +13,8 @@ goog.require('org.pepstock.charba.client.commons.CallbackProxy.$Overlay');
 goog.require('org.pepstock.charba.client.commons.JsHelper');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.configuration.Axis');
-goog.require('org.pepstock.charba.client.configuration.AxisContainer');
 goog.require('org.pepstock.charba.client.configuration.LinearTickOptionsHandler.Property');
+goog.require('org.pepstock.charba.client.configuration.NumericTickOptionsHandler');
 goog.require('org.pepstock.charba.client.options.ExtendedScale');
 goog.require('vmbootstrap.Casts');
 

@@ -2,7 +2,7 @@
 "version":3,
 "file":"PluginsView$ColorSchemesCase$1.impl.java.js",
 "lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAwLkE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EAAAC,iC;;;CAC1C,U;EACpBC,sC;;;QAF8D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAyLkE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EAAAC,iC;;;CAC1C,U;EACpBC,sC;;;QAF8D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
 "sources":["PluginsView.java"],
 "names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$1.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$1.create","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase$1.<clinit>"]
 }

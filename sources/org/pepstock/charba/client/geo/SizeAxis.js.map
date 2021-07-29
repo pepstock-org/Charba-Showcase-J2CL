@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SizeAxis.impl.java.js",
+"lineCount":138,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;MAkCmB,Q;;CAAA,W;EAAAA,Q;EAAAA;OA2BmB,kDA3BnBA,C;EAAAA;OA6BK,kDA7BLA,C;;;QAoCX,2C,gBAAiBC,K;EAAjBC,mB;EAAAA,+B;EAAAA,oG;EAAAA,iB;;;CAAA,kF,gBAAiBD,K;EACvBE,qb;EAEAA,iN;EAEAA,qG;EAEAA,2E;;;CAMI,mE;EAEJC,sV;;;CASqB,a;EACrBC,+D;;;;CA7DiB,a;EAAAC,6F;;;;CAAA,oB;EAAAC,gG;;;;CAAA,W;EAAAC,uF;;;;CAAA,Y;EAAAC,wF;;;;CAAA,0B;EAAAC,uG;;;;CAAA,oD;EAAAC,iI;;;;CAAA,oB;EAAAC,uG;;;QAiBlB,iD;EAAAC,0F;;;QAKA,mD;EAAAA,4F;;;QAtBkB,O;EAAAC,2B;EAAAA,wB;EAAAA,8B;EAAAA,qB;EAiBlBA,uG;EAKAA,qY;;;;;;;;;;;;;;;;;;;;;AApBA;SAG2B,iEAH3B,K;AAKA;SAGwB,gEAHxB,K;AAKA;SAGwB,gEAHxB,M;AAZkB;6D;AAAA;;",
+"sources":["SizeAxis.java"],
+"names":["org.pepstock.charba.client.geo.SizeAxis.<synthetic: ctor_js>","chart","org.pepstock.charba.client.geo.SizeAxis.<synthetic: ctor_create>","org.pepstock.charba.client.geo.SizeAxis.<init>","org.pepstock.charba.client.geo.SizeAxis.afterAxisConfigurationUpdate","org.pepstock.charba.client.geo.SizeAxis.getMapper","org.pepstock.charba.client.geo.SizeAxis.getLegend","org.pepstock.charba.client.geo.SizeAxis.getMissingRadius","org.pepstock.charba.client.geo.SizeAxis.getMode","org.pepstock.charba.client.geo.SizeAxis.getRange","org.pepstock.charba.client.geo.SizeAxis.setMissingRadius","org.pepstock.charba.client.geo.SizeAxis.setMode","org.pepstock.charba.client.geo.SizeAxis.setRange","org.pepstock.charba.client.geo.SizeAxis.<synthetic: getter>","org.pepstock.charba.client.geo.SizeAxis.<clinit>"]
+}
+

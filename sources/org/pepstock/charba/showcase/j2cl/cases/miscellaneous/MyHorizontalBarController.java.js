@@ -5,6 +5,7 @@ goog.require('java.lang.String');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.ChartType');
+goog.require('org.pepstock.charba.client.Helpers');
 goog.require('org.pepstock.charba.client.IsChart');
 goog.require('org.pepstock.charba.client.controllers.AbstractController');
 goog.require('org.pepstock.charba.client.controllers.ControllerContext.$Overlay');

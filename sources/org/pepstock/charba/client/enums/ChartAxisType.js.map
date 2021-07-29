@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ChartAxisType.impl.java.js",
+"lineCount":164,
+"mappings":"A;;;;;;;;;;;;;;;;;;MA0BY,a;;CAAA,W;EAAAA,Q;EAAAA;OAiCU,wDAjCVA,C;EAAAA;OAmCkB,iEAnClBA,C;EAAAA;OAqCiB,2DArCjBA,C;;;QA8CH,iJ,8DAAqBC,K,wBAAsBC,c,uBAA8BC,Q;EAAzEC,oC;EAAAA,4P;EAAAA,iB;;;CAAA,+L,8DAAqBH,K,wBAAsBC,c,uBAA8BC,Q;EAAzEE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;EACAA,wF;EACAA,4E;;;CASc,uD,iBAAYC,I;EAE1BC;GACCA,qDADDA;G;EAKAA,a;;;CASc,sB,gBAAUD,I;EAExBC;GACCA,oIADDA;G;EAKAA,a;;;CASa,S;EACbC,qE;;;CASc,qB;EACdC,8E;;;CASoB,e;EACpBC,wE;;;CASe,e;EACfC,Y;;;QAzHU,2B;EAAAC,wB;EAAAA;GAAAA,2IAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,wB;EAAAA,+iB;;;QAEX,4D;EAAAC,+G;;;QAKA,iE;EAAAA,oH;;;QAKA,8D;EAAAA,iH;;;QAIA,0D;EAAAA,6G;;;QAIA,gE;EAAAA,mH;;;QAIA,mE;EAAAA,sH;;;QAxBW,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EAEXA,of;EAKAA,wgB;EAKAA,4f;EAIAA,0e;EAIAA,kgB;EAIAA,+gB;EAxBWA,yF;;;;;;;;;;;;;;;;AAAA;6E;AAAA;kF;AAAA;+E;AAAA;2E;AAAA;iF;AAAA;oF;AAAA;kF;AAEX;kF;AAKA;uF;AAKA;oF;AAIA;gF;AAIA;sF;AAIA;;",
+"sources":["ChartAxisType.java"],
+"names":["org.pepstock.charba.client.enums.ChartAxisType.<synthetic: ctor_js>","value","defaultScaleId","dataType","org.pepstock.charba.client.enums.ChartAxisType.<synthetic: ctor_create>","org.pepstock.charba.client.enums.ChartAxisType.<init>","type","org.pepstock.charba.client.enums.ChartAxisType.is","org.pepstock.charba.client.enums.ChartAxisType.value","org.pepstock.charba.client.enums.ChartAxisType.getDefaultScaleId","org.pepstock.charba.client.enums.ChartAxisType.getDataType","org.pepstock.charba.client.enums.ChartAxisType.getBaseType","org.pepstock.charba.client.enums.ChartAxisType.valueOf","org.pepstock.charba.client.enums.ChartAxisType.values","org.pepstock.charba.client.enums.ChartAxisType.<synthetic: getter>","org.pepstock.charba.client.enums.ChartAxisType.<clinit>"]
+}
+

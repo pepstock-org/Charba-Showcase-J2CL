@@ -18,6 +18,7 @@ let Notation = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Notati
 let NumberingSystem = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.NumberingSystem$impl');
 let SignDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.SignDisplay$impl');
 let Style = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Style$impl');
+let NumberFormatItem = goog.forwardDeclare('org.pepstock.charba.client.items.NumberFormatItem$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 
 /**
@@ -179,6 +180,16 @@ class NumberFormatter extends AbstractDynamicConfiguration {
  /** @override @return {number} */
  m_getMaximumSignificantDigits__() {
   return /**@type {IsNumberFormat}*/ ($Casts.$to(this.m_checkAndGet___$pp_org_pepstock_charba_client_configuration(), IsNumberFormat)).m_getMaximumSignificantDigits__();
+ }
+ //Default method forwarding stub.
+ /** @override @return {NumberFormatItem} */
+ m_create__() {
+  return IsDefaultNumberFormatOptions.m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {NumberFormatItem} */
+ m_create__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** IsDefaultNumberFormatOptions */ arg0) {
+  return IsDefaultNumberFormatOptions.m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this, arg0);
  }
  
  static $clinit() {

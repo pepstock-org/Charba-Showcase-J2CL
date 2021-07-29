@@ -64,6 +64,14 @@ class Arc extends AbstractElement {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_OFFSET__org_pepstock_charba_client_options_Arc_Property, /**@type {IsDefaultArc}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultArc)).m_getOffset__());
  }
  
+ m_setSpacing__int(/** number */ spacing) {
+  this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__int(Property.f_SPACING__org_pepstock_charba_client_options_Arc_Property, spacing);
+ }
+ /** @override @return {number} */
+ m_getSpacing__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_SPACING__org_pepstock_charba_client_options_Arc_Property, /**@type {IsDefaultArc}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultArc)).m_getSpacing__());
+ }
+ 
  m_setBorderRadius__int(/** number */ borderRadius) {
   this.m_setValueAndAddToParent__org_pepstock_charba_client_commons_Key__int(Property.f_BORDER_RADIUS__org_pepstock_charba_client_options_Arc_Property, Checker.m_positiveOrZero__int(borderRadius));
  }

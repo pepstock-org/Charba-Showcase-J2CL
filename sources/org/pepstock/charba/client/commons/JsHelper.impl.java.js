@@ -6,6 +6,8 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let Injector = goog.forwardDeclare('org.pepstock.charba.client.Injector$impl');
 let JsHelperResource = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelperResource$impl');
+let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
+let NativeObjectContainer = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
 let NativeObjectUtils = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeObjectUtils$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
@@ -91,6 +93,20 @@ class JsHelper extends j_l_Object {
   }
   return false;
  }
+ /** @return {boolean} */
+ m_isCanvas__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_Key(/** NativeObjectContainer */ object, /** Key */ key) {
+  if (!$Equality.$same(object, null) && Key.m_isValid__org_pepstock_charba_client_commons_Key(key) && object.m_has__org_pepstock_charba_client_commons_Key(key)) {
+   return CharbaJsHelper.isCanvas(object.m_getNativeObject__(), key.m_value__());
+  }
+  return false;
+ }
+ /** @return {boolean} */
+ m_isImage__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_Key(/** NativeObjectContainer */ object, /** Key */ key) {
+  if (!$Equality.$same(object, null) && Key.m_isValid__org_pepstock_charba_client_commons_Key(key) && object.m_has__org_pepstock_charba_client_commons_Key(key)) {
+   return CharbaJsHelper.isImage(object.m_getNativeObject__(), key.m_value__());
+  }
+  return false;
+ }
  /** @return {number} */
  m_propertyAsInt__org_pepstock_charba_client_commons_NativeObject__java_lang_String(/** ? */ object, /** ?string */ key) {
   if (!$Equality.$same(object, null) && !$Equality.$same(key, null)) {
@@ -118,6 +134,7 @@ class JsHelper extends j_l_Object {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   Injector = goog.module.get('org.pepstock.charba.client.Injector$impl');
   JsHelperResource = goog.module.get('org.pepstock.charba.client.commons.JsHelperResource$impl');
+  Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   NativeObjectUtils = goog.module.get('org.pepstock.charba.client.commons.NativeObjectUtils$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');

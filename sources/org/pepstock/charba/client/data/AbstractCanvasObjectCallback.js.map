@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"AbstractCanvasObjectCallback.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAkCe,4B;;CAAA,W;EAAAA,Q;EAAAA;OAGI,yEAHJA,C;EAAAA;OAKqB,0EALrBA,C;EAAAA;OAOE,wEAPFA,C;;;CAed,+K,6BAAkDC,S,yBAA2BC,Q;EAA7EC,iC;EAAAA,+E;EACCA,wN;EACAA,4F;;;CASQ,6D,uBAAsBC,O;EAE9BC,IAAQC,KAARD,0B;EAEAA;GAGCA,IAAQE,OAARF,uGAHDA;GAKCA;IAGCA;KAECA,yUAFDA;KAHDA;IAQCA;KAECA,IAAIG,aAAJH,kJAFDA;KAICA,0JAJDA;KARDA;IAgBCA,8IAhBDA;IALDA;G;EA0BAA,Y;;;;CAxDa,2D;EAAAA,0I;;;CAAA,uE;EAOdF,qF;;;QAPc,O;EAAAM,+C;EAAAA,4C;EAAAA;",
+"lineCount":73,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MAmCe,4B;;CAAA,W;EAAAA,Q;EAAAA;OAGI,yEAHJA,C;EAAAA;OAKqB,0EALrBA,C;EAAAA;OAOE,wEAPFA,C;;;CAed,+K,6BAAkDC,S,yBAA2BC,Q;EAA7EC,iC;EAAAA,+E;EACCA,wN;EACAA,4F;;;CASQ,6D,uBAAsBC,O;EAE9BC,IAAQC,KAARD,0B;EAEAA;GAGCA,IAAQE,OAARF,uGAHDA;GAKCA;IAGCA;KAECA,yUAFDA;KAHDA;IAQCA;KAECA,IAAIG,aAAJH,kJAFDA;KAICA,0JAJDA;KARDA;IAgBCA,8IAhBDA;IALDA;G;EA0BAA,Y;;;;CAxDa,2D;EAAAA,0I;;;CAAA,uE;EAOdF,qF;;;QAPc,O;EAAAM,+C;EAAAA,4C;EAAAA;",
 "sources":["AbstractCanvasObjectCallback.java"],
 "names":["org.pepstock.charba.client.data.AbstractCanvasObjectCallback.<synthetic: ctor_js>","container","property","org.pepstock.charba.client.data.AbstractCanvasObjectCallback.<init>","context","org.pepstock.charba.client.data.AbstractCanvasObjectCallback.invoke","chart","dataset","gradientIndex","org.pepstock.charba.client.data.AbstractCanvasObjectCallback.<clinit>"]
 }

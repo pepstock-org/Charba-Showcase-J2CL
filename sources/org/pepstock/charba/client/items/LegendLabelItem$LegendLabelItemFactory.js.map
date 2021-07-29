@@ -2,7 +2,7 @@
 "version":3,
 "file":"LegendLabelItem$LegendLabelItemFactory.impl.java.js",
 "lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAyWqB,sB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,iC;EAAAA,6C;EAAAA,6F;EAAAA,iB;;;CAAA,gF;EAAAC,iC;;;CAUe,yD,UAAoBC,Y;EAC1CC,8F;;;;CAhBkB,U;EAAAA,0L;;;QAAA,O;EAAAC,yC;EAAAA,sC;EAAAA,qB;EAAAA;",
+"mappings":"A;;;;;;;;;;;;MAmXqB,sB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,iC;EAAAA,6C;EAAAA,6F;EAAAA,iB;;;CAAA,gF;EAAAC,iC;;;CAUe,yD,UAAoBC,Y;EAC1CC,8F;;;;CAhBkB,U;EAAAA,0L;;;QAAA,O;EAAAC,yC;EAAAA,sC;EAAAA,qB;EAAAA;",
 "sources":["LegendLabelItem.java"],
 "names":["org.pepstock.charba.client.items.LegendLabelItem$LegendLabelItemFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.LegendLabelItem$LegendLabelItemFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendLabelItem$LegendLabelItemFactory.<init>","nativeObject","org.pepstock.charba.client.items.LegendLabelItem$LegendLabelItemFactory.create","org.pepstock.charba.client.items.LegendLabelItem$LegendLabelItemFactory.<clinit>"]
 }

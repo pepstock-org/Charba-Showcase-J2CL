@@ -14,6 +14,7 @@ goog.require('org.pepstock.charba.client.intl.enums.MeasureUnitDisplay');
 goog.require('org.pepstock.charba.client.intl.enums.Notation');
 goog.require('org.pepstock.charba.client.intl.enums.SignDisplay');
 goog.require('org.pepstock.charba.client.intl.enums.Style');
+goog.require('org.pepstock.charba.client.items.NumberFormatItem');
 
 const DefaultNumberFormatOptions = goog.require('org.pepstock.charba.client.defaults.globals.DefaultNumberFormatOptions$impl');
 exports = DefaultNumberFormatOptions;

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NumericTickOptionsHandler.impl.java.js",
+"lineCount":71,
+"mappings":"A;;;;;;;;;;;;;;;;;MAoCM,yB;;CAAA,W;EAAAA,Q;EAAAA;OAqCkD,gGArClDA,C;EAAAA;OAwCwB,2FAxCxBA,C;;;QA+CL,sD,aAA+BC,I;EAA/BC,oC;EAAAA,gD;EAAAA,yI;EAAAA,iB;;;CAAA,wH,aAA+BD,I;EAC9BE,wH;EADDA,qF;EAMCA,2HAA2CC,OAA3CD;GAAsDE,4mBAAtDF;I;;;CAQ0B,wE;EAC1BG,wG;;;CAQU,yH,6BAAqCC,oB;EAE/CC,wH;EAEAA,0jB;;;CAQU,mH,iBAA+BD,oB;EAEzCC,yK;EAEAA,oc;;;CAWoB,sQ,qBAA4BJ,O,8BAA8BK,Q,sCAAuCC,Y;EAErHC,uG;EAEAA,IAAiBC,MAAjBD,sQ;EAEAA,iC;;;CAvGI,6E;EAqCLR,qM;EAGAA,wG;;;QAxCK,O;EAAAU,4C;EAAAA,yC;EAAAA;",
+"sources":["NumericTickOptionsHandler.java"],
+"names":["org.pepstock.charba.client.configuration.NumericTickOptionsHandler.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.NumericTickOptionsHandler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.NumericTickOptionsHandler.<init>","context","org.pepstock.charba.client.configuration.NumericTickOptionsHandler.<lambda in <init>>","org.pepstock.charba.client.configuration.NumericTickOptionsHandler.getNumberFormatCallback","numberFormatCallback","org.pepstock.charba.client.configuration.NumericTickOptionsHandler.setNumberFormat","callback","defaultValue","org.pepstock.charba.client.configuration.NumericTickOptionsHandler.onNumberFormat","result","org.pepstock.charba.client.configuration.NumericTickOptionsHandler.<clinit>"]
+}
+

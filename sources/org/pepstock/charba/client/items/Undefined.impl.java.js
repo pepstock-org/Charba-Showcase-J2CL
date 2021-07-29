@@ -53,6 +53,10 @@ class Undefined extends j_l_Object {
  static get f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined() {
   return (Undefined.$clinit(), Undefined.$static_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined);
  }
+ /** @return {HTMLCanvasElement} */
+ static get f_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined() {
+  return (Undefined.$clinit(), Undefined.$static_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined);
+ }
  
  static $clinit() {
   Undefined.$clinit = () =>{};
@@ -61,6 +65,7 @@ class Undefined extends j_l_Object {
   Undefined.$static_STRING__org_pepstock_charba_client_items_Undefined = null;
   Undefined.$static_BOOLEAN__org_pepstock_charba_client_items_Undefined = Boolean.m_booleanValue__java_lang_Boolean(Boolean.f_FALSE__java_lang_Boolean);
   Undefined.$static_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined = null;
+  Undefined.$static_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined = null;
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -82,6 +87,8 @@ Undefined.$static_STRING__org_pepstock_charba_client_items_Undefined;
 Undefined.$static_BOOLEAN__org_pepstock_charba_client_items_Undefined = false;
 /**@private {HTMLImageElement}*/
 Undefined.$static_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined;
+/**@private {HTMLCanvasElement}*/
+Undefined.$static_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined;
 $Util.$setClassMetadata(Undefined, "org.pepstock.charba.client.items.Undefined");
 
 exports = Undefined;

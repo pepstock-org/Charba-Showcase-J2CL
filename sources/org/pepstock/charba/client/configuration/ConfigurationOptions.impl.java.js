@@ -6,14 +6,11 @@ const ConfigurationContainer = goog.require('org.pepstock.charba.client.configur
 const HasAnimation = goog.require('org.pepstock.charba.client.configuration.HasAnimation$impl');
 const IsEventProvider = goog.require('org.pepstock.charba.client.configuration.IsEventProvider$impl');
 
-let Arrays = goog.forwardDeclare('java.util.Arrays$impl');
-let Collections = goog.forwardDeclare('java.util.Collections$impl');
 let List = goog.forwardDeclare('java.util.List$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ChartEnvelop = goog.forwardDeclare('org.pepstock.charba.client.ChartEnvelop$impl');
 let Configuration = goog.forwardDeclare('org.pepstock.charba.client.Configuration$impl');
 let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
-let ScaleType = goog.forwardDeclare('org.pepstock.charba.client.ScaleType$impl');
 let ChartContext = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ChartContext$impl');
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
 let AbstractNode = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractNode$impl');
@@ -31,6 +28,8 @@ let Axis = goog.forwardDeclare('org.pepstock.charba.client.configuration.Axis$im
 let ConfigurationEnvelop = goog.forwardDeclare('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
 let Datasets = goog.forwardDeclare('org.pepstock.charba.client.configuration.Datasets$impl');
 let Elements = goog.forwardDeclare('org.pepstock.charba.client.configuration.Elements$impl');
+let EventAxesHandler = goog.forwardDeclare('org.pepstock.charba.client.configuration.EventAxesHandler$impl');
+let EventTitleHandler = goog.forwardDeclare('org.pepstock.charba.client.configuration.EventTitleHandler$impl');
 let Filler = goog.forwardDeclare('org.pepstock.charba.client.configuration.Filler$impl');
 let Font = goog.forwardDeclare('org.pepstock.charba.client.configuration.Font$impl');
 let Hover = goog.forwardDeclare('org.pepstock.charba.client.configuration.Hover$impl');
@@ -39,33 +38,27 @@ let Layout = goog.forwardDeclare('org.pepstock.charba.client.configuration.Layou
 let Legend = goog.forwardDeclare('org.pepstock.charba.client.configuration.Legend$impl');
 let Plugins = goog.forwardDeclare('org.pepstock.charba.client.configuration.Plugins$impl');
 let ScalesOptions = goog.forwardDeclare('org.pepstock.charba.client.configuration.ScalesOptions$impl');
+let Subtitle = goog.forwardDeclare('org.pepstock.charba.client.configuration.Subtitle$impl');
 let Title = goog.forwardDeclare('org.pepstock.charba.client.configuration.Title$impl');
 let Tooltips = goog.forwardDeclare('org.pepstock.charba.client.configuration.Tooltips$impl');
 let Transitions = goog.forwardDeclare('org.pepstock.charba.client.configuration.Transitions$impl');
 let IsDefaultScaledOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultScaledOptions$impl');
-let BaseEventTypes = goog.forwardDeclare('org.pepstock.charba.client.dom.BaseEventTypes$impl');
 let ChartEventProperty = goog.forwardDeclare('org.pepstock.charba.client.enums.ChartEventProperty$impl');
 let Event = goog.forwardDeclare('org.pepstock.charba.client.enums.Event$impl');
 let AddHandlerEvent = goog.forwardDeclare('org.pepstock.charba.client.events.AddHandlerEvent$impl');
-let AxisClickEvent = goog.forwardDeclare('org.pepstock.charba.client.events.AxisClickEvent$impl');
 let ChartClickEvent = goog.forwardDeclare('org.pepstock.charba.client.events.ChartClickEvent$impl');
 let ChartEventContext = goog.forwardDeclare('org.pepstock.charba.client.events.ChartEventContext$impl');
 let ChartHoverEvent = goog.forwardDeclare('org.pepstock.charba.client.events.ChartHoverEvent$impl');
 let ChartResizeEvent = goog.forwardDeclare('org.pepstock.charba.client.events.ChartResizeEvent$impl');
 let DatasetSelectionEvent = goog.forwardDeclare('org.pepstock.charba.client.events.DatasetSelectionEvent$impl');
-let EventType = goog.forwardDeclare('org.pepstock.charba.client.events.EventType$impl');
 let RemoveHandlerEvent = goog.forwardDeclare('org.pepstock.charba.client.events.RemoveHandlerEvent$impl');
-let TitleClickEvent = goog.forwardDeclare('org.pepstock.charba.client.events.TitleClickEvent$impl');
 let CLocale = goog.forwardDeclare('org.pepstock.charba.client.intl.CLocale$impl');
 let DatasetReference = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetReference$impl');
 let SizeItem = goog.forwardDeclare('org.pepstock.charba.client.items.SizeItem$impl');
-let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let ExtendedOptions = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedOptions$impl');
 let ExtendedScale = goog.forwardDeclare('org.pepstock.charba.client.options.ExtendedScale$impl');
 let Scale = goog.forwardDeclare('org.pepstock.charba.client.options.Scale$impl');
-let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
-let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 /**
  * @abstract
@@ -84,8 +77,6 @@ class ConfigurationOptions extends ConfigurationContainer {
   this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {CharbaCallbackProxy<?function(?, Array, Chart):void>}*/
   this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_;
-  /**@type {CharbaCallbackProxy<?function(Object):void>}*/
-  this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {IsDefaultScaledOptions}*/
   this.f_defaultValues__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {AnimationContainer}*/
@@ -94,6 +85,8 @@ class ConfigurationOptions extends ConfigurationContainer {
   this.f_legend__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {Title}*/
   this.f_title__org_pepstock_charba_client_configuration_ConfigurationOptions_;
+  /**@type {Subtitle}*/
+  this.f_subtitle__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {Tooltips}*/
   this.f_tooltips__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {Filler}*/
@@ -112,6 +105,10 @@ class ConfigurationOptions extends ConfigurationContainer {
   this.f_datasets__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {Font}*/
   this.f_font__org_pepstock_charba_client_configuration_ConfigurationOptions_;
+  /**@type {EventAxesHandler}*/
+  this.f_eventAxesHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_;
+  /**@type {EventTitleHandler}*/
+  this.f_eventTitleHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_;
   /**@type {number}*/
   this.f_onDatasetSelectionHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
   /**@type {number}*/
@@ -120,10 +117,6 @@ class ConfigurationOptions extends ConfigurationContainer {
   this.f_onHoverHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
   /**@type {number}*/
   this.f_onResizeHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
-  /**@type {number}*/
-  this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
-  /**@type {number}*/
-  this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
  }
  
  $ctor__org_pepstock_charba_client_configuration_ConfigurationOptions__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions(/** IsChart */ chart, /** IsDefaultScaledOptions */ defaultValues) {
@@ -131,6 +124,8 @@ class ConfigurationOptions extends ConfigurationContainer {
   this.$init___$p_org_pepstock_charba_client_configuration_ConfigurationOptions();
   this.f_defaultValues__org_pepstock_charba_client_configuration_ConfigurationOptions_ = defaultValues;
   IsEventProvider.m_register__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_configuration_IsEventProvider(chart, this);
+  this.f_eventAxesHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_ = EventAxesHandler.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
+  this.f_eventTitleHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_ = EventTitleHandler.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
   this.f_animationContainer__org_pepstock_charba_client_configuration_ConfigurationOptions_ = AnimationContainer.$create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_configuration_AbstractDynamicConfiguration_IsProvider(this.m_getChart__(), IsProvider.$adapt(() =>{
    return /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions));
   }));
@@ -138,6 +133,7 @@ class ConfigurationOptions extends ConfigurationContainer {
   this.f_datasets__org_pepstock_charba_client_configuration_ConfigurationOptions_ = Datasets.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
   this.f_legend__org_pepstock_charba_client_configuration_ConfigurationOptions_ = Legend.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
   this.f_title__org_pepstock_charba_client_configuration_ConfigurationOptions_ = Title.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
+  this.f_subtitle__org_pepstock_charba_client_configuration_ConfigurationOptions_ = Subtitle.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
   this.f_layout__org_pepstock_charba_client_configuration_ConfigurationOptions_ = Layout.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
   this.f_hover__org_pepstock_charba_client_configuration_ConfigurationOptions_ = Hover.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
   this.f_interaction__org_pepstock_charba_client_configuration_ConfigurationOptions_ = Interaction.$create__org_pepstock_charba_client_configuration_ConfigurationOptions(this);
@@ -162,9 +158,6 @@ class ConfigurationOptions extends ConfigurationContainer {
    let eventContext_2 = ChartEventContext.$create__org_pepstock_charba_client_Chart(nativeChart_2);
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(ChartResizeEvent.$create__org_pepstock_charba_client_events_ChartEventContext__org_pepstock_charba_client_items_SizeItem(eventContext_2, SizeItem.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object__boolean(size, true)))));
   };
-  this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.callback = (/** Object */ arg0) =>{
-   this.m_handleClickEventOnElements__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(arg0);
-  };
  }
  
  m_loadOptions__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
@@ -172,17 +165,29 @@ class ConfigurationOptions extends ConfigurationContainer {
  }
  
  m_setChartOptions__org_pepstock_charba_client_ChartEnvelop(/** ChartEnvelop<?> */ envelop) {
+  this.m_beforeConfigurationUpdate__();
   this.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedOptions.$create__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_defaults_IsDefaultScaledOptions__org_pepstock_charba_client_configuration_ConfigurationEnvelop(this.m_getChart__(), this.f_defaultValues__org_pepstock_charba_client_configuration_ConfigurationOptions_, /**@type {!ConfigurationEnvelop<?>}*/ (ConfigurationEnvelop.$create__java_lang_Object(/**@type {?}*/ (/**@type {ChartEnvelop<?>}*/ ($Casts.$to(Envelop.m_checkAndGetIfValid__org_pepstock_charba_client_commons_Envelop(envelop), ChartEnvelop)).m_getContent__())))));
   if (ScalesOptions.$isInstance(this)) {
    let options = /**@type {ScalesOptions}*/ ($Casts.$to(this, ScalesOptions));
    for (let $iterator = options.m_getScales__().m_getAxes__().m_iterator__(); $iterator.m_hasNext__(); ) {
     let axis = /**@type {Axis}*/ ($Casts.$to($iterator.m_next__(), Axis));
     {
+     this.m_beforeAxisConfigurationUpdate__org_pepstock_charba_client_configuration_Axis(axis);
      axis.m_setConfiguration__org_pepstock_charba_client_commons_NativeObjectContainer(ExtendedScale.$create__org_pepstock_charba_client_configuration_ConfigurationEnvelop__org_pepstock_charba_client_defaults_IsDefaultScale(/**@type {!ConfigurationEnvelop<Scale>}*/ (ConfigurationEnvelop.$create__java_lang_Object(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_getScales__().m_getAxis__org_pepstock_charba_client_options_ScaleId(axis.m_getId__()))), axis.m_getDefaultValues___$pp_org_pepstock_charba_client_configuration()));
+     this.m_afterAxisConfigurationUpdate__org_pepstock_charba_client_configuration_Axis(axis);
     }
    }
   }
+  this.m_afterConfigurationUpdate__();
  }
+ 
+ m_beforeConfigurationUpdate__() {}
+ 
+ m_afterConfigurationUpdate__() {}
+ 
+ m_beforeAxisConfigurationUpdate__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {}
+ 
+ m_afterAxisConfigurationUpdate__org_pepstock_charba_client_configuration_Axis(/** Axis */ axis) {}
  /** @return {IsDefaultScaledOptions} */
  m_getDefaultValues___$pp_org_pepstock_charba_client_configuration() {
   return this.f_defaultValues__org_pepstock_charba_client_configuration_ConfigurationOptions_;
@@ -210,6 +215,10 @@ class ConfigurationOptions extends ConfigurationContainer {
  /** @return {Title} */
  m_getTitle__() {
   return this.f_title__org_pepstock_charba_client_configuration_ConfigurationOptions_;
+ }
+ /** @return {Subtitle} */
+ m_getSubtitle__() {
+  return this.f_subtitle__org_pepstock_charba_client_configuration_ConfigurationOptions_;
  }
  /** @return {Tooltips} */
  m_getTooltips__() {
@@ -363,29 +372,41 @@ class ConfigurationOptions extends ConfigurationContainer {
  }
  /** @return {boolean} */
  m_hasTitleClickHandlers__() {
-  return this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ > 0;
+  return this.f_eventTitleHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_.m_hasTitleClickHandlers___$pp_org_pepstock_charba_client_configuration();
+ }
+ /** @return {boolean} */
+ m_hasTitleEnterHandlers__() {
+  return this.f_eventTitleHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_.m_hasTitleEnterHandlers___$pp_org_pepstock_charba_client_configuration();
+ }
+ /** @return {boolean} */
+ m_hasTitleLeaveHandlers__() {
+  return this.f_eventTitleHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_.m_hasTitleLeaveHandlers___$pp_org_pepstock_charba_client_configuration();
  }
  /** @return {boolean} */
  m_hasAxisClickHandlers__() {
-  return this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ > 0;
+  return this.f_eventAxesHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_.m_hasAxisClickHandlers___$pp_org_pepstock_charba_client_configuration();
+ }
+ /** @return {boolean} */
+ m_hasAxisHoverHandlers__() {
+  return this.f_eventAxesHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_.m_hasAxisHoverHandlers___$pp_org_pepstock_charba_client_configuration();
+ }
+ /** @return {boolean} */
+ m_hasAxisEnterHandlers__() {
+  return this.f_eventAxesHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_.m_hasAxisEnterHandlers___$pp_org_pepstock_charba_client_configuration();
+ }
+ /** @return {boolean} */
+ m_hasAxisLeaveHandlers__() {
+  return this.f_eventAxesHandler__org_pepstock_charba_client_configuration_ConfigurationOptions_.m_hasAxisLeaveHandlers___$pp_org_pepstock_charba_client_configuration();
  }
  /** @override */
  m_onAdd__org_pepstock_charba_client_events_AddHandlerEvent(/** AddHandlerEvent */ event) {
-  if (event.m_isRecognize__java_util_List(ConfigurationOptions.f_CHART_CLICK_TYPES__org_pepstock_charba_client_configuration_ConfigurationOptions_)) {
+  if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(ChartClickEvent.f_TYPE__org_pepstock_charba_client_events_ChartClickEvent) || event.m_isRecognize__org_pepstock_charba_client_events_EventType(DatasetSelectionEvent.f_TYPE__org_pepstock_charba_client_events_DatasetSelectionEvent)) {
    if (this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ == 0) {
     /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setEvent__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)), ChartEventProperty.f_ON_CLICK__org_pepstock_charba_client_enums_ChartEventProperty, /**@type {!ConfigurationEnvelop<?function():void>}*/ (ConfigurationEnvelop.$create__java_lang_Object(this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.proxy)));
    }
    this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ + 1 | 0;
    if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(DatasetSelectionEvent.f_TYPE__org_pepstock_charba_client_events_DatasetSelectionEvent)) {
     this.f_onDatasetSelectionHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onDatasetSelectionHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ + 1 | 0;
-   }
-   if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(TitleClickEvent.f_TYPE__org_pepstock_charba_client_events_TitleClickEvent)) {
-    this.m_checkAndManageCanvasListeners__boolean_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(true);
-    this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ + 1 | 0;
-   }
-   if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(AxisClickEvent.f_TYPE__org_pepstock_charba_client_events_AxisClickEvent)) {
-    this.m_checkAndManageCanvasListeners__boolean_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(true);
-    this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ + 1 | 0;
    }
   } else if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(ChartHoverEvent.f_TYPE__org_pepstock_charba_client_events_ChartHoverEvent)) {
    if (this.f_onHoverHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ == 0) {
@@ -401,21 +422,13 @@ class ConfigurationOptions extends ConfigurationContainer {
  }
  /** @override */
  m_onRemove__org_pepstock_charba_client_events_RemoveHandlerEvent(/** RemoveHandlerEvent */ event) {
-  if (event.m_isRecognize__java_util_List(ConfigurationOptions.f_CHART_CLICK_TYPES__org_pepstock_charba_client_configuration_ConfigurationOptions_)) {
+  if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(ChartClickEvent.f_TYPE__org_pepstock_charba_client_events_ChartClickEvent) || event.m_isRecognize__org_pepstock_charba_client_events_EventType(DatasetSelectionEvent.f_TYPE__org_pepstock_charba_client_events_DatasetSelectionEvent)) {
    this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ - 1 | 0;
    if (this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ == 0) {
     /**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)).m_setEvent__org_pepstock_charba_client_commons_AbstractNode__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_configuration_ConfigurationEnvelop(/**@type {ExtendedOptions}*/ ($Casts.$to(this.m_getConfiguration__(), ExtendedOptions)), ChartEventProperty.f_ON_CLICK__org_pepstock_charba_client_enums_ChartEventProperty, ConfigurationOptions.$static_RESET_CALLBACK_ENVELOP__org_pepstock_charba_client_configuration_ConfigurationOptions);
    }
    if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(DatasetSelectionEvent.f_TYPE__org_pepstock_charba_client_events_DatasetSelectionEvent)) {
     this.f_onDatasetSelectionHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onDatasetSelectionHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ - 1 | 0;
-   }
-   if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(TitleClickEvent.f_TYPE__org_pepstock_charba_client_events_TitleClickEvent)) {
-    this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ - 1 | 0;
-    this.m_checkAndManageCanvasListeners__boolean_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(false);
-   }
-   if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(AxisClickEvent.f_TYPE__org_pepstock_charba_client_events_AxisClickEvent)) {
-    this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ - 1 | 0;
-    this.m_checkAndManageCanvasListeners__boolean_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(false);
    }
   } else if (event.m_isRecognize__org_pepstock_charba_client_events_EventType(ChartHoverEvent.f_TYPE__org_pepstock_charba_client_events_ChartHoverEvent)) {
    this.f_onHoverHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = this.f_onHoverHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ - 1 | 0;
@@ -454,50 +467,10 @@ class ConfigurationOptions extends ConfigurationContainer {
   return ChartContext.$create__org_pepstock_charba_client_commons_NativeObject(context);
  }
  
- m_checkAndManageCanvasListeners__boolean_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(/** boolean */ isAdding) {
-  let amountOfHandlers = this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ + this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ | 0;
-  if (amountOfHandlers == 0) {
-   if (isAdding) {
-    this.m_getChart__().m_getCanvas__().addEventListener(BaseEventTypes.f_CLICK__org_pepstock_charba_client_dom_BaseEventTypes, this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.proxy);
-   } else {
-    this.m_getChart__().m_getCanvas__().removeEventListener(BaseEventTypes.f_CLICK__org_pepstock_charba_client_dom_BaseEventTypes, this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_.proxy);
-   }
-  }
- }
- 
  m_handleDatasetSelection__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(/** Object */ event) {
   let item = this.m_getChart__().m_getElementAtEvent__org_pepstock_charba_client_dom_BaseNativeEvent(event);
   if (!$Equality.$same(item, null) && this.m_hasDatasetSelectionHandlers__()) {
    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(DatasetSelectionEvent.$create__org_pepstock_charba_client_dom_BaseNativeEvent__org_pepstock_charba_client_items_DatasetReference(event, item));
-  }
- }
- 
- m_handleClickEventOnElements__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(/** Object */ event) {
-  if (this.m_handleTitleSelection__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(event)) {
-   this.m_handleScaleSelection__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(event);
-  }
- }
- /** @return {boolean} */
- m_handleTitleSelection__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(/** Object */ event) {
-  if (this.m_hasTitleClickHandlers__() && this.m_getChart__().m_getNode__().m_getTitle__().m_isInside__org_pepstock_charba_client_dom_BaseNativeEvent(event)) {
-   this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(TitleClickEvent.$create__org_pepstock_charba_client_dom_BaseNativeEvent__org_pepstock_charba_client_options_Title(event, this.m_getChart__().m_getNode__().m_getOptions__().m_getTitle__()));
-   return false;
-  }
-  return true;
- }
- 
- m_handleScaleSelection__org_pepstock_charba_client_dom_BaseNativeEvent_$p_org_pepstock_charba_client_configuration_ConfigurationOptions(/** Object */ event) {
-  if (this.m_hasAxisClickHandlers__() && !this.m_getChart__().m_getNode__().m_getChartArea__().m_isInside__org_pepstock_charba_client_dom_BaseNativeEvent(event) && !$Objects.m_equals__java_lang_Object__java_lang_Object(ScaleType.f_NONE__org_pepstock_charba_client_ScaleType, this.m_getChart__().m_getType__().m_scaleType__())) {
-   let scales = this.m_getChart__().m_getNode__().m_getScales__();
-   if (scales.m_isInside__org_pepstock_charba_client_dom_BaseNativeEvent(event)) {
-    let scaleItem = scales.m_getScaleIsInside__org_pepstock_charba_client_dom_BaseNativeEvent(event);
-    let axis = null;
-    let charbaIdOfScale = scaleItem.m_getCharbaId__();
-    if (Undefined.m_isNot__int(charbaIdOfScale)) {
-     axis = this.m_getAxisById__int_$pp_org_pepstock_charba_client_configuration(charbaIdOfScale);
-    }
-    this.m_getChart__().m_fireEvent__org_pepstock_charba_client_events_Event(AxisClickEvent.$create__org_pepstock_charba_client_dom_BaseNativeEvent__org_pepstock_charba_client_items_ScaleItem__org_pepstock_charba_client_configuration_Axis__org_pepstock_charba_client_items_ScaleValueItem(event, scaleItem, axis, scaleItem.m_getValueAtEvent__org_pepstock_charba_client_dom_BaseNativeEvent(event)));
-   }
   }
  }
  //Default method forwarding stub.
@@ -530,13 +503,10 @@ class ConfigurationOptions extends ConfigurationContainer {
   this.f_resizeCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Chart, ?):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_clickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(?, Array, Chart):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_hoverCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(?, Array, Chart):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
-  this.f_titleAndAxisClickCallbackProxy__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {CharbaCallbackProxy<?function(Object):void>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_onDatasetSelectionHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
   this.f_onClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
   this.f_onHoverHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
   this.f_onResizeHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
-  this.f_onTitleClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
-  this.f_onAxisClickHandlers__org_pepstock_charba_client_configuration_ConfigurationOptions_ = 0;
  }
  /** @return {ConfigurationEnvelop<?function():void>} */
  static get f_RESET_CALLBACK_ENVELOP__org_pepstock_charba_client_configuration_ConfigurationOptions() {
@@ -548,7 +518,6 @@ class ConfigurationOptions extends ConfigurationContainer {
   ConfigurationOptions.$loadModules();
   ConfigurationContainer.$clinit();
   HasAnimation.$clinit();
-  ConfigurationOptions.f_CHART_CLICK_TYPES__org_pepstock_charba_client_configuration_ConfigurationOptions_ = /**@type {List<EventType>}*/ (Collections.m_unmodifiableList__java_util_List(/**@type {List<EventType>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(/**@type {!Array<EventType>}*/ ($Arrays.$init([DatasetSelectionEvent.f_TYPE__org_pepstock_charba_client_events_DatasetSelectionEvent, ChartClickEvent.f_TYPE__org_pepstock_charba_client_events_ChartClickEvent, TitleClickEvent.f_TYPE__org_pepstock_charba_client_events_TitleClickEvent, AxisClickEvent.f_TYPE__org_pepstock_charba_client_events_AxisClickEvent], EventType))))));
   ConfigurationOptions.$static_RESET_CALLBACK_ENVELOP__org_pepstock_charba_client_configuration_ConfigurationOptions = /**@type {!ConfigurationEnvelop<?function():void>}*/ (ConfigurationEnvelop.$create__java_lang_Object__boolean(null, true));
  }
  /** @return {boolean} */
@@ -557,11 +526,8 @@ class ConfigurationOptions extends ConfigurationContainer {
  }
  
  static $loadModules() {
-  Arrays = goog.module.get('java.util.Arrays$impl');
-  Collections = goog.module.get('java.util.Collections$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ChartEnvelop = goog.module.get('org.pepstock.charba.client.ChartEnvelop$impl');
-  ScaleType = goog.module.get('org.pepstock.charba.client.ScaleType$impl');
   ChartContext = goog.module.get('org.pepstock.charba.client.callbacks.ChartContext$impl');
   ArrayListHelper = goog.module.get('org.pepstock.charba.client.commons.ArrayListHelper$impl');
   ConfigurationLoader = goog.module.get('org.pepstock.charba.client.commons.ConfigurationLoader$impl');
@@ -574,6 +540,8 @@ class ConfigurationOptions extends ConfigurationContainer {
   ConfigurationEnvelop = goog.module.get('org.pepstock.charba.client.configuration.ConfigurationEnvelop$impl');
   Datasets = goog.module.get('org.pepstock.charba.client.configuration.Datasets$impl');
   Elements = goog.module.get('org.pepstock.charba.client.configuration.Elements$impl');
+  EventAxesHandler = goog.module.get('org.pepstock.charba.client.configuration.EventAxesHandler$impl');
+  EventTitleHandler = goog.module.get('org.pepstock.charba.client.configuration.EventTitleHandler$impl');
   Filler = goog.module.get('org.pepstock.charba.client.configuration.Filler$impl');
   Font = goog.module.get('org.pepstock.charba.client.configuration.Font$impl');
   Hover = goog.module.get('org.pepstock.charba.client.configuration.Hover$impl');
@@ -582,30 +550,22 @@ class ConfigurationOptions extends ConfigurationContainer {
   Legend = goog.module.get('org.pepstock.charba.client.configuration.Legend$impl');
   Plugins = goog.module.get('org.pepstock.charba.client.configuration.Plugins$impl');
   ScalesOptions = goog.module.get('org.pepstock.charba.client.configuration.ScalesOptions$impl');
+  Subtitle = goog.module.get('org.pepstock.charba.client.configuration.Subtitle$impl');
   Title = goog.module.get('org.pepstock.charba.client.configuration.Title$impl');
   Tooltips = goog.module.get('org.pepstock.charba.client.configuration.Tooltips$impl');
-  BaseEventTypes = goog.module.get('org.pepstock.charba.client.dom.BaseEventTypes$impl');
   ChartEventProperty = goog.module.get('org.pepstock.charba.client.enums.ChartEventProperty$impl');
-  AxisClickEvent = goog.module.get('org.pepstock.charba.client.events.AxisClickEvent$impl');
   ChartClickEvent = goog.module.get('org.pepstock.charba.client.events.ChartClickEvent$impl');
   ChartEventContext = goog.module.get('org.pepstock.charba.client.events.ChartEventContext$impl');
   ChartHoverEvent = goog.module.get('org.pepstock.charba.client.events.ChartHoverEvent$impl');
   ChartResizeEvent = goog.module.get('org.pepstock.charba.client.events.ChartResizeEvent$impl');
   DatasetSelectionEvent = goog.module.get('org.pepstock.charba.client.events.DatasetSelectionEvent$impl');
-  EventType = goog.module.get('org.pepstock.charba.client.events.EventType$impl');
-  TitleClickEvent = goog.module.get('org.pepstock.charba.client.events.TitleClickEvent$impl');
   DatasetReference = goog.module.get('org.pepstock.charba.client.items.DatasetReference$impl');
   SizeItem = goog.module.get('org.pepstock.charba.client.items.SizeItem$impl');
-  Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   ExtendedOptions = goog.module.get('org.pepstock.charba.client.options.ExtendedOptions$impl');
   ExtendedScale = goog.module.get('org.pepstock.charba.client.options.ExtendedScale$impl');
-  $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
-  $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }
 }
-/**@type {List<EventType>}*/
-ConfigurationOptions.f_CHART_CLICK_TYPES__org_pepstock_charba_client_configuration_ConfigurationOptions_;
 /**@private {ConfigurationEnvelop<?function():void>}*/
 ConfigurationOptions.$static_RESET_CALLBACK_ENVELOP__org_pepstock_charba_client_configuration_ConfigurationOptions;
 ConfigurationElement.$markImplementor(ConfigurationOptions);

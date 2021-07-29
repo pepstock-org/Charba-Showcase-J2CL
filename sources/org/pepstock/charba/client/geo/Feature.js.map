@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Feature.impl.java.js",
+"lineCount":124,
+"mappings":"A;;;;;;;;;;;;;;MAgCmB,O;;CAAA,W;EAAAA,Q;EAAAA;OAyCO,qDAzCPA,C;;;QAgDlB,wD,UAAqBC,Y;EAArBC,kB;EAAAA,8B;EAAAA,uH;EAAAA,iB;;;CAAA,8F,UAAqBD,Y;EACpBE,oI;EAEAA,kQ;;;CAQc,e;EACdC,yR;;;CAQa,W;EACbC,mN;;;CASc,qD,YAAgBC,G;EAC9BC,kL;;;CASc,+B,gBAAmBD,G;EACjCC,uG;;;CAQgB,qB;EAChBC,+I;;;CASiB,yD,YAAoBF,G;EACrCG,sL;;;CASiB,mC,gBAAuBH,G;EACxCG,2G;;;CAUa,kE,YAAqBH,G,gBAAYI,Y;EAC9CC,6M;;;CAUa,4C,gBAAwBL,G,gBAAYI,Y;EACjDC,kI;;;CASa,2D,YAAsBL,G;EACnCM,oJ;;;CASa,qC,gBAAyBN,G;EACtCM,6G;;;CAUa,4E,YAAqBN,G,iBAAYI,Y;EAC9CC,uN;;;CAUa,sD,gBAAwBL,G,iBAAYI,Y;EACjDC,4I;;;CASa,2D,YAAsBL,G;EACnCO,8J;;;CASa,qC,gBAAyBP,G;EACtCO,6G;;;CAQY,mD;EACZC,kC;;;QAhND,qD;EAAAC,4F;;;QAHkB,O;EAAAC,0B;EAAAA,uB;EAAAA,gC;EAGlBA,6F;;;;;;;;;;;;;;;;AAHkB;;",
+"sources":["Feature.java"],
+"names":["org.pepstock.charba.client.geo.Feature.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.Feature.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Feature.<init>","org.pepstock.charba.client.geo.Feature.hasGeometry","org.pepstock.charba.client.geo.Feature.getType","key","org.pepstock.charba.client.geo.Feature.hasProperty","org.pepstock.charba.client.geo.Feature.getPropertiesKeys","org.pepstock.charba.client.geo.Feature.getPropertyType","defaultValue","org.pepstock.charba.client.geo.Feature.getPropertyValue","org.pepstock.charba.client.geo.Feature.getNumberProperty","org.pepstock.charba.client.geo.Feature.getStringProperty","org.pepstock.charba.client.geo.Feature.nativeObject","org.pepstock.charba.client.geo.Feature.<synthetic: getter>","org.pepstock.charba.client.geo.Feature.<clinit>"]
+}
+

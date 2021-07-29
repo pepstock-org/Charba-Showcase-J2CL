@@ -2,7 +2,7 @@
 "version":3,
 "file":"CallbackPropertyManager.impl.java.js",
 "lineCount":84,
-"mappings":"A;;;;;;;;;;;;;;MAiCY,uB;;CAAA,W;EAAAA,Q;EAAAA;OAKkC,uEALlCA,C;EAAAA;OAO4B,uEAP5BA,C;;;QAYX,S;EAAAC,kC;EAAAA,8C;EAAAA,gF;EAAAA,iB;;;CAAA,mE;EAAAC,iC;EAAAA,6E;EAECA,gK;;;QAQ8B,O;EAAAC,kC;EAC9BA,uG;;;CAQ8B,sD;EAC9BC,oF;;;CAQI,iH,kCAAqCC,O;EAGzCC,yQ;;;CAQI,oH,kCAAwCD,O;EAG5CE;GACCA,6FADDA;G;;;CAtDU,qE;EAKXL,sJ;EAEAA,oH;;;QAPW,O;EAAAM,0C;EAAAA,uC;EAAAA,qB;EAEXA,sI;;;;;;;;;;;;;;;;;AAFW;wBAEkC,uEAFlC;",
+"mappings":"A;;;;;;;;;;;;;;MAiCY,uB;;CAAA,W;EAAAA,Q;EAAAA;OAMkC,uEANlCA,C;EAAAA;OAQ4B,uEAR5BA,C;;;QAaX,S;EAAAC,kC;EAAAA,8C;EAAAA,gF;EAAAA,iB;;;CAAA,mE;EAAAC,iC;EAAAA,6E;EAECA,gK;;;QAQ8B,O;EAAAC,kC;EAC9BA,uG;;;CAQ8B,sD;EAC9BC,oF;;;CAQI,iH,kCAAqCC,O;EAGzCC,yQ;;;CAQI,oH,kCAAwCD,O;EAG5CE;GACCA,6FADDA;G;;;CAvDU,qE;EAMXL,sJ;EAEAA,oH;;;QARW,O;EAAAM,0C;EAAAA,uC;EAAAA,qB;EAGXA,sI;;;;;;;;;;;;;;;;;AAHW;wBAGkC,uEAHlC;",
 "sources":["CallbackPropertyManager.java"],
 "names":["org.pepstock.charba.client.commons.CallbackPropertyManager.<synthetic: ctor_js>","org.pepstock.charba.client.commons.CallbackPropertyManager.<synthetic: ctor_create>","org.pepstock.charba.client.commons.CallbackPropertyManager.<init>","org.pepstock.charba.client.commons.CallbackPropertyManager.get","org.pepstock.charba.client.commons.CallbackPropertyManager.getHandlers","handler","org.pepstock.charba.client.commons.CallbackPropertyManager.addHandler","org.pepstock.charba.client.commons.CallbackPropertyManager.removeHandler","org.pepstock.charba.client.commons.CallbackPropertyManager.<clinit>"]
 }

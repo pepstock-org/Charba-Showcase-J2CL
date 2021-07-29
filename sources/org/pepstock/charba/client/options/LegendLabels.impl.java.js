@@ -12,6 +12,7 @@ let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$im
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let IsDefaultPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let TextAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TextAlign$impl');
 let BoxHandler = goog.forwardDeclare('org.pepstock.charba.client.options.BoxHandler$impl');
 let Font = goog.forwardDeclare('org.pepstock.charba.client.options.Font$impl');
@@ -105,14 +106,19 @@ class LegendLabels extends AbstractModel {
   return HasPointStyle.m_getPointStyle__$default__org_pepstock_charba_client_options_HasPointStyle(this);
  }
  //Default method forwarding stub.
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return HasPointStyle.m_getPointStyleAsCanvas__$default__org_pepstock_charba_client_options_HasPointStyle(this);
+ }
+ //Default method forwarding stub.
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {
   return HasPointStyle.m_getPointStyleAsImage__$default__org_pepstock_charba_client_options_HasPointStyle(this);
  }
  //Default method forwarding stub.
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return HasPointStyle.m_isPointStyleAsImage__$default__org_pepstock_charba_client_options_HasPointStyle(this);
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return HasPointStyle.m_getPointStyleType__$default__org_pepstock_charba_client_options_HasPointStyle(this);
  }
  //Default method forwarding stub.
  /** @override @return {?string} */
@@ -143,6 +149,11 @@ class LegendLabels extends AbstractModel {
  /** @override */
  m_setPointStyle__org_pepstock_charba_client_dom_elements_Img(/** HTMLImageElement */ arg0) {
   HasPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_options_HasPointStyle__org_pepstock_charba_client_dom_elements_Img(this, arg0);
+ }
+ //Default method forwarding stub.
+ /** @override */
+ m_setPointStyle__org_pepstock_charba_client_dom_elements_Canvas(/** HTMLCanvasElement */ arg0) {
+  HasPointStyle.m_setPointStyle__$default__org_pepstock_charba_client_options_HasPointStyle__org_pepstock_charba_client_dom_elements_Canvas(this, arg0);
  }
  //Default method forwarding stub.
  /** @override @return {IsColor} */

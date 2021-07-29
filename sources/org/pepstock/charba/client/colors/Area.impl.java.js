@@ -2,7 +2,11 @@ goog.module('org.pepstock.charba.client.colors.Area$impl');
 
 const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
+const IsArea = goog.require('org.pepstock.charba.client.items.IsArea$impl');
 
+/**
+ * @implements {IsArea}
+ */
 class Area extends j_l_Object {
  /** @protected */
  constructor() {
@@ -28,7 +32,7 @@ class Area extends j_l_Object {
   this.$ctor__java_lang_Object__();
   this.$init___$p_org_pepstock_charba_client_colors_Area();
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getLeft__() {
   return this.f_left__org_pepstock_charba_client_colors_Area_;
  }
@@ -36,7 +40,7 @@ class Area extends j_l_Object {
  m_setLeft__double(/** number */ left) {
   this.f_left__org_pepstock_charba_client_colors_Area_ = left;
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getTop__() {
   return this.f_top__org_pepstock_charba_client_colors_Area_;
  }
@@ -44,7 +48,7 @@ class Area extends j_l_Object {
  m_setTop__double(/** number */ top) {
   this.f_top__org_pepstock_charba_client_colors_Area_ = top;
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getRight__() {
   return this.f_right__org_pepstock_charba_client_colors_Area_;
  }
@@ -52,7 +56,7 @@ class Area extends j_l_Object {
  m_setRight__double(/** number */ right) {
   this.f_right__org_pepstock_charba_client_colors_Area_ = right;
  }
- /** @return {number} */
+ /** @override @return {number} */
  m_getBottom__() {
   return this.f_bottom__org_pepstock_charba_client_colors_Area_;
  }
@@ -63,6 +67,16 @@ class Area extends j_l_Object {
  /** @override @return {?string} */
  toString() {
   return "Area [left=" + this.f_left__org_pepstock_charba_client_colors_Area_ + ", top=" + this.f_top__org_pepstock_charba_client_colors_Area_ + ", right=" + this.f_right__org_pepstock_charba_client_colors_Area_ + ", bottom=" + this.f_bottom__org_pepstock_charba_client_colors_Area_ + "]";
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getHeight__() {
+  return IsArea.m_getHeight__$default__org_pepstock_charba_client_items_IsArea(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {number} */
+ m_getWidth__() {
+  return IsArea.m_getWidth__$default__org_pepstock_charba_client_items_IsArea(this);
  }
  /** @private */
  $init___$p_org_pepstock_charba_client_colors_Area() {
@@ -76,6 +90,7 @@ class Area extends j_l_Object {
   Area.$clinit = () =>{};
   Area.$loadModules();
   j_l_Object.$clinit();
+  IsArea.$clinit();
  }
  /** @return {boolean} */
  static $isInstance(/** ? */ instance) {
@@ -84,6 +99,7 @@ class Area extends j_l_Object {
  
  static $loadModules() {}
 }
+IsArea.$markImplementor(Area);
 $Util.$setClassMetadata(Area, "org.pepstock.charba.client.colors.Area");
 
 exports = Area;

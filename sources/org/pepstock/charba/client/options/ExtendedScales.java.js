@@ -9,7 +9,7 @@ goog.require('org.pepstock.charba.client.commons.Key');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ObjectType');
 goog.require('org.pepstock.charba.client.defaults.IsDefaultScales');
-goog.require('org.pepstock.charba.client.enums.AxisType');
+goog.require('org.pepstock.charba.client.enums.ChartAxisType');
 goog.require('org.pepstock.charba.client.enums.DefaultScaleId');
 goog.require('org.pepstock.charba.client.options.Options');
 goog.require('org.pepstock.charba.client.options.Scale');

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ChartBackgroundColorOptionsBuilder.impl.java.js",
+"lineCount":74,
+"mappings":"A;;;;;;;;;;;;MA6BmB,kC;;CAAA,W;EAAAA,Q;EAAAA;OAGkB,sFAHlBA,C;;;QAUV,2C,gBAA2CC,K;EAA3CC,yD;EAAAA,uI;EAAAA,iB;;;CAAA,qH,gBAA2CD,K;EAA3CE,iC;EACPA,6K;;;QAQgD,U;EAAAC,6C;EAChDA,6F;;;QASgD,4C,gBAAeH,K;EAAfG,6C;EAChDA,6F;;;CAQkC,S;EAElCC,mG;;;CASyC,sC,gBAA0BC,K;EACnEC,0I;EACAA,Y;;;CASyC,+D,gBAA2BD,K;EACpEC,mK;EACAA,Y;;;CASyC,gE,iBAA4BC,Q;EACrED,uK;EACAA,Y;;;CASyC,+D,gBAA2BE,O;EACpEF,qK;EACAA,Y;;;CASyC,4F,iCAAqDG,wB;EAC9FC,mN;EACAA,Y;;;QA/FiB,O;EAAAC,qD;EAAAA,kD;EAAAA;",
+"sources":["ChartBackgroundColorOptionsBuilder.java"],
+"names":["org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.<synthetic: ctor_js>","chart","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.<init>","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.create","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.build","color","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.setBackgroundColor","gradient","pattern","globalCompositeOperation","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.setGlobalCompositeOperation","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsBuilder.<clinit>"]
+}
+

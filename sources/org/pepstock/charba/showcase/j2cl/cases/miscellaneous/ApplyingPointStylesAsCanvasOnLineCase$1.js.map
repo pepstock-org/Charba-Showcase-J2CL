@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ApplyingPointStylesAsCanvasOnLineCase$1.impl.java.js",
+"lineCount":46,
+"mappings":"A;;;;;;;;;;;;;MAuFkD,E;;CAAA,W;EAAAA,Q;EAAAA;kH;;;QAAA,oG;EAAAC,a;EAAAA,yB;EAAAA,yN;EAAAA,iB;;;CAAA,iM;EAAAC,8H;EAAAA,iC;;;CAGjC,6D,uBAAsBC,O;EACnCC,yJ;;;;CAJ8C,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
+"sources":["ApplyingPointStylesAsCanvasOnLineCase.java"],
+"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsCanvasOnLineCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsCanvasOnLineCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsCanvasOnLineCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsCanvasOnLineCase$1.invoke","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesAsCanvasOnLineCase$1.<clinit>"]
+}
+

@@ -47,11 +47,15 @@ class CommonProperty extends Enum {
  /** @return {!Array<!CommonProperty>} */
  static m_values__() {
   CommonProperty.$clinit();
-  return /**@type {!Array<CommonProperty>}*/ ($Arrays.$init([CommonProperty.$static_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty, CommonProperty.$static_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, CommonProperty.$static_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty], CommonProperty));
+  return /**@type {!Array<CommonProperty>}*/ ($Arrays.$init([CommonProperty.$static_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty, CommonProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, CommonProperty.$static_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, CommonProperty.$static_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty], CommonProperty));
  }
  /** @return {!CommonProperty} */
  static get f_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty() {
   return (CommonProperty.$clinit(), CommonProperty.$static_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty);
+ }
+ /** @return {!CommonProperty} */
+ static get f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty() {
+  return (CommonProperty.$clinit(), CommonProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty);
  }
  /** @return {!CommonProperty} */
  static get f_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty() {
@@ -67,6 +71,7 @@ class CommonProperty extends Enum {
   CommonProperty.$loadModules();
   Enum.$clinit();
   CommonProperty.$static_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty = CommonProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("CLIP"), CommonProperty.$ordinal_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty, "clip");
+  CommonProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty = CommonProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DATA"), CommonProperty.$ordinal_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, "data");
   CommonProperty.$static_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty = CommonProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BORDER_WIDTH"), CommonProperty.$ordinal_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, "borderWidth");
   CommonProperty.$static_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty = CommonProperty.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("HOVER_BORDER_WIDTH"), CommonProperty.$ordinal_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty, "hoverBorderWidth");
   CommonProperty.f_namesToValuesMap__org_pepstock_charba_client_data_Dataset_CommonProperty_ = null;
@@ -85,6 +90,8 @@ class CommonProperty extends Enum {
 /**@private {!CommonProperty}*/
 CommonProperty.$static_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty;
 /**@private {!CommonProperty}*/
+CommonProperty.$static_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty;
+/**@private {!CommonProperty}*/
 CommonProperty.$static_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty;
 /**@private {!CommonProperty}*/
 CommonProperty.$static_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty;
@@ -93,9 +100,11 @@ CommonProperty.f_namesToValuesMap__org_pepstock_charba_client_data_Dataset_Commo
 /**@const {number}*/
 CommonProperty.$ordinal_CLIP__org_pepstock_charba_client_data_Dataset_CommonProperty = 0;
 /**@const {number}*/
-CommonProperty.$ordinal_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty = 1;
+CommonProperty.$ordinal_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty = 1;
 /**@const {number}*/
-CommonProperty.$ordinal_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty = 2;
+CommonProperty.$ordinal_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty = 2;
+/**@const {number}*/
+CommonProperty.$ordinal_HOVER_BORDER_WIDTH__org_pepstock_charba_client_data_Dataset_CommonProperty = 3;
 Key.$markImplementor(CommonProperty);
 $Util.$setClassMetadataForEnum(CommonProperty, "org.pepstock.charba.client.data.Dataset$CommonProperty");
 

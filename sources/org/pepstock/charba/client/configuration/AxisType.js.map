@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AxisType.impl.java.js",
+"lineCount":89,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;MA4BiB,Q;;QAUA,0E,gBAAcA,I,uBAAoBC,Q;EAAlCC,mB;EAEfA,kR;;;QAYe,sH,gBAAcF,I,uBAAoBC,Q,iBAAkBE,c;EAApDD,mB;EAEfA,4U;;;QAYe,sK,gBAAcF,I,uBAAoBC,Q,iBAAkBE,c,uBAA8BC,Q;EAAlFF,mB;EAEfA,IAASG,UAATH,yG;EAEAA;GAECA,kBAFDA;G;EAMAA,2O;;;QAQW,6D,iBAAkBF,I;EAAlBM,mB;EACXA,6F;;;QASW,sE,iBAAkBN,I,iBAAcO,K;EAAhCD,mB;EAEXA;GACCA,uIADDA;G;;;QAWe,+B,gBAAmBN,I;EAAnBQ,mB;EAEfA,IAASH,UAATG,yG;EAEAA;GAECA,kBAFDA;G;EAMAA,4J;;;QASc,4D,iBAAiBR,I;EAAjBS,mB;EACdA,sQ;;;QASW,iE,iBAAsBT,I;EAAtBU,mB;EACXA;GACCA,kHADDA;G;;;QAa6B,uE,UAAqBV,I;EAArBW,mB;EAE7BA,iF;EAGAA,Y;;;CAQQ,e;;CAOD,qB;;CAOM,e;;QArJE,O;EAAAC,2B;EAAAA;",
+"sources":["AxisType.java"],
+"names":["type","baseType","org.pepstock.charba.client.configuration.AxisType.create","defaultScaleId","dataType","resultType","org.pepstock.charba.client.configuration.AxisType.register","force","org.pepstock.charba.client.configuration.AxisType.checkAndGet","org.pepstock.charba.client.configuration.AxisType.isValid","org.pepstock.charba.client.configuration.AxisType.checkIfValid","org.pepstock.charba.client.configuration.AxisType.checkAndGetIfValid","org.pepstock.charba.client.configuration.AxisType.<clinit>"]
+}
+

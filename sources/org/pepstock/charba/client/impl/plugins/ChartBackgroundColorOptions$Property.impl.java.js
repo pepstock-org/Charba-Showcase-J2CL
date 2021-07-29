@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, Property.$static_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, Property.$static_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, Property.$static_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property], Property));
  }
  /** @return {!Property} */
  static get f_BACKGROUND_COLOR__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property() {
@@ -57,6 +57,10 @@ class Property extends Enum {
  static get f_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property() {
   return (Property.$clinit(), Property.$static_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property);
  }
+ /** @return {!Property} */
+ static get f_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property() {
+  return (Property.$clinit(), Property.$static_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property);
+ }
  
  static $clinit() {
   Property.$clinit = () =>{};
@@ -64,6 +68,7 @@ class Property extends Enum {
   Enum.$clinit();
   Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("BACKGROUND_COLOR"), Property.$ordinal_BACKGROUND_COLOR__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, "backgroundColor");
   Property.$static_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("COLOR_TYPE"), Property.$ordinal_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, "colorType");
+  Property.$static_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("GLOBAL_COMPOSITE_OPERATION"), Property.$ordinal_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, "globalCompositeOperation");
   Property.f_namesToValuesMap__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property_ = null;
  }
  /** @return {boolean} */
@@ -81,12 +86,16 @@ class Property extends Enum {
 Property.$static_BACKGROUND_COLOR__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property;
 /**@private {!Property}*/
 Property.$static_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property;
+/**@private {!Property}*/
+Property.$static_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property_;
 /**@const {number}*/
 Property.$ordinal_BACKGROUND_COLOR__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property = 0;
 /**@const {number}*/
 Property.$ordinal_COLOR_TYPE__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property = 1;
+/**@const {number}*/
+Property.$ordinal_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property = 2;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions$Property");
 

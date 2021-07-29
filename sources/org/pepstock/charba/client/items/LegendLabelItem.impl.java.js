@@ -186,6 +186,10 @@ class LegendLabelItem extends LegendItem {
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(Property.f_POINT_STYLE__org_pepstock_charba_client_items_LegendItem_Property, pointStyle);
  }
  
+ m_setPointStyle__org_pepstock_charba_client_dom_elements_Canvas(/** HTMLCanvasElement */ pointStyle) {
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(Property.f_POINT_STYLE__org_pepstock_charba_client_items_LegendItem_Property, pointStyle);
+ }
+ 
  m_setRotation__double(/** number */ rotation) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__double(Property.f_ROTATION__org_pepstock_charba_client_items_LegendItem_Property, rotation);
  }

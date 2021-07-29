@@ -29,8 +29,7 @@ class NativeObjectUtils extends j_l_Object {
  static m_create__() {
   NativeObjectUtils.$clinit();
   let nativeObject = JsHelper.m_get__().m_create___$pp_org_pepstock_charba_client_commons();
-  NativeObjectHashing.m_handleHashCode__org_pepstock_charba_client_commons_NativeObject(nativeObject);
-  return nativeObject;
+  return NativeObjectHashing.m_handleHashCode__org_pepstock_charba_client_commons_NativeObject(nativeObject);
  }
  /** @return {List<?string>} */
  static m_propertiesKeys__org_pepstock_charba_client_commons_NativeObject(/** ? */ object) {
@@ -71,6 +70,11 @@ class NativeObjectUtils extends j_l_Object {
  static m_defineImageProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_dom_elements_Img(/** ? */ object, /** ?string */ key, /** HTMLImageElement */ value) {
   NativeObjectUtils.$clinit();
   CharbaJsObjectImageHelper.set(object, key, value);
+ }
+ 
+ static m_defineCanvasProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_dom_elements_Canvas(/** ? */ object, /** ?string */ key, /** HTMLCanvasElement */ value) {
+  NativeObjectUtils.$clinit();
+  CharbaJsObjectCanvasHelper.set(object, key, value);
  }
  
  static m_definePatternProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_dom_elements_CanvasPatternItem(/** ? */ object, /** ?string */ key, /** CanvasPattern */ value) {
@@ -149,6 +153,14 @@ class NativeObjectUtils extends j_l_Object {
   NativeObjectUtils.$clinit();
   if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType, JsHelper.m_get__().m_typeOf__java_lang_Object__java_lang_String(object, key))) {
    return CharbaJsObjectImageHelper.get(object, key);
+  }
+  return defaultValue;
+ }
+ /** @return {HTMLCanvasElement} */
+ static m_getCanvasProperty__org_pepstock_charba_client_commons_NativeObject__java_lang_String__org_pepstock_charba_client_dom_elements_Canvas(/** ? */ object, /** ?string */ key, /** HTMLCanvasElement */ defaultValue) {
+  NativeObjectUtils.$clinit();
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType, JsHelper.m_get__().m_typeOf__java_lang_Object__java_lang_String(object, key))) {
+   return CharbaJsObjectCanvasHelper.get(object, key);
   }
   return defaultValue;
  }

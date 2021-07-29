@@ -10,6 +10,7 @@ goog.require('org.pepstock.charba.client.callbacks.CubicInterpolationModeCallbac
 goog.require('org.pepstock.charba.client.callbacks.DatasetContext');
 goog.require('org.pepstock.charba.client.callbacks.NativeCallback.$Overlay');
 goog.require('org.pepstock.charba.client.callbacks.ScriptableUtils');
+goog.require('org.pepstock.charba.client.callbacks.SteppedCallback');
 goog.require('org.pepstock.charba.client.commons.ArrayListHelper');
 goog.require('org.pepstock.charba.client.commons.ArrayString.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayStringList');
@@ -19,6 +20,7 @@ goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ObjectType');
 goog.require('org.pepstock.charba.client.data.DataPoint');
 goog.require('org.pepstock.charba.client.data.Dataset');
+goog.require('org.pepstock.charba.client.data.Dataset.CommonProperty');
 goog.require('org.pepstock.charba.client.data.Dataset.InternalProperty');
 goog.require('org.pepstock.charba.client.data.HasDataPoints');
 goog.require('org.pepstock.charba.client.data.LineDataset.Property');

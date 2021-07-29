@@ -5,6 +5,7 @@ const IsDefaultBaseFormatOptions = goog.require('org.pepstock.charba.client.defa
 
 let List = goog.forwardDeclare('java.util.List$impl');
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
+let DefaultNumberFormatOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultNumberFormatOptions$impl');
 let CompactDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.CompactDisplay$impl');
 let Currency = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Currency$impl');
 let CurrencyDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.CurrencyDisplay$impl');
@@ -14,6 +15,7 @@ let MeasureUnitDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.en
 let Notation = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Notation$impl');
 let SignDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.SignDisplay$impl');
 let Style = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Style$impl');
+let NumberFormatItem = goog.forwardDeclare('org.pepstock.charba.client.items.NumberFormatItem$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 /**
@@ -51,6 +53,10 @@ class IsDefaultNumberFormatOptions {
  m_getMinimumSignificantDigits__() {}
  /** @abstract @return {number} */
  m_getMaximumSignificantDigits__() {}
+ /** @abstract @return {NumberFormatItem} */
+ m_create__() {}
+ /** @abstract @return {NumberFormatItem} */
+ m_create__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** IsDefaultNumberFormatOptions */ defaultValues) {}
  /** @return {number} */
  static m_getMinimumFractionDigits__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** !IsDefaultNumberFormatOptions */ $thisArg) {
   IsDefaultNumberFormatOptions.$clinit();
@@ -79,6 +85,34 @@ class IsDefaultNumberFormatOptions {
   }
   return defaultDigits;
  }
+ /** @return {NumberFormatItem} */
+ static m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** !IsDefaultNumberFormatOptions */ $thisArg) {
+  IsDefaultNumberFormatOptions.$clinit();
+  return $thisArg.m_create__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(DefaultNumberFormatOptions.$create__());
+ }
+ /** @return {NumberFormatItem} */
+ static m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** !IsDefaultNumberFormatOptions */ $thisArg, /** IsDefaultNumberFormatOptions */ defaultValues) {
+  IsDefaultNumberFormatOptions.$clinit();
+  let result = NumberFormatItem.$create__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(defaultValues);
+  result.m_setLocaleMatcher__org_pepstock_charba_client_intl_enums_LocaleMatcher($thisArg.m_getLocaleMatcher__());
+  result.m_setNumberingSystem__org_pepstock_charba_client_intl_enums_NumberingSystem($thisArg.m_getNumberingSystem__());
+  result.m_setCompactDisplay__org_pepstock_charba_client_intl_enums_CompactDisplay($thisArg.m_getCompactDisplay__());
+  result.m_setCurrency__org_pepstock_charba_client_intl_enums_Currency($thisArg.m_getCurrency__());
+  result.m_setCurrencyDisplay__org_pepstock_charba_client_intl_enums_CurrencyDisplay($thisArg.m_getCurrencyDisplay__());
+  result.m_setCurrencySign__org_pepstock_charba_client_intl_enums_CurrencySign($thisArg.m_getCurrencySign__());
+  result.m_setNotation__org_pepstock_charba_client_intl_enums_Notation($thisArg.m_getNotation__());
+  result.m_setSignDisplay__org_pepstock_charba_client_intl_enums_SignDisplay($thisArg.m_getSignDisplay__());
+  result.m_setStyle__org_pepstock_charba_client_intl_enums_Style($thisArg.m_getStyle__());
+  result.m_setUnitsOfMeasure__java_util_List($thisArg.m_getUnitsOfMeasure__());
+  result.m_setUnitOfMeasureDisplay__org_pepstock_charba_client_intl_enums_MeasureUnitDisplay($thisArg.m_getUnitOfMeasureDisplay__());
+  result.m_setUseGrouping__boolean($thisArg.m_isUseGrouping__());
+  result.m_setMinimumIntegerDigits__int($thisArg.m_getMinimumIntegerDigits__());
+  result.m_setMinimumFractionDigits__int($thisArg.m_getMinimumFractionDigits__());
+  result.m_setMaximumFractionDigits__int($thisArg.m_getMaximumFractionDigits__());
+  result.m_setMinimumSignificantDigits__int($thisArg.m_getMinimumIntegerDigits__());
+  result.m_setMaximumSignificantDigits__int($thisArg.m_getMinimumIntegerDigits__());
+  return result;
+ }
  
  static $clinit() {
   IsDefaultNumberFormatOptions.$clinit = () =>{};
@@ -96,7 +130,9 @@ class IsDefaultNumberFormatOptions {
  
  static $loadModules() {
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
+  DefaultNumberFormatOptions = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultNumberFormatOptions$impl');
   Style = goog.module.get('org.pepstock.charba.client.intl.enums.Style$impl');
+  NumberFormatItem = goog.module.get('org.pepstock.charba.client.items.NumberFormatItem$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }
 }

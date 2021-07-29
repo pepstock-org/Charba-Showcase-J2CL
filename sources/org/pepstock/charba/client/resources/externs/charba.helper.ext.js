@@ -76,6 +76,18 @@ CharbaJsHelper.isCanvasPattern = function(object) {};
  */
 CharbaJsHelper.isCanvasGradient = function(object) {};
 /**
+ * @param {*} obj 
+ * @param {string} key
+ * @return {boolean} 
+ */
+CharbaJsHelper.isCanvas = function(obj, key) {}; 
+/**
+ * @param {*} obj
+ * @param {string} key
+ * @return {boolean}
+ */
+CharbaJsHelper.isImage = function(obj, key) {};
+/**
  * @constructor
  * @return {CharbaJsPluginHelper}
  */
@@ -210,6 +222,11 @@ CharbaJsChartHelper.getTooltipActiveElements = function(chart) {};
  * @return {CharbaJsZoomHelper}
  */	
 function CharbaJsZoomHelper() {}	    
+/**
+ * @param {Chart} chart
+ * @return {number}
+ */
+CharbaJsZoomHelper.getZoomLevel = function(chart) {};
 /**
  * @param {Chart} chart
  * @param {string=} mode 
@@ -503,6 +520,24 @@ CharbaJsObjectImageHelper.set = function(object, key, value) {};
 CharbaJsObjectImageHelper.get = function(object, key) {};
 /**
  * @constructor
+ * @return {CharbaJsObjectCanvasHelper}
+ */
+function CharbaJsObjectCanvasHelper() {}
+/**
+ * @param {Object} object
+ * @param {string} key 
+ * @param {HTMLCanvasElement} value
+ * @return {undefined}
+ */
+CharbaJsObjectCanvasHelper.set = function(object, key, value) {};
+/**
+ * @param {Object} object
+ * @param {string} key 
+ * @return {HTMLCanvasElement}
+ */
+CharbaJsObjectCanvasHelper.get = function(object, key) {};
+/**
+ * @constructor
  * @return {CharbaJsObjectNativeObjectHelper}
  */
 function CharbaJsObjectNativeObjectHelper() {}
@@ -573,4 +608,15 @@ CharbaJsObjectStringHelper.set = function(object, key, value) {};
  * @return {string}
  */
 CharbaJsObjectStringHelper.get = function(object, key) {};
+/**
+ * @constructor
+ * @return {CharbaJsGeoHelper}
+ */
+function CharbaJsGeoHelper() {} 
+/**
+ * @param {Object} topojson 
+ * @param {string} featureProperty 
+ * @return {Array}
+ */
+CharbaJsGeoHelper.features = function(topojson, featureProperty) {};
 

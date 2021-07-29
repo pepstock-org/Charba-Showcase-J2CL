@@ -47,7 +47,7 @@ class ContextType extends Enum {
  /** @return {!Array<!ContextType>} */
  static m_values__() {
   ContextType.$clinit();
-  return /**@type {!Array<ContextType>}*/ ($Arrays.$init([ContextType.$static_CHART__org_pepstock_charba_client_enums_ContextType, ContextType.$static_DATASET__org_pepstock_charba_client_enums_ContextType, ContextType.$static_DATA__org_pepstock_charba_client_enums_ContextType, ContextType.$static_SCALE__org_pepstock_charba_client_enums_ContextType, ContextType.$static_TICK__org_pepstock_charba_client_enums_ContextType, ContextType.$static_TOOLTIP__org_pepstock_charba_client_enums_ContextType, ContextType.$static_DATALABELS__org_pepstock_charba_client_enums_ContextType, ContextType.$static_LABELS__org_pepstock_charba_client_enums_ContextType, ContextType.$static_ANNOTATION__org_pepstock_charba_client_enums_ContextType, ContextType.$static_ZOOM__org_pepstock_charba_client_enums_ContextType, ContextType.$static_METER__org_pepstock_charba_client_enums_ContextType, ContextType.$static_SEGMENT__org_pepstock_charba_client_enums_ContextType, ContextType.$static_UNKNOWN__org_pepstock_charba_client_enums_ContextType], ContextType));
+  return /**@type {!Array<ContextType>}*/ ($Arrays.$init([ContextType.$static_CHART__org_pepstock_charba_client_enums_ContextType, ContextType.$static_DATASET__org_pepstock_charba_client_enums_ContextType, ContextType.$static_DATA__org_pepstock_charba_client_enums_ContextType, ContextType.$static_SCALE__org_pepstock_charba_client_enums_ContextType, ContextType.$static_TICK__org_pepstock_charba_client_enums_ContextType, ContextType.$static_POINT_LABEL__org_pepstock_charba_client_enums_ContextType, ContextType.$static_TOOLTIP__org_pepstock_charba_client_enums_ContextType, ContextType.$static_DATALABELS__org_pepstock_charba_client_enums_ContextType, ContextType.$static_LABELS__org_pepstock_charba_client_enums_ContextType, ContextType.$static_ANNOTATION__org_pepstock_charba_client_enums_ContextType, ContextType.$static_ZOOM__org_pepstock_charba_client_enums_ContextType, ContextType.$static_METER__org_pepstock_charba_client_enums_ContextType, ContextType.$static_SEGMENT__org_pepstock_charba_client_enums_ContextType, ContextType.$static_UNKNOWN__org_pepstock_charba_client_enums_ContextType], ContextType));
  }
  /** @return {!ContextType} */
  static get f_CHART__org_pepstock_charba_client_enums_ContextType() {
@@ -68,6 +68,10 @@ class ContextType extends Enum {
  /** @return {!ContextType} */
  static get f_TICK__org_pepstock_charba_client_enums_ContextType() {
   return (ContextType.$clinit(), ContextType.$static_TICK__org_pepstock_charba_client_enums_ContextType);
+ }
+ /** @return {!ContextType} */
+ static get f_POINT_LABEL__org_pepstock_charba_client_enums_ContextType() {
+  return (ContextType.$clinit(), ContextType.$static_POINT_LABEL__org_pepstock_charba_client_enums_ContextType);
  }
  /** @return {!ContextType} */
  static get f_TOOLTIP__org_pepstock_charba_client_enums_ContextType() {
@@ -111,6 +115,7 @@ class ContextType extends Enum {
   ContextType.$static_DATA__org_pepstock_charba_client_enums_ContextType = ContextType.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DATA"), ContextType.$ordinal_DATA__org_pepstock_charba_client_enums_ContextType, "data");
   ContextType.$static_SCALE__org_pepstock_charba_client_enums_ContextType = ContextType.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SCALE"), ContextType.$ordinal_SCALE__org_pepstock_charba_client_enums_ContextType, "scale");
   ContextType.$static_TICK__org_pepstock_charba_client_enums_ContextType = ContextType.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TICK"), ContextType.$ordinal_TICK__org_pepstock_charba_client_enums_ContextType, "tick");
+  ContextType.$static_POINT_LABEL__org_pepstock_charba_client_enums_ContextType = ContextType.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("POINT_LABEL"), ContextType.$ordinal_POINT_LABEL__org_pepstock_charba_client_enums_ContextType, "pointLabel");
   ContextType.$static_TOOLTIP__org_pepstock_charba_client_enums_ContextType = ContextType.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("TOOLTIP"), ContextType.$ordinal_TOOLTIP__org_pepstock_charba_client_enums_ContextType, "tooltip");
   ContextType.$static_DATALABELS__org_pepstock_charba_client_enums_ContextType = ContextType.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("DATALABELS"), ContextType.$ordinal_DATALABELS__org_pepstock_charba_client_enums_ContextType, "datalabels");
   ContextType.$static_LABELS__org_pepstock_charba_client_enums_ContextType = ContextType.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("LABELS"), ContextType.$ordinal_LABELS__org_pepstock_charba_client_enums_ContextType, "labels");
@@ -143,6 +148,8 @@ ContextType.$static_SCALE__org_pepstock_charba_client_enums_ContextType;
 /**@private {!ContextType}*/
 ContextType.$static_TICK__org_pepstock_charba_client_enums_ContextType;
 /**@private {!ContextType}*/
+ContextType.$static_POINT_LABEL__org_pepstock_charba_client_enums_ContextType;
+/**@private {!ContextType}*/
 ContextType.$static_TOOLTIP__org_pepstock_charba_client_enums_ContextType;
 /**@private {!ContextType}*/
 ContextType.$static_DATALABELS__org_pepstock_charba_client_enums_ContextType;
@@ -171,21 +178,23 @@ ContextType.$ordinal_SCALE__org_pepstock_charba_client_enums_ContextType = 3;
 /**@const {number}*/
 ContextType.$ordinal_TICK__org_pepstock_charba_client_enums_ContextType = 4;
 /**@const {number}*/
-ContextType.$ordinal_TOOLTIP__org_pepstock_charba_client_enums_ContextType = 5;
+ContextType.$ordinal_POINT_LABEL__org_pepstock_charba_client_enums_ContextType = 5;
 /**@const {number}*/
-ContextType.$ordinal_DATALABELS__org_pepstock_charba_client_enums_ContextType = 6;
+ContextType.$ordinal_TOOLTIP__org_pepstock_charba_client_enums_ContextType = 6;
 /**@const {number}*/
-ContextType.$ordinal_LABELS__org_pepstock_charba_client_enums_ContextType = 7;
+ContextType.$ordinal_DATALABELS__org_pepstock_charba_client_enums_ContextType = 7;
 /**@const {number}*/
-ContextType.$ordinal_ANNOTATION__org_pepstock_charba_client_enums_ContextType = 8;
+ContextType.$ordinal_LABELS__org_pepstock_charba_client_enums_ContextType = 8;
 /**@const {number}*/
-ContextType.$ordinal_ZOOM__org_pepstock_charba_client_enums_ContextType = 9;
+ContextType.$ordinal_ANNOTATION__org_pepstock_charba_client_enums_ContextType = 9;
 /**@const {number}*/
-ContextType.$ordinal_METER__org_pepstock_charba_client_enums_ContextType = 10;
+ContextType.$ordinal_ZOOM__org_pepstock_charba_client_enums_ContextType = 10;
 /**@const {number}*/
-ContextType.$ordinal_SEGMENT__org_pepstock_charba_client_enums_ContextType = 11;
+ContextType.$ordinal_METER__org_pepstock_charba_client_enums_ContextType = 11;
 /**@const {number}*/
-ContextType.$ordinal_UNKNOWN__org_pepstock_charba_client_enums_ContextType = 12;
+ContextType.$ordinal_SEGMENT__org_pepstock_charba_client_enums_ContextType = 12;
+/**@const {number}*/
+ContextType.$ordinal_UNKNOWN__org_pepstock_charba_client_enums_ContextType = 13;
 Key.$markImplementor(ContextType);
 $Util.$setClassMetadataForEnum(ContextType, "org.pepstock.charba.client.enums.ContextType");
 

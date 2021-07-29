@@ -5,9 +5,12 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 
 let Double = goog.forwardDeclare('java.lang.Double$impl');
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
-let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let ArrayDouble_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
 let Constants = goog.forwardDeclare('org.pepstock.charba.client.commons.Constants$impl');
 let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$impl');
+let NativeObjectContainer = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeObjectContainer$impl');
+let NativeObjectContainerFactory = goog.forwardDeclare('org.pepstock.charba.client.commons.NativeObjectContainerFactory$impl');
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let BarDataset = goog.forwardDeclare('org.pepstock.charba.client.data.BarDataset$impl');
 let DataPoint = goog.forwardDeclare('org.pepstock.charba.client.data.DataPoint$impl');
@@ -33,6 +36,8 @@ class DataItem extends j_l_Object {
   this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_;
   /**@type {DataType}*/
   this.f_dataType__org_pepstock_charba_client_items_DataItem_;
+  /**@type {?}*/
+  this.f_nativeObject__org_pepstock_charba_client_items_DataItem_;
  }
  /** @return {!DataItem} */
  static $create__java_lang_Object(/** * */ object) {
@@ -51,23 +56,27 @@ class DataItem extends j_l_Object {
    this.f_valueAsString__org_pepstock_charba_client_items_DataItem_ = j_l_String.m_valueOf__java_lang_Object(this.f_value__org_pepstock_charba_client_items_DataItem_);
    this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_ = null;
    this.f_dataType__org_pepstock_charba_client_items_DataItem_ = DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType;
+   this.f_nativeObject__org_pepstock_charba_client_items_DataItem_ = null;
   } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_ARRAY__org_pepstock_charba_client_commons_ObjectType, type)) {
    this.f_value__org_pepstock_charba_client_items_DataItem_ = Undefined.f_DOUBLE__org_pepstock_charba_client_items_Undefined;
-   this.f_valueAsFloatingData__org_pepstock_charba_client_items_DataItem_ = BarDataset.f_FLOATING_BAR_DATA_FACTORY__org_pepstock_charba_client_data_BarDataset.m_create__org_pepstock_charba_client_commons_ArrayDouble(/**@type {Array}*/ ($Casts.$to(object, $Overlay)));
+   this.f_valueAsFloatingData__org_pepstock_charba_client_items_DataItem_ = BarDataset.f_FLOATING_BAR_DATA_FACTORY__org_pepstock_charba_client_data_BarDataset.m_create__org_pepstock_charba_client_commons_ArrayDouble(/**@type {Array}*/ ($Casts.$to(object, ArrayDouble_$Overlay)));
    this.f_valueAsString__org_pepstock_charba_client_items_DataItem_ = this.f_valueAsFloatingData__org_pepstock_charba_client_items_DataItem_.toString();
    this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_ = null;
    this.f_dataType__org_pepstock_charba_client_items_DataItem_ = DataType.f_ARRAYS__org_pepstock_charba_client_enums_DataType;
+   this.f_nativeObject__org_pepstock_charba_client_items_DataItem_ = null;
   } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_STRING__org_pepstock_charba_client_commons_ObjectType, type)) {
    this.f_value__org_pepstock_charba_client_items_DataItem_ = Undefined.f_DOUBLE__org_pepstock_charba_client_items_Undefined;
    this.f_valueAsFloatingData__org_pepstock_charba_client_items_DataItem_ = null;
    this.f_valueAsString__org_pepstock_charba_client_items_DataItem_ = $Objects.m_toString__java_lang_Object(object);
    this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_ = null;
    this.f_dataType__org_pepstock_charba_client_items_DataItem_ = DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType;
+   this.f_nativeObject__org_pepstock_charba_client_items_DataItem_ = null;
   } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType, type)) {
+   this.f_nativeObject__org_pepstock_charba_client_items_DataItem_ = /**@type {?}*/ (object);
    this.f_value__org_pepstock_charba_client_items_DataItem_ = Undefined.f_DOUBLE__org_pepstock_charba_client_items_Undefined;
    this.f_valueAsFloatingData__org_pepstock_charba_client_items_DataItem_ = null;
    this.f_valueAsString__org_pepstock_charba_client_items_DataItem_ = JSON_$Overlay.m_stringify__java_lang_Object__int(object, 3);
-   this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_ = DataPoint.$create__org_pepstock_charba_client_items_ItemsEnvelop(/**@type {!ItemsEnvelop<?>}*/ (ItemsEnvelop.$create__java_lang_Object(/**@type {?}*/ (object))));
+   this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_ = DataPoint.$create__org_pepstock_charba_client_items_ItemsEnvelop(/**@type {!ItemsEnvelop<?>}*/ (ItemsEnvelop.$create__java_lang_Object(this.f_nativeObject__org_pepstock_charba_client_items_DataItem_)));
    this.f_dataType__org_pepstock_charba_client_items_DataItem_ = DataType.f_POINTS__org_pepstock_charba_client_enums_DataType;
   } else {
    this.f_value__org_pepstock_charba_client_items_DataItem_ = Undefined.f_DOUBLE__org_pepstock_charba_client_items_Undefined;
@@ -75,6 +84,7 @@ class DataItem extends j_l_Object {
    this.f_valueAsString__org_pepstock_charba_client_items_DataItem_ = Constants.f_NULL_STRING__org_pepstock_charba_client_commons_Constants;
    this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_ = null;
    this.f_dataType__org_pepstock_charba_client_items_DataItem_ = DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType;
+   this.f_nativeObject__org_pepstock_charba_client_items_DataItem_ = null;
   }
  }
  /** @return {DataType} */
@@ -97,6 +107,13 @@ class DataItem extends j_l_Object {
  m_getValueAsDataPoint__() {
   return this.f_valueAsPoint__org_pepstock_charba_client_items_DataItem_;
  }
+ /** @template T @return {T} */
+ m_createDataPoint__org_pepstock_charba_client_commons_NativeObjectContainerFactory(/** NativeObjectContainerFactory<T> */ factory) {
+  if (!$Equality.$same(factory, null)) {
+   return factory.m_create__org_pepstock_charba_client_commons_NativeObject(this.f_nativeObject__org_pepstock_charba_client_items_DataItem_);
+  }
+  return null;
+ }
  
  static $clinit() {
   DataItem.$clinit = () =>{};
@@ -111,7 +128,8 @@ class DataItem extends j_l_Object {
  static $loadModules() {
   Double = goog.module.get('java.lang.Double$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
-  $Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
+  $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  ArrayDouble_$Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayDouble.$Overlay$impl');
   Constants = goog.module.get('org.pepstock.charba.client.commons.Constants$impl');
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');

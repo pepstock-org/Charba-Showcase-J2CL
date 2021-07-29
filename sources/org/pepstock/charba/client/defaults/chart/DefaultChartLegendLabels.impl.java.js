@@ -7,6 +7,7 @@ const IsDefaultLegendLabels = goog.require('org.pepstock.charba.client.defaults.
 let IsDefaultFont = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultFont$impl');
 let IsDefaultPointStyleHandler = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPointStyleHandler$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let TextAlign = goog.forwardDeclare('org.pepstock.charba.client.enums.TextAlign$impl');
 
 /**
@@ -59,9 +60,13 @@ class DefaultChartLegendLabels extends j_l_Object {
  m_getPadding__() {
   return this.f_labels__org_pepstock_charba_client_defaults_chart_DefaultChartLegendLabels_.m_getPadding__();
  }
- /** @override @return {boolean} */
- m_isPointStyleAsImage__() {
-  return this.f_labels__org_pepstock_charba_client_defaults_chart_DefaultChartLegendLabels_.m_isPointStyleAsImage__();
+ /** @override @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return this.f_labels__org_pepstock_charba_client_defaults_chart_DefaultChartLegendLabels_.m_getPointStyleType__();
+ }
+ /** @override @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  return this.f_labels__org_pepstock_charba_client_defaults_chart_DefaultChartLegendLabels_.m_getPointStyleAsCanvas__();
  }
  /** @override @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {

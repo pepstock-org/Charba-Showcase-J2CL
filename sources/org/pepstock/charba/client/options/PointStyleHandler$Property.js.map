@@ -2,7 +2,7 @@
 "version":3,
 "file":"PointStyleHandler$Property.impl.java.js",
 "lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAsCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,uEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gJ;EAAAA,iB;;;CAAA,6G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;;;CASa,S;EACbC,oF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,8J;;;QAEZ,gF;EAAAC,yH;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,wS;EAFYA,mG;;;;;;;;;;;;;AAAA;4F;AAAA;4F;AAEZ;;",
+"mappings":"A;;;;;;;;;;;;;;MAuCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,uEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gJ;EAAAA,iB;;;CAAA,6G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;;;CASa,S;EACbC,oF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,8J;;;QAEZ,gF;EAAAC,yH;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,wS;EAFYA,mG;;;;;;;;;;;;;AAAA;4F;AAAA;4F;AAEZ;;",
 "sources":["PointStyleHandler.java"],
 "names":["org.pepstock.charba.client.options.PointStyleHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.PointStyleHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.PointStyleHandler$Property.<init>","org.pepstock.charba.client.options.PointStyleHandler$Property.value","org.pepstock.charba.client.options.PointStyleHandler$Property.valueOf","org.pepstock.charba.client.options.PointStyleHandler$Property.values","org.pepstock.charba.client.options.PointStyleHandler$Property.<synthetic: getter>","org.pepstock.charba.client.options.PointStyleHandler$Property.<clinit>"]
 }

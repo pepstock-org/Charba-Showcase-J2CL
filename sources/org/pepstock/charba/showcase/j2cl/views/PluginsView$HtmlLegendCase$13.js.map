@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PluginsView$HtmlLegendCase$13.impl.java.js",
+"lineCount":37,
+"mappings":"A;;;;;;;;;;;;MA4SoE,G;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,c;EAAAA,0B;EAAAA,2F;EAAAA,iB;;;CAAA,8E;EAAAC,iC;;;CAC5C,U;EACpBC,gD;;;QAFgE,O;EAAAC,sB;EAAAA,mB;EAAAA;",
+"sources":["PluginsView.java"],
+"names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$13.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$13.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$13.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$13.create","org.pepstock.charba.showcase.j2cl.views.PluginsView$HtmlLegendCase$13.<clinit>"]
+}
+

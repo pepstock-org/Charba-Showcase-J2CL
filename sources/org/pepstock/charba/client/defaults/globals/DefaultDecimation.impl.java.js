@@ -37,6 +37,10 @@ class DefaultDecimation extends j_l_Object {
  m_getSamples__() {
   return DefaultDecimation.f_DEFAULT_SAMPLES__org_pepstock_charba_client_defaults_globals_DefaultDecimation_;
  }
+ /** @override @return {number} */
+ m_getThreshold__() {
+  return DefaultDecimation.f_DEFAULT_THRESHOLD__org_pepstock_charba_client_defaults_globals_DefaultDecimation_;
+ }
  
  static $clinit() {
   DefaultDecimation.$clinit = () =>{};
@@ -56,6 +60,8 @@ class DefaultDecimation extends j_l_Object {
 DefaultDecimation.f_DEFAULT_ENABLED__org_pepstock_charba_client_defaults_globals_DefaultDecimation_ = false;
 /**@const {number}*/
 DefaultDecimation.f_DEFAULT_SAMPLES__org_pepstock_charba_client_defaults_globals_DefaultDecimation_ = NaN;
+/**@const {number}*/
+DefaultDecimation.f_DEFAULT_THRESHOLD__org_pepstock_charba_client_defaults_globals_DefaultDecimation_ = NaN;
 IsDefaultDecimation.$markImplementor(DefaultDecimation);
 $Util.$setClassMetadata(DefaultDecimation, "org.pepstock.charba.client.defaults.globals.DefaultDecimation");
 

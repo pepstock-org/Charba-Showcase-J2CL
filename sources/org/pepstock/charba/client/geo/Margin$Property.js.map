@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Margin$Property.impl.java.js",
+"lineCount":107,
+"mappings":"A;;;;;;;;;;;;;;MA+Bc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,wDARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iI;EAAAA,iB;;;CAAA,8F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;;;CASa,S;EACbC,qE;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,iIAAAA;G;EAAAA,yH;;;QAAA,U;EAAAC,mB;EAAAA,+V;;;QAEZ,yD;EAAAC,kG;;;QACA,2D;EAAAA,oG;;;QACA,4D;EAAAA,qG;;;QACA,0D;EAAAA,mG;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2O;EACAA,mP;EACAA,uP;EACAA,+O;EALYA,oF;;;;;;;;;;;;;AAAA;qE;AAAA;uE;AAAA;wE;AAAA;sE;AAAA;6E;AAEZ;0E;AACA;4E;AACA;6E;AACA;;",
+"sources":["Margin.java"],
+"names":["org.pepstock.charba.client.geo.Margin$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.Margin$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Margin$Property.<init>","org.pepstock.charba.client.geo.Margin$Property.value","org.pepstock.charba.client.geo.Margin$Property.valueOf","org.pepstock.charba.client.geo.Margin$Property.values","org.pepstock.charba.client.geo.Margin$Property.<synthetic: getter>","org.pepstock.charba.client.geo.Margin$Property.<clinit>"]
+}
+

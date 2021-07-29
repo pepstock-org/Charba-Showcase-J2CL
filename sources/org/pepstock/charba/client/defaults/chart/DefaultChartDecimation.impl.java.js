@@ -40,6 +40,10 @@ class DefaultChartDecimation extends j_l_Object {
  m_getSamples__() {
   return this.f_decimation__org_pepstock_charba_client_defaults_chart_DefaultChartDecimation_.m_getSamples__();
  }
+ /** @override @return {number} */
+ m_getThreshold__() {
+  return this.f_decimation__org_pepstock_charba_client_defaults_chart_DefaultChartDecimation_.m_getThreshold__();
+ }
  
  static $clinit() {
   DefaultChartDecimation.$clinit = () =>{};

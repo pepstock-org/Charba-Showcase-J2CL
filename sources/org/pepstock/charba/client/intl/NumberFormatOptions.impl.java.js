@@ -23,6 +23,7 @@ let MeasureUnitDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.en
 let Notation = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Notation$impl');
 let SignDisplay = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.SignDisplay$impl');
 let Style = goog.forwardDeclare('org.pepstock.charba.client.intl.enums.Style$impl');
+let NumberFormatItem = goog.forwardDeclare('org.pepstock.charba.client.items.NumberFormatItem$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
@@ -230,6 +231,16 @@ class NumberFormatOptions extends BaseFormatOptions {
  /** @override @return {number} */
  m_getMaximumSignificantDigits__() {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__int(Property.f_MAXIMUM_SIGNIFICANT_DIGITS__org_pepstock_charba_client_intl_NumberFormatOptions_Property, /**@type {IsDefaultNumberFormatOptions}*/ ($Casts.$to(this.m_getDefaultValues__(), IsDefaultNumberFormatOptions)).m_getMaximumSignificantDigits__());
+ }
+ //Default method forwarding stub.
+ /** @override @return {NumberFormatItem} */
+ m_create__() {
+  return IsDefaultNumberFormatOptions.m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this);
+ }
+ //Default method forwarding stub.
+ /** @override @return {NumberFormatItem} */
+ m_create__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(/** IsDefaultNumberFormatOptions */ arg0) {
+  return IsDefaultNumberFormatOptions.m_create__$default__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions__org_pepstock_charba_client_defaults_IsDefaultNumberFormatOptions(this, arg0);
  }
  /** @return {NumberFormatOptionsFactory} */
  static get f_FACTORY__org_pepstock_charba_client_intl_NumberFormatOptions() {

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"AxisCalculateLabelRotationCallback.impl.java.js",
+"lineCount":19,
+"mappings":"A;;;;;;;;;;MAyBiB,kC;;CAQX,0H,aAAoCA,I,kBAAeC,I;;CAQnD,yH,aAAmCD,I,kBAAeC,I;;QAhBvC,O;EAAAC,qD;EAAAA;",
+"sources":["AxisCalculateLabelRotationCallback.java"],
+"names":["axis","item","org.pepstock.charba.client.callbacks.AxisCalculateLabelRotationCallback.<clinit>"]
+}
+

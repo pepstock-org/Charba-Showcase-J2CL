@@ -7,6 +7,8 @@ goog.require('java.util.List');
 goog.require('nativebootstrap.Equality');
 goog.require('nativebootstrap.Util');
 goog.require('org.pepstock.charba.client.colors.IsColor');
+goog.require('org.pepstock.charba.client.commons.ArrayCanvas.$Overlay');
+goog.require('org.pepstock.charba.client.commons.ArrayCanvasList');
 goog.require('org.pepstock.charba.client.commons.ArrayDouble.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayDoubleArray.$Overlay');
 goog.require('org.pepstock.charba.client.commons.ArrayDoubleArrayList');
@@ -27,6 +29,7 @@ goog.require('org.pepstock.charba.client.commons.NativeArrayContainerFactory');
 goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.NativeObjectContainer');
 goog.require('org.pepstock.charba.client.commons.NativeObjectContainerFactory');
+goog.require('org.pepstock.charba.client.dom.elements.Canvas.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Img.$Overlay');
 
 const ArrayListHelper = goog.require('org.pepstock.charba.client.commons.ArrayListHelper$impl');

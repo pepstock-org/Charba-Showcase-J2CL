@@ -21,12 +21,14 @@ let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectT
 let CapStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.CapStyle$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
 let BorderRadiusItem = goog.forwardDeclare('org.pepstock.charba.client.items.BorderRadiusItem$impl');
 let JsItemsHelper = goog.forwardDeclare('org.pepstock.charba.client.items.JsItemsHelper$impl');
 let LegendItemFactory = goog.forwardDeclare('org.pepstock.charba.client.items.LegendItem.LegendItemFactory$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.LegendItem.Property$impl');
 let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
+let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
 class LegendItem extends AbstractNode {
  /** @protected */
@@ -217,23 +219,30 @@ class LegendItem extends AbstractNode {
  m_getRotation__() {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_ROTATION__org_pepstock_charba_client_items_LegendItem_Property, Defaults.m_get__().m_getGlobal__().m_getElements__().m_getPoint__().m_getRotation__());
  }
- /** @return {boolean} */
- m_isPointStyleAsImage__() {
-  return this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_POINT_STYLE__org_pepstock_charba_client_items_LegendItem_Property, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType);
+ /** @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return PointStyleType.m_getType__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_Key(this, Property.f_POINT_STYLE__org_pepstock_charba_client_items_LegendItem_Property);
  }
  /** @return {PointStyle} */
  m_getPointStyle__() {
-  if (!this.m_isPointStyleAsImage__()) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_STRING__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
    return /**@type {PointStyle}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_POINT_STYLE__org_pepstock_charba_client_items_LegendItem_Property, PointStyle.m_values__(), Defaults.m_get__().m_getGlobal__().m_getElements__().m_getPoint__().m_getPointStyle__()), PointStyle));
   }
   return Defaults.m_get__().m_getGlobal__().m_getElements__().m_getPoint__().m_getPointStyle__();
  }
  /** @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {
-  if (this.m_isPointStyleAsImage__()) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_IMAGE__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
    return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(Property.f_POINT_STYLE__org_pepstock_charba_client_items_LegendItem_Property, Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined);
   }
   return Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined;
+ }
+ /** @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_CANVAS__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
+   return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(Property.f_POINT_STYLE__org_pepstock_charba_client_items_LegendItem_Property, Undefined.f_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined);
+  }
+  return Undefined.f_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined;
  }
  /** @return {?} */
  m_nativeObject___$pp_org_pepstock_charba_client_items() {
@@ -269,12 +278,14 @@ class LegendItem extends AbstractNode {
   CapStyle = goog.module.get('org.pepstock.charba.client.enums.CapStyle$impl');
   JoinStyle = goog.module.get('org.pepstock.charba.client.enums.JoinStyle$impl');
   PointStyle = goog.module.get('org.pepstock.charba.client.enums.PointStyle$impl');
+  PointStyleType = goog.module.get('org.pepstock.charba.client.enums.PointStyleType$impl');
   BorderRadiusItem = goog.module.get('org.pepstock.charba.client.items.BorderRadiusItem$impl');
   JsItemsHelper = goog.module.get('org.pepstock.charba.client.items.JsItemsHelper$impl');
   LegendItemFactory = goog.module.get('org.pepstock.charba.client.items.LegendItem.LegendItemFactory$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.LegendItem.Property$impl');
   Undefined = goog.module.get('org.pepstock.charba.client.items.Undefined$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
+  $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }
 }
 /**@private {LegendItemFactory}*/

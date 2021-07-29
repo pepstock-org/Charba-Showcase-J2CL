@@ -8,6 +8,7 @@ goog.require('org.pepstock.charba.client.commons.AbstractArrayList');
 goog.require('org.pepstock.charba.client.commons.ArrayImage.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Img.$Overlay');
 goog.require('org.pepstock.charba.client.items.Undefined');
+goog.require('vmbootstrap.Arrays');
 goog.require('vmbootstrap.Casts');
 
 const ArrayImageList = goog.require('org.pepstock.charba.client.commons.ArrayImageList$impl');

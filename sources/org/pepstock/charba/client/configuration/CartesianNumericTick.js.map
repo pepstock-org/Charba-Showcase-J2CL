@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"CartesianNumericTick.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;;;MAwBe,oB;;CAAA,W;EAAAA,Q;EAAAA;OAGgB,iFAHhBA,C;;;CAUd,mH,aAA0BC,I;EACzBC,wH;EACAA;GAAiDC,sGAAjDD;M;;;CAS2B,mB;EAC3BE,8F;;;QAtBa,O;EAAAC,uC;EAAAA,oC;EAAAA;",
+"lineCount":55,
+"mappings":"A;;;;;;;;;;;;;;;;MAwBe,oB;;CAAA,W;EAAAA,Q;EAAAA;OAGgB,iFAHhBA,C;;;CAUd,mH,aAA0BC,I;EACzBC,wH;EAEAA;GAAiDC,sGAAjDD;M;;;CAS2B,mB;EAC3BE,8F;;;;CAvBa,2B;EAAAC,uH;;;;CAAA,4E;EAAAC,yK;;;;CAAA,sE;EAAAA,mK;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA,wB;EAAAA;",
 "sources":["CartesianNumericTick.java"],
-"names":["org.pepstock.charba.client.configuration.CartesianNumericTick.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.CartesianNumericTick.<init>","org.pepstock.charba.client.configuration.CartesianNumericTick.<lambda in <init>>","org.pepstock.charba.client.configuration.CartesianNumericTick.getNumberFormat","org.pepstock.charba.client.configuration.CartesianNumericTick.<clinit>"]
+"names":["org.pepstock.charba.client.configuration.CartesianNumericTick.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.CartesianNumericTick.<init>","org.pepstock.charba.client.configuration.CartesianNumericTick.<lambda in <init>>","org.pepstock.charba.client.configuration.CartesianNumericTick.getNumberFormat","org.pepstock.charba.client.configuration.CartesianNumericTick.getNumberFormatCallback","org.pepstock.charba.client.configuration.CartesianNumericTick.setNumberFormat","org.pepstock.charba.client.configuration.CartesianNumericTick.<clinit>"]
 }
 

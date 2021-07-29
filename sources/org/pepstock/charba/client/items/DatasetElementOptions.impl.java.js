@@ -28,6 +28,8 @@ let Fill = goog.forwardDeclare('org.pepstock.charba.client.enums.Fill$impl');
 let IsFill = goog.forwardDeclare('org.pepstock.charba.client.enums.IsFill$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
 let PointStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyle$impl');
+let PointStyleType = goog.forwardDeclare('org.pepstock.charba.client.enums.PointStyleType$impl');
+let Stepped = goog.forwardDeclare('org.pepstock.charba.client.enums.Stepped$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.items.DatasetElementOptions.Property$impl');
 let JsItemsHelper = goog.forwardDeclare('org.pepstock.charba.client.items.JsItemsHelper$impl');
 let TooltipLabelColor = goog.forwardDeclare('org.pepstock.charba.client.items.TooltipLabelColor$impl');
@@ -224,9 +226,13 @@ class DatasetElementOptions extends NativeObjectContainer {
  m_getCubicInterpolationMode__() {
   return /**@type {CubicInterpolationMode}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_items_DatasetElementOptions_Property, CubicInterpolationMode.m_values__(), Defaults.m_get__().m_getGlobal__().m_getElements__().m_getLine__().m_getCubicInterpolationMode__()), CubicInterpolationMode));
  }
- /** @return {boolean} */
+ /** @return {Stepped} */
  m_isStepped__() {
-  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_STEPPED__org_pepstock_charba_client_items_DatasetElementOptions_Property, Defaults.m_get__().m_getGlobal__().m_getElements__().m_getLine__().m_isStepped__());
+  if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_STEPPED__org_pepstock_charba_client_items_DatasetElementOptions_Property, ObjectType.f_BOOLEAN__org_pepstock_charba_client_commons_ObjectType)) {
+   return Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped;
+  } else {
+   return /**@type {Stepped}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_STEPPED__org_pepstock_charba_client_items_DatasetElementOptions_Property, Stepped.m_values__(), Defaults.m_get__().m_getGlobal__().m_getElements__().m_getLine__().m_getStepped__()), Stepped));
+  }
  }
  /** @return {IsFill} */
  m_getFill__() {
@@ -260,20 +266,27 @@ class DatasetElementOptions extends NativeObjectContainer {
  m_getRotation__() {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__double(Property.f_ROTATION__org_pepstock_charba_client_items_DatasetElementOptions_Property, Defaults.m_get__().m_getGlobal__().m_getElements__().m_getPoint__().m_getRotation__());
  }
- /** @return {boolean} */
- m_isPointStyleAsImage__() {
-  return this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_POINT_STYLE__org_pepstock_charba_client_items_DatasetElementOptions_Property, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType);
+ /** @return {PointStyleType} */
+ m_getPointStyleType__() {
+  return PointStyleType.m_getType__org_pepstock_charba_client_commons_NativeObjectContainer__org_pepstock_charba_client_commons_Key(this, Property.f_POINT_STYLE__org_pepstock_charba_client_items_DatasetElementOptions_Property);
  }
  /** @return {HTMLImageElement} */
  m_getPointStyleAsImage__() {
-  if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_POINT_STYLE__org_pepstock_charba_client_items_DatasetElementOptions_Property, ObjectType.f_OBJECT__org_pepstock_charba_client_commons_ObjectType)) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_IMAGE__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
    return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Img(Property.f_POINT_STYLE__org_pepstock_charba_client_items_DatasetElementOptions_Property, Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined);
   }
   return Undefined.f_IMAGE_ELEMENT__org_pepstock_charba_client_items_Undefined;
  }
+ /** @return {HTMLCanvasElement} */
+ m_getPointStyleAsCanvas__() {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_CANVAS__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
+   return this.m_getValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_dom_elements_Canvas(Property.f_POINT_STYLE__org_pepstock_charba_client_items_DatasetElementOptions_Property, Undefined.f_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined);
+  }
+  return Undefined.f_CANVAS_ELEMENT__org_pepstock_charba_client_items_Undefined;
+ }
  /** @return {PointStyle} */
  m_getPointStyle__() {
-  if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_POINT_STYLE__org_pepstock_charba_client_items_DatasetElementOptions_Property, ObjectType.f_STRING__org_pepstock_charba_client_commons_ObjectType)) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_STRING__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
    return /**@type {PointStyle}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_POINT_STYLE__org_pepstock_charba_client_items_DatasetElementOptions_Property, PointStyle.m_values__(), Defaults.m_get__().m_getGlobal__().m_getElements__().m_getPoint__().m_getPointStyle__()), PointStyle));
   }
   return Defaults.m_get__().m_getGlobal__().m_getElements__().m_getPoint__().m_getPointStyle__();
@@ -281,8 +294,10 @@ class DatasetElementOptions extends NativeObjectContainer {
  /** @return {TooltipLabelPointStyle} */
  m_createTooltipLabelPointStyle__() {
   let result = TooltipLabelPointStyle.$create__();
-  if (this.m_isPointStyleAsImage__()) {
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_IMAGE__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
    result.m_setPointStyle__org_pepstock_charba_client_dom_elements_Img(this.m_getPointStyleAsImage__());
+  } else if ($Objects.m_equals__java_lang_Object__java_lang_Object(PointStyleType.f_CANVAS__org_pepstock_charba_client_enums_PointStyleType, this.m_getPointStyleType__())) {
+   result.m_setPointStyle__org_pepstock_charba_client_dom_elements_Canvas(this.m_getPointStyleAsCanvas__());
   } else {
    result.m_setPointStyle__org_pepstock_charba_client_enums_PointStyle(this.m_getPointStyle__());
   }
@@ -346,6 +361,8 @@ class DatasetElementOptions extends NativeObjectContainer {
   IsFill = goog.module.get('org.pepstock.charba.client.enums.IsFill$impl');
   JoinStyle = goog.module.get('org.pepstock.charba.client.enums.JoinStyle$impl');
   PointStyle = goog.module.get('org.pepstock.charba.client.enums.PointStyle$impl');
+  PointStyleType = goog.module.get('org.pepstock.charba.client.enums.PointStyleType$impl');
+  Stepped = goog.module.get('org.pepstock.charba.client.enums.Stepped$impl');
   Property = goog.module.get('org.pepstock.charba.client.items.DatasetElementOptions.Property$impl');
   JsItemsHelper = goog.module.get('org.pepstock.charba.client.items.JsItemsHelper$impl');
   TooltipLabelColor = goog.module.get('org.pepstock.charba.client.items.TooltipLabelColor$impl');

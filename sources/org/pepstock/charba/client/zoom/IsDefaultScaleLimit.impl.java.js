@@ -10,8 +10,22 @@ let Undefined = goog.forwardDeclare('org.pepstock.charba.client.items.Undefined$
  * @extends {IsDefaultScaleRange}
  */
 class IsDefaultScaleLimit {
+ /** @abstract @return {boolean} */
+ m_isOriginalMin__() {}
+ /** @abstract @return {boolean} */
+ m_isOriginalMax__() {}
  /** @abstract @return {number} */
  m_getMinRange__() {}
+ /** @return {boolean} */
+ static m_isOriginalMin__$default__org_pepstock_charba_client_zoom_IsDefaultScaleLimit(/** !IsDefaultScaleLimit */ $thisArg) {
+  IsDefaultScaleLimit.$clinit();
+  return false;
+ }
+ /** @return {boolean} */
+ static m_isOriginalMax__$default__org_pepstock_charba_client_zoom_IsDefaultScaleLimit(/** !IsDefaultScaleLimit */ $thisArg) {
+  IsDefaultScaleLimit.$clinit();
+  return false;
+ }
  /** @return {number} */
  static m_getMinRange__$default__org_pepstock_charba_client_zoom_IsDefaultScaleLimit(/** !IsDefaultScaleLimit */ $thisArg) {
   IsDefaultScaleLimit.$clinit();

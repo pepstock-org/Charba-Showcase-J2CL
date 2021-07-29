@@ -8,6 +8,7 @@ let IndexOutOfBoundsException = goog.forwardDeclare('java.lang.IndexOutOfBoundsE
 let Iterable = goog.forwardDeclare('java.lang.Iterable$impl');
 let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let UnsupportedOperationException = goog.forwardDeclare('java.lang.UnsupportedOperationException$impl');
+let Arrays = goog.forwardDeclare('java.util.Arrays$impl');
 let Collection = goog.forwardDeclare('java.util.Collection$impl');
 let Comparator = goog.forwardDeclare('java.util.Comparator$impl');
 let Iterator = goog.forwardDeclare('java.util.Iterator$impl');
@@ -56,13 +57,9 @@ class AbstractArrayList extends j_l_Object {
  m_iterator__() {
   return /**@type {!IteratorImpl<E>}*/ (IteratorImpl.$create__java_util_List(this));
  }
- /** @override @return {Array<*>} */
- toArray() {
-  throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(AbstractArrayList.f_UNABLE_COPY_ARRAY_MESSAGE__org_pepstock_charba_client_commons_AbstractArrayList));
- }
  /** @override @template T @return {Array<T>} */
- m_toArray__arrayOf_java_lang_Object(/** Array<T> */ array) {
-  throw $Exceptions.toJs(UnsupportedOperationException.$create__java_lang_String(AbstractArrayList.f_UNABLE_COPY_ARRAY_MESSAGE__org_pepstock_charba_client_commons_AbstractArrayList));
+ m_toArray__arrayOf_java_lang_Object(/** Array<T> */ a) {
+  return /**@type {List<*>}*/ (Arrays.m_asList__arrayOf_java_lang_Object(this.toArray())).m_toArray__arrayOf_java_lang_Object(a);
  }
  /** @override @return {ListIterator<E>} */
  m_listIterator__() {
@@ -176,6 +173,7 @@ class AbstractArrayList extends j_l_Object {
   Iterable = goog.module.get('java.lang.Iterable$impl');
   j_l_String = goog.module.get('java.lang.String$impl');
   UnsupportedOperationException = goog.module.get('java.lang.UnsupportedOperationException$impl');
+  Arrays = goog.module.get('java.util.Arrays$impl');
   Collection = goog.module.get('java.util.Collection$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   $Overlay = goog.module.get('org.pepstock.charba.client.commons.Array.$Overlay$impl');

@@ -26,6 +26,7 @@ let Canvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elemen
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay$impl');
 let CanvasPatternItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay$impl');
 let Context2dItem_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
+let IsArea = goog.forwardDeclare('org.pepstock.charba.client.items.IsArea$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Exceptions = goog.forwardDeclare('vmbootstrap.Exceptions$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
@@ -139,6 +140,7 @@ class CanvasObjectFactory extends j_l_Object {
   let y1 = 0;
   let area = this.m_getArea__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_colors_Gradient(chart, gradient);
   Checker.m_checkIfValid__java_lang_Object__java_lang_String(area, "Area for linear gradient");
+  Checker.m_assertCheck__boolean__java_lang_String(IsArea.m_isConsistent__org_pepstock_charba_client_items_IsArea(area), "Area for linear gradient is not consistent");
   let top = area.m_getTop__();
   let bottom = area.m_getBottom__();
   let left = area.m_getLeft__();
@@ -271,6 +273,7 @@ class CanvasObjectFactory extends j_l_Object {
   $Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay$impl');
   CanvasPatternItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay$impl');
   Context2dItem_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Context2dItem.$Overlay$impl');
+  IsArea = goog.module.get('org.pepstock.charba.client.items.IsArea$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Exceptions = goog.module.get('vmbootstrap.Exceptions$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');

@@ -1,9 +1,9 @@
 {
 "version":3,
 "file":"ScaleContext.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;;;;;;;MAoCmB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAmCC,0DAnCDA,C;EAAAA;OAqCA,2DArCAA,C;EAAAA;OAuCI,0DAvCJA,C;;;QA+CX,uG,aAAkBC,I,WAAmBC,Y;EAArCC,uB;EAAAA,mC;EAAAA,uL;EAAAA,iB;;;CAAA,wJ,aAAkBF,I,WAAmBC,Y;EAC3CE,6H;EADMA,oE;EAINA,gM;;;CAQiB,W;EACjBC,uE;;;CAQU,Y;EACVC,mN;;;CAQgB,Y;EAEhBC;GAECA,kXAFDA;G;EAIAA,wE;;;CAQoB,W;EAEpBC;GACCA,0UADDA;G;EAGAA,uE;;;CASiB,gE,YAA2BC,Q;EAE5CC;GAECA,2IAFDA;G;EAMAA,a;;;CAjHiB,4D;EAqClBN,wE;EAEAA,uE;;;QAvCkB,O;EAAAO,+B;EAAAA,4B;EAAAA;",
+"lineCount":83,
+"mappings":"A;;;;;;;;;;;;;;;;MAsCmB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAoCC,0DApCDA,C;EAAAA;OAsCA,2DAtCAA,C;EAAAA;OAwCI,0DAxCJA,C;;;QAgDX,uG,aAAkBC,I,WAAmBC,Y;EAArCC,uB;EAAAA,mC;EAAAA,uL;EAAAA,iB;;;CAAA,wJ,aAAkBF,I,WAAmBC,Y;EAC3CE,6H;EADMA,oE;EAINA,gM;;;CAQiB,W;EACjBC,uE;;;CAQU,Y;EACVC,mN;;;CAQgB,Y;EAEhBC;GAECA,kXAFDA;G;EAIAA,wE;;;CAQoB,W;EAEpBC;GACCA,0UADDA;G;EAGAA,uE;;;CAQa,Y;EACbC,+N;;;CASiB,gE,YAA2BC,Q;EAE5CC;GAECA,2IAFDA;G;EAMAA,a;;;CA3HiB,4D;EAsClBP,wE;EAEAA,uE;;;QAxCkB,O;EAAAQ,+B;EAAAA,4B;EAAAA;",
 "sources":["ScaleContext.java"],
-"names":["org.pepstock.charba.client.callbacks.ScaleContext.<synthetic: ctor_js>","axis","nativeObject","org.pepstock.charba.client.callbacks.ScaleContext.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.ScaleContext.<init>","org.pepstock.charba.client.callbacks.ScaleContext.getAxis","org.pepstock.charba.client.callbacks.ScaleContext.getIndex","org.pepstock.charba.client.callbacks.ScaleContext.getScale","org.pepstock.charba.client.callbacks.ScaleContext.getTick","property","org.pepstock.charba.client.callbacks.ScaleContext.checkIfPropertyIsValid","org.pepstock.charba.client.callbacks.ScaleContext.<clinit>"]
+"names":["org.pepstock.charba.client.callbacks.ScaleContext.<synthetic: ctor_js>","axis","nativeObject","org.pepstock.charba.client.callbacks.ScaleContext.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.ScaleContext.<init>","org.pepstock.charba.client.callbacks.ScaleContext.getAxis","org.pepstock.charba.client.callbacks.ScaleContext.getIndex","org.pepstock.charba.client.callbacks.ScaleContext.getScale","org.pepstock.charba.client.callbacks.ScaleContext.getTick","org.pepstock.charba.client.callbacks.ScaleContext.getLabel","property","org.pepstock.charba.client.callbacks.ScaleContext.checkIfPropertyIsValid","org.pepstock.charba.client.callbacks.ScaleContext.<clinit>"]
 }
 

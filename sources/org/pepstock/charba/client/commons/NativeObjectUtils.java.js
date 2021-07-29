@@ -12,6 +12,7 @@ goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.NativeObjectHashing');
 goog.require('org.pepstock.charba.client.commons.ObjectType');
 goog.require('org.pepstock.charba.client.dom.BaseNativeEvent.$Overlay');
+goog.require('org.pepstock.charba.client.dom.elements.Canvas.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Img.$Overlay');

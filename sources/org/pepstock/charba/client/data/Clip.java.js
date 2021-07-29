@@ -6,6 +6,7 @@ goog.require('org.pepstock.charba.client.commons.NativeObject.$Overlay');
 goog.require('org.pepstock.charba.client.commons.NativeObjectContainer');
 goog.require('org.pepstock.charba.client.commons.ObjectType');
 goog.require('org.pepstock.charba.client.enums.Position');
+goog.require('org.pepstock.charba.client.items.IsArea');
 goog.require('org.pepstock.charba.client.items.Undefined');
 goog.require('vmbootstrap.Objects');
 

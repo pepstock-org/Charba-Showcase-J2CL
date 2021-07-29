@@ -4,6 +4,7 @@ goog.require('java.lang.Boolean');
 goog.require('java.lang.Double');
 goog.require('java.lang.Object');
 goog.require('nativebootstrap.Util');
+goog.require('org.pepstock.charba.client.dom.elements.Canvas.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Img.$Overlay');
 
 const Undefined = goog.require('org.pepstock.charba.client.items.Undefined$impl');

@@ -3,7 +3,6 @@ goog.module('org.pepstock.charba.client.commons.ArrayEnumList$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 const AbstractArrayContainerList = goog.require('org.pepstock.charba.client.commons.AbstractArrayContainerList$impl');
 
-let j_l_String = goog.forwardDeclare('java.lang.String$impl');
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let AbstractArrayList = goog.forwardDeclare('org.pepstock.charba.client.commons.AbstractArrayList$impl');
 let $Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
@@ -90,7 +89,7 @@ class ArrayEnumList extends AbstractArrayContainerList {
  getAtIndex(/** number */ index) {
   if (this.m_checkRange__int(index)) {
    let value = $Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayString__int(this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_, index);
-   return this.m_getByName__java_lang_String_$p_org_pepstock_charba_client_commons_ArrayEnumList(value);
+   return Key.m_getKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(this.f_definedValues__org_pepstock_charba_client_commons_ArrayEnumList_, value);
   }
   return null;
  }
@@ -98,7 +97,7 @@ class ArrayEnumList extends AbstractArrayContainerList {
  setAtIndex(/** number */ index, /** E */ element) {
   if (Key.m_isValid__org_pepstock_charba_client_commons_Key(element) && this.m_checkRange__int(index)) {
    let old = $Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayString__int(this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_, index);
-   let oldValue = this.m_getByName__java_lang_String_$p_org_pepstock_charba_client_commons_ArrayEnumList(old);
+   let oldValue = Key.m_getKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(this.f_definedValues__org_pepstock_charba_client_commons_ArrayEnumList_, old);
    $Overlay.m_set__$devirt__org_pepstock_charba_client_commons_ArrayString__int__java_lang_String(this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_, index, /**@type {Key}*/ (element).m_value__());
    return oldValue;
   }
@@ -114,7 +113,7 @@ class ArrayEnumList extends AbstractArrayContainerList {
  removeAtIndex(/** number */ index) {
   if (this.m_checkRange__int(index)) {
    let value = $Overlay.m_remove__$devirt__org_pepstock_charba_client_commons_ArrayString__int(this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_, index);
-   return this.m_getByName__java_lang_String_$p_org_pepstock_charba_client_commons_ArrayEnumList(value);
+   return Key.m_getKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(this.f_definedValues__org_pepstock_charba_client_commons_ArrayEnumList_, value);
   }
   return null;
  }
@@ -138,23 +137,11 @@ class ArrayEnumList extends AbstractArrayContainerList {
   }
   return AbstractArrayList.f_NOT_FOUND__org_pepstock_charba_client_commons_AbstractArrayList;
  }
- /** @return {E} */
- m_getByName__java_lang_String_$p_org_pepstock_charba_client_commons_ArrayEnumList(/** ?string */ name) {
-  for (let $array = this.f_definedValues__org_pepstock_charba_client_commons_ArrayEnumList_, $index = 0; $index < $array.length; $index++) {
-   let value = $array[$index];
-   {
-    if (j_l_String.m_equalsIgnoreCase__java_lang_String__java_lang_String(/**@type {Key}*/ (value).m_value__(), name)) {
-     return value;
-    }
-   }
-  }
-  return null;
- }
  /** @override @return {Array<*>} */
  toArray() {
   let toArray = new Array(this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_.length);
   for (let i = 0; i < this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_.length; i = i + 1 | 0) {
-   $Arrays.$set(toArray, i, this.m_getByName__java_lang_String_$p_org_pepstock_charba_client_commons_ArrayEnumList($Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayString__int(this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_, i)));
+   $Arrays.$set(toArray, i, Key.m_getKeyByValue__arrayOf_org_pepstock_charba_client_commons_Key__java_lang_String(this.f_definedValues__org_pepstock_charba_client_commons_ArrayEnumList_, $Overlay.m_get__$devirt__org_pepstock_charba_client_commons_ArrayString__int(this.f_array__org_pepstock_charba_client_commons_ArrayEnumList_, i)));
   }
   return toArray;
  }
@@ -170,7 +157,6 @@ class ArrayEnumList extends AbstractArrayContainerList {
  }
  
  static $loadModules() {
-  j_l_String = goog.module.get('java.lang.String$impl');
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   AbstractArrayList = goog.module.get('org.pepstock.charba.client.commons.AbstractArrayList$impl');
   $Overlay = goog.module.get('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');

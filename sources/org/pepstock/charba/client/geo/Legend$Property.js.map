@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Legend$Property.impl.java.js",
+"lineCount":125,
+"mappings":"A;;;;;;;;;;;;;;MAoDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAUS,wDAVTA,C;;;QAiBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iI;EAAAA,iB;;;CAAA,8F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;;;CASa,S;EACbC,qE;;;QA5BW,2B;EAAAC,mB;EAAAA;GAAAA,iIAAAA;G;EAAAA,yH;;;QAAA,U;EAAAC,mB;EAAAA,ggB;;;QAEZ,8D;EAAAC,uG;;;QACA,2D;EAAAA,oG;;;QACA,4D;EAAAA,qG;;;QACA,2D;EAAAA,oG;;;QACA,qE;EAAAA,8G;;;QACA,4D;EAAAA,qG;;;QAPY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+P;EACAA,mP;EACAA,uP;EACAA,mP;EACAA,0R;EACAA,uP;EAPYA,oF;;;;;;;;;;;;;AAAA;0E;AAAA;uE;AAAA;wE;AAAA;uE;AAAA;iF;AAAA;wE;AAAA;6E;AAEZ;+E;AACA;4E;AACA;6E;AACA;4E;AACA;sF;AACA;;",
+"sources":["Legend.java"],
+"names":["org.pepstock.charba.client.geo.Legend$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.Legend$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Legend$Property.<init>","org.pepstock.charba.client.geo.Legend$Property.value","org.pepstock.charba.client.geo.Legend$Property.valueOf","org.pepstock.charba.client.geo.Legend$Property.values","org.pepstock.charba.client.geo.Legend$Property.<synthetic: getter>","org.pepstock.charba.client.geo.Legend$Property.<clinit>"]
+}
+

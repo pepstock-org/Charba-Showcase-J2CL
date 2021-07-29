@@ -17,6 +17,7 @@ goog.require('org.pepstock.charba.client.dom.elements.CanvasGradientItem.$Overla
 goog.require('org.pepstock.charba.client.dom.elements.CanvasPatternItem.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.Img.$Overlay');
 goog.require('org.pepstock.charba.client.dom.elements.TextMetricsItem.$Overlay');
+goog.require('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation');
 goog.require('org.pepstock.charba.client.dom.enums.Repetition');
 goog.require('org.pepstock.charba.client.dom.enums.TextBaseline');
 goog.require('org.pepstock.charba.client.enums.CapStyle');

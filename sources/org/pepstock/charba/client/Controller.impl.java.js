@@ -35,6 +35,8 @@ class Controller {
  }
  /** @abstract @return {ControllerType} */
  m_getType__() {}
+ /** @abstract @return {boolean} */
+ m_mustBeRegistered__() {}
  /** @abstract */
  m_onBeforeInitialize__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** CharbaControllerContext */ context, /** IsChart */ chart) {}
  /** @abstract */
@@ -59,6 +61,11 @@ class Controller {
  static $adapt(/** ?function():ControllerType */ fn) {
   Controller.$clinit();
   return new $LambdaAdaptor(fn);
+ }
+ /** @return {boolean} */
+ static m_mustBeRegistered__$default__org_pepstock_charba_client_Controller(/** !Controller */ $thisArg) {
+  Controller.$clinit();
+  return true;
  }
  
  static m_onBeforeInitialize__$default__org_pepstock_charba_client_Controller__org_pepstock_charba_client_controllers_ControllerContext__org_pepstock_charba_client_IsChart(/** !Controller */ $thisArg, /** CharbaControllerContext */ context, /** IsChart */ chart) {

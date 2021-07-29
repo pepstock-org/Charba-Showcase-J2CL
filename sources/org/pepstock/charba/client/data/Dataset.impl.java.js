@@ -158,7 +158,7 @@ class Dataset extends AbstractNode {
  }
  /** @return {number} */
  m_getDataCount__() {
-  let array = this.m_getArrayValue__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty);
+  let array = this.m_getArrayValue__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty);
   return !$Equality.$same(array, null) ? array.length : 0;
  }
  /** @return {number} */
@@ -387,6 +387,30 @@ class Dataset extends AbstractNode {
   return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(InternalProperty.f_HIDDEN__org_pepstock_charba_client_data_Dataset_InternalProperty, Dataset.f_DEFAULT_HIDDEN__org_pepstock_charba_client_data_Dataset);
  }
  
+ m_setParsing__boolean(/** boolean */ parsing) {
+  if (!parsing) {
+   this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(InternalProperty.f_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty, parsing);
+  } else {
+   this.m_remove__org_pepstock_charba_client_commons_Key(InternalProperty.f_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty);
+  }
+ }
+ /** @return {boolean} */
+ m_isParsing__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(InternalProperty.f_PARSING__org_pepstock_charba_client_data_Dataset_InternalProperty, Dataset.f_DEFAULT_PARSING__org_pepstock_charba_client_data_Dataset);
+ }
+ 
+ m_setNormalized__boolean(/** boolean */ normalized) {
+  if (normalized) {
+   this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(InternalProperty.f_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty, normalized);
+  } else {
+   this.m_remove__org_pepstock_charba_client_commons_Key(InternalProperty.f_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty);
+  }
+ }
+ /** @return {boolean} */
+ m_isNormalized__() {
+  return this.m_getValue__org_pepstock_charba_client_commons_Key__boolean(InternalProperty.f_NORMALIZED__org_pepstock_charba_client_data_Dataset_InternalProperty, Dataset.f_DEFAULT_NORMALIZED__org_pepstock_charba_client_data_Dataset);
+ }
+ 
  m_setLabel__java_lang_String(/** ?string */ label) {
   this.m_setValue__org_pepstock_charba_client_commons_Key__java_lang_String(InternalProperty.f_LABEL__org_pepstock_charba_client_data_Dataset_InternalProperty, label);
  }
@@ -423,14 +447,14 @@ class Dataset extends AbstractNode {
  
  m_setData__arrayOf_double(/** Array<number> */ values) {
   this.m_checkIfDataPointsMustBeUsed___$pp_org_pepstock_charba_client_data();
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayDouble_$Overlay.m_fromOrNull__arrayOf_double(values));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayDouble_$Overlay.m_fromOrNull__arrayOf_double(values));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  
  m_setData__java_util_List(/** List<?number> */ values) {
   this.m_checkIfDataPointsMustBeUsed___$pp_org_pepstock_charba_client_data();
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayDouble_$Overlay.m_fromOrNull__java_util_List(values));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayDouble_$Overlay.m_fromOrNull__java_util_List(values));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  /** @return {List<?number>} */
  m_getData__() {
@@ -439,13 +463,13 @@ class Dataset extends AbstractNode {
  /** @return {List<?number>} */
  m_getData__boolean(/** boolean */ binding) {
   this.m_checkIfDataPointsMustBeUsed___$pp_org_pepstock_charba_client_data();
-  if (this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
-   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty), ArrayDouble_$Overlay));
+  if (this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
+   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty), ArrayDouble_$Overlay));
    return ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayDouble(array);
   }
   if (binding) {
    let result = ArrayDoubleList.$create__();
-   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayDouble_$Overlay.m_fromOrEmpty__java_util_List(result));
+   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayDouble_$Overlay.m_fromOrEmpty__java_util_List(result));
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, DataType.f_NUMBERS__org_pepstock_charba_client_enums_DataType);
    return result;
   }
@@ -453,13 +477,13 @@ class Dataset extends AbstractNode {
  }
  /** @return {List<DataPoint>} */
  m_getDataPoints__org_pepstock_charba_client_data_Dataset_DataPointFactory__boolean_$pp_org_pepstock_charba_client_data(/** DataPointFactory */ factory, /** boolean */ binding) {
-  if (this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_POINTS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
-   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty), ArrayObject_$Overlay));
+  if (this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_POINTS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
+   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty), ArrayObject_$Overlay));
    return /**@type {ArrayObjectContainerList<DataPoint>}*/ (ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayObject__org_pepstock_charba_client_commons_NativeObjectContainerFactory(array, factory));
   }
   if (binding) {
    let result = /**@type {!ArrayObjectContainerList<DataPoint>}*/ (ArrayObjectContainerList.$create__());
-   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayObject_$Overlay.m_fromOrEmpty__java_util_List(result));
+   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayObject_$Overlay.m_fromOrEmpty__java_util_List(result));
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, DataType.f_POINTS__org_pepstock_charba_client_enums_DataType);
    return result;
   }
@@ -467,23 +491,23 @@ class Dataset extends AbstractNode {
  }
  
  m_setInternalDataPoints__arrayOf_org_pepstock_charba_client_data_DataPoint_$pp_org_pepstock_charba_client_data(/** Array<DataPoint> */ datapoints) {
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayObject_$Overlay.m_fromOrNull__arrayOf_org_pepstock_charba_client_commons_NativeObjectContainer(datapoints));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayObject_$Overlay.m_fromOrNull__arrayOf_org_pepstock_charba_client_commons_NativeObjectContainer(datapoints));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  
  m_setInternalDataPoints__java_util_List_$pp_org_pepstock_charba_client_data(/** List<DataPoint> */ datapoints) {
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayObject_$Overlay.m_fromOrNull__java_util_List(datapoints));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayObject_$Overlay.m_fromOrNull__java_util_List(datapoints));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  /** @return {List<TimeSeriesItem>} */
  m_getTimeSeriesItems__org_pepstock_charba_client_data_Dataset_TimeSeriesItemFactory__boolean_$pp_org_pepstock_charba_client_data(/** TimeSeriesItemFactory */ factory, /** boolean */ binding) {
-  if (this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_POINTS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
-   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty), ArrayObject_$Overlay));
+  if (this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_POINTS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
+   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty), ArrayObject_$Overlay));
    return /**@type {ArrayObjectContainerList<TimeSeriesItem>}*/ (ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayObject__org_pepstock_charba_client_commons_NativeObjectContainerFactory(array, factory));
   }
   if (binding) {
    let result = /**@type {!ArrayObjectContainerList<TimeSeriesItem>}*/ (ArrayObjectContainerList.$create__());
-   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayObject_$Overlay.m_fromOrEmpty__java_util_List(result));
+   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayObject_$Overlay.m_fromOrEmpty__java_util_List(result));
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, DataType.f_POINTS__org_pepstock_charba_client_enums_DataType);
    return result;
   }
@@ -494,16 +518,16 @@ class Dataset extends AbstractNode {
   if (!$Equality.$same(timeSeriesItems, null)) {
    Arrays.m_sort__arrayOf_java_lang_Object__java_util_Comparator(timeSeriesItems, Dataset.f_COMPARATOR__org_pepstock_charba_client_data_Dataset_);
   }
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayObject_$Overlay.m_fromOrNull__arrayOf_org_pepstock_charba_client_commons_NativeObjectContainer(timeSeriesItems));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayObject_$Overlay.m_fromOrNull__arrayOf_org_pepstock_charba_client_commons_NativeObjectContainer(timeSeriesItems));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  
  m_setInternalTimeSeriesItems__java_util_List_$pp_org_pepstock_charba_client_data(/** List<TimeSeriesItem> */ timeSeriesItems) {
   if (!$Equality.$same(timeSeriesItems, null)) {
    Collections.m_sort__java_util_List__java_util_Comparator(timeSeriesItems, Dataset.f_COMPARATOR__org_pepstock_charba_client_data_Dataset_);
   }
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayObject_$Overlay.m_fromOrNull__java_util_List(timeSeriesItems));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayObject_$Overlay.m_fromOrNull__java_util_List(timeSeriesItems));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_POINTS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  /** @override @return {Dataset} */
  m_getDataset__() {
@@ -741,6 +765,10 @@ class Dataset extends AbstractNode {
 Dataset.f_COUNTER__org_pepstock_charba_client_data_Dataset_;
 /**@const {boolean}*/
 Dataset.f_DEFAULT_HIDDEN__org_pepstock_charba_client_data_Dataset = false;
+/**@const {boolean}*/
+Dataset.f_DEFAULT_PARSING__org_pepstock_charba_client_data_Dataset = true;
+/**@const {boolean}*/
+Dataset.f_DEFAULT_NORMALIZED__org_pepstock_charba_client_data_Dataset = false;
 /**@private {DataPointFactory}*/
 Dataset.$static_DATAPOINTS_FACTORY__org_pepstock_charba_client_data_Dataset;
 /**@private {TimeSeriesItemFactory}*/

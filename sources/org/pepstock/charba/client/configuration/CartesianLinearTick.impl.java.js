@@ -40,7 +40,7 @@ class CartesianLinearTick extends CartesianNumericTick {
   this.f_optionsHandler__org_pepstock_charba_client_configuration_CartesianLinearTick_ = LinearTickOptionsHandler.$create__org_pepstock_charba_client_configuration_Axis(axis);
  }
  /** @override @return {LinearTickOptionsHandler} */
- m_getLinearTickOptionsHandler__() {
+ m_getTickOptionsHandler__() {
   return this.f_optionsHandler__org_pepstock_charba_client_configuration_CartesianLinearTick_;
  }
  /** @return {TickCallback} */

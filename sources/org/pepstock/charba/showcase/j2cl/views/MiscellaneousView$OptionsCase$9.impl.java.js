@@ -5,7 +5,7 @@ const $Util = goog.require('nativebootstrap.Util$impl');
 const CaseFactory = goog.require('org.pepstock.charba.showcase.j2cl.cases.CaseFactory$impl');
 
 let BaseComposite = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite$impl');
-let TrendAndForecastCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase$impl');
+let ActiveElementsOnBarCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase$impl');
 
 /**
  * @implements {CaseFactory}
@@ -28,7 +28,7 @@ class $9 extends j_l_Object {
  }
  /** @override @return {BaseComposite} */
  m_create__() {
-  return TrendAndForecastCase.$create__();
+  return ActiveElementsOnBarCase.$create__();
  }
  
  static $clinit() {
@@ -42,7 +42,7 @@ class $9 extends j_l_Object {
  }
  
  static $loadModules() {
-  TrendAndForecastCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.TrendAndForecastCase$impl');
+  ActiveElementsOnBarCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase$impl');
  }
 }
 CaseFactory.$markImplementor($9);

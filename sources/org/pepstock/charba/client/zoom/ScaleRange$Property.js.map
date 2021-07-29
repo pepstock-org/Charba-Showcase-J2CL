@@ -2,7 +2,7 @@
 "version":3,
 "file":"ScaleRange$Property.impl.java.js",
 "lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,6DANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,sI;EAAAA,iB;;;CAAA,mG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,2E;;;CASa,S;EACbC,0E;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,sIAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,mB;EAAAA,uN;;;QAEZ,8D;EAAAC,uG;;;QACA,8D;EAAAA,uG;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qP;EACAA,qP;EAHYA,yF;;;;;;;;;;;;;AAAA;0E;AAAA;0E;AAAA;kF;AAEZ;+E;AACA;;",
+"mappings":"A;;;;;;;;;;;;;;MAkCM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMiB,6DANjBA,C;;;QAaI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,sI;EAAAA,iB;;;CAAA,mG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,2E;;;CASa,S;EACbC,0E;;;QAxBG,2B;EAAAC,mB;EAAAA;GAAAA,sIAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,mB;EAAAA,uN;;;QAEJ,8D;EAAAC,uG;;;QACA,8D;EAAAA,uG;;;QAHI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,qP;EACAA,qP;EAHIA,yF;;;;;;;;;;;;;AAAA;0E;AAAA;0E;AAAA;kF;AAEJ;+E;AACA;;",
 "sources":["ScaleRange.java"],
 "names":["org.pepstock.charba.client.zoom.ScaleRange$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.zoom.ScaleRange$Property.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.ScaleRange$Property.<init>","org.pepstock.charba.client.zoom.ScaleRange$Property.value","org.pepstock.charba.client.zoom.ScaleRange$Property.valueOf","org.pepstock.charba.client.zoom.ScaleRange$Property.values","org.pepstock.charba.client.zoom.ScaleRange$Property.<synthetic: getter>","org.pepstock.charba.client.zoom.ScaleRange$Property.<clinit>"]
 }

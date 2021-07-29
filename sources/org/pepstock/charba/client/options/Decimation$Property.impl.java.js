@@ -47,7 +47,7 @@ class Property extends Enum {
  /** @return {!Array<!Property>} */
  static m_values__() {
   Property.$clinit();
-  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ENABLED__org_pepstock_charba_client_options_Decimation_Property, Property.$static_ALGORITHM__org_pepstock_charba_client_options_Decimation_Property, Property.$static_SAMPLES__org_pepstock_charba_client_options_Decimation_Property], Property));
+  return /**@type {!Array<Property>}*/ ($Arrays.$init([Property.$static_ENABLED__org_pepstock_charba_client_options_Decimation_Property, Property.$static_ALGORITHM__org_pepstock_charba_client_options_Decimation_Property, Property.$static_SAMPLES__org_pepstock_charba_client_options_Decimation_Property, Property.$static_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property], Property));
  }
  /** @return {!Property} */
  static get f_ENABLED__org_pepstock_charba_client_options_Decimation_Property() {
@@ -61,6 +61,10 @@ class Property extends Enum {
  static get f_SAMPLES__org_pepstock_charba_client_options_Decimation_Property() {
   return (Property.$clinit(), Property.$static_SAMPLES__org_pepstock_charba_client_options_Decimation_Property);
  }
+ /** @return {!Property} */
+ static get f_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property() {
+  return (Property.$clinit(), Property.$static_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property);
+ }
  
  static $clinit() {
   Property.$clinit = () =>{};
@@ -69,6 +73,7 @@ class Property extends Enum {
   Property.$static_ENABLED__org_pepstock_charba_client_options_Decimation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ENABLED"), Property.$ordinal_ENABLED__org_pepstock_charba_client_options_Decimation_Property, "enabled");
   Property.$static_ALGORITHM__org_pepstock_charba_client_options_Decimation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("ALGORITHM"), Property.$ordinal_ALGORITHM__org_pepstock_charba_client_options_Decimation_Property, "algorithm");
   Property.$static_SAMPLES__org_pepstock_charba_client_options_Decimation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("SAMPLES"), Property.$ordinal_SAMPLES__org_pepstock_charba_client_options_Decimation_Property, "samples");
+  Property.$static_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property = Property.$create__java_lang_String__int__java_lang_String($Util.$makeEnumName("THRESHOLD"), Property.$ordinal_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property, "threshold");
   Property.f_namesToValuesMap__org_pepstock_charba_client_options_Decimation_Property_ = null;
  }
  /** @return {boolean} */
@@ -88,6 +93,8 @@ Property.$static_ENABLED__org_pepstock_charba_client_options_Decimation_Property
 Property.$static_ALGORITHM__org_pepstock_charba_client_options_Decimation_Property;
 /**@private {!Property}*/
 Property.$static_SAMPLES__org_pepstock_charba_client_options_Decimation_Property;
+/**@private {!Property}*/
+Property.$static_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property;
 /**@type {Map<?string, !Property>}*/
 Property.f_namesToValuesMap__org_pepstock_charba_client_options_Decimation_Property_;
 /**@const {number}*/
@@ -96,6 +103,8 @@ Property.$ordinal_ENABLED__org_pepstock_charba_client_options_Decimation_Propert
 Property.$ordinal_ALGORITHM__org_pepstock_charba_client_options_Decimation_Property = 1;
 /**@const {number}*/
 Property.$ordinal_SAMPLES__org_pepstock_charba_client_options_Decimation_Property = 2;
+/**@const {number}*/
+Property.$ordinal_THRESHOLD__org_pepstock_charba_client_options_Decimation_Property = 3;
 Key.$markImplementor(Property);
 $Util.$setClassMetadataForEnum(Property, "org.pepstock.charba.client.options.Decimation$Property");
 

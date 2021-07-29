@@ -8,6 +8,7 @@ let CapStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.CapStyle$im
 let CubicInterpolationMode = goog.forwardDeclare('org.pepstock.charba.client.enums.CubicInterpolationMode$impl');
 let IsFill = goog.forwardDeclare('org.pepstock.charba.client.enums.IsFill$impl');
 let JoinStyle = goog.forwardDeclare('org.pepstock.charba.client.enums.JoinStyle$impl');
+let Stepped = goog.forwardDeclare('org.pepstock.charba.client.enums.Stepped$impl');
 
 /**
  * @implements {IsDefaultLine}
@@ -71,9 +72,9 @@ class DefaultChartLine extends j_l_Object {
  m_getFill__() {
   return this.f_line__org_pepstock_charba_client_defaults_chart_DefaultChartLine_.m_getFill__();
  }
- /** @override @return {boolean} */
- m_isStepped__() {
-  return this.f_line__org_pepstock_charba_client_defaults_chart_DefaultChartLine_.m_isStepped__();
+ /** @override @return {Stepped} */
+ m_getStepped__() {
+  return this.f_line__org_pepstock_charba_client_defaults_chart_DefaultChartLine_.m_getStepped__();
  }
  /** @override @return {?string} */
  m_getHoverBackgroundColorAsString__() {

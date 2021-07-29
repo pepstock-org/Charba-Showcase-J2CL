@@ -4,7 +4,13 @@ const j_l_Object = goog.require('java.lang.Object$impl');
 const $Util = goog.require('nativebootstrap.Util$impl');
 
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let IsChart = goog.forwardDeclare('org.pepstock.charba.client.IsChart$impl');
+let Checker = goog.forwardDeclare('org.pepstock.charba.client.commons.Checker$impl');
+let Canvas_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
+let IsArea = goog.forwardDeclare('org.pepstock.charba.client.items.IsArea$impl');
 let ResourcesType = goog.forwardDeclare('org.pepstock.charba.client.resources.ResourcesType$impl');
+let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
+let $double = goog.forwardDeclare('vmbootstrap.primitives.$double$impl');
 
 class Helpers extends j_l_Object {
  /** @protected */
@@ -51,6 +57,85 @@ class Helpers extends j_l_Object {
   return null;
  }
  
+ m_clipArea__org_pepstock_charba_client_IsChart(/** IsChart */ chart) {
+  if (IsChart.m_isConsistent__org_pepstock_charba_client_IsChart(chart)) {
+   this.m_clipArea__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_items_IsArea(chart, chart.m_getNode__().m_getChartArea__());
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_IsChart__org_pepstock_charba_client_items_IsArea(/** IsChart */ chart, /** IsArea */ area) {
+  if (IsChart.m_isConsistent__org_pepstock_charba_client_IsChart(chart)) {
+   this.m_clipArea__org_pepstock_charba_client_dom_elements_Canvas__org_pepstock_charba_client_items_IsArea(chart.m_getCanvas__(), area);
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_IsChart__double__double(/** IsChart */ chart, /** number */ width, /** number */ height) {
+  if (IsChart.m_isConsistent__org_pepstock_charba_client_IsChart(chart)) {
+   this.m_clipArea__org_pepstock_charba_client_dom_elements_Canvas__double__double(chart.m_getCanvas__(), width, height);
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_IsChart__double__double__double__double(/** IsChart */ chart, /** number */ x, /** number */ y, /** number */ width, /** number */ height) {
+  if (IsChart.m_isConsistent__org_pepstock_charba_client_IsChart(chart)) {
+   this.m_clipArea__org_pepstock_charba_client_dom_elements_Canvas__double__double__double__double(chart.m_getCanvas__(), x, y, width, height);
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_dom_elements_Canvas__org_pepstock_charba_client_items_IsArea(/** HTMLCanvasElement */ canvas, /** IsArea */ area) {
+  if (!$Equality.$same(canvas, null)) {
+   this.m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__org_pepstock_charba_client_items_IsArea(Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(canvas), area);
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_dom_elements_Canvas__double__double(/** HTMLCanvasElement */ canvas, /** number */ width, /** number */ height) {
+  if (!$Equality.$same(canvas, null)) {
+   this.m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__double__double(Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(canvas), width, height);
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_dom_elements_Canvas__double__double__double__double(/** HTMLCanvasElement */ canvas, /** number */ x, /** number */ y, /** number */ width, /** number */ height) {
+  if (!$Equality.$same(canvas, null)) {
+   this.m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__double__double__double__double(Canvas_$Overlay.m_getContext2d__$devirt__org_pepstock_charba_client_dom_elements_Canvas(canvas), x, y, width, height);
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__org_pepstock_charba_client_items_IsArea(/** CanvasRenderingContext2D */ context, /** IsArea */ area) {
+  if (!$Equality.$same(area, null) && IsArea.m_isConsistent__org_pepstock_charba_client_items_IsArea(area)) {
+   this.m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__double__double__double__double(context, area.m_getLeft__(), area.m_getTop__(), area.m_getWidth__(), area.m_getHeight__());
+  }
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__double__double(/** CanvasRenderingContext2D */ context, /** number */ width, /** number */ height) {
+  this.m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__double__double__double__double(context, 0, 0, width, height);
+ }
+ 
+ m_clipArea__org_pepstock_charba_client_dom_elements_Context2dItem__double__double__double__double(/** CanvasRenderingContext2D */ context, /** number */ x, /** number */ y, /** number */ width, /** number */ height) {
+  if (!$Equality.$same(context, null) && this.m_areValuesConsistent__arrayOf_double_$p_org_pepstock_charba_client_Helpers(/**@type {!Array<number>}*/ ($Arrays.$init([x, y, width, height], $double))) && width >= 0 && height >= 0) {
+   context.save();
+   context.beginPath();
+   context.rect(x, y, width, height);
+   context.clip();
+  }
+ }
+ 
+ m_unclipArea__org_pepstock_charba_client_dom_elements_Context2dItem(/** CanvasRenderingContext2D */ context) {
+  if (!$Equality.$same(context, null)) {
+   context.restore();
+  }
+ }
+ /** @return {boolean} */
+ m_areValuesConsistent__arrayOf_double_$p_org_pepstock_charba_client_Helpers(/** Array<number> */ values) {
+  for (let $array = values, $index = 0; $index < $array.length; $index++) {
+   let value = $array[$index];
+   {
+    if (Checker.m_isNegative__double(value)) {
+     return false;
+    }
+   }
+  }
+  return true;
+ }
+ 
  static $clinit() {
   Helpers.$clinit = () =>{};
   Helpers.$loadModules();
@@ -64,7 +149,13 @@ class Helpers extends j_l_Object {
  
  static $loadModules() {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
+  IsChart = goog.module.get('org.pepstock.charba.client.IsChart$impl');
+  Checker = goog.module.get('org.pepstock.charba.client.commons.Checker$impl');
+  Canvas_$Overlay = goog.module.get('org.pepstock.charba.client.dom.elements.Canvas.$Overlay$impl');
+  IsArea = goog.module.get('org.pepstock.charba.client.items.IsArea$impl');
   ResourcesType = goog.module.get('org.pepstock.charba.client.resources.ResourcesType$impl');
+  $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
+  $double = goog.module.get('vmbootstrap.primitives.$double$impl');
  }
 }
 /**@type {Helpers}*/

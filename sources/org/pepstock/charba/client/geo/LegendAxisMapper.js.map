@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LegendAxisMapper.impl.java.js",
+"lineCount":49,
+"mappings":"A;;;;;;;;;;;MA4Be,gB;;CAAA,W;EAAAA,Q;EAAAA;OAsCO,0DAtCPA,C;;;CA6Cd,uG,UAA8BC,Y;EAC7BC,oI;EAEAA,8O;EAEAA,wQ;EAEAA;GAECA,gQAFDA;G;;;CAWY,gD;EACZC,uE;;;QAhEa,O;EAAAC,mC;EAAAA,gC;EAAAA,gC;;;;;;;;;;;;AAGd;iBAA4B,kEAA5B;",
+"sources":["LegendAxisMapper.java"],
+"names":["org.pepstock.charba.client.geo.LegendAxisMapper.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.LegendAxisMapper.<init>","org.pepstock.charba.client.geo.LegendAxisMapper.getLegend","org.pepstock.charba.client.geo.LegendAxisMapper.<clinit>"]
+}
+

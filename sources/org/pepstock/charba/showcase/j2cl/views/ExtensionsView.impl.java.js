@@ -14,6 +14,7 @@ let HTMLTableRowElement_$Overlay = goog.forwardDeclare('elemental2.dom.HTMLTable
 let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
 let ImportingPluginCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase$impl');
 let Category = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.ExtensionsView.Category$impl');
+let GeoChartsCase = goog.forwardDeclare('org.pepstock.charba.showcase.j2cl.views.ExtensionsView.GeoChartsCase$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
 
@@ -83,23 +84,49 @@ class ExtensionsView extends AbstractView {
       }
      }
     }
-    if ($Objects.m_equals__java_lang_Object__java_lang_Object(Category.f_ANNOTATION__org_pepstock_charba_showcase_j2cl_views_ExtensionsView_Category, cat)) {
+    if ($Objects.m_equals__java_lang_Object__java_lang_Object(Category.f_LABELS__org_pepstock_charba_showcase_j2cl_views_ExtensionsView_Category, cat)) {
      let labelPointer = /**@type {HTMLElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), $Overlay));
-     labelPointer.innerHTML = "Importing Chart.JS plugin";
+     labelPointer.innerHTML = "Geographical controller";
      labelPointer.style.textAlign = "left";
      labelPointer.className = "myCategory";
      labelPointer.style.paddingTop = PaddingTopUnionType_$Overlay.m_of__java_lang_Object("12px");
      catCol.appendChild(labelPointer);
-     let item_1 = /**@type {HTMLDivElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), HTMLDivElement_$Overlay));
-     item_1.style.textAlign = "left";
-     item_1.className = "myCategoryItem";
-     catCol.appendChild(item_1);
-     item_1.innerHTML = "Using Stacked100 plugin";
-     item_1.onclick = (/** Event */ p0_1) =>{
-      let composite_1 = ImportingPluginCase.$create__();
-      if (!$Equality.$same(composite_1, null)) {
+     for (let $array_2 = GeoChartsCase.m_values__(), $index_2 = 0; $index_2 < $array_2.length; $index_2++) {
+      let caseItem_1 = $array_2[$index_2];
+      {
+       let item_1 = /**@type {HTMLDivElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), HTMLDivElement_$Overlay));
+       item_1.style.textAlign = "left";
+       item_1.className = "myCategoryItem";
+       catCol.appendChild(item_1);
+       item_1.innerHTML = caseItem_1.m_getLabel__();
+       item_1.onclick = (/** Event */ p0_1) =>{
+        let composite_1 = caseItem_1.m_getFactory__().m_create__();
+        if (!$Equality.$same(composite_1, null)) {
+         this.m_clearPreviousChart__();
+         content.appendChild(composite_1.m_getElement__());
+        }
+        return null;
+       };
+      }
+     }
+    }
+    if ($Objects.m_equals__java_lang_Object__java_lang_Object(Category.f_ANNOTATION__org_pepstock_charba_showcase_j2cl_views_ExtensionsView_Category, cat)) {
+     let labelPointer_1 = /**@type {HTMLElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), $Overlay));
+     labelPointer_1.innerHTML = "Importing Chart.JS plugin";
+     labelPointer_1.style.textAlign = "left";
+     labelPointer_1.className = "myCategory";
+     labelPointer_1.style.paddingTop = PaddingTopUnionType_$Overlay.m_of__java_lang_Object("12px");
+     catCol.appendChild(labelPointer_1);
+     let item_2 = /**@type {HTMLDivElement}*/ ($Casts.$to(DomGlobal_$Overlay.f_document__elemental2_dom_DomGlobal_$Overlay.createElement("div"), HTMLDivElement_$Overlay));
+     item_2.style.textAlign = "left";
+     item_2.className = "myCategoryItem";
+     catCol.appendChild(item_2);
+     item_2.innerHTML = "Using Stacked100 plugin";
+     item_2.onclick = (/** Event */ p0_2) =>{
+      let composite_2 = ImportingPluginCase.$create__();
+      if (!$Equality.$same(composite_2, null)) {
        this.m_clearPreviousChart__();
-       content.appendChild(composite_1.m_getElement__());
+       content.appendChild(composite_2.m_getElement__());
       }
       return null;
      };
@@ -130,6 +157,7 @@ class ExtensionsView extends AbstractView {
   $Equality = goog.module.get('nativebootstrap.Equality$impl');
   ImportingPluginCase = goog.module.get('org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase$impl');
   Category = goog.module.get('org.pepstock.charba.showcase.j2cl.views.ExtensionsView.Category$impl');
+  GeoChartsCase = goog.module.get('org.pepstock.charba.showcase.j2cl.views.ExtensionsView.GeoChartsCase$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Objects = goog.module.get('vmbootstrap.Objects$impl');
  }

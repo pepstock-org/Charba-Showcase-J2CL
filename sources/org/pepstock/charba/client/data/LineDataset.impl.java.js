@@ -12,6 +12,7 @@ let Type = goog.forwardDeclare('org.pepstock.charba.client.Type$impl');
 let CubicInterpolationModeCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.CubicInterpolationModeCallback$impl');
 let DatasetContext = goog.forwardDeclare('org.pepstock.charba.client.callbacks.DatasetContext$impl');
 let ScriptableUtils = goog.forwardDeclare('org.pepstock.charba.client.callbacks.ScriptableUtils$impl');
+let SteppedCallback = goog.forwardDeclare('org.pepstock.charba.client.callbacks.SteppedCallback$impl');
 let ArrayListHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayListHelper$impl');
 let ArrayString_$Overlay = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayString.$Overlay$impl');
 let ArrayStringList = goog.forwardDeclare('org.pepstock.charba.client.commons.ArrayStringList$impl');
@@ -19,6 +20,7 @@ let JsHelper = goog.forwardDeclare('org.pepstock.charba.client.commons.JsHelper$
 let ObjectType = goog.forwardDeclare('org.pepstock.charba.client.commons.ObjectType$impl');
 let DataPoint = goog.forwardDeclare('org.pepstock.charba.client.data.DataPoint$impl');
 let Dataset = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset$impl');
+let CommonProperty = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset.CommonProperty$impl');
 let InternalProperty = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset.InternalProperty$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.data.LineDataset.Property$impl');
 let IsDefaultOptions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultOptions$impl');
@@ -40,8 +42,12 @@ class LineDataset extends LiningDataset {
   super();
   /**@type {CharbaCallbackProxy<?function(?):?string>}*/
   this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_;
+  /**@type {CharbaCallbackProxy<?function(?):*>}*/
+  this.f_steppedCallbackProxy__org_pepstock_charba_client_data_LineDataset_;
   /**@type {CubicInterpolationModeCallback}*/
   this.f_cubicInterpolationModeCallback__org_pepstock_charba_client_data_LineDataset_;
+  /**@type {SteppedCallback}*/
+  this.f_steppedCallback__org_pepstock_charba_client_data_LineDataset_;
  }
  //Factory method corresponding to constructor 'LineDataset()'.
  /** @return {!LineDataset} */
@@ -124,6 +130,9 @@ class LineDataset extends LiningDataset {
   this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_.callback = (/** ? */ context) =>{
    return this.m_onCubicInterpolationMode__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LineDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context));
   };
+  this.f_steppedCallbackProxy__org_pepstock_charba_client_data_LineDataset_.callback = (/** ? */ context_1) =>{
+   return this.m_onStepped__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LineDataset(this.m_createContext__org_pepstock_charba_client_commons_NativeObject_$pp_org_pepstock_charba_client_data(context_1));
+  };
  }
  
  m_setXAxisID__java_lang_String(/** ?string */ xAxisID) {
@@ -183,6 +192,7 @@ class LineDataset extends LiningDataset {
  }
  
  m_setStepped__boolean(/** boolean */ line) {
+  this.m_setStepped__org_pepstock_charba_client_callbacks_SteppedCallback(/**@type {SteppedCallback}*/ (null));
   if (!line) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property, false);
   } else {
@@ -191,6 +201,7 @@ class LineDataset extends LiningDataset {
  }
  
  m_setStepped__org_pepstock_charba_client_enums_Stepped(/** Stepped */ line) {
+  this.m_setStepped__org_pepstock_charba_client_callbacks_SteppedCallback(/**@type {SteppedCallback}*/ (null));
   if ($Objects.m_equals__java_lang_Object__java_lang_Object(Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped, line)) {
    this.m_setValue__org_pepstock_charba_client_commons_Key__boolean(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property, false);
   } else {
@@ -202,18 +213,18 @@ class LineDataset extends LiningDataset {
   if (this.m_isType__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_ObjectType(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property, ObjectType.f_BOOLEAN__org_pepstock_charba_client_commons_ObjectType)) {
    return Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped;
   } else {
-   return /**@type {Stepped}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property, Stepped.m_values__(), Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped), Stepped));
+   return /**@type {Stepped}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property, Stepped.m_values__(), this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getStepped__()), Stepped));
   }
  }
  
  m_setDataString__arrayOf_java_lang_String(/** Array<?string> */ data) {
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayString_$Overlay.m_fromOrNull__arrayOf_java_lang_String(data));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayString_$Overlay.m_fromOrNull__arrayOf_java_lang_String(data));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  
  m_setDataString__java_util_List(/** List<?string> */ data) {
-  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayString_$Overlay.m_fromOrNull__java_util_List(data));
-  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) ? DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
+  this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayString_$Overlay.m_fromOrNull__java_util_List(data));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) ? DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType : DataType.f_UNKNOWN__org_pepstock_charba_client_enums_DataType);
  }
  /** @return {List<?string>} */
  m_getDataString__() {
@@ -221,13 +232,13 @@ class LineDataset extends LiningDataset {
  }
  /** @return {List<?string>} */
  m_getDataString__boolean(/** boolean */ binding) {
-  if (this.m_has__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
-   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty), ArrayString_$Overlay));
+  if (this.m_has__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty) && $Objects.m_equals__java_lang_Object__java_lang_Object(DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType, this.m_getDataType__())) {
+   let array = /**@type {Array}*/ ($Casts.$to(this.m_getArrayValue__org_pepstock_charba_client_commons_Key(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty), ArrayString_$Overlay));
    return ArrayListHelper.m_list__org_pepstock_charba_client_commons_ArrayString(array);
   }
   if (binding) {
    let result = ArrayStringList.$create__();
-   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(InternalProperty.f_DATA__org_pepstock_charba_client_data_Dataset_InternalProperty, ArrayString_$Overlay.m_fromOrEmpty__java_util_List(result));
+   this.m_setArrayValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Array(CommonProperty.f_DATA__org_pepstock_charba_client_data_Dataset_CommonProperty, ArrayString_$Overlay.m_fromOrEmpty__java_util_List(result));
    this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(InternalProperty.f_CHARBA_DATA_TYPE__org_pepstock_charba_client_data_Dataset_InternalProperty, DataType.f_STRINGS__org_pepstock_charba_client_enums_DataType);
    return result;
   }
@@ -251,6 +262,24 @@ class LineDataset extends LiningDataset {
   this.m_setCubicInterpolationMode__org_pepstock_charba_client_callbacks_CubicInterpolationModeCallback(/**@type {CubicInterpolationModeCallback}*/ (null));
   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_CUBIC_INTERPOLATION_MODE__org_pepstock_charba_client_data_LineDataset_Property, cubicInterpolationModeCallback);
  }
+ /** @return {SteppedCallback} */
+ m_getSteppedCallback__() {
+  return this.f_steppedCallback__org_pepstock_charba_client_data_LineDataset_;
+ }
+ 
+ m_setStepped__org_pepstock_charba_client_callbacks_SteppedCallback(/** SteppedCallback */ steppedCallback) {
+  this.f_steppedCallback__org_pepstock_charba_client_data_LineDataset_ = steppedCallback;
+  if (!$Equality.$same(steppedCallback, null)) {
+   this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_CallbackProxy_Proxy(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property, this.f_steppedCallbackProxy__org_pepstock_charba_client_data_LineDataset_.proxy);
+  } else {
+   this.m_remove__org_pepstock_charba_client_commons_Key(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property);
+  }
+ }
+ 
+ m_setStepped__org_pepstock_charba_client_callbacks_NativeCallback(/** Function */ steppedCallback) {
+  this.m_setStepped__org_pepstock_charba_client_callbacks_SteppedCallback(/**@type {SteppedCallback}*/ (null));
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_callbacks_NativeCallback(Property.f_STEPPED__org_pepstock_charba_client_data_LineDataset_Property, steppedCallback);
+ }
  /** @return {?string} */
  m_onCubicInterpolationMode__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LineDataset(/** DatasetContext */ context) {
   let result = /**@type {CubicInterpolationMode}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, this.m_getCubicInterpolationModeCallback__()), CubicInterpolationMode));
@@ -258,6 +287,16 @@ class LineDataset extends LiningDataset {
    return result.m_value__();
   }
   return this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getCubicInterpolationMode__().m_value__();
+ }
+ /** @return {*} */
+ m_onStepped__org_pepstock_charba_client_callbacks_DatasetContext_$p_org_pepstock_charba_client_data_LineDataset(/** DatasetContext */ context) {
+  let result = /**@type {Stepped}*/ ($Casts.$to(ScriptableUtils.m_getOptionValue__org_pepstock_charba_client_callbacks_ChartContext__org_pepstock_charba_client_callbacks_Scriptable(context, this.m_getSteppedCallback__()), Stepped));
+  if ($Objects.m_equals__java_lang_Object__java_lang_Object(Stepped.f_FALSE__org_pepstock_charba_client_enums_Stepped, result)) {
+   return false;
+  } else if (!$Equality.$same(result, null)) {
+   return result.m_value__();
+  }
+  return this.m_getDefaultValues__().m_getElements__().m_getLine__().m_getStepped__().m_value__();
  }
  //Default method forwarding stub.
  /** @override @return {List<DataPoint>} */
@@ -282,7 +321,9 @@ class LineDataset extends LiningDataset {
  /** @private */
  $init___$p_org_pepstock_charba_client_data_LineDataset() {
   this.f_cubicInterpolationModeCallbackProxy__org_pepstock_charba_client_data_LineDataset_ = /**@type {CharbaCallbackProxy<?function(?):?string>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
+  this.f_steppedCallbackProxy__org_pepstock_charba_client_data_LineDataset_ = /**@type {CharbaCallbackProxy<?function(?):*>}*/ (JsHelper.m_get__().m_newCallbackProxy__());
   this.f_cubicInterpolationModeCallback__org_pepstock_charba_client_data_LineDataset_ = null;
+  this.f_steppedCallback__org_pepstock_charba_client_data_LineDataset_ = null;
  }
  
  static $clinit() {
@@ -307,6 +348,7 @@ class LineDataset extends LiningDataset {
   JsHelper = goog.module.get('org.pepstock.charba.client.commons.JsHelper$impl');
   ObjectType = goog.module.get('org.pepstock.charba.client.commons.ObjectType$impl');
   Dataset = goog.module.get('org.pepstock.charba.client.data.Dataset$impl');
+  CommonProperty = goog.module.get('org.pepstock.charba.client.data.Dataset.CommonProperty$impl');
   InternalProperty = goog.module.get('org.pepstock.charba.client.data.Dataset.InternalProperty$impl');
   Property = goog.module.get('org.pepstock.charba.client.data.LineDataset.Property$impl');
   CubicInterpolationMode = goog.module.get('org.pepstock.charba.client.enums.CubicInterpolationMode$impl');

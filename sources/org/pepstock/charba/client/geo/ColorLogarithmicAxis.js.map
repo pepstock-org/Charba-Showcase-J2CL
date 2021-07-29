@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ColorLogarithmicAxis.impl.java.js",
+"lineCount":145,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;MA+BmB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAO8B,8DAP9BA,C;EAAAA;OASM,8DATNA,C;;;QAgBX,2C,gBAA6BC,K;EAA7BC,+B;EAAAA,2C;EAAAA,gH;EAAAA,iB;;;CAAA,8F,gBAA6BD,K;EACnCE,8c;EAEAA,gO;EAEAA,kH;EAEAA,2E;;;CAMI,mE;EAEJC,gX;;;CASsB,a;EACtBC,2E;;;;CAzCiB,a;EAAAC,6F;;;;CAAA,kB;EAAAC,gG;;;;CAAA,0B;EAAAC,wG;;;;CAAA,mB;EAAAC,iG;;;;CAAA,2B;EAAAC,yG;;;;CAAA,e;EAAAC,6F;;;;CAAA,kE;EAAAC,iJ;;;;CAAA,8E;EAAAA,6J;;;;CAAA,4D;EAAAC,2I;;;;CAAA,mC;EAAAA,kH;;;;CAAA,kB;EAAAC,iG;;;QAElB,+D;EAAAC,gI;;;QAFkB,O;EAAAC,uC;EAAAA,oC;EAAAA,mC;EAAAA,sB;EAElBA,qa;;;;;;;;;;;;;;;;;;;;;AAFkB;;",
+"sources":["ColorLogarithmicAxis.java"],
+"names":["org.pepstock.charba.client.geo.ColorLogarithmicAxis.<synthetic: ctor_js>","chart","org.pepstock.charba.client.geo.ColorLogarithmicAxis.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ColorLogarithmicAxis.<init>","org.pepstock.charba.client.geo.ColorLogarithmicAxis.afterAxisConfigurationUpdate","org.pepstock.charba.client.geo.ColorLogarithmicAxis.getMapper","org.pepstock.charba.client.geo.ColorLogarithmicAxis.getLegend","org.pepstock.charba.client.geo.ColorLogarithmicAxis.getInterpolate","org.pepstock.charba.client.geo.ColorLogarithmicAxis.getInterpolateCallback","org.pepstock.charba.client.geo.ColorLogarithmicAxis.getMissingColor","org.pepstock.charba.client.geo.ColorLogarithmicAxis.getMissingColorAsString","org.pepstock.charba.client.geo.ColorLogarithmicAxis.getQuantize","org.pepstock.charba.client.geo.ColorLogarithmicAxis.setInterpolate","org.pepstock.charba.client.geo.ColorLogarithmicAxis.setMissingColor","org.pepstock.charba.client.geo.ColorLogarithmicAxis.setQuantize","org.pepstock.charba.client.geo.ColorLogarithmicAxis.<synthetic: getter>","org.pepstock.charba.client.geo.ColorLogarithmicAxis.<clinit>"]
+}
+

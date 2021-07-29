@@ -12,6 +12,7 @@ let CanvasObject = goog.forwardDeclare('org.pepstock.charba.client.colors.Canvas
 let Key = goog.forwardDeclare('org.pepstock.charba.client.commons.Key$impl');
 let AbstractContainer = goog.forwardDeclare('org.pepstock.charba.client.data.AbstractContainer$impl');
 let CanvasObjectKey = goog.forwardDeclare('org.pepstock.charba.client.data.Dataset.CanvasObjectKey$impl');
+let IsArea = goog.forwardDeclare('org.pepstock.charba.client.items.IsArea$impl');
 let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
 let $Primitives = goog.forwardDeclare('vmbootstrap.Primitives$impl');
 
@@ -41,7 +42,7 @@ class AbstractCanvasObjectCallback extends j_l_Object {
  /** @return {T} */
  m_invoke__org_pepstock_charba_client_callbacks_DatasetContext(/** DatasetContext */ context) {
   let chart = context.m_getChart__();
-  if (IsChart.m_isValid__org_pepstock_charba_client_IsChart(chart) && context.m_getDatasetIndex__() >= 0 && chart.m_getNode__().m_getChartArea__().m_isConsistent__()) {
+  if (IsChart.m_isValid__org_pepstock_charba_client_IsChart(chart) && context.m_getDatasetIndex__() >= 0 && IsArea.m_isConsistent__org_pepstock_charba_client_items_IsArea(chart.m_getNode__().m_getChartArea__())) {
    let dataset = chart.m_getData__().m_retrieveDataset__org_pepstock_charba_client_callbacks_DatasetContext(context);
    if (!$Equality.$same(dataset, null) && !this.f_container__org_pepstock_charba_client_data_AbstractCanvasObjectCallback_.m_isEmpty___$pp_org_pepstock_charba_client_data() && this.f_container__org_pepstock_charba_client_data_AbstractCanvasObjectCallback_.m_hasObjects__org_pepstock_charba_client_commons_Key_$pp_org_pepstock_charba_client_data(this.f_property__org_pepstock_charba_client_data_AbstractCanvasObjectCallback_)) {
     if ($Equality.$same(this.f_objects__org_pepstock_charba_client_data_AbstractCanvasObjectCallback_, null) || this.f_container__org_pepstock_charba_client_data_AbstractCanvasObjectCallback_.m_isChanged___$pp_org_pepstock_charba_client_data()) {
@@ -83,6 +84,7 @@ class AbstractCanvasObjectCallback extends j_l_Object {
   CanvasObject = goog.module.get('org.pepstock.charba.client.colors.CanvasObject$impl');
   Key = goog.module.get('org.pepstock.charba.client.commons.Key$impl');
   CanvasObjectKey = goog.module.get('org.pepstock.charba.client.data.Dataset.CanvasObjectKey$impl');
+  IsArea = goog.module.get('org.pepstock.charba.client.items.IsArea$impl');
   $Casts = goog.module.get('vmbootstrap.Casts$impl');
   $Primitives = goog.module.get('vmbootstrap.Primitives$impl');
  }

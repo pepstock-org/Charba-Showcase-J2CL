@@ -12,6 +12,7 @@ let GradientBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.Gra
 let IsColor = goog.forwardDeclare('org.pepstock.charba.client.colors.IsColor$impl');
 let Pattern = goog.forwardDeclare('org.pepstock.charba.client.colors.Pattern$impl');
 let PatternBuilder = goog.forwardDeclare('org.pepstock.charba.client.colors.PatternBuilder$impl');
+let GlobalCompositeOperation = goog.forwardDeclare('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation$impl');
 let ColorType = goog.forwardDeclare('org.pepstock.charba.client.enums.ColorType$impl');
 let ChartBackgroundColor = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
 let Property = goog.forwardDeclare('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions.Property$impl');
@@ -157,6 +158,14 @@ class ChartBackgroundColorOptions extends AbstractPluginOptions {
   }
  }
  
+ m_setGlobalCompositeOperation__org_pepstock_charba_client_dom_enums_GlobalCompositeOperation(/** GlobalCompositeOperation */ globalCompositeOperation) {
+  this.m_setValue__org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, globalCompositeOperation);
+ }
+ /** @override @return {GlobalCompositeOperation} */
+ m_getGlobalCompositeOperation__() {
+  return /**@type {GlobalCompositeOperation}*/ ($Casts.$to(this.m_getValue__org_pepstock_charba_client_commons_Key__arrayOf_org_pepstock_charba_client_commons_Key__org_pepstock_charba_client_commons_Key(Property.f_GLOBAL_COMPOSITE_OPERATION__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_Property, GlobalCompositeOperation.m_values__(), this.f_defaultOptions__org_pepstock_charba_client_impl_plugins_ChartBackgroundColorOptions_.m_getGlobalCompositeOperation__()), GlobalCompositeOperation));
+ }
+ 
  static $clinit() {
   ChartBackgroundColorOptions.$clinit = () =>{};
   ChartBackgroundColorOptions.$loadModules();
@@ -175,6 +184,7 @@ class ChartBackgroundColorOptions extends AbstractPluginOptions {
   GradientBuilder = goog.module.get('org.pepstock.charba.client.colors.GradientBuilder$impl');
   IsColor = goog.module.get('org.pepstock.charba.client.colors.IsColor$impl');
   PatternBuilder = goog.module.get('org.pepstock.charba.client.colors.PatternBuilder$impl');
+  GlobalCompositeOperation = goog.module.get('org.pepstock.charba.client.dom.enums.GlobalCompositeOperation$impl');
   ColorType = goog.module.get('org.pepstock.charba.client.enums.ColorType$impl');
   ChartBackgroundColor = goog.module.get('org.pepstock.charba.client.impl.plugins.ChartBackgroundColor$impl');
   Property = goog.module.get('org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptions.Property$impl');

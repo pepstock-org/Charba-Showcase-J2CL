@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ClipMap.impl.java.js",
+"lineCount":125,
+"mappings":"A;;;;;;;;;;;;;;MAwBY,O;;CAAA,W;EAAAA,Q;EAAAA;OA4BU,sDA5BVA,C;;;QAmCH,gD,8DAAeC,K;EAAfC,8B;EAAAA,+H;EAAAA,iB;;;CAAA,4F,8DAAeD,K;EAAfE,qC;EAAAA,2C;EAAAA,mE;EACPA,oE;;;CASa,S;EACbC,mE;;;QA9CU,2B;EAAAC,kB;EAAAA;GAAAA,6HAAAA;G;EAAAA,sH;;;QAAA,U;EAAAC,kB;EAAAA,8e;;;QAEX,2D;EAAAC,kG;;;QAIA,6D;EAAAA,oG;;;QAIA,qE;EAAAA,4G;;;QAIA,yD;EAAAA,gG;;;QAIA,wD;EAAAA,+F;;;QAIA,yD;EAAAA,gG;;;QAtBW,O;EAAAC,0B;EAAAA,uB;EAAAA,e;EAEXA,oP;EAIAA,4P;EAIAA,4R;EAIAA,4O;EAIAA,wO;EAIAA,4O;EAtBWA,iF;;;;;;;;;;;;;AAAA;sE;AAAA;wE;AAAA;gF;AAAA;oE;AAAA;mE;AAAA;oE;AAAA;0E;AAEX;2E;AAIA;6E;AAIA;qF;AAIA;yE;AAIA;wE;AAIA;;",
+"sources":["ClipMap.java"],
+"names":["org.pepstock.charba.client.geo.enums.ClipMap.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.enums.ClipMap.<synthetic: ctor_create>","org.pepstock.charba.client.geo.enums.ClipMap.<init>","org.pepstock.charba.client.geo.enums.ClipMap.value","org.pepstock.charba.client.geo.enums.ClipMap.valueOf","org.pepstock.charba.client.geo.enums.ClipMap.values","org.pepstock.charba.client.geo.enums.ClipMap.<synthetic: getter>","org.pepstock.charba.client.geo.enums.ClipMap.<clinit>"]
+}
+

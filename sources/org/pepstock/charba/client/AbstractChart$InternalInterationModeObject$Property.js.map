@@ -2,7 +2,7 @@
 "version":3,
 "file":"AbstractChart$InternalInterationModeObject$Property.impl.java.js",
 "lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MA8xCe,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,wFANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iK;EAAAA,iB;;;CAAA,8H,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sG;;;CASa,S;EACbC,qG;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,iKAAAA;G;EAAAA,yJ;;;QAAA,U;EAAAC,mB;EAAAA,oR;;;QAEZ,0F;EAAAC,mI;;;QACA,+F;EAAAA,wI;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+S;EACAA,mU;EAHYA,oH;;;;;;;;;;;;;AAAA;sG;AAAA;2G;AAAA;6G;AAEZ;2G;AACA;;",
+"mappings":"A;;;;;;;;;;;;;;MAu0Ce,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,wFANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iK;EAAAA,iB;;;CAAA,8H,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sG;;;CASa,S;EACbC,qG;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,iKAAAA;G;EAAAA,yJ;;;QAAA,U;EAAAC,mB;EAAAA,oR;;;QAEZ,0F;EAAAC,mI;;;QACA,+F;EAAAA,wI;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+S;EACAA,mU;EAHYA,oH;;;;;;;;;;;;;AAAA;sG;AAAA;2G;AAAA;6G;AAEZ;2G;AACA;;",
 "sources":["AbstractChart.java"],
 "names":["org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.<synthetic: ctor_create>","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.<init>","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.value","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.valueOf","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.values","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.<synthetic: getter>","org.pepstock.charba.client.AbstractChart$InternalInterationModeObject$Property.<clinit>"]
 }

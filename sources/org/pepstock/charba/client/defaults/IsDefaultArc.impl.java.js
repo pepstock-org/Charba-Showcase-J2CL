@@ -22,6 +22,8 @@ class IsDefaultArc {
  m_getBorderRadius__() {}
  /** @abstract @return {number} */
  m_getHoverOffset__() {}
+ /** @abstract @return {number} */
+ m_getSpacing__() {}
  
  static $clinit() {
   IsDefaultArc.$clinit = () =>{};

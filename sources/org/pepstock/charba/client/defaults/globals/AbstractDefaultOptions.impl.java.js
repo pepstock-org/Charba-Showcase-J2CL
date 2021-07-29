@@ -16,6 +16,7 @@ let IsDefaultInteraction = goog.forwardDeclare('org.pepstock.charba.client.defau
 let IsDefaultLayout = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultLayout$impl');
 let IsDefaultLegend = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultLegend$impl');
 let IsDefaultPlugins = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultPlugins$impl');
+let IsDefaultSubtitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultSubtitle$impl');
 let IsDefaultTitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultTitle$impl');
 let IsDefaultTooltips = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultTooltips$impl');
 let IsDefaultTransitions = goog.forwardDeclare('org.pepstock.charba.client.defaults.IsDefaultTransitions$impl');
@@ -31,6 +32,7 @@ let DefaultChartInteraction = goog.forwardDeclare('org.pepstock.charba.client.de
 let DefaultChartLayout = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartLayout$impl');
 let DefaultChartLegend = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartLegend$impl');
 let DefaultChartPlugins = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartPlugins$impl');
+let DefaultChartSubtitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartSubtitle$impl');
 let DefaultChartTitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartTitle$impl');
 let DefaultChartTooltips = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartTooltips$impl');
 let DefaultChartTransitions = goog.forwardDeclare('org.pepstock.charba.client.defaults.chart.DefaultChartTransitions$impl');
@@ -47,6 +49,7 @@ let DefaultLayout = goog.forwardDeclare('org.pepstock.charba.client.defaults.glo
 let DefaultLegend = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultLegend$impl');
 let DefaultPlugins = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultPlugins$impl');
 let DefaultRoutedFont = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultRoutedFont$impl');
+let DefaultSubtitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultSubtitle$impl');
 let DefaultTitle = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTitle$impl');
 let DefaultTooltips = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTooltips$impl');
 let DefaultTransitions = goog.forwardDeclare('org.pepstock.charba.client.defaults.globals.DefaultTransitions$impl');
@@ -75,6 +78,8 @@ class AbstractDefaultOptions extends j_l_Object {
   this.f_layout__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_;
   /**@type {IsDefaultTitle}*/
   this.f_title__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_;
+  /**@type {IsDefaultSubtitle}*/
+  this.f_subtitle__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_;
   /**@type {IsDefaultLegend}*/
   this.f_legend__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_;
   /**@type {IsDefaultTooltips}*/
@@ -102,6 +107,7 @@ class AbstractDefaultOptions extends j_l_Object {
   this.f_elements__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultElements.$create__();
   this.f_layout__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultLayout.$create__();
   this.f_title__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultTitle.$create__();
+  this.f_subtitle__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultSubtitle.$create__();
   this.f_legend__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultLegend.$create__();
   this.f_tooltips__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultTooltips.$create__();
   this.f_plugins__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultPlugins.$create__();
@@ -123,6 +129,7 @@ class AbstractDefaultOptions extends j_l_Object {
   this.f_elements__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultChartElements.$create__org_pepstock_charba_client_defaults_IsDefaultElements(options.m_getElements__());
   this.f_layout__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultChartLayout.$create__org_pepstock_charba_client_defaults_IsDefaultLayout(options.m_getLayout__());
   this.f_title__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultChartTitle.$create__org_pepstock_charba_client_defaults_IsDefaultTitle(options.m_getTitle__());
+  this.f_subtitle__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultChartSubtitle.$create__org_pepstock_charba_client_defaults_IsDefaultSubtitle(options.m_getSubtitle__());
   this.f_legend__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultChartLegend.$create__org_pepstock_charba_client_defaults_IsDefaultLegend(options.m_getLegend__());
   this.f_tooltips__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultChartTooltips.$create__org_pepstock_charba_client_defaults_IsDefaultTooltips(options.m_getTooltips__());
   this.f_plugins__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_ = DefaultChartPlugins.$create__org_pepstock_charba_client_defaults_IsDefaultPlugins(options.m_getPlugins__());
@@ -166,6 +173,10 @@ class AbstractDefaultOptions extends j_l_Object {
  /** @override @return {IsDefaultTitle} */
  m_getTitle__() {
   return this.f_title__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_;
+ }
+ /** @override @return {IsDefaultSubtitle} */
+ m_getSubtitle__() {
+  return this.f_subtitle__org_pepstock_charba_client_defaults_globals_AbstractDefaultOptions_;
  }
  /** @override @return {IsDefaultLegend} */
  m_getLegend__() {
@@ -216,6 +227,7 @@ class AbstractDefaultOptions extends j_l_Object {
   DefaultChartLayout = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartLayout$impl');
   DefaultChartLegend = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartLegend$impl');
   DefaultChartPlugins = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartPlugins$impl');
+  DefaultChartSubtitle = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartSubtitle$impl');
   DefaultChartTitle = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartTitle$impl');
   DefaultChartTooltips = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartTooltips$impl');
   DefaultChartTransitions = goog.module.get('org.pepstock.charba.client.defaults.chart.DefaultChartTransitions$impl');
@@ -232,6 +244,7 @@ class AbstractDefaultOptions extends j_l_Object {
   DefaultLegend = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultLegend$impl');
   DefaultPlugins = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultPlugins$impl');
   DefaultRoutedFont = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultRoutedFont$impl');
+  DefaultSubtitle = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultSubtitle$impl');
   DefaultTitle = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTitle$impl');
   DefaultTooltips = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTooltips$impl');
   DefaultTransitions = goog.module.get('org.pepstock.charba.client.defaults.globals.DefaultTransitions$impl');

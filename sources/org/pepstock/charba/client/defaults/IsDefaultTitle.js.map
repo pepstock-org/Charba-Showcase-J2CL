@@ -1,8 +1,8 @@
 {
 "version":3,
 "file":"IsDefaultTitle.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;;;;MAsBiB,c;;CAOC,c;;CAOT,c;;QAdQ,O;EAAAA,iC;EAAAA;",
+"lineCount":14,
+"mappings":"A;;;;;;;;;MAsBiB,c;;QAAA,O;EAAAA,iC;EAAAA;",
 "sources":["IsDefaultTitle.java"],
 "names":["org.pepstock.charba.client.defaults.IsDefaultTitle.<clinit>"]
 }
