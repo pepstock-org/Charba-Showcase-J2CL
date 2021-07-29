@@ -15,7 +15,7 @@ There are more than 200 samples about all **Charba** capabilities.
 To build the project, the **Charba** jar is provided into `lib` folder and you must add it to Maven local repository, as following:
 
 ```
-mvn install:install-file -Dfile=./lib/charba-4.1.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=4.1 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/charba-4.2.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=4.2 -Dpackaging=jar
 ```
 
 Then you can execute `mvn clean` and `mvn install` to build the **Charba** showcase. 
