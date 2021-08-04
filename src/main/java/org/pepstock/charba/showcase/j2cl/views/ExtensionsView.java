@@ -44,6 +44,9 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingImageRender
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingLabelRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingPercentageRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSSwitchableCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiPanCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiZoomCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiZoomScaleCase;
@@ -482,6 +485,47 @@ public class ExtensionsView extends AbstractView {
 		}
 
 	}
+	
+	// ----------------------------------------------
+	// TREEMAP CHARTS
+	// ----------------------------------------------
+	private enum TreeMapChartsCase implements CaseItem
+	{
+		GROUPS("Groups", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapUSPopulationCase();
+			}
+		}),
+		GROUPING("Grouping data at runtime", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapUSSwitchableCase();
+			}
+		}),
+		DIVIDERS("Applying dividers", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapDividersCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private TreeMapChartsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+
 
 	public ExtensionsView(HTMLElement content) {
 		super(content);
@@ -563,6 +607,31 @@ public class ExtensionsView extends AbstractView {
 			}
 
 			if (Category.ANNOTATION.equals(cat)) {
+				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				labelPointer.innerHTML = "TreeMap controller";
+				labelPointer.style.textAlign = "left";
+				labelPointer.className = "myCategory";
+				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelPointer);
+				
+				for (CaseItem caseItem : TreeMapChartsCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = caseItem.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+			}
+
+			if (Category.ZOOM.equals(cat)) {
 				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
 				labelPointer.innerHTML = "Importing Chart.JS plugin";
 				labelPointer.style.textAlign = "left";

@@ -34,6 +34,7 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TitleEventsCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.TreeMapCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.VerticalLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -235,8 +236,13 @@ public class ChartsView extends AbstractView {
 			public BaseComposite create() {
 				return new GaugeCase();
 			}
+		}),
+		TREEMAP("TreeMap", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapCase();
+			}
 		});
-
+		
 		private final String label;
 
 		private final CaseFactory factory;
