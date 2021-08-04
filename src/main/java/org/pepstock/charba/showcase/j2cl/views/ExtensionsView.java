@@ -44,6 +44,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingImageRender
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingLabelRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingPercentageRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSSwitchableCase;
@@ -504,6 +505,11 @@ public class ExtensionsView extends AbstractView {
 		DIVIDERS("Applying dividers", new CaseFactory() {
 			public BaseComposite create() {
 				return new TreeMapDividersCase();
+			}
+		}),
+		CLICKING("Selecting item", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapClickEventCase();
 			}
 		});
 
