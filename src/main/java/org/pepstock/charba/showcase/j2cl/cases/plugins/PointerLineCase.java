@@ -24,7 +24,7 @@ import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.client.impl.plugins.ChartPointerOptions;
 import org.pepstock.charba.client.impl.plugins.enums.PointerElement;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -55,8 +55,6 @@ public class PointerLineCase extends BaseComposite {
 	private final HTMLInputElement title = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final HTMLInputElement axes = (HTMLInputElement) DomGlobal.document.createElement("input");
-
-	private final LogView mylog = new LogView(4);
 
 	private final ChartPointerOptions options = new ChartPointerOptions();
 
@@ -98,8 +96,6 @@ public class PointerLineCase extends BaseComposite {
 		}
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setMaintainAspectRatio(true);
-		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getLegend().setDisplay(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Setting cursors on line chart");
@@ -156,12 +152,12 @@ public class PointerLineCase extends BaseComposite {
 				List<Dataset> datasets = chart.getData().getDatasets();
 				if (datasets != null && !datasets.isEmpty()) {
 					StringBuilder sb = new StringBuilder();
-					sb.append("Dataset index: ").append(event.getItem().getDatasetIndex()).append(" ");
-					sb.append("Dataset label: ").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append(" ");
-					sb.append("Dataset data: ").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append(" ");
-					sb.append("Index: ").append(event.getItem().getIndex()).append(" ");
-					sb.append("Value: ").append(labels.getStrings(event.getItem().getIndex()).get(0));
-					mylog.addLogEvent(sb.toString());
+					sb.append("Dataset index: <b>").append(event.getItem().getDatasetIndex()).append("</b><br>");
+					sb.append("Dataset label: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append("</b><br>");
+					sb.append("Dataset data: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append("</b><br>");
+					sb.append("Index: <b>").append(event.getItem().getIndex()).append("</b><br>");
+					sb.append("Value: <b>").append(labels.getStrings(event.getItem().getIndex()).get(0)).append("</b><br>");
+					new Toast("Dataset Selected!", sb.toString()).show();
 				}
 			}
 
@@ -180,8 +176,8 @@ public class PointerLineCase extends BaseComposite {
 					}
 				}
 				StringBuilder sb = new StringBuilder();
-				sb.append("Title: ").append(title.toString());
-				mylog.addLogEvent(sb.toString());
+				sb.append("Title: <b>").append(title.toString()).append("</b><br>");
+				new Toast("Title Selected!", sb.toString()).show();
 			}
 		}, TitleClickEvent.TYPE);
 
@@ -189,7 +185,9 @@ public class PointerLineCase extends BaseComposite {
 
 			@Override
 			public void onClick(AxisClickEvent event) {
-				mylog.addLogEvent("> Axis value: " + event.getValue().getLabel());
+				StringBuilder sb = new StringBuilder();
+				sb.append("Axis: value: <b>").append(event.getValue().getLabel()).append("</b><br>");
+				new Toast("Axis Selected!", sb.toString()).show();
 			}
 		}, AxisClickEvent.TYPE);
 
@@ -271,20 +269,6 @@ public class PointerLineCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override

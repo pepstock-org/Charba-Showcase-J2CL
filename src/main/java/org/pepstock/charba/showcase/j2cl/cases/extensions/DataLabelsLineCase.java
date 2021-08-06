@@ -25,7 +25,7 @@ import org.pepstock.charba.client.events.DatasetSelectionEvent;
 import org.pepstock.charba.client.events.DatasetSelectionEventHandler;
 import org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -42,8 +42,6 @@ public class DataLabelsLineCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-
-	private final LogView mylog = new LogView();
 
 	public DataLabelsLineCase() {
 		// ----------------------------------------------
@@ -159,12 +157,12 @@ public class DataLabelsLineCase extends BaseComposite {
 				List<Dataset> datasets = chart.getData().getDatasets();
 				if (datasets != null && !datasets.isEmpty()) {
 					StringBuilder sb = new StringBuilder();
-					sb.append("Dataset index: ").append(event.getItem().getDatasetIndex()).append(" ");
-					sb.append("Dataset label: ").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append(" ");
-					sb.append("Dataset data: ").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append(" ");
-					sb.append("Index: ").append(event.getItem().getIndex()).append(" ");
-					sb.append("Value: ").append(labels.getStrings(event.getItem().getIndex()).get(0));
-					mylog.addLogEvent(sb.toString());
+					sb.append("Dataset index: <b>").append(event.getItem().getDatasetIndex()).append("</b><br>");
+					sb.append("Dataset label: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append("</b><br>");
+					sb.append("Dataset data: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append("</b><br>");
+					sb.append("Index: <b>").append(event.getItem().getIndex()).append("</b><br>");
+					sb.append("Value: <b>").append(labels.getStrings(event.getItem().getIndex()).get(0)).append("</b><br>");
+					new Toast("Dataset Selected!", sb.toString()).show();
 				}
 			}
 		});
@@ -229,20 +227,6 @@ public class DataLabelsLineCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override

@@ -6,8 +6,10 @@ import org.pepstock.charba.client.Charba;
 import org.pepstock.charba.client.ChartType;
 import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
+import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
+import org.pepstock.charba.client.datalabels.events.ClickEventHandler;
 import org.pepstock.charba.client.geo.Feature;
 import org.pepstock.charba.client.geo.GeoUtils;
 import org.pepstock.charba.client.geo.TopoJson;
@@ -18,6 +20,7 @@ import org.pepstock.charba.client.labels.LabelsPlugin;
 import org.pepstock.charba.client.utils.CScheduler;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarController;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart;
 import org.pepstock.charba.showcase.j2cl.topojson.Earthmap;
@@ -85,6 +88,14 @@ public class App implements EntryPoint {
 		
 		DataLabelsOptions dataLabelsOption = new DataLabelsOptions();
 		dataLabelsOption.getPadding().set(4);
+		dataLabelsOption.getListeners().setClickEventHandler(new ClickEventHandler() {
+			
+			@Override
+			public boolean onClick(DataLabelsContext context) {
+				new Toast("Click!", "Test on DATALABELS click").show();
+				return true;
+			}
+		});
 		dataLabelsOption.store();
 
 		HTMLDivElement div = (HTMLDivElement) DomGlobal.document.createElement("div");

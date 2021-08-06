@@ -18,7 +18,7 @@ import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.client.items.DatasetReference;
 import org.pepstock.charba.showcase.j2cl.App;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -35,8 +35,6 @@ public class GeoChoroplethSelectCountryCase extends BaseComposite {
 	private static final Key NAME = Key.create("name");
 
 	private final HTMLTableElement mainPanel;
-
-	private final LogView mylog = new LogView();
 
 	private final ChoroplethChart chart = new ChoroplethChart();
 
@@ -81,10 +79,10 @@ public class GeoChoroplethSelectCountryCase extends BaseComposite {
 					ChoroplethDataPoint dp = geodata.get(index);
 					String name = dp.getFeature().getStringProperty(NAME);
 					StringBuilder sb = new StringBuilder();
-					sb.append("Index: ").append(index).append(", ");
-					sb.append("Country:  ").append(name).append(", ");
-					sb.append("Value:  ").append(dp.getValue());
-					mylog.addLogEvent(sb.toString());
+					sb.append("Index: <b>").append(index).append("</b><br>");
+					sb.append("Country: <b>").append(name).append("</b><br>");
+					sb.append("Value: <b>").append(dp.getValue()).append("</b><br>");
+					new Toast("Country Selected!", sb.toString()).show();
 				}
 			}
 		}, DatasetSelectionEvent.TYPE);
@@ -146,21 +144,6 @@ public class GeoChoroplethSelectCountryCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 
 	}
 

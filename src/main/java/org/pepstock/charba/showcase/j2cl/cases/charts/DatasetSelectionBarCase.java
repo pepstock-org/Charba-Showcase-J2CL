@@ -16,7 +16,7 @@ import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.client.impl.plugins.ChartPointerOptions;
 import org.pepstock.charba.client.impl.plugins.enums.PointerElement;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -33,8 +33,6 @@ public class DatasetSelectionBarCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final BarChart chart = new BarChart();
-
-	private final LogView mylog = new LogView();
 
 	public DatasetSelectionBarCase() {
 		// ----------------------------------------------
@@ -58,8 +56,6 @@ public class DatasetSelectionBarCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(3);
-		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Selecting dataset on bar chart");
@@ -73,12 +69,12 @@ public class DatasetSelectionBarCase extends BaseComposite {
 				List<Dataset> datasets = chart.getData().getDatasets();
 				if (datasets != null && !datasets.isEmpty()) {
 					StringBuilder sb = new StringBuilder();
-					sb.append("Dataset index: ").append(event.getItem().getDatasetIndex()).append(" ");
-					sb.append("Dataset label: ").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append(" ");
-					sb.append("Dataset data: ").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append(" ");
-					sb.append("Index: ").append(event.getItem().getIndex()).append(" ");
-					sb.append("Value: ").append(labels.getStrings(event.getItem().getIndex()).get(0));
-					mylog.addLogEvent(sb.toString());
+					sb.append("Dataset index: <b>").append(event.getItem().getDatasetIndex()).append("</b><br>");
+					sb.append("Dataset label: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append("</b><br>");
+					sb.append("Dataset data: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append("</b><br>");
+					sb.append("Index: <b>").append(event.getItem().getIndex()).append("</b><br>");
+					sb.append("Value: <b>").append(labels.getStrings(event.getItem().getIndex()).get(0)).append("</b><br>");
+					new Toast("Dataset Selected!", sb.toString()).show();
 				}
 			}
 		}, DatasetSelectionEvent.TYPE);
@@ -188,20 +184,6 @@ public class DatasetSelectionBarCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override

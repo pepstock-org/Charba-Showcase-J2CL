@@ -20,7 +20,7 @@ import org.pepstock.charba.client.datalabels.events.ClickEventHandler;
 import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -37,8 +37,6 @@ public class DataLabelsSelectionCase extends BaseComposite {
 	private final HTMLTableElement mainPanel;
 
 	private final LineChart chart = new LineChart();
-
-	private final LogView mylog = new LogView();
 
 	private final Map<Integer, SelectionItem> items = new HashMap<>();
 
@@ -64,7 +62,6 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getLegend().setDisplay(false);
 		chart.getOptions().getTooltips().setEnabled(false);
 		chart.getOptions().getLayout().getPadding().setTop(42);
@@ -173,7 +170,11 @@ public class DataLabelsSelectionCase extends BaseComposite {
 					items.put(key, new SelectionItem(context.getDatasetIndex(), context.getDataIndex(), ds.getData().get(context.getDataIndex())));
 				}
 				if (!items.isEmpty()) {
-					mylog.addLogEvent(items.values().size() + " selected labels");
+					StringBuilder sb = new StringBuilder();
+					for (SelectionItem item : items.values()) {
+						sb.append("<b>").append(item.toString()).append("</b><br>");
+					}
+					new Toast("Dataset Selected!", sb.toString()).show();
 				}
 				return true;
 			}
@@ -237,20 +238,6 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		github.appendChild(img);
 		actionsCol.appendChild(github);
 
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
-
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override

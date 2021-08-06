@@ -20,6 +20,7 @@ import org.pepstock.charba.client.events.AxisLeaveEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -113,6 +114,9 @@ public class AxesEventsCase extends BaseComposite {
 			public void onClick(AxisClickEvent event) {
 				String value = ScaleDataType.NUMBER.equals(event.getValue().getDataType()) ? event.getValue().getValueAsString() : event.getValue().getLabel();
 				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY() + ", value:" + value);
+				StringBuilder sb = new StringBuilder();
+				sb.append("Axis value: <b>").append(event.getValue().getLabel()).append("</b><br>");
+				new Toast("Axis Selected!", sb.toString()).show();
 			}
 		}, AxisClickEvent.TYPE);
 

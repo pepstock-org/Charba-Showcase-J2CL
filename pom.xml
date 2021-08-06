@@ -80,6 +80,7 @@
 					<entrypoint>org.pepstock.charba.showcase.j2cl.App</entrypoint>
 					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename>
 					<enableSourcemaps>true</enableSourcemaps>
+					<externs>./src/main/java/org/pepstock/charba/showcase/j2cl/cases/commons/toasting.ext.js</externs>
 				</configuration>
 			</plugin>
 		</plugins>

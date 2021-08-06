@@ -1,6 +1,9 @@
 package org.pepstock.charba.showcase.j2cl.cases.charts;
 
+import java.util.List;
+
 import org.pepstock.charba.client.Defaults;
+import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -18,6 +21,7 @@ import org.pepstock.charba.client.events.TitleLeaveEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartPointer;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -69,9 +73,19 @@ public class TitleEventsCase extends BaseComposite {
 
 			@Override
 			public void onClick(TitleClickEvent event) {
+				IsChart chart = (IsChart) event.getSource();
+				List<String> values = chart.getOptions().getTitle().getText();
+				StringBuilder title = new StringBuilder();
+				if (!values.isEmpty()) {
+					for (String value : values) {
+						title.append(value).append(" ");
+					}
+				}
 				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+				StringBuilder sb = new StringBuilder();
+				sb.append("Title: <b>").append(title.toString()).append("</b><br>");
+				new Toast("Title Selected!", sb.toString()).show();
 			}
-
 		}, TitleClickEvent.TYPE);
 
 		chart.addHandler(new TitleEnterEventHandler() {

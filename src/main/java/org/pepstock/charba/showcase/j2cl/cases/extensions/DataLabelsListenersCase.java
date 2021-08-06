@@ -1,5 +1,7 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
+import java.util.List;
+
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
@@ -8,6 +10,7 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.data.Labels;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
@@ -25,6 +28,7 @@ import org.pepstock.charba.client.items.DatasetItem;
 import org.pepstock.charba.client.items.DatasetReference;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -275,8 +279,19 @@ public class DataLabelsListenersCase extends BaseComposite {
 		public boolean onClick(DataLabelsContext context) {
 			super.onClick(context);
 			LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
+			Labels labels = chart.getData().getLabels();
+			List<Dataset> datasets = chart.getData().getDatasets();
 			DatasetItem item = chart.getDatasetItem(context.getDatasetIndex());
 			DatasetElement element = item.getElements().get(context.getDataIndex());
+			if (datasets != null && !datasets.isEmpty()) {
+				StringBuilder sb = new StringBuilder();
+				sb.append("Dataset index: <b>").append(context.getDatasetIndex()).append("</b><br>");
+				sb.append("Dataset label: <b>").append(datasets.get(context.getDatasetIndex()).getLabel()).append("</b><br>");
+				sb.append("Dataset data: <b>").append(datasets.get(context.getDatasetIndex()).getData().get(context.getDataIndex())).append("</b><br>");
+				sb.append("Index: <b>").append(context.getDataIndex()).append("</b><br>");
+				sb.append("Value: <b>").append(labels.getStrings(context.getDataIndex()).get(0)).append("</b><br>");
+				new Toast("Dataset Selected!", sb.toString()).show();
+			}
 			mylog.addLogEvent("> CLICK: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getDataIndex() + ", value(" + ds.getData().get(context.getDataIndex()) + ")");
 			DatasetReference referenceItem = new DatasetReference(context, element);
 			chart.fireEvent(new DatasetSelectionEvent(DOMBuilder.get().createChangeEvent(), chart, referenceItem));

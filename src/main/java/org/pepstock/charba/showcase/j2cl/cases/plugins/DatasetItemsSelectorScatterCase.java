@@ -16,7 +16,7 @@ import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -35,8 +35,6 @@ public class DatasetItemsSelectorScatterCase extends BaseComposite {
 	private final ScatterChart chart = new ScatterChart();
 
 	private static final int AMOUNT_OF_POINTS = 16;
-	
-	private final LogView mylog = new LogView(4);
 
 	public DatasetItemsSelectorScatterCase() {
 
@@ -61,7 +59,6 @@ public class DatasetItemsSelectorScatterCase extends BaseComposite {
 		// ----------------------------------------------
 
 		chart.getOptions().setResponsive(true);
-		chart.getOptions().setAspectRatio(2.5);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Dataset items selector plugin on scatter chart");
 
@@ -119,7 +116,9 @@ public class DatasetItemsSelectorScatterCase extends BaseComposite {
 
 			@Override
 			public void onClean(DatasetRangeCleanSelectionEvent event) {
-				mylog.addLogEvent("Clean selection event");
+				StringBuilder sb = new StringBuilder();
+				sb.append("<b>Clear selection event</b>");
+				new Toast("Dataset Range Clean Selection!", sb.toString()).show();
 			}
 		}, DatasetRangeCleanSelectionEvent.TYPE);
 
@@ -129,8 +128,9 @@ public class DatasetItemsSelectorScatterCase extends BaseComposite {
 			@Override
 			public void onSelect(DatasetRangeSelectionEvent event) {
 				StringBuilder sb = new StringBuilder();
-				sb.append("Dataset from: ").append(event.getFrom().getLabel()).append(" to:").append(event.getTo().getLabel());
-				mylog.addLogEvent(sb.toString());
+				sb.append("Dataset from: <b>").append(event.getFrom().getLabel()).append("</b><br>");
+				sb.append("Dataset to: <b>").append(event.getTo().getLabel()).append("</b><br>");
+				new Toast("Dataset Range Selected!", sb.toString()).show();
 			}
 		}, DatasetRangeSelectionEvent.TYPE);
 
@@ -190,21 +190,7 @@ public class DatasetItemsSelectorScatterCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
-		
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
 
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
 	}
 
 	@Override
