@@ -20,6 +20,7 @@ import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresholdBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ControllerMyHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ControllerMyLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.DatasetSelectionWithModifierCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataOnBarCase;
@@ -131,6 +132,11 @@ public class MiscellaneousView extends AbstractView {
 		AUTO_UPDATE("Auto updating on timeseries chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AutoUpdateLineCase();
+			}
+		}),
+		SELECTING_WITH_MODIFIER("Selecting dataset with a modifier key", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetSelectionWithModifierCase();
 			}
 		});
 

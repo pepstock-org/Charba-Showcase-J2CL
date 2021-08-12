@@ -50,9 +50,6 @@ public class ZoomDragTimeAxisCase extends BaseComposite {
 
 	private static final int AMOUNT_OF_POINTS = 500;
 	
-	private static final String CSS = "background: linear-gradient(180deg,#eee,#fff); background-color: rgba(0, 0, 0, 0); background-color: #eee; border: 1px solid #cdd5d7; border-radius: 6px; box-shadow: 0 1px 2px 1px #cdd5d7; " +
-	"font-family: consolas,courier,monospace; font-size: .9rem; font-weight: 700; line-height: 1; margin: 3px; padding: 4px 6px; white-space: nowrap;";
-	
 	private final HTMLTableElement mainPanel;
 	
 	private final HTMLInputElement enableZoom = (HTMLInputElement) DomGlobal.document.createElement("input");
@@ -274,7 +271,7 @@ public class ZoomDragTimeAxisCase extends BaseComposite {
 		helpCol.style.textAlign = "center";
 		helpCol.vAlign = "top";
 		helpRow.appendChild(helpCol);
-		help.innerHTML = "<kbd style=\""+CSS+"\">Alt</kbd> to pan";
+		help.innerHTML = ModifierKey.ALT.getElement().getInnerHTML() + " to pan";
 		helpCol.appendChild(help);
 		
 		// ----------------------------------------------

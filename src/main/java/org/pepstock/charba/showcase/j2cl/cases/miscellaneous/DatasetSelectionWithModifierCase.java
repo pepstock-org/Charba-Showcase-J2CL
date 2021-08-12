@@ -1,17 +1,21 @@
-package org.pepstock.charba.showcase.j2cl.cases.extensions;
+package org.pepstock.charba.showcase.j2cl.cases.miscellaneous;
 
-import org.pepstock.charba.client.BarChart;
-import org.pepstock.charba.client.colors.GoogleChartColor;
-import org.pepstock.charba.client.colors.IsColor;
-import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
-import org.pepstock.charba.client.data.BarDataset;
+import java.util.List;
+
+import org.pepstock.charba.client.IsChart;
+import org.pepstock.charba.client.PieChart;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.enums.InteractionAxis;
+import org.pepstock.charba.client.data.Labels;
+import org.pepstock.charba.client.data.PieDataset;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.zoom.ZoomOptions;
-import org.pepstock.charba.client.zoom.ZoomPlugin;
+import org.pepstock.charba.client.events.DatasetSelectionEvent;
+import org.pepstock.charba.client.events.DatasetSelectionEventHandler;
+import org.pepstock.charba.client.impl.plugins.ChartPointer;
+import org.pepstock.charba.client.impl.plugins.ChartPointerOptions;
+import org.pepstock.charba.client.impl.plugins.enums.PointerElement;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -24,17 +28,15 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ZoomDragCategoryAxisCase extends BaseComposite {
+public class DatasetSelectionWithModifierCase extends BaseComposite {
 
-	private static final int AMOUNT = 40;
-	
 	private final HTMLTableElement mainPanel;
 
 	private final HTMLDivElement help = (HTMLDivElement) DomGlobal.document.createElement("div");
-	
-	private final BarChart chart = new BarChart();
 
-	public ZoomDragCategoryAxisCase() {
+	private final PieChart chart = new PieChart();
+
+	public DatasetSelectionWithModifierCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -58,50 +60,44 @@ public class ZoomDragCategoryAxisCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Drag to zoom on cartesian category axis");
+		chart.getOptions().getTitle().setText("Selecting dataset on pie chart");
 
-		BarDataset dataset1 = chart.newDataset();
-		dataset1.setLabel("dataset 1");
+		chart.addHandler(new DatasetSelectionEventHandler() {
 
-		IsColor color1 = GoogleChartColor.values()[6];
+			@Override
+			public void onSelect(DatasetSelectionEvent event) {
+				if (!ModifierKey.ALT.isPressed(event)) {
+					new Toast("Missing key!", "To select the dataset you must press " + ModifierKey.ALT.getElement().getInnerHTML() + " + click! ", "warning").show();
+					return;
+				}
+				IsChart chart = (IsChart) event.getSource();
+				Labels labels = chart.getData().getLabels();
+				List<Dataset> datasets = chart.getData().getDatasets();
+				if (datasets != null && !datasets.isEmpty()) {
+					StringBuilder sb = new StringBuilder();
+					sb.append("Dataset index: <b>").append(event.getItem().getDatasetIndex()).append("</b><br>");
+					sb.append("Dataset label: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getLabel()).append("</b><br>");
+					sb.append("Dataset data: <b>").append(datasets.get(event.getItem().getDatasetIndex()).getData().get(event.getItem().getIndex())).append("</b><br>");
+					sb.append("Index: <b>").append(event.getItem().getIndex()).append("</b><br>");
+					sb.append("Value: <b>").append(labels.getStrings(event.getItem().getIndex()).get(0)).append("</b><br>");
+					new Toast("Dataset Selected!", sb.toString()).show();
+				}
+			}
+		}, DatasetSelectionEvent.TYPE);
 
-		dataset1.setBackgroundColor(color1.alpha(0.2));
-		dataset1.setBorderColor(color1.toHex());
-		dataset1.setBorderWidth(1);
+		PieDataset dataset = chart.newDataset();
+		dataset.setLabel("dataset 1");
+		dataset.setBackgroundColor(getSequenceColors(months, 1));
+		dataset.setData(getRandomDigits(months, false));
 
-		dataset1.setData(getRandomDigits(AMOUNT, -100, 100));
+		ChartPointerOptions op = new ChartPointerOptions();
+		op.setElements(PointerElement.DATASET);
+		chart.getOptions().getPlugins().setOptions(ChartPointer.ID, op);
+		chart.getPlugins().add(ChartPointer.get());
 
-		BarDataset dataset2 = chart.newDataset();
-		dataset2.setLabel("dataset 2");
+		chart.getData().setLabels(getLabels());
+		chart.getData().setDatasets(dataset);
 
-		IsColor color2 = GoogleChartColor.values()[4];
-
-		dataset2.setBackgroundColor(color2.alpha(0.2));
-		dataset2.setBorderColor(color2.toHex());
-		dataset2.setBorderWidth(1);
-		dataset2.setData(getRandomDigits(AMOUNT, -100, 100));
-
-		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
-		axis1.setDisplay(true);
-		axis1.getTitle().setDisplay(true);
-		axis1.getTitle().setText("Color");
-		axis1.setMinIndex(10);
-		axis1.setMaxIndex(30);
-
-		chart.getData().setLabels(getLabelColors(AMOUNT).toArray(new String[0]));
-		chart.getData().setDatasets(dataset1, dataset2);
-		chart.getOptions().getScales().setAxes(axis1);
-
-		ZoomOptions options = new ZoomOptions();
-		options.getPan().setEnabled(true);
-		options.getPan().setMode(InteractionAxis.X);
-		options.getPan().setModifierKey(ModifierKey.ALT);
-		options.getZoom().getWheel().setEnabled(true);
-		options.getZoom().getDrag().setEnabled(true);
-		options.getZoom().setMode(InteractionAxis.X);
-
-		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
-		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------
@@ -128,16 +124,6 @@ public class ZoomDragCategoryAxisCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
-		HTMLButtonElement reset = (HTMLButtonElement) DomGlobal.document.createElement("button");
-		reset.onclick = (p0) -> {
-			handleResetZoom();
-			return null;
-		};
-		reset.className = "gwt-Button";
-		reset.textContent = "Reset zoom";
-		reset.style.marginRight = MarginRightUnionType.of("5px");
-		actionsCol.appendChild(reset);
-
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -162,22 +148,9 @@ public class ZoomDragCategoryAxisCase extends BaseComposite {
 		helpCol.style.textAlign = "center";
 		helpCol.vAlign = "top";
 		helpRow.appendChild(helpCol);
-		help.innerHTML = ModifierKey.ALT.getElement().getInnerHTML() + " to pan";
+		help.innerHTML = "Press " + ModifierKey.ALT.getElement().getInnerHTML() + " + click to select";
 		helpCol.appendChild(help);
-		
-		// ----------------------------------------------
-		// Log element
-		// ----------------------------------------------
 
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
-
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
 	}
 
 	@Override
@@ -187,13 +160,9 @@ public class ZoomDragCategoryAxisCase extends BaseComposite {
 
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
-			dataset.setData(getRandomDigits(AMOUNT, -100, 100));
+			dataset.setData(getRandomDigits(months, false));
 		}
 		chart.update();
-	}
-
-	protected void handleResetZoom() {
-		ZoomPlugin.reset(chart);
 	}
 
 }

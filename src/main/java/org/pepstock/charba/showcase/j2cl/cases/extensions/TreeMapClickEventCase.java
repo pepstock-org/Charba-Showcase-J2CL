@@ -62,6 +62,7 @@ public class TreeMapClickEventCase extends BaseComposite {
 
 		HTMLTableCellElement chartCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
 		chartCol.style.width = WidthUnionType.of("100%");
+		chartCol.align = "center";
 		chartRow.appendChild(chartCol);
 
 		// ----------------------------------------------

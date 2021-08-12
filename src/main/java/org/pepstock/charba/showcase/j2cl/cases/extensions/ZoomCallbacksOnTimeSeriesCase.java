@@ -52,9 +52,6 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 
 	private static final int AMOUNT_OF_POINTS = 60;
 	
-	private static final String CSS = "background: linear-gradient(180deg,#eee,#fff); background-color: rgba(0, 0, 0, 0); background-color: #eee; border: 1px solid #cdd5d7; border-radius: 6px; box-shadow: 0 1px 2px 1px #cdd5d7; " +
-	"font-family: consolas,courier,monospace; font-size: .9rem; font-weight: 700; line-height: 1; margin: 3px; padding: 4px 6px; white-space: nowrap;";
-	
 	private final HTMLTableElement mainPanel;
 
 	private final TimeSeriesLineChart chart = new TimeSeriesLineChart();
@@ -336,7 +333,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.ID, ZoomPlugin.FACTORY);
 		if (modifier.checked) {
 			options.getZoom().getWheel().setModifierKey(ModifierKey.ALT);
-			help.innerHTML = "<kbd style=\""+CSS+"\">Alt</kbd> + wheeling to zoom";
+			help.innerHTML = ModifierKey.ALT.getElement().getInnerHTML()+" + wheeling to zoom";
 		} else {
 			options.getZoom().getWheel().setModifierKey(null);
 			help.innerHTML = "";
