@@ -47,7 +47,7 @@ public class App implements EntryPoint {
 
 	public static TopoJson ITALY;
 
-	public static TopoJson GERMANY;
+	public static TopoJson GERMANY; 
 	
 	public void onModuleLoad() {
 		Images.get();
