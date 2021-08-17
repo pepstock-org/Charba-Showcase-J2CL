@@ -18,7 +18,9 @@ import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.enums.Align;
 import org.pepstock.charba.client.datalabels.events.ClickEventHandler;
 import org.pepstock.charba.client.enums.DefaultPluginId;
+import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.Weight;
+import org.pepstock.charba.client.events.ChartEventContext;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
@@ -26,8 +28,11 @@ import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
+import elemental2.dom.HTMLDivElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
+import elemental2.dom.HTMLInputElement;
+import elemental2.dom.HTMLLabelElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
@@ -35,6 +40,10 @@ import elemental2.dom.HTMLTableRowElement;
 public class DataLabelsSelectionCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
+	
+	private final HTMLInputElement modifier = (HTMLInputElement) DomGlobal.document.createElement("input");
+	
+	private final HTMLDivElement help = (HTMLDivElement) DomGlobal.document.createElement("div");
 
 	private final LineChart chart = new LineChart();
 
@@ -161,7 +170,11 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		option.getListeners().setClickEventHandler(new ClickEventHandler() {
 
 			@Override
-			public boolean onClick(DataLabelsContext context) {
+			public boolean onClick(DataLabelsContext context, ChartEventContext event) {
+				if (modifier.checked && !ModifierKey.CTRL.isPressed(event)) {
+					new Toast("Missing key!", "To select the label you must press "+ModifierKey.CTRL.getElement().getInnerHTML()+" + click! ", "warning").show();
+					return true;
+				}
 				int key = context.getDatasetIndex() * 1000 + context.getDataIndex();
 				if (items.containsKey(key)) {
 					items.remove(key);
@@ -227,6 +240,24 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		removeData.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(removeData);
 
+		String modifierId = "modifier" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelForModifier = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelForModifier.htmlFor = modifierId;
+		labelForModifier.appendChild(DomGlobal.document.createTextNode("CTRL modifier "));
+		actionsCol.appendChild(labelForModifier);
+
+		modifier.id = modifierId;
+		modifier.checked = false;
+		modifier.onclick = (p0) -> {
+			handleModifier();
+			return null;
+		};
+		modifier.type = "checkbox";
+		modifier.className = "gwt-CheckBox";
+		modifier.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(modifier);
+		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -237,6 +268,21 @@ public class DataLabelsSelectionCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
+		
+		// ----------------------------------------------
+		// help element
+		// ----------------------------------------------
+
+		HTMLTableRowElement helpRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		helpRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(helpRow);
+
+		HTMLTableCellElement helpCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		helpCol.style.width = WidthUnionType.of("100%");
+		helpCol.style.textAlign = "center";
+		helpCol.vAlign = "top";
+		helpRow.appendChild(helpCol);
+		helpCol.appendChild(help);
 
 	}
 
@@ -260,6 +306,14 @@ public class DataLabelsSelectionCase extends BaseComposite {
 	protected void handleRemoveData() {
 		items.clear();
 		removeData(chart);
+	}
+	
+	protected void handleModifier() {
+		if (modifier.checked) {
+			help.innerHTML = "Press " + ModifierKey.CTRL.getElement().getInnerHTML() + " + click to select";
+		} else {
+			help.innerHTML = "";
+		}
 	}
 
 	static final class SelectionItem {

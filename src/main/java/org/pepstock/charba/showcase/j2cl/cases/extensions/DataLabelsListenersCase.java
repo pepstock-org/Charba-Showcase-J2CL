@@ -21,6 +21,7 @@ import org.pepstock.charba.client.dom.DOMBuilder;
 import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.Weight;
+import org.pepstock.charba.client.events.ChartEventContext;
 import org.pepstock.charba.client.events.DatasetSelectionEvent;
 import org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler;
 import org.pepstock.charba.client.items.DatasetElement;
@@ -260,24 +261,24 @@ public class DataLabelsListenersCase extends BaseComposite {
 		}
 
 		@Override
-		public boolean onLeave(DataLabelsContext context) {
-			super.onLeave(context);
+		public boolean onLeave(DataLabelsContext context, ChartEventContext event) {
+			super.onLeave(context, event);
 			LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 			mylog.addLogEvent("> LEAVE: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getDataIndex() + ", value(" + ds.getData().get(context.getDataIndex()) + ")");
 			return true;
 		}
 
 		@Override
-		public boolean onEnter(DataLabelsContext context) {
-			super.onEnter(context);
+		public boolean onEnter(DataLabelsContext context, ChartEventContext event) {
+			super.onEnter(context, event);
 			LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 			mylog.addLogEvent("> ENTER: Dataset index: " + context.getDatasetIndex() + ", data index: " + context.getDataIndex() + ", value(" + ds.getData().get(context.getDataIndex()) + ")");
 			return true;
 		}
 
 		@Override
-		public boolean onClick(DataLabelsContext context) {
-			super.onClick(context);
+		public boolean onClick(DataLabelsContext context, ChartEventContext event) {
+			super.onClick(context, event);
 			LineDataset ds = (LineDataset) chart.getData().getDatasets().get(context.getDatasetIndex());
 			Labels labels = chart.getData().getLabels();
 			List<Dataset> datasets = chart.getData().getDatasets();

@@ -235,7 +235,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		labelForModifier.appendChild(DomGlobal.document.createTextNode("ALT modifier "));
 		actionsCol.appendChild(labelForModifier);
 
-		modifier.id = draggingId;
+		modifier.id = modifierId;
 		modifier.checked = false;
 		modifier.disabled = true;
 		modifier.onclick = (p0) -> {

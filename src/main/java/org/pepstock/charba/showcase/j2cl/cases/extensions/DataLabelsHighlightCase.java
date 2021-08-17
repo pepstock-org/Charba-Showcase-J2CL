@@ -21,6 +21,7 @@ import org.pepstock.charba.client.datalabels.events.EnterEventHandler;
 import org.pepstock.charba.client.datalabels.events.LeaveEventHandler;
 import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.Weight;
+import org.pepstock.charba.client.events.ChartEventContext;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -163,7 +164,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 		option.getListeners().setEnterEventHandler(new EnterEventHandler() {
 
 			@Override
-			public boolean onEnter(DataLabelsContext context) {
+			public boolean onEnter(DataLabelsContext context, ChartEventContext event) {
 				Hovered hovered = context.getAttributes(factory);
 				hovered.setHovered(true);
 				context.setAttributes(hovered);
@@ -174,7 +175,7 @@ public class DataLabelsHighlightCase extends BaseComposite {
 		option.getListeners().setLeaveEventHandler(new LeaveEventHandler() {
 
 			@Override
-			public boolean onLeave(DataLabelsContext context) {
+			public boolean onLeave(DataLabelsContext context, ChartEventContext event) {
 				Hovered hovered = context.getAttributes(factory);
 				hovered.setHovered(false);
 				context.setAttributes(hovered);

@@ -10,6 +10,7 @@ import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.events.ClickEventHandler;
+import org.pepstock.charba.client.events.ChartEventContext;
 import org.pepstock.charba.client.geo.Feature;
 import org.pepstock.charba.client.geo.GeoUtils;
 import org.pepstock.charba.client.geo.TopoJson;
@@ -91,7 +92,7 @@ public class App implements EntryPoint {
 		dataLabelsOption.getListeners().setClickEventHandler(new ClickEventHandler() {
 			
 			@Override
-			public boolean onClick(DataLabelsContext context) {
+			public boolean onClick(DataLabelsContext context, ChartEventContext event) {
 				new Toast("Click!", "Test on DATALABELS click").show();
 				return true;
 			}

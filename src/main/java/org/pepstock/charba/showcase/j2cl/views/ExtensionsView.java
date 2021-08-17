@@ -11,6 +11,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnTimeSe
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationPointsOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsWithModifierKey;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsOnCombinedCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase;
@@ -465,6 +466,11 @@ public class ExtensionsView extends AbstractView {
 		EVENTS("Catching annotations events", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationsEventsOnTimeSeriesCase();
+			}
+		}),
+		EVENTS_WITH_MODIFIER("Catching annotations events with modifier key", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationsEventsWithModifierKey();
 			}
 		});
 

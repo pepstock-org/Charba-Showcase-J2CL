@@ -16,8 +16,6 @@ import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
 import org.pepstock.charba.client.annotation.listeners.ClickCallback;
 import org.pepstock.charba.client.annotation.listeners.DoubleClickCallback;
-import org.pepstock.charba.client.annotation.listeners.EnterCallback;
-import org.pepstock.charba.client.annotation.listeners.LeaveCallback;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -31,39 +29,40 @@ import org.pepstock.charba.client.data.TimeSeriesItem;
 import org.pepstock.charba.client.data.TimeSeriesLineDataset;
 import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
+import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.events.ChartEventContext;
 import org.pepstock.charba.client.items.TooltipItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
-import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
+import elemental2.dom.HTMLDivElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
+public class AnnotationsEventsWithModifierKey extends BaseComposite {
 
 	private static final long DAY = 1000 * 60 * 60 * 24;
 
 	private static final int AMOUNT_OF_POINTS = 60;
 
 	private final HTMLTableElement mainPanel;
+	
+	private final HTMLDivElement help = (HTMLDivElement) DomGlobal.document.createElement("div");
 
 	private final TimeSeriesLineChart chart = new TimeSeriesLineChart();
 
-	private final LogView mylog = new LogView();
-
 	final MyEventsHandler eventHandler = new MyEventsHandler();
 
-	public AnnotationsEventsOnTimeSeriesCase() {
+	public AnnotationsEventsWithModifierKey() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -90,7 +89,7 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		chart.getOptions().setMaintainAspectRatio(true);
 		chart.getOptions().setAspectRatio(3);
 		chart.getOptions().getTitle().setDisplay(true);
-		chart.getOptions().getTitle().setText("Annotations events on timeseries line chart");
+		chart.getOptions().getTitle().setText("Annotations events with modifier key on timeseries line chart");
 		chart.getOptions().getTooltips().setTitleMarginBottom(10);
 		chart.getOptions().getTooltips().getCallbacks().setTitleCallback(new AbstractTooltipTitleCallback() {
 
@@ -163,8 +162,6 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		line.getLabel().setDisplay(true);
 		line.getLabel().setContent("My threshold");
 		line.getLabel().setBackgroundColor(HtmlColor.RED);
-		line.setEnterCallback(eventHandler);
-		line.setLeaveCallback(eventHandler);
 		line.setClickCallback(eventHandler);
 		line.setDoubleClickCallback(eventHandler);
 
@@ -181,8 +178,6 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		box.setBackgroundColor("rgba(101, 33, 171, 0.5)");
 		box.setBorderColor("rgb(101, 33, 171)");
 		box.setBorderWidth(1);
-		box.setEnterCallback(eventHandler);
-		box.setLeaveCallback(eventHandler);
 		box.setClickCallback(eventHandler);
 		box.setDoubleClickCallback(eventHandler);
 		
@@ -228,19 +223,21 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		actionsCol.appendChild(github);
 
 		// ----------------------------------------------
-		// Log element
+		// help element
 		// ----------------------------------------------
 
-		HTMLTableRowElement logRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
-		logRow.style.width = WidthUnionType.of("100%");
-		mainPanel.appendChild(logRow);
+		HTMLTableRowElement helpRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		helpRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(helpRow);
 
-		HTMLTableCellElement logCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
-		logCol.style.width = WidthUnionType.of("100%");
-		logCol.style.textAlign = "center";
-		logCol.vAlign = "top";
-		logRow.appendChild(logCol);
-		logCol.appendChild(mylog.getElement());
+		HTMLTableCellElement helpCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		helpCol.style.width = WidthUnionType.of("100%");
+		helpCol.style.textAlign = "center";
+		helpCol.vAlign = "top";
+		helpRow.appendChild(helpCol);
+		help.innerHTML = "Press " + ModifierKey.ALT.getElement().getInnerHTML() + " + "+ClickType.CLICK.getTitle()+"/"+ClickType.DOUBLE_CLICK.getTitle()+" to select annotation";
+		helpCol.appendChild(help);
+		
 	}
 
 	@Override
@@ -258,17 +255,7 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		chart.update();
 	}
 	
-	class MyEventsHandler implements ClickCallback,  DoubleClickCallback,  LeaveCallback, EnterCallback {
-
-		@Override
-		public void onEnter(IsChart chart, AbstractAnnotation annotation, ChartEventContext event) {
-			mylog.addLogEvent("> Enter on annotation '"+annotation.getId().value()+"' type " + annotation.getType());
-		}
-
-		@Override
-		public void onLeave(IsChart chart, AbstractAnnotation annotation, ChartEventContext event) {
-			mylog.addLogEvent("> Leave on annotation '"+annotation.getId().value()+"' type " + annotation.getType());
-		}
+	class MyEventsHandler implements ClickCallback,  DoubleClickCallback {
 
 		@Override
 		public void onDoubleClick(IsChart chart, AbstractAnnotation annotation, ChartEventContext event) {
@@ -281,6 +268,10 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		}
 		
 		private void click(IsChart chart, AbstractAnnotation annotation, ChartEventContext event, ClickType type) {
+			if (!ModifierKey.ALT.isPressed(event)) {
+				new Toast("Missing key!", "To select the annotation you must press "+ModifierKey.ALT.getElement().getInnerHTML()+" + "+type.getType()+"! ", "warning").show();
+				return;
+			}
 			StringBuilder sb = new StringBuilder();
 			sb.append("Annotation: <b>").append(annotation.getId().value()).append("</b><br>");
 			sb.append("Annotation type: <b>").append(annotation.getType().value()).append("</b><br>");
@@ -292,16 +283,23 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 	private enum ClickType
 	{
 
-		CLICK("Click", "success"),
-		DOUBLE_CLICK("Double click", "info");
+		CLICK("click", "Click", "success"),
+		DOUBLE_CLICK("dblClick", "Double click", "info");
+
+		private final String type;
 
 		private final String title;
 
 		private final String level;
 
-		private ClickType(String title, String level) {
+		private ClickType(String type, String title, String level) {
+			this.type = type;
 			this.title = title;
 			this.level = level;
+		}
+
+		private String getType() {
+			return type;
 		}
 
 		private String getTitle() {
@@ -313,5 +311,4 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		}
 
 	}
-
 }
