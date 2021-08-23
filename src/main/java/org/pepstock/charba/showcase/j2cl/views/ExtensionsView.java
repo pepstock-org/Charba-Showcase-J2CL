@@ -45,6 +45,10 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingImageRender
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingLabelRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingPercentageRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixCalendarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnCategoryAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnTimeAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
@@ -513,7 +517,7 @@ public class ExtensionsView extends AbstractView {
 				return new TreeMapDividersCase();
 			}
 		}),
-		CLICKING("Selecting item", new CaseFactory() {
+		CLICKING("Selecting treemap item", new CaseFactory() {
 			public BaseComposite create() {
 				return new TreeMapClickEventCase();
 			}
@@ -538,6 +542,50 @@ public class ExtensionsView extends AbstractView {
 
 	}
 
+	// ----------------------------------------------
+	// MATRIX CHARTS
+	// ----------------------------------------------
+	private enum MatrixChartsCase implements CaseItem
+	{
+		CALENDAR("Calendar", new CaseFactory() {
+			public BaseComposite create() {
+				return new MatrixCalendarCase();
+			}
+		}),
+		USING_TIME_AXIS("Using time axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new MatrixOnTimeAxisCase();
+			}
+		}),
+		USING_CATEGORY_AXIS("Using category axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new MatrixOnCategoryAxisCase();
+			}
+		}),
+		CLICKING("Selecting matrix item", new CaseFactory() {
+			public BaseComposite create() {
+				return new MatrixClickEventCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private MatrixChartsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
 
 	public ExtensionsView(HTMLElement content) {
 		super(content);
@@ -619,12 +667,12 @@ public class ExtensionsView extends AbstractView {
 			}
 
 			if (Category.ANNOTATION.equals(cat)) {
-				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
-				labelPointer.innerHTML = "TreeMap controller";
-				labelPointer.style.textAlign = "left";
-				labelPointer.className = "myCategory";
-				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
-				catCol.appendChild(labelPointer);
+				HTMLElement treemapPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				treemapPointer.innerHTML = "TreeMap controller";
+				treemapPointer.style.textAlign = "left";
+				treemapPointer.className = "myCategory";
+				treemapPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(treemapPointer);
 				
 				for (CaseItem caseItem : TreeMapChartsCase.values()) {
 					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
@@ -641,6 +689,30 @@ public class ExtensionsView extends AbstractView {
 						return null;
 					};
 				}
+				
+				HTMLElement matrixPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				matrixPointer.innerHTML = "Matrix controller";
+				matrixPointer.style.textAlign = "left";
+				matrixPointer.className = "myCategory";
+				matrixPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(matrixPointer);
+				
+				for (CaseItem caseItem : MatrixChartsCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = caseItem.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+
 			}
 
 			if (Category.ZOOM.equals(cat)) {

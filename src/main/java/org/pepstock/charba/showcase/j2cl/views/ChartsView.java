@@ -20,6 +20,7 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.HorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LegendClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.LineCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.MatrixCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.PieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.PolarAreaCase;
@@ -241,6 +242,11 @@ public class ChartsView extends AbstractView {
 		TREEMAP("TreeMap", new CaseFactory() {
 			public BaseComposite create() {
 				return new TreeMapCase();
+			}
+		}),
+		MATRIX("Matrix", new CaseFactory() {
+			public BaseComposite create() {
+				return new MatrixCase();
 			}
 		});
 		
