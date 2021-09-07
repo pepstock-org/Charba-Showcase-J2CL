@@ -53,6 +53,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyBasicCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyClickCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyCountriesCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyEnergyCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyTreeCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
@@ -609,6 +610,11 @@ public class ExtensionsView extends AbstractView {
 		COUNTRIES("Countries", new CaseFactory() {
 			public BaseComposite create() {
 				return new SankeyCountriesCase();
+			}
+		}),
+		TREE("Tree", new CaseFactory() {
+			public BaseComposite create() {
+				return new SankeyTreeCase();
 			}
 		}),
 		CLICKING("Selecting flow item", new CaseFactory() {

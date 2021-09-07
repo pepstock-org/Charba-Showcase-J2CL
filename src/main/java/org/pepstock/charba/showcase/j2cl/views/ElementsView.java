@@ -24,6 +24,7 @@ import org.pepstock.charba.showcase.j2cl.cases.elements.NoNumericYAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnTimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.elements.StackedAxesCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TicksMinMaxCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TicksStepSizeCase;
 import org.pepstock.charba.showcase.j2cl.cases.elements.TitleChangeCase;
@@ -285,6 +286,11 @@ public class ElementsView extends AbstractView {
 		LOG_SCATTER("Logarithmic axis on scatter chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new LogarithmicAxisOnScatterCase();
+			}
+		}),
+		STACKED_AXES("Stacked axes on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new StackedAxesCase();
 			}
 		});
 
