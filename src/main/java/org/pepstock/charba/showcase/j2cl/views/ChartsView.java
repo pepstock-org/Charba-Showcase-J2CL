@@ -25,6 +25,7 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.MeterCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.PieCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.PolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.RadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.SankeyCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.ScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedBarCase;
@@ -247,6 +248,11 @@ public class ChartsView extends AbstractView {
 		MATRIX("Matrix", new CaseFactory() {
 			public BaseComposite create() {
 				return new MatrixCase();
+			}
+		}),
+		SANKEY("Sankey", new CaseFactory() {
+			public BaseComposite create() {
+				return new SankeyCase();
 			}
 		});
 		

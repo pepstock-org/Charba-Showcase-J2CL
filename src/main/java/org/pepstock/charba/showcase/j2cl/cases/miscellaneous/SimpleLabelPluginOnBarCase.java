@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.Defaults;
+import org.pepstock.charba.client.Helpers;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -11,14 +12,12 @@ import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.dom.enums.TextBaseline;
-import org.pepstock.charba.client.enums.FontStyle;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.enums.TextAlign;
-import org.pepstock.charba.client.enums.Weight;
 import org.pepstock.charba.client.items.DatasetElement;
 import org.pepstock.charba.client.items.DatasetItem;
+import org.pepstock.charba.client.options.IsImmutableFont;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
-import org.pepstock.charba.client.utils.Utilities;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -91,7 +90,7 @@ public class SimpleLabelPluginOnBarCase extends BaseComposite {
 
 			@Override
 			public void onAfterDatasetsDraw(IsChart chart) {
-				final int fontSize = Defaults.get().getGlobal().getFont().getSize();
+				final IsImmutableFont font = Helpers.get().toFont(Defaults.get().getGlobal().getFont());
 				final int padding = 5;
 				final Context2dItem ctx = chart.getCanvas().getContext2d();
 
@@ -105,11 +104,10 @@ public class SimpleLabelPluginOnBarCase extends BaseComposite {
 							DatasetElement elem = elements.get(k);
 							String dataString = ds.getData().get(k).toString();
 							ctx.setFillColor("rgb(0, 0, 0)");
-							String fontString = Utilities.toCSSFontProperty(FontStyle.NORMAL, Weight.NORMAL, fontSize, null, Defaults.get().getGlobal().getFont().getFamily());
-							ctx.setFont(fontString);
+							ctx.setFont(font.toCSSString());
 							ctx.setTextAlign(TextAlign.CENTER);
 							ctx.setTextBaseline(TextBaseline.MIDDLE);
-							ctx.fillText(dataString, elem.getX(), elem.getY() - (fontSize / 2) - padding);
+							ctx.fillText(dataString, elem.getX(), elem.getY() - (font.getLineHeight() / 2) - padding);
 						}
 					}
 				}

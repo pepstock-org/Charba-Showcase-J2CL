@@ -49,6 +49,10 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixCalendarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnCategoryAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnTimeAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyBasicCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyClickCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyCountriesCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyEnergyCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
@@ -82,7 +86,7 @@ public class ExtensionsView extends AbstractView {
 		DATA_LABELS("Datalabels plugin", DataLabelsCase.values()),
 		LABELS("Labels plugin", LabelsCase.values()),
 		ZOOM("Zoom plugin", ZoomCase.values()),
-		ANNOTATION("Annotation plugin", AnnotationCase.values());
+		CONTROLLERS("Geographical controller", GeoChartsCase.values());
 
 		private final String label;
 
@@ -587,6 +591,50 @@ public class ExtensionsView extends AbstractView {
 
 	}
 
+	// ----------------------------------------------
+	// SANKEY CHARTS
+	// ----------------------------------------------
+	private enum SankeyChartsCase implements CaseItem
+	{
+		BASIC("Basic", new CaseFactory() {
+			public BaseComposite create() {
+				return new SankeyBasicCase();
+			}
+		}),
+		ENERGY("Energy", new CaseFactory() {
+			public BaseComposite create() {
+				return new SankeyEnergyCase();
+			}
+		}),
+		COUNTRIES("Countries", new CaseFactory() {
+			public BaseComposite create() {
+				return new SankeyCountriesCase();
+			}
+		}),
+		CLICKING("Selecting flow item", new CaseFactory() {
+			public BaseComposite create() {
+				return new SankeyClickCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private SankeyChartsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
 	public ExtensionsView(HTMLElement content) {
 		super(content);
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
@@ -643,13 +691,13 @@ public class ExtensionsView extends AbstractView {
 
 			if (Category.LABELS.equals(cat)) {
 				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
-				labelPointer.innerHTML = "Geographical controller";
+				labelPointer.innerHTML = "Annotation plugin";
 				labelPointer.style.textAlign = "left";
 				labelPointer.className = "myCategory";
 				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
 				catCol.appendChild(labelPointer);
 				
-				for (CaseItem caseItem : GeoChartsCase.values()) {
+				for (CaseItem caseItem : AnnotationCase.values()) {
 					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
 					item.style.textAlign = "left";
 					item.className = "myCategoryItem";
@@ -666,7 +714,7 @@ public class ExtensionsView extends AbstractView {
 				}
 			}
 
-			if (Category.ANNOTATION.equals(cat)) {
+			if (Category.CONTROLLERS.equals(cat)) {
 				HTMLElement treemapPointer = (HTMLElement) DomGlobal.document.createElement("div");
 				treemapPointer.innerHTML = "TreeMap controller";
 				treemapPointer.style.textAlign = "left";
@@ -698,6 +746,29 @@ public class ExtensionsView extends AbstractView {
 				catCol.appendChild(matrixPointer);
 				
 				for (CaseItem caseItem : MatrixChartsCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = caseItem.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+
+				HTMLElement sankeyPointer = (HTMLElement) DomGlobal.document.createElement("div");
+				sankeyPointer.innerHTML = "Sankey controller";
+				sankeyPointer.style.textAlign = "left";
+				sankeyPointer.className = "myCategory";
+				sankeyPointer.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(sankeyPointer);
+				
+				for (CaseItem caseItem : SankeyChartsCase.values()) {
 					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
 					item.style.textAlign = "left";
 					item.className = "myCategoryItem";
