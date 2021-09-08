@@ -37,7 +37,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'zulu'
+          distribution: 'adopt'
       # 
       # Defines Charba lib in Maven
       # 
@@ -46,7 +46,7 @@ jobs:
       # 
       # Clean project by Maven
       # 
-      - name: Build
+      - name: Clean
         run: mvn clean
       # 
       # Run the build of project by Maven

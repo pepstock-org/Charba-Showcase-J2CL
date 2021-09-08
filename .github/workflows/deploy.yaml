@@ -54,7 +54,7 @@ jobs:
       # 
       # Clean project by Maven
       # 
-      - name: Build
+      - name: Clean
         run: mvn clean
       # 
       # Run the build of project by Maven
