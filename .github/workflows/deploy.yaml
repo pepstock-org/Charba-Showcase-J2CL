@@ -52,6 +52,11 @@ jobs:
       - name: Adds Charba lib to Maven
         run: mvn install:install-file -Dfile=./lib/charba-${{ steps.version.outputs.CHARBA_VERSION }}.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=${{ steps.version.outputs.CHARBA_VERSION }} -Dpackaging=jar
       # 
+      # Clean project by Maven
+      # 
+      - name: Build
+        run: mvn clean
+      # 
       # Run the build of project by Maven
       # 
       - name: Build
