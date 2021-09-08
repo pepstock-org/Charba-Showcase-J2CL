@@ -13,6 +13,9 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePieCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeRadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorApiCategoryCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorApiLinearCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorApiTimeCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBubbleCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase;
@@ -116,36 +119,51 @@ public class PluginsView extends AbstractView {
 			return factory;
 		}
 	}
-	
+
 	// ----------------------------------------------
 	// DATASET ITEMS SELECTOR
 	// ----------------------------------------------
 
 	private enum DatasetItemsSelectorCase implements CaseItem
 	{
-		SELECTIONG_ON_BAR("Selecting on bar chart", new CaseFactory() {
+		SELECTING_ON_BAR("Selecting on bar chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new DatasetItemsSelectorBarCase();
 			}
 		}),
-		SELECTIONG_ON_LINE("Selecting on line chart", new CaseFactory() {
+		SELECTING_ON_LINE("Selecting on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new DatasetItemsSelectorLineCase();
 			}
 		}),
-		SELECTIONG_ON_SCATTER("Selecting on scatter chart", new CaseFactory() {
+		SELECTING_ON_SCATTER("Selecting on scatter chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new DatasetItemsSelectorScatterCase();
 			}
 		}),
-		SELECTIONG_ON_BUBBLE("Selecting on bubble chart", new CaseFactory() {
+		SELECTING_ON_BUBBLE("Selecting on bubble chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new DatasetItemsSelectorBubbleCase();
 			}
 		}),
-		SELECTIONG_ON_BAR_TIME_SERIES("Selecting on timeseries bar chart", new CaseFactory() {
+		SELECTING_ON_BAR_TIME_SERIES("Selecting on timeseries bar chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new DatasetItemsSelectorTimeSeriesByBarCase();
+			}
+		}),
+		API_CATEGORY_AXIS("Programmatically selecting on category axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetItemsSelectorApiCategoryCase();
+			}
+		}),
+		API_LINEAR_AXIS("Programmatically selecting on linear axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetItemsSelectorApiLinearCase();
+			}
+		}),
+		API_TIME_AXIS("Programmatically selecting on time axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new DatasetItemsSelectorApiTimeCase();
 			}
 		}),
 		ZOOMING("Zooming on timeseries line chart", new CaseFactory() {
@@ -158,7 +176,7 @@ public class PluginsView extends AbstractView {
 				return new DatasetItemsSelectorDrillingDownCase();
 			}
 		});
-		
+
 		private final String label;
 
 		private final CaseFactory factory;
@@ -176,7 +194,7 @@ public class PluginsView extends AbstractView {
 			return factory;
 		}
 	}
-	
+
 	// ----------------------------------------------
 	// COLOR SCHEMES
 	// ----------------------------------------------
@@ -213,7 +231,7 @@ public class PluginsView extends AbstractView {
 				return new ColorSchemeBubbleCase();
 			}
 		});
-		
+
 		private final String label;
 
 		private final CaseFactory factory;
@@ -231,7 +249,7 @@ public class PluginsView extends AbstractView {
 			return factory;
 		}
 	}
-	
+
 	// ----------------------------------------------
 	// HTML LEGEND
 	// ----------------------------------------------
@@ -303,7 +321,7 @@ public class PluginsView extends AbstractView {
 				return new HtmlLegendCustomCallbackCase();
 			}
 		});
-		
+
 		private final String label;
 
 		private final CaseFactory factory;
@@ -321,7 +339,7 @@ public class PluginsView extends AbstractView {
 			return factory;
 		}
 	}
-	
+
 	public PluginsView(HTMLElement content) {
 		super(content);
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
@@ -375,7 +393,7 @@ public class PluginsView extends AbstractView {
 					};
 				}
 			}
-			
+
 			if (Category.CHART_BACKGROUND.equals(cat)) {
 				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
 				labelPointer.innerHTML = "Chart pointer";
@@ -383,7 +401,7 @@ public class PluginsView extends AbstractView {
 				labelPointer.className = "myCategory";
 				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
 				catCol.appendChild(labelPointer);
-				
+
 				HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
 				item.style.textAlign = "left";
 				item.className = "myCategoryItem";
