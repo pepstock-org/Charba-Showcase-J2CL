@@ -42,7 +42,6 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
 				<configuration>
 					<outputEncoding>UTF-8</outputEncoding>
 					<source>1.8</source>
@@ -51,7 +50,6 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.0.1</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -85,7 +83,7 @@
 			<plugins>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.5.1</version>
+					<version>3.8.1</version>
 					<configuration>
 						<source>1.8</source>
 						<target>1.8</target>
@@ -95,7 +93,7 @@
 					<groupId>com.vertispan.j2cl</groupId>
 					<artifactId>j2cl-maven-plugin</artifactId>
 					<version>0.19-SNAPSHOT</version>
-					<executions>
+					<!-- executions>
 						<execution>
 							<id>build-js</id>
 							<phase>process-classes</phase>
@@ -103,11 +101,11 @@
 								<goal>build</goal>
 							</goals>
 						</execution>
-					</executions>
+					</executions -->
 				</plugin>
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>3.2.1</version>
 					<executions>
 						<execution>
 							<id>attach-sources</id>
