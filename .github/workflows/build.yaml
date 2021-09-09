@@ -52,6 +52,6 @@ jobs:
       # Run the build of project by Maven
       # 
       - name: Build
-        run: mvn --file pom.xml install
+        run: mvn --file pom.xml install --no-transfer-progress
         env:
           MAVEN_OPTS: -Xmx3000m
