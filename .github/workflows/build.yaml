@@ -39,6 +39,13 @@ jobs:
           java-version: '11'
           distribution: 'zulu'
       # 
+      # Setup Maven
+      # 
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4
+        with:
+          maven-version: 3.6.3
+      # 
       # Defines Charba lib in Maven
       # 
       - name: Adds Charba lib to Maven
