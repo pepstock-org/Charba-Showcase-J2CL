@@ -73,15 +73,14 @@
 					</execution>
 				</executions>
 				<configuration>
-					<webappDirectory>./war</webappDirectory>
+					<!-- webappDirectory>./war</webappDirectory>
 					<dependencyMode>PRUNE</dependencyMode>
 					<entrypoint>org.pepstock.charba.showcase.j2cl.App</entrypoint>
 					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename>
-					<enableSourcemaps>true</enableSourcemaps>
-									
-					<!-- webappDirectory>./war</webappDirectory>
+					<enableSourcemaps>true</enableSourcemaps -->
+					<webappDirectory>./war</webappDirectory>
 					<entrypoint>org.pepstock.charba.showcase.j2cl.App</entrypoint>
-					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename -->
+					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -98,7 +97,7 @@
 				<plugin>
 					<groupId>com.vertispan.j2cl</groupId>
 					<artifactId>j2cl-maven-plugin</artifactId>
-					<version>0.17-SNAPSHOT</version>
+					<version>0.18-SNAPSHOT</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
