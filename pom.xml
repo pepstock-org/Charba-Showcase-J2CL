@@ -73,13 +73,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!-- webappDirectory>./war</webappDirectory>
-					<dependencyMode>PRUNE</dependencyMode>
-					<entrypoint>org.pepstock.charba.showcase.j2cl.App</entrypoint>
-					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename>
-					<enableSourcemaps>true</enableSourcemaps -->
 					<webappDirectory>./war</webappDirectory>
-					<workerThreadCount>8</workerThreadCount>
 					<entrypoint>org.pepstock.charba.showcase.j2cl.App</entrypoint>
 					<initialScriptFilename>${project.artifactId}.js</initialScriptFilename>
 				</configuration>

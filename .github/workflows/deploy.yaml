@@ -47,15 +47,17 @@ jobs:
           java-version: '11'
           distribution: 'zulu'
       # 
+      # Setup Maven
+      # 
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4
+        with:
+          maven-version: 3.6.3
+      # 
       # Defines Charba lib in Maven
       # 
       - name: Adds Charba lib to Maven
         run: mvn install:install-file -Dfile=./lib/charba-${{ steps.version.outputs.CHARBA_VERSION }}.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=${{ steps.version.outputs.CHARBA_VERSION }} -Dpackaging=jar  --no-transfer-progress
-      # 
-      # Clean project by Maven
-      # 
-      - name: Clean
-        run: mvn clean --no-transfer-progress
       # 
       # Run the build of project by Maven
       # 

@@ -51,14 +51,7 @@ jobs:
       - name: Adds Charba lib to Maven
         run: mvn install:install-file -Dfile=./lib/charba-4.2.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=4.2 -Dpackaging=jar  --no-transfer-progress
       # 
-      # Clean project by Maven
-      # 
-      - name: Clean
-        run: mvn clean  --no-transfer-progress
-      # 
       # Run the build of project by Maven
       # 
       - name: Build
         run: mvn --file pom.xml install --no-transfer-progress
-        env:
-          MAVEN_OPTS: -Xmx3000m
