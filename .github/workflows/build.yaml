@@ -53,3 +53,5 @@ jobs:
       # 
       - name: Build
         run: mvn --file pom.xml install
+        env:
+          MAVEN_OPTS: -Xmx3000m
