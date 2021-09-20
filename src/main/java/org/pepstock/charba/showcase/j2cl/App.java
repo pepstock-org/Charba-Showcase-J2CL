@@ -19,6 +19,7 @@ import org.pepstock.charba.client.impl.charts.MeterChart;
 import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
 import org.pepstock.charba.client.labels.LabelsPlugin;
 import org.pepstock.charba.client.utils.CScheduler;
+import org.pepstock.charba.client.utils.toast.Toaster;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
@@ -98,6 +99,9 @@ public class App implements EntryPoint {
 			}
 		});
 		dataLabelsOption.store();
+		
+		Toaster.get().getDefaults().setTimeout(3000);
+		Toaster.get().setMaxHistoryItems(10);
 
 		HTMLDivElement div = (HTMLDivElement) DomGlobal.document.createElement("div");
 
