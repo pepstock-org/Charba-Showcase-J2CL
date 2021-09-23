@@ -20,6 +20,7 @@ import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
 import org.pepstock.charba.client.labels.LabelsPlugin;
 import org.pepstock.charba.client.utils.CScheduler;
 import org.pepstock.charba.client.utils.toast.Toaster;
+import org.pepstock.charba.client.utils.toast.enums.MaximumOpenItemsPolicy;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
@@ -39,7 +40,7 @@ import elemental2.dom.HTMLDivElement;
 
 public class App implements EntryPoint {
 
-	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/4.1/src/main/java/";
+	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/4.2/src/main/java/";
 
 	public static List<Feature> EARTH_FEATURES;
 
@@ -100,8 +101,10 @@ public class App implements EntryPoint {
 		});
 		dataLabelsOption.store();
 		
-		Toaster.get().getDefaults().setTimeout(3000);
-		Toaster.get().setMaxHistoryItems(10);
+		Toaster.get().getDefaults().setTimeout(4000);
+		Toaster.get().setMaxHistoryItems(50);
+		Toaster.get().setMaxOpenItems(4);
+		Toaster.get().setMaxOpenItemsPolicy(MaximumOpenItemsPolicy.QUEUE);
 
 		HTMLDivElement div = (HTMLDivElement) DomGlobal.document.createElement("div");
 
