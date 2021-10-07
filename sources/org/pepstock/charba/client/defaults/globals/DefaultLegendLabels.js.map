@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultLegendLabels.impl.java.js",
-"lineCount":113,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAgCmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAQc,wEARdA,C;;;QAalB,S;EAAAC,8B;EAAAA,0C;EAAAA,qF;EAAAA,iB;;;CAAA,wE;EAAAC,iC;EAAAA,kF;;;CAUc,oB;EACbC,iE;;;CASoB,W;EACpBC,qF;;;CASc,mB;EACdC,uH;;;CASiB,iB;EACjBC,wE;;;CASU,e;EACVC,iH;;;CASU,gB;EACVC,mG;;;CASU,c;EACVC,+G;;;CASqB,qB;EACrBC,gF;;;CASa,yB;EACbC,8E;;;CASU,wB;EACVC,6E;;;CASgB,gB;EAChBC,sE;;;CA5HiB,0E;EAQlBX,8G;;;QARkB,O;EAAAY,sC;EAAAA,mC;EAAAA,qB;EAAAA,qC;;;;;;;;;;;;;;;;;AAElB;oBAAyB,mFAAzB,M;AAEA;oBAAyB,qFAAzB,M;AAEA;oBAA6B,2FAA7B;",
-"sources":["DefaultLegendLabels.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.<init>","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getColorAsString","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getFont","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.isUsePointStyle","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getPointStyle","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getBoxWidth","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getBoxHeight","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getPadding","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getPointStyleType","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getPointStyleAsCanvas","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getPointStyleAsImage","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.getTextAlign","org.pepstock.charba.client.defaults.globals.DefaultLegendLabels.<clinit>"]
-}
-

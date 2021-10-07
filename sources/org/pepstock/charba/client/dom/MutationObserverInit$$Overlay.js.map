@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MutationObserverInit$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MA6BiB,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["MutationObserverInit.java"],
-"names":["org.pepstock.charba.client.dom.MutationObserverInit$$Overlay.<clinit>"]
-}
-

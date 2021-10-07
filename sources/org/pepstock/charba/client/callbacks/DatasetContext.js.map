@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetContext.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;MAwBmB,c;;CAAA,W;EAAAA,Q;;;QAOX,wD,UAA4BC,Y;EAA5BC,yB;EAAAA,qC;EAAAA,oI;EAAAA,iB;;;CAAA,2G,UAA4BD,Y;EAClCE,uI;;;QARiB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["DatasetContext.java"],
-"names":["org.pepstock.charba.client.callbacks.DatasetContext.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.callbacks.DatasetContext.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.DatasetContext.<init>","org.pepstock.charba.client.callbacks.DatasetContext.<clinit>"]
-}
-

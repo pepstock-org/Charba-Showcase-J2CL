@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultArc.impl.java.js",
-"lineCount":84,
-"mappings":"A;;;;;;;;;;;;MA0BmB,U;;CAAA,W;EAAAA,Q;;;QAiBlB,S;EAAAC,qB;EAAAA,iC;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EACCC,qS;;;CASkB,kB;EAClBC,0E;;;CASa,a;EACbC,4F;;;CASa,Y;EACbC,sE;;;CASU,a;EACVC,4F;;;CASU,mB;EACVC,mG;;;CASU,kB;EACVC,4B;;;CASU,c;EACVC,6F;;;QAxFiB,O;EAAAC,6B;EAAAA,0B;EAAAA,wC;;;;;;;;;;;;AAElB;WAAyB,+EAAzB,K;AAEA;WAA4B,+EAA5B,U;AAEA;WAA4B,yEAA5B,K;AAEA;WAAyB,yEAAzB,K;AAEA;WAAyB,gFAAzB,K;AAEA;WAAyB,0EAAzB;",
-"sources":["DefaultArc.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultArc.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultArc.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultArc.<init>","org.pepstock.charba.client.defaults.globals.DefaultArc.getBorderAlign","org.pepstock.charba.client.defaults.globals.DefaultArc.getWeight","org.pepstock.charba.client.defaults.globals.DefaultArc.getAngle","org.pepstock.charba.client.defaults.globals.DefaultArc.getOffset","org.pepstock.charba.client.defaults.globals.DefaultArc.getBorderRadius","org.pepstock.charba.client.defaults.globals.DefaultArc.getHoverOffset","org.pepstock.charba.client.defaults.globals.DefaultArc.getSpacing","org.pepstock.charba.client.defaults.globals.DefaultArc.<clinit>"]
-}
-

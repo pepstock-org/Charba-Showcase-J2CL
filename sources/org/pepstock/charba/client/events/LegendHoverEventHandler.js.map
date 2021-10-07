@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendHoverEventHandler.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAsBiB,uB;;CAOX,6D,yBAAyBA,K;;QAPd,M;EAAAC,kC;EAAAA,8B;;;QAAA,O;EAAAC,0C;EAAAA;",
-"sources":["LegendHoverEventHandler.java"],
-"names":["event","org.pepstock.charba.client.events.LegendHoverEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.LegendHoverEventHandler.<clinit>"]
-}
-

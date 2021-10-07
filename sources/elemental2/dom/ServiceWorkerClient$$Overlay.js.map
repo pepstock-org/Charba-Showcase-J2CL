@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ServiceWorkerClient$$Overlay.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;MA0Ba,Q;;QAgBO,kH,gDAAmBA,O,6BAAwBC,Q;EAA3CC,mB;EAChBA,iH;;;QAjBS,O;EAAAC,2B;EAAAA;",
-"sources":["ServiceWorkerClient.java"],
-"names":["message","transfer","elemental2.dom.ServiceWorkerClient$$Overlay.postMessage__$devirt","elemental2.dom.ServiceWorkerClient$$Overlay.<clinit>"]
-}
-

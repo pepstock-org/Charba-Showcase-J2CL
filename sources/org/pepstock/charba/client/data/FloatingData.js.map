@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FloatingData.impl.java.js",
-"lineCount":91,
-"mappings":"A;;;;;;;;;;;;MA6BmB,Y;;CAAA,W;EAAAA,Q;;;;QAKX,S;EAAAC,uB;EAAAA,mC;EAAAA,kE;EAAAA,iB;;;;CAAA,qD;EACNC,yI;;;;QASM,uB,eAAoBC,K,gBAAcC,G;EAAlCH,uB;EAAAA,mC;EAAAA,0F;EAAAA,iB;;;;CAAA,mE,eAAoBE,K,gBAAcC,G;EACxCF,qN;;;;QAQD,uD,cAAyBG,W;EAAzBJ,uB;EAAAA,mC;EAAAA,2H;EAAAA,iB;;;;CAAA,mG,cAAyBI,W;EACxBH,uI;;;CAQa,Y;EACbI,6J;;;CAQa,U;EACbC,6J;;;CASW,2B,eAAiBJ,K,gBAAcC,G;EAE1CI,kB;EAEAA,iG;;;CAQa,Y;EAEbC,IAAON,KAAPM,uB;EACAA,IAAOL,GAAPK,qB;EAEAA;GAECA,SAFDA;G;EAMAA,mB;;;CAQa,e;EACbC,qC;;;CASa,Q;EACbC,iE;;;QA9FiB,O;EAAAC,+B;EAAAA,4B;EAAAA;",
-"sources":["FloatingData.java"],
-"names":["org.pepstock.charba.client.data.FloatingData.<synthetic: ctor_js>","org.pepstock.charba.client.data.FloatingData.<synthetic: ctor_create>","org.pepstock.charba.client.data.FloatingData.<init>","start","end","nativeArray","org.pepstock.charba.client.data.FloatingData.getStart","org.pepstock.charba.client.data.FloatingData.getEnd","org.pepstock.charba.client.data.FloatingData.setValues","org.pepstock.charba.client.data.FloatingData.getValue","org.pepstock.charba.client.data.FloatingData.getAbsValue","org.pepstock.charba.client.data.FloatingData.toString","org.pepstock.charba.client.data.FloatingData.<clinit>"]
-}
-

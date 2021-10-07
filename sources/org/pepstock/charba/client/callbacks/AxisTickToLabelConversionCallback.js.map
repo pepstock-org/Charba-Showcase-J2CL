@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AxisTickToLabelConversionCallback.impl.java.js",
-"lineCount":19,
-"mappings":"A;;;;;;;;;;MAyBiB,iC;;CAQX,yH,aAAmCA,I,kBAAeC,I;;CAQlD,wH,aAAkCD,I,kBAAeC,I;;QAhBtC,O;EAAAC,oD;EAAAA;",
-"sources":["AxisTickToLabelConversionCallback.java"],
-"names":["axis","item","org.pepstock.charba.client.callbacks.AxisTickToLabelConversionCallback.<clinit>"]
-}
-

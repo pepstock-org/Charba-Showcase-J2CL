@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ZoomCallbacksOnTimeSeriesCase$2.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;;;;;;;;MAmKiE,E;;CAAA,W;EAAAA,Q;EAAAA;uG;;;QAAA,yF;EAAAC,a;EAAAA,yB;EAAAA,mM;EAAAA,iB;;;CAAA,2K;EAAAC,mH;EAAAA,iC;;;CAGlD,0D,oBAAwBC,O;EACnCC,4P;;;QAJ6D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ZoomCallbacksOnTimeSeriesCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCallbacksOnTimeSeriesCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCallbacksOnTimeSeriesCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCallbacksOnTimeSeriesCase$2.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCallbacksOnTimeSeriesCase$2.onCompleted","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCallbacksOnTimeSeriesCase$2.<clinit>"]
-}
-

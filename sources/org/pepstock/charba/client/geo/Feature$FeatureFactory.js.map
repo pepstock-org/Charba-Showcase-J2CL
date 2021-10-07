@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Feature$FeatureFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAmUsB,c;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,yB;EAAAA,qC;EAAAA,2E;EAAAA,iB;;;CAAA,8D;EAAAC,iC;;;CAQL,yD,UAAoBC,Y;EAClCC,sF;;;;CATmB,U;EAAAA,0K;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["Feature.java"],
-"names":["org.pepstock.charba.client.geo.Feature$FeatureFactory.<synthetic: ctor_js>","org.pepstock.charba.client.geo.Feature$FeatureFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Feature$FeatureFactory.<init>","nativeObject","org.pepstock.charba.client.geo.Feature$FeatureFactory.create","org.pepstock.charba.client.geo.Feature$FeatureFactory.<clinit>"]
-}
-

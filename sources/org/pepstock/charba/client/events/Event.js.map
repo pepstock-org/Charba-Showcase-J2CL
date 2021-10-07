@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Event.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;MAuBsB,K;;CAAA,W;EAAAA,Q;EAAAA;OAGN,kDAHMA,C;;;CAMX,gD;EAAAC,iC;;;CAQgB,W;;CAQZ,a;EACbC,+D;;;CAQuB,0D,qBAAsBC,O;;CAQ/B,6B,UAAiBC,M;EAC/BC,iE;;;QAxCoB,O;EAAAC,wB;EAAAA,qB;EAAAA;",
-"sources":["Event.java"],
-"names":["org.pepstock.charba.client.events.Event.<synthetic: ctor_js>","org.pepstock.charba.client.events.Event.<init>","org.pepstock.charba.client.events.Event.getSource","handler","source","org.pepstock.charba.client.events.Event.setSource","org.pepstock.charba.client.events.Event.<clinit>"]
-}
-

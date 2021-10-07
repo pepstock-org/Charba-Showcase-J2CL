@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractDynamicConfiguration$IsProvider.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAyDW,U;;CAOP,c;;QAPO,M;EAAAA,qB;EAAAA,gE;;;QAAA,O;EAAAC,6B;EAAAA;",
-"sources":["AbstractDynamicConfiguration.java"],
-"names":["org.pepstock.charba.client.configuration.AbstractDynamicConfiguration$IsProvider.<synthetic: adapt_lambda>","org.pepstock.charba.client.configuration.AbstractDynamicConfiguration$IsProvider.<clinit>"]
-}
-

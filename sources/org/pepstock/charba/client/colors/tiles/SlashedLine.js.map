@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SlashedLine.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;MAuCY,W;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,sB;EAAAA,kC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,oE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,WAAbD,Y;EAEAA,sI;EAEAA,4M;EAEAA,2N;EAEAA,8M;EAEAA,iB;;;CAYI,iJ,iCAA2BJ,O,gBAAgBM,M,gBAAeC,M,gBAAeC,I,gBAAaC,I;EAG1FC,+B;EACAA,2B;;;QApCU,O;EAAAC,8B;EAAAA,2B;EAAAA;",
-"sources":["SlashedLine.java"],
-"names":["org.pepstock.charba.client.colors.tiles.SlashedLine.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.SlashedLine.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.SlashedLine.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.SlashedLine.drawTile","quarterSize","startX","startY","endX","endY","org.pepstock.charba.client.colors.tiles.SlashedLine.drawDiagonal","org.pepstock.charba.client.colors.tiles.SlashedLine.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultScaleLimit.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;MAuBY,iB;;CAAA,W;EAAAA,Q;;;QAOX,S;EAAAC,4B;EAAAA,wC;EAAAA,uE;EAAAA,iB;;;CAAA,0D;EAAAC,iC;;;;CAPW,U;EAAAC,yG;;;;CAAA,U;EAAAC,yG;;;;CAAA,e;EAAAC,8G;;;;CAAA,iB;EAAAC,gH;;;;CAAA,iB;EAAAC,gH;;;QAEX,iE;EAAAC,4H;;;QAFW,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;EAAAA,8B;EAEXA,sH;;;;;;;;;;;AAFW;;",
-"sources":["DefaultScaleLimit.java"],
-"names":["org.pepstock.charba.client.zoom.DefaultScaleLimit.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.DefaultScaleLimit.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.DefaultScaleLimit.<init>","org.pepstock.charba.client.zoom.DefaultScaleLimit.getMax","org.pepstock.charba.client.zoom.DefaultScaleLimit.getMin","org.pepstock.charba.client.zoom.DefaultScaleLimit.getMinRange","org.pepstock.charba.client.zoom.DefaultScaleLimit.isOriginalMax","org.pepstock.charba.client.zoom.DefaultScaleLimit.isOriginalMin","org.pepstock.charba.client.zoom.DefaultScaleLimit.<synthetic: getter>","org.pepstock.charba.client.zoom.DefaultScaleLimit.<clinit>"]
-}
-

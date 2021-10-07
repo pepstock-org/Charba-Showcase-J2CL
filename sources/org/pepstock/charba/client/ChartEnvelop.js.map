@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartEnvelop.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;MA2BmB,Y;;CAAA,W;EAAAA,Q;;;;QAKlB,S;EAAAC,uB;EAAAA,mC;EAAAA,6D;EAAAA,iB;;;;CAAA,gD;EAAAC,+D;;;;QAQA,gB,gBAAqBC,Q;EAArBF,uB;EAAAA,mC;EAAAA,4E;EAAAA,iB;;;;CAAA,uD,gBAAqBE,Q;EACpBD,8E;;;;QASD,kC,UAAeE,O,iBAAiBD,Q;EAAhCF,uB;EAAAA,mC;EAAAA,uG;EAAAA,iB;;;;CAAA,yE,UAAeG,O,iBAAiBD,Q;EAC/BD,yG;;;;QAQD,yB,UAAeE,O;EAAfH,uB;EAAAA,mC;EAAAA,oF;EAAAA,iB;;;;CAAA,gE,UAAeG,O;EACdF,sF;;;QAjCiB,O;EAAAG,+B;EAAAA,4B;EAAAA;",
-"sources":["ChartEnvelop.java"],
-"names":["org.pepstock.charba.client.ChartEnvelop.<synthetic: ctor_js>","org.pepstock.charba.client.ChartEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.ChartEnvelop.<init>","nullable","content","org.pepstock.charba.client.ChartEnvelop.<clinit>"]
-}
-

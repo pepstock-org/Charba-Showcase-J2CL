@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NativeArrayDoubleContainer.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MAsBsB,0B;;CAAA,W;EAAAA,Q;;;CAOX,oH,cAAuCC,W;EAEhDC,8K;;;CAMoB,S;EACpBC,gJ;;;CAQoB,sB,sBAAeC,K;EAEnCC;GAECA;IAAAA,IAAYC,IAAZD,kBAAAA;;KAECA,gFAFDA;;IAFDA;G;;;QA1BoB,O;EAAAE,6C;EAAAA,0C;EAAAA;",
-"sources":["NativeArrayDoubleContainer.java"],
-"names":["org.pepstock.charba.client.commons.NativeArrayDoubleContainer.<synthetic: ctor_js>","nativeArray","org.pepstock.charba.client.commons.NativeArrayDoubleContainer.<init>","org.pepstock.charba.client.commons.NativeArrayDoubleContainer.clear","items","org.pepstock.charba.client.commons.NativeArrayDoubleContainer.push","item","org.pepstock.charba.client.commons.NativeArrayDoubleContainer.<clinit>"]
-}
-

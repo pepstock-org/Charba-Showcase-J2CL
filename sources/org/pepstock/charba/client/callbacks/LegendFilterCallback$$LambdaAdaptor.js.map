@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendFilterCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,2F;EAAAC,4D;EAAAA,gI;;;;CAAA,gE;EAAAA,sK;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["LegendFilterCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.LegendFilterCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.LegendFilterCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.LegendFilterCallback$$LambdaAdaptor.onFilter","org.pepstock.charba.client.callbacks.LegendFilterCallback$$LambdaAdaptor.<clinit>"]
-}
-

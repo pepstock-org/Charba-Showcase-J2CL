@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JsDataLabelsHelper.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;MA2BY,kB;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,yC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;EAGPA,mB;;;QAQyB,O;EAAAC,6B;EACzBA,gG;;;CAMI,sD;EACJC,oC;;;QA3BU,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;EAGXA,0H;;;;;;;;;;;AAHW;mBAG6B,qEAH7B;",
-"sources":["JsDataLabelsHelper.java"],
-"names":["org.pepstock.charba.client.datalabels.JsDataLabelsHelper.<synthetic: ctor_js>","org.pepstock.charba.client.datalabels.JsDataLabelsHelper.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.JsDataLabelsHelper.<init>","org.pepstock.charba.client.datalabels.JsDataLabelsHelper.get","org.pepstock.charba.client.datalabels.JsDataLabelsHelper.register","org.pepstock.charba.client.datalabels.JsDataLabelsHelper.<clinit>"]
-}
-

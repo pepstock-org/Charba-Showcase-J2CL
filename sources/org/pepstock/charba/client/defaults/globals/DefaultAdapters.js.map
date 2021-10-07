@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultAdapters.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAyBmB,e;;CAAA,W;EAAAA,Q;;;QAKlB,S;EAAAC,0B;EAAAA,sC;EAAAA,iF;EAAAA,iB;;;CAAA,oE;EAAAC,iC;;;CAUmC,W;EAClCC,mH;;;QAhBiB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
-"sources":["DefaultAdapters.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultAdapters.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultAdapters.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultAdapters.<init>","org.pepstock.charba.client.defaults.globals.DefaultAdapters.getDate","org.pepstock.charba.client.defaults.globals.DefaultAdapters.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ClickCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0F;EAAAA,wK;;;CAAA,8J;EAAAC,iC;EAAAA,6F;;;CAAA,uG;;GAAAC,wG;GAAAA,sB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["ClickCallback.java"],
-"names":["org.pepstock.charba.client.annotation.listeners.ClickCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.listeners.ClickCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.listeners.ClickCallback$$LambdaAdaptor.onClick","org.pepstock.charba.client.annotation.listeners.ClickCallback$$LambdaAdaptor.<clinit>"]
-}
-

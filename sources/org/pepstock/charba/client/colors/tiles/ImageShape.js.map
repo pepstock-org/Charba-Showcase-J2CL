@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ImageShape.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;MA0CmB,U;;CAAA,W;EAAAA,Q;EAAAA;OAOA,mEAPAA,C;;;QAcX,oD,yBAAeC,K;EAAfC,qB;EAAAA,iC;EAAAA,wH;EAAAA,iB;;;CAAA,sG,yBAAeD,K;EACrBE,uK;EAEAA,oF;EAEAA,iF;EAEAA,yR;;;CASc,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,6R;;;QAlCiB,O;EAAAE,6B;EAAAA,0B;EAAAA,wB;;;;;;;;;;;;;AAElB;WAG2B,sEAH3B;",
-"sources":["ImageShape.java"],
-"names":["org.pepstock.charba.client.colors.tiles.ImageShape.<synthetic: ctor_js>","image","org.pepstock.charba.client.colors.tiles.ImageShape.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.ImageShape.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.ImageShape.drawTile","realSize","org.pepstock.charba.client.colors.tiles.ImageShape.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HtmlLegendOptionsFactory$HtmlLegendBuilderDefaultsOptionsFactory.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;MA2Dc,uC;;CAAA,W;EAAAA,Q;;;QAKZ,S;EAAAC,kD;EAAAA,8D;EAAAA,8H;EAAAA,iB;;;CAAA,iH;EACCC,mK;;;CAUwB,+G,UAAoBC,Y,0BAA+BC,a;EAC3EC,2Q;;;QAjBW,O;EAAAC,0D;EAAAA,uD;EAAAA;",
-"sources":["HtmlLegendOptionsFactory.java"],
-"names":["org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsFactory$HtmlLegendBuilderDefaultsOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsFactory$HtmlLegendBuilderDefaultsOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsFactory$HtmlLegendBuilderDefaultsOptionsFactory.<init>","nativeObject","defaultValues","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsFactory$HtmlLegendBuilderDefaultsOptionsFactory.create","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsFactory$HtmlLegendBuilderDefaultsOptionsFactory.<clinit>"]
-}
-

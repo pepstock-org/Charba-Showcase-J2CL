@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Notation.impl.java.js",
-"lineCount":107,
-"mappings":"A;;;;;;;;;;;;;;MA0BY,Q;;CAAA,W;EAAAA,Q;EAAAA;OAoBU,wDApBVA,C;;;QA2BH,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iI;EAAAA,iB;;;CAAA,8F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;;;CASa,S;EACbC,qE;;;QAtCU,2B;EAAAC,mB;EAAAA;GAAAA,iIAAAA;G;EAAAA,yH;;;QAAA,U;EAAAC,mB;EAAAA,iX;;;QAEX,8D;EAAAC,uG;;;QAIA,gE;EAAAA,yG;;;QAIA,iE;EAAAA,0G;;;QAIA,6D;EAAAA,sG;;;QAdW,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEXA,+P;EAIAA,uQ;EAIAA,2Q;EAIAA,2P;EAdWA,oF;;;;;;;;;;;;;AAAA;0E;AAAA;4E;AAAA;6E;AAAA;yE;AAAA;6E;AAEX;+E;AAIA;iF;AAIA;kF;AAIA;;",
-"sources":["Notation.java"],
-"names":["org.pepstock.charba.client.intl.enums.Notation.<synthetic: ctor_js>","value","org.pepstock.charba.client.intl.enums.Notation.<synthetic: ctor_create>","org.pepstock.charba.client.intl.enums.Notation.<init>","org.pepstock.charba.client.intl.enums.Notation.value","org.pepstock.charba.client.intl.enums.Notation.valueOf","org.pepstock.charba.client.intl.enums.Notation.values","org.pepstock.charba.client.intl.enums.Notation.<synthetic: getter>","org.pepstock.charba.client.intl.enums.Notation.<clinit>"]
-}
-

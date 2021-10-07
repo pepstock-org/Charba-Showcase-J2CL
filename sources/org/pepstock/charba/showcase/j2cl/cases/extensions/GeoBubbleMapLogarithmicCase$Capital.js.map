@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GeoBubbleMapLogarithmicCase$Capital.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;MAoLsB,O;;CAAA,W;EAAAA,Q;EAAAA;OAEC,gGAFDA,C;EAAAA;OAIC,kGAJDA,C;EAAAA;OAMC,mGANDA,K;EAAAA;OAQC,oGARDA,K;;;QAUZ,yB,gBAAeC,M;EAAfC,kB;EAAAA,8B;EAAAA,kI;EAAAA,iB;;;CAAA,+G,gBAAeD,M;EAAfE,iC;EACPA,IAASC,MAATD,uE;EACAA,kH;EACAA,oH;EACAA,6J;EACAA,8J;;;QAfmB,O;EAAAE,0B;EAAAA,uB;EAAAA;",
-"sources":["GeoBubbleMapLogarithmicCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapLogarithmicCase$Capital.<synthetic: ctor_js>","record","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapLogarithmicCase$Capital.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapLogarithmicCase$Capital.<init>","values","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapLogarithmicCase$Capital.<clinit>"]
-}
-

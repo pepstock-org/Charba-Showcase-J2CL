@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginIdChecker.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;;;;;;;MA0BmB,e;;CAAA,W;EAAAA,Q;;;QAKV,S;EAAAC,sC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EAAAC,iC;;;QAgBW,yB,gBAAaC,E;EAAbC,0B;EAElBA,4E;EAEAA,4b;EAEAA,oR;;;QASiB,uB,gBAAWD,E;EAAXE,0B;EAEjBA,8C;EACAA,0C;;;QAUqB,kD,gBAAoBC,Q,iBAAiBC,O;EAC1DC,IAAcC,EAAdD,oD;EACAA,6P;EACAA,qB;;;QApDiB,O;EAAAE,kC;EAAAA,+B;EAAAA;",
-"sources":["PluginIdChecker.java"],
-"names":["org.pepstock.charba.client.plugins.PluginIdChecker.<synthetic: ctor_js>","org.pepstock.charba.client.plugins.PluginIdChecker.<synthetic: ctor_create>","org.pepstock.charba.client.plugins.PluginIdChecker.<init>","id","org.pepstock.charba.client.plugins.PluginIdChecker.check","org.pepstock.charba.client.plugins.PluginIdChecker.key","pluginId","message","org.pepstock.charba.client.plugins.PluginIdChecker.buildMessage","sb","org.pepstock.charba.client.plugins.PluginIdChecker.<clinit>"]
-}
-

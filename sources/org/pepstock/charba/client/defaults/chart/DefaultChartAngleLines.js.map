@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartAngleLines.impl.java.js",
-"lineCount":57,
-"mappings":"A;;;;;;;;;;;;;MA2BmB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAEO,+EAFPA,C;;;QASlB,sD,mBAAkCC,U;EAAlCC,iC;EAAAA,6C;EAAAA,6I;EAAAA,iB;;;CAAA,sH,mBAAkCD,U;EAAlCE,iC;EACCA,kG;;;CASc,a;EACdC,4G;;;CASa,oB;EACbC,mH;;;CASU,gB;EACVC,+G;;;CASa,uB;EACbC,sH;;;CASoB,iB;EACpBC,gH;;;QA5DiB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
-"sources":["DefaultChartAngleLines.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.<synthetic: ctor_js>","angleLines","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.isDisplay","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.getColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.getLineWidth","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.getBorderDashOffset","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.getBorderDash","org.pepstock.charba.client.defaults.chart.DefaultChartAngleLines.<clinit>"]
-}
-

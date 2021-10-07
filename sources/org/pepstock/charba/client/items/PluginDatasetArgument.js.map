@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginDatasetArgument.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;MA2BmB,qB;;CAAA,W;EAAAA,Q;EAAAA;OAmCQ,sEAnCRA,C;;;QA0CX,0D,0BAAmDC,O;EAAnDC,gC;EAAAA,4C;EAAAA,oI;EAAAA,iB;;;CAAA,gH,0BAAmDD,O;EACzDE,8H;EAGAA,+b;;;CAQU,Y;EACVC,wN;;;CAQkB,kB;EAClBC,mF;;;QAhEiB,O;EAAAC,wC;EAAAA,qC;EAAAA;",
-"sources":["PluginDatasetArgument.java"],
-"names":["org.pepstock.charba.client.items.PluginDatasetArgument.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.PluginDatasetArgument.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginDatasetArgument.<init>","org.pepstock.charba.client.items.PluginDatasetArgument.getIndex","org.pepstock.charba.client.items.PluginDatasetArgument.getDatasetItem","org.pepstock.charba.client.items.PluginDatasetArgument.<clinit>"]
-}
-

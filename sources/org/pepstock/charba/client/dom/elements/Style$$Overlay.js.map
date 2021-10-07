@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Style$$Overlay.impl.java.js",
-"lineCount":19,
-"mappings":"A;;;;MAgCmB,Q;;QAAA,O;EAAAA,2B;EAAAA,wB;;;;;;;;;AAElB;SAI2B,6DAJ3B;",
-"sources":["Style.java"],
-"names":["org.pepstock.charba.client.dom.elements.Style$$Overlay.<clinit>"]
-}
-

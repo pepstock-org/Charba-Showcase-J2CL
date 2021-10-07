@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Pattern.impl.java.js",
-"lineCount":131,
-"mappings":"A;;;;;;;;;;;;;MAiCmB,O;;CAAA,W;EAAAA,Q;;;;QAkDlB,iI,gBAAeC,E,0BAAQC,K,oBAAkBC,U,gBAAgBC,K,gBAAWC,M;EAApEC,kB;EAAAA,8B;EAAAA,2N;EAAAA,iB;;;;CAAA,0K,gBAAeL,E,0BAAQC,K,oBAAkBC,U,gBAAgBC,K,gBAAWC,M;EACnEE,iF;EAEAA,oF;EAEAA,+L;EACAA,wL;EACAA,0L;EACAA,iT;;;;QAWD,8F,gBAAeN,E,uBAAsBO,a,gBAAmBJ,K,gBAAWC,M;EAAnEC,kB;EAAAA,8B;EAAAA,oL;EAAAA,iB;;;;CAAA,uI,gBAAeL,E,uBAAsBO,a,gBAAmBJ,K,gBAAWC,M;EAClEE,iF;EAEAA,qG;EAEAA,wN;EAGAA,gQ;EAEAA,sQ;EACAA,wQ;EAEAA,6G;;;;QAQD,wD,UAAqBE,Y;EAArBH,kB;EAAAA,8B;EAAAA,0H;EAAAA,iB;;;;CAAA,iG,UAAqBG,Y;EACpBF,0H;EAEAA;GAECA,6SAFDA;;GAKCA,gTALDA;G;EAQAA,oT;EAEAA,+S;EAEAA,gT;;;CAQU,Y;EACVG,oQ;;;CAQU,Y;EACVC,4P;;;CAQU,a;EACVC,6P;;;CAQiB,iB;EACjBC,kY;;;CAQwB,oB;EACxBC,8R;;;CASU,Q;EACVC,wB;;;CASc,M,UAAcC,G;EAC5BC,yB;;;QA1KiB,O;EAAAC,0B;EAAAA,uB;EAAAA,uB;EAGlBA,2E;EAEAA,oF;;;;;;;;;;;;;;;;;AALkB;QAGO,2DAHP,C;AAAA;QAKqB,oEALrB;",
-"sources":["Pattern.java"],
-"names":["org.pepstock.charba.client.colors.Pattern.<synthetic: ctor_js>","id","image","repetition","width","height","org.pepstock.charba.client.colors.Pattern.<synthetic: ctor_create>","org.pepstock.charba.client.colors.Pattern.<init>","canvasPattern","nativeObject","org.pepstock.charba.client.colors.Pattern.getImage","org.pepstock.charba.client.colors.Pattern.getWidth","org.pepstock.charba.client.colors.Pattern.getHeight","org.pepstock.charba.client.colors.Pattern.getRepetition","org.pepstock.charba.client.colors.Pattern.getCanvasPattern","org.pepstock.charba.client.colors.Pattern.hashCode","obj","org.pepstock.charba.client.colors.Pattern.equals","org.pepstock.charba.client.colors.Pattern.<clinit>"]
-}
-

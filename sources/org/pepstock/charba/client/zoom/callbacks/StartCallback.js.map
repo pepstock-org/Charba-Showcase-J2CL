@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StartCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MA2BiB,a;;CAQR,sD,oBAAoBA,O;;QARZ,M;EAAAC,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
-"sources":["StartCallback.java"],
-"names":["context","org.pepstock.charba.client.zoom.callbacks.StartCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.zoom.callbacks.StartCallback.<clinit>"]
-}
-

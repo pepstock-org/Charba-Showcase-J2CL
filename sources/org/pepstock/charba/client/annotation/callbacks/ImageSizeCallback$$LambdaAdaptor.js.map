@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ImageSizeCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;MA6BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8F;EAAAA,gL;;;CAAA,sK;EAAAC,iC;EAAAA,iG;;;CAAA,iE;EAAAC,oD;EAAAA,kI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["ImageSizeCallback.java"],
-"names":["org.pepstock.charba.client.annotation.callbacks.ImageSizeCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.callbacks.ImageSizeCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.callbacks.ImageSizeCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.annotation.callbacks.ImageSizeCallback$$LambdaAdaptor.<clinit>"]
-}
-

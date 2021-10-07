@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationCompleteEventHandler.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAsBiB,6B;;CAOX,sE,+BAAkCA,K;;QAPvB,M;EAAAC,wC;EAAAA,8B;;;QAAA,O;EAAAC,gD;EAAAA;",
-"sources":["AnimationCompleteEventHandler.java"],
-"names":["event","org.pepstock.charba.client.events.AnimationCompleteEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.AnimationCompleteEventHandler.<clinit>"]
-}
-

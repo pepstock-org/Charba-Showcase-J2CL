@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GeoChoroplethGermanyCase$1.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;;;MA6FiD,E;;CAAA,W;EAAAA,Q;EAAAA;kG;;;QAAA,oF;EAAAC,a;EAAAA,yB;EAAAA,yL;EAAAA,iB;;;CAAA,iK;EAAAC,8G;EAAAA,iC;;;CAGhC,qB,eAAmBC,e;EAChCC,IAAIC,KAAJD,8M;EACAA,+T;;;QAL6C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["GeoChoroplethGermanyCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase$1.<init>","normalizedValue","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase$1.interpolate","index","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase$1.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Envelop.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;MAwBiB,O;;QAQD,qD,gBAAgBA,O;EAAhBC,kB;EACdA,iG;;;QASW,0D,gBAAqBD,O;EAArBE,kB;EACXA;GACCA,gHADDA;G;;;QAa4B,gE,UAAqBF,O;EAArBG,kB;EAE5BA,4E;EAGAA,e;;;CAQO,c;;CAOA,c;;QApDQ,O;EAAAC,0B;EAAAA;",
-"sources":["Envelop.java"],
-"names":["envelop","org.pepstock.charba.client.commons.Envelop.isValid","org.pepstock.charba.client.commons.Envelop.checkIfValid","org.pepstock.charba.client.commons.Envelop.checkAndGetIfValid","org.pepstock.charba.client.commons.Envelop.<clinit>"]
-}
-

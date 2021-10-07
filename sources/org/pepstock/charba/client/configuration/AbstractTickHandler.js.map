@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractTickHandler.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;MA8Be,mB;;CAAA,W;EAAAA,Q;EAAAA;OAGJ,yEAHIA,C;EAAAA;OAKE,8EALFA,C;;;CAad,iK,aAAyBC,I,WAAQC,a;EAChCC,wH;EADDA,+E;EAGCA,oG;;;CAQO,iE;EACPC,2F;;;CAQ4B,yD;;CAOrB,4D;EACPC,sF;;;CAQU,4E,UAAcC,Q;EAExBC,0F;EAEAA,ujB;;;CArDa,uE;EAGdJ,sF;;;QAHc,O;EAAAK,sC;EAAAA,mC;EAAAA;",
-"sources":["AbstractTickHandler.java"],
-"names":["org.pepstock.charba.client.configuration.AbstractTickHandler.<synthetic: ctor_js>","axis","configuration","org.pepstock.charba.client.configuration.AbstractTickHandler.<init>","org.pepstock.charba.client.configuration.AbstractTickHandler.getConfiguration","org.pepstock.charba.client.configuration.AbstractTickHandler.getCallback","callback","org.pepstock.charba.client.configuration.AbstractTickHandler.setCallback","org.pepstock.charba.client.configuration.AbstractTickHandler.<clinit>"]
-}
-

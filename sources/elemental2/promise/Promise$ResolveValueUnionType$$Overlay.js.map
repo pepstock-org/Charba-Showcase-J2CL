@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Promise$ResolveValueUnionType$$Overlay.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;MAuGmB,Q;;QAEiB,sB,UAAUA,C;EAAVC,mB;EAC9BA,uD;;;QAImB,wE;EAAAC,mB;EACnBA,yE;;;QAIQ,gE;EAAAC,mB;EACRA,6C;;;QAba,O;EAAAC,2B;EAAAA;",
-"sources":["Promise.java"],
-"names":["o","elemental2.promise.Promise$ResolveValueUnionType$$Overlay.of","elemental2.promise.Promise$ResolveValueUnionType$$Overlay.asIThenable__$devirt","elemental2.promise.Promise$ResolveValueUnionType$$Overlay.asV__$devirt","elemental2.promise.Promise$ResolveValueUnionType$$Overlay.<clinit>"]
-}
-

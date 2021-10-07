@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AxisKind.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,Q;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,mDAhBVA,C;;;QAuBH,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,4H;EAAAA,iB;;;CAAA,yF,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,iE;;;CASa,S;EACbC,gE;;;QAlCU,2B;EAAAC,mB;EAAAA;GAAAA,4HAAAA;G;EAAAA,oH;;;QAAA,U;EAAAC,mB;EAAAA,8P;;;QAEX,kD;EAAAC,2F;;;QAIA,kD;EAAAA,2F;;;QAIA,kD;EAAAA,2F;;;QAVW,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEXA,yN;EAIAA,yN;EAIAA,yN;EAVWA,+E;;;;;;;;;;;;;AAAA;8D;AAAA;8D;AAAA;8D;AAAA;wE;AAEX;mE;AAIA;mE;AAIA;;",
-"sources":["AxisKind.java"],
-"names":["org.pepstock.charba.client.enums.AxisKind.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.AxisKind.<synthetic: ctor_create>","org.pepstock.charba.client.enums.AxisKind.<init>","org.pepstock.charba.client.enums.AxisKind.value","org.pepstock.charba.client.enums.AxisKind.valueOf","org.pepstock.charba.client.enums.AxisKind.values","org.pepstock.charba.client.enums.AxisKind.<synthetic: getter>","org.pepstock.charba.client.enums.AxisKind.<clinit>"]
-}
-

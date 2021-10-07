@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartTimerTask.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAuBiB,c;;CAOX,6C,gBAAgBA,K;;QAPL,M;EAAAC,yB;EAAAA,8B;;;QAAA,O;EAAAC,iC;EAAAA;",
-"sources":["ChartTimerTask.java"],
-"names":["chart","org.pepstock.charba.client.ChartTimerTask.<synthetic: adapt_lambda>","org.pepstock.charba.client.ChartTimerTask.<clinit>"]
-}
-

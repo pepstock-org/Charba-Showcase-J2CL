@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipLabelCallback.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;;MAgCiB,oB;;CAWD,iG,gBAAsBA,K,qBAAmBC,I;;CAYzC,2F,gBAAgBD,K,qBAAmBC,I;;CAYxB,gG,gBAAqBD,K,qBAAmBC,I;;CAYnC,qG,gBAA0BD,K,qBAAmBC,I;;CAY5D,oG,gBAAyBD,K,qBAAmBC,I;;CAY7C,gG,gBAAqBD,K,qBAAmBC,I;;QA5DxC,sK,uDAAsBD,K,qBAAmBC,I;EAAzCC,+B;EACdA,8E;;;QAWc,gK,uDAAgBF,K,qBAAmBC,I;EAAnCE,+B;EACdA,yJ;;;QAWyB,qK,uDAAqBH,K,qBAAmBC,I;EAAxCG,+B;EACzBA,8J;;;QAW8B,0K,uDAA0BJ,K,qBAAmBC,I;EAA7CI,+B;EAC9BA,mK;;;QAWe,yK,uDAAyBL,K,qBAAmBC,I;EAA5CK,+B;EACfA,mE;;;QAWc,qK,uDAAqBN,K,qBAAmBC,I;EAAxCM,+B;EACdA,8E;;;QAxEe,O;EAAAC,uC;EAAAA;",
-"sources":["TooltipLabelCallback.java"],
-"names":["chart","item","org.pepstock.charba.client.callbacks.TooltipLabelCallback.onBeforeLabel__$default","org.pepstock.charba.client.callbacks.TooltipLabelCallback.onLabel__$default","org.pepstock.charba.client.callbacks.TooltipLabelCallback.onLabelColor__$default","org.pepstock.charba.client.callbacks.TooltipLabelCallback.onLabelPointStyle__$default","org.pepstock.charba.client.callbacks.TooltipLabelCallback.onLabelTextColor__$default","org.pepstock.charba.client.callbacks.TooltipLabelCallback.onAfterLabel__$default","org.pepstock.charba.client.callbacks.TooltipLabelCallback.<clinit>"]
-}
-

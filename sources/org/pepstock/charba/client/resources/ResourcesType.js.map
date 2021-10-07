@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ResourcesType.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;;;;;;;;;;;MA8BmB,a;;CAAA,W;EAAAA,Q;;;QAUV,S;EAAAC,oC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EAAAC,iC;;;QAYyC,uD,wBAA6BC,O;EAA7BC,wB;EAEhDA,4E;EAGAA,IAAkBC,SAAlBD,yO;EAEAA,qL;EAEAA,6I;EAEAA,2F;EAIAA,mB;;;QAS+B,gB;EAAAE,wB;EAE/BA;GAECA,6LAFDA;G;EAKAA,sF;;;QAQqB,c;EAAAC,wB;EACrBA,qF;;;QAQW,sB,gBAAoBC,Q;EAApBC,wB;EACXA,yF;;;QAvEiB,O;EAAAC,gC;EAAAA,6B;EAAAA,qB;EAGlBA,sF;EAEAA,sF;;;;;;;;;;;;;;;;;;;AALkB;cAGe,gEAHf,C;AAAA;cAKK,+DALL;",
-"sources":["ResourcesType.java"],
-"names":["org.pepstock.charba.client.resources.ResourcesType.<synthetic: ctor_js>","org.pepstock.charba.client.resources.ResourcesType.<synthetic: ctor_create>","org.pepstock.charba.client.resources.ResourcesType.<init>","envelop","org.pepstock.charba.client.resources.ResourcesType.setResources","resources","org.pepstock.charba.client.resources.ResourcesType.getResources","org.pepstock.charba.client.resources.ResourcesType.isInjected","injected","org.pepstock.charba.client.resources.ResourcesType.setInjected","org.pepstock.charba.client.resources.ResourcesType.<clinit>"]
-}
-

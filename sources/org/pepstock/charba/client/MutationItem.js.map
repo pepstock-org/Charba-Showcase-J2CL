@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MutationItem.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;MAwBmB,Y;;CAAA,W;EAAAA,Q;;;QAOV,S;EAAAC,mC;EAAAA,6D;EAAAA,iB;;;CAAA,gD;EAAAC,iC;;;QASY,O;EAAAC,uB;EACnBA,yE;;;QAjBiB,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;EAElBA,6F;;;;;;;;;AAFkB;aAEgB,oDAFhB;",
-"sources":["MutationItem.java"],
-"names":["org.pepstock.charba.client.MutationItem.<synthetic: ctor_js>","org.pepstock.charba.client.MutationItem.<synthetic: ctor_create>","org.pepstock.charba.client.MutationItem.<init>","org.pepstock.charba.client.MutationItem.get","org.pepstock.charba.client.MutationItem.<clinit>"]
-}
-

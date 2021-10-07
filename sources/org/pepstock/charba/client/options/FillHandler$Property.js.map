@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FillHandler$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAyCgB,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOO,iEAPPA,C;;;QAcN,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QAzBa,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,gP;;;QAEd,mE;EAAAC,4G;;;QAEA,kF;EAAAA,2H;;;QAJc,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEdA,iQ;EAEAA,2T;EAJcA,6F;;;;;;;;;;;;;AAAA;+E;AAAA;8F;AAAA;sF;AAEd;oF;AAEA;;",
-"sources":["FillHandler.java"],
-"names":["org.pepstock.charba.client.options.FillHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.FillHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.FillHandler$Property.<init>","org.pepstock.charba.client.options.FillHandler$Property.value","org.pepstock.charba.client.options.FillHandler$Property.valueOf","org.pepstock.charba.client.options.FillHandler$Property.values","org.pepstock.charba.client.options.FillHandler$Property.<synthetic: getter>","org.pepstock.charba.client.options.FillHandler$Property.<clinit>"]
-}
-

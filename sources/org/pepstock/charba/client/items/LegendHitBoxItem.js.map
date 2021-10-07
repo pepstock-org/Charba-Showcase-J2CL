@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendHitBoxItem.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;MA2BmB,gB;;CAAA,W;EAAAA,Q;;;QAUlB,wD,UAA8BC,Y;EAA9BC,2B;EAAAA,uC;EAAAA,kI;EAAAA,iB;;;CAAA,yG,UAA8BD,Y;EAC7BE,qH;;;CAQa,W;EACbC,iM;;;CAQa,U;EACbC,kM;;;CASc,0D,eAAyBC,K;EAEvCC;GAECA,IAAQC,GAARD,kGAFDA;GAICA,IAAQE,GAARF,iGAJDA;GAKCA,kBALDA;G;EAQAA,a;;;QA7CD,gE;EAAAG,yH;;;QAHkB,O;EAAAC,mC;EAAAA,gC;EAAAA,mB;EAGlBA,0H;;;;;;;;;;;;;AAHkB;;",
-"sources":["LegendHitBoxItem.java"],
-"names":["org.pepstock.charba.client.items.LegendHitBoxItem.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.items.LegendHitBoxItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendHitBoxItem.<init>","org.pepstock.charba.client.items.LegendHitBoxItem.getLeft","org.pepstock.charba.client.items.LegendHitBoxItem.getTop","event","org.pepstock.charba.client.items.LegendHitBoxItem.isInside","isX","isY","org.pepstock.charba.client.items.LegendHitBoxItem.<synthetic: getter>","org.pepstock.charba.client.items.LegendHitBoxItem.<clinit>"]
-}
-

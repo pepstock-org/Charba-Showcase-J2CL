@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnnotationOptionsFactory$AnnotationDefaultsOptionsFactory.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;MA+Dc,gC;;CAAA,W;EAAAA,Q;;;QAKZ,S;EAAAC,2C;EAAAA,uD;EAAAA,qH;EAAAA,iB;;;CAAA,wG;EACCC,6K;;;CAUwB,+G,UAAoBC,Y,0BAA+BC,a;EAC3EC,oP;;;QAjBW,O;EAAAC,mD;EAAAA,gD;EAAAA;",
-"sources":["AnnotationOptionsFactory.java"],
-"names":["org.pepstock.charba.client.annotation.AnnotationOptionsFactory$AnnotationDefaultsOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.annotation.AnnotationOptionsFactory$AnnotationDefaultsOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.AnnotationOptionsFactory$AnnotationDefaultsOptionsFactory.<init>","nativeObject","defaultValues","org.pepstock.charba.client.annotation.AnnotationOptionsFactory$AnnotationDefaultsOptionsFactory.create","org.pepstock.charba.client.annotation.AnnotationOptionsFactory$AnnotationDefaultsOptionsFactory.<clinit>"]
-}
-

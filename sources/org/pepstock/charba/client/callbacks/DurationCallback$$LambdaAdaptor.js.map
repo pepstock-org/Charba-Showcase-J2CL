@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DurationCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kF;EAAAA,wJ;;;CAAA,8I;EAAAC,iC;EAAAA,qF;;;CAAA,6D;EAAAC,uD;EAAAA,sH;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["DurationCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.DurationCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.DurationCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.DurationCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.DurationCallback$$LambdaAdaptor.<clinit>"]
-}
-

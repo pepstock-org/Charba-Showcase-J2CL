@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointerLineCase$3.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;;MA2L+C,E;;CAAA,W;EAAAA,Q;EAAAA;sF;;;QAAA,wE;EAAAC,a;EAAAA,yB;EAAAA,iK;EAAAA,iB;;;CAAA,yI;EAAAC,kG;EAAAA,iC;;;CAGhC,2D,uBAAuBC,K;EAClCC,8R;;;QAJ2C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["PointerLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.onClick","org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase$3.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"InternalPreconditions.impl.java.js",
-"lineCount":86,
-"mappings":"A;;;;;;;;;;;MAwBmB,qB;;CAAA,W;EAAAA,Q;;;QAKE,oB,gBAAkBC,U;EAAlBC,gC;EACjBA;GACEA,+DADFA;SAEOA;GACLA;IACEA,+DADFA;;IAEsBA,oCAFtBA;IAEsBA;KAAAA,IAAHC,CAAGD,mCAAAA;KACpBA,oEADoBA;;KAAAA,+BAAAA;KAFtBA;IADKA;G;;;QASU,4B,gBAA0BD,U;EAA1BG,gC;EACjBA;GACEA,uDADFA;G;;;QAMM,S;EAAAC,4C;EAAAA,0D;EAAAA,iB;;;CAAA,6C;EAAAC,iC;;;QAxBS,O;EAAAC,wC;EAAAA,qC;EAAAA,qB;EAEjBA,0L;EACAA,qL;;;;;;;;;;;;;;;AAHiB;sBAEY,wDAFZ,S;AAAA;sBAGY,oDAHZ,S;;;;;;;ACxBnBC,+C;AACAA,+B;AACAA;",
-"sources":["InternalPreconditions.java","InternalPreconditions.native_js"],
-"names":["jsinterop.base.InternalPreconditions.<synthetic: ctor_js>","expression","jsinterop.base.InternalPreconditions.checkType","e","jsinterop.base.InternalPreconditions.checkCriticalType","jsinterop.base.InternalPreconditions.<synthetic: ctor_create>","jsinterop.base.InternalPreconditions.<init>","jsinterop.base.InternalPreconditions.<clinit>","jsinterop.base.InternalPreconditions.<native>"]
-}
-

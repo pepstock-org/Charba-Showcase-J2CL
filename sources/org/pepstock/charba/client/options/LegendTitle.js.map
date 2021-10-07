@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendTitle.impl.java.js",
-"lineCount":133,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;MA4BmB,W;;CAAA,W;EAAAA,Q;EAAAA;OAmCU,gEAnCVA,C;EAAAA;OAqCI,0DArCJA,C;EAAAA;OAuCc,oEAvCdA,C;;;QAiDlB,qM,eAAmBC,M,aAAYC,Q,8BAA+BC,a,WAA4BC,Y;EAA1FC,sB;EAAAA,kC;EAAAA,6S;EAAAA,iB;;;CAAA,mP,eAAmBJ,M,aAAYC,Q,8BAA+BC,a,WAA4BC,Y;EACzFE,yQ;EAEAA,iY;EAEAA,wT;EACAA,oX;;;CASoB,oB;EACpBC,6E;;;CASwB,wB;EACxBC,iF;;;CASc,c;EACdC,uE;;;CAQW,qB,gBAAmBC,O;EAC9BC,qK;;;CASc,a;EACdC,wQ;;;;CAxGiB,oB;EAAAC,8F;;;;CAAA,W;EAAAC,qF;;;;CAAA,W;EAAAC,+F;;;;CAAA,iB;EAAAC,qG;;;;CAAA,c;EAAAC,kG;;;;CAAA,sB;EAAAC,2G;;;;CAAA,2B;EAAAC,gH;;;;CAAA,2D;EAAAA,gJ;;;;CAAA,Y;EAAAC,sF;;;;CAAA,qD;EAAAC,gI;;;;CAAA,4B;EAAAA,uG;;;QAAA,O;EAAAC,8B;EAAAA,2B;EAAAA,wB;EAAAA,wB;EAAAA;",
-"sources":["LegendTitle.java"],
-"names":["org.pepstock.charba.client.options.LegendTitle.<synthetic: ctor_js>","legend","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.LegendTitle.<synthetic: ctor_create>","org.pepstock.charba.client.options.LegendTitle.<init>","org.pepstock.charba.client.options.LegendTitle.getFontContainer","org.pepstock.charba.client.options.LegendTitle.getLegendTextHandler","org.pepstock.charba.client.options.LegendTitle.getPadding","display","org.pepstock.charba.client.options.LegendTitle.setDisplay","org.pepstock.charba.client.options.LegendTitle.isDisplay","org.pepstock.charba.client.options.LegendTitle.getColorAsString","org.pepstock.charba.client.options.LegendTitle.getFont","org.pepstock.charba.client.options.LegendTitle.getText","org.pepstock.charba.client.options.LegendTitle.getTextAsHtml","org.pepstock.charba.client.options.LegendTitle.isHtmlText","org.pepstock.charba.client.options.LegendTitle.setHtmlText","org.pepstock.charba.client.options.LegendTitle.setText","org.pepstock.charba.client.options.LegendTitle.getColor","org.pepstock.charba.client.options.LegendTitle.setColor","org.pepstock.charba.client.options.LegendTitle.<clinit>"]
-}
-

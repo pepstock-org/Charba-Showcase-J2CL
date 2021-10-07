@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FeatureFindCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yF;EAAAA,sK;;;CAAA,4J;EAAAC,iC;EAAAA,4F;;;CAAA,mD;EAAAC,wD;EAAAA,mI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["FeatureFindCallback.java"],
-"names":["org.pepstock.charba.client.geo.callbacks.FeatureFindCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.geo.callbacks.FeatureFindCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.geo.callbacks.FeatureFindCallback$$LambdaAdaptor.find","org.pepstock.charba.client.geo.callbacks.FeatureFindCallback$$LambdaAdaptor.<clinit>"]
-}
-

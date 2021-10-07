@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NoDefaults.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;MAuBmB,U;;CAAA,W;EAAAA,Q;;;QAUV,S;EAAAC,iC;EAAAA,oE;EAAAA,iB;;;CAAA,uD;EAAAC,iC;;;QARR,8D;EAAAC,2G;;;QAFkB,O;EAAAC,6B;EAAAA,0B;EAAAA,qB;EAElBA,qG;;;;;;;;;AAFkB;;",
-"sources":["NoDefaults.java"],
-"names":["org.pepstock.charba.client.defaults.NoDefaults.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.NoDefaults.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.NoDefaults.<init>","org.pepstock.charba.client.defaults.NoDefaults.<synthetic: getter>","org.pepstock.charba.client.defaults.NoDefaults.<clinit>"]
-}
-

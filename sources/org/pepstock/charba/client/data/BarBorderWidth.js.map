@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BarBorderWidth.impl.java.js",
-"lineCount":131,
-"mappings":"A;;;;;;;;;;;;;;MAkCmB,c;;CAAA,W;EAAAA,Q;;;;QAaX,S;EAAAC,yB;EAAAA,qC;EAAAA,oE;EAAAA,iB;;;;CAAA,uD;EACNC,iK;;;;QAQM,Y,eAAmBC,W;EAAnBF,yB;EAAAA,qC;EAAAA,kF;EAAAA,iB;;;;CAAA,0D,eAAmBE,W;EACzBD,oF;;;;QAQD,wD,UAA4BE,Y;EAA5BH,yB;EAAAA,qC;EAAAA,+H;EAAAA,iB;;;;CAAA,sG,UAA4BG,Y;EAC3BF,iI;;;CASS,+C;EACTG,8E;;;CASW,U,eAAQF,W;EACnBG,gC;EACAA,mC;EACAA,iC;EACAA,kC;;;CAQW,c,eAAYH,W;EACvBI,sI;;;CAQU,W;EACVC,wN;;;CAQW,e,eAAaL,W;EACxBM,uI;;;CAQU,Y;EACVC,yN;;;CAQW,a,eAAWP,W;EACtBQ,qI;;;CAQU,U;EACVC,uN;;;CAQW,gB,eAAcT,W;EACzBU,wI;;;CAQU,a;EACVC,0N;;;QA7HD,6D;EAAAC,kH;;;QAFkB,O;EAAAC,iC;EAAAA,8B;EAAAA,gC;EAElBA,mH;EAMAA,iP;;;;;;;;;;;;;;;;AARkB;+E;AAAA;eAQa,uDARb;",
-"sources":["BarBorderWidth.java"],
-"names":["org.pepstock.charba.client.data.BarBorderWidth.<synthetic: ctor_js>","org.pepstock.charba.client.data.BarBorderWidth.<synthetic: ctor_create>","org.pepstock.charba.client.data.BarBorderWidth.<init>","borderWidth","nativeObject","org.pepstock.charba.client.data.BarBorderWidth.getKeys","org.pepstock.charba.client.data.BarBorderWidth.set","org.pepstock.charba.client.data.BarBorderWidth.setLeft","org.pepstock.charba.client.data.BarBorderWidth.getLeft","org.pepstock.charba.client.data.BarBorderWidth.setRight","org.pepstock.charba.client.data.BarBorderWidth.getRight","org.pepstock.charba.client.data.BarBorderWidth.setTop","org.pepstock.charba.client.data.BarBorderWidth.getTop","org.pepstock.charba.client.data.BarBorderWidth.setBottom","org.pepstock.charba.client.data.BarBorderWidth.getBottom","org.pepstock.charba.client.data.BarBorderWidth.<synthetic: getter>","org.pepstock.charba.client.data.BarBorderWidth.<clinit>"]
-}
-

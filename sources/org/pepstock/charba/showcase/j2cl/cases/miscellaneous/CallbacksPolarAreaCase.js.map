@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CallbacksPolarAreaCase.impl.java.js",
-"lineCount":122,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;MA6Ba,sB;;CAAA,W;EAAAA,Q;EAAAA;OAEmB,0FAFnBA,C;EAAAA;OAIiB,sFAJjBA,C;;;QAML,S;EAAAC,iC;EAAAA,6C;EAAAA,kG;EAAAA,iB;;;CAAA,qF;EAAAC,8E;EAAAA,+F;EAKNA,gP;EACAA,+G;EACAA,mH;EAEAA,IAAoBC,QAApBD,qK;EACAA,8E;EACAA,sH;EAEAA,IAAqBE,QAArBF,uK;EACAA,8E;EACAA,+B;EAMAA,4I;EACAA,mP;EACAA,wJ;EACAA,qQ;EAEAA,IAAWG,IAAXH,uJ;EACAA,qC;EACAA,uP;EAEAA,IAAiBI,OAAjBJ,8K;EACAA,kD;EACAA,iL;EAiBAA,iK;EAEAA,sK;EACAA,2O;EAEAA,4K;EAEAA,qQ;EAMAA,IAAoBK,UAApBL,qK;EACAA,gF;EACAA,wH;EAEAA,IAAqBM,UAArBN,uK;EACAA,gF;EACAA,sC;EACAA,6B;EACAA,mC;EAEAA,IAAkBO,SAAlBP,qK;EACAA,kCAAqBQ,EAArBR;GACCS,2BADDT;GAECS,YAFDT;I;EAIAA,mC;EACAA,yC;EACAA,0F;EACAA,kC;EAEAA,IAAkBU,MAAlBV,qK;EACAA,+BAAkBQ,IAAlBR;GACCS,yDADDT;GAECS,YAFDT;I;EAIAA,gC;EACAA,IAAiBW,GAAjBX,gK;EACAA,wC;EACAA,wB;EACAA,+B;;;CAIkB,c;EAClBY,uG;;;CAGc,mB;EACdC;GAAAA,IAAaT,OAAbS,oEAAAA;;IACCA,iKADDA;;G;EAGAA,yG;;;CA7GW,uF;EAIZb,yH;;;QAJY,O;EAAAc,yC;EAAAA,sC;EAAAA;",
-"sources":["CallbacksPolarAreaCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase.<init>","chartRow","chartCol","axis","dataset","actionsRow","actionsCol","randomize","p0","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase.<lambda in <init>>","github","img","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase.getElement","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase.handleRandomize","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase.<clinit>"]
-}
-

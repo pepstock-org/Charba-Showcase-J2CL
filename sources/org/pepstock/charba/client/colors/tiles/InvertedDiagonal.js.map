@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"InvertedDiagonal.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;MAuCY,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,2B;EAEAA,uG;EAGAA,6J;;;QAfU,O;EAAAC,mC;EAAAA,gC;EAAAA;",
-"sources":["InvertedDiagonal.java"],
-"names":["org.pepstock.charba.client.colors.tiles.InvertedDiagonal.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.InvertedDiagonal.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.InvertedDiagonal.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.InvertedDiagonal.drawTile","org.pepstock.charba.client.colors.tiles.InvertedDiagonal.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasLabels.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,S;;CAOF,oB;;CAOD,qC,uBAAoBA,M;;CAcpB,2B,sBAAuBA,M;;CAcvB,mD,eAAiBA,M;;CAYf,a;;CAUA,oB,gBAAkBC,O;;QAhEjB,M;EAAAC,oB;EAAAA,8B;;;QAcH,0F,mDAAoBF,M;EAApBG,oB;EAEZA,IAAOC,cAAPD,sB;EAEAA,wD;EAEAA,6E;;;QAQY,gF,kDAAuBH,M;EAAvBG,oB;EAEZA,IAAOC,cAAPD,sB;EAEAA,8C;EAEAA,6E;;;QAQY,wG,2CAAiBH,M;EAAjBG,oB;EAEZA;GACCA,gIADDA;G;;;QAUc,gE;EAAAE,oB;EACdA,4C;;;QASc,yE,4CAAkBJ,O;EAAlBI,oB;EAEdA;GACCA,yGADDA;G;EAKAA,0B;;;QAvEe,O;EAAAC,4B;EAAAA;",
-"sources":["HasLabels.java"],
-"names":["labels","binding","org.pepstock.charba.client.data.HasLabels.<synthetic: adapt_lambda>","org.pepstock.charba.client.data.HasLabels.setLabels__$default","internalLabels","org.pepstock.charba.client.data.HasLabels.getLabels__$default","org.pepstock.charba.client.data.HasLabels.<clinit>"]
-}
-

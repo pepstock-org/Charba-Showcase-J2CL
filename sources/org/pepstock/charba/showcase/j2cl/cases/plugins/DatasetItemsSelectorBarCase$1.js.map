@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetItemsSelectorBarCase$1.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;;;;;;;;MAsGgE,E;;CAAA,W;EAAAA,Q;EAAAA;kG;;;QAAA,oF;EAAAC,a;EAAAA,yB;EAAAA,yL;EAAAA,iB;;;CAAA,iK;EAAAC,8G;EAAAA,iC;;;CAGjD,4E,wCAAwCC,K;EACnDC,+O;;;QAJ4D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["DatasetItemsSelectorBarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase$1.onClean","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBarCase$1.<clinit>"]
-}
-

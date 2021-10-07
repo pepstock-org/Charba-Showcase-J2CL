@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MaxTicksLimitCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,qB;;QAAA,M;EAAAA,gC;EAAAA,8B;;;QAAA,O;EAAAC,wC;EAAAA;",
-"sources":["MaxTicksLimitCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.MaxTicksLimitCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.MaxTicksLimitCallback.<clinit>"]
-}
-

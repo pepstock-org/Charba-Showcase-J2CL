@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsHtmlLegendDefaultOptions.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;;;MAyBU,0B;;CAOO,a;;CASJ,2B;;CASmB,yB;;CASC,0B;;QA3BhB,yF;EAAAA,qC;EACfA,sG;;;QAQW,uG;EAAAC,qC;EACXA,qH;;;QAQ8B,qG;EAAAC,qC;EAC9BA,Y;;;QAQ+B,sG;EAAAC,qC;EAC/BA,Y;;;QAnCQ,O;EAAAC,6C;EAAAA,0C;EAAAA;",
-"sources":["IsHtmlLegendDefaultOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.IsHtmlLegendDefaultOptions.isDisplay__$default","org.pepstock.charba.client.impl.plugins.IsHtmlLegendDefaultOptions.getMaximumLegendColumns__$default","org.pepstock.charba.client.impl.plugins.IsHtmlLegendDefaultOptions.getLegendTextCallback__$default","org.pepstock.charba.client.impl.plugins.IsHtmlLegendDefaultOptions.getLegendTitleCallback__$default","org.pepstock.charba.client.impl.plugins.IsHtmlLegendDefaultOptions.<clinit>"]
-}
-

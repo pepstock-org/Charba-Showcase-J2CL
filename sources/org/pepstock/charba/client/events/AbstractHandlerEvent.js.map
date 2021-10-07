@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractHandlerEvent.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;;;MAyBe,oB;;CAAA,W;EAAAA,Q;EAAAA;OAGU,sEAHVA,C;;;CAUd,0G,kBAA+BC,W;EAA/BC,wD;EAECA,wE;EACAA,0F;;;CASoB,0D,kBAAsBC,I;EAE1CC,gG;;;QAxBa,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["AbstractHandlerEvent.java"],
-"names":["org.pepstock.charba.client.events.AbstractHandlerEvent.<synthetic: ctor_js>","handlerType","org.pepstock.charba.client.events.AbstractHandlerEvent.<init>","type","org.pepstock.charba.client.events.AbstractHandlerEvent.isRecognize","org.pepstock.charba.client.events.AbstractHandlerEvent.<clinit>"]
-}
-

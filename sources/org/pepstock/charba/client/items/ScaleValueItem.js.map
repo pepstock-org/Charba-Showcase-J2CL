@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScaleValueItem.impl.java.js",
-"lineCount":106,
-"mappings":"A;;;;;;;;;;;;MA8BmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAKG,yDALHA,K;EAAAA;OAOU,+DAPVA,C;EAAAA;OASG,iEATHA,C;EAAAA;OAWU,4DAXVA,C;EAAAA;OAaG,yDAbHA,C;;;;QAsBlB,2C,gBAAsBC,K,iBAAcC,K;EAApCC,yB;EAAAA,qC;EAAAA,mH;EAAAA,iB;;;;CAAA,0F,gBAAsBF,K,iBAAcC,K;EAApCE,iC;EACCA,gI;EACAA,4E;EACAA,+E;EACAA,2I;EACAA,uE;;;;QAUD,2E,sBAA6BH,K,iBAAcC,K;EAA3CC,yB;EAAAA,qC;EAAAA,mJ;EAAAA,iB;;;;CAAA,0H,sBAA6BF,K,iBAAcC,K;EAA3CE,iC;EAECA,sN;EACAA,6E;EACAA,+E;EACAA,yI;EACAA,uE;;;;QAUD,iC,eAAsBH,K,iBAAcC,K;EAApCC,yB;EAAAA,qC;EAAAA,yG;EAAAA,iB;;;;CAAA,gF,eAAsBF,K,iBAAcC,K;EAApCE,iC;EACCA,uE;EACAA,4E;EACAA,+E;EACAA,2I;EACAA,uE;;;CAQoB,e;EACpBC,yE;;;CAQa,Y;EACbC,sE;;;CAQW,kB;EACXC,4E;;;CAQa,oB;EACbC,8E;;;CAQa,Y;EACbC,sE;;;QAvGiB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["ScaleValueItem.java"],
-"names":["org.pepstock.charba.client.items.ScaleValueItem.<synthetic: ctor_js>","value","label","org.pepstock.charba.client.items.ScaleValueItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.ScaleValueItem.<init>","org.pepstock.charba.client.items.ScaleValueItem.getDataType","org.pepstock.charba.client.items.ScaleValueItem.getValue","org.pepstock.charba.client.items.ScaleValueItem.getValueAsDate","org.pepstock.charba.client.items.ScaleValueItem.getValueAsString","org.pepstock.charba.client.items.ScaleValueItem.getLabel","org.pepstock.charba.client.items.ScaleValueItem.<clinit>"]
-}
-

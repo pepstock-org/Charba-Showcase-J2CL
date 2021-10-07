@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginOptionsScope.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MA2BY,kB;;CAAA,W;EAAAA,Q;EAAAA;OAYU,6DAZVA,C;;;QAmBH,gD,8DAA0BC,K;EAA1BC,yC;EAAAA,sI;EAAAA,iB;;;CAAA,mG,8DAA0BD,K;EAA1BE,qC;EAAAA,2C;EAAAA,mE;EACPA,2E;;;CASa,S;EACbC,0E;;;QA9BU,2B;EAAAC,6B;EAAAA;GAAAA,0JAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,6B;EAAAA,2Q;;;QAEX,iE;EAAAC,8H;;;QAIA,uE;EAAAA,oI;;;QANW,O;EAAAC,qC;EAAAA,kC;EAAAA,e;EAEXA,+R;EAIAA,sT;EANWA,mG;;;;;;;;;;;;;AAAA;uF;AAAA;6F;AAAA;4F;AAEX;4F;AAIA;;",
-"sources":["PluginOptionsScope.java"],
-"names":["org.pepstock.charba.client.enums.PluginOptionsScope.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.PluginOptionsScope.<synthetic: ctor_create>","org.pepstock.charba.client.enums.PluginOptionsScope.<init>","org.pepstock.charba.client.enums.PluginOptionsScope.value","org.pepstock.charba.client.enums.PluginOptionsScope.valueOf","org.pepstock.charba.client.enums.PluginOptionsScope.values","org.pepstock.charba.client.enums.PluginOptionsScope.<synthetic: getter>","org.pepstock.charba.client.enums.PluginOptionsScope.<clinit>"]
-}
-

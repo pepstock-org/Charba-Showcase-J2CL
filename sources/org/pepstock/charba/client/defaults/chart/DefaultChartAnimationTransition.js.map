@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartAnimationTransition.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;MA0Ba,+B;;CAAA,W;EAAAA,Q;EAAAA;OAE+B,wFAF/BA,C;;;QASZ,yE,qCAA6DC,U;EAA7DC,0C;EAAAA,sD;EAAAA,yK;EAAAA,iB;;;CAAA,kJ,qCAA6DD,U;EAA7DE,iC;EACCA,2G;;;CASyB,gB;EACzBC,wH;;;CAS0B,iB;EAC1BC,yH;;;QA9BW,O;EAAAC,kD;EAAAA,+C;EAAAA;",
-"sources":["DefaultChartAnimationTransition.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartAnimationTransition.<synthetic: ctor_js>","transition","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationTransition.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationTransition.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationTransition.getAnimation","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationTransition.getAnimations","org.pepstock.charba.client.defaults.chart.DefaultChartAnimationTransition.<clinit>"]
-}
-

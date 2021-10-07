@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GeoControllerResource.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA0BmB,qB;;CAAA,W;EAAAA,Q;;;QAkHlB,S;EAAAC,gC;EAAAA,4C;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EACCC,wT;;;QAnHiB,O;EAAAC,wC;EAAAA,qC;EAAAA,qC;EAGlBA,8ruG;;;;;;;;;;;;;AAHkB;sBAGY,gEAHZ;",
-"sources":["GeoControllerResource.java"],
-"names":["org.pepstock.charba.client.geo.GeoControllerResource.<synthetic: ctor_js>","org.pepstock.charba.client.geo.GeoControllerResource.<synthetic: ctor_create>","org.pepstock.charba.client.geo.GeoControllerResource.<init>","org.pepstock.charba.client.geo.GeoControllerResource.<clinit>"]
-}
-

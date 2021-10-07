@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JsArray$ReduceRightCallbackFn$$Overlay.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;MAsMmB,Q;;QAIL,qI,8DAAgBA,E,WAAMC,E,gBAAQC,E,kBAAQC,E;EAAtCC,mB;EACRA,8F;;;QALa,O;EAAAC,2B;EAAAA;",
-"sources":["JsArray.java"],
-"names":["p0","p1","p2","p3","elemental2.core.JsArray$ReduceRightCallbackFn$$Overlay.onInvoke__$devirt","elemental2.core.JsArray$ReduceRightCallbackFn$$Overlay.<clinit>"]
-}
-

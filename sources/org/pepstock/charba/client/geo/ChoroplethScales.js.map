@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChoroplethScales.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;;;;;MA0BmB,gB;;CAAA,W;EAAAA,Q;;;QAOlB,sD,uBAAgCC,O;EAAhCC,2B;EAAAA,uC;EAAAA,yH;EAAAA,iB;;;CAAA,qG,uBAAgCD,O;EAC/BE,6H;;;CASW,gE,oBAAgBC,I;EAG3BC;GAECA,IAAQC,KAARD,SAFDA;GAGCA,IAAQE,UAARF,SAHDA;GAKCA;IAAAA,IAAUG,IAAVH,kBAAAA;;KAECA;MACCA,kBADDA;YAEOA;MACNA,aADMA;;MAINA,sKAJMA;MAJRA;;IALDA;GAiBCA,6EAjBDA;G;;;QApBiB,O;EAAAI,mC;EAAAA,gC;EAAAA;",
-"sources":["ChoroplethScales.java"],
-"names":["org.pepstock.charba.client.geo.ChoroplethScales.<synthetic: ctor_js>","options","org.pepstock.charba.client.geo.ChoroplethScales.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ChoroplethScales.<init>","axes","org.pepstock.charba.client.geo.ChoroplethScales.setAxes","color","projection","axis","org.pepstock.charba.client.geo.ChoroplethScales.<clinit>"]
-}
-

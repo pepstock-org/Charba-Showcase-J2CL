@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChoroplethChart.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;;;;;MAwBmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAWc,0DAXdA,C;;;QAgBX,S;EAAAC,0B;EAAAA,sC;EAAAA,oE;EAAAA,iB;;;CAAA,uD;EACNC,kL;EAEAA,qO;;;CASwB,c;EACxBC,uE;;;CASwB,qB,gBAAmBC,M;EAE3CC,qC;;;CASc,wD;EACdC,+F;;;QA5CD,qE;EAAAC,4H;;;QANkB,O;EAAAC,kC;EAAAA,+B;EAAAA,uB;EAMlBA,4c;;;;;;;;;;;;;;AAJA;gBAG2B,sDAH3B,gB;AAFkB;;",
-"sources":["ChoroplethChart.java"],
-"names":["org.pepstock.charba.client.geo.ChoroplethChart.<synthetic: ctor_js>","org.pepstock.charba.client.geo.ChoroplethChart.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ChoroplethChart.<init>","org.pepstock.charba.client.geo.ChoroplethChart.getOptions","hidden","org.pepstock.charba.client.geo.ChoroplethChart.newDataset","org.pepstock.charba.client.geo.ChoroplethChart.getControllerType","org.pepstock.charba.client.geo.ChoroplethChart.<synthetic: getter>","org.pepstock.charba.client.geo.ChoroplethChart.<clinit>"]
-}
-

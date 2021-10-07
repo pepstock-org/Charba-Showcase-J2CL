@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CallbacksPolarAreaCase$1.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAmEiE,E;;CAAA,W;EAAAA,Q;EAAAA;mG;EAAAA;OAElC,2FAFkCA,C;;;QAAA,qF;EAAAC,a;EAAAA,yB;EAAAA,2L;EAAAA,iB;;;CAAA,mK;EAAAC,+G;EAAAA,iC;EAAAA,iG;;;CAKhD,6D,uBAAsBC,O;EACnCC;GACCA,SAASC,CAATD;IACCA,IAAME,KAANF,yBADDA;IAECA,IAAQG,OAARH,qKAFDA;IAGCA,8GAHDA;IADDA;G;EAOAA,2L;;;;CAb6D,2D;EAAAA,0I;;;CAAA,yF;EAE9DF,8J;;;QAF8D,O;EAAAM,qB;EAAAA,kB;EAAAA;",
-"sources":["CallbacksPolarAreaCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase$1.invoke","i","shape","pattern","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksPolarAreaCase$1.<clinit>"]
-}
-

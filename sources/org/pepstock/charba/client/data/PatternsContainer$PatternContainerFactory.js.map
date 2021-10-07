@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PatternsContainer$PatternContainerFactory.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;MAsEsB,uB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,+F;EAAAA,iB;;;CAAA,kF;EAAAC,iC;;;CAQL,yD,UAAoBC,Y;EAClCC,6F;;;;CATmB,U;EAAAA,0K;;;QAAA,O;EAAAC,0C;EAAAA,uC;EAAAA,qB;EAAAA;",
-"sources":["PatternsContainer.java"],
-"names":["org.pepstock.charba.client.data.PatternsContainer$PatternContainerFactory.<synthetic: ctor_js>","org.pepstock.charba.client.data.PatternsContainer$PatternContainerFactory.<synthetic: ctor_create>","org.pepstock.charba.client.data.PatternsContainer$PatternContainerFactory.<init>","nativeObject","org.pepstock.charba.client.data.PatternsContainer$PatternContainerFactory.create","org.pepstock.charba.client.data.PatternsContainer$PatternContainerFactory.<clinit>"]
-}
-

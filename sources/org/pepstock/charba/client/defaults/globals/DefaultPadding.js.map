@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultPadding.impl.java.js",
-"lineCount":66,
-"mappings":"A;;;;;;;;;;;MAwBmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAGA,sEAHAA,K;;;QAUX,Y,eAAmBC,O;EAAnBC,yB;EAAAA,qC;EAAAA,0F;EAAAA,iB;;;CAAA,sE,eAAmBD,O;EAAnBE,iC;EACNA,sF;;;CASU,W;EACVC,kG;;;CASU,Y;EACVC,kG;;;CASU,U;EACVC,kG;;;CASU,a;EACVC,kG;;;CAQW,mF;EACXC,mF;;;;CA5DiB,U;EAAAC,uG;;;;CAAA,8D;EAAAA,mK;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["DefaultPadding.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultPadding.<synthetic: ctor_js>","padding","org.pepstock.charba.client.defaults.globals.DefaultPadding.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultPadding.<init>","org.pepstock.charba.client.defaults.globals.DefaultPadding.getLeft","org.pepstock.charba.client.defaults.globals.DefaultPadding.getRight","org.pepstock.charba.client.defaults.globals.DefaultPadding.getTop","org.pepstock.charba.client.defaults.globals.DefaultPadding.getBottom","org.pepstock.charba.client.defaults.globals.DefaultPadding.getDefaultPadding","org.pepstock.charba.client.defaults.globals.DefaultPadding.create","org.pepstock.charba.client.defaults.globals.DefaultPadding.<clinit>"]
-}
-

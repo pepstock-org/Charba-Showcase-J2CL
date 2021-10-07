@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetItemsSelectorLineCase$2.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;;MAsI2D,E;;CAAA,W;EAAAA,Q;EAAAA;mG;;;QAAA,qF;EAAAC,a;EAAAA,yB;EAAAA,2L;EAAAA,iB;;;CAAA,mK;EAAAC,+G;EAAAA,iC;;;CAG5C,wE,mCAAoCC,K;EAC/CC,IAAcC,EAAdD,6B;EACAA,gN;EACAA,uO;;;QANuD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["DatasetItemsSelectorLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase$2.onSelect","sb","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorLineCase$2.<clinit>"]
-}
-

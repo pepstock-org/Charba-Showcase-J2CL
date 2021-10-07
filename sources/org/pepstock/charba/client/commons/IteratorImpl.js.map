@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IteratorImpl.impl.java.js",
-"lineCount":82,
-"mappings":"A;;;;;;;;;;;;;;;;MA4Ba,Y;;CAAA,W;EAAAA,Q;EAAAA;OAGU,0DAHVA,C;EAAAA;OAKR,yDALQA,K;EAAAA;OAOR,6DAPQA,K;;;QAeZ,uB,gBAAqBC,M;EAArBC,uB;EAAAA,mC;EAAAA,yF;EAAAA,iB;;;CAAA,sE,gBAAqBD,M;EAArBE,iC;EAAAA,kE;EACCA,yE;;;CAMO,oD;EACPC,uE;;;CAOc,W;EAEdC,gJ;;;CAOQ,Q;EACRC,IAAIC,CAAJD,kE;EAEAA;GACCA,2DADDA;G;EAIAA,2E;EAGAA,uE;EAEAA,qF;;;CAOW,U;EAEXE;GACCA,0DADDA;G;EAKAA,kJ;EAEAA,oI;EAEAA,4E;;;;CArEW,+C;EAAAC,mG;;;CAAA,0D;EAOZN,4E;;;QAPY,O;EAAAO,+B;EAAAA,4B;EAAAA,qB;EAAAA;",
-"sources":["IteratorImpl.java"],
-"names":["org.pepstock.charba.client.commons.IteratorImpl.<synthetic: ctor_js>","parent","org.pepstock.charba.client.commons.IteratorImpl.<synthetic: ctor_create>","org.pepstock.charba.client.commons.IteratorImpl.<init>","org.pepstock.charba.client.commons.IteratorImpl.getParent","org.pepstock.charba.client.commons.IteratorImpl.hasNext","org.pepstock.charba.client.commons.IteratorImpl.next","i","org.pepstock.charba.client.commons.IteratorImpl.remove","org.pepstock.charba.client.commons.IteratorImpl.forEachRemaining","org.pepstock.charba.client.commons.IteratorImpl.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointStyleTriangle.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;MAwCY,kB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,6B;EAAAA,yC;EAAAA,gF;EAAAA,iB;;;CAAA,mE;EAAAC,sF;;;CAcI,oH,iCAA6BC,O,gBAAaC,I,gBAAaC,C,gBAAUC,C,gBAAUC,M,gBAAeC,Q,gBAAiBC,G;EACzHC,uE;EACAA,IAAOC,MAAPD,8H;EACAA,6E;EACAA,uI;EACAA,6E;;;QAnBU,O;EAAAE,qC;EAAAA,kC;EAAAA;",
-"sources":["PointStyleTriangle.java"],
-"names":["org.pepstock.charba.client.colors.tiles.PointStyleTriangle.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.PointStyleTriangle.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.PointStyleTriangle.<init>","context","size","x","y","radius","rotation","rad","org.pepstock.charba.client.colors.tiles.PointStyleTriangle.drawPointStyle","newRad","org.pepstock.charba.client.colors.tiles.PointStyleTriangle.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GeoDataPoint$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,8DALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,uI;EAAAA,iB;;;CAAA,oG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,4E;;;CASa,S;EACbC,2E;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,uIAAAA;G;EAAAA,+H;;;QAAA,U;EAAAC,mB;EAAAA,+I;;;QAEZ,iE;EAAAC,0G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+P;EAFYA,0F;;;;;;;;;;;;;AAAA;6E;AAAA;mF;AAEZ;;",
-"sources":["GeoDataPoint.java"],
-"names":["org.pepstock.charba.client.geo.GeoDataPoint$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.GeoDataPoint$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.GeoDataPoint$Property.<init>","org.pepstock.charba.client.geo.GeoDataPoint$Property.value","org.pepstock.charba.client.geo.GeoDataPoint$Property.valueOf","org.pepstock.charba.client.geo.GeoDataPoint$Property.values","org.pepstock.charba.client.geo.GeoDataPoint$Property.<synthetic: getter>","org.pepstock.charba.client.geo.GeoDataPoint$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatabaseCallback$$Overlay.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;MAsBiB,Q;;QAAA,mD;EAAAA,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
-"sources":["DatabaseCallback.java"],
-"names":["elemental2.dom.DatabaseCallback$$Overlay.<synthetic: adapt_lambda>","elemental2.dom.DatabaseCallback$$Overlay.<clinit>"]
-}
-

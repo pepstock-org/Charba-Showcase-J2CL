@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginsView$ChartBackgroundCase$1.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAgFyD,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,+F;EAAAA,iB;;;CAAA,kF;EAAAC,iC;;;CACjC,U;EACpBC,0C;;;QAFqD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["PluginsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$ChartBackgroundCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ChartBackgroundCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ChartBackgroundCase$1.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ChartBackgroundCase$1.create","org.pepstock.charba.showcase.j2cl.views.PluginsView$ChartBackgroundCase$1.<clinit>"]
-}
-

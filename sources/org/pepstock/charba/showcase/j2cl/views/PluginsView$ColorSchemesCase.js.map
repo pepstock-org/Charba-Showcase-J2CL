@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginsView$ColorSchemesCase.impl.java.js",
-"lineCount":145,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAuLc,gB;;CAAA,W;EAAAA,Q;EAAAA;OAiCS,8EAjCTA,C;EAAAA;OAmCc,gFAnCdA,C;;;QAqCJ,qG,8DAAwBC,K,qBAAmBC,O;EAA3CC,uC;EAAAA,qN;EAAAA,iB;;;CAAA,yK,8DAAwBF,K,qBAAmBC,O;EAA3CE,qC;EAAAA,2C;EAAAA,mE;EACPA,4F;EACAA,gG;;;CAGa,Y;EACbC,2F;;;CAGkB,c;EAClBC,6F;;;QA/CW,2B;EAAAC,2B;EAAAA;GAAAA,uKAAAA;G;EAAAA,uJ;;;QAAA,U;EAAAC,2B;EAAAA,uuB;;;QAEZ,wF;EAAAC,iJ;;;QAKA,yF;EAAAA,kJ;;;QAKA,0F;EAAAA,mJ;;;QAKA,wF;EAAAA,iJ;;;QAKA,0F;EAAAA,mJ;;;QAKA,2F;EAAAA,oJ;;;QA3BY,O;EAAAC,mC;EAAAA,gC;EAAAA,e;EAEZA,ya;EAKAA,6a;EAKAA,ib;EAKAA,ya;EAKAA,qb;EAKAA,ob;EA3BYA,kH;;;;;;;;;;;;;;;;;;;AAAA;4G;AAAA;6G;AAAA;8G;AAAA;4G;AAAA;8G;AAAA;+G;AAAA;2G;AAEZ;iH;AAKA;kH;AAKA;mH;AAKA;iH;AAKA;mH;AAKA;;",
-"sources":["PluginsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.getLabel","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.getFactory","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.valueOf","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.values","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.PluginsView$ColorSchemesCase.<clinit>"]
-}
-

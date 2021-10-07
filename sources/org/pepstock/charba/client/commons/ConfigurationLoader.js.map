@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ConfigurationLoader.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;MAyBmB,mB;;CAAA,W;EAAAA,Q;;;QAKV,S;EAAAC,0C;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EAAAC,iC;;;QAUW,iH,sBAA0BC,a,+BAAqCC,O;EAA/DC,8B;EAElBA,2F;EAEAA,+E;EAEAA,2G;;;QASkB,8G,sBAAuBF,a,+BAAqCG,I;EAA5DC,8B;EAElBA,2F;EAEAA,uF;EAEAA,qG;;;QApCiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["ConfigurationLoader.java"],
-"names":["org.pepstock.charba.client.commons.ConfigurationLoader.<synthetic: ctor_js>","org.pepstock.charba.client.commons.ConfigurationLoader.<synthetic: ctor_create>","org.pepstock.charba.client.commons.ConfigurationLoader.<init>","configuration","options","org.pepstock.charba.client.commons.ConfigurationLoader.loadOptions","data","org.pepstock.charba.client.commons.ConfigurationLoader.loadData","org.pepstock.charba.client.commons.ConfigurationLoader.<clinit>"]
-}
-

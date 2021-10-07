@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"InterpolateCallback.impl.java.js",
-"lineCount":21,
-"mappings":"A;;;;;;;;;MA0BiB,mB;;CAQT,qB,eAAmBA,e;;QARV,M;EAAAC,8B;EAAAA,8B;;;QAAA,O;EAAAC,sC;EAAAA;",
-"sources":["InterpolateCallback.java"],
-"names":["normalizedValue","org.pepstock.charba.client.geo.callbacks.InterpolateCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.callbacks.InterpolateCallback.<clinit>"]
-}
-

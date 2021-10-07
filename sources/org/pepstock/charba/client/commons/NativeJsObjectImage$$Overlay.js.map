@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NativeJsObjectImage$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MA4BY,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["NativeJsObjectImage.java"],
-"names":["org.pepstock.charba.client.commons.NativeJsObjectImage$$Overlay.<clinit>"]
-}
-

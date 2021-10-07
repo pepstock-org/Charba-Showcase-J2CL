@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextDirectionHandler.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;;;;;;;;;MA8BY,oB;;CAAA,W;EAAAA,Q;;;QAyCX,4K,qBAAkCC,M,uCAAsCC,a,WAA4BC,Y;EAApGC,+B;EAAAA,2C;EAAAA,mR;EAAAA,iB;;;CAAA,mO,qBAAkCH,M,uCAAsCC,a,WAA4BC,Y;EACnGE,wN;;;CAQI,wD,gBAAeC,G;EACnBC,sK;;;CAQO,gD;EACPC,2R;;;CAQI,yG,sBAA+BC,a;EACnCC,0N;;;CAQa,2D;EACbC,od;;;QA9EU,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["TextDirectionHandler.java"],
-"names":["org.pepstock.charba.client.options.TextDirectionHandler.<synthetic: ctor_js>","parent","defaultValues","nativeObject","org.pepstock.charba.client.options.TextDirectionHandler.<synthetic: ctor_create>","org.pepstock.charba.client.options.TextDirectionHandler.<init>","rtl","org.pepstock.charba.client.options.TextDirectionHandler.setRtl","org.pepstock.charba.client.options.TextDirectionHandler.isRtl","textDirection","org.pepstock.charba.client.options.TextDirectionHandler.setTextDirection","org.pepstock.charba.client.options.TextDirectionHandler.getTextDirection","org.pepstock.charba.client.options.TextDirectionHandler.<clinit>"]
-}
-

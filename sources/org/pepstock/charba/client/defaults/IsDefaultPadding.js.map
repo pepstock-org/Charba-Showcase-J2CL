@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultPadding.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;MAwBiB,gB;;CAOZ,W;;CAOA,Y;;CAOA,U;;CAOA,a;;CAOgB,U;;CAUA,8D,yBAAwBA,a;;QAVxB,wE;EAAAC,2B;EACnBA,qF;;;QASmB,8H,4DAAwBD,a;EAAxBC,2B;EAEnBA,IAAYC,MAAZD,4F;EAEAA,2D;EAEAA,6D;EAEAA,yD;EAEAA,+D;EAEAA,c;;;QAzDe,O;EAAAE,mC;EAAAA;",
-"sources":["IsDefaultPadding.java"],
-"names":["defaultValues","org.pepstock.charba.client.defaults.IsDefaultPadding.create__$default","result","org.pepstock.charba.client.defaults.IsDefaultPadding.<clinit>"]
-}
-

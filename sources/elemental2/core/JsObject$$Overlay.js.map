@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JsObject$$Overlay.impl.java.js",
-"lineCount":107,
-"mappings":"A;;;;;;;MAyBa,Q;;QA+GkB,oD,UAAcA,M,kBAAkBC,Q;EAAhCC,mB;EAC3BA,iO;;;QAS2B,wD,UAClBC,K,qDAAuDC,U;EADrCC,mB;EAE3BA,oG;;;QAI2B,0B,UAAcF,K;EAAdE,mB;EAC3BA,wF;;;QAUwB,8F,UACpBC,G,WAAYC,I,qCAAkCC,U;EAD1BC,mB;EAExBA,2G;;;QAKwB,8F,UACpBH,G,iBAAYC,I,qCAAkCC,U;EAD1BC,mB;EAExBA,2G;;;QAekD,8D,UAA2BH,G,WAAYC,I;EAAvCG,mB;EAClDA,oJ;;;QAKkD,8D,UAA2BJ,G,iBAAYC,I;EAAvCG,mB;EAClDA,oJ;;;QAQ0D,6C,UACjDJ,G;EADiDK,mB;EAE1DA,yG;;;QAMkC,uC,UAA2BL,G;EAA3BM,mB;EAClCA,mG;;;QAMkC,yC,UAA6BN,G;EAA7BO,mB;EAClCA,qG;;;QAM2B,kC,UAAsBP,G;EAAtBQ,mB;EAC3BA,8F;;;QAQ0B,gC,UAAoBR,G;EAApBS,mB;EAC1BA,4F;;;QAM0B,4B,UAAgBT,G;EAAhBU,mB;EAC1BA,wF;;;QAM0B,4B,UAAgBV,G;EAAhBW,mB;EAC1BA,wF;;;QAMkC,wB,UAAYX,G;EAAZY,mB;EAClCA,oF;;;QAU2B,oD,UAAsBZ,G,WAAYH,K;EAAlCgB,mB;EAC3BA,qG;;;QAiCmB,oE,mCAAqBC,K;EAArBC,mB;EACnBA,iG;;;QAImB,2E,mCAA4BC,Y;EAA5BC,mB;EACnBA,0G;;;QAQmB,2E,yCAA4BD,Y;EAA5BC,mB;EACnBA,0G;;;QAjSS,O;EAAAC,2B;EAAAA;",
-"sources":["JsObject.java"],
-"names":["target","var_args","elemental2.core.JsObject$$Overlay.assign","proto","properties","elemental2.core.JsObject$$Overlay.create","obj","prop","descriptor","elemental2.core.JsObject$$Overlay.defineProperty","elemental2.core.JsObject$$Overlay.getOwnPropertyDescriptor","elemental2.core.JsObject$$Overlay.getOwnPropertyDescriptors","elemental2.core.JsObject$$Overlay.getOwnPropertyNames","elemental2.core.JsObject$$Overlay.getOwnPropertySymbols","elemental2.core.JsObject$$Overlay.getPrototypeOf","elemental2.core.JsObject$$Overlay.isExtensible","elemental2.core.JsObject$$Overlay.isFrozen","elemental2.core.JsObject$$Overlay.isSealed","elemental2.core.JsObject$$Overlay.keys","elemental2.core.JsObject$$Overlay.setPrototypeOf","other","elemental2.core.JsObject$$Overlay.isPrototypeOf__$devirt","propertyName","elemental2.core.JsObject$$Overlay.propertyIsEnumerable__$devirt","elemental2.core.JsObject$$Overlay.<clinit>"]
-}
-

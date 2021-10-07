@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TransformStream$ConstructorWritableStrategyUnionType$$Overlay.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;MA8DmB,Q;;QAE6C,sB,UAAUA,C;EAAVC,mB;EAC1DA,uD;;;QAIgC,2G;EAAAC,mB;EAChCA,sI;;;QAI2B,sG;EAAAC,mB;EAC3BA,4H;;;QAKE,qH;EAAAC,mB;EACFA,8D;;;QAIc,2G;EAAAC,mB;EACdA,iF;;;QAIc,sG;EAAAC,mB;EACdA,4E;;;QA7Ba,O;EAAAC,2B;EAAAA;",
-"sources":["TransformStream.java"],
-"names":["o","elemental2.dom.TransformStream$ConstructorWritableStrategyUnionType$$Overlay.of","elemental2.dom.TransformStream$ConstructorWritableStrategyUnionType$$Overlay.asByteLengthQueuingStrategy__$devirt","elemental2.dom.TransformStream$ConstructorWritableStrategyUnionType$$Overlay.asCountQueuingStrategy__$devirt","elemental2.dom.TransformStream$ConstructorWritableStrategyUnionType$$Overlay.asTransformStreamWritableStrategyType__$devirt","elemental2.dom.TransformStream$ConstructorWritableStrategyUnionType$$Overlay.isByteLengthQueuingStrategy__$devirt","elemental2.dom.TransformStream$ConstructorWritableStrategyUnionType$$Overlay.isCountQueuingStrategy__$devirt","elemental2.dom.TransformStream$ConstructorWritableStrategyUnionType$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendHitBoxItem$LegendHitBoxItemFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAmFsB,uB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,+F;EAAAA,iB;;;CAAA,kF;EAAAC,iC;;;CAQI,yD,UAAoBC,Y;EAC3CC,+F;;;;CATmB,U;EAAAA,4L;;;QAAA,O;EAAAC,0C;EAAAA,uC;EAAAA,qB;EAAAA;",
-"sources":["LegendHitBoxItem.java"],
-"names":["org.pepstock.charba.client.items.LegendHitBoxItem$LegendHitBoxItemFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.LegendHitBoxItem$LegendHitBoxItemFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendHitBoxItem$LegendHitBoxItemFactory.<init>","nativeObject","org.pepstock.charba.client.items.LegendHitBoxItem$LegendHitBoxItemFactory.create","org.pepstock.charba.client.items.LegendHitBoxItem$LegendHitBoxItemFactory.<clinit>"]
-}
-

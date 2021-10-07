@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BorderAlignHandler$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAyDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,qEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,8I;EAAAA,iB;;;CAAA,2G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,mF;;;CASa,S;EACbC,kF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,8IAAAA;G;EAAAA,sI;;;QAAA,U;EAAAC,mB;EAAAA,6J;;;QAEZ,+E;EAAAC,wH;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,wS;EAFYA,iG;;;;;;;;;;;;;AAAA;2F;AAAA;0F;AAEZ;;",
-"sources":["BorderAlignHandler.java"],
-"names":["org.pepstock.charba.client.data.BorderAlignHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.BorderAlignHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.data.BorderAlignHandler$Property.<init>","org.pepstock.charba.client.data.BorderAlignHandler$Property.value","org.pepstock.charba.client.data.BorderAlignHandler$Property.valueOf","org.pepstock.charba.client.data.BorderAlignHandler$Property.values","org.pepstock.charba.client.data.BorderAlignHandler$Property.<synthetic: getter>","org.pepstock.charba.client.data.BorderAlignHandler$Property.<clinit>"]
-}
-

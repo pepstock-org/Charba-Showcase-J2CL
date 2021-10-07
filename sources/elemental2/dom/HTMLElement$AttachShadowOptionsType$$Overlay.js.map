@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HTMLElement$AttachShadowOptionsType$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MA8BmB,Q;;QAE4B,U;EAAAA,mB;EACzCA,8F;;;QAHa,O;EAAAC,2B;EAAAA;",
-"sources":["HTMLElement.java"],
-"names":["elemental2.dom.HTMLElement$AttachShadowOptionsType$$Overlay.create","elemental2.dom.HTMLElement$AttachShadowOptionsType$$Overlay.<clinit>"]
-}
-

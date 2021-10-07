@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColoringView$GradientsCase$2.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAgIsE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CAC9C,U;EACpBC,0C;;;QAFkE,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ColoringView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase$2.<init>","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase$2.create","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase$2.<clinit>"]
-}
-

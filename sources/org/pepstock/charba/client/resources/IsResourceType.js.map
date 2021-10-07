@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsResourceType.impl.java.js",
-"lineCount":12,
-"mappings":"A;;;;;;;MAuBU,c;;QAAA,O;EAAAA,iC;EAAAA;",
-"sources":["IsResourceType.java"],
-"names":["org.pepstock.charba.client.resources.IsResourceType.<clinit>"]
-}
-

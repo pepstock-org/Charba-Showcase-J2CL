@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ClickEventHandler.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MA6BiB,iB;;CAQR,kE,0BAA0BA,O;;QARlB,M;EAAAC,4B;EAAAA,8B;;;QAAA,O;EAAAC,oC;EAAAA;",
-"sources":["ClickEventHandler.java"],
-"names":["context","org.pepstock.charba.client.datalabels.events.ClickEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.datalabels.events.ClickEventHandler.<clinit>"]
-}
-

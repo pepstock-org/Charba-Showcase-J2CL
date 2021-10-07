@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Disc.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;MAuCY,I;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,4D;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,IAAaE,QAAbF,Y;EAEAA,yH;EAEAA,8K;EAEAA,4L;EAEAA,e;;;QApBU,O;EAAAG,uB;EAAAA,oB;EAAAA;",
-"sources":["Disc.java"],
-"names":["org.pepstock.charba.client.colors.tiles.Disc.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Disc.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Disc.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Disc.drawTile","halfSize","diameter","org.pepstock.charba.client.colors.tiles.Disc.<clinit>"]
-}
-

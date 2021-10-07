@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Center.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;MAyBmB,M;;CAAA,W;EAAAA,Q;EAAAA;OAEH,8CAFGA,K;EAAAA;OAIH,8CAJGA,K;;;QAAA,S;EAAAC,iB;EAAAA,6B;EAAAA,8D;EAAAA,iB;;;CAAA,iD;EAAAC,iC;EAAAA,2D;;;CAWJ,Q;EACbC,2D;;;CAQW,c,eAAYC,C;EACvBC,wD;;;CAQa,Q;EACbC,2D;;;CAQW,c,eAAYC,C;EACvBC,wD;;;CASa,Q;EACbC,+I;;;CAjDiB,mD;EAElBP,wD;EAEAA,wD;;;QAJkB,O;EAAAQ,yB;EAAAA,sB;EAAAA;",
-"sources":["Center.java"],
-"names":["org.pepstock.charba.client.colors.Center.<synthetic: ctor_js>","org.pepstock.charba.client.colors.Center.<synthetic: ctor_create>","org.pepstock.charba.client.colors.Center.<init>","org.pepstock.charba.client.colors.Center.getX","x","org.pepstock.charba.client.colors.Center.setX","org.pepstock.charba.client.colors.Center.getY","y","org.pepstock.charba.client.colors.Center.setY","org.pepstock.charba.client.colors.Center.toString","org.pepstock.charba.client.colors.Center.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Weight.impl.java.js",
-"lineCount":125,
-"mappings":"A;;;;;;;;;;;;;;MAyBY,M;;CAAA,W;EAAAA,Q;EAAAA;OA4BU,iDA5BVA,C;;;QAmCH,gD,8DAAcC,K;EAAdC,6B;EAAAA,0H;EAAAA,iB;;;CAAA,uF,8DAAcD,K;EAAdE,qC;EAAAA,2C;EAAAA,mE;EACPA,+D;;;CASa,S;EACbC,8D;;;QA9CU,2B;EAAAC,iB;EAAAA;GAAAA,sHAAAA;G;EAAAA,gH;;;QAAA,U;EAAAC,iB;EAAAA,8b;;;QAEX,qD;EAAAC,0F;;;QAIA,mD;EAAAA,wF;;;QAIA,qD;EAAAA,0F;;;QAIA,sD;EAAAA,2F;;;QAIA,sD;EAAAA,2F;;;QAIA,sD;EAAAA,2F;;;QAtBW,O;EAAAC,yB;EAAAA,sB;EAAAA,e;EAEXA,mO;EAIAA,2N;EAIAA,mO;EAIAA,uO;EAIAA,uO;EAIAA,uO;EAtBWA,2E;;;;;;;;;;;;;AAAA;+D;AAAA;6D;AAAA;+D;AAAA;gE;AAAA;gE;AAAA;gE;AAAA;oE;AAEX;oE;AAIA;kE;AAIA;oE;AAIA;qE;AAIA;qE;AAIA;;",
-"sources":["Weight.java"],
-"names":["org.pepstock.charba.client.enums.Weight.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.Weight.<synthetic: ctor_create>","org.pepstock.charba.client.enums.Weight.<init>","org.pepstock.charba.client.enums.Weight.value","org.pepstock.charba.client.enums.Weight.valueOf","org.pepstock.charba.client.enums.Weight.values","org.pepstock.charba.client.enums.Weight.<synthetic: getter>","org.pepstock.charba.client.enums.Weight.<clinit>"]
-}
-

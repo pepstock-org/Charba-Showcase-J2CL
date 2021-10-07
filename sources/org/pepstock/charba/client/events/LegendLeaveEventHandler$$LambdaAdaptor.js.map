@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendLeaveEventHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,6D;;GAAAC,oG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["LegendLeaveEventHandler.java"],
-"names":["org.pepstock.charba.client.events.LegendLeaveEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.LegendLeaveEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.LegendLeaveEventHandler$$LambdaAdaptor.onLeave","org.pepstock.charba.client.events.LegendLeaveEventHandler$$LambdaAdaptor.<clinit>"]
-}
-

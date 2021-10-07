@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultPinch.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;MAwBY,Y;;CAAA,W;EAAAA,Q;;;QAOH,S;EAAAC,mC;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,iC;;;;CAPG,a;EAAAC,kG;;;QAEX,4D;EAAAC,6G;;;QAFW,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;EAAAA,yB;EAEXA,uG;;;;;;;;;AAFW;;",
-"sources":["DefaultPinch.java"],
-"names":["org.pepstock.charba.client.zoom.DefaultPinch.<synthetic: ctor_js>","org.pepstock.charba.client.zoom.DefaultPinch.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.DefaultPinch.<init>","org.pepstock.charba.client.zoom.DefaultPinch.isEnabled","org.pepstock.charba.client.zoom.DefaultPinch.<synthetic: getter>","org.pepstock.charba.client.zoom.DefaultPinch.<clinit>"]
-}
-

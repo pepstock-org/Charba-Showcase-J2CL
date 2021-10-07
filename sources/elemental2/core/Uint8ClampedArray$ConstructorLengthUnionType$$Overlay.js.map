@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;MA2BmB,Q;;QAEqC,sB,UAAUA,C;EAAVC,mB;EAClDA,uD;;;QAIkB,sF;EAAAC,mB;EAClBA,0G;;;QAIsB,0F;EAAAC,mB;EACtBA,kH;;;QAIU,8E;EAAAC,mB;EACVA,8C;;;QAIsB,kF;EAAAC,mB;EACtBA,yG;;;QAIwB,4F;EAAAC,mB;EACxBA,sH;;;QAIc,sF;EAAAC,mB;EACdA,mE;;;QAIc,0F;EAAAC,mB;EACdA,uE;;;QAIc,8E;EAAAC,mB;EACdA,qD;;;QAIc,kF;EAAAC,mB;EACdA,+D;;;QAIc,4F;EAAAC,mB;EACdA,yE;;;QArDa,O;EAAAC,2B;EAAAA;",
-"sources":["Uint8ClampedArray.java"],
-"names":["o","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.of","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.asArrayBuffer__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.asArrayBufferView__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.asInt__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.asJsArray__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.asSharedArrayBuffer__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.isArrayBuffer__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.isArrayBufferView__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.isInt__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.isJsArray__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.isSharedArrayBuffer__$devirt","elemental2.core.Uint8ClampedArray$ConstructorLengthUnionType$$Overlay.<clinit>"]
-}
-

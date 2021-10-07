@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Float64Array$ConstructorLengthUnionType$$Overlay.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;MA2BmB,Q;;QAEgC,sB,UAAUA,C;EAAVC,mB;EAC7CA,uD;;;QAIkB,iF;EAAAC,mB;EAClBA,0G;;;QAIsB,qF;EAAAC,mB;EACtBA,kH;;;QAIU,yE;EAAAC,mB;EACVA,8C;;;QAIsB,6E;EAAAC,mB;EACtBA,yG;;;QAIwB,uF;EAAAC,mB;EACxBA,sH;;;QAIc,iF;EAAAC,mB;EACdA,mE;;;QAIc,qF;EAAAC,mB;EACdA,uE;;;QAIc,yE;EAAAC,mB;EACdA,qD;;;QAIc,6E;EAAAC,mB;EACdA,+D;;;QAIc,uF;EAAAC,mB;EACdA,yE;;;QArDa,O;EAAAC,2B;EAAAA;",
-"sources":["Float64Array.java"],
-"names":["o","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.of","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.asArrayBuffer__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.asArrayBufferView__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.asInt__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.asJsArray__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.asSharedArrayBuffer__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.isArrayBuffer__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.isArrayBufferView__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.isInt__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.isJsArray__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.isSharedArrayBuffer__$devirt","elemental2.core.Float64Array$ConstructorLengthUnionType$$Overlay.<clinit>"]
-}
-

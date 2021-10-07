@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasBackgroundColor$$LambdaAdaptor.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;;;;;;MA6BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,8J;;;CAAA,oJ;EAAAC,iC;EAAAA,wF;;;CAAA,6B;EAAAC,wD;EAAAA,qH;;;;CAAA,8B;EAAAC,iI;;;;CAAA,sB;EAAAC,yH;;;;CAAA,8B;EAAAC,iI;;;;CAAA,+D;EAAAC,mK;;;;CAAA,sC;EAAAA,0I;;;;CAAA,wE;EAAAA,4K;;;;CAAA,yE;EAAAA,6K;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasBackgroundColor.java"],
-"names":["org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.<init>","org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.getBackgroundColorHandler","org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.getBackgroundColorCallback","org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.getBackgroundColor","org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.getBackgroundColorAsString","org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.setBackgroundColor","org.pepstock.charba.client.annotation.HasBackgroundColor$$LambdaAdaptor.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ElementsView$Category.impl.java.js",
-"lineCount":121,
-"mappings":"A;;;;;;;;;;;;;;;;;MAiDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,uEAPTA,C;EAAAA;OASa,uEATbA,C;;;QAWJ,0G,8DAAgBC,K,yBAAkBC,K;EAAlCC,+B;EAAAA,iN;EAAAA,iB;;;CAAA,uK,8DAAgBF,K,yBAAkBC,K;EAAlCE,qC;EAAAA,2C;EAAAA,mE;EACPA,qF;EACAA,qF;;;CAGa,Y;EACbC,oF;;;CAGiB,Y;EACjBC,oF;;;QArBW,2B;EAAAC,mB;EAAAA;GAAAA,gJAAAA;G;EAAAA,wI;;;QAAA,U;EAAAC,mB;EAAAA,+Z;;;QAEZ,2E;EAAAC,oH;;;QACA,4E;EAAAA,qH;;;QACA,yE;EAAAA,kH;;;QACA,0E;EAAAA,mH;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,wW;EACAA,6W;EACAA,8V;EACAA,mW;EALYA,mG;;;;;;;;;;;;;;;;;AAAA;uF;AAAA;wF;AAAA;qF;AAAA;sF;AAAA;4F;AAEZ;4F;AACA;6F;AACA;0F;AACA;;",
-"sources":["ElementsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.<synthetic: ctor_js>","label","items","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.getLabel","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.getItems","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.valueOf","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.values","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.ElementsView$Category.<clinit>"]
-}
-

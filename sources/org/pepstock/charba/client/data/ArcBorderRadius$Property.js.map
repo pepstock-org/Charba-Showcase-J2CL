@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ArcBorderRadius$Property.impl.java.js",
-"lineCount":107,
-"mappings":"A;;;;;;;;;;;;;;MA+Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,kEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,2IAAAA;G;EAAAA,mI;;;QAAA,U;EAAAC,mB;EAAAA,6Z;;;QAEZ,2E;EAAAC,oH;;;QACA,yE;EAAAA,kH;;;QACA,2E;EAAAA,oH;;;QACA,yE;EAAAA,kH;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,8R;EACAA,sR;EACAA,8R;EACAA,sR;EALYA,8F;;;;;;;;;;;;;AAAA;uF;AAAA;qF;AAAA;uF;AAAA;qF;AAAA;uF;AAEZ;4F;AACA;0F;AACA;4F;AACA;;",
-"sources":["ArcBorderRadius.java"],
-"names":["org.pepstock.charba.client.data.ArcBorderRadius$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.ArcBorderRadius$Property.<synthetic: ctor_create>","org.pepstock.charba.client.data.ArcBorderRadius$Property.<init>","org.pepstock.charba.client.data.ArcBorderRadius$Property.value","org.pepstock.charba.client.data.ArcBorderRadius$Property.valueOf","org.pepstock.charba.client.data.ArcBorderRadius$Property.values","org.pepstock.charba.client.data.ArcBorderRadius$Property.<synthetic: getter>","org.pepstock.charba.client.data.ArcBorderRadius$Property.<clinit>"]
-}
-

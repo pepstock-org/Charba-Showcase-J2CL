@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnnotationBuilder.impl.java.js",
-"lineCount":124,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAmDmB,iB;;CAAA,W;EAAAA,Q;;;QAcV,S;EAAAC,wC;EAAAA,wE;EAAAA,iB;;;CAAA,2D;EAAAC,iC;;;QAaU,uE,oBAAsBC,c,gBAAuBC,K,gBAAcC,M;EAA3DC,4B;EAEjBA,+F;EAEAA,mBAAaC,SAAbD,C;EAEAA;GAECA,iKAFDA;;GAMCA,IAAIE,OAAJF,+CANDA;GAUCA;IAECA,IAASG,UAATH,kCAFDA;IAICA;KAECA,IAAYI,aAAZJ,2DAFDA;KAKCA,mCALDA;;KAQCA,8OARDA;KAJDA;;IAiBCA,oCAjBDA;IAVDA;GA8BCA,8BA9BDA;GAiCCA,iGAjCDA;GAmCCA,iHAnCDA;G;EAsCAA,IAAOK,GAAPL,0F;EAGAA;GAECA,0JAFDA;G;EAKAA,wI;;;QAYiB,yC,gBAAaH,c,gBAAuBC,K,gBAAcC,M;EAAlDC,4B;EAEjBA,+F;EAEAA,IAAOK,GAAPL,+F;EAGAA;GAECA,0JAFDA;G;EAMAA,6I;;;QAWqB,0C,gBAAcH,c,gBAAuBC,K,gBAAcC,M;EACxEO,IAAcC,OAAdD,2D;EACAA,2E;;;QAYkB,+E,gBAAiCD,G,iBAAYG,uB,gBAAgCV,K,gBAAcC,M;EAE7GU,IAAOC,MAAPD,gN;EAEAA,IAAIE,OAAJF,wD;EAEAA,kG;EAEAA,e;;;QAzIiB,O;EAAAG,oC;EAAAA,iC;EAAAA,qB;EAIlBA,yJ;EAEAA,sJ;;;;;;;;;;;;;;;;;;;;;;;;AANkB;kBAIoB,6DAJpB,C;AAAA;kBAMgC,+DANhC,C;AAQlB;kBAA4B,yEAA5B;",
-"sources":["AnnotationBuilder.java"],
-"names":["org.pepstock.charba.client.utils.AnnotationBuilder.<synthetic: ctor_js>","org.pepstock.charba.client.utils.AnnotationBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.utils.AnnotationBuilder.<init>","htmlXmlContent","width","height","org.pepstock.charba.client.utils.AnnotationBuilder.build","innerHtml","wrapper","clonedNode","clonedElement","key","org.pepstock.charba.client.utils.AnnotationBuilder.getKey","builder","validatedhtmlXmlContent","org.pepstock.charba.client.utils.AnnotationBuilder.buildWithValidatedContent","result","element","org.pepstock.charba.client.utils.AnnotationBuilder.<clinit>"]
-}
-

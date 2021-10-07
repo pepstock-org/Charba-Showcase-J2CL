@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DoughnutChart.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;MA0Ba,a;;CAAA,W;EAAAA,Q;EAAAA;OAEkB,oDAFlBA,C;;;;QAOL,S;EAAAC,wB;EAAAA,oC;EAAAA,8D;EAAAA,iB;;;;CAAA,iD;EACNC,kJ;;;;QASS,wC,aAAmBC,Y;EAAnBF,wB;EAAAA,oC;EAAAA,yG;EAAAA,iB;;;;CAAA,gF,aAAmBE,Y;EAC5BD,oG;EAEAA,6N;;;CASsB,c;EACtBE,iE;;;CASsB,qB,gBAAmBC,M;EACzCC,yI;;;;CAxCW,c;EAAAA,8J;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA,wB;EAAAA;",
-"sources":["DoughnutChart.java"],
-"names":["org.pepstock.charba.client.DoughnutChart.<synthetic: ctor_js>","org.pepstock.charba.client.DoughnutChart.<synthetic: ctor_create>","org.pepstock.charba.client.DoughnutChart.<init>","extendedType","org.pepstock.charba.client.DoughnutChart.getOptions","hidden","org.pepstock.charba.client.DoughnutChart.newDataset","org.pepstock.charba.client.DoughnutChart.<clinit>"]
-}
-

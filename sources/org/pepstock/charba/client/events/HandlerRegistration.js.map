@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HandlerRegistration.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;MAuBmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAGW,iEAHXA,C;EAAAA;OAKS,iEALTA,C;EAAAA;OAOM,8DAPNA,C;;;QAgBlB,sJ,uBAAmCC,O,sBAAsBC,O,mBAAmBC,I;EAA5EC,8B;EAAAA,0C;EAAAA,8O;EAAAA,iB;;;CAAA,2M,uBAAmCH,O,sBAAsBC,O,mBAAmBC,I;EAA5EE,iC;EACCA,iF;EACAA,iF;EACAA,2E;;;CAMW,iB;EACXC,uW;;;QA1BiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["HandlerRegistration.java"],
-"names":["org.pepstock.charba.client.events.HandlerRegistration.<synthetic: ctor_js>","manager","handler","type","org.pepstock.charba.client.events.HandlerRegistration.<synthetic: ctor_create>","org.pepstock.charba.client.events.HandlerRegistration.<init>","org.pepstock.charba.client.events.HandlerRegistration.removeHandler","org.pepstock.charba.client.events.HandlerRegistration.<clinit>"]
-}
-

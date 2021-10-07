@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HorizontalBarOptions.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;MA0Ba,oB;;CAAA,W;EAAAA,Q;;;QAQL,uG,gBAA6BC,K,gCAA8BC,a;EAA3DC,+B;EAAAA,2C;EAAAA,qM;EAAAA,iB;;;CAAA,oK,gBAA6BF,K,gCAA8BC,a;EACjEE,sL;EAEAA,4H;;;CASW,0D,kBAAuBC,S;EAElCC,4H;;;QAtBW,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["HorizontalBarOptions.java"],
-"names":["org.pepstock.charba.client.configuration.HorizontalBarOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.HorizontalBarOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.HorizontalBarOptions.<init>","indexAxis","org.pepstock.charba.client.configuration.HorizontalBarOptions.setIndexAxis","org.pepstock.charba.client.configuration.HorizontalBarOptions.<clinit>"]
-}
-

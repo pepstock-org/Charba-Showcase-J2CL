@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CSSProperties$OpacityUnionType$$Overlay.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;MA6wBmB,Q;;QAEuB,sB,UAAUA,C;EAAVC,mB;EACpCA,uD;;;QAIa,kE;EAAAC,mB;EACbA,iD;;;QAIa,kE;EAAAC,mB;EACbA,iD;;;QAIc,kE;EAAAC,mB;EACdA,qD;;;QAIc,kE;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
-"sources":["CSSProperties.java"],
-"names":["o","elemental2.dom.CSSProperties$OpacityUnionType$$Overlay.of","elemental2.dom.CSSProperties$OpacityUnionType$$Overlay.asDouble__$devirt","elemental2.dom.CSSProperties$OpacityUnionType$$Overlay.asString__$devirt","elemental2.dom.CSSProperties$OpacityUnionType$$Overlay.isDouble__$devirt","elemental2.dom.CSSProperties$OpacityUnionType$$Overlay.isString__$devirt","elemental2.dom.CSSProperties$OpacityUnionType$$Overlay.<clinit>"]
-}
-

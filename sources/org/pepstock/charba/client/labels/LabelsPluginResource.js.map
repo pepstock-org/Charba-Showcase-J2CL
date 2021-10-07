@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LabelsPluginResource.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA0BmB,oB;;CAAA,W;EAAAA,Q;;;QAwClB,S;EAAAC,+B;EAAAA,2C;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EACCC,wT;;;QAzCiB,O;EAAAC,uC;EAAAA,oC;EAAAA,qC;EAGlBA,o/gB;;;;;;;;;;;;;AAHkB;qBAGY,kEAHZ;",
-"sources":["LabelsPluginResource.java"],
-"names":["org.pepstock.charba.client.labels.LabelsPluginResource.<synthetic: ctor_js>","org.pepstock.charba.client.labels.LabelsPluginResource.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsPluginResource.<init>","org.pepstock.charba.client.labels.LabelsPluginResource.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractDefaultChartTitle.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;;;;;MA4Be,yB;;CAAA,W;EAAAA,Q;EAAAA;OAEuB,6EAFvBA,C;;;CASJ,sI,+BAAiDC,K;EAAjDC,iC;EACTA,2F;;;CASoB,W;EACpBC,wG;;;CASuB,c;EACvBC,2G;;;CASa,oB;EACbC,iH;;;CASc,a;EACdC,0G;;;CASe,e;EACfC,4G;;;CASc,c;EACdC,2G;;;CASmB,Y;EACnBC,yG;;;QAhFa,O;EAAAC,4C;EAAAA,yC;EAAAA;",
-"sources":["AbstractDefaultChartTitle.java"],
-"names":["org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.<synthetic: ctor_js>","title","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.<init>","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.getFont","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.getPadding","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.getColorAsString","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.isDisplay","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.getPosition","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.isFullSize","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.getAlign","org.pepstock.charba.client.defaults.chart.AbstractDefaultChartTitle.<clinit>"]
-}
-

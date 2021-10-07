@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsThreshold.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;;;MAwBU,W;;QAQM,6D,oBAAoBA,S;EAApBC,sB;EACdA,2L;;;QAQW,kE,oBAAyBD,S;EAAzBE,sB;EACXA;GACCA,kHADDA;G;;;CAUM,W;;CAOA,Y;;CAOC,Y;;QA1CC,O;EAAAC,8B;EAAAA;",
-"sources":["IsThreshold.java"],
-"names":["threshold","org.pepstock.charba.client.impl.charts.IsThreshold.isValid","org.pepstock.charba.client.impl.charts.IsThreshold.checkIfValid","org.pepstock.charba.client.impl.charts.IsThreshold.<clinit>"]
-}
-

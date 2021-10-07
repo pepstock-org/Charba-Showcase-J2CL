@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultSubtitle.impl.java.js",
-"lineCount":14,
-"mappings":"A;;;;;;;;;MAsBiB,iB;;QAAA,O;EAAAA,oC;EAAAA;",
-"sources":["IsDefaultSubtitle.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultSubtitle.<clinit>"]
-}
-

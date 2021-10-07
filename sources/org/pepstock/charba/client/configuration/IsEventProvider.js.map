@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsEventProvider.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;;;;;;;MA6BU,e;;QAQG,wG,gBAAiBA,K,yBAAuBC,Q;EAAxCC,0B;EACXA,qM;EACAA,2M;;;QAVQ,O;EAAAC,kC;EAAAA;",
-"sources":["IsEventProvider.java"],
-"names":["chart","provider","org.pepstock.charba.client.configuration.IsEventProvider.register","org.pepstock.charba.client.configuration.IsEventProvider.<clinit>"]
-}
-

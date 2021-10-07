@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CallbacksLineCase$1.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;;;;MAqC6F,E;;CAAA,W;EAAAA,Q;EAAAA;8F;;;QAAA,gF;EAAAC,a;EAAAA,yB;EAAAA,iL;EAAAA,iB;;;CAAA,yJ;EAAAC,0G;EAAAA,iC;;;CAG5E,6D,uBAAsBC,O;EACpCC,qE;;;;CAJ0F,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["CallbacksLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksLineCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksLineCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksLineCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksLineCase$1.invoke","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksLineCase$1.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsSelectionCase$SelectionItem.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;MAqRoB,a;;CAAA,W;EAAAA,Q;EAAAA;OAEA,yGAFAA,K;EAAAA;OAIA,kGAJAA,K;EAAAA;OAMG,kGANHA,K;;;QAQlB,yB,eAAkBC,Y,gBAAkBC,K,gBAAcC,K;EAAlDC,wB;EAAAA,oC;EAAAA,wJ;EAAAA,iB;;;CAAA,iH,eAAkBH,Y,gBAAkBC,K,gBAAcC,K;EACjDE,iC;EACAA,8H;EACAA,gH;EACAA,gH;;;CAGU,mB;EACVC,sH;;;CAGU,Y;EACVC,+G;;;CAGa,Y;EACbC,+G;;;CAIa,Q;EACbC,2Y;;;QA7BiB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["DataLabelsSelectionCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.<synthetic: ctor_js>","datasetIndex","index","value","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.<init>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.getDatasetIndex","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.getIndex","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.getValue","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.toString","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$SelectionItem.<clinit>"]
-}
-

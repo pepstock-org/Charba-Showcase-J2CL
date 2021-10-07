@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnnotationObliqueLineOnTimeSeriesLineCase$1.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA0FsG,E;;CAAA,W;EAAAA,Q;EAAAA;mH;EAAAA;OANxFC,iHAMwFD,C;;;QAAA,sJ;EAAAE,a;EAAAA,yB;EAAAA,+R;EAAAA,iB;;;CAAA,oP;EAAAC,+H;EAAAA,2I;EAAAA,kF;;;CAG/E,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,sZ;;;QAPkG,O;EAAAI,qB;EAAAA,kB;EAAAA;",
-"sources":["AnnotationObliqueLineOnTimeSeriesLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase$1.<synthetic: ctor_js>","adapter","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase$1.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase$1.onTitle","item","ds","dp","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase$1.<clinit>"]
-}
-

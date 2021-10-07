@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CanvasObject.impl.java.js",
-"lineCount":117,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAmCsB,Y;;CAAA,W;EAAAA,Q;;;;CA2CrB,uE,gBAAoBC,E;EACnBC,yE;EAGAA,qN;;;;CAQD,sG,UAA0BC,Y;EACzBD,oI;EAEAA,gT;;;CAUU,gJ,YAAsBE,Q,oBAAqBC,I;EAErDC,qE;EAEAA,+R;EAIAA,0V;;;CAQY,2E,gBAAaL,E;EACzBM,oK;;;CAQe,2D;EACfC,gJ;;;CAQmB,S;EACnBC,uO;;;CAQU,wF,eAAiBC,Y;EAE3BC;GAECA,IAAiBC,QAAjBD,0LAFDA;GAICA,2FAJDA;G;;;CAcU,Q;EACVE,IAAUC,KAAVD,M;EACAA,IAAIE,MAAJF,K;EACAA,6K;EACAA,c;;;CASc,M,UAAcG,G;EAE5BC;GACCA,YADDA;G;EAIAA;GACCA,aADDA;G;EAIAA;GACCA,aADDA;G;EAIAA,IAAaC,KAAbD,6D;EAEAA;GAECA,oGAFDA;G;EAOAA,4E;;;QAnKoB,O;EAAAE,+B;EAAAA,4B;EAAAA,gC;;;;;;;;;;;;;;;;;;;;;;AAGrB;aAAoB,kEAApB,oC;AAEA;aAAoB,qEAApB;",
-"sources":["CanvasObject.java"],
-"names":["org.pepstock.charba.client.colors.CanvasObject.<synthetic: ctor_js>","id","org.pepstock.charba.client.colors.CanvasObject.<init>","nativeObject","property","type","org.pepstock.charba.client.colors.CanvasObject.checkNativeObject","org.pepstock.charba.client.colors.CanvasObject.setId","org.pepstock.charba.client.colors.CanvasObject.hasId","org.pepstock.charba.client.colors.CanvasObject.getId","canvasObject","org.pepstock.charba.client.colors.CanvasObject.store","internal","org.pepstock.charba.client.colors.CanvasObject.hashCode","prime","result","obj","org.pepstock.charba.client.colors.CanvasObject.equals","other","org.pepstock.charba.client.colors.CanvasObject.<clinit>"]
-}
-

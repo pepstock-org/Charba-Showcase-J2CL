@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultsBackgroundColorHandler.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAyBU,gC;;CAOgC,8B;;QAAA,8G;EAAAA,2C;EACxCA,Y;;;QARQ,O;EAAAC,mD;EAAAA;",
-"sources":["IsDefaultsBackgroundColorHandler.java"],
-"names":["org.pepstock.charba.client.annotation.IsDefaultsBackgroundColorHandler.getBackgroundColorCallback__$default","org.pepstock.charba.client.annotation.IsDefaultsBackgroundColorHandler.<clinit>"]
-}
-

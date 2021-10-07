@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendItem$Property.impl.java.js",
-"lineCount":197,
-"mappings":"A;;;;;;;;;;;;;;MA4DM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAkBiB,8DAlBjBA,C;;;QAyBI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,uI;EAAAA,iB;;;CAAA,oG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,4E;;;CASa,S;EACbC,2E;;;QApCG,2B;EAAAC,mB;EAAAA;GAAAA,uIAAAA;G;EAAAA,+H;;;QAAA,U;EAAAC,mB;EAAAA,ysC;;;QAEJ,yE;EAAAC,kH;;;QACA,iE;EAAAA,0G;;;QACA,sE;EAAAA,+G;;;QACA,sE;EAAAA,+G;;;QACA,yE;EAAAA,kH;;;QACA,oE;EAAAA,6G;;;QACA,qE;EAAAA,8G;;;QACA,4E;EAAAA,qH;;;QACA,qE;EAAAA,8G;;;QACA,sE;EAAAA,+G;;;QACA,uE;EAAAA,gH;;;QACA,oE;EAAAA,6G;;;QACA,wE;EAAAA,iH;;;QACA,gE;EAAAA,yG;;;QAfI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,8R;EACAA,+P;EACAA,kR;EACAA,kR;EACAA,8R;EACAA,0Q;EACAA,8Q;EACAA,yS;EACAA,8Q;EACAA,kR;EACAA,sR;EACAA,2Q;EACAA,0R;EACAA,2P;EAfIA,0F;;;;;;;;;;;;;AAAA;qF;AAAA;6E;AAAA;kF;AAAA;kF;AAAA;qF;AAAA;gF;AAAA;iF;AAAA;wF;AAAA;iF;AAAA;kF;AAAA;mF;AAAA;gF;AAAA;oF;AAAA;4E;AAAA;mF;AAEJ;0F;AACA;kF;AACA;uF;AACA;uF;AACA;0F;AACA;qF;AACA;sF;AACA;6F;AACA;sF;AACA;uF;AACA;yF;AACA;sF;AACA;0F;AACA;;",
-"sources":["LegendItem.java"],
-"names":["org.pepstock.charba.client.items.LegendItem$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.LegendItem$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendItem$Property.<init>","org.pepstock.charba.client.items.LegendItem$Property.value","org.pepstock.charba.client.items.LegendItem$Property.valueOf","org.pepstock.charba.client.items.LegendItem$Property.values","org.pepstock.charba.client.items.LegendItem$Property.<synthetic: getter>","org.pepstock.charba.client.items.LegendItem$Property.<clinit>"]
-}
-

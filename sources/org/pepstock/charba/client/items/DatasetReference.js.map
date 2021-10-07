@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetReference.impl.java.js",
-"lineCount":90,
-"mappings":"A;;;;;;;;;;;;MA+BmB,gB;;CAAA,W;EAAAA,Q;EAAAA;OAyCW,6DAzCXA,C;;;;QAiDX,qH,+BAAwCC,O,wBAAwBC,I;EAAhEC,2B;EAAAA,uC;EAAAA,gM;EAAAA,iB;;;;CAAA,sK,+BAAwCF,O,wBAAwBC,I;EACtEE,4H;EAEAA,mG;EAEAA,0F;EAEAA,kL;EACAA,uK;EAEAA,wM;EAEAA,0E;;;;QAQD,wD,UAA8BC,Y;EAA9BF,2B;EAAAA,uC;EAAAA,kI;EAAAA,iB;;;;CAAA,yG,UAA8BE,Y;EAC7BD,oI;EAEAA,sR;;;CAQ2B,c;EAC3BE,0E;;;CAQgB,mB;EAChBC,2N;;;CAQgB,Y;EAChBC,mN;;;QAjGD,gE;EAAAC,yH;;;QAFkB,O;EAAAC,mC;EAAAA,gC;EAAAA,gC;EAElBA,8H;;;;;;;;;;;;;;;AAFkB;;",
-"sources":["DatasetReference.java"],
-"names":["org.pepstock.charba.client.items.DatasetReference.<synthetic: ctor_js>","context","item","org.pepstock.charba.client.items.DatasetReference.<synthetic: ctor_create>","org.pepstock.charba.client.items.DatasetReference.<init>","nativeObject","org.pepstock.charba.client.items.DatasetReference.getElement","org.pepstock.charba.client.items.DatasetReference.getDatasetIndex","org.pepstock.charba.client.items.DatasetReference.getIndex","org.pepstock.charba.client.items.DatasetReference.<synthetic: getter>","org.pepstock.charba.client.items.DatasetReference.<clinit>"]
-}
-

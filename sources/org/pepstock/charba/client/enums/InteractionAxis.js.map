@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"InteractionAxis.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAyBY,e;;CAAA,W;EAAAA,Q;EAAAA;OAiBU,0DAjBVA,C;;;QAwBH,gD,8DAAuBC,K;EAAvBC,sC;EAAAA,mI;EAAAA,iB;;;CAAA,gG,8DAAuBD,K;EAAvBE,qC;EAAAA,2C;EAAAA,mE;EACPA,wE;;;CASa,S;EACbC,uE;;;QAnCU,2B;EAAAC,0B;EAAAA;GAAAA,iJAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,0B;EAAAA,uT;;;QAGX,yD;EAAAC,gH;;;QAIA,yD;EAAAA,gH;;;QAIA,0D;EAAAA,iH;;;QAXW,O;EAAAC,kC;EAAAA,+B;EAAAA,e;EAGXA,4P;EAIAA,4P;EAIAA,gQ;EAXWA,6F;;;;;;;;;;;;;AAAA;4E;AAAA;4E;AAAA;6E;AAAA;sF;AAGX;iF;AAIA;iF;AAIA;;",
-"sources":["InteractionAxis.java"],
-"names":["org.pepstock.charba.client.enums.InteractionAxis.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.InteractionAxis.<synthetic: ctor_create>","org.pepstock.charba.client.enums.InteractionAxis.<init>","org.pepstock.charba.client.enums.InteractionAxis.value","org.pepstock.charba.client.enums.InteractionAxis.valueOf","org.pepstock.charba.client.enums.InteractionAxis.values","org.pepstock.charba.client.enums.InteractionAxis.<synthetic: getter>","org.pepstock.charba.client.enums.InteractionAxis.<clinit>"]
-}
-

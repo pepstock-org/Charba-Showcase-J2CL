@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Align.impl.java.js",
-"lineCount":134,
-"mappings":"A;;;;;;;;;;;;;;MAyBY,K;;CAAA,W;EAAAA,Q;EAAAA;OAgCU,2DAhCVA,C;;;QAuCH,gD,8DAAaC,K;EAAbC,4B;EAAAA,oI;EAAAA,iB;;;CAAA,iG,8DAAaD,K;EAAbE,qC;EAAAA,2C;EAAAA,mE;EACPA,yE;;;CASa,S;EACbC,wE;;;QAlDU,2B;EAAAC,gB;EAAAA;GAAAA,8HAAAA;G;EAAAA,yH;;;QAAA,U;EAAAC,gB;EAAAA,gjB;;;QAEX,+D;EAAAC,kG;;;QAIA,8D;EAAAA,iG;;;QAIA,4D;EAAAA,+F;;;QAIA,8D;EAAAA,iG;;;QAIA,+D;EAAAA,kG;;;QAIA,6D;EAAAA,gG;;;QAIA,4D;EAAAA,+F;;;QA1BW,O;EAAAC,wB;EAAAA,qB;EAAAA,e;EAEXA,oP;EAIAA,gP;EAIAA,wO;EAIAA,gP;EAIAA,oP;EAIAA,4O;EAIAA,wO;EA1BWA,oF;;;;;;;;;;;;;AAAA;wE;AAAA;uE;AAAA;qE;AAAA;uE;AAAA;wE;AAAA;sE;AAAA;qE;AAAA;6E;AAEX;6E;AAIA;4E;AAIA;0E;AAIA;4E;AAIA;6E;AAIA;2E;AAIA;;",
-"sources":["Align.java"],
-"names":["org.pepstock.charba.client.datalabels.enums.Align.<synthetic: ctor_js>","value","org.pepstock.charba.client.datalabels.enums.Align.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.enums.Align.<init>","org.pepstock.charba.client.datalabels.enums.Align.value","org.pepstock.charba.client.datalabels.enums.Align.valueOf","org.pepstock.charba.client.datalabels.enums.Align.values","org.pepstock.charba.client.datalabels.enums.Align.<synthetic: getter>","org.pepstock.charba.client.datalabels.enums.Align.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StandardAnnotationId.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;MAuBY,oB;;CAAA,W;EAAAA,Q;EAAAA;OAGU,oEAHVA,C;;;QAUX,yB,gBAA4BC,K;EAA5BC,+B;EAAAA,2C;EAAAA,qG;EAAAA,iB;;;CAAA,mF,gBAA4BD,K;EAA5BE,iC;EAECA,kF;;;CASa,S;EACbC,iF;;;QAtBU,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["StandardAnnotationId.java"],
-"names":["org.pepstock.charba.client.annotation.StandardAnnotationId.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.StandardAnnotationId.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.StandardAnnotationId.<init>","org.pepstock.charba.client.annotation.StandardAnnotationId.value","org.pepstock.charba.client.annotation.StandardAnnotationId.<clinit>"]
-}
-

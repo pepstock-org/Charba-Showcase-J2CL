@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FontCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,iF;;;CAAA,2D;EAAAC,2C;EAAAA,kH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["FontCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.FontCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.FontCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.FontCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.FontCallback$$LambdaAdaptor.<clinit>"]
-}
-

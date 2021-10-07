@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IndexAxis.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAyBY,S;;CAAA,W;EAAAA,Q;EAAAA;OAYU,oDAZVA,C;;;QAmBH,gD,8DAAiBC,K;EAAjBC,gC;EAAAA,6H;EAAAA,iB;;;CAAA,0F,8DAAiBD,K;EAAjBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kE;;;CASa,S;EACbC,iE;;;QA9BU,2B;EAAAC,oB;EAAAA;GAAAA,+HAAAA;G;EAAAA,sH;;;QAAA,U;EAAAC,oB;EAAAA,qM;;;QAEX,mD;EAAAC,8F;;;QAIA,mD;EAAAA,8F;;;QANW,O;EAAAC,4B;EAAAA,yB;EAAAA,e;EAEXA,8N;EAIAA,8N;EANWA,iF;;;;;;;;;;;;;AAAA;gE;AAAA;gE;AAAA;0E;AAEX;qE;AAIA;;",
-"sources":["IndexAxis.java"],
-"names":["org.pepstock.charba.client.enums.IndexAxis.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.IndexAxis.<synthetic: ctor_create>","org.pepstock.charba.client.enums.IndexAxis.<init>","org.pepstock.charba.client.enums.IndexAxis.value","org.pepstock.charba.client.enums.IndexAxis.valueOf","org.pepstock.charba.client.enums.IndexAxis.values","org.pepstock.charba.client.enums.IndexAxis.<synthetic: getter>","org.pepstock.charba.client.enums.IndexAxis.<clinit>"]
-}
-

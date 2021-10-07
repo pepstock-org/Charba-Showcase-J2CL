@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SizeAxisMapper.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;;;MAgCY,c;;CAAA,W;EAAAA,Q;;;QAwCX,wD,UAA4BC,Y;EAA5BC,yB;EAAAA,qC;EAAAA,8H;EAAAA,iB;;;CAAA,qG,UAA4BD,Y;EAC3BE,2H;;;CAQI,6D,eAAwBC,a;EAC5BC,2J;;;CAQM,uD;EACNC,+N;;;CAQI,uF,aAAaC,I;EACjBC,+K;;;CAQI,8C;EACJC,iV;;;CASI,uD,eAAaC,G,gBAASC,G;EAC1BC,kS;;;CAUa,+C;EACbC,IAAaC,KAAbD,kM;EACAA,sF;;;QAnGU,O;EAAAE,iC;EAAAA,8B;EAAAA;",
-"sources":["SizeAxisMapper.java"],
-"names":["org.pepstock.charba.client.geo.SizeAxisMapper.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.SizeAxisMapper.<synthetic: ctor_create>","org.pepstock.charba.client.geo.SizeAxisMapper.<init>","missingRadius","org.pepstock.charba.client.geo.SizeAxisMapper.setMissingRadius","org.pepstock.charba.client.geo.SizeAxisMapper.getMissingRadius","mode","org.pepstock.charba.client.geo.SizeAxisMapper.setMode","org.pepstock.charba.client.geo.SizeAxisMapper.getMode","min","max","org.pepstock.charba.client.geo.SizeAxisMapper.setRange","org.pepstock.charba.client.geo.SizeAxisMapper.getRange","array","org.pepstock.charba.client.geo.SizeAxisMapper.<clinit>"]
-}
-

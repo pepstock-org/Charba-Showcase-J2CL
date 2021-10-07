@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartAdapters.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;;MA0BmB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAE2B,qFAF3BA,C;;;QASlB,oD,iBAA8BC,Q;EAA9BC,+B;EAAAA,2C;EAAAA,uI;EAAAA,iB;;;CAAA,kH,iBAA8BD,Q;EAA9BE,iC;EAECA,6N;;;CASkC,W;EAClCC,kG;;;QArBiB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["DefaultChartAdapters.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartAdapters.<synthetic: ctor_js>","adapters","org.pepstock.charba.client.defaults.chart.DefaultChartAdapters.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartAdapters.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartAdapters.getDate","org.pepstock.charba.client.defaults.chart.DefaultChartAdapters.<clinit>"]
-}
-

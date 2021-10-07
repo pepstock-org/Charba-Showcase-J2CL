@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Float32Array$$Overlay.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;MAyBa,Q;;QAuG0B,4F,4BACbA,M,kCAA+BC,K,WAASC,K;EAD3BC,mB;EAEnCA,sG;;;QAI+B,0E,4BAAyBH,M,kCAA+BC,K;EAAxDE,mB;EAC/BA,+F;;;QAI+B,kC,4BAAyBH,M;EAAzBG,mB;EAC/BA,wF;;;QAImC,4F,0BACdH,M,kCAA+BC,K,WAASC,K;EAD1BC,mB;EAEnCA,sG;;;QAI+B,0E,0BAAwBH,M,kCAA+BC,K;EAAvDE,mB;EAC/BA,+F;;;QAI+B,kC,0BAAwBH,M;EAAxBG,mB;EAC/BA,wF;;;QAImC,kF,gBAAYH,M,kCAA+BC,K,WAASC,K;EAApDC,mB;EACnCA,sG;;;QAI+B,gE,gBAAYH,M,kCAA+BC,K;EAA3CE,mB;EAC/BA,+F;;;QAI+B,wB,gBAAYH,M;EAAZG,mB;EAC/BA,wF;;;QAImC,gF,sBACxBH,M,kCAA+BC,K,WAASC,K;EADhBC,mB;EAEnCA,4M;;;QAI+B,8D,sBAAcH,M,kCAA+BC,K;EAA7CE,mB;EAC/BA,mL;;;QAI+B,sB,sBAAcH,M;EAAdG,mB;EAC/BA,oI;;;QAtEF,8D;EAAAC,uG;;;QA5FW,O;EAAAC,2B;EAAAA,wB;EA4FXA,2G;;;;;;;;;;;AA5FW;;",
-"sources":["Float32Array.java"],
-"names":["source","mapFn","this_","elemental2.core.Float32Array$$Overlay.from","elemental2.core.Float32Array$$Overlay.<synthetic: getter>","elemental2.core.Float32Array$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationContainer.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;;;MA0BmB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAEM,yEAFNA,C;EAAAA;OAIO,0EAJPA,C;EAAAA;OAMQ,2EANRA,C;;;QAclB,6H,gBAA2BC,K,yCAAuCC,Q;EAAlEC,6B;EAAAA,yC;EAAAA,oN;EAAAA,iB;;;CAAA,wL,gBAA2BF,K,yCAAuCC,Q;EACjEE,8K;EAEAA;GAAuFC,kKAAvFD;M;EACAA;GAAuCC,mKAAvCD;M;EACAA;GAAyCC,oKAAzCD;M;;;CAQS,6D;EACTE,sF;;;CAQU,8D;EACVC,uF;;;CAQW,+D;EACXC,wF;;;CAQI,2E,gBAA4BC,O;EAChCC,gL;;;CAQO,mE;EACPC,wK;;;QAhEiB,O;EAAAC,qC;EAAAA,kC;EAAAA;",
-"sources":["AnimationContainer.java"],
-"names":["org.pepstock.charba.client.configuration.AnimationContainer.<synthetic: ctor_js>","chart","provider","org.pepstock.charba.client.configuration.AnimationContainer.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.AnimationContainer.<init>","org.pepstock.charba.client.configuration.AnimationContainer.<lambda in <init>>","org.pepstock.charba.client.configuration.AnimationContainer.getAnimation","org.pepstock.charba.client.configuration.AnimationContainer.getAnimations","org.pepstock.charba.client.configuration.AnimationContainer.getTransitions","enabled","org.pepstock.charba.client.configuration.AnimationContainer.setAnimationEnabled","org.pepstock.charba.client.configuration.AnimationContainer.isAnimationEnabled","org.pepstock.charba.client.configuration.AnimationContainer.<clinit>"]
-}
-

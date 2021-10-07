@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendTextHandler$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAyCgB,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOO,qEAPPA,C;;;QAcN,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,8I;EAAAA,iB;;;CAAA,2G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,mF;;;CASa,S;EACbC,kF;;;QAzBa,2B;EAAAC,mB;EAAAA;GAAAA,8IAAAA;G;EAAAA,sI;;;QAAA,U;EAAAC,mB;EAAAA,qP;;;QAEd,uE;EAAAC,gH;;;QAEA,mF;EAAAA,4H;;;QAJc,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEdA,yQ;EAEAA,uT;EAJcA,iG;;;;;;;;;;;;;AAAA;mF;AAAA;+F;AAAA;0F;AAEd;wF;AAEA;;",
-"sources":["LegendTextHandler.java"],
-"names":["org.pepstock.charba.client.items.LegendTextHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.LegendTextHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendTextHandler$Property.<init>","org.pepstock.charba.client.items.LegendTextHandler$Property.value","org.pepstock.charba.client.items.LegendTextHandler$Property.valueOf","org.pepstock.charba.client.items.LegendTextHandler$Property.values","org.pepstock.charba.client.items.LegendTextHandler$Property.<synthetic: getter>","org.pepstock.charba.client.items.LegendTextHandler$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsPointerHandler.impl.java.js",
-"lineCount":92,
-"mappings":"A;;;;;;;;;;;;MA8Ba,wB;;CAAA,W;EAAAA,Q;EAAAA;OAQa,6EARbA,C;;;;QAaL,S;EAAAC,mC;EAAAA,+C;EAAAA,wF;EAAAA,iB;;;;CAAA,2E;EACNC,qP;;;;QAQM,wD,mBAAoCC,M;EAApCF,mC;EAAAA,+C;EAAAA,6I;EAAAA,iB;;;;CAAA,0H,mBAAoCE,M;EAApCD,kF;EACNA,mP;;;CAQuB,a;EACvBE,0F;;;CASc,kE,0BAA0BC,O;EAExCC,IAAQC,KAARD,+F;EAEAA;GACCA,kMADDA;G;EAGAA,Y;;;CASc,kE,0BAA0BD,O;EAExCG,IAAQD,KAARC,+F;EAEAA;GACCA,wPADDA;G;EAGAA,Y;;;QA9DD,wF;EAAAC,iK;;;QAFY,O;EAAAC,2C;EAAAA,wC;EAAAA,+B;EAEZA,4L;;;;;;;;;;;;;;;AAFY;;",
-"sources":["DataLabelsPointerHandler.java"],
-"names":["org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.<synthetic: ctor_js>","org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.<synthetic: ctor_create>","org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.<init>","cursor","org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.getCursor","context","org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.onLeave","chart","org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.onEnter","org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.<synthetic: getter>","org.pepstock.charba.client.impl.callbacks.DataLabelsPointerHandler.<clinit>"]
-}
-

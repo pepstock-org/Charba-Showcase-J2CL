@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TimeSeriesBarOptions.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;MA0Ba,oB;;CAAA,W;EAAAA,Q;;;QAQL,uG,gBAA6BC,K,gCAA8BC,a;EAA3DC,+B;EAAAA,2C;EAAAA,qM;EAAAA,iB;;;CAAA,oK,gBAA6BF,K,gCAA8BC,a;EACjEE,6L;;;QATW,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["TimeSeriesBarOptions.java"],
-"names":["org.pepstock.charba.client.configuration.TimeSeriesBarOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.TimeSeriesBarOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.TimeSeriesBarOptions.<init>","org.pepstock.charba.client.configuration.TimeSeriesBarOptions.<clinit>"]
-}
-

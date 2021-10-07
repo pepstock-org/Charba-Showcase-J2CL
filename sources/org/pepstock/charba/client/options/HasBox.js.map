@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasBox.impl.java.js",
-"lineCount":64,
-"mappings":"A;;;;;;;;;;;;;;MA0BU,M;;CAOE,iB;;CAOE,kB,eAAgBA,Q;;CAajB,e;;CAeC,mB,eAAiBC,S;;CAalB,gB;;QAvDH,M;EAAAC,iB;EAAAA,8B;;;QAcI,uE,wCAAgBF,Q;EAAhBG,iB;EAEZA;GACCA,iGADDA;G;;;QAWW,kE;EAAAC,iB;EAEXA;GACCA,6FADDA;G;EAKAA,8E;;;QAQY,wE,wCAAiBH,S;EAAjBI,iB;EAEZA;GACCA,mGADDA;G;;;QAWW,mE;EAAAC,iB;EAEXA;GACCA,8FADDA;G;EAKAA,+E;;;QA9DQ,O;EAAAC,yB;EAAAA;",
-"sources":["HasBox.java"],
-"names":["boxWidth","boxHeight","org.pepstock.charba.client.options.HasBox.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.HasBox.setBoxWidth__$default","org.pepstock.charba.client.options.HasBox.getBoxWidth__$default","org.pepstock.charba.client.options.HasBox.setBoxHeight__$default","org.pepstock.charba.client.options.HasBox.getBoxHeight__$default","org.pepstock.charba.client.options.HasBox.<clinit>"]
-}
-

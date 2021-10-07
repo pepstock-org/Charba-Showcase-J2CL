@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetItemsSelectorDrillingDownCase$2.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;;MAyJ2D,E;;CAAA,W;EAAAA,Q;EAAAA;2G;;;QAAA,6F;EAAAC,a;EAAAA,yB;EAAAA,2M;EAAAA,iB;;;CAAA,mL;EAAAC,uH;EAAAA,iC;;;CAG5C,wE,mCAAoCC,K;EAC/CC;GACCA,iVADDA;GAECA,6UAFDA;GAGCA,0QAHDA;GAICA,wQAJDA;GAKCA,sUALDA;GAMCA,wOANDA;GAOCA,6fAPDA;GAQIA,0NARJA;GASCA,yNATDA;G;;;QAJuD,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["DatasetItemsSelectorDrillingDownCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$2.onSelect","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$2.<clinit>"]
-}
-

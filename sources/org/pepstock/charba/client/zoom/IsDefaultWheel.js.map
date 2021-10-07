@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultWheel.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;;;;;;;MA0BU,c;;CAOO,a;;CASD,Y;;CASK,kB;;QAlBJ,qE;EAAAA,yB;EACfA,sE;;;QAQc,oE;EAAAC,yB;EACdA,oE;;;QAQmB,0E;EAAAC,yB;EACnBA,Y;;;QA1BQ,O;EAAAC,iC;EAAAA;",
-"sources":["IsDefaultWheel.java"],
-"names":["org.pepstock.charba.client.zoom.IsDefaultWheel.isEnabled__$default","org.pepstock.charba.client.zoom.IsDefaultWheel.getSpeed__$default","org.pepstock.charba.client.zoom.IsDefaultWheel.getModifierKey__$default","org.pepstock.charba.client.zoom.IsDefaultWheel.<clinit>"]
-}
-

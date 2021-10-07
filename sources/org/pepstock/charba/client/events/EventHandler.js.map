@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"EventHandler.impl.java.js",
-"lineCount":12,
-"mappings":"A;;;;;;;MAuBiB,Y;;QAAA,O;EAAAA,+B;EAAAA;",
-"sources":["EventHandler.java"],
-"names":["org.pepstock.charba.client.events.EventHandler.<clinit>"]
-}
-

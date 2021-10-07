@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasFont.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;;;;MA4BU,O;;CAOK,oB;;CAQD,W;;CAeA,qD,gBAAiBA,K;;CASjB,4B,gBAAgBA,K;;CAad,oB;;CAeC,Y;;QAnEP,M;EAAAC,kB;EAAAA,8B;;;QAeI,+D;EAAAC,kB;EAEZA;GACCA,4FADDA;G;EAKAA,Y;;;QAQY,2G,0CAAiBF,K;EAAjBG,kB;EACZA,oH;;;QAQY,kF,0CAAgBH,K;EAAhBG,kB;EAEZA;GACCA,2GADDA;G;;;QAWc,wE;EAAAC,kB;EAEdA;GACCA,qGADDA;G;EAKAA,iE;;;QAQe,gE;EAAAC,kB;EACfA,+E;;;QApEQ,O;EAAAC,0B;EAAAA;",
-"sources":["HasFont.java"],
-"names":["color","org.pepstock.charba.client.options.HasFont.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.HasFont.getFont__$default","org.pepstock.charba.client.options.HasFont.setColor__$default","org.pepstock.charba.client.options.HasFont.getColorAsString__$default","org.pepstock.charba.client.options.HasFont.getColor__$default","org.pepstock.charba.client.options.HasFont.<clinit>"]
-}
-

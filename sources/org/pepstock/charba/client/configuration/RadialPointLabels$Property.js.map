@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RadialPointLabels$Property.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MAyGc,Q;;CAAA,W;EAAAA,Q;EAAAA;OASS,6EATTA,C;;;QAgBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,sJ;EAAAA,iB;;;CAAA,mH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,2F;;;CASa,S;EACbC,0F;;;QA3BW,2B;EAAAC,mB;EAAAA;GAAAA,sJAAAA;G;EAAAA,8I;;;QAAA,U;EAAAC,mB;EAAAA,+hB;;;QAEZ,yF;EAAAC,kI;;;QACA,gF;EAAAA,yH;;;QACA,+E;EAAAA,wH;;;QACA,kF;EAAAA,2H;;;QACA,mF;EAAAA,4H;;;QANY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,gU;EACAA,6R;EACAA,yR;EACAA,qS;EACAA,yS;EANYA,yG;;;;;;;;;;;;;AAAA;qG;AAAA;4F;AAAA;2F;AAAA;8F;AAAA;+F;AAAA;kG;AAEZ;0G;AACA;iG;AACA;gG;AACA;mG;AACA;;",
-"sources":["RadialPointLabels.java"],
-"names":["org.pepstock.charba.client.configuration.RadialPointLabels$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.RadialPointLabels$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.RadialPointLabels$Property.<init>","org.pepstock.charba.client.configuration.RadialPointLabels$Property.value","org.pepstock.charba.client.configuration.RadialPointLabels$Property.valueOf","org.pepstock.charba.client.configuration.RadialPointLabels$Property.values","org.pepstock.charba.client.configuration.RadialPointLabels$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.RadialPointLabels$Property.<clinit>"]
-}
-

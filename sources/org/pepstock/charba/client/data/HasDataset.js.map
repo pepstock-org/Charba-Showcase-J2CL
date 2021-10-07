@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasDataset.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAuBiB,U;;CAOR,c;;QAPQ,M;EAAAA,qB;EAAAA,8B;;;QAAA,O;EAAAC,6B;EAAAA;",
-"sources":["HasDataset.java"],
-"names":["org.pepstock.charba.client.data.HasDataset.<synthetic: adapt_lambda>","org.pepstock.charba.client.data.HasDataset.<clinit>"]
-}
-

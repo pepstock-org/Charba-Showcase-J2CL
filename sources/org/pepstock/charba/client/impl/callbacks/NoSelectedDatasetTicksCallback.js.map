@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NoSelectedDatasetTicksCallback.impl.java.js",
-"lineCount":92,
-"mappings":"A;;;;;;;;;;;;;;;;MA+BmB,8B;;CAAA,W;EAAAA,Q;EAAAA;OAQA,sFARAA,K;;;;QAaX,S;EAAAC,yC;EAAAA,qD;EAAAA,8F;EAAAA,iB;;;;CAAA,iF;EACNC,wN;;;;QAQM,Y,eAAmCC,S;EAAnCF,yC;EAAAA,qD;EAAAA,0G;EAAAA,iB;;;;CAAA,oF,eAAmCE,S;EAAnCD,iC;EAENA,wG;;;CAQU,gB;EACVE,mG;;;CASa,wF,aAAgBC,I,gBAAaC,K,gBAAWC,K,uBAAoBC,M;EAEzEC;GAECA,IAAQC,KAARD,uBAFDA;GAICA,IAAQE,SAARF,SAJDA;GAMCA,IAAcG,GAAdH,yCANDA;GASCA,SAASI,CAATJ;IAECA,IAAYK,WAAZL,kCAFDA;IAMCA;KAECA,oDAFDA;KANDA;IATDA;GAqBCA;IAGCA,mJAHDA;IArBDA;G;EA4BAA,2C;;;QAxEiB,O;EAAAM,iD;EAAAA,8C;EAAAA,qB;;;;;;;;;;;;;;AAElB;+BAGwB,6FAHxB;",
-"sources":["NoSelectedDatasetTicksCallback.java"],
-"names":["org.pepstock.charba.client.impl.callbacks.NoSelectedDatasetTicksCallback.<synthetic: ctor_js>","org.pepstock.charba.client.impl.callbacks.NoSelectedDatasetTicksCallback.<synthetic: ctor_create>","org.pepstock.charba.client.impl.callbacks.NoSelectedDatasetTicksCallback.<init>","precision","org.pepstock.charba.client.impl.callbacks.NoSelectedDatasetTicksCallback.getPrecision","axis","value","index","values","org.pepstock.charba.client.impl.callbacks.NoSelectedDatasetTicksCallback.onCallback","chart","allHidden","dss","i","datasetItem","org.pepstock.charba.client.impl.callbacks.NoSelectedDatasetTicksCallback.<clinit>"]
-}
-

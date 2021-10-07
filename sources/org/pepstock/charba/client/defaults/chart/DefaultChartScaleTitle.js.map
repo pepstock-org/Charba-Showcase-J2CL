@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartScaleTitle.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;;MA4BmB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAEO,0EAFPA,C;EAAAA;OAIgB,4EAJhBA,C;;;QAWlB,sD,mBAAkCC,K;EAAlCC,iC;EAAAA,6C;EAAAA,wI;EAAAA,iB;;;CAAA,sH,mBAAkCD,K;EAAlCE,iC;EACCA,wF;EAEAA,8L;;;CASoB,W;EACpBC,qG;;;CASa,oB;EACbC,8G;;;CASuB,c;EACvBC,yF;;;CASc,a;EACdC,uG;;;CASsB,Y;EACtBC,sG;;;QAhEiB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
-"sources":["DefaultChartScaleTitle.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.<synthetic: ctor_js>","title","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.getFont","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.getColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.getPadding","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.isDisplay","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.getAlign","org.pepstock.charba.client.defaults.chart.DefaultChartScaleTitle.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PositionerContext.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;MA4BmB,iB;;CAAA,W;EAAAA,Q;;;QAqClB,wD,UAA+BC,Y;EAA/BC,4B;EAAAA,wC;EAAAA,wI;EAAAA,iB;;;CAAA,+G,UAA+BD,Y;EAC9BE,oI;;;CAQO,sD;EAEPC,IAAMC,KAAND,qJ;EAEAA;GAECA,mFAFDA;G;EAMAA,Y;;;CAQY,0D;EACZE,kC;;;QAjEiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
-"sources":["PositionerContext.java"],
-"names":["org.pepstock.charba.client.positioner.PositionerContext.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.positioner.PositionerContext.<synthetic: ctor_create>","org.pepstock.charba.client.positioner.PositionerContext.<init>","org.pepstock.charba.client.positioner.PositionerContext.getChart","chart","org.pepstock.charba.client.positioner.PositionerContext.nativeObject","org.pepstock.charba.client.positioner.PositionerContext.<clinit>"]
-}
-

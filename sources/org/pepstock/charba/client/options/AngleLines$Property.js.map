@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AngleLines$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAqCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,gEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,yIAAAA;G;EAAAA,iI;;;QAAA,U;EAAAC,mB;EAAAA,wT;;;QAEZ,qE;EAAAC,8G;;;QACA,mE;EAAAA,4G;;;QACA,wE;EAAAA,iH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2Q;EACAA,mQ;EACAA,sR;EAJYA,4F;;;;;;;;;;;;;AAAA;iF;AAAA;+E;AAAA;oF;AAAA;qF;AAEZ;sF;AACA;oF;AACA;;",
-"sources":["AngleLines.java"],
-"names":["org.pepstock.charba.client.options.AngleLines$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.AngleLines$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.AngleLines$Property.<init>","org.pepstock.charba.client.options.AngleLines$Property.value","org.pepstock.charba.client.options.AngleLines$Property.valueOf","org.pepstock.charba.client.options.AngleLines$Property.values","org.pepstock.charba.client.options.AngleLines$Property.<synthetic: getter>","org.pepstock.charba.client.options.AngleLines$Property.<clinit>"]
-}
-

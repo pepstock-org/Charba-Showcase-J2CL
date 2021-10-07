@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsLegendEvent.impl.java.js",
-"lineCount":18,
-"mappings":"A;;;;;;;;;;;MAyBiB,a;;CAOL,W;;QAPK,O;EAAAA,gC;EAAAA;",
-"sources":["IsLegendEvent.java"],
-"names":["org.pepstock.charba.client.events.IsLegendEvent.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Window$ImportScriptsVar_argsUnionType$$Overlay.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;MAuFmB,Q;;QAE8B,sB,UAAUA,C;EAAVC,mB;EAC3CA,uD;;;QAIa,yE;EAAAC,mB;EACbA,iD;;;QAIuB,mF;EAAAC,mB;EACvBA,oH;;;QAIc,yE;EAAAC,mB;EACdA,yD;;;QAIc,mF;EAAAC,mB;EACdA,wE;;;QAvBa,O;EAAAC,2B;EAAAA;",
-"sources":["Window.java"],
-"names":["o","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.of","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.asString__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.asTrustedScriptURL__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.isString__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.isTrustedScriptURL__$devirt","elemental2.dom.Window$ImportScriptsVar_argsUnionType$$Overlay.<clinit>"]
-}
-

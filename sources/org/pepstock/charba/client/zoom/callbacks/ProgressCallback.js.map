@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ProgressCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MA0BiB,gB;;CAOX,yD,oBAAuBA,O;;QAPZ,M;EAAAC,2B;EAAAA,8B;;;QAAA,O;EAAAC,mC;EAAAA;",
-"sources":["ProgressCallback.java"],
-"names":["context","org.pepstock.charba.client.zoom.callbacks.ProgressCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.zoom.callbacks.ProgressCallback.<clinit>"]
-}
-

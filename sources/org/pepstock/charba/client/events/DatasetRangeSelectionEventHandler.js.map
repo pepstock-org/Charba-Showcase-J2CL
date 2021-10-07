@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetRangeSelectionEventHandler.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAwBiB,iC;;CAOX,wE,mCAAoCA,K;;QAPzB,M;EAAAC,4C;EAAAA,8B;;;QAAA,O;EAAAC,oD;EAAAA;",
-"sources":["DatasetRangeSelectionEventHandler.java"],
-"names":["event","org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler.<clinit>"]
-}
-

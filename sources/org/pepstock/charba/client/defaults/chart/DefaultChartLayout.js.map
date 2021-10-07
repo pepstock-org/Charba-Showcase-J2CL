@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartLayout.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;;;;;;;;MAyBmB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,wEAFhBA,C;;;QASX,4D,wBAAmCC,M;EAAnCC,6B;EAAAA,yC;EAAAA,2I;EAAAA,iB;;;CAAA,wH,wBAAmCD,M;EAAnCE,iC;EACNA,2L;;;CASuB,c;EACvBC,qF;;;QApBiB,O;EAAAC,qC;EAAAA,kC;EAAAA;",
-"sources":["DefaultChartLayout.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartLayout.<synthetic: ctor_js>","layout","org.pepstock.charba.client.defaults.chart.DefaultChartLayout.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartLayout.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartLayout.getPadding","org.pepstock.charba.client.defaults.chart.DefaultChartLayout.<clinit>"]
-}
-

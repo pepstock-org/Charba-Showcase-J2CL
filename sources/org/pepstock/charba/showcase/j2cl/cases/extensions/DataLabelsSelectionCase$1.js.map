@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsSelectionCase$1.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;;;;;MAmImE,E;;CAAA,W;EAAAA,Q;EAAAA;iG;;;QAAA,mF;EAAAC,a;EAAAA,yB;EAAAA,uL;EAAAA,iB;;;CAAA,+J;EAAAC,6G;EAAAA,iC;;;CAGjD,iE,0BAAyBC,O;EACvCC,IAAYC,EAAZD,qT;EACAA,IAAIE,GAAJF,mF;EACAA,mU;;;;CAN+D,2D;EAAAA,oJ;;;QAAA,O;EAAAG,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsSelectionCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$1.invoke","ds","key","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase$1.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"InvertedTriangle.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;MAuCY,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,8B;EAEAA,wG;EAGAA,6J;;;QAfU,O;EAAAC,mC;EAAAA,gC;EAAAA;",
-"sources":["InvertedTriangle.java"],
-"names":["org.pepstock.charba.client.colors.tiles.InvertedTriangle.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.InvertedTriangle.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.InvertedTriangle.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.InvertedTriangle.drawTile","org.pepstock.charba.client.colors.tiles.InvertedTriangle.<clinit>"]
-}
-

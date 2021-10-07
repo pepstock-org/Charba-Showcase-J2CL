@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointLabelCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,uF;;;CAAA,kF;EAAAC,8D;EAAAA,oI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["PointLabelCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.PointLabelCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.PointLabelCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.PointLabelCallback$$LambdaAdaptor.onCallback","org.pepstock.charba.client.callbacks.PointLabelCallback$$LambdaAdaptor.<clinit>"]
-}
-

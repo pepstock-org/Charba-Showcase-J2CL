@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartPointerDefaultOptions.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;MAsBY,0B;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,iD;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;;;;CARG,oB;EAAAC,+I;;;;CAAA,e;EAAAC,wI;;;QAGX,kF;EAAAC,+J;;;QAHW,O;EAAAC,6C;EAAAA,0C;EAAAA,qB;EAAAA,uC;EAGXA,yJ;;;;;;;;;;;AAHW;;",
-"sources":["ChartPointerDefaultOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.ChartPointerDefaultOptions.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.ChartPointerDefaultOptions.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ChartPointerDefaultOptions.<init>","org.pepstock.charba.client.impl.plugins.ChartPointerDefaultOptions.getCursorPointer","org.pepstock.charba.client.impl.plugins.ChartPointerDefaultOptions.getElements","org.pepstock.charba.client.impl.plugins.ChartPointerDefaultOptions.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.ChartPointerDefaultOptions.<clinit>"]
-}
-

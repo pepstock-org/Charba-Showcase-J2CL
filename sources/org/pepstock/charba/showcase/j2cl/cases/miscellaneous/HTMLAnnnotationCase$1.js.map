@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HTMLAnnnotationCase$1.impl.java.js",
-"lineCount":91,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAyGsD,E;;CAAA,W;EAAAA,Q;EAAAA;gG;EAAAA;OAlBnCC,+FAkBmCD,C;EAAAA;OAZlCE,+FAYkCF,C;;;QAAA,6L;EAAAG,a;EAAAA,yB;EAAAA,6U;EAAAA,iB;;;CAAA,wQ;EAAAC,4G;EAAAA,0H;EAAAA,0H;EAAAA,qF;;;CAMvC,iD,gBAAoBC,K;EAC/BC,IAAoBC,GAApBD,2G;EAEAA,IAAUE,IAAVF,uB;EACAA,IAAcG,SAAdH,2B;EAEAA,IAAUI,SAAVJ,4K;EAEAA,IAAOK,SAAPL,yD;EACAA,IAAOM,YAAPN,sD;EAEAA,IAAIO,SAAJP,mC;EACAA,IAAOQ,UAAPR,2B;EACAA,IAAOS,eAAPT,wC;EAEAA,SAASU,CAATV;GACCA,IAAOW,QAAPX,uNADDA;GAECA,IAAOY,WAAPZ,uNAFDA;GAICA,IAAOa,MAAPb,0GAJDA;GAKCA,wNALDA;GAMCA,qJANDA;GAOCA,kJAPDA;GASCA,IAAIc,GAAJd,0GATDA;GAUCA,qMAVDA;GAYCA,0CAZDA;G;;;QArBkD,O;EAAAe,qB;EAAAA,kB;EAAAA,yB;;;;;;;;;;;;;;;;;;;AAEnD;GAA4B,mGAA5B;",
-"sources":["HTMLAnnnotationCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase$1.<synthetic: ctor_js>","dataset1","dataset2","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase$1.<init>","chart","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase$1.onAfterDraw","ctx","node","chartArea","scaleItem","topRaster","heightRaster","areaCount","scaleTickX","scaleTickLength","i","humidity","temperature","result","img","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase$1.<clinit>"]
-}
-

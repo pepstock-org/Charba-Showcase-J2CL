@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Point.impl.java.js",
-"lineCount":119,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MA2Ba,K;;CAAA,W;EAAAA,Q;EAAAA;OAqCoB,8DArCpBA,C;;;QA+CF,iM,iBAAeC,Q,aAAcC,Q,wBAAyBC,a,WAA4BC,Y;EAAlFC,gB;EAAAA,4B;EAAAA,qS;EAAAA,iB;;;CAAA,yO,iBAAeJ,Q,aAAcC,Q,wBAAyBC,a,WAA4BC,Y;EAC3FE,mT;EAEAA,2X;;;CASwB,wB;EACxBC,2E;;;CASW,mB,eAAiBC,M;EAC5BC,8L;;;CASa,a;EACbC,oP;;;CAQW,sB,eAAoBC,S;EAC/BC,qM;;;CASa,gB;EACbC,2P;;;CAQW,wB,eAAsBC,W;EACjCC,yM;;;CASa,kB;EACbC,+P;;;CAQW,qB,eAAmBC,Q;EAC9BC,gK;;;CASa,e;EACbC,wP;;;;CAzIW,iB;EAAAC,uG;;;;CAAA,yB;EAAAC,+G;;;;CAAA,wB;EAAAC,8G;;;;CAAA,qB;EAAAC,2G;;;;CAAA,4D;EAAAC,mJ;;;;CAAA,4D;EAAAA,mJ;;;;CAAA,+D;EAAAA,sJ;;;QAAA,O;EAAAC,wB;EAAAA,qB;EAAAA,0B;EAAAA,qC;EAAAA;",
-"sources":["Point.java"],
-"names":["org.pepstock.charba.client.options.Point.<synthetic: ctor_js>","elements","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Point.<synthetic: ctor_create>","org.pepstock.charba.client.options.Point.<init>","org.pepstock.charba.client.options.Point.getPointStyleHandler","radius","org.pepstock.charba.client.options.Point.setRadius","org.pepstock.charba.client.options.Point.getRadius","hitRadius","org.pepstock.charba.client.options.Point.setHitRadius","org.pepstock.charba.client.options.Point.getHitRadius","hoverRadius","org.pepstock.charba.client.options.Point.setHoverRadius","org.pepstock.charba.client.options.Point.getHoverRadius","rotation","org.pepstock.charba.client.options.Point.setRotation","org.pepstock.charba.client.options.Point.getRotation","org.pepstock.charba.client.options.Point.getPointStyle","org.pepstock.charba.client.options.Point.getPointStyleAsCanvas","org.pepstock.charba.client.options.Point.getPointStyleAsImage","org.pepstock.charba.client.options.Point.getPointStyleType","org.pepstock.charba.client.options.Point.setPointStyle","org.pepstock.charba.client.options.Point.<clinit>"]
-}
-

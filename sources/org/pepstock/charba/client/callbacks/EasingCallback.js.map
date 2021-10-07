@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"EasingCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MA0BiB,c;;QAAA,M;EAAAA,yB;EAAAA,8B;;;QAAA,O;EAAAC,iC;EAAAA;",
-"sources":["EasingCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.EasingCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.EasingCallback.<clinit>"]
-}
-

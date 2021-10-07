@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GlobalPlugins.impl.java.js",
-"lineCount":149,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;MAsCmB,a;;CAAA,W;EAAAA,Q;EAAAA;OAIuB,8DAJvBA,C;EAAAA;OAMY,4DANZA,C;EAAAA;OAQQ,wEARRA,C;;;QAaX,S;EAAAC,wB;EAAAA,oC;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EAAAC,iC;EAAAA,mE;EAENA,2N;;;CASc,6C,eAAgBC,M;EAE9BC;GAECA,8DAFDA;GAICA;IACCA,aADDA;IAJDA;GAQCA,IAAcC,OAAdD,oEARDA;GASCA,sIATDA;GAWCA,qGAXDA;GAYCA,YAZDA;G;EAeAA,a;;;CASc,8B,gBAAkBE,Q;EAEhCC,oD;EAEAA;GACCA,aADDA;G;EAIAA;GAAAA,IAASC,GAATD,4DAAAA;;IAECA,IAAgBE,SAAhBF,4OAFDA;IAGCA;KAECA,4IAFDA;KAICA,qFAJDA;KAKCA,YALDA;KAHDA;;G;EAWAA,a;;;CAQkB,U;EAElBG,IAAkBC,UAAlBD,wD;EAEAA;GAAAA,IAASF,GAATE,4DAAAA;;IAECA,gCAFDA;;G;EAIAA,kB;;;CAUW,gD,gBAA2BJ,Q,iBAAkBM,M;EAExDC,oD;EAEAA;GAECA,IAAYC,UAAZD,qBAFDA;GAICA;IAAAA,IAAYE,EAAZF,uEAAAA;;KAGCA;MAECA;OAGCA,+FAHDA;;OAMCA,4FANDA;OAFDA;MAWCA,OAXDA;MAHDA;;IAJDA;G;;;CA8Bc,sC,gBAA0BP,Q;EAExCU,oD;EACAA,yG;;;CASW,gG,sBAA+BC,M,iBAAgBC,K;EAE1DC;GAECA,OAFDA;G;EAKAA;GAAAA,IAAYJ,EAAZI,uEAAAA;;IAECA;KAECA,2FAFDA;KAFDA;;G;EAQAA;GAAAA,IAAkCC,KAAlCD,0FAAAA;;IAECA;KAGCA,6KAHDA;KAFDA;;G;;;CA5JiB,2D;EAIlBjB,0I;EAIAA,qI;;;QARkB,O;EAAAmB,gC;EAAAA,6B;EAAAA;",
-"sources":["GlobalPlugins.java"],
-"names":["org.pepstock.charba.client.plugins.GlobalPlugins.<synthetic: ctor_js>","org.pepstock.charba.client.plugins.GlobalPlugins.<synthetic: ctor_create>","org.pepstock.charba.client.plugins.GlobalPlugins.<init>","plugin","org.pepstock.charba.client.plugins.GlobalPlugins.register","wPlugin","pluginId","org.pepstock.charba.client.plugins.GlobalPlugins.unregister","key","reference","org.pepstock.charba.client.plugins.GlobalPlugins.getIds","pluginsIds","enable","org.pepstock.charba.client.plugins.GlobalPlugins.setEnabledAllCharts","currentIds","id","org.pepstock.charba.client.plugins.GlobalPlugins.isEnabledAllCharts","config","chart","org.pepstock.charba.client.plugins.GlobalPlugins.onChartConfigure","entry","org.pepstock.charba.client.plugins.GlobalPlugins.<clinit>"]
-}
-

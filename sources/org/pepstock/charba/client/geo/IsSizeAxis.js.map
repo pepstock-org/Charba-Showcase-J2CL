@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsSizeAxis.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA6BU,U;;CAQM,a;;CAOF,0B,eAAwBA,a;;CAatB,oB;;CAgBF,oD,aAAaC,I;;CAab,W;;CAiBA,oB,eAAaC,G,gBAASC,G;;CAeb,Y;;QAzFb,M;EAAAC,qB;EAAAA,8B;;;QAeI,+E,4CAAwBJ,a;EAAxBK,qB;EAEZA;GAECA,sGAFDA;G;;;QAWc,uE;EAAAC,qB;EAEdA;GAECA,0FAFDA;G;EAMAA,kF;;;QAQY,yG,0CAAaL,I;EAAbM,qB;EAEZA;GAECA,uHAFDA;G;;;QAWY,8D;EAAAC,qB;EAEZA;GAECA,iFAFDA;G;EAMAA,8D;;;QASY,yE,4CAAaN,G,gBAASC,G;EAAtBM,qB;EAEZA;GAECA,2FAFDA;G;;;QAaqB,+D;EAAAC,qB;EAErBA;GAECA,kFAFDA;G;EAMAA,gE;;;QAjGQ,O;EAAAC,6B;EAAAA,0B;EAAAA;",
-"sources":["IsSizeAxis.java"],
-"names":["missingRadius","mode","min","max","org.pepstock.charba.client.geo.IsSizeAxis.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.IsSizeAxis.setMissingRadius__$default","org.pepstock.charba.client.geo.IsSizeAxis.getMissingRadius__$default","org.pepstock.charba.client.geo.IsSizeAxis.setMode__$default","org.pepstock.charba.client.geo.IsSizeAxis.getMode__$default","org.pepstock.charba.client.geo.IsSizeAxis.setRange__$default","org.pepstock.charba.client.geo.IsSizeAxis.getRange__$default","org.pepstock.charba.client.geo.IsSizeAxis.<clinit>"]
-}
-

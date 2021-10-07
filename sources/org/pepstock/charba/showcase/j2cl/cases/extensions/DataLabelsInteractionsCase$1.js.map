@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsInteractionsCase$1.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;;;;MAuFuC,E;;CAAA,W;EAAAA,Q;EAAAA;oG;;;QAAA,sF;EAAAC,a;EAAAA,yB;EAAAA,6L;EAAAA,iB;;;CAAA,qK;EAAAC,gH;EAAAA,iC;;;CAGvB,iE,0BAAyBC,O;EACrCC,qK;;;;CAJmC,2D;EAAAA,oJ;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsInteractionsCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsInteractionsCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsInteractionsCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsInteractionsCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsInteractionsCase$1.invoke","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsInteractionsCase$1.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbsoluteDatasetIndexFill.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;;MA4BmB,wB;;CAAA,W;EAAAA,Q;EAAAA;OAOG,kEAPHA,C;;;QAclB,Y,eAA6BC,K;EAA7BC,mC;EAAAA,+C;EAAAA,uF;EAAAA,iB;;;CAAA,qE,eAA6BD,K;EAG5BE,sS;EAEAA,qF;EAEAA,+N;;;CASa,S;EACbC,+E;;;QA/BiB,O;EAAAC,2C;EAAAA,wC;EAAAA,mC;;;;;;;;;;;;;;AAElB;yBAGwB,iFAHxB;",
-"sources":["AbsoluteDatasetIndexFill.java"],
-"names":["org.pepstock.charba.client.enums.AbsoluteDatasetIndexFill.<synthetic: ctor_js>","index","org.pepstock.charba.client.enums.AbsoluteDatasetIndexFill.<synthetic: ctor_create>","org.pepstock.charba.client.enums.AbsoluteDatasetIndexFill.<init>","org.pepstock.charba.client.enums.AbsoluteDatasetIndexFill.value","org.pepstock.charba.client.enums.AbsoluteDatasetIndexFill.<clinit>"]
-}
-

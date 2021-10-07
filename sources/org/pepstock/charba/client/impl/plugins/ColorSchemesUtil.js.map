@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorSchemesUtil.impl.java.js",
-"lineCount":123,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAkCY,gB;;CAAA,W;EAAAA,Q;EAAAA;OAK4B,yEAL5BA,C;;;QAUH,S;EAAAC,uC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;EAAAA,2E;EAEPA,0N;;;QAQuB,O;EAAAC,2B;EACvBA,8F;;;CAQI,iH,oBAA2BC,M;EAC/BC,sN;;;CAUW,gG,gBAAsBC,Q,iBAAiBC,I;EAClDC,gQ;;;CAUO,gG,gBAAsBF,Q,iBAAiBC,I;EAC9CE,oN;;;CAUM,4G,oBAAsBL,M;EAC5BM,mJ;;;CAWM,2F,gBAAiBJ,Q,iBAAiBC,I;EAExCG,sF;EAEAA,8F;EAEAA,IAAcC,EAAdD,qD;EAEAA,8H;EAEAA,qB;;;CASG,kH,0BAAoCE,a;EAEvCC,IAAcC,YAAdD,sC;EAEAA,IAAIE,cAAJF,K;EAEAA;GAGCA;IAAAA,IAAaG,WAAbH,oEAAAA;;KAECA,sEAFDA;;IAHDA;SAOOA;GAGNA,IAAWI,UAAXJ,mEAHMA;GAKNA,IAAqBK,kBAArBL,4CALMA;GAONA;IAAAA,IAAoBG,aAApBH,oFAAAA;;KAECA,sEAFDA;KAGCA,yEAHDA;KAICA,uEAJDA;KAKCA,wEALDA;;IAPMA;G;EAePA,sB;;;CAzHU,mE;EAKXX,mJ;;;QALW,O;EAAAiB,mC;EAAAA,gC;EAAAA,qB;EAGXA,sH;;;;;;;;;;;;;;;;;;;;AAHW;iBAG2B,qEAH3B;",
-"sources":["ColorSchemesUtil.java"],
-"names":["org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.<init>","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.get","scheme","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.putColorScheme","category","name","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.getColorScheme","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.hasColorScheme","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.createKey","sb","hovingDataset","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.getMaxBorderWidth","borderWidths","maxBorderWidth","borderWidth","barDataset","borderWidthObjects","org.pepstock.charba.client.impl.plugins.ColorSchemesUtil.<clinit>"]
-}
-

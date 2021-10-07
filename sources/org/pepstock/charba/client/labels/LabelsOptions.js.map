@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LabelsOptions.impl.java.js",
-"lineCount":139,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAkCmB,a;;CAAA,W;EAAAA,Q;EAAAA;OAGO,kEAHPA,C;;;;QAQX,S;EAAAC,wB;EAAAA,oC;EAAAA,qE;EAAAA,iB;;;;CAAA,wD;EACNC,6K;;;;QAQM,2C,gBAAsBC,K;EAAtBF,wB;EAAAA,oC;EAAAA,4G;EAAAA,iB;;;;CAAA,0F,gBAAsBE,K;EAC5BD,mlB;;;;QASD,4G,yBAA+BE,c,WAA6BC,Y;EAA5DJ,wB;EAAAA,oC;EAAAA,oM;EAAAA,iB;;;;CAAA,2J,yBAA+BG,c,WAA6BC,Y;EAE3DH,yN;EAEAA;GAECA,oTAFDA;;GAKCA,yFALDA;G;;;CAeY,+B,gBAAmBI,E;EAC/BC,6G;;;CASY,wD,gBAAoBD,E;EAEhCC,+D;EAEAA;GAECA,IAAMC,KAAND,4SAFDA;GAICA,6HAJDA;GAMCA,aANDA;G;EASAA,sE;;;CASc,4B,gBAAgBD,E;EAC9BG,0G;;;CAUc,qD,gBAAiBH,E;EAE/BG,sE;EAEAA,yT;;;CAQW,+B,gBAAmBH,E;EAC9BI,sG;;;CAQW,wD,gBAAoBJ,E;EAE/BI,sE;EAGAA;GAECA,0DAFDA;G;;;CAYkB,a;EAElBC,IAAYC,MAAZD,0D;EAEAA;GAAAA,IAASE,GAATF,4DAAAA;;IAGCA;KAECA,IAAQL,EAARK,uDAFDA;KAICA,IAAMH,KAANG,oWAJDA;KAMCA,kBANDA;KAHDA;;G;EAcAA,yF;;;CASY,4B,gBAAgBL,E;EAC5BQ,0G;;;CAUY,qD,gBAAiBR,E;EAE7BQ,sE;EAEAA;GAECA,uWAFDA;G;EAMAA,yI;;;QA/KiB,O;EAAAC,gC;EAAAA,6B;EAAAA,gC;EAAAA;",
-"sources":["LabelsOptions.java"],
-"names":["org.pepstock.charba.client.labels.LabelsOptions.<synthetic: ctor_js>","org.pepstock.charba.client.labels.LabelsOptions.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsOptions.<init>","chart","defaultOptions","nativeObject","id","org.pepstock.charba.client.labels.LabelsOptions.createLabel","label","org.pepstock.charba.client.labels.LabelsOptions.hasLabel","org.pepstock.charba.client.labels.LabelsOptions.removeLabel","org.pepstock.charba.client.labels.LabelsOptions.getLabels","result","key","org.pepstock.charba.client.labels.LabelsOptions.getLabel","org.pepstock.charba.client.labels.LabelsOptions.<clinit>"]
-}
-

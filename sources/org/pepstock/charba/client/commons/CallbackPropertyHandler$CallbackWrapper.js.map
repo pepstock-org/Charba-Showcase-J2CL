@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CallbackPropertyHandler$CallbackWrapper.impl.java.js",
-"lineCount":70,
-"mappings":"A;;;;;;;;;;;;;;;MA6S4B,e;;CAAA,W;EAAAA,Q;EAAAA;OAGV,uFAHUA,C;EAAAA;OAKA,qFALAA,C;;;QAYlB,yB,UAAkBC,Q;EAAlBC,0B;EAAAA,sC;EAAAA,wH;EAAAA,iB;;;CAAA,mG,UAAkBD,Q;EAAlBE,iC;EAAAA,6F;EACPA,wG;;;CAQS,6F;EACTC,oG;;;CAQmB,2F;EACnBC,kG;;;CAQe,+F;EAEfC;GAAAA,IAAYC,KAAZD,uEAAAA;;IAECA;KAECA,YAFDA;KAFDA;;G;EAQAA,a;;;CASa,Q;EACbE,mU;;;CA3DyB,qF;EAK1BL,kJ;;;QAL0B,O;EAAAM,kC;EAAAA,+B;EAAAA;",
-"sources":["CallbackPropertyHandler.java"],
-"names":["org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<synthetic: ctor_js>","instance","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<synthetic: ctor_create>","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<init>","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.getInstance","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.getScopes","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.hasChartScope","scope","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.toString","org.pepstock.charba.client.commons.CallbackPropertyHandler$CallbackWrapper.<clinit>"]
-}
-

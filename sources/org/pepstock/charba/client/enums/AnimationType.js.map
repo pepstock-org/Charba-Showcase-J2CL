@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationType.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,a;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,wDAhBVA,C;;;QAuBH,gD,8DAAqBC,K;EAArBC,oC;EAAAA,iI;EAAAA,iB;;;CAAA,8F,8DAAqBD,K;EAArBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;;;CASa,S;EACbC,qE;;;QAlCU,2B;EAAAC,wB;EAAAA;GAAAA,2IAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,wB;EAAAA,qT;;;QAEX,4D;EAAAC,+G;;;QAIA,2D;EAAAA,8G;;;QAIA,6D;EAAAA,gH;;;QAVW,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EAEXA,sQ;EAIAA,kQ;EAIAA,0Q;EAVWA,yF;;;;;;;;;;;;;AAAA;6E;AAAA;4E;AAAA;8E;AAAA;kF;AAEX;kF;AAIA;iF;AAIA;;",
-"sources":["AnimationType.java"],
-"names":["org.pepstock.charba.client.enums.AnimationType.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.AnimationType.<synthetic: ctor_create>","org.pepstock.charba.client.enums.AnimationType.<init>","org.pepstock.charba.client.enums.AnimationType.value","org.pepstock.charba.client.enums.AnimationType.valueOf","org.pepstock.charba.client.enums.AnimationType.values","org.pepstock.charba.client.enums.AnimationType.<synthetic: getter>","org.pepstock.charba.client.enums.AnimationType.<clinit>"]
-}
-

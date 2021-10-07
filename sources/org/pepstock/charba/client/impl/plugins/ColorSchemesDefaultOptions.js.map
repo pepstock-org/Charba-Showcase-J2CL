@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorSchemesDefaultOptions.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;MAsBY,0B;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,iD;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;;;;CARG,2B;EAAAC,oJ;;;;CAAA,qB;EAAAC,8I;;;;CAAA,iB;EAAAC,0I;;;;CAAA,kB;EAAAC,2I;;;;CAAA,a;EAAAC,sI;;;QAGX,kF;EAAAC,+J;;;QAHW,O;EAAAC,6C;EAAAA,0C;EAAAA,qB;EAAAA,uC;EAGXA,yJ;;;;;;;;;AAHW;;",
-"sources":["ColorSchemesDefaultOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.<init>","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.getBackgroundColorAlpha","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.getSchemeCategory","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.getSchemeName","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.getSchemeScope","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.isReverse","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.ColorSchemesDefaultOptions.<clinit>"]
-}
-

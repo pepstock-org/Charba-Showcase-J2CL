@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TopoJson.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;;;;MA+BmB,Q;;CAAA,W;EAAAA,Q;EAAAA;OAkCI,mDAlCJA,C;EAAAA;OAoCU,8DApCVA,C;;;QA2ClB,wD,UAAsBC,Y;EAAtBC,mB;EAAAA,+B;EAAAA,wH;EAAAA,iB;;;CAAA,+F,UAAsBD,Y;EACrBE,oI;EADDA,0D;EAGCA,2P;;;CAQgB,e;EAChBC,wI;;;CAQM,0D;EAENC;GAECA;IAAAA,IAASC,QAATD,4DAAAA;;KAGCA;MAECA,4PAFDA;MAHDA;KAQCA,uTARDA;;IAFDA;G;EAaAA,sF;;;CAQY,mD;EACZE,kC;;;CAvFiB,kD;EAoClBJ,gG;;;QApCkB,O;EAAAK,2B;EAAAA,wB;EAAAA;",
-"sources":["TopoJson.java"],
-"names":["org.pepstock.charba.client.geo.TopoJson.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.TopoJson.<synthetic: ctor_create>","org.pepstock.charba.client.geo.TopoJson.<init>","org.pepstock.charba.client.geo.TopoJson.objectsKeys","org.pepstock.charba.client.geo.TopoJson.objectsKeysAsString","property","org.pepstock.charba.client.geo.TopoJson.nativeObject","org.pepstock.charba.client.geo.TopoJson.<clinit>"]
-}
-

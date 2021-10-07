@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ItemsEnvelop.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA2BmB,Y;;CAAA,W;EAAAA,Q;;;;QAOlB,yB,UAAeC,O;EAAfC,uB;EAAAA,mC;EAAAA,0F;EAAAA,iB;;;;CAAA,sE,UAAeD,O;EACdE,qG;;;;QASD,kC,UAAeF,O,iBAAiBG,Q;EAAhCF,uB;EAAAA,mC;EAAAA,6G;EAAAA,iB;;;;CAAA,+E,UAAeD,O,iBAAiBG,Q;EAC/BD,8G;;;QAlBiB,O;EAAAE,+B;EAAAA,4B;EAAAA;",
-"sources":["ItemsEnvelop.java"],
-"names":["org.pepstock.charba.client.items.ItemsEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.items.ItemsEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.items.ItemsEnvelop.<init>","nullable","org.pepstock.charba.client.items.ItemsEnvelop.<clinit>"]
-}
-

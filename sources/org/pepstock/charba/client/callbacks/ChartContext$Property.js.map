@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartContext$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAoCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,oEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,iU;;;QAEZ,uE;EAAAC,gH;;;QACA,sE;EAAAA,+G;;;QACA,4E;EAAAA,qH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2Q;EACAA,uQ;EACAA,qS;EAJYA,gG;;;;;;;;;;;;;AAAA;mF;AAAA;kF;AAAA;wF;AAAA;yF;AAEZ;wF;AACA;uF;AACA;;",
-"sources":["ChartContext.java"],
-"names":["org.pepstock.charba.client.callbacks.ChartContext$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.callbacks.ChartContext$Property.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.ChartContext$Property.<init>","org.pepstock.charba.client.callbacks.ChartContext$Property.value","org.pepstock.charba.client.callbacks.ChartContext$Property.valueOf","org.pepstock.charba.client.callbacks.ChartContext$Property.values","org.pepstock.charba.client.callbacks.ChartContext$Property.<synthetic: getter>","org.pepstock.charba.client.callbacks.ChartContext$Property.<clinit>"]
-}
-

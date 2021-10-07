@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointerElement.impl.java.js",
-"lineCount":107,
-"mappings":"A;;;;;;;;;;;;;;MAyBY,c;;CAAA,W;EAAAA,Q;EAAAA;OAoBU,sEApBVA,C;;;QA2BH,gD,8DAAsBC,K;EAAtBC,qC;EAAAA,+I;EAAAA,iB;;;CAAA,4G,8DAAsBD,K;EAAtBE,qC;EAAAA,2C;EAAAA,mE;EACPA,oF;;;CASa,S;EACbC,mF;;;QAtCU,2B;EAAAC,yB;EAAAA;GAAAA,2JAAAA;G;EAAAA,6I;;;QAAA,U;EAAAC,yB;EAAAA,+b;;;QAEX,2E;EAAAC,gI;;;QAIA,yE;EAAAA,8H;;;QAIA,wE;EAAAA,6H;;;QAIA,0E;EAAAA,+H;;;QAdW,O;EAAAC,iC;EAAAA,8B;EAAAA,e;EAEXA,yS;EAIAA,iS;EAIAA,6R;EAIAA,qS;EAdWA,wG;;;;;;;;;;;;;AAAA;6F;AAAA;2F;AAAA;0F;AAAA;4F;AAAA;iG;AAEX;kG;AAIA;gG;AAIA;+F;AAIA;;",
-"sources":["PointerElement.java"],
-"names":["org.pepstock.charba.client.impl.plugins.enums.PointerElement.<synthetic: ctor_js>","value","org.pepstock.charba.client.impl.plugins.enums.PointerElement.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.enums.PointerElement.<init>","org.pepstock.charba.client.impl.plugins.enums.PointerElement.value","org.pepstock.charba.client.impl.plugins.enums.PointerElement.valueOf","org.pepstock.charba.client.impl.plugins.enums.PointerElement.values","org.pepstock.charba.client.impl.plugins.enums.PointerElement.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.enums.PointerElement.<clinit>"]
-}
-

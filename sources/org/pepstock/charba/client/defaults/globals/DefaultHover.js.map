@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultHover.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;MAsBmB,Y;;CAAA,W;EAAAA,Q;;;QAKlB,S;EAAAC,uB;EAAAA,mC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,+E;;;QALkB,O;EAAAC,+B;EAAAA,4B;EAAAA;",
-"sources":["DefaultHover.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultHover.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultHover.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultHover.<init>","org.pepstock.charba.client.defaults.globals.DefaultHover.<clinit>"]
-}
-

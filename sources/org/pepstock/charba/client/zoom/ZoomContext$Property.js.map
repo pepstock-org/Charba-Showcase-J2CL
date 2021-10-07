@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ZoomContext$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAiCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,8DANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,uI;EAAAA,iB;;;CAAA,oG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,4E;;;CASa,S;EACbC,2E;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,uIAAAA;G;EAAAA,+H;;;QAAA,U;EAAAC,mB;EAAAA,4N;;;QAEZ,iE;EAAAC,0G;;;QACA,gE;EAAAA,yG;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+P;EACAA,2P;EAHYA,0F;;;;;;;;;;;;;AAAA;6E;AAAA;4E;AAAA;mF;AAEZ;kF;AACA;;",
-"sources":["ZoomContext.java"],
-"names":["org.pepstock.charba.client.zoom.ZoomContext$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.zoom.ZoomContext$Property.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.ZoomContext$Property.<init>","org.pepstock.charba.client.zoom.ZoomContext$Property.value","org.pepstock.charba.client.zoom.ZoomContext$Property.valueOf","org.pepstock.charba.client.zoom.ZoomContext$Property.values","org.pepstock.charba.client.zoom.ZoomContext$Property.<synthetic: getter>","org.pepstock.charba.client.zoom.ZoomContext$Property.<clinit>"]
-}
-

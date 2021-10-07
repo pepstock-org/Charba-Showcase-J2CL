@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseFormatOptions.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;;;;MA8BM,iB;;CAAA,W;EAAAA,Q;EAAAA;OAqCW,mEArCXA,C;;;;QA4CG,uE,UAAoBC,a;EAApBC,wC;EAAAA,kJ;EAAAA,iB;;;;CAAA,wH,UAAoBD,a;EAC3BE,oM;EAEAA,0J;;;;QASS,wH,UAA+BC,Y,WAAgBH,a;EAA/CC,4B;EAAAA,wC;EAAAA,iN;EAAAA,iB;;;;CAAA,yK,UAA+BE,Y,WAAgBH,a;EACxDE,oI;EAGAA,uM;;;CAMiB,oB;EACjBE,gF;;;CAQiB,uE,sBAA+BC,a;EAChDC,sM;;;CAS0B,oB;EAC1BC,6c;;;CAQiB,2E,wBAAmCC,e;EACpDC,0M;;;CAS4B,sB;EAC5BC,ud;;;CAQkB,oD;EAClBC,kC;;;QA/GD,+D;EAAAC,0H;;;QAHK,O;EAAAC,oC;EAAAA,iC;EAAAA,gC;EAGLA,yV;;;;;;;;;;;;;;;AAHK;;",
-"sources":["BaseFormatOptions.java"],
-"names":["org.pepstock.charba.client.intl.BaseFormatOptions.<synthetic: ctor_js>","defaultValues","org.pepstock.charba.client.intl.BaseFormatOptions.<synthetic: ctor_create>","org.pepstock.charba.client.intl.BaseFormatOptions.<init>","nativeObject","org.pepstock.charba.client.intl.BaseFormatOptions.getDefaultValues","localeMatcher","org.pepstock.charba.client.intl.BaseFormatOptions.setLocaleMatcher","org.pepstock.charba.client.intl.BaseFormatOptions.getLocaleMatcher","numberingSystem","org.pepstock.charba.client.intl.BaseFormatOptions.setNumberingSystem","org.pepstock.charba.client.intl.BaseFormatOptions.getNumberingSystem","org.pepstock.charba.client.intl.BaseFormatOptions.nativeObject","org.pepstock.charba.client.intl.BaseFormatOptions.<synthetic: getter>","org.pepstock.charba.client.intl.BaseFormatOptions.<clinit>"]
-}
-

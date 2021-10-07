@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BoxHandler.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;;;;;MA6BY,U;;CAAA,W;EAAAA,Q;;;QAyCX,kK,qBAAwBC,M,6BAA4BC,a,WAA4BC,Y;EAAhFC,qB;EAAAA,iC;EAAAA,+P;EAAAA,iB;;;CAAA,+M,qBAAwBH,M,6BAA4BC,a,WAA4BC,Y;EAC/EE,wN;;;CAQI,yD,eAAgBC,Q;EACpBC,mK;;;CAQG,sD;EACHC,qQ;;;CAQI,0D,eAAiBC,S;EACrBC,qK;;;CAQG,uD;EACHC,uQ;;;QA9EU,O;EAAAC,6B;EAAAA,0B;EAAAA;",
-"sources":["BoxHandler.java"],
-"names":["org.pepstock.charba.client.options.BoxHandler.<synthetic: ctor_js>","parent","defaultValues","nativeObject","org.pepstock.charba.client.options.BoxHandler.<synthetic: ctor_create>","org.pepstock.charba.client.options.BoxHandler.<init>","boxWidth","org.pepstock.charba.client.options.BoxHandler.setBoxWidth","org.pepstock.charba.client.options.BoxHandler.getBoxWidth","boxHeight","org.pepstock.charba.client.options.BoxHandler.setBoxHeight","org.pepstock.charba.client.options.BoxHandler.getBoxHeight","org.pepstock.charba.client.options.BoxHandler.<clinit>"]
-}
-

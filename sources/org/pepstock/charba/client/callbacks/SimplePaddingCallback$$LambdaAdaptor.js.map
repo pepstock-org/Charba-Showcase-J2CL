@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SimplePaddingCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uF;EAAAA,kK;;;CAAA,wJ;EAAAC,iC;EAAAA,0F;;;CAAA,2D;EAAAC,qD;EAAAA,2H;;;;CAAA,2D;EAAAA,oI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["SimplePaddingCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.SimplePaddingCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.SimplePaddingCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.SimplePaddingCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.SimplePaddingCallback$$LambdaAdaptor.<clinit>"]
-}
-

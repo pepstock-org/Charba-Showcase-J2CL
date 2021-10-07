@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SegmentContext.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;;;;;MA6BmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAqCW,8DArCXA,C;EAAAA;OAuCW,8DAvCXA,C;;;QA8CX,wD,UAA4BC,Y;EAA5BC,yB;EAAAA,qC;EAAAA,oI;EAAAA,iB;;;CAAA,2G,UAA4BD,Y;EAClCE,6H;EAEAA,4R;EACAA,4R;;;CAQqB,iB;EACrBC,2E;;;CAQqB,e;EACrBC,2E;;;CAQU,mB;EACVC,6N;;;CAQU,qB;EACVC,6N;;;CAQU,mB;EACVC,6N;;;CASiB,gB;EAEjBC,sS;;;CASiB,gE,YAA2BC,Q;EAE5CC;GAECA,2IAFDA;G;EAMAA,a;;;QA3HiB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["SegmentContext.java"],
-"names":["org.pepstock.charba.client.callbacks.SegmentContext.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.callbacks.SegmentContext.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.SegmentContext.<init>","org.pepstock.charba.client.callbacks.SegmentContext.getStartPoint","org.pepstock.charba.client.callbacks.SegmentContext.getEndPoint","org.pepstock.charba.client.callbacks.SegmentContext.getDatasetIndex","org.pepstock.charba.client.callbacks.SegmentContext.getStartDataIndex","org.pepstock.charba.client.callbacks.SegmentContext.getEndDataIndex","org.pepstock.charba.client.callbacks.SegmentContext.isConsistent","property","org.pepstock.charba.client.callbacks.SegmentContext.checkIfPropertyIsValid","org.pepstock.charba.client.callbacks.SegmentContext.<clinit>"]
-}
-

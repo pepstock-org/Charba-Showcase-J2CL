@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ResponseInit$$Overlay.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;MA0BiB,Q;;QAmCK,U;EAAAA,mB;EAClBA,yG;;;QAgBW,0E,+CAAmBC,O;EAAnBC,mB;EACXA,kF;;;QAIW,2E,6DAAoCD,O;EAApCC,mB;EACXA,kF;;;QAIW,gF,+DAAiCD,O;EAAjCC,mB;EACXA,kF;;;QAIW,oF,6DAAsBD,O;EAAtBC,mB;EACXA,mL;;;QApEa,O;EAAAC,2B;EAAAA;",
-"sources":["ResponseInit.java"],
-"names":["elemental2.dom.ResponseInit$$Overlay.create","headers","elemental2.dom.ResponseInit$$Overlay.setHeaders__$devirt","elemental2.dom.ResponseInit$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultZoom.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;;;;;;MAwBU,a;;CAOM,Y;;CAOD,W;;CAOC,Y;;QArBN,O;EAAAA,gC;EAAAA,6B;EAAAA;",
-"sources":["IsDefaultZoom.java"],
-"names":["org.pepstock.charba.client.zoom.IsDefaultZoom.<clinit>"]
-}
-

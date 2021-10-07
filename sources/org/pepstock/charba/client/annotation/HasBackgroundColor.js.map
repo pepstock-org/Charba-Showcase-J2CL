@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasBackgroundColor.impl.java.js",
-"lineCount":92,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA6BU,kB;;CAOc,6B;;CAOV,+D,gBAA2BA,e;;CAU3B,sC,gBAA0BA,e;;CAYxB,8B;;CAeC,sB;;CAUyB,8B;;CAe5B,wE,yCAAoDC,uB;;CAYpD,yE,iBAAkCA,uB;;QAxFtC,M;EAAAC,6B;EAAAA,8B;;;QAcI,mI,qDAA2BF,e;EAA3BG,6B;EAEZA,wI;;;QAQY,0G,qDAA0BH,e;EAA1BG,6B;EAEZA;GACCA,2IADDA;G;;;QAUc,gG;EAAAC,6B;EAEdA;GACCA,2HADDA;G;EAKAA,iE;;;QAQe,wF;EAAAC,6B;EACfA,yF;;;QASwC,gG;EAAAC,6B;EAExCA;GACCA,2HADDA;G;EAKAA,iK;;;QAQY,4I,8EAAoDL,uB;EAApDE,6B;EAEZA;GACCA,qLADDA;G;;;QAUY,6I,sDAAkCF,uB;EAAlCE,6B;EAEZA;GACCA,sLADDA;G;;;QA1FQ,O;EAAAI,qC;EAAAA,kC;EAAAA;",
-"sources":["HasBackgroundColor.java"],
-"names":["backgroundColor","backgroundColorCallback","org.pepstock.charba.client.annotation.HasBackgroundColor.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.HasBackgroundColor.setBackgroundColor__$default","org.pepstock.charba.client.annotation.HasBackgroundColor.getBackgroundColorAsString__$default","org.pepstock.charba.client.annotation.HasBackgroundColor.getBackgroundColor__$default","org.pepstock.charba.client.annotation.HasBackgroundColor.getBackgroundColorCallback__$default","org.pepstock.charba.client.annotation.HasBackgroundColor.<clinit>"]
-}
-

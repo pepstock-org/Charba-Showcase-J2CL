@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartHoverEvent.impl.java.js",
-"lineCount":64,
-"mappings":"A;;;;;;;;;;;;;;;MA2BmB,e;;CAAA,W;EAAAA,Q;;;QAaX,4E,0BAAkCC,Y,gCAAqCC,K;EAAvEC,0B;EAAAA,sC;EAAAA,6J;EAAAA,iB;;;CAAA,6H,0BAAkCF,Y,gCAAqCC,K;EAC7EE,0Z;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAuBC,SAAvBD,qFAFDA;GAICA,6EAJDA;G;;;QAvBD,6D;EAAAE,oH;;;QAFkB,O;EAAAC,kC;EAAAA,+B;EAAAA,kC;EAElBA,mJ;;;;;;;;;;;;;;;AAFkB;;",
-"sources":["ChartHoverEvent.java"],
-"names":["org.pepstock.charba.client.events.ChartHoverEvent.<synthetic: ctor_js>","eventContext","items","org.pepstock.charba.client.events.ChartHoverEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.ChartHoverEvent.<init>","handler","org.pepstock.charba.client.events.ChartHoverEvent.dispatch","myHandler","org.pepstock.charba.client.events.ChartHoverEvent.<synthetic: getter>","org.pepstock.charba.client.events.ChartHoverEvent.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultThreshold.impl.java.js",
-"lineCount":121,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA2BY,gB;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,iEAhBVA,K;EAAAA;OAkBW,iEAlBXA,C;;;QA0BH,iF,6DAAwBC,K,iBAAeC,K;EAAvCC,uC;EAAAA,kL;EAAAA,iB;;;CAAA,wI,6DAAwBF,K,iBAAeC,K;EAAvCE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;EACAA,+E;;;CASa,Y;EACbC,8E;;;CASc,Y;EACdC,8E;;;CASa,W;EACbC,mB;;;CAQgB,gB;EAEhBC,IAAUC,SAAVD,oD;EAEAA,0O;;;QAtEU,2B;EAAAE,2B;EAAAA;GAAAA,0JAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,2B;EAAAA,kW;;;QAEX,qE;EAAAC,8H;;;QAIA,sE;EAAAA,+H;;;QAIA,uE;EAAAA,gI;;;QAVW,O;EAAAC,mC;EAAAA,gC;EAAAA,e;EAEXA,wW;EAIAA,0W;EAIAA,+Y;EAVWA,qG;;;;;;;;;;;;;;;;AAAA;yF;AAAA;0F;AAAA;2F;AAAA;8F;AAEX;8F;AAIA;+F;AAIA;;",
-"sources":["DefaultThreshold.java"],
-"names":["org.pepstock.charba.client.impl.charts.DefaultThreshold.<synthetic: ctor_js>","value","color","org.pepstock.charba.client.impl.charts.DefaultThreshold.<synthetic: ctor_create>","org.pepstock.charba.client.impl.charts.DefaultThreshold.<init>","org.pepstock.charba.client.impl.charts.DefaultThreshold.getValue","org.pepstock.charba.client.impl.charts.DefaultThreshold.getColor","org.pepstock.charba.client.impl.charts.DefaultThreshold.getName","org.pepstock.charba.client.impl.charts.DefaultThreshold.getThreshold","threshold","org.pepstock.charba.client.impl.charts.DefaultThreshold.valueOf","org.pepstock.charba.client.impl.charts.DefaultThreshold.values","org.pepstock.charba.client.impl.charts.DefaultThreshold.<synthetic: getter>","org.pepstock.charba.client.impl.charts.DefaultThreshold.<clinit>"]
-}
-

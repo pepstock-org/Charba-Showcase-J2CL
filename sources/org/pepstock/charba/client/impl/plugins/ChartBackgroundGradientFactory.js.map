@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartBackgroundGradientFactory.impl.java.js",
-"lineCount":106,
-"mappings":"A;;;;;;;;;;;;;;;MAqCY,8B;;CAAA,W;EAAAA,Q;;;QAOH,S;EAAAC,qD;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EACPC,mO;;;QAQqC,O;EAAAC,yC;EACrCA,0H;;;CASc,yF,gBAAgBC,K,kBAAgBC,Q;EAM9CC,IAAWC,IAAXD,oB;EACAA,yB;EACAA,0B;EAEAA;GAECA,IAAcE,aAAdF,iEAFDA;GAICA,IAAIG,OAAJH,uCAJDA;GAOCA,6CAPDA;GAQCA,+CARDA;SASOA;GAENA,IAAOI,MAAPJ,yBAFMA;GAKNA,4CALMA;GAMNA,8CANMA;G;EAQPA,Y;;;CASgB,qG,gBAAkBF,K,kBAAgBC,Q,gBAAcM,Y,gBAAkBC,K;EAMlFC,IAAaC,MAAbD,sB;EAEAA;GAECA,IAAcL,aAAdK,iEAFDA;GAICA,IAAIJ,OAAJI,uCAJDA;GAMCA,+CANDA;GAOCA,gDAPDA;SAQOA;GAENA,IAAOH,MAAPG,yBAFMA;GAINA,8CAJMA;GAKNA,+CALMA;G;EAOPA,c;;;CASgB,qG,gBAAkBT,K,kBAAgBC,Q,gBAAcM,Y,gBAAkBC,K;EAElFG,IAAaC,MAAbD,sB;EACAA,6B;EAEAA;GAECA,IAAcP,aAAdO,iEAFDA;GAICA,IAAIN,OAAJM,uCAJDA;GAMCA,mFANDA;SAOOA;GAENA,IAAOL,MAAPK,yBAFMA;GAINA,iFAJMA;G;EAMPA,c;;;QAhHU,O;EAAAE,iD;EAAAA,8C;EAAAA,8B;EAEXA,gK;;;;;;;;;;;;;;;;;;AAFW;+BAEyC,mFAFzC;",
-"sources":["ChartBackgroundGradientFactory.java"],
-"names":["org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.<init>","org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.get","chart","gradient","org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.getArea","area","abstractChart","element","canvas","datasetIndex","index","org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.getCenter","center","org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.getRadius","radius","org.pepstock.charba.client.impl.plugins.ChartBackgroundGradientFactory.<clinit>"]
-}
-

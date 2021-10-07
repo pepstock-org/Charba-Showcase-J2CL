@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendLabels$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAiCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,kEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,2IAAAA;G;EAAAA,mI;;;QAAA,U;EAAAC,mB;EAAAA,wU;;;QAEZ,uE;EAAAC,gH;;;QACA,0E;EAAAA,mH;;;QACA,+E;EAAAA,wH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+Q;EACAA,0R;EACAA,6S;EAJYA,8F;;;;;;;;;;;;;AAAA;mF;AAAA;sF;AAAA;2F;AAAA;uF;AAEZ;wF;AACA;2F;AACA;;",
-"sources":["LegendLabels.java"],
-"names":["org.pepstock.charba.client.options.LegendLabels$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.LegendLabels$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.LegendLabels$Property.<init>","org.pepstock.charba.client.options.LegendLabels$Property.value","org.pepstock.charba.client.options.LegendLabels$Property.valueOf","org.pepstock.charba.client.options.LegendLabels$Property.values","org.pepstock.charba.client.options.LegendLabels$Property.<synthetic: getter>","org.pepstock.charba.client.options.LegendLabels$Property.<clinit>"]
-}
-

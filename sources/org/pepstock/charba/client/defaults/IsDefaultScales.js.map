@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultScales.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAyBiB,e;;CASD,gG,gBAAgBA,O,kBAAkBC,I;;QATjC,M;EAAAC,0B;EAAAA,8B;;;QAAA,O;EAAAC,kC;EAAAA;",
-"sources":["IsDefaultScales.java"],
-"names":["scaleId","kind","org.pepstock.charba.client.defaults.IsDefaultScales.<synthetic: adapt_lambda>","org.pepstock.charba.client.defaults.IsDefaultScales.<clinit>"]
-}
-

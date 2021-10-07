@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractAnimationEvent.impl.java.js",
-"lineCount":34,
-"mappings":"A;;;;;;;;;;;;;MA0Be,sB;;CAAA,W;EAAAA,Q;EAAAA;OAGc,iEAHdA,C;;;CAYd,4M,eAAuCC,W,mBAAuBC,I,uBAAoBC,I;EACjFC,4K;EAGAA,mO;;;CAQ0B,W;EAC1BC,8E;;;QAzBa,O;EAAAC,yC;EAAAA,sC;EAAAA;",
-"sources":["AbstractAnimationEvent.java"],
-"names":["org.pepstock.charba.client.events.AbstractAnimationEvent.<synthetic: ctor_js>","nativeEvent","type","item","org.pepstock.charba.client.events.AbstractAnimationEvent.<init>","org.pepstock.charba.client.events.AbstractAnimationEvent.getItem","org.pepstock.charba.client.events.AbstractAnimationEvent.<clinit>"]
-}
-

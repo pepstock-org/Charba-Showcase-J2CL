@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipLabelColor$TooltipLabelColorFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAicqB,wB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,mC;EAAAA,+C;EAAAA,iG;EAAAA,iB;;;CAAA,oF;EAAAC,iC;;;CAUiB,yD,UAAoBC,Y;EAC5CC,gG;;;;CAhBkB,U;EAAAA,8L;;;QAAA,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;EAAAA;",
-"sources":["TooltipLabelColor.java"],
-"names":["org.pepstock.charba.client.items.TooltipLabelColor$TooltipLabelColorFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.TooltipLabelColor$TooltipLabelColorFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.TooltipLabelColor$TooltipLabelColorFactory.<init>","nativeObject","org.pepstock.charba.client.items.TooltipLabelColor$TooltipLabelColorFactory.create","org.pepstock.charba.client.items.TooltipLabelColor$TooltipLabelColorFactory.<clinit>"]
-}
-

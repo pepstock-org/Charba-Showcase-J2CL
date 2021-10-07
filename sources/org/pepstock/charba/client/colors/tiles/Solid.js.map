@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Solid.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;MA0BY,K;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,gB;EAAAA,4B;EAAAA,mE;EAAAA,iB;;;CAAA,sD;EAAAC,oE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;;QARnF,O;EAAAC,wB;EAAAA,qB;EAAAA;",
-"sources":["Solid.java"],
-"names":["org.pepstock.charba.client.colors.tiles.Solid.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Solid.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Solid.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Solid.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultScales$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,gG;EAAAC,iE;EAAAA,0H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["IsDefaultScales.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultScales$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.defaults.IsDefaultScales$$LambdaAdaptor.<init>","org.pepstock.charba.client.defaults.IsDefaultScales$$LambdaAdaptor.getAxis","org.pepstock.charba.client.defaults.IsDefaultScales$$LambdaAdaptor.<clinit>"]
-}
-

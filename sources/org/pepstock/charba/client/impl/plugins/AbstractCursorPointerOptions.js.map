@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractCursorPointerOptions.impl.java.js",
-"lineCount":76,
-"mappings":"A;;;;;;;;;;;;;;;MA2Be,4B;;CAAA,W;EAAAA,Q;;;;CA6Cd,8I,gBAAoCC,Q,WAAuBC,Y;EAC1DC,gK;;;;CAQD,6F,gBAAoCF,Q;EACnCE,oK;;;CAQiB,mE,mBAA4BC,M;EAE7CC;GACCA,mMADDA;G;;;CAWuB,oB;EACvBC,qZ;;;CAQU,+G,mBAA4BF,M;EAEtCG;GACCA,mMADDA;G;;;CAUgB,gE;EAChBC,mZ;;;QAhGD,kG;EAAAC,mL;;;QAFc,O;EAAAC,+C;EAAAA,4C;EAAAA,gC;EAAAA,wC;EAEdA,0M;;;;;;;;;;;;;;AAFc;;",
-"sources":["AbstractCursorPointerOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.<synthetic: ctor_js>","pluginId","nativeObject","org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.<init>","cursor","org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.setCursorPointer","org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.getCursorPointer","org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.setCurrentCursor","org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.getCurrentCursor","org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.AbstractCursorPointerOptions.<clinit>"]
-}
-

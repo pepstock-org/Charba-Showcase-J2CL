@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Padding.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MA2BmB,O;;CAAA,W;EAAAA,Q;;;QAclB,+J,kBAAkBC,M,0BAAyBC,c,WAA6BC,Y;EAAxEC,kB;EAAAA,8B;EAAAA,6P;EAAAA,iB;;;CAAA,4M,kBAAkBH,M,0BAAyBC,c,WAA6BC,Y;EACvEE,sR;;;QAfiB,O;EAAAC,0B;EAAAA,uB;EAAAA,oC;;;;;;;;;AAElB;QAGwB,gEAHxB;",
-"sources":["Padding.java"],
-"names":["org.pepstock.charba.client.datalabels.Padding.<synthetic: ctor_js>","parent","defaultOptions","nativeObject","org.pepstock.charba.client.datalabels.Padding.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.Padding.<init>","org.pepstock.charba.client.datalabels.Padding.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendTextHandler.impl.java.js",
-"lineCount":120,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAiCmB,iB;;CAAA,W;EAAAA,Q;;;;QA4CX,2G,qBAA+BC,M,2BAAqCC,O;EAApEC,4B;EAAAA,wC;EAAAA,yL;EAAAA,iB;;;;CAAA,6J,qBAA+BF,M,2BAAqCC,O;EAC1EE,2V;;;;QAQD,wD,UAA+BC,Y;EAA/BF,4B;EAAAA,wC;EAAAA,mI;EAAAA,iB;;;;CAAA,0G,UAA+BE,Y;EAC9BD,qL;;;;QASO,yG,qBAA+BH,M,WAAqBI,Y;EAApDF,wC;EAAAA,4L;EAAAA,iB;;;;CAAA,2J,qBAA+BF,M,WAAqBI,Y;EAC3DD,oS;;;CAQI,gE,gBAAeE,I;EACnBC,4K;;;CASI,gG,iBAAiBD,I;EAErBC;GAECA,2FAFDA;GAICA,uEAJDA;;GAOCA,oIAPDA;GASCA,wEATDA;G;;;CAkBM,gD;EACNC,+N;;;CASO,mD;EACPC,6P;;;CASQ,sD;EAERC;GAECA,IAAOC,IAAPD,2DAFDA;GAICA;IAGCA,kGAHDA;IAJDA;G;EAYAA,Y;;;CASI,2D,gBAAoBE,Q;EACxBC,mL;;;QAlJiB,O;EAAAC,oC;EAAAA,iC;EAAAA,0B;;;;;;;;;;;;;;;;;AAGlB;kBAAqB,uEAArB;",
-"sources":["LegendTextHandler.java"],
-"names":["org.pepstock.charba.client.items.LegendTextHandler.<synthetic: ctor_js>","parent","envelop","org.pepstock.charba.client.items.LegendTextHandler.<synthetic: ctor_create>","org.pepstock.charba.client.items.LegendTextHandler.<init>","nativeObject","text","org.pepstock.charba.client.items.LegendTextHandler.setText","org.pepstock.charba.client.items.LegendTextHandler.getText","org.pepstock.charba.client.items.LegendTextHandler.isHtmlText","org.pepstock.charba.client.items.LegendTextHandler.getTextAsHtml","html","htmlText","org.pepstock.charba.client.items.LegendTextHandler.setHtmlText","org.pepstock.charba.client.items.LegendTextHandler.<clinit>"]
-}
-

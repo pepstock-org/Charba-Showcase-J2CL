@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CartesianScaleTitle.impl.java.js",
-"lineCount":95,
-"mappings":"A;;;;;;;;;;;;;;;;MA+Ba,mB;;CAAA,W;EAAAA,Q;EAAAA;OAGU,wEAHVA,C;EAAAA;OAKO,qEALPA,C;;;QAYZ,sD,aAAyBC,I;EAAzBC,8B;EAAAA,0C;EAAAA,mI;EAAAA,iB;;;CAAA,kH,aAAyBD,I;EACxBE,wH;EAEAA;GAAiCC,sHAAjCD;M;EACAA;GAA2BC,sIAA3BD;M;;;CAQW,W;EACXE,kF;;;CAQW,qD,gBAAiBC,K;EAC5BC,gH;;;CAQW,4B,gBAAgBD,K;EAC3BC,kI;;;CAQa,oB;EACbC,4H;;;CAQc,Y;EACdC,2E;;;CAQc,c;EACdC,qF;;;CAQW,qB,gBAAmBC,O;EAC9BC,6H;;;CAQc,a;EACdC,qH;;;CAUW,mC,uBAAkBC,I;EAC7BC,wI;;;CAQmB,W;EACnBC,mH;;;CAQW,4D,wBAAyBC,K;EACpCC,kK;;;CAQsB,Y;EACtBC,oH;;;QA9HW,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["CartesianScaleTitle.java"],
-"names":["org.pepstock.charba.client.configuration.CartesianScaleTitle.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.CartesianScaleTitle.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.CartesianScaleTitle.<init>","org.pepstock.charba.client.configuration.CartesianScaleTitle.<lambda in <init>>","org.pepstock.charba.client.configuration.CartesianScaleTitle.getFont","color","org.pepstock.charba.client.configuration.CartesianScaleTitle.setColor","org.pepstock.charba.client.configuration.CartesianScaleTitle.getColorAsString","org.pepstock.charba.client.configuration.CartesianScaleTitle.getColor","org.pepstock.charba.client.configuration.CartesianScaleTitle.getPadding","display","org.pepstock.charba.client.configuration.CartesianScaleTitle.setDisplay","org.pepstock.charba.client.configuration.CartesianScaleTitle.isDisplay","text","org.pepstock.charba.client.configuration.CartesianScaleTitle.setText","org.pepstock.charba.client.configuration.CartesianScaleTitle.getText","align","org.pepstock.charba.client.configuration.CartesianScaleTitle.setAlign","org.pepstock.charba.client.configuration.CartesianScaleTitle.getAlign","org.pepstock.charba.client.configuration.CartesianScaleTitle.<clinit>"]
-}
-

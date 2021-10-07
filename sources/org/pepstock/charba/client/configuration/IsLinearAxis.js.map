@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsLinearAxis.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;;MAyBiB,Y;;CAOH,yB,gBAAuBA,W;;CAYpB,iB;;QAnBA,M;EAAAC,uB;EAAAA,8B;;;QAOH,0F,+CAAuBD,W;EAAvBE,uB;EAEZA;GACCA,iIADDA;G;;;QAUe,gF;EAAAC,uB;EAEfA;GACCA,qHADDA;G;EAIAA,6D;;;QAzBe,O;EAAAC,+B;EAAAA,4B;EAAAA;",
-"sources":["IsLinearAxis.java"],
-"names":["beginAtZero","org.pepstock.charba.client.configuration.IsLinearAxis.<synthetic: adapt_lambda>","org.pepstock.charba.client.configuration.IsLinearAxis.setBeginAtZero__$default","org.pepstock.charba.client.configuration.IsLinearAxis.isBeginAtZero__$default","org.pepstock.charba.client.configuration.IsLinearAxis.<clinit>"]
-}
-

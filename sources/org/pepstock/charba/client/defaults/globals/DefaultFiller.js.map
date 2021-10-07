@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultFiller.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;MAyBmB,a;;CAAA,W;EAAAA,Q;;;QAOlB,S;EAAAC,wB;EAAAA,oC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;;;CAUe,e;EACdC,qG;;;CASe,e;EACfC,iF;;;QA5BiB,O;EAAAC,gC;EAAAA,6B;EAAAA,qB;;;;;;;;;;;AAElB;cAA6B,+EAA7B;",
-"sources":["DefaultFiller.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultFiller.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultFiller.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultFiller.<init>","org.pepstock.charba.client.defaults.globals.DefaultFiller.isPropagate","org.pepstock.charba.client.defaults.globals.DefaultFiller.getDrawTime","org.pepstock.charba.client.defaults.globals.DefaultFiller.<clinit>"]
-}
-

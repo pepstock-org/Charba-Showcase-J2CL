@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractContainer$CallbackWrapper.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;;;MAsN4B,e;;CAAA,W;EAAAA,Q;EAAAA;OAMuB,mFANvBA,C;EAAAA;OAQJ,6EARIA,C;EAAAA;OAUI,8EAVJA,C;EAAAA;OAYuB,8EAZvBA,C;EAAAA;OAcL,kFAdKA,C;;;QAwBlB,4K,gBAAwBC,O,yBAAyBC,Q,uCAA6CC,Q,iBAAiBC,Y;EAA/GC,0B;EAAAA,sC;EAAAA,mS;EAAAA,iB;;;CAAA,6O,gBAAwBJ,O,yBAAyBC,Q,uCAA6CC,Q,iBAAiBC,Y;EAA/GE,iC;EAAAA,oF;EACPA,6F;EACAA,+F;EACAA,+F;EACAA,uG;EAKAA,8GAA+BC,OAA/BD;GAA0CE,2rBAA1CF;I;;;CAQmB,gD;EACnBG,sG;;;CAQe,mF;EACfC,0F;;;CAQuB,oF;EACvBC,2F;;;CAQ0C,oF;EAC1CC,2F;;;CAQc,wF;EACdC,+F;;;CA9EyB,4E;EAM1BP,wL;;;QAN0B,O;EAAAQ,kC;EAAAA,+B;EAAAA;",
-"sources":["AbstractContainer.java"],
-"names":["org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.<synthetic: ctor_js>","dataset","property","callback","defaultValue","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.<synthetic: ctor_create>","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.<init>","context","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.<lambda in <init>>","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.getProxy","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.getDataset","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.getProperty","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.getCallback","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.getDefaultValue","org.pepstock.charba.client.data.AbstractContainer$CallbackWrapper.<clinit>"]
-}
-

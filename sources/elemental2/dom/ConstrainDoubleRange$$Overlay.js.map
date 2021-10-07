@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ConstrainDoubleRange$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MAyBiB,Q;;QAEa,U;EAAAA,mB;EAC1BA,iH;;;QAHa,O;EAAAC,2B;EAAAA;",
-"sources":["ConstrainDoubleRange.java"],
-"names":["elemental2.dom.ConstrainDoubleRange$$Overlay.create","elemental2.dom.ConstrainDoubleRange$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Uint8ClampedArray$$Overlay.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;MAyBa,Q;;QAwG+B,iG,4BAClBA,M,kCAAoCC,K,WAASC,K;EAD3BC,mB;EAExCA,2G;;;QAIoC,+E,4BACdH,M,kCAAoCC,K;EADtBE,mB;EAEpCA,oG;;;QAIoC,kC,4BAAyBH,M;EAAzBG,mB;EACpCA,6F;;;QAIwC,iG,0BACnBH,M,kCAAoCC,K,WAASC,K;EAD1BC,mB;EAExCA,2G;;;QAIoC,+E,0BACfH,M,kCAAoCC,K;EADrBE,mB;EAEpCA,oG;;;QAIoC,kC,0BAAwBH,M;EAAxBG,mB;EACpCA,6F;;;QAIwC,uF,gBAC/BH,M,kCAAoCC,K,WAASC,K;EADdC,mB;EAExCA,2G;;;QAIoC,qE,gBAAYH,M,kCAAoCC,K;EAAhDE,mB;EACpCA,oG;;;QAIoC,wB,gBAAYH,M;EAAZG,mB;EACpCA,6F;;;QAIwC,qF,sBAC7BH,M,kCAAoCC,K,WAASC,K;EADhBC,mB;EAExCA,iN;;;QAIoC,mE,sBAAcH,M,kCAAoCC,K;EAAlDE,mB;EACpCA,wL;;;QAIoC,sB,sBAAcH,M;EAAdG,mB;EACpCA,oI;;;QA1EF,mE;EAAAC,4G;;;QA5FW,O;EAAAC,2B;EAAAA,wB;EA4FXA,qH;;;;;;;;;;;AA5FW;;",
-"sources":["Uint8ClampedArray.java"],
-"names":["source","mapFn","this_","elemental2.core.Uint8ClampedArray$$Overlay.from","elemental2.core.Uint8ClampedArray$$Overlay.<synthetic: getter>","elemental2.core.Uint8ClampedArray$$Overlay.<clinit>"]
-}
-

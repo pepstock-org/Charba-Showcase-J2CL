@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GradientColor$GradientColorFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAgKsB,oB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,+B;EAAAA,2C;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CAQC,yD,UAAoBC,Y;EACxCC,4F;;;;CATmB,U;EAAAA,sL;;;QAAA,O;EAAAC,uC;EAAAA,oC;EAAAA,qB;EAAAA;",
-"sources":["GradientColor.java"],
-"names":["org.pepstock.charba.client.colors.GradientColor$GradientColorFactory.<synthetic: ctor_js>","org.pepstock.charba.client.colors.GradientColor$GradientColorFactory.<synthetic: ctor_create>","org.pepstock.charba.client.colors.GradientColor$GradientColorFactory.<init>","nativeObject","org.pepstock.charba.client.colors.GradientColor$GradientColorFactory.create","org.pepstock.charba.client.colors.GradientColor$GradientColorFactory.<clinit>"]
-}
-

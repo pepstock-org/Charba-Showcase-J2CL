@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseGeoChart.impl.java.js",
-"lineCount":113,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAgCe,Y;;CAAA,W;EAAAA,Q;EAAAA;OAGY,6DAHZA,C;;;CAed,mF,aAAkBC,I;EACjBC,4F;EADDA,8D;;;CASwB,wD;;CAOA,oD;EACvBC,0E;;;CASoB,sB;EAKpBC,IAAeH,IAAfG,mE;EAIAA;GAGCA,IAAWC,kBAAXD,wHAHDA;GAKCA,yVALDA;GAOCA,wJAPDA;G;EAUAA,0BAAeE,OAAfF,C;EAEAA,kV;EAEAA,0F;EAEAA,qD;EAEAA;GAECA,sHAFDA;GAICA,IAAQG,OAARH,kGAJDA;GAMCA;IAECA,mTAFDA;;IAKCA,qTALDA;IANDA;G;;;;CApEa,c;EAAAI,kG;;;CAAA,sD;EAGdN,0E;;;QAIA,0E;EAAAO,2H;;;QAPc,O;EAAAC,+B;EAAAA,4B;EAAAA,wB;EAAAA,2B;EAOdA,6H;;;;;;;;;;;;;;;;;;;;;;;;AAPc;;",
-"sources":["BaseGeoChart.java"],
-"names":["org.pepstock.charba.client.geo.BaseGeoChart.<synthetic: ctor_js>","type","org.pepstock.charba.client.geo.BaseGeoChart.<init>","org.pepstock.charba.client.geo.BaseGeoChart.getController","org.pepstock.charba.client.geo.BaseGeoChart.applyConfiguration","controllerInstance","options","dataset","org.pepstock.charba.client.geo.BaseGeoChart.newDataset","org.pepstock.charba.client.geo.BaseGeoChart.<synthetic: getter>","org.pepstock.charba.client.geo.BaseGeoChart.<clinit>"]
-}
-

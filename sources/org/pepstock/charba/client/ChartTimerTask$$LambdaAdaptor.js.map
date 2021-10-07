@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartTimerTask$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,gI;;;CAAA,sH;EAAAC,iC;EAAAA,yE;;;CAAA,6C;;GAAAC,oF;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["ChartTimerTask.java"],
-"names":["org.pepstock.charba.client.ChartTimerTask$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.ChartTimerTask$$LambdaAdaptor.<init>","org.pepstock.charba.client.ChartTimerTask$$LambdaAdaptor.execute","org.pepstock.charba.client.ChartTimerTask$$LambdaAdaptor.<clinit>"]
-}
-

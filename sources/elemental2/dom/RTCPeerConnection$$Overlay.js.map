@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RTCPeerConnection$$Overlay.impl.java.js",
-"lineCount":86,
-"mappings":"A;;;;;;MA2Ba,Q;;QA2HiC,uC,UAA2BA,e;EAA3BC,mB;EAC1CA,0H;;;QA2CgB,oG,wDAAsBC,M,WAAeC,W;EAArCC,mB;EAChBA,oG;;;QAe6B,kI,6DACVC,W,+BAAmCC,I;EADzBC,mB;EAE7BA,yG;;;QAK6B,4F,6DAAgCF,W;EAAhCE,mB;EAC7BA,mG;;;QAK6B,mH,oDAAsBF,W,+BAAmCC,I;EAAzDC,mB;EAC7BA,yG;;;QAK6B,6E,oDAAsBF,W;EAAtBE,mB;EAC7BA,mG;;;QAmB0C,4I,8CACjCC,4B,8BACwBC,a,WACxBN,W;EAHiCO,mB;EAI1CA,+M;;;QAO0C,0H,8CACjCF,4B,8BAA6DC,a;EAD5BC,mB;EAE1CA,sI;;;QAI0C,2E,8CAAoBF,4B;EAApBE,mB;EAC1CA,uH;;;QAO0B,8H,oDACjBC,K,uCAAqCC,e;EADpBC,mB;EAE1BA,iH;;;QAO0B,0H,oDACjBF,K,mCAAiCC,e;EADhBC,mB;EAE1BA,iH;;;QAqB0C,2I,8CACjCL,4B,8BACwBC,a,WACxBN,W;EAHiCW,mB;EAI1CA,8M;;;QAO0C,yH,8CACjCN,4B,8BAA6DC,a;EAD5BK,mB;EAE1CA,qI;;;QAI0C,0E,8CAAmBN,4B;EAAnBM,mB;EAC1CA,sH;;;QAkEgB,gH,oEAAkCC,a,WAAsBZ,W;EAAxDa,mB;EAChBA,2G;;;QA5WS,O;EAAAC,2B;EAAAA;",
-"sources":["RTCPeerConnection.java"],
-"names":["keygenAlgorithm","elemental2.dom.RTCPeerConnection$$Overlay.generateCertificate","stream","constraints","elemental2.dom.RTCPeerConnection$$Overlay.addStream__$devirt","trackOrKind","init","elemental2.dom.RTCPeerConnection$$Overlay.addTransceiver__$devirt","successCallbackOrConstraints","errorCallback","elemental2.dom.RTCPeerConnection$$Overlay.createAnswer__$devirt","label","dataChannelDict","elemental2.dom.RTCPeerConnection$$Overlay.createDataChannel__$devirt","elemental2.dom.RTCPeerConnection$$Overlay.createOffer__$devirt","configuration","elemental2.dom.RTCPeerConnection$$Overlay.updateIce__$devirt","elemental2.dom.RTCPeerConnection$$Overlay.<clinit>"]
-}
-

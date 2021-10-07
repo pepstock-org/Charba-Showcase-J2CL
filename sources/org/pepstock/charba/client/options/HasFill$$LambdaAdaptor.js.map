@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasFill$$LambdaAdaptor.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;MA6BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,kI;;;CAAA,wH;EAAAC,iC;EAAAA,0E;;;CAAA,kB;EAAAC,6C;EAAAA,uG;;;;CAAA,W;EAAAC,qF;;;;CAAA,kB;EAAAC,6F;;;;CAAA,c;EAAAA,yF;;;;CAAA,2B;EAAAA,sG;;;;CAAA,kD;EAAAA,6H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasFill.java"],
-"names":["org.pepstock.charba.client.options.HasFill$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.HasFill$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.HasFill$$LambdaAdaptor.getFillHandler","org.pepstock.charba.client.options.HasFill$$LambdaAdaptor.getFill","org.pepstock.charba.client.options.HasFill$$LambdaAdaptor.setFill","org.pepstock.charba.client.options.HasFill$$LambdaAdaptor.<clinit>"]
-}
-

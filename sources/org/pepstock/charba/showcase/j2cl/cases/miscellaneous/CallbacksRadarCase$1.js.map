@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CallbacksRadarCase$1.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;;;MA+BoG,E;;CAAA,W;EAAAA,Q;EAAAA;+F;;;QAAA,iF;EAAAC,a;EAAAA,yB;EAAAA,mL;EAAAA,iB;;;CAAA,2J;EAAAC,2G;EAAAA,iC;;;CAGpF,6D,uBAAsBC,O;EACnCC,IAAIC,MAAJD,+D;EACAA,2H;;;;CALiG,2D;EAAAA,0I;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["CallbacksRadarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksRadarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksRadarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksRadarCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksRadarCase$1.invoke","module","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksRadarCase$1.<clinit>"]
-}
-

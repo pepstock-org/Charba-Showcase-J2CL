@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartDecimation.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;;;;;;MAyBmB,sB;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,+EAFhBA,C;;;QASX,gE,4BAA2CC,U;EAA3CC,iC;EAAAA,6C;EAAAA,uJ;EAAAA,iB;;;CAAA,gI,4BAA2CD,U;EAA3CE,iC;EACNA,kG;;;CASc,a;EACdC,4G;;;CAS0B,gB;EAC1BC,+G;;;CASa,c;EACbC,6G;;;CASa,gB;EACbC,+G;;;QAlDiB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
-"sources":["DefaultChartDecimation.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.<synthetic: ctor_js>","decimation","org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.isEnabled","org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.getAlgorithm","org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.getSamples","org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.getThreshold","org.pepstock.charba.client.defaults.chart.DefaultChartDecimation.<clinit>"]
-}
-

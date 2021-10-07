@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BorderSkipped.impl.java.js",
-"lineCount":143,
-"mappings":"A;;;;;;;;;;;;;;MA4BY,a;;CAAA,W;EAAAA,Q;EAAAA;OAoCU,wDApCVA,C;;;QA2CH,gD,8DAAqBC,K;EAArBC,oC;EAAAA,iI;EAAAA,iB;;;CAAA,8F,8DAAqBD,K;EAArBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;;;CASa,S;EACbC,qE;;;QAtDU,2B;EAAAC,wB;EAAAA;GAAAA,2IAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,wB;EAAAA,grB;;;QAEX,2D;EAAAC,8G;;;QAIA,yD;EAAAA,4G;;;QAIA,yD;EAAAA,4G;;;QAIA,0D;EAAAA,6G;;;QAIA,4D;EAAAA,+G;;;QAIA,2D;EAAAA,8G;;;QAIA,4D;EAAAA,+G;;;QAIA,2D;EAAAA,8G;;;QA9BW,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EAEXA,kQ;EAIAA,0P;EAIAA,0P;EAIAA,8P;EAIAA,sQ;EAIAA,kQ;EAIAA,sQ;EAIAA,kQ;EA9BWA,yF;;;;;;;;;;;;;AAAA;4E;AAAA;0E;AAAA;0E;AAAA;2E;AAAA;6E;AAAA;4E;AAAA;6E;AAAA;4E;AAAA;kF;AAEX;iF;AAIA;+E;AAIA;+E;AAIA;gF;AAIA;kF;AAIA;iF;AAIA;kF;AAIA;;",
-"sources":["BorderSkipped.java"],
-"names":["org.pepstock.charba.client.enums.BorderSkipped.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.BorderSkipped.<synthetic: ctor_create>","org.pepstock.charba.client.enums.BorderSkipped.<init>","org.pepstock.charba.client.enums.BorderSkipped.value","org.pepstock.charba.client.enums.BorderSkipped.valueOf","org.pepstock.charba.client.enums.BorderSkipped.values","org.pepstock.charba.client.enums.BorderSkipped.<synthetic: getter>","org.pepstock.charba.client.enums.BorderSkipped.<clinit>"]
-}
-

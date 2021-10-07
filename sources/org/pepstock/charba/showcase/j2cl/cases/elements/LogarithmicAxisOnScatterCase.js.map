@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LogarithmicAxisOnScatterCase.impl.java.js",
-"lineCount":165,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA2Ba,4B;;CAAA,W;EAAAA,Q;EAAAA;OAEmB,2FAFnBA,C;EAAAA;OAIe,uFAJfA,C;;;QAUL,S;EAAAC,uC;EAAAA,mD;EAAAA,mG;EAAAA,iB;;;CAAA,sF;EAAAC,8E;EAAAA,gG;EAKNA,iP;EACAA,gH;EACAA,oH;EAEAA,IAAoBC,QAApBD,qK;EACAA,8E;EACAA,uH;EAEAA,IAAqBE,QAArBF,uK;EACAA,8E;EACAA,+B;EAMAA,6I;EACAA,kP;EACAA,yJ;EACAA,kQ;EAEAA,IAAeG,QAAfH,2K;EACAA,kD;EAEAA,IAAQI,MAARJ,oC;EAEAA,IAAYK,MAAZL,0L;EACAA,SAASM,CAATN;GACCA,+CADDA;GAECA,8IAFDA;GAGCA,8IAHDA;G;EAKAA,oF;EACAA,oE;EACAA,gE;EAEAA,IAAyBO,KAAzBP,0Q;EACAA,kC;EACAA,iD;EACAA,yI;EACAA,uL;EAWAA,kI;EACAA,iD;EAEAA,IAAoBQ,KAApBR,iK;EACAA,kC;EACAA,uL;EAQAA,iD;EACAA,gI;EAEAA,gQ;EAEAA,6O;EAEAA,sQ;EAMAA,IAAoBS,UAApBT,qK;EACAA,gF;EACAA,yH;EAEAA,IAAqBU,UAArBV,uK;EACAA,gF;EACAA,sC;EACAA,6B;EACAA,mC;EAEAA,IAAkBW,MAAlBX,qK;EACAA,+BAAkBY,EAAlBZ;GACCa,yDADDb;GAECa,YAFDb;I;EAIAA,gC;EACAA,IAAiBc,GAAjBd,gK;EACAA,wC;EACAA,wB;EACAA,+B;;;CAIkB,c;EAClBe,wG;;;CApHW,wF;EAIZf,wH;;;QAJY,O;EAAAgB,+C;EAAAA,4C;EAAAA,wB;EAMZA,gV;EACAA,4a;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAPY;6BAMkB,mFANlB,C;AAAA;6BAOkB,mFAPlB;",
-"sources":["LogarithmicAxisOnScatterCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase.<init>","chartRow","chartCol","dataset1","color1","points","i","axis1","axis2","actionsRow","actionsCol","github","p0","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase.<lambda in <init>>","img","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase.getElement","org.pepstock.charba.showcase.j2cl.cases.elements.LogarithmicAxisOnScatterCase.<clinit>"]
-}
-

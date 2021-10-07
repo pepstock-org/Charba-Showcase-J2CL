@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StackedOptions.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;;;;MA2Ba,c;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,kEAFhBA,C;;;;QAWL,gH,gBAAuBC,K,gCAA8BC,a,iBAAuBC,W;EAA5EC,yB;EAAAA,qC;EAAAA,qN;EAAAA,iB;;;;CAAA,uK,gBAAuBH,K,gCAA8BC,a,iBAAuBC,W;EAElFE,yM;EAEAA,8J;EAEAA,6G;EAEAA,IAAsBC,KAAtBD,4E;EACAA,IAAoBE,KAApBF,0E;EAEAA,0M;;;;QASM,uG,gBAAuBJ,K,gCAA8BC,a;EAArDE,yB;EAAAA,qC;EAAAA,+L;EAAAA,iB;;;;CAAA,8J,gBAAuBH,K,gCAA8BC,a;EAC3DG,0M;;;CASa,a;EACbG,+E;;;QA1CW,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["StackedOptions.java"],
-"names":["org.pepstock.charba.client.configuration.StackedOptions.<synthetic: ctor_js>","chart","defaultValues","onlyYScaled","org.pepstock.charba.client.configuration.StackedOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.StackedOptions.<init>","axis1","axis2","org.pepstock.charba.client.configuration.StackedOptions.getScales","org.pepstock.charba.client.configuration.StackedOptions.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsBubbleCase$4.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;;MAqI8C,E;;CAAA,W;EAAAA,Q;EAAAA;8F;;;QAAA,gF;EAAAC,a;EAAAA,yB;EAAAA,iL;EAAAA,iB;;;CAAA,yJ;EAAAC,0G;EAAAA,iC;;;CAG7B,4G,0BAAyBC,O,kBAAkBC,Q;EACxDC,2G;;;QAJ0C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsBubbleCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase$4.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase$4.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase$4.<init>","context","dataItem","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase$4.invoke","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBubbleCase$4.<clinit>"]
-}
-

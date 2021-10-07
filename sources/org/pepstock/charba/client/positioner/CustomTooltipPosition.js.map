@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CustomTooltipPosition.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;;;MA6BmB,qB;;CAAA,W;EAAAA,Q;EAAAA;OAEG,oEAFHA,C;;;QASX,yB,gBAA6BC,I;EAA7BC,gC;EAAAA,4C;EAAAA,qG;EAAAA,iB;;;CAAA,oF,gBAA6BD,I;EAA7BE,iC;EAENA,+N;EAEAA,2Q;;;CASa,S;EACbC,iF;;;QAvBiB,O;EAAAC,wC;EAAAA,qC;EAAAA;",
-"sources":["CustomTooltipPosition.java"],
-"names":["org.pepstock.charba.client.positioner.CustomTooltipPosition.<synthetic: ctor_js>","name","org.pepstock.charba.client.positioner.CustomTooltipPosition.<synthetic: ctor_create>","org.pepstock.charba.client.positioner.CustomTooltipPosition.<init>","org.pepstock.charba.client.positioner.CustomTooltipPosition.value","org.pepstock.charba.client.positioner.CustomTooltipPosition.<clinit>"]
-}
-

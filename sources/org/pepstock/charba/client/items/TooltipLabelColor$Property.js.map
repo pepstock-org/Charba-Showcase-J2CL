@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipLabelColor$Property.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MAsDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OASS,qEATTA,C;;;QAgBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,8I;EAAAA,iB;;;CAAA,2G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,mF;;;CASa,S;EACbC,kF;;;QA3BW,2B;EAAAC,mB;EAAAA;GAAAA,8IAAAA;G;EAAAA,sI;;;QAAA,U;EAAAC,mB;EAAAA,ihB;;;QAEZ,mF;EAAAC,4H;;;QACA,+E;EAAAA,wH;;;QACA,+E;EAAAA,wH;;;QACA,8E;EAAAA,uH;;;QACA,gF;EAAAA,yH;;;QANY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,wT;EACAA,wS;EACAA,wS;EACAA,oS;EACAA,4S;EANYA,iG;;;;;;;;;;;;;AAAA;+F;AAAA;2F;AAAA;2F;AAAA;0F;AAAA;4F;AAAA;0F;AAEZ;oG;AACA;gG;AACA;gG;AACA;+F;AACA;;",
-"sources":["TooltipLabelColor.java"],
-"names":["org.pepstock.charba.client.items.TooltipLabelColor$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.TooltipLabelColor$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.TooltipLabelColor$Property.<init>","org.pepstock.charba.client.items.TooltipLabelColor$Property.value","org.pepstock.charba.client.items.TooltipLabelColor$Property.valueOf","org.pepstock.charba.client.items.TooltipLabelColor$Property.values","org.pepstock.charba.client.items.TooltipLabelColor$Property.<synthetic: getter>","org.pepstock.charba.client.items.TooltipLabelColor$Property.<clinit>"]
-}
-

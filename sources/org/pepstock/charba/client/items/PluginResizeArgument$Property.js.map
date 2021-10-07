@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginResizeArgument$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,wEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iJ;EAAAA,iB;;;CAAA,8G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sF;;;CASa,S;EACbC,qF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,iJAAAA;G;EAAAA,yI;;;QAAA,U;EAAAC,mB;EAAAA,wJ;;;QAEZ,0E;EAAAC,mH;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+Q;EAFYA,oG;;;;;;;;;;;;;AAAA;sF;AAAA;6F;AAEZ;;",
-"sources":["PluginResizeArgument.java"],
-"names":["org.pepstock.charba.client.items.PluginResizeArgument$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.PluginResizeArgument$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginResizeArgument$Property.<init>","org.pepstock.charba.client.items.PluginResizeArgument$Property.value","org.pepstock.charba.client.items.PluginResizeArgument$Property.valueOf","org.pepstock.charba.client.items.PluginResizeArgument$Property.values","org.pepstock.charba.client.items.PluginResizeArgument$Property.<synthetic: getter>","org.pepstock.charba.client.items.PluginResizeArgument$Property.<clinit>"]
-}
-

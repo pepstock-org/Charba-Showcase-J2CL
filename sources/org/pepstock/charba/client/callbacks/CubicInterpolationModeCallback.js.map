@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CubicInterpolationModeCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,8B;;QAAA,M;EAAAA,yC;EAAAA,8B;;;QAAA,O;EAAAC,iD;EAAAA;",
-"sources":["CubicInterpolationModeCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.CubicInterpolationModeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.CubicInterpolationModeCallback.<clinit>"]
-}
-

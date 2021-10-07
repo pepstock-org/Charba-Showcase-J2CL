@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FeatureFilterCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2F;EAAAA,0K;;;CAAA,gK;EAAAC,iC;EAAAA,8F;;;CAAA,qD;EAAAC,wD;EAAAA,qI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["FeatureFilterCallback.java"],
-"names":["org.pepstock.charba.client.geo.callbacks.FeatureFilterCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.geo.callbacks.FeatureFilterCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.geo.callbacks.FeatureFilterCallback$$LambdaAdaptor.filter","org.pepstock.charba.client.geo.callbacks.FeatureFilterCallback$$LambdaAdaptor.<clinit>"]
-}
-

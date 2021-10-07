@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsNumericTick.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;;;;MA2BiB,a;;CAOU,yB;;CAOX,mB;;CAOc,2B;;CAehB,4E,6BAAqCA,oB;;CAYrC,sE,iBAA+BA,oB;;QA3Bf,2F;EAAAC,wB;EAE5BA;GACCA,uHADDA;G;EAKAA,Y;;;QAQY,8I,6DAAqCD,oB;EAArCE,wB;EAEZA;GACCA,qLADDA;G;;;QAUY,wI,iDAA+BF,oB;EAA/BE,wB;EAEZA;GACCA,+KADDA;G;;;QAlDe,O;EAAAC,gC;EAAAA;",
-"sources":["IsNumericTick.java"],
-"names":["numberFormatCallback","org.pepstock.charba.client.configuration.IsNumericTick.getNumberFormatCallback__$default","org.pepstock.charba.client.configuration.IsNumericTick.setNumberFormat__$default","org.pepstock.charba.client.configuration.IsNumericTick.<clinit>"]
-}
-

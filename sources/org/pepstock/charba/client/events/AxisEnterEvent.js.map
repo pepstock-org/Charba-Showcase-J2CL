@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AxisEnterEvent.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;;;MA0BmB,c;;CAAA,W;EAAAA,Q;;;QAcX,kJ,eAA+BC,W,mBAAuBC,I,cAAWC,I;EAAjEC,yB;EAAAA,qC;EAAAA,sO;EAAAA,iB;;;CAAA,kM,eAA+BH,W,mBAAuBC,I,cAAWC,I;EACvEE,gW;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAsBC,SAAtBD,mFAFDA;GAICA,4EAJDA;G;;;QAxBD,4D;EAAAE,iH;;;QAFkB,O;EAAAC,iC;EAAAA,8B;EAAAA,4B;EAElBA,gJ;;;;;;;;;;;;;;AAFkB;;",
-"sources":["AxisEnterEvent.java"],
-"names":["org.pepstock.charba.client.events.AxisEnterEvent.<synthetic: ctor_js>","nativeEvent","item","axis","org.pepstock.charba.client.events.AxisEnterEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.AxisEnterEvent.<init>","handler","org.pepstock.charba.client.events.AxisEnterEvent.dispatch","myHandler","org.pepstock.charba.client.events.AxisEnterEvent.<synthetic: getter>","org.pepstock.charba.client.events.AxisEnterEvent.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CompactDisplay.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MA0BY,c;;CAAA,W;EAAAA,Q;EAAAA;OAYU,8DAZVA,C;;;QAmBH,gD,8DAAsBC,K;EAAtBC,qC;EAAAA,uI;EAAAA,iB;;;CAAA,oG,8DAAsBD,K;EAAtBE,qC;EAAAA,2C;EAAAA,mE;EACPA,4E;;;CASa,S;EACbC,2E;;;QA9BU,2B;EAAAC,yB;EAAAA;GAAAA,mJAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,yB;EAAAA,oP;;;QAEX,iE;EAAAC,sH;;;QAIA,gE;EAAAA,qH;;;QANW,O;EAAAC,iC;EAAAA,8B;EAAAA,e;EAEXA,iR;EAIAA,6Q;EANWA,gG;;;;;;;;;;;;;AAAA;mF;AAAA;kF;AAAA;yF;AAEX;wF;AAIA;;",
-"sources":["CompactDisplay.java"],
-"names":["org.pepstock.charba.client.intl.enums.CompactDisplay.<synthetic: ctor_js>","value","org.pepstock.charba.client.intl.enums.CompactDisplay.<synthetic: ctor_create>","org.pepstock.charba.client.intl.enums.CompactDisplay.<init>","org.pepstock.charba.client.intl.enums.CompactDisplay.value","org.pepstock.charba.client.intl.enums.CompactDisplay.valueOf","org.pepstock.charba.client.intl.enums.CompactDisplay.values","org.pepstock.charba.client.intl.enums.CompactDisplay.<synthetic: getter>","org.pepstock.charba.client.intl.enums.CompactDisplay.<clinit>"]
-}
-

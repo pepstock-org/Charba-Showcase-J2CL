@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TilesBuilder.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;;;;MA4BmB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAGF,8DAHEA,C;EAAAA;OAKH,wEALGA,C;EAAAA;OAOX,kEAPWA,C;EAAAA;OASd,4DATcA,K;;;QAcV,S;EAAAC,mC;EAAAA,0E;EAAAA,iB;;;CAAA,6D;EAAAC,iC;EAAAA,uE;EAGPA,oH;EACAA,gJ;EACAA,qI;EACAA,iH;;;QAQ0B,U;EAAAC,uB;EAC1BA,gC;;;CASmB,2D,gBAAiBC,K;EACpCC,2J;EACAA,Y;;;CASmB,4D,mBAAyBC,U;EAC5CC,qJ;EACAA,Y;;;CASmB,c,eAAYC,I;EAC/BC,iI;EACAA,Y;;;CASmB,sC,gBAA0BC,e;EAC7CC,2M;EACAA,Y;;;CASmB,+D,gBAA2BD,e;EAC9CC,oQ;EACAA,Y;;;CASmB,iC,gBAAqBC,U;EACxCC,sL;EACAA,Y;;;CASmB,0D,gBAAsBD,U;EACzCC,+O;EACAA,Y;;;CAQwB,U;EACxBC,2Z;;;CAQc,a;EACdC,8Z;;;CA5HiB,+D;EAGlBb,2E;EAEAA,qF;EAEAA,+E;EAEAA,2G;;;QATkB,O;EAAAc,+B;EAAAA,4B;EAAAA;",
-"sources":["TilesBuilder.java"],
-"names":["org.pepstock.charba.client.colors.tiles.TilesBuilder.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.TilesBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.TilesBuilder.<init>","org.pepstock.charba.client.colors.tiles.TilesBuilder.create","shape","org.pepstock.charba.client.colors.tiles.TilesBuilder.setShape","pointStyle","org.pepstock.charba.client.colors.tiles.TilesBuilder.setPointStyle","size","org.pepstock.charba.client.colors.tiles.TilesBuilder.setSize","backgroundColor","org.pepstock.charba.client.colors.tiles.TilesBuilder.setBackgroundColor","shapeColor","org.pepstock.charba.client.colors.tiles.TilesBuilder.setShapeColor","org.pepstock.charba.client.colors.tiles.TilesBuilder.asTile","org.pepstock.charba.client.colors.tiles.TilesBuilder.asPattern","org.pepstock.charba.client.colors.tiles.TilesBuilder.<clinit>"]
-}
-

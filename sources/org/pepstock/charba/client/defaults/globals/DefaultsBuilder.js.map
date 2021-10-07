@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultsBuilder.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;MAsBmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAKW,yEALXA,C;EAAAA;OAOiB,2EAPjBA,C;EAAAA;OASS,qEATTA,C;;;QAcV,S;EAAAC,sC;EAAAA,iF;EAAAA,iB;;;CAAA,oE;EAAAC,iC;EAAAA,8E;;;QASsB,O;EAAAC,0B;EAC7BA,gG;;;CAQqB,c;EACrBC,sF;;;CAQ2B,oB;EAC3BC,wF;;;CAQmB,Y;EACnBC,kF;;;CAnDiB,sE;EAKlBJ,4G;EAEAA,oH;EAEAA,sG;;;QATkB,O;EAAAK,kC;EAAAA,+B;EAAAA,qB;EAGlBA,uH;;;;;;;;;;;;;AAHkB;gBAGmB,wEAHnB;",
-"sources":["DefaultsBuilder.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultsBuilder.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultsBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultsBuilder.<init>","org.pepstock.charba.client.defaults.globals.DefaultsBuilder.get","org.pepstock.charba.client.defaults.globals.DefaultsBuilder.getOptions","org.pepstock.charba.client.defaults.globals.DefaultsBuilder.getScaledOptions","org.pepstock.charba.client.defaults.globals.DefaultsBuilder.getScale","org.pepstock.charba.client.defaults.globals.DefaultsBuilder.<clinit>"]
-}
-

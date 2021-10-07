@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CategoryTickHandler.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;;;;;;;;;;;;MAmCY,mB;;CAAA,W;EAAAA,Q;EAAAA;OA8BoC,kFA9BpCA,C;;;QAsCX,sH,aAAyBC,I,+BAA4BC,a;EAArDC,8B;EAAAA,0C;EAAAA,kN;EAAAA,iB;;;CAAA,kL,aAAyBF,I,+BAA4BC,a;EACpDE,4L;EADDA,+E;EAKCA,kHAA+BC,KAA/BD,gBAAsCE,KAAtCF,eAA6CG,MAA7CH;GAECI,IAAUC,SAAVD,sFAFDJ;GAICI,IAAOE,OAAPF,+CAJDJ;GAMCI;IAECA,oXAFDA;IANDJ;GAWCI,eAXDJ;I;;;CAqBK,yD;EACLO,qG;;;CAjEU,uE;EA8BXP,iN;;;QA9BW,O;EAAAQ,sC;EAAAA,mC;EAAAA;",
-"sources":["CategoryTickHandler.java"],
-"names":["org.pepstock.charba.client.configuration.CategoryTickHandler.<synthetic: ctor_js>","axis","configuration","org.pepstock.charba.client.configuration.CategoryTickHandler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.CategoryTickHandler.<init>","value","index","values","org.pepstock.charba.client.configuration.CategoryTickHandler.<lambda in <init>>","scaleItem","current","org.pepstock.charba.client.configuration.CategoryTickHandler.getProxy","org.pepstock.charba.client.configuration.CategoryTickHandler.<clinit>"]
-}
-

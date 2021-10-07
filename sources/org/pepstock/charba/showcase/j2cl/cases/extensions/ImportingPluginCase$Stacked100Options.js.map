@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ImportingPluginCase$Stacked100Options.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;;;;MAwMsB,iB;;CAAA,W;EAAAA,Q;EAAAA;OAER,sGAFQA,C;;;QAIpB,S;EAAAC,4B;EAAAA,wC;EAAAA,8G;EAAAA,iB;;;CAAA,iG;EACCC,0O;EADDA,2G;;;CAIK,2E,gBAAkBC,M;EACtBC,sL;;;CATmB,mG;EAEpBF,uJ;;;QAFoB,O;EAAAG,oC;EAAAA,iC;EAAAA;",
-"sources":["ImportingPluginCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase$Stacked100Options.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase$Stacked100Options.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase$Stacked100Options.<init>","enable","org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase$Stacked100Options.setEnable","org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase$Stacked100Options.<clinit>"]
-}
-

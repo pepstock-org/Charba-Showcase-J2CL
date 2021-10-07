@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasBorderAlign.impl.java.js",
-"lineCount":85,
-"mappings":"A;;;;;;;;;;;;;;;;;MA8BU,c;;CAOU,yB;;CAON,sE,2BAA8BA,K;;CAY9B,gC,0BAAiCA,K;;CAYpB,kB;;CAeE,0B;;CAef,0E,4BAAmCC,mB;;CAYnC,qE,iBAA8BA,mB;;QAhFlC,M;EAAAC,yB;EAAAA,8B;;;QAcI,gI,4DAA8BF,K;EAA9BG,yB;EAEZA;GACCA,uJADDA;G;;;QAUY,0F,2DAAiCH,K;EAAjCG,yB;EAEZA;GACCA,iHADDA;G;;;QAUyB,0E;EAAAC,yB;EAEzBA;GACCA,qGADDA;G;EAKAA,2O;;;QAQ2B,kF;EAAAC,yB;EAE3BA;GACCA,6GADDA;G;EAKAA,Y;;;QAQY,oI,6DAAmCJ,mB;EAAnCE,yB;EAEZA;GACCA,yKADDA;G;;;QAUY,+H,kDAA8BF,mB;EAA9BE,yB;EAEZA;GACCA,oKADDA;G;;;QAlFQ,O;EAAAG,iC;EAAAA;",
-"sources":["HasBorderAlign.java"],
-"names":["align","borderAlignCallback","org.pepstock.charba.client.data.HasBorderAlign.<synthetic: adapt_lambda>","org.pepstock.charba.client.data.HasBorderAlign.setBorderAlign__$default","org.pepstock.charba.client.data.HasBorderAlign.getBorderAlign__$default","org.pepstock.charba.client.data.HasBorderAlign.getBorderAlignCallback__$default","org.pepstock.charba.client.data.HasBorderAlign.<clinit>"]
-}
-

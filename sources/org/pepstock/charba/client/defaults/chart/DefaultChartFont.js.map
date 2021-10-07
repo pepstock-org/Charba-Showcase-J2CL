@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartFont.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;MA0BmB,gB;;CAAA,W;EAAAA,Q;EAAAA;OAEU,4EAFVA,C;;;QASX,0D,sBAA+BC,I;EAA/BC,2B;EAAAA,uC;EAAAA,qI;EAAAA,iB;;;CAAA,oH,sBAA+BD,I;EAA/BE,iC;EACNA,yF;;;CASU,W;EACVC,uG;;;CASgB,Y;EAChBC,wG;;;CASa,a;EACbC,yG;;;CASa,a;EACbC,yG;;;CASa,iB;EACbC,6G;;;CASa,yB;EACbC,qH;;;;CAtEiB,U;EAAAC,iG;;;;CAAA,2D;EAAAA,0J;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,qB;EAAAA;",
-"sources":["DefaultChartFont.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartFont.<synthetic: ctor_js>","font","org.pepstock.charba.client.defaults.chart.DefaultChartFont.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartFont.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartFont.getSize","org.pepstock.charba.client.defaults.chart.DefaultChartFont.getStyle","org.pepstock.charba.client.defaults.chart.DefaultChartFont.getFamily","org.pepstock.charba.client.defaults.chart.DefaultChartFont.getWeight","org.pepstock.charba.client.defaults.chart.DefaultChartFont.getLineHeight","org.pepstock.charba.client.defaults.chart.DefaultChartFont.getLineHeightAsString","org.pepstock.charba.client.defaults.chart.DefaultChartFont.create","org.pepstock.charba.client.defaults.chart.DefaultChartFont.<clinit>"]
-}
-

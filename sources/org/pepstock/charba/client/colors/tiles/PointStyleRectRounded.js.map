@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointStyleRectRounded.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;MAwCY,qB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,gC;EAAAA,4C;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,sF;;;CAcI,oH,iCAA6BC,O,gBAAaC,I,gBAAaC,C,gBAAUC,C,gBAAUC,M,gBAAeC,Q,gBAAiBC,G;EAQzHC,IAAOC,YAAPD,kB;EACAA,IAAOE,WAAPF,yB;EACAA,IAAOG,OAAPH,mJ;EACAA,IAAOI,OAAPJ,mJ;EACAA,2R;EACAA,+K;EACAA,+K;EACAA,2R;;;QA7BU,O;EAAAK,wC;EAAAA,qC;EAAAA;",
-"sources":["PointStyleRectRounded.java"],
-"names":["org.pepstock.charba.client.colors.tiles.PointStyleRectRounded.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.PointStyleRectRounded.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.PointStyleRectRounded.<init>","context","size","x","y","radius","rotation","rad","org.pepstock.charba.client.colors.tiles.PointStyleRectRounded.drawPointStyle","cornerRadius","changedSize","xOffset","yOffset","org.pepstock.charba.client.colors.tiles.PointStyleRectRounded.<clinit>"]
-}
-

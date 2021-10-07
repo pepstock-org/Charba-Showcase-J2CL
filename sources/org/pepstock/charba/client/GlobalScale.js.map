@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GlobalScale.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;MA0BmB,W;;CAAA,W;EAAAA,Q;;;QAOlB,wD,UAAyBC,Y;EAAzBC,sB;EAAAA,kC;EAAAA,uH;EAAAA,iB;;;CAAA,8F,UAAyBD,Y;EAExBE,0N;;;CAQY,+C;EACZC,mC;;;QAlBiB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
-"sources":["GlobalScale.java"],
-"names":["org.pepstock.charba.client.GlobalScale.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.GlobalScale.<synthetic: ctor_create>","org.pepstock.charba.client.GlobalScale.<init>","org.pepstock.charba.client.GlobalScale.nativeObject","org.pepstock.charba.client.GlobalScale.<clinit>"]
-}
-

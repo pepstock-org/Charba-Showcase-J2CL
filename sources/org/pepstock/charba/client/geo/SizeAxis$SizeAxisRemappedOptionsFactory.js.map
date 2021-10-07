@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SizeAxis$SizeAxisRemappedOptionsFactory.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;;;;;;;;MAwGc,8B;;CAAA,W;EAAAA,Q;;;QAKZ,S;EAAAC,yC;EAAAA,qD;EAAAA,4F;EAAAA,iB;;;CAAA,+E;EACCC,mN;;;CASqB,yD,UAAoBC,Y;EACzCC,6F;;;QAhBW,O;EAAAC,iD;EAAAA,8C;EAAAA;",
-"sources":["SizeAxis.java"],
-"names":["org.pepstock.charba.client.geo.SizeAxis$SizeAxisRemappedOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.geo.SizeAxis$SizeAxisRemappedOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.SizeAxis$SizeAxisRemappedOptionsFactory.<init>","nativeObject","org.pepstock.charba.client.geo.SizeAxis$SizeAxisRemappedOptionsFactory.create","org.pepstock.charba.client.geo.SizeAxis$SizeAxisRemappedOptionsFactory.<clinit>"]
-}
-

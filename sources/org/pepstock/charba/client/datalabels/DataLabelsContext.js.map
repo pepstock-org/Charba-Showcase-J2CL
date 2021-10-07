@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsContext.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;;MA6BmB,iB;;CAAA,W;EAAAA,Q;EAAAA;OAiCM,iEAjCNA,C;;;QAyClB,yG,kBAA4BC,K,WAAoBC,Y;EAAhDC,4B;EAAAA,wC;EAAAA,gM;EAAAA,iB;;;CAAA,gK,kBAA4BF,K,WAAoBC,Y;EAC/CE,uI;EAGAA,mN;EAMAA;GAECA,2PAFDA;G;;;CAWgB,Y;EAChBC,8E;;;CASiB,gB;EAEjBC,kQ;;;QA1EiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
-"sources":["DataLabelsContext.java"],
-"names":["org.pepstock.charba.client.datalabels.DataLabelsContext.<synthetic: ctor_js>","label","nativeObject","org.pepstock.charba.client.datalabels.DataLabelsContext.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.DataLabelsContext.<init>","org.pepstock.charba.client.datalabels.DataLabelsContext.getLabel","org.pepstock.charba.client.datalabels.DataLabelsContext.isConsistent","org.pepstock.charba.client.datalabels.DataLabelsContext.<clinit>"]
-}
-

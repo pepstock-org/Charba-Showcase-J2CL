@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ToCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;;;MAyBiB,U;;QAAA,M;EAAAA,qB;EAAAA,8B;;;QAAA,O;EAAAC,6B;EAAAA;",
-"sources":["ToCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.ToCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.ToCallback.<clinit>"]
-}
-

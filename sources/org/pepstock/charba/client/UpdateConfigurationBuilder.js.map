@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"UpdateConfigurationBuilder.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;MAwBmB,0B;;CAAA,W;EAAAA,Q;EAAAA;OAGgB,uEAHhBA,C;;;QAQV,S;EAAAC,iD;EAAAA,2E;EAAAA,iB;;;CAAA,8D;EAAAC,iC;EAAAA,wE;;;QASiC,U;EAAAC,qC;EACxCA,8C;;;CASiC,oD,eAAiBC,M;EAClDC,0I;EACAA,Y;;;CASiC,kB,eAAgBC,Y;EACjDC,8G;EACAA,Y;;;CASiC,e,eAAaC,K;EAC9CC,oG;EACAA,Y;;;CASiC,kB,gBAAgBC,I;EACjDC,sG;EACAA,Y;;;CASiC,2B,gBAAyBC,a;EAC1DC,wH;EACAA,Y;;;CASiC,0B,gBAAwBC,Y;EACzDC,sH;EACAA,Y;;;CAQ0B,S;EAE1BC,oF;;;CA9FiB,gE;EAGlBd,+G;;;QAHkB,O;EAAAe,6C;EAAAA,0C;EAAAA;",
-"sources":["UpdateConfigurationBuilder.java"],
-"names":["org.pepstock.charba.client.UpdateConfigurationBuilder.<synthetic: ctor_js>","org.pepstock.charba.client.UpdateConfigurationBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.UpdateConfigurationBuilder.<init>","org.pepstock.charba.client.UpdateConfigurationBuilder.create","easing","org.pepstock.charba.client.UpdateConfigurationBuilder.setEasing","milliseconds","org.pepstock.charba.client.UpdateConfigurationBuilder.setDuration","delay","org.pepstock.charba.client.UpdateConfigurationBuilder.setDelay","loop","org.pepstock.charba.client.UpdateConfigurationBuilder.setLoop","animateRotate","org.pepstock.charba.client.UpdateConfigurationBuilder.setAnimateRotate","animateScale","org.pepstock.charba.client.UpdateConfigurationBuilder.setAnimateScale","org.pepstock.charba.client.UpdateConfigurationBuilder.build","org.pepstock.charba.client.UpdateConfigurationBuilder.<clinit>"]
-}
-

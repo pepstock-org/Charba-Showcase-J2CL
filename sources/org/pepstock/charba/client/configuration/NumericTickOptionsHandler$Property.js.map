@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NumericTickOptionsHandler$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAyCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,qFALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,8J;EAAAA,iB;;;CAAA,2H,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,mG;;;CASa,S;EACbC,kG;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,8JAAAA;G;EAAAA,sJ;;;QAAA,U;EAAAC,mB;EAAAA,uK;;;QAEZ,yF;EAAAC,kI;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iT;EAFYA,iH;;;;;;;;;;;;;AAAA;qG;AAAA;0G;AAEZ;;",
-"sources":["NumericTickOptionsHandler.java"],
-"names":["org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.<init>","org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.value","org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.valueOf","org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.values","org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.NumericTickOptionsHandler$Property.<clinit>"]
-}
-

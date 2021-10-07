@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipItem$TooltipItemFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAoKqB,kB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,6B;EAAAA,yC;EAAAA,qF;EAAAA,iB;;;CAAA,wE;EAAAC,iC;;;CAUW,yD,UAAoBC,Y;EACtCC,0F;;;;CAhBkB,U;EAAAA,kL;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;EAAAA;",
-"sources":["TooltipItem.java"],
-"names":["org.pepstock.charba.client.items.TooltipItem$TooltipItemFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.TooltipItem$TooltipItemFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.TooltipItem$TooltipItemFactory.<init>","nativeObject","org.pepstock.charba.client.items.TooltipItem$TooltipItemFactory.create","org.pepstock.charba.client.items.TooltipItem$TooltipItemFactory.<clinit>"]
-}
-

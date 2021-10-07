@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SafeHtmlBuilder.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;MA0BmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAOU,mEAPVA,C;;;QAYV,S;EAAAC,sC;EAAAA,6E;EAAAA,iB;;;CAAA,gE;EAAAC,iC;EAAAA,0E;;;QASsB,U;EAAAC,0B;EAC7BA,mC;;;CASsB,iB,gBAAeC,K;EACrCC,kG;EACAA,Y;;;CASsB,c,eAAYD,K;EAClCC,8F;EACAA,Y;;;CASsB,c,eAAYD,K;EAClCC,6I;EACAA,Y;;;CASsB,gB,eAAcD,K;EACpCC,iG;EACAA,Y;;;CASsB,a,eAAWD,K;EACjCC,8F;EACAA,Y;;;CASsB,0D,iBAAgBD,K;EACtCC,0H;EACAA,Y;;;CASsB,iC,gBAAqBD,K;EAC3CE,yJ;EACAA,Y;;;CASsB,sC,gBAA0BF,K;EAChDG,6nB;EACAA,Y;;;CASsB,sC,gBAA0BH,K;EAChDI,2G;EACAA,Y;;;CAQe,c;EACfC,qI;;;CAlIiB,kE;EAOlBP,qG;;;QALA,8E;EAAAQ,qI;;;QAFkB,O;EAAAC,kC;EAAAA,+B;EAAAA,qB;EAElBA,oN;;;;;;;;;;;;;;;;AAFkB;;",
-"sources":["SafeHtmlBuilder.java"],
-"names":["org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.<synthetic: ctor_js>","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.<init>","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.create","value","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.append","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.appendEscaped","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.appendEscapedLines","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.appendHtmlConstant","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.toSafeHtml","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.<synthetic: getter>","org.pepstock.charba.client.dom.safehtml.SafeHtmlBuilder.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleMapScales.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;;;;;MA0BmB,e;;CAAA,W;EAAAA,Q;;;QAOlB,sD,uBAA+BC,O;EAA/BC,0B;EAAAA,sC;EAAAA,wH;EAAAA,iB;;;CAAA,oG,uBAA+BD,O;EAC9BE,6H;;;CASW,gE,oBAAgBC,I;EAG3BC;GAECA,IAAQC,IAARD,SAFDA;GAGCA,IAAQE,UAARF,SAHDA;GAKCA;IAAAA,IAAUG,IAAVH,kBAAAA;;KAECA;MACCA,kBADDA;YAEOA;MACNA,YADMA;;MAINA,oKAJMA;MAJRA;;IALDA;GAiBCA,6EAjBDA;G;;;QApBiB,O;EAAAI,kC;EAAAA,+B;EAAAA;",
-"sources":["BubbleMapScales.java"],
-"names":["org.pepstock.charba.client.geo.BubbleMapScales.<synthetic: ctor_js>","options","org.pepstock.charba.client.geo.BubbleMapScales.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapScales.<init>","axes","org.pepstock.charba.client.geo.BubbleMapScales.setAxes","size","projection","axis","org.pepstock.charba.client.geo.BubbleMapScales.<clinit>"]
-}
-

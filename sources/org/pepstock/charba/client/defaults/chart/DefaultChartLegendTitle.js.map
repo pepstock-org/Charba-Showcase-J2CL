@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartLegendTitle.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;MA0BmB,uB;;CAAA,W;EAAAA,Q;EAAAA;OAEiB,iFAFjBA,C;;;QASlB,iE,6BAA6CC,K;EAA7CC,kC;EAAAA,8C;EAAAA,oJ;EAAAA,iB;;;CAAA,kI,6BAA6CD,K;EAA7CE,iC;EACCA,+F;;;CASoB,W;EACpBC,4G;;;CASuB,c;EACvBC,+G;;;CASa,oB;EACbC,qH;;;CASc,a;EACdC,8G;;;QAlDiB,O;EAAAC,0C;EAAAA,uC;EAAAA;",
-"sources":["DefaultChartLegendTitle.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.<synthetic: ctor_js>","title","org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.getFont","org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.getPadding","org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.getColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.isDisplay","org.pepstock.charba.client.defaults.chart.DefaultChartLegendTitle.<clinit>"]
-}
-

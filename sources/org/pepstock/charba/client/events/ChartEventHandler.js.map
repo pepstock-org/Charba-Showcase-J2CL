@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartEventHandler.impl.java.js",
-"lineCount":14,
-"mappings":"A;;;;;;;;;MAsBiB,iB;;QAAA,O;EAAAA,oC;EAAAA;",
-"sources":["ChartEventHandler.java"],
-"names":["org.pepstock.charba.client.events.ChartEventHandler.<clinit>"]
-}
-

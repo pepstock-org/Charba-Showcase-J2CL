@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultLineLabel$InternalFont.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;MAyDsB,Y;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,uB;EAAAA,mC;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EAAAC,8E;;;CAQH,Y;EAChBC,uF;;;QATmB,O;EAAAC,+B;EAAAA,4B;EAAAA;",
-"sources":["DefaultLineLabel.java"],
-"names":["org.pepstock.charba.client.annotation.DefaultLineLabel$InternalFont.<synthetic: ctor_js>","org.pepstock.charba.client.annotation.DefaultLineLabel$InternalFont.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.DefaultLineLabel$InternalFont.<init>","org.pepstock.charba.client.annotation.DefaultLineLabel$InternalFont.getStyle","org.pepstock.charba.client.annotation.DefaultLineLabel$InternalFont.<clinit>"]
-}
-

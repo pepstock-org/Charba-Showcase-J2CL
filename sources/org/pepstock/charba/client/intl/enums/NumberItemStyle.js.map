@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NumberItemStyle.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAyBY,e;;CAAA,W;EAAAA,Q;EAAAA;OAYU,+DAZVA,C;;;QAmBH,gD,8DAAuBC,K;EAAvBC,sC;EAAAA,wI;EAAAA,iB;;;CAAA,qG,8DAAuBD,K;EAAvBE,qC;EAAAA,2C;EAAAA,mE;EACPA,6E;;;CASa,S;EACbC,4E;;;QA9BU,2B;EAAAC,0B;EAAAA;GAAAA,sJAAAA;G;EAAAA,uI;;;QAAA,U;EAAAC,0B;EAAAA,kQ;;;QAEX,oE;EAAAC,2H;;;QAIA,uE;EAAAA,8H;;;QANW,O;EAAAC,kC;EAAAA,+B;EAAAA,e;EAEXA,8R;EAIAA,uS;EANWA,kG;;;;;;;;;;;;;AAAA;uF;AAAA;0F;AAAA;2F;AAEX;4F;AAIA;;",
-"sources":["NumberItemStyle.java"],
-"names":["org.pepstock.charba.client.intl.enums.NumberItemStyle.<synthetic: ctor_js>","value","org.pepstock.charba.client.intl.enums.NumberItemStyle.<synthetic: ctor_create>","org.pepstock.charba.client.intl.enums.NumberItemStyle.<init>","org.pepstock.charba.client.intl.enums.NumberItemStyle.value","org.pepstock.charba.client.intl.enums.NumberItemStyle.valueOf","org.pepstock.charba.client.intl.enums.NumberItemStyle.values","org.pepstock.charba.client.intl.enums.NumberItemStyle.<synthetic: getter>","org.pepstock.charba.client.intl.enums.NumberItemStyle.<clinit>"]
-}
-

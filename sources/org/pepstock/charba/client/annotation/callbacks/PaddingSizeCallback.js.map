@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PaddingSizeCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MA8BiB,mB;;QAAA,M;EAAAA,8B;EAAAA,8B;;;QAAA,O;EAAAC,sC;EAAAA;",
-"sources":["PaddingSizeCallback.java"],
-"names":["org.pepstock.charba.client.annotation.callbacks.PaddingSizeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.callbacks.PaddingSizeCallback.<clinit>"]
-}
-

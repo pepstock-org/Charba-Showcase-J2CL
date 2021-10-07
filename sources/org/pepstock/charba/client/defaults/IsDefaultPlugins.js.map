@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultPlugins.impl.java.js",
-"lineCount":21,
-"mappings":"A;;;;;;;;;;MAyBiB,gB;;CAQR,6B,gBAAiBA,Q;;CAQjB,8B,gBAAkBA,Q;;CAWU,+F,gBAAkBA,Q,yCAA0CC,O;;QA3BhF,O;EAAAC,mC;EAAAA;",
-"sources":["IsDefaultPlugins.java"],
-"names":["pluginId","factory","org.pepstock.charba.client.defaults.IsDefaultPlugins.<clinit>"]
-}
-

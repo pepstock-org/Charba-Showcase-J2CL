@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GlobalPlugins$InternalPlugins.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;MA4MsB,e;;CAAA,W;EAAAA,Q;;;QAEpB,wD,UAA6BC,Y;EAA7BC,0B;EAAAA,sC;EAAAA,iJ;EAAAA,iB;;;CAAA,wH,UAA6BD,Y;EAC5BE,oI;;;CAQS,8C;EACTC,wB;;;CASY,uF,YAAWC,Q;EACvBC,yE;;;QAtBmB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
-"sources":["GlobalPlugins.java"],
-"names":["org.pepstock.charba.client.plugins.GlobalPlugins$InternalPlugins.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.plugins.GlobalPlugins$InternalPlugins.<synthetic: ctor_create>","org.pepstock.charba.client.plugins.GlobalPlugins$InternalPlugins.<init>","org.pepstock.charba.client.plugins.GlobalPlugins$InternalPlugins.ids","pluginId","org.pepstock.charba.client.plugins.GlobalPlugins$InternalPlugins.plugin","org.pepstock.charba.client.plugins.GlobalPlugins$InternalPlugins.<clinit>"]
-}
-

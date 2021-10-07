@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Zoom.impl.java.js",
-"lineCount":115,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MA+BmB,I;;CAAA,W;EAAAA,Q;EAAAA;OAiDU,uDAjDVA,C;EAAAA;OAmDE,8CAnDFA,C;EAAAA;OAqDC,6CArDDA,C;EAAAA;OAuDE,8CAvDFA,C;;;QA+DlB,uG,sBAAmBC,c,WAA6BC,Y;EAAhDC,e;EAAAA,2B;EAAAA,oL;EAAAA,iB;;;CAAA,2I,sBAAmBF,c,WAA6BC,Y;EAC/CE,qI;EAGAA,2L;EAEAA,4gB;EACAA,sgB;EACAA,4gB;;;CAS0B,0D;EAC1BC,oE;;;CASyC,iE;EACzCC,oF;;;CAS0C,mE;EAC1CC,qF;;;CASyC,kE;EACzCC,oF;;;CASsC,+D;EACtCC,iF;;;CASY,Y;EACZC,2D;;;CASW,W;EACXC,0D;;;CASY,Y;EACZC,2D;;;QAvJiB,O;EAAAC,uB;EAAAA,oB;EAAAA,oC;EAAAA,qC;EAGlBA,oR;EAEAA,gS;EAEAA,6R;EAEAA,oR;;;;;;;;;;;;;;;;;AATkB;KAG6C,uEAH7C,C;AAAA;KAK8C,wEAL9C,C;AAAA;KAO6C,uEAP7C,C;AAAA;KAS0C,oEAT1C;",
-"sources":["Zoom.java"],
-"names":["org.pepstock.charba.client.zoom.Zoom.<synthetic: ctor_js>","defaultOptions","nativeObject","org.pepstock.charba.client.zoom.Zoom.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Zoom.<init>","org.pepstock.charba.client.zoom.Zoom.getDefaultsOptions","org.pepstock.charba.client.zoom.Zoom.getProgessPropertyHandler","org.pepstock.charba.client.zoom.Zoom.getCompletedPropertyHandler","org.pepstock.charba.client.zoom.Zoom.getRejectedPropertyHandler","org.pepstock.charba.client.zoom.Zoom.getStartPropertyHandler","org.pepstock.charba.client.zoom.Zoom.getWheel","org.pepstock.charba.client.zoom.Zoom.getDrag","org.pepstock.charba.client.zoom.Zoom.getPinch","org.pepstock.charba.client.zoom.Zoom.<clinit>"]
-}
-

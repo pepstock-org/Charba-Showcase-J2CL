@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartHover.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;MAwBmB,iB;;CAAA,W;EAAAA,Q;;;QAOX,iE,6BAAuCC,K;EAAvCC,4B;EAAAA,wC;EAAAA,8I;EAAAA,iB;;;CAAA,4H,6BAAuCD,K;EAC7CE,+I;;;QARiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
-"sources":["DefaultChartHover.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartHover.<synthetic: ctor_js>","hover","org.pepstock.charba.client.defaults.chart.DefaultChartHover.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartHover.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartHover.<clinit>"]
-}
-

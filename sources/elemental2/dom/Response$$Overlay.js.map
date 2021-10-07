@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Response$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MA4Ba,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["Response.java"],
-"names":["elemental2.dom.Response$$Overlay.<clinit>"]
-}
-

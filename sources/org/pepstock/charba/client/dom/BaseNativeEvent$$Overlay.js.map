@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseNativeEvent$$Overlay.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;MAgCmB,Q;;QA8KJ,+D;EAAAA,mB;EAEbA,IAAgBC,MAAhBD,mB;EAEAA;GAECA,IAAgBE,OAAhBF,2EAFDA;GAICA,IAAYG,aAAZH,yKAJDA;GAMCA,uLANDA;G;EAUAA,wB;;;QASa,+D;EAAAI,mB;EAEbA,IAAgBH,MAAhBG,mB;EAEAA;GAECA,IAAgBF,OAAhBE,2EAFDA;GAICA,IAAYD,aAAZC,yKAJDA;GAMCA,oLANDA;G;EAUAA,wB;;;QAUmB,2H,0CAAiCC,Q;EAEpDC;GAECA,iCAFDA;G;EAKAA,gC;;;QApOiB,O;EAAAC,2B;EAAAA;",
-"sources":["BaseNativeEvent.java"],
-"names":["org.pepstock.charba.client.dom.BaseNativeEvent$$Overlay.getX__$devirt","target","element","scrollElement","org.pepstock.charba.client.dom.BaseNativeEvent$$Overlay.getY__$devirt","document","org.pepstock.charba.client.dom.BaseNativeEvent$$Overlay.getScrollingElement__$devirt","org.pepstock.charba.client.dom.BaseNativeEvent$$Overlay.<clinit>"]
-}
-

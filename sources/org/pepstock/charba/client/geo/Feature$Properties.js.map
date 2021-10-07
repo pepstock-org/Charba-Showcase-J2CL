@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Feature$Properties.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;MA6PsB,U;;CAAA,W;EAAAA,Q;;;QAOZ,wD,UAAwBC,Y;EAAxBC,qB;EAAAA,iC;EAAAA,kI;EAAAA,iB;;;CAAA,yG,UAAwBD,Y;EAC/BE,oI;;;CASe,0G,YAAgBC,G;EAC/BC,+D;;;CAQiB,0E;EACjBC,uB;;;CASkB,8G,YAAoBF,G;EACtCG,gE;;;CAUc,uH,YAAqBH,G,gBAAYI,Y;EAC/CC,0F;;;CAUc,iI,YAAqBL,G,iBAAYI,Y;EAC/CC,oG;;;QA3DmB,O;EAAAC,6B;EAAAA,0B;EAAAA;",
-"sources":["Feature.java"],
-"names":["org.pepstock.charba.client.geo.Feature$Properties.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.Feature$Properties.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Feature$Properties.<init>","key","org.pepstock.charba.client.geo.Feature$Properties.hasProperty","org.pepstock.charba.client.geo.Feature$Properties.getPropertiesKeys","org.pepstock.charba.client.geo.Feature$Properties.getPropertyType","defaultValue","org.pepstock.charba.client.geo.Feature$Properties.getPropertyValue","org.pepstock.charba.client.geo.Feature$Properties.<clinit>"]
-}
-

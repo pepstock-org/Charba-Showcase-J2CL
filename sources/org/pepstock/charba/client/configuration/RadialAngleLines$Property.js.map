@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RadialAngleLines$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAwDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,4EALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,qJ;EAAAA,iB;;;CAAA,kH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,0F;;;CASa,S;EACbC,yF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,qJAAAA;G;EAAAA,6I;;;QAAA,U;EAAAC,mB;EAAAA,mK;;;QAEZ,qF;EAAAC,8H;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,kT;EAFYA,wG;;;;;;;;;;;;;AAAA;iG;AAAA;iG;AAEZ;;",
-"sources":["RadialAngleLines.java"],
-"names":["org.pepstock.charba.client.configuration.RadialAngleLines$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.RadialAngleLines$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.RadialAngleLines$Property.<init>","org.pepstock.charba.client.configuration.RadialAngleLines$Property.value","org.pepstock.charba.client.configuration.RadialAngleLines$Property.valueOf","org.pepstock.charba.client.configuration.RadialAngleLines$Property.values","org.pepstock.charba.client.configuration.RadialAngleLines$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.RadialAngleLines$Property.<clinit>"]
-}
-

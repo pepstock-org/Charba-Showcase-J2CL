@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Star.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;MAuCM,I;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,kE;;;CAQU,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAC7FC,6J;EAEAA,yH;EAEAA,e;;;QAbI,O;EAAAC,uB;EAAAA,oB;EAAAA;",
-"sources":["Star.java"],
-"names":["org.pepstock.charba.client.colors.tiles.Star.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Star.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Star.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Star.drawTile","org.pepstock.charba.client.colors.tiles.Star.<clinit>"]
-}
-

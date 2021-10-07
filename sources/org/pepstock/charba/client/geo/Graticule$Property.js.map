@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Graticule$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAuCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,2DANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,oI;EAAAA,iB;;;CAAA,iG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,yE;;;CASa,S;EACbC,wE;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,oIAAAA;G;EAAAA,4H;;;QAAA,U;EAAAC,mB;EAAAA,iO;;;QAEZ,mE;EAAAC,4G;;;QACA,mE;EAAAA,4G;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,4Q;EACAA,4Q;EAHYA,uF;;;;;;;;;;;;;AAAA;+E;AAAA;+E;AAAA;gF;AAEZ;oF;AACA;;",
-"sources":["Graticule.java"],
-"names":["org.pepstock.charba.client.geo.Graticule$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.Graticule$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Graticule$Property.<init>","org.pepstock.charba.client.geo.Graticule$Property.value","org.pepstock.charba.client.geo.Graticule$Property.valueOf","org.pepstock.charba.client.geo.Graticule$Property.values","org.pepstock.charba.client.geo.Graticule$Property.<synthetic: getter>","org.pepstock.charba.client.geo.Graticule$Property.<clinit>"]
-}
-

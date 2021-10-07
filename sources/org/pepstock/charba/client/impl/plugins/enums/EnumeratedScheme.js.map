@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"EnumeratedScheme.impl.java.js",
-"lineCount":99,
-"mappings":"A;;;;;;;;;;;;;;;;MA+BY,gB;;CAAA,W;EAAAA,Q;EAAAA;OAEU,2EAFVA,C;EAAAA;OAIU,wEAJVA,C;EAAAA;OAMY,kFANZA,C;EAAAA;OAQiB,yEARjBA,C;;;;QAiBX,qE,gBAAwBC,Q,iBAAiBC,K,wBAAiBC,e;EAA1DC,2B;EAAAA,uC;EAAAA,gL;EAAAA,iB;;;;CAAA,mI,gBAAwBH,Q,iBAAiBC,K,wBAAiBC,e;EAA1DE,iC;EAAAA,iF;EACCA,4F;EACAA,sF;EACAA,0G;;;;QASD,2C,gBAAwBJ,Q,iBAAiBC,K;EAAzCE,2B;EAAAA,uC;EAAAA,qI;EAAAA,iB;;;;CAAA,yG,gBAAwBH,Q,iBAAiBC,K;EAAzCG,iC;EAAAA,iF;EACCA,4F;EACAA,sF;EACAA,+F;;;CAQI,0E,sBAAqBC,S;EAEzBC;GAGCA,iGAHDA;G;;;CAaa,S;EACbC,qF;;;CASa,Y;EACbC,wF;;;CASoB,a;EAEpBC;GAICA;IAAAA,IAAYC,KAAZD,kBAAAA;;KAECA,kIAFDA;;IAJDA;G;EAUAA,mK;;;CAvFU,yE;EAQXL,4I;;;QARW,O;EAAAO,mC;EAAAA,gC;EAAAA,qB;EAAAA;",
-"sources":["EnumeratedScheme.java"],
-"names":["org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.<synthetic: ctor_js>","category","value","colorsAsStrings","org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.<init>","newColors","org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.addAll","org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.value","org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.category","org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.getColors","color","org.pepstock.charba.client.impl.plugins.enums.EnumeratedScheme.<clinit>"]
-}
-

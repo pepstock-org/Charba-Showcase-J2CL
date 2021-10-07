@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointStyleHandler.impl.java.js",
-"lineCount":75,
-"mappings":"A;;;;;;;;;;;;;;;;;MAkCY,iB;;CAAA,W;EAAAA,Q;;;QAwCX,yK,qBAA+BC,M,oCAAmCC,a,WAA4BC,Y;EAA9FC,4B;EAAAA,wC;EAAAA,6Q;EAAAA,iB;;;CAAA,6N,qBAA+BH,M,oCAAmCC,a,WAA4BC,Y;EAC7FE,wN;;;CAQI,mG,mBAAyBC,U;EAE7BC,iN;;;CAQI,mG,yBAAkBD,U;EACtBC,sN;;;CAQI,sG,0BAAqBD,U;EACzBC,yN;;;CAQc,4D;EACdC,+O;;;CAQU,wD;EAEVC;GACCA,4bADDA;G;EAKAA,yI;;;CAUG,+D;EAEHC;GACCA,6UADDA;G;EAKAA,oW;;;CAUM,gE;EAENC;GACCA,iVADDA;G;EAKAA,sW;;;QA/HU,O;EAAAC,oC;EAAAA,iC;EAAAA;",
-"sources":["PointStyleHandler.java"],
-"names":["org.pepstock.charba.client.options.PointStyleHandler.<synthetic: ctor_js>","parent","defaultValues","nativeObject","org.pepstock.charba.client.options.PointStyleHandler.<synthetic: ctor_create>","org.pepstock.charba.client.options.PointStyleHandler.<init>","pointStyle","org.pepstock.charba.client.options.PointStyleHandler.setPointStyle","org.pepstock.charba.client.options.PointStyleHandler.getPointStyleType","org.pepstock.charba.client.options.PointStyleHandler.getPointStyle","org.pepstock.charba.client.options.PointStyleHandler.getPointStyleAsImage","org.pepstock.charba.client.options.PointStyleHandler.getPointStyleAsCanvas","org.pepstock.charba.client.options.PointStyleHandler.<clinit>"]
-}
-

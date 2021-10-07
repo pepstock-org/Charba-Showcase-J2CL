@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Projection.impl.java.js",
-"lineCount":206,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,U;;CAAA,W;EAAAA,Q;EAAAA;OAgEU,yDAhEVA,C;;;QAuEH,gD,8DAAkBC,K;EAAlBC,iC;EAAAA,kI;EAAAA,iB;;;CAAA,+F,8DAAkBD,K;EAAlBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uE;;;CASa,S;EACbC,sE;;;QAlFU,2B;EAAAC,qB;EAAAA;GAAAA,sIAAAA;G;EAAAA,4H;;;QAAA,U;EAAAC,qB;EAAAA,4yC;;;QAEX,2E;EAAAC,wH;;;QAIA,4E;EAAAA,yH;;;QAIA,+D;EAAAA,4G;;;QAIA,mE;EAAAA,gH;;;QAIA,oE;EAAAA,iH;;;QAIA,kE;EAAAA,+G;;;QAIA,6D;EAAAA,0G;;;QAIA,iE;EAAAA,8G;;;QAIA,sE;EAAAA,mH;;;QAIA,uE;EAAAA,oH;;;QAIA,wE;EAAAA,qH;;;QAIA,sE;EAAAA,mH;;;QAIA,+D;EAAAA,4G;;;QAIA,0E;EAAAA,uH;;;QAIA,qE;EAAAA,kH;;;QA1DW,O;EAAAC,6B;EAAAA,0B;EAAAA,e;EAEXA,qT;EAIAA,0T;EAIAA,uQ;EAIAA,uR;EAIAA,2R;EAIAA,kR;EAIAA,+P;EAIAA,8Q;EAIAA,kS;EAIAA,qS;EAIAA,0S;EAIAA,mS;EAIAA,uQ;EAIAA,kT;EAIAA,8R;EA1DWA,uF;;;;;;;;;;;;;AAAA;yF;AAAA;0F;AAAA;6E;AAAA;iF;AAAA;kF;AAAA;gF;AAAA;2E;AAAA;+E;AAAA;oF;AAAA;qF;AAAA;sF;AAAA;oF;AAAA;6E;AAAA;wF;AAAA;mF;AAAA;gF;AAEX;8F;AAIA;+F;AAIA;kF;AAIA;sF;AAIA;uF;AAIA;qF;AAIA;gF;AAIA;oF;AAIA;yF;AAIA;0F;AAIA;4F;AAIA;0F;AAIA;mF;AAIA;8F;AAIA;;",
-"sources":["Projection.java"],
-"names":["org.pepstock.charba.client.geo.enums.Projection.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.enums.Projection.<synthetic: ctor_create>","org.pepstock.charba.client.geo.enums.Projection.<init>","org.pepstock.charba.client.geo.enums.Projection.value","org.pepstock.charba.client.geo.enums.Projection.valueOf","org.pepstock.charba.client.geo.enums.Projection.values","org.pepstock.charba.client.geo.enums.Projection.<synthetic: getter>","org.pepstock.charba.client.geo.enums.Projection.<clinit>"]
-}
-

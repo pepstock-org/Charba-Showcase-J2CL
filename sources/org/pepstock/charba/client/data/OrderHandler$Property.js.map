@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"OrderHandler$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAmCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,+DALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,wI;EAAAA,iB;;;CAAA,qG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,6E;;;CASa,S;EACbC,4E;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,wIAAAA;G;EAAAA,gI;;;QAAA,U;EAAAC,mB;EAAAA,gJ;;;QAEZ,kE;EAAAC,2G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,iQ;EAFYA,2F;;;;;;;;;;;;;AAAA;8E;AAAA;oF;AAEZ;;",
-"sources":["OrderHandler.java"],
-"names":["org.pepstock.charba.client.data.OrderHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.OrderHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.data.OrderHandler$Property.<init>","org.pepstock.charba.client.data.OrderHandler$Property.value","org.pepstock.charba.client.data.OrderHandler$Property.valueOf","org.pepstock.charba.client.data.OrderHandler$Property.values","org.pepstock.charba.client.data.OrderHandler$Property.<synthetic: getter>","org.pepstock.charba.client.data.OrderHandler$Property.<clinit>"]
-}
-

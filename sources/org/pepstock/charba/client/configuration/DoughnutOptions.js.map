@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DoughnutOptions.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;MA0Ba,e;;CAAA,W;EAAAA,Q;;;QAUL,uG,gBAAwBC,K,gCAA8BC,a;EAAtDC,0B;EAAAA,sC;EAAAA,gM;EAAAA,iB;;;CAAA,+J,gBAAwBF,K,gCAA8BC,a;EAC5DE,8L;;;CASa,uB;EAEbC,IAAOC,KAAPD,mC;EAGAA;GACCA,8GADDA;G;EAIAA,a;;;QA7BW,O;EAAAE,kC;EAAAA,+B;EAAAA,6B;;;;;;;;;;;AAEZ;gBAA4B,sFAA5B;",
-"sources":["DoughnutOptions.java"],
-"names":["org.pepstock.charba.client.configuration.DoughnutOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.DoughnutOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.DoughnutOptions.<init>","org.pepstock.charba.client.configuration.DoughnutOptions.getCutoutPercentage","value","org.pepstock.charba.client.configuration.DoughnutOptions.<clinit>"]
-}
-

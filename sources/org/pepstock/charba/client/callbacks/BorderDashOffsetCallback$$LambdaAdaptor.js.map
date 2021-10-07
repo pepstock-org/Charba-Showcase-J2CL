@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BorderDashOffsetCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0F;EAAAA,wK;;;CAAA,8J;EAAAC,iC;EAAAA,6F;;;CAAA,2D;EAAAC,0C;EAAAA,8H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["BorderDashOffsetCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.BorderDashOffsetCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.BorderDashOffsetCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.BorderDashOffsetCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.BorderDashOffsetCallback$$LambdaAdaptor.<clinit>"]
-}
-

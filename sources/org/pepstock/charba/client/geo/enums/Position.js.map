@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Position.impl.java.js",
-"lineCount":143,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,Q;;CAAA,W;EAAAA,Q;EAAAA;OAoCU,uDApCVA,C;;;QA2CH,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gI;EAAAA,iB;;;CAAA,6F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qE;;;CASa,S;EACbC,oE;;;QAtDU,2B;EAAAC,mB;EAAAA;GAAAA,gIAAAA;G;EAAAA,wH;;;QAAA,U;EAAAC,mB;EAAAA,2oB;;;QAEX,wD;EAAAC,iG;;;QAIA,yD;EAAAA,kG;;;QAIA,2D;EAAAA,oG;;;QAIA,0D;EAAAA,mG;;;QAIA,6D;EAAAA,sG;;;QAIA,8D;EAAAA,uG;;;QAIA,gE;EAAAA,yG;;;QAIA,iE;EAAAA,0G;;;QA9BW,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEXA,yO;EAIAA,6O;EAIAA,qP;EAIAA,iP;EAIAA,6P;EAIAA,iQ;EAIAA,yQ;EAIAA,6Q;EA9BWA,mF;;;;;;;;;;;;;AAAA;oE;AAAA;qE;AAAA;uE;AAAA;sE;AAAA;yE;AAAA;0E;AAAA;4E;AAAA;6E;AAAA;4E;AAEX;yE;AAIA;0E;AAIA;4E;AAIA;2E;AAIA;8E;AAIA;+E;AAIA;iF;AAIA;;",
-"sources":["Position.java"],
-"names":["org.pepstock.charba.client.geo.enums.Position.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.enums.Position.<synthetic: ctor_create>","org.pepstock.charba.client.geo.enums.Position.<init>","org.pepstock.charba.client.geo.enums.Position.value","org.pepstock.charba.client.geo.enums.Position.valueOf","org.pepstock.charba.client.geo.enums.Position.values","org.pepstock.charba.client.geo.enums.Position.<synthetic: getter>","org.pepstock.charba.client.geo.enums.Position.<clinit>"]
-}
-

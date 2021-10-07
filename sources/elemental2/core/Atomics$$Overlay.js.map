@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Atomics$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MAqBa,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["Atomics.java"],
-"names":["elemental2.core.Atomics$$Overlay.<clinit>"]
-}
-

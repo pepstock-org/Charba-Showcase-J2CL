@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsArea.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;MAsBiB,M;;QAQD,uD,eAAoBA,I;EAApBC,iB;EAEdA;GAECA,IAAcC,CAAdD,+HAFDA;GAICA,IAAcE,CAAdF,gIAJDA;GAKCA,cALDA;G;EASAA,a;;;CAQM,U;;CAOA,Y;;CAOA,a;;CAOA,W;;CAOQ,Y;;CASA,a;;QATA,6D;EAAAG,iB;EACdA,wD;;;QAQc,8D;EAAAC,iB;EACdA,wD;;;QAjEe,O;EAAAC,yB;EAAAA;",
-"sources":["IsArea.java"],
-"names":["area","org.pepstock.charba.client.items.IsArea.isConsistent","x","y","org.pepstock.charba.client.items.IsArea.getWidth__$default","org.pepstock.charba.client.items.IsArea.getHeight__$default","org.pepstock.charba.client.items.IsArea.<clinit>"]
-}
-

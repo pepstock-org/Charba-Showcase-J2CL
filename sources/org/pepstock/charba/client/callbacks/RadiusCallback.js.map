@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RadiusCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;QAAA,M;EAAAA,yB;EAAAA,gE;;;QAAA,O;EAAAC,iC;EAAAA;",
-"sources":["RadiusCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.RadiusCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.RadiusCallback.<clinit>"]
-}
-

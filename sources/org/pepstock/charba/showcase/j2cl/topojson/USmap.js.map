@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"USmap.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;MAIa,K;;CAAA,W;EAAAA,Q;;;QAwHL,S;EAAAC,gB;EAAAA,4B;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EACNC,0P;;;QAzHW,O;EAAAC,wB;EAAAA,qB;EAAAA,qC;EAIZA,22iH;;;;;;;;;;;;AAFA;MAAoB,sDAApB,W;AAFY;MAIkB,4DAJlB;",
-"sources":["USmap.java"],
-"names":["org.pepstock.charba.showcase.j2cl.topojson.USmap.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.topojson.USmap.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.topojson.USmap.<init>","org.pepstock.charba.showcase.j2cl.topojson.USmap.<clinit>"]
-}
-

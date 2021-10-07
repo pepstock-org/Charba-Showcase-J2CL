@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Bounds.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,M;;CAAA,W;EAAAA,Q;EAAAA;OAYU,iDAZVA,C;;;QAmBH,gD,8DAAcC,K;EAAdC,6B;EAAAA,0H;EAAAA,iB;;;CAAA,uF,8DAAcD,K;EAAdE,qC;EAAAA,2C;EAAAA,mE;EACPA,+D;;;CASa,S;EACbC,8D;;;QA9BU,2B;EAAAC,iB;EAAAA;GAAAA,sHAAAA;G;EAAAA,gH;;;QAAA,U;EAAAC,iB;EAAAA,0L;;;QAEX,mD;EAAAC,wF;;;QAIA,oD;EAAAA,yF;;;QANW,O;EAAAC,yB;EAAAA,sB;EAAAA,e;EAEXA,2N;EAIAA,+N;EANWA,2E;;;;;;;;;;;;;AAAA;6D;AAAA;8D;AAAA;oE;AAEX;kE;AAIA;;",
-"sources":["Bounds.java"],
-"names":["org.pepstock.charba.client.enums.Bounds.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.Bounds.<synthetic: ctor_create>","org.pepstock.charba.client.enums.Bounds.<init>","org.pepstock.charba.client.enums.Bounds.value","org.pepstock.charba.client.enums.Bounds.valueOf","org.pepstock.charba.client.enums.Bounds.values","org.pepstock.charba.client.enums.Bounds.<synthetic: getter>","org.pepstock.charba.client.enums.Bounds.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextAlign.impl.java.js",
-"lineCount":146,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,S;;CAAA,W;EAAAA,Q;EAAAA;OAwBU,oDAxBVA,C;EAAAA;OA0BU,6DA1BVA,C;EAAAA;OA4BU,4DA5BVA,C;;;;QAoCH,gD,8DAAiBC,K;EAAjBC,gC;EAAAA,6H;EAAAA,iB;;;;CAAA,0F,8DAAiBD,K;EAAjBE,qC;EAAAA,2C;EACPA,wK;;;;QAUO,oF,8DAAiBF,K,iBAAcG,c,iBAAuBC,a;EAAtDH,gC;EAAAA,gM;EAAAA,iB;;;;CAAA,8H,8DAAiBD,K,iBAAcG,c,iBAAuBC,a;EAAtDF,qC;EAAAA,2C;EAAAA,mE;EACPA,kE;EACAA,oI;EACAA,iI;;;CASa,S;EACbG,iE;;;CAQa,qB;EACbC,0E;;;CAQa,oB;EACbC,yE;;;QA9EU,2B;EAAAC,oB;EAAAA;GAAAA,+HAAAA;G;EAAAA,sH;;;QAAA,U;EAAAC,oB;EAAAA,0Z;;;QAEX,wD;EAAAC,mG;;;QAIA,qD;EAAAA,gG;;;QAIA,sD;EAAAA,iG;;;QAIA,uD;EAAAA,kG;;;QAIA,uD;EAAAA,kG;;;QAlBW,O;EAAAC,4B;EAAAA,yB;EAAAA,e;EAEXA,kP;EAIAA,yR;EAIAA,6R;EAIAA,+R;EAIAA,gS;EAlBWA,iF;;;;;;;;;;;;;AAAA;qE;AAAA;kE;AAAA;mE;AAAA;oE;AAAA;oE;AAAA;0E;AAEX;0E;AAIA;uE;AAIA;wE;AAIA;yE;AAIA;;",
-"sources":["TextAlign.java"],
-"names":["org.pepstock.charba.client.enums.TextAlign.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.TextAlign.<synthetic: ctor_create>","org.pepstock.charba.client.enums.TextAlign.<init>","leftRightValue","startEndValue","org.pepstock.charba.client.enums.TextAlign.value","org.pepstock.charba.client.enums.TextAlign.getLeftRightValue","org.pepstock.charba.client.enums.TextAlign.getStartEndValue","org.pepstock.charba.client.enums.TextAlign.valueOf","org.pepstock.charba.client.enums.TextAlign.values","org.pepstock.charba.client.enums.TextAlign.<synthetic: getter>","org.pepstock.charba.client.enums.TextAlign.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractPluginOptionsFactory.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;;;;;;MAyBsB,4B;;CAAA,W;EAAAA,Q;EAAAA;OAGA,4EAHAA,C;;;CAUX,wF,gBAAoCC,Q;EAApCC,iC;EAETA,oD;EAEAA,6F;;;CAQmB,e;EACnBC,yF;;;CAUiB,+G,UAAoBC,Y,0BAA+BC,a;;CAWjB,kJ,yBAA2CC,e,yCAAiDC,O;EAE/IC;GAECA;IAECA,mNAFDA;;IAMCA,sJANDA;IAFDA;G;EAaAA,Y;;;QA3DoB,O;EAAAC,+C;EAAAA,4C;EAAAA;",
-"sources":["AbstractPluginOptionsFactory.java"],
-"names":["org.pepstock.charba.client.plugins.AbstractPluginOptionsFactory.<synthetic: ctor_js>","pluginId","org.pepstock.charba.client.plugins.AbstractPluginOptionsFactory.<init>","org.pepstock.charba.client.plugins.AbstractPluginOptionsFactory.getPluginId","nativeObject","defaultValues","defaultsPlugins","factory","org.pepstock.charba.client.plugins.AbstractPluginOptionsFactory.loadDefaultsPluginOptions","org.pepstock.charba.client.plugins.AbstractPluginOptionsFactory.<clinit>"]
-}
-

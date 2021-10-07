@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Merger$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MA6Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,4DALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,qI;EAAAA,iB;;;CAAA,kG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,0E;;;CASa,S;EACbC,yE;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,qIAAAA;G;EAAAA,6H;;;QAAA,U;EAAAC,mB;EAAAA,8I;;;QAEZ,gE;EAAAC,yG;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+P;EAFYA,wF;;;;;;;;;;;;;AAAA;4E;AAAA;iF;AAEZ;;",
-"sources":["Merger.java"],
-"names":["org.pepstock.charba.client.commons.Merger$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.commons.Merger$Property.<synthetic: ctor_create>","org.pepstock.charba.client.commons.Merger$Property.<init>","org.pepstock.charba.client.commons.Merger$Property.value","org.pepstock.charba.client.commons.Merger$Property.valueOf","org.pepstock.charba.client.commons.Merger$Property.values","org.pepstock.charba.client.commons.Merger$Property.<synthetic: getter>","org.pepstock.charba.client.commons.Merger$Property.<clinit>"]
-}
-

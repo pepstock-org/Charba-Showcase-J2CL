@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartResizeEventCase$1.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;;;;;;;;MAqEiD,E;;CAAA,W;EAAAA,Q;EAAAA;0F;;;QAAA,4E;EAAAC,a;EAAAA,yB;EAAAA,yK;EAAAA,iB;;;CAAA,iJ;EAAAC,sG;EAAAA,iC;;;CAGlC,8D,yBAA0BC,K;EACrCC,+T;;;QAJ6C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ChartResizeEventCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase$1.onResize","org.pepstock.charba.showcase.j2cl.cases.charts.ChartResizeEventCase$1.<clinit>"]
-}
-

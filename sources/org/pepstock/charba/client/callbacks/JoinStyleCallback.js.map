@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JoinStyleCallback.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,iB;;QAAA,M;EAAAA,4B;EAAAA,gE;;;QAAA,O;EAAAC,oC;EAAAA;",
-"sources":["JoinStyleCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.JoinStyleCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.JoinStyleCallback.<clinit>"]
-}
-

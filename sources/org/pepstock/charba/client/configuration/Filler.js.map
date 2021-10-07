@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Filler.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;MA0Ba,M;;CAAA,W;EAAAA,Q;;;QAOZ,sE,6BAA4BC,O;EAA5BC,iB;EAAAA,6B;EAAAA,yI;EAAAA,iB;;;CAAA,qH,6BAA4BD,O;EAC3BE,2J;;;CAQW,uB,gBAAqBC,S;EAChCC,+E;;;CAQc,e;EACdC,qE;;;CAQW,wD,iBAAqBC,Q;EAChCC,+G;;;CAQe,e;EACfC,qE;;;QA5CW,O;EAAAC,yB;EAAAA,sB;EAAAA;",
-"sources":["Filler.java"],
-"names":["org.pepstock.charba.client.configuration.Filler.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Filler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Filler.<init>","propagate","org.pepstock.charba.client.configuration.Filler.setPropagate","org.pepstock.charba.client.configuration.Filler.isPropagate","drawTime","org.pepstock.charba.client.configuration.Filler.setDrawTime","org.pepstock.charba.client.configuration.Filler.getDrawTime","org.pepstock.charba.client.configuration.Filler.<clinit>"]
-}
-

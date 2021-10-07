@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MiscellaneousView$PluginsCase$4.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAoSgE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,6F;EAAAA,iB;;;CAAA,gF;EAAAC,iC;;;CACxC,U;EACpBC,uC;;;QAF4D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["MiscellaneousView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase$4.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase$4.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase$4.<init>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase$4.create","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$PluginsCase$4.<clinit>"]
-}
-

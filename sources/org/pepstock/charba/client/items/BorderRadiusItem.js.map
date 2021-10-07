@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BorderRadiusItem.impl.java.js",
-"lineCount":70,
-"mappings":"A;;;;;;;;;;MA6BmB,gB;;CAAA,W;EAAAA,Q;;;QA2ClB,iJ,qBAA8BC,M,aAAYC,Q,WAAuBC,Y;EAAjEC,2B;EAAAA,uC;EAAAA,6O;EAAAA,iB;;;CAAA,kM,qBAA8BH,M,aAAYC,Q,WAAuBC,Y;EAChEE,sO;;;CAQW,U,eAAQC,Y;EACnBC,qC;EACAA,wC;EACAA,sC;EACAA,yC;;;CAQW,iB,eAAeD,Y;EAC1BE,yM;;;CAQU,c;EACVC,8O;;;CAQW,kB,eAAgBH,Y;EAC3BI,0M;;;CAQU,e;EACVC,+O;;;CAQW,oB,eAAkBL,Y;EAC7BM,4M;;;CAQU,iB;EACVC,iP;;;CAQW,qB,eAAmBP,Y;EAC9BQ,6M;;;CAQU,kB;EACVC,kP;;;QAhIiB,O;EAAAC,mC;EAAAA,gC;EAAAA;",
-"sources":["BorderRadiusItem.java"],
-"names":["org.pepstock.charba.client.items.BorderRadiusItem.<synthetic: ctor_js>","parent","childKey","nativeObject","org.pepstock.charba.client.items.BorderRadiusItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.BorderRadiusItem.<init>","borderRadius","org.pepstock.charba.client.items.BorderRadiusItem.set","org.pepstock.charba.client.items.BorderRadiusItem.setTopLeft","org.pepstock.charba.client.items.BorderRadiusItem.getTopLeft","org.pepstock.charba.client.items.BorderRadiusItem.setTopRight","org.pepstock.charba.client.items.BorderRadiusItem.getTopRight","org.pepstock.charba.client.items.BorderRadiusItem.setBottomLeft","org.pepstock.charba.client.items.BorderRadiusItem.getBottomLeft","org.pepstock.charba.client.items.BorderRadiusItem.setBottomRight","org.pepstock.charba.client.items.BorderRadiusItem.getBottomRight","org.pepstock.charba.client.items.BorderRadiusItem.<clinit>"]
-}
-

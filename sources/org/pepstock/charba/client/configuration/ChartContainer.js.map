@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartContainer.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;;;MAwBe,c;;CAAA,W;EAAAA,Q;EAAAA;OAGQ,iEAHRA,C;;;CAUd,kG,gBAAuBC,K;EAAvBC,iC;EAECA,kE;EAEAA,+E;;;CAQoB,Y;EACpBC,8E;;;QAvBa,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["ChartContainer.java"],
-"names":["org.pepstock.charba.client.configuration.ChartContainer.<synthetic: ctor_js>","chart","org.pepstock.charba.client.configuration.ChartContainer.<init>","org.pepstock.charba.client.configuration.ChartContainer.getChart","org.pepstock.charba.client.configuration.ChartContainer.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StackedBarDataset.impl.java.js",
-"lineCount":121,
-"mappings":"A;;;;;;;;;;;;;;MA0Ba,iB;;CAAA,W;EAAAA,Q;EAAAA;OAGkB,qEAHlBA,C;;;;QASL,S;EAAAC,4B;EAAAA,wC;EAAAA,uE;EAAAA,iB;;;;CAAA,0D;EACNC,0I;;;;QASM,gB,gBAA0BC,M;EAA1BF,4B;EAAAA,wC;EAAAA,oF;EAAAA,iB;;;;CAAA,iE,gBAA0BE,M;EAChCD,2K;;;;QAQM,6D,yBAAmCE,a;EAAnCH,4B;EAAAA,wC;EAAAA,wI;EAAAA,iB;;;;CAAA,8G,yBAAmCG,a;EACzCF,+M;;;;QASM,sE,yBAAmCE,a,iBAAuBD,M;EAA1DF,4B;EAAAA,wC;EAAAA,yJ;EAAAA,iB;;;;CAAA,uH,yBAAmCG,a,iBAAuBD,M;EAChED,6I;EAEAA,kL;;;;QASS,iD,aAAuBG,I,iBAAcF,M;EAArCF,4B;EAAAA,wC;EAAAA,2H;EAAAA,iB;;;;CAAA,kG,aAAuBI,I,iBAAcF,M;EAC9CD,kL;;;;QAUS,uG,aAAuBG,I,0BAAuBD,a,iBAAuBD,M;EAArEF,4B;EAAAA,wC;EAAAA,gM;EAAAA,iB;;;;CAAA,wJ,aAAuBI,I,0BAAuBD,a,iBAAuBD,M;EAC9ED,oL;EAEAA,kL;;;CAS4B,sB;EAC5BI,kF;;;;CA1EW,iB;EAAAC,0G;;;;CAAA,iC;EAAAC,2H;;;QAAA,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;EAAAA;",
-"sources":["StackedBarDataset.java"],
-"names":["org.pepstock.charba.client.data.StackedBarDataset.<synthetic: ctor_js>","org.pepstock.charba.client.data.StackedBarDataset.<synthetic: ctor_create>","org.pepstock.charba.client.data.StackedBarDataset.<init>","hidden","defaultValues","type","org.pepstock.charba.client.data.StackedBarDataset.getBarStackHandler","org.pepstock.charba.client.data.StackedBarDataset.getStackGroup","org.pepstock.charba.client.data.StackedBarDataset.setStackGroup","org.pepstock.charba.client.data.StackedBarDataset.<clinit>"]
-}
-

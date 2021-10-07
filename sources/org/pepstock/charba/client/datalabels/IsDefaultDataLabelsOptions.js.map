@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultDataLabelsOptions.impl.java.js",
-"lineCount":19,
-"mappings":"A;;;;;;;;;;;MAuBU,0B;;CAOO,a;;QAPP,O;EAAAA,6C;EAAAA,0C;EAAAA;",
-"sources":["IsDefaultDataLabelsOptions.java"],
-"names":["org.pepstock.charba.client.datalabels.IsDefaultDataLabelsOptions.<clinit>"]
-}
-

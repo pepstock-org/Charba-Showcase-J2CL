@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PositionPoint.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;MAyBmB,a;;CAAA,W;EAAAA,Q;;;;QAKX,S;EAAAC,wB;EAAAA,oC;EAAAA,kE;EAAAA,iB;;;;CAAA,qD;EACNC,iE;;;;QAQM,e,eAAqBC,C;EAArBF,wB;EAAAA,oC;EAAAA,yE;EAAAA,iB;;;;CAAA,2D,eAAqBE,C;EAC3BD,wE;;;;QASM,uB,eAAqBC,C,gBAAUC,C;EAA/BH,wB;EAAAA,oC;EAAAA,oF;EAAAA,iB;;;;CAAA,mE,eAAqBE,C,gBAAUC,C;EACrCF,mF;;;;QAQD,wD,UAA2BG,Y;EAA3BJ,wB;EAAAA,oC;EAAAA,6H;EAAAA,iB;;;;CAAA,oG,UAA2BI,Y;EAC1BH,4H;;;CAQY,mD;EACZI,kC;;;QA3CiB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["PositionPoint.java"],
-"names":["org.pepstock.charba.client.geo.PositionPoint.<synthetic: ctor_js>","org.pepstock.charba.client.geo.PositionPoint.<synthetic: ctor_create>","org.pepstock.charba.client.geo.PositionPoint.<init>","x","y","nativeObject","org.pepstock.charba.client.geo.PositionPoint.nativeObject","org.pepstock.charba.client.geo.PositionPoint.<clinit>"]
-}
-

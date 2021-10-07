@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RTCConfigurationRecord_$GetIceServersArrayUnionType$$Overlay.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;MA4BmB,Q;;QAE4C,sB,UAAUA,C;EAAVC,mB;EACzDA,uD;;;QAIkD,oG;EAAAC,mB;EAClDA,8D;;;QAI6B,uG;EAAAC,mB;EAC7BA,mF;;;QAI4C,8F;EAAAC,mB;EAC5CA,8D;;;QAlBa,O;EAAAC,2B;EAAAA;",
-"sources":["RTCConfigurationRecord_.java"],
-"names":["o","elemental2.dom.RTCConfigurationRecord_$GetIceServersArrayUnionType$$Overlay.of","elemental2.dom.RTCConfigurationRecord_$GetIceServersArrayUnionType$$Overlay.asIceServersFieldType__$devirt","elemental2.dom.RTCConfigurationRecord_$GetIceServersArrayUnionType$$Overlay.asRTCIceServerInterface___$devirt","elemental2.dom.RTCConfigurationRecord_$GetIceServersArrayUnionType$$Overlay.asUrlsFieldType__$devirt","elemental2.dom.RTCConfigurationRecord_$GetIceServersArrayUnionType$$Overlay.<clinit>"]
-}
-

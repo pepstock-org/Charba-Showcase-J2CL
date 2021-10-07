@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataItem.impl.java.js",
-"lineCount":121,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;MAoCmB,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKG,mDALHA,C;EAAAA;OAOS,iEAPTA,C;EAAAA;OASG,2DATHA,C;EAAAA;OAWM,0DAXNA,C;EAAAA;OAaK,sDAbLA,C;EAAAA;OAeS,0DAfTA,C;;;QAsBX,yB,UAAgBC,M;EAAhBC,mB;EAAAA,+B;EAAAA,qF;EAAAA,iB;;;CAAA,kE,UAAgBD,M;EAAhBE,iC;EAENA,IAAWC,IAAXD,yD;EAEAA;GAECA,6GAFDA;GAGCA,8EAHDA;GAICA,oKAJDA;GAKCA,uEALDA;GAMCA,4HANDA;GAOCA,uEAPDA;SAQOA;GAENA,0HAFMA;GAGNA,oRAHMA;GAINA,qJAJMA;GAKNA,uEALMA;GAMNA,2HANMA;GAONA,uEAPMA;SAQAA;GAENA,0HAFMA;GAGNA,8EAHMA;GAINA,iHAJMA;GAKNA,uEALMA;GAMNA,4HANMA;GAONA,uEAPMA;SAQAA;GAENA,0FAFMA;GAGNA,0HAHMA;GAINA,8EAJMA;GAKNA,+HALMA;GAMNA,4QANMA;GAONA,2HAPMA;;GAWNA,0HAXMA;GAYNA,8EAZMA;GAaNA,yIAbMA;GAcNA,uEAdMA;GAeNA,4HAfMA;GAgBNA,uEAhBMA;G;;;CAyBQ,e;EACfE,mE;;;CAQa,Y;EACbC,wG;;;CAQmB,0B;EACnBC,8E;;;CAQa,oB;EACbC,wE;;;CAQgB,uB;EAChBC,uE;;;CAWgD,kF,wCAAgDC,O;EAEhGC;GAECA,0IAFDA;G;EAKAA,Y;;;QAlIiB,O;EAAAC,2B;EAAAA,wB;EAAAA;",
-"sources":["DataItem.java"],
-"names":["org.pepstock.charba.client.items.DataItem.<synthetic: ctor_js>","object","org.pepstock.charba.client.items.DataItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.DataItem.<init>","type","org.pepstock.charba.client.items.DataItem.getDataType","org.pepstock.charba.client.items.DataItem.getValue","org.pepstock.charba.client.items.DataItem.getValueAsFloatingData","org.pepstock.charba.client.items.DataItem.getValueAsString","org.pepstock.charba.client.items.DataItem.getValueAsDataPoint","factory","org.pepstock.charba.client.items.DataItem.createDataPoint","org.pepstock.charba.client.items.DataItem.<clinit>"]
-}
-

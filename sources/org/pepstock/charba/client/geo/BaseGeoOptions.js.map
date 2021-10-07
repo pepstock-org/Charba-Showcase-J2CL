@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseGeoOptions.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA2Be,c;;CAAA,W;EAAAA,Q;;;CAQd,oJ,gBAAuBC,K,gCAA8BC,a;EACpDC,yM;;;CAQ6B,gD;;;CAjBhB,c;EAAAC,sG;;;;CAAA,c;EAAAC,sG;;;;CAAA,oB;EAAAC,4G;;;;CAAA,a;EAAAC,qG;;;;CAAA,mB;EAAAC,2G;;;;CAAA,iB;EAAAC,yG;;;;CAAA,0D;EAAAC,mJ;;;;CAAA,qB;EAAAA,8G;;;;CAAA,4D;EAAAC,qJ;;;;CAAA,4B;EAAAA,qH;;;;CAAA,2B;EAAAC,oH;;;;CAAA,4D;EAAAA,qJ;;;;CAAA,yB;EAAAC,kH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,wB;EAAAA;",
-"sources":["BaseGeoOptions.java"],
-"names":["org.pepstock.charba.client.geo.BaseGeoOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.geo.BaseGeoOptions.<init>","org.pepstock.charba.client.geo.BaseGeoOptions.getClipMap","org.pepstock.charba.client.geo.BaseGeoOptions.getOutline","org.pepstock.charba.client.geo.BaseGeoOptions.getShowGraticule","org.pepstock.charba.client.geo.BaseGeoOptions.isClipMap","org.pepstock.charba.client.geo.BaseGeoOptions.isShowGraticule","org.pepstock.charba.client.geo.BaseGeoOptions.isShowOutline","org.pepstock.charba.client.geo.BaseGeoOptions.setClipMap","org.pepstock.charba.client.geo.BaseGeoOptions.setOutline","org.pepstock.charba.client.geo.BaseGeoOptions.setShowGraticule","org.pepstock.charba.client.geo.BaseGeoOptions.setShowOutline","org.pepstock.charba.client.geo.BaseGeoOptions.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Segment.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;;;;MA4BmB,O;;CAAA,W;EAAAA,Q;;;QAUlB,0M,wBAAwBC,O,aAAaC,Q,0BAA2BC,a,WAA4BC,Y;EAA5FC,kB;EAAAA,8B;EAAAA,+S;EAAAA,iB;;;CAAA,oP,wBAAwBJ,O,aAAaC,Q,0BAA2BC,a,WAA4BC,Y;EAC3FE,0Q;;;QAXiB,O;EAAAC,0B;EAAAA,uB;EAAAA;",
-"sources":["Segment.java"],
-"names":["org.pepstock.charba.client.options.Segment.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Segment.<synthetic: ctor_create>","org.pepstock.charba.client.options.Segment.<init>","org.pepstock.charba.client.options.Segment.<clinit>"]
-}
-

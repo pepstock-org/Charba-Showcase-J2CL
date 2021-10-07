@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultFillHandler.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAwBiB,oB;;CAOT,W;;QAPS,M;EAAAA,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
-"sources":["IsDefaultFillHandler.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultFillHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.defaults.IsDefaultFillHandler.<clinit>"]
-}
-

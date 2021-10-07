@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FontContainer.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;;;;;;MA4BY,a;;CAAA,W;EAAAA,Q;EAAAA;OAmCQ,yDAnCRA,C;;;QA4CD,qK,qBAA2BC,M,gCAA+BC,a,WAA4BC,Y;EAAtFC,wB;EAAAA,oC;EAAAA,qQ;EAAAA,iB;;;CAAA,qN,qBAA2BH,M,gCAA+BC,a,WAA4BC,Y;EAC/FE,wN;EACAA,ylB;;;CAQI,kD;EACJC,sE;;;CAQI,mE,gBAAgBC,K;EACpBC,4K;;;CAQM,2D;EACNC,4R;;;QAzEU,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["FontContainer.java"],
-"names":["org.pepstock.charba.client.options.FontContainer.<synthetic: ctor_js>","parent","defaultValues","nativeObject","org.pepstock.charba.client.options.FontContainer.<synthetic: ctor_create>","org.pepstock.charba.client.options.FontContainer.<init>","org.pepstock.charba.client.options.FontContainer.getFont","color","org.pepstock.charba.client.options.FontContainer.setColor","org.pepstock.charba.client.options.FontContainer.getColorAsString","org.pepstock.charba.client.options.FontContainer.<clinit>"]
-}
-

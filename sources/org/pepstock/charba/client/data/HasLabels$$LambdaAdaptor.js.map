@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasLabels$$LambdaAdaptor.impl.java.js",
-"lineCount":63,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,gI;;;CAAA,sH;EAAAC,iC;EAAAA,yE;;;CAAA,oB;EAAAC,+C;EAAAA,sG;;;;CAAA,a;EAAAC,wF;;;;CAAA,oB;EAAAA,uG;;;;CAAA,qC;EAAAC,iH;;;;CAAA,2B;EAAAA,uG;;;;CAAA,mD;EAAAA,+H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasLabels.java"],
-"names":["org.pepstock.charba.client.data.HasLabels$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.data.HasLabels$$LambdaAdaptor.<init>","org.pepstock.charba.client.data.HasLabels$$LambdaAdaptor.getLabelsHandler","org.pepstock.charba.client.data.HasLabels$$LambdaAdaptor.getLabels","org.pepstock.charba.client.data.HasLabels$$LambdaAdaptor.setLabels","org.pepstock.charba.client.data.HasLabels$$LambdaAdaptor.<clinit>"]
-}
-

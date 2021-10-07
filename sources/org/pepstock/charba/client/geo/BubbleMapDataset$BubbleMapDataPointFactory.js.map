@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleMapDataset$BubbleMapDataPointFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAsJsB,yB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,oC;EAAAA,gD;EAAAA,+F;EAAAA,iB;;;CAAA,kF;EAAAC,iC;;;CAQM,yD,UAAoBC,Y;EAC7CC,iG;;;;CATmB,U;EAAAA,gM;;;QAAA,O;EAAAC,4C;EAAAA,yC;EAAAA,qB;EAAAA;",
-"sources":["BubbleMapDataset.java"],
-"names":["org.pepstock.charba.client.geo.BubbleMapDataset$BubbleMapDataPointFactory.<synthetic: ctor_js>","org.pepstock.charba.client.geo.BubbleMapDataset$BubbleMapDataPointFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapDataset$BubbleMapDataPointFactory.<init>","nativeObject","org.pepstock.charba.client.geo.BubbleMapDataset$BubbleMapDataPointFactory.create","org.pepstock.charba.client.geo.BubbleMapDataset$BubbleMapDataPointFactory.<clinit>"]
-}
-

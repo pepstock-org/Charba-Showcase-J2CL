@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartClickEventHandler.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAsBiB,sB;;CAOX,4D,wBAAwBA,K;;QAPb,M;EAAAC,iC;EAAAA,8B;;;QAAA,O;EAAAC,yC;EAAAA;",
-"sources":["ChartClickEventHandler.java"],
-"names":["event","org.pepstock.charba.client.events.ChartClickEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.ChartClickEventHandler.<clinit>"]
-}
-

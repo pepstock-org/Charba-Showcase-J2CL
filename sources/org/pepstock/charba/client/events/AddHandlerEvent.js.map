@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AddHandlerEvent.impl.java.js",
-"lineCount":63,
-"mappings":"A;;;;;;;;;;;MAuBmB,e;;CAAA,W;EAAAA,Q;;;QAYX,oD,kBAA0BC,W;EAA1BC,0B;EAAAA,sC;EAAAA,6H;EAAAA,iB;;;CAAA,qG,kBAA0BD,W;EAChCE,6H;;;CASgB,W;EAChBC,uF;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAuBC,SAAvBD,qFAFDA;GAICA,2EAJDA;G;;;QAhCD,6D;EAAAE,oH;;;QAFkB,O;EAAAC,kC;EAAAA,+B;EAAAA,+B;EAElBA,mJ;;;;;;;;;;;;;;AAFkB;;",
-"sources":["AddHandlerEvent.java"],
-"names":["org.pepstock.charba.client.events.AddHandlerEvent.<synthetic: ctor_js>","handlerType","org.pepstock.charba.client.events.AddHandlerEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.AddHandlerEvent.<init>","org.pepstock.charba.client.events.AddHandlerEvent.getType","handler","org.pepstock.charba.client.events.AddHandlerEvent.dispatch","myHandler","org.pepstock.charba.client.events.AddHandlerEvent.<synthetic: getter>","org.pepstock.charba.client.events.AddHandlerEvent.<clinit>"]
-}
-

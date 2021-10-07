@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Major.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;;;MA2BmB,K;;CAAA,W;EAAAA,Q;;;QAyClB,8L,cAAYC,K,aAAWC,Q,wBAAyBC,a,WAA4BC,Y;EAA5EC,gB;EAAAA,4B;EAAAA,+R;EAAAA,iB;;;CAAA,sO,cAAYJ,K,aAAWC,Q,wBAAyBC,a,WAA4BC,Y;EAC3EE,wQ;;;CAQW,qB,gBAAmBC,O;EAC9BC,+J;;;CASc,a;EACdC,sP;;;QA7DiB,O;EAAAC,wB;EAAAA,qB;EAAAA;",
-"sources":["Major.java"],
-"names":["org.pepstock.charba.client.options.Major.<synthetic: ctor_js>","ticks","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.Major.<synthetic: ctor_create>","org.pepstock.charba.client.options.Major.<init>","enabled","org.pepstock.charba.client.options.Major.setEnabled","org.pepstock.charba.client.options.Major.isEnabled","org.pepstock.charba.client.options.Major.<clinit>"]
-}
-

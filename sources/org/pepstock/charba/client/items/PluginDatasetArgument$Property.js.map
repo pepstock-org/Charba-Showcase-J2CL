@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginDatasetArgument$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAgCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,yEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,kJ;EAAAA,iB;;;CAAA,+G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uF;;;CASa,S;EACbC,sF;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,kJAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,mB;EAAAA,kP;;;QAEZ,4E;EAAAC,qH;;;QACA,2E;EAAAA,oH;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qR;EACAA,iR;EAHYA,qG;;;;;;;;;;;;;AAAA;wF;AAAA;uF;AAAA;8F;AAEZ;6F;AACA;;",
-"sources":["PluginDatasetArgument.java"],
-"names":["org.pepstock.charba.client.items.PluginDatasetArgument$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.PluginDatasetArgument$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginDatasetArgument$Property.<init>","org.pepstock.charba.client.items.PluginDatasetArgument$Property.value","org.pepstock.charba.client.items.PluginDatasetArgument$Property.valueOf","org.pepstock.charba.client.items.PluginDatasetArgument$Property.values","org.pepstock.charba.client.items.PluginDatasetArgument$Property.<synthetic: getter>","org.pepstock.charba.client.items.PluginDatasetArgument$Property.<clinit>"]
-}
-

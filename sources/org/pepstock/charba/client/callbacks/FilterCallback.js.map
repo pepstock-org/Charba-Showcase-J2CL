@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FilterCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;MAyBU,c;;CASD,gE,gBAAiBA,K,WAASC,I;;QATzB,M;EAAAC,yB;EAAAA,gE;;;QAAA,O;EAAAC,iC;EAAAA;",
-"sources":["FilterCallback.java"],
-"names":["chart","item","org.pepstock.charba.client.callbacks.FilterCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.FilterCallback.<clinit>"]
-}
-

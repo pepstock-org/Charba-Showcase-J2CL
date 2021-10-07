@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultAnimationCollectionKey.impl.java.js",
-"lineCount":148,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MA8BY,6B;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,wEAhBVA,C;EAAAA;OAkBiB,uEAlBjBA,C;EAAAA;OAoB8B,6EApB9BA,C;;;QA4BH,iH,8DAAqCC,K,qCAA+BC,U;EAApEC,oD;EAAAA,8N;EAAAA,iB;;;CAAA,+K,8DAAqCF,K,qCAA+BC,U;EAApEE,qC;EAAAA,2C;EAAAA,mE;EAAAA,iF;EACPA,sF;EAEAA;GAAAA,IAA0BC,QAA1BD,kBAAAA;;IAECA,iGAFDA;;G;EAOAA,iQ;;;CASa,S;EACbE,qF;;;CASoB,Q;EACpBC,oF;;;CASiC,c;EACjCC,oL;;;QASqB,+D,+BAA0BC,U;EAA1BC,wC;EAErBA;GAECA,oFAFDA;G;EAMAA,a;;;QASsB,sB,gBAAUD,U;EAChCC,qJ;;;QA/FU,2B;EAAAC,wC;EAAAA;GAAAA,2LAAAA;G;EAAAA,8J;;;QAAA,U;EAAAC,wC;EAAAA,ub;;;CAAA,yE;EAoBXR,6J;;;QAlBA,4E;EAAAS,+J;;;QAIA,6E;EAAAA,gK;;;QAIA,6E;EAAAA,gK;;;QAVW,O;EAAAC,gD;EAAAA,6C;EAAAA,e;EAEXA,qyB;EAIAA,+9B;EAIAA,mlB;EAVWA,yH;;;;;;;;;;;;;;;;;;;AAAA;6G;AAAA;8G;AAAA;8G;AAAA;kH;AAEX;kH;AAIA;mH;AAIA;;",
-"sources":["DefaultAnimationCollectionKey.java"],
-"names":["org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.<synthetic: ctor_js>","value","properties","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.<synthetic: ctor_create>","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.<init>","property","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.value","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.type","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.properties","collection","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.is","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.valueOf","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.values","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.<synthetic: getter>","org.pepstock.charba.client.enums.DefaultAnimationCollectionKey.<clinit>"]
-}
-

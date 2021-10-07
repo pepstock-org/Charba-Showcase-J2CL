@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultScales.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;;;;MA2BmB,a;;CAAA,W;EAAAA,Q;EAAAA;OAES,mEAFTA,C;;;QAOlB,S;EAAAC,wB;EAAAA,oC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAAAA,4E;;;CAUsB,gG,gBAAgBC,O,kBAAkBC,I;EACvDC,gF;;;CAlBiB,oE;EAElBH,oG;;;QAFkB,O;EAAAI,gC;EAAAA,6B;EAAAA;",
-"sources":["DefaultScales.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultScales.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultScales.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultScales.<init>","scaleId","kind","org.pepstock.charba.client.defaults.globals.DefaultScales.getAxis","org.pepstock.charba.client.defaults.globals.DefaultScales.<clinit>"]
-}
-

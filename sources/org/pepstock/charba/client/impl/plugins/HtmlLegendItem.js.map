@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HtmlLegendItem.impl.java.js",
-"lineCount":87,
-"mappings":"A;;;;;;;;;;;;MA8BmB,c;;CAAA,W;EAAAA,Q;EAAAA;OAEI,gEAFJA,C;EAAAA;OAIM,qEAJNA,C;EAAAA;OAMN,+DANMA,K;EAAAA;OAQH,iEARGA,K;;;QAgBlB,2C,gBAAuBC,K;EAAvBC,yB;EAAAA,qC;EAAAA,mH;EAAAA,iB;;;CAAA,iG,gBAAuBD,K;EAAvBE,iC;EAAAA,yE;EAECA,kE;EAEAA,8E;;;CAQc,Y;EACdC,6E;;;CAQsB,iB;EACtBC,kF;;;CAQI,6G,wBAA8BC,U;EAClCC,wF;;;CAQU,W;EACVC,4E;;;CAQI,0D,eAAYC,I;EAChBC,4E;;;CAQa,a;EACbC,8E;;;CAQI,+D,eAAiBC,M;EACrBC,gF;;;CAQmB,e;EAEnBC;GAECA,IAAcC,OAAdD,8HAFDA;GAICA,6MAJDA;GAKCA,0BALDA;G;EAQAA,sE;;;CArGiB,iE;EAIlBX,kF;EAEAA,yE;EAEAA,2E;;;QARkB,O;EAAAa,iC;EAAAA,8B;EAAAA;",
-"sources":["HtmlLegendItem.java"],
-"names":["org.pepstock.charba.client.impl.plugins.HtmlLegendItem.<synthetic: ctor_js>","chart","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.<init>","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.getChart","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.getLegendItem","legendItem","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.setLegendItem","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.getSize","size","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.setSize","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.getRadius","radius","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.setRadius","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.toUniqueKey","builder","org.pepstock.charba.client.impl.plugins.HtmlLegendItem.<clinit>"]
-}
-

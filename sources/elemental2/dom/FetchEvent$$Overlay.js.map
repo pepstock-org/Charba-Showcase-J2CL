@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FetchEvent$$Overlay.impl.java.js",
-"lineCount":21,
-"mappings":"A;;;;;;MA0Ba,Q;;QA+CO,+E,yDAAgCA,C;EAAhCC,mB;EAChBA,+E;;;QAMgB,0E,8CAAqBD,C;EAArBC,mB;EAChBA,+E;;;QAvDS,O;EAAAC,2B;EAAAA;",
-"sources":["FetchEvent.java"],
-"names":["r","elemental2.dom.FetchEvent$$Overlay.respondWith__$devirt","elemental2.dom.FetchEvent$$Overlay.<clinit>"]
-}
-

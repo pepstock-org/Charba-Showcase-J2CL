@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ZoomPanRegionCase$2.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;;MA+H4D,E;;CAAA,W;EAAAA,Q;EAAAA;2F;;;QAAA,+F;EAAAC,a;EAAAA,yB;EAAAA,kM;EAAAA,iB;;;CAAA,qK;EAAAC,uG;EAAAA,qF;;;CAG1C,kD,gBAAqBC,K;EACnCC,IAAcC,IAAdD,0C;EACGA,IAAcE,GAAdF,2G;EACAA,W;EACAA,uJ;EACAA,kB;EACAA,oK;EACAA,c;EACAA,Y;;;QAXqD,O;EAAAG,qB;EAAAA,kB;EAAAA;",
-"sources":["ZoomPanRegionCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanRegionCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanRegionCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanRegionCase$2.<init>","chart","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanRegionCase$2.onBeforeDraw","area","ctx","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanRegionCase$2.<clinit>"]
-}
-

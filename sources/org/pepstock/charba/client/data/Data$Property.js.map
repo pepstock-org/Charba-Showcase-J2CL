@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Data$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAoDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,uDAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,gI;EAAAA,iB;;;CAAA,6F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,qE;;;CASa,S;EACbC,oE;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,gIAAAA;G;EAAAA,wH;;;QAAA,U;EAAAC,mB;EAAAA,+R;;;QAEZ,6D;EAAAC,sG;;;QACA,6D;EAAAA,sG;;;QACA,6D;EAAAA,sG;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,6P;EACAA,4P;EACAA,4P;EAJYA,mF;;;;;;;;;;;;;AAAA;yE;AAAA;yE;AAAA;yE;AAAA;4E;AAEZ;8E;AACA;8E;AACA;;",
-"sources":["Data.java"],
-"names":["org.pepstock.charba.client.data.Data$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.Data$Property.<synthetic: ctor_create>","org.pepstock.charba.client.data.Data$Property.<init>","org.pepstock.charba.client.data.Data$Property.value","org.pepstock.charba.client.data.Data$Property.valueOf","org.pepstock.charba.client.data.Data$Property.values","org.pepstock.charba.client.data.Data$Property.<synthetic: getter>","org.pepstock.charba.client.data.Data$Property.<clinit>"]
-}
-

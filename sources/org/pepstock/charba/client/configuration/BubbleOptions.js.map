@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleOptions.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;MAyBa,a;;CAAA,W;EAAAA,Q;;;QAQL,uG,gBAAsBC,K,gCAA8BC,a;EAApDC,wB;EAAAA,oC;EAAAA,8L;EAAAA,iB;;;CAAA,6J,gBAAsBF,K,gCAA8BC,a;EAC1DE,yL;;;QATW,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["BubbleOptions.java"],
-"names":["org.pepstock.charba.client.configuration.BubbleOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.BubbleOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.BubbleOptions.<init>","org.pepstock.charba.client.configuration.BubbleOptions.<clinit>"]
-}
-

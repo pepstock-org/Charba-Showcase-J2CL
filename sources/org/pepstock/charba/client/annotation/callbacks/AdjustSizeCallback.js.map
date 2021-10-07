@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AdjustSizeCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;;;MA8BiB,kB;;QAAA,M;EAAAA,6B;EAAAA,8B;;;QAAA,O;EAAAC,qC;EAAAA;",
-"sources":["AdjustSizeCallback.java"],
-"names":["org.pepstock.charba.client.annotation.callbacks.AdjustSizeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.callbacks.AdjustSizeCallback.<clinit>"]
-}
-

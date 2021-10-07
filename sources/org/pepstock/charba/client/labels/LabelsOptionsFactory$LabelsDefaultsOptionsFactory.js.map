@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LabelsOptionsFactory$LabelsDefaultsOptionsFactory.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;MA4Dc,4B;;CAAA,W;EAAAA,Q;;;QAKZ,S;EAAAC,uC;EAAAA,mD;EAAAA,yG;EAAAA,iB;;;CAAA,4F;EACCC,iK;;;CAUoB,+G,UAAoBC,Y,0BAA+BC,a;EACvEC,6N;;;QAjBW,O;EAAAC,+C;EAAAA,4C;EAAAA;",
-"sources":["LabelsOptionsFactory.java"],
-"names":["org.pepstock.charba.client.labels.LabelsOptionsFactory$LabelsDefaultsOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.labels.LabelsOptionsFactory$LabelsDefaultsOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsOptionsFactory$LabelsDefaultsOptionsFactory.<init>","nativeObject","defaultValues","org.pepstock.charba.client.labels.LabelsOptionsFactory$LabelsDefaultsOptionsFactory.create","org.pepstock.charba.client.labels.LabelsOptionsFactory$LabelsDefaultsOptionsFactory.<clinit>"]
-}
-

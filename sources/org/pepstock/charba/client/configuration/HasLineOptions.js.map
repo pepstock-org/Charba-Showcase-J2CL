@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasLineOptions.impl.java.js",
-"lineCount":64,
-"mappings":"A;;;;;;;;;;;;;;MAwBU,c;;CAOY,c;;CAOR,sB,gBAAoBA,Q;;CAYjB,c;;CAcH,sB,gBAAoBC,Q;;CAYjB,c;;QApDP,M;EAAAC,yB;EAAAA,8B;;;QAcI,yF,iDAAoBF,Q;EAApBG,yB;EAEZA;GACCA,8IADDA;G;;;QAUe,+E;EAAAC,yB;EAEfA;GACCA,qIADDA;G;EAIAA,2D;;;QAQY,yF,iDAAoBH,Q;EAApBI,yB;EAEZA;GACCA,8IADDA;G;;;QAUe,+E;EAAAC,yB;EAEfA;GACCA,qIADDA;G;EAIAA,2D;;;QA1DQ,O;EAAAC,iC;EAAAA;",
-"sources":["HasLineOptions.java"],
-"names":["showLine","spanGaps","org.pepstock.charba.client.configuration.HasLineOptions.<synthetic: adapt_lambda>","org.pepstock.charba.client.configuration.HasLineOptions.setShowLine__$default","org.pepstock.charba.client.configuration.HasLineOptions.isShowLine__$default","org.pepstock.charba.client.configuration.HasLineOptions.setSpanGaps__$default","org.pepstock.charba.client.configuration.HasLineOptions.isSpanGaps__$default","org.pepstock.charba.client.configuration.HasLineOptions.<clinit>"]
-}
-

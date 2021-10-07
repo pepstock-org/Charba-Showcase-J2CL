@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ExtensionsView$ZoomCase$12.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAqY6E,G;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,c;EAAAA,0B;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;;;CACrD,U;EACpBC,iD;;;QAFyE,O;EAAAC,sB;EAAAA,mB;EAAAA;",
-"sources":["ExtensionsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ExtensionsView$ZoomCase$12.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$ZoomCase$12.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$ZoomCase$12.<init>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$ZoomCase$12.create","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$ZoomCase$12.<clinit>"]
-}
-

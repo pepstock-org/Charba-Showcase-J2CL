@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextBaseline.impl.java.js",
-"lineCount":125,
-"mappings":"A;;;;;;;;;;;;;;MAyBY,Y;;CAAA,W;EAAAA,Q;EAAAA;OA4BU,2DA5BVA,C;;;QAmCH,gD,8DAAoBC,K;EAApBC,mC;EAAAA,oI;EAAAA,iB;;;CAAA,iG,8DAAoBD,K;EAApBE,qC;EAAAA,2C;EAAAA,mE;EACPA,yE;;;CASa,S;EACbC,wE;;;QA9CU,2B;EAAAC,uB;EAAAA;GAAAA,4IAAAA;G;EAAAA,gI;;;QAAA,U;EAAAC,uB;EAAAA,gjB;;;QAEX,mE;EAAAC,oH;;;QAIA,+D;EAAAA,gH;;;QAIA,gE;EAAAA,iH;;;QAIA,oE;EAAAA,qH;;;QAIA,+D;EAAAA,gH;;;QAIA,4D;EAAAA,6G;;;QAtBW,O;EAAAC,+B;EAAAA,4B;EAAAA,e;EAEXA,yR;EAIAA,yQ;EAIAA,6Q;EAIAA,6R;EAIAA,yQ;EAIAA,6P;EAtBWA,2F;;;;;;;;;;;;;AAAA;mF;AAAA;+E;AAAA;gF;AAAA;oF;AAAA;+E;AAAA;4E;AAAA;oF;AAEX;wF;AAIA;oF;AAIA;qF;AAIA;yF;AAIA;oF;AAIA;;",
-"sources":["TextBaseline.java"],
-"names":["org.pepstock.charba.client.dom.enums.TextBaseline.<synthetic: ctor_js>","value","org.pepstock.charba.client.dom.enums.TextBaseline.<synthetic: ctor_create>","org.pepstock.charba.client.dom.enums.TextBaseline.<init>","org.pepstock.charba.client.dom.enums.TextBaseline.value","org.pepstock.charba.client.dom.enums.TextBaseline.valueOf","org.pepstock.charba.client.dom.enums.TextBaseline.values","org.pepstock.charba.client.dom.enums.TextBaseline.<synthetic: getter>","org.pepstock.charba.client.dom.enums.TextBaseline.<clinit>"]
-}
-

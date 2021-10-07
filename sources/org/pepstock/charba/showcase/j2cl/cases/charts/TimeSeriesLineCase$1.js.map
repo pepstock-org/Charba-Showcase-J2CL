@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TimeSeriesLineCase$1.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA0EsG,E;;CAAA,W;EAAAA,Q;EAAAA;wF;EAAAA;OANxFC,sFAMwFD,C;;;QAAA,2H;EAAAE,a;EAAAA,yB;EAAAA,yO;EAAAA,iB;;;CAAA,8L;EAAAC,oG;EAAAA,gH;EAAAA,kF;;;CAG/E,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,2X;;;QAPkG,O;EAAAI,qB;EAAAA,kB;EAAAA;",
-"sources":["TimeSeriesLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase$1.<synthetic: ctor_js>","adapter","org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase$1.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase$1.onTitle","item","ds","dp","org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesLineCase$1.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HtmlLegendOptionsBuilder.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;MA2BmB,wB;;CAAA,W;EAAAA,Q;EAAAA;OAGc,4EAHdA,C;;;QAUV,2C,gBAAiCC,K;EAAjCC,+C;EAAAA,6H;EAAAA,iB;;;CAAA,2G,gBAAiCD,K;EAAjCE,iC;EACPA,yJ;;;QAQsC,U;EAAAC,mC;EACtCA,mF;;;QASsC,4C,gBAAeH,K;EAAfG,mC;EACtCA,mF;;;CAQwB,S;EAExBC,yF;;;CAS+B,qB,gBAAmBC,O;EAClDC,iH;EACAA,Y;;;CAS+B,oF,+BAA6CC,kB;EAC5EC,2L;EACAA,Y;;;CAS+B,sF,gCAA+CC,mB;EAC9EC,8L;EACAA,Y;;;CAS+B,8B,eAA4BC,U;EAC3DC,6H;EACAA,Y;;;QApFiB,O;EAAAC,2C;EAAAA,wC;EAAAA;",
-"sources":["HtmlLegendOptionsBuilder.java"],
-"names":["org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.<synthetic: ctor_js>","chart","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.<init>","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.create","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.build","display","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.setDisplay","legendTextCallback","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.setLegendItemCallback","legendTitleCallback","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.setLegendTitleCallback","maxColumns","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.setMaximumLegendColumns","org.pepstock.charba.client.impl.plugins.HtmlLegendOptionsBuilder.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TickCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;MAgCiB,Y;;CAWT,wF,aAAgBA,I,gBAAaC,K,gBAAWC,K,uBAAoBC,M;;QAXnD,M;EAAAC,uB;EAAAA,8B;;;QAAA,O;EAAAC,+B;EAAAA;",
-"sources":["TickCallback.java"],
-"names":["axis","value","index","values","org.pepstock.charba.client.callbacks.TickCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.TickCallback.<clinit>"]
-}
-

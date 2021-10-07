@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasDataPointStyle$$LambdaAdaptor.impl.java.js",
-"lineCount":85,
-"mappings":"A;;;;;;;;;;;;;;;MAiCU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,iF;;;CAAA,wB;EAAAC,uD;EAAAA,8G;;;;CAAA,iB;EAAAC,4G;;;;CAAA,yB;EAAAC,oH;;;;CAAA,yB;EAAAC,oH;;;;CAAA,yB;EAAAC,oH;;;;CAAA,qB;EAAAC,gH;;;;CAAA,oE;EAAAC,gK;;;;CAAA,oE;EAAAA,gK;;;;CAAA,uE;EAAAA,mK;;;;CAAA,wE;EAAAA,oK;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasDataPointStyle.java"],
-"names":["org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.<init>","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.getPointStyleHandler","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.getPointStyle","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.getPointStyleAsCanvas","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.getPointStyleAsImages","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.getPointStyleCallback","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.getPointStyleType","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.setPointStyle","org.pepstock.charba.client.data.HasDataPointStyle$$LambdaAdaptor.<clinit>"]
-}
-

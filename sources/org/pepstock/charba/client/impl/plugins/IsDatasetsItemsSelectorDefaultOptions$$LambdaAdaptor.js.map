@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;;;;;;MA2BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;0G;EAAAA,wM;;;CAAA,8L;EAAAC,iC;EAAAA,6G;;;CAAA,uB;EAAAC,gF;EAAAA,0I;;;;CAAA,0B;EAAAC,qK;;;;CAAA,iB;EAAAC,4J;;;;CAAA,uB;EAAAC,kK;;;;CAAA,kB;EAAAC,6J;;;;CAAA,oB;EAAAC,+J;;;;CAAA,c;EAAAC,yJ;;;;CAAA,a;EAAAC,wJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["IsDatasetsItemsSelectorDefaultOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.<init>","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.getSelectionCleaner","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.getBorderColorAsString","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.getBorderDash","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.getBorderDashOffset","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.getBorderWidth","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.getColorAsString","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.getXAxisID","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.isEnabled","org.pepstock.charba.client.impl.plugins.IsDatasetsItemsSelectorDefaultOptions$$LambdaAdaptor.<clinit>"]
-}
-

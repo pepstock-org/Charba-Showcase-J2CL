@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CharacterData$$Overlay.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;MAuBa,Q;;QA6FO,2E,oDAAcA,K;EAAdC,mB;EAChBA,+I;;;QAIgB,wE,uDAAgBD,K;EAAhBC,mB;EAChBA,+I;;;QAQgB,4E,oDAAeD,K;EAAfE,mB;EAChBA,gJ;;;QAIgB,yE,uDAAiBF,K;EAAjBE,mB;EAChBA,gJ;;;QAYgB,iF,oDAAoBF,K;EAApBG,mB;EAChBA,qJ;;;QAMgB,8E,uDAAsBH,K;EAAtBG,mB;EAChBA,qJ;;;QArIS,O;EAAAC,2B;EAAAA;",
-"sources":["CharacterData.java"],
-"names":["nodes","elemental2.dom.CharacterData$$Overlay.after__$devirt","elemental2.dom.CharacterData$$Overlay.before__$devirt","elemental2.dom.CharacterData$$Overlay.replaceWith__$devirt","elemental2.dom.CharacterData$$Overlay.<clinit>"]
-}
-

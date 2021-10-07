@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MAgCiB,a;;QAAA,M;EAAAA,wB;EAAAA,gE;;;QAAA,O;EAAAC,gC;EAAAA;",
-"sources":["ColorCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.ColorCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.ColorCallback.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipBodyCallback.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;;;;;;;MA+BiB,mB;;CAUK,kE,gBAAqBA,K,2BAAyBC,K;;CAY9C,iE,gBAAoBD,K,2BAAyBC,K;;QAZ7C,sI,sDAAqBD,K,2BAAyBC,K;EAA9CC,8B;EACpBA,gE;;;QAWoB,qI,sDAAoBF,K,2BAAyBC,K;EAA7CE,8B;EACpBA,gE;;;QAvBe,O;EAAAC,sC;EAAAA;",
-"sources":["TooltipBodyCallback.java"],
-"names":["chart","items","org.pepstock.charba.client.callbacks.TooltipBodyCallback.onBeforeBody__$default","org.pepstock.charba.client.callbacks.TooltipBodyCallback.onAfterBody__$default","org.pepstock.charba.client.callbacks.TooltipBodyCallback.<clinit>"]
-}
-

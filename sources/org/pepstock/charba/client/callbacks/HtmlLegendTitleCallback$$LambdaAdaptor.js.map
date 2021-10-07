@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HtmlLegendTitleCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yF;EAAAA,sK;;;CAAA,4J;EAAAC,iC;EAAAA,4F;;;CAAA,0H;EAAAC,uE;EAAAA,yI;;;;CAAA,oH;EAAAA,6M;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["HtmlLegendTitleCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback$$LambdaAdaptor.generateText","org.pepstock.charba.client.callbacks.HtmlLegendTitleCallback$$LambdaAdaptor.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsHighlightCase$4.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;;;;;;MAkKqE,E;;CAAA,W;EAAAA,Q;EAAAA;iG;;;QAAA,mF;EAAAC,a;EAAAA,yB;EAAAA,uL;EAAAA,iB;;;CAAA,+J;EAAAC,6G;EAAAA,iC;;;CAGnD,kE,0BAA0BC,O;EACxCC,IAAQC,OAARD,+T;EACAA,oC;EACAA,2F;EACAA,Y;;;QAPiE,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsHighlightCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsHighlightCase$4.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsHighlightCase$4.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsHighlightCase$4.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsHighlightCase$4.onEnter","hovered","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsHighlightCase$4.<clinit>"]
-}
-

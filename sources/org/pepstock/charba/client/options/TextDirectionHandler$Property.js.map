@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextDirectionHandler$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAmCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,0EANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,mJ;EAAAA,iB;;;CAAA,gH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,wF;;;CASa,S;EACbC,uF;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,mJAAAA;G;EAAAA,2I;;;QAAA,U;EAAAC,mB;EAAAA,4P;;;QAEZ,2E;EAAAC,oH;;;QACA,sF;EAAAA,+H;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+Q;EACAA,0T;EAHYA,sG;;;;;;;;;;;;;AAAA;uF;AAAA;kG;AAAA;+F;AAEZ;4F;AACA;;",
-"sources":["TextDirectionHandler.java"],
-"names":["org.pepstock.charba.client.options.TextDirectionHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.TextDirectionHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.TextDirectionHandler$Property.<init>","org.pepstock.charba.client.options.TextDirectionHandler$Property.value","org.pepstock.charba.client.options.TextDirectionHandler$Property.valueOf","org.pepstock.charba.client.options.TextDirectionHandler$Property.values","org.pepstock.charba.client.options.TextDirectionHandler$Property.<synthetic: getter>","org.pepstock.charba.client.options.TextDirectionHandler$Property.<clinit>"]
-}
-

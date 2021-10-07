@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SpanGapHandler.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;;;;MAiCmB,c;;CAAA,W;EAAAA,Q;;;;QAwCX,2J,qBAA4BC,M,0BAAyBC,a,wBAAyCC,O;EAA9FC,yB;EAAAA,qC;EAAAA,uP;EAAAA,iB;;;;CAAA,4M,qBAA4BH,M,0BAAyBC,a,wBAAyCC,O;EACpGE,yZ;;;;QAUD,+J,qBAA4BJ,M,0BAAyBC,a,WAA4BI,Y;EAAjFF,yB;EAAAA,qC;EAAAA,gQ;EAAAA,iB;;;;CAAA,gN,qBAA4BH,M,0BAAyBC,a,WAA4BI,Y;EAChFD,wN;;;CAUI,6D,gBAAoBE,Q;EACxBC,2K;;;CAQI,4D,eAAmBD,Q;EACvBC,0K;;;CAUO,qD;EAEPC;GAECA,YAFDA;G;EAIAA,sQ;;;CAQM,sD;EACNC,yN;;;QAjGiB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["SpanGapHandler.java"],
-"names":["org.pepstock.charba.client.options.SpanGapHandler.<synthetic: ctor_js>","parent","defaultValues","envelop","org.pepstock.charba.client.options.SpanGapHandler.<synthetic: ctor_create>","org.pepstock.charba.client.options.SpanGapHandler.<init>","nativeObject","spanGaps","org.pepstock.charba.client.options.SpanGapHandler.setSpanGaps","org.pepstock.charba.client.options.SpanGapHandler.isSpanGaps","org.pepstock.charba.client.options.SpanGapHandler.getSpanGaps","org.pepstock.charba.client.options.SpanGapHandler.<clinit>"]
-}
-

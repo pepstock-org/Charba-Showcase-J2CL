@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ObjectPropertyDescriptor$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MA0BiB,Q;;QAYiB,U;EAAAA,mB;EAC9BA,qH;;;QAba,O;EAAAC,2B;EAAAA;",
-"sources":["ObjectPropertyDescriptor.java"],
-"names":["elemental2.core.ObjectPropertyDescriptor$$Overlay.create","elemental2.core.ObjectPropertyDescriptor$$Overlay.<clinit>"]
-}
-

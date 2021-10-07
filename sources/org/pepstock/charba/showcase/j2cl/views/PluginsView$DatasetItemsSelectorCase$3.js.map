@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginsView$DatasetItemsSelectorCase$3.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAuIwE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,oG;EAAAA,iB;;;CAAA,uF;EAAAC,iC;;;CAChD,U;EACpBC,mD;;;QAFoE,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["PluginsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$3.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$3.create","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase$3.<clinit>"]
-}
-

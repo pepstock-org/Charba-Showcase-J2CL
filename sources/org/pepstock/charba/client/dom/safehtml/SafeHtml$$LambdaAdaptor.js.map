@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SafeHtml$$LambdaAdaptor.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;6E;EAAAA,8I;;;CAAA,oI;EAAAC,iC;EAAAA,gF;;;CAAA,Y;EAAAC,yC;EAAAA,6G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["SafeHtml.java"],
-"names":["org.pepstock.charba.client.dom.safehtml.SafeHtml$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.dom.safehtml.SafeHtml$$LambdaAdaptor.<init>","org.pepstock.charba.client.dom.safehtml.SafeHtml$$LambdaAdaptor.asString","org.pepstock.charba.client.dom.safehtml.SafeHtml$$LambdaAdaptor.<clinit>"]
-}
-

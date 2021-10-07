@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PatternsContainer.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;;;;;;;;;;MA+BY,iB;;CAAA,W;EAAAA,Q;;;QAUX,gD,gBAA0BC,O;EAA1BC,4B;EAAAA,wC;EAAAA,qH;EAAAA,iB;;;CAAA,iG,gBAA0BD,O;EACzBE,gH;;;CASqC,kD;EACrCC,uF;;;CASqC,6G,wBAA+BC,G;EACpEC,6J;;;QA/BU,O;EAAAC,oC;EAAAA,iC;EAAAA,4B;EAGXA,sH;;;;;;;;;;;;AAHW;kBAGkC,6DAHlC;",
-"sources":["PatternsContainer.java"],
-"names":["org.pepstock.charba.client.data.PatternsContainer.<synthetic: ctor_js>","dataset","org.pepstock.charba.client.data.PatternsContainer.<synthetic: ctor_create>","org.pepstock.charba.client.data.PatternsContainer.<init>","org.pepstock.charba.client.data.PatternsContainer.getFactory","key","org.pepstock.charba.client.data.PatternsContainer.createCallback","org.pepstock.charba.client.data.PatternsContainer.<clinit>"]
-}
-

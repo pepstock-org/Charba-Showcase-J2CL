@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetRangeCleanSelectionEventHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qG;EAAAA,8L;;;CAAA,oL;EAAAC,iC;EAAAA,wG;;;CAAA,4E;;GAAAC,mH;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["DatasetRangeCleanSelectionEventHandler.java"],
-"names":["org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler$$LambdaAdaptor.onClean","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler$$LambdaAdaptor.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsOptions.impl.java.js",
-"lineCount":172,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MAkCmB,iB;;CAAA,W;EAAAA,Q;EAAAA;OAiFG,kEAjFHA,C;;;;QAqHX,S;EAAAC,4B;EAAAA,wC;EAAAA,6E;EAAAA,iB;;;;CAAA,gE;EACNC,mM;;;;QAQM,2C,gBAA0BC,K;EAA1BF,4B;EAAAA,wC;EAAAA,oH;EAAAA,iB;;;;CAAA,kG,gBAA0BE,K;EAChCD,yoB;;;;QASD,0H,mCAA6CE,c,WAA6BC,Y;EAA1EJ,4B;EAAAA,wC;EAAAA,0N;EAAAA,iB;;;;CAAA,iL,mCAA6CG,c,WAA6BC,Y;EAEzEH,0M;EAEAA,IAAwBI,YAAxBJ,2E;EAIAA,iQ;EAEAA,IAA2BK,MAA3BL,kG;EAEAA,+a;EAEAA;GAECA,gRAFDA;G;;;CAYc,oB;EACdM,oJ;;;CASa,a;EACbC,+E;;;QAvKD,4E;EAAAC,uI;;;QAKA,6E;EAAAA,wI;;;QAKA,uF;EAAAA,kJ;;;QAKA,mF;EAAAA,8I;;;QAyBA,8E;EAAAA,yI;;;QAoBA,iF;EAAAA,4I;;;QAlEkB,O;EAAAC,oC;EAAAA,iC;EAAAA,oB;EAAAA,kC;EAMlBA,qK;EAKAA,wK;EAKAA,mH;EAKAA,+G;EAyBAA,8J;EAoBAA,sK;;;;;;;;;;;;;;;;;;;;;;;AAlEkB;iG;AAAA;kG;AAAA;4G;AAAA;wG;AA0BlB;kBAG2B,gFAH3B,K;AAKA;kBAGwB,+EAHxB,K;AAKA;kBAG4B,wEAH5B,S;AAKA;kBAG4B,uEAH5B,S;AAzCkB;mG;AAmDlB;kBAGwB,yEAHxB,K;AAKA;kBAG2B,0EAH3B,K;AAKA;kBAG2B,2EAH3B,K;AA7DkB;sG;AAuElB;kBAGwB,oFAHxB,K;AAKA;kBAG2B,mFAH3B;",
-"sources":["DataLabelsOptions.java"],
-"names":["org.pepstock.charba.client.datalabels.DataLabelsOptions.<synthetic: ctor_js>","org.pepstock.charba.client.datalabels.DataLabelsOptions.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.DataLabelsOptions.<init>","chart","defaultOptions","nativeObject","defaultValue","values","org.pepstock.charba.client.datalabels.DataLabelsOptions.applyingDefaults","org.pepstock.charba.client.datalabels.DataLabelsOptions.getLabels","org.pepstock.charba.client.datalabels.DataLabelsOptions.<synthetic: getter>","org.pepstock.charba.client.datalabels.DataLabelsOptions.<clinit>"]
-}
-

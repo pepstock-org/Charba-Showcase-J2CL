@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultAdapters.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAsBiB,iB;;CAOY,W;;QAPZ,M;EAAAA,4B;EAAAA,8B;;;QAAA,O;EAAAC,oC;EAAAA;",
-"sources":["IsDefaultAdapters.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultAdapters.<synthetic: adapt_lambda>","org.pepstock.charba.client.defaults.IsDefaultAdapters.<clinit>"]
-}
-

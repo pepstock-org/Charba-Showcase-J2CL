@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultCursorPointerOptions.impl.java.js",
-"lineCount":21,
-"mappings":"A;;;;;;;;;MAwBU,6B;;CAOU,oB;;QAAA,mG;EAAAA,wC;EAClBA,6E;;;QARQ,O;EAAAC,gD;EAAAA;",
-"sources":["IsDefaultCursorPointerOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.IsDefaultCursorPointerOptions.getCursorPointer__$default","org.pepstock.charba.client.impl.plugins.IsDefaultCursorPointerOptions.<clinit>"]
-}
-

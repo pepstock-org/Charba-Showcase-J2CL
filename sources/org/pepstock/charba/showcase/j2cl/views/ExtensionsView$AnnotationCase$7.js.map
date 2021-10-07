@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ExtensionsView$AnnotationCase$7.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAkc+D,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,6F;EAAAA,iB;;;CAAA,gF;EAAAC,iC;;;CACvC,U;EACpBC,8C;;;QAF2D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ExtensionsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ExtensionsView$AnnotationCase$7.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$AnnotationCase$7.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$AnnotationCase$7.<init>","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$AnnotationCase$7.create","org.pepstock.charba.showcase.j2cl.views.ExtensionsView$AnnotationCase$7.<clinit>"]
-}
-

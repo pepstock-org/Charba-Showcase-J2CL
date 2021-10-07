@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GradientsContainer.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;;;;;;;;;;MA+BY,kB;;CAAA,W;EAAAA,Q;;;QAUX,gD,gBAA2BC,O;EAA3BC,6B;EAAAA,yC;EAAAA,sH;EAAAA,iB;;;CAAA,kG,gBAA2BD,O;EAC1BE,gH;;;CASsC,kD;EACtCC,yF;;;CASsC,6G,wBAA+BC,G;EACrEC,gK;;;QA/BU,O;EAAAC,qC;EAAAA,kC;EAAAA,4B;EAGXA,yH;;;;;;;;;;;;AAHW;mBAGmC,8DAHnC;",
-"sources":["GradientsContainer.java"],
-"names":["org.pepstock.charba.client.data.GradientsContainer.<synthetic: ctor_js>","dataset","org.pepstock.charba.client.data.GradientsContainer.<synthetic: ctor_create>","org.pepstock.charba.client.data.GradientsContainer.<init>","org.pepstock.charba.client.data.GradientsContainer.getFactory","key","org.pepstock.charba.client.data.GradientsContainer.createCallback","org.pepstock.charba.client.data.GradientsContainer.<clinit>"]
-}
-

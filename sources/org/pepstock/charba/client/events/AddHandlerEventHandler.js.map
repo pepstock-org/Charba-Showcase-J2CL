@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AddHandlerEventHandler.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAsBiB,sB;;CAOX,0D,wBAAsBA,K;;QAPX,M;EAAAC,iC;EAAAA,8B;;;QAAA,O;EAAAC,yC;EAAAA;",
-"sources":["AddHandlerEventHandler.java"],
-"names":["event","org.pepstock.charba.client.events.AddHandlerEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.AddHandlerEventHandler.<clinit>"]
-}
-

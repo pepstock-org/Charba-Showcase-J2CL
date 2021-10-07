@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CaseFactory$$LambdaAdaptor.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;;MAIiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,U;EAAAC,+C;EAAAA,gH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["CaseFactory.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.CaseFactory$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.showcase.j2cl.cases.CaseFactory$$LambdaAdaptor.<init>","org.pepstock.charba.showcase.j2cl.cases.CaseFactory$$LambdaAdaptor.create","org.pepstock.charba.showcase.j2cl.cases.CaseFactory$$LambdaAdaptor.<clinit>"]
-}
-

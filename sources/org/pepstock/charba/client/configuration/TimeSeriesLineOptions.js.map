@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TimeSeriesLineOptions.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;;;;;;MA0Ba,qB;;CAAA,W;EAAAA,Q;EAAAA;OAGa,6EAHbA,C;EAAAA;OAKU,0EALVA,C;;;QAaL,uG,gBAA8BC,K,gCAA8BC,a;EAA5DC,gC;EAAAA,4C;EAAAA,sM;EAAAA,iB;;;CAAA,qK,gBAA8BF,K,gCAA8BC,a;EAClEE,6L;EAEAA,6K;EACAA,uK;;;CASwB,c;EACxBC,Y;;;CAQiB,iB;EACjBC,0F;;;CAQc,c;EACdC,uF;;;;CA7CW,c;EAAAC,4G;;;;CAAA,c;EAAAC,4G;;;;CAAA,sB;EAAAC,qH;;;;CAAA,sB;EAAAC,qH;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA,4B;EAAAA;",
-"sources":["TimeSeriesLineOptions.java"],
-"names":["org.pepstock.charba.client.configuration.TimeSeriesLineOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.<init>","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.getOptions","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.getDecimation","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.getSegment","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.isShowLine","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.isSpanGaps","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.setShowLine","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.setSpanGaps","org.pepstock.charba.client.configuration.TimeSeriesLineOptions.<clinit>"]
-}
-

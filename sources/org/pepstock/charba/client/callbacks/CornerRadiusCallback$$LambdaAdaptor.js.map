@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CornerRadiusCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sF;EAAAA,gK;;;CAAA,sJ;EAAAC,iC;EAAAA,yF;;;CAAA,2D;EAAAC,0C;EAAAA,0H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["CornerRadiusCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.CornerRadiusCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.CornerRadiusCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.CornerRadiusCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.CornerRadiusCallback$$LambdaAdaptor.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleMapOptionsMapper.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;MA2BY,sB;;CAAA,W;EAAAA,Q;;;QAWX,4G,wBAAuCC,O,WAAsBC,Y;EAA7DC,iC;EAAAA,6C;EAAAA,mM;EAAAA,iB;;;CAAA,iK,wBAAuCF,O,WAAsBC,Y;EAC5DE,4L;;;CASO,wD;EACPC,8G;;;QAnBD,6E;EAAAC,kJ;;;QAHW,O;EAAAC,yC;EAAAA,sC;EAAAA,+B;EAGXA,mL;;;;;;;;;;;AAHW;;",
-"sources":["BubbleMapOptionsMapper.java"],
-"names":["org.pepstock.charba.client.geo.BubbleMapOptionsMapper.<synthetic: ctor_js>","options","nativeObject","org.pepstock.charba.client.geo.BubbleMapOptionsMapper.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapOptionsMapper.<init>","org.pepstock.charba.client.geo.BubbleMapOptionsMapper.getDefaultClipMap","org.pepstock.charba.client.geo.BubbleMapOptionsMapper.<synthetic: getter>","org.pepstock.charba.client.geo.BubbleMapOptionsMapper.<clinit>"]
-}
-

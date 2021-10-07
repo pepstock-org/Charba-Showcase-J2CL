@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractPadding.impl.java.js",
-"lineCount":101,
-"mappings":"A;;;;;;;;;;;;;;;;MA4BsB,e;;CAAA,W;EAAAA,Q;EAAAA;OAkCC,8DAlCDA,C;;;;CAyCX,+G,yBAAiCC,a;EAC1CC,2L;;;;CASS,gK,yBAAiCD,a,WAA4BE,Y;EACtED,oI;EAEAA,8d;;;CASW,c,eAAYE,K;EACvBC,0F;;;CASU,W;EACVC,yF;;;CASW,e,eAAaF,K;EACxBG,2F;;;CASU,Y;EACVC,0F;;;CASW,a,eAAWJ,K;EACtBK,yF;;;CASU,U;EACVC,wF;;;CASW,gB,eAAcN,K;EACzBO,4F;;;CASU,a;EACVC,2F;;;CAQ4B,a;EAC5BC,qI;;;;CA/IoB,U;EAAAC,uG;;;;CAAA,8D;EAAAA,mK;;;;CAAA,U;EAAAC,yF;;;;CAAA,W;EAAAC,0F;;;;CAAA,W;EAAAC,0F;;;QAAA,O;EAAAC,kC;EAAAA,+B;EAAAA,gC;EAAAA;",
-"sources":["AbstractPadding.java"],
-"names":["org.pepstock.charba.client.options.AbstractPadding.<synthetic: ctor_js>","defaultValues","org.pepstock.charba.client.options.AbstractPadding.<init>","nativeObject","value","org.pepstock.charba.client.options.AbstractPadding.setLeft","org.pepstock.charba.client.options.AbstractPadding.getLeft","org.pepstock.charba.client.options.AbstractPadding.setRight","org.pepstock.charba.client.options.AbstractPadding.getRight","org.pepstock.charba.client.options.AbstractPadding.setTop","org.pepstock.charba.client.options.AbstractPadding.getTop","org.pepstock.charba.client.options.AbstractPadding.setBottom","org.pepstock.charba.client.options.AbstractPadding.getBottom","org.pepstock.charba.client.options.AbstractPadding.getObject","org.pepstock.charba.client.options.AbstractPadding.create","org.pepstock.charba.client.options.AbstractPadding.set","org.pepstock.charba.client.options.AbstractPadding.setX","org.pepstock.charba.client.options.AbstractPadding.setY","org.pepstock.charba.client.options.AbstractPadding.<clinit>"]
-}
-

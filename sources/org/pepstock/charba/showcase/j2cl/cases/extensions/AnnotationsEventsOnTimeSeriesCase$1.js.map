@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnnotationsEventsOnTimeSeriesCase$1.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA4FsG,E;;CAAA,W;EAAAA,Q;EAAAA;2G;EAAAA;OARxFC,yGAQwFD,C;;;QAAA,8I;EAAAE,a;EAAAA,yB;EAAAA,+Q;EAAAA,iB;;;CAAA,oO;EAAAC,uH;EAAAA,mI;EAAAA,kF;;;CAG/E,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,8Y;;;QAPkG,O;EAAAI,qB;EAAAA,kB;EAAAA;",
-"sources":["AnnotationsEventsOnTimeSeriesCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase$1.<synthetic: ctor_js>","adapter","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase$1.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase$1.onTitle","item","ds","dp","org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase$1.<clinit>"]
-}
-

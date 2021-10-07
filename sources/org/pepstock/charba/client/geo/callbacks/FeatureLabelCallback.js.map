@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FeatureLabelCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MA2BiB,oB;;CAQT,+C,gBAAcA,O;;QARL,M;EAAAC,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
-"sources":["FeatureLabelCallback.java"],
-"names":["feature","org.pepstock.charba.client.geo.callbacks.FeatureLabelCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.callbacks.FeatureLabelCallback.<clinit>"]
-}
-

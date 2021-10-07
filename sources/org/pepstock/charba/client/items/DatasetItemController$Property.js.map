@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetItemController$Property.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OASS,yEATTA,C;;;QAgBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,kJ;EAAAA,iB;;;CAAA,+G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uF;;;CASa,S;EACbC,sF;;;QA3BW,2B;EAAAC,mB;EAAAA;GAAAA,kJAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,mB;EAAAA,khB;;;QAEZ,4E;EAAAC,qH;;;QACA,mF;EAAAA,4H;;;QACA,mF;EAAAA,4H;;;QACA,+E;EAAAA,wH;;;QACA,+E;EAAAA,wH;;;QANY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qR;EACAA,gT;EACAA,gT;EACAA,gS;EACAA,gS;EANYA,qG;;;;;;;;;;;;;AAAA;wF;AAAA;+F;AAAA;+F;AAAA;2F;AAAA;2F;AAAA;8F;AAEZ;6F;AACA;oG;AACA;oG;AACA;gG;AACA;;",
-"sources":["DatasetItemController.java"],
-"names":["org.pepstock.charba.client.items.DatasetItemController$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.DatasetItemController$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.DatasetItemController$Property.<init>","org.pepstock.charba.client.items.DatasetItemController$Property.value","org.pepstock.charba.client.items.DatasetItemController$Property.valueOf","org.pepstock.charba.client.items.DatasetItemController$Property.values","org.pepstock.charba.client.items.DatasetItemController$Property.<synthetic: getter>","org.pepstock.charba.client.items.DatasetItemController$Property.<clinit>"]
-}
-

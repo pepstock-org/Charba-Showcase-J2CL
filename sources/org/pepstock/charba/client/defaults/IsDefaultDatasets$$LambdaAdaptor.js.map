@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultDatasets$$LambdaAdaptor.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kF;EAAAA,wJ;;;CAAA,8I;EAAAC,iC;EAAAA,qF;;;CAAA,sC;EAAAC,2D;EAAAA,sH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["IsDefaultDatasets.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultDatasets$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.defaults.IsDefaultDatasets$$LambdaAdaptor.<init>","org.pepstock.charba.client.defaults.IsDefaultDatasets$$LambdaAdaptor.get","org.pepstock.charba.client.defaults.IsDefaultDatasets$$LambdaAdaptor.<clinit>"]
-}
-

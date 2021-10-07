@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendTitle$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAiCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,iEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,0IAAAA;G;EAAAA,kI;;;QAAA,U;EAAAC,mB;EAAAA,uO;;;QAEZ,sE;EAAAC,+G;;;QACA,sE;EAAAA,+G;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,6Q;EACAA,6Q;EAHYA,6F;;;;;;;;;;;;;AAAA;kF;AAAA;kF;AAAA;sF;AAEZ;uF;AACA;;",
-"sources":["LegendTitle.java"],
-"names":["org.pepstock.charba.client.options.LegendTitle$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.LegendTitle$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.LegendTitle$Property.<init>","org.pepstock.charba.client.options.LegendTitle$Property.value","org.pepstock.charba.client.options.LegendTitle$Property.valueOf","org.pepstock.charba.client.options.LegendTitle$Property.values","org.pepstock.charba.client.options.LegendTitle$Property.<synthetic: getter>","org.pepstock.charba.client.options.LegendTitle$Property.<clinit>"]
-}
-

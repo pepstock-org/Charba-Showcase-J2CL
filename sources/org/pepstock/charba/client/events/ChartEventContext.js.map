@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartEventContext.impl.java.js",
-"lineCount":126,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAoCmB,iB;;CAAA,W;EAAAA,Q;;;;QAyCX,yC,cAAwBC,K;EAAxBC,4B;EAAAA,wC;EAAAA,8G;EAAAA,iB;;;;CAAA,4F,cAAwBD,K;EAC9BE,uM;;;;QASM,yF,cAAwBF,K,gBAAuBG,K;EAA/CF,4B;EAAAA,wC;EAAAA,qK;EAAAA,iB;;;;CAAA,4I,cAAwBD,K,gBAAuBG,K;EAErDD,4H;EAEAA,oF;EAEAA,oF;EAEAA,iL;EACAA,gM;EAEAA,qK;EAEAA,6O;EACAA,6O;;;;QAQM,sE,gCAAqDE,O;EAArDH,4B;EAAAA,wC;EAAAA,6I;EAAAA,iB;;;;CAAA,yH,gCAAqDG,O;EAC3DF,oT;;;;QAQM,sD,wBAA6CE,O;EAA7CH,4B;EAAAA,wC;EAAAA,6H;EAAAA,iB;;;;CAAA,yG,wBAA6CG,O;EACnDF,oS;;;CAQY,kB;EAEZG;GACCA,qJADDA;G;EAKAA,Y;;;CAQc,Y;EAEdC,IAAMN,KAANM,6B;EAEAA;GACCA,6EADDA;G;EAKAA,Y;;;CAQsB,kB;EAEtBC;GACCA,sJADDA;G;EAKAA,Y;;;CAQa,Q;EACbC,mN;;;CAQa,Q;EACbC,mN;;;CAQa,W;EACbC,gO;;;CAQmB,a;EACnBC,kC;;;QAtKiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
-"sources":["ChartEventContext.java"],
-"names":["org.pepstock.charba.client.events.ChartEventContext.<synthetic: ctor_js>","chart","org.pepstock.charba.client.events.ChartEventContext.<synthetic: ctor_create>","org.pepstock.charba.client.events.ChartEventContext.<init>","event","envelop","org.pepstock.charba.client.events.ChartEventContext.getNativeChart","org.pepstock.charba.client.events.ChartEventContext.getChart","org.pepstock.charba.client.events.ChartEventContext.getNativeEvent","org.pepstock.charba.client.events.ChartEventContext.getX","org.pepstock.charba.client.events.ChartEventContext.getY","org.pepstock.charba.client.events.ChartEventContext.getType","org.pepstock.charba.client.events.ChartEventContext.getObject","org.pepstock.charba.client.events.ChartEventContext.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RenderCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;;;MA6BiB,c;;QAAA,M;EAAAA,yB;EAAAA,8B;;;QAAA,O;EAAAC,iC;EAAAA;",
-"sources":["RenderCallback.java"],
-"names":["org.pepstock.charba.client.labels.callbacks.RenderCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.labels.callbacks.RenderCallback.<clinit>"]
-}
-

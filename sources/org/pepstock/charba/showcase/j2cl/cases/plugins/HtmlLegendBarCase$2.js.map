@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HtmlLegendBarCase$2.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MA4G+D,E;;CAAA,W;EAAAA,Q;EAAAA;wF;EAAAA;OAEtC,6EAFsCA,C;;;QAAA,0E;EAAAC,a;EAAAA,yB;EAAAA,qK;EAAAA,iB;;;CAAA,6I;EAAAC,oG;EAAAA,iC;EAAAA,sF;;;CAK5C,0H,gBAAqBC,K,qBAAmBC,I,iBAAaC,W;EACpEC;GACCA,IAAgBC,OAAhBD,gCADDA;GAECA,IAAOE,OAAPF,2HAFDA;GAGCA,iRAHDA;GAICA,wDAJDA;GAKCA,8HALDA;G;EAOAA,yJ;;;;CAb2D,oH;EAAAA,6M;;;CAAA,8E;EAE5DJ,oJ;;;QAF4D,O;EAAAO,qB;EAAAA,kB;EAAAA;",
-"sources":["HtmlLegendBarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$2.<init>","chart","item","currentText","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$2.generateText","builder","newText","org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendBarCase$2.<clinit>"]
-}
-

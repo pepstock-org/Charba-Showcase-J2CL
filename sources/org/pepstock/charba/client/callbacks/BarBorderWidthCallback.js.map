@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BarBorderWidthCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;;;MAyBiB,sB;;QAAA,M;EAAAA,iC;EAAAA,8B;;;QAAA,O;EAAAC,yC;EAAAA;",
-"sources":["BarBorderWidthCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.BarBorderWidthCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.BarBorderWidthCallback.<clinit>"]
-}
-

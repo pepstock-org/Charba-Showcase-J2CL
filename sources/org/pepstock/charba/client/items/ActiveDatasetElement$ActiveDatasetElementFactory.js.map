@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ActiveDatasetElement$ActiveDatasetElementFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MA4IsB,2B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,sC;EAAAA,kD;EAAAA,uG;EAAAA,iB;;;CAAA,0F;EAAAC,iC;;;CAQQ,yD,UAAoBC,Y;EAC/CC,mG;;;;CATmB,U;EAAAA,oM;;;QAAA,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAAAA;",
-"sources":["ActiveDatasetElement.java"],
-"names":["org.pepstock.charba.client.items.ActiveDatasetElement$ActiveDatasetElementFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.ActiveDatasetElement$ActiveDatasetElementFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.ActiveDatasetElement$ActiveDatasetElementFactory.<init>","nativeObject","org.pepstock.charba.client.items.ActiveDatasetElement$ActiveDatasetElementFactory.create","org.pepstock.charba.client.items.ActiveDatasetElement$ActiveDatasetElementFactory.<clinit>"]
-}
-

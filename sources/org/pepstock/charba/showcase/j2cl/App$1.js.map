@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"App$1.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;;;;;;;;;MAgGyC,E;;CAAA,W;EAAAA,Q;EAAAA;4D;;;QAAA,8C;EAAAC,a;EAAAA,yB;EAAAA,6G;EAAAA,iB;;;CAAA,qF;EAAAC,wE;EAAAA,iC;;;CAG1B,O;EACXC,IAAMC,EAAND,qB;EACAA,IAASE,KAATF,wB;EACAA,IAAUG,MAAVH,yB;EACAA,IAAWI,OAAXJ,0B;EACAA,IAASK,KAATL,wB;EACAA,2J;EACAA,mH;EACAA,2H;EACAA,yH;EACAA,6H;;;QAbqC,O;EAAAM,qB;EAAAA,kB;EAAAA;",
-"sources":["App.java"],
-"names":["org.pepstock.charba.showcase.j2cl.App$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.App$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.App$1.<init>","org.pepstock.charba.showcase.j2cl.App$1.run","us","earth","europe","germany","italy","org.pepstock.charba.showcase.j2cl.App$1.<clinit>"]
-}
-

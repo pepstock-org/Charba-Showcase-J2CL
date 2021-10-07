@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Germanymap.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;MAIa,U;;CAAA,W;EAAAA,Q;;;QAqCL,S;EAAAC,qB;EAAAA,iC;EAAAA,2E;EAAAA,iB;;;CAAA,8D;EACNC,8Q;;;QAtCW,O;EAAAC,6B;EAAAA,0B;EAAAA,qC;EAIZA,uxhC;;;;;;;;;;;;AAFA;WAAoB,2DAApB,gB;AAFY;WAIkB,iEAJlB;",
-"sources":["Germanymap.java"],
-"names":["org.pepstock.charba.showcase.j2cl.topojson.Germanymap.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.topojson.Germanymap.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.topojson.Germanymap.<init>","org.pepstock.charba.showcase.j2cl.topojson.Germanymap.<clinit>"]
-}
-

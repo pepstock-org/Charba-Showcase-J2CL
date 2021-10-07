@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultAngleLines.impl.java.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;MA4BmB,iB;;CAAA,W;EAAAA,Q;;;QAWlB,S;EAAAC,4B;EAAAA,wC;EAAAA,mF;EAAAA,iB;;;CAAA,sE;EAAAC,iC;;;CAUe,a;EACdC,2G;;;CASa,oB;EACbC,uE;;;CASU,gB;EACVC,8G;;;CASa,uB;EACbC,sH;;;CASoB,iB;EACpBC,gE;;;QA9DiB,O;EAAAC,oC;EAAAA,iC;EAAAA,qB;;;;;;;;;;;;AAElB;kBAA6B,iFAA7B,S;AAEA;kBAAyB,oFAAzB,K;AAEA;kBAA4B,4FAA5B;",
-"sources":["DefaultAngleLines.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultAngleLines.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.<init>","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.isDisplay","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.getColorAsString","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.getLineWidth","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.getBorderDashOffset","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.getBorderDash","org.pepstock.charba.client.defaults.globals.DefaultAngleLines.<clinit>"]
-}
-

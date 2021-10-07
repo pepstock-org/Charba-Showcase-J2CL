@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CubicInterpolationMode.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,sB;;CAAA,W;EAAAA,Q;EAAAA;OAeU,iEAfVA,C;;;QAsBH,gD,8DAA8BC,K;EAA9BC,6C;EAAAA,0I;EAAAA,iB;;;CAAA,uG,8DAA8BD,K;EAA9BE,qC;EAAAA,2C;EAAAA,mE;EACPA,+E;;;CASa,S;EACbC,8E;;;QAjCU,2B;EAAAC,iC;EAAAA;GAAAA,sKAAAA;G;EAAAA,gJ;;;QAAA,U;EAAAC,iC;EAAAA,gS;;;QAGX,sE;EAAAC,2I;;;QAKA,uE;EAAAA,4I;;;QARW,O;EAAAC,yC;EAAAA,sC;EAAAA,e;EAGXA,uT;EAKAA,2T;EARWA,2G;;;;;;;;;;;;;AAAA;gG;AAAA;iG;AAAA;oG;AAGX;qG;AAKA;;",
-"sources":["CubicInterpolationMode.java"],
-"names":["org.pepstock.charba.client.enums.CubicInterpolationMode.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.CubicInterpolationMode.<synthetic: ctor_create>","org.pepstock.charba.client.enums.CubicInterpolationMode.<init>","org.pepstock.charba.client.enums.CubicInterpolationMode.value","org.pepstock.charba.client.enums.CubicInterpolationMode.valueOf","org.pepstock.charba.client.enums.CubicInterpolationMode.values","org.pepstock.charba.client.enums.CubicInterpolationMode.<synthetic: getter>","org.pepstock.charba.client.enums.CubicInterpolationMode.<clinit>"]
-}
-

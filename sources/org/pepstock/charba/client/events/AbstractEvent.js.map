@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractEvent.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;;;;MA4BsB,a;;CAAA,W;EAAAA,Q;EAAAA;OAGG,wDAHHA,C;EAAAA;OAKS,+DALTA,C;;;CAaX,mJ,eAA8BC,W,mBAAuBC,I;EAC9DC,wD;EAGAA,0N;EAEAA,8M;;;CASsB,W;EACtBC,qE;;;CAS4B,kB;EAC5BC,4E;;;CAQc,Y;EACdC,wE;;;QAhDoB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["AbstractEvent.java"],
-"names":["org.pepstock.charba.client.events.AbstractEvent.<synthetic: ctor_js>","nativeEvent","type","org.pepstock.charba.client.events.AbstractEvent.<init>","org.pepstock.charba.client.events.AbstractEvent.getType","org.pepstock.charba.client.events.AbstractEvent.getNativeEvent","org.pepstock.charba.client.events.AbstractEvent.getChart","org.pepstock.charba.client.events.AbstractEvent.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ResponseInit$GetHeadersUnionType$$Overlay.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;MA4BmB,Q;;QAEyB,sB,UAAUA,C;EAAVC,mB;EACtCA,uD;;;QAIc,qE;EAAAC,mB;EACdA,kG;;;QAI+B,qE;EAAAC,mB;EAC/BA,gH;;;QAI4B,2E;EAAAC,mB;EAC5BA,oF;;;QAIc,qE;EAAAC,mB;EACdA,+D;;;QAIc,qE;EAAAC,mB;EACdA,+D;;;QA5Ba,O;EAAAC,2B;EAAAA;",
-"sources":["ResponseInit.java"],
-"names":["o","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.of","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.asHeaders__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.asJsArray__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.asJsPropertyMap__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.isHeaders__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.isJsArray__$devirt","elemental2.dom.ResponseInit$GetHeadersUnionType$$Overlay.<clinit>"]
-}
-

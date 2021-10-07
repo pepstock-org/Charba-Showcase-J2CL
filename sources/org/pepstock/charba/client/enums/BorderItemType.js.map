@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BorderItemType.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MA6BY,c;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,yDAhBVA,C;;;QAuBH,gD,8DAAsBC,K;EAAtBC,qC;EAAAA,kI;EAAAA,iB;;;CAAA,+F,8DAAsBD,K;EAAtBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uE;;;CASa,S;EACbC,sE;;;QAlCU,2B;EAAAC,yB;EAAAA;GAAAA,8IAAAA;G;EAAAA,gI;;;QAAA,U;EAAAC,yB;EAAAA,iU;;;QAEX,+D;EAAAC,oH;;;QAIA,8D;EAAAA,mH;;;QAIA,8D;EAAAA,mH;;;QAVW,O;EAAAC,iC;EAAAA,8B;EAAAA,e;EAEXA,mR;EAIAA,+Q;EAIAA,+Q;EAVWA,2F;;;;;;;;;;;;;AAAA;iF;AAAA;gF;AAAA;gF;AAAA;oF;AAEX;sF;AAIA;qF;AAIA;;",
-"sources":["BorderItemType.java"],
-"names":["org.pepstock.charba.client.enums.BorderItemType.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.BorderItemType.<synthetic: ctor_create>","org.pepstock.charba.client.enums.BorderItemType.<init>","org.pepstock.charba.client.enums.BorderItemType.value","org.pepstock.charba.client.enums.BorderItemType.valueOf","org.pepstock.charba.client.enums.BorderItemType.values","org.pepstock.charba.client.enums.BorderItemType.<synthetic: getter>","org.pepstock.charba.client.enums.BorderItemType.<clinit>"]
-}
-

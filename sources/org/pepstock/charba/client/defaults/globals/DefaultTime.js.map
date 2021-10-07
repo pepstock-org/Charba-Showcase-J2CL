@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultTime.impl.java.js",
-"lineCount":74,
-"mappings":"A;;;;;;;;;;;;MA0Ba,W;;CAAA,W;EAAAA,Q;;;QAOZ,S;EAAAC,sB;EAAAA,kC;EAAAA,6E;EAAAA,iB;;;CAAA,gE;EAAAC,iC;;;CAUkB,iB;EACjBC,wE;;;CASe,Y;EACfC,Y;;;CASa,oB;EACbC,Y;;;CASe,W;EACfC,Y;;;CASa,e;EACbC,iG;;;CASe,c;EACfC,yE;;;CASa,a;EACbC,Y;;;QA9EW,O;EAAAC,8B;EAAAA,2B;EAAAA,qB;;;;;;;;;;;;AAEZ;YAA4B,6EAA5B;",
-"sources":["DefaultTime.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultTime.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTime.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTime.<init>","org.pepstock.charba.client.defaults.globals.DefaultTime.getIsoWeekday","org.pepstock.charba.client.defaults.globals.DefaultTime.getRound","org.pepstock.charba.client.defaults.globals.DefaultTime.getTooltipFormat","org.pepstock.charba.client.defaults.globals.DefaultTime.getUnit","org.pepstock.charba.client.defaults.globals.DefaultTime.getStepSize","org.pepstock.charba.client.defaults.globals.DefaultTime.getMinUnit","org.pepstock.charba.client.defaults.globals.DefaultTime.getParser","org.pepstock.charba.client.defaults.globals.DefaultTime.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseMeterChart.impl.java.js",
-"lineCount":111,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;MAmCe,c;;CAAA,W;EAAAA,Q;EAAAA;OAOc,yEAPdA,C;;;CAed,6F,aAAoBC,I;EACnBC,4F;EADDA,wE;;;CAUkB,oB,eAAkBC,G;;CAOZ,gE;;CAOE,4D;EACzBC,sF;;;CASoB,sB;EAKpBC,IAAeJ,IAAfI,2E;EAIAA;GAGCA,IAAWC,kBAAXD,wHAHDA;GAKCA,qWALDA;GAOCA,wKAPDA;G;EAUAA,wBAAaE,OAAbF,C;EAEAA,8U;EAEAA,sF;EAEAA,qD;EAEAA,uD;EAEAA,oH;EAIAA,IAAoBG,kBAApBH,iL;EAEAA,4D;EAIAA,IAAoBI,kBAApBJ,iL;EAEAA,4D;EAEAA;GAAAA,IAAaK,OAAbL,oEAAAA;;IAECA,uNAFDA;IAICA,uNAJDA;;G;EAOAA,uE;;;;CAnGa,c;EAAAM,6I;;;CAAA,gE;EAOdT,sF;;;QAPc,O;EAAAU,iC;EAAAA,8B;EAAAA,wB;EAAAA,2B;;;;;;;;;;;;;;;;;;;;;;AAEd;eAG2B,oEAH3B;",
-"sources":["BaseMeterChart.java"],
-"names":["org.pepstock.charba.client.impl.charts.BaseMeterChart.<synthetic: ctor_js>","type","org.pepstock.charba.client.impl.charts.BaseMeterChart.<init>","max","org.pepstock.charba.client.impl.charts.BaseMeterChart.getController","org.pepstock.charba.client.impl.charts.BaseMeterChart.applyConfiguration","controllerInstance","options","disabledActiveMode","disabledResizeMode","dataset","org.pepstock.charba.client.impl.charts.BaseMeterChart.newDataset","org.pepstock.charba.client.impl.charts.BaseMeterChart.<clinit>"]
-}
-

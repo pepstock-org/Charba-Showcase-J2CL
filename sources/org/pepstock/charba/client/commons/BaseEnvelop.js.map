@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseEnvelop.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;MAwBsB,W;;CAAA,W;EAAAA,Q;;;;CAKX,uD;EACTC,mF;;;;CAQS,8D,gBAAoBC,Q;EAC7BD,sG;;;;CAQS,uE,UAAcE,O;EACvBF,sG;;;;CASS,gF,UAAcE,O,iBAAiBD,Q;EACxCD,8G;;;CAQiB,8B,UAAaE,O;EAC9BC,+F;;;QA3CoB,O;EAAAC,8B;EAAAA,2B;EAAAA;",
-"sources":["BaseEnvelop.java"],
-"names":["org.pepstock.charba.client.commons.BaseEnvelop.<synthetic: ctor_js>","org.pepstock.charba.client.commons.BaseEnvelop.<init>","nullable","content","org.pepstock.charba.client.commons.BaseEnvelop.setContent","org.pepstock.charba.client.commons.BaseEnvelop.<clinit>"]
-}
-

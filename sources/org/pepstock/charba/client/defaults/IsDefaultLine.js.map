@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultLine.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;;;;;;;MA2BiB,a;;CAOT,c;;CAOE,qB;;CAOF,uB;;CAQG,sB;;CAOF,qB;;CAOe,6B;;CAOf,c;;QAlDQ,O;EAAAA,gC;EAAAA;",
-"sources":["IsDefaultLine.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultLine.<clinit>"]
-}
-

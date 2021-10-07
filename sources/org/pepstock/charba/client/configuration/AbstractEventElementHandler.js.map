@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractEventElementHandler.impl.java.js",
-"lineCount":88,
-"mappings":"A;;;;;;;;;;;;;;;;MA8Be,2B;;CAAA,W;EAAAA,Q;EAAAA;OAOqC,2FAPrCA,C;EAAAA;OASqC,2FATrCA,C;EAAAA;OAWqC,2FAXrCA,C;EAAAA;OAcqB,sFAdrBA,C;;;CAqBd,0I,6BAAiDC,a;EAAjDC,iC;EAAAA,uF;EAECA,8Q;EAEAA,2O;EAKAA;GAAoCC,qIAApCD;I;EAEAA;GAAoCC,uIAApCD;I;EAEAA;GAAoCC,uIAApCD;I;;;CAQ0B,iE;EAC1BE,mG;;;CAUU,mG,gBAA2CC,Q,iBAAkBC,c;EAEvEC;GAECA;IAECA,2TAFDA;;IAKCA,8TALDA;IAFDA;G;;;CAmBU,mG,gBAA2CF,Q,iBAAkBC,c;EAEvEE;GAECA;IAECA,gUAFDA;IAGCA,iUAHDA;;IAMCA,mUANDA;IAOCA,oUAPDA;IAFDA;G;;;CAmBa,yH,eAA2CC,K;;CAO3C,yH,eAA2CA,K;;CAO3C,yH,eAA2CA,K;;CA7G3C,+E;EAOdP,wM;EAEAA,wM;EAEAA,wM;;;QAXc,O;EAAAQ,8C;EAAAA,2C;EAAAA;",
-"sources":["AbstractEventElementHandler.java"],
-"names":["org.pepstock.charba.client.configuration.AbstractEventElementHandler.<synthetic: ctor_js>","configuration","org.pepstock.charba.client.configuration.AbstractEventElementHandler.<init>","org.pepstock.charba.client.configuration.AbstractEventElementHandler.<lambda in <init>>","org.pepstock.charba.client.configuration.AbstractEventElementHandler.getConfiguration","isAdding","manageListener","org.pepstock.charba.client.configuration.AbstractEventElementHandler.checkAndManageCanvasClickListeners","org.pepstock.charba.client.configuration.AbstractEventElementHandler.checkAndManageCanvasHoverListeners","event","org.pepstock.charba.client.configuration.AbstractEventElementHandler.<clinit>"]
-}
-

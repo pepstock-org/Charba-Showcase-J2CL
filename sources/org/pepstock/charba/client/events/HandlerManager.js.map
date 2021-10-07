@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HandlerManager.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA0BsB,c;;CAAA,W;EAAAA,Q;EAAAA;OAGE,6DAHFA,C;;;CAQX,yD;EAAAC,iC;EAAAA,mE;;;CASiB,a;;CASA,yG,qBAAwBC,O,mBAAmBC,I;EAErEC,kO;EAEAA,uM;;;CAQW,oD,cAAgBC,K;EAE3BC;GAECA,0DAFDA;GAICA,qKAJDA;G;;;CAcgB,8D,kBAA0BH,I;EAC1CI,qL;;;CASoB,6D,kBAAyBJ,I;EAC7CK,oL;;;CASU,kJ,qBAA2BN,O,mBAAmBC,I;EAExDM,qO;EAEAA;GAECA,yIAFDA;G;;;CA9EoB,2D;EAGrBR,0F;;;QAHqB,O;EAAAS,iC;EAAAA,8B;EAAAA;",
-"sources":["HandlerManager.java"],
-"names":["org.pepstock.charba.client.events.HandlerManager.<synthetic: ctor_js>","org.pepstock.charba.client.events.HandlerManager.<init>","handler","type","org.pepstock.charba.client.events.HandlerManager.addHandler","event","org.pepstock.charba.client.events.HandlerManager.fireEvent","org.pepstock.charba.client.events.HandlerManager.getHandlerCount","org.pepstock.charba.client.events.HandlerManager.isEventHandled","org.pepstock.charba.client.events.HandlerManager.removeHandler","org.pepstock.charba.client.events.HandlerManager.<clinit>"]
-}
-

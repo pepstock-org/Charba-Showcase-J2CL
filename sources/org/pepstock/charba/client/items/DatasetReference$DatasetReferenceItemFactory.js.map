@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetReference$DatasetReferenceItemFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MA0IqB,2B;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,sC;EAAAA,kD;EAAAA,mG;EAAAA,iB;;;CAAA,sF;EAAAC,iC;;;CAUgB,yD,UAAoBC,Y;EAC3CC,+F;;;;CAhBkB,U;EAAAA,4L;;;QAAA,O;EAAAC,8C;EAAAA,2C;EAAAA,qB;EAAAA;",
-"sources":["DatasetReference.java"],
-"names":["org.pepstock.charba.client.items.DatasetReference$DatasetReferenceItemFactory.<synthetic: ctor_js>","org.pepstock.charba.client.items.DatasetReference$DatasetReferenceItemFactory.<synthetic: ctor_create>","org.pepstock.charba.client.items.DatasetReference$DatasetReferenceItemFactory.<init>","nativeObject","org.pepstock.charba.client.items.DatasetReference$DatasetReferenceItemFactory.create","org.pepstock.charba.client.items.DatasetReference$DatasetReferenceItemFactory.<clinit>"]
-}
-

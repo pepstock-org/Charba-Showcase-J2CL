@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointLabels.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MA+BmB,W;;CAAA,W;EAAAA,Q;EAAAA;OAqCU,gEArCVA,C;EAAAA;OAuCI,kEAvCJA,C;;;QAiDlB,4M,sBAA0BC,K,aAAWC,Q,8BAA+BC,a,WAA4BC,Y;EAAhGC,sB;EAAAA,kC;EAAAA,mT;EAAAA,iB;;;CAAA,0P,sBAA0BJ,K,aAAWC,Q,8BAA+BC,a,WAA4BC,Y;EAC/FE,wQ;EAEAA,6Y;EAEAA,iY;;;CASoB,oB;EACpBC,6E;;;CASc,sB;EACdC,+E;;;CAQW,qB,gBAAmBC,O;EAC9BC,qK;;;CASc,a;EACdC,wQ;;;CAQW,6D,gBAAyBC,a;EACpCC,gI;;;CAQW,oC,gBAAwBD,a;EACnCC,2L;;;CASa,4B;EACbC,uS;;;CAQc,oB;EACdC,mF;;;CAQW,iB,eAAeC,O;EAC1BC,gM;;;CASU,c;EACVC,qQ;;;;CArJiB,oB;EAAAC,8F;;;;CAAA,W;EAAAC,qF;;;;CAAA,Y;EAAAC,sF;;;;CAAA,qD;EAAAC,gI;;;;CAAA,4B;EAAAA,uG;;;QAAA,O;EAAAC,8B;EAAAA,2B;EAAAA,wB;EAAAA;",
-"sources":["PointLabels.java"],
-"names":["org.pepstock.charba.client.options.PointLabels.<synthetic: ctor_js>","scale","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.PointLabels.<synthetic: ctor_create>","org.pepstock.charba.client.options.PointLabels.<init>","org.pepstock.charba.client.options.PointLabels.getFontContainer","org.pepstock.charba.client.options.PointLabels.getBackdropPadding","display","org.pepstock.charba.client.options.PointLabels.setDisplay","org.pepstock.charba.client.options.PointLabels.isDisplay","backdropColor","org.pepstock.charba.client.options.PointLabels.setBackdropColor","org.pepstock.charba.client.options.PointLabels.getBackdropColorAsString","org.pepstock.charba.client.options.PointLabels.getBackdropColor","padding","org.pepstock.charba.client.options.PointLabels.setPadding","org.pepstock.charba.client.options.PointLabels.getPadding","org.pepstock.charba.client.options.PointLabels.getColorAsString","org.pepstock.charba.client.options.PointLabels.getFont","org.pepstock.charba.client.options.PointLabels.getColor","org.pepstock.charba.client.options.PointLabels.setColor","org.pepstock.charba.client.options.PointLabels.<clinit>"]
-}
-

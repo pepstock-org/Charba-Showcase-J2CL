@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Document$CreateElementTypeExtensionType$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MA0DmB,Q;;QAEgC,U;EAAAA,mB;EAC7CA,8F;;;QAHa,O;EAAAC,2B;EAAAA;",
-"sources":["Document.java"],
-"names":["elemental2.dom.Document$CreateElementTypeExtensionType$$Overlay.create","elemental2.dom.Document$CreateElementTypeExtensionType$$Overlay.<clinit>"]
-}
-

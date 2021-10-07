@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartResizeEvent.impl.java.js",
-"lineCount":73,
-"mappings":"A;;;;;;;;;;;;;;;MA0BmB,gB;;CAAA,W;EAAAA,Q;EAAAA;OAOK,2DAPLA,C;;;QAeX,uG,0BAAmCC,Y,kBAAuBC,I;EAA1DC,2B;EAAAA,uC;EAAAA,wL;EAAAA,iB;;;CAAA,yJ,0BAAmCF,Y,kBAAuBC,I;EAChEE,iY;EAEAA,yM;;;CAQe,W;EACfC,wE;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAwBC,SAAxBD,uFAFDA;GAICA,+EAJDA;G;;;QApCD,8D;EAAAE,uH;;;QAFkB,O;EAAAC,mC;EAAAA,gC;EAAAA,6B;EAElBA,sJ;;;;;;;;;;;;;;;;;AAFkB;;",
-"sources":["ChartResizeEvent.java"],
-"names":["org.pepstock.charba.client.events.ChartResizeEvent.<synthetic: ctor_js>","eventContext","size","org.pepstock.charba.client.events.ChartResizeEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.ChartResizeEvent.<init>","org.pepstock.charba.client.events.ChartResizeEvent.getSize","handler","org.pepstock.charba.client.events.ChartResizeEvent.dispatch","myHandler","org.pepstock.charba.client.events.ChartResizeEvent.<synthetic: getter>","org.pepstock.charba.client.events.ChartResizeEvent.<clinit>"]
-}
-

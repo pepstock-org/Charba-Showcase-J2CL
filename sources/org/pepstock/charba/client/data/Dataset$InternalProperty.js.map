@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Dataset$InternalProperty.impl.java.js",
-"lineCount":161,
-"mappings":"A;;;;;;;;;;;;;;MAgOM,gB;;CAAA,W;EAAAA,Q;EAAAA;OAiBiB,kEAjBjBA,C;;;QAwBI,gD,8DAAwBC,K;EAAxBC,uC;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAwBD,K;EAAxBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QAnCG,2B;EAAAC,2B;EAAAA;GAAAA,2JAAAA;G;EAAAA,2I;;;QAAA,U;EAAAC,2B;EAAAA,ogC;;;QAEJ,yE;EAAAC,kI;;;QACA,qE;EAAAA,8H;;;QACA,oE;EAAAA,6H;;;QACA,sE;EAAAA,+H;;;QACA,uE;EAAAA,gI;;;QACA,0E;EAAAA,mI;;;QAEA,yE;EAAAA,kI;;;QAEA,+E;EAAAA,wI;;;QACA,gF;EAAAA,yI;;;QAEA,gF;EAAAA,yI;;;QAdI,O;EAAAC,mC;EAAAA,gC;EAAAA,e;EAEJA,+S;EACAA,+R;EACAA,2R;EACAA,mS;EACAA,uS;EACAA,mT;EAEAA,8S;EAEAA,sU;EACAA,0U;EAEAA,yU;EAdIA,sG;;;;;;;;;;;;;AAAA;6F;AAAA;yF;AAAA;wF;AAAA;0F;AAAA;2F;AAAA;8F;AAAA;6F;AAAA;mG;AAAA;oG;AAAA;oG;AAAA;+F;AAEJ;kG;AACA;8F;AACA;6F;AACA;+F;AACA;gG;AACA;mG;AAEA;kG;AAEA;wG;AACA;yG;AAEA;;",
-"sources":["Dataset.java"],
-"names":["org.pepstock.charba.client.data.Dataset$InternalProperty.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.Dataset$InternalProperty.<synthetic: ctor_create>","org.pepstock.charba.client.data.Dataset$InternalProperty.<init>","org.pepstock.charba.client.data.Dataset$InternalProperty.value","org.pepstock.charba.client.data.Dataset$InternalProperty.valueOf","org.pepstock.charba.client.data.Dataset$InternalProperty.values","org.pepstock.charba.client.data.Dataset$InternalProperty.<synthetic: getter>","org.pepstock.charba.client.data.Dataset$InternalProperty.<clinit>"]
-}
-

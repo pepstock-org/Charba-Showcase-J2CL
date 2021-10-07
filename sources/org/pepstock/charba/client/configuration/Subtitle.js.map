@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Subtitle.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;MA0Ba,Q;;CAAA,W;EAAAA,Q;;;QAOZ,sE,6BAA8BC,O;EAA9BC,mB;EAAAA,+B;EAAAA,2I;EAAAA,iB;;;CAAA,uH,6BAA8BD,O;EAC7BE,2I;;;CASa,gE;EACbC,qD;;;CASkB,6D;EAClBC,qD;;;QA5BW,O;EAAAC,2B;EAAAA,wB;EAAAA;",
-"sources":["Subtitle.java"],
-"names":["org.pepstock.charba.client.configuration.Subtitle.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Subtitle.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Subtitle.<init>","org.pepstock.charba.client.configuration.Subtitle.getTitleElement","org.pepstock.charba.client.configuration.Subtitle.getTitleNode","org.pepstock.charba.client.configuration.Subtitle.<clinit>"]
-}
-

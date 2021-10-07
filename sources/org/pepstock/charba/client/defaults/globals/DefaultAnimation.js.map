@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultAnimation.impl.java.js",
-"lineCount":50,
-"mappings":"A;;;;;;;;;MAwBa,gB;;CAAA,W;EAAAA,Q;;;QAUZ,S;EAAAC,2B;EAAAA,uC;EAAAA,kF;EAAAA,iB;;;CAAA,qE;EAAAC,qF;;;CAUe,mB;EACdC,gH;;;CASc,kB;EACdC,+G;;;QA/BW,O;EAAAC,mC;EAAAA,gC;EAAAA,mC;;;;;;;;;AAEZ;iBAA6B,uFAA7B,Q;AAEA;iBAA6B,sFAA7B;",
-"sources":["DefaultAnimation.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultAnimation.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultAnimation.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultAnimation.<init>","org.pepstock.charba.client.defaults.globals.DefaultAnimation.isAnimateRotate","org.pepstock.charba.client.defaults.globals.DefaultAnimation.isAnimateScale","org.pepstock.charba.client.defaults.globals.DefaultAnimation.<clinit>"]
-}
-

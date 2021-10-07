@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Span$$Overlay.impl.java.js",
-"lineCount":19,
-"mappings":"A;;;;MA+BmB,Q;;QAAA,O;EAAAA,2B;EAAAA,wB;;;;;;;;;AAElB;SAI2B,4DAJ3B;",
-"sources":["Span.java"],
-"names":["org.pepstock.charba.client.dom.elements.Span$$Overlay.<clinit>"]
-}
-

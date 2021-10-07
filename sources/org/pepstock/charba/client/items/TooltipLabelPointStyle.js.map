@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipLabelPointStyle.impl.java.js",
-"lineCount":121,
-"mappings":"A;;;;;;;;;;;;;MAgCmB,sB;;CAAA,W;EAAAA,Q;;;;QA0CX,S;EAAAC,iC;EAAAA,6C;EAAAA,6E;EAAAA,iB;;;;CAAA,gE;EACNC,yE;;;;QAQD,wD,UAAoCC,Y;EAApCF,iC;EAAAA,6C;EAAAA,wI;EAAAA,iB;;;;CAAA,+G,UAAoCE,Y;EACnCD,oI;;;CAQiB,iB;EAEjBE;GACCA,8XADDA;G;EAKAA,wE;;;CAUU,wB;EAGVC;GACCA,6QADDA;G;EAKAA,6E;;;CAUa,yB;EAGbC;GACCA,iRADDA;G;EAKAA,8E;;;CAQqB,qB;EACrBC,kO;;;CAQW,4D,mBAAyBC,U;EACpCC,sM;;;CAQW,4D,yBAAkBD,U;EAC7BC,2M;;;CAQW,+D,0BAAqBD,U;EAChCC,8M;;;CAQW,qB,eAAmBC,Q;EAC9BC,iK;;;CAQa,e;EACbC,4N;;;CAQmB,a;EACnBC,kC;;;QApKD,sE;EAAAC,2I;;;QAFkB,O;EAAAC,yC;EAAAA,sC;EAAAA,gC;EAElBA,4I;;;;;;;;;;;;;;;;;AAFkB;;",
-"sources":["TooltipLabelPointStyle.java"],
-"names":["org.pepstock.charba.client.items.TooltipLabelPointStyle.<synthetic: ctor_js>","org.pepstock.charba.client.items.TooltipLabelPointStyle.<synthetic: ctor_create>","org.pepstock.charba.client.items.TooltipLabelPointStyle.<init>","nativeObject","org.pepstock.charba.client.items.TooltipLabelPointStyle.getPointStyle","org.pepstock.charba.client.items.TooltipLabelPointStyle.getPointStyleAsImage","org.pepstock.charba.client.items.TooltipLabelPointStyle.getPointStyleAsCanvas","org.pepstock.charba.client.items.TooltipLabelPointStyle.getPointStyleType","pointStyle","org.pepstock.charba.client.items.TooltipLabelPointStyle.setPointStyle","rotation","org.pepstock.charba.client.items.TooltipLabelPointStyle.setRotation","org.pepstock.charba.client.items.TooltipLabelPointStyle.getRotation","org.pepstock.charba.client.items.TooltipLabelPointStyle.getObject","org.pepstock.charba.client.items.TooltipLabelPointStyle.<synthetic: getter>","org.pepstock.charba.client.items.TooltipLabelPointStyle.<clinit>"]
-}
-

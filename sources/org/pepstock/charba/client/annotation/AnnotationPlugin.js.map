@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnnotationPlugin.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;;;;;;;MAiCmB,gB;;CAAA,W;EAAAA,Q;;;QAqBV,S;EAAAC,uC;EAAAA,4E;EAAAA,iB;;;CAAA,+D;EAAAC,2E;;;QASgB,O;EAAAC,2B;EACvBA,4F;;;CAQI,kH,0BAAgCC,O;EACpCC,4F;;;QAMkB,U;EAAAC,2B;EAClBA,0C;;;QAQkB,iB,gBAAeC,iB;EAAfD,2B;EAElBA,8C;EAEAA,iL;EAEAA,6L;EAEAA,8M;;;QA7DD,gE;EAAAE,yH;;;QAKA,qE;EAAAA,8H;;;QAKA,8E;EAAAA,uI;;;QAZkB,O;EAAAC,mC;EAAAA,gC;EAAAA,kC;EAElBA,sL;EAKAA,gI;EAKAA,iJ;EAEAA,4H;EAEAA,oH;;;;;;;;;;;;;;;;;AAhBkB;oF;AAAA;yF;AAAA;kG;AAAA;iBAc4B,mEAd5B,C;AAAA;iBAgBoB,mEAhBpB;",
-"sources":["AnnotationPlugin.java"],
-"names":["org.pepstock.charba.client.annotation.AnnotationPlugin.<synthetic: ctor_js>","org.pepstock.charba.client.annotation.AnnotationPlugin.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.AnnotationPlugin.<init>","org.pepstock.charba.client.annotation.AnnotationPlugin.get","options","org.pepstock.charba.client.annotation.AnnotationPlugin.mergeDefaults","org.pepstock.charba.client.annotation.AnnotationPlugin.enable","enableToAllCharts","org.pepstock.charba.client.annotation.AnnotationPlugin.<synthetic: getter>","org.pepstock.charba.client.annotation.AnnotationPlugin.<clinit>"]
-}
-

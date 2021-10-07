@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AxisDimensionsCallback.impl.java.js",
-"lineCount":19,
-"mappings":"A;;;;;;;;;;MAyBiB,sB;;CAQX,iH,aAA2BA,I,kBAAeC,I;;CAQ1C,gH,aAA0BD,I,kBAAeC,I;;QAhB9B,O;EAAAC,yC;EAAAA;",
-"sources":["AxisDimensionsCallback.java"],
-"names":["axis","item","org.pepstock.charba.client.callbacks.AxisDimensionsCallback.<clinit>"]
-}
-

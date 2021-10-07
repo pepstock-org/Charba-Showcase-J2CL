@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointStyleCircle.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;MAwCY,gB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,2B;EAAAA,uC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,sF;;;CAcI,oH,iCAA6BC,O,gBAAaC,I,gBAAaC,C,gBAAUC,C,gBAAUC,M,gBAAeC,Q,gBAAiBC,G;EACzHC,+I;;;QAfU,O;EAAAC,mC;EAAAA,gC;EAAAA;",
-"sources":["PointStyleCircle.java"],
-"names":["org.pepstock.charba.client.colors.tiles.PointStyleCircle.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.PointStyleCircle.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.PointStyleCircle.<init>","context","size","x","y","radius","rotation","rad","org.pepstock.charba.client.colors.tiles.PointStyleCircle.drawPointStyle","org.pepstock.charba.client.colors.tiles.PointStyleCircle.<clinit>"]
-}
-

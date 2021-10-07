@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StandardScaleId.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;;;;MA0BmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAGK,+DAHLA,C;;;QAUlB,yB,gBAAuBC,K;EAAvBC,0B;EAAAA,sC;EAAAA,6F;EAAAA,iB;;;CAAA,2E,gBAAuBD,K;EACtBE,4F;EAEAA,yE;EAEAA,0O;;;CASe,e;EACfC,4E;;;CASU,Q;EACVC,wB;;;CASc,M,UAAcC,G;EAC5BC,yB;;;QA7CiB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
-"sources":["StandardScaleId.java"],
-"names":["org.pepstock.charba.client.options.StandardScaleId.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.StandardScaleId.<synthetic: ctor_create>","org.pepstock.charba.client.options.StandardScaleId.<init>","org.pepstock.charba.client.options.StandardScaleId.getAxisKind","org.pepstock.charba.client.options.StandardScaleId.hashCode","obj","org.pepstock.charba.client.options.StandardScaleId.equals","org.pepstock.charba.client.options.StandardScaleId.<clinit>"]
-}
-

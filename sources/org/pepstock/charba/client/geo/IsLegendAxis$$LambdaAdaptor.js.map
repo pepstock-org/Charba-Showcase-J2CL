@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsLegendAxis$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;MAwBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wE;EAAAA,oI;;;CAAA,0H;EAAAC,iC;EAAAA,2E;;;CAAA,a;EAAAC,kD;EAAAA,wG;;;;CAAA,a;EAAAC,6F;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["IsLegendAxis.java"],
-"names":["org.pepstock.charba.client.geo.IsLegendAxis$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.geo.IsLegendAxis$$LambdaAdaptor.<init>","org.pepstock.charba.client.geo.IsLegendAxis$$LambdaAdaptor.getMapper","org.pepstock.charba.client.geo.IsLegendAxis$$LambdaAdaptor.getLegend","org.pepstock.charba.client.geo.IsLegendAxis$$LambdaAdaptor.<clinit>"]
-}
-

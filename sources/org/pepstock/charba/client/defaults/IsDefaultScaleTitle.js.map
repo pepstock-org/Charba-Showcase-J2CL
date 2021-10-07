@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultScaleTitle.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;MAwBiB,mB;;CAOC,c;;CAOT,a;;CAOQ,Y;;QArBA,O;EAAAA,sC;EAAAA;",
-"sources":["IsDefaultScaleTitle.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultScaleTitle.<clinit>"]
-}
-

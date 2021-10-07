@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ProjectionAxisMapper$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAwCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,sEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,+I;EAAAA,iB;;;CAAA,4G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,oF;;;CASa,S;EACbC,mF;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,+IAAAA;G;EAAAA,uI;;;QAAA,U;EAAAC,mB;EAAAA,+V;;;QAEZ,8E;EAAAC,uH;;;QACA,oF;EAAAA,6H;;;QACA,qF;EAAAA,8H;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,mS;EACAA,0T;EACAA,8T;EAJYA,kG;;;;;;;;;;;;;AAAA;0F;AAAA;gG;AAAA;iG;AAAA;2F;AAEZ;+F;AACA;qG;AACA;;",
-"sources":["ProjectionAxisMapper.java"],
-"names":["org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.<init>","org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.value","org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.valueOf","org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.values","org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.<synthetic: getter>","org.pepstock.charba.client.geo.ProjectionAxisMapper$Property.<clinit>"]
-}
-

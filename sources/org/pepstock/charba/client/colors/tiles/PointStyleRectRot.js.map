@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointStyleRectRot.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;MAwCM,iB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,4B;EAAAA,wC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,sF;;;CAcU,oH,iCAA6BC,O,gBAAaC,I,gBAAaC,C,gBAAUC,C,gBAAUC,M,gBAAeC,Q,gBAAiBC,G;EACzHC,IAAOC,OAAPD,0B;EACAA,IAAOE,OAAPF,0B;EACAA,yC;EACAA,yC;EACAA,yC;EACAA,yC;;;QApBI,O;EAAAG,oC;EAAAA,iC;EAAAA;",
-"sources":["PointStyleRectRot.java"],
-"names":["org.pepstock.charba.client.colors.tiles.PointStyleRectRot.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.PointStyleRectRot.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.PointStyleRectRot.<init>","context","size","x","y","radius","rotation","rad","org.pepstock.charba.client.colors.tiles.PointStyleRectRot.drawPointStyle","xOffset","yOffset","org.pepstock.charba.client.colors.tiles.PointStyleRectRot.<clinit>"]
-}
-

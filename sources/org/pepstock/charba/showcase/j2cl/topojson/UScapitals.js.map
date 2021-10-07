@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"UScapitals.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;MAIa,U;;CAAA,W;EAAAA,Q;;;QA0DL,S;EAAAC,qB;EAAAA,iC;EAAAA,2E;EAAAA,iB;;;CAAA,8D;EACNC,8Q;;;QA3DW,O;EAAAC,6B;EAAAA,0B;EAAAA,qC;EAIZA,23E;;;;;;;;;;;;AAFA;WAAoB,2DAApB,gB;AAFY;WAIkB,iEAJlB;",
-"sources":["UScapitals.java"],
-"names":["org.pepstock.charba.showcase.j2cl.topojson.UScapitals.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.topojson.UScapitals.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.topojson.UScapitals.<init>","org.pepstock.charba.showcase.j2cl.topojson.UScapitals.<clinit>"]
-}
-

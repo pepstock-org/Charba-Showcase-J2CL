@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointAnnotation$Property.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MAwDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OASS,wEATTA,C;;;QAgBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iJ;EAAAA,iB;;;CAAA,8G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sF;;;CASa,S;EACbC,qF;;;QA3BW,2B;EAAAC,mB;EAAAA;GAAAA,iJAAAA;G;EAAAA,yI;;;QAAA,U;EAAAC,mB;EAAAA,wgB;;;QAEZ,gF;EAAAC,yH;;;QACA,gF;EAAAA,yH;;;QACA,6E;EAAAA,sH;;;QACA,6E;EAAAA,sH;;;QACA,4E;EAAAA,qH;;;QANY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,qS;EACAA,qS;EACAA,0R;EACAA,0R;EACAA,uR;EANYA,oG;;;;;;;;;;;;;AAAA;4F;AAAA;4F;AAAA;yF;AAAA;yF;AAAA;wF;AAAA;6F;AAEZ;iG;AACA;iG;AACA;8F;AACA;8F;AACA;;",
-"sources":["PointAnnotation.java"],
-"names":["org.pepstock.charba.client.annotation.PointAnnotation$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.PointAnnotation$Property.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.PointAnnotation$Property.<init>","org.pepstock.charba.client.annotation.PointAnnotation$Property.value","org.pepstock.charba.client.annotation.PointAnnotation$Property.valueOf","org.pepstock.charba.client.annotation.PointAnnotation$Property.values","org.pepstock.charba.client.annotation.PointAnnotation$Property.<synthetic: getter>","org.pepstock.charba.client.annotation.PointAnnotation$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FormData$$Overlay.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;MAyBa,Q;;QAuJO,mG,2CAAcA,I,cAAWC,K,iBAAcC,Q;EAAvCC,mB;EAChBA,8F;;;QAIgB,iF,2CAAcH,I,cAAWC,K;EAAzBE,mB;EAChBA,oF;;;QAIgB,gG,2CAAcH,I,iBAAaC,K,iBAAcC,Q;EAAzCC,mB;EAChBA,8F;;;QAIgB,8E,2CAAcH,I,iBAAaC,K;EAA3BE,mB;EAChBA,oF;;;QAYgB,gG,2CAAWH,I,cAAWC,K,iBAAcC,Q;EAApCE,mB;EAChBA,2F;;;QAIgB,8E,2CAAWJ,I,cAAWC,K;EAAtBG,mB;EAChBA,iF;;;QAQgB,6F,2CAAWJ,I,iBAAaC,K,iBAAcC,Q;EAAtCE,mB;EAChBA,2F;;;QAIgB,2E,2CAAWJ,I,iBAAaC,K;EAAxBG,mB;EAChBA,iF;;;QAvMS,O;EAAAC,2B;EAAAA;",
-"sources":["FormData.java"],
-"names":["name","value","filename","elemental2.dom.FormData$$Overlay.append__$devirt","elemental2.dom.FormData$$Overlay.set__$devirt","elemental2.dom.FormData$$Overlay.<clinit>"]
-}
-

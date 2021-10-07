@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginTooltipArgument$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAmCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,yEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,kJ;EAAAA,iB;;;CAAA,+G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uF;;;CASa,S;EACbC,sF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,kJAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,mB;EAAAA,4J;;;QAEZ,8E;EAAAC,uH;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,6R;EAFYA,qG;;;;;;;;;;;;;AAAA;0F;AAAA;8F;AAEZ;;",
-"sources":["PluginTooltipArgument.java"],
-"names":["org.pepstock.charba.client.items.PluginTooltipArgument$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.PluginTooltipArgument$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginTooltipArgument$Property.<init>","org.pepstock.charba.client.items.PluginTooltipArgument$Property.value","org.pepstock.charba.client.items.PluginTooltipArgument$Property.valueOf","org.pepstock.charba.client.items.PluginTooltipArgument$Property.values","org.pepstock.charba.client.items.PluginTooltipArgument$Property.<synthetic: getter>","org.pepstock.charba.client.items.PluginTooltipArgument$Property.<clinit>"]
-}
-

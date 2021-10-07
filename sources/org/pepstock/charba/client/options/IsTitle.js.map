@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsTitle.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;;;MA4BiB,O;;CAOX,qB,gBAAmBA,O;;CAOnB,wD,iBAAqBC,Q;;CAOrB,yD,qBAAsBC,S;;CAOtB,sB,gBAAoBC,Q;;CASpB,mC,uBAAkBC,I;;CAOV,W;;CAOR,4B,gBAAgBC,K;;CAQhB,W;;CAQG,c;;QAnEQ,O;EAAAC,0B;EAAAA;",
-"sources":["IsTitle.java"],
-"names":["display","position","alignment","fullSize","text","color","org.pepstock.charba.client.options.IsTitle.<clinit>"]
-}
-

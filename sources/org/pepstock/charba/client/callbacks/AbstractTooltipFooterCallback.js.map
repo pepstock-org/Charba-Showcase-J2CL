@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractTooltipFooterCallback.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;;;MA6BsB,6B;;CAAA,W;EAAAA,Q;;;CAAA,2E;EAAAC,iC;;;CAQD,oE,gBAAuBC,K,2BAAyBC,K;EACnEC,gE;;;CASmB,8D,gBAAiBF,K,2BAAyBC,K;EAC7DE,gE;;;CASmB,mE,gBAAsBH,K,2BAAyBC,K;EAClEG,gE;;;QA7BoB,O;EAAAC,gD;EAAAA,6C;EAAAA,qB;EAAAA;",
-"sources":["AbstractTooltipFooterCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.AbstractTooltipFooterCallback.<synthetic: ctor_js>","org.pepstock.charba.client.callbacks.AbstractTooltipFooterCallback.<init>","chart","items","org.pepstock.charba.client.callbacks.AbstractTooltipFooterCallback.onBeforeFooter","org.pepstock.charba.client.callbacks.AbstractTooltipFooterCallback.onFooter","org.pepstock.charba.client.callbacks.AbstractTooltipFooterCallback.onAfterFooter","org.pepstock.charba.client.callbacks.AbstractTooltipFooterCallback.<clinit>"]
-}
-

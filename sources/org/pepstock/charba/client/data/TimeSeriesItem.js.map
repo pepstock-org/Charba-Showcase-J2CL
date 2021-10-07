@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TimeSeriesItem.impl.java.js",
-"lineCount":78,
-"mappings":"A;;;;;;;;;;;MA6BmB,c;;CAAA,W;EAAAA,Q;;;;QAOX,uB,aAAoBC,I;EAApBC,yB;EAAAA,qC;EAAAA,sF;EAAAA,iB;;;;CAAA,qE,aAAoBD,I;EAC1BE,2J;;;;QASM,+B,aAAoBF,I,gBAAaG,K;EAAjCF,yB;EAAAA,qC;EAAAA,qG;EAAAA,iB;;;;CAAA,6E,aAAoBD,I,gBAAaG,K;EAEvCD,4H;EAEAA,gN;EAEAA,+B;;;;QAQD,wD,UAA4BE,Y;EAA5BH,yB;EAAAA,qC;EAAAA,+H;EAAAA,iB;;;;CAAA,sG,UAA4BG,Y;EAC3BF,oI;;;CAQW,kB,eAAgBC,K;EAC3BE,yI;;;CAQa,Y;EACbC,2M;;;CAQY,2E,aAAaN,I;EACzBO,gJ;;;CAQW,W;EACXC,2K;;;QApEiB,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["TimeSeriesItem.java"],
-"names":["org.pepstock.charba.client.data.TimeSeriesItem.<synthetic: ctor_js>","time","org.pepstock.charba.client.data.TimeSeriesItem.<synthetic: ctor_create>","org.pepstock.charba.client.data.TimeSeriesItem.<init>","value","nativeObject","org.pepstock.charba.client.data.TimeSeriesItem.setValue","org.pepstock.charba.client.data.TimeSeriesItem.getValue","org.pepstock.charba.client.data.TimeSeriesItem.setTime","org.pepstock.charba.client.data.TimeSeriesItem.getTime","org.pepstock.charba.client.data.TimeSeriesItem.<clinit>"]
-}
-

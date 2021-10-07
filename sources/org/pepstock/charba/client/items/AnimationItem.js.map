@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationItem.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;;;;;;MA+BmB,a;;CAAA,W;EAAAA,Q;;;QA0CX,sE,gCAAiDC,O;EAAjDC,wB;EAAAA,oC;EAAAA,wI;EAAAA,iB;;;CAAA,oH,gCAAiDD,O;EACvDE,oT;;;CAQc,Y;EAEdC;GACCA,sNADDA;G;EAKAA,Y;;;CAQc,a;EACdC,sN;;;CAQa,kB;EACbC,yN;;;CAQa,e;EACbC,sN;;;QArFiB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["AnimationItem.java"],
-"names":["org.pepstock.charba.client.items.AnimationItem.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.AnimationItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.AnimationItem.<init>","org.pepstock.charba.client.items.AnimationItem.getChart","org.pepstock.charba.client.items.AnimationItem.isInitial","org.pepstock.charba.client.items.AnimationItem.getCurrentStep","org.pepstock.charba.client.items.AnimationItem.getNumSteps","org.pepstock.charba.client.items.AnimationItem.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Pan.impl.java.js",
-"lineCount":119,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAiCmB,G;;CAAA,W;EAAAA,Q;EAAAA;OA2DS,sDA3DTA,C;;;QAmElB,sG,qBAAiBC,c,WAA6BC,Y;EAA9CC,c;EAAAA,0B;EAAAA,kL;EAAAA,iB;;;CAAA,yI,qBAAiBF,c,WAA6BC,Y;EAC7CE,qI;EAGAA,wL;;;CAS0B,0D;EAC1BC,mE;;;CASyC,iE;EACzCC,iF;;;CAS0C,mE;EAC1CC,kF;;;CASyC,kE;EACzCC,iF;;;CASsC,+D;EACtCC,8E;;;CAQiB,qB,gBAAmBC,O;EACpCC,0J;;;CASoB,a;EACpBC,uN;;;CAQW,8D,oBAA2BC,W;EACtCC,kM;;;CASkB,kB;EAClBC,8X;;;CAQW,sB,eAAoBC,S;EAC/BC,+L;;;CASa,gB;EACbC,2N;;;QAlLiB,O;EAAAC,sB;EAAAA,mB;EAAAA,oC;EAAAA,uB;EAGlBA,+Q;EAEAA,2R;EAEAA,wR;EAEAA,+Q;;;;;;;;;;;;;;;AATkB;IAG6C,qEAH7C,C;AAAA;IAK8C,sEAL9C,C;AAAA;IAO6C,qEAP7C,C;AAAA;IAS0C,kEAT1C,C;AAWlB;IAG4B,sDAH5B,S;AAKA;IAG2B,wDAH3B;",
-"sources":["Pan.java"],
-"names":["org.pepstock.charba.client.zoom.Pan.<synthetic: ctor_js>","defaultOptions","nativeObject","org.pepstock.charba.client.zoom.Pan.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Pan.<init>","org.pepstock.charba.client.zoom.Pan.getDefaultsOptions","org.pepstock.charba.client.zoom.Pan.getProgessPropertyHandler","org.pepstock.charba.client.zoom.Pan.getCompletedPropertyHandler","org.pepstock.charba.client.zoom.Pan.getRejectedPropertyHandler","org.pepstock.charba.client.zoom.Pan.getStartPropertyHandler","enabled","org.pepstock.charba.client.zoom.Pan.setEnabled","org.pepstock.charba.client.zoom.Pan.isEnabled","modifierKey","org.pepstock.charba.client.zoom.Pan.setModifierKey","org.pepstock.charba.client.zoom.Pan.getModifierKey","threshold","org.pepstock.charba.client.zoom.Pan.setThreshold","org.pepstock.charba.client.zoom.Pan.getThreshold","org.pepstock.charba.client.zoom.Pan.<clinit>"]
-}
-

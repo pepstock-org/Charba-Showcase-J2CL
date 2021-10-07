@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TitleClickEventHandler.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAsBiB,sB;;CAOX,4D,wBAAwBA,K;;QAPb,M;EAAAC,iC;EAAAA,8B;;;QAAA,O;EAAAC,yC;EAAAA;",
-"sources":["TitleClickEventHandler.java"],
-"names":["event","org.pepstock.charba.client.events.TitleClickEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.TitleClickEventHandler.<clinit>"]
-}
-

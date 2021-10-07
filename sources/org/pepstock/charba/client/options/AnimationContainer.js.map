@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationContainer.impl.java.js",
-"lineCount":84,
-"mappings":"A;;;;;;;;;;;;;;;;MA+BmB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAkCQ,qEAlCRA,C;;;;QA2CX,uI,oCAA+CC,a,wBAAyCC,O,iBAAgBC,K;EAAxGC,6B;EAAAA,yC;EAAAA,sO;EAAAA,iB;;;;CAAA,4L,oCAA+CH,a,wBAAyCC,O,iBAAgBC,K;EAC9GE,6e;;;;QAWD,4L,qBAAgCC,M,qCAAoCL,a,WAA4BM,Y,iBAAqBJ,K;EAArHC,6B;EAAAA,yC;EAAAA,wS;EAAAA,iB;;;;CAAA,iP,qBAAgCE,M,qCAAoCL,a,WAA4BM,Y,iBAAqBJ,K;EACpHE,iV;;;;QAYD,oO,qBAAgCC,M,aAAYE,Q,qCAAsCP,a,WAA4BM,Y,iBAAqBJ,K;EAAnIC,6B;EAAAA,yC;EAAAA,0V;EAAAA,iB;;;;CAAA,yR,qBAAgCE,M,aAAYE,Q,qCAAsCP,a,WAA4BM,Y,iBAAqBJ,K;EAClIE,uV;EAEAA,ilB;;;CAQW,yD;EACXI,kF;;;CAQI,qE,gBAA4BC,O;EAEhCC;GACCA,iMADDA;;GAICA,qTAJDA;G;;;CAaO,6D;EACPC,6R;;;QAxGiB,O;EAAAC,qC;EAAAA,kC;EAAAA;",
-"sources":["AnimationContainer.java"],
-"names":["org.pepstock.charba.client.options.AnimationContainer.<synthetic: ctor_js>","defaultValues","envelop","scope","org.pepstock.charba.client.options.AnimationContainer.<synthetic: ctor_create>","org.pepstock.charba.client.options.AnimationContainer.<init>","parent","nativeObject","childKey","org.pepstock.charba.client.options.AnimationContainer.getTransitions","enabled","org.pepstock.charba.client.options.AnimationContainer.setAnimationEnabled","org.pepstock.charba.client.options.AnimationContainer.isAnimationEnabled","org.pepstock.charba.client.options.AnimationContainer.<clinit>"]
-}
-

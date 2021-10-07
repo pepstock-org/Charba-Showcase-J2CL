@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JsHelperResource.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA0BmB,gB;;CAAA,W;EAAAA,Q;;;QAgClB,S;EAAAC,2B;EAAAA,uC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EACCC,iT;;;QAjCiB,O;EAAAC,mC;EAAAA,gC;EAAAA,qC;EAGlBA,ilV;;;;;;;;;;;;;AAHkB;iBAGY,+DAHZ;",
-"sources":["JsHelperResource.java"],
-"names":["org.pepstock.charba.client.commons.JsHelperResource.<synthetic: ctor_js>","org.pepstock.charba.client.commons.JsHelperResource.<synthetic: ctor_create>","org.pepstock.charba.client.commons.JsHelperResource.<init>","org.pepstock.charba.client.commons.JsHelperResource.<clinit>"]
-}
-

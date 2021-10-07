@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LoopCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;;;MAyBiB,Y;;QAAA,M;EAAAA,uB;EAAAA,8B;;;QAAA,O;EAAAC,+B;EAAAA;",
-"sources":["LoopCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.LoopCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.LoopCallback.<clinit>"]
-}
-

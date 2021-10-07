@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartPadding.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;MAwBmB,mB;;CAAA,W;EAAAA,Q;;;QAOlB,6D,yBAAqCC,O;EAArCC,8B;EAAAA,0C;EAAAA,8I;EAAAA,iB;;;CAAA,0H,yBAAqCD,O;EACpCE,iJ;;;QARiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["DefaultChartPadding.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartPadding.<synthetic: ctor_js>","padding","org.pepstock.charba.client.defaults.chart.DefaultChartPadding.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartPadding.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartPadding.<clinit>"]
-}
-

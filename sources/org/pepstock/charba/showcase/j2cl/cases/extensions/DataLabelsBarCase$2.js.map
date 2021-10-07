@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsBarCase$2.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;;;MAwJ8C,E;;CAAA,W;EAAAA,Q;EAAAA;2F;;;QAAA,6E;EAAAC,a;EAAAA,yB;EAAAA,2K;EAAAA,iB;;;CAAA,mJ;EAAAC,uG;EAAAA,iC;;;CAG7B,4G,0BAAyBC,O,kBAAkBC,Q;EACxDC,IAAOC,UAAPD,2V;EACAA,oD;;;QAL0C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsBarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$2.<init>","context","dataItem","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$2.invoke","percentage","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$2.<clinit>"]
-}
-

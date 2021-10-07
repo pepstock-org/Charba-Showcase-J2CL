@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsLineCase$2.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAwJ8E,E;;CAAA,W;EAAAA,Q;EAAAA;4F;;;QAAA,8E;EAAAC,a;EAAAA,yB;EAAAA,6K;EAAAA,iB;;;CAAA,qJ;EAAAC,wG;EAAAA,iC;;;CAG/D,mE,8BAA+BC,K;EAC1CC,IAAQC,KAARD,+C;EACAA,IAAOE,MAAPF,uC;EACAA,IAAcG,QAAdH,yC;EACAA;GACCA,IAAcI,EAAdJ,6BADDA;GAECA,0IAFDA;GAGCA,uOAHDA;GAICA,+TAJDA;GAKCA,2HALDA;GAMCA,+LANDA;GAOCA,yNAPDA;G;;;QAP0E,O;EAAAK,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsLineCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsLineCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsLineCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsLineCase$2.onSelect","chart","labels","datasets","sb","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsLineCase$2.<clinit>"]
-}
-

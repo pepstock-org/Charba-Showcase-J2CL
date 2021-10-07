@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MessageEventInit$$Overlay.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;MA0BiB,Q;;QAwCS,U;EAAAA,mB;EACtBA,6G;;;QA+BW,wF,iEAAuBC,K;EAAvBC,mB;EACXA,+F;;;QAOW,iF,0DAAsBC,M;EAAtBC,mB;EACXA,gF;;;QAIW,mF,4DAAwBD,M;EAAxBC,mB;EACXA,gF;;;QAIW,4E,qDAAiBD,M;EAAjBC,mB;EACXA,gF;;;QA3Fa,O;EAAAC,2B;EAAAA;",
-"sources":["MessageEventInit.java"],
-"names":["elemental2.dom.MessageEventInit$$Overlay.create","ports","elemental2.dom.MessageEventInit$$Overlay.setPorts__$devirt","source","elemental2.dom.MessageEventInit$$Overlay.setSource__$devirt","elemental2.dom.MessageEventInit$$Overlay.<clinit>"]
-}
-

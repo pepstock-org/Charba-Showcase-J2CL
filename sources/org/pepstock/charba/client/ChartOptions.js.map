@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartOptions.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;;;MA6BmB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAKC,gDALDA,C;;;QAclB,qJ,aAAkBC,I,WAAmBC,Y,gCAAqCC,c;EAA1EC,uB;EAAAA,mC;EAAAA,2O;EAAAA,iB;;;CAAA,4L,aAAkBH,I,WAAmBC,Y,gCAAqCC,c;EAGzEE,4S;EAEAA,6D;;;CAQW,W;EACXC,6D;;;CASa,a;EAEbC;GAECA,uXAFDA;G;EAKAA,6B;;;CAQY,+C;EACZC,mC;;;QAc2B,8C,aAAiBP,I;EAE5CQ,IAAcC,EAAdD,qD;EAEAA,8H;;;QAvEiB,O;EAAAE,+B;EAAAA,4B;EAAAA,wB;;;;;;;;;;;;;;;;;AAGlB;aAA4B,8DAA5B;",
-"sources":["ChartOptions.java"],
-"names":["org.pepstock.charba.client.ChartOptions.<synthetic: ctor_js>","type","nativeObject","defaultOptions","org.pepstock.charba.client.ChartOptions.<synthetic: ctor_create>","org.pepstock.charba.client.ChartOptions.<init>","org.pepstock.charba.client.ChartOptions.getType","org.pepstock.charba.client.ChartOptions.getScales","org.pepstock.charba.client.ChartOptions.nativeObject","org.pepstock.charba.client.ChartOptions.createScope","sb","org.pepstock.charba.client.ChartOptions.<clinit>"]
-}
-

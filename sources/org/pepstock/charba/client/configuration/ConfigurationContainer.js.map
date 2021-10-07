@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ConfigurationContainer.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;;;;;;;;;;MA8Be,sB;;CAAA,W;EAAAA,Q;EAAAA;OAGJ,iFAHIA,C;;;;CAUJ,0G,gBAA+BC,K;EACxCC,+G;;;;CASS,oK,gBAA+BD,K,WAASE,a;EACjDD,+G;EAGAA,uP;;;CAMoB,4E,UAAmBC,a;EACvCC,uG;;;CAQiB,oB;EACjBC,8F;;;CAUiB,mF,8BAA4BC,M,iBAAeC,Q;EAC5DC,8M;;;CAQmB,U;EACnBC,gJ;;;CAUuC,2D,wBAA4CC,O;EACnFC,6I;;;QAvEa,O;EAAAC,yC;EAAAA,sC;EAAAA;",
-"sources":["ConfigurationContainer.java"],
-"names":["org.pepstock.charba.client.configuration.ConfigurationContainer.<synthetic: ctor_js>","chart","org.pepstock.charba.client.configuration.ConfigurationContainer.<init>","configuration","org.pepstock.charba.client.configuration.ConfigurationContainer.setConfiguration","org.pepstock.charba.client.configuration.ConfigurationContainer.getConfiguration","source","property","org.pepstock.charba.client.configuration.ConfigurationContainer.merge","org.pepstock.charba.client.configuration.ConfigurationContainer.toJSON","envelop","org.pepstock.charba.client.configuration.ConfigurationContainer.loadNativeObject","org.pepstock.charba.client.configuration.ConfigurationContainer.<clinit>"]
-}
-

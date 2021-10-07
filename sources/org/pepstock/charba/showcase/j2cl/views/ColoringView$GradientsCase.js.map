@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColoringView$GradientsCase.impl.java.js",
-"lineCount":134,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAyHc,a;;CAAA,W;EAAAA,Q;EAAAA;OA4BS,4EA5BTA,C;EAAAA;OA8Bc,8EA9BdA,C;;;QAgCJ,qG,8DAAqBC,K,qBAAmBC,O;EAAxCC,oC;EAAAA,mN;EAAAA,iB;;;CAAA,uK,8DAAqBF,K,qBAAmBC,O;EAAxCE,qC;EAAAA,2C;EAAAA,mE;EACPA,0F;EACAA,8F;;;CAGa,Y;EACbC,yF;;;CAGkB,c;EAClBC,2F;;;QA1CW,2B;EAAAC,wB;EAAAA;GAAAA,+JAAAA;G;EAAAA,kJ;;;QAAA,U;EAAAC,wB;EAAAA,6lB;;;QAEZ,uF;EAAAC,0I;;;QAKA,wF;EAAAA,2I;;;QAKA,yF;EAAAA,4I;;;QAKA,yF;EAAAA,4I;;;QAKA,uF;EAAAA,0I;;;QAtBY,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EAEZA,ga;EAKAA,oa;EAKAA,wa;EAKAA,6a;EAKAA,ga;EAtBYA,6G;;;;;;;;;;;;;;;;;;AAAA;wG;AAAA;yG;AAAA;0G;AAAA;0G;AAAA;wG;AAAA;sG;AAEZ;6G;AAKA;8G;AAKA;+G;AAKA;+G;AAKA;;",
-"sources":["ColoringView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.<init>","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.getLabel","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.getFactory","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.valueOf","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.values","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.ColoringView$GradientsCase.<clinit>"]
-}
-

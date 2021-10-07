@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseRenderingContext2D$FillOptFillRuleOrPathUnionType$$Overlay.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;MA6LmB,Q;;QAE8C,sB,UAAUA,C;EAAVC,mB;EAC3DA,uD;;;QAIa,yF;EAAAC,mB;EACbA,gG;;;QAIa,yF;EAAAC,mB;EACbA,iD;;;QAIc,yF;EAAAC,mB;EACdA,8D;;;QAIc,yF;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
-"sources":["BaseRenderingContext2D.java"],
-"names":["o","elemental2.dom.BaseRenderingContext2D$FillOptFillRuleOrPathUnionType$$Overlay.of","elemental2.dom.BaseRenderingContext2D$FillOptFillRuleOrPathUnionType$$Overlay.asPath2D__$devirt","elemental2.dom.BaseRenderingContext2D$FillOptFillRuleOrPathUnionType$$Overlay.asString__$devirt","elemental2.dom.BaseRenderingContext2D$FillOptFillRuleOrPathUnionType$$Overlay.isPath2D__$devirt","elemental2.dom.BaseRenderingContext2D$FillOptFillRuleOrPathUnionType$$Overlay.isString__$devirt","elemental2.dom.BaseRenderingContext2D$FillOptFillRuleOrPathUnionType$$Overlay.<clinit>"]
-}
-

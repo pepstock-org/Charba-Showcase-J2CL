@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultPan.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;;MA0BU,Y;;CAOO,a;;CASD,gB;;CASK,kB;;QAlBJ,mE;EAAAA,uB;EACfA,kE;;;QAQc,sE;EAAAC,uB;EACdA,oE;;;QAQmB,wE;EAAAC,uB;EACnBA,Y;;;QA1BQ,O;EAAAC,+B;EAAAA,4B;EAAAA;",
-"sources":["IsDefaultPan.java"],
-"names":["org.pepstock.charba.client.zoom.IsDefaultPan.isEnabled__$default","org.pepstock.charba.client.zoom.IsDefaultPan.getThreshold__$default","org.pepstock.charba.client.zoom.IsDefaultPan.getModifierKey__$default","org.pepstock.charba.client.zoom.IsDefaultPan.<clinit>"]
-}
-

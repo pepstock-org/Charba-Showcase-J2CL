@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;;;;;;;;;MAgCiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,kJ;;;CAAA,wI;EAAAC,iC;EAAAA,kF;;;CAAA,2D;EAAAC,oC;EAAAA,mH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["ColorCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.ColorCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.ColorCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.ColorCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.ColorCallback$$LambdaAdaptor.<clinit>"]
-}
-

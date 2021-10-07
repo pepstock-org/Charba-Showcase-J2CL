@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FeatureFilterCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAyBiB,qB;;CASR,qD,gBAAeA,O,gBAAaC,K;;QATpB,M;EAAAC,gC;EAAAA,8B;;;QAAA,O;EAAAC,wC;EAAAA;",
-"sources":["FeatureFilterCallback.java"],
-"names":["feature","index","org.pepstock.charba.client.geo.callbacks.FeatureFilterCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.geo.callbacks.FeatureFilterCallback.<clinit>"]
-}
-

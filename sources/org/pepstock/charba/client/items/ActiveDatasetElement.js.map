@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ActiveDatasetElement.impl.java.js",
-"lineCount":97,
-"mappings":"A;;;;;;;;;;MA+BmB,oB;;CAAA,W;EAAAA,Q;;;;QA6CX,iB,eAAyBC,Y,gBAAkBC,S;EAA3CC,+B;EAAAA,2C;EAAAA,0G;EAAAA,iB;;;;CAAA,sE,eAAyBF,Y,gBAAkBC,S;EACjDE,yE;EAEAA,0C;EACAA,gC;;;;QAMM,S;EAAAD,+B;EAAAA,2C;EAAAA,2E;EAAAA,iB;;;;CAAA,8D;EACNC,yE;;;;QAQD,wD,UAAkCC,Y;EAAlCF,+B;EAAAA,2C;EAAAA,sI;EAAAA,iB;;;;CAAA,6G,UAAkCE,Y;EACjCD,oI;;;CAQW,sB,eAAoBH,Y;EAC/BK,+M;;;CAQU,mB;EACVC,+N;;;CAQW,e,eAAaL,S;EACxBM,oM;;;CAQU,Y;EACVC,uN;;;QAnGD,oE;EAAAC,qI;;;QAFkB,O;EAAAC,uC;EAAAA,oC;EAAAA,gC;EAElBA,sI;;;;;;;;;;;;;;AAFkB;;",
-"sources":["ActiveDatasetElement.java"],
-"names":["org.pepstock.charba.client.items.ActiveDatasetElement.<synthetic: ctor_js>","datasetIndex","dataIndex","org.pepstock.charba.client.items.ActiveDatasetElement.<synthetic: ctor_create>","org.pepstock.charba.client.items.ActiveDatasetElement.<init>","nativeObject","org.pepstock.charba.client.items.ActiveDatasetElement.setDatasetIndex","org.pepstock.charba.client.items.ActiveDatasetElement.getDatasetIndex","org.pepstock.charba.client.items.ActiveDatasetElement.setIndex","org.pepstock.charba.client.items.ActiveDatasetElement.getIndex","org.pepstock.charba.client.items.ActiveDatasetElement.<synthetic: getter>","org.pepstock.charba.client.items.ActiveDatasetElement.<clinit>"]
-}
-

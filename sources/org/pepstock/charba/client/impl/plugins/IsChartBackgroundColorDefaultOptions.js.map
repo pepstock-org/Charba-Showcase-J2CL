@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsChartBackgroundColorDefaultOptions.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;;;;MA2BU,oC;;CAOS,gB;;CASH,8B;;CASE,gC;;CASD,+B;;CASiB,+B;;QApCf,sG;EAAAA,+C;EACjBA,qE;;;QAQc,oH;EAAAC,+C;EACdA,qH;;;QAQgB,sH;EAAAC,+C;EAChBA,Y;;;QAQe,qH;EAAAC,+C;EACfA,Y;;;QAQgC,qH;EAAAC,+C;EAChCA,6G;;;QA5CQ,O;EAAAC,uD;EAAAA;",
-"sources":["IsChartBackgroundColorDefaultOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.IsChartBackgroundColorDefaultOptions.getColorType__$default","org.pepstock.charba.client.impl.plugins.IsChartBackgroundColorDefaultOptions.getBackgroundColorAsString__$default","org.pepstock.charba.client.impl.plugins.IsChartBackgroundColorDefaultOptions.getBackgroundColorAsGradient__$default","org.pepstock.charba.client.impl.plugins.IsChartBackgroundColorDefaultOptions.getBackgroundColorAsPattern__$default","org.pepstock.charba.client.impl.plugins.IsChartBackgroundColorDefaultOptions.getGlobalCompositeOperation__$default","org.pepstock.charba.client.impl.plugins.IsChartBackgroundColorDefaultOptions.<clinit>"]
-}
-

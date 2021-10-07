@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ActiveElementsOnBarCase$1.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;;MAwEiD,E;;CAAA,W;EAAAA,Q;EAAAA;oG;;;QAAA,sF;EAAAC,a;EAAAA,yB;EAAAA,6L;EAAAA,iB;;;CAAA,qK;EAAAC,gH;EAAAA,iC;;;CAGlC,6D,yBAAyBC,K;EACpCC,+M;EACAA,2M;EACAA,oG;;;QAN6C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ActiveElementsOnBarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase$1.onClick","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ActiveElementsOnBarCase$1.<clinit>"]
-}
-

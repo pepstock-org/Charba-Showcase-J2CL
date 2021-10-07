@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultScaledOptions.impl.java.js",
-"lineCount":18,
-"mappings":"A;;;;;;;;;;;MAsBiB,sB;;CAOA,a;;QAPA,O;EAAAA,yC;EAAAA;",
-"sources":["IsDefaultScaledOptions.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultScaledOptions.<clinit>"]
-}
-

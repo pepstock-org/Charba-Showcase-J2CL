@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginsView$DatasetItemsSelectorCase.impl.java.js",
-"lineCount":156,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MA2Hc,wB;;CAAA,W;EAAAA,Q;EAAAA;OAsCS,sFAtCTA,C;EAAAA;OAwCc,wFAxCdA,C;;;QA0CJ,qG,8DAAgCC,K,qBAAmBC,O;EAAnDC,+C;EAAAA,6N;EAAAA,iB;;;CAAA,iL,8DAAgCF,K,qBAAmBC,O;EAAnDE,qC;EAAAA,2C;EAAAA,mE;EACPA,oG;EACAA,wG;;;CAGa,Y;EACbC,mG;;;CAGkB,c;EAClBC,qG;;;QApDW,2B;EAAAC,mC;EAAAA;GAAAA,+LAAAA;G;EAAAA,uK;;;QAAA,U;EAAAC,mC;EAAAA,q/B;;;QAEZ,qG;EAAAC,8K;;;QAKA,sG;EAAAA,+K;;;QAKA,yG;EAAAA,kL;;;QAKA,wG;EAAAA,iL;;;QAKA,iH;EAAAA,0L;;;QAKA,2F;EAAAA,oK;;;QAKA,iG;EAAAA,0K;;;QAhCY,O;EAAAC,2C;EAAAA,wC;EAAAA,e;EAEZA,yd;EAKAA,6d;EAKAA,ye;EAKAA,qe;EAKAA,wgB;EAKAA,qc;EAKAA,wd;EAhCYA,kI;;;;;;;;;;;;;;;;;;;;AAAA;iI;AAAA;kI;AAAA;qI;AAAA;oI;AAAA;6I;AAAA;uH;AAAA;6H;AAAA;2H;AAEZ;sI;AAKA;uI;AAKA;0I;AAKA;yI;AAKA;kJ;AAKA;4H;AAKA;;",
-"sources":["PluginsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.<init>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.getLabel","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.getFactory","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.valueOf","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.values","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.PluginsView$DatasetItemsSelectorCase.<clinit>"]
-}
-

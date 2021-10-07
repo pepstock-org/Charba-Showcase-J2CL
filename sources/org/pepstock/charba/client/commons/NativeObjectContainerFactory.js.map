@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NativeObjectContainerFactory.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;;;;;;;MAsBiB,4B;;CAON,U;;CAUR,yD,UAA0BA,Y;;QAjBZ,M;EAAAC,uC;EAAAA,gE;;;QAON,mF;EAAAC,uC;EACTA,gF;;;QARe,O;EAAAC,+C;EAAAA;",
-"sources":["NativeObjectContainerFactory.java"],
-"names":["nativeObject","org.pepstock.charba.client.commons.NativeObjectContainerFactory.<synthetic: adapt_lambda>","org.pepstock.charba.client.commons.NativeObjectContainerFactory.create__$default","org.pepstock.charba.client.commons.NativeObjectContainerFactory.<clinit>"]
-}
-

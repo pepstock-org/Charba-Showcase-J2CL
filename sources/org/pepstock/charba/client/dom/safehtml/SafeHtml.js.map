@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SafeHtml.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;;MAuBiB,Q;;CAOT,Y;;CASC,M,UAAcA,M;;CAQlB,Q;;QAxBY,M;EAAAC,mB;EAAAA,8B;;;QAAA,O;EAAAC,2B;EAAAA;",
-"sources":["SafeHtml.java"],
-"names":["object","org.pepstock.charba.client.dom.safehtml.SafeHtml.<synthetic: adapt_lambda>","org.pepstock.charba.client.dom.safehtml.SafeHtml.<clinit>"]
-}
-

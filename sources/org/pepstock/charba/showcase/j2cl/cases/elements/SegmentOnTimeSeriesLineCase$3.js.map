@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SegmentOnTimeSeriesLineCase$3.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;;;;;;;;MAwGyF,E;;CAAA,W;EAAAA,Q;EAAAA;mG;;;QAAA,qF;EAAAC,a;EAAAA,yB;EAAAA,2L;EAAAA,iB;;;CAAA,mK;EAAAC,+G;EAAAA,iC;;;CAGxE,6D,uBAAsBC,O;EACnCC,IAAOC,MAAPD,0Y;EACAA;GACCA,gMADDA;GAECA,8XAFDA;G;EAIAA,qP;;;;CATqF,2D;EAAAA,0I;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["SegmentOnTimeSeriesLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnTimeSeriesLineCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnTimeSeriesLineCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnTimeSeriesLineCase$3.<init>","context","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnTimeSeriesLineCase$3.invoke","myWeek","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnTimeSeriesLineCase$3.<clinit>"]
-}
-

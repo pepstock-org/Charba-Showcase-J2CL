@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PointStyle.impl.java.js",
-"lineCount":161,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,U;;CAAA,W;EAAAA,Q;EAAAA;OAcU,qDAdVA,C;;;QAqBH,gD,8DAAkBC,K;EAAlBC,iC;EAAAA,8H;EAAAA,iB;;;CAAA,2F,8DAAkBD,K;EAAlBE,qC;EAAAA,2C;EAAAA,mE;EACPA,mE;;;CASa,S;EACbC,kE;;;QAhCU,2B;EAAAC,qB;EAAAA;GAAAA,kIAAAA;G;EAAAA,wH;;;QAAA,U;EAAAC,qB;EAAAA,yxB;;;QAEX,yD;EAAAC,sG;;;QACA,wD;EAAAA,qG;;;QACA,4D;EAAAA,yG;;;QACA,uD;EAAAA,oG;;;QACA,uD;EAAAA,oG;;;QACA,uD;EAAAA,oG;;;QACA,+D;EAAAA,4G;;;QACA,2D;EAAAA,wG;;;QACA,uD;EAAAA,oG;;;QACA,2D;EAAAA,wG;;;QAXW,O;EAAAC,6B;EAAAA,0B;EAAAA,e;EAEXA,uP;EACAA,mP;EACAA,kQ;EACAA,+O;EACAA,+O;EACAA,+O;EACAA,8Q;EACAA,8P;EACAA,+O;EACAA,+P;EAXWA,mF;;;;;;;;;;;;;AAAA;uE;AAAA;sE;AAAA;0E;AAAA;qE;AAAA;qE;AAAA;qE;AAAA;6E;AAAA;yE;AAAA;qE;AAAA;yE;AAAA;4E;AAEX;4E;AACA;2E;AACA;+E;AACA;0E;AACA;0E;AACA;0E;AACA;kF;AACA;8E;AACA;0E;AACA;;",
-"sources":["PointStyle.java"],
-"names":["org.pepstock.charba.client.enums.PointStyle.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.PointStyle.<synthetic: ctor_create>","org.pepstock.charba.client.enums.PointStyle.<init>","org.pepstock.charba.client.enums.PointStyle.value","org.pepstock.charba.client.enums.PointStyle.valueOf","org.pepstock.charba.client.enums.PointStyle.values","org.pepstock.charba.client.enums.PointStyle.<synthetic: getter>","org.pepstock.charba.client.enums.PointStyle.<clinit>"]
-}
-

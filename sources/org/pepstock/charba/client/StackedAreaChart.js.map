@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StackedAreaChart.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;MA2Ba,gB;;CAAA,W;EAAAA,Q;EAAAA;OAEiB,uDAFjBA,C;;;;QAOL,S;EAAAC,2B;EAAAA,uC;EAAAA,iE;EAAAA,iB;;;;CAAA,oD;EACNC,iJ;;;;QASS,wC,aAAsBC,Y;EAAtBF,2B;EAAAA,uC;EAAAA,4G;EAAAA,iB;;;;CAAA,mF,aAAsBE,Y;EAC/BD,oG;EAEAA,8O;;;CASqB,c;EACrBE,oE;;;CASyB,qB,gBAAmBC,M;EAC5CC,4I;;;;CAxCW,c;EAAAA,oK;;;QAAA,O;EAAAC,mC;EAAAA,gC;EAAAA,wB;EAAAA;",
-"sources":["StackedAreaChart.java"],
-"names":["org.pepstock.charba.client.StackedAreaChart.<synthetic: ctor_js>","org.pepstock.charba.client.StackedAreaChart.<synthetic: ctor_create>","org.pepstock.charba.client.StackedAreaChart.<init>","extendedType","org.pepstock.charba.client.StackedAreaChart.getOptions","hidden","org.pepstock.charba.client.StackedAreaChart.newDataset","org.pepstock.charba.client.StackedAreaChart.<clinit>"]
-}
-

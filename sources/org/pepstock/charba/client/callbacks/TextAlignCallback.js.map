@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextAlignCallback.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,iB;;QAAA,M;EAAAA,4B;EAAAA,gE;;;QAAA,O;EAAAC,oC;EAAAA;",
-"sources":["TextAlignCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.TextAlignCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.TextAlignCallback.<clinit>"]
-}
-

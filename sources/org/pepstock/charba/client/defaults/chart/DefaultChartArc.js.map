@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartArc.impl.java.js",
-"lineCount":87,
-"mappings":"A;;;;;;;;;;;MAyBmB,e;;CAAA,W;EAAAA,Q;EAAAA;OAES,iEAFTA,C;;;QASlB,yD,qBAA6BC,G;EAA7BC,0B;EAAAA,sC;EAAAA,kI;EAAAA,iB;;;CAAA,kH,qBAA6BD,G;EAA7BE,iC;EACCA,6E;;;CASa,8B;EACbC,+G;;;CASU,kB;EACVC,mG;;;CASa,0B;EACbC,2G;;;CASkB,kB;EAClBC,mG;;;CASa,a;EACbC,8F;;;CASa,Y;EACbC,6F;;;CASU,a;EACVC,8F;;;CASU,mB;EACVC,oG;;;CASa,mC;EACbC,oH;;;CASU,uB;EACVC,wG;;;CASa,+B;EACbC,gH;;;CASU,kB;EACVC,mG;;;CASU,c;EACVC,+F;;;QA5IiB,O;EAAAC,kC;EAAAA,+B;EAAAA;",
-"sources":["DefaultChartArc.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartArc.<synthetic: ctor_js>","arc","org.pepstock.charba.client.defaults.chart.DefaultChartArc.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartArc.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getBackgroundColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getBorderWidth","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getBorderColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getBorderAlign","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getWeight","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getAngle","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getOffset","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getBorderRadius","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getHoverBackgroundColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getHoverBorderWidth","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getHoverBorderColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getHoverOffset","org.pepstock.charba.client.defaults.chart.DefaultChartArc.getSpacing","org.pepstock.charba.client.defaults.chart.DefaultChartArc.<clinit>"]
-}
-

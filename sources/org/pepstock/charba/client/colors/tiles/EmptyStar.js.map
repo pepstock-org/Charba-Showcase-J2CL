@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"EmptyStar.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;MAuCM,S;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,uE;EAAAA,iB;;;CAAA,0D;EAAAC,oE;;;CAWU,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,IAAaE,WAAbF,Y;EAEAA,sI;EAEAA,sB;EAEAA,8B;EAEAA,wG;EAEAA,2R;EAEAA,iB;;;CAaU,kJ,iCAAuBJ,O,gBAAgBO,O,gBAAgBC,O,gBAAaC,M,gBAAeC,W,gBAAoBC,W;EAEjHC,IAAOC,GAAPD,yC;EAEAA,kBAAOE,CAAPF,C;EAEAA,kBAAOG,CAAPH,C;EAEAA,IAAaI,IAAbJ,0C;EAGAA,SAASK,CAATL;GAECA,0CAFDA;GAGCA,0CAHDA;GAICA,qBAJDA;GAKCA,YALDA;GAOCA,0CAPDA;GAQCA,0CARDA;GASCA,qBATDA;GAUCA,YAVDA;G;EAaAA,+C;;;QAhEI,O;EAAAM,4B;EAAAA,yB;EAAAA,sB;;;;;;;;;;;AAGL;UAAiB,2DAAjB;",
-"sources":["EmptyStar.java"],
-"names":["org.pepstock.charba.client.colors.tiles.EmptyStar.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.EmptyStar.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.EmptyStar.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.EmptyStar.drawTile","halfSize","quarterSize","offsetX","offsetY","spikes","innerRadius","outerRadius","org.pepstock.charba.client.colors.tiles.EmptyStar.drawStar","rot","x","y","step","i","org.pepstock.charba.client.colors.tiles.EmptyStar.<clinit>"]
-}
-

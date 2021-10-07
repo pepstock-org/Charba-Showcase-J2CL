@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Margin.impl.java.js",
-"lineCount":110,
-"mappings":"A;;;;;;;;MA0BmB,M;;CAAA,W;EAAAA,Q;;;;QAsCX,S;EAAAC,iB;EAAAA,6B;EAAAA,2D;EAAAA,iB;;;;CAAA,8C;EACNC,yG;;;;QASM,iB,eAAWC,S,gBAAeC,S;EAA1BH,iB;EAAAA,6B;EAAAA,uF;EAAAA,iB;;;;CAAA,sD,eAAWE,S,gBAAeC,S;EAChCF,kH;;;;QAWM,2B,eAAWG,G,gBAASC,K,gBAAWC,M,gBAAYC,I;EAA3CP,iB;EAAAA,6B;EAAAA,qG;EAAAA,iB;;;;CAAA,gE,eAAWI,G,gBAASC,K,gBAAWC,M,gBAAYC,I;EACjDN,yG;EAEAA,wB;EACAA,4B;EACAA,8B;EACAA,0B;;;;QAQD,wD,UAAoBO,Y;EAApBR,iB;EAAAA,6B;EAAAA,sH;EAAAA,iB;;;;CAAA,6F,UAAoBQ,Y;EACnBP,oI;;;CAQW,a,eAAWG,G;EACtBK,kI;;;CAQU,U;EACVC,oM;;;CAQW,e,eAAaL,K;EACxBM,sI;;;CAQU,Y;EACVC,sM;;;CAQW,gB,eAAcN,M;EACzBO,wI;;;CAQU,a;EACVC,uM;;;CAQW,c,eAAYP,I;EACvBQ,oI;;;CAQU,W;EACVC,qM;;;CAQY,mD;EACZC,kC;;;QA5JiB,O;EAAAC,yB;EAAAA,sB;EAAAA;",
-"sources":["Margin.java"],
-"names":["org.pepstock.charba.client.geo.Margin.<synthetic: ctor_js>","org.pepstock.charba.client.geo.Margin.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Margin.<init>","topBottom","leftRight","top","right","bottom","left","nativeObject","org.pepstock.charba.client.geo.Margin.setTop","org.pepstock.charba.client.geo.Margin.getTop","org.pepstock.charba.client.geo.Margin.setRight","org.pepstock.charba.client.geo.Margin.getRight","org.pepstock.charba.client.geo.Margin.setBottom","org.pepstock.charba.client.geo.Margin.getBottom","org.pepstock.charba.client.geo.Margin.setLeft","org.pepstock.charba.client.geo.Margin.getLeft","org.pepstock.charba.client.geo.Margin.nativeObject","org.pepstock.charba.client.geo.Margin.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TransformStream$TransformStreamWritableStrategyType$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MAgGmB,Q;;QAO4C,U;EAAAA,mB;EACzDA,8F;;;QARa,O;EAAAC,2B;EAAAA;",
-"sources":["TransformStream.java"],
-"names":["elemental2.dom.TransformStream$TransformStreamWritableStrategyType$$Overlay.create","elemental2.dom.TransformStream$TransformStreamWritableStrategyType$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColoringView$TilesCase$1.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MA6KmD,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,sF;EAAAA,iB;;;CAAA,yE;EAAAC,iC;;;CAC3B,U;EACpBC,gC;;;QAF+C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ColoringView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase$1.<init>","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase$1.create","org.pepstock.charba.showcase.j2cl.views.ColoringView$TilesCase$1.<clinit>"]
-}
-

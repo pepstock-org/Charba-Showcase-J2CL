@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipItemSortCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,uB;;QAAA,M;EAAAA,kC;EAAAA,8B;;;QAAA,O;EAAAC,0C;EAAAA;",
-"sources":["TooltipItemSortCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.TooltipItemSortCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.TooltipItemSortCallback.<clinit>"]
-}
-

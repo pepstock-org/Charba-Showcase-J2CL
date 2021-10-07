@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultLegendLabels.impl.java.js",
-"lineCount":27,
-"mappings":"A;;;;;;;;;;;;;;;MAyBiB,qB;;CAOR,mB;;CAOJ,c;;CAOM,gB;;QArBM,O;EAAAA,wC;EAAAA,qC;EAAAA;",
-"sources":["IsDefaultLegendLabels.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultLegendLabels.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ApplyingPointStylesOnLineCase$1.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAwE0F,E;;CAAA,W;EAAAA,Q;EAAAA;0G;;;QAAA,4F;EAAAC,a;EAAAA,yB;EAAAA,yM;EAAAA,iB;;;CAAA,iL;EAAAC,sH;EAAAA,iC;;;CAG1D,0E,gBAA6BC,K,+BAA6BC,a;EACtFC,IAAOC,kBAAPD,6jB;EACAA;GAAAA,IAAqBE,IAArBF,oFAAAA;;IACCA,8HADDA;IAECA,wQAFDA;IAGCA,sQAHDA;;G;EAKAA,qB;;;QAVsF,O;EAAAG,qB;EAAAA,kB;EAAAA;",
-"sources":["ApplyingPointStylesOnLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase$1.<init>","chart","defaultLabels","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase$1.generateLegendLabels","selectedPointStyle","item","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ApplyingPointStylesOnLineCase$1.<clinit>"]
-}
-

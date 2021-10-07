@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseStyleProperties$$Overlay.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;;;MAqCmB,Q;;QAubC,6E;EAAAA,mB;EAClBA,+S;;;QAUW,+H,0DAA2BC,W;EAA3BC,mB;EAEXA;GACCA,+CADDA;G;;;QAoOiB,4E;EAAAC,mB;EACjBA,wS;;;QAUW,6H,yDAAyBC,M;EAAzBC,mB;EAEXA;GAECA,qCAFDA;;GAKCA,oGALDA;G;;;QAoDc,yE;EAAAC,mB;EACdA,wR;;;QAUW,uH,sDAAmBC,O;EAAnBC,mB;EAEXA;GACCA,uCADDA;G;;;QAogBe,0E;EAAAC,mB;EACfA,iS;;;QAUW,yH,uDAAqBC,Q;EAArBC,mB;EAEXA;GACCA,yCADDA;G;;;QAoFqB,gF;EAAAC,mB;EACrBA,iU;;;QAUW,qI,6DAAiCC,c;EAAjCC,mB;EAEXA;GACCA,qDADDA;G;;;QAx2CiB,O;EAAAC,2B;EAAAA;",
-"sources":["BaseStyleProperties.java"],
-"names":["org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.getBorderStyle__$devirt","borderStyle","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.setBorderStyle__$devirt","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.getCursorType__$devirt","cursor","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.setCursorType__$devirt","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.getDisplay__$devirt","display","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.setDisplay__$devirt","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.getPosition__$devirt","position","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.setPosition__$devirt","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.getTextDecoration__$devirt","textDecoration","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.setTextDecoration__$devirt","org.pepstock.charba.client.dom.BaseStyleProperties$$Overlay.<clinit>"]
-}
-

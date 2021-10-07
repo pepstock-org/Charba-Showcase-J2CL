@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CrossDash.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;MAuCY,S;;CAAA,W;EAAAA,Q;EAAAA;OAES,2DAFTA,C;EAAAA;OAIQ,0DAJRA,C;;;QAAA,S;EAAAC,oB;EAAAA,gC;EAAAA,uE;EAAAA,iB;;;CAAA,0D;EAAAC,oE;EAAAA,oE;;;CAYI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,sI;EAEAA,0N;EAEAA,sO;EAEAA,iB;;;CAtBU,4D;EAEXL,qF;EAEAA,mF;;;QAJW,O;EAAAO,4B;EAAAA,yB;EAAAA;",
-"sources":["CrossDash.java"],
-"names":["org.pepstock.charba.client.colors.tiles.CrossDash.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.CrossDash.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.CrossDash.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.CrossDash.drawTile","halfSize","org.pepstock.charba.client.colors.tiles.CrossDash.<clinit>"]
-}
-

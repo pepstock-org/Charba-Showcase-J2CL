@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"OpacityCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,4K;;;CAAA,kK;EAAAC,iC;EAAAA,+F;;;CAAA,iE;EAAAC,0D;EAAAA,gI;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["OpacityCallback.java"],
-"names":["org.pepstock.charba.client.datalabels.callbacks.OpacityCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.datalabels.callbacks.OpacityCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.datalabels.callbacks.OpacityCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.datalabels.callbacks.OpacityCallback$$LambdaAdaptor.<clinit>"]
-}
-

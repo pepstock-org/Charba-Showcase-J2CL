@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseGeoController.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;MA8BY,iB;;CAAA,W;EAAAA,Q;;;QAYH,8D,uBAAiCC,I;EAAjCC,4B;EAAAA,wC;EAAAA,+H;EAAAA,iB;;;CAAA,8G,uBAAiCD,I;EACxCE,mI;;;CASc,oB;EAEdC,a;;;QArBD,gE;EAAAC,2H;;;QAEA,iE;EAAAA,4H;;;QALW,O;EAAAC,oC;EAAAA,iC;EAAAA,6B;EAGXA,4H;EAEAA,0H;;;;;;;;;;;;AALW;qF;AAAA;;",
-"sources":["BaseGeoController.java"],
-"names":["org.pepstock.charba.client.geo.BaseGeoController.<synthetic: ctor_js>","type","org.pepstock.charba.client.geo.BaseGeoController.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BaseGeoController.<init>","org.pepstock.charba.client.geo.BaseGeoController.mustBeRegistered","org.pepstock.charba.client.geo.BaseGeoController.<synthetic: getter>","org.pepstock.charba.client.geo.BaseGeoController.<clinit>"]
-}
-

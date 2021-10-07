@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultGlobalOptions.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;;MA4BmB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAEmB,gFAFnBA,C;;;QASX,iD,sBAAmCC,a;EAAnCC,+B;EAAAA,2C;EAAAA,yI;EAAAA,iB;;;CAAA,+G,sBAAmCD,a;EACzCE,uJ;EAEAA,yI;;;CASsB,a;EACtBC,6G;;;QAtBiB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["DefaultGlobalOptions.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultGlobalOptions.<synthetic: ctor_js>","globalOptions","org.pepstock.charba.client.defaults.chart.DefaultGlobalOptions.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultGlobalOptions.<init>","org.pepstock.charba.client.defaults.chart.DefaultGlobalOptions.getScales","org.pepstock.charba.client.defaults.chart.DefaultGlobalOptions.<clinit>"]
-}
-

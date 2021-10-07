@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipItemSortCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;yF;EAAAA,sK;;;CAAA,4J;EAAAC,iC;EAAAA,4F;;;CAAA,4I;EAAAC,yE;EAAAA,yI;;;;CAAA,oF;EAAAA,mR;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["TooltipItemSortCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.TooltipItemSortCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.TooltipItemSortCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.TooltipItemSortCallback$$LambdaAdaptor.onItemSort","org.pepstock.charba.client.callbacks.TooltipItemSortCallback$$LambdaAdaptor.<clinit>"]
-}
-

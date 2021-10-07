@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetItemsSelectorBubbleCase$2.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;;MAyH2D,E;;CAAA,W;EAAAA,Q;EAAAA;qG;;;QAAA,uF;EAAAC,a;EAAAA,yB;EAAAA,+L;EAAAA,iB;;;CAAA,uK;EAAAC,iH;EAAAA,iC;;;CAG5C,wE,mCAAoCC,K;EAC/CC,IAAcC,EAAdD,6B;EACAA,+M;EACAA,2O;;;QANuD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["DatasetItemsSelectorBubbleCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBubbleCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBubbleCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBubbleCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBubbleCase$2.onSelect","sb","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorBubbleCase$2.<clinit>"]
-}
-

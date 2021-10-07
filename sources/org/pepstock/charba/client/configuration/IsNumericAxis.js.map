@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsNumericAxis.impl.java.js",
-"lineCount":100,
-"mappings":"A;;;;;;;;;;;;MAyBiB,a;;CAOX,kB;;CAOQ,gB,eAAcA,G;;CAYZ,U;;CAcF,gB,eAAcC,G;;CAYZ,U;;CAcF,yB,eAAuBC,Y;;CAYrB,mB;;CAcF,yB,eAAuBC,Y;;CAYrB,mB;;QAxGC,M;EAAAC,wB;EAAAA,8B;;;QAcH,kF,+CAAcJ,G;EAAdK,wB;EAEZA;GACCA,gHADDA;G;;;QAUc,0E;EAAAC,wB;EAEdA;GACCA,8GADDA;G;EAIAA,sD;;;QAQY,kF,+CAAcL,G;EAAdM,wB;EAEZA;GACCA,gHADDA;G;;;QAUc,0E;EAAAC,wB;EAEdA;GACCA,8GADDA;G;EAIAA,sD;;;QAQY,2F,+CAAuBN,Y;EAAvBO,wB;EAEZA;GACCA,kIADDA;G;;;QAUc,mF;EAAAC,wB;EAEdA;GACCA,uHADDA;G;EAIAA,+D;;;QAQY,2F,+CAAuBP,Y;EAAvBQ,wB;EAEZA;GACCA,kIADDA;G;;;QAUc,mF;EAAAC,wB;EAEdA;GACCA,uHADDA;G;EAIAA,+D;;;QA9Ge,O;EAAAC,gC;EAAAA;",
-"sources":["IsNumericAxis.java"],
-"names":["min","max","suggestedMax","suggestedMin","org.pepstock.charba.client.configuration.IsNumericAxis.<synthetic: adapt_lambda>","org.pepstock.charba.client.configuration.IsNumericAxis.setMin__$default","org.pepstock.charba.client.configuration.IsNumericAxis.getMin__$default","org.pepstock.charba.client.configuration.IsNumericAxis.setMax__$default","org.pepstock.charba.client.configuration.IsNumericAxis.getMax__$default","org.pepstock.charba.client.configuration.IsNumericAxis.setSuggestedMax__$default","org.pepstock.charba.client.configuration.IsNumericAxis.getSuggestedMax__$default","org.pepstock.charba.client.configuration.IsNumericAxis.setSuggestedMin__$default","org.pepstock.charba.client.configuration.IsNumericAxis.getSuggestedMin__$default","org.pepstock.charba.client.configuration.IsNumericAxis.<clinit>"]
-}
-

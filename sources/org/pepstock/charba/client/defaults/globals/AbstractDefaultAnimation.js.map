@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractDefaultAnimation.impl.java.js",
-"lineCount":78,
-"mappings":"A;;;;;;;;;;;;;;;;MA8Be,wB;;CAAA,W;EAAAA,Q;;;CAYd,6E;EAAAC,iC;;;CAUc,a;EACbC,wE;;;CASU,e;EACVC,0H;;;CASU,Y;EACVC,uH;;;CASc,U;EACdC,sH;;;CASuB,uB;EACvBC,Y;;;CASoB,oB;EACpBC,Y;;;CASmB,mB;EACnBC,Y;;;CASqB,qB;EACrBC,Y;;;QA7Fa,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;;;;;;;;;;;AAEd;yBAAyB,yFAAzB,Q;AAEA;yBAAyB,sFAAzB,e;AAEA;yBAA6B,qFAA7B;",
-"sources":["AbstractDefaultAnimation.java"],
-"names":["org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.<init>","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.getEasing","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.getDuration","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.getDelay","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.isLoop","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.getDurationCallback","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.getDelayCallback","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.getLoopCallback","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.getEasingCallback","org.pepstock.charba.client.defaults.globals.AbstractDefaultAnimation.<clinit>"]
-}
-

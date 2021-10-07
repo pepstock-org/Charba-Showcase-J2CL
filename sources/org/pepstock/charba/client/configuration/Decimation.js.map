@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Decimation.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;MA0Ba,U;;CAAA,W;EAAAA,Q;;;QAOZ,sE,6BAAgCC,O;EAAhCC,qB;EAAAA,iC;EAAAA,6I;EAAAA,iB;;;CAAA,yH,6BAAgCD,O;EAC/BE,2J;;;CAQW,qB,gBAAmBC,O;EAC9BC,+E;;;CAQc,a;EACdC,uE;;;CAQW,oE,4BAAiCC,S;EAC5CC,gI;;;CAQ0B,gB;EAC1BC,0E;;;CASW,oB,eAAkBC,O;EAC7BC,8E;;;CASa,c;EACbC,wE;;;CAUW,sB,eAAoBC,S;EAC/BC,kF;;;CAUa,gB;EACbC,0E;;;QAtFW,O;EAAAC,6B;EAAAA,0B;EAAAA;",
-"sources":["Decimation.java"],
-"names":["org.pepstock.charba.client.configuration.Decimation.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Decimation.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Decimation.<init>","enabled","org.pepstock.charba.client.configuration.Decimation.setEnabled","org.pepstock.charba.client.configuration.Decimation.isEnabled","algorithm","org.pepstock.charba.client.configuration.Decimation.setAlgorithm","org.pepstock.charba.client.configuration.Decimation.getAlgorithm","samples","org.pepstock.charba.client.configuration.Decimation.setSamples","org.pepstock.charba.client.configuration.Decimation.getSamples","threshold","org.pepstock.charba.client.configuration.Decimation.setThreshold","org.pepstock.charba.client.configuration.Decimation.getThreshold","org.pepstock.charba.client.configuration.Decimation.<clinit>"]
-}
-

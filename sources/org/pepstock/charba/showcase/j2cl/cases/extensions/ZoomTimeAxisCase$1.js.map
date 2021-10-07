@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ZoomTimeAxisCase$1.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA6FsG,E;;CAAA,W;EAAAA,Q;EAAAA;0F;EAAAA;OAPxFC,wFAOwFD,C;;;QAAA,6H;EAAAE,a;EAAAA,yB;EAAAA,6O;EAAAA,iB;;;CAAA,kM;EAAAC,sG;EAAAA,kH;EAAAA,kF;;;CAG/E,6D,gBAAgBC,K,2BAAyBC,K;EAC5DC,IAAYC,IAAZD,uF;EACAA,IAAYE,EAAZF,2G;EACAA,IAAUG,EAAVH,8G;EACAA,6X;;;QAPkG,O;EAAAI,qB;EAAAA,kB;EAAAA;",
-"sources":["ZoomTimeAxisCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomTimeAxisCase$1.<synthetic: ctor_js>","adapter","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomTimeAxisCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomTimeAxisCase$1.<init>","chart","items","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomTimeAxisCase$1.onTitle","item","ds","dp","org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomTimeAxisCase$1.<clinit>"]
-}
-

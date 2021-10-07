@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BarBorderWidth$BarBorderWidthFactory.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAyKqB,qB;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,gC;EAAAA,4C;EAAAA,0F;EAAAA,iB;;;CAAA,6E;EAAAC,iC;;;CAUc,yD,UAAoBC,Y;EACzCC,6F;;;;CAhBkB,U;EAAAA,wL;;;QAAA,O;EAAAC,wC;EAAAA,qC;EAAAA,qB;EAAAA;",
-"sources":["BarBorderWidth.java"],
-"names":["org.pepstock.charba.client.data.BarBorderWidth$BarBorderWidthFactory.<synthetic: ctor_js>","org.pepstock.charba.client.data.BarBorderWidth$BarBorderWidthFactory.<synthetic: ctor_create>","org.pepstock.charba.client.data.BarBorderWidth$BarBorderWidthFactory.<init>","nativeObject","org.pepstock.charba.client.data.BarBorderWidth$BarBorderWidthFactory.create","org.pepstock.charba.client.data.BarBorderWidth$BarBorderWidthFactory.<clinit>"]
-}
-

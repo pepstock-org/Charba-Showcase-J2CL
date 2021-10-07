@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsPadding.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;MAwBiB,S;;CAOH,U,eAAQA,O;;CAYR,W,eAASA,O;;CAUT,W,eAASA,O;;CAUjB,c,eAAYA,O;;CAOZ,e,eAAaA,O;;CAOb,a,eAAWA,O;;CAOX,gB,eAAcA,O;;QArDN,kE,2CAAQA,O;EAARC,oB;EACZA,gC;EACAA,mC;EACAA,iC;EACAA,kC;;;QAQY,mE,2CAASD,O;EAATE,oB;EACZA,iC;EACAA,kC;;;QAQY,mE,2CAASF,O;EAATG,oB;EACZA,gC;EACAA,mC;;;QA/Be,O;EAAAC,4B;EAAAA,yB;EAAAA;",
-"sources":["IsPadding.java"],
-"names":["padding","org.pepstock.charba.client.options.IsPadding.set__$default","org.pepstock.charba.client.options.IsPadding.setX__$default","org.pepstock.charba.client.options.IsPadding.setY__$default","org.pepstock.charba.client.options.IsPadding.<clinit>"]
-}
-

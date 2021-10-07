@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataEnvelop.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA2BmB,W;;CAAA,W;EAAAA,Q;;;;QAOlB,yB,UAAcC,O;EAAdC,sB;EAAAA,kC;EAAAA,wF;EAAAA,iB;;;;CAAA,oE,UAAcD,O;EACbE,mG;;;;QASD,kC,UAAcF,O,iBAAiBG,Q;EAA/BF,sB;EAAAA,kC;EAAAA,2G;EAAAA,iB;;;;CAAA,6E,UAAcD,O,iBAAiBG,Q;EAC9BD,8G;;;QAlBiB,O;EAAAE,8B;EAAAA,2B;EAAAA;",
-"sources":["DataEnvelop.java"],
-"names":["org.pepstock.charba.client.data.DataEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.data.DataEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.data.DataEnvelop.<init>","nullable","org.pepstock.charba.client.data.DataEnvelop.<clinit>"]
-}
-

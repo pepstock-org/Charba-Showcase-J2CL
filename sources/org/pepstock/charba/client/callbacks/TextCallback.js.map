@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,Y;;QAAA,M;EAAAA,uB;EAAAA,gE;;;QAAA,O;EAAAC,+B;EAAAA;",
-"sources":["TextCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.TextCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.TextCallback.<clinit>"]
-}
-

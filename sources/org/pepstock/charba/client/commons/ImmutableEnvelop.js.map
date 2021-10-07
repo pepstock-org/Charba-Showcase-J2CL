@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ImmutableEnvelop.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;;;MAwBsB,gB;;CAAA,W;EAAAA,Q;EAAAA;OAGX,+DAHWA,C;EAAAA;OAKC,gEALDA,S;;;;CAYX,4E,UAAmBC,O;EAC5BC,2G;;;;CASS,qF,UAAmBD,O,iBAAiBE,Q;EAApCD,iC;EAAAA,sE;EACTA,+E;EACAA,iF;;;CAQc,c;EACdE,4E;;;CAQU,+E,UAAuBH,O;EACjCI,+E;;;CASoB,c;EACpBC,oG;;;CASoB,c;EACpBC,6E;;;CA9DoB,8D;EAGrBL,4E;;;QAHqB,O;EAAAM,mC;EAAAA,gC;EAAAA;",
-"sources":["ImmutableEnvelop.java"],
-"names":["org.pepstock.charba.client.commons.ImmutableEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.commons.ImmutableEnvelop.<init>","nullable","org.pepstock.charba.client.commons.ImmutableEnvelop.getContent","org.pepstock.charba.client.commons.ImmutableEnvelop.setContentInternally","org.pepstock.charba.client.commons.ImmutableEnvelop.hasContent","org.pepstock.charba.client.commons.ImmutableEnvelop.isNullable","org.pepstock.charba.client.commons.ImmutableEnvelop.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScaleTitle$Property.impl.java.js",
-"lineCount":107,
-"mappings":"A;;;;;;;;;;;;;;MA6Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAQS,gEARTA,C;;;QAeJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,yI;EAAAA,iB;;;CAAA,sG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,8E;;;CASa,S;EACbC,6E;;;QA1BW,2B;EAAAC,mB;EAAAA;GAAAA,yIAAAA;G;EAAAA,iI;;;QAAA,U;EAAAC,mB;EAAAA,oY;;;QAEZ,mE;EAAAC,4G;;;QACA,qE;EAAAA,8G;;;QACA,qE;EAAAA,8G;;;QACA,kE;EAAAA,2G;;;QALY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,mQ;EACAA,2Q;EACAA,2Q;EACAA,+P;EALYA,4F;;;;;;;;;;;;;AAAA;+E;AAAA;iF;AAAA;iF;AAAA;8E;AAAA;qF;AAEZ;oF;AACA;sF;AACA;sF;AACA;;",
-"sources":["ScaleTitle.java"],
-"names":["org.pepstock.charba.client.options.ScaleTitle$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.ScaleTitle$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.ScaleTitle$Property.<init>","org.pepstock.charba.client.options.ScaleTitle$Property.value","org.pepstock.charba.client.options.ScaleTitle$Property.valueOf","org.pepstock.charba.client.options.ScaleTitle$Property.values","org.pepstock.charba.client.options.ScaleTitle$Property.<synthetic: getter>","org.pepstock.charba.client.options.ScaleTitle$Property.<clinit>"]
-}
-

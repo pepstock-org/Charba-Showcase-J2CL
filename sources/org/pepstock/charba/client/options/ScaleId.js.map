@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScaleId.impl.java.js",
-"lineCount":70,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,O;;QAQD,0B,gBAAcA,E;EAAdC,kB;EAEdA;GAAAA,IAAoBC,UAApBD,kBAAAA;;IAECA;KAECA,kBAFDA;KAFDA;;G;EASAA,qD;;;QASc,2B,gBAAeD,E;EAAfG,kB;EACdA,mD;;;QASc,qD,gBAAgBH,E;EAAhBG,kB;EACdA,iF;;;QASW,0D,gBAAqBH,E;EAArBI,kB;EACXA,+E;;;QASW,gC,gBAAoBJ,E;EAApBI,kB;EACXA,iD;;;QAUc,kF,gBAA0BJ,E,iBAAYK,Y;EAAtCC,kB;EAEdA;GAICA;IAAAA,IAAoBC,OAApBD,kBAAAA;;KAECA;MACCA,eADDA;MAFDA;;IAJDA;GAWCA,8CAXDA;G;EAeAA,oB;;;CAQQ,e;;QA9FO,O;EAAAE,0B;EAAAA;",
-"sources":["ScaleId.java"],
-"names":["id","org.pepstock.charba.client.options.ScaleId.create","defScaleId","org.pepstock.charba.client.options.ScaleId.isValid","org.pepstock.charba.client.options.ScaleId.checkIfValid","defaultValue","org.pepstock.charba.client.options.ScaleId.checkAndGetScaleID","scaleId","org.pepstock.charba.client.options.ScaleId.<clinit>"]
-}
-

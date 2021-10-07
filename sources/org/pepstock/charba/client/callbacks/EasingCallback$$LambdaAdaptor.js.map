@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"EasingCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,6D;EAAAC,sD;EAAAA,oH;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["EasingCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.EasingCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.EasingCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.EasingCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.EasingCallback$$LambdaAdaptor.<clinit>"]
-}
-

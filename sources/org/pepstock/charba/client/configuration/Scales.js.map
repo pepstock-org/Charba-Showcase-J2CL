@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Scales.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAgCa,M;;CAAA,W;EAAAA,Q;EAAAA;OAGoB,8DAHpBA,C;;;QAUF,+D,sBAAqBC,O;EAArBC,iB;EAAAA,6B;EAAAA,kI;EAAAA,iB;;;CAAA,8G,sBAAqBD,O;EAC9BE,2J;EADSA,kE;;;CASE,gE,oBAAgBC,I;EAE3BC;GAECA,IAAOC,OAAPD,oDAFDA;GAICA,4EAJDA;GAMCA,IAAQE,MAARF,sEANDA;GAQCA,SAASG,CAATH;IAECA,IAAOI,WAAPJ,sCAFDA;IAICA,4XAJDA;IAMCA,6FANDA;IAQCA,kHARDA;IARDA;GAmBCA,gHAnBDA;G;;;CA6BW,+B,gBAAmBK,O;EAC9BC,8H;;;CASW,yD,gBAAoBD,O;EAE/BC,4E;EAEAA,0I;;;CAQiB,W;EAEjBC,IAAWC,MAAXD,mS;EAEAA,wF;;;CA5EW,0D;EAGZT,iI;;;QAHY,O;EAAAW,yB;EAAAA,sB;EAAAA;",
-"sources":["Scales.java"],
-"names":["org.pepstock.charba.client.configuration.Scales.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Scales.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Scales.<init>","axes","org.pepstock.charba.client.configuration.Scales.setAxes","chartId","scales","i","axisChartId","scaleId","org.pepstock.charba.client.configuration.Scales.getAxisById","org.pepstock.charba.client.configuration.Scales.getAxes","result","org.pepstock.charba.client.configuration.Scales.<clinit>"]
-}
-

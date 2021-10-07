@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasPointFillStrokeStyles.impl.java.js",
-"lineCount":18,
-"mappings":"A;;;;;;;;;MA0BiB,wB;;CAOZ,6B;;CAOA,+B;;QAdY,O;EAAAA,2C;EAAAA;",
-"sources":["HasPointFillStrokeStyles.java"],
-"names":["org.pepstock.charba.client.data.HasPointFillStrokeStyles.<clinit>"]
-}
-

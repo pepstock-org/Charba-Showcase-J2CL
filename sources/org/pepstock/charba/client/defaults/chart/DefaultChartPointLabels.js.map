@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartPointLabels.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;;;;MA2BmB,uB;;CAAA,W;EAAAA,Q;EAAAA;OAEQ,iFAFRA,C;;;QASlB,uD,oBAAoCC,W;EAApCC,kC;EAAAA,8C;EAAAA,gJ;EAAAA,iB;;;CAAA,wH,oBAAoCD,W;EAApCE,iC;EACCA,qG;;;CASoB,W;EACpBC,4G;;;CASa,oB;EACbC,qH;;;CASc,a;EACdC,8G;;;CASuB,sB;EACvBC,uH;;;CASU,c;EACVC,+G;;;CASa,4B;EACbC,6H;;;QAtEiB,O;EAAAC,0C;EAAAA,uC;EAAAA;",
-"sources":["DefaultChartPointLabels.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.<synthetic: ctor_js>","pointLabels","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.getFont","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.getColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.isDisplay","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.getBackdropPadding","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.getPadding","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.getBackdropColorAsString","org.pepstock.charba.client.defaults.chart.DefaultChartPointLabels.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Cache$$Overlay.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;MAyBiB,Q;;QAwMO,4D,wCAAYA,O;EAAZC,mB;EACpBA,oF;;;QAIoB,sD,wCAAWD,O;EAAXC,mB;EACpBA,oF;;;QAIoB,kG,yCAA4CC,Q;EAA5CC,mB;EACpBA,+F;;;QAUuB,iG,wCAAeH,O,2BAA2BI,O;EAA1CC,mB;EACvBA,gG;;;QAIuB,+D,wCAAeL,O;EAAfK,mB;EACvBA,uF;;;QAIuB,2F,wCAAcL,O,2BAA2BI,O;EAAzCC,mB;EACvBA,gG;;;QAIuB,yD,wCAAcL,O;EAAdK,mB;EACvBA,uF;;;QAUgC,+F,wCAAaL,O,2BAA2BI,O;EAAxCE,mB;EAChCA,8F;;;QAIgC,6D,wCAAaN,O;EAAbM,mB;EAChCA,qF;;;QAIgC,yF,wCAAYN,O,2BAA2BI,O;EAAvCE,mB;EAChCA,8F;;;QAIgC,uD,wCAAYN,O;EAAZM,mB;EAChCA,qF;;;QAQwB,gG,wCAAcN,O,2BAA2BI,O;EAAzCG,mB;EACxBA,+F;;;QAIwB,8D,wCAAcP,O;EAAdO,mB;EACxBA,sF;;;QAIwB,0F,wCAAaP,O,2BAA2BI,O;EAAxCG,mB;EACxBA,+F;;;QAIwB,wD,wCAAaP,O;EAAbO,mB;EACxBA,sF;;;QAWiC,mG,wCAAiBP,O,2BAA2BI,O;EAA5CI,mB;EACjCA,kG;;;QAIiC,iE,wCAAiBR,O;EAAjBQ,mB;EACjCA,yF;;;QAIiC,6F,wCAAgBR,O,2BAA2BI,O;EAA3CI,mB;EACjCA,kG;;;QAIiC,2D,wCAAgBR,O;EAAhBQ,mB;EACjCA,yF;;;QAMoB,qF,wCAAYR,O,kBAAkBS,Q;EAA9BC,mB;EACpBA,8F;;;QAIoB,+E,wCAAWV,O,kBAAkBS,Q;EAA7BC,mB;EACpBA,8F;;;QAtUa,O;EAAAC,2B;EAAAA;",
-"sources":["Cache.java"],
-"names":["request","elemental2.dom.Cache$$Overlay.add__$devirt","requests","elemental2.dom.Cache$$Overlay.addAll__$devirt","options","elemental2.dom.Cache$$Overlay.delete__$devirt","elemental2.dom.Cache$$Overlay.keys__$devirt","elemental2.dom.Cache$$Overlay.match__$devirt","elemental2.dom.Cache$$Overlay.matchAll__$devirt","response","elemental2.dom.Cache$$Overlay.put__$devirt","elemental2.dom.Cache$$Overlay.<clinit>"]
-}
-

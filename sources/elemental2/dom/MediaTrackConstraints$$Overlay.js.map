@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MediaTrackConstraints$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MA0BiB,Q;;QAEc,U;EAAAA,mB;EAC3BA,kH;;;QAUW,4G,+EAAsCC,Q;EAAtCC,mB;EACXA,iH;;;QAda,O;EAAAC,2B;EAAAA;",
-"sources":["MediaTrackConstraints.java"],
-"names":["elemental2.dom.MediaTrackConstraints$$Overlay.create","advanced","elemental2.dom.MediaTrackConstraints$$Overlay.setAdvanced__$devirt","elemental2.dom.MediaTrackConstraints$$Overlay.<clinit>"]
-}
-

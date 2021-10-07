@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NativeArrayContainer.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;MAyBsB,oB;;CAAA,W;EAAAA,Q;EAAAA;OAGL,uEAHKA,C;;;CAUX,wG,UAAuBC,W;EAAvBC,iC;EAETA,0F;EAEAA,2F;;;CAQiB,kB;EACjBC,oF;;;CAQmB,U;EACnBC,qJ;;;QAhCoB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["NativeArrayContainer.java"],
-"names":["org.pepstock.charba.client.commons.NativeArrayContainer.<synthetic: ctor_js>","nativeArray","org.pepstock.charba.client.commons.NativeArrayContainer.<init>","org.pepstock.charba.client.commons.NativeArrayContainer.getNativeArray","org.pepstock.charba.client.commons.NativeArrayContainer.toJSON","org.pepstock.charba.client.commons.NativeArrayContainer.<clinit>"]
-}
-

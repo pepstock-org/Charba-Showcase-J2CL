@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Canvas$$Overlay.impl.java.js",
-"lineCount":70,
-"mappings":"A;;;;;;;;;;;;MAsCmB,Q;;QAoFS,uE;EAAAA,mB;EAC1BA,qO;;;QASoB,sE;EAAAC,mB;EAEpBA,oI;;;QASmB,oE;EAAAC,mB;EACnBA,oN;;;QAYmB,4E,mDAAiBC,c;EAAjBD,mB;EACnBA,4O;;;QAWmB,oH,0DAAwBE,I;EAAxBF,mB;EACnBA,0P;;;QAamB,4H,0DAAwBE,I,gBAAaD,c;EAArCD,mB;EAEnBA,IAAcG,oBAAdH,4I;EAEAA,2O;;;QApJiB,O;EAAAI,2B;EAAAA,wB;;;;;;;;;;;;;;;;;AAElB;SAI2B,8DAJ3B,Y;AAMA;SAC4B,sEAD5B,Q;AAEA;SAC2B,kFAD3B;",
-"sources":["Canvas.java"],
-"names":["org.pepstock.charba.client.dom.elements.Canvas$$Overlay.getContext2d__$devirt","org.pepstock.charba.client.dom.elements.Canvas$$Overlay.isSupported__$devirt","org.pepstock.charba.client.dom.elements.Canvas$$Overlay.toDataURL__$devirt","encoderOptions","type","checkedImageMimeType","org.pepstock.charba.client.dom.elements.Canvas$$Overlay.<clinit>"]
-}
-

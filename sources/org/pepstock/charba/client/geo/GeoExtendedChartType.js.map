@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GeoExtendedChartType.impl.java.js",
-"lineCount":52,
-"mappings":"A;;;;;;;;;;;MA0BY,oB;;CAAA,W;EAAAA,Q;;;QAQX,S;EAAAC,+B;EAAAA,2C;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,iC;;;CAUc,S;EACbC,yF;;;CASgB,a;EAChBC,+D;;;QA7BU,O;EAAAC,uC;EAAAA,oC;EAAAA,qB;;;;;;;;;;;AAGX;qBAA4B,4DAA5B;",
-"sources":["GeoExtendedChartType.java"],
-"names":["org.pepstock.charba.client.geo.GeoExtendedChartType.<synthetic: ctor_js>","org.pepstock.charba.client.geo.GeoExtendedChartType.<synthetic: ctor_create>","org.pepstock.charba.client.geo.GeoExtendedChartType.<init>","org.pepstock.charba.client.geo.GeoExtendedChartType.value","org.pepstock.charba.client.geo.GeoExtendedChartType.scaleType","org.pepstock.charba.client.geo.GeoExtendedChartType.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ElementsView$AxesCase$11.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAuR+D,G;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,c;EAAAA,0B;EAAAA,sF;EAAAA,iB;;;CAAA,yE;EAAAC,iC;;;CACvC,U;EACpBC,6C;;;QAF2D,O;EAAAC,sB;EAAAA,mB;EAAAA;",
-"sources":["ElementsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$11.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$11.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$11.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$11.create","org.pepstock.charba.showcase.j2cl.views.ElementsView$AxesCase$11.<clinit>"]
-}
-

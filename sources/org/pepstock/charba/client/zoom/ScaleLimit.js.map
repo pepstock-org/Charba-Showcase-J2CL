@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScaleLimit.impl.java.js",
-"lineCount":87,
-"mappings":"A;;;;;;;;;;;;;;;MA2BmB,U;;CAAA,W;EAAAA,Q;EAAAA;OAqCU,6DArCVA,C;;;QA6ClB,6G,4BAA+BC,c,WAA6BC,Y;EAA5DC,qB;EAAAA,iC;EAAAA,gM;EAAAA,iB;;;CAAA,uJ,4BAA+BF,c,WAA6BC,Y;EAC3DE,2L;EAGAA,6M;;;CAQiB,yB,gBAAuBC,M;EACxCC,gM;;;CASoB,iB;EACpBC,2c;;;CAQiB,yB,gBAAuBF,M;EACxCG,gM;;;CASoB,iB;EACpBC,2c;;;CAUW,qB,eAAmBC,G;EAC9BC,2J;;;CAWa,e;EACbC,mP;;;CASY,6G,YAAiBC,Q,iBAAkBR,M;EAE/CS;GACCA,8JADDA;;GAKCA,gEALDA;G;;;QAzHiB,O;EAAAC,6B;EAAAA,0B;EAAAA,qB;EAAAA,8B;;;;;;;;;;;;;;AAGlB;WAA4B,6DAA5B;",
-"sources":["ScaleLimit.java"],
-"names":["org.pepstock.charba.client.zoom.ScaleLimit.<synthetic: ctor_js>","defaultOptions","nativeObject","org.pepstock.charba.client.zoom.ScaleLimit.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.ScaleLimit.<init>","enable","org.pepstock.charba.client.zoom.ScaleLimit.setOriginalMin","org.pepstock.charba.client.zoom.ScaleLimit.isOriginalMin","org.pepstock.charba.client.zoom.ScaleLimit.setOriginalMax","org.pepstock.charba.client.zoom.ScaleLimit.isOriginalMax","min","org.pepstock.charba.client.zoom.ScaleLimit.setMinRange","org.pepstock.charba.client.zoom.ScaleLimit.getMinRange","property","org.pepstock.charba.client.zoom.ScaleLimit.setOringinal","org.pepstock.charba.client.zoom.ScaleLimit.<clinit>"]
-}
-

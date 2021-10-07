@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseEvent$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MAiCe,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["BaseEvent.java"],
-"names":["org.pepstock.charba.client.dom.BaseEvent$$Overlay.<clinit>"]
-}
-

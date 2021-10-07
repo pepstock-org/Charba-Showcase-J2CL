@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DisplayCallback.impl.java.js",
-"lineCount":23,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,e;;QAAA,M;EAAAA,0B;EAAAA,gE;;;QAAA,O;EAAAC,kC;EAAAA;",
-"sources":["DisplayCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.DisplayCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.DisplayCallback.<clinit>"]
-}
-

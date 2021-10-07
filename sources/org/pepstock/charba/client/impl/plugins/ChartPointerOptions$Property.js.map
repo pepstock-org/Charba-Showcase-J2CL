@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartPointerOptions$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAyCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,8EALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,uJ;EAAAA,iB;;;CAAA,oH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,4F;;;CASa,S;EACbC,2F;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,uJAAAA;G;EAAAA,+I;;;QAAA,U;EAAAC,mB;EAAAA,kK;;;QAEZ,oF;EAAAC,6H;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2S;EAFYA,0G;;;;;;;;;;;;;AAAA;gG;AAAA;mG;AAEZ;;",
-"sources":["ChartPointerOptions.java"],
-"names":["org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.<init>","org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.value","org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.valueOf","org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.values","org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.<synthetic: getter>","org.pepstock.charba.client.impl.plugins.ChartPointerOptions$Property.<clinit>"]
-}
-

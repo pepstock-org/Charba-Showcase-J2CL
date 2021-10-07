@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CacheStorage$MatchRequestUnionType$$Overlay.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;MA2BmB,Q;;QAE2B,sB,UAAUA,C;EAAVC,mB;EACxCA,uD;;;QAIc,uE;EAAAC,mB;EACdA,kG;;;QAIa,sE;EAAAC,mB;EACbA,iD;;;QAIc,uE;EAAAC,mB;EACdA,+D;;;QAIc,sE;EAAAC,mB;EACdA,yD;;;QAvBa,O;EAAAC,2B;EAAAA;",
-"sources":["CacheStorage.java"],
-"names":["o","elemental2.dom.CacheStorage$MatchRequestUnionType$$Overlay.of","elemental2.dom.CacheStorage$MatchRequestUnionType$$Overlay.asRequest__$devirt","elemental2.dom.CacheStorage$MatchRequestUnionType$$Overlay.asString__$devirt","elemental2.dom.CacheStorage$MatchRequestUnionType$$Overlay.isRequest__$devirt","elemental2.dom.CacheStorage$MatchRequestUnionType$$Overlay.isString__$devirt","elemental2.dom.CacheStorage$MatchRequestUnionType$$Overlay.<clinit>"]
-}
-

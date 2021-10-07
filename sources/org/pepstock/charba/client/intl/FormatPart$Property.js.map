@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FormatPart$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAmCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,6DANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,sI;EAAAA,iB;;;CAAA,mG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,2E;;;CASa,S;EACbC,0E;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,sIAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,mB;EAAAA,0N;;;QAEZ,+D;EAAAC,wG;;;QACA,gE;EAAAA,yG;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,yP;EACAA,6P;EAHYA,yF;;;;;;;;;;;;;AAAA;2E;AAAA;4E;AAAA;kF;AAEZ;gF;AACA;;",
-"sources":["FormatPart.java"],
-"names":["org.pepstock.charba.client.intl.FormatPart$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.intl.FormatPart$Property.<synthetic: ctor_create>","org.pepstock.charba.client.intl.FormatPart$Property.<init>","org.pepstock.charba.client.intl.FormatPart$Property.value","org.pepstock.charba.client.intl.FormatPart$Property.valueOf","org.pepstock.charba.client.intl.FormatPart$Property.values","org.pepstock.charba.client.intl.FormatPart$Property.<synthetic: getter>","org.pepstock.charba.client.intl.FormatPart$Property.<clinit>"]
-}
-

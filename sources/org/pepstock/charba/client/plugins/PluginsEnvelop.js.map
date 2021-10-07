@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginsEnvelop.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA2BmB,c;;CAAA,W;EAAAA,Q;;;;QAOlB,yB,UAAiBC,O;EAAjBC,yB;EAAAA,qC;EAAAA,8F;EAAAA,iB;;;;CAAA,0E,UAAiBD,O;EAChBE,yG;;;;QASD,kC,UAAiBF,O,iBAAiBG,Q;EAAlCF,yB;EAAAA,qC;EAAAA,iH;EAAAA,iB;;;;CAAA,mF,UAAiBD,O,iBAAiBG,Q;EACjCD,8G;;;QAlBiB,O;EAAAE,iC;EAAAA,8B;EAAAA;",
-"sources":["PluginsEnvelop.java"],
-"names":["org.pepstock.charba.client.plugins.PluginsEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.plugins.PluginsEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.plugins.PluginsEnvelop.<init>","nullable","org.pepstock.charba.client.plugins.PluginsEnvelop.<clinit>"]
-}
-

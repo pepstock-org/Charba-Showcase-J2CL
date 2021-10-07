@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SegmentOnLineCase$3.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;;;;MAgFqF,E;;CAAA,W;EAAAA,Q;EAAAA;yF;;;QAAA,2E;EAAAC,a;EAAAA,yB;EAAAA,uK;EAAAA,iB;;;CAAA,+I;EAAAC,qG;EAAAA,iC;;;CAGnE,6D,uBAAsBC,O;EACpCC,wJ;;;;CAJiF,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["SegmentOnLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnLineCase$3.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnLineCase$3.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnLineCase$3.<init>","context","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnLineCase$3.invoke","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnLineCase$3.<clinit>"]
-}
-

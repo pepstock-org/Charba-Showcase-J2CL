@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BaseMeterController$BaseMeterControllerProvier.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;MAwXsB,0B;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qC;EAAAA,iD;EAAAA,2G;EAAAA,iB;;;CAAA,8F;EAAAC,iC;;;CAQF,gE,uBAAuBC,c;EACxCC,0G;;;QATmB,O;EAAAC,6C;EAAAA,0C;EAAAA;",
-"sources":["BaseMeterController.java"],
-"names":["org.pepstock.charba.client.impl.charts.BaseMeterController$BaseMeterControllerProvier.<synthetic: ctor_js>","org.pepstock.charba.client.impl.charts.BaseMeterController$BaseMeterControllerProvier.<synthetic: ctor_create>","org.pepstock.charba.client.impl.charts.BaseMeterController$BaseMeterControllerProvier.<init>","controllerType","org.pepstock.charba.client.impl.charts.BaseMeterController$BaseMeterControllerProvier.provide","org.pepstock.charba.client.impl.charts.BaseMeterController$BaseMeterControllerProvier.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetRangeSelectionEvent.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;MA4BmB,0B;;CAAA,W;EAAAA,Q;EAAAA;OAOW,qEAPXA,C;EAAAA;OASW,mEATXA,C;;;QAkBX,yJ,eAA2CC,W,wBAA4BC,I,wBAAqBC,E;EAA5FC,qC;EAAAA,iD;EAAAA,uP;EAAAA,iB;;;CAAA,qN,eAA2CH,W,wBAA4BC,I,wBAAqBC,E;EAClGE,6Q;EAGAA,6O;EACAA,uO;;;CAQqB,W;EACrBC,kF;;;CAQqB,S;EACrBC,gF;;;CASc,0D,qBAAsBC,O;EAEpCC;GAECA,IAAkCC,SAAlCD,2GAFDA;GAICA,yFAJDA;G;;;QAlDD,wE;EAAAE,qJ;;;QAFkB,O;EAAAC,6C;EAAAA,0C;EAAAA,wB;EAElBA,oL;;;;;;;;;;;;;;;;AAFkB;;",
-"sources":["DatasetRangeSelectionEvent.java"],
-"names":["org.pepstock.charba.client.events.DatasetRangeSelectionEvent.<synthetic: ctor_js>","nativeEvent","from","to","org.pepstock.charba.client.events.DatasetRangeSelectionEvent.<synthetic: ctor_create>","org.pepstock.charba.client.events.DatasetRangeSelectionEvent.<init>","org.pepstock.charba.client.events.DatasetRangeSelectionEvent.getFrom","org.pepstock.charba.client.events.DatasetRangeSelectionEvent.getTo","handler","org.pepstock.charba.client.events.DatasetRangeSelectionEvent.dispatch","myHandler","org.pepstock.charba.client.events.DatasetRangeSelectionEvent.<synthetic: getter>","org.pepstock.charba.client.events.DatasetRangeSelectionEvent.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Stacked100Plugin.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;MAIa,gB;;CAAA,W;EAAAA,Q;;;QAmJZ,S;EAAAC,2B;EAAAA,uC;EAAAA,yF;EAAAA,iB;;;CAAA,4E;EACCC,sT;;;QApJW,O;EAAAC,mC;EAAAA,gC;EAAAA,qC;EAIZA,01K;;;;;;;;;;;;AAFA;iBAAoB,yEAApB,gB;AAFY;iBAIkB,+EAJlB;",
-"sources":["Stacked100Plugin.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.Stacked100Plugin.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.Stacked100Plugin.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.Stacked100Plugin.<init>","org.pepstock.charba.showcase.j2cl.cases.extensions.Stacked100Plugin.<clinit>"]
-}
-

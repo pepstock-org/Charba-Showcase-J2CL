@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SizeLogarithmicAxis.impl.java.js",
-"lineCount":125,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;MA+BmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAO4B,6DAP5BA,C;EAAAA;OASK,6DATLA,C;;;QAgBX,2C,gBAA4BC,K;EAA5BC,8B;EAAAA,0C;EAAAA,+G;EAAAA,iB;;;CAAA,6F,gBAA4BD,K;EAClCE,0c;EAEAA,6N;EAEAA,gH;EAEAA,2E;;;CAMI,mE;EAEJC,4W;;;CASqB,a;EACrBC,0E;;;;CAzCiB,a;EAAAC,6F;;;;CAAA,oB;EAAAC,gG;;;;CAAA,W;EAAAC,uF;;;;CAAA,Y;EAAAC,wF;;;;CAAA,0B;EAAAC,uG;;;;CAAA,oD;EAAAC,iI;;;;CAAA,oB;EAAAC,uG;;;QAElB,8D;EAAAC,6H;;;QAFkB,O;EAAAC,sC;EAAAA,mC;EAAAA,mC;EAAAA,qB;EAElBA,ga;;;;;;;;;;;;;;;;;;;;;AAFkB;;",
-"sources":["SizeLogarithmicAxis.java"],
-"names":["org.pepstock.charba.client.geo.SizeLogarithmicAxis.<synthetic: ctor_js>","chart","org.pepstock.charba.client.geo.SizeLogarithmicAxis.<synthetic: ctor_create>","org.pepstock.charba.client.geo.SizeLogarithmicAxis.<init>","org.pepstock.charba.client.geo.SizeLogarithmicAxis.afterAxisConfigurationUpdate","org.pepstock.charba.client.geo.SizeLogarithmicAxis.getMapper","org.pepstock.charba.client.geo.SizeLogarithmicAxis.getLegend","org.pepstock.charba.client.geo.SizeLogarithmicAxis.getMissingRadius","org.pepstock.charba.client.geo.SizeLogarithmicAxis.getMode","org.pepstock.charba.client.geo.SizeLogarithmicAxis.getRange","org.pepstock.charba.client.geo.SizeLogarithmicAxis.setMissingRadius","org.pepstock.charba.client.geo.SizeLogarithmicAxis.setMode","org.pepstock.charba.client.geo.SizeLogarithmicAxis.setRange","org.pepstock.charba.client.geo.SizeLogarithmicAxis.<synthetic: getter>","org.pepstock.charba.client.geo.SizeLogarithmicAxis.<clinit>"]
-}
-

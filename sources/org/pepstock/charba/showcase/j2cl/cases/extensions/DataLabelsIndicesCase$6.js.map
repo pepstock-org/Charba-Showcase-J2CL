@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsIndicesCase$6.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;;MAyI8C,E;;CAAA,W;EAAAA,Q;EAAAA;+F;;;QAAA,iF;EAAAC,a;EAAAA,yB;EAAAA,mL;EAAAA,iB;;;CAAA,2J;EAAAC,2G;EAAAA,iC;;;CAG7B,4G,0BAAyBC,O,kBAAkBC,Q;EACxDC,+F;;;QAJ0C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsIndicesCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsIndicesCase$6.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsIndicesCase$6.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsIndicesCase$6.<init>","context","dataItem","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsIndicesCase$6.invoke","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsIndicesCase$6.<clinit>"]
-}
-

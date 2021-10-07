@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetItemController.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;MA6BmB,qB;;CAAA,W;EAAAA,Q;;;QA0ClB,wD,UAAmCC,Y;EAAnCC,gC;EAAAA,4C;EAAAA,uI;EAAAA,iB;;;CAAA,8G,UAAmCD,Y;EAClCE,oI;;;CAQU,Y;EACVC,wN;;;CAQa,kB;EACbC,iO;;;CAQa,kB;EACbC,iO;;;CAQa,c;EACbC,6N;;;CAQa,c;EACbC,6N;;;CAS4B,e,eAAaC,S;EACzCC,6Q;;;QAlGiB,O;EAAAC,wC;EAAAA,qC;EAAAA;",
-"sources":["DatasetItemController.java"],
-"names":["org.pepstock.charba.client.items.DatasetItemController.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.items.DatasetItemController.<synthetic: ctor_create>","org.pepstock.charba.client.items.DatasetItemController.<init>","org.pepstock.charba.client.items.DatasetItemController.getIndex","org.pepstock.charba.client.items.DatasetItemController.getOuterRadius","org.pepstock.charba.client.items.DatasetItemController.getInnerRadius","org.pepstock.charba.client.items.DatasetItemController.getOffsetX","org.pepstock.charba.client.items.DatasetItemController.getOffsetY","dataIndex","org.pepstock.charba.client.items.DatasetItemController.getStyle","org.pepstock.charba.client.items.DatasetItemController.<clinit>"]
-}
-

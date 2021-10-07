@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CanvasGradientItem$$Overlay.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;MAkCmB,Q;;QA6BN,6G,gDAAoBA,M,iBAAeC,K;EAAnCC,mB;EACXA,wD;EAGAA,IAAOC,YAAPD,8I;EAEAA,4C;;;QAYW,sI,gDAAoBF,M,iBAAgBC,K;EAApCC,mB;EACXA,wD;EAGAA,IAAOC,YAAPD,mG;EAEAA,4C;;;QArDiB,O;EAAAE,2B;EAAAA;",
-"sources":["CanvasGradientItem.java"],
-"names":["offset","color","org.pepstock.charba.client.dom.elements.CanvasGradientItem$$Overlay.addColorStop__$devirt","checkedColor","org.pepstock.charba.client.dom.elements.CanvasGradientItem$$Overlay.<clinit>"]
-}
-

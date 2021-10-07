@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BarStackHandler$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAiCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,kEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,2IAAAA;G;EAAAA,mI;;;QAAA,U;EAAAC,mB;EAAAA,mJ;;;QAEZ,qE;EAAAC,8G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,uQ;EAFYA,8F;;;;;;;;;;;;;AAAA;iF;AAAA;uF;AAEZ;;",
-"sources":["BarStackHandler.java"],
-"names":["org.pepstock.charba.client.data.BarStackHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.BarStackHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.data.BarStackHandler$Property.<init>","org.pepstock.charba.client.data.BarStackHandler$Property.value","org.pepstock.charba.client.data.BarStackHandler$Property.valueOf","org.pepstock.charba.client.data.BarStackHandler$Property.values","org.pepstock.charba.client.data.BarStackHandler$Property.<synthetic: getter>","org.pepstock.charba.client.data.BarStackHandler$Property.<clinit>"]
-}
-

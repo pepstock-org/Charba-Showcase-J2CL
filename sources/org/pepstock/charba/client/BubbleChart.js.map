@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleChart.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;MA4Ba,W;;CAAA,W;EAAAA,Q;EAAAA;OAEgB,kDAFhBA,C;;;;QAOL,S;EAAAC,sB;EAAAA,kC;EAAAA,4D;EAAAA,iB;;;;CAAA,+C;EACNC,8I;;;;QASS,wC,aAAiBC,Y;EAAjBF,sB;EAAAA,kC;EAAAA,uG;EAAAA,iB;;;;CAAA,8E,aAAiBE,Y;EAC1BD,oG;EAEAA,yN;;;CASoB,c;EACpBE,+D;;;CASoB,qB,gBAAmBC,M;EACvCC,uI;;;;CAxCW,c;EAAAA,0J;;;QAAA,O;EAAAC,8B;EAAAA,2B;EAAAA,wB;EAAAA;",
-"sources":["BubbleChart.java"],
-"names":["org.pepstock.charba.client.BubbleChart.<synthetic: ctor_js>","org.pepstock.charba.client.BubbleChart.<synthetic: ctor_create>","org.pepstock.charba.client.BubbleChart.<init>","extendedType","org.pepstock.charba.client.BubbleChart.getOptions","hidden","org.pepstock.charba.client.BubbleChart.newDataset","org.pepstock.charba.client.BubbleChart.<clinit>"]
-}
-

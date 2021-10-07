@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TickSource.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,U;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,qDAhBVA,C;;;QAuBH,gD,8DAAkBC,K;EAAlBC,iC;EAAAA,8H;EAAAA,iB;;;CAAA,2F,8DAAkBD,K;EAAlBE,qC;EAAAA,2C;EAAAA,mE;EACPA,mE;;;CASa,S;EACbC,kE;;;QAlCU,2B;EAAAC,qB;EAAAA;GAAAA,kIAAAA;G;EAAAA,wH;;;QAAA,U;EAAAC,qB;EAAAA,yR;;;QAEX,uD;EAAAC,oG;;;QAIA,uD;EAAAA,oG;;;QAIA,yD;EAAAA,sG;;;QAVW,O;EAAAC,6B;EAAAA,0B;EAAAA,e;EAEXA,+O;EAIAA,+O;EAIAA,uP;EAVWA,mF;;;;;;;;;;;;;AAAA;qE;AAAA;qE;AAAA;uE;AAAA;4E;AAEX;0E;AAIA;0E;AAIA;;",
-"sources":["TickSource.java"],
-"names":["org.pepstock.charba.client.enums.TickSource.<synthetic: ctor_js>","value","org.pepstock.charba.client.enums.TickSource.<synthetic: ctor_create>","org.pepstock.charba.client.enums.TickSource.<init>","org.pepstock.charba.client.enums.TickSource.value","org.pepstock.charba.client.enums.TickSource.valueOf","org.pepstock.charba.client.enums.TickSource.values","org.pepstock.charba.client.enums.TickSource.<synthetic: getter>","org.pepstock.charba.client.enums.TickSource.<clinit>"]
-}
-

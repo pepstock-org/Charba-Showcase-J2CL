@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasAnimationOptions$$LambdaAdaptor.impl.java.js",
-"lineCount":64,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;mF;EAAAA,0J;;;CAAA,gJ;EAAAC,iC;EAAAA,sF;;;CAAA,yB;EAAAC,oD;EAAAA,mH;;;;CAAA,gB;EAAAC,kH;;;;CAAA,iB;EAAAC,mH;;;;CAAA,kB;EAAAC,oH;;;;CAAA,sB;EAAAC,wH;;;;CAAA,8B;EAAAC,iI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasAnimationOptions.java"],
-"names":["org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.getAnimationContainer","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.getAnimation","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.getAnimations","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.getTransitions","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.isAnimationEnabled","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.setAnimationEnabled","org.pepstock.charba.client.options.HasAnimationOptions$$LambdaAdaptor.<clinit>"]
-}
-

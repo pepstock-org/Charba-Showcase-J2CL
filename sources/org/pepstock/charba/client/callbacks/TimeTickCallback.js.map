@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TimeTickCallback.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;;;;;;MAiCiB,gB;;CAYT,kH,aAAgBA,I,cAAWC,K,iBAAcC,K,gBAAWC,K,6BAA2BC,M;;QAZtE,M;EAAAC,2B;EAAAA,8B;;;QAAA,O;EAAAC,mC;EAAAA;",
-"sources":["TimeTickCallback.java"],
-"names":["axis","value","label","index","values","org.pepstock.charba.client.callbacks.TimeTickCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.TimeTickCallback.<clinit>"]
-}
-

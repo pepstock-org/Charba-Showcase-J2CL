@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SelectionCleanerFont.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;MA2BY,oB;;CAAA,W;EAAAA,Q;;;QAQX,2G,sBAAmCC,a,WAA4BC,Y;EAA/DC,+B;EAAAA,2C;EAAAA,+M;EAAAA,iB;;;CAAA,uK,sBAAmCF,a,WAA4BC,Y;EAC9DE,6L;;;QATU,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["SelectionCleanerFont.java"],
-"names":["org.pepstock.charba.client.impl.plugins.SelectionCleanerFont.<synthetic: ctor_js>","defaultValues","nativeObject","org.pepstock.charba.client.impl.plugins.SelectionCleanerFont.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.SelectionCleanerFont.<init>","org.pepstock.charba.client.impl.plugins.SelectionCleanerFont.<clinit>"]
-}
-

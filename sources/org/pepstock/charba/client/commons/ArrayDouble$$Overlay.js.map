@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ArrayDouble$$Overlay.impl.java.js",
-"lineCount":95,
-"mappings":"A;;;;;;;;;;;MA8BmB,Q;;QAuBQ,4B,sBAAqBA,K;EAArBC,mB;EAEzBA;GAECA,YAFDA;G;EAKAA,kF;;;QAUyB,6B,sBAAsBD,K;EAAtBE,mB;EAEzBA;GAECA,mBAFDA;G;EAKAA,kF;;;QAUyB,4B,sBAAwBF,K;EAAxBC,mB;EAEzBA;GACCA,YADDA;G;EAIAA;GAECA,IAAgBE,IAAhBF,qEAFDA;GAICA,kEAJDA;G;EAOAA,IAAYG,MAAZH,e;EAEAA;GAAAA,IAAYI,KAAZJ,mEAAAA;;IAECA,2DAFDA;;G;EAKAA,c;;;QAUyB,6B,sBAAyBD,K;EAAzBE,mB;EAEzBA;GAECA,IAAgBC,IAAhBD,qEAFDA;GAICA,kEAJDA;G;EAOAA,IAAYE,MAAZF,e;EAEAA;GACCA,cADDA;G;EAIAA;GAAAA,IAAYG,KAAZH,mEAAAA;;IAECA,2DAFDA;;G;EAKAA,c;;;QAuFI,gE;EAAAI,mB;EACJA,oC;;;QAWM,sE,uCAAWC,K;EAAXC,mB;EACNA,kH;;;QAWI,gF,uCAAaD,K,gBAAcE,I;EAA3BC,mB;EACJA,gC;;;QAaa,mE,uCAAQH,K;EAARI,mB;EACbA,kD;;;QAmCI,2E,uCAAQJ,K,gBAAcE,I;EAAtBG,mB;EACJA,0C;;;QA7QiB,O;EAAAC,2B;EAAAA;",
-"sources":["ArrayDouble.java"],
-"names":["items","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.fromOrNull","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.fromOrEmpty","list","result","value","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.clear__$devirt","index","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.remove__$devirt","item","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.insertAt__$devirt","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.get__$devirt","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.set__$devirt","org.pepstock.charba.client.commons.ArrayDouble$$Overlay.<clinit>"]
-}
-

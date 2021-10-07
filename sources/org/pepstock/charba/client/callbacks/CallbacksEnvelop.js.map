@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CallbacksEnvelop.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;;;MA2BmB,gB;;CAAA,W;EAAAA,Q;;;;QAOlB,yB,UAAmBC,O;EAAnBC,2B;EAAAA,uC;EAAAA,kG;EAAAA,iB;;;;CAAA,8E,UAAmBD,O;EAClBE,6G;;;;QASD,kC,UAAmBF,O,iBAAiBG,Q;EAApCF,2B;EAAAA,uC;EAAAA,qH;EAAAA,iB;;;;CAAA,uF,UAAmBD,O,iBAAiBG,Q;EACnCD,8G;;;QAlBiB,O;EAAAE,mC;EAAAA,gC;EAAAA;",
-"sources":["CallbacksEnvelop.java"],
-"names":["org.pepstock.charba.client.callbacks.CallbacksEnvelop.<synthetic: ctor_js>","content","org.pepstock.charba.client.callbacks.CallbacksEnvelop.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.CallbacksEnvelop.<init>","nullable","org.pepstock.charba.client.callbacks.CallbacksEnvelop.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartBackgroundColorOptionsFactory$ChartBackgroundColorDefaultsOptionsFactory.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;;;;MA2DoB,0C;;CAAA,W;EAAAA,Q;;;QAKlB,S;EAAAC,qD;EAAAA,iE;EAAAA,2I;EAAAA,iB;;;CAAA,8H;EACCC,uL;;;CAUkC,+G,UAAoBC,Y,0BAA+BC,a;EACrFC,mT;;;QAjBiB,O;EAAAC,6D;EAAAA,0D;EAAAA;",
-"sources":["ChartBackgroundColorOptionsFactory.java"],
-"names":["org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsFactory$ChartBackgroundColorDefaultsOptionsFactory.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsFactory$ChartBackgroundColorDefaultsOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsFactory$ChartBackgroundColorDefaultsOptionsFactory.<init>","nativeObject","defaultValues","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsFactory$ChartBackgroundColorDefaultsOptionsFactory.create","org.pepstock.charba.client.impl.plugins.ChartBackgroundColorOptionsFactory$ChartBackgroundColorDefaultsOptionsFactory.<clinit>"]
-}
-

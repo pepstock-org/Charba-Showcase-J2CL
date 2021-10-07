@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorSchemesOptionsBuilder.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;MA0BmB,0B;;CAAA,W;EAAAA,Q;EAAAA;OAGgB,8EAHhBA,C;;;QAUV,2C,gBAAmCC,K;EAAnCC,iD;EAAAA,+H;EAAAA,iB;;;CAAA,6G,gBAAmCD,K;EAAnCE,iC;EACPA,6J;;;QAQwC,U;EAAAC,qC;EACxCA,qF;;;QASwC,4C,gBAAeH,K;EAAfG,qC;EACxCA,qF;;;CAQ0B,S;EAE1BC,2F;;;CASiC,2E,oBAA2BC,W;EAC5DC,6K;EACAA,Y;;;CASiC,gE,oBAAsBC,M;EACvDC,6J;EACAA,Y;;;CASiC,iC,eAA+BC,oB;EAChEC,4I;EACAA,Y;;;CASiC,qB,gBAAmBC,O;EACpDC,mH;EACAA,Y;;;QApFiB,O;EAAAC,6C;EAAAA,0C;EAAAA;",
-"sources":["ColorSchemesOptionsBuilder.java"],
-"names":["org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.<synthetic: ctor_js>","chart","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.<init>","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.create","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.build","schemeScope","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.setSchemeScope","scheme","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.setScheme","backgroundColorAlpha","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.setBackgroundColorAlpha","reverse","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.setReverse","org.pepstock.charba.client.impl.plugins.ColorSchemesOptionsBuilder.<clinit>"]
-}
-

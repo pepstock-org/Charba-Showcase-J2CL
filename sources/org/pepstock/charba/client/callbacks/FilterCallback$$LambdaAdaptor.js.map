@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FilterCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;;;;;;;;;MAyBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;gF;EAAAA,oJ;;;CAAA,0I;EAAAC,iC;EAAAA,mF;;;CAAA,gE;EAAAC,mD;EAAAA,0H;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["FilterCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.FilterCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.FilterCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.FilterCallback$$LambdaAdaptor.onFilter","org.pepstock.charba.client.callbacks.FilterCallback$$LambdaAdaptor.<clinit>"]
-}
-

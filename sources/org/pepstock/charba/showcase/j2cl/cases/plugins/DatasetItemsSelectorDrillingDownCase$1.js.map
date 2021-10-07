@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetItemsSelectorDrillingDownCase$1.impl.java.js",
-"lineCount":58,
-"mappings":"A;;;;;;;;;;;;;;;;MAoHqD,E;;CAAA,W;EAAAA,Q;EAAAA;2G;;;QAAA,6F;EAAAC,a;EAAAA,yB;EAAAA,2M;EAAAA,iB;;;CAAA,mL;EAAAC,uH;EAAAA,iC;;;CAIpC,kH,aAAgBC,I,cAAWC,K,iBAAcC,K,gBAAWC,K,6BAA2BC,M;EAC5FC,IAAQC,WAARD,kD;EACAA;GACCA;IACCA,uVADDA;UAEOA;IACNA,uVADMA;;IAGNA,wVAHMA;IAHRA;SAQOA;GACNA,uVADMA;SAEAA;GACNA,wVADMA;G;EAGPA,U;;;QAnBiD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["DatasetItemsSelectorDrillingDownCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$1.<init>","axis","value","label","index","values","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$1.onCallback","toPrintDate","org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorDrillingDownCase$1.<clinit>"]
-}
-

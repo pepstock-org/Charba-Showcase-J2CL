@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"VerticalLineOptions.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;MA2Ba,mB;;CAAA,W;EAAAA,Q;;;QAQL,uG,gBAA4BC,K,gCAA8BC,a;EAA1DC,8B;EAAAA,0C;EAAAA,oM;EAAAA,iB;;;CAAA,mK,gBAA4BF,K,gCAA8BC,a;EAChEE,uL;EAEAA,4H;;;CASW,0D,kBAAuBC,S;EAElCC,4H;;;QAtBW,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["VerticalLineOptions.java"],
-"names":["org.pepstock.charba.client.configuration.VerticalLineOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.VerticalLineOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.VerticalLineOptions.<init>","indexAxis","org.pepstock.charba.client.configuration.VerticalLineOptions.setIndexAxis","org.pepstock.charba.client.configuration.VerticalLineOptions.<clinit>"]
-}
-

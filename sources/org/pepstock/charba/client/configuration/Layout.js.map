@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Layout.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;MAiCa,M;;CAAA,W;EAAAA,Q;EAAAA;OAqC2C,wEArC3CA,C;EAAAA;OAwC0B,mEAxC1BA,C;EAAAA;OA2CU,2DA3CVA,C;;;QAkDZ,sE,6BAA4BC,O;EAA5BC,iB;EAAAA,6B;EAAAA,yI;EAAAA,iB;;;CAAA,qH,6BAA4BD,O;EAC3BE,2J;EADDA,kE;EAGCA;GAAuCC,oEAAvCD;M;EAKAA,mGAAsCE,OAAtCF;GAAiDC,ugBAAjDD;I;;;CAQc,c;EACdG,wE;;;CASoC,sB;EACpCC,gF;;;CAUW,kE,sCAAyCC,e;EAEpDC,2F;EAEAA,shB;;;CASW,iE,iBAA0BD,e;EAErCC,2H;EAEAA,wb;;;CAxGW,0D;EAqCZN,6K;EAGAA,gF;;;QAxCY,O;EAAAO,yB;EAAAA,sB;EAAAA;",
-"sources":["Layout.java"],
-"names":["org.pepstock.charba.client.configuration.Layout.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Layout.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Layout.<init>","org.pepstock.charba.client.configuration.Layout.<lambda in <init>>","context","org.pepstock.charba.client.configuration.Layout.getPadding","org.pepstock.charba.client.configuration.Layout.getPaddingCallback","paddingCallback","org.pepstock.charba.client.configuration.Layout.setPadding","org.pepstock.charba.client.configuration.Layout.<clinit>"]
-}
-

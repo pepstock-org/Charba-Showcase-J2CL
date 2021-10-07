@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsGeoDataset$$LambdaAdaptor.impl.java.js",
-"lineCount":128,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA0BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;wE;EAAAA,oI;;;CAAA,0H;EAAAC,iC;EAAAA,2E;;;CAAA,c;EAAAC,sD;EAAAA,wG;;;;CAAA,c;EAAAC,sG;;;;CAAA,c;EAAAC,sG;;;;CAAA,oB;EAAAC,4G;;;;CAAA,a;EAAAC,qG;;;;CAAA,mB;EAAAC,2G;;;;CAAA,iB;EAAAC,yG;;;;CAAA,0D;EAAAC,mJ;;;;CAAA,qB;EAAAA,8G;;;;CAAA,4D;EAAAC,qJ;;;;CAAA,4B;EAAAA,qH;;;;CAAA,2B;EAAAC,oH;;;;CAAA,4D;EAAAA,qJ;;;;CAAA,yB;EAAAC,kH;;;;CAAA,a;EAAAC,oH;;;;CAAA,oB;EAAAA,mI;;;;CAAA,gE;EAAAC,iJ;;;;CAAA,2B;EAAAA,4G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["IsGeoDataset.java"],
-"names":["org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.<init>","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.getHandler","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.getClipMap","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.getOutline","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.getShowGraticule","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.isClipMap","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.isShowGraticule","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.isShowOutline","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.setClipMap","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.setOutline","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.setShowGraticule","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.setShowOutline","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.getValues","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.setValues","org.pepstock.charba.client.geo.IsGeoDataset$$LambdaAdaptor.<clinit>"]
-}
-

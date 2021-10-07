@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SizeItem$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAkCM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMiB,4DANjBA,C;;;QAaI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,qI;EAAAA,iB;;;CAAA,kG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,0E;;;CASa,S;EACbC,yE;;;QAxBG,2B;EAAAC,mB;EAAAA;GAAAA,qIAAAA;G;EAAAA,6H;;;QAAA,U;EAAAC,mB;EAAAA,0N;;;QAEJ,+D;EAAAC,wG;;;QACA,gE;EAAAA,yG;;;QAHI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,2P;EACAA,+P;EAHIA,wF;;;;;;;;;;;;;AAAA;2E;AAAA;4E;AAAA;iF;AAEJ;gF;AACA;;",
-"sources":["SizeItem.java"],
-"names":["org.pepstock.charba.client.items.SizeItem$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.SizeItem$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.SizeItem$Property.<init>","org.pepstock.charba.client.items.SizeItem$Property.value","org.pepstock.charba.client.items.SizeItem$Property.valueOf","org.pepstock.charba.client.items.SizeItem$Property.values","org.pepstock.charba.client.items.SizeItem$Property.<synthetic: getter>","org.pepstock.charba.client.items.SizeItem$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HomeView$2.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;;;;;MAsKkD,E;;CAAA,W;EAAAA,Q;EAAAA;uE;;;QAAA,yD;EAAAC,a;EAAAA,yB;EAAAA,mI;EAAAA,iB;;;CAAA,2G;EAAAC,mF;EAAAA,iC;;;CAGjC,wF,aAAgBC,I,gBAAaC,K,gBAAWC,K,uBAAoBC,M;EACzEC;GACCA,IAAOC,SAAPD,gBADDA;GAECA,6GAFDA;G;EAIAA,qB;;;QAR8C,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["HomeView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.HomeView$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.HomeView$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.HomeView$2.<init>","axis","value","index","values","org.pepstock.charba.showcase.j2cl.views.HomeView$2.onCallback","thousands","org.pepstock.charba.showcase.j2cl.views.HomeView$2.<clinit>"]
-}
-

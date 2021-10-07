@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FillHandler.impl.java.js",
-"lineCount":107,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAoCa,W;;CAAA,W;EAAAA,Q;;;;QA2CF,8I,qBAAyBC,M,gBAAeC,a,wBAAyCC,O;EAAjFC,sB;EAAAA,kC;EAAAA,uO;EAAAA,iB;;;;CAAA,4L,qBAAyBH,M,gBAAeC,a,wBAAyCC,O;EAC1FE,yY;;;;QAUD,kJ,qBAAyBJ,M,gBAAeC,a,WAA4BI,Y;EAApEF,sB;EAAAA,kC;EAAAA,gP;EAAAA,iB;;;;CAAA,gM,qBAAyBH,M,gBAAeC,a,WAA4BI,Y;EACnED,wN;EAEAA,sO;;;CAQc,kB,gBAAgBE,I;EAC9BC,+J;EAEAA,yQ;;;CAQI,qD,eAAYC,K;EAChBD,oF;;;CAQI,kE,gBAAeC,K;EACnBD,iG;;;CAQc,kD,eAAeD,I;EAE7BC;GAECA;IAECA,gKAFDA;IAICA,yQAJDA;UAKOA;IAENA,8LAFMA;IAINA,6MAJMA;UAKAA;IAENA,+KAFMA;IAINA,6QAJMA;UAKAA;IAENA,uLAFMA;IAINA,6QAJMA;IAjBRA;G;;;CA+BgB,W;EAEhBE;GAECA,IAAYC,IAAZD,kYAFDA;GAKCA;IAECA,sQAFDA;UAGOA;IAENA,IAAOH,IAAPG,4RAFMA;IAINA,kHAJMA;UAKAA;IAGNA,+QAHMA;UAIAA;IAGNA,kSAHMA;IAjBRA;G;EAwBAA,6E;;;QAzJW,O;EAAAE,8B;EAAAA,2B;EAAAA;",
-"sources":["FillHandler.java"],
-"names":["org.pepstock.charba.client.options.FillHandler.<synthetic: ctor_js>","parent","defaultValues","envelop","org.pepstock.charba.client.options.FillHandler.<synthetic: ctor_create>","org.pepstock.charba.client.options.FillHandler.<init>","nativeObject","fill","org.pepstock.charba.client.options.FillHandler.setFill","index","org.pepstock.charba.client.options.FillHandler.getFill","mode","org.pepstock.charba.client.options.FillHandler.<clinit>"]
-}
-

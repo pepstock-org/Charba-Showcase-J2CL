@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MediaConstraintsInterface_$$Overlay.impl.java.js",
-"lineCount":21,
-"mappings":"A;;;;;;MA0BiB,Q;;QAWF,oF,uDAAoBA,S;EAApBC,mB;EACXA,2F;;;QAOW,mG,mEAAuBC,Q;EAAvBC,mB;EACXA,gG;;;QApBa,O;EAAAC,2B;EAAAA;",
-"sources":["MediaConstraintsInterface_.java"],
-"names":["mandatory","elemental2.dom.MediaConstraintsInterface_$$Overlay.setMandatory__$devirt","optional","elemental2.dom.MediaConstraintsInterface_$$Overlay.setOptional__$devirt","elemental2.dom.MediaConstraintsInterface_$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CacheStorage$$Overlay.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;MAyBiB,Q;;QAwCW,uG,+CAAcA,O,2BAA2BC,O;EAAzCC,mB;EACxBA,+F;;;QAIwB,qE,+CAAcF,O;EAAdE,mB;EACxBA,sF;;;QAIwB,iG,+CAAaF,O,2BAA2BC,O;EAAxCC,mB;EACxBA,+F;;;QAIwB,+D,+CAAaF,O;EAAbE,mB;EACxBA,sF;;;QAxDa,O;EAAAC,2B;EAAAA;",
-"sources":["CacheStorage.java"],
-"names":["request","options","elemental2.dom.CacheStorage$$Overlay.match__$devirt","elemental2.dom.CacheStorage$$Overlay.<clinit>"]
-}
-

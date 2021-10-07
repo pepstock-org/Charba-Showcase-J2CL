@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Window$$Overlay.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;MAgCmB,Q;;QAgKC,6B;EAAAA,mB;EAClBA,4F;;;QAjKiB,O;EAAAC,2B;EAAAA;",
-"sources":["Window.java"],
-"names":["org.pepstock.charba.client.utils.Window$$Overlay.enableResizeOnBeforePrint","org.pepstock.charba.client.utils.Window$$Overlay.<clinit>"]
-}
-

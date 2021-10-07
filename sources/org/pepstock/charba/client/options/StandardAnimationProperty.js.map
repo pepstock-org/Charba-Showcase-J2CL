@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StandardAnimationProperty.impl.java.js",
-"lineCount":60,
-"mappings":"A;;;;;;;;;;;;;;;;MA6BmB,yB;;CAAA,W;EAAAA,Q;EAAAA;OAGiB,2EAHjBA,C;;;QAWlB,yE,gBAAiCC,K,uBAAqBC,I;EAAtDC,oC;EAAAA,gD;EAAAA,6J;EAAAA,iB;;;CAAA,qI,gBAAiCF,K,uBAAqBC,I;EACrDE,wJ;EADDA,+E;EAGCA,mG;;;CASU,Q;EACVC,wB;;;CASc,M,UAAcC,G;EAC5BC,yB;;;CASiC,c;EAEjCC;GAGCA,yWAHDA;G;EAKAA,wF;;;CAlDiB,uE;EAGlBJ,wF;;;QAHkB,O;EAAAK,4C;EAAAA,yC;EAAAA;",
-"sources":["StandardAnimationProperty.java"],
-"names":["org.pepstock.charba.client.options.StandardAnimationProperty.<synthetic: ctor_js>","value","type","org.pepstock.charba.client.options.StandardAnimationProperty.<synthetic: ctor_create>","org.pepstock.charba.client.options.StandardAnimationProperty.<init>","org.pepstock.charba.client.options.StandardAnimationProperty.hashCode","obj","org.pepstock.charba.client.options.StandardAnimationProperty.equals","org.pepstock.charba.client.options.StandardAnimationProperty.properties","org.pepstock.charba.client.options.StandardAnimationProperty.<clinit>"]
-}
-

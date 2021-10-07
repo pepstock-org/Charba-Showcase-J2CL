@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SelectionTrack.impl.java.js",
-"lineCount":95,
-"mappings":"A;;;;;;;;MAwBY,c;;CAAA,W;EAAAA,Q;EAAAA;OAEU,mEAFVA,K;EAAAA;OAII,gEAJJA,K;EAAAA;OAMI,8DANJA,K;EAAAA;OAQI,qEARJA,K;EAAAA;OAUI,mEAVJA,K;;;QAiBX,e,eAAsBC,Q;EAAtBC,yB;EAAAA,qC;EAAAA,0F;EAAAA,iB;;;CAAA,qE,eAAsBD,Q;EAAtBE,iC;EAAAA,yE;EACCA,oF;EAEAA,iF;;;CAQM,2D;EACNC,gF;;;CAQM,wD;EACNC,6E;;;CAQM,sD;EACNC,2E;;;CAQI,mE,eAAqBC,U;EACzBC,wF;;;CAQM,6D;EACNC,kF;;;CAQI,iE,eAAmBC,Q;EACvBC,oF;;;CAQM,2D;EACNC,gF;;;CAQI,gE,eAAkBC,Q;EAEtBC;GAGCA,iFAHDA;GAICA,+IAJDA;;GAQCA,iJARDA;GASCA,+EATDA;G;;;CAkBO,uD;EACPC,0M;;;CASa,Q;EACbC,0R;;;CA1HU,iE;EAIXb,uG;EAEAA,qG;EAEAA,4G;EAEAA,0G;;;QAVW,O;EAAAc,iC;EAAAA,8B;EAAAA;",
-"sources":["SelectionTrack.java"],
-"names":["org.pepstock.charba.client.impl.plugins.SelectionTrack.<synthetic: ctor_js>","starting","org.pepstock.charba.client.impl.plugins.SelectionTrack.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.SelectionTrack.<init>","org.pepstock.charba.client.impl.plugins.SelectionTrack.getStarting","org.pepstock.charba.client.impl.plugins.SelectionTrack.getStart","org.pepstock.charba.client.impl.plugins.SelectionTrack.getEnd","startValue","org.pepstock.charba.client.impl.plugins.SelectionTrack.setStartValue","org.pepstock.charba.client.impl.plugins.SelectionTrack.getStartValue","endValue","org.pepstock.charba.client.impl.plugins.SelectionTrack.setEndValue","org.pepstock.charba.client.impl.plugins.SelectionTrack.getEndValue","position","org.pepstock.charba.client.impl.plugins.SelectionTrack.setCurrent","org.pepstock.charba.client.impl.plugins.SelectionTrack.isValid","org.pepstock.charba.client.impl.plugins.SelectionTrack.toString","org.pepstock.charba.client.impl.plugins.SelectionTrack.<clinit>"]
-}
-

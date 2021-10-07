@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Defaults$InternalDefaultScale.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;MAklBsB,oB;;CAAA,W;EAAAA,Q;;;QAUpB,mJ,iBAA8BC,I,qBAAkBC,K,WAAoBC,Y;EAApEC,+B;EAAAA,2C;EAAAA,iP;EAAAA,iB;;;CAAA,2M,iBAA8BH,I,qBAAkBC,K,WAAoBC,Y;EAEnEE,wO;;;QAZmB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["Defaults.java"],
-"names":["org.pepstock.charba.client.Defaults$InternalDefaultScale.<synthetic: ctor_js>","type","scale","nativeObject","org.pepstock.charba.client.Defaults$InternalDefaultScale.<synthetic: ctor_create>","org.pepstock.charba.client.Defaults$InternalDefaultScale.<init>","org.pepstock.charba.client.Defaults$InternalDefaultScale.<clinit>"]
-}
-

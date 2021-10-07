@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultPointLabels.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;MAsBiB,oB;;CAOC,sB;;CAOT,a;;CAOJ,c;;CAOG,4B;;QA5BS,O;EAAAA,uC;EAAAA;",
-"sources":["IsDefaultPointLabels.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultPointLabels.<clinit>"]
-}
-

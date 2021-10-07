@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsSelectionHandler.impl.java.js",
-"lineCount":93,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAsCmB,0B;;CAAA,W;EAAAA,Q;EAAAA;OAG+B,8FAH/BA,C;;;;QAQX,S;EAAAC,qC;EAAAA,iD;EAAAA,0F;EAAAA,iB;;;;CAAA,6E;EACNC,mF;EADMA,uF;;;;QASA,wD,mBAAsCC,M;EAAtCF,qC;EAAAA,iD;EAAAA,+I;EAAAA,iB;;;;CAAA,4H,mBAAsCE,M;EAC5CD,wI;EADMA,uF;;;CASK,iG,qCAA6DE,O;EAExEC;GACCA,iHADDA;G;;;CAWc,oG,qCAAgED,O;EAE9EE;GACCA,2HADDA;G;EAIAA,a;;;CASc,kE,0BAA0BC,O;EAExCC,IAAQC,KAARD,+F;EAIAA;GAECA,IAAeE,OAAfF,mCAFDA;GAICA;IAECA,IAAiBG,gBAAjBH,4JAFDA;IAKCA,IAAsBI,KAAtBJ,+OALDA;IAOCA;KAAAA,IAAkCJ,OAAlCI,8GAAAA;;MAECA,mFAFDA;;KAPDA;IAJDA;G;EAiBAA,Y;;;CA7EiB,+E;EAGlBN,sL;;;QAHkB,O;EAAAW,6C;EAAAA,0C;EAAAA;",
-"sources":["DataLabelsSelectionHandler.java"],
-"names":["org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler.<synthetic: ctor_js>","org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler.<synthetic: ctor_create>","org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler.<init>","cursor","handler","org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler.addDatasetSelectionEventHandler","org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler.removeDatasetSelectionEventHandler","context","org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler.onClick","chart","element","referenceElement","event","org.pepstock.charba.client.impl.callbacks.DataLabelsSelectionHandler.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColoringView$FillingCase.impl.java.js",
-"lineCount":112,
-"mappings":"A;;;;;;;;;;;;;;;;;;MA6Oc,W;;CAAA,W;EAAAA,Q;EAAAA;OAkBS,0EAlBTA,C;EAAAA;OAoBc,4EApBdA,C;;;QAsBJ,qG,8DAAmBC,K,qBAAmBC,O;EAAtCC,kC;EAAAA,iN;EAAAA,iB;;;CAAA,qK,8DAAmBF,K,qBAAmBC,O;EAAtCE,qC;EAAAA,2C;EAAAA,mE;EACPA,wF;EACAA,4F;;;CAGa,Y;EACbC,uF;;;CAGkB,c;EAClBC,yF;;;QAhCW,2B;EAAAC,sB;EAAAA;GAAAA,yJAAAA;G;EAAAA,8I;;;QAAA,U;EAAAC,sB;EAAAA,kW;;;QAEZ,kF;EAAAC,iI;;;QAKA,4E;EAAAA,2H;;;QAKA,6E;EAAAA,4H;;;QAZY,O;EAAAC,8B;EAAAA,2B;EAAAA,e;EAEZA,yY;EAKAA,0X;EAKAA,8X;EAZYA,yG;;;;;;;;;;;;;;;;AAAA;iG;AAAA;2F;AAAA;4F;AAAA;kG;AAEZ;sG;AAKA;gG;AAKA;;",
-"sources":["ColoringView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.<init>","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.getLabel","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.getFactory","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.valueOf","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.values","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.ColoringView$FillingCase.<clinit>"]
-}
-

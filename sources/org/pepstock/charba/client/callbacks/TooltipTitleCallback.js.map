@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipTitleCallback.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;;;MAgCiB,oB;;CAUK,mE,gBAAsBA,K,2BAAyBC,K;;CAY/C,6D,gBAAgBD,K,2BAAyBC,K;;CAYzC,kE,gBAAqBD,K,2BAAyBC,K;;QAxB9C,wI,uDAAsBD,K,2BAAyBC,K;EAA/CC,+B;EACpBA,gE;;;QAWoB,kI,uDAAgBF,K,2BAAyBC,K;EAAzCE,+B;EACpBA,4H;;;QAWoB,uI,uDAAqBH,K,2BAAyBC,K;EAA9CG,+B;EACpBA,gE;;;QAnCe,O;EAAAC,uC;EAAAA;",
-"sources":["TooltipTitleCallback.java"],
-"names":["chart","items","org.pepstock.charba.client.callbacks.TooltipTitleCallback.onBeforeTitle__$default","org.pepstock.charba.client.callbacks.TooltipTitleCallback.onTitle__$default","org.pepstock.charba.client.callbacks.TooltipTitleCallback.onAfterTitle__$default","org.pepstock.charba.client.callbacks.TooltipTitleCallback.<clinit>"]
-}
-

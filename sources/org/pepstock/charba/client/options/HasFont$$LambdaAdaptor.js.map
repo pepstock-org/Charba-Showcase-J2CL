@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasFont$$LambdaAdaptor.impl.java.js",
-"lineCount":63,
-"mappings":"A;;;;;;;;;;;;;MA4BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uE;EAAAA,kI;;;CAAA,wH;EAAAC,iC;EAAAA,0E;;;CAAA,oB;EAAAC,+C;EAAAA,uG;;;;CAAA,oB;EAAAC,8F;;;;CAAA,W;EAAAC,qF;;;;CAAA,Y;EAAAC,sF;;;;CAAA,qD;EAAAC,gI;;;;CAAA,4B;EAAAA,uG;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasFont.java"],
-"names":["org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.getFontContainer","org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.getColorAsString","org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.getFont","org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.getColor","org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.setColor","org.pepstock.charba.client.options.HasFont$$LambdaAdaptor.<clinit>"]
-}
-

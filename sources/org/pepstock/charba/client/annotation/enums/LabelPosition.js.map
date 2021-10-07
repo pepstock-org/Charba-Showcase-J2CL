@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LabelPosition.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAwBY,a;;CAAA,W;EAAAA,Q;EAAAA;OAgBU,mEAhBVA,C;;;QAuBH,gD,8DAAqBC,K;EAArBC,oC;EAAAA,4I;EAAAA,iB;;;CAAA,yG,8DAAqBD,K;EAArBE,qC;EAAAA,2C;EAAAA,mE;EACPA,iF;;;CASa,S;EACbC,gF;;;QAlCU,2B;EAAAC,wB;EAAAA;GAAAA,sJAAAA;G;EAAAA,yI;;;QAAA,U;EAAAC,wB;EAAAA,kV;;;QAEX,uE;EAAAC,0H;;;QAIA,sE;EAAAA,yH;;;QAIA,oE;EAAAA,uH;;;QAVW,O;EAAAC,gC;EAAAA,6B;EAAAA,e;EAEXA,4R;EAIAA,wR;EAIAA,gR;EAVWA,oG;;;;;;;;;;;;;AAAA;wF;AAAA;uF;AAAA;qF;AAAA;6F;AAEX;6F;AAIA;4F;AAIA;;",
-"sources":["LabelPosition.java"],
-"names":["org.pepstock.charba.client.annotation.enums.LabelPosition.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.enums.LabelPosition.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.enums.LabelPosition.<init>","org.pepstock.charba.client.annotation.enums.LabelPosition.value","org.pepstock.charba.client.annotation.enums.LabelPosition.valueOf","org.pepstock.charba.client.annotation.enums.LabelPosition.values","org.pepstock.charba.client.annotation.enums.LabelPosition.<synthetic: getter>","org.pepstock.charba.client.annotation.enums.LabelPosition.<clinit>"]
-}
-

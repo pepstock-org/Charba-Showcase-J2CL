@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SizeItem.impl.java.js",
-"lineCount":55,
-"mappings":"A;;;;;;;;;;;MA6Ba,Q;;CAAA,W;EAAAA,Q;;;;QAuCL,sE,gCAA4CC,O;EAA5CC,mB;EAAAA,+B;EAAAA,mI;EAAAA,iB;;;;CAAA,+G,gCAA4CD,O;EAClDE,qS;;;;QAQD,wD,UAAsBC,Y;EAAtBF,mB;EAAAA,+B;EAAAA,0H;EAAAA,iB;;;;CAAA,iG,UAAsBE,Y;EACrBD,oI;;;CAQmB,Y;EACnBE,6M;;;CAQmB,a;EACnBC,8M;;;QAnEW,O;EAAAC,2B;EAAAA,wB;EAAAA;",
-"sources":["SizeItem.java"],
-"names":["org.pepstock.charba.client.items.SizeItem.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.SizeItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.SizeItem.<init>","nativeObject","org.pepstock.charba.client.items.SizeItem.getWidth","org.pepstock.charba.client.items.SizeItem.getHeight","org.pepstock.charba.client.items.SizeItem.<clinit>"]
-}
-

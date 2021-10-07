@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Worker$$Overlay.impl.java.js",
-"lineCount":21,
-"mappings":"A;;;;;;MA0Ba,Q;;QA4BO,qG,mCAAmBA,O,6BAAwBC,Q;EAA3CC,mB;EAChBA,iH;;;QAegB,2G,mCAAyBF,O,6BAAwBC,Q;EAAjDE,mB;EAChBA,uH;;;QA7CS,O;EAAAC,2B;EAAAA;",
-"sources":["Worker.java"],
-"names":["message","transfer","elemental2.dom.Worker$$Overlay.postMessage__$devirt","elemental2.dom.Worker$$Overlay.webkitPostMessage__$devirt","elemental2.dom.Worker$$Overlay.<clinit>"]
-}
-

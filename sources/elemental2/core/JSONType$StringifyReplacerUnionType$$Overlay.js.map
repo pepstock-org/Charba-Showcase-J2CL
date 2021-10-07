@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JSONType$StringifyReplacerUnionType$$Overlay.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;MAoCmB,Q;;QAE4B,sB,UAAUA,C;EAAVC,mB;EACzCA,uD;;;QAIsB,yE;EAAAC,mB;EACtBA,yG;;;QAImC,qF;EAAAC,mB;EACnCA,qH;;;QAIc,yE;EAAAC,mB;EACdA,+D;;;QAIc,qF;EAAAC,mB;EACdA,kE;;;QAvBa,O;EAAAC,2B;EAAAA;",
-"sources":["JSONType.java"],
-"names":["o","elemental2.core.JSONType$StringifyReplacerUnionType$$Overlay.of","elemental2.core.JSONType$StringifyReplacerUnionType$$Overlay.asJsArray__$devirt","elemental2.core.JSONType$StringifyReplacerUnionType$$Overlay.asStringifyReplacerFn__$devirt","elemental2.core.JSONType$StringifyReplacerUnionType$$Overlay.isJsArray__$devirt","elemental2.core.JSONType$StringifyReplacerUnionType$$Overlay.isStringifyReplacerFn__$devirt","elemental2.core.JSONType$StringifyReplacerUnionType$$Overlay.<clinit>"]
-}
-

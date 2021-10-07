@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LabelsContext$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAqCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,kEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,2IAAAA;G;EAAAA,mI;;;QAAA,U;EAAAC,mB;EAAAA,4T;;;QAEZ,qE;EAAAC,8G;;;QACA,qE;EAAAA,8G;;;QACA,0E;EAAAA,mH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,uQ;EACAA,uQ;EACAA,2R;EAJYA,8F;;;;;;;;;;;;;AAAA;iF;AAAA;iF;AAAA;sF;AAAA;uF;AAEZ;sF;AACA;sF;AACA;;",
-"sources":["LabelsContext.java"],
-"names":["org.pepstock.charba.client.labels.LabelsContext$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.labels.LabelsContext$Property.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsContext$Property.<init>","org.pepstock.charba.client.labels.LabelsContext$Property.value","org.pepstock.charba.client.labels.LabelsContext$Property.valueOf","org.pepstock.charba.client.labels.LabelsContext$Property.values","org.pepstock.charba.client.labels.LabelsContext$Property.<synthetic: getter>","org.pepstock.charba.client.labels.LabelsContext$Property.<clinit>"]
-}
-

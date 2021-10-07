@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetRangeCleanSelectionEventHandler.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MAwBiB,sC;;CAOX,4E,wCAAwCA,K;;QAP7B,M;EAAAC,iD;EAAAA,8B;;;QAAA,O;EAAAC,yD;EAAAA;",
-"sources":["DatasetRangeCleanSelectionEventHandler.java"],
-"names":["event","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler.<synthetic: adapt_lambda>","org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler.<clinit>"]
-}
-

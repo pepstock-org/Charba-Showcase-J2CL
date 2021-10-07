@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsAnimation.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;;;;MA8BiB,W;;CAOX,2B,gBAAyBA,a;;CAOzB,0B,gBAAwBC,Y;;CAOxB,oD,eAAiBC,M;;CAOjB,kB,eAAgBC,Y;;CAOhB,e,eAAaC,K;;CAOb,kB,gBAAgBC,I;;CAOhB,oE,yBAA6BC,gB;;CAO7B,kE,iBAA2BA,gB;;CAO3B,8D,sBAAuBC,a;;CAOvB,+D,iBAAwBA,a;;CAOxB,4D,qBAAqBC,Y;;CAOrB,8D,iBAAuBA,Y;;CAOvB,gE,uBAAyBC,c;;CAOzB,gE,iBAAyBA,c;;QAlGd,O;EAAAC,8B;EAAAA;",
-"sources":["IsAnimation.java"],
-"names":["animateRotate","animateScale","easing","milliseconds","delay","loop","durationCallback","delayCallback","loopCallback","easingCallback","org.pepstock.charba.client.options.IsAnimation.<clinit>"]
-}
-

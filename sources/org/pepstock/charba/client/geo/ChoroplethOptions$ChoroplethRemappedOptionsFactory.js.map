@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChoroplethOptions$ChoroplethRemappedOptionsFactory.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;;MA6IsB,gC;;CAAA,W;EAAAA,Q;EAAAA;OAGY,6FAHZA,C;;;QAUpB,yD,0BAAmDC,O;EAAnDC,2C;EAAAA,uD;EAAAA,8J;EAAAA,iB;;;CAAA,0I,0BAAmDD,O;EAClDE,qN;EAEAA,6G;;;CAS8B,yD,UAAoBC,Y;EAClDC,iV;;;QAvBmB,O;EAAAC,mD;EAAAA,gD;EAAAA;",
-"sources":["ChoroplethOptions.java"],
-"names":["org.pepstock.charba.client.geo.ChoroplethOptions$ChoroplethRemappedOptionsFactory.<synthetic: ctor_js>","options","org.pepstock.charba.client.geo.ChoroplethOptions$ChoroplethRemappedOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ChoroplethOptions$ChoroplethRemappedOptionsFactory.<init>","nativeObject","org.pepstock.charba.client.geo.ChoroplethOptions$ChoroplethRemappedOptionsFactory.create","org.pepstock.charba.client.geo.ChoroplethOptions$ChoroplethRemappedOptionsFactory.<clinit>"]
-}
-

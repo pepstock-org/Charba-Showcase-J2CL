@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StackedHorizontalBarDataset.impl.java.js",
-"lineCount":121,
-"mappings":"A;;;;;;;;;;;;;;MA0Ba,2B;;CAAA,W;EAAAA,Q;EAAAA;OAGkB,+EAHlBA,C;;;;QASL,S;EAAAC,sC;EAAAA,kD;EAAAA,iF;EAAAA,iB;;;;CAAA,oE;EACNC,oJ;;;;QASM,gB,gBAAoCC,M;EAApCF,sC;EAAAA,kD;EAAAA,8F;EAAAA,iB;;;;CAAA,2E,gBAAoCE,M;EAC1CD,qL;;;;QAQM,6D,yBAA6CE,a;EAA7CH,sC;EAAAA,kD;EAAAA,kJ;EAAAA,iB;;;;CAAA,wH,yBAA6CG,a;EACnDF,yN;;;;QASM,sE,yBAA6CE,a,iBAAuBD,M;EAApEF,sC;EAAAA,kD;EAAAA,mK;EAAAA,iB;;;;CAAA,iI,yBAA6CG,a,iBAAuBD,M;EAC1ED,uJ;EAEAA,4L;;;;QASS,iD,aAAiCG,I,iBAAcF,M;EAA/CF,sC;EAAAA,kD;EAAAA,qI;EAAAA,iB;;;;CAAA,4G,aAAiCI,I,iBAAcF,M;EACxDD,4L;;;;QAUS,uG,aAAiCG,I,0BAAuBD,a,iBAAuBD,M;EAA/EF,sC;EAAAA,kD;EAAAA,0M;EAAAA,iB;;;;CAAA,kK,aAAiCI,I,0BAAuBD,a,iBAAuBD,M;EACxFD,8L;EAEAA,4L;;;CAS4B,sB;EAC5BI,4F;;;;CA1EW,iB;EAAAC,0G;;;;CAAA,iC;EAAAC,2H;;;QAAA,O;EAAAC,8C;EAAAA,2C;EAAAA,+B;EAAAA;",
-"sources":["StackedHorizontalBarDataset.java"],
-"names":["org.pepstock.charba.client.data.StackedHorizontalBarDataset.<synthetic: ctor_js>","org.pepstock.charba.client.data.StackedHorizontalBarDataset.<synthetic: ctor_create>","org.pepstock.charba.client.data.StackedHorizontalBarDataset.<init>","hidden","defaultValues","type","org.pepstock.charba.client.data.StackedHorizontalBarDataset.getBarStackHandler","org.pepstock.charba.client.data.StackedHorizontalBarDataset.getStackGroup","org.pepstock.charba.client.data.StackedHorizontalBarDataset.setStackGroup","org.pepstock.charba.client.data.StackedHorizontalBarDataset.<clinit>"]
-}
-

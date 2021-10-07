@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Controller$$LambdaAdaptor.impl.java.js",
-"lineCount":93,
-"mappings":"A;;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;kE;EAAAA,wH;;;CAAA,8G;EAAAC,iC;EAAAA,qE;;;CAAA,W;EAAAC,gD;EAAAA,kG;;;;CAAA,oB;EAAAC,4F;;;;CAAA,2G;EAAAC,0L;;;;CAAA,iH;EAAAC,gM;;;;CAAA,iH;EAAAC,gM;;;;CAAA,sH;EAAAC,iN;;;;CAAA,+J;EAAAC,oP;;;;CAAA,4G;EAAAC,2L;;;;CAAA,kH;EAAAC,iM;;;;CAAA,kH;EAAAC,iM;;;;CAAA,uH;EAAAC,kN;;;;CAAA,gK;EAAAC,qP;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["Controller.java"],
-"names":["org.pepstock.charba.client.Controller$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.Controller$$LambdaAdaptor.<init>","org.pepstock.charba.client.Controller$$LambdaAdaptor.getType","org.pepstock.charba.client.Controller$$LambdaAdaptor.mustBeRegistered","org.pepstock.charba.client.Controller$$LambdaAdaptor.onAfterDraw","org.pepstock.charba.client.Controller$$LambdaAdaptor.onAfterInitialize","org.pepstock.charba.client.Controller$$LambdaAdaptor.onAfterLinkScales","org.pepstock.charba.client.Controller$$LambdaAdaptor.onAfterParse","org.pepstock.charba.client.Controller$$LambdaAdaptor.onAfterUpdate","org.pepstock.charba.client.Controller$$LambdaAdaptor.onBeforeDraw","org.pepstock.charba.client.Controller$$LambdaAdaptor.onBeforeInitialize","org.pepstock.charba.client.Controller$$LambdaAdaptor.onBeforeLinkScales","org.pepstock.charba.client.Controller$$LambdaAdaptor.onBeforeParse","org.pepstock.charba.client.Controller$$LambdaAdaptor.onBeforeUpdate","org.pepstock.charba.client.Controller$$LambdaAdaptor.<clinit>"]
-}
-

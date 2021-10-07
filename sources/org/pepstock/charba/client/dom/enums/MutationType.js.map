@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MutationType.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MA2BY,Y;;CAAA,W;EAAAA,Q;EAAAA;OAmBU,2DAnBVA,C;;;QA0BH,gD,8DAAoBC,K;EAApBC,mC;EAAAA,oI;EAAAA,iB;;;CAAA,iG,8DAAoBD,K;EAApBE,qC;EAAAA,2C;EAAAA,mE;EACPA,yE;;;CASa,S;EACbC,wE;;;QArCU,2B;EAAAC,uB;EAAAA;GAAAA,4IAAAA;G;EAAAA,gI;;;QAAA,U;EAAAC,uB;EAAAA,yU;;;QAGX,mE;EAAAC,oH;;;QAKA,uE;EAAAA,wH;;;QAKA,mE;EAAAA,oH;;;QAbW,O;EAAAC,+B;EAAAA,4B;EAAAA,e;EAGXA,yR;EAKAA,wS;EAKAA,wR;EAbWA,2F;;;;;;;;;;;;;AAAA;mF;AAAA;uF;AAAA;mF;AAAA;oF;AAGX;wF;AAKA;4F;AAKA;;",
-"sources":["MutationType.java"],
-"names":["org.pepstock.charba.client.dom.enums.MutationType.<synthetic: ctor_js>","value","org.pepstock.charba.client.dom.enums.MutationType.<synthetic: ctor_create>","org.pepstock.charba.client.dom.enums.MutationType.<init>","org.pepstock.charba.client.dom.enums.MutationType.value","org.pepstock.charba.client.dom.enums.MutationType.valueOf","org.pepstock.charba.client.dom.enums.MutationType.values","org.pepstock.charba.client.dom.enums.MutationType.<synthetic: getter>","org.pepstock.charba.client.dom.enums.MutationType.<clinit>"]
-}
-

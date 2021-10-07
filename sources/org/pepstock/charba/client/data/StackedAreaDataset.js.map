@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StackedAreaDataset.impl.java.js",
-"lineCount":97,
-"mappings":"A;;;;;;;;;MA0Ba,kB;;CAAA,W;EAAAA,Q;;;;QAML,S;EAAAC,6B;EAAAA,yC;EAAAA,wE;EAAAA,iB;;;;CAAA,2D;EACNC,2I;;;;QASM,gB,gBAA2BC,M;EAA3BF,6B;EAAAA,yC;EAAAA,qF;EAAAA,iB;;;;CAAA,kE,gBAA2BE,M;EACjCD,4K;;;;QAQM,6D,yBAAoCE,a;EAApCH,6B;EAAAA,yC;EAAAA,yI;EAAAA,iB;;;;CAAA,+G,yBAAoCG,a;EAC1CF,gN;;;;QASM,sE,yBAAoCE,a,iBAAuBD,M;EAA3DF,6B;EAAAA,yC;EAAAA,0J;EAAAA,iB;;;;CAAA,wH,yBAAoCG,a,iBAAuBD,M;EACjED,8I;;;;QASS,iD,aAAwBG,I,iBAAcF,M;EAAtCF,6B;EAAAA,yC;EAAAA,4H;EAAAA,iB;;;;CAAA,mG,aAAwBI,I,iBAAcF,M;EAC/CD,mL;;;;QAUS,uG,aAAwBG,I,0BAAuBD,a,iBAAuBD,M;EAAtEF,6B;EAAAA,yC;EAAAA,iM;EAAAA,iB;;;;CAAA,yJ,aAAwBI,I,0BAAuBD,a,iBAAuBD,M;EAC/ED,qL;;;QAzDW,O;EAAAI,qC;EAAAA,kC;EAAAA;",
-"sources":["StackedAreaDataset.java"],
-"names":["org.pepstock.charba.client.data.StackedAreaDataset.<synthetic: ctor_js>","org.pepstock.charba.client.data.StackedAreaDataset.<synthetic: ctor_create>","org.pepstock.charba.client.data.StackedAreaDataset.<init>","hidden","defaultValues","type","org.pepstock.charba.client.data.StackedAreaDataset.<clinit>"]
-}
-

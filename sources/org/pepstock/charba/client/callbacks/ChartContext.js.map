@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartContext.impl.java.js",
-"lineCount":129,
-"mappings":"A;;;;;;;;;;;;;;;MA+Ba,Y;;CAAA,W;EAAAA,Q;;;QAuCL,wD,UAA0BC,Y;EAA1BC,uB;EAAAA,mC;EAAAA,kI;EAAAA,iB;;;CAAA,yG,UAA0BD,Y;EAChCE,oI;EAEAA,oG;EAEAA,2Q;;;CAQoB,Y;EACpBC,0N;;;CAQwB,W;EACxBC,uX;;;CASmD,yE,UAAgBC,U;EACnEC,iN;;;CAQoB,iB;EACpBC,6I;;;CAUgD,gF,wCAA8CC,O;EAE9FC;GAECA;IAECA,qNAFDA;IAFDA;GAOCA,IAAEC,OAAFD,wBAPDA;GASCA,8MATDA;GAWCA,eAXDA;G;EAcAA,Y;;;CASiB,8D,YAAiBE,G,gBAAYC,K;EAE9CC;GAECA,4EAFDA;G;;;CAamB,8D,YAAiBF,G,gBAAYG,Y;EAEhDC;GACCA,0FADDA;G;EAKAA,oB;;;CASiB,+D,YAAiBJ,G,iBAAaC,K;EAE/CC;GAECA,6EAFDA;G;;;CAaoB,+D,YAAiBF,G,iBAAaG,Y;EAElDC;GACCA,2FADDA;G;EAKAA,oB;;;CASiB,2D,YAAiBJ,G,gBAASC,K;EAE3CC;GAECA,yEAFDA;G;;;CAagB,2D,YAAiBF,G,gBAASG,Y;EAE1CC;GACCA,uFADDA;G;EAKAA,oB;;;CASiB,wE,YAAiBJ,G,iBAAYC,K;EAE9CC;GAECA,sFAFDA;G;;;CAamB,wE,YAAiBF,G,iBAAYG,Y;EAEhDC;GACCA,oGADDA;G;EAKAA,oB;;;CASiB,gB;EACjBC,Y;;;CASiB,gE,YAA2BC,Q;EAE5CC;GAECA,2IAFDA;G;EAMAA,a;;;QAlQW,O;EAAAC,+B;EAAAA,4B;EAAAA;",
-"sources":["ChartContext.java"],
-"names":["org.pepstock.charba.client.callbacks.ChartContext.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.callbacks.ChartContext.<synthetic: ctor_create>","org.pepstock.charba.client.callbacks.ChartContext.<init>","org.pepstock.charba.client.callbacks.ChartContext.getChart","org.pepstock.charba.client.callbacks.ChartContext.getType","attributes","org.pepstock.charba.client.callbacks.ChartContext.setAttributes","org.pepstock.charba.client.callbacks.ChartContext.hasAttributes","factory","org.pepstock.charba.client.callbacks.ChartContext.getAttributes","options","key","value","org.pepstock.charba.client.callbacks.ChartContext.setAttribute","defaultValue","org.pepstock.charba.client.callbacks.ChartContext.getAttribute","org.pepstock.charba.client.callbacks.ChartContext.isConsistent","property","org.pepstock.charba.client.callbacks.ChartContext.checkIfPropertyIsValid","org.pepstock.charba.client.callbacks.ChartContext.<clinit>"]
-}
-

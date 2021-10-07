@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CaseFactory.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;MAIiB,W;;CAEF,U;;QAFE,M;EAAAA,sB;EAAAA,8B;;;QAAA,O;EAAAC,8B;EAAAA;",
-"sources":["CaseFactory.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.CaseFactory.<synthetic: adapt_lambda>","org.pepstock.charba.showcase.j2cl.cases.CaseFactory.<clinit>"]
-}
-

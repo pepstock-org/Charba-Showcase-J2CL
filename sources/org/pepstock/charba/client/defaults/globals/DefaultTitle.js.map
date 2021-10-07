@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultTitle.impl.java.js",
-"lineCount":67,
-"mappings":"A;;;;;;;;;;;;;;;MA2BmB,Y;;CAAA,W;EAAAA,Q;EAAAA;OAIc,iEAJdA,C;EAAAA;OAMW,oEANXA,C;;;QAWlB,S;EAAAC,uB;EAAAA,mC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iF;EAAAA,2E;;;CAUqB,W;EACpBC,8E;;;CASuB,c;EACvBC,iF;;;CAhCiB,mE;EAIlBF,uG;EAEAA,mM;;;QANkB,O;EAAAG,+B;EAAAA,4B;EAAAA,+B;;;;;;;;;;;;AAElB;aAAyB,4EAAzB;",
-"sources":["DefaultTitle.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultTitle.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTitle.<init>","org.pepstock.charba.client.defaults.globals.DefaultTitle.getFont","org.pepstock.charba.client.defaults.globals.DefaultTitle.getPadding","org.pepstock.charba.client.defaults.globals.DefaultTitle.<clinit>"]
-}
-

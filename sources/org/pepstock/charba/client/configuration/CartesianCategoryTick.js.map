@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"CartesianCategoryTick.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;MAyBa,qB;;CAAA,W;EAAAA,Q;EAAAA;OAGsB,8EAHtBA,C;;;QAUZ,sD,aAA2BC,I;EAA3BC,gC;EAAAA,4C;EAAAA,qI;EAAAA,iB;;;CAAA,oH,aAA2BD,I;EAC1BE,wH;EAEAA,6O;;;CAQ2B,e;EAC3BC,gO;;;CAQW,wE,6BAAiCC,Q;EAC5CC,2K;;;QA/BW,O;EAAAC,wC;EAAAA,qC;EAAAA;",
-"sources":["CartesianCategoryTick.java"],
-"names":["org.pepstock.charba.client.configuration.CartesianCategoryTick.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.CartesianCategoryTick.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.CartesianCategoryTick.<init>","org.pepstock.charba.client.configuration.CartesianCategoryTick.getCallback","callback","org.pepstock.charba.client.configuration.CartesianCategoryTick.setCallback","org.pepstock.charba.client.configuration.CartesianCategoryTick.<clinit>"]
-}
-

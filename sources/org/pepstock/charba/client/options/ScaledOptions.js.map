@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScaledOptions.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;MA0BsB,a;;CAAA,W;EAAAA,Q;EAAAA;OAiCA,2DAjCAA,C;;;;CA0CX,qI,gBAAqBC,K,gCAA8BC,a;EAC5DC,uO;;;;CAWS,+L,gBAAqBF,K,gCAA8BC,a,WAA4BE,Y,iBAAsBC,Y;EAC9GF,oN;EAEAA;GAECA,sgBAFDA;;GAKCA,wEALDA;G;;;CAea,a;EACbG,wE;;;QAzEoB,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["ScaledOptions.java"],
-"names":["org.pepstock.charba.client.options.ScaledOptions.<synthetic: ctor_js>","scope","defaultValues","org.pepstock.charba.client.options.ScaledOptions.<init>","nativeObject","createScales","org.pepstock.charba.client.options.ScaledOptions.getScales","org.pepstock.charba.client.options.ScaledOptions.<clinit>"]
-}
-

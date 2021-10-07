@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleMapDataPoint$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAwCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,oEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,gP;;;QAEZ,0E;EAAAC,mH;;;QACA,2E;EAAAA,oH;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,uR;EACAA,2R;EAHYA,gG;;;;;;;;;;;;;AAAA;sF;AAAA;uF;AAAA;yF;AAEZ;2F;AACA;;",
-"sources":["BubbleMapDataPoint.java"],
-"names":["org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.<init>","org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.value","org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.valueOf","org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.values","org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.<synthetic: getter>","org.pepstock.charba.client.geo.BubbleMapDataPoint$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractBarBorderItem.impl.java.js",
-"lineCount":82,
-"mappings":"A;;;;;;;;;;;;;;;;MA8Be,qB;;CAAA,W;EAAAA,Q;;;;CAOd,iE,eAA0BC,I;EACzBC,yH;EAEAA,sB;;;;CAQD,6G,UAAmCC,Y;EAClCD,oI;;;CAQkB,+C;;CAOE,U,eAAQD,I;;CAOR,mB;EAEpBG,IAAUC,IAAVD,0D;EAEAA;GAECA,IAAIE,QAAJF,0CAFDA;GAICA;IAAAA,IAASG,GAATH,4DAAAA;;KAECA,IAAII,KAAJJ,wEAFDA;KAICA;MAECA,iBAFDA;YAGOA;MAGNA,aAHMA;MAPRA;;IAJDA;G;EAoBAA,Y;;;CAQgB,W;EAEhBK,IAAIC,MAAJD,K;EAEAA,IAAUJ,IAAVI,0D;EAEAA;GAECA,IAAUE,KAAVF,eAFDA;GAICA,IAAIG,GAAJH,KAJDA;GAMCA;IAAAA,IAASF,GAATE,4DAAAA;;KAECA,qFAFDA;;IANDA;GAWCA,IAAWI,OAAXJ,qEAXDA;GAaCA,gCAbDA;G;EAeAA,c;;;CAQkB,oD;EAClBK,mC;;;QAvGa,O;EAAAC,wC;EAAAA,qC;EAAAA;",
-"sources":["AbstractBarBorderItem.java"],
-"names":["org.pepstock.charba.client.data.AbstractBarBorderItem.<synthetic: ctor_js>","size","org.pepstock.charba.client.data.AbstractBarBorderItem.<init>","nativeObject","org.pepstock.charba.client.data.AbstractBarBorderItem.areValuesEquals","keys","preValue","key","value","org.pepstock.charba.client.data.AbstractBarBorderItem.average","result","count","sum","average","org.pepstock.charba.client.data.AbstractBarBorderItem.nativeObject","org.pepstock.charba.client.data.AbstractBarBorderItem.<clinit>"]
-}
-

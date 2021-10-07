@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Bar$Property.impl.java.js",
-"lineCount":116,
-"mappings":"A;;;;;;;;;;;;;;MAgDc,Q;;CAAA,W;EAAAA,Q;EAAAA;OASS,+DATTA,C;;;QAgBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,wI;EAAAA,iB;;;CAAA,qG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,6E;;;CASa,S;EACbC,4E;;;QA3BW,2B;EAAAC,mB;EAAAA;GAAAA,wIAAAA;G;EAAAA,gI;;;QAAA,U;EAAAC,mB;EAAAA,ggB;;;QAEZ,2E;EAAAC,oH;;;QACA,0E;EAAAA,mH;;;QACA,iF;EAAAA,0H;;;QACA,gF;EAAAA,yH;;;QACA,wE;EAAAA,iH;;;QANY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,oS;EACAA,gS;EACAA,2T;EACAA,uT;EACAA,wR;EANYA,2F;;;;;;;;;;;;;AAAA;uF;AAAA;sF;AAAA;6F;AAAA;4F;AAAA;oF;AAAA;oF;AAEZ;4F;AACA;2F;AACA;kG;AACA;iG;AACA;;",
-"sources":["Bar.java"],
-"names":["org.pepstock.charba.client.configuration.Bar$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.Bar$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Bar$Property.<init>","org.pepstock.charba.client.configuration.Bar$Property.value","org.pepstock.charba.client.configuration.Bar$Property.valueOf","org.pepstock.charba.client.configuration.Bar$Property.values","org.pepstock.charba.client.configuration.Bar$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.Bar$Property.<clinit>"]
-}
-

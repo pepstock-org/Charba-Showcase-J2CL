@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Limits$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAgCM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMiB,yDANjBA,C;;;QAaI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,kI;EAAAA,iB;;;CAAA,+F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uE;;;CASa,S;EACbC,sE;;;QAxBG,2B;EAAAC,mB;EAAAA;GAAAA,kIAAAA;G;EAAAA,0H;;;QAAA,U;EAAAC,mB;EAAAA,2M;;;QAEJ,wD;EAAAC,iG;;;QACA,wD;EAAAA,iG;;;QAHI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,qO;EACAA,qO;EAHIA,qF;;;;;;;;;;;;;AAAA;oE;AAAA;oE;AAAA;8E;AAEJ;yE;AACA;;",
-"sources":["Limits.java"],
-"names":["org.pepstock.charba.client.zoom.Limits$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.zoom.Limits$Property.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Limits$Property.<init>","org.pepstock.charba.client.zoom.Limits$Property.value","org.pepstock.charba.client.zoom.Limits$Property.valueOf","org.pepstock.charba.client.zoom.Limits$Property.values","org.pepstock.charba.client.zoom.Limits$Property.<synthetic: getter>","org.pepstock.charba.client.zoom.Limits$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultPointLabels.impl.java.js",
-"lineCount":86,
-"mappings":"A;;;;;;;;;;;;;;;MA2BmB,kB;;CAAA,W;EAAAA,Q;EAAAA;OAMW,0EANXA,C;EAAAA;OAQc,uEARdA,C;;;QAalB,S;EAAAC,6B;EAAAA,yC;EAAAA,oF;EAAAA,iB;;;CAAA,uE;EAAAC,iC;EAAAA,iF;;;CAUqB,W;EACpBC,oF;;;CASa,oB;EACbC,iE;;;CASc,a;EACdC,6G;;;CASuB,sB;EACvBC,uF;;;CASU,c;EACVC,6G;;;CASa,4B;EACbC,2E;;;CA1EiB,yE;EAMlBN,qN;EAEAA,6G;;;QARkB,O;EAAAO,qC;EAAAA,kC;EAAAA,qB;;;;;;;;;;;;;AAElB;mBAA6B,kFAA7B,S;AAEA;mBAAyB,kFAAzB;",
-"sources":["DefaultPointLabels.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultPointLabels.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.<init>","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.getFont","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.getColorAsString","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.isDisplay","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.getBackdropPadding","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.getPadding","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.getBackdropColorAsString","org.pepstock.charba.client.defaults.globals.DefaultPointLabels.<clinit>"]
-}
-

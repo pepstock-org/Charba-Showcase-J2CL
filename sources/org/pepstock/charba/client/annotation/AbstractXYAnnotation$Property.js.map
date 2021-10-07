@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractXYAnnotation$Property.impl.java.js",
-"lineCount":125,
-"mappings":"A;;;;;;;;;;;;;;MA0CM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAUiB,6EAVjBA,C;;;QAiBI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,sJ;EAAAA,iB;;;CAAA,mH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,2F;;;CASa,S;EACbC,0F;;;QA5BG,2B;EAAAC,mB;EAAAA;GAAAA,sJAAAA;G;EAAAA,8I;;;QAAA,U;EAAAC,mB;EAAAA,ynB;;;QAEJ,qF;EAAAC,8H;;;QACA,gF;EAAAA,yH;;;QACA,gF;EAAAA,yH;;;QACA,qF;EAAAA,8H;;;QACA,gF;EAAAA,yH;;;QACA,gF;EAAAA,yH;;;QAPI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,+S;EACAA,4R;EACAA,4R;EACAA,+S;EACAA,4R;EACAA,4R;EAPIA,yG;;;;;;;;;;;;;AAAA;iG;AAAA;4F;AAAA;4F;AAAA;iG;AAAA;4F;AAAA;4F;AAAA;kG;AAEJ;sG;AACA;iG;AACA;iG;AACA;sG;AACA;iG;AACA;;",
-"sources":["AbstractXYAnnotation.java"],
-"names":["org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.<init>","org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.value","org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.valueOf","org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.values","org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.<synthetic: getter>","org.pepstock.charba.client.annotation.AbstractXYAnnotation$Property.<clinit>"]
-}
-

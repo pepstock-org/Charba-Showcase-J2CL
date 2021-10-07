@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FloatingDataDataLabelsCase$1.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;;MAyGuF,E;;CAAA,W;EAAAA,Q;EAAAA;uG;;;QAAA,yF;EAAAC,a;EAAAA,yB;EAAAA,mM;EAAAA,iB;;;CAAA,2K;EAAAC,mH;EAAAA,iC;;;CAGpE,4G,0BAAyBC,O,kBAAkBC,Q;EACxDC,sG;;;QAJiF,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["FloatingDataDataLabelsCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase$1.<init>","context","dataItem","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase$1.invoke","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase$1.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AdjustScaleRangeCallback.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;;;;;;MA4BiB,wB;;QAAA,M;EAAAA,mC;EAAAA,8B;;;QAAA,O;EAAAC,2C;EAAAA;",
-"sources":["AdjustScaleRangeCallback.java"],
-"names":["org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.annotation.callbacks.AdjustScaleRangeCallback.<clinit>"]
-}
-

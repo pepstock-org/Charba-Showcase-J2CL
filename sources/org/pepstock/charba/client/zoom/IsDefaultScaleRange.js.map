@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultScaleRange.impl.java.js",
-"lineCount":28,
-"mappings":"A;;;;;;;;;MAyBU,mB;;CAOM,U;;CASA,U;;QATA,uE;EAAAA,8B;EACdA,sE;;;QAQc,uE;EAAAC,8B;EACdA,sE;;;QAjBQ,O;EAAAC,sC;EAAAA;",
-"sources":["IsDefaultScaleRange.java"],
-"names":["org.pepstock.charba.client.zoom.IsDefaultScaleRange.getMin__$default","org.pepstock.charba.client.zoom.IsDefaultScaleRange.getMax__$default","org.pepstock.charba.client.zoom.IsDefaultScaleRange.<clinit>"]
-}
-

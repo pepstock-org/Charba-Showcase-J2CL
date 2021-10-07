@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PositionCallback.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,gB;;QAAA,M;EAAAA,2B;EAAAA,gE;;;QAAA,O;EAAAC,mC;EAAAA;",
-"sources":["PositionCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.PositionCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.PositionCallback.<clinit>"]
-}
-

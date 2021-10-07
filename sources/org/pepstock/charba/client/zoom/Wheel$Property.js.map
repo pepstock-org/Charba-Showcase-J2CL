@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Wheel$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MA4Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,wDAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,iI;EAAAA,iB;;;CAAA,8F,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,sE;;;CASa,S;EACbC,qE;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,iIAAAA;G;EAAAA,yH;;;QAAA,U;EAAAC,mB;EAAAA,kS;;;QAEZ,6D;EAAAC,sG;;;QACA,2D;EAAAA,oG;;;QACA,kE;EAAAA,2G;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2P;EACAA,mP;EACAA,8Q;EAJYA,oF;;;;;;;;;;;;;AAAA;yE;AAAA;uE;AAAA;8E;AAAA;6E;AAEZ;8E;AACA;4E;AACA;;",
-"sources":["Wheel.java"],
-"names":["org.pepstock.charba.client.zoom.Wheel$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.zoom.Wheel$Property.<synthetic: ctor_create>","org.pepstock.charba.client.zoom.Wheel$Property.<init>","org.pepstock.charba.client.zoom.Wheel$Property.value","org.pepstock.charba.client.zoom.Wheel$Property.valueOf","org.pepstock.charba.client.zoom.Wheel$Property.values","org.pepstock.charba.client.zoom.Wheel$Property.<synthetic: getter>","org.pepstock.charba.client.zoom.Wheel$Property.<clinit>"]
-}
-

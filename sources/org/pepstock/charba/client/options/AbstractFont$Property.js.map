@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractFont$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,kEALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,2I;EAAAA,iB;;;CAAA,wG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,gF;;;CASa,S;EACbC,+E;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,2IAAAA;G;EAAAA,mI;;;QAAA,U;EAAAC,mB;EAAAA,kJ;;;QAEZ,oE;EAAAC,6G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,mQ;EAFYA,8F;;;;;;;;;;;;;AAAA;gF;AAAA;uF;AAEZ;;",
-"sources":["AbstractFont.java"],
-"names":["org.pepstock.charba.client.options.AbstractFont$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.AbstractFont$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.AbstractFont$Property.<init>","org.pepstock.charba.client.options.AbstractFont$Property.value","org.pepstock.charba.client.options.AbstractFont$Property.valueOf","org.pepstock.charba.client.options.AbstractFont$Property.values","org.pepstock.charba.client.options.AbstractFont$Property.<synthetic: getter>","org.pepstock.charba.client.options.AbstractFont$Property.<clinit>"]
-}
-

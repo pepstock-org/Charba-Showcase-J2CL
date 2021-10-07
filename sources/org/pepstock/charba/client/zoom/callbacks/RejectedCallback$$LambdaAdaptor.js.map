@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RejectedCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uF;EAAAA,kK;;;CAAA,wJ;EAAAC,iC;EAAAA,0F;;;CAAA,yD;;GAAAC,qG;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["RejectedCallback.java"],
-"names":["org.pepstock.charba.client.zoom.callbacks.RejectedCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.zoom.callbacks.RejectedCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.zoom.callbacks.RejectedCallback$$LambdaAdaptor.onRejected","org.pepstock.charba.client.zoom.callbacks.RejectedCallback$$LambdaAdaptor.<clinit>"]
-}
-

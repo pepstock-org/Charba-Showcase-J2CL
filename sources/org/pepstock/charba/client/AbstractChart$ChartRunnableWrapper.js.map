@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractChart$ChartRunnableWrapper.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;MAq6C4B,oB;;CAAA,W;EAAAA,Q;EAAAA;OAEJ,uEAFIA,C;EAAAA;OAIG,sEAJHA,C;;;QAYlB,sF,gBAA6BC,K,wBAAsBC,I;EAAnDC,+B;EAAAA,2C;EAAAA,2K;EAAAA,iB;;;CAAA,mJ,gBAA6BF,K,wBAAsBC,I;EAAnDE,iC;EACPA,qF;EACAA,mF;;;CASW,O;EAEXC,wM;;;QAzByB,O;EAAAC,uC;EAAAA,oC;EAAAA;",
-"sources":["AbstractChart.java"],
-"names":["org.pepstock.charba.client.AbstractChart$ChartRunnableWrapper.<synthetic: ctor_js>","chart","task","org.pepstock.charba.client.AbstractChart$ChartRunnableWrapper.<synthetic: ctor_create>","org.pepstock.charba.client.AbstractChart$ChartRunnableWrapper.<init>","org.pepstock.charba.client.AbstractChart$ChartRunnableWrapper.run","org.pepstock.charba.client.AbstractChart$ChartRunnableWrapper.<clinit>"]
-}
-

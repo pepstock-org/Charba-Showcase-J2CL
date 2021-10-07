@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnnotationOptions$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MA+CM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOiB,0EAPjBA,C;;;QAcI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,mJ;EAAAA,iB;;;CAAA,gH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,wF;;;CASa,S;EACbC,uF;;;QAzBG,2B;EAAAC,mB;EAAAA;GAAAA,mJAAAA;G;EAAAA,2I;;;QAAA,U;EAAAC,mB;EAAAA,sW;;;QAEJ,iF;EAAAC,0H;;;QACA,0F;EAAAA,mI;;;QACA,mF;EAAAA,4H;;;QAJI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,sS;EACAA,sU;EACAA,+S;EAJIA,sG;;;;;;;;;;;;;AAAA;6F;AAAA;sG;AAAA;+F;AAAA;+F;AAEJ;kG;AACA;2G;AACA;;",
-"sources":["AnnotationOptions.java"],
-"names":["org.pepstock.charba.client.annotation.AnnotationOptions$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.annotation.AnnotationOptions$Property.<synthetic: ctor_create>","org.pepstock.charba.client.annotation.AnnotationOptions$Property.<init>","org.pepstock.charba.client.annotation.AnnotationOptions$Property.value","org.pepstock.charba.client.annotation.AnnotationOptions$Property.valueOf","org.pepstock.charba.client.annotation.AnnotationOptions$Property.values","org.pepstock.charba.client.annotation.AnnotationOptions$Property.<synthetic: getter>","org.pepstock.charba.client.annotation.AnnotationOptions$Property.<clinit>"]
-}
-

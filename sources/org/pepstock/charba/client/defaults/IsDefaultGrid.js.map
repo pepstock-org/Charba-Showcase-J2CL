@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultGrid.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;;;;;MAsBiB,a;;CAOR,a;;CASJ,kB;;CASG,0B;;CAOC,gB;;CASA,qB;;CAOA,e;;CAOJ,iB;;CAOI,Y;;CAOA,c;;CASJ,Q;;CAOG,2B;;CAOO,wB;;CASV,gB;;QArGY,O;EAAAA,gC;EAAAA;",
-"sources":["IsDefaultGrid.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultGrid.<clinit>"]
-}
-

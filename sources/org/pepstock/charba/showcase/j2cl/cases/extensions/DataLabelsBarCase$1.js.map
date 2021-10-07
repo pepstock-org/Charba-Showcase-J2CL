@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsBarCase$1.impl.java.js",
-"lineCount":51,
-"mappings":"A;;;;;;;;;;;;;;;;MA4I0C,E;;CAAA,W;EAAAA,Q;EAAAA;2F;;;QAAA,6E;EAAAC,a;EAAAA,yB;EAAAA,2K;EAAAA,iB;;;CAAA,mJ;EAAAC,uG;EAAAA,iC;;;CAGxB,iE,0BAAyBC,O;EACvCC,IAAQC,EAARD,iS;EACAA,IAAOE,KAAPF,8I;EACAA,yI;;;;CANsC,2D;EAAAA,oJ;;;QAAA,O;EAAAG,qB;EAAAA,kB;EAAAA;",
-"sources":["DataLabelsBarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$1.<init>","context","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$1.invoke","ds","value","org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsBarCase$1.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDatasetCreator.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;;;;;;;MA2BiB,gB;;CAON,c;;CAUR,qB,gBAAmBA,M;;QAjBL,M;EAAAC,2B;EAAAA,gE;;;QAON,mE;EAAAC,2B;EACTA,6C;;;QARe,O;EAAAC,mC;EAAAA;",
-"sources":["IsDatasetCreator.java"],
-"names":["hidden","org.pepstock.charba.client.IsDatasetCreator.<synthetic: adapt_lambda>","org.pepstock.charba.client.IsDatasetCreator.newDataset__$default","org.pepstock.charba.client.IsDatasetCreator.<clinit>"]
-}
-

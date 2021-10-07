@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GeoDatasetHandler.impl.java.js",
-"lineCount":83,
-"mappings":"A;;;;;;;;;;;;;;;;;;;MAkCY,iB;;CAAA,W;EAAAA,Q;EAAAA;OAuCmC,4DAvCnCA,C;;;QAgDX,uK,UAA+BC,Y,iBAAsBC,c,yCAAgDC,O;EAArGC,4B;EAAAA,wC;EAAAA,yQ;EAAAA,iB;;;CAAA,uN,UAA+BH,Y,iBAAsBC,c,yCAAgDC,O;EACpGE,6L;EAEAA,4E;;;CAQI,mG,iBAAcC,M;EAClBC,gS;;;CAQI,8D,gBAAkBD,M;EACtBC,8O;;;CASO,uD,gBAAkBC,O;EAEzBC;GAECA,IAAYC,KAAZD,mMAFDA;GAICA,oQAJDA;G;EAOAA;GACCA,IAAQE,MAARF,oFADDA;GAGCA,+OAHDA;GAKCA,cALDA;G;EAQAA,0D;;;QA/FU,O;EAAAG,oC;EAAAA,iC;EAAAA,+B;;;;;;;;;;;;;;;;AAGX;kBAAoB,yEAApB,8E;AAEA;kBAAoB,yEAApB;",
-"sources":["GeoDatasetHandler.java"],
-"names":["org.pepstock.charba.client.geo.GeoDatasetHandler.<synthetic: ctor_js>","nativeObject","defaultClipMap","factory","org.pepstock.charba.client.geo.GeoDatasetHandler.<synthetic: ctor_create>","org.pepstock.charba.client.geo.GeoDatasetHandler.<init>","values","org.pepstock.charba.client.geo.GeoDatasetHandler.setValues","binding","org.pepstock.charba.client.geo.GeoDatasetHandler.getValues","array","result","org.pepstock.charba.client.geo.GeoDatasetHandler.<clinit>"]
-}
-

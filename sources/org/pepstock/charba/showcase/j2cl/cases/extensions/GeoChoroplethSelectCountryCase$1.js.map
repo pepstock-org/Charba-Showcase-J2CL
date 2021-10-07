@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GeoChoroplethSelectCountryCase$1.impl.java.js",
-"lineCount":53,
-"mappings":"A;;;;;;;;;;;;;;;MAyEsD,E;;CAAA,W;EAAAA,Q;EAAAA;wG;;;QAAA,0F;EAAAC,a;EAAAA,yB;EAAAA,qM;EAAAA,iB;;;CAAA,6K;EAAAC,oH;EAAAA,iC;;;CAGvC,mE,8BAA+BC,K;EAC1CC,IAAiBC,OAAjBD,uB;EACAA,IAAIE,KAAJF,0B;EACAA;GACCA,IAAoBG,EAApBH,6RADDA;GAECA,IAAOI,IAAPJ,8MAFDA;GAGCA,IAAcK,EAAdL,6BAHDA;GAICA,+FAJDA;GAKCA,8GALDA;GAMCA,8EANDA;GAOCA,iPAPDA;G;;;QANkD,O;EAAAM,qB;EAAAA,kB;EAAAA;",
-"sources":["GeoChoroplethSelectCountryCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase$1.onSelect","dataset","index","dp","name","sb","org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase$1.<clinit>"]
-}
-

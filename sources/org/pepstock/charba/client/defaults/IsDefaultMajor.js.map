@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultMajor.impl.java.js",
-"lineCount":21,
-"mappings":"A;;;;;;;;;MAsBiB,c;;CAOR,a;;QAPQ,M;EAAAA,yB;EAAAA,8B;;;QAAA,O;EAAAC,iC;EAAAA;",
-"sources":["IsDefaultMajor.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultMajor.<synthetic: adapt_lambda>","org.pepstock.charba.client.defaults.IsDefaultMajor.<clinit>"]
-}
-

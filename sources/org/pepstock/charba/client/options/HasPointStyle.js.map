@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasPointStyle.impl.java.js",
-"lineCount":97,
-"mappings":"A;;;;;;;;;;;;;;;;;MA+BU,a;;CAOS,wB;;CAOL,4D,mBAAyBA,U;;CAanB,iB;;CAeN,4D,yBAAkBA,U;;CAaR,qB;;CAkBX,wB;;CAeC,+D,0BAAqBA,U;;CAenB,yB;;QAvGN,M;EAAAC,wB;EAAAA,8B;;;QAcI,wH,mDAAyBD,U;EAAzBE,wB;EAEZA;GACCA,oJADDA;G;;;QAWkB,2E;EAAAC,wB;EAElBA;GACCA,sGADDA;G;EAKAA,+F;;;QAQY,wH,yDAAkBH,U;EAAlBE,wB;EAEZA;GACCA,oJADDA;G;;;QAWsB,+E;EAAAE,wB;EAEtBA;GACCA,0GADDA;G;EAKAA,0I;;;QAWW,kF;EAAAC,wB;EAEXA;GACCA,6GADDA;G;EAKAA,6E;;;QAQY,2H,0DAAqBL,U;EAArBE,wB;EAEZA;GACCA,uJADDA;G;;;QAac,mF;EAAAI,wB;EAEdA;GACCA,8GADDA;G;EAKAA,8E;;;QA9GQ,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["HasPointStyle.java"],
-"names":["pointStyle","org.pepstock.charba.client.options.HasPointStyle.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.HasPointStyle.setPointStyle__$default","org.pepstock.charba.client.options.HasPointStyle.getPointStyle__$default","org.pepstock.charba.client.options.HasPointStyle.getPointStyleType__$default","org.pepstock.charba.client.options.HasPointStyle.getPointStyleAsImage__$default","org.pepstock.charba.client.options.HasPointStyle.getPointStyleAsCanvas__$default","org.pepstock.charba.client.options.HasPointStyle.<clinit>"]
-}
-

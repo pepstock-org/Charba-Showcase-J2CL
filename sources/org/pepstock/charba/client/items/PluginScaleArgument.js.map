@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PluginScaleArgument.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;MA6BmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAkCM,kEAlCNA,C;;;QAyCX,0D,0BAAiDC,O;EAAjDC,8B;EAAAA,0C;EAAAA,kI;EAAAA,iB;;;CAAA,8G,0BAAiDD,O;EACvDE,wS;EAEAA,uR;;;CAQgB,gB;EAChBC,+E;;;QArDiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["PluginScaleArgument.java"],
-"names":["org.pepstock.charba.client.items.PluginScaleArgument.<synthetic: ctor_js>","envelop","org.pepstock.charba.client.items.PluginScaleArgument.<synthetic: ctor_create>","org.pepstock.charba.client.items.PluginScaleArgument.<init>","org.pepstock.charba.client.items.PluginScaleArgument.getScaleItem","org.pepstock.charba.client.items.PluginScaleArgument.<clinit>"]
-}
-

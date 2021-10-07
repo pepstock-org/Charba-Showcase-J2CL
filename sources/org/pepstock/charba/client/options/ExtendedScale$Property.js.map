@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ExtendedScale$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MA+Cc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMS,mEANTA,C;;;QAaJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,4I;EAAAA,iB;;;CAAA,yG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,iF;;;CASa,S;EACbC,gF;;;QAxBW,2B;EAAAC,mB;EAAAA;GAAAA,4IAAAA;G;EAAAA,oI;;;QAAA,U;EAAAC,mB;EAAAA,wJ;;;QAGZ,0E;EAAAC,mH;;;QAHY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAGZA,wR;EAHYA,+F;;;;;;;;;;;;;AAAA;sF;AAAA;wF;AAGZ;;",
-"sources":["ExtendedScale.java"],
-"names":["org.pepstock.charba.client.options.ExtendedScale$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.ExtendedScale$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.ExtendedScale$Property.<init>","org.pepstock.charba.client.options.ExtendedScale$Property.value","org.pepstock.charba.client.options.ExtendedScale$Property.valueOf","org.pepstock.charba.client.options.ExtendedScale$Property.values","org.pepstock.charba.client.options.ExtendedScale$Property.<synthetic: getter>","org.pepstock.charba.client.options.ExtendedScale$Property.<clinit>"]
-}
-

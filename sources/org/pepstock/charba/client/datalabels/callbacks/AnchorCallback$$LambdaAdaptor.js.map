@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnchorCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MA4BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;2F;EAAAA,0K;;;CAAA,gK;EAAAC,iC;EAAAA,8F;;;CAAA,iE;EAAAC,yD;EAAAA,+H;;;;CAAA,2D;EAAAA,oJ;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["AnchorCallback.java"],
-"names":["org.pepstock.charba.client.datalabels.callbacks.AnchorCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.datalabels.callbacks.AnchorCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.datalabels.callbacks.AnchorCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.datalabels.callbacks.AnchorCallback$$LambdaAdaptor.<clinit>"]
-}
-

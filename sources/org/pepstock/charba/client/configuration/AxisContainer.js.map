@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AxisContainer.impl.java.js",
-"lineCount":31,
-"mappings":"A;;;;;;;;;;MAsBe,a;;CAAA,W;EAAAA,Q;EAAAA;OAGK,+DAHLA,C;;;CAUd,4G,aAAmBC,I;EAAnBC,iC;EACCA,4E;;;CAQiB,W;EACjBC,4E;;;QApBa,O;EAAAC,gC;EAAAA,6B;EAAAA;",
-"sources":["AxisContainer.java"],
-"names":["org.pepstock.charba.client.configuration.AxisContainer.<synthetic: ctor_js>","axis","org.pepstock.charba.client.configuration.AxisContainer.<init>","org.pepstock.charba.client.configuration.AxisContainer.getAxis","org.pepstock.charba.client.configuration.AxisContainer.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ControllerRegistrationHandler.impl.java.js",
-"lineCount":26,
-"mappings":"A;;;;;;;;;MAuBiB,6B;;CAOH,yE,uBAAgCA,c;;CAUhC,iF,uBAA+BA,c,iBAAwBC,U;;QAVvD,yJ,uEAAgCD,c;EAAhCE,wC;;;QAUA,iK,uEAA+BF,c,iBAAwBC,U;EAAvDE,wC;;;QAjBG,O;EAAAC,gD;EAAAA;",
-"sources":["ControllerRegistrationHandler.java"],
-"names":["controllerType","registered","org.pepstock.charba.client.controllers.ControllerRegistrationHandler.onBeforeRegister__$default","org.pepstock.charba.client.controllers.ControllerRegistrationHandler.onAfterRegister__$default","org.pepstock.charba.client.controllers.ControllerRegistrationHandler.<clinit>"]
-}
-

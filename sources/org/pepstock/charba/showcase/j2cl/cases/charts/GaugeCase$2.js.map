@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GaugeCase$2.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;;;MAiGyE,E;;CAAA,W;EAAAA,Q;EAAAA;+E;;;QAAA,iE;EAAAC,a;EAAAA,yB;EAAAA,mJ;EAAAA,iB;;;CAAA,2H;EAAAC,2F;EAAAA,iC;;;CAGxD,6D,qBAAoBC,O;EACjCC,IAAaC,OAAbD,4P;EACAA,+C;;;;CALqE,2D;EAAAA,sI;;;QAAA,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["GaugeCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase$2.<init>","context","org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase$2.invoke","dataset","org.pepstock.charba.showcase.j2cl.cases.charts.GaugeCase$2.<clinit>"]
-}
-

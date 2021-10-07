@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsFont.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;;;;;;;;MA0BiB,M;;CAOX,c,eAAYA,I;;CAOZ,sD,kBAAmBC,K;;CAOnB,6B,gBAAiBC,M;;CAOjB,oD,eAAiBC,M;;CAOjB,uB,eAAqBC,U;;CAOrB,iC,gBAAqBA,U;;QA1CV,O;EAAAC,yB;EAAAA,sB;EAAAA;",
-"sources":["IsFont.java"],
-"names":["size","style","family","weight","lineHeight","org.pepstock.charba.client.options.IsFont.<clinit>"]
-}
-

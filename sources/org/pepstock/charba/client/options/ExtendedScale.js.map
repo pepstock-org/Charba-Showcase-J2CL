@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ExtendedScale.impl.java.js",
-"lineCount":103,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAuCmB,a;;CAAA,W;EAAAA,Q;;;;QA8CX,wN,sCAA4CC,O,kBAAkBC,I,kBAAeC,I,wBAAqBC,a;EAAlGC,wB;EAAAA,oC;EAAAA,uT;EAAAA,iB;;;;CAAA,wQ,sCAA4CJ,O,kBAAkBC,I,kBAAeC,I,wBAAqBC,a;EACxGE,iL;EAEAA,4E;EAEAA,uN;EAEAA,sK;EAEAA,gP;;;;QASM,0H,oCAA0CL,O,wBAAwBG,a;EAAlEC,wB;EAAAA,oC;EAAAA,6M;EAAAA,iB;;;;CAAA,0K,oCAA0CJ,O,wBAAwBG,a;EACxEE,4b;;;CAQU,e;EACVC,sN;;;CAUW,4K,2CAA+CN,O,aAAaO,Q,0BAA8BC,K;EACrGC,0a;;;CAUW,yK,2CAA+CT,O,aAAaO,Q,kBAAyBG,Q;EAChGD,0a;;;CAagD,oF,mCAA8CE,O;EAE9FC;GAECA,qGAFDA;G;EAKAA,Y;;;QApHiB,O;EAAAC,gC;EAAAA,6B;EAAAA,gB;EAGlBA,2G;;;;;;;;;;;;;;;;;;;;;AAHkB;cAGiB,4DAHjB;",
-"sources":["ExtendedScale.java"],
-"names":["org.pepstock.charba.client.options.ExtendedScale.<synthetic: ctor_js>","envelop","type","kind","defaultValues","org.pepstock.charba.client.options.ExtendedScale.<synthetic: ctor_create>","org.pepstock.charba.client.options.ExtendedScale.<init>","org.pepstock.charba.client.options.ExtendedScale.getCharbaId","property","proxy","org.pepstock.charba.client.options.ExtendedScale.setCallback","callback","factory","org.pepstock.charba.client.options.ExtendedScale.getRemappedOptions","org.pepstock.charba.client.options.ExtendedScale.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Weave.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;MAuCY,K;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,gB;EAAAA,4B;EAAAA,mE;EAAAA,iB;;;CAAA,sD;EAAAC,oE;;;CAQI,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,sI;EAEAA,8J;EACAA,iB;;;CAWI,mI,iCAAwBJ,O,gBAAaG,I,gBAAaE,O,gBAAgBC,O;EAEtEC,IAAaC,QAAbD,Y;EAEAA,yC;EACAA,2C;EAEAA,uC;EACAA,uC;;;QAhCU,O;EAAAE,wB;EAAAA,qB;EAAAA;",
-"sources":["Weave.java"],
-"names":["org.pepstock.charba.client.colors.tiles.Weave.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Weave.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Weave.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Weave.drawTile","offsetX","offsetY","org.pepstock.charba.client.colors.tiles.Weave.drawWeave","halfSize","org.pepstock.charba.client.colors.tiles.Weave.<clinit>"]
-}
-

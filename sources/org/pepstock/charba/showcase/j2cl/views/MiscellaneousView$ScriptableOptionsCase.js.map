@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MiscellaneousView$ScriptableOptionsCase.impl.java.js",
-"lineCount":167,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;MA+Jc,qB;;CAAA,W;EAAAA,Q;EAAAA;OA2CS,yFA3CTA,C;EAAAA;OA6Cc,2FA7CdA,C;;;QA+CJ,qG,8DAA6BC,K,qBAAmBC,O;EAAhDC,4C;EAAAA,gO;EAAAA,iB;;;CAAA,oL,8DAA6BF,K,qBAAmBC,O;EAAhDE,qC;EAAAA,2C;EAAAA,mE;EACPA,uG;EACAA,2G;;;CAGa,Y;EACbC,sG;;;CAGkB,c;EAClBC,wG;;;QAzDW,2B;EAAAC,gC;EAAAA;GAAAA,4LAAAA;G;EAAAA,uK;;;QAAA,U;EAAAC,gC;EAAAA,mhC;;;QAEZ,0F;EAAAC,6J;;;QAKA,2F;EAAAA,8J;;;QAKA,4F;EAAAA,+J;;;QAKA,+F;EAAAA,kK;;;QAKA,0F;EAAAA,6J;;;QAKA,4F;EAAAA,+J;;;QAKA,6F;EAAAA,gK;;;QAKA,qG;EAAAA,wK;;;QArCY,O;EAAAC,wC;EAAAA,qC;EAAAA,e;EAEZA,8a;EAKAA,kb;EAKAA,sb;EAKAA,kc;EAKAA,+a;EAKAA,2b;EAKAA,0b;EAKAA,8d;EArCYA,kI;;;;;;;;;;;;;;;;;;;;;AAAA;mH;AAAA;oH;AAAA;qH;AAAA;wH;AAAA;mH;AAAA;qH;AAAA;sH;AAAA;8H;AAAA;2H;AAEZ;wH;AAKA;yH;AAKA;0H;AAKA;6H;AAKA;wH;AAKA;0H;AAKA;2H;AAKA;;",
-"sources":["MiscellaneousView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.<synthetic: ctor_js>","label","factory","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.<init>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.getLabel","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.getFactory","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.valueOf","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.values","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.<synthetic: getter>","org.pepstock.charba.showcase.j2cl.views.MiscellaneousView$ScriptableOptionsCase.<clinit>"]
-}
-

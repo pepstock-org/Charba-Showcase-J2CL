@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleMapElements.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;;MA0BmB,iB;;CAAA,W;EAAAA,Q;EAAAA;OAGa,4DAHbA,C;;;QAUlB,wD,yBAAmCC,O;EAAnCC,4B;EAAAA,wC;EAAAA,4H;EAAAA,iB;;;CAAA,wG,yBAAmCD,O;EAClCE,sI;EAEAA,2O;;;CAQqB,qB;EACrBC,4O;;;QAtBiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
-"sources":["BubbleMapElements.java"],
-"names":["org.pepstock.charba.client.geo.BubbleMapElements.<synthetic: ctor_js>","options","org.pepstock.charba.client.geo.BubbleMapElements.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapElements.<init>","org.pepstock.charba.client.geo.BubbleMapElements.getBubbleMapPoint","org.pepstock.charba.client.geo.BubbleMapElements.<clinit>"]
-}
-

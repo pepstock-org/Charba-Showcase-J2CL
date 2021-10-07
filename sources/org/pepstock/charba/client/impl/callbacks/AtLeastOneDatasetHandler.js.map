@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AtLeastOneDatasetHandler.impl.java.js",
-"lineCount":79,
-"mappings":"A;;;;;;;;;;;;;;;MAkCa,wB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,mC;EAAAA,+C;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;;;CAQA,6D,yBAAyBC,K;EAEpCC;GAECA,IAAQC,KAARD,wBAFDA;GAICA;IAGCA;KACCA,OADDA;KAHDA;IAOCA,oGAPDA;UAQOA;IAGNA;KACCA,OADDA;KAHMA;IAONA,oGAPMA;IAZRA;G;;;CA+Be,oI,gBAA4BC,K,gBAAWC,Y;EAEtDC,IAAcC,GAAdD,yC;EAGAA,SAASE,CAATF;GAGCA;IACCA,YADDA;IAHDA;G;EAQAA,a;;;CAUe,6H,gBAAqBF,K,gBAAWK,K;EAE/CC,IAAcH,GAAdG,yC;EAGAA,SAASF,CAATE;GACCA;IAECA,IAAYC,WAAZD,kCAFDA;IAICA,IAAqBE,KAArBF,iCAJDA;IAMCA,SAASG,CAATH;KAGCA;MACCA,YADDA;MAHDA;KANDA;IADDA;G;EAiBAA,a;;;QAtFW,O;EAAAI,2C;EAAAA,wC;EAAAA;",
-"sources":["AtLeastOneDatasetHandler.java"],
-"names":["org.pepstock.charba.client.impl.callbacks.AtLeastOneDatasetHandler.<synthetic: ctor_js>","org.pepstock.charba.client.impl.callbacks.AtLeastOneDatasetHandler.<synthetic: ctor_create>","org.pepstock.charba.client.impl.callbacks.AtLeastOneDatasetHandler.<init>","event","org.pepstock.charba.client.impl.callbacks.AtLeastOneDatasetHandler.onClick","chart","datasetIndex","org.pepstock.charba.client.impl.callbacks.AtLeastOneDatasetHandler.checkByDatasetIndex","dss","i","index","org.pepstock.charba.client.impl.callbacks.AtLeastOneDatasetHandler.checkByIndex","datasetItem","items","k","org.pepstock.charba.client.impl.callbacks.AtLeastOneDatasetHandler.<clinit>"]
-}
-

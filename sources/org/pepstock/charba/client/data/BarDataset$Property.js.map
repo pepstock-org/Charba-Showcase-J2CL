@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BarDataset$Property.impl.java.js",
-"lineCount":188,
-"mappings":"A;;;;;;;;;;;;;;MAyHc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAkBS,6DAlBTA,C;;;QAyBJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,sI;EAAAA,iB;;;CAAA,mG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,2E;;;CASa,S;EACbC,0E;;;QApCW,2B;EAAAC,mB;EAAAA;GAAAA,sIAAAA;G;EAAAA,8H;;;QAAA,U;EAAAC,mB;EAAAA,osC;;;QAEZ,+D;EAAAC,wG;;;QACA,oE;EAAAA,6G;;;QACA,oE;EAAAA,6G;;;QACA,yE;EAAAA,kH;;;QACA,wE;EAAAA,iH;;;QACA,8E;EAAAA,uH;;;QACA,qE;EAAAA,8G;;;QACA,sE;EAAAA,+G;;;QACA,+E;EAAAA,wH;;;QAEA,mF;EAAAA,4H;;;QACA,yF;EAAAA,kI;;;QACA,oF;EAAAA,6H;;;QACA,0F;EAAAA,mI;;;QAfY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,yP;EACAA,2Q;EACAA,2Q;EACAA,gS;EACAA,4R;EACAA,mT;EACAA,gR;EACAA,oR;EACAA,uT;EAEAA,sU;EACAA,6V;EACAA,0U;EACAA,iW;EAfYA,yF;;;;;;;;;;;;;AAAA;2E;AAAA;gF;AAAA;gF;AAAA;qF;AAAA;oF;AAAA;0F;AAAA;iF;AAAA;kF;AAAA;2F;AAAA;+F;AAAA;qG;AAAA;gG;AAAA;sG;AAAA;kF;AAEZ;gF;AACA;qF;AACA;qF;AACA;0F;AACA;yF;AACA;+F;AACA;sF;AACA;uF;AACA;gG;AAEA;oG;AACA;2G;AACA;sG;AACA;;",
-"sources":["BarDataset.java"],
-"names":["org.pepstock.charba.client.data.BarDataset$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.data.BarDataset$Property.<synthetic: ctor_create>","org.pepstock.charba.client.data.BarDataset$Property.<init>","org.pepstock.charba.client.data.BarDataset$Property.value","org.pepstock.charba.client.data.BarDataset$Property.valueOf","org.pepstock.charba.client.data.BarDataset$Property.values","org.pepstock.charba.client.data.BarDataset$Property.<synthetic: getter>","org.pepstock.charba.client.data.BarDataset$Property.<clinit>"]
-}
-

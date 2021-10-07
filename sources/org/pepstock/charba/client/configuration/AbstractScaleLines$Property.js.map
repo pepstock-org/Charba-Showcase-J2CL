@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractScaleLines$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MA6Dc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,8EAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,uJ;EAAAA,iB;;;CAAA,oH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,4F;;;CASa,S;EACbC,2F;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,uJAAAA;G;EAAAA,+I;;;QAAA,U;EAAAC,mB;EAAAA,6W;;;QAEZ,iF;EAAAC,0H;;;QACA,sF;EAAAA,+H;;;QACA,8F;EAAAA,uI;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,+R;EACAA,kT;EACAA,iV;EAJYA,0G;;;;;;;;;;;;;AAAA;6F;AAAA;kG;AAAA;0G;AAAA;mG;AAEZ;kG;AACA;uG;AACA;;",
-"sources":["AbstractScaleLines.java"],
-"names":["org.pepstock.charba.client.configuration.AbstractScaleLines$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.configuration.AbstractScaleLines$Property.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.AbstractScaleLines$Property.<init>","org.pepstock.charba.client.configuration.AbstractScaleLines$Property.value","org.pepstock.charba.client.configuration.AbstractScaleLines$Property.valueOf","org.pepstock.charba.client.configuration.AbstractScaleLines$Property.values","org.pepstock.charba.client.configuration.AbstractScaleLines$Property.<synthetic: getter>","org.pepstock.charba.client.configuration.AbstractScaleLines$Property.<clinit>"]
-}
-

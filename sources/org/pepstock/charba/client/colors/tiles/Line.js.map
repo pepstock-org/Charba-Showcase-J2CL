@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Line.impl.java.js",
-"lineCount":40,
-"mappings":"A;;;;;MAuCM,I;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,e;EAAAA,2B;EAAAA,kE;EAAAA,iB;;;CAAA,qD;EAAAC,oE;;;CAQU,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,sI;EAEAA,kJ;EAEAA,yJ;EAEAA,iB;;;CAUU,0H,iCAAuBJ,O,gBAAaG,I,gBAAaG,O;EAE3DC,IAAaC,WAAbD,Y;EAGAA,yC;EACAA,4C;;;QAlCI,O;EAAAE,uB;EAAAA,oB;EAAAA;",
-"sources":["Line.java"],
-"names":["org.pepstock.charba.client.colors.tiles.Line.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Line.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Line.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Line.drawTile","halfSize","offsetY","org.pepstock.charba.client.colors.tiles.Line.drawLine","quarterSize","org.pepstock.charba.client.colors.tiles.Line.<clinit>"]
-}
-

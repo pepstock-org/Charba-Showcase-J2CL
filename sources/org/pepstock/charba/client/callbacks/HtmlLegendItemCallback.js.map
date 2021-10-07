@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HtmlLegendItemCallback.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,sB;;QAAA,M;EAAAA,iC;EAAAA,8B;;;QAAA,O;EAAAC,yC;EAAAA;",
-"sources":["HtmlLegendItemCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.HtmlLegendItemCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.HtmlLegendItemCallback.<clinit>"]
-}
-

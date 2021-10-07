@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Dot.impl.java.js",
-"lineCount":45,
-"mappings":"A;;;;;;;MAuCM,G;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,c;EAAAA,0B;EAAAA,iE;EAAAA,iB;;;CAAA,oD;EAAAC,oE;;;CAQU,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,IAAaE,QAAbF,a;EAEAA,yH;EAEAA,8K;EAEAA,4L;EAEAA,e;;;CAYU,yI,iCAAsBJ,O,gBAAaG,I,gBAAaI,O,gBAAgBC,O,gBAAgBF,Q;EAE1FG,IAAaC,WAAbD,Y;EAEAA,IAAaE,CAAbF,yB;EAEAA,IAAaG,CAAbH,yB;EAEAA,mC;EACAA,8D;;;QAzCI,O;EAAAI,sB;EAAAA,mB;EAAAA;",
-"sources":["Dot.java"],
-"names":["org.pepstock.charba.client.colors.tiles.Dot.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Dot.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Dot.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Dot.drawTile","halfSize","diameter","offsetX","offsetY","org.pepstock.charba.client.colors.tiles.Dot.drawDot","quarterSize","x","y","org.pepstock.charba.client.colors.tiles.Dot.<clinit>"]
-}
-

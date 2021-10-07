@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BorderSkippedCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;uF;EAAAA,kK;;;CAAA,wJ;EAAAC,iC;EAAAA,0F;;;CAAA,6D;EAAAC,6D;EAAAA,2H;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["BorderSkippedCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.BorderSkippedCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.BorderSkippedCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.BorderSkippedCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.BorderSkippedCallback$$LambdaAdaptor.<clinit>"]
-}
-

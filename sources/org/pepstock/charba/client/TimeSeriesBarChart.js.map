@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TimeSeriesBarChart.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;MA0Ba,kB;;CAAA,W;EAAAA,Q;EAAAA;OAEuB,yDAFvBA,C;;;;QAOL,S;EAAAC,6B;EAAAA,yC;EAAAA,mE;EAAAA,iB;;;;CAAA,sD;EACNC,kJ;;;;QASS,wC,aAAwBC,Y;EAAxBF,6B;EAAAA,yC;EAAAA,8G;EAAAA,iB;;;;CAAA,qF,aAAwBE,Y;EACjCD,oG;EAEAA,uO;;;CAS2B,c;EAC3BE,sE;;;CAS2B,qB,gBAAmBC,M;EAC9CC,8I;;;;CAxCW,c;EAAAA,wK;;;QAAA,O;EAAAC,qC;EAAAA,kC;EAAAA,wB;EAAAA;",
-"sources":["TimeSeriesBarChart.java"],
-"names":["org.pepstock.charba.client.TimeSeriesBarChart.<synthetic: ctor_js>","org.pepstock.charba.client.TimeSeriesBarChart.<synthetic: ctor_create>","org.pepstock.charba.client.TimeSeriesBarChart.<init>","extendedType","org.pepstock.charba.client.TimeSeriesBarChart.getOptions","hidden","org.pepstock.charba.client.TimeSeriesBarChart.newDataset","org.pepstock.charba.client.TimeSeriesBarChart.<clinit>"]
-}
-

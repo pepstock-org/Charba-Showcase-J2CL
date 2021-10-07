@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractInteraction.impl.java.js",
-"lineCount":49,
-"mappings":"A;;;;;;;;;;;;;;;MA6Be,mB;;CAAA,W;EAAAA,Q;;;CA0Cd,0N,UAAsBC,O,aAAaC,Q,WAAYC,a,WAA4BC,Y;EAC1EC,0Q;;;CAQwB,yD;;CAOR,6D;;CAOC,2D,wBAAwBC,I;EACzCC,sM;;;CAQ4B,W;EAC5BC,qY;;;CAQiB,uB,gBAAqBC,S;EACtCC,iL;;;CAQoB,e;EACpBC,qO;;;QA7Fa,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["AbstractInteraction.java"],
-"names":["org.pepstock.charba.client.options.AbstractInteraction.<synthetic: ctor_js>","options","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.AbstractInteraction.<init>","mode","org.pepstock.charba.client.options.AbstractInteraction.setMode","org.pepstock.charba.client.options.AbstractInteraction.getMode","intersect","org.pepstock.charba.client.options.AbstractInteraction.setIntersect","org.pepstock.charba.client.options.AbstractInteraction.isIntersect","org.pepstock.charba.client.options.AbstractInteraction.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartTitle.impl.java.js",
-"lineCount":30,
-"mappings":"A;;;;;;;;;MAwBmB,iB;;CAAA,W;EAAAA,Q;;;QAOX,2D,uBAAiCC,K;EAAjCC,4B;EAAAA,wC;EAAAA,wI;EAAAA,iB;;;CAAA,sH,uBAAiCD,K;EACvCE,mJ;;;QARiB,O;EAAAC,oC;EAAAA,iC;EAAAA;",
-"sources":["DefaultChartTitle.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartTitle.<synthetic: ctor_js>","title","org.pepstock.charba.client.defaults.chart.DefaultChartTitle.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartTitle.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartTitle.<clinit>"]
-}
-

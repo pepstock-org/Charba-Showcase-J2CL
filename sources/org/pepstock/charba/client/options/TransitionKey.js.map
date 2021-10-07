@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TransitionKey.impl.java.js",
-"lineCount":59,
-"mappings":"A;;;;;;;;;;;;;;;;;MAyBiB,a;;QAQK,0B,gBAAcA,U;EAAdC,wB;EAEpBA;GAAAA,IAA0BC,OAA1BD,kBAAAA;;IAECA;KAECA,eAFDA;KAFDA;;G;EASAA,yE;;;QASc,2D,sBAAsBD,U;EAAtBG,wB;EACdA,yE;;;QASW,gE,sBAA2BH,U;EAA3BI,wB;EACXA;GAGCA,IAAOC,gBAAPD,iNAHDA;GAKCA,6FALDA;G;;;QAgBoB,sE,sBAAiCJ,U;EAAjCM,wB;EAEpBA,2F;EAGAA,kB;;;QA5De,M;EAAAC,wB;EAAAA,8B;;;QAAA,O;EAAAC,gC;EAAAA;",
-"sources":["TransitionKey.java"],
-"names":["transition","org.pepstock.charba.client.options.TransitionKey.create","defMode","org.pepstock.charba.client.options.TransitionKey.isValid","org.pepstock.charba.client.options.TransitionKey.checkIfValid","exceptionMessage","org.pepstock.charba.client.options.TransitionKey.checkAndGetIfValid","org.pepstock.charba.client.options.TransitionKey.<synthetic: adapt_lambda>","org.pepstock.charba.client.options.TransitionKey.<clinit>"]
-}
-

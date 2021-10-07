@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SegmentOnVerticalLineCase$2.impl.java.js",
-"lineCount":47,
-"mappings":"A;;;;;;;;;;;;;;MAwEyF,E;;CAAA,W;EAAAA,Q;EAAAA;iG;;;QAAA,mF;EAAAC,a;EAAAA,yB;EAAAA,uL;EAAAA,iB;;;CAAA,+J;EAAAC,6G;EAAAA,iC;;;CAGxE,6D,uBAAsBC,O;EACnCC,4S;;;;CAJqF,2D;EAAAA,0I;;;QAAA,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["SegmentOnVerticalLineCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$2.<init>","context","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$2.invoke","org.pepstock.charba.showcase.j2cl.cases.elements.SegmentOnVerticalLineCase$2.<clinit>"]
-}
-

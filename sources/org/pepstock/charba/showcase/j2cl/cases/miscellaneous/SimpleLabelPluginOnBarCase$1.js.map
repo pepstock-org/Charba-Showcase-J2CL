@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SimpleLabelPluginOnBarCase$1.impl.java.js",
-"lineCount":69,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;MAyFuD,E;;CAAA,W;EAAAA,Q;EAAAA;uG;;;QAAA,2G;EAAAC,a;EAAAA,yB;EAAAA,0N;EAAAA,iB;;;CAAA,6L;EAAAC,mH;EAAAA,qF;;;CAGxC,yD,gBAA4BC,K;EACvCC,IAAUC,QAAVD,kE;EACAA,IAAUE,OAAVF,K;EACAA,IAAoBG,GAApBH,2G;EAEAA,IAAcI,GAAdJ,yC;EACAA,SAASK,CAATL;GACCA,IAAYM,IAAZN,kCADDA;GAECA;IACCA,IAAQO,EAARP,iEADDA;IAECA,IAAqBQ,QAArBR,0BAFDA;IAGCA,SAASS,CAATT;KACCA,IAAeU,IAAfV,oFADDA;KAECA,IAAOW,UAAPX,kHAFDA;KAGCA,6IAHDA;KAICA,IAAOY,UAAPZ,2WAJDA;KAKCA,sBALDA;KAMCA,uNANDA;KAOCA,2OAPDA;KAQCA,iHARDA;KAHDA;IAFDA;G;;;QATmD,O;EAAAa,qB;EAAAA,kB;EAAAA;",
-"sources":["SimpleLabelPluginOnBarCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SimpleLabelPluginOnBarCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SimpleLabelPluginOnBarCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SimpleLabelPluginOnBarCase$1.<init>","chart","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SimpleLabelPluginOnBarCase$1.onAfterDatasetsDraw","fontSize","padding","ctx","dss","i","item","ds","elements","k","elem","dataString","fontString","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SimpleLabelPluginOnBarCase$1.<clinit>"]
-}
-

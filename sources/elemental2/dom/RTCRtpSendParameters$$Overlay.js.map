@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RTCRtpSendParameters$$Overlay.impl.java.js",
-"lineCount":22,
-"mappings":"A;;;;;;;MA0BiB,Q;;QAEa,U;EAAAA,mB;EAC1BA,iH;;;QAmBW,6G,+EAAwCC,S;EAAxCC,mB;EACXA,oH;;;QAvBa,O;EAAAC,2B;EAAAA;",
-"sources":["RTCRtpSendParameters.java"],
-"names":["elemental2.dom.RTCRtpSendParameters$$Overlay.create","encodings","elemental2.dom.RTCRtpSendParameters$$Overlay.setEncodings__$devirt","elemental2.dom.RTCRtpSendParameters$$Overlay.<clinit>"]
-}
-

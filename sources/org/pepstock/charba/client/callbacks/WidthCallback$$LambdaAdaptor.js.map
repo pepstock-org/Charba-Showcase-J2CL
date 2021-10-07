@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"WidthCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;;MAwBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,kJ;;;CAAA,wI;EAAAC,iC;EAAAA,kF;;;CAAA,2D;EAAAC,0C;EAAAA,mH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["WidthCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.WidthCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.WidthCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.WidthCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.WidthCallback$$LambdaAdaptor.<clinit>"]
-}
-

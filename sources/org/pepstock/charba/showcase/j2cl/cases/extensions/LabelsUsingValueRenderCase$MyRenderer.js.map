@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LabelsUsingValueRenderCase$MyRenderer.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;MA4Oc,U;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,qB;EAAAA,iC;EAAAA,8G;EAAAA,iB;;;CAAA,iG;EAAAC,iC;;;CAGE,yD,sBAAqBC,I;EAClCC,qD;;;;CAJW,2D;EAAAA,oI;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA;",
-"sources":["LabelsUsingValueRenderCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase$MyRenderer.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase$MyRenderer.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase$MyRenderer.<init>","item","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase$MyRenderer.invoke","org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase$MyRenderer.<clinit>"]
-}
-

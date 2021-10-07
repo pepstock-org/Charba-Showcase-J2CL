@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MeterFormatCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;MA0BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qF;EAAAA,8J;;;CAAA,oJ;EAAAC,iC;EAAAA,wF;;;CAAA,6D;EAAAC,qD;EAAAA,yH;;;;CAAA,2D;EAAAA,sI;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["MeterFormatCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.MeterFormatCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.MeterFormatCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.MeterFormatCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.MeterFormatCallback$$LambdaAdaptor.<clinit>"]
-}
-

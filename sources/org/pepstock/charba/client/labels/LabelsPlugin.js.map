@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LabelsPlugin.impl.java.js",
-"lineCount":85,
-"mappings":"A;;;;;;;;;;;;;MA6BmB,Y;;CAAA,W;EAAAA,Q;;;QAmBV,S;EAAAC,mC;EAAAA,oE;EAAAA,iB;;;CAAA,uD;EAAAC,iC;;;QAOW,U;EAAAC,uB;EAClBA,sC;;;QAQkB,iB,gBAAeC,iB;EAAfD,uB;EAElBA,8C;EAEAA,qK;EAEAA,iL;;;QAvCD,wD;EAAAE,yG;;;QAKA,6D;EAAAA,8G;;;QAKA,sE;EAAAA,uH;;;QAZkB,O;EAAAC,+B;EAAAA,4B;EAAAA,qB;EAElBA,sK;EAKAA,gH;EAKAA,iI;EAEAA,4G;;;;;;;;;;;;;;;;;AAdkB;wE;AAAA;6E;AAAA;sF;AAAA;aAcwB,2DAdxB;",
-"sources":["LabelsPlugin.java"],
-"names":["org.pepstock.charba.client.labels.LabelsPlugin.<synthetic: ctor_js>","org.pepstock.charba.client.labels.LabelsPlugin.<synthetic: ctor_create>","org.pepstock.charba.client.labels.LabelsPlugin.<init>","org.pepstock.charba.client.labels.LabelsPlugin.enable","enableToAllCharts","org.pepstock.charba.client.labels.LabelsPlugin.<synthetic: getter>","org.pepstock.charba.client.labels.LabelsPlugin.<clinit>"]
-}
-

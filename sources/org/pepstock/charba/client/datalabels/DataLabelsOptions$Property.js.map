@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataLabelsOptions$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAwHc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,0EALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,mJ;EAAAA,iB;;;CAAA,gH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,wF;;;CASa,S;EACbC,uF;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,mJAAAA;G;EAAAA,2I;;;QAAA,U;EAAAC,mB;EAAAA,4J;;;QAEZ,8E;EAAAC,uH;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,2R;EAFYA,sG;;;;;;;;;;;;;AAAA;0F;AAAA;+F;AAEZ;;",
-"sources":["DataLabelsOptions.java"],
-"names":["org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.<init>","org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.value","org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.valueOf","org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.values","org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.<synthetic: getter>","org.pepstock.charba.client.datalabels.DataLabelsOptions$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BarOptions.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;MA0Ba,U;;CAAA,W;EAAAA,Q;;;QAQL,uG,gBAAmBC,K,gCAA8BC,a;EAAjDC,qB;EAAAA,iC;EAAAA,2L;EAAAA,iB;;;CAAA,0J,gBAAmBF,K,gCAA8BC,a;EACvDE,yL;;;CASW,0D,kBAAuBC,S;EAClCC,8J;;;CAQgB,gB;EAChBC,kH;;;CAQW,sB,gBAAoBC,Q;EAC/BC,yH;;;CAQc,c;EACdC,gH;;;QA9CW,O;EAAAC,6B;EAAAA,0B;EAAAA;",
-"sources":["BarOptions.java"],
-"names":["org.pepstock.charba.client.configuration.BarOptions.<synthetic: ctor_js>","chart","defaultValues","org.pepstock.charba.client.configuration.BarOptions.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.BarOptions.<init>","indexAxis","org.pepstock.charba.client.configuration.BarOptions.setIndexAxis","org.pepstock.charba.client.configuration.BarOptions.getIndexAxis","skipNull","org.pepstock.charba.client.configuration.BarOptions.setSkipNull","org.pepstock.charba.client.configuration.BarOptions.isSkipNull","org.pepstock.charba.client.configuration.BarOptions.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JsIIterableResult$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MAyBiB,Q;;QAEU,U;EAAAA,mB;EACvBA,4G;;;QAHa,O;EAAAC,2B;EAAAA;",
-"sources":["JsIIterableResult.java"],
-"names":["elemental2.core.JsIIterableResult$$Overlay.create","elemental2.core.JsIIterableResult$$Overlay.<clinit>"]
-}
-

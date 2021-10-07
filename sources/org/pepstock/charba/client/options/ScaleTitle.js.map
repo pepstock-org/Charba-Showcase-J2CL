@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScaleTitle.impl.java.js",
-"lineCount":111,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;MAkCmB,U;;CAAA,W;EAAAA,Q;EAAAA;OAGI,yDAHJA,C;EAAAA;OAMU,+DANVA,C;;;QAkDlB,2M,sBAAyBC,K,aAAWC,Q,6BAA8BC,a,WAA4BC,Y;EAA9FC,qB;EAAAA,iC;EAAAA,iT;EAAAA,iB;;;CAAA,wP,sBAAyBJ,K,aAAWC,Q,6BAA8BC,a,WAA4BC,Y;EAC7FE,wQ;EAEAA,gX;EAEAA,8X;;;CASoB,oB;EACpBC,4E;;;CASc,c;EACdC,sE;;;CAQW,qB,gBAAmBC,O;EAC9BC,oK;;;CASc,a;EACdC,qQ;;;CAUW,mC,uBAAkBC,I;EAC7BC,sL;;;CAQmB,W;EAGnBC,IAAYC,KAAZD,6N;EACAA,qF;;;CAQW,4D,wBAAyBE,K;EACpCC,+L;;;CASsB,Y;EACtBC,2a;;;;CAxIiB,oB;EAAAC,8F;;;;CAAA,W;EAAAC,qF;;;;CAAA,Y;EAAAC,sF;;;;CAAA,qD;EAAAC,gI;;;;CAAA,4B;EAAAA,uG;;;QAAA,O;EAAAC,6B;EAAAA,0B;EAAAA,wB;EAAAA;",
-"sources":["ScaleTitle.java"],
-"names":["org.pepstock.charba.client.options.ScaleTitle.<synthetic: ctor_js>","scale","childKey","defaultValues","nativeObject","org.pepstock.charba.client.options.ScaleTitle.<synthetic: ctor_create>","org.pepstock.charba.client.options.ScaleTitle.<init>","org.pepstock.charba.client.options.ScaleTitle.getFontContainer","org.pepstock.charba.client.options.ScaleTitle.getPadding","display","org.pepstock.charba.client.options.ScaleTitle.setDisplay","org.pepstock.charba.client.options.ScaleTitle.isDisplay","text","org.pepstock.charba.client.options.ScaleTitle.setText","org.pepstock.charba.client.options.ScaleTitle.getText","array","align","org.pepstock.charba.client.options.ScaleTitle.setAlign","org.pepstock.charba.client.options.ScaleTitle.getAlign","org.pepstock.charba.client.options.ScaleTitle.getColorAsString","org.pepstock.charba.client.options.ScaleTitle.getFont","org.pepstock.charba.client.options.ScaleTitle.getColor","org.pepstock.charba.client.options.ScaleTitle.setColor","org.pepstock.charba.client.options.ScaleTitle.<clinit>"]
-}
-

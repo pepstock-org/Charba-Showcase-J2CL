@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JsPositionerHelper.impl.java.js",
-"lineCount":71,
-"mappings":"A;;;;;;;;;;;;MA8BY,kB;;CAAA,W;EAAAA,Q;;;QAQH,S;EAAAC,yC;EAAAA,8E;EAAAA,iB;;;CAAA,iE;EAAAC,iC;EAKPA,8C;EAGAA,mB;;;QAQyB,O;EAAAC,6B;EACzBA,gG;;;CASI,gK,0BAA2BC,Q,0BAAgBC,M;EAC/CC,gE;;;CAQI,0G,0BAA6BF,Q;EACjCG,0D;;;CAYK,4P,0BAAyBH,Q,2BAA4BI,O,eAAqBC,Y,eAAoBC,U;EAEnGC,IAAaC,aAAbD,sN;EAEAA;GACCA,qFADDA;G;EAKAA,Y;;;QAjEU,O;EAAAE,qC;EAAAA,kC;EAAAA,qB;EAGXA,0H;;;;;;;;;;;;;;AAHW;mBAG6B,qEAH7B;",
-"sources":["JsPositionerHelper.java"],
-"names":["org.pepstock.charba.client.positioner.JsPositionerHelper.<synthetic: ctor_js>","org.pepstock.charba.client.positioner.JsPositionerHelper.<synthetic: ctor_create>","org.pepstock.charba.client.positioner.JsPositionerHelper.<init>","org.pepstock.charba.client.positioner.JsPositionerHelper.get","position","object","org.pepstock.charba.client.positioner.JsPositionerHelper.register","org.pepstock.charba.client.positioner.JsPositionerHelper.unregister","context","datasetItems","eventPoint","org.pepstock.charba.client.positioner.JsPositionerHelper.invoke","pointAsObject","org.pepstock.charba.client.positioner.JsPositionerHelper.<clinit>"]
-}
-

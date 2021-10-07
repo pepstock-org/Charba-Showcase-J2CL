@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasOrder$$LambdaAdaptor.impl.java.js",
-"lineCount":46,
-"mappings":"A;;;;;;;;;;;MAsBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;qE;EAAAA,8H;;;CAAA,oH;EAAAC,iC;EAAAA,wE;;;CAAA,mB;EAAAC,8C;EAAAA,qG;;;;CAAA,Y;EAAAC,qF;;;;CAAA,e;EAAAC,yF;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasOrder.java"],
-"names":["org.pepstock.charba.client.data.HasOrder$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.data.HasOrder$$LambdaAdaptor.<init>","org.pepstock.charba.client.data.HasOrder$$LambdaAdaptor.getOrderHandler","org.pepstock.charba.client.data.HasOrder$$LambdaAdaptor.getOrder","org.pepstock.charba.client.data.HasOrder$$LambdaAdaptor.setOrder","org.pepstock.charba.client.data.HasOrder$$LambdaAdaptor.<clinit>"]
-}
-

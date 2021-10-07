@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PieChart.impl.java.js",
-"lineCount":68,
-"mappings":"A;;;;;;;;;;;;;;;MA4Ba,Q;;CAAA,W;EAAAA,Q;EAAAA;OAEa,+CAFbA,C;;;;QAOL,S;EAAAC,mB;EAAAA,+B;EAAAA,yD;EAAAA,iB;;;;CAAA,4C;EACNC,wI;;;;QASS,wC,aAAcC,Y;EAAdF,mB;EAAAA,+B;EAAAA,oG;EAAAA,iB;;;;CAAA,2E,aAAcE,Y;EACvBD,oG;EAEAA,mN;;;CASiB,c;EACjBE,4D;;;CASiB,qB,gBAAmBC,M;EACpCC,oI;;;;CAxCW,c;EAAAA,oJ;;;QAAA,O;EAAAC,2B;EAAAA,wB;EAAAA,wB;EAAAA;",
-"sources":["PieChart.java"],
-"names":["org.pepstock.charba.client.PieChart.<synthetic: ctor_js>","org.pepstock.charba.client.PieChart.<synthetic: ctor_create>","org.pepstock.charba.client.PieChart.<init>","extendedType","org.pepstock.charba.client.PieChart.getOptions","hidden","org.pepstock.charba.client.PieChart.newDataset","org.pepstock.charba.client.PieChart.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FilePropertyBag$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MAyBiB,Q;;QAEQ,U;EAAAA,mB;EACrBA,4G;;;QAHa,O;EAAAC,2B;EAAAA;",
-"sources":["FilePropertyBag.java"],
-"names":["elemental2.dom.FilePropertyBag$$Overlay.create","elemental2.dom.FilePropertyBag$$Overlay.<clinit>"]
-}
-

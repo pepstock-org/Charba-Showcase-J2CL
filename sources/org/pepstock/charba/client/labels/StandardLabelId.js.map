@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StandardLabelId.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;MAuBY,e;;CAAA,W;EAAAA,Q;EAAAA;OAGU,2DAHVA,C;;;QAUX,yB,gBAAuBC,K;EAAvBC,0B;EAAAA,sC;EAAAA,4F;EAAAA,iB;;;CAAA,0E,gBAAuBD,K;EAAvBE,iC;EAECA,yE;;;CASa,S;EACbC,wE;;;QAtBU,O;EAAAC,kC;EAAAA,+B;EAAAA;",
-"sources":["StandardLabelId.java"],
-"names":["org.pepstock.charba.client.labels.StandardLabelId.<synthetic: ctor_js>","value","org.pepstock.charba.client.labels.StandardLabelId.<synthetic: ctor_create>","org.pepstock.charba.client.labels.StandardLabelId.<init>","org.pepstock.charba.client.labels.StandardLabelId.value","org.pepstock.charba.client.labels.StandardLabelId.<clinit>"]
-}
-

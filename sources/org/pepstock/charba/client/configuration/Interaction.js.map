@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Interaction.impl.java.js",
-"lineCount":54,
-"mappings":"A;;;;;;;;;MA0Ba,W;;CAAA,W;EAAAA,Q;;;QAOZ,sE,6BAAiCC,O;EAAjCC,sB;EAAAA,kC;EAAAA,8I;EAAAA,iB;;;CAAA,0H,6BAAiCD,O;EAChCE,2J;;;CAQW,2D,wBAAwBC,I;EACnCC,mH;;;CAQsB,W;EACtBC,sE;;;CAQW,uB,gBAAqBC,S;EAChCC,oF;;;CAQc,e;EACdC,0E;;;CASW,2D,wBAAwBC,I;EACnCC,mH;;;CAQsB,W;EACtBC,sE;;;QA/DW,O;EAAAC,8B;EAAAA,2B;EAAAA;",
-"sources":["Interaction.java"],
-"names":["org.pepstock.charba.client.configuration.Interaction.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Interaction.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Interaction.<init>","mode","org.pepstock.charba.client.configuration.Interaction.setMode","org.pepstock.charba.client.configuration.Interaction.getMode","intersect","org.pepstock.charba.client.configuration.Interaction.setIntersect","org.pepstock.charba.client.configuration.Interaction.isIntersect","axis","org.pepstock.charba.client.configuration.Interaction.setAxis","org.pepstock.charba.client.configuration.Interaction.getAxis","org.pepstock.charba.client.configuration.Interaction.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasLineOptions$$LambdaAdaptor.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;;;;;;;MAwBU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,uF;;;CAAA,c;EAAAC,sD;EAAAA,oH;;;;CAAA,c;EAAAC,4G;;;;CAAA,c;EAAAC,4G;;;;CAAA,sB;EAAAC,qH;;;;CAAA,sB;EAAAC,qH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasLineOptions.java"],
-"names":["org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.<init>","org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.getOptions","org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.isShowLine","org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.isSpanGaps","org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.setShowLine","org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.setSpanGaps","org.pepstock.charba.client.configuration.HasLineOptions$$LambdaAdaptor.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ServiceWorkerContainer$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MAyBiB,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["ServiceWorkerContainer.java"],
-"names":["elemental2.dom.ServiceWorkerContainer$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NativeJsPluginHelper$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MA+BY,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["NativeJsPluginHelper.java"],
-"names":["org.pepstock.charba.client.plugins.NativeJsPluginHelper$$Overlay.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsEnumeratedScheme.impl.java.js",
-"lineCount":99,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;MAmCU,kB;;CAOG,a;;CAQG,S;;CAWA,Y;;CAeO,a;;CAeL,kB;;CAUA,gE,qBAA4BA,I;;CAW5B,uH,qBAA4BA,I,6BAA0BC,W;;CAWtD,iH,qBAA4BD,I,uBAAoBE,K;;CAYhD,wK,qBAA4BF,I,6BAA0BC,W,uBAA2BC,K;;QApGzF,M;EAAAC,6B;EAAAA,8B;;;QAeM,mF;EAAAC,6B;EAEdA,kL;;;QASc,sF;EAAAC,6B;EAEdA;GACCA,+CADDA;G;EAIAA,uG;;;QASqB,uF;EAAAC,6B;EAErBA;GACCA,gDADDA;G;EAKAA,gE;;;QAQgB,4F;EAAAC,6B;EAChBA,wJ;;;QASgB,4I,0DAA4BP,I;EAA5BO,6B;EAChBA,4O;;;QAUgB,mM,0DAA4BP,I,6BAA0BC,W;EAAtDM,6B;EAChBA,oR;;;QAUgB,6L,0DAA4BP,I,uBAAoBE,K;EAAhDK,6B;EAChBA,oS;;;QAWgB,oP,0DAA4BP,I,6BAA0BC,W,uBAA2BC,K;EAAjFK,6B;EAEhBA,IAAgBC,OAAhBD,8M;EAEAA,8D;EAEAA,2B;;;QA1GQ,O;EAAAE,qC;EAAAA,kC;EAAAA;",
-"sources":["IsEnumeratedScheme.java"],
-"names":["type","orientation","scope","org.pepstock.charba.client.impl.plugins.enums.IsEnumeratedScheme.<synthetic: adapt_lambda>","org.pepstock.charba.client.impl.plugins.enums.IsEnumeratedScheme.value__$default","org.pepstock.charba.client.impl.plugins.enums.IsEnumeratedScheme.category__$default","org.pepstock.charba.client.impl.plugins.enums.IsEnumeratedScheme.getColors__$default","org.pepstock.charba.client.impl.plugins.enums.IsEnumeratedScheme.createGradient__$default","builder","org.pepstock.charba.client.impl.plugins.enums.IsEnumeratedScheme.<clinit>"]
-}
-

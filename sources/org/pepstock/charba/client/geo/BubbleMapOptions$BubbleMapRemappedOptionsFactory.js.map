@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BubbleMapOptions$BubbleMapRemappedOptionsFactory.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;;;;;;;;;;MA6IsB,+B;;CAAA,W;EAAAA,Q;EAAAA;OAGW,2FAHXA,C;;;QAUpB,wD,yBAAiDC,O;EAAjDC,0C;EAAAA,sD;EAAAA,2J;EAAAA,iB;;;CAAA,uI,yBAAiDD,O;EAChDE,mN;EAEAA,2G;;;CAS6B,yD,UAAoBC,Y;EACjDC,8U;;;QAvBmB,O;EAAAC,kD;EAAAA,+C;EAAAA;",
-"sources":["BubbleMapOptions.java"],
-"names":["org.pepstock.charba.client.geo.BubbleMapOptions$BubbleMapRemappedOptionsFactory.<synthetic: ctor_js>","options","org.pepstock.charba.client.geo.BubbleMapOptions$BubbleMapRemappedOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.BubbleMapOptions$BubbleMapRemappedOptionsFactory.<init>","nativeObject","org.pepstock.charba.client.geo.BubbleMapOptions$BubbleMapRemappedOptionsFactory.create","org.pepstock.charba.client.geo.BubbleMapOptions$BubbleMapRemappedOptionsFactory.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendHoverAndLeaveEventsCase$2.impl.java.js",
-"lineCount":43,
-"mappings":"A;;;;;;;;;;;;;;MA4EiD,E;;CAAA,W;EAAAA,Q;EAAAA;mG;;;QAAA,qF;EAAAC,a;EAAAA,yB;EAAAA,2L;EAAAA,iB;;;CAAA,mK;EAAAC,+G;EAAAA,iC;;;CAGlC,6D,yBAAyBC,K;EACpCC,2X;EACAA,oG;;;QAL6C,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["LegendHoverAndLeaveEventsCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase$2.<init>","event","org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase$2.onLeave","org.pepstock.charba.showcase.j2cl.cases.charts.LegendHoverAndLeaveEventsCase$2.<clinit>"]
-}
-

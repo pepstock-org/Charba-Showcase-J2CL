@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Graticule.impl.java.js",
-"lineCount":83,
-"mappings":"A;;;;;;;;;;;;;;MAkCmB,S;;CAAA,W;EAAAA,Q;;;;QAqCX,S;EAAAC,oB;EAAAA,gC;EAAAA,8D;EAAAA,iB;;;;CAAA,iD;EACNC,4G;;;;QAQD,wD,UAAuBC,Y;EAAvBF,oB;EAAAA,gC;EAAAA,yH;EAAAA,iB;;;;CAAA,gG,UAAuBE,Y;EACtBD,oI;;;CASW,8B,eAAoBE,K,gBAAcC,G;EAC7CC,sN;;;CAQmB,gB;EACnBC,iM;;;CASW,8B,eAAoBH,K,gBAAcC,G;EAC7CG,sN;;;CAQmB,gB;EACnBC,iM;;;CAQY,mD;EACZC,kC;;;CAUY,0H,iBAAmBC,Q,gBAAiBP,K,gBAAcC,G;EAE9DO;GAECA,6JAFDA;;GAMCA,gEANDA;G;;;CAgBoB,0G,iBAAmBD,Q;EACvCE,IAAYC,KAAZD,iI;EACAA,qF;;;QA5HiB,O;EAAAE,4B;EAAAA,yB;EAAAA;",
-"sources":["Graticule.java"],
-"names":["org.pepstock.charba.client.geo.Graticule.<synthetic: ctor_js>","org.pepstock.charba.client.geo.Graticule.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Graticule.<init>","nativeObject","start","end","org.pepstock.charba.client.geo.Graticule.setStepMajor","org.pepstock.charba.client.geo.Graticule.getStepMajor","org.pepstock.charba.client.geo.Graticule.setStepMinor","org.pepstock.charba.client.geo.Graticule.getStepMinor","org.pepstock.charba.client.geo.Graticule.nativeObject","property","org.pepstock.charba.client.geo.Graticule.setValues","org.pepstock.charba.client.geo.Graticule.getValues","array","org.pepstock.charba.client.geo.Graticule.<clinit>"]
-}
-

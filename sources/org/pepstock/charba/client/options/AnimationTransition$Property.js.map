@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationTransition$Property.impl.java.js",
-"lineCount":89,
-"mappings":"A;;;;;;;;;;;;;;MAqCM,Q;;CAAA,W;EAAAA,Q;EAAAA;OAMiB,yEANjBA,C;;;QAaI,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,kJ;EAAAA,iB;;;CAAA,+G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,uF;;;CASa,S;EACbC,sF;;;QAxBG,2B;EAAAC,mB;EAAAA;GAAAA,kJAAAA;G;EAAAA,0I;;;QAAA,U;EAAAC,mB;EAAAA,4P;;;QAEJ,gF;EAAAC,yH;;;QACA,iF;EAAAA,0H;;;QAHI,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEJA,qS;EACAA,yS;EAHIA,qG;;;;;;;;;;;;;AAAA;4F;AAAA;6F;AAAA;8F;AAEJ;iG;AACA;;",
-"sources":["AnimationTransition.java"],
-"names":["org.pepstock.charba.client.options.AnimationTransition$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.AnimationTransition$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.AnimationTransition$Property.<init>","org.pepstock.charba.client.options.AnimationTransition$Property.value","org.pepstock.charba.client.options.AnimationTransition$Property.valueOf","org.pepstock.charba.client.options.AnimationTransition$Property.values","org.pepstock.charba.client.options.AnimationTransition$Property.<synthetic: getter>","org.pepstock.charba.client.options.AnimationTransition$Property.<clinit>"]
-}
-

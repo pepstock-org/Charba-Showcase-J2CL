@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Triangle.impl.java.js",
-"lineCount":42,
-"mappings":"A;;;;;MAuCM,Q;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,mB;EAAAA,+B;EAAAA,sE;EAAAA,iB;;;CAAA,yD;EAAAC,oE;;;CAQU,0G,iCAAuBC,O,iBAAgBC,e,iBAAwBC,U,gBAAgBC,I;EAE7FC,IAAaC,QAAbD,Y;EAEAA,yH;EAEAA,iK;EAEAA,+K;EAEAA,e;;;CAWU,sI,iCAA2BJ,O,gBAAaG,I,gBAAaG,O,gBAAgBC,O;EAE/EC,IAAaH,QAAbG,Y;EAEAA,IAAaC,WAAbD,Y;EAGAA,+C;EACAA,uD;EACAA,4C;;;QAtCI,O;EAAAE,2B;EAAAA,wB;EAAAA;",
-"sources":["Triangle.java"],
-"names":["org.pepstock.charba.client.colors.tiles.Triangle.<synthetic: ctor_js>","org.pepstock.charba.client.colors.tiles.Triangle.<synthetic: ctor_create>","org.pepstock.charba.client.colors.tiles.Triangle.<init>","context","backgroundColor","shapeColor","size","org.pepstock.charba.client.colors.tiles.Triangle.drawTile","halfSize","offsetX","offsetY","org.pepstock.charba.client.colors.tiles.Triangle.drawTriangle","quarterSize","org.pepstock.charba.client.colors.tiles.Triangle.<clinit>"]
-}
-

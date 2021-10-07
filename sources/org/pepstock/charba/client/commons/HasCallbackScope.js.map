@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasCallbackScope.impl.java.js",
-"lineCount":39,
-"mappings":"A;;;;;;;;;;;;;;;;;MAuBiB,gB;;QAQF,+D,qBAA0BA,I;EAA1BC,2B;EAEbA,IAAaC,IAAbD,2K;EAEAA;GAECA,IAAiBE,gBAAjBF,sEAFDA;GAICA,uCAJDA;G;EAQAA,2S;;;CAQM,Y;;QA5BS,M;EAAAG,2B;EAAAA,8B;;;QAAA,O;EAAAC,mC;EAAAA;",
-"sources":["HasCallbackScope.java"],
-"names":["node","org.pepstock.charba.client.commons.HasCallbackScope.extractScope","root","hasCallbackScope","org.pepstock.charba.client.commons.HasCallbackScope.<synthetic: adapt_lambda>","org.pepstock.charba.client.commons.HasCallbackScope.<clinit>"]
-}
-

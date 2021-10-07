@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"JsControllerHelper.impl.java.js",
-"lineCount":81,
-"mappings":"A;;;;;;;;;;;MA6BY,kB;;CAAA,W;EAAAA,Q;;;QAOH,S;EAAAC,yC;EAAAA,+E;EAAAA,iB;;;CAAA,kE;EAAAC,iC;EAKPA,8C;EAGAA,mB;;;QAQyB,O;EAAAC,6B;EACzBA,iG;;;CASI,6J,uBAAwBC,c,WAA6BC,Q;EAEzDC,IAAOC,UAAPD,uR;EAEAA,IAAeE,UAAfF,4B;EAEAA,kB;EAEAA,uH;;;CASI,wK,uBAA0BF,c,iCAAkCK,O;EAChEC,4F;;;CAWI,6K,uBAAqBN,c,iCAAkCK,O,gBAAaE,K,gBAAWC,K;EACnFC,qG;;;CASI,kK,uBAAoBT,c,iCAAkCK,O;EAC1DK,sF;;;CAUI,sL,uBAAsBV,c,iCAAkCK,O,iBAAgBM,I;EAC5EC,8F;;;CASI,wK,uBAA0BZ,c,iCAAkCK,O;EAChEQ,4F;;;QA9FU,O;EAAAC,qC;EAAAA,kC;EAAAA,qB;EAEXA,2H;;;;;;;;;;;;;;AAFW;mBAE6B,sEAF7B;",
-"sources":["JsControllerHelper.java"],
-"names":["org.pepstock.charba.client.controllers.JsControllerHelper.<synthetic: ctor_js>","org.pepstock.charba.client.controllers.JsControllerHelper.<synthetic: ctor_create>","org.pepstock.charba.client.controllers.JsControllerHelper.<init>","org.pepstock.charba.client.controllers.JsControllerHelper.get","controllerType","instance","org.pepstock.charba.client.controllers.JsControllerHelper.register","javaScript","function","context","org.pepstock.charba.client.controllers.JsControllerHelper.initialize","start","count","org.pepstock.charba.client.controllers.JsControllerHelper.parse","org.pepstock.charba.client.controllers.JsControllerHelper.draw","mode","org.pepstock.charba.client.controllers.JsControllerHelper.update","org.pepstock.charba.client.controllers.JsControllerHelper.linkScales","org.pepstock.charba.client.controllers.JsControllerHelper.<clinit>"]
-}
-

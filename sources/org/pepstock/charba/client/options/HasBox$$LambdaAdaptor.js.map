@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HasBox$$LambdaAdaptor.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;;;;;;;MA0BU,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;sE;EAAAA,gI;;;CAAA,sH;EAAAC,iC;EAAAA,yE;;;CAAA,iB;EAAAC,4C;EAAAA,sG;;;;CAAA,gB;EAAAC,wF;;;;CAAA,e;EAAAC,uF;;;;CAAA,mB;EAAAC,4F;;;;CAAA,kB;EAAAC,2F;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA,qB;EAAAA;",
-"sources":["HasBox.java"],
-"names":["org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.<init>","org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.getBoxHandler","org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.getBoxHeight","org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.getBoxWidth","org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.setBoxHeight","org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.setBoxWidth","org.pepstock.charba.client.options.HasBox$$LambdaAdaptor.<clinit>"]
-}
-

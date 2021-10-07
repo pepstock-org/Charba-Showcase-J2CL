@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TooltipItem.impl.java.js",
-"lineCount":92,
-"mappings":"A;;;;;;;;;;;;;;MAgCa,W;;CAAA,W;EAAAA,Q;EAAAA;OA6Ce,0DA7CfA,C;;;QAoDZ,wD,UAAyBC,Y;EAAzBC,sB;EAAAA,kC;EAAAA,6H;EAAAA,iB;;;CAAA,oG,UAAyBD,Y;EACxBE,oI;EAEAA,+Q;;;CAQoB,Y;EAEpBC;GACCA,oNADDA;G;EAKAA,Y;;;CAQmB,Y;EACnBC,0N;;;CAQyB,gB;EACzBC,uE;;;CAQmB,qB;EACnBC,oO;;;CAQgB,mB;EAChBC,sN;;;CAQgB,gB;EAChBC,mN;;;CAQ2B,c;EAC3BC,mN;;;QA1HD,2D;EAAAC,0G;;;QAFY,O;EAAAC,8B;EAAAA,2B;EAAAA,gC;EAEZA,2G;;;;;;;;;;;;;;;;;AAFY;;",
-"sources":["TooltipItem.java"],
-"names":["org.pepstock.charba.client.items.TooltipItem.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.items.TooltipItem.<synthetic: ctor_create>","org.pepstock.charba.client.items.TooltipItem.<init>","org.pepstock.charba.client.items.TooltipItem.getChart","org.pepstock.charba.client.items.TooltipItem.getLabel","org.pepstock.charba.client.items.TooltipItem.getDataPoint","org.pepstock.charba.client.items.TooltipItem.getFormattedValue","org.pepstock.charba.client.items.TooltipItem.getDatasetIndex","org.pepstock.charba.client.items.TooltipItem.getDataIndex","org.pepstock.charba.client.items.TooltipItem.getElement","org.pepstock.charba.client.items.TooltipItem.<synthetic: getter>","org.pepstock.charba.client.items.TooltipItem.<clinit>"]
-}
-

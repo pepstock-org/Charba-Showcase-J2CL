@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HorizontalBarChart.impl.java.js",
-"lineCount":61,
-"mappings":"A;;;;;;;;;;MA4Ba,kB;;CAAA,W;EAAAA,Q;EAAAA;OAEuB,yDAFvBA,C;;;;QAOL,S;EAAAC,6B;EAAAA,yC;EAAAA,mE;EAAAA,iB;;;;CAAA,sD;EACNC,kJ;;;;QASS,wC,aAAwBC,Y;EAAxBF,6B;EAAAA,yC;EAAAA,8G;EAAAA,iB;;;;CAAA,qF,aAAwBE,Y;EACjCD,8G;EAEAA,uO;;;CAS2B,c;EAC3BE,sE;;;CAS2B,c;EAC3BC,yC;;;CAS2B,qB,gBAAmBC,M;EAC9CD,8I;;;QAlDW,O;EAAAE,qC;EAAAA,kC;EAAAA;",
-"sources":["HorizontalBarChart.java"],
-"names":["org.pepstock.charba.client.HorizontalBarChart.<synthetic: ctor_js>","org.pepstock.charba.client.HorizontalBarChart.<synthetic: ctor_create>","org.pepstock.charba.client.HorizontalBarChart.<init>","extendedType","org.pepstock.charba.client.HorizontalBarChart.getOptions","org.pepstock.charba.client.HorizontalBarChart.newDataset","hidden","org.pepstock.charba.client.HorizontalBarChart.<clinit>"]
-}
-

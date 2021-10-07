@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultTypedDataset.impl.java.js",
-"lineCount":120,
-"mappings":"A;;;;;;;;;;;;;;;;MA2BmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAEe,6EAFfA,C;EAAAA;OAIgB,8EAJhBA,C;EAAAA;OAMiB,+EANjBA,C;;;QA2ClB,S;EAAAC,8B;EAAAA,0C;EAAAA,qF;EAAAA,iB;;;CAAA,wE;EAAAC,iC;EAAAA,kF;;;CAU0B,gB;EACzBC,0F;;;CAS2B,kB;EAC3BC,4F;;;CAS0B,iB;EAC1BC,2F;;;CASa,oB;EACbC,sH;;;CASa,yB;EACbC,2H;;;CASU,mB;EACVC,qH;;;CASU,sB;EACVC,yH;;;CASU,mB;EACVC,sH;;;CASc,a;EACdC,+G;;;CASc,c;EACdC,iH;;;CAhJiB,0E;EAElBV,kH;EAEAA,oH;EAEAA,sH;;;QANkB,O;EAAAW,sC;EAAAA,mC;EAAAA,qB;;;;;;;;;;;;;AAQlB;oBAOwB,qFAPxB,e;AASA;oBAO2B,2FAP3B,U;AASA;oBAA4B,0FAA5B,O;AAEA;oBAA4B,+FAA5B,O;AAEA;oBAAyB,yFAAzB,K;AAEA;oBAAyB,6FAAzB,K;AAEA;oBAAyB,0FAAzB,K;AAEA;oBAA6B,mFAA7B,Q;AAEA;oBAA6B,qFAA7B;",
-"sources":["DefaultTypedDataset.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.<init>","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getAnimation","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getTransitions","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getAnimations","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getBarPercentage","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getCategoryPercentage","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getBarThickness","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getMaxBarThickness","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.getMinBarLength","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.isGrouped","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.isShowLine","org.pepstock.charba.client.defaults.globals.DefaultTypedDataset.<clinit>"]
-}
-

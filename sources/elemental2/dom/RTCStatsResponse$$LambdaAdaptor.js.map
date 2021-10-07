@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RTCStatsResponse$$LambdaAdaptor.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;;MAuBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4D;EAAAA,4G;;;CAAA,kG;EAAAC,iC;EAAAA,+D;;;CAAA,M;EAAAC,uD;EAAAA,4F;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["RTCStatsResponse.java"],
-"names":["elemental2.dom.RTCStatsResponse$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","elemental2.dom.RTCStatsResponse$$LambdaAdaptor.<init>","elemental2.dom.RTCStatsResponse$$LambdaAdaptor.result","elemental2.dom.RTCStatsResponse$$LambdaAdaptor.<clinit>"]
-}
-

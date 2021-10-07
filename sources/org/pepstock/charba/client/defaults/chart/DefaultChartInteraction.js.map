@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartInteraction.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;MA0Ba,uB;;CAAA,W;EAAAA,Q;EAAAA;OAEuB,iFAFvBA,C;;;QASL,iE,6BAA6CC,W;EAA7CC,kC;EAAAA,8C;EAAAA,0J;EAAAA,iB;;;CAAA,kI,6BAA6CD,W;EAA7CE,iC;EACNA,qG;;;CAS4B,W;EAC5BC,4G;;;CASoB,e;EACpBC,gH;;;CAS4B,W;EAC5BC,4G;;;QAxCW,O;EAAAC,0C;EAAAA,uC;EAAAA;",
-"sources":["DefaultChartInteraction.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartInteraction.<synthetic: ctor_js>","interaction","org.pepstock.charba.client.defaults.chart.DefaultChartInteraction.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartInteraction.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartInteraction.getMode","org.pepstock.charba.client.defaults.chart.DefaultChartInteraction.isIntersect","org.pepstock.charba.client.defaults.chart.DefaultChartInteraction.getAxis","org.pepstock.charba.client.defaults.chart.DefaultChartInteraction.<clinit>"]
-}
-

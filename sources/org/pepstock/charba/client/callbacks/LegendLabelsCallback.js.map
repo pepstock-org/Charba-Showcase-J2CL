@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LegendLabelsCallback.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;MA2BiB,oB;;CASM,0E,gBAA6BA,K,+BAA6BC,a;;QAThE,M;EAAAC,+B;EAAAA,8B;;;QAAA,O;EAAAC,uC;EAAAA;",
-"sources":["LegendLabelsCallback.java"],
-"names":["chart","defaultLabels","org.pepstock.charba.client.callbacks.LegendLabelsCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.LegendLabelsCallback.<clinit>"]
-}
-

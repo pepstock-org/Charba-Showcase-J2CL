@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChoroplethDataPoint.impl.java.js",
-"lineCount":105,
-"mappings":"A;;;;;;;;;;MA8BmB,mB;;CAAA,W;EAAAA,Q;;;;QAyCX,S;EAAAC,8B;EAAAA,0C;EAAAA,wE;EAAAA,iB;;;;CAAA,2D;EACNC,uI;;;;QAQM,+C,gBAA4BC,O;EAA5BF,8B;EAAAA,0C;EAAAA,qH;EAAAA,iB;;;;CAAA,iG,gBAA4BE,O;EAClCD,mE;EAEAA,mE;;;;QASM,uD,gBAA4BC,O,gBAAgBC,K;EAA5CH,8B;EAAAA,0C;EAAAA,oI;EAAAA,iB;;;;CAAA,yG,gBAA4BE,O,gBAAgBC,K;EAClDF,gH;EAEAA,+B;;;;QAQD,wD,UAAiCG,Y;EAAjCJ,8B;EAAAA,0C;EAAAA,mI;EAAAA,iB;;;;CAAA,0G,UAAiCI,Y;EAChCH,uH;;;CAQW,oD,gBAAmBC,O;EAC9BG,4M;;;CAQc,c;EAEdC;GACCA,kNADDA;G;EAKAA,Y;;;QAhGD,iE;EAAAC,gI;;;QAFkB,O;EAAAC,sC;EAAAA,mC;EAAAA,uB;EAElBA,iI;;;;;;;;;;;;;;AAFkB;;",
-"sources":["ChoroplethDataPoint.java"],
-"names":["org.pepstock.charba.client.geo.ChoroplethDataPoint.<synthetic: ctor_js>","org.pepstock.charba.client.geo.ChoroplethDataPoint.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ChoroplethDataPoint.<init>","feature","value","nativeObject","org.pepstock.charba.client.geo.ChoroplethDataPoint.setFeature","org.pepstock.charba.client.geo.ChoroplethDataPoint.getFeature","org.pepstock.charba.client.geo.ChoroplethDataPoint.<synthetic: getter>","org.pepstock.charba.client.geo.ChoroplethDataPoint.<clinit>"]
-}
-

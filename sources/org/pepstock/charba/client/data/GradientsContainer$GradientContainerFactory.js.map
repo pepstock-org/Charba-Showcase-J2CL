@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GradientsContainer$GradientContainerFactory.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;;MAsEsB,wB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,mC;EAAAA,+C;EAAAA,iG;EAAAA,iB;;;CAAA,oF;EAAAC,iC;;;CAQJ,yD,UAAoBC,Y;EACnCC,8F;;;;CATmB,U;EAAAA,4K;;;QAAA,O;EAAAC,2C;EAAAA,wC;EAAAA,qB;EAAAA;",
-"sources":["GradientsContainer.java"],
-"names":["org.pepstock.charba.client.data.GradientsContainer$GradientContainerFactory.<synthetic: ctor_js>","org.pepstock.charba.client.data.GradientsContainer$GradientContainerFactory.<synthetic: ctor_create>","org.pepstock.charba.client.data.GradientsContainer$GradientContainerFactory.<init>","nativeObject","org.pepstock.charba.client.data.GradientsContainer$GradientContainerFactory.create","org.pepstock.charba.client.data.GradientsContainer$GradientContainerFactory.<clinit>"]
-}
-

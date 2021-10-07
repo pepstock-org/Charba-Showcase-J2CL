@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ChartsView$GeoChartsCase$2.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MA4Q6C,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,wF;EAAAA,iB;;;CAAA,2E;EAAAC,iC;;;CACrB,U;EACpBC,uC;;;QAFyC,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ChartsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ChartsView$GeoChartsCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ChartsView$GeoChartsCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ChartsView$GeoChartsCase$2.<init>","org.pepstock.charba.showcase.j2cl.views.ChartsView$GeoChartsCase$2.create","org.pepstock.charba.showcase.j2cl.views.ChartsView$GeoChartsCase$2.<clinit>"]
-}
-

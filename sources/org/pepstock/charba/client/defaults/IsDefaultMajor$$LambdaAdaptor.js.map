@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultMajor$$LambdaAdaptor.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;+E;EAAAA,kJ;;;CAAA,wI;EAAAC,iC;EAAAA,kF;;;CAAA,a;EAAAC,yC;EAAAA,+G;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["IsDefaultMajor.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultMajor$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.defaults.IsDefaultMajor$$LambdaAdaptor.<init>","org.pepstock.charba.client.defaults.IsDefaultMajor$$LambdaAdaptor.isEnabled","org.pepstock.charba.client.defaults.IsDefaultMajor$$LambdaAdaptor.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartPlugins.impl.java.js",
-"lineCount":48,
-"mappings":"A;;;;;;;;;;;;MA0BmB,mB;;CAAA,W;EAAAA,Q;EAAAA;OAEa,yEAFbA,C;;;QASX,6D,yBAAqCC,O;EAArCC,8B;EAAAA,0C;EAAAA,8I;EAAAA,iB;;;CAAA,0H,yBAAqCD,O;EAArCE,iC;EACNA,yF;;;CASc,6B,gBAAiBC,Q;EAC/BC,8H;;;CASc,8B,gBAAkBD,Q;EAChCE,+H;;;CAS0C,+F,gBAAkBF,Q,yCAA0CG,O;EACtGC,yM;;;QAxCiB,O;EAAAC,sC;EAAAA,mC;EAAAA;",
-"sources":["DefaultChartPlugins.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartPlugins.<synthetic: ctor_js>","plugins","org.pepstock.charba.client.defaults.chart.DefaultChartPlugins.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartPlugins.<init>","pluginId","org.pepstock.charba.client.defaults.chart.DefaultChartPlugins.isEnabled","org.pepstock.charba.client.defaults.chart.DefaultChartPlugins.hasOptions","factory","org.pepstock.charba.client.defaults.chart.DefaultChartPlugins.getOptions","org.pepstock.charba.client.defaults.chart.DefaultChartPlugins.<clinit>"]
-}
-

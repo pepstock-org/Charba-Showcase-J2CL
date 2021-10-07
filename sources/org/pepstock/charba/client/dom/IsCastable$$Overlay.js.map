@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsCastable$$Overlay.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;MAgCiB,Q;;QASF,wD;EAAAA,mB;EACbA,6D;;;QAVe,O;EAAAC,2B;EAAAA;",
-"sources":["IsCastable.java"],
-"names":["org.pepstock.charba.client.dom.IsCastable$$Overlay.as__$devirt","org.pepstock.charba.client.dom.IsCastable$$Overlay.<clinit>"]
-}
-

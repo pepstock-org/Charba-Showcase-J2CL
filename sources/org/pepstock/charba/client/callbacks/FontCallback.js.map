@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FontCallback.impl.java.js",
-"lineCount":24,
-"mappings":"A;;;;;;;;;;;;;;MA0BiB,Y;;QAAA,M;EAAAA,uB;EAAAA,gE;;;QAAA,O;EAAAC,+B;EAAAA;",
-"sources":["FontCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.FontCallback.<synthetic: adapt_lambda>","org.pepstock.charba.client.callbacks.FontCallback.<clinit>"]
-}
-

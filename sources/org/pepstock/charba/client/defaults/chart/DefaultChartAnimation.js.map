@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultChartAnimation.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;MAwBmB,qB;;CAAA,W;EAAAA,Q;;;QAOX,+D,2BAAyCC,S;EAAzCC,gC;EAAAA,4C;EAAAA,oJ;EAAAA,iB;;;CAAA,8H,2BAAyCD,S;EAC/CE,2J;;;CASc,mB;EACdC,oK;;;CASc,kB;EACdC,mK;;;QA5BiB,O;EAAAC,wC;EAAAA,qC;EAAAA;",
-"sources":["DefaultChartAnimation.java"],
-"names":["org.pepstock.charba.client.defaults.chart.DefaultChartAnimation.<synthetic: ctor_js>","animation","org.pepstock.charba.client.defaults.chart.DefaultChartAnimation.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.chart.DefaultChartAnimation.<init>","org.pepstock.charba.client.defaults.chart.DefaultChartAnimation.isAnimateRotate","org.pepstock.charba.client.defaults.chart.DefaultChartAnimation.isAnimateScale","org.pepstock.charba.client.defaults.chart.DefaultChartAnimation.<clinit>"]
-}
-

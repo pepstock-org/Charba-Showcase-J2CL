@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MeterChart.impl.java.js",
-"lineCount":77,
-"mappings":"A;;;;;;;;;;;;;;MAyBmB,U;;CAAA,W;EAAAA,Q;EAAAA;OAWS,6DAXTA,C;;;QAgBX,S;EAAAC,qB;EAAAA,iC;EAAAA,uE;EAAAA,iB;;;CAAA,0D;EACNC,0L;EAEAA,mO;;;CASmB,c;EACnBC,0E;;;CASmB,qB,gBAAmBC,M;EAEtCC,sH;;;CASmB,oB,eAAkBC,G;EACrCD,yC;;;CASc,gE;EACdE,6F;;;QAtDD,wE;EAAAC,qH;;;QANkB,O;EAAAC,6B;EAAAA,0B;EAAAA,yB;EAMlBA,2b;;;;;;;;;;;;;;;AAJA;WAG2B,yDAH3B,iB;AAFkB;;",
-"sources":["MeterChart.java"],
-"names":["org.pepstock.charba.client.impl.charts.MeterChart.<synthetic: ctor_js>","org.pepstock.charba.client.impl.charts.MeterChart.<synthetic: ctor_create>","org.pepstock.charba.client.impl.charts.MeterChart.<init>","org.pepstock.charba.client.impl.charts.MeterChart.getOptions","hidden","org.pepstock.charba.client.impl.charts.MeterChart.newDataset","max","org.pepstock.charba.client.impl.charts.MeterChart.getControllerType","org.pepstock.charba.client.impl.charts.MeterChart.<synthetic: getter>","org.pepstock.charba.client.impl.charts.MeterChart.<clinit>"]
-}
-

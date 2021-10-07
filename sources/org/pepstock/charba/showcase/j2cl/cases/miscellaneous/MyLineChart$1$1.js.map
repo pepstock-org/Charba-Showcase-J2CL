@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MyLineChart$1$1.impl.java.js",
-"lineCount":56,
-"mappings":"A;;;;;;;;;;;;;;;MAuBuC,K;;CAAA,W;EAAAA,Q;EAAAA;0F;;;QAAA,mI;EAAAC,gB;EAAAA,4B;EAAAA,qO;EAAAA,iB;;;CAAA,wM;EAAAC,sG;EAAAA,kI;;;CAGvB,2G,gCAA8BC,O,iBAAiBC,K;EAC1DC,IAAYC,IAAZD,gI;EACAA,IAAqBE,QAArBF,0B;EACAA;GAAAA,IAAoBG,IAApBH,kFAAAA;;IACCA,IAAcI,GAAdJ,kHADDA;IAECA,2FAFDA;IAGCA,WAHDA;IAICA,mLAJDA;IAKCA,kBALDA;IAMCA,mEANDA;IAOCA,cAPDA;;G;;;QANkC,O;EAAAK,wB;EAAAA,qB;EAAAA;",
-"sources":["MyLineChart.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1$1.<init>","context","chart","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1$1.onAfterDraw","item","elements","elem","ctx","org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart$1$1.<clinit>"]
-}
-

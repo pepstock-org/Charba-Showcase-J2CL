@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TimeTickHandler.impl.java.js",
-"lineCount":62,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAuCY,e;;CAAA,W;EAAAA,Q;EAAAA;OA8BoC,8EA9BpCA,C;;;QAsCX,kH,aAAqBC,I,2BAAwBC,a;EAA7CC,0B;EAAAA,sC;EAAAA,0M;EAAAA,iB;;;CAAA,0K,aAAqBF,I,2BAAwBC,a;EAC5CE,4L;EADDA,2E;EAKCA,+GAA+BC,KAA/BD,gBAAsCE,KAAtCF,eAA6CG,MAA7CH;GAECI;IAECA,IAAoBC,SAApBD,4HAFDA;IAICA,IAAKE,KAALF,4GAJDA;IAMCA,+ZANDA;IAFDJ;GAWCI,aAXDJ;I;;;CAqByB,2G,cAAyBG,M;EAClDI,+Q;;;CASK,yD;EACLC,iG;;;CA3EU,mE;EA8BXR,8M;;;QA9BW,O;EAAAS,kC;EAAAA,+B;EAAAA;",
-"sources":["TimeTickHandler.java"],
-"names":["org.pepstock.charba.client.configuration.TimeTickHandler.<synthetic: ctor_js>","axis","configuration","org.pepstock.charba.client.configuration.TimeTickHandler.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.TimeTickHandler.<init>","label","index","values","org.pepstock.charba.client.configuration.TimeTickHandler.<lambda in <init>>","tickItems","value","org.pepstock.charba.client.configuration.TimeTickHandler.getTickItems","org.pepstock.charba.client.configuration.TimeTickHandler.getProxy","org.pepstock.charba.client.configuration.TimeTickHandler.<clinit>"]
-}
-

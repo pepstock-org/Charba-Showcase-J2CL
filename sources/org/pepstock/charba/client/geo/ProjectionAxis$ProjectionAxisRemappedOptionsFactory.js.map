@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ProjectionAxis$ProjectionAxisRemappedOptionsFactory.impl.java.js",
-"lineCount":36,
-"mappings":"A;;;;;;;;;;;MAoKsB,oC;;CAAA,W;EAAAA,Q;;;QAOZ,8D,uBAAoDC,S;EAApDC,+C;EAAAA,2D;EAAAA,sK;EAAAA,iB;;;CAAA,gJ,uBAAoDD,S;EAC3DE,6I;;;CAS2B,yD,UAAoBC,Y;EAC/CC,mG;;;QAlBmB,O;EAAAC,uD;EAAAA,oD;EAAAA;",
-"sources":["ProjectionAxis.java"],
-"names":["org.pepstock.charba.client.geo.ProjectionAxis$ProjectionAxisRemappedOptionsFactory.<synthetic: ctor_js>","chartType","org.pepstock.charba.client.geo.ProjectionAxis$ProjectionAxisRemappedOptionsFactory.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ProjectionAxis$ProjectionAxisRemappedOptionsFactory.<init>","nativeObject","org.pepstock.charba.client.geo.ProjectionAxis$ProjectionAxisRemappedOptionsFactory.create","org.pepstock.charba.client.geo.ProjectionAxis$ProjectionAxisRemappedOptionsFactory.<clinit>"]
-}
-

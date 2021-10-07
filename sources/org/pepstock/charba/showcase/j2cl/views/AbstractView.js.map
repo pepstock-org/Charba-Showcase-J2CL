@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AbstractView.impl.java.js",
-"lineCount":33,
-"mappings":"A;;;;;;;;;;MAIe,Y;;CAAA,W;EAAAA,Q;EAAAA;OAEQ,+DAFRA,C;;;CAIP,uF,oBAAyBC,O;EAAzBC,iC;EACNA,+E;;;CAGc,sB;EACdC;GACCA,kKADDA;G;;;QATa,O;EAAAC,+B;EAAAA,4B;EAAAA;",
-"sources":["AbstractView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.AbstractView.<synthetic: ctor_js>","content","org.pepstock.charba.showcase.j2cl.views.AbstractView.<init>","org.pepstock.charba.showcase.j2cl.views.AbstractView.clearPreviousChart","org.pepstock.charba.showcase.j2cl.views.AbstractView.<clinit>"]
-}
-

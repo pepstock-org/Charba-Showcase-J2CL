@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsDefaultElements.impl.java.js",
-"lineCount":25,
-"mappings":"A;;;;;;;;;;;;MAsBiB,iB;;CAOH,U;;CAOC,W;;CAOC,Y;;CAOF,U;;QA5BG,O;EAAAA,oC;EAAAA;",
-"sources":["IsDefaultElements.java"],
-"names":["org.pepstock.charba.client.defaults.IsDefaultElements.<clinit>"]
-}
-

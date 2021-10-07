@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationCase$1.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;MAyEuD,E;;CAAA,W;EAAAA,Q;EAAAA;qF;;;QAAA,uE;EAAAC,a;EAAAA,yB;EAAAA,+J;EAAAA,iB;;;CAAA,uI;EAAAC,iG;EAAAA,iC;;;CAGxC,sE,+BAAkCC,K;EAC7CC,IAAOC,KAAPD,0F;EACAA,4L;;;QALmD,O;EAAAE,qB;EAAAA,kB;EAAAA;",
-"sources":["AnimationCase.java"],
-"names":["org.pepstock.charba.showcase.j2cl.cases.elements.AnimationCase$1.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationCase$1.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationCase$1.<init>","event","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationCase$1.onProgress","value","org.pepstock.charba.showcase.j2cl.cases.elements.AnimationCase$1.<clinit>"]
-}
-

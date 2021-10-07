@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NativeJsObjectArray$$Overlay.impl.java.js",
-"lineCount":9,
-"mappings":"A;;;;MA0BY,Q;;QAAA,O;EAAAA,2B;EAAAA;",
-"sources":["NativeJsObjectArray.java"],
-"names":["org.pepstock.charba.client.commons.NativeJsObjectArray$$Overlay.<clinit>"]
-}
-

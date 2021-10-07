@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AxisBuildTicksCallback.impl.java.js",
-"lineCount":19,
-"mappings":"A;;;;;;;;;;MAyBiB,sB;;CAQX,8G,aAAwBA,I,kBAAeC,I;;CAQvC,6G,aAAuBD,I,kBAAeC,I;;QAhB3B,O;EAAAC,yC;EAAAA;",
-"sources":["AxisBuildTicksCallback.java"],
-"names":["axis","item","org.pepstock.charba.client.callbacks.AxisBuildTicksCallback.<clinit>"]
-}
-

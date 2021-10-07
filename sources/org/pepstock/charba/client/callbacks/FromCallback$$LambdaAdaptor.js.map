@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"FromCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":41,
-"mappings":"A;;;;;;;;;;;;MAyBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;8E;EAAAA,gJ;;;CAAA,sI;EAAAC,iC;EAAAA,iF;;;CAAA,6D;EAAAC,iD;EAAAA,kH;;;;CAAA,2D;EAAAA,0I;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["FromCallback.java"],
-"names":["org.pepstock.charba.client.callbacks.FromCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.callbacks.FromCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.callbacks.FromCallback$$LambdaAdaptor.invoke","org.pepstock.charba.client.callbacks.FromCallback$$LambdaAdaptor.<clinit>"]
-}
-

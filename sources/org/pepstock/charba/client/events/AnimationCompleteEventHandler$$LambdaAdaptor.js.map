@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AnimationCompleteEventHandler$$LambdaAdaptor.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;MAsBiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;4F;EAAAA,4K;;;CAAA,kK;EAAAC,iC;EAAAA,+F;;;CAAA,sE;;GAAAC,0G;GAAAA,gB;;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["AnimationCompleteEventHandler.java"],
-"names":["org.pepstock.charba.client.events.AnimationCompleteEventHandler$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.events.AnimationCompleteEventHandler$$LambdaAdaptor.<init>","org.pepstock.charba.client.events.AnimationCompleteEventHandler$$LambdaAdaptor.onComplete","org.pepstock.charba.client.events.AnimationCompleteEventHandler$$LambdaAdaptor.<clinit>"]
-}
-

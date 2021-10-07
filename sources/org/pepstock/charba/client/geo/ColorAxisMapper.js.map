@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorAxisMapper.impl.java.js",
-"lineCount":102,
-"mappings":"A;;;;;;;;;;;;;;;MAkCY,e;;CAAA,W;EAAAA,Q;EAAAA;OA4D2C,2EA5D3CA,C;EAAAA;OAkEiB,sEAlEjBA,C;;;QAyEX,wD,UAA6BC,Y;EAA7BC,0B;EAAAA,sC;EAAAA,+H;EAAAA,iB;;;CAAA,sG,UAA6BD,Y;EAC5BE,2H;EADDA,iE;EAKCA;GAA0CC,sFAA1CD;I;;;CAQI,sE,gBAAuBE,Y;EAC3BC,qK;;;CAQM,8D;EACNC,2O;;;CAQI,qD,eAAgBC,Q;EACpBC,qJ;;;CAQG,kD;EACHC,0N;;;CAQI,qG,oBAA2BC,W;EAE/BC,gK;EAEAA,8L;;;CAQW,qD;EACXC,6X;;;CAQI,iH,4BAAmCC,mB;EAEvCF,kG;EAEAA;GAECA,yRAFDA;;GAKCA,uIALDA;G;;;CAcmB,6D;EACnBG,mF;;;CASc,mE,eAAeC,e;EAE7BC;GAECA,IAAOC,MAAPD,+GAFDA;GAICA;IAECA,IAAQE,KAARF,sDAFDA;IAICA;KAECA,0BAFDA;KAJDA;UAQOA;IAENA,6DAFMA;IAZRA;G;EAkBAA,mF;;;CA/LU,yD;EA4DXd,2L;EAMAA,mF;;;QAlEW,O;EAAAiB,kC;EAAAA,+B;EAAAA;",
-"sources":["ColorAxisMapper.java"],
-"names":["org.pepstock.charba.client.geo.ColorAxisMapper.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.ColorAxisMapper.<synthetic: ctor_create>","org.pepstock.charba.client.geo.ColorAxisMapper.<init>","org.pepstock.charba.client.geo.ColorAxisMapper.<lambda in <init>>","missingColor","org.pepstock.charba.client.geo.ColorAxisMapper.setMissingColor","org.pepstock.charba.client.geo.ColorAxisMapper.getMissingColorAsString","quantize","org.pepstock.charba.client.geo.ColorAxisMapper.setQuantize","org.pepstock.charba.client.geo.ColorAxisMapper.getQuantize","interpolate","org.pepstock.charba.client.geo.ColorAxisMapper.setInterpolate","org.pepstock.charba.client.geo.ColorAxisMapper.getInterpolate","interpolateCallback","org.pepstock.charba.client.geo.ColorAxisMapper.getInterpolateCallback","normalizedValue","org.pepstock.charba.client.geo.ColorAxisMapper.onColor","result","color","org.pepstock.charba.client.geo.ColorAxisMapper.<clinit>"]
-}
-

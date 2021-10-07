@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StartCallback$$LambdaAdaptor.impl.java.js",
-"lineCount":35,
-"mappings":"A;;;;;;;;;;;MA2BiB,c;;CAAA,W;EAAAA,yB;EAAAA,Q;EAAAA;oF;EAAAA,4J;;;CAAA,kJ;EAAAC,iC;EAAAA,uF;;;CAAA,sD;EAAAC,oD;EAAAA,wH;;;QAAA,O;EAAAC,iC;EAAAA,8B;EAAAA;",
-"sources":["StartCallback.java"],
-"names":["org.pepstock.charba.client.zoom.callbacks.StartCallback$$LambdaAdaptor.<synthetic: lambda_adaptor_ctor>","org.pepstock.charba.client.zoom.callbacks.StartCallback$$LambdaAdaptor.<init>","org.pepstock.charba.client.zoom.callbacks.StartCallback$$LambdaAdaptor.onStart","org.pepstock.charba.client.zoom.callbacks.StartCallback$$LambdaAdaptor.<clinit>"]
-}
-

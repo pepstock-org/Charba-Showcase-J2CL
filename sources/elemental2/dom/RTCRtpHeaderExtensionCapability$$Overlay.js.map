@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RTCRtpHeaderExtensionCapability$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MAyBiB,Q;;QAEwB,U;EAAAA,mB;EACrCA,4H;;;QAHa,O;EAAAC,2B;EAAAA;",
-"sources":["RTCRtpHeaderExtensionCapability.java"],
-"names":["elemental2.dom.RTCRtpHeaderExtensionCapability$$Overlay.create","elemental2.dom.RTCRtpHeaderExtensionCapability$$Overlay.<clinit>"]
-}
-

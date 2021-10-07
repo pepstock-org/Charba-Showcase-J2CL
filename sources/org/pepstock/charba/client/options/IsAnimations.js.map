@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IsAnimations.impl.java.js",
-"lineCount":29,
-"mappings":"A;;;;;;;;;;;;MAwBiB,Y;;CAQX,gF,+BAAkCA,U,iBAAoBC,O;;CAQnD,sE,+BAAiCD,U;;CASrB,gE,+BAA2BA,U;;CAQ1C,wH,+BAA2BA,U,6BAAgCE,mB;;CAQ5C,mE,+BAA8BF,U;;CAO7C,mE,+BAA8BA,U;;QAhDnB,O;EAAAG,+B;EAAAA;",
-"sources":["IsAnimations.java"],
-"names":["collection","enabled","animationCollection","org.pepstock.charba.client.options.IsAnimations.<clinit>"]
-}
-

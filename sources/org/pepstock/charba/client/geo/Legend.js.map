@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Legend.impl.java.js",
-"lineCount":128,
-"mappings":"A;;;;;;;;;;;;;MA8BmB,M;;CAAA,W;EAAAA,Q;;;QA4DlB,wD,UAAoBC,Y;EAApBC,iB;EAAAA,6B;EAAAA,sH;EAAAA,iB;;;CAAA,6F,UAAoBD,Y;EACnBE,oI;;;CAQW,4D,iBAAqBC,Q;EAChCC,+K;;;CAQW,2D,sBAA0BD,Q;EACrCC,iM;;;CAQe,e;EACfC,yW;;;CAQoB,sB;EAEpBC;GACCA,4MADDA;G;EAKAA,Y;;;CAQW,sD,cAAeC,K;EAC1BC,yK;;;CAQY,Y;EACZC,gV;;;CAQW,gB,eAAcC,M;EACzBC,wI;;;CAQU,a;EACVC,uM;;;CASW,e,eAAaC,K;EACxBC,sI;;;CASU,Y;EACVC,qM;;;CAQW,wB,eAAsBF,K;EACjCG,gJ;;;CAQU,qB;EACVC,yN;;;CAQW,gB,eAAcC,M;EACzBC,wI;;;CAQW,kD,eAAiBD,M;EAC5BC,6L;;;CAQU,a;EACVC,uM;;;CAQa,qB;EAEbC;GACCA,mMADDA;G;EAKAA,Y;;;QA3NiB,O;EAAAC,yB;EAAAA,sB;EAAAA,gC;;;;;;;;;;;;;;;;;AAElB;OAGwB,uDAHxB,O;AAIA;OAGwB,sDAHxB,M;AAIA;OAGwB,gEAHxB,M;AAIA;OAGwB,uDAHxB;",
-"sources":["Legend.java"],
-"names":["org.pepstock.charba.client.geo.Legend.<synthetic: ctor_js>","nativeObject","org.pepstock.charba.client.geo.Legend.<synthetic: ctor_create>","org.pepstock.charba.client.geo.Legend.<init>","position","org.pepstock.charba.client.geo.Legend.setPosition","org.pepstock.charba.client.geo.Legend.getPosition","org.pepstock.charba.client.geo.Legend.getPositionAsPoint","align","org.pepstock.charba.client.geo.Legend.setAlign","org.pepstock.charba.client.geo.Legend.getAlign","length","org.pepstock.charba.client.geo.Legend.setLength","org.pepstock.charba.client.geo.Legend.getLength","width","org.pepstock.charba.client.geo.Legend.setWidth","org.pepstock.charba.client.geo.Legend.getWidth","org.pepstock.charba.client.geo.Legend.setIndicatorWidth","org.pepstock.charba.client.geo.Legend.getIndicatorWidth","margin","org.pepstock.charba.client.geo.Legend.setMargin","org.pepstock.charba.client.geo.Legend.getMargin","org.pepstock.charba.client.geo.Legend.getMarginAsObject","org.pepstock.charba.client.geo.Legend.<clinit>"]
-}
-

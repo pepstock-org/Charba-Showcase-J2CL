@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HtmlLegendTextGenerator.impl.java.js",
-"lineCount":85,
-"mappings":"A;;;;;;;;;;;;;;;;;;MAkCY,uB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,kC;EAAAA,8C;EAAAA,qF;EAAAA,iB;;;CAAA,wE;EAAAC,iC;;;CAUP,4M,gBAA0BC,K,WAASC,I,WAAQC,Q;EAE9CC,IAAUC,OAAVD,+C;EAEAA,IAAOE,WAAPF,mD;EAEAA;GAECA;IAECA,IAASG,IAATH,yDAFDA;IAICA,wCAJDA;;IAQCA,mVARDA;IAFDA;;GAcCA,8MAdDA;G;EAgBAA,e;;;CAYY,gS,gBAAwBH,K,WAASC,I,wBAAUG,O,iBAAgBC,W,WAAeH,Q;EAEtFK;GAECA,IAASC,gBAATD,6LAFDA;GAICA;IAGCA,oDAHDA;;IAQCA,gCARDA;IAJDA;;GAiBCA,0KAjBDA;G;;;CA2BY,8I,uBAAeH,O,iBAAgBK,I;EAE3CC;GAECA,IAASC,SAATD,0IAFDA;GAICA;IAAAA,IAAYE,UAAZF,kBAAAA;;KAICA;MACCA,uEADDA;MAJDA;KAQCA,yFARDA;;IAJDA;;GAkBCA,yBAlBDA;G;;;QA3EU,O;EAAAG,0C;EAAAA,uC;EAAAA;",
-"sources":["HtmlLegendTextGenerator.java"],
-"names":["org.pepstock.charba.client.impl.plugins.HtmlLegendTextGenerator.<synthetic: ctor_js>","org.pepstock.charba.client.impl.plugins.HtmlLegendTextGenerator.<synthetic: ctor_create>","org.pepstock.charba.client.impl.plugins.HtmlLegendTextGenerator.<init>","chart","item","callback","org.pepstock.charba.client.impl.plugins.HtmlLegendTextGenerator.createTextElement","element","currentText","html","org.pepstock.charba.client.impl.plugins.HtmlLegendTextGenerator.managePlainText","textFromCallback","text","org.pepstock.charba.client.impl.plugins.HtmlLegendTextGenerator.manageText","splitText","singleText","org.pepstock.charba.client.impl.plugins.HtmlLegendTextGenerator.<clinit>"]
-}
-

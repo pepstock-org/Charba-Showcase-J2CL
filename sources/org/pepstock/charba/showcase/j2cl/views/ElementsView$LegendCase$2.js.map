@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ElementsView$LegendCase$2.impl.java.js",
-"lineCount":37,
-"mappings":"A;;;;;;;;;;;;MAsFmE,E;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,a;EAAAA,yB;EAAAA,uF;EAAAA,iB;;;CAAA,0E;EAAAC,iC;;;CAC3C,U;EACpBC,mC;;;QAF+D,O;EAAAC,qB;EAAAA,kB;EAAAA;",
-"sources":["ElementsView.java"],
-"names":["org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase$2.<synthetic: ctor_js>","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase$2.<synthetic: ctor_create>","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase$2.<init>","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase$2.create","org.pepstock.charba.showcase.j2cl.views.ElementsView$LegendCase$2.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BarDatasetOptionsHandler$Property.impl.java.js",
-"lineCount":125,
-"mappings":"A;;;;;;;;;;;;;;MA4CgB,Q;;CAAA,W;EAAAA,Q;EAAAA;OAUO,8EAVPA,C;;;QAiBN,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,uJ;EAAAA,iB;;;CAAA,oH,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,4F;;;CASa,S;EACbC,2F;;;QA5Ba,2B;EAAAC,mB;EAAAA;GAAAA,uJAAAA;G;EAAAA,+I;;;QAAA,U;EAAAC,mB;EAAAA,2qB;;;QAEd,0F;EAAAC,mI;;;QACA,yF;EAAAA,kI;;;QACA,+F;EAAAA,wI;;;QACA,mF;EAAAA,4H;;;QACA,6F;EAAAA,sI;;;QACA,0F;EAAAA,mI;;;QAPc,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEdA,kU;EACAA,8T;EACAA,sV;EACAA,uS;EACAA,6U;EACAA,iU;EAPcA,0G;;;;;;;;;;;;;AAAA;sG;AAAA;qG;AAAA;2G;AAAA;+F;AAAA;yG;AAAA;sG;AAAA;mG;AAEd;2G;AACA;0G;AACA;gH;AACA;oG;AACA;8G;AACA;;",
-"sources":["BarDatasetOptionsHandler.java"],
-"names":["org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.<init>","org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.value","org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.valueOf","org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.values","org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.<synthetic: getter>","org.pepstock.charba.client.options.BarDatasetOptionsHandler$Property.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Title.impl.java.js",
-"lineCount":38,
-"mappings":"A;;;;;;;;;MA0Ba,K;;CAAA,W;EAAAA,Q;;;QAOZ,sE,6BAA2BC,O;EAA3BC,gB;EAAAA,4B;EAAAA,wI;EAAAA,iB;;;CAAA,oH,6BAA2BD,O;EAC1BE,2I;;;CASa,gE;EACbC,kD;;;CASkB,6D;EAClBC,kD;;;QA5BW,O;EAAAC,wB;EAAAA,qB;EAAAA;",
-"sources":["Title.java"],
-"names":["org.pepstock.charba.client.configuration.Title.<synthetic: ctor_js>","options","org.pepstock.charba.client.configuration.Title.<synthetic: ctor_create>","org.pepstock.charba.client.configuration.Title.<init>","org.pepstock.charba.client.configuration.Title.getTitleElement","org.pepstock.charba.client.configuration.Title.getTitleNode","org.pepstock.charba.client.configuration.Title.<clinit>"]
-}
-

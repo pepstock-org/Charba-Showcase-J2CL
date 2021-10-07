@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultLabels.impl.java.js",
-"lineCount":44,
-"mappings":"A;;;;;;;;;;;;MAwBY,a;;CAAA,W;EAAAA,Q;;;QAKX,S;EAAAC,wB;EAAAA,oC;EAAAA,yE;EAAAA,iB;;;CAAA,4D;EAAAC,iC;;;;CALW,6D;EAAAC,kK;;;;CAAA,6D;EAAAC,kK;;;QAAA,O;EAAAC,gC;EAAAA,6B;EAAAA,qB;EAAAA;",
-"sources":["DefaultLabels.java"],
-"names":["org.pepstock.charba.client.datalabels.DefaultLabels.<synthetic: ctor_js>","org.pepstock.charba.client.datalabels.DefaultLabels.<synthetic: ctor_create>","org.pepstock.charba.client.datalabels.DefaultLabels.<init>","org.pepstock.charba.client.datalabels.DefaultLabels.getLabel","org.pepstock.charba.client.datalabels.DefaultLabels.hasLabel","org.pepstock.charba.client.datalabels.DefaultLabels.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DatasetReference$Property.impl.java.js",
-"lineCount":98,
-"mappings":"A;;;;;;;;;;;;;;MAyCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAOS,oEAPTA,C;;;QAcJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,6I;EAAAA,iB;;;CAAA,0G,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,kF;;;CASa,S;EACbC,iF;;;QAzBW,2B;EAAAC,mB;EAAAA;GAAAA,6IAAAA;G;EAAAA,qI;;;QAAA,U;EAAAC,mB;EAAAA,uU;;;QAEZ,+E;EAAAC,wH;;;QACA,uE;EAAAA,gH;;;QACA,yE;EAAAA,kH;;;QAJY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,0S;EACAA,2Q;EACAA,mR;EAJYA,gG;;;;;;;;;;;;;AAAA;2F;AAAA;mF;AAAA;qF;AAAA;yF;AAEZ;gG;AACA;wF;AACA;;",
-"sources":["DatasetReference.java"],
-"names":["org.pepstock.charba.client.items.DatasetReference$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.items.DatasetReference$Property.<synthetic: ctor_create>","org.pepstock.charba.client.items.DatasetReference$Property.<init>","org.pepstock.charba.client.items.DatasetReference$Property.value","org.pepstock.charba.client.items.DatasetReference$Property.valueOf","org.pepstock.charba.client.items.DatasetReference$Property.values","org.pepstock.charba.client.items.DatasetReference$Property.<synthetic: getter>","org.pepstock.charba.client.items.DatasetReference$Property.<clinit>"]
-}
-

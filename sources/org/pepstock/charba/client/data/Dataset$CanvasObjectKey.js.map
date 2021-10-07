@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Dataset$CanvasObjectKey.impl.java.js",
-"lineCount":16,
-"mappings":"A;;;;;;;;;MA86CW,e;;CAOD,c;;QAPC,O;EAAAA,kC;EAAAA;",
-"sources":["Dataset.java"],
-"names":["org.pepstock.charba.client.data.Dataset$CanvasObjectKey.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"PopStateEvent$PopStateEventEventInitDictType$$Overlay.impl.java.js",
-"lineCount":17,
-"mappings":"A;;;;;;;MA2BmB,Q;;QAEqC,U;EAAAA,mB;EAClDA,8F;;;QAHa,O;EAAAC,2B;EAAAA;",
-"sources":["PopStateEvent.java"],
-"names":["elemental2.dom.PopStateEvent$PopStateEventEventInitDictType$$Overlay.create","elemental2.dom.PopStateEvent$PopStateEventEventInitDictType$$Overlay.<clinit>"]
-}
-

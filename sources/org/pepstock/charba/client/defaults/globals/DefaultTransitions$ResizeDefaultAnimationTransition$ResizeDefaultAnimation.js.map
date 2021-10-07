@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DefaultTransitions$ResizeDefaultAnimationTransition$ResizeDefaultAnimation.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;MAyMuB,sB;;CAAA,W;EAAAA,Q;;;QAAA,S;EAAAC,iC;EAAAA,6C;EAAAA,4I;EAAAA,iB;;;CAAA,+H;EAAAC,6E;;;CAQT,e;EACVC,6J;;;QATmB,O;EAAAC,yC;EAAAA,sC;EAAAA;",
-"sources":["DefaultTransitions.java"],
-"names":["org.pepstock.charba.client.defaults.globals.DefaultTransitions$ResizeDefaultAnimationTransition$ResizeDefaultAnimation.<synthetic: ctor_js>","org.pepstock.charba.client.defaults.globals.DefaultTransitions$ResizeDefaultAnimationTransition$ResizeDefaultAnimation.<synthetic: ctor_create>","org.pepstock.charba.client.defaults.globals.DefaultTransitions$ResizeDefaultAnimationTransition$ResizeDefaultAnimation.<init>","org.pepstock.charba.client.defaults.globals.DefaultTransitions$ResizeDefaultAnimationTransition$ResizeDefaultAnimation.getDuration","org.pepstock.charba.client.defaults.globals.DefaultTransitions$ResizeDefaultAnimationTransition$ResizeDefaultAnimation.<clinit>"]
-}
-

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Window$ScrollToScrollToOptionsOrXUnionType$$Overlay.impl.java.js",
-"lineCount":32,
-"mappings":"A;;;;;;;MA6VmB,Q;;QAEmC,sB,UAAUA,C;EAAVC,mB;EAChDA,uD;;;QAIa,8E;EAAAC,mB;EACbA,iD;;;QAIsB,uF;EAAAC,mB;EACtBA,4E;;;QAIc,8E;EAAAC,mB;EACdA,qD;;;QAlBa,O;EAAAC,2B;EAAAA;",
-"sources":["Window.java"],
-"names":["o","elemental2.dom.Window$ScrollToScrollToOptionsOrXUnionType$$Overlay.of","elemental2.dom.Window$ScrollToScrollToOptionsOrXUnionType$$Overlay.asDouble__$devirt","elemental2.dom.Window$ScrollToScrollToOptionsOrXUnionType$$Overlay.asScrollToOptions__$devirt","elemental2.dom.Window$ScrollToScrollToOptionsOrXUnionType$$Overlay.isDouble__$devirt","elemental2.dom.Window$ScrollToScrollToOptionsOrXUnionType$$Overlay.<clinit>"]
-}
-

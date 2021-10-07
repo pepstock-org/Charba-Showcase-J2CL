@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Layout$Property.impl.java.js",
-"lineCount":80,
-"mappings":"A;;;;;;;;;;;;;;MAkCc,Q;;CAAA,W;EAAAA,Q;EAAAA;OAKS,4DALTA,C;;;QAYJ,gD,8DAAgBC,K;EAAhBC,+B;EAAAA,qI;EAAAA,iB;;;CAAA,kG,8DAAgBD,K;EAAhBE,qC;EAAAA,2C;EAAAA,mE;EACPA,0E;;;CASa,S;EACbC,yE;;;QAvBW,2B;EAAAC,mB;EAAAA;GAAAA,qIAAAA;G;EAAAA,6H;;;QAAA,U;EAAAC,mB;EAAAA,+I;;;QAEZ,iE;EAAAC,0G;;;QAFY,O;EAAAC,2B;EAAAA,wB;EAAAA,e;EAEZA,mQ;EAFYA,wF;;;;;;;;;;;;;AAAA;6E;AAAA;iF;AAEZ;;",
-"sources":["Layout.java"],
-"names":["org.pepstock.charba.client.options.Layout$Property.<synthetic: ctor_js>","value","org.pepstock.charba.client.options.Layout$Property.<synthetic: ctor_create>","org.pepstock.charba.client.options.Layout$Property.<init>","org.pepstock.charba.client.options.Layout$Property.value","org.pepstock.charba.client.options.Layout$Property.valueOf","org.pepstock.charba.client.options.Layout$Property.values","org.pepstock.charba.client.options.Layout$Property.<synthetic: getter>","org.pepstock.charba.client.options.Layout$Property.<clinit>"]
-}
-
