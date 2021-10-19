@@ -1,9 +1,11 @@
 package org.pepstock.charba.showcase.j2cl.cases.charts;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.pepstock.charba.client.callbacks.ScaleContext;
 import org.pepstock.charba.client.colors.GwtMaterialColor;
 import org.pepstock.charba.client.commons.Key;
 import org.pepstock.charba.client.data.Labels;
@@ -14,6 +16,7 @@ import org.pepstock.charba.client.geo.Feature;
 import org.pepstock.charba.client.geo.GeoUtils;
 import org.pepstock.charba.client.geo.ProjectionAxis;
 import org.pepstock.charba.client.geo.SizeAxis;
+import org.pepstock.charba.client.geo.callbacks.RangeCallback;
 import org.pepstock.charba.client.geo.enums.Align;
 import org.pepstock.charba.client.geo.enums.Position;
 import org.pepstock.charba.client.geo.enums.Projection;
@@ -103,7 +106,16 @@ public class GeoBubbleMapUSCase extends BaseComposite {
 		axis2.getLegend().setAlign(Align.RIGHT);
 		axis2.getLegend().setPosition(Position.BOTTOM_RIGHT);
 		axis2.setDisplay(true);
-		axis2.setRange(1, 20);
+		axis2.setRange(new RangeCallback() {
+			
+			private final List<Integer> RESULT = Arrays.asList(1, 20);
+			
+			@Override
+			public List<Integer> invoke(ScaleContext context) {
+				return RESULT;
+			}
+		});
+
 		chart.getOptions().getScales().setAxes(axis1, axis2);
 
 		chart.getData().setLabels(labels);
