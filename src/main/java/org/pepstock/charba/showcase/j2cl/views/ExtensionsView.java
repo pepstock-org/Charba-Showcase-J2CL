@@ -36,6 +36,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCa
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethItalyCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethLogarithmicCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethUSCapitalsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsMultiOptionsCase;
@@ -318,6 +319,11 @@ public class ExtensionsView extends AbstractView {
 		BUBBLE_MAP_DATALABELS("Using Datalabels on map", new CaseFactory() {
 			public BaseComposite create() {
 				return new GeoBubbleMapDatalabelsCase();
+			}
+		}),
+		CAPITALS("Adds capitals to the choropleth chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new GeoChoroplethUSCapitalsCase();
 			}
 		});
 
