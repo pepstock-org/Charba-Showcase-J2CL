@@ -30,13 +30,6 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsC
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsPolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapDatalabelsCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoBubbleMapLogarithmicCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethGermanyCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethItalyCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethLogarithmicCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCountryCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethUSCapitalsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsMultiOptionsCase;
@@ -46,19 +39,6 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingImageRender
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingLabelRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingPercentageRenderCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsUsingValueRenderCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixCalendarCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnCategoryAxisCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnTimeAxisCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyBasicCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyClickCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyCountriesCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyEnergyCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyTreeCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapClickEventCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
-import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSSwitchableCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiPanCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiZoomCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomApiZoomScaleCase;
@@ -81,14 +61,14 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class ExtensionsView extends AbstractView {
+public class ExtPluginsView extends AbstractView {
 
 	private enum Category
 	{
 		DATA_LABELS("Datalabels plugin", DataLabelsCase.values()),
 		LABELS("Labels plugin", LabelsCase.values()),
 		ZOOM("Zoom plugin", ZoomCase.values()),
-		CONTROLLERS("Geographical controller", GeoChartsCase.values());
+		ANNOTATION("Annotation plugin", AnnotationCase.values());
 
 		private final String label;
 
@@ -285,67 +265,6 @@ public class ExtensionsView extends AbstractView {
 		}
 
 	}
-	
-	// ----------------------------------------------
-	// GEO CHARTS
-	// ----------------------------------------------
-	private enum GeoChartsCase implements CaseItem
-	{
-		LOG_COLOR_SCALE("Choropleth with logarithmic axis", new CaseFactory() {
-			public BaseComposite create() {
-				return new GeoChoroplethLogarithmicCase();
-			}
-		}),
-		LOG_SIZE_SCALE("Bubble map with logarithmic axis", new CaseFactory() {
-			public BaseComposite create() {
-				return new GeoBubbleMapLogarithmicCase();
-			}
-		}),
-		INTERPOLATIONS("Interpolations", new CaseFactory() {
-			public BaseComposite create() {
-				return new GeoChoroplethItalyCase();
-			}
-		}),
-		CUSTOM_INTERPOLATION("Custom interpolation", new CaseFactory() {
-			public BaseComposite create() {
-				return new GeoChoroplethGermanyCase();
-			}
-		}),
-		CLICK("Select country from map", new CaseFactory() {
-			public BaseComposite create() {
-				return new GeoChoroplethSelectCountryCase();
-			}
-		}),
-		BUBBLE_MAP_DATALABELS("Using Datalabels on map", new CaseFactory() {
-			public BaseComposite create() {
-				return new GeoBubbleMapDatalabelsCase();
-			}
-		}),
-		CAPITALS("Adds capitals to the choropleth chart", new CaseFactory() {
-			public BaseComposite create() {
-				return new GeoChoroplethUSCapitalsCase();
-			}
-		});
-
-		private final String label;
-
-		private final CaseFactory factory;
-
-		private GeoChartsCase(String label, CaseFactory factory) {
-			this.label = label;
-			this.factory = factory;
-		}
-
-		public String getLabel() {
-			return label;
-		}
-
-		public CaseFactory getFactory() {
-			return factory;
-		}
-
-	}
-
 
 	// ----------------------------------------------
 	// ZOOM plugin
@@ -507,153 +426,14 @@ public class ExtensionsView extends AbstractView {
 		}
 
 	}
-	
-	// ----------------------------------------------
-	// TREEMAP CHARTS
-	// ----------------------------------------------
-	private enum TreeMapChartsCase implements CaseItem
-	{
-		GROUPS("Groups", new CaseFactory() {
-			public BaseComposite create() {
-				return new TreeMapUSPopulationCase();
-			}
-		}),
-		GROUPING("Grouping data at runtime", new CaseFactory() {
-			public BaseComposite create() {
-				return new TreeMapUSSwitchableCase();
-			}
-		}),
-		DIVIDERS("Applying dividers", new CaseFactory() {
-			public BaseComposite create() {
-				return new TreeMapDividersCase();
-			}
-		}),
-		CLICKING("Selecting treemap item", new CaseFactory() {
-			public BaseComposite create() {
-				return new TreeMapClickEventCase();
-			}
-		});
 
-		private final String label;
-
-		private final CaseFactory factory;
-
-		private TreeMapChartsCase(String label, CaseFactory factory) {
-			this.label = label;
-			this.factory = factory;
-		}
-
-		public String getLabel() {
-			return label;
-		}
-
-		public CaseFactory getFactory() {
-			return factory;
-		}
-
-	}
-
-	// ----------------------------------------------
-	// MATRIX CHARTS
-	// ----------------------------------------------
-	private enum MatrixChartsCase implements CaseItem
-	{
-		CALENDAR("Calendar", new CaseFactory() {
-			public BaseComposite create() {
-				return new MatrixCalendarCase();
-			}
-		}),
-		USING_TIME_AXIS("Using time axis", new CaseFactory() {
-			public BaseComposite create() {
-				return new MatrixOnTimeAxisCase();
-			}
-		}),
-		USING_CATEGORY_AXIS("Using category axis", new CaseFactory() {
-			public BaseComposite create() {
-				return new MatrixOnCategoryAxisCase();
-			}
-		}),
-		CLICKING("Selecting matrix item", new CaseFactory() {
-			public BaseComposite create() {
-				return new MatrixClickEventCase();
-			}
-		});
-
-		private final String label;
-
-		private final CaseFactory factory;
-
-		private MatrixChartsCase(String label, CaseFactory factory) {
-			this.label = label;
-			this.factory = factory;
-		}
-
-		public String getLabel() {
-			return label;
-		}
-
-		public CaseFactory getFactory() {
-			return factory;
-		}
-
-	}
-
-	// ----------------------------------------------
-	// SANKEY CHARTS
-	// ----------------------------------------------
-	private enum SankeyChartsCase implements CaseItem
-	{
-		BASIC("Basic", new CaseFactory() {
-			public BaseComposite create() {
-				return new SankeyBasicCase();
-			}
-		}),
-		ENERGY("Energy", new CaseFactory() {
-			public BaseComposite create() {
-				return new SankeyEnergyCase();
-			}
-		}),
-		COUNTRIES("Countries", new CaseFactory() {
-			public BaseComposite create() {
-				return new SankeyCountriesCase();
-			}
-		}),
-		TREE("Tree", new CaseFactory() {
-			public BaseComposite create() {
-				return new SankeyTreeCase();
-			}
-		}),
-		CLICKING("Selecting flow item", new CaseFactory() {
-			public BaseComposite create() {
-				return new SankeyClickCase();
-			}
-		});
-
-		private final String label;
-
-		private final CaseFactory factory;
-
-		private SankeyChartsCase(String label, CaseFactory factory) {
-			this.label = label;
-			this.factory = factory;
-		}
-
-		public String getLabel() {
-			return label;
-		}
-
-		public CaseFactory getFactory() {
-			return factory;
-		}
-
-	}
-	public ExtensionsView(HTMLElement content) {
+	public ExtPluginsView(HTMLElement content) {
 		super(content);
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
 		title.style.textAlign = "center";
 		title.style.width = WidthUnionType.of("100%");
 		title.innerHTML = " of javascript CHART.JS plugins and their integration with CHARBA";
-		title.className = "myExtensionsTitleItem";
+		title.className = "myExtensionsPluginsTitleItem";
 		content.appendChild(title);
 		content.appendChild(DomGlobal.document.createElement("br"));
 
@@ -699,103 +479,6 @@ public class ExtensionsView extends AbstractView {
 						return null;
 					};
 				}
-			}
-
-			if (Category.LABELS.equals(cat)) {
-				HTMLElement labelPointer = (HTMLElement) DomGlobal.document.createElement("div");
-				labelPointer.innerHTML = "Annotation plugin";
-				labelPointer.style.textAlign = "left";
-				labelPointer.className = "myCategory";
-				labelPointer.style.paddingTop = PaddingTopUnionType.of("12px");
-				catCol.appendChild(labelPointer);
-				
-				for (CaseItem caseItem : AnnotationCase.values()) {
-					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
-					item.style.textAlign = "left";
-					item.className = "myCategoryItem";
-					catCol.appendChild(item);
-					item.innerHTML = caseItem.getLabel();
-					item.onclick = (p0) -> {
-						BaseComposite composite = caseItem.getFactory().create();
-						if (composite != null) {
-							clearPreviousChart();
-							content.appendChild(composite.getElement());
-						}
-						return null;
-					};
-				}
-			}
-
-			if (Category.CONTROLLERS.equals(cat)) {
-				HTMLElement treemapPointer = (HTMLElement) DomGlobal.document.createElement("div");
-				treemapPointer.innerHTML = "TreeMap controller";
-				treemapPointer.style.textAlign = "left";
-				treemapPointer.className = "myCategory";
-				treemapPointer.style.paddingTop = PaddingTopUnionType.of("12px");
-				catCol.appendChild(treemapPointer);
-				
-				for (CaseItem caseItem : TreeMapChartsCase.values()) {
-					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
-					item.style.textAlign = "left";
-					item.className = "myCategoryItem";
-					catCol.appendChild(item);
-					item.innerHTML = caseItem.getLabel();
-					item.onclick = (p0) -> {
-						BaseComposite composite = caseItem.getFactory().create();
-						if (composite != null) {
-							clearPreviousChart();
-							content.appendChild(composite.getElement());
-						}
-						return null;
-					};
-				}
-				
-				HTMLElement matrixPointer = (HTMLElement) DomGlobal.document.createElement("div");
-				matrixPointer.innerHTML = "Matrix controller";
-				matrixPointer.style.textAlign = "left";
-				matrixPointer.className = "myCategory";
-				matrixPointer.style.paddingTop = PaddingTopUnionType.of("12px");
-				catCol.appendChild(matrixPointer);
-				
-				for (CaseItem caseItem : MatrixChartsCase.values()) {
-					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
-					item.style.textAlign = "left";
-					item.className = "myCategoryItem";
-					catCol.appendChild(item);
-					item.innerHTML = caseItem.getLabel();
-					item.onclick = (p0) -> {
-						BaseComposite composite = caseItem.getFactory().create();
-						if (composite != null) {
-							clearPreviousChart();
-							content.appendChild(composite.getElement());
-						}
-						return null;
-					};
-				}
-
-				HTMLElement sankeyPointer = (HTMLElement) DomGlobal.document.createElement("div");
-				sankeyPointer.innerHTML = "Sankey controller";
-				sankeyPointer.style.textAlign = "left";
-				sankeyPointer.className = "myCategory";
-				sankeyPointer.style.paddingTop = PaddingTopUnionType.of("12px");
-				catCol.appendChild(sankeyPointer);
-				
-				for (CaseItem caseItem : SankeyChartsCase.values()) {
-					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
-					item.style.textAlign = "left";
-					item.className = "myCategoryItem";
-					catCol.appendChild(item);
-					item.innerHTML = caseItem.getLabel();
-					item.onclick = (p0) -> {
-						BaseComposite composite = caseItem.getFactory().create();
-						if (composite != null) {
-							clearPreviousChart();
-							content.appendChild(composite.getElement());
-						}
-						return null;
-					};
-				}
-
 			}
 
 			if (Category.ZOOM.equals(cat)) {

@@ -29,7 +29,8 @@ public class MainView extends AbstractComposite {
 		ELEMENTS("Elements", "images/showcaseElements.png"),
 		PLUGINS("Plugins", "images/showcasePlugins.png"),
 		COLORING("Coloring", "images/showcaseColoring.png"),
-		EXTENSIONS("Extensions", "images/showcaseExtensions.png"),
+		EXT_PLUGINS("Ext. plugins", "images/showcaseExtensions.png"),
+		EXT_CHARTS("Ext. charts", "images/showcaseExtensions.png"),
 		MISC("Miscellaneous", "images/showcaseMiscellaneous.png");
 
 		private final String label;
@@ -117,6 +118,8 @@ public class MainView extends AbstractComposite {
 
 			HTMLImageElement img = (HTMLImageElement) DomGlobal.document.createElement("img");
 			img.src = item.getImgSrc();
+			img.width = 36;
+			img.height = 36;
 			img.className = "myImgItem";
 			img.style.display = "inline-block";
 			img.style.verticalAlign = "middle";
@@ -154,8 +157,11 @@ public class MainView extends AbstractComposite {
 		case COLORING:
 			handleColoring(event);
 			break;
-		case EXTENSIONS:
-			handleExtensions(event);
+		case EXT_PLUGINS:
+			handlePluginsExtensions(event);
+			break;
+		case EXT_CHARTS:
+			handleChartsExtensions(event);
 			break;
 		case MISC:
 			handleMiscellaneous(event);
@@ -205,7 +211,21 @@ public class MainView extends AbstractComposite {
 	protected void handleExtensions(Event event) {
 		if (changeSelection(event)) {
 			clearPreviousChart();
-			new ExtensionsView(content);
+			new ExtChartsView(content);
+		}
+	}
+
+	protected void handlePluginsExtensions(Event event) {
+		if (changeSelection(event)) {
+			clearPreviousChart();
+			new ExtPluginsView(content);
+		}
+	}
+
+	protected void handleChartsExtensions(Event event) {
+		if (changeSelection(event)) {
+			clearPreviousChart();
+			new ExtChartsView(content);
 		}
 	}
 

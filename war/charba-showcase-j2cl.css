@@ -103,15 +103,29 @@
 	font-weight: 400;
 	font-family: 'Lato', sans-serif;
 }
-.myExtensionsTitleItem {
+.myExtensionsPluginsTitleItem {
 	font-size: 1rem;
 	font-weight: 400;
 	font-family: 'Lato', sans-serif;
 	white-space: nowrap;
 	padding-bottom: 12px;
 }
-.myExtensionsTitleItem::before {
-	content: 'Extensions ';
+.myExtensionsPluginsTitleItem::before {
+	content: 'Plugins extensions ';
+	color: #f27173;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+.myExtensionsChartsTitleItem { <--- HERE
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	white-space: nowrap;
+	padding-bottom: 12px;
+}
+.myExtensionsChartsTitleItem::before {
+	content: 'Charts extensions ';
 	color: #f27173;
 	font-size: 1.5rem;
 	font-weight: 400;
