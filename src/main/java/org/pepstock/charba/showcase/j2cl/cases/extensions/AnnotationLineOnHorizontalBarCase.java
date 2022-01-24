@@ -142,6 +142,5 @@ public class AnnotationLineOnHorizontalBarCase extends BaseComposite {
 			dataset.setData(getRandomDigits(months));
 		}
 		chart.update();
-		;
 	}
 }

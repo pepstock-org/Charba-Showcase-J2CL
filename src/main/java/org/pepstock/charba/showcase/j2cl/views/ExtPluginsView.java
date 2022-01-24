@@ -5,11 +5,14 @@ import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationBoxesOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationEllipseOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelCalloutOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnLogarithmicAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnTimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationObliqueLineOnTimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationPointsOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationPolygonsOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsOnTimeSeriesCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsEventsWithModifierKey;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationsOnCombinedCase;
@@ -390,6 +393,21 @@ public class ExtPluginsView extends AbstractView {
 		POINTS("Points annotations on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationPointsOnLineCase();
+			}
+		}),
+		LABELS("Label annotation on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationLabelOnLineCase();
+			}
+		}),
+		LABELS_CALLOUT("Label annotation with callout on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationLabelCalloutOnLineCase();
+			}
+		}),
+		POLYGONS("Polygon annotations on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationPolygonsOnLineCase();
 			}
 		}),
 		OBLIQUE_LINE("Oblique line annotation on timeseries chart", new CaseFactory() {
