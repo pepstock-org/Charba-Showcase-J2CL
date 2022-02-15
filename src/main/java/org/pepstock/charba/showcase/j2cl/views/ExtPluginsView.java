@@ -7,6 +7,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationBoxesOnLineC
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationEllipseOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelCalloutOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineAndArrowsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnLogarithmicAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnTimeSeriesLineCase;
@@ -385,6 +386,11 @@ public class ExtPluginsView extends AbstractView {
 				return new AnnotationLineOnLogarithmicAxisCase();
 			}
 		}),
+		ARROWS("Line annotation with arrow heads on timeseries chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationLineAndArrowsCase();
+			}
+		}),		
 		ELLIPSE("Ellipse annotation on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationEllipseOnLineCase();

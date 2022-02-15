@@ -7,10 +7,10 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
-import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
+import org.pepstock.charba.client.zoom.enums.Mode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -104,9 +104,9 @@ public class ZoomDragLineareAxisCase extends BaseComposite {
 
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(true);
-		options.getPan().setMode(InteractionAxis.XY);
+		options.getPan().setMode(Mode.XY);
 		options.getPan().setModifierKey(ModifierKey.ALT);
-		options.getZoom().setMode(InteractionAxis.XY);
+		options.getZoom().setMode(Mode.XY);
 		options.getZoom().getWheel().setEnabled(true);
 		options.getZoom().getDrag().setEnabled(true);
 		options.getZoom().getDrag().setBackgroundColor(HtmlColor.LIGHT_GREEN.alpha(0.2));

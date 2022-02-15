@@ -19,7 +19,6 @@ import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.data.TimeSeriesItem;
 import org.pepstock.charba.client.data.TimeSeriesLineDataset;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
@@ -30,6 +29,7 @@ import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.client.zoom.callbacks.CompletedCallback;
 import org.pepstock.charba.client.zoom.callbacks.ProgressCallback;
 import org.pepstock.charba.client.zoom.callbacks.RejectedCallback;
+import org.pepstock.charba.client.zoom.enums.Mode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.LogView;
 
@@ -155,7 +155,7 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 
 		ZoomOptions options = new ZoomOptions();
 		options.getZoom().getWheel().setEnabled(true);
-		options.getZoom().setMode(InteractionAxis.X);
+		options.getZoom().setMode(Mode.X);
 		options.getZoom().getWheel().setSpeed(0.05D);
 		options.getZoom().getDrag().setEnabled(true);
 		options.getZoom().setCompletedCallback(new CompletedCallback() {

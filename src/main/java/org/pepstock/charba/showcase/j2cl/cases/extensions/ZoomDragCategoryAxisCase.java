@@ -6,11 +6,11 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
-import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
+import org.pepstock.charba.client.zoom.enums.Mode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -94,11 +94,11 @@ public class ZoomDragCategoryAxisCase extends BaseComposite {
 
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(true);
-		options.getPan().setMode(InteractionAxis.X);
+		options.getPan().setMode(Mode.X);
 		options.getPan().setModifierKey(ModifierKey.ALT);
 		options.getZoom().getWheel().setEnabled(true);
 		options.getZoom().getDrag().setEnabled(true);
-		options.getZoom().setMode(InteractionAxis.X);
+		options.getZoom().setMode(Mode.X);
 
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
 		

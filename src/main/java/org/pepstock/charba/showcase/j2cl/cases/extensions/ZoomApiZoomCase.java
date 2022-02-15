@@ -7,10 +7,10 @@ import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
 import org.pepstock.charba.client.enums.DefaultTransitionKey;
-import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.zoom.Amount;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
+import org.pepstock.charba.client.zoom.enums.Mode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -96,7 +96,7 @@ public class ZoomApiZoomCase extends BaseComposite {
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(false);
 		options.getZoom().getWheel().setEnabled(true);
-		options.getZoom().setMode(InteractionAxis.XY);
+		options.getZoom().setMode(Mode.XY);
 		
 		chart.getOptions().getPlugins().setOptions(ZoomPlugin.ID, options);
 

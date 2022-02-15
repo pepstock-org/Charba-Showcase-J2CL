@@ -12,7 +12,6 @@ import org.pepstock.charba.client.annotation.AnnotationOptions;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
-import org.pepstock.charba.client.annotation.enums.LabelPosition;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.HtmlColor;
@@ -151,6 +150,7 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 		chart.getData().setDatasets(dataset1, dataset2);
 
 		AnnotationOptions options = new AnnotationOptions();
+		options.setClip(false);
 
 		line1 = new LineAnnotation();
 		line1.setDrawTime(DrawTime.AFTER_DRAW);
@@ -164,9 +164,13 @@ public class AnnotationObliqueLineOnTimeSeriesLineCase extends BaseComposite {
 		line1.getLabel().setDisplay(true);
 		line1.getLabel().setAutoRotation(true);
 		line1.getLabel().setContent("Line from 40 to max");
-		line1.getLabel().setPosition(LabelPosition.END);
+		line1.getLabel().setPositionAsPercentage(0.9);
 		line1.getLabel().setBackgroundColor(HtmlColor.VIOLET);
 		line1.getLabel().setColor(HtmlColor.BLACK);
+		line1.getArrowHeads().getEnd().setDisplay(true);
+		line1.getArrowHeads().getEnd().setLength(20);
+		line1.getArrowHeads().getEnd().setWidth(12);
+		line1.getArrowHeads().getEnd().setBorderDash(0);
 		
 		options.setAnnotations(line1);
 

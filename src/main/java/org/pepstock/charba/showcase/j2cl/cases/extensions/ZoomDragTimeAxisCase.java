@@ -20,13 +20,13 @@ import org.pepstock.charba.client.data.ScatterDataset;
 import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.DefaultTransitionKey;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.TimeUnit;
 import org.pepstock.charba.client.items.TooltipItem;
 import org.pepstock.charba.client.zoom.ScaleRange;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
+import org.pepstock.charba.client.zoom.enums.Mode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -144,9 +144,9 @@ public class ZoomDragTimeAxisCase extends BaseComposite {
 
 		ZoomOptions options = new ZoomOptions();
 		options.getPan().setEnabled(true);
-		options.getPan().setMode(InteractionAxis.XY);
+		options.getPan().setMode(Mode.XY);
 		options.getPan().setModifierKey(ModifierKey.ALT);
-		options.getZoom().setMode(InteractionAxis.XY);
+		options.getZoom().setMode(Mode.XY);
 		options.getZoom().getWheel().setEnabled(true);
 		options.getZoom().getDrag().setEnabled(true);
 		options.getZoom().getDrag().setBackgroundColor(HtmlColor.LIGHT_SKY_BLUE.alpha(0.2));
