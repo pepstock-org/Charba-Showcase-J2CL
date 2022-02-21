@@ -8,6 +8,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationEllipseOnLin
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelCalloutOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineAndArrowsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineLabelOnEnter;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnLogarithmicAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineOnTimeSeriesLineCase;
@@ -390,7 +391,12 @@ public class ExtPluginsView extends AbstractView {
 			public BaseComposite create() {
 				return new AnnotationLineAndArrowsCase();
 			}
-		}),		
+		}),
+		LABEL_ON_ENTER("Line annotation label appears when the annotation is hovered", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationLineLabelOnEnter();
+			}
+		}),
 		ELLIPSE("Ellipse annotation on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationEllipseOnLineCase();

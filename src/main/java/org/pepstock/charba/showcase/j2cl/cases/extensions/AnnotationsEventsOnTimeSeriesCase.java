@@ -9,6 +9,7 @@ import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.TimeSeriesLineChart;
 import org.pepstock.charba.client.adapters.DateAdapter;
 import org.pepstock.charba.client.annotation.AbstractAnnotation;
+import org.pepstock.charba.client.annotation.AnnotationContext;
 import org.pepstock.charba.client.annotation.AnnotationOptions;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.annotation.BoxAnnotation;
@@ -262,23 +263,23 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 	class MyEventsHandler implements ClickCallback,  DoubleClickCallback,  LeaveCallback, EnterCallback {
 
 		@Override
-		public void onEnter(IsChart chart, AbstractAnnotation annotation, ChartEventContext event) {
-			mylog.addLogEvent("> Enter on annotation '"+annotation.getId().value()+"' type " + annotation.getType());
+		public void onEnter(AnnotationContext context, ChartEventContext event) {
+			mylog.addLogEvent("> Enter on annotation '"+context.getAnnotation().getId().value()+"' type " + context.getAnnotation().getType());
 		}
 
 		@Override
-		public void onLeave(IsChart chart, AbstractAnnotation annotation, ChartEventContext event) {
-			mylog.addLogEvent("> Leave on annotation '"+annotation.getId().value()+"' type " + annotation.getType());
+		public void onLeave(AnnotationContext context, ChartEventContext event) {
+			mylog.addLogEvent("> Leave on annotation '"+context.getAnnotation().getId().value()+"' type " + context.getAnnotation().getType());
 		}
 
 		@Override
-		public void onDoubleClick(IsChart chart, AbstractAnnotation annotation, ChartEventContext event) {
-			click(chart, annotation, event, ClickType.DOUBLE_CLICK);
+		public void onDoubleClick(AnnotationContext context, ChartEventContext event) {
+			click(chart, context.getAnnotation(), event, ClickType.DOUBLE_CLICK);
 		}
 
 		@Override
-		public void onClick(IsChart chart, AbstractAnnotation annotation, ChartEventContext event) {
-			click(chart, annotation, event, ClickType.CLICK);
+		public void onClick(AnnotationContext context, ChartEventContext event) {
+			click(chart, context.getAnnotation(), event, ClickType.CLICK);
 		}
 		
 		private void click(IsChart chart, AbstractAnnotation annotation, ChartEventContext event, ClickType type) {
