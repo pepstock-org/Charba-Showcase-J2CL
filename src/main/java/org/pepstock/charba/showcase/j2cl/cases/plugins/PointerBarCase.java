@@ -3,16 +3,16 @@ package org.pepstock.charba.showcase.j2cl.cases.plugins;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.pepstock.charba.client.BarChart;
 import org.pepstock.charba.client.IsChart;
-import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.UpdateConfigurationBuilder;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
 import org.pepstock.charba.client.configuration.CartesianLinearAxis;
+import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.Labels;
-import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.dom.enums.CursorType;
 import org.pepstock.charba.client.events.AxisClickEvent;
 import org.pepstock.charba.client.events.AxisClickEventHandler;
@@ -42,11 +42,11 @@ import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
 
-public class PointerLineCase extends BaseComposite {
+public class PointerBarCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final LineChart chart = new LineChart();
+	private final BarChart chart = new BarChart();
 
 	private final HTMLSelectElement cursor = (HTMLSelectElement) DomGlobal.document.createElement("select");
 
@@ -64,7 +64,7 @@ public class PointerLineCase extends BaseComposite {
 
 	private final List<PointerElement> elements = new LinkedList<>();
 
-	public PointerLineCase() {
+	public PointerBarCase() {
 		// ----------------------------------------------
 		// Main element
 		// ----------------------------------------------
@@ -110,14 +110,13 @@ public class PointerLineCase extends BaseComposite {
 
 		List<Dataset> datasets = chart.getData().getDatasets(true);
 
-		LineDataset dataset1 = chart.newDataset();
+		BarDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 
 		IsColor color1 = GoogleChartColor.values()[0];
 
 		dataset1.setBackgroundColor(color1.toHex());
 		dataset1.setBorderColor(color1.toHex());
-		dataset1.setFill(false);
 		double[] values = getRandomDigits(months);
 		List<Double> data = dataset1.getData(true);
 		for (int i = 0; i < values.length; i++) {
@@ -125,7 +124,7 @@ public class PointerLineCase extends BaseComposite {
 		}
 		datasets.add(dataset1);
 
-		LineDataset dataset2 = chart.newDataset();
+		BarDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
 
 		IsColor color2 = GoogleChartColor.values()[1];
@@ -133,7 +132,6 @@ public class PointerLineCase extends BaseComposite {
 		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
 		dataset2.setData(getRandomDigits(months));
-		dataset2.setFill(false);
 		datasets.add(dataset2);
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);

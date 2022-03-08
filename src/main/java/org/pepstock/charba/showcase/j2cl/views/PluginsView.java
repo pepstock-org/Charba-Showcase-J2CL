@@ -36,7 +36,7 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendPointStylesAsIm
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendRadialGradientCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendSplittingTextCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.HtmlLegendStyleCase;
-import org.pepstock.charba.showcase.j2cl.cases.plugins.PointerLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.PointerBarCase;
 
 import elemental2.dom.CSSProperties.PaddingTopUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
@@ -408,7 +408,7 @@ public class PluginsView extends AbstractView {
 				catCol.appendChild(item);
 				item.innerHTML = "Setting cursors on line chart";
 				item.onclick = (p0) -> {
-					BaseComposite composite = new PointerLineCase();
+					BaseComposite composite = new PointerBarCase();
 					if (composite != null) {
 						clearPreviousChart();
 						content.appendChild(composite.getElement());
