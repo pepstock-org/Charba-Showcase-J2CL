@@ -12,7 +12,6 @@ import org.pepstock.charba.client.configuration.CartesianLinearAxis;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.dom.elements.CastHelper;
-import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.InteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -71,7 +70,6 @@ public class HoverStyleOnStackedAreaCase extends BaseComposite {
 		dataset1.setBackgroundColor(color1.alpha(0.5D));
 		dataset1.setBorderColor(color1.toHSL());
 		dataset1.setData(getRandomDigits(months, false));
-		dataset1.setFill(Fill.ORIGIN);
 
 		dataset1.setBorderWidth(5);
 
@@ -87,7 +85,6 @@ public class HoverStyleOnStackedAreaCase extends BaseComposite {
 		dataset2.setBackgroundColor(color2.alpha(0.5D));
 		dataset2.setBorderColor(color2.toHex());
 		dataset2.setData(getRandomDigits(months, false));
-		dataset2.setFill(Fill.ORIGIN);
 
 		dataset2.setBorderWidth(5);
 
@@ -215,7 +212,6 @@ public class HoverStyleOnStackedAreaCase extends BaseComposite {
 		dataset.setHoverBorderColor(color.darker());
 		dataset.setPointHoverBackgroundColor("#fff");
 
-		dataset.setFill(Fill.ORIGIN);
 		dataset.setData(getRandomDigits(months, false));
 
 		datasets.add(dataset);

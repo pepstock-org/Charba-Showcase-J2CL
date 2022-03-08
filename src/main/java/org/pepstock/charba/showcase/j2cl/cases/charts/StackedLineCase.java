@@ -2,7 +2,7 @@ package org.pepstock.charba.showcase.j2cl.cases.charts;
 
 import java.util.List;
 
-import org.pepstock.charba.client.StackedAreaChart;
+import org.pepstock.charba.client.StackedLineChart;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.configuration.CartesianCategoryAxis;
@@ -26,7 +26,7 @@ public class StackedLineCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
 
-	private final StackedAreaChart chart = new StackedAreaChart();
+	private final StackedLineChart chart = new StackedLineChart();
 
 	public StackedLineCase() {
 		// ----------------------------------------------
@@ -62,7 +62,6 @@ public class StackedLineCase extends BaseComposite {
 		dataset1.setBackgroundColor(color1.toHSL());
 		dataset1.setBorderColor(color1.toHex());
 		dataset1.setData(getRandomDigits(months, false));
-		dataset1.setFill(false);
 
 		LineDataset dataset2 = chart.newDataset();
 		dataset2.setLabel("dataset 2");
@@ -72,7 +71,6 @@ public class StackedLineCase extends BaseComposite {
 		dataset2.setBackgroundColor(color2.toHex());
 		dataset2.setBorderColor(color2.toHex());
 		dataset2.setData(getRandomDigits(months, false));
-		dataset2.setFill(false);
 
 		CartesianCategoryAxis axis1 = new CartesianCategoryAxis(chart);
 		axis1.setDisplay(true);
