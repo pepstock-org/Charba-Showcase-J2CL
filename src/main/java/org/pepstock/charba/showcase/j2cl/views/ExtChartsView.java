@@ -16,6 +16,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnCategoryAxisCa
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnTimeAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyBasicCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyClickCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyColumnsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyCountriesCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyEnergyCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyTreeCase;
@@ -238,6 +239,11 @@ public class ExtChartsView extends AbstractView {
 		CLICKING("Selecting flow item", new CaseFactory() {
 			public BaseComposite create() {
 				return new SankeyClickCase();
+			}
+		}),
+		COLUMNS("Setting columns", new CaseFactory() {
+			public BaseComposite create() {
+				return new SankeyColumnsCase();
 			}
 		});
 

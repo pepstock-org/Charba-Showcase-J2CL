@@ -93,7 +93,7 @@ public class MainView extends AbstractComposite {
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
 		title.style.width = WidthUnionType.of("250px");
 		title.style.textAlign = "center";
-		title.innerHTML = " showcase";
+		title.innerHTML = " J2CL showcase";
 		title.className = "myTitle";
 		title.onclick = (p0) -> {
 			handleHome(p0);

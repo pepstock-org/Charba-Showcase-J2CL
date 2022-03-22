@@ -22,6 +22,7 @@ import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.PointStyle;
 import org.pepstock.charba.client.enums.Position;
+import org.pepstock.charba.client.items.Undefined;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -30,6 +31,8 @@ import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
+import elemental2.dom.HTMLInputElement;
+import elemental2.dom.HTMLLabelElement;
 import elemental2.dom.HTMLTableCellElement;
 import elemental2.dom.HTMLTableElement;
 import elemental2.dom.HTMLTableRowElement;
@@ -37,6 +40,8 @@ import elemental2.dom.HTMLTableRowElement;
 public class AnnotationLabelOnLineCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
+	
+	private final HTMLInputElement textDecoration = (HTMLInputElement) DomGlobal.document.createElement("input");
 
 	private final LineChart chart = new LineChart();
 
@@ -92,11 +97,11 @@ public class AnnotationLabelOnLineCase extends BaseComposite {
 		AnnotationOptions options = new AnnotationOptions();
 		options.setClip(false);
 
-		LabelAnnotation label = new LabelAnnotation();
+		LabelAnnotation label = new LabelAnnotation("myLabel");
 		label.setDisplay((ctx) -> ctx.getChart().isDatasetVisible(0));
 		label.setBackgroundColor(HtmlColor.WHITE_SMOKE.alpha(0.5));
 		label.setContent((ctx) -> "Maximum value is " + maxValue(ctx.getChart()));
-		label.getFont().setSize(16);
+		label.getFont().setSize(24);
 		label.getPadding().set(6);
 		label.getPadding().setBottom(12);
 		label.setYAdjust(-6);
@@ -159,6 +164,24 @@ public class AnnotationLabelOnLineCase extends BaseComposite {
 		randomize.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(randomize);
 
+		String textDecorationId = "textDecoration" + (int) (Math.random() * 1000D);
+
+		HTMLLabelElement labelFortextDecorating = (HTMLLabelElement) DomGlobal.document.createElement("label");
+		labelFortextDecorating.htmlFor = textDecorationId;
+		labelFortextDecorating.appendChild(DomGlobal.document.createTextNode("Text decoration "));
+		actionsCol.appendChild(labelFortextDecorating);
+
+		textDecoration.id = textDecorationId;
+		textDecoration.checked = true;
+		textDecoration.onclick = (p0) -> {
+			handleTextDecoration();
+			return null;
+		};
+		textDecoration.type = "checkbox";
+		textDecoration.className = "gwt-CheckBox";
+		textDecoration.style.marginRight = MarginRightUnionType.of("5px");
+		actionsCol.appendChild(textDecoration);
+		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -179,6 +202,19 @@ public class AnnotationLabelOnLineCase extends BaseComposite {
 	protected void handleRandomize() {
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			dataset.setData(getRandomDigits(months, 0, 100));
+		}
+		chart.update();
+	}
+	
+	protected void handleTextDecoration() {
+		AnnotationOptions options = chart.getOptions().getPlugins().getOptions(AnnotationPlugin.FACTORY);
+		LabelAnnotation label = (LabelAnnotation)options.getAnnotation("myLabel");
+		if (textDecoration.checked) {
+			label.setTextStrokeWidth(3);
+			label.setColor(HtmlColor.WHITE);
+		} else {
+			label.setTextStrokeWidth(0);
+			label.setColor(Undefined.STRING);
 		}
 		chart.update();
 	}

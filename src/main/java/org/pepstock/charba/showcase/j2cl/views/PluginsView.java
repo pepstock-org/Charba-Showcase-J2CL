@@ -3,6 +3,10 @@ package org.pepstock.charba.showcase.j2cl.views;
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.AreaBackgroundColorBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.AreaBackgroundLinearGradientBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.AreaBackgroundPatternLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.AreaBackgroundRadialGradientPieCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundColorBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundLinearGradientBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.BackgroundPatternLineCase;
@@ -13,6 +17,12 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePieCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeRadarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairHorizontalBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairLogarithmicAxisOnScatterCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairScatterCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairStackedAxesCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairTimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorApiCategoryCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorApiLinearCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.DatasetItemsSelectorApiTimeCase;
@@ -99,6 +109,26 @@ public class PluginsView extends AbstractView {
 		PATTERN("Applying pattern on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new BackgroundPatternLineCase();
+			}
+		}),
+		AREA_COLOR("Applying color to chart area", new CaseFactory() {
+			public BaseComposite create() {
+				return new AreaBackgroundColorBarCase();
+			}
+		}),
+		AREA_LINEAR_GRADIENT("Applying linear gradient to chart area", new CaseFactory() {
+			public BaseComposite create() {
+				return new AreaBackgroundLinearGradientBarCase();
+			}
+		}),
+		AREA_RADIAL_GRADIENT("Applying radial gradient to chart area", new CaseFactory() {
+			public BaseComposite create() {
+				return new AreaBackgroundRadialGradientPieCase();
+			}
+		}),
+		AREA_PATTERN("Applying pattern to chart area", new CaseFactory() {
+			public BaseComposite create() {
+				return new AreaBackgroundPatternLineCase();
 			}
 		});
 
@@ -237,6 +267,61 @@ public class PluginsView extends AbstractView {
 		private final CaseFactory factory;
 
 		private ColorSchemesCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+	}
+
+	// ----------------------------------------------
+	// CROSSHAIR
+	// ----------------------------------------------
+
+	private enum CrosshairSchemesCase implements CaseItem
+	{
+		BAR("Crosshair on category scale", new CaseFactory() {
+			public BaseComposite create() {
+				return new CrosshairBarCase();
+			}
+		}),
+		HBAR("Crosshair on horizontal bar", new CaseFactory() {
+			public BaseComposite create() {
+				return new CrosshairHorizontalBarCase();
+			}
+		}),
+		SCATTER("Crosshair on linear scale", new CaseFactory() {
+			public BaseComposite create() {
+				return new CrosshairScatterCase();
+			}
+		}),
+		LOGARITMIC("Crosshair on logarithmic scale", new CaseFactory() {
+			public BaseComposite create() {
+				return new CrosshairLogarithmicAxisOnScatterCase();
+			}
+		}),
+		TIME("Crosshair on time scale", new CaseFactory() {
+			public BaseComposite create() {
+				return new CrosshairTimeSeriesByLineCase();
+			}
+		}),
+		STACKED_AXES("Crosshair on stacked scales", new CaseFactory() {
+			public BaseComposite create() {
+				return new CrosshairStackedAxesCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private CrosshairSchemesCase(String label, CaseFactory factory) {
 			this.label = label;
 			this.factory = factory;
 		}
@@ -416,6 +501,31 @@ public class PluginsView extends AbstractView {
 					return null;
 				};
 			}
+			if (Category.COLOR_SCHEMES.equals(cat)) {
+				HTMLElement labelCrosshair = (HTMLElement) DomGlobal.document.createElement("div");
+				labelCrosshair.innerHTML = "Crosshair";
+				labelCrosshair.style.textAlign = "left";
+				labelCrosshair.className = "myCategory";
+				labelCrosshair.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelCrosshair);
+
+				for (CrosshairSchemesCase cc : CrosshairSchemesCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = cc.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = cc.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+			}
+
 		}
 	}
 

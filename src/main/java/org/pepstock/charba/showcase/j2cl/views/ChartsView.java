@@ -2,6 +2,7 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
+import org.pepstock.charba.showcase.j2cl.cases.charts.AreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.AxesEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.BarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.BubbleCase;
@@ -178,6 +179,11 @@ public class ChartsView extends AbstractView {
 		TIMESERIES_BY_BAR("Timeseries by bar chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new TimeSeriesByBarCase();
+			}
+		}),
+		AREA("Area", new CaseFactory() {
+			public BaseComposite create() {
+				return new AreaCase();
 			}
 		}),
 		STACKED_BAR("Stacked bar", new CaseFactory() {

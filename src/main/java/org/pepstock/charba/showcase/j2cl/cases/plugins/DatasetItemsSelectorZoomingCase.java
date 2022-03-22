@@ -8,6 +8,8 @@ import java.util.List;
 import org.pepstock.charba.client.IsChart;
 import org.pepstock.charba.client.LineChart;
 import org.pepstock.charba.client.adapters.DateAdapter;
+import org.pepstock.charba.client.callbacks.MinMaxCallback;
+import org.pepstock.charba.client.callbacks.ScaleContext;
 import org.pepstock.charba.client.callbacks.TooltipTitleCallback;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
@@ -57,6 +59,10 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 	private final LineDataset dataset1;
 
 	private final DateAdapter adapter = new DateAdapter();
+	
+	private Date minDate = null;
+
+	private Date maxDate = null;
 
 	public DatasetItemsSelectorZoomingCase() {
 		// ----------------------------------------------
@@ -125,6 +131,20 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 		final CartesianTimeSeriesAxis axis = new CartesianTimeSeriesAxis(chart);
 		axis.getTicks().setSource(TickSource.DATA);
 		axis.getTime().setUnit(TimeUnit.DAY);
+		axis.setMin(new MinMaxCallback<Date>() {
+			
+			@Override
+			public Date invoke(ScaleContext context) {
+				return minDate;
+			}
+		});
+		axis.setMax(new MinMaxCallback<Date>() {
+			
+			@Override
+			public Date invoke(ScaleContext context) {
+				return maxDate;
+			}
+		});
 
 		CartesianLinearAxis axis2 = new CartesianLinearAxis(chart);
 		axis2.setDisplay(true);
@@ -157,8 +177,8 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 
 			@Override
 			public void onClean(DatasetRangeCleanSelectionEvent event) {
-				axis.setMin(null);
-				axis.setMax(null);
+				minDate = null;
+				maxDate = null;
 				dataset1.setDataPoints(new LinkedList<>());
 				chart.getData().setDatasets(dataset1);
 				chart.reconfigure();
@@ -175,8 +195,8 @@ public class DatasetItemsSelectorZoomingCase extends BaseComposite {
 				}
 				dataset1.setDataPoints(newDataPoints);
 				chart.getData().setDatasets(dataset1);
-				axis.setMin(event.getFrom().getValueAsDate());
-				axis.setMax(event.getTo().getValueAsDate());
+				minDate = event.getFrom().getValueAsDate();
+				maxDate = event.getTo().getValueAsDate();
 				chart.reconfigure();
 			}
 		}, DatasetRangeSelectionEvent.TYPE);

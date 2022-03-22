@@ -9,11 +9,14 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.enums.InteractionAxis;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEventHandler;
+import org.pepstock.charba.client.impl.plugins.Crosshair;
+import org.pepstock.charba.client.impl.plugins.CrosshairOptions;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelector;
 import org.pepstock.charba.client.impl.plugins.DatasetsItemsSelectorOptions;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -118,6 +121,13 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 			}
 		}, DatasetRangeSelectionEvent.TYPE);
 
+		CrosshairOptions options = new CrosshairOptions();
+		options.setMode(InteractionAxis.Y);
+		options.setLineWidth(1);
+		chart.getOptions().getPlugins().setOptions(Crosshair.ID, options);
+		
+		chart.getPlugins().add(Crosshair.get());
+		
 		chartCol.appendChild(chart.getChartElement().as());
 
 		// ----------------------------------------------

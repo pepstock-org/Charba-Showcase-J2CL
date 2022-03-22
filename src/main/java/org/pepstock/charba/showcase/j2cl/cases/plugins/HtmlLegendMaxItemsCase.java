@@ -244,7 +244,6 @@ public class HtmlLegendMaxItemsCase extends BaseComposite {
 		String selected = maxItems.options.getAt(maxItems.selectedIndex).value;
 		HtmlLegendOptions options = chart.getOptions().getPlugins().getOptions(HtmlLegend.ID, HtmlLegend.FACTORY);
 		options.setMaximumLegendColumns(Integer.parseInt(selected));
-		chart.getOptions().getPlugins().setOptions(HtmlLegend.ID, options);
 		chart.reconfigure();
 	}
 

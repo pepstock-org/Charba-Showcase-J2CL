@@ -277,7 +277,6 @@ public class ColorSchemeRadarCase extends BaseComposite {
 	protected void handleReverse() {
 		ColorSchemesOptions options = chart.getOptions().getPlugins().getOptions(ColorSchemes.ID, ColorSchemes.FACTORY);
 		options.setReverse(reverse.checked);
-		chart.getOptions().getPlugins().setOptions(ColorSchemes.ID, options);
 		chart.update();
 	}
 

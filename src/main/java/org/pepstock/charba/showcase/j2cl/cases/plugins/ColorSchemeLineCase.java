@@ -243,7 +243,6 @@ public class ColorSchemeLineCase extends BaseComposite {
 			dataset.setData(getRandomDigits(months));
 		}
 		chart.update();
-
 	}
 
 	protected void handleAddDataset() {
@@ -278,7 +277,6 @@ public class ColorSchemeLineCase extends BaseComposite {
 	protected void handleReverse() {
 		ColorSchemesOptions options = chart.getOptions().getPlugins().getOptions(ColorSchemes.ID, ColorSchemes.FACTORY);
 		options.setReverse(reverse.checked);
-		chart.getOptions().getPlugins().setOptions(ColorSchemes.ID, options);
 		chart.update();
 	}
 

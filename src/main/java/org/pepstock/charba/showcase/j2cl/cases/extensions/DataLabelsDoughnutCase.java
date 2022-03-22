@@ -4,13 +4,13 @@ import java.util.List;
 
 import org.pepstock.charba.client.DoughnutChart;
 import org.pepstock.charba.client.callbacks.ColorCallback;
+import org.pepstock.charba.client.callbacks.DisplayCallback;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.DoughnutDataset;
 import org.pepstock.charba.client.datalabels.DataLabelsContext;
 import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
-import org.pepstock.charba.client.datalabels.callbacks.DisplayCallback;
 import org.pepstock.charba.client.datalabels.callbacks.FormatterCallback;
 import org.pepstock.charba.client.datalabels.enums.Anchor;
 import org.pepstock.charba.client.enums.DefaultPluginId;
@@ -112,8 +112,8 @@ public class DataLabelsDoughnutCase extends BaseComposite {
 			}
 
 		});
-		option.setDisplay(new DisplayCallback() {
-
+		option.setDisplay(new DisplayCallback<DataLabelsContext>() {
+			
 			@Override
 			public Display invoke(DataLabelsContext context) {
 				Dataset ds = chart.getData().getDatasets().get(context.getDatasetIndex());
@@ -121,6 +121,7 @@ public class DataLabelsDoughnutCase extends BaseComposite {
 				double value = ds.getData().get(context.getDataIndex());
 				return value > count * 1.5D ? Display.TRUE : Display.FALSE;
 			}
+			
 		});
 		option.setBorderColor(HtmlColor.WHITE);
 		option.setBorderRadius(25);
