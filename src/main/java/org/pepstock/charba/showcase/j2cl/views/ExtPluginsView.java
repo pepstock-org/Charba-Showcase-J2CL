@@ -35,6 +35,10 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsMultiLabelsC
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsPolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.DataLabelsSelectionCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientPolarAreaCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientTimeSeriesByLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsMultiOptionsCase;
@@ -456,6 +460,52 @@ public class ExtPluginsView extends AbstractView {
 		}
 
 	}
+	
+	// ----------------------------------------------
+	// GRADIENT plugin
+	// ----------------------------------------------
+
+	private enum GradientCase implements CaseItem
+	{
+		BAR("Using on cartesian category axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new GradientBarCase(); // FIXME
+			}
+		}),
+		LINE("Using on cartesian linear axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new GradientLineCase();
+			}
+		}),
+		TIME_LINE("Using on cartesian time axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new GradientTimeSeriesByLineCase();
+			}
+		}),
+		POLAR("Using on radial linear axis", new CaseFactory() {
+			public BaseComposite create() {
+				return new GradientPolarAreaCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private GradientCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
 
 	public ExtPluginsView(HTMLElement content) {
 		super(content);
@@ -532,6 +582,31 @@ public class ExtPluginsView extends AbstractView {
 					}
 					return null;
 				};
+			}
+			
+			if (Category.LABELS.equals(cat)) {
+				HTMLElement labelCrosshair = (HTMLElement) DomGlobal.document.createElement("div");
+				labelCrosshair.innerHTML = "Gradient plugin";
+				labelCrosshair.style.textAlign = "left";
+				labelCrosshair.className = "myCategory";
+				labelCrosshair.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelCrosshair);
+
+				for (GradientCase gp : GradientCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = gp.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = gp.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
 			}
 		}
 	}

@@ -10,6 +10,7 @@ import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.geo.Feature;
 import org.pepstock.charba.client.geo.GeoUtils;
 import org.pepstock.charba.client.geo.TopoJson;
+import org.pepstock.charba.client.gradient.GradientPlugin;
 import org.pepstock.charba.client.impl.charts.GaugeChart;
 import org.pepstock.charba.client.impl.charts.MeterChart;
 import org.pepstock.charba.client.impl.plugins.ChartBackgroundColor;
@@ -83,6 +84,8 @@ public class App implements EntryPoint {
 		ZoomPlugin.enable();
 		
 		AnnotationPlugin.enable();
+		
+		GradientPlugin.enable();
 		
 		Toaster.get().getDefaults().setTimeout(3000);
 		Toaster.get().setMaxHistoryItems(50);

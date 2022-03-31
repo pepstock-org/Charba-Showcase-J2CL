@@ -492,6 +492,7 @@ public class PluginsView extends AbstractView {
 				item.className = "myCategoryItem";
 				catCol.appendChild(item);
 				item.innerHTML = "Setting cursors on bar chart";
+				// FIXME
 				item.onclick = (p0) -> {
 					BaseComposite composite = new PointerBarCase();
 					if (composite != null) {
@@ -525,7 +526,6 @@ public class PluginsView extends AbstractView {
 					};
 				}
 			}
-
 		}
 	}
 
