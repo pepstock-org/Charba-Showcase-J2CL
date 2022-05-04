@@ -32,7 +32,7 @@
 	-->
 	<target name="clean" description="MVN clean">
 		 <exec dir="." executable="cmd">
-		 	<arg line="/c mvn clean  --no-transfer-progress"/>
+		 	<arg line="/c mvn clean --no-transfer-progress"/>
 		  </exec>
 	</target>
 
@@ -41,7 +41,7 @@
 	-->
 	<target name="install" description="MVN install">
 		 <exec dir="." executable="cmd">
-		 	<arg line="/c mvn install  --no-transfer-progress"/>
+		 	<arg line="/c mvn install --no-transfer-progress"/>
 		  </exec>
 	</target>
 

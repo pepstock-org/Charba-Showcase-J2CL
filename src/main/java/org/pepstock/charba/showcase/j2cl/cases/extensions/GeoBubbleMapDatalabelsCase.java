@@ -18,7 +18,7 @@ import org.pepstock.charba.client.geo.BubbleMapChart;
 import org.pepstock.charba.client.geo.BubbleMapDataPoint;
 import org.pepstock.charba.client.geo.BubbleMapDataset;
 import org.pepstock.charba.client.geo.Feature;
-import org.pepstock.charba.client.geo.GeoUtils;
+import org.pepstock.charba.client.geo.GeoUtil;
 import org.pepstock.charba.client.geo.ProjectionAxis;
 import org.pepstock.charba.client.geo.SizeAxis;
 import org.pepstock.charba.client.geo.enums.Position;
@@ -81,7 +81,7 @@ public class GeoBubbleMapDatalabelsCase extends BaseComposite {
 			parseAndLoad();
 		}
 
-		List<Feature> stateFeatures = GeoUtils.features(App.US, "states");
+		List<Feature> stateFeatures = GeoUtil.features(App.US, "states");
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getTitle().setDisplay(true);

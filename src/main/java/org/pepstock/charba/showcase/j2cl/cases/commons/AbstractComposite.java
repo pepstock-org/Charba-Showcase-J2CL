@@ -113,4 +113,18 @@ public abstract class AbstractComposite {
 		return values;
 	}
 
+	protected double[] getLinearRegressionDigits(int length) {
+		double A = rnd(10) + 10;
+		double B = rnd(10);
+		double rnd = A * length + B;
+		double[] values = new double[length];
+		for (int i = 0; i < length; i++) {
+			values[i] = (A * i + B) + Math.random() * rnd;
+		}
+		return values;
+	}
+
+	private double rnd(int max) {
+		return max * Math.random();
+	}
 }

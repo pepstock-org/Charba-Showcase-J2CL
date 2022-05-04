@@ -8,7 +8,7 @@ import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.annotation.AnnotationPlugin;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.geo.Feature;
-import org.pepstock.charba.client.geo.GeoUtils;
+import org.pepstock.charba.client.geo.GeoUtil;
 import org.pepstock.charba.client.geo.TopoJson;
 import org.pepstock.charba.client.gradient.GradientPlugin;
 import org.pepstock.charba.client.impl.charts.GaugeChart;
@@ -108,14 +108,13 @@ public class App implements EntryPoint {
 				Europemap europe = new Europemap();
 				Germanymap germany = new Germanymap();
 				Italymap italy = new Italymap();
-				App.EARTH_FEATURES = GeoUtils.features(earth.getContent(), "countries");
-				App.US = GeoUtils.createTopoJson(us.getContent());
-				App.EUROPE = GeoUtils.createTopoJson(europe.getContent());
-				App.ITALY = GeoUtils.createTopoJson(italy.getContent());
-				App.GERMANY = GeoUtils.createTopoJson(germany.getContent());
+				App.EARTH_FEATURES = GeoUtil.features(earth.getContent(), "countries");
+				App.US = GeoUtil.createTopoJson(us.getContent());
+				App.EUROPE = GeoUtil.createTopoJson(europe.getContent());
+				App.ITALY = GeoUtil.createTopoJson(italy.getContent());
+				App.GERMANY = GeoUtil.createTopoJson(germany.getContent());
 			}
 		});
-
 	}
 
 }

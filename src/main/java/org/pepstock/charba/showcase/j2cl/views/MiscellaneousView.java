@@ -21,6 +21,7 @@ import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.CallbacksWithThresh
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ControllerMyHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ControllerMyLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.DatasetSelectionWithModifierCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.ExponentialRegressionScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FlagsPluginOnBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataDataLabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataOnBarCase;
@@ -31,6 +32,12 @@ import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByEl
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HoverStyleOnStackedAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.InterpolationOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.PolynomialRegressionBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.PowerRegressionScatterCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.RegressionBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.RegressionLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.RegressionScatterCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.RegressionTimeSeriesLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SimpleLabelPluginOnBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.StandingPluginOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.SteppedLineOnLineCase;
@@ -51,7 +58,7 @@ public class MiscellaneousView extends AbstractView {
 	{
 		OPTIONS("Options", OptionsCase.values()),
 		SCRIPTABLE_OPTIONS("Scriptable options", ScriptableOptionsCase.values()),
-		DATASETS("Datasets", DatasetsCase.values()),
+		REGRESSIONS("Regressions", RegressionsCase.values()),
 		PLUGINS("Implementing plugins", PluginsCase.values());
 
 		private final String label;
@@ -122,11 +129,6 @@ public class MiscellaneousView extends AbstractView {
 		ACTIVE_ELEMENTS("Active elements on bar chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new ActiveElementsOnBarCase();
-			}
-		}),
-		TRENDS("Drawing trend and forecast on timeseries chart", new CaseFactory() {
-			public BaseComposite create() {
-				return new TrendAndForecastCase();
 			}
 		}),
 		AUTO_UPDATE("Auto updating on timeseries chart", new CaseFactory() {
@@ -362,6 +364,71 @@ public class MiscellaneousView extends AbstractView {
 
 	}
 	
+	// ----------------------------------------------
+	// REGRESSIONS
+	// ----------------------------------------------
+	private enum RegressionsCase implements CaseItem
+	{
+		LINEAR_BAR("Linear regression on bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new RegressionBarCase();
+			}
+		}),
+		LINEAR_LINE("Linear regression on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new RegressionLineCase();
+			}
+		}),
+		LINEAR_SCATTER("Linear regression on scatter chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new RegressionScatterCase();
+			}
+		}),
+		LINEAR_TIME_SERIES("Linear regression on time series chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new RegressionTimeSeriesLineCase();
+			}
+		}),
+		POLYNMIAL("Polynomial regression on bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new PolynomialRegressionBarCase();
+			}
+		}),
+		POWER("Power regression on scatter chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new PowerRegressionScatterCase();
+			}
+		}),
+		EXPONENTIAL("Exponential regression on scatter chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new ExponentialRegressionScatterCase();
+			}
+		}),
+		TRENDS("Drawing trend and forecast on timeseries chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new TrendAndForecastCase();
+			}
+		});
+
+		private final String label;
+
+		private final CaseFactory factory;
+
+		private RegressionsCase(String label, CaseFactory factory) {
+			this.label = label;
+			this.factory = factory;
+		}
+
+		public String getLabel() {
+			return label;
+		}
+
+		public CaseFactory getFactory() {
+			return factory;
+		}
+
+	}
+	
 	public MiscellaneousView(HTMLElement content) {
 		super(content);
 		HTMLElement title = (HTMLElement) DomGlobal.document.createElement("div");
@@ -407,6 +474,31 @@ public class MiscellaneousView extends AbstractView {
 					item.innerHTML = caseItem.getLabel();
 					item.onclick = (p0) -> {
 						BaseComposite composite = caseItem.getFactory().create();
+						if (composite != null) {
+							clearPreviousChart();
+							content.appendChild(composite.getElement());
+						}
+						return null;
+					};
+				}
+			}
+
+			if (Category.SCRIPTABLE_OPTIONS.equals(cat)) {
+				HTMLElement labelCrosshair = (HTMLElement) DomGlobal.document.createElement("div");
+				labelCrosshair.innerHTML = "Datasets";
+				labelCrosshair.style.textAlign = "left";
+				labelCrosshair.className = "myCategory";
+				labelCrosshair.style.paddingTop = PaddingTopUnionType.of("12px");
+				catCol.appendChild(labelCrosshair);
+
+				for (DatasetsCase gp : DatasetsCase.values()) {
+					HTMLDivElement item = (HTMLDivElement) DomGlobal.document.createElement("div");
+					item.style.textAlign = "left";
+					item.className = "myCategoryItem";
+					catCol.appendChild(item);
+					item.innerHTML = gp.getLabel();
+					item.onclick = (p0) -> {
+						BaseComposite composite = gp.getFactory().create();
 						if (composite != null) {
 							clearPreviousChart();
 							content.appendChild(composite.getElement());
