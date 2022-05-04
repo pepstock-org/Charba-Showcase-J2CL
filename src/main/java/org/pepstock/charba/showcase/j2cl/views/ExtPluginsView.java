@@ -469,7 +469,7 @@ public class ExtPluginsView extends AbstractView {
 	{
 		BAR("Using on cartesian category axis", new CaseFactory() {
 			public BaseComposite create() {
-				return new GradientBarCase(); // FIXME
+				return new GradientBarCase();
 			}
 		}),
 		LINE("Using on cartesian linear axis", new CaseFactory() {
