@@ -121,6 +121,7 @@ public class HomeView extends BaseComposite {
 		datasetGwt.setPointBorderWidth(1);
 		datasetGwt.setPointRadius(4);
 		datasetGwt.setPointHoverRadius(4);
+		datasetGwt.setPointHoverBackgroundColor(Color.CHARBA);
 		datasetGwt.setPointHoverBorderWidth(1);
 		datasetGwt.setPointHitRadius(4);
 		datasetGwt.setFill(false);
@@ -137,6 +138,7 @@ public class HomeView extends BaseComposite {
 		datasetJ2CL.setPointBorderWidth(1);
 		datasetJ2CL.setPointRadius(4);
 		datasetJ2CL.setPointHoverRadius(4);
+		datasetJ2CL.setPointHoverBackgroundColor(HtmlColor.CORNFLOWER_BLUE);
 		datasetJ2CL.setPointHoverBorderWidth(1);
 		datasetJ2CL.setPointHitRadius(4);
 		datasetJ2CL.setFill(false);
