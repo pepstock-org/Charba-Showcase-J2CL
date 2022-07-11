@@ -16,12 +16,14 @@ import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.TickSource;
 import org.pepstock.charba.client.enums.TimeUnit;
+import org.pepstock.charba.client.utils.CTimer;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
+import elemental2.dom.HTMLDivElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
 import elemental2.dom.HTMLTableCellElement;
@@ -41,6 +43,8 @@ public class AutoUpdateLineCase extends BaseComposite {
 	private final HTMLButtonElement start;
 	
 	private final HTMLButtonElement stop;
+	
+	private final HTMLDivElement countDown = (HTMLDivElement) DomGlobal.document.createElement("div");
 
 	private final LineChart chart = new LineChart();
 
@@ -49,6 +53,10 @@ public class AutoUpdateLineCase extends BaseComposite {
 	private final LineDataset dataset;
 
 	private final CartesianTimeAxis axis;
+	
+	final CTimer timer = new CTimer(this::countDown, 1000);
+	
+	private int seconds = 5;
 
 	public AutoUpdateLineCase() {
 		// ----------------------------------------------
@@ -70,6 +78,9 @@ public class AutoUpdateLineCase extends BaseComposite {
 		// ----------------------------------------------
 		// Chart
 		// ----------------------------------------------
+
+		countDown.innerHTML = "Next data in " + seconds + " seconds";
+		timer.start();
 
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setDisplay(false);
@@ -163,6 +174,21 @@ public class AutoUpdateLineCase extends BaseComposite {
 		stop.style.marginRight = MarginRightUnionType.of("5px");
 		actionsCol.appendChild(stop);
 
+		// ----------------------------------------------
+		// help element
+		// ----------------------------------------------
+
+		HTMLTableRowElement countDownRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		countDownRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(countDownRow);
+
+		HTMLTableCellElement countDownCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		countDownCol.style.width = WidthUnionType.of("100%");
+		countDownCol.style.textAlign = "center";
+		countDownCol.vAlign = "top";
+		countDownRow.appendChild(countDownCol);
+		countDownCol.appendChild(countDown);
+		
 		HTMLButtonElement github = (HTMLButtonElement) DomGlobal.document.createElement("button");
 		github.onclick = (p0) -> {
 			DomGlobal.window.open(getUrl(), "_blank", "");
@@ -180,16 +206,29 @@ public class AutoUpdateLineCase extends BaseComposite {
 		return mainPanel;
 	}
 
+	protected void countDown() {
+		seconds--;
+		if (seconds == 0) {
+			seconds = 5;
+		}
+		countDown.innerHTML = "Next data in " + seconds + " seconds";
+	}
+	
 	protected void handleStart() {
 		chart.getTimer().start();
 		start.disabled = true;
 		stop.disabled = false;
+		seconds = 5;
+		timer.start();
+		countDown.innerHTML = "Next data in " + seconds + " seconds";
 	}
 
 	protected void handleStop() {
 		chart.getTimer().stop();
+		timer.stop();
 		start.disabled = false;
 		stop.disabled = true;
+		countDown.innerHTML = "Stopped!";
 	}
 
 }
