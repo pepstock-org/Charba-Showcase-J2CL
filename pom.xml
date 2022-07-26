@@ -6,7 +6,7 @@
 
 	<groupId>org.pepstock</groupId>
 	<artifactId>charba-showcase-j2cl</artifactId>
-	<version>5.4</version>
+	<version>5.5</version>
 	<name>Charba-Showcase-J2CL</name>
 	<description>Showcase of Charba on J2CL</description>
 
@@ -33,7 +33,7 @@
 		<dependency> 
 			<groupId>org.pepstock</groupId>
 			<artifactId>charba</artifactId>
-			<version>5.4</version>
+			<version>5.5</version>
 		</dependency>
 
 	</dependencies>
@@ -92,7 +92,7 @@
 				<plugin>
 					<groupId>com.vertispan.j2cl</groupId>
 					<artifactId>j2cl-maven-plugin</artifactId>
-					<version>0.19-SNAPSHOT</version>
+					<version>0.20</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-source-plugin</artifactId>
