@@ -18,7 +18,6 @@ import org.pepstock.charba.client.annotation.BoxAnnotation;
 import org.pepstock.charba.client.annotation.LineAnnotation;
 import org.pepstock.charba.client.annotation.enums.DrawTime;
 import org.pepstock.charba.client.annotation.listeners.ClickCallback;
-import org.pepstock.charba.client.annotation.listeners.DoubleClickCallback;
 import org.pepstock.charba.client.annotation.listeners.EnterCallback;
 import org.pepstock.charba.client.annotation.listeners.LeaveCallback;
 import org.pepstock.charba.client.callbacks.AbstractTooltipTitleCallback;
@@ -170,7 +169,6 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		line.setEnterCallback(eventHandler);
 		line.setLeaveCallback(eventHandler);
 		line.setClickCallback(eventHandler);
-		line.setDoubleClickCallback(eventHandler);
 
 		BoxAnnotation box = new BoxAnnotation();
 		box.setDrawTime(DrawTime.BEFORE_DATASETS_DRAW);
@@ -188,7 +186,6 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		box.setEnterCallback(eventHandler);
 		box.setLeaveCallback(eventHandler);
 		box.setClickCallback(eventHandler);
-		box.setDoubleClickCallback(eventHandler);
 		
 		options.setAnnotations(line, box);
 		
@@ -262,35 +259,34 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		chart.update();
 	}
 	
-	class MyEventsHandler implements ClickCallback,  DoubleClickCallback,  LeaveCallback, EnterCallback {
+	class MyEventsHandler implements ClickCallback,   LeaveCallback, EnterCallback {
 
 		@Override
-		public void onEnter(AnnotationContext context, ChartEventContext event) {
+		public boolean onEnter(AnnotationContext context, ChartEventContext event) {
 			Map<String, Object> shared = context.getShared();
 			AtomicInteger count = (AtomicInteger)shared.computeIfAbsent("count", mapKey -> new AtomicInteger());
 			count.incrementAndGet();
 			mylog.addLogEvent("> Enter on annotation '"+context.getAnnotation().getId().value()+"' type " + context.getAnnotation().getType() + " count " + count.get());
+			return false;
 		}
 
 		@Override
-		public void onLeave(AnnotationContext context, ChartEventContext event) {
+		public boolean onLeave(AnnotationContext context, ChartEventContext event) {
 			Map<String, Object> shared = context.getShared();
 			AtomicInteger count = (AtomicInteger)shared.computeIfAbsent("count", mapKey -> new AtomicInteger());
 			count.decrementAndGet();
 			mylog.addLogEvent("> Leave on annotation '"+context.getAnnotation().getId().value()+"' type " + context.getAnnotation().getType() + " count " + count.get());
+			return false;
 		}
 
 		@Override
-		public void onDoubleClick(AnnotationContext context, ChartEventContext event) {
-			click(chart, context.getAnnotation(), event, ClickType.DOUBLE_CLICK);
-		}
-
-		@Override
-		public void onClick(AnnotationContext context, ChartEventContext event) {
-			click(chart, context.getAnnotation(), event, ClickType.CLICK);
+		public boolean onClick(AnnotationContext context, ChartEventContext event) {
+			click(context, event, ClickType.CLICK);
+			return false;
 		}
 		
-		private void click(IsChart chart, AbstractAnnotation annotation, ChartEventContext event, ClickType type) {
+		private void click(AnnotationContext context, ChartEventContext event, ClickType type) {
+			AbstractAnnotation annotation = context.getAnnotation();
 			StringBuilder sb = new StringBuilder();
 			sb.append("Annotation: <b>").append(annotation.getId().value()).append("</b><br>");
 			sb.append("Annotation type: <b>").append(annotation.getType().value()).append("</b><br>");
@@ -302,8 +298,7 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 	private enum ClickType
 	{
 
-		CLICK("Click", DefaultToastType.SUCCESS),
-		DOUBLE_CLICK("Double click", DefaultToastType.INFO);
+		CLICK("Click", DefaultToastType.SUCCESS);
 
 		private final String title;
 
@@ -323,5 +318,4 @@ public class AnnotationsEventsOnTimeSeriesCase extends BaseComposite {
 		}
 
 	}
-
 }

@@ -1,7 +1,10 @@
 package org.pepstock.charba.showcase.j2cl.cases.elements;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.pepstock.charba.client.LineChart;
-import org.pepstock.charba.client.callbacks.BorderDashOffsetCallback;
+import org.pepstock.charba.client.callbacks.BorderDashCallback;
 import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.callbacks.ScaleContext;
 import org.pepstock.charba.client.callbacks.WidthCallback;
@@ -108,14 +111,15 @@ public class GridLinesStyleCase extends BaseComposite {
 			}
 		});
 
-		axis2.getGrid().setBorderDashOffset(new BorderDashOffsetCallback<ScaleContext>() {
+		axis2.getGrid().setBorderDash(new BorderDashCallback<ScaleContext>() {
 
 			@Override
-			public Double invoke(ScaleContext context) {
-				return (double)(context.getIndex() % 10);
+			public List<Integer> invoke(ScaleContext context) {
+				int value = context.getIndex() % 10;
+				return Arrays.asList(value, value * 2);
 			}
 		});
-		
+				
 		axis2.getGrid().setTickColor(new ColorCallback<ScaleContext>() {
 			
 			@Override
