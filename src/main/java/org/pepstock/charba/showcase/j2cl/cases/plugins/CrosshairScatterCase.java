@@ -8,6 +8,8 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.ScatterDataset;
+import org.pepstock.charba.client.dom.elements.Div;
+import org.pepstock.charba.client.dom.enums.IsKeyboardKey;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.impl.plugins.Crosshair;
 import org.pepstock.charba.client.impl.plugins.CrosshairOptions;
@@ -163,7 +165,8 @@ public class CrosshairScatterCase extends BaseComposite {
 		helpCol.style.textAlign = "center";
 		helpCol.vAlign = "top";
 		helpRow.appendChild(helpCol);
-		help.innerHTML = "Press " + ModifierKey.CTRL.getElement().getInnerHTML() + " to act with crosshair";
+		Div kkey = IsKeyboardKey.getElement(ModifierKey.CTRL.getKeyboardKey());
+		help.innerHTML = "Press " + kkey.getInnerHTML() + " to act with crosshair";
 		helpCol.appendChild(help);
 	}
 

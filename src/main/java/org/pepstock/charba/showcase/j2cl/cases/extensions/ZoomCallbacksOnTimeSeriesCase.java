@@ -18,6 +18,8 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.data.TimeSeriesItem;
 import org.pepstock.charba.client.data.TimeSeriesLineDataset;
+import org.pepstock.charba.client.dom.elements.Div;
+import org.pepstock.charba.client.dom.enums.IsKeyboardKey;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.TickSource;
@@ -333,7 +335,8 @@ public class ZoomCallbacksOnTimeSeriesCase extends BaseComposite {
 		ZoomOptions options = chart.getOptions().getPlugins().getOptions(ZoomPlugin.ID, ZoomPlugin.FACTORY);
 		if (modifier.checked) {
 			options.getZoom().getWheel().setModifierKey(ModifierKey.ALT);
-			help.innerHTML = ModifierKey.ALT.getElement().getInnerHTML()+" + wheeling to zoom";
+			Div kkey = IsKeyboardKey.getElement(ModifierKey.ALT.getKeyboardKey());
+			help.innerHTML = kkey.getInnerHTML()+" + wheeling to zoom";
 		} else {
 			options.getZoom().getWheel().setModifierKey(null);
 			help.innerHTML = "";

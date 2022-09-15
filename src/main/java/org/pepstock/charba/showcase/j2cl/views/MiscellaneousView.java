@@ -31,6 +31,7 @@ import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.FloatingDataTimeSer
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationByElementCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HTMLAnnnotationCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.HoverStyleOnStackedAreaCase;
+import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.InteractionByKeyboardCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.InterpolationOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.PolynomialRegressionBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.PowerRegressionScatterCase;
@@ -306,6 +307,11 @@ public class MiscellaneousView extends AbstractView {
 		HTML_ANNOTATION_ELEMENT("HTML annotation by element", new CaseFactory() {
 			public BaseComposite create() {
 				return new HTMLAnnnotationByElementCase();
+			}
+		}),
+		KEYBOARD_INTERACTION("Interaction by keyboard", new CaseFactory() {
+			public BaseComposite create() {
+				return new InteractionByKeyboardCase();
 			}
 		});
 

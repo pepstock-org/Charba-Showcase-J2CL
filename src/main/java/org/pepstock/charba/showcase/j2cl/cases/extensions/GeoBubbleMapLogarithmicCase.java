@@ -14,6 +14,7 @@ import org.pepstock.charba.client.geo.BubbleMapChart;
 import org.pepstock.charba.client.geo.BubbleMapDataPoint;
 import org.pepstock.charba.client.geo.BubbleMapDataset;
 import org.pepstock.charba.client.geo.Feature;
+import org.pepstock.charba.client.geo.GeoFeatureElementOptions;
 import org.pepstock.charba.client.geo.GeoUtil;
 import org.pepstock.charba.client.geo.ProjectionAxis;
 import org.pepstock.charba.client.geo.SizeLogarithmicAxis;
@@ -80,7 +81,7 @@ public class GeoBubbleMapLogarithmicCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Bubble map chart and logarithmic size axis");
-		chart.getOptions().getElements().getBubbleMapPoint().setOutlineBorderColor(HtmlColor.RED);
+		chart.getOptions().getElements().getElement(GeoFeatureElementOptions.FACTORY).setOutlineBorderColor(HtmlColor.RED);
 
 		Labels labels = Labels.build();
 

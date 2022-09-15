@@ -10,7 +10,7 @@ import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.dom.elements.Img;
 import org.pepstock.charba.client.enums.AxisPosition;
 import org.pepstock.charba.client.enums.InteractionMode;
-import org.pepstock.charba.client.items.DatasetElement;
+import org.pepstock.charba.client.items.BarElement;
 import org.pepstock.charba.client.items.DatasetItem;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
 import org.pepstock.charba.client.utils.AnnotationBuilder;
@@ -104,7 +104,7 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 				final Context2dItem ctx = chart.getCanvas().getContext2d();
 
 				DatasetItem item = chart.getDatasetItem(0);
-				DatasetElement elem = item.getElements().get(3);
+				BarElement elem = (BarElement) item.getElements().get(3);
 
 				Img img = AnnotationBuilder.build(ANNOTATION, 300, 64);
 

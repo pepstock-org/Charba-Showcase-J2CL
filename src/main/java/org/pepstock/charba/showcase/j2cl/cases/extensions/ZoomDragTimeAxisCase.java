@@ -17,6 +17,8 @@ import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.data.ScatterDataset;
+import org.pepstock.charba.client.dom.elements.Div;
+import org.pepstock.charba.client.dom.enums.IsKeyboardKey;
 import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.DefaultTransitionKey;
 import org.pepstock.charba.client.enums.Fill;
@@ -271,7 +273,8 @@ public class ZoomDragTimeAxisCase extends BaseComposite {
 		helpCol.style.textAlign = "center";
 		helpCol.vAlign = "top";
 		helpRow.appendChild(helpCol);
-		help.innerHTML = ModifierKey.ALT.getElement().getInnerHTML() + " to pan";
+		Div kkey = IsKeyboardKey.getElement(ModifierKey.ALT.getKeyboardKey());
+		help.innerHTML = kkey.getInnerHTML() + " to pan";
 		helpCol.appendChild(help);
 		
 		// ----------------------------------------------

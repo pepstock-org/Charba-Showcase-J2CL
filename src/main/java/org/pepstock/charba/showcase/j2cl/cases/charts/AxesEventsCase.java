@@ -113,7 +113,7 @@ public class AxesEventsCase extends BaseComposite {
 			@Override
 			public void onClick(AxisClickEvent event) {
 				String value = ScaleDataType.NUMBER.equals(event.getValue().getDataType()) ? event.getValue().getValueAsString() : event.getValue().getLabel();
-				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY() + ", value:" + value);
+				mylog.addLogEvent("> CLICK: event ScreenX: " + event.getNativeMouseEvent().getScreenX() + ", ScreenY:" + event.getNativeMouseEvent().getScreenY() + ", value:" + value);
 				StringBuilder sb = new StringBuilder();
 				sb.append("Axis value: <b>").append(event.getValue().getLabel()).append("</b><br>");
 				new Toast("Axis Selected!", sb.toString()).show();
@@ -124,7 +124,7 @@ public class AxesEventsCase extends BaseComposite {
 
 			@Override
 			public void onLeave(AxisLeaveEvent event) {
-				mylog.addLogEvent("> LEAVE: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+				mylog.addLogEvent("> LEAVE: event ScreenX: " + event.getNativeMouseEvent().getScreenX() + ", ScreenY:" + event.getNativeMouseEvent().getScreenY());
 				event.getChart().getNode().getOptions().getScales().getAxis(event.getItem().getId()).setBackgroundColor(HtmlColor.TRANSPARENT);
 				event.getChart().update();
 			}
@@ -134,7 +134,7 @@ public class AxesEventsCase extends BaseComposite {
 
 			@Override
 			public void onEnter(AxisEnterEvent event) {
-				mylog.addLogEvent("> ENTER: event ScreenX: " + event.getNativeEvent().getScreenX() + ", ScreenY:" + event.getNativeEvent().getScreenY());
+				mylog.addLogEvent("> ENTER: event ScreenX: " + event.getNativeMouseEvent().getScreenX() + ", ScreenY:" + event.getNativeMouseEvent().getScreenY());
 				event.getChart().getNode().getOptions().getScales().getAxis(event.getItem().getId()).setBackgroundColor(HtmlColor.LIGHT_GREEN.alpha(0.2));
 				event.getChart().update();
 			}

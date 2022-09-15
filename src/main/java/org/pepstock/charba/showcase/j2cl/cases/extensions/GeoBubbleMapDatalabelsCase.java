@@ -18,6 +18,7 @@ import org.pepstock.charba.client.geo.BubbleMapChart;
 import org.pepstock.charba.client.geo.BubbleMapDataPoint;
 import org.pepstock.charba.client.geo.BubbleMapDataset;
 import org.pepstock.charba.client.geo.Feature;
+import org.pepstock.charba.client.geo.GeoFeatureElementOptions;
 import org.pepstock.charba.client.geo.GeoUtil;
 import org.pepstock.charba.client.geo.ProjectionAxis;
 import org.pepstock.charba.client.geo.SizeAxis;
@@ -86,7 +87,8 @@ public class GeoBubbleMapDatalabelsCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("US bubble map chart");
-		chart.getOptions().getElements().getBubbleMapPoint().setOutlineBorderColor(HtmlColor.RED);
+		chart.getOptions().getElements().getElement(GeoFeatureElementOptions.FACTORY).setOutlineBorderColor(HtmlColor.GREEN);
+		chart.getOptions().getElements().getPoint().setBackgroundColor(HtmlColor.LIGHT_CORAL);
 
 		Labels labels = Labels.build();
 

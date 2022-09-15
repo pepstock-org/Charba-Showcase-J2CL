@@ -17,6 +17,8 @@ import org.pepstock.charba.client.datalabels.DataLabelsOptions;
 import org.pepstock.charba.client.datalabels.DataLabelsPlugin;
 import org.pepstock.charba.client.datalabels.enums.Align;
 import org.pepstock.charba.client.datalabels.events.ClickEventHandler;
+import org.pepstock.charba.client.dom.elements.Div;
+import org.pepstock.charba.client.dom.enums.IsKeyboardKey;
 import org.pepstock.charba.client.enums.DefaultPluginId;
 import org.pepstock.charba.client.enums.ModifierKey;
 import org.pepstock.charba.client.enums.Weight;
@@ -173,7 +175,8 @@ public class DataLabelsSelectionCase extends BaseComposite {
 			@Override
 			public boolean onClick(DataLabelsContext context, ChartEventContext event) {
 				if (modifier.checked && !ModifierKey.CTRL.isPressed(event)) {
-					new Toast("Missing key!", "To select the label you must press "+ModifierKey.CTRL.getElement().getInnerHTML()+" + click! ", DefaultToastType.WARNING).show();
+					Div kkey = IsKeyboardKey.getElement(ModifierKey.CTRL.getKeyboardKey());
+					new Toast("Missing key!", "To select the label you must press "+kkey.getInnerHTML()+" + click! ", DefaultToastType.WARNING).show();
 					return true;
 				}
 				int key = context.getDatasetIndex() * 1000 + context.getDataIndex();
@@ -311,7 +314,8 @@ public class DataLabelsSelectionCase extends BaseComposite {
 	
 	protected void handleModifier() {
 		if (modifier.checked) {
-			help.innerHTML = "Press " + ModifierKey.CTRL.getElement().getInnerHTML() + " + click to select";
+			Div kkey = IsKeyboardKey.getElement(ModifierKey.CTRL.getKeyboardKey());
+			help.innerHTML = "Press " + kkey.getInnerHTML() + " + click to select";
 		} else {
 			help.innerHTML = "";
 		}
