@@ -12,6 +12,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethSelectCou
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GeoChoroplethUSCapitalsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixCalendarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixDatalabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnCategoryAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.MatrixOnTimeAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyBasicCase;
@@ -21,6 +22,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyCountriesCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyEnergyCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyTreeCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapClickEventCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDatalabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSSwitchableCase;
@@ -145,6 +147,11 @@ public class ExtChartsView extends AbstractView {
 			public BaseComposite create() {
 				return new TreeMapClickEventCase();
 			}
+		}),
+		DATALABELS("Using Datalabels plugin", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapDatalabelsCase();
+			}
 		});
 
 		private final String label;
@@ -189,6 +196,11 @@ public class ExtChartsView extends AbstractView {
 		CLICKING("Selecting matrix item", new CaseFactory() {
 			public BaseComposite create() {
 				return new MatrixClickEventCase();
+			}
+		}),
+		DATALABELS("Using Datalabels plugin", new CaseFactory() {
+			public BaseComposite create() {
+				return new MatrixDatalabelsCase();
 			}
 		});
 
