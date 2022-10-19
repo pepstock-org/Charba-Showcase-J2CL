@@ -31,7 +31,9 @@ import org.pepstock.charba.showcase.j2cl.cases.charts.ScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedGroupBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.StackedHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.StackedLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.charts.StackedVerticalLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.SubtitleEventsCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.charts.TimeSeriesByBarCase;
@@ -191,6 +193,11 @@ public class ChartsView extends AbstractView {
 				return new StackedBarCase();
 			}
 		}),
+		STACKED_HORIZONTAL_BAR("Stacked horizontal bar", new CaseFactory() {
+			public BaseComposite create() {
+				return new StackedHorizontalBarCase();
+			}
+		}),
 		STACKED_GROUP_BAR("Stacked group bar", new CaseFactory() {
 			public BaseComposite create() {
 				return new StackedGroupBarCase();
@@ -199,6 +206,11 @@ public class ChartsView extends AbstractView {
 		STACKED_LINE("Stacked line", new CaseFactory() {
 			public BaseComposite create() {
 				return new StackedLineCase();
+			}
+		}),
+		STACKED_VERTICAL_LINE("Stacked vertical line", new CaseFactory() {
+			public BaseComposite create() {
+				return new StackedVerticalLineCase();
 			}
 		}),
 		STACKED_AREA("Stacked area", new CaseFactory() {
