@@ -64,7 +64,7 @@ public class TreeMapDatalabelsCase extends BaseComposite {
 		chart.getOptions().getLegend().setDisplay(false);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Tree map chart using Datalabels plugin");
-
+		
 		TreeMapDataset dataset1 = chart.newDataset();
 		dataset1.setLabel("dataset 1");
 

@@ -24,6 +24,8 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.SankeyTreeCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapClickEventCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDatalabelsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapDividersCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapFontsColorsCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapObjectTreeCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSPopulationCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.TreeMapUSSwitchableCase;
 
@@ -133,6 +135,11 @@ public class ExtChartsView extends AbstractView {
 				return new TreeMapUSPopulationCase();
 			}
 		}),
+		TREE("Object tree", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapObjectTreeCase();
+			}
+		}),
 		GROUPING("Grouping data at runtime", new CaseFactory() {
 			public BaseComposite create() {
 				return new TreeMapUSSwitchableCase();
@@ -141,6 +148,11 @@ public class ExtChartsView extends AbstractView {
 		DIVIDERS("Applying dividers", new CaseFactory() {
 			public BaseComposite create() {
 				return new TreeMapDividersCase();
+			}
+		}),
+		FONTS_COLORS("Fonts and colors", new CaseFactory() {
+			public BaseComposite create() {
+				return new TreeMapFontsColorsCase();
 			}
 		}),
 		CLICKING("Selecting treemap item", new CaseFactory() {

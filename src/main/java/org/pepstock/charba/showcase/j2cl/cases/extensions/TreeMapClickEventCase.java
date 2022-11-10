@@ -1,10 +1,10 @@
 package org.pepstock.charba.showcase.j2cl.cases.extensions;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.pepstock.charba.client.callbacks.ColorCallback;
 import org.pepstock.charba.client.callbacks.DatasetContext;
-import org.pepstock.charba.client.callbacks.FontCallback;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.commons.ArrayListHelper;
 import org.pepstock.charba.client.commons.ArrayObject;
@@ -12,6 +12,7 @@ import org.pepstock.charba.client.commons.Key;
 import org.pepstock.charba.client.commons.NativeObject;
 import org.pepstock.charba.client.commons.NativeObjectContainer;
 import org.pepstock.charba.client.commons.NativeObjectContainerFactory;
+import org.pepstock.charba.client.enums.TooltipPosition;
 import org.pepstock.charba.client.events.DatasetSelectionEvent;
 import org.pepstock.charba.client.events.DatasetSelectionEventHandler;
 import org.pepstock.charba.client.impl.plugins.ChartPointer;
@@ -19,9 +20,11 @@ import org.pepstock.charba.client.impl.plugins.ChartPointerOptions;
 import org.pepstock.charba.client.impl.plugins.enums.PointerElement;
 import org.pepstock.charba.client.items.FontItem;
 import org.pepstock.charba.client.items.Undefined;
+import org.pepstock.charba.client.treemap.InnerData;
 import org.pepstock.charba.client.treemap.TreeMapChart;
 import org.pepstock.charba.client.treemap.TreeMapDataPoint;
 import org.pepstock.charba.client.treemap.TreeMapDataset;
+import org.pepstock.charba.client.treemap.callbacks.FontsCallback;
 import org.pepstock.charba.client.utils.JSON;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Toast;
@@ -73,27 +76,28 @@ public class TreeMapClickEventCase extends BaseComposite {
 
 		ArrayObject array = JSON.parseForArray(DATA);
 		tree = ArrayListHelper.unmodifiableList(array, FACTORY);
-
-		chart.getChartElement().getStyle().setHeight("550px");
 		
+		chart.getChartElement().getStyle().setHeight("550px");
+
 		chart.getOptions().setMaintainAspectRatio(false);
 		chart.getOptions().getLegend().setDisplay(false);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Clicking on a tree map chart");
 		chart.getOptions().getTooltips().setEnabled(false);
+		chart.getOptions().getTooltips().setPosition(TooltipPosition.AVERAGE);
 		
 		chart.addHandler(new DatasetSelectionEventHandler() {
 
 			@Override
 			public void onSelect(DatasetSelectionEvent event) {
+				
 				TreeMapDataPoint point = dataset1.getDataPoints().get(event.getItem().getIndex());
-				TreeMapObject object = point.getData(FACTORY);
+				InnerData data = point.getData();
 				StringBuilder sb = new StringBuilder();
 				sb.append("Dataset index: <b>").append(event.getItem().getDatasetIndex()).append("</b><br>");
 				sb.append("TreeMapPoint group: <b>").append(point.getGroup()).append("</b><br>");
-				sb.append("TreeMapPoint data: <b>").append(object.toString()).append("</b><br>");
 				sb.append("Index: <b>").append(event.getItem().getIndex()).append("</b><br>");
-				List<TreeMapObject> objects = point.getTreeObjects(FACTORY);
+				List<TreeMapObject> objects = data.getChildren(FACTORY);
 				if (objects != null && !objects.isEmpty()) {
 					int index = 0;
 					for (TreeMapObject obj : objects) {
@@ -148,15 +152,16 @@ public class TreeMapClickEventCase extends BaseComposite {
 		dataset1.getLabels().setDisplay(true);
 		dataset1.getLabels().setColor(HtmlColor.WHITE);
 		dataset1.getLabels().setHoverColor("#F0B90B");
-		dataset1.getLabels().setFont(new FontCallback<DatasetContext>() {
+		dataset1.getLabels().setFont(new FontsCallback() {
 			
 			private FontItem item = new FontItem();
+			private List<FontItem> result = Arrays.asList(item);
 			
 			@Override
-			public FontItem invoke(DatasetContext context) {
+			public List<FontItem> invoke(DatasetContext context) {
 				item.setFamily("Tahoma");
 				item.setSize(10);
-				return item;
+				return result;
 			}
 		});
 
