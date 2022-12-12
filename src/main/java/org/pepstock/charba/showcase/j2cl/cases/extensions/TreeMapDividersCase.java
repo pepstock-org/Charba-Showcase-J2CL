@@ -45,7 +45,7 @@ public class TreeMapDividersCase extends BaseComposite {
 	
 	private static final TreeMapObjectFactory FACTORY = new TreeMapObjectFactory();
 	
-	private final List<TreeMapObject> tree;
+	private List<TreeMapObject> tree;
 
 	public TreeMapDividersCase() {
 		// ----------------------------------------------
@@ -165,9 +165,12 @@ public class TreeMapDividersCase extends BaseComposite {
 	}
 	
 	protected void handleRandomize() {
+		ArrayObject array = JSON.parseForArray(DATA);
+		tree = ArrayListHelper.unmodifiableList(array, FACTORY);
+		tree.forEach((obj) -> obj.setValue(getRandomDigit(1, 10)));
 		for (Dataset dataset : chart.getData().getDatasets()) {
 			TreeMapDataset tds = (TreeMapDataset)dataset;
-			tds.getTreeObjects(FACTORY).forEach((obj) -> obj.setValue(getRandomDigit(1, 10)));
+			tds.setTreeObjetcs(tree);
 		}
 		chart.update();
 	}

@@ -194,13 +194,14 @@ public class GridLinesDisplayCase extends BaseComposite {
 	}
 
 	private void configChart() {
+		axis1.getBorder().setDisplay(drawBorder.checked);
+		axis2.getBorder().setDisplay(drawBorder.checked);
+
 		axis1.getGrid().setDisplay(display.checked);
-		axis1.getGrid().setDrawBorder(drawBorder.checked);
 		axis1.getGrid().setDrawOnChartArea(drawOnChartArea.checked);
 		axis1.getGrid().setDrawTicks(drawTicks.checked);
 		
 		axis2.getGrid().setDisplay(display.checked);
-		axis2.getGrid().setDrawBorder(drawBorder.checked);
 		axis2.getGrid().setDrawOnChartArea(drawOnChartArea.checked);
 		axis2.getGrid().setDrawTicks(drawTicks.checked);
 		
