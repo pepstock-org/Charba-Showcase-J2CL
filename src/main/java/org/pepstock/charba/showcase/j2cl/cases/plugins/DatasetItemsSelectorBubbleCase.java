@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Random;
 
 import org.pepstock.charba.client.BubbleChart;
-import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.BubbleDataset;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
+import org.pepstock.charba.client.dom.elements.Div;
+import org.pepstock.charba.client.dom.enums.IsKeyboardKey;
+import org.pepstock.charba.client.dom.enums.KeyboardUiKey;
 import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEvent;
 import org.pepstock.charba.client.events.DatasetRangeCleanSelectionEventHandler;
 import org.pepstock.charba.client.events.DatasetRangeSelectionEvent;
@@ -22,6 +24,7 @@ import elemental2.dom.CSSProperties.MarginRightUnionType;
 import elemental2.dom.CSSProperties.WidthUnionType;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLButtonElement;
+import elemental2.dom.HTMLDivElement;
 import elemental2.dom.HTMLElement;
 import elemental2.dom.HTMLImageElement;
 import elemental2.dom.HTMLTableCellElement;
@@ -31,6 +34,8 @@ import elemental2.dom.HTMLTableRowElement;
 public class DatasetItemsSelectorBubbleCase extends BaseComposite {
 
 	private final HTMLTableElement mainPanel;
+	
+	private final HTMLDivElement help = (HTMLDivElement) DomGlobal.document.createElement("div");
 
 	private final BubbleChart chart = new BubbleChart();
 
@@ -98,10 +103,7 @@ public class DatasetItemsSelectorBubbleCase extends BaseComposite {
 		pOptions.setBorderWidth(2);
 		pOptions.setBorderDash(6, 3, 6);
 		pOptions.setBorderColor(HtmlColor.GREY);
-		pOptions.getSelectionCleaner().setDisplay(true);
-		pOptions.getSelectionCleaner().setLabel("Reset selection");
-		pOptions.getSelectionCleaner().setPadding(6);
-		pOptions.getSelectionCleaner().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
+		pOptions.getSelectionCleaner().setDisplay(false);
 		pOptions.setColor(HtmlColor.LIGHT_PINK.alpha(DatasetsItemsSelectorOptions.DEFAULT_ALPHA));
 
 		chart.getOptions().getPlugins().setOptions(DatasetsItemsSelector.ID, pOptions);
@@ -185,6 +187,23 @@ public class DatasetItemsSelectorBubbleCase extends BaseComposite {
 		img.src = "images/GitHub-Mark-32px.png";
 		github.appendChild(img);
 		actionsCol.appendChild(github);
+		
+		// ----------------------------------------------
+		// help element
+		// ----------------------------------------------
+
+		HTMLTableRowElement helpRow = (HTMLTableRowElement) DomGlobal.document.createElement("tr");
+		helpRow.style.width = WidthUnionType.of("100%");
+		mainPanel.appendChild(helpRow);
+
+		HTMLTableCellElement helpCol = (HTMLTableCellElement) DomGlobal.document.createElement("td");
+		helpCol.style.width = WidthUnionType.of("100%");
+		helpCol.style.textAlign = "center";
+		helpCol.vAlign = "top";
+		helpRow.appendChild(helpCol);
+		Div kkey = IsKeyboardKey.getElement(KeyboardUiKey.ESCAPE);
+		help.innerHTML = "Press " + kkey.getInnerHTML() + " to clear selection";
+		helpCol.appendChild(help);
 
 	}
 

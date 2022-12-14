@@ -92,6 +92,7 @@ public class DatasetItemsSelectorBarCase extends BaseComposite {
 		pOptions.setBorderWidth(2);
 		pOptions.setBorderDash(6, 2);
 		pOptions.setBorderColor(HtmlColor.GREY);
+		pOptions.setEnabledClearByESC(false);
 		pOptions.getSelectionCleaner().setDisplay(true);
 		pOptions.getSelectionCleaner().setLabel("Reset selected area");
 		pOptions.getSelectionCleaner().getFont().setSize(Defaults.get().getGlobal().getTitle().getFont().getSize());
