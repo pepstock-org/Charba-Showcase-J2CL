@@ -141,6 +141,7 @@ public class MeterCase extends BaseComposite {
 		});
 		dataset3.getValueLabel().setColor(ColorBuilder.build(90, 173, 255));
 		chartValueColor.getData().setDatasets(dataset3);
+		chartValueColor.getOptions().setCutout(5);
 
 		chartCol11.appendChild(chartPercent.getChartElement().as());
 		chartCol12.appendChild(chartValue.getChartElement().as());

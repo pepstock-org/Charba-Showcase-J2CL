@@ -144,6 +144,7 @@ public class GaugeCase extends BaseComposite {
 		});
 		dataset3.getValueLabel().setColor(ColorBuilder.build(90, 173, 255));
 		chartValueColor.getData().setDatasets(dataset3);
+		chartValueColor.getOptions().setCutout(5);
 
 		chartValueReverse.getOptions().getTitle().setDisplay(true);
 		chartValueReverse.getOptions().getTitle().setText("GAUGE chart with thresholds on reverse mode");
@@ -153,7 +154,8 @@ public class GaugeCase extends BaseComposite {
 		dataset4.setThresholds(DefaultThreshold.NORMAL.getThreshold().setValue(Double.MAX_VALUE), DefaultThreshold.WARNING.getThreshold().setValue(100), DefaultThreshold.CRITICAL.getThreshold().setValue(40));
 		dataset4.setPercentageThreshold(false);
 		chartValueReverse.getData().setDatasets(dataset4);
-
+		chartValueReverse.getOptions().setCutoutPercentage("85%");
+		
 		chartCol11.appendChild(chartPercent.getChartElement().as());
 		chartCol12.appendChild(chartValue.getChartElement().as());
 		chartCol21.appendChild(chartValueColor.getChartElement().as());
