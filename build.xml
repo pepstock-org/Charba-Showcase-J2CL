@@ -23,7 +23,7 @@
 	-->
 	<target name="installCharba" description="Install new CHARBA lib">
 		 <exec dir="." executable="cmd">
-		 	<arg line="/c mvn install:install-file -DgroupId=org.pepstock -Dfile=./lib/charba-6.0.jar -DartifactId=charba -Dversion=6.0 -Dpackaging=jar  --no-transfer-progress"/>
+		 	<arg line="/c mvn install:install-file -DgroupId=org.pepstock -Dfile=./lib/charba-6.1.jar -DartifactId=charba -Dversion=6.1 -Dpackaging=jar  --no-transfer-progress"/>
 		  </exec>
 	</target>
 
