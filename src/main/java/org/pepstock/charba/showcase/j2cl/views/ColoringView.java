@@ -2,7 +2,9 @@ package org.pepstock.charba.showcase.j2cl.views;
 
 import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingBaselineCase;
 import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingBoundariesCase;
+import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingColorsCase;
 import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingDatasetsOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.coloring.FillingDatasetsOnRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.coloring.GwtMaterialColorsCase;
@@ -250,6 +252,16 @@ public class ColoringView extends AbstractView {
 		RADAR("Setting filling on radar chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new FillingDatasetsOnRadarCase();
+			}
+		}),
+		BASELINE("Setting filling baseline", new CaseFactory() {
+			public BaseComposite create() {
+				return new FillingBaselineCase();
+			}
+		}),
+		COLORS("Setting filling with different colors", new CaseFactory() {
+			public BaseComposite create() {
+				return new FillingColorsCase();
 			}
 		});
 
