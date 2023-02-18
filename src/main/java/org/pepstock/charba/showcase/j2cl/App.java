@@ -20,6 +20,7 @@ import org.pepstock.charba.client.utils.toast.Toaster;
 import org.pepstock.charba.client.utils.toast.enums.MaximumOpenItemsPolicy;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.commons.Images;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.CrosshairPlugin;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyHorizontalBarController;
 import org.pepstock.charba.showcase.j2cl.cases.miscellaneous.MyLineChart;
 import org.pepstock.charba.showcase.j2cl.topojson.Earthmap;
@@ -48,6 +49,8 @@ public class App implements EntryPoint {
 
 	public static TopoJson GERMANY; 
 	
+	private static final CrosshairPlugin PLUGIN = new CrosshairPlugin();
+
 	public void onModuleLoad() {
 		Images.get();
 		Charba.enable();
@@ -56,6 +59,8 @@ public class App implements EntryPoint {
 
 	private void start() {
 
+		Defaults.get().getPlugins().register(PLUGIN, false);
+		
 		org.pepstock.charba.client.utils.Window.enableResizeOnBeforePrint();
 
 		Defaults.get().getGlobal().getFont().setFamily("'Lato', sans-serif");

@@ -39,6 +39,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientPolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.GradientTimeSeriesByLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingCrosshairPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ImportingPluginCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.LabelsMultiOptionsCase;
@@ -582,6 +583,21 @@ public class ExtPluginsView extends AbstractView {
 					}
 					return null;
 				};
+
+				HTMLDivElement item1 = (HTMLDivElement) DomGlobal.document.createElement("div");
+				item1.style.textAlign = "left";
+				item1.className = "myCategoryItem";
+				catCol.appendChild(item1);
+				item1.innerHTML = "Using Crosshair plugin";
+				item1.onclick = (p0) -> {
+					BaseComposite composite = new ImportingCrosshairPluginCase();
+					if (composite != null) {
+						clearPreviousChart();
+						content.appendChild(composite.getElement());
+					}
+					return null;
+				};
+
 			}
 			
 			if (Category.LABELS.equals(cat)) {

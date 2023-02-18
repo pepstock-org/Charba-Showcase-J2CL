@@ -3,7 +3,7 @@ package org.pepstock.charba.showcase.j2cl.cases.extensions;
 import java.util.List;
 
 import org.pepstock.charba.client.BarChart;
-import org.pepstock.charba.client.Injector;
+import org.pepstock.charba.client.Defaults;
 import org.pepstock.charba.client.colors.GoogleChartColor;
 import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.commons.Key;
@@ -52,7 +52,7 @@ public class ImportingPluginCase extends BaseComposite {
 		// Chart
 		// ----------------------------------------------
 
-		Injector.ensureInjected(PLUGIN);
+		Defaults.get().getPlugins().register(PLUGIN);
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
