@@ -8,7 +8,7 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.AxisPosition;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -51,7 +51,7 @@ public class MultiAxisLineCase extends BaseComposite {
 		chart.getOptions().setResponsive(true);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Multiple axes on line chart");
-		chart.getOptions().getHover().setMode(InteractionMode.INDEX);
+		chart.getOptions().getHover().setMode(DefaultInteractionMode.INDEX);
 
 		CartesianLinearAxis axis1 = new CartesianLinearAxis(chart, "y-axis-1");
 		axis1.setPosition(AxisPosition.LEFT);

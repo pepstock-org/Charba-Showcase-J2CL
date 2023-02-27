@@ -14,7 +14,7 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.Fill;
 import org.pepstock.charba.client.enums.FontStyle;
-import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.client.items.TooltipItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
@@ -60,7 +60,7 @@ public class TooltipCallbacksCase extends BaseComposite {
 		chart.getOptions().getLegend().setPosition(Position.TOP);
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Tooltip footer callback");
-		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setMode(DefaultInteractionMode.INDEX);
 		chart.getOptions().getTooltips().getFooterFont().setStyle(FontStyle.NORMAL);
 		chart.getOptions().getTooltips().getCallbacks().setFooterCallback(new TooltipFooterCallback() {
 
@@ -84,7 +84,7 @@ public class TooltipCallbacksCase extends BaseComposite {
 				return null;
 			}
 		});
-		chart.getOptions().getHover().setMode(InteractionMode.INDEX);
+		chart.getOptions().getHover().setMode(DefaultInteractionMode.INDEX);
 		chart.getOptions().getHover().setIntersect(true);
 
 		LineDataset dataset1 = chart.newDataset();

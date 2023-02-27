@@ -9,7 +9,7 @@ import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.dom.elements.Context2dItem;
 import org.pepstock.charba.client.dom.elements.Img;
 import org.pepstock.charba.client.enums.AxisPosition;
-import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.client.items.BarElement;
 import org.pepstock.charba.client.items.DatasetItem;
 import org.pepstock.charba.client.plugins.AbstractPlugin;
@@ -59,7 +59,7 @@ public class HTMLAnnnotationByElementCase extends BaseComposite {
 		chart.getOptions().getLegend().setDisplay(false);
 		chart.getOptions().getTitle().setDisplay(false);
 		chart.getOptions().getTitle().setText("HTML annotation by HTML element on bar chart");
-		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setMode(DefaultInteractionMode.INDEX);
 		chart.getOptions().getTooltips().setIntersect(true);
 		chart.getOptions().getLayout().getPadding().setTop(100);
 

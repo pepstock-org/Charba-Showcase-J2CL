@@ -12,7 +12,7 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.HorizontalBarDataset;
 import org.pepstock.charba.client.enums.DefaultScaleId;
-import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -57,7 +57,7 @@ public class AnnotationLineOnHorizontalBarCase extends BaseComposite {
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Line annotation on horizontal bar chart");
 		chart.getOptions().getTooltips().setIntersect(true);
-		chart.getOptions().getTooltips().setMode(InteractionMode.INDEX);
+		chart.getOptions().getTooltips().setMode(DefaultInteractionMode.INDEX);
 
 		HorizontalBarDataset dataset = chart.newDataset();
 		dataset.setLabel("dataset");

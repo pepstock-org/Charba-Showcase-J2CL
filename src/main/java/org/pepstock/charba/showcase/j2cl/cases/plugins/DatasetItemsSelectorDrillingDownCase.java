@@ -115,14 +115,14 @@ public class DatasetItemsSelectorDrillingDownCase extends BaseComposite {
 		axis = chart.getOptions().getScales().getTimeAxis();
 		axis.getTime().setUnit(TimeUnit.DAY);
 		axis.getTicks().setStepSize(1);
-		axis.setMin(new MinMaxCallback<Date>() {
+		axis.setMin(new MinMaxCallback<Object>() {
 			
 			@Override
 			public Date invoke(ScaleContext context) {
 				return minDate;
 			}
 		});
-		axis.setMax(new MinMaxCallback<Date>() {
+		axis.setMax(new MinMaxCallback<Object>() {
 			
 			@Override
 			public Date invoke(ScaleContext context) {

@@ -58,6 +58,7 @@ import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomCategoryAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragCategoryAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragLineareAxisCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomDragTimeAxisCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomGroupCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomOverScaleCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomPanRegionCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.ZoomTimeAxisCase;
@@ -339,6 +340,11 @@ public class ExtPluginsView extends AbstractView {
 		ZOOM_CALLBACK("Zoom callbacks on timeseries line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new ZoomCallbacksOnTimeSeriesCase();
+			}
+		}),
+		ZOOM_GROUP("Zoom wheel grouping", new CaseFactory() {
+			public BaseComposite create() {
+				return new ZoomGroupCase();
 			}
 		});
 

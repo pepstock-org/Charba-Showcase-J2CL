@@ -18,6 +18,7 @@ import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePieCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemePolarAreaCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.ColorSchemeRadarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairBarCase;
+import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairGroupCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairHorizontalBarCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairLogarithmicAxisOnScatterCase;
 import org.pepstock.charba.showcase.j2cl.cases.plugins.CrosshairScatterCase;
@@ -314,6 +315,11 @@ public class PluginsView extends AbstractView {
 		STACKED_AXES("Crosshair on stacked scales", new CaseFactory() {
 			public BaseComposite create() {
 				return new CrosshairStackedAxesCase();
+			}
+		}),
+		GROUP("Crosshair grouping", new CaseFactory() {
+			public BaseComposite create() {
+				return new CrosshairGroupCase();
 			}
 		});
 

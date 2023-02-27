@@ -9,7 +9,7 @@ import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
 import org.pepstock.charba.client.enums.AxisKind;
 import org.pepstock.charba.client.enums.AxisPosition;
-import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
 import elemental2.dom.CSSProperties.MarginRightUnionType;
@@ -54,7 +54,7 @@ public class MultiAxisScatterCase extends BaseComposite {
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Multiple axes on scatter chart");
 		chart.getOptions().getHover().setIntersect(true);
-		chart.getOptions().getHover().setMode(InteractionMode.NEAREST);
+		chart.getOptions().getHover().setMode(DefaultInteractionMode.NEAREST);
 
 		CartesianLinearAxis xAxes = new CartesianLinearAxis(chart, "x-axis-1", AxisKind.X);
 		xAxes.setPosition(AxisPosition.BOTTOM);

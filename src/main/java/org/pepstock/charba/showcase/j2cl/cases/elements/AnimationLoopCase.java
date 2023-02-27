@@ -15,7 +15,7 @@ import org.pepstock.charba.client.data.LineDataset;
 import org.pepstock.charba.client.enums.DefaultAnimationPropertyKey;
 import org.pepstock.charba.client.enums.Easing;
 import org.pepstock.charba.client.enums.InteractionAxis;
-import org.pepstock.charba.client.enums.InteractionMode;
+import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.client.options.AnimationCollection;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -61,7 +61,7 @@ public class AnimationLoopCase extends BaseComposite {
 		chart.getOptions().getTitle().setDisplay(true);
 		chart.getOptions().getTitle().setText("Animation loop on line chart");
 		chart.getOptions().getTooltips().setEnabled(false);
-		chart.getOptions().getInteraction().setMode(InteractionMode.NEAREST);
+		chart.getOptions().getInteraction().setMode(DefaultInteractionMode.NEAREST);
 		chart.getOptions().getInteraction().setIntersect(false);
 		chart.getOptions().getInteraction().setAxis(InteractionAxis.X);
 		chart.getOptions().getElements().getPoint().setHoverRadius(12);
