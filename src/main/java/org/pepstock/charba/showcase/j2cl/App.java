@@ -37,7 +37,7 @@ import elemental2.dom.HTMLDivElement;
 
 public class App implements EntryPoint {
 
-	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/6.2/src/main/java/";
+	public static final String BASE_URL = "https://github.com/pepstock-org/Charba-Showcase-J2CL/blob/6.3/src/main/java/";
 
 	public static List<Feature> EARTH_FEATURES;
 
