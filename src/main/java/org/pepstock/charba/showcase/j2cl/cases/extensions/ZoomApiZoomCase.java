@@ -6,7 +6,7 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
-import org.pepstock.charba.client.enums.DefaultTransitionKey;
+import org.pepstock.charba.client.enums.DefaultTransitionMode;
 import org.pepstock.charba.client.zoom.Amount;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
@@ -209,19 +209,19 @@ public class ZoomApiZoomCase extends BaseComposite {
 	}
 	
 	protected void handleZoomPlus10() {
-		ZoomPlugin.zoom(chart, 1.1, DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.zoom(chart, 1.1, DefaultTransitionMode.DEFAULT);
 	}
 	
 	protected void handleZoomMinus10() {
-		ZoomPlugin.zoom(chart, 0.9, DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.zoom(chart, 0.9, DefaultTransitionMode.DEFAULT);
 	}
 
 	protected void handleZoomXPlus10() {
-		ZoomPlugin.zoom(chart, new Amount(1.1), DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.zoom(chart, new Amount(1.1), DefaultTransitionMode.DEFAULT);
 	}
 	
 	protected void handleZoomXMinus10() {
-		ZoomPlugin.zoom(chart, new Amount(0.9), DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.zoom(chart, new Amount(0.9), DefaultTransitionMode.DEFAULT);
 	}
 
 }

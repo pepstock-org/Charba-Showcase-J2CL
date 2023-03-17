@@ -6,7 +6,7 @@ import org.pepstock.charba.client.colors.IsColor;
 import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
-import org.pepstock.charba.client.enums.DefaultTransitionKey;
+import org.pepstock.charba.client.enums.DefaultTransitionMode;
 import org.pepstock.charba.client.items.Undefined;
 import org.pepstock.charba.client.zoom.Amount;
 import org.pepstock.charba.client.zoom.ZoomOptions;
@@ -208,19 +208,19 @@ public class ZoomApiPanCase extends BaseComposite {
 	}
 	
 	protected void handlePanXPlus100() {
-		ZoomPlugin.pan(chart, new Amount(100), DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.pan(chart, new Amount(100), DefaultTransitionMode.DEFAULT);
 	}
 	
 	protected void handlePanXMinus100() {
-		ZoomPlugin.pan(chart, new Amount(-100), DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.pan(chart, new Amount(-100), DefaultTransitionMode.DEFAULT);
 	}
 
 	protected void handlePanYPlus100() {
-		ZoomPlugin.pan(chart, new Amount(Undefined.DOUBLE, 100), DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.pan(chart, new Amount(Undefined.DOUBLE, 100), DefaultTransitionMode.DEFAULT);
 	}
 	
 	protected void handlePanYMinus100() {
-		ZoomPlugin.pan(chart, new Amount(Undefined.DOUBLE, -100), DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.pan(chart, new Amount(Undefined.DOUBLE, -100), DefaultTransitionMode.DEFAULT);
 	}
 
 }

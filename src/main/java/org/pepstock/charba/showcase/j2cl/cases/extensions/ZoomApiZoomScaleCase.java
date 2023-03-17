@@ -7,7 +7,7 @@ import org.pepstock.charba.client.data.DataPoint;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.ScatterDataset;
 import org.pepstock.charba.client.enums.DefaultScaleId;
-import org.pepstock.charba.client.enums.DefaultTransitionKey;
+import org.pepstock.charba.client.enums.DefaultTransitionMode;
 import org.pepstock.charba.client.zoom.ScaleRange;
 import org.pepstock.charba.client.zoom.ZoomOptions;
 import org.pepstock.charba.client.zoom.ZoomPlugin;
@@ -203,14 +203,14 @@ public class ZoomApiZoomScaleCase extends BaseComposite {
 		ScaleRange range = new ScaleRange();
 		range.setMin(-100);
 		range.setMax(0);
-		ZoomPlugin.zoomScale(chart, DefaultScaleId.X, range, DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.zoomScale(chart, DefaultScaleId.X, range, DefaultTransitionMode.DEFAULT);
 	}
 	
 	protected void handleZoomY() {
 		ScaleRange range = new ScaleRange();
 		range.setMin(0);
 		range.setMax(100);
-		ZoomPlugin.zoomScale(chart, DefaultScaleId.Y, range, DefaultTransitionKey.DEFAULT);
+		ZoomPlugin.zoomScale(chart, DefaultScaleId.Y, range, DefaultTransitionMode.DEFAULT);
 	}
 
 	protected void handleZoomXY() {
