@@ -13,9 +13,9 @@ import org.pepstock.charba.client.colors.HtmlColor;
 import org.pepstock.charba.client.data.BarDataset;
 import org.pepstock.charba.client.data.Dataset;
 import org.pepstock.charba.client.data.LineDataset;
+import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.client.enums.DefaultScaleId;
 import org.pepstock.charba.client.enums.Fill;
-import org.pepstock.charba.client.enums.DefaultInteractionMode;
 import org.pepstock.charba.client.enums.Position;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 
@@ -173,7 +173,6 @@ public class AnnotationsOnCombinedCase extends BaseComposite {
 			dataset.setData(getRandomDigits(months));
 		}
 		chart.update();
-		;
 	}
 
 }

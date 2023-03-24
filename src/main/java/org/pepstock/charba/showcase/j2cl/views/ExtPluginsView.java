@@ -4,8 +4,10 @@ import org.pepstock.charba.showcase.j2cl.cases.CaseFactory;
 import org.pepstock.charba.showcase.j2cl.cases.CaseItem;
 import org.pepstock.charba.showcase.j2cl.cases.commons.BaseComposite;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationBoxesOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationCurveLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationEllipseOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelCalloutOnLineCase;
+import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelImageOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLabelOnLineCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineAndArrowsCase;
 import org.pepstock.charba.showcase.j2cl.cases.extensions.AnnotationLineLabelOnEnter;
@@ -408,6 +410,11 @@ public class ExtPluginsView extends AbstractView {
 				return new AnnotationLineLabelOnEnter();
 			}
 		}),
+		CURVE_LINE("Curve line annotation on bar chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationCurveLineCase();
+			}
+		}),
 		ELLIPSE("Ellipse annotation on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationEllipseOnLineCase();
@@ -421,6 +428,11 @@ public class ExtPluginsView extends AbstractView {
 		LABELS("Label annotation on line chart", new CaseFactory() {
 			public BaseComposite create() {
 				return new AnnotationLabelOnLineCase();
+			}
+		}),
+		LABEL_IMAGE("Label annotation with an image on line chart", new CaseFactory() {
+			public BaseComposite create() {
+				return new AnnotationLabelImageOnLineCase();
 			}
 		}),
 		LABELS_CALLOUT("Label annotation with callout on line chart", new CaseFactory() {
