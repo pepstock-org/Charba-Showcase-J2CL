@@ -49,7 +49,7 @@ jobs:
       # Defines Charba lib in Maven
       # 
       - name: Adds Charba lib to Maven
-        run: mvn install:install-file -Dfile=./lib/charba-6.3.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=6.3 -Dpackaging=jar --no-transfer-progress
+        run: mvn install:install-file -Dfile=./lib/charba-6.4.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=6.4 -Dpackaging=jar --no-transfer-progress
       # 
       # Run the build of project by Maven
       # 
