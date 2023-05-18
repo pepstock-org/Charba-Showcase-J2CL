@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<project name="CharbaShowcaseJ2CL" default="remove" basedir=".">
+<project name="Charba-Showcase-J2CL" default="remove" basedir=".">
 
 	<!-- 
 		CHARBA SHOWCASE configuration 
