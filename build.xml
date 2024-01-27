@@ -24,10 +24,10 @@
 	<target name="installCharba" description="Install new CHARBA lib">
 		 <exec dir="." executable="mvn">
 		 	<arg value="install:install-file"/>
-		 	<arg value="-Dfile=./lib/charba-6.4.jar"/>
+		 	<arg value="-Dfile=./lib/charba-6.5.jar"/>
 		 	<arg value="-DgroupId=org.pepstock"/>
 		 	<arg value="-DartifactId=charba"/>
-		 	<arg value="-Dversion=6.4"/>
+		 	<arg value="-Dversion=6.5"/>
 		 	<arg value="-Dpackaging=jar"/>
 		 	<arg value="--no-transfer-progress"/>
 		  </exec>

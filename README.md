@@ -19,7 +19,7 @@ The project is also providing the **Charba** jar is provided in `lib` folder, ne
 You can add it to Maven local repository, as following:
 
 ```
-mvn install:install-file -Dfile=./lib/charba-6.4.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=6.4 -Dpackaging=jar
+mvn install:install-file -Dfile=./lib/charba-6.5.jar -DgroupId=org.pepstock -DartifactId=charba -Dversion=6.5 -Dpackaging=jar
 ```
 
 ## Running
