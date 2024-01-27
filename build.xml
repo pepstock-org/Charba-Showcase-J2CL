@@ -22,8 +22,14 @@
 		CHARBA SHOWCASE - install new CHARBA LIB 
 	-->
 	<target name="installCharba" description="Install new CHARBA lib">
-		 <exec dir="." executable="cmd">
-		 	<arg line="/c mvn install:install-file -DgroupId=org.pepstock -Dfile=./lib/charba-6.4.jar -DartifactId=charba -Dversion=6.4 -Dpackaging=jar  --no-transfer-progress"/>
+		 <exec dir="." executable="mvn">
+		 	<arg value="install:install-file"/>
+		 	<arg value="-Dfile=./lib/charba-6.4.jar"/>
+		 	<arg value="-DgroupId=org.pepstock"/>
+		 	<arg value="-DartifactId=charba"/>
+		 	<arg value="-Dversion=6.4"/>
+		 	<arg value="-Dpackaging=jar"/>
+		 	<arg value="--no-transfer-progress"/>
 		  </exec>
 	</target>
 
@@ -31,8 +37,9 @@
 		CHARBA SHOWCASE - MVN clean 
 	-->
 	<target name="clean" description="MVN clean">
-		 <exec dir="." executable="cmd">
-		 	<arg line="/c mvn clean --no-transfer-progress"/>
+		 <exec dir="." executable="mvn">
+		 	<arg value="clean"/>
+		 	<arg value="--no-transfer-progress"/>
 		  </exec>
 	</target>
 
@@ -40,8 +47,9 @@
 		CHARBA SHOWCASE - MVN install 
 	-->
 	<target name="install" description="MVN install">
-		 <exec dir="." executable="cmd">
-		 	<arg line="/c mvn install --no-transfer-progress"/>
+		 <exec dir="." executable="mvn">
+		 	<arg value="install"/>
+		 	<arg value="--no-transfer-progress"/>
 		  </exec>
 	</target>
 
